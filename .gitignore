@@ -81,6 +81,7 @@ scratch/**
 
 # Paper (local only)
 /paper/
+/paper_arxiv_*.pdf
 
 # Notebooks (local only, contain Databricks paths)
 /notebooks/
@@ -93,6 +94,7 @@ scratch/**
 
 # Pytest
 .pytest_cache/
+.pytest-tmp-*/
 
 # Lock file
 uv.lock
@@ -108,6 +110,9 @@ CLAUDE.md
 
 # Slides
 slides/
+
+# Generated Phase G benchmark artifacts (manifests, QA caches, indexes, results)
+research/week3/artifacts/
 
 # Poster sources & build artefacts (only the final PDF is published at repo root)
 poster/

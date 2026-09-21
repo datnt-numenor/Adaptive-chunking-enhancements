@@ -1,0 +1,4 @@
+# Phase G compatibility pins. Install Torch/CUDA and FlashAttention separately.
+haystack-ai==2.31.0
+sentence-transformers==5.1.2
+transformers==4.57.6

@@ -1,0 +1,149 @@
+{
+  "doc-005667a94f7dc506::q2": {
+    "question": "What costs are associated with model retraining, and how can an MLOps system automate it?",
+    "answer": "Retraining can be costly computationally and is often even more expensive in human labor. An MLOps system can automate a pipeline that retrains, evaluates, and deploys a model without human intervention and can trigger that pipeline automatically.",
+    "notes": "Codex-assisted review: narrowed the QA to claims directly supported by the exact evidence. Final human approval required."
+  },
+  "doc-0c9d910e648ff5ea::q2": {
+    "question": "What concern did one business association raise about using Common Specifications?",
+    "answer": "The association warned that resorting to Common Specifications, although appropriate in some cases, could undermine standardisation work and therefore called for greater clarity about how Common Specifications would be developed.",
+    "notes": "Codex-assisted review: repaired the exact quote and removed claims not present in that quote. Final human approval required."
+  },
+  "doc-0c9d910e648ff5ea::q3": {
+    "answer": "The draft Regulation describes three risk categories: unacceptable, high, and low risk. Unacceptable-risk systems, including systems that manipulate behavior or enable government social scoring, are banned; high-risk systems are highly monitored; and low- or minimal-risk systems generally escape most obligations except, in some cases, informing people that they are interacting with AI.",
+    "notes": "Codex-assisted review: removed unsupported examples and stronger pre-market claims. Final human approval required."
+  },
+  "doc-0de3b969e617bc9f::q3": {
+    "answer": "Governments must try to preserve the benefits of generative AI while avoiding potentially catastrophic consequences despite substantial uncertainty about when and how its main dangers and benefits will appear. The report characterizes this as governments legislating in the dark amid hypothetical existential risks, present-day dangers, and possible long-term social benefits.",
+    "notes": "Codex-assisted review: removed the unsupported claim about expertise being concentrated in the private sector. Final human approval required."
+  },
+  "doc-17b2498036f50ba9::q2": {
+    "question": "How does CodeCarbon choose the carbon-intensity value used in its estimate?",
+    "answer": "CodeCarbon uses the carbon intensity of the electricity grid linked to the computer. For a known data center it uses the data center's official carbon intensity; otherwise it uses the average carbon intensity for the location of the laptop or server.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired evidence. Final human approval required."
+  },
+  "doc-17b2498036f50ba9::q3": {
+    "question": "How should a data science project choose a cloud region to reduce its carbon footprint?",
+    "answer": "A GCP project can use Google Cloud Region Picker to compare regions by carbon footprint, price, and latency. On another provider, the project should use that provider's carbon-footprint documentation to guide its region choice.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired evidence. Final human approval required."
+  },
+  "doc-30a3a633a04ec2d7::q1": {
+    "status": "accept",
+    "notes": "Codex-assisted review: accepted; the French audience labels exactly support the English answer. Final human approval required."
+  },
+  "doc-30a3a633a04ec2d7::q3": {
+    "status": "accept",
+    "notes": "Codex-assisted review: accepted; 29/04/2024 exactly supports April 29, 2024. Final human approval required."
+  },
+  "doc-364dccd872cfeb95::q3": {
+    "question": "Why should an AI system include a way for users to report a mistaken prediction or decision?",
+    "answer": "Users must be able to express when they believe the system made a mistake. Including that mechanism in the solution's design can greatly increase users' trust in the solution.",
+    "notes": "Codex-assisted review: removed benefits not supported by the exact quote. Final human approval required."
+  },
+  "doc-46d885bf154ed13d::q2": {
+    "question": "Give two CCPA conditions under which a business need not delete requested personal information.",
+    "answer": "A business need not delete the information when retaining it is reasonably necessary to complete the transaction or contract for which it was collected, or to help ensure security and integrity in a necessary and proportionate way.",
+    "notes": "Codex-assisted review: narrowed the QA to two exceptions contained in the repaired evidence. Final human approval required."
+  },
+  "doc-5801334fd2dbf7d4::q1": {
+    "question": "What is the purpose of the Model Details section of a model card, and who is one party it identifies?",
+    "answer": "The Model Details section provides basic information about the model. One item it identifies is the person or organization that developed the model.",
+    "notes": "Codex-assisted review: narrowed an overbroad answer to the exact repaired evidence. Final human approval required."
+  },
+  "doc-5801334fd2dbf7d4::q2": {
+    "answer": "Open source describes an approach to creating and licensing software or models that lets companies and individuals create code, make applications available to others, and manage projects over time. The document says it powers data-science and digital-transformation projects and democratizes innovation by enabling more collaborative and efficient software building.",
+    "notes": "Codex-assisted review: removed benefits not stated in the evidence. Final human approval required."
+  },
+  "doc-5801334fd2dbf7d4::q3": {
+    "answer": "Although model cards are described as a highly transparent way to communicate about models, most companies keep that information for internal use because of intellectual-property concerns.",
+    "notes": "Codex-assisted review: removed speculative detail beyond the evidence. Final human approval required."
+  },
+  "doc-6f3a07f7d42928d0::q1": {
+    "question": "Quel investissement public le plan français pour l'IA prévoit-il, et quels types d'objectifs doit-il catalyser ?",
+    "answer": "Le plan prévoit un investissement public annuel de 5 milliards d'euros pendant cinq ans. Il combine des investissements technologiques avec des investissements destinés à catalyser la diffusion de l'IA dans l'économie, son déploiement au service des citoyens ainsi que son appropriation et la formation de toute la société.",
+    "notes": "Codex-assisted review: réponse limitée aux éléments explicitement présents dans la citation. Approbation humaine finale requise."
+  },
+  "doc-6f3a07f7d42928d0::q2": {
+    "question": "Quels indicateurs le rapport donne-t-il pour illustrer le retard numérique européen par rapport aux États-Unis ?",
+    "answer": "Le rapport indique que l'économie numérique européenne est deux à trois fois plus faible que celle des États-Unis et que, parmi les 100 entreprises technologiques ayant la plus grande capitalisation à la fin de 2023, seulement 10 sont européennes.",
+    "notes": "Codex-assisted review: suppression des chiffres et conséquences non présents dans la citation. Approbation humaine finale requise."
+  },
+  "doc-6f3a07f7d42928d0::q3": {
+    "question": "Quels sont les trois piliers identifiés par la Commission pour un déploiement humaniste de l'IA ?",
+    "answer": "La Commission identifie trois piliers principaux : la formation, le dialogue social et le service public. Ils doivent contribuer à un déploiement humaniste de l'IA qui donne davantage de pouvoir aux citoyens et aux travailleurs.",
+    "notes": "Codex-assisted review: réponse limitée à la citation réparée. Approbation humaine finale requise."
+  },
+  "doc-7fdd12fd3c954046::q3": {
+    "question": "What is a cryptographic commitment, and what can an actor later prove with it?",
+    "answer": "A cryptographic commitment is a short string that commits to plaintext data without revealing the data. The actor can later reveal the true data and prove that it is the same data committed to earlier.",
+    "notes": "Codex-assisted review: removed the unsupported confidential-computing extrapolation. Final human approval required."
+  },
+  "doc-a3837379847b18a7::q2": {
+    "question": "What competitive advantages does the document associate with interpretability?",
+    "answer": "For customers, interpretability builds trust. For an organization, it supports system control, compliance, and rigorous customer service by enabling objective reasons to be given to end customers.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired evidence. Final human approval required."
+  },
+  "doc-a3837379847b18a7::q3": {
+    "question": "How does the document recommend measuring the carbon footprint of AI projects?",
+    "answer": "It recommends dedicated governance and a carbon-footprint tracking table, plus consumption trackers from open-source libraries such as CodeCarbon to monitor energy use and the impact of electricity consumption.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired evidence. Final human approval required."
+  },
+  "doc-a909d7d972acd5a1::q2": {
+    "notes": "Codex-assisted review: the repaired exact page-6 passage supports the answer despite OCR hyphenation. Final human approval required."
+  },
+  "doc-ad2599c8e0e046cc::q1": {
+    "question": "How does the RIA characterize unacceptable-risk AI, and what examples does it give?",
+    "answer": "The RIA treats unacceptable-risk AI as a limited set of practices that conflict with EU values and fundamental rights. Examples in the passage include social scoring, exploitation of people's vulnerability, and subliminal techniques.",
+    "notes": "Codex-assisted review: narrowed the QA to the complete claims in the repaired page-1 evidence. Final human approval required."
+  },
+  "doc-d21622ac4886cd8b::q3": {
+    "answer": "La phase de développement d'un système d'IA relève du RGPD lorsqu'elle traite des données personnelles dans le secteur public ou privé, sauf si le traitement relève d'un régime spécifique, notamment le régime « police-justice » mentionné dans la citation.",
+    "notes": "Codex-assisted review: suppression des généralisations non présentes dans la citation réparée. Approbation humaine finale requise."
+  },
+  "doc-db74dba46ee96f25::q3": {
+    "question": "What is data masking, and how does encryption illustrate it as a pseudonymization technique?",
+    "answer": "Data masking transforms data using altered values. Encryption is one example: it makes the original data unintelligible unless the correct decryption key is available, and the GDPR requires additional information such as the key to be kept separately from the pseudonymized data.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired evidence. Final human approval required."
+  },
+  "doc-0e35d2296535d358::q1": {
+    "answer": "The design of democratic steering and supervision determines how elected representatives can control government AI systems, and that control should be possible throughout development, deployment, and evaluation. The passage also identifies representatives, courts of auditors, ombudspersons, and the media as participants in democratic control.",
+    "notes": "Codex-assisted review: removed the capacity claim truncated from the repaired quote. Final human approval required."
+  },
+  "doc-2fc737ad98d4565a::q2": {
+    "question": "When may a Party decline to apply the Convention to AI activities related to national security?",
+    "answer": "A Party need not apply the Convention to AI-system lifecycle activities related to protecting national-security interests, provided those activities comply with applicable international law, including human-rights obligations, and respect democratic institutions and processes.",
+    "notes": "Codex-assisted review: narrowed the QA to the exact repaired national-security provision. Final human approval required."
+  },
+  "doc-46d885bf154ed13d::q1": {
+    "answer": "The agreement must require the recipient to meet applicable CCPA obligations and provide the same level of privacy protection. It must also let the business take reasonable steps to ensure compliant use and require notification if the recipient can no longer meet its obligations.",
+    "notes": "Codex-assisted review: removed agreement clauses not contained in the repaired quote. Final human approval required."
+  },
+  "doc-46d885bf154ed13d::q3": {
+    "question": "How may a business with a website receive CCPA requests, and how quickly must it act on a verifiable request?",
+    "answer": "A business that maintains a website must make it available for requests for disclosure, deletion, or correction. It generally has 45 days to disclose information, correct inaccurate information, or delete information, with one additional 45-day extension when reasonably necessary if the consumer is notified during the first period.",
+    "notes": "Codex-assisted review: narrowed the QA to the website and timing provisions in the repaired quote. Final human approval required."
+  },
+  "doc-8efc4bd70f55cab6::q3": {
+    "answer": "Regulatory sandboxes create spaces where public and private organizations can test new business models, methods, infrastructure, and tools under more flexible regulatory conditions.",
+    "notes": "Codex-assisted review: removed the clause truncated from the repaired quote. Final human approval required."
+  },
+  "doc-a3837379847b18a7::q1": {
+    "question": "What bias and privacy risks can hinder business adoption of generative AI, and how does responsible AI help?",
+    "answer": "Bias can cause discrimination because models learn from data reflecting human practices, while privacy risks arise when corporate or customer data submitted to a platform may later be used for training. The document argues that designing AI responsibly from the outset builds confidence, supports equitable impact, prevents abuse, and helps minimize these risks.",
+    "notes": "Codex-assisted review: removed the hallucination claim because it was absent from the repaired evidence. Final human approval required."
+  },
+  "doc-a909d7d972acd5a1::q3": {
+    "question": "What GDPR rights can a data subject assert regarding an LLM chatbot's input and output in the example?",
+    "answer": "The data subject can request information under Article 15 GDPR and rectification of personal data under Article 16 GDPR with respect to the chatbot's input and output.",
+    "notes": "Codex-assisted review: limited the answer to the rights present in the repaired quote. Final human approval required."
+  },
+  "doc-bae09a7694a07581::q1": {
+    "question": "Name two circumstances covered by Article 2 in which deprivation of life is not treated as contrary to the Convention.",
+    "answer": "The passage permits an intentional deprivation of life in execution of a court sentence following conviction for a crime carrying that penalty. It also says that death resulting from no more force than absolutely necessary to defend a person from unlawful violence is not a contravention of Article 2.",
+    "notes": "Codex-assisted review: narrowed the answer to the circumstances present in the repaired evidence. Final human approval required."
+  },
+  "doc-d567563544dd70c4::q1": {
+    "answer": "According to the text, the main source of bias is data, including data or human biases that algorithms learn.",
+    "notes": "Codex-assisted review: removed examples and consequences absent from the repaired quote. Final human approval required."
+  }
+}

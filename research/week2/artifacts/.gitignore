@@ -1,0 +1,5 @@
+# All files in this directory are generated experiment outputs or cloud
+# hand-off bundles. Keep them local; the reproducible scripts, documentation,
+# checksums recorded in the reports, and manifests' schemas belong in Git.
+*
+!.gitignore

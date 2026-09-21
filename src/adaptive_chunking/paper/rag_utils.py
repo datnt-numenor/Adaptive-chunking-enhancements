@@ -1,7 +1,8 @@
 from pathlib import Path
+from dataclasses import replace
 import pandas as pd
 import json
-from typing import Callable, List, Optional, Awaitable
+from typing import Any, Callable, List, Optional, Awaitable
 from ..splitters import combine_blocks
 from ..chunking_utils import count_tokens
 from pydantic import BaseModel, Field
@@ -18,11 +19,81 @@ from haystack.components.retrievers.in_memory import (
     InMemoryEmbeddingRetriever,
 )
 from haystack.components.joiners import DocumentJoiner
-from haystack.components.rankers import SentenceTransformersSimilarityRanker
 from haystack.core.component import component
 from tqdm import tqdm
 import asyncio
 import torch
+
+
+@component
+class SentenceTransformersBiEncoderRanker:
+    """Rank documents with cosine similarity from a sentence-embedding model.
+
+    Unlike Haystack's ``SentenceTransformersSimilarityRanker``, this component
+    does not load the model as a cross-encoder classifier. It is intended for
+    bi-encoder models such as Snowflake Arctic Embed, whose model card requires
+    query/document embeddings followed by cosine similarity.
+    """
+
+    def __init__(
+        self,
+        model: str,
+        device: ComponentDevice,
+        top_k: int = 10,
+        batch_size: int = 32,
+        model_kwargs: Optional[dict[str, Any]] = None,
+    ) -> None:
+        self.model = model
+        self.device = device
+        self.top_k = top_k
+        self.batch_size = batch_size
+        self.model_kwargs = model_kwargs or {}
+        self._encoder = None
+
+    def warm_up(self) -> None:
+        if self._encoder is not None:
+            return
+        from sentence_transformers import SentenceTransformer
+
+        self._encoder = SentenceTransformer(
+            self.model,
+            device=self.device.to_torch_str(),
+            model_kwargs=self.model_kwargs,
+        )
+
+    @component.output_types(documents=List[Document])
+    def run(self, query: str, documents: List[Document]):
+        if not isinstance(query, str):
+            raise TypeError("query must be a string")
+        if not documents:
+            return {"documents": []}
+        if self._encoder is None:
+            raise RuntimeError("The reranker model has not been loaded. Call warm_up() first.")
+
+        query_embedding = self._encoder.encode(
+            [query],
+            prompt_name="query",
+            batch_size=self.batch_size,
+            normalize_embeddings=True,
+            convert_to_tensor=True,
+            show_progress_bar=False,
+        )
+        document_embeddings = self._encoder.encode(
+            [document.content or "" for document in documents],
+            batch_size=self.batch_size,
+            normalize_embeddings=True,
+            convert_to_tensor=True,
+            show_progress_bar=False,
+        )
+        scores = self._encoder.similarity(query_embedding, document_embeddings)[0]
+        ranked = sorted(
+            enumerate(documents),
+            key=lambda item: (-float(scores[item[0]].item()), item[0]),
+        )[: self.top_k]
+        output = []
+        for index, document in ranked:
+            output.append(replace(document, score=float(scores[index].item())))
+        return {"documents": output}
 
 @component
 class PromptableTextEmbedder(SentenceTransformersTextEmbedder):
@@ -261,11 +332,12 @@ def create_retrieval_pipeline(
 
     document_joiner = DocumentJoiner()  # join_mode="concatenate"
 
-    ranker = SentenceTransformersSimilarityRanker(
+    ranker = SentenceTransformersBiEncoderRanker(
         model=reranker_model,
         device=ComponentDevice.from_str(device),
         top_k=top_k_reranker,
-        batch_size=reranker_batch_size
+        batch_size=reranker_batch_size,
+        model_kwargs={"torch_dtype": torch.bfloat16},
     )
 
     text_embedder.warm_up()

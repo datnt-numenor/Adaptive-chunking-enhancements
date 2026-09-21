@@ -169,7 +169,9 @@ def output_best_chunks(
     metrics_df_path: str | Path,
     weights: dict[str, float],
     output_dir: Path | str,
-    default_method: str = "page") -> dict[str, list[dict]]:
+    default_method: str = "page",
+    candidate_methods: list[str] | tuple[str, ...] | None = None,
+) -> dict[str, list[dict]]:
     """Selects the best chunking strategy for every document and writes the resulting
     chunks to *output_dir*.
 
@@ -194,6 +196,9 @@ def output_best_chunks(
     default_method : str, default "page"
         Fallback chunking method to use for a document when no metric information is
         available.
+    candidate_methods : list[str] or tuple[str, ...], optional
+        Restrict selection to these methods. When omitted, preserve the historical
+        behavior and consider every method present in the metrics dataframe.
 
     Returns
     -------
@@ -219,6 +224,19 @@ def output_best_chunks(
 
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
+
+    if candidate_methods is not None:
+        candidate_methods = tuple(dict.fromkeys(candidate_methods))
+        if not candidate_methods:
+            raise ValueError("candidate_methods must not be empty")
+        metrics_df = metrics_df[
+            metrics_df["chunking_method"].isin(candidate_methods)
+        ]
+        chunks_df = chunks_df[chunks_df["method"].isin(candidate_methods)]
+        if metrics_df.empty:
+            raise ValueError(
+                "None of candidate_methods are present in the metrics dataframe"
+            )
 
     best_chunks_per_doc: dict[str, list[dict]] = {}
 
@@ -819,7 +837,11 @@ def plot_metric_correlations(
     spearman = df_for_corr.corr(method="spearman")
 
     for m in (pearson, kendall, spearman):
-        np.fill_diagonal(m.values, np.nan)
+        # Recent pandas/NumPy combinations can expose ``DataFrame.values`` as a
+        # read-only view.  Assign through pandas so this remains compatible
+        # without mutating the backing ndarray directly.
+        for index in range(min(m.shape)):
+            m.iat[index, index] = np.nan
 
     masks = {
         "pearson": np.triu(np.ones_like(pearson, dtype=bool), k=0),
