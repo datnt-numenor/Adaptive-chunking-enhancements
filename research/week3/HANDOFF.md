@@ -144,6 +144,87 @@ the pinned Phase G models and QA. It should be run only if exact downstream
 ablation evidence is required; otherwise proceed to select 5-6 systems for a
 separately budgeted answer-quality evaluation.
 
+## Phase I Table 5 preparation (2026-09-23)
+
+- Paper sections 2.4 and 3.5 and Table 5 identify three systems for the
+  original answer-quality experiment: Adaptive, raw LC recursive default,
+  and raw page. The paper uses GPT-4.1 at temperature 0/top-p 1, a custom
+  three-level Retrieval Completeness judge, and DeepEval G-Eval correctness.
+- `phase_i_table5.py prepare` passed against the frozen 99 QA and all three
+  completed top-10 retrieval files. It generated 297 prompt-bound requests,
+  2,260,086 estimated input tokens, with SHA256 checks for every input.
+- Initial 512-token plan estimated USD 5.888748 for all 297 requests. One
+  smoke response was cut at that cap, so the current plan uses 1024 tokens
+  and estimates USD 7.105260 for a full run; these are conservative planning
+  figures, not a separate approval. Prices checked on 2026-09-23: USD 2/M
+  input and USD 8/M output, with 256 framing-reserve tokens per request.
+- The source, test, and manifest are `phase_i_table5.py`,
+  `tests/test_phase_i_table5.py`, and ignored
+  `artifacts/phase-i-table5/generation_plan.json`. The current full local suite,
+  including the judge-summary validation tests, reports `87 passed, 1 skipped`.
+- The original 18-request smoke under USD 0.50 is complete:
+  six QA each for Adaptive, raw LC default, and raw page. All 18 answers are
+  nonempty and exported to `artifacts/phase-i-table5/judge-input-smoke/`.
+  Complete API responses total USD 0.346414; one cut 512-token response is
+  reserved at USD 0.025754, so journal liability is USD 0.372168. A local
+  TCP block was proven pre-connect and a later HTTP 429 TPM rejection was
+  recorded as nonbillable; neither was blindly retried. The completed
+  512-token answer was reused when raising the cap to 1024; all new calls
+  used the 1024-token limit and 25-second pacing.
+- On 2026-09-24 the user approved a USD 10 combined ceiling and the full
+  297-request answer generation completed. The conservative generation
+  journal liability is USD 4.805448, including the historical cut response;
+  all three exports contain the same 99 unique QA, ten contexts per QA, and
+  no empty answers. Adaptive and raw page each contain one explicit abstention;
+  raw LC default contains none. Full judge-input hashes are recorded in
+  `artifacts/phase-i-table5/judge-input-full/judge_input_manifest.json`.
+- On 2026-09-24 the user explicitly authorized sending the public CLAIR
+  retrieved contexts and generated answers to OpenAI GPT-4.1 under the existing
+  USD 10 combined ceiling. The 18-row smoke and full 297-row judge both
+  completed with `gpt-4.1-2025-04-14` and DeepEval 3.5.9. Judge liability is
+  USD 4.821514; conservative generation-plus-judge liability is USD 9.626962;
+  pending requests are zero. One TPM rejection was recorded as nonbillable,
+  followed by a clean cached resume at 10-second pacing.
+- All three judge files contain 99 unique rows and the same QA IDs. Retrieval
+  Completeness is available for all 297 rows; Correctness is available for 98
+  Adaptive, 99 raw LC-default, and 98 raw-page answers because the two exact
+  abstentions are skipped by the original protocol. No metric contains an
+  error. Five raw G-Eval values are `1.0000000000000002`; raw evidence is
+  preserved and `phase_i_summarize.py` clips only this <=1e-12 roundoff in the
+  derived summary.
+- Derived means (percent) are Adaptive 98.99 completeness / 94.32 selective
+  correctness, raw LC-default 99.49 / 94.65, and raw page 100.00 / 94.25.
+  Answered counts are 98/99, 99/99, and 98/99. These do not numerically
+  reproduce the paper's Table 5 because the paper's original QA are unavailable
+  and this experiment uses the evidence-reviewed Phase G QA plus corrected raw
+  retrieval baselines. Treat it as a completed controlled code/protocol rerun,
+  not recovery of the publication's exact numbers. Validated summaries are in
+  `artifacts/phase-i-table5/judge-full/summary/`.
+- Offline `SMOKE_REVIEW.md` compares all 18 generated answers with the six
+  frozen references at a surface level. All answer the main question, but
+  extra claims and mixed-document citations prevent a correctness claim.
+  Raw LC default on Sophia random-sampling QA has source-span Hit@10=0 even
+  though the retrieved text contains relevant sampling evidence; this is a
+  limitation to audit, not proof of hallucination.
+- `phase_i_judge_preflight.py` validates answer-file hashes and extracts the
+  original Retrieval Completeness prompt and G-Eval steps directly from
+  `rag_eval.py` without importing DeepEval. The smoke would require 18
+  completeness and 18 correctness evaluations. Exact completeness prompts
+  total 143,589 tokens; correctness payload-only text totals 8,093 tokens.
+  A 256-output/256-framing-token illustration is USD 0.395524, **not** a
+  hard upper bound because DeepEval's internal template and output are not
+  capped. DeepEval remains absent from the main local venv. A separate ignored
+  Python 3.12 judge venv was installed with direct pins in
+  `requirements-judge.txt` (DeepEval 3.5.9, tiktoken 0.14.0, tabulate 0.9.0).
+  `verify_phase_i_judge_offline.py` successfully loaded the original
+  `rag_eval.py` unchanged and exercised Retrieval Completeness (score 1.0)
+  and G-Eval (score 0.9) with a fake model; zero provider calls. This proves
+  API compatibility only. `phase_i_judge.py` now adds serial calls, a 512-token
+  judge-output cap, per-call durable journal/cache, resume validation, and a
+  combined generation-plus-judge USD 10 guard. Its syntax, CLI, offline metric
+  path, smoke provider path, and full provider path pass. The preflight report
+  is ignored at `artifacts/phase-i-table5/judge_preflight_smoke.json`.
+
 ## Frozen full QA set
 
 - GPT-4.1 produced 99 candidates for 33 documents. The cache records USD

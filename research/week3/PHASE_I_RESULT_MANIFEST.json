@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-24T17:34:26.8831650+07:00",
+  "experiment": "phase-i-table5-controlled-rerun",
+  "status": "complete",
+  "repository_base_commit": "f530ad8",
+  "model": "gpt-4.1-2025-04-14",
+  "deepeval_version": "3.5.9",
+  "rows": 297,
+  "queries_per_system": 99,
+  "systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "pending_requests": 0,
+  "cost_usd": {
+    "generation_liability": 4.805448,
+    "judge_liability": 4.821514,
+    "combined_liability": 9.626962,
+    "hard_ceiling": 10.0
+  },
+  "summary": {
+    "adaptive": {
+      "retrieval_completeness_mean_pct": 98.98989898989899,
+      "answer_correctness_mean_pct": 94.31886885959064,
+      "final_score_pct": 96.66623933116692,
+      "answered_queries": 98
+    },
+    "raw__langch_recurs_default": {
+      "retrieval_completeness_mean_pct": 99.4949494949495,
+      "answer_correctness_mean_pct": 94.64884386922509,
+      "final_score_pct": 97.07189668208729,
+      "answered_queries": 99
+    },
+    "raw__page": {
+      "retrieval_completeness_mean_pct": 100.0,
+      "answer_correctness_mean_pct": 94.25131132689782,
+      "final_score_pct": 97.14024624383751,
+      "answered_queries": 98
+    }
+  },
+  "validation": {
+    "same_query_ids": true,
+    "metric_errors": 0,
+    "raw_outputs_modified": false,
+    "normalized_roundoff_scores_in_derived_summary": 5,
+    "roundoff_tolerance": 1e-12,
+    "tests": "87 passed, 1 skipped",
+    "offline_judge_check": "JUDGE_OFFLINE_OK; provider_calls=0"
+  },
+  "ignored_artifacts": {
+    "research/week3/artifacts/phase-i-table5/judge-full/result_manifest.json": {
+      "bytes": 541,
+      "sha256": "efd2cd1c8e91369224b9bac8a742de3aad3cb94b1d41552a50613f569963a274"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/run_identity.json": {
+      "bytes": 399,
+      "sha256": "327e4610c92b993f2b98592e0b9d3ed016955e4bc07f96f739c56cad5feaca61"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/adaptive/generated_questions_evaluation_results.json": {
+      "bytes": 4350799,
+      "sha256": "c7fd94aae6416691b370a33ecf11d088d9acec1d892f3d49201a06a08842cbcc"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/raw__langch_recurs_default/generated_questions_evaluation_results.json": {
+      "bytes": 4538219,
+      "sha256": "286842109909144651f5b6338faffe4455d0c9a24dff65786838bf4e4039733a"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/raw__page/generated_questions_evaluation_results.json": {
+      "bytes": 3846314,
+      "sha256": "b50115422235f30f44fb510ba8f5415d2be04e7df695d749a01b99d6cbf52d21"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/summary/table5_summary.json": {
+      "bytes": 2309,
+      "sha256": "ebf37eb62a603a78a0491f9308bb53d8af4081cbc010b20a528623c02d33d4f0"
+    },
+    "research/week3/artifacts/phase-i-table5/judge-full/summary/table5_summary.csv": {
+      "bytes": 677,
+      "sha256": "e28e06e99ce124f5694d4ec86ff377dc524b811defd64e3abd062c08977cbabb"
+    }
+  },
+  "code_sha256": {
+    "research/week3/phase_i_table5.py": "c48eda88a6911c5b7d8b114b3eb9c3fcaa45afa985d330b6a895c50af7d6dd05",
+    "research/week3/phase_i_judge.py": "34e9540669ece70d4536d4ae40752e5494b1f615a1a7d7a0307493b47e024ab1",
+    "research/week3/phase_i_summarize.py": "8b97fcd8b36c8bef9f0535130211aa80adbabb7a116258a7b79ee90351d1b13d"
+  },
+  "interpretation": "Controlled code/protocol rerun; not a numerical reproduction of the published Table 5 because the original paper QA are unavailable."
+}

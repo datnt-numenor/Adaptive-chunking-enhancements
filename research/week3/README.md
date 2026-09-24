@@ -234,3 +234,107 @@ the fixed-index results. It is not an exact mixed-index retrieval rerun because
 the distractor documents in each source result used one fixed chunker. Exact
 downstream claims require building and retrieving one new BI-neutral mixed
 index.
+
+## 8. Phase I: paper Table 5 answer generation
+
+The paper Table 5 comparison uses only Adaptive and the two raw baselines
+(`langch_recurs_default`, `page`). It uses the already-frozen 99 QA and the
+already-complete top-10 retrieval results, so indexing and retrieval are not
+repeated. Prepare and audit the paid requests locally:
+
+```powershell
+& .\.venv\Scripts\python.exe -X utf8 research\week3\phase_i_table5.py prepare `
+  --qa research\week3\artifacts\qa-full\qa_frozen.jsonl `
+  --retrieval-dir research\week3\artifacts\retrieval-full `
+  --evaluation research\week3\artifacts\evaluation-full\retrieval_evaluation.json `
+  --output-dir research\week3\artifacts\phase-i-table5
+```
+
+The prepared manifest pins the frozen QA and retrieval hashes, the exact
+upstream answer prompt, GPT-4.1 snapshot, price, token estimates, and a
+1024-token output limit (raised from 512 after one smoke response was cut).
+The limit is an explicit cost-control deviation from
+the upstream generator, which does not set one. The cached generation stage
+requires both `--allow-paid-run` and `--budget-usd`; it makes one request at a
+time with no SDK retries and records a durable attempt before each call. A
+pending attempt must be inspected before retrying. The two-document smoke
+and the subsequent full 297-request run have completed under the user's USD 10
+combined ceiling. The conservative generation-journal liability is USD
+4.805448.
+
+```powershell
+& .\.venv\Scripts\python.exe -X utf8 research\week3\phase_i_table5.py generate `
+  --output-dir research\week3\artifacts\phase-i-table5 `
+  --smoke --budget-usd 0.50 --allow-paid-run --delay-seconds 25
+```
+
+After smoke answers are cached, `phase_i_table5.py export --smoke --output-dir
+research\week3\artifacts\phase-i-table5` writes the original `rag_eval.py`
+generation-result shape for the paper's DeepEval judge. The smoke export has
+6 QA per system. Its 18 complete responses cost USD 0.346414 per API usage;
+one cut 512-token response remains reserved at USD 0.025754, bringing the
+conservative journal liability to USD 0.372168. The full export contains 99
+unique QA per system and ten contexts per QA.
+
+The paid judge is complete for all 297 system-query rows with the pinned
+`gpt-4.1-2025-04-14` snapshot and DeepEval 3.5.9. The judge liability is USD
+4.821514 and the conservative combined generation-plus-judge liability is USD
+9.626962, with zero pending requests. One TPM rejection was recorded as
+nonbillable and the run resumed from its durable cache at a slower pace.
+
+The code-compatible Table 5 aggregation is:
+
+| Metric | Adaptive | Raw LangChain recursive default | Raw page |
+|---|---:|---:|---:|
+| Retrieval Completeness | 98.99 ± 10.05 | 99.49 ± 5.03 | 100.00 ± 0.00 |
+| Answer Correctness (answered only) | 94.32 ± 6.67 | 94.65 ± 6.42 | 94.25 ± 7.07 |
+| Final Score (upstream flat mean) | 96.67 | 97.07 | 97.14 |
+| Answered queries | 98/99 | 99/99 | 98/99 |
+| Coverage-adjusted correctness | 93.37 | 94.65 | 93.30 |
+
+These are **not a numerical reproduction of the paper's published Table 5**.
+The original 99 QA are unavailable; this run uses the evidence-checked Phase G
+QA and the corrected raw-baseline retrieval artifacts. The near-saturated
+Retrieval Completeness scores and substantially higher answer coverage differ
+materially from the paper's 67.7/58.1/59.1 completeness and 65/49/49 answered
+counts. The result is therefore a controlled code/protocol rerun, not evidence
+that the published values were independently recovered.
+
+`phase_i_summarize.py` validates the 3×99 shape, identical query-ID sets,
+metric errors, abstention handling, and score bounds. Five DeepEval scores were
+`1.0000000000000002`; the raw evidence remains unchanged and only the derived
+summary clips this machine-precision roundoff to 1.0. The validated outputs are
+`judge-full/summary/table5_summary.json` and `table5_summary.csv`. The full
+repository suite passes with `87 passed, 1 skipped`; the separate DeepEval
+offline check also passes with zero provider calls.
+
+The offline smoke review is in `SMOKE_REVIEW.md`. To validate the original
+judge inputs and obtain a **non-binding** token/cost illustration without
+loading DeepEval or sending requests:
+
+```powershell
+& .\.venv\Scripts\python.exe -X utf8 research\week3\phase_i_judge_preflight.py `
+  --input-dir research\week3\artifacts\phase-i-table5\judge-input-smoke `
+  --generation-plan research\week3\artifacts\phase-i-table5\generation_plan.json `
+  --original-judge src\adaptive_chunking\paper\rag_eval.py `
+  --output research\week3\artifacts\phase-i-table5\judge_preflight_smoke.json
+```
+
+The original `rag_eval.py` leaves judge output length and DeepEval's internal
+G-Eval prompt unbounded. The preflight figure is not a hard budget. An isolated
+Windows/Python 3.12 environment with the direct dependencies in
+`requirements-judge.txt` passed an offline compatibility test for DeepEval
+3.5.9. To repeat it without credentials or provider calls:
+
+```powershell
+& research\week3\artifacts\judge-venv\Scripts\python.exe -X utf8 `
+  research\week3\verify_phase_i_judge_offline.py
+```
+
+The script disables DeepEval telemetry/dotenv loading before import, loads the
+original judge source unchanged, and scores synthetic cases with a fake model.
+`phase_i_judge.py` uses the same metric definitions with pinned DeepEval 3.5.9,
+but replaces provider execution with serial, no-SDK-retry calls, a 512-token
+output cap, durable per-call cache/journal, hash-checked resume, and a combined
+generation-plus-judge budget guard. Both the offline compatibility path and
+the authorized paid provider path have completed.
