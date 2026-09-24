@@ -37,7 +37,7 @@ jobs:
       # solve is validated separately by the `install` job.
       - name: Install package (light)
         run: |
-          pip install pytest pytest-asyncio tiktoken pandas numpy scipy scikit-learn pyarrow tabulate matplotlib langdetect tqdm python-dotenv httpx
+          pip install pytest pytest-asyncio tiktoken pandas numpy scipy scikit-learn pyarrow tabulate matplotlib seaborn langdetect tqdm python-dotenv httpx
           pip install -e . --no-deps
 
       - name: Run tests
