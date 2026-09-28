@@ -265,3 +265,46 @@ separately budgeted answer-quality evaluation.
 - The watcher created Pod `hs0rpfn0v25fef` at 2026-09-20 17:06 Asia/Saigon and
   then exited. After the verified smoke download, the Pod was manually
   terminated and its guard process was stopped.
+
+## Phase J exact BI-neutral retrieval complete (2026-09-28)
+
+- The exact `adaptive_bi_neutral` system uses the four locked processed
+  candidates and gives `size_compliance`, `intrachunk_cohesion`,
+  `document_contextual_coherence`, and `references_completeness` weight 0.25
+  each, with Block Integrity weight zero. Its selections cover all 33
+  documents and match the frozen Phase H page-neutral selections.
+- A two-document smoke passed before the full run. The full RTX A5000 run used
+  CUDA, bfloat16, FlashAttention 2.7.4.post1, the pinned Qwen embedding model,
+  and the pinned Snowflake retrieval/reranker model. Indexing, retrieval, and
+  evaluation completed for all 99 frozen QA with ten ranked results per QA.
+- The verified full archive is
+  `artifacts/phase-j-bi-neutral/phase-j-results.tar.gz`, SHA256
+  `13bc0fb0e1f3f1c4c12f51aaf57e40c7f8dfdf04c7410d5ecc9d0cbdbfcbc8d8`.
+  The full remote run took 669 seconds. Live RunPod inspection on 2026-09-28
+  returned an empty Pod list, so no Phase J GPU remains active.
+- Local analysis validates the entire prepared -> index -> retrieval ->
+  evaluation checksum chain for both Phase G and Phase J, including frozen QA
+  identity and top-10 coverage. Every per-query metric is independently
+  recomputed from frozen evidence spans, retrieved chunk spans, and the
+  prepared corpus before document aggregation. It uses 33 document-level
+  paired units, 10,000 bootstrap samples, two-sided Wilcoxon tests with Pratt
+  zeros, and Holm correction across five comparators per metric.
+- Mean nDCG@10 is 0.7690 for `adaptive_bi_neutral`, versus 0.7521 for original
+  Adaptive, 0.7270 for raw page, 0.7798 for raw LangChain recursive default,
+  and 0.8025 for best-fixed CV. BI-neutral minus original Adaptive is +0.0169
+  with 95% document-bootstrap CI [-0.0097, +0.0457] and Holm-adjusted p=0.5589.
+  This is not a statistically significant retrieval improvement.
+- These Phase J values are retrieval metrics, not answer-quality results. The
+  Phase I answer-quality rerun remains the relevant downstream answer evidence.
+- Targeted Phase J verification reports `22 passed`. The final repository suite
+  reports `101 passed, 1 skipped`; 14 warnings are Matplotlib/PyParsing
+  deprecations. The first sandboxed full run failed only because `tiktoken`
+  could not download `o200k_base`; the permitted network-enabled rerun passed.
+- Human-readable results are under
+  `artifacts/phase-j-bi-neutral/analysis/SUMMARY.md`. Source and regression tests
+  are `phase_j_analysis.py` and `tests/test_phase_j_analysis.py`.
+
+The next research step is to begin the planned contributions rather than rerun
+the paper baseline: first the reliability-aware downstream-calibrated selector,
+then the context-enriched representation experiment. Preserve the frozen QA,
+document folds, model revisions, and completed Phase G/I/J artifacts.

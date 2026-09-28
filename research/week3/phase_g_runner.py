@@ -17,6 +17,7 @@ import math
 import os
 from pathlib import Path
 import platform
+import shutil
 import sys
 import time
 from typing import Any, Iterable, Sequence
@@ -54,6 +55,9 @@ FIXED_SYSTEMS: dict[str, tuple[str, str]] = {
     "raw__sentence": ("raw", "sentence"),
 }
 ALL_SYSTEMS = ("adaptive", *FIXED_SYSTEMS)
+BI_NEUTRAL_SYSTEM = "adaptive_bi_neutral"
+BI_NEUTRAL_METRICS = tuple(metric for metric in METRICS if metric != "block_integrity")
+BI_NEUTRAL_WEIGHTS = {metric: 0.25 for metric in BI_NEUTRAL_METRICS}
 PAPER_PROTOCOL_SYSTEMS = (
     "adaptive",
     "raw__langch_recurs_default",
@@ -441,6 +445,169 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
         "adaptive_candidates": list(ADAPTIVE_CANDIDATES),
         "paper_protocol_systems": list(PAPER_PROTOCOL_SYSTEMS),
         "systems": system_records,
+        "runtime": {"python": sys.version, "platform": platform.platform()},
+    }
+    _json_dump(output_dir / "prepare_manifest.json", manifest)
+    return manifest
+
+
+def _select_bi_neutral_methods(metrics: pd.DataFrame) -> dict[str, str]:
+    """Reproduce Phase H's NaN-aware, equal-weight candidate ranking."""
+
+    required = {"doc_name", "chunking_method", "metric_name", "score"}
+    if required - set(metrics.columns):
+        raise PhaseGError("Processed metrics lack BI-neutral selection columns")
+    filtered = metrics[
+        metrics["chunking_method"].isin(ADAPTIVE_CANDIDATES)
+        & metrics["metric_name"].isin(BI_NEUTRAL_METRICS)
+    ]
+    selections: dict[str, str] = {}
+    for doc_name, rows in filtered.groupby("doc_name", sort=True):
+        try:
+            pivot = rows.pivot(index="metric_name", columns="chunking_method", values="score")
+        except ValueError as exc:
+            raise PhaseGError(f"Duplicate BI-neutral metric rows for {doc_name}") from exc
+        if set(pivot.columns) != set(ADAPTIVE_CANDIDATES):
+            raise PhaseGError(f"Incomplete BI-neutral candidates for {doc_name}")
+        scores: dict[str, float] = {}
+        for method in pivot.columns:
+            values = pivot[method].reindex(BI_NEUTRAL_METRICS).dropna()
+            if values.empty:
+                raise PhaseGError(f"No BI-neutral metrics for {doc_name}/{method}")
+            scores[str(method)] = float(values.mean())
+        selections[str(doc_name)] = max(scores, key=scores.get)
+    if len(selections) != 33:
+        raise PhaseGError(f"Expected 33 BI-neutral selections, found {len(selections)}")
+    return selections
+
+
+def prepare_bi_neutral(args: argparse.Namespace) -> dict[str, Any]:
+    """Build one mixed system from verified Phase G processed chunk exports."""
+
+    output_resolved = args.output_dir.resolve()
+    if (
+        output_resolved.is_relative_to(args.prepared_dir.resolve())
+        or output_resolved.is_relative_to(args.final_dir.resolve())
+        or args.phase_h_selections.resolve().is_relative_to(output_resolved)
+    ):
+        raise PhaseGError("BI-neutral output must be outside frozen input directories")
+    base_manifest_path = args.prepared_dir / "prepare_manifest.json"
+    locked_path = args.phase_h_selections
+    metrics_path = args.final_dir / "results" / "chunking_metrics.parquet"
+    base_manifest = json.loads(base_manifest_path.read_text(encoding="utf-8"))
+    locked = json.loads(locked_path.read_text(encoding="utf-8"))
+    if (
+        base_manifest.get("status") != "complete"
+        or base_manifest.get("source_commit") != SOURCE_COMMIT
+        or base_manifest.get("documents") != 33
+        or base_manifest.get("fold_seed") != FOLD_SEED
+        or base_manifest.get("adaptive_candidates") != list(ADAPTIVE_CANDIDATES)
+    ):
+        raise PhaseGError("Base prepared manifest differs from the locked Phase G protocol")
+    if (
+        locked.get("scoring_metrics") != list(BI_NEUTRAL_METRICS)
+        or locked.get("weights") != BI_NEUTRAL_WEIGHTS
+    ):
+        raise PhaseGError("Phase H selection definition differs from the locked BI-neutral protocol")
+    selections = _select_bi_neutral_methods(pd.read_parquet(metrics_path))
+    if selections != locked.get("selections"):
+        raise PhaseGError("Recomputed BI-neutral selections differ from Phase H")
+
+    documents_path = args.prepared_dir / "documents.jsonl"
+    documents = _read_jsonl(documents_path)
+    names_to_ids = {row["doc_name"]: row["doc_id"] for row in documents}
+    if (
+        len(documents) != 33
+        or len(set(names_to_ids.values())) != 33
+        or set(names_to_ids) != set(selections)
+    ):
+        raise PhaseGError("BI-neutral selections do not cover the 33 prepared documents")
+    folds_source = args.prepared_dir / "folds.jsonl"
+    folds = _read_jsonl(folds_source)
+    if (
+        len(folds) != 33
+        or {row["doc_id"] for row in folds} != set(names_to_ids.values())
+        or {int(row["fold"]) for row in folds} != set(range(5))
+    ):
+        raise PhaseGError("Base folds do not cover the prepared documents exactly once")
+    source_hashes: dict[str, str] = {}
+    selected_rows: dict[str, list[dict[str, Any]]] = {}
+    for method in ADAPTIVE_CANDIDATES:
+        system_id = f"processed__{method}"
+        record = base_manifest["systems"][system_id]
+        if record.get("stage") != "small_merged" or record.get("method") != method:
+            raise PhaseGError(f"Wrong processed source for {method}")
+        source_path = args.prepared_dir / record["path"]
+        source_hash = _sha256_file(source_path)
+        if source_hash != record.get("sha256"):
+            raise PhaseGError(f"Processed source checksum mismatch for {method}")
+        source_hashes[system_id] = source_hash
+        for row in _read_jsonl(source_path):
+            if row["method"] != method or row["doc_id"] != names_to_ids.get(row["doc_name"]):
+                raise PhaseGError(f"Invalid processed source row for {method}")
+            if selections[row["doc_name"]] == method:
+                selected_rows.setdefault(row["doc_name"], []).append(row)
+    if set(selected_rows) != set(selections) or any(not rows for rows in selected_rows.values()):
+        raise PhaseGError("BI-neutral mixed system has incomplete document coverage")
+    mixed_rows = [row for name in sorted(selected_rows) for row in selected_rows[name]]
+    chunk_ids = [row["chunk_id"] for row in mixed_rows]
+    if len(chunk_ids) != len(set(chunk_ids)):
+        raise PhaseGError("BI-neutral mixed system contains duplicate chunk identities")
+
+    output_dir = args.output_dir
+    system_path = output_dir / "systems" / f"{BI_NEUTRAL_SYSTEM}.jsonl"
+    _write_jsonl(system_path, mixed_rows)
+    selections_path = output_dir / f"{BI_NEUTRAL_SYSTEM}_selections.json"
+    _json_dump(
+        selections_path,
+        {
+            "schema_version": SCHEMA_VERSION,
+            "definition": "exclude block_integrity and equally weight the four remaining intrinsic metrics",
+            "candidate_methods": list(ADAPTIVE_CANDIDATES),
+            "scoring_metrics": list(BI_NEUTRAL_METRICS),
+            "weights": BI_NEUTRAL_WEIGHTS,
+            "selections": selections,
+        },
+    )
+    folds_target = output_dir / "folds.jsonl"
+    folds_target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(folds_source, folds_target)
+    manifest = {
+        "schema_version": SCHEMA_VERSION,
+        "harness_sha256": _harness_sha256(),
+        "status": "complete",
+        "created_at": _utc_now(),
+        "source_commit": SOURCE_COMMIT,
+        "documents": 33,
+        "folds": 5,
+        "fold_seed": FOLD_SEED,
+        "adaptive_candidates": list(ADAPTIVE_CANDIDATES),
+        "selection_definition": {
+            "scoring_metrics": list(BI_NEUTRAL_METRICS),
+            "weights": BI_NEUTRAL_WEIGHTS,
+            "block_integrity_weight": 0,
+        },
+        "source_hashes": {
+            "base_prepare_manifest": _sha256_file(base_manifest_path),
+            "base_documents": _sha256_file(documents_path),
+            "base_folds": _sha256_file(folds_source),
+            "processed_metrics": _sha256_file(metrics_path),
+            "phase_h_selections": _sha256_file(locked_path),
+            "processed_systems": source_hashes,
+        },
+        "folds_sha256": _sha256_file(folds_target),
+        "selections_sha256": _sha256_file(selections_path),
+        "systems": {
+            BI_NEUTRAL_SYSTEM: {
+                "path": system_path.relative_to(output_dir).as_posix(),
+                "sha256": _sha256_file(system_path),
+                "chunks": len(mixed_rows),
+                "excluded_empty_chunks": 0,
+                "documents": len(selected_rows),
+                "stage": "mixed_processed_selection",
+                "method": "per_document_bi_neutral_equal_weight",
+            }
+        },
         "runtime": {"python": sys.version, "platform": platform.platform()},
     }
     _json_dump(output_dir / "prepare_manifest.json", manifest)
@@ -1062,7 +1229,7 @@ def _selected_system_ids(value: str) -> list[str]:
     if value == "all":
         return list(ALL_SYSTEMS)
     selected = [item.strip() for item in value.split(",") if item.strip()]
-    unknown = set(selected) - set(ALL_SYSTEMS)
+    unknown = set(selected) - (set(ALL_SYSTEMS) | {BI_NEUTRAL_SYSTEM})
     if unknown:
         raise PhaseGError(f"Unknown systems: {sorted(unknown)}")
     return selected
@@ -1507,8 +1674,8 @@ def evaluate_retrieval(args: argparse.Namespace) -> dict[str, Any]:
         )
         for system_id in systems
     }
-    fixed_systems = [system for system in systems if system != "adaptive"]
-    if not fixed_systems:
+    fixed_systems = [system for system in systems if system in FIXED_SYSTEMS]
+    if not fixed_systems and systems != [BI_NEUTRAL_SYSTEM]:
         raise PhaseGError("Evaluation requires at least one fixed-method system")
     best_fixed_rows: list[dict[str, Any]] = []
     observed_folds = sorted({row["fold"] for row in per_query})
@@ -1529,15 +1696,16 @@ def evaluate_retrieval(args: argparse.Namespace) -> dict[str, Any]:
     if len(best_fixed_rows) == len(qas):
         summary["best_fixed_cv"] = _mean_metrics(best_fixed_rows)
 
-    oracle_rows: list[dict[str, Any]] = []
-    for qa_id in qas:
-        options = [
-            row
-            for row in per_query
-            if row["qa_id"] == qa_id and row["system_id"] in fixed_systems
-        ]
-        oracle_rows.append(max(options, key=lambda row: row["ndcg@10"]))
-    summary["oracle"] = _mean_metrics(oracle_rows)
+    if fixed_systems:
+        oracle_rows: list[dict[str, Any]] = []
+        for qa_id in qas:
+            options = [
+                row
+                for row in per_query
+                if row["qa_id"] == qa_id and row["system_id"] in fixed_systems
+            ]
+            oracle_rows.append(max(options, key=lambda row: row["ndcg@10"]))
+        summary["oracle"] = _mean_metrics(oracle_rows)
 
     manifest = {
         "schema_version": SCHEMA_VERSION,
@@ -1569,7 +1737,7 @@ def evaluate_retrieval(args: argparse.Namespace) -> dict[str, Any]:
     }
     _json_dump(args.output_dir / "retrieval_evaluation.json", manifest)
     table_rows = []
-    ordered = [*PAPER_PROTOCOL_SYSTEMS, *[s for s in fixed_systems if s not in PAPER_PROTOCOL_SYSTEMS], "best_fixed_cv", "oracle"]
+    ordered = [*PAPER_PROTOCOL_SYSTEMS, BI_NEUTRAL_SYSTEM, *[s for s in fixed_systems if s not in PAPER_PROTOCOL_SYSTEMS], "best_fixed_cv", "oracle"]
     for system_id in dict.fromkeys(ordered):
         if system_id in summary:
             table_rows.append({"system_id": system_id, **summary[system_id]})
@@ -1585,6 +1753,12 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_parser.add_argument("--final-dir", type=Path, required=True)
     prepare_parser.add_argument("--data-dir", type=Path, required=True)
     prepare_parser.add_argument("--output-dir", type=Path, required=True)
+
+    bi_neutral = subparsers.add_parser("prepare-bi-neutral")
+    bi_neutral.add_argument("--final-dir", type=Path, required=True)
+    bi_neutral.add_argument("--prepared-dir", type=Path, required=True)
+    bi_neutral.add_argument("--phase-h-selections", type=Path, required=True)
+    bi_neutral.add_argument("--output-dir", type=Path, required=True)
 
     qa = subparsers.add_parser("generate-qa")
     qa.add_argument("--prepared-dir", type=Path, required=True)
@@ -1642,6 +1816,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command == "prepare":
             result = prepare(args)
+        elif args.command == "prepare-bi-neutral":
+            result = prepare_bi_neutral(args)
         elif args.command == "generate-qa":
             result = generate_qa(args)
         elif args.command == "freeze-qa":
