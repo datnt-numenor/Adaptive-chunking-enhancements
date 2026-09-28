@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import argparse
 import json
 import math
 from pathlib import Path
@@ -183,3 +184,213 @@ def test_generate_qa_parser_accepts_request_delay():
     )
 
     assert args.request_delay_seconds == 30.0
+
+
+def _bi_neutral_fixture(tmp_path: Path) -> argparse.Namespace:
+    final_dir = tmp_path / "final"
+    prepared_dir = tmp_path / "base"
+    output_dir = tmp_path / "neutral"
+    metrics_path = final_dir / "results" / "chunking_metrics.parquet"
+    metrics_path.parent.mkdir(parents=True)
+    names = [f"doc-{index:02d}" for index in range(33)]
+    metrics = []
+    systems = {}
+    for method in runner.ADAPTIVE_CANDIDATES:
+        system_id = f"processed__{method}"
+        path = prepared_dir / "systems" / f"{system_id}.jsonl"
+        rows = []
+        for index, name in enumerate(names):
+            rows.append(
+                {
+                    "chunk_id": f"id-{index}::{method}::000000",
+                    "doc_id": f"id-{index}",
+                    "doc_name": name,
+                    "method": method,
+                    "chunk_index": 0,
+                    "chunk_text": name,
+                    "source_start": 0,
+                    "source_end": len(name),
+                }
+            )
+            for metric in (*runner.BI_NEUTRAL_METRICS, "block_integrity"):
+                metrics.append(
+                    {
+                        "doc_name": name,
+                        "chunking_method": method,
+                        "metric_name": metric,
+                        "score": 0.9 if method == "page" and metric == "block_integrity" else (0.8 if method == "our_recurs_1100" else 0.2),
+                    }
+                )
+        runner._write_jsonl(path, rows)
+        systems[system_id] = {
+            "path": path.relative_to(prepared_dir).as_posix(),
+            "sha256": runner._sha256_file(path),
+            "stage": "small_merged",
+            "method": method,
+        }
+    # A non-candidate may score higher, but cannot enter the selection.
+    metrics.extend(
+        {
+            "doc_name": name,
+            "chunking_method": "semantic",
+            "metric_name": metric,
+            "score": 1.0,
+        }
+        for name in names
+        for metric in runner.BI_NEUTRAL_METRICS
+    )
+    pd.DataFrame(metrics).to_parquet(metrics_path)
+    runner._write_jsonl(
+        prepared_dir / "documents.jsonl",
+        [{"doc_name": name, "doc_id": f"id-{index}"} for index, name in enumerate(names)],
+    )
+    runner._write_jsonl(
+        prepared_dir / "folds.jsonl",
+        [{"doc_name": name, "doc_id": f"id-{index}", "fold": index % 5} for index, name in enumerate(names)],
+    )
+    runner._json_dump(
+        prepared_dir / "prepare_manifest.json",
+        {
+            "status": "complete",
+            "source_commit": runner.SOURCE_COMMIT,
+            "documents": 33,
+            "fold_seed": runner.FOLD_SEED,
+            "adaptive_candidates": list(runner.ADAPTIVE_CANDIDATES),
+            "systems": systems,
+        },
+    )
+    locked_path = tmp_path / "page_neutral_selections.json"
+    runner._json_dump(
+        locked_path,
+        {
+            "scoring_metrics": list(runner.BI_NEUTRAL_METRICS),
+            "weights": runner.BI_NEUTRAL_WEIGHTS,
+            "selections": {name: "our_recurs_1100" for name in names},
+        },
+    )
+    return argparse.Namespace(
+        final_dir=final_dir,
+        prepared_dir=prepared_dir,
+        phase_h_selections=locked_path,
+        output_dir=output_dir,
+    )
+
+
+def test_bi_neutral_prepare_matches_locked_selections_and_hashes(tmp_path: Path):
+    args = _bi_neutral_fixture(tmp_path)
+    manifest = runner.prepare_bi_neutral(args)
+    assert runner._selected_system_ids("all") == list(runner.ALL_SYSTEMS)
+    assert len(runner.ALL_SYSTEMS) == 10
+    assert runner._selected_system_ids("adaptive_bi_neutral") == [runner.BI_NEUTRAL_SYSTEM]
+    assert manifest["systems"][runner.BI_NEUTRAL_SYSTEM]["documents"] == 33
+    assert manifest["systems"][runner.BI_NEUTRAL_SYSTEM]["chunks"] == 33
+    assert manifest["selection_definition"]["block_integrity_weight"] == 0
+    system_path = args.output_dir / manifest["systems"][runner.BI_NEUTRAL_SYSTEM]["path"]
+    assert runner._sha256_file(system_path) == manifest["systems"][runner.BI_NEUTRAL_SYSTEM]["sha256"]
+    assert runner._sha256_file(args.output_dir / "folds.jsonl") == manifest["folds_sha256"]
+    assert runner._sha256_file(args.output_dir / "adaptive_bi_neutral_selections.json") == manifest["selections_sha256"]
+    rows = runner._read_jsonl(system_path)
+    assert len({row["chunk_id"] for row in rows}) == len(rows)
+    assert {row["method"] for row in rows} == {"our_recurs_1100"}
+
+
+def test_bi_neutral_prepare_rejects_selection_drift(tmp_path: Path):
+    args = _bi_neutral_fixture(tmp_path)
+    locked = json.loads(args.phase_h_selections.read_text(encoding="utf-8"))
+    locked["selections"]["doc-00"] = "page"
+    runner._json_dump(args.phase_h_selections, locked)
+    with pytest.raises(runner.PhaseGError, match="differ from Phase H"):
+        runner.prepare_bi_neutral(args)
+
+
+def test_bi_neutral_prepare_protects_frozen_input_directories(tmp_path: Path):
+    args = _bi_neutral_fixture(tmp_path)
+    args.output_dir = args.prepared_dir / "phase-j"
+    with pytest.raises(runner.PhaseGError, match="outside frozen input directories"):
+        runner.prepare_bi_neutral(args)
+
+
+def test_bi_neutral_prepare_rejects_source_hash_and_duplicate_identity(tmp_path: Path):
+    args = _bi_neutral_fixture(tmp_path)
+    source = args.prepared_dir / "systems" / "processed__our_recurs_1100.jsonl"
+    source.write_text(source.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    with pytest.raises(runner.PhaseGError, match="checksum mismatch"):
+        runner.prepare_bi_neutral(args)
+
+    args = _bi_neutral_fixture(tmp_path / "duplicate")
+    source = args.prepared_dir / "systems" / "processed__our_recurs_1100.jsonl"
+    rows = runner._read_jsonl(source)
+    rows[1]["chunk_id"] = rows[0]["chunk_id"]
+    runner._write_jsonl(source, rows)
+    base_manifest_path = args.prepared_dir / "prepare_manifest.json"
+    base = json.loads(base_manifest_path.read_text(encoding="utf-8"))
+    base["systems"]["processed__our_recurs_1100"]["sha256"] = runner._sha256_file(source)
+    runner._json_dump(base_manifest_path, base)
+    with pytest.raises(runner.PhaseGError, match="duplicate chunk identities"):
+        runner.prepare_bi_neutral(args)
+
+
+def test_bi_neutral_prepare_requires_every_document(tmp_path: Path):
+    args = _bi_neutral_fixture(tmp_path)
+    source = args.prepared_dir / "systems" / "processed__our_recurs_1100.jsonl"
+    rows = runner._read_jsonl(source)
+    runner._write_jsonl(source, rows[:-1])
+    base_manifest_path = args.prepared_dir / "prepare_manifest.json"
+    base = json.loads(base_manifest_path.read_text(encoding="utf-8"))
+    base["systems"]["processed__our_recurs_1100"]["sha256"] = runner._sha256_file(source)
+    runner._json_dump(base_manifest_path, base)
+    with pytest.raises(runner.PhaseGError, match="incomplete document coverage"):
+        runner.prepare_bi_neutral(args)
+
+
+def test_bi_neutral_evaluation_accepts_single_system(tmp_path: Path):
+    prepared = tmp_path / "prepared"
+    qa_dir = tmp_path / "qa"
+    retrieval = tmp_path / "retrieval"
+    output = tmp_path / "evaluation"
+    runner._write_jsonl(
+        prepared / "folds.jsonl",
+        [{"doc_id": "doc-a", "fold": 0}, {"doc_id": "doc-b", "fold": 1}],
+    )
+    runner._write_jsonl(
+        prepared / "systems" / "adaptive_bi_neutral.jsonl",
+        [
+            {"doc_id": doc, "source_start": 0, "source_end": 10}
+            for doc in ("doc-a", "doc-b")
+        ],
+    )
+    runner._write_jsonl(
+        qa_dir / "qa_frozen.jsonl",
+        [
+            {"qa_id": f"{doc}::q1", "doc_id": doc, "evidence": [{"source_start": 0, "source_end": 10}]}
+            for doc in ("doc-a", "doc-b")
+        ],
+    )
+    runner._write_jsonl(
+        retrieval / "adaptive_bi_neutral.jsonl",
+        [
+            {"qa_id": f"{doc}::q1", "results": [{"score": 1.0, "meta": {"doc_id": doc, "source_start": 0, "source_end": 10}}]}
+            for doc in ("doc-a", "doc-b")
+        ],
+    )
+    runner._json_dump(
+        retrieval / "retrieval_manifest.json",
+        {
+            "source_commit": runner.SOURCE_COMMIT,
+            "embedding_model": runner.EMBEDDING_MODEL,
+            "embedding_revision": runner.EMBEDDING_REVISION,
+            "reranker_model": runner.RERANKER_MODEL,
+            "reranker_revision": runner.RERANKER_REVISION,
+            "device": "cuda:0",
+            "dtype": "bfloat16",
+            "attention_implementation": "flash_attention_2",
+            "query_prompt_sha256": runner._sha256_text(runner.QUERY_PROMPT),
+        },
+    )
+    result = runner.evaluate_retrieval(
+        argparse.Namespace(prepared_dir=prepared, qa_dir=qa_dir, retrieval_dir=retrieval, output_dir=output, systems="adaptive_bi_neutral")
+    )
+    assert result["qa_count"] == 2
+    assert set(result["summary"]) == {"adaptive_bi_neutral"}
+    assert result["summary"]["adaptive_bi_neutral"]["hit@1"] == 1.0
+    assert len(runner._read_jsonl(output / "per_query_metrics.jsonl")) == 2
