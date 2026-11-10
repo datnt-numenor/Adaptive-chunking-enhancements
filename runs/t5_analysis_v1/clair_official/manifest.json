@@ -1,0 +1,39 @@
+{
+  "label": "CLAIR 99 QA v2, gpt-4o-mini-2024-07-18 qua API chinh thuc",
+  "spec": {
+    "label": "CLAIR 99 QA v2, gpt-4o-mini-2024-07-18 qua API chinh thuc",
+    "systems": {
+      "adaptive": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/adaptive/generated_questions_evaluation_results.json",
+      "adaptive__doc": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/adaptive__doc/generated_questions_evaluation_results.json",
+      "sdp_a_t600__doc": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/sdp_a_t600__doc/generated_questions_evaluation_results.json"
+    },
+    "families": {
+      "vs_adaptive": [
+        [
+          "adaptive__doc",
+          "adaptive"
+        ],
+        [
+          "sdp_a_t600__doc",
+          "adaptive"
+        ]
+      ],
+      "h1_doc": [
+        [
+          "sdp_a_t600__doc",
+          "adaptive__doc"
+        ]
+      ]
+    }
+  },
+  "input_sha256": {
+    "adaptive": "169b13c46ae66592190e54da903d19521b1f5679aa4dbb7c42bdf1c2945e47fe",
+    "adaptive__doc": "a72ccdcaf1e1b95eb3559a44ebfec07e8d473bff6bebffcd580ab7499a9487ec",
+    "sdp_a_t600__doc": "41b65257898ba5b54bd42ee6708642ac162e8de38d0b7d2d4b2cea2adf109ab8"
+  },
+  "summary_check_max_abs_diff": {},
+  "seed": 2026,
+  "boot": 10000,
+  "unit": "document",
+  "abstain_rule": "contains"
+}

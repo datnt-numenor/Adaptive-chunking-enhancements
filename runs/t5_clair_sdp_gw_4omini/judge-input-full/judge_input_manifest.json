@@ -1,0 +1,24 @@
+{
+  "status": "ready_for_judge",
+  "scope": "full",
+  "systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page",
+    "adaptive__doc",
+    "sdp_a_t600",
+    "sdp_a_t600__doc",
+    "sdp_b"
+  ],
+  "qa_per_system": 99,
+  "requests_sha256": "223216c137c00302eed35fd7e52be59c64392c7fcd23826d26d49805c2b42c28",
+  "answer_files_sha256": {
+    "adaptive": "5762b21e33e651cdcf7ff1cff71ded841292f0652cb615cb1606068da778f401",
+    "raw__langch_recurs_default": "b7182a57558f6d64731954a4ccf9eb7263390533719d133f303b8446c04fa88d",
+    "raw__page": "8187b99193f0579a2880664318d8ff02c2442067444748b862f5ce7ad89c65bf",
+    "adaptive__doc": "fae86d46de199769cfd77c9f4a4c1b5d4e042268214adaa240c403515ded5cfb",
+    "sdp_a_t600": "fde2bc48415c6cd229952e03eb09369a4df894a7951039c0e851018af6fdce82",
+    "sdp_a_t600__doc": "7dfcb7b4d46d42a80cf8a18c512b12d73bbd0e8796d8548b21f4deeb2140045c",
+    "sdp_b": "dd0ac333dfd69207642ec504f0ae7fd8810e5914cb562ddf131554e9e4cc8995"
+  }
+}

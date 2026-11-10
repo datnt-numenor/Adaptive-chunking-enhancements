@@ -1,0 +1,304 @@
+{
+  "method": "sdp_bq",
+  "config": {
+    "max_tokens": 1100,
+    "min_tokens": 100,
+    "tau": 1.0,
+    "heading_bonus": [
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "continuation_penalty": 3.0,
+    "pronoun_penalty": 0.5,
+    "colon_penalty": 0.5,
+    "list_penalty": 0.3,
+    "small_penalty": 5.0,
+    "artifact_penalty": 2.0,
+    "target_tokens": null,
+    "target_weight": 1.0,
+    "max_units_per_chunk": 2000
+  },
+  "overrides": [],
+  "docs": [
+    "Ada (technique)_Discussion Paper Hamburg DPA KI Models",
+    "Ada (technique)_Recommandations de s\u00e9curit\u00e9 pour un syst\u00e8me d'IA g\u00e9n\u00e9rative",
+    "Ada (technique)_Standards - Explicability",
+    "Ada (technique)_Standards - Interpretability",
+    "Ada (technique)_Standards - Robustness",
+    "Ada (technique)_Standards - Security",
+    "Ada (technique)_Standards - Sustainability",
+    "Ada (technique)_Standards - Transparency",
+    "Ada (technique)_Standards - Vigilance",
+    "Norma (l\u00e9gal)_Artificial Intelligence for Europe",
+    "Norma (l\u00e9gal)_CCPA Act",
+    "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3",
+    "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1",
+    "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2",
+    "Norma (l\u00e9gal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "Norma (l\u00e9gal)_EDPB statement on data protection authorities",
+    "Norma (l\u00e9gal)_EDPS Generative AI guidelines",
+    "Norma (l\u00e9gal)_Entr\u00e9e en vigueur du r\u00e8glement europ\u00e9en sur l\u2019IA - CNIL",
+    "Norma (l\u00e9gal)_European Convention On Human Rights",
+    "Norma (l\u00e9gal)_GDPR",
+    "Norma (l\u00e9gal)_Harmonising AI - OXIL",
+    "Norma (l\u00e9gal)_Les fiches pratiques IA -  CNIL",
+    "Norma (l\u00e9gal)_Provider Guidelines - European Commission",
+    "Norma (l\u00e9gal)_The AI Act",
+    "Norma (l\u00e9gal)_Verification for International AI Governnace",
+    "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands",
+    "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",
+    "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world",
+    "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative",
+    "Sophia (sciences sociales)_Livre blanc - Impact AI",
+    "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE",
+    "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI",
+    "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape"
+  ],
+  "version_b": {
+    "embed_model": {
+      "name": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "path": "D:/Project/models/Qwen3-Embedding-0.6B@97b0c61",
+      "note": "documents encoded without instruction prompt (same as semantic chunking)"
+    },
+    "struct_weight": 0.1,
+    "icc_weight": 1.0,
+    "dcc_weight": 1.0,
+    "window_tokens": 3000,
+    "dinkelbach": {
+      "Ada (technique)_Discussion Paper Hamburg DPA KI Models": [
+        1.24775,
+        1.42634,
+        1.45097,
+        1.45097
+      ],
+      "Ada (technique)_Recommandations de s\u00e9curit\u00e9 pour un syst\u00e8me d'IA g\u00e9n\u00e9rative": [
+        1.42879,
+        1.53039,
+        1.54454,
+        1.54454
+      ],
+      "Ada (technique)_Standards - Explicability": [
+        1.3833,
+        1.45302,
+        1.53462,
+        1.53462
+      ],
+      "Ada (technique)_Standards - Interpretability": [
+        1.38909,
+        1.49689,
+        1.52628,
+        1.52874,
+        1.52874
+      ],
+      "Ada (technique)_Standards - Robustness": [
+        1.3165,
+        1.43018,
+        1.45192,
+        1.45192
+      ],
+      "Ada (technique)_Standards - Security": [
+        1.36672,
+        1.46413,
+        1.48946,
+        1.50027,
+        1.50027
+      ],
+      "Ada (technique)_Standards - Sustainability": [
+        1.36876,
+        1.46858,
+        1.49374,
+        1.4969,
+        1.4969
+      ],
+      "Ada (technique)_Standards - Transparency": [
+        1.32277,
+        1.43161,
+        1.47849,
+        1.47849
+      ],
+      "Ada (technique)_Standards - Vigilance": [
+        1.39955,
+        1.48024,
+        1.49654,
+        1.49654
+      ],
+      "Norma (l\u00e9gal)_Artificial Intelligence for Europe": [
+        1.20657,
+        1.39485,
+        1.43875,
+        1.44147,
+        1.44147
+      ],
+      "Norma (l\u00e9gal)_CCPA Act": [
+        1.21793,
+        1.38065,
+        1.41485,
+        1.41521,
+        1.41521
+      ],
+      "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3": [
+        1.27806,
+        1.41415,
+        1.45244,
+        1.45244
+      ],
+      "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1": [
+        1.30589,
+        1.44849,
+        1.47206,
+        1.47439,
+        1.47439
+      ],
+      "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2": [
+        1.39814,
+        1.53564,
+        1.56802,
+        1.57024,
+        1.57024
+      ],
+      "Norma (l\u00e9gal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law": [
+        1.3809,
+        1.5045,
+        1.52966,
+        1.53513,
+        1.53513
+      ],
+      "Norma (l\u00e9gal)_EDPB statement on data protection authorities": [
+        1.24292,
+        1.4725,
+        1.51259,
+        1.51259
+      ],
+      "Norma (l\u00e9gal)_EDPS Generative AI guidelines": [
+        1.39865,
+        1.50406,
+        1.50406
+      ],
+      "Norma (l\u00e9gal)_Entr\u00e9e en vigueur du r\u00e8glement europ\u00e9en sur l\u2019IA - CNIL": [
+        1.446,
+        1.57501,
+        1.61087,
+        1.61311,
+        1.61311
+      ],
+      "Norma (l\u00e9gal)_European Convention On Human Rights": [
+        1.34675,
+        1.47399,
+        1.49917,
+        1.50486,
+        1.50486
+      ],
+      "Norma (l\u00e9gal)_GDPR": [
+        1.31374,
+        1.46155,
+        1.48881,
+        1.49096,
+        1.49096
+      ],
+      "Norma (l\u00e9gal)_Harmonising AI - OXIL": [
+        1.31441,
+        1.48196,
+        1.50175,
+        1.50203,
+        1.50203
+      ],
+      "Norma (l\u00e9gal)_Les fiches pratiques IA -  CNIL": [
+        1.42978,
+        1.54914,
+        1.58123,
+        1.58449,
+        1.58449
+      ],
+      "Norma (l\u00e9gal)_Provider Guidelines - European Commission": [
+        1.38971,
+        1.55342,
+        1.60755,
+        1.61266,
+        1.61266
+      ],
+      "Norma (l\u00e9gal)_The AI Act": [
+        1.301,
+        1.46545,
+        1.49114,
+        1.49209,
+        1.49209
+      ],
+      "Norma (l\u00e9gal)_Verification for International AI Governnace": [
+        1.21503,
+        1.39804,
+        1.42824,
+        1.42973,
+        1.42973
+      ],
+      "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands": [
+        1.27215,
+        1.39885,
+        1.41928,
+        1.4199,
+        1.4199
+      ],
+      "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law": [
+        1.23445,
+        1.39777,
+        1.45155,
+        1.45714,
+        1.45741,
+        1.45741
+      ],
+      "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world": [
+        1.17089,
+        1.33238,
+        1.38288,
+        1.38288
+      ],
+      "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative": [
+        1.32392,
+        1.4732,
+        1.51128,
+        1.51282,
+        1.51283,
+        1.51283
+      ],
+      "Sophia (sciences sociales)_Livre blanc - Impact AI": [
+        1.37004,
+        1.49237,
+        1.52323,
+        1.53007,
+        1.53028,
+        1.53028
+      ],
+      "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE": [
+        1.36412,
+        1.51768,
+        1.5559,
+        1.55902,
+        1.55902
+      ],
+      "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI": [
+        1.29693,
+        1.43622,
+        1.45696,
+        1.45763,
+        1.45763
+      ],
+      "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape": [
+        1.27028,
+        1.4078,
+        1.4638,
+        1.46628,
+        1.46628
+      ]
+    }
+  },
+  "postprocessing": "merge_small_chunks_to_neighbours(min=100,max=1150,next)",
+  "git_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19044-SP0",
+  "seconds": 120.1,
+  "created": "2026-11-09 11:18:45"
+}

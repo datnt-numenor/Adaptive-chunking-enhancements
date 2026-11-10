@@ -1,0 +1,14 @@
+{
+  "scope": "smoke",
+  "model": "gpt-4o-mini-2024-07-18",
+  "deepeval": "3.5.9",
+  "max_output_tokens": 512,
+  "input_manifest_sha256": "7773577146bcb179b1123594f6a2c3eb6f5f193dd986f8db4cc066bb44f34352",
+  "original_judge_sha256": "211dc3356747fb80bcaba0003385d873e6ec75719b294d37f67b3cb0c59e6ae9",
+  "judge_harness_sha256": "83729492baf0dab047ff444029178ae9d6e1edc7c898a60b5e316ba09dca52e4",
+  "status": "complete",
+  "rows": 18,
+  "judge_liability_usd": 0.024738,
+  "combined_liability_usd": 0.049087,
+  "pending_requests": 0
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "adapter": "prepare_table5_new_qa.py",
+  "adapter_sha256": "596f8965cd954032900f8b864934aa51544138eb4761a4aca33c45fd129b8519",
+  "status": "complete",
+  "created_at": "2026-11-08T14:00:58.831172+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "note": "Tao tu ket qua chay doc lap (khong co semantic); chi gom 3 he thong cua Table 5.",
+  "input_run_dir": "D:\\Project\\adaptive-chunking\\runs\\full_kaggle",
+  "input_sha256": {
+    "processed_chunks": "0f78f6c80b71209ee55c89dc8cfce2202e6f33dbe672f84383e0f5dafa75c7ed",
+    "raw_chunks": "ac82ff2bf01475aa8daaf9b426537d3d0079fb058ba02d65ab13727d62653a23",
+    "processed_metrics": "6a84885eeb306baaf4b79463cae1f092957d48e354f887467f138344a15acb84"
+  },
+  "documents": 33,
+  "folds": 5,
+  "fold_seed": 2026,
+  "adaptive_candidates": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "paper_protocol_systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "systems": {
+    "adaptive": {
+      "path": "systems/adaptive.jsonl",
+      "sha256": "d4ea88495351e94d3446ba1dc17df74babfa6caa1c67a672585cd4338bff5649",
+      "chunks": 1633,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "method": "per_document_equal_weight"
+    },
+    "raw__langch_recurs_default": {
+      "path": "systems/raw__langch_recurs_default.jsonl",
+      "sha256": "ade51b65d9864da9b17df94cf9290ca3b278fd31786e2803e79eb11cb33673c2",
+      "chunks": 1557,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "raw",
+      "method": "langch_recurs_default"
+    },
+    "raw__page": {
+      "path": "systems/raw__page.jsonl",
+      "sha256": "b962b240642dd41651f2f4842cfcaac516208d43149113f140eeb665da152e5f",
+      "chunks": 1761,
+      "excluded_empty_chunks": 4,
+      "documents": 33,
+      "stage": "raw",
+      "method": "page"
+    }
+  }
+}

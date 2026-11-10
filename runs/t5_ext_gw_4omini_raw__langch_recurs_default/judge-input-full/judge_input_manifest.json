@@ -1,0 +1,12 @@
+{
+  "status": "ready_for_judge",
+  "scope": "full",
+  "systems": [
+    "raw__langch_recurs_default@plain"
+  ],
+  "qa_per_system": 438,
+  "requests_sha256": "511de1f21f62afc30ff6886b3add1d095ebe4bd2cdcacbff586ff28e44a2fdfb",
+  "answer_files_sha256": {
+    "raw__langch_recurs_default@plain": "c45f15ee9e10d6ad79aeb3766b7ac24e1e4b4eafc4f6f248e067a9e1b81fca5f"
+  }
+}

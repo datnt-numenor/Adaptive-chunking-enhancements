@@ -1,0 +1,50 @@
+{
+  "candidate_methods": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "weights": {
+    "size_compliance": 0.2,
+    "block_integrity": 0.2,
+    "intrachunk_cohesion": 0.2,
+    "document_contextual_coherence": 0.2,
+    "references_completeness": 0.2
+  },
+  "selections": {
+    "Ada (technique)_Discussion Paper Hamburg DPA KI Models": "page",
+    "Ada (technique)_Recommandations de sécurité pour un système d'IA générative": "page",
+    "Ada (technique)_Standards - Explicability": "our_recurs_1100",
+    "Ada (technique)_Standards - Interpretability": "llm_regex",
+    "Ada (technique)_Standards - Robustness": "our_recurs_1100",
+    "Ada (technique)_Standards - Security": "llm_regex",
+    "Ada (technique)_Standards - Sustainability": "our_recurs_600",
+    "Ada (technique)_Standards - Transparency": "our_recurs_1100",
+    "Ada (technique)_Standards - Vigilance": "llm_regex",
+    "Norma (légal)_Artificial Intelligence for Europe": "page",
+    "Norma (légal)_CCPA Act": "page",
+    "Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3": "page",
+    "Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1": "our_recurs_1100",
+    "Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2": "page",
+    "Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law": "our_recurs_1100",
+    "Norma (légal)_EDPB statement on data protection authorities": "page",
+    "Norma (légal)_EDPS Generative AI guidelines": "page",
+    "Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL": "page",
+    "Norma (légal)_European Convention On Human Rights": "our_recurs_1100",
+    "Norma (légal)_GDPR": "page",
+    "Norma (légal)_Harmonising AI - OXIL": "llm_regex",
+    "Norma (légal)_Les fiches pratiques IA -  CNIL": "page",
+    "Norma (légal)_Provider Guidelines - European Commission": "our_recurs_1100",
+    "Norma (légal)_The AI Act": "page",
+    "Norma (légal)_Verification for International AI Governnace": "page",
+    "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands": "our_recurs_1100",
+    "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law": "our_recurs_1100",
+    "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world": "llm_regex",
+    "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative": "our_recurs_1100",
+    "Sophia (sciences sociales)_Livre blanc - Impact AI": "page",
+    "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE": "page",
+    "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI": "page",
+    "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape": "llm_regex"
+  }
+}

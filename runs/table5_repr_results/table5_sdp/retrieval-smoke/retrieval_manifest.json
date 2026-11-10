@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "status": "complete",
+  "created_at": "2026-11-09T12:03:01.682209+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "embedding_model": "Qwen/Qwen3-Embedding-4B",
+  "embedding_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+  "reranker_model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+  "reranker_revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a",
+  "retrieval": {
+    "bm25_top_k": 50,
+    "dense_top_k": 50,
+    "reranker_top_k": 10,
+    "reranker_strategy": "bi_encoder_cosine",
+    "reranker_query_prompt": "model_prompt_name:query"
+  },
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "attention_implementation": "flash_attention_2",
+  "query_prompt_sha256": "df4b2898bf22e00bacddddd489243a3f8793730e38b842ec10161cebd94d36d6",
+  "input_qa_sha256": "face0c1b603be0b015dd2da2ae149de7f390aa7edef3af11b40bf7840363a935",
+  "input_index_manifest_sha256": "1f227667859a5fb6f236cbc29d7b7ef3fcf0facf0bdd37d59ff1090f549ffd25",
+  "systems": {
+    "adaptive": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/adaptive.jsonl",
+      "sha256": "fce05a242db849376c7aeaf128b293d24fd66de80235f7f9b2aff28bf5647ac9",
+      "queries": 6
+    },
+    "raw__langch_recurs_default": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/raw__langch_recurs_default.jsonl",
+      "sha256": "6bb59ff13955b6f337f9dc0e7555c87dd1a5917792883144bc6aed39b13cbf44",
+      "queries": 6
+    },
+    "raw__page": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/raw__page.jsonl",
+      "sha256": "e1394936153589a4587fd733fff6b452e94fdb789f8025ce386de1c428b2dc31",
+      "queries": 6
+    },
+    "sdp_a_t600": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_a_t600.jsonl",
+      "sha256": "231da472ceff01bd5bd2b6fb5a49a792dacad2b7eccb78c88a680d5ca1e52645",
+      "queries": 6
+    },
+    "sdp_b": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_b.jsonl",
+      "sha256": "3573379f9edc63f96c6a6234485eea5ea0c5e462add24a9f63671a91c6ea330f",
+      "queries": 6
+    },
+    "sdp_bq": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_bq.jsonl",
+      "sha256": "d6083d32742335d2eb78153f95aff1455f2bf76c57037eb124d4dcb139480e38",
+      "queries": 6
+    },
+    "adaptive__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/adaptive__doc.jsonl",
+      "sha256": "89c3b6024893b15d7b364626d9e85fe54d726e5d412c704d9a2b7075c3921ce5",
+      "queries": 6
+    },
+    "raw__langch_recurs_default__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/raw__langch_recurs_default__doc.jsonl",
+      "sha256": "b42e46eb1f04043d5c827aa2c45b5f49a0abf22e54e6afe47be8539a9766ecfb",
+      "queries": 6
+    },
+    "raw__page__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/raw__page__doc.jsonl",
+      "sha256": "76b469c313c87ea64ddb2ec6f7e8ced4b3c7cf478f2d75633a5cd98f15674e5f",
+      "queries": 6
+    },
+    "sdp_a_t600__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_a_t600__doc.jsonl",
+      "sha256": "ba051167e30e011b28d27f3b4570614b3044883684e20bf061c9d9da7b90c421",
+      "queries": 6
+    },
+    "sdp_b__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_b__doc.jsonl",
+      "sha256": "f86740358fc4249551652255e5868ff866f60424edf7c6b56af0194ccbeca058",
+      "queries": 6
+    },
+    "sdp_bq__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/retrieval-smoke/sdp_bq__doc.jsonl",
+      "sha256": "86dcb21ee8ec8aa27812917aab46e8f535dfe5879594dc6383842f614f255188",
+      "queries": 6
+    }
+  },
+  "gpu": {
+    "name": "NVIDIA RTX A5000",
+    "compute_capability": [
+      8,
+      6
+    ],
+    "bf16_supported": true,
+    "torch_version": "2.6.0+cu124",
+    "flash_attn_version": "2.7.4.post1"
+  },
+  "environment": {
+    "path": "/workspace/table5_sdp/environment.txt",
+    "sha256": "f13fd97cd9b4c315c8845f55cfb918abaf72b555815b019f37c0c94364c8f341"
+  }
+}

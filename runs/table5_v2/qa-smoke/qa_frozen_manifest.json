@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "status": "complete",
+  "mode": "smoke",
+  "created_at": "2026-11-08T14:00:58.879173+00:00",
+  "qa_count": 6,
+  "documents": 2,
+  "qa_sha256": "face0c1b603be0b015dd2da2ae149de7f390aa7edef3af11b40bf7840363a935",
+  "generation_model": "Claude Opus 5.5, claude.ai, 03/11/2026",
+  "source_qa_sha256": "81cb31e5f5b3ba10368e8aa8aaedf9f786c64a9a4fe758d8894a599809e34e3c",
+  "source_prompt_sha256": "3a6e3d54b587f7c43e5214d8da15e0b578191fb7f564d8f52a00e67760be5d0e",
+  "human_review_required": true
+}
