@@ -1,0 +1,14 @@
+{
+  "qa_sha256": "1a7c1d78e2de55d73a38d3fe05d9218cdeedac8fc2394d4917c42dc0e3bf72ef",
+  "n_qa": 438,
+  "n_docs": 126,
+  "n_validated": 621,
+  "n_generated": 774,
+  "review_dirs": [
+    "runs\\qa_ext_v1\\review_claude-sonnet-4-5",
+    "runs\\qa_ext_v1\\review_gemini-2.5-pro"
+  ],
+  "rule": "keep only if every reviewer says keep",
+  "prompt_sha256": "90c791b74f6ec6f93ac895adfdef68912035de8e58e0c80477c1324e489564b1",
+  "frozen_at": "2026-11-09 18:50:56"
+}

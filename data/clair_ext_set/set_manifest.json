@@ -1,0 +1,656 @@
+{
+ "rule": "2000 <= tokens <= 80000",
+ "kept": {
+  "Ada_ENISA AI Cybersecurity Challenges": {
+   "tokens": 34197,
+   "pages": 65,
+   "sha256": "d4f992a9ab7ee9da47e159a5ffa7a5b912644cb0514cea6b6c10c406e81a4d98"
+  },
+  "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI": {
+   "tokens": 27198,
+   "pages": 46,
+   "sha256": "e66a8177221cfc6db3fb1783f333b7459cfb4ce91f66aeee29a8ca6d0a904e5e"
+  },
+  "Ada_NIST AI 100-4 Synthetic Content": {
+   "tokens": 43993,
+   "pages": 80,
+   "sha256": "2e4b7ac6593de95854db0f1894e5f4cb1d0d70d91e457a418b9f6ec16deb81f7"
+  },
+  "Ada_NIST AI 600-1 Generative AI Profile": {
+   "tokens": 35557,
+   "pages": 64,
+   "sha256": "451f740cb6ac760308a6813315d5762a751116217d1a03e62ccfbda466b8155a"
+  },
+  "Ada_NIST IR 8312 Explainable AI Principles": {
+   "tokens": 28887,
+   "pages": 43,
+   "sha256": "6bb0fb0762f1c7d8639f87aecc734e20e59e3c0c892a8e0977bfb96495285f1c"
+  },
+  "Ada_NIST SP 1270 Bias in AI": {
+   "tokens": 52450,
+   "pages": 86,
+   "sha256": "670bae0390dc572eaaafe599f6dd96eb36aed7091ad2ec80b9188abf9a667afd"
+  },
+  "Ada_NIST SP 800-218A Secure Software Development GenAI": {
+   "tokens": 17793,
+   "pages": 30,
+   "sha256": "59b6021931d94aae906128748459b006ae11aec963c2caa1e3b2aaedc5fc40bf"
+  },
+  "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r": {
+   "tokens": 10038,
+   "pages": 33,
+   "sha256": "537e81ad05e75efaaf27144624b6681a2df7d337225cc44f8607f8ec6ad54fed"
+  },
+  "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A": {
+   "tokens": 12786,
+   "pages": 9,
+   "sha256": "75e9677e8eedfe59ad0e962b9d3fcf5369c51e6d5778e745c2d12da95c9f2715"
+  },
+  "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey": {
+   "tokens": 48269,
+   "pages": 60,
+   "sha256": "bcd1cce973be0a317289c4c483aef290f4a1c6ccd4bd37e6ccc3b19230d9a0ac"
+  },
+  "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability": {
+   "tokens": 6193,
+   "pages": 10,
+   "sha256": "a34fc4e95f6e966007dacd3aee17c36d4eaed6eae78f37044cf8291549d3d894"
+  },
+  "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act": {
+   "tokens": 18127,
+   "pages": 22,
+   "sha256": "c0dcd38860a454d8f9b7bdb712eda5fb73206b89047a548aeed0cd99851a9d9b"
+  },
+  "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri": {
+   "tokens": 37243,
+   "pages": 30,
+   "sha256": "8bf071a350c1a2a6176ef689ddef32f3c3549cd741cc7d3aea51aa1adb05891c"
+  },
+  "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance": {
+   "tokens": 9713,
+   "pages": 18,
+   "sha256": "31c06c062cfc93a46fd6157225047aa6af796d3ce4afb3c475c4c34aee25e8b5"
+  },
+  "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems": {
+   "tokens": 9516,
+   "pages": 9,
+   "sha256": "020965fe99732f3a473d0100e15345b000d58867ba9866b5e4b00a14ccadd9fa"
+  },
+  "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks": {
+   "tokens": 45087,
+   "pages": 55,
+   "sha256": "9e0d8a7c4cabd7e9fce5636055d713a265c46c0baf00b7e357c025acf4b0962b"
+  },
+  "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance": {
+   "tokens": 11016,
+   "pages": 16,
+   "sha256": "98844607c06762505de4552b20d5516d2d67ac7ff0da7c40aa9c1c76fe70001a"
+  },
+  "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige": {
+   "tokens": 9750,
+   "pages": 8,
+   "sha256": "48dbece3aa5a6c1e335dcf6fd6ab63d413b0ebd458f129dd1b352050b281737b"
+  },
+  "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl": {
+   "tokens": 5425,
+   "pages": 6,
+   "sha256": "a828bf0c30b6e1ef1c871026f796bed9dd66406ae47eadc1c78a993d432aa56b"
+  },
+  "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A": {
+   "tokens": 16311,
+   "pages": 43,
+   "sha256": "d04bf99698f2b5bf3d6f815f66e0df7cd5e5b4b688300a4d70782ba6a4a9d336"
+  },
+  "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge": {
+   "tokens": 13144,
+   "pages": 18,
+   "sha256": "f89dbc306aaf12ee516b6c3e67bf2af5d08d2b287166429a3dfa4cf30561e046"
+  },
+  "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress": {
+   "tokens": 12828,
+   "pages": 11,
+   "sha256": "ba5595243a981adaceb59924d80f08eb0c5abb2000810fae4229aec4970aab01"
+  },
+  "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too": {
+   "tokens": 7995,
+   "pages": 9,
+   "sha256": "cde4a19bd351cae3694a78d57cde33491381bad2259798a0bffddd2736f404b5"
+  },
+  "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment": {
+   "tokens": 16912,
+   "pages": 28,
+   "sha256": "a55e0515e957dd08190f2519f605a2c8e877bd0527ce549b3f3d6713efdfdc09"
+  },
+  "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance": {
+   "tokens": 20856,
+   "pages": 29,
+   "sha256": "2c9fac101afc1e67997944062a68f22015d17748cad6d4aa401954a684683d29"
+  },
+  "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI": {
+   "tokens": 7829,
+   "pages": 6,
+   "sha256": "e61a296ca44a241ddcc8632e50867470f31fc8045b0655b7ffd143a182c7f103"
+  },
+  "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review": {
+   "tokens": 8191,
+   "pages": 8,
+   "sha256": "b9ff29d10740570f4d7bb84a496f76273e2fb113bc9f2593575be766a3cb2ba3"
+  },
+  "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits": {
+   "tokens": 37963,
+   "pages": 19,
+   "sha256": "0c3861088d01d042cddf32de510423ae5deb235ceba2a5806c30807cc7e5ce79"
+  },
+  "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability": {
+   "tokens": 34587,
+   "pages": 32,
+   "sha256": "dff565de453175b62051c068a227de8c82173ea2cc28967a702fa6a867999ee5"
+  },
+  "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk": {
+   "tokens": 16652,
+   "pages": 21,
+   "sha256": "fbbe4ed2b6a4cac2110ebc80d19ffb22e94e0dd80429a39f49fe1fa9ae1b7bb3"
+  },
+  "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk": {
+   "tokens": 40756,
+   "pages": 58,
+   "sha256": "c3129c20ccadb255c7bc7ecff1c4ec0622e454c7ed5522fa28787bcbf681e403"
+  },
+  "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law": {
+   "tokens": 19293,
+   "pages": 35,
+   "sha256": "bf361b0a2d9bfdef2b777b8feef377425e46a692e8a4f0f497e1a784442bf815"
+  },
+  "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI": {
+   "tokens": 31798,
+   "pages": 29,
+   "sha256": "6aff35f5b6d45f0f1e151db3ef2f1c38088ef286d438e0af3c98e6e158d6a94b"
+  },
+  "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem": {
+   "tokens": 27499,
+   "pages": 40,
+   "sha256": "a2c1f7d88ef01f515e4da18b6967e1b173be3825f71024929aaf9ecf61713a63"
+  },
+  "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards": {
+   "tokens": 17014,
+   "pages": 20,
+   "sha256": "8aed88bb6114f24ac006a15eac78bab05e0c212fdc264aced1657c8e9e8945e9"
+  },
+  "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization": {
+   "tokens": 16570,
+   "pages": 15,
+   "sha256": "aad3e8cc17edd46e6b8a71f25c9bc93d5aa0a2c9f159c53e397524dc4b71148a"
+  },
+  "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation": {
+   "tokens": 27396,
+   "pages": 26,
+   "sha256": "09565572ba64acf11e765c512bdeade7a1e18522fedabc7e4636b3ad4e9b38e2"
+  },
+  "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing": {
+   "tokens": 8404,
+   "pages": 11,
+   "sha256": "9c6375aff264ed109dd22f6717bbc8a238f2878d7eb7b06459101cacf72ad566"
+  },
+  "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude": {
+   "tokens": 10859,
+   "pages": 17,
+   "sha256": "1c2e571866ece447366cd69711e0cdca0a6011fcacaee8b67dc0fdf93d4f468e"
+  },
+  "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI": {
+   "tokens": 7236,
+   "pages": 6,
+   "sha256": "86124e8b968c862899b60e9857bc54189b97c9ffa8a1da057d8e185797b21eaa"
+  },
+  "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R": {
+   "tokens": 12734,
+   "pages": 24,
+   "sha256": "367c2cd885fff782205aa15b9253102b7a6b7839b71b697c2ba5c36fdb94f9d7"
+  },
+  "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro": {
+   "tokens": 21565,
+   "pages": 16,
+   "sha256": "85cad9a3327654d0537672f0b9c34b920b553f4782fbd54489b655a63c83e541"
+  },
+  "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer": {
+   "tokens": 16802,
+   "pages": 25,
+   "sha256": "a2de12d0b0e1f783b4307ac972cdf8e5e7751cfbe981566f2636927b67684fd9"
+  },
+  "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations": {
+   "tokens": 11353,
+   "pages": 15,
+   "sha256": "03aeea7016443f8c5a745a865c383e7b6235bf5e0034749df93b240bbb694906"
+  },
+  "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models": {
+   "tokens": 29594,
+   "pages": 22,
+   "sha256": "47b6a991b930d933b22d06ae10c9b611f52eb19c1ad98921e8a5268f6c0efce2"
+  },
+  "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations": {
+   "tokens": 16166,
+   "pages": 22,
+   "sha256": "406c3fb0fd3f38fea5fa1b3b3139d770327d52b5a8009f74ef7a5e5feccdf777"
+  },
+  "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence": {
+   "tokens": 19437,
+   "pages": 26,
+   "sha256": "1cf0df9c00ecd4659b882265df0a4a8b8a53adf3cb6343ff301eb79d4a8c6315"
+  },
+  "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an": {
+   "tokens": 24813,
+   "pages": 23,
+   "sha256": "056ba1c7240791b7badddd142a46a097d0228d94e58ae00816cc2a12635f9868"
+  },
+  "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act": {
+   "tokens": 18230,
+   "pages": 14,
+   "sha256": "525dd55d7f9f26a532619619f9ab6a326c7a0a87ce18298cf94bf13e027dc455"
+  },
+  "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet": {
+   "tokens": 12250,
+   "pages": 31,
+   "sha256": "f51c5053fd26c798ff7b41f3563287dc07129409751efabc1f8c805121e93591"
+  },
+  "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance": {
+   "tokens": 13466,
+   "pages": 17,
+   "sha256": "7ad5428a3905c2da0417dd79a176060376f5bd6d6a7cd054ddd9a3143705f120"
+  },
+  "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act": {
+   "tokens": 5967,
+   "pages": 4,
+   "sha256": "20827d4bfda3fce1f32079fbecab1888947199d1099d0aa93d43076fb9b15ef1"
+  },
+  "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi": {
+   "tokens": 11279,
+   "pages": 11,
+   "sha256": "e6ee927538b3701a100dfc0cbb74100c123db2a67854403622ad098feac79568"
+  },
+  "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act": {
+   "tokens": 10220,
+   "pages": 12,
+   "sha256": "2779fd3945055181589a7e02967824528c46406aa4a50320e5ebe37931c890c6"
+  },
+  "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment": {
+   "tokens": 9076,
+   "pages": 10,
+   "sha256": "84c9445fd3d4428140c7862f9ac688f056e3d0fa7a0f261f0dd889729e4697be"
+  },
+  "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA": {
+   "tokens": 13826,
+   "pages": 15,
+   "sha256": "5ea19d7c569ff52734047bade43b12aabed9fdf64708139a3f8c090599664c5c"
+  },
+  "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis": {
+   "tokens": 9967,
+   "pages": 13,
+   "sha256": "d18327e17c6363f6f1ad5a541cdf5d4672a8257cd5c9d8075bf4f3a9e6403526"
+  },
+  "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance": {
+   "tokens": 14795,
+   "pages": 22,
+   "sha256": "075c21e050f6e4ef49394a7f9d0c880376154e3208680a9e8b55893e227fc3ad"
+  },
+  "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh": {
+   "tokens": 9138,
+   "pages": 10,
+   "sha256": "6d8fecb8e37cc18c1e7c41609c34bceda46114060b06510a9bbdf3c9e1b08ef0"
+  },
+  "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati": {
+   "tokens": 6475,
+   "pages": 6,
+   "sha256": "aa3b17f8d7b98dc86cfef62dd3335c2fc4a2ba30c02e9b45da8083ecb9d743b2"
+  },
+  "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024": {
+   "tokens": 22687,
+   "pages": 64,
+   "sha256": "72cd8b8ee4a428d534b1c95b0acb9d6dde2ad789016bcd0d521ff595dd20712f"
+  },
+  "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing": {
+   "tokens": 17642,
+   "pages": 23,
+   "sha256": "1591fd9a4465102caac97b687a65175f07678aeab4937c7123fd9198e8a0a3e0"
+  },
+  "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance": {
+   "tokens": 8321,
+   "pages": 17,
+   "sha256": "7defb1093fda0469310b457a0bf6a8ee68a4b1ace532ca11ea047472475b28df"
+  },
+  "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc": {
+   "tokens": 18914,
+   "pages": 41,
+   "sha256": "30d9f97d62508b44cd70c6af3bdfb1ff7103699f2b20abb74056e05966b11acd"
+  },
+  "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act": {
+   "tokens": 14807,
+   "pages": 12,
+   "sha256": "0314dafad2b934b2ab836bfaa1c6fe418d84ec29530f0e0d756eef701bf3035f"
+  },
+  "Arxiv_arXiv 2503.15682 Transfeminist AI Governance": {
+   "tokens": 23219,
+   "pages": 38,
+   "sha256": "a9295dc79054505b86c727a41d34575ec7264f93938676befadc0fb506af33c1"
+  },
+  "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk": {
+   "tokens": 4192,
+   "pages": 7,
+   "sha256": "8b246ac136d1e453ca18eb49716c85990db54907b6de937f44fc19b7e707c689"
+  },
+  "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate": {
+   "tokens": 35796,
+   "pages": 47,
+   "sha256": "5df8d934d9296b8950d3970db2c29a54f9a0e29da0297c848baeca2b959d2543"
+  },
+  "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act": {
+   "tokens": 15249,
+   "pages": 12,
+   "sha256": "eebd623f52546e9eea63cb37811b7ce6b3a3c8afdd55ea90677ca6ed0c5efcf3"
+  },
+  "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar": {
+   "tokens": 8520,
+   "pages": 8,
+   "sha256": "d8d99b5a718eccbb8896e585c2b55da1405440e6c93a250f2fc0df80c22024a4"
+  },
+  "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach": {
+   "tokens": 12869,
+   "pages": 28,
+   "sha256": "0e68e655218f376e7bc30a5fa77364af17cb58dc301361cc6e50f9589db7d222"
+  },
+  "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach": {
+   "tokens": 25719,
+   "pages": 34,
+   "sha256": "ac76fce2f179639359a86713e561cd6dda403febef75a352a7d29199c9af3efd"
+  },
+  "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking": {
+   "tokens": 16960,
+   "pages": 13,
+   "sha256": "ddd740c2c2e461e5655f91cdf3dc90223f18197b39482f3b8b13cb727de18c70"
+  },
+  "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act": {
+   "tokens": 6165,
+   "pages": 6,
+   "sha256": "0c933f4ab19d972bad697d47b320e8d657313630cfa0242a8b441ea2267168a2"
+  },
+  "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025": {
+   "tokens": 22744,
+   "pages": 65,
+   "sha256": "16dde5a76d2223bba5eb93e7b54b7ccab2d1f4106fac72854aa35ddcb85b652b"
+  },
+  "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po": {
+   "tokens": 21878,
+   "pages": 21,
+   "sha256": "9f6e2ff96d906c9b358508a357c7b63db2940b8066b06e2ec9f0ae3773e1e432"
+  },
+  "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A": {
+   "tokens": 24232,
+   "pages": 29,
+   "sha256": "fa12384d15e632cfdc3618b8268c87aee97aa1d46fe57b9fe83427aa18d79cc9"
+  },
+  "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI": {
+   "tokens": 21230,
+   "pages": 24,
+   "sha256": "70038f70b02b9dca89c80d50ca0fa3d2274f73fe4ca1b580956f01c4f665eb78"
+  },
+  "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries": {
+   "tokens": 14265,
+   "pages": 12,
+   "sha256": "37937144a373b60bd93d03cc13f7288d56a78988486f25ca7f031681913016a9"
+  },
+  "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat": {
+   "tokens": 36881,
+   "pages": 93,
+   "sha256": "f50a936e4e294488aaba5e9a8b24b9c0f9d848bd3a175319500bccba85e5f306"
+  },
+  "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa": {
+   "tokens": 10070,
+   "pages": 21,
+   "sha256": "adb48f3925c8ac2dfb82f1c028c109908e7918075a952802dd8dfa742e9696de"
+  },
+  "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga": {
+   "tokens": 11657,
+   "pages": 13,
+   "sha256": "03588abe1246875546b86db476c548647c3bdd383dbc521c3a2feb6e982a9b98"
+  },
+  "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications": {
+   "tokens": 11516,
+   "pages": 19,
+   "sha256": "285d86d2720d8b3e437a924bda3c36a259df3a13b829466c14292d6de75628b2"
+  },
+  "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research": {
+   "tokens": 12879,
+   "pages": 17,
+   "sha256": "08f459055a6945306115d96d6cabdaa3ca0864718339649feed03df44651f9de"
+  },
+  "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI": {
+   "tokens": 8937,
+   "pages": 13,
+   "sha256": "0cd35605f4573e28a90c3696ee82c7066272c92ef4f76de96ac4f04cd349040e"
+  },
+  "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI": {
+   "tokens": 4098,
+   "pages": 7,
+   "sha256": "630adc689fd31f22dfb889973581ed222fb38c88de23e658214946f3e476a2ab"
+  },
+  "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act": {
+   "tokens": 26683,
+   "pages": 26,
+   "sha256": "c98123b1b0442f804777e78a8dca61dbf2184893cb5bc098b6f89efc0a00e83b"
+  },
+  "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management": {
+   "tokens": 27581,
+   "pages": 33,
+   "sha256": "299ecc2d2e3e66168f30175a16517ae4d14a23fd3e1ad8723b194fa1e8ae70d4"
+  },
+  "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling": {
+   "tokens": 24464,
+   "pages": 30,
+   "sha256": "0eea8fd32075243228315e47790a44865391931e69396dce97984401685ef97a"
+  },
+  "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti": {
+   "tokens": 12826,
+   "pages": 20,
+   "sha256": "7a37183f23074b2bfd3d19bb134caa13a9437b378730b9132c34dcdefe63b643"
+  },
+  "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety": {
+   "tokens": 79968,
+   "pages": 115,
+   "sha256": "05d3c10775f644ed251b1b55d90c4f23dd0a04e151f1e57313e7a950c315024d"
+  },
+  "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance": {
+   "tokens": 15829,
+   "pages": 33,
+   "sha256": "85787214508b33076a1a487b41a7708680099b22dd0b690bd5785f30c7dff25b"
+  },
+  "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within": {
+   "tokens": 22835,
+   "pages": 28,
+   "sha256": "b4b88110620a73a48ae77481c2a9ef54266c22df9c25599bc3905f73ec02fd52"
+  },
+  "Arxiv_arXiv 2602.13244 Responsible AI in Business": {
+   "tokens": 17005,
+   "pages": 33,
+   "sha256": "7dc3c1b6986ef163655d08ff63666d90f650c20fd6b9a3bcc7a9c35c7da53130"
+  },
+  "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations": {
+   "tokens": 4829,
+   "pages": 4,
+   "sha256": "61f00fadf32aecd64dc91bc3564aed391403507bf433857c7422d35855f72e05"
+  },
+  "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides": {
+   "tokens": 51812,
+   "pages": 65,
+   "sha256": "866d1b30991a4af468213d629971a0f741679151ca9e3cc389c33c4094f59be4"
+  },
+  "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too": {
+   "tokens": 28398,
+   "pages": 23,
+   "sha256": "e5508b86e48e0076548b3d385a324e62e9b5d946ca87eaed76240476cc0c9dfc"
+  },
+  "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc": {
+   "tokens": 13037,
+   "pages": 16,
+   "sha256": "8d9de251e5e70f811900014c21747d905ade02d60ab61efa2218fb8e4f639a66"
+  },
+  "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A": {
+   "tokens": 9564,
+   "pages": 10,
+   "sha256": "847237402da1350d37bc8f3bffd21c4e9dc5ee0748d21998aff7049d484b0318"
+  },
+  "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H": {
+   "tokens": 20197,
+   "pages": 37,
+   "sha256": "b0f3f05c3b70f60a5e06e86b42e5d081fc8f46cadfb0ca38f0e2c26cfe4a3ef7"
+  },
+  "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou": {
+   "tokens": 13060,
+   "pages": 21,
+   "sha256": "eee31f9c300b8ee599296c582eb973ea553f9d559001d863d4f5df76d94a0b67"
+  },
+  "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability": {
+   "tokens": 13244,
+   "pages": 20,
+   "sha256": "4de44f6e66dc658920a288a9edbc25f768c39689d74c0f1a6c9b089691986957"
+  },
+  "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management": {
+   "tokens": 59182,
+   "pages": 81,
+   "sha256": "4228bd73feaae6b09b05f263361abfc5bd2d479b75a1f22120c26253d66be23b"
+  },
+  "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks": {
+   "tokens": 20205,
+   "pages": 23,
+   "sha256": "04c6d5033332c13465fcc57d96480c04580625e2977654bfe73c47e9b256fa7c"
+  },
+  "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains": {
+   "tokens": 12327,
+   "pages": 12,
+   "sha256": "e40d03faefc018cf0cf355920588473082d5b7f41686361dd4aea7a5ccc4efbc"
+  },
+  "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A": {
+   "tokens": 18664,
+   "pages": 27,
+   "sha256": "3d2b8cc5a8a944e907f3559ea0cfbb0f80500331d7c3b934e389abf9b485e2a3"
+  },
+  "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment": {
+   "tokens": 11088,
+   "pages": 16,
+   "sha256": "313ba540c4ffd7ed62cbd5aac2ed0f8e8c2b003a3141863a1df60e4fae33d9bc"
+  },
+  "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul": {
+   "tokens": 13678,
+   "pages": 25,
+   "sha256": "0fc3b2e0791d9b47b5d8a5245ce1cb89b6551814dea546526afbbb8fc0676fb8"
+  },
+  "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice": {
+   "tokens": 25207,
+   "pages": 21,
+   "sha256": "1bc3e681a774bf8dcf20ceadd47565478b1aac7535cb38d550cc703de3c2e1ac"
+  },
+  "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act": {
+   "tokens": 12533,
+   "pages": 15,
+   "sha256": "70bdd6dca8a63d4fbc159d95d2790dc5016055b949395a77383b9df3a46da0ff"
+  },
+  "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk": {
+   "tokens": 36047,
+   "pages": 42,
+   "sha256": "dd78d780efd6056c16f8fc99a9d3dc91ffe58a5837ab6eb24c2cb8445a8afb60"
+  },
+  "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech": {
+   "tokens": 22185,
+   "pages": 25,
+   "sha256": "edaa58e46c836729c31c3bab2ec298cb09b1813bdcd552682a1cc21e1d0c3988"
+  },
+  "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A": {
+   "tokens": 13925,
+   "pages": 10,
+   "sha256": "2761a8ff77987bcf2979805fa25d5c0f171c71a61db32559d45c76ac472e3795"
+  },
+  "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-": {
+   "tokens": 32722,
+   "pages": 33,
+   "sha256": "224e33eeb972e9875a1b677f3fafeed63b41cca4548a01d08fb66e80c391a004"
+  },
+  "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability": {
+   "tokens": 19636,
+   "pages": 30,
+   "sha256": "fabeb56765072338c196050a336164cbad387a750b473225e12fbfc889bebf56"
+  },
+  "Norma_Council of Europe HUDERIA Methodology": {
+   "tokens": 10728,
+   "pages": 22,
+   "sha256": "52598653217b2c364fd684b3385ccb026b57acff30b386a10bc7cdffbf13befb"
+  },
+  "Norma_Datatilsynet AI and Privacy": {
+   "tokens": 18251,
+   "pages": 29,
+   "sha256": "25a46ef7d654ed0f7f9ac361b4a9946087311efa20f924ee9f790adb6061f421"
+  },
+  "Norma_EDPB ChatGPT Taskforce Report": {
+   "tokens": 7900,
+   "pages": 14,
+   "sha256": "be60ceb7c87d5cdeee91574bd5d2e2012867156c0e93390c8539cc02a45424db"
+  },
+  "Norma_EDPB Opinion 28-2024 AI Models": {
+   "tokens": 27539,
+   "pages": 35,
+   "sha256": "f2e05bec9836c0029437acfb97d4279e9ae9c87ff4d6e5824780bd7a9724f5c6"
+  },
+  "Norma_G7 Hiroshima Code of Conduct for Advanced AI": {
+   "tokens": 2967,
+   "pages": 8,
+   "sha256": "285002cbbd40c66e48989407f192ac7d6789de88a4fb00e568733cfc6e9e972b"
+  },
+  "Norma_GAO AI Accountability Framework": {
+   "tokens": 48447,
+   "pages": 110,
+   "sha256": "4981e14022494aec0214b6fbad9fad41819f5dafdde52a36ffe946100c1b65c8"
+  },
+  "Norma_NIST AI RMF 1.0": {
+   "tokens": 21790,
+   "pages": 48,
+   "sha256": "feb01bf0c7f122846e04068f7faa0091e2e4a196d5fbc61b7eab4caa8e3496eb"
+  },
+  "Norma_OECD Recommendation of the Council on AI": {
+   "tokens": 6045,
+   "pages": 12,
+   "sha256": "df6af4ab78dbc7419f5fc804d9936f9b8010d22a3ba4c5e44b6cd6ef5d073a46"
+  },
+  "Norma_OMB M-24-10 AI Governance Memo": {
+   "tokens": 20085,
+   "pages": 34,
+   "sha256": "266017cd4eddd4a6f9bbb555ae08c594f0f8b3e8d14e53f59e6e696c2d1f79c8"
+  },
+  "Norma_Singapore Model AI Governance Framework 2nd Edition": {
+   "tokens": 21282,
+   "pages": 68,
+   "sha256": "539b8aa36282419153b38b6d5802186e53ed4585b79d3072a8b1769cc78a7599"
+  },
+  "Norma_UK AI Regulation White Paper": {
+   "tokens": 41594,
+   "pages": 91,
+   "sha256": "72a340770126d88d244594725d7bcccc52d58fc4e1070bacfef8a68f4d617d9b"
+  },
+  "Sophia_CNIL Comment permettre a l'homme de garder la main": {
+   "tokens": 70631,
+   "pages": 70,
+   "sha256": "d77d62b17f005c6d1d159bf15f70195c24aec5aef05afffcade7bb1d8073485f"
+  },
+  "Sophia_CNIL Synthese consultation recommandation IA": {
+   "tokens": 5403,
+   "pages": 10,
+   "sha256": "5b6c968fac7cd00b466274263b5f8c353f173b2b28a7d585c88becf970afc2be"
+  },
+  "Sophia_Defenseur des droits Algorithmes Discriminations": {
+   "tokens": 6221,
+   "pages": 11,
+   "sha256": "4e6ce49fa8fb770f39f5df77715586225dc7268949f44883ccd6bea9f996a82c"
+  }
+ },
+ "excluded": {
+  "Arxiv_arXiv 2407.14981 Open Problems in Technical AI Governance": "97818 tokens",
+  "Arxiv_arXiv 2506.23123 The Societal Impact of Foundation Models Advancing Evidence-based AI P": "178165 tokens",
+  "Norma_CNIL Recommandation RGPD developpement systemes IA": "721 tokens",
+  "Sophia_Commission IA Notre ambition pour la France": "83769 tokens"
+ }
+}

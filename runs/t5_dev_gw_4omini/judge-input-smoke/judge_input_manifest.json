@@ -1,0 +1,16 @@
+{
+  "status": "ready_for_judge",
+  "scope": "smoke",
+  "systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "qa_per_system": 6,
+  "requests_sha256": "f1757a489f6ac8e5a008371a39113d8350d46dda8a61c043f1d18860bef12761",
+  "answer_files_sha256": {
+    "adaptive": "cd4f505bf41e9ff4fec1f64e8bf1dd9b5b6c4c8a99685a038c21156dc59a777c",
+    "raw__langch_recurs_default": "de1e180cce564237ad91da4b294d569aa0fea566a534eba24657eb7a379c4804",
+    "raw__page": "91a352cefd9eb14bc9fc20c559a370a60d6d6025dff7d9382f263776fa1c20cd"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "full",
+  "model": "gpt-4o-mini-2024-07-18",
+  "deepeval": "3.5.9",
+  "max_output_tokens": 512,
+  "input_manifest_sha256": "fd55faad54d076785eac9a2b99f8cdd5f32b9bd30ea3dabeb3b6a44de5917f3e",
+  "original_judge_sha256": "211dc3356747fb80bcaba0003385d873e6ec75719b294d37f67b3cb0c59e6ae9",
+  "judge_harness_sha256": "83729492baf0dab047ff444029178ae9d6e1edc7c898a60b5e316ba09dca52e4",
+  "status": "complete",
+  "rows": 438,
+  "judge_liability_usd": 0.499829,
+  "combined_liability_usd": 0.994081,
+  "pending_requests": 0
+}

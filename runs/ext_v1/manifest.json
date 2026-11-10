@@ -1,0 +1,7 @@
+{
+  "combined_from": [
+    "runs/ext_v1_free",
+    "runs/ext_v1_llm"
+  ],
+  "note": "small_merged = 4 Adaptive candidates; raw keeps LC default + page baselines"
+}

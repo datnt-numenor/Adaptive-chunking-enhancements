@@ -1,0 +1,8 @@
+chunking_method,size_compliance,block_integrity,intrachunk_cohesion,document_contextual_coherence,references_completeness,table3
+llm_regex,99.62,97.8,70.6,86.29,94.43,89.74
+our_recurs_1100,99.96,96.95,67.62,90.78,95.91,90.23
+our_recurs_600,100.0,92.84,69.77,85.36,93.44,88.27
+page,99.73,99.16,69.87,87.86,94.91,90.3
+sdp_a_t600,99.84,99.63,70.06,89.14,95.37,90.8
+sdp_b,99.92,99.63,76.96,86.8,94.63,91.58
+adaptive,99.96,98.42,69.27,89.3,96.23,90.62

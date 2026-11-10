@@ -1,0 +1,263 @@
+{
+  "metric_for_selection": "recall@10",
+  "families": [
+    "sdp_cv@plain=sdp_a@plain,sdp_b@plain,sdp_bq@plain,sdp_a_def@plain,sdp_a_t600@plain,sdp_a_t1000@plain",
+    "sdp_cv@doc=sdp_a@doc,sdp_b@doc,sdp_bq@doc,sdp_a_def@doc,sdp_a_t600@doc,sdp_a_t1000@doc",
+    "bestfixed_cv@plain=proc_recurs1100@plain,proc_recurs600@plain,proc_page@plain,proc_llm_regex@plain,raw_langch1100@plain,raw__langch_recurs_default@plain,raw__page@plain",
+    "bestfixed_cv@doc=proc_recurs1100@doc,proc_recurs600@doc,proc_page@doc,proc_llm_regex@doc,raw_langch1100@doc,raw__langch_recurs_default@doc,raw__page@doc"
+  ],
+  "references": [
+    "adaptive@plain",
+    "adaptive@doc"
+  ],
+  "inputs": [
+    "runs\\proxy\\r1_repr",
+    "runs\\proxy\\r2_fixed"
+  ],
+  "folds": "runs\\table5_v2\\prepared\\folds.jsonl",
+  "choices": {
+    "sdp_cv@plain": {
+      "0": {
+        "chosen": "sdp_a_def@plain",
+        "train_scores": {
+          "sdp_a@plain": 0.8404,
+          "sdp_b@plain": 0.8664,
+          "sdp_bq@plain": 0.8761,
+          "sdp_a_def@plain": 0.8935,
+          "sdp_a_t600@plain": 0.8812,
+          "sdp_a_t1000@plain": 0.8501
+        }
+      },
+      "1": {
+        "chosen": "sdp_a_def@plain",
+        "train_scores": {
+          "sdp_a@plain": 0.8506,
+          "sdp_b@plain": 0.8267,
+          "sdp_bq@plain": 0.8711,
+          "sdp_a_def@plain": 0.8916,
+          "sdp_a_t600@plain": 0.8739,
+          "sdp_a_t1000@plain": 0.8817
+        }
+      },
+      "2": {
+        "chosen": "sdp_a_def@plain",
+        "train_scores": {
+          "sdp_a@plain": 0.8654,
+          "sdp_b@plain": 0.8591,
+          "sdp_bq@plain": 0.8946,
+          "sdp_a_def@plain": 0.9111,
+          "sdp_a_t600@plain": 0.8946,
+          "sdp_a_t1000@plain": 0.8942
+        }
+      },
+      "3": {
+        "chosen": "sdp_a_def@plain",
+        "train_scores": {
+          "sdp_a@plain": 0.8545,
+          "sdp_b@plain": 0.833,
+          "sdp_bq@plain": 0.8717,
+          "sdp_a_def@plain": 0.8869,
+          "sdp_a_t600@plain": 0.8825,
+          "sdp_a_t1000@plain": 0.8515
+        }
+      },
+      "4": {
+        "chosen": "sdp_a_def@plain",
+        "train_scores": {
+          "sdp_a@plain": 0.8093,
+          "sdp_b@plain": 0.8009,
+          "sdp_bq@plain": 0.8471,
+          "sdp_a_def@plain": 0.8651,
+          "sdp_a_t600@plain": 0.8486,
+          "sdp_a_t1000@plain": 0.831
+        }
+      }
+    },
+    "sdp_cv@doc": {
+      "0": {
+        "chosen": "sdp_a_t600@doc",
+        "train_scores": {
+          "sdp_a@doc": 0.8663,
+          "sdp_b@doc": 0.9017,
+          "sdp_bq@doc": 0.891,
+          "sdp_a_def@doc": 0.8919,
+          "sdp_a_t600@doc": 0.9197,
+          "sdp_a_t1000@doc": 0.8484
+        }
+      },
+      "1": {
+        "chosen": "sdp_a_t600@doc",
+        "train_scores": {
+          "sdp_a@doc": 0.8975,
+          "sdp_b@doc": 0.8901,
+          "sdp_bq@doc": 0.9051,
+          "sdp_a_def@doc": 0.8941,
+          "sdp_a_t600@doc": 0.938,
+          "sdp_a_t1000@doc": 0.9019
+        }
+      },
+      "2": {
+        "chosen": "sdp_a_t600@doc",
+        "train_scores": {
+          "sdp_a@doc": 0.9151,
+          "sdp_b@doc": 0.9192,
+          "sdp_bq@doc": 0.9337,
+          "sdp_a_def@doc": 0.9225,
+          "sdp_a_t600@doc": 0.944,
+          "sdp_a_t1000@doc": 0.9102
+        }
+      },
+      "3": {
+        "chosen": "sdp_a_t600@doc",
+        "train_scores": {
+          "sdp_a@doc": 0.8849,
+          "sdp_b@doc": 0.8818,
+          "sdp_bq@doc": 0.9039,
+          "sdp_a_def@doc": 0.8932,
+          "sdp_a_t600@doc": 0.921,
+          "sdp_a_t1000@doc": 0.8882
+        }
+      },
+      "4": {
+        "chosen": "sdp_a_t600@doc",
+        "train_scores": {
+          "sdp_a@doc": 0.8589,
+          "sdp_b@doc": 0.8683,
+          "sdp_bq@doc": 0.8862,
+          "sdp_a_def@doc": 0.8712,
+          "sdp_a_t600@doc": 0.9103,
+          "sdp_a_t1000@doc": 0.854
+        }
+      }
+    },
+    "bestfixed_cv@plain": {
+      "0": {
+        "chosen": "proc_recurs1100@plain",
+        "train_scores": {
+          "proc_recurs1100@plain": 0.8833,
+          "proc_recurs600@plain": 0.8228,
+          "proc_page@plain": 0.8448,
+          "proc_llm_regex@plain": 0.8216,
+          "raw_langch1100@plain": 0.8737,
+          "raw__langch_recurs_default@plain": 0.8613,
+          "raw__page@plain": 0.8195
+        }
+      },
+      "1": {
+        "chosen": "proc_recurs1100@plain",
+        "train_scores": {
+          "proc_recurs1100@plain": 0.8753,
+          "proc_recurs600@plain": 0.803,
+          "proc_page@plain": 0.8281,
+          "proc_llm_regex@plain": 0.8031,
+          "raw_langch1100@plain": 0.8423,
+          "raw__langch_recurs_default@plain": 0.8417,
+          "raw__page@plain": 0.8221
+        }
+      },
+      "2": {
+        "chosen": "proc_recurs1100@plain",
+        "train_scores": {
+          "proc_recurs1100@plain": 0.917,
+          "proc_recurs600@plain": 0.8325,
+          "proc_page@plain": 0.8281,
+          "proc_llm_regex@plain": 0.8342,
+          "raw_langch1100@plain": 0.8761,
+          "raw__langch_recurs_default@plain": 0.8607,
+          "raw__page@plain": 0.8218
+        }
+      },
+      "3": {
+        "chosen": "proc_recurs1100@plain",
+        "train_scores": {
+          "proc_recurs1100@plain": 0.8767,
+          "proc_recurs600@plain": 0.7876,
+          "proc_page@plain": 0.8268,
+          "proc_llm_regex@plain": 0.82,
+          "raw_langch1100@plain": 0.8448,
+          "raw__langch_recurs_default@plain": 0.8475,
+          "raw__page@plain": 0.8271
+        }
+      },
+      "4": {
+        "chosen": "proc_recurs1100@plain",
+        "train_scores": {
+          "proc_recurs1100@plain": 0.8553,
+          "proc_recurs600@plain": 0.7723,
+          "proc_page@plain": 0.788,
+          "proc_llm_regex@plain": 0.7665,
+          "raw_langch1100@plain": 0.8178,
+          "raw__langch_recurs_default@plain": 0.8093,
+          "raw__page@plain": 0.776
+        }
+      }
+    },
+    "bestfixed_cv@doc": {
+      "0": {
+        "chosen": "raw__langch_recurs_default@doc",
+        "train_scores": {
+          "proc_recurs1100@doc": 0.8845,
+          "proc_recurs600@doc": 0.8767,
+          "proc_page@doc": 0.8934,
+          "proc_llm_regex@doc": 0.8744,
+          "raw_langch1100@doc": 0.9111,
+          "raw__langch_recurs_default@doc": 0.9324,
+          "raw__page@doc": 0.8874
+        }
+      },
+      "1": {
+        "chosen": "proc_page@doc",
+        "train_scores": {
+          "proc_recurs1100@doc": 0.8955,
+          "proc_recurs600@doc": 0.8723,
+          "proc_page@doc": 0.9185,
+          "proc_llm_regex@doc": 0.9025,
+          "raw_langch1100@doc": 0.9124,
+          "raw__langch_recurs_default@doc": 0.9057,
+          "raw__page@doc": 0.8997
+        }
+      },
+      "2": {
+        "chosen": "proc_recurs1100@doc",
+        "train_scores": {
+          "proc_recurs1100@doc": 0.9309,
+          "proc_recurs600@doc": 0.8824,
+          "proc_page@doc": 0.9275,
+          "proc_llm_regex@doc": 0.9004,
+          "raw_langch1100@doc": 0.9235,
+          "raw__langch_recurs_default@doc": 0.9047,
+          "raw__page@doc": 0.9152
+        }
+      },
+      "3": {
+        "chosen": "raw_langch1100@doc",
+        "train_scores": {
+          "proc_recurs1100@doc": 0.8946,
+          "proc_recurs600@doc": 0.8751,
+          "proc_page@doc": 0.8988,
+          "proc_llm_regex@doc": 0.9113,
+          "raw_langch1100@doc": 0.9125,
+          "raw__langch_recurs_default@doc": 0.8974,
+          "raw__page@doc": 0.88
+        }
+      },
+      "4": {
+        "chosen": "raw_langch1100@doc",
+        "train_scores": {
+          "proc_recurs1100@doc": 0.8725,
+          "proc_recurs600@doc": 0.8566,
+          "proc_page@doc": 0.883,
+          "proc_llm_regex@doc": 0.8667,
+          "raw_langch1100@doc": 0.8897,
+          "raw__langch_recurs_default@doc": 0.8833,
+          "raw__page@doc": 0.8649
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "holm_family": "all comparisons in this run"
+}
