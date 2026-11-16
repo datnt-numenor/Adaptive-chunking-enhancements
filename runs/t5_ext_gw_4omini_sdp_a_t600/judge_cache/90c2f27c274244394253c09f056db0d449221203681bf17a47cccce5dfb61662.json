@@ -1,0 +1,14 @@
+{
+  "request_hash": "90c2f27c274244394253c09f056db0d449221203681bf17a47cccce5dfb61662",
+  "prompt_sha256": "748f65bc1f81a943796ed89946bec87ac58c6ab0b2b82d25301afdc3d9c42f75",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAXqdd0TyZaeCZkYy9AOl2MH7EL",
+  "prompt_tokens": 8521,
+  "completion_tokens": 53,
+  "actual_usd": 0.0013099499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the challenges of risk management, oversight, liability, and learning from incidents in AI governance, while also referencing models from nuclear power, aviation, pharmaceuticals, and finance."
+  }
+}

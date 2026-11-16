@@ -1,0 +1,14 @@
+{
+  "request_hash": "2860ae09746df2fc306cc882203f3e96eb900ed81875fe1b7842d4bbb1d2cd25",
+  "prompt_sha256": "53a0e859a5aca31227b4ffaffe58a8554a9a40b4e96c38b07a1f9be0ff864ac2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOyiPr4WlqSx8SwIO09KJwI4XB0K",
+  "prompt_tokens": 7527,
+  "completion_tokens": 48,
+  "actual_usd": 0.00115785,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the principle of data minimization and the preference for using less intrusive technologies, such as infrared motion detectors, over cameras that collect personal images."
+  }
+}

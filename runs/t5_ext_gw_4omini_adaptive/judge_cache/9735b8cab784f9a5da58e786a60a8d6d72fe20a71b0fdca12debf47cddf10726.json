@@ -1,0 +1,14 @@
+{
+  "request_hash": "9735b8cab784f9a5da58e786a60a8d6d72fe20a71b0fdca12debf47cddf10726",
+  "prompt_sha256": "fb382f499459384e84ee8c4f2e3ed8bcd56eda2aa0e7e9fb6c6f9579682be7d0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOV0ESwphuxWFPX6Md3MOVppAY1t",
+  "prompt_tokens": 9145,
+  "completion_tokens": 50,
+  "actual_usd": 0.00140175,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the general information required from data controllers and the specific information that must be provided regarding the logic, significance, and anticipated impacts of automated decision-making processes."
+  }
+}

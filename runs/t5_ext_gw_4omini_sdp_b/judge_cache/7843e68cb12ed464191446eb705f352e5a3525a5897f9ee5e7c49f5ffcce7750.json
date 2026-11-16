@@ -1,0 +1,14 @@
+{
+  "request_hash": "7843e68cb12ed464191446eb705f352e5a3525a5897f9ee5e7c49f5ffcce7750",
+  "prompt_sha256": "303bba755c7e72056994eb616ed8bb0f94f042ea2cbb3752db9258242df1c432",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOSL0kTM0IvAsnhcmjS5JxvX3Jaz",
+  "prompt_tokens": 6533,
+  "completion_tokens": 32,
+  "actual_usd": 0.00099915,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses all the limitations mentioned in the Reference Answer, providing a complete support for each claim."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "691c16e44f9238a1de32825d66239ced79e0fed23c5b8e9a96e8cb84f2d9c4e0",
+  "prompt_sha256": "dfdcbc5f9d3de70f6c6bd6c836ad57a276984df704a5dd226b7268af5b8057a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNr5c0X1WvEr7jjUgaECc2H4n4Lj",
+  "prompt_tokens": 7247,
+  "completion_tokens": 49,
+  "actual_usd": 0.00111645,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the three strategies and their components, including the use of the Perspectives Extractor, PDS, and Sentiment Analyzer/Bias Framing."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "29c627bd870cc0158637e97f3ba6b57cd59d5ed743da010d656a03a5c682786c",
+  "prompt_sha256": "8b41e06083eaa5c28d1ac61f1a19185dab1c3447e1f4c9f04cc3e67f88bc9629",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpCkMQ1xC9UYi1WIbadlh1LbYEs",
+  "prompt_tokens": 8127,
+  "completion_tokens": 49,
+  "actual_usd": 0.0012484500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing that Project Essay Grade (PEG) was indeed the first AWE system designed for scoring student writing and that it relied on a word count measure."
+  }
+}

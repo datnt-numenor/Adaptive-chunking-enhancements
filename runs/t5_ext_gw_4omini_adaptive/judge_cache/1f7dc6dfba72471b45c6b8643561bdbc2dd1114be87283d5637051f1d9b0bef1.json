@@ -1,0 +1,14 @@
+{
+  "request_hash": "1f7dc6dfba72471b45c6b8643561bdbc2dd1114be87283d5637051f1d9b0bef1",
+  "prompt_sha256": "0e338bc8b154a16bd0b7bd8e54afc1db552fef7ec09e1460ad7dcfbe6cf57be9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQQDdlGOixi4uV07mFQqj8bgqGs",
+  "prompt_tokens": 6824,
+  "completion_tokens": 50,
+  "actual_usd": 0.0010535999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the two distinct goals for labeling as process-based and impact-based, along with the recommendation to calibrate label terminology and tone to their intended purposes."
+  }
+}

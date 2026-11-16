@@ -1,0 +1,10 @@
+{
+  "request_hash": "32e488991b2b530a8f67f869b8607f84354ec491caee141e93d7c3e36391c3ef",
+  "prompt_sha256": "a855cf5da08d032e06f8e0d4afddf520e317523b1f09e79c7901e25941a74351",
+  "answer": "A challenge of using keyword block lists for input filtering in generative AI tools is that they are rigid and unable to account for multiple cues, which can result in less nuanced decisions. Additionally, malicious actors could evade keyword blocks by adding different characters in between words, using trial and error to find phrases that are not blocked, or utilizing visual synonyms to generate explicit imagery.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMaXLGh6P3ABjkR4Bqy5Oi56fLOs",
+  "prompt_tokens": 9204,
+  "completion_tokens": 73,
+  "actual_usd": 0.0014244
+}

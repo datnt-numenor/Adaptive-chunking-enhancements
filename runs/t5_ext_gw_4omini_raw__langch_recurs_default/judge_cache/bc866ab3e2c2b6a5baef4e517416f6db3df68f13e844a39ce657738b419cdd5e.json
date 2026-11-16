@@ -1,0 +1,14 @@
+{
+  "request_hash": "bc866ab3e2c2b6a5baef4e517416f6db3df68f13e844a39ce657738b419cdd5e",
+  "prompt_sha256": "2a8a10bb7c224698ca8ccfa88f995be4ee2ecb0f67c01e8078ea7f6579a1bb81",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNasGaFnh1XO4qYD19PItaHiWSUp",
+  "prompt_tokens": 7684,
+  "completion_tokens": 39,
+  "actual_usd": 0.001176,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive overview of the seven types of parties involved in AI auditing, which directly supports the claims made in the Reference Answer."
+  }
+}

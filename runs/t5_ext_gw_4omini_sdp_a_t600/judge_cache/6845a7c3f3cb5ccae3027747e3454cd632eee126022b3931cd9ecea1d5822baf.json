@@ -1,0 +1,14 @@
+{
+  "request_hash": "6845a7c3f3cb5ccae3027747e3454cd632eee126022b3931cd9ecea1d5822baf",
+  "prompt_sha256": "7190ef1c107bf1b28a78349c7e39374c2a83fab376ac75da3c3ac65ef8146a09",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODO0tzO2w2pESt4Ce7fVfVYiiWe",
+  "prompt_tokens": 7848,
+  "completion_tokens": 51,
+  "actual_usd": 0.0012078,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining Objective Quality Evidence (OQE) and its role in certification, emphasizing that it must be verifiable and based on observations, measurements, or tests."
+  }
+}

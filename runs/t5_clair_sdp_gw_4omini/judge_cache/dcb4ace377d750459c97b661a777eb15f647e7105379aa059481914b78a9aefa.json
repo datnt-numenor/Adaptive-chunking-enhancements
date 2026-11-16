@@ -1,0 +1,14 @@
+{
+  "request_hash": "dcb4ace377d750459c97b661a777eb15f647e7105379aa059481914b78a9aefa",
+  "prompt_sha256": "24730bef783a2f1db93d7cb7ab1cb260ac34b4e2cc8895fc43409121f0967966",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP6s9ZCxnxvhgRhxOsZtX3czhhYE",
+  "prompt_tokens": 7542,
+  "completion_tokens": 36,
+  "actual_usd": 0.0011528999999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention extending the response period by 90 days; it only allows for one extension of 45 days."
+  }
+}

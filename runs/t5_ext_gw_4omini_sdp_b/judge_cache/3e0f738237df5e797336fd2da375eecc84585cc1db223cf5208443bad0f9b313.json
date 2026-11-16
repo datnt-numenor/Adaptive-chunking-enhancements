@@ -1,0 +1,14 @@
+{
+  "request_hash": "3e0f738237df5e797336fd2da375eecc84585cc1db223cf5208443bad0f9b313",
+  "prompt_sha256": "ae14acecdca9888f95b76ba5b28d49d3eb36ba3dcc06f4bd343ef2572ced83d0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNztwMRdR5wBRrSgoEvM4v2S2ozU",
+  "prompt_tokens": 7700,
+  "completion_tokens": 56,
+  "actual_usd": 0.0011886,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that bounding Pr(Y > y) for large y is effectively equivalent to bounding Pr(α > αc), and it explains the role of η(y) in this relationship."
+  }
+}

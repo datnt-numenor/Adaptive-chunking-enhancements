@@ -1,0 +1,14 @@
+{
+  "request_hash": "af7496cb9144695ca46d7621aafaf30395a58a467e7003e4a75d85f4550c6442",
+  "prompt_sha256": "38f9f71e1e618b45ed7d9c6e2ee1676a20bf5e710b273845b112556d9be840ed",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtwzuT3xPvfNy6jII9EbqpGxpDe",
+  "prompt_tokens": 7882,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012093,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about contrary-to-duty obligations (CTDs) in the AI Act, including examples that illustrate their temporal constraints, thus fully supporting the Reference Answer."
+  }
+}

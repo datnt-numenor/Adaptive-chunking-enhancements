@@ -1,0 +1,10 @@
+{
+  "request_hash": "101830ca8c5e914707b6ca54a64bdb0758a31473151c57008fed8f71e02b293a",
+  "prompt_sha256": "86e4b845dedf88bf48c9a8275af9dca14acd12415b25e4c6394ff587586e1b78",
+  "answer": "The attack described in the IBM AI Risk Atlas that involves overloading prompts with excessive tokens is the \"Context overload attack.\" Its intended effect is to manipulate the model's behavior by overwhelming it with too much information, potentially leading to incorrect or undesired outputs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN1ZzcnuCzn7171K9ErbeTgdoz8K",
+  "prompt_tokens": 8452,
+  "completion_tokens": 51,
+  "actual_usd": 0.0012984
+}

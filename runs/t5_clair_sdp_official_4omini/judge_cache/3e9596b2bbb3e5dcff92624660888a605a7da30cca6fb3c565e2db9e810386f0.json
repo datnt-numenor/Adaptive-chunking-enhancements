@@ -1,0 +1,14 @@
+{
+  "request_hash": "3e9596b2bbb3e5dcff92624660888a605a7da30cca6fb3c565e2db9e810386f0",
+  "prompt_sha256": "8c237ee03f94e554c4cbe879330705e1d818f81b6bb1f343561d0d79b44bcccb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNCBeDiHtPPdUI0UJFUPmSj26Cb0",
+  "prompt_tokens": 7394,
+  "completion_tokens": 43,
+  "actual_usd": 0.0011348999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how CodeCarbon uses psutil for CPU frequency and power consumption, and explains the formula used to compute carbon impact."
+  }
+}

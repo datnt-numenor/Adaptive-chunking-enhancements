@@ -1,0 +1,14 @@
+{
+  "request_hash": "263ea52fb2772a39b5a7d3b745dc7091193820cf2296d10102af8b596cad3519",
+  "prompt_sha256": "979da720af76c2ea9f33f4186d67457af1ddcef1c0ef40d718159e152b51a05e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1gh3YEFsxsOYILveNryfx0aDZP",
+  "prompt_tokens": 8397,
+  "completion_tokens": 40,
+  "actual_usd": 0.00128355,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly mentions using 'hours-per-week' as a proxy for measuring individual effort, which directly supports the claim made in the reference answer."
+  }
+}

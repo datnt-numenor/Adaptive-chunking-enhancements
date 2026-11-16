@@ -1,0 +1,19 @@
+{"qas": [
+  {"question": "In the Data For Good generative AI white paper, how did BLOOM's estimated training carbon footprint change from the initial calculation to the extended full-scope estimate?",
+   "answer": "The initial estimate was 30 tonnes CO2eq. After adding the data center's residual consumption, server manufacturing and the development phase, it rose to 123.82 tonnes CO2eq, about four times the naive estimate.",
+   "evidence": [
+     {"page": 88, "quote": "| Impact carbone | 552 tonnes CO2eq | 30 tonnes CO2eq |"},
+     {"page": 89, "quote": "L'impact total du modèle calculé est maintenant de 123,82 tonnes CO2eq, soit 4 fois plus que la première estimation plus naïve."}
+   ]},
+  {"question": "In Data For Good's generative AI white paper, what PUE value is assumed for ChatGPT's hyperscaler data center, and what does PUE account for?",
+   "answer": "A PUE of about 1.10 is assumed, which raises monthly data center energy to 25.3 GWh. PUE is a ratio always above 1 that accounts for a data center's non-IT consumption, such as cooling, lighting and office spaces.",
+   "evidence": [
+     {"page": 88, "quote": "Le PUE est un ratio toujours supérieur à 1 qui sert à tenir compte de la consommation des équipements non informatiques dans un data center (climatisation, éclairage, espaces bureaux, etc.)."},
+     {"page": 91, "quote": "En considérant un PUE classique d'un data center hyperscaler d'environ 1,10, l'énergie consommée par le data center passe à 25,3 GWh."}
+   ]},
+  {"question": "According to Data For Good's generative AI white paper, what share of a Meta translation model's two-year footprint came from serving predictions rather than learning?",
+   "answer": "Inference accounted for 65% of the overall impact, and training accounted for the remaining 35%.",
+   "evidence": [
+     {"page": 90, "quote": "Sur cette période, l'impact de l'entraînement correspond à 35% de l'impact global, les 65 % restant correspondant à la phase d'inférence."}
+   ]}
+]}

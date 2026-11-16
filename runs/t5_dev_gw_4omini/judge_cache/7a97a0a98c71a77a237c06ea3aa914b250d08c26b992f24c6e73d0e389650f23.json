@@ -1,0 +1,14 @@
+{
+  "request_hash": "7a97a0a98c71a77a237c06ea3aa914b250d08c26b992f24c6e73d0e389650f23",
+  "prompt_sha256": "b54adb1177f55fc9cf46257adc0e0728c1f41a12e7f5b3d87e35dbe2f7c482e7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei24ILF428LJyPc5pgO8JondwWW06",
+  "prompt_tokens": 8933,
+  "completion_tokens": 68,
+  "actual_usd": 0.00138075,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining infection attacks as a type of attack that contaminates the AI system during its training phase, and it also mentions the three categories of attacks (manipulation, infection, exfiltration) as part of the CNIL's taxonomy."
+  }
+}

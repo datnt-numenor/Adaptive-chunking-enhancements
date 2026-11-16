@@ -1,0 +1,14 @@
+{
+  "request_hash": "6ee94b54a8c78b462a73caf071c2e6d4944cfb766720ece5e32ad10395a2c14b",
+  "prompt_sha256": "73488f0c5ea222fcf3c997f25be853e14df392e67679140f902ba8e24b5bb101",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2S9GoH0q4CbVEpUvUoWFL0zINsH",
+  "prompt_tokens": 7778,
+  "completion_tokens": 56,
+  "actual_usd": 0.0012002999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that chatbots and generative AI systems are categorized under the limited risk tier, which requires transparency measures such as informing users they are interacting with AI and labeling AI-generated content."
+  }
+}

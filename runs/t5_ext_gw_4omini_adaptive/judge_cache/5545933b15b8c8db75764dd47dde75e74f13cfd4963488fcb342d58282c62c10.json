@@ -1,0 +1,14 @@
+{
+  "request_hash": "5545933b15b8c8db75764dd47dde75e74f13cfd4963488fcb342d58282c62c10",
+  "prompt_sha256": "239da6a4b4b95ce99a120372e41e06dbc3350934c39bbfdf13e038c55c9fb777",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNt4PlKeCid2HhmLDNdpnPTbPHwR",
+  "prompt_tokens": 8936,
+  "completion_tokens": 31,
+  "actual_usd": 0.0013589999999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating the namespace and prefix for the FRIA ontology."
+  }
+}

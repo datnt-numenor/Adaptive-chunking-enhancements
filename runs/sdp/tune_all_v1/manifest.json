@@ -1,0 +1,73 @@
+{
+  "runs": [
+    "runs\\sdp\\A_default",
+    "runs\\sdp\\A_target600",
+    "runs\\sdp\\A_target800",
+    "runs\\sdp\\A_target1000",
+    "runs\\sdp\\B_default"
+  ],
+  "folds": "runs\\table5_v2\\prepared\\folds.jsonl",
+  "criterion": "mean of 5 Table-3 metrics on train folds",
+  "chosen_per_fold": {
+    "0": {
+      "config": "B_default",
+      "train_means": {
+        "A_default": 90.87,
+        "A_target600": 90.898,
+        "A_target800": 90.97,
+        "A_target1000": 90.685,
+        "B_default": 91.868
+      },
+      "test_mean": 91.791
+    },
+    "1": {
+      "config": "B_default",
+      "train_means": {
+        "A_default": 90.869,
+        "A_target600": 90.934,
+        "A_target800": 91.005,
+        "A_target1000": 90.836,
+        "B_default": 91.713
+      },
+      "test_mean": 92.367
+    },
+    "2": {
+      "config": "B_default",
+      "train_means": {
+        "A_default": 91.023,
+        "A_target600": 91.006,
+        "A_target800": 91.079,
+        "A_target1000": 90.877,
+        "B_default": 91.963
+      },
+      "test_mean": 91.352
+    },
+    "3": {
+      "config": "B_default",
+      "train_means": {
+        "A_default": 90.792,
+        "A_target600": 90.891,
+        "A_target800": 90.962,
+        "A_target1000": 90.697,
+        "B_default": 91.832
+      },
+      "test_mean": 91.925
+    },
+    "4": {
+      "config": "B_default",
+      "train_means": {
+        "A_default": 91.061,
+        "A_target600": 91.035,
+        "A_target800": 91.094,
+        "A_target1000": 90.902,
+        "B_default": 91.878
+      },
+      "test_mean": 91.735
+    }
+  },
+  "baseline": "runs\\full_kaggle\\results\\chunking_metrics.parquet",
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  }
+}

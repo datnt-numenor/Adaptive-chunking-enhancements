@@ -1,0 +1,14 @@
+{
+  "request_hash": "4ad05d17102574230db052628d5a2a0b690fcfe62e760410fbe4c51be4ef2f95",
+  "prompt_sha256": "7bacf7e2dc62b4a97f9eb9026184a9471689333b845806676457d19608831fda",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfQ71p06MPPv3JMpIXIuTHxgWNu",
+  "prompt_tokens": 7419,
+  "completion_tokens": 53,
+  "actual_usd": 0.0011446499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the labor-intensive nature of data management and analysis as described by participants, particularly the government auditor's statement about the significant effort required to understand data structures."
+  }
+}

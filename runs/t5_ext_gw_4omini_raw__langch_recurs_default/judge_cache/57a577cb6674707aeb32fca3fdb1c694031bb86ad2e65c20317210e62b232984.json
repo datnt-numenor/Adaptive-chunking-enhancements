@@ -1,0 +1,14 @@
+{
+  "request_hash": "57a577cb6674707aeb32fca3fdb1c694031bb86ad2e65c20317210e62b232984",
+  "prompt_sha256": "a5715ca7b1ca9a5a10790fbcb71b6d7087e8e5d89ea171ecb5a2d66304409df8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNkG1mufntQgwIrdq7cxzkzn0Upd",
+  "prompt_tokens": 7387,
+  "completion_tokens": 49,
+  "actual_usd": 0.0011374500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that generative AI outputs must be labeled in a machine-readable format to indicate their artificial origin, with exceptions for minor changes to input data."
+  }
+}

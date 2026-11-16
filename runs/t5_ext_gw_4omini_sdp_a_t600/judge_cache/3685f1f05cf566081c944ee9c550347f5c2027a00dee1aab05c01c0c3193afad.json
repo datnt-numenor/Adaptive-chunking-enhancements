@@ -1,0 +1,14 @@
+{
+  "request_hash": "3685f1f05cf566081c944ee9c550347f5c2027a00dee1aab05c01c0c3193afad",
+  "prompt_sha256": "063d8b12e15e370a587a9a2ded56e2a1e5a232ea4c1892ba78a008d60370f1d3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOceLimddgEawAz8yrH3e36rsTma",
+  "prompt_tokens": 6926,
+  "completion_tokens": 40,
+  "actual_usd": 0.0010628999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding the conditions under which training data can be kept for audits, including the necessary security measures."
+  }
+}

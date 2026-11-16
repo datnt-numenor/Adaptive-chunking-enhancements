@@ -1,0 +1,14 @@
+{
+  "request_hash": "ef4d4758fdf9117397cf4e5072772db238589da860e142693502f3b30c1ad016",
+  "prompt_sha256": "c7499d8f61cc029b03aa6ab5668dbc5e2e32100a8a50659baa492e33b5650489",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9WeydmiaFcVmM943uDDQQr6YLS",
+  "prompt_tokens": 8406,
+  "completion_tokens": 58,
+  "actual_usd": 0.0012956999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear and detailed account of the average number of AI-related sentences per filing, confirming the increase from 4.96 in 2020 to 9.27 in 2024 as stated in the Reference Answer."
+  }
+}

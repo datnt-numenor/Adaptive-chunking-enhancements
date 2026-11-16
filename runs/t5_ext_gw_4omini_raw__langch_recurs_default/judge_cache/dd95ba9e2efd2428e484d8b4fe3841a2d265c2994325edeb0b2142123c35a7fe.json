@@ -1,0 +1,14 @@
+{
+  "request_hash": "dd95ba9e2efd2428e484d8b4fe3841a2d265c2994325edeb0b2142123c35a7fe",
+  "prompt_sha256": "9b0e88c1ebc59559afeac71358aead93d386b086e71095dc20ff8af8c492f340",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXCaWBw6CpajASskkp6yO352IKa",
+  "prompt_tokens": 9032,
+  "completion_tokens": 32,
+  "actual_usd": 0.001374,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition of AI literacy, aligning perfectly with the claims made in the Reference Answer."
+  }
+}

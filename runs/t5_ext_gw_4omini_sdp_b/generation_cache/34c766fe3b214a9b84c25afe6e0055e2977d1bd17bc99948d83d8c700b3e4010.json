@@ -1,0 +1,10 @@
+{
+  "request_hash": "34c766fe3b214a9b84c25afe6e0055e2977d1bd17bc99948d83d8c700b3e4010",
+  "prompt_sha256": "645b7d3aaeb156e5c3a5b0995c6dadd35fd17dd5d31eaff7349fb15e26a6ab62",
+  "answer": "According to the ENISA Multilayer Framework, two challenges in security testing of AI that differ from traditional systems are:\n\n1. **Non-determinism due to self-learning**: AI-based systems may evolve over time, which can result in the degradation of their security properties. This means that the behavior of AI systems can change, making it difficult to ensure consistent security testing outcomes.\n\n2. **The test oracle problem**: Assigning a test verdict is more difficult for AI-based systems because not all expected results are known a priori. This complicates the process of determining whether a test case has passed or failed, as the outcomes of AI systems can be less predictable compared to traditional software.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMZ8OOhiw535XGPZLQr76C6Uybt2",
+  "prompt_tokens": 6927,
+  "completion_tokens": 139,
+  "actual_usd": 0.00112245
+}

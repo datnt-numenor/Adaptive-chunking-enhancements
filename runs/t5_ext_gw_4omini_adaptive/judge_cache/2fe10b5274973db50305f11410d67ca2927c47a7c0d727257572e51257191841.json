@@ -1,0 +1,14 @@
+{
+  "request_hash": "2fe10b5274973db50305f11410d67ca2927c47a7c0d727257572e51257191841",
+  "prompt_sha256": "92dc3d97cebec01ab00872c0c04d76f3d702011fdbb5d09252a1d53d3a642800",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNdORnNBpgpIb6OBCOrLRJHgJ5Ca",
+  "prompt_tokens": 8840,
+  "completion_tokens": 51,
+  "actual_usd": 0.0013566,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the limitations of black-box evaluations, including their inability to develop a generalizable understanding and their failure to detect specific issues like jailbreaks and adversarial inputs."
+  }
+}

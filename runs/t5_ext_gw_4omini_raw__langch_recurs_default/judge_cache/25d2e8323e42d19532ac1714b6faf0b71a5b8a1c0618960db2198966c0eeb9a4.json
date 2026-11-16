@@ -1,0 +1,14 @@
+{
+  "request_hash": "25d2e8323e42d19532ac1714b6faf0b71a5b8a1c0618960db2198966c0eeb9a4",
+  "prompt_sha256": "0a500462e9a5cc60cb2edad43ffd5f40d58c1d518cad9197200f1c6b0af86a62",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNth4kUGvD5IikGtOR10Qnthvx55",
+  "prompt_tokens": 7267,
+  "completion_tokens": 58,
+  "actual_usd": 0.00112485,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive details about the requirements for conducting a FRIA, including the need to assess the AI system's role, high-risk categorization, and any exceptions or exemptions, which fully supports the claims made in the Reference Answer."
+  }
+}

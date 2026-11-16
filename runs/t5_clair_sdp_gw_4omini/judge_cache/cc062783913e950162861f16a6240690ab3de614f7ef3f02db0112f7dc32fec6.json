@@ -1,0 +1,14 @@
+{
+  "request_hash": "cc062783913e950162861f16a6240690ab3de614f7ef3f02db0112f7dc32fec6",
+  "prompt_sha256": "6e2aa02748fcc4d323ca7edd9921d9895dcef612bcb318afa5545ce7db6d7cca",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOs5vH347A7NrV4oMVXQK8HOgjx2",
+  "prompt_tokens": 8370,
+  "completion_tokens": 53,
+  "actual_usd": 0.0012873,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the findings of Kindermans et al. (2018) and Ghorbani et al. (2019) about saliency maps."
+  }
+}

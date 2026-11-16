@@ -1,0 +1,14 @@
+{
+  "request_hash": "89d18cc053331aea2606bce4bd656184d519e0ba6dbff1438a3a46e2882a86f4",
+  "prompt_sha256": "d26690cbe076b2dc96c41267e3ee42bb9f415ba21f4155397310e4ef0f10cf73",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMtzYJ9JI3rHJqPK9XFJkoQChT7B",
+  "prompt_tokens": 8585,
+  "completion_tokens": 60,
+  "actual_usd": 0.00132375,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that data subjects can request information, rectification, and erasure regarding the input and output of AI systems, in accordance with Articles 15, 16, and 17 of the GDPR."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "5de24fe873053fee55c3fdeb4a5d3044222d5f5bb59c0948917ec284d73b1a10",
+  "prompt_sha256": "63d7b90f70a6c99018ecf2fbdd5fca08b901beae3a3e161929c91cffe832ccb6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNWHdGxCJHqE5GiF6v5nxDLPqwoi",
+  "prompt_tokens": 8111,
+  "completion_tokens": 47,
+  "actual_usd": 0.0012448499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly lists the six dimensions of AI evaluation as performance, robustness, explainability, fairness, privacy, and security, which fully supports the claims made in the Reference Answer."
+  }
+}

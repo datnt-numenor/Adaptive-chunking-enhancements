@@ -1,0 +1,14 @@
+{
+  "request_hash": "b61d9fc6288e7c555f569a656a8ce87434d7cd6e752d6de6f66ff1c6b42661b2",
+  "prompt_sha256": "78a4cffbd4d63737b89f368bab786b765136f105905afd2d6b5267ac37ce09f7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOZz7BRXUD56L1KAxrlkX2uQvwxR",
+  "prompt_tokens": 8222,
+  "completion_tokens": 48,
+  "actual_usd": 0.0012621,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the specific documentation requirements for data collection, quality, representativeness, relevance, breadth, and public disclosability as mandated for agencies."
+  }
+}

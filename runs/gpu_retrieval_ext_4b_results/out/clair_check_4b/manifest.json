@@ -1,0 +1,42 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "/workspace/models/Qwen3-Embedding-4B@5cf2132",
+    "note": "default = Qwen3-Embedding-0.6B@97b0c61 (proxy); harness uses Qwen3-Embedding-4B"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs/table5_repr_v1/prepared",
+  "qa": "runs/table5_v2/qa-full/qa_frozen.jsonl",
+  "systems": "adaptive,sdp_a_t600",
+  "reprs": "plain,doc",
+  "summary": {
+    "adaptive@plain": {
+      "recall@10": 0.8863647614059484,
+      "recall@5": 0.7879047808183994,
+      "ndcg@10": 0.6918927363064158,
+      "hit@10": 0.9191919191919192
+    },
+    "adaptive@doc": {
+      "recall@10": 0.9147225352832468,
+      "recall@5": 0.8646385177049727,
+      "ndcg@10": 0.7581216375384131,
+      "hit@10": 0.9494949494949495
+    },
+    "sdp_a_t600@plain": {
+      "recall@10": 0.8862034715222266,
+      "recall@5": 0.7942501580688752,
+      "ndcg@10": 0.7102991770913052,
+      "hit@10": 0.9191919191919192
+    },
+    "sdp_a_t600@doc": {
+      "recall@10": 0.9064054917242468,
+      "recall@5": 0.854273708872559,
+      "ndcg@10": 0.7631563428712065,
+      "hit@10": 0.9393939393939394
+    }
+  },
+  "created": "2026-11-09 16:16:50"
+}

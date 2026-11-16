@@ -1,0 +1,10 @@
+{
+  "request_hash": "618fbb1affba109fb0a1778c04cc22a9e868701fbc47d2ba4234f02f542e2591",
+  "prompt_sha256": "c9af972608d62ca1afeaf0499711bfacbdee1365207b5c63e51f4702b4982508",
+  "answer": "ArXiv 2401.14446 discusses several limitations of using only input/output analysis, also known as black-box evaluations, to evaluate AI systems:\n\n1. **Inability to Identify Harms**: Black-box evaluations are limited in their ability to identify harms or provide meaningful explanations, as they rely solely on inputs and outputs without understanding the internal workings of the system.\n\n2. **Generalizability Issues**: Black-box methods do not allow for a generalizable understanding of the system, as the vast number of possible inputs makes it impractical to develop a complete understanding based solely on input/output analysis.\n\n3. **Component Analysis Limitations**: Black-box access prevents evaluators from studying system components separately, which is essential for tracing problems and implementing targeted interventions.\n\n4. **Misleading Results**: The reliance on how evaluators design inputs can lead to biased conclusions about the system's characteristics, potentially obscuring underlying flaws.\n\n5. **Unreliable Explanations**: Black-box explanation methods often fail to reliably identify causal relationships between input features and outputs, leading to misleading justifications for decisions made by the AI system.\n\n6. **Limited Insight for Addressing Failures**: Black-box evaluations provide little insight into how to address problems they discover, often leading to ineffective corrective actions that do not tackle the root causes of issues.\n\nOverall, the document emphasizes that black-box evaluations are insufficient for rigorous AI audits and that more comprehensive methods, such as white-box evaluations, are necessary for effective oversight and understanding of AI systems.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMnn2PJJwnAa0hmCCrMOque6xKmR",
+  "prompt_tokens": 8630,
+  "completion_tokens": 308,
+  "actual_usd": 0.0014793
+}

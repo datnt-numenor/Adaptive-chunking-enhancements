@@ -1,0 +1,14 @@
+{
+  "request_hash": "47b018fb7142c99e4850c190a92111f3b4d62b0b667884b0f06dcce92303bafb",
+  "prompt_sha256": "9ddec0d4ca58a47f2ed7ab6e17012f5347aeb95675661759349c33e88658deb9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtYGHt2pe8PWxx7V2tqCIXvCowV",
+  "prompt_tokens": 10401,
+  "completion_tokens": 51,
+  "actual_usd": 0.0015907499999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that the national Algorithm Register for public organisations has been filled with more than 400 algorithms by the end of June 2024, fully supporting the claim made in the Reference Answer."
+  }
+}

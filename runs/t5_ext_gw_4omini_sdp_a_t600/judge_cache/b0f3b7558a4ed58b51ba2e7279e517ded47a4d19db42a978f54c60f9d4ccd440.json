@@ -1,0 +1,14 @@
+{
+  "request_hash": "b0f3b7558a4ed58b51ba2e7279e517ded47a4d19db42a978f54c60f9d4ccd440",
+  "prompt_sha256": "e4ffb8c109f978a8b1e2a6929704d305e493dc869a8e4b414a2b7dc58435d2fe",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNzzW4VMaikXxjrlpcIyOrZ76bY8",
+  "prompt_tokens": 6633,
+  "completion_tokens": 61,
+  "actual_usd": 0.00103155,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that the probability of α exceeding αc is effectively equivalent to bounding the tail probability Pr(Y > y) for large y, with η(y) described as the function that approaches zero as y increases."
+  }
+}

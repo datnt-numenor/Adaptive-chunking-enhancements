@@ -1,0 +1,14 @@
+{
+  "request_hash": "a28ff1e4b6a47dda5fa7256e2bf9fdc6bcfb7e08188a9400e84dfa4d18f9abed",
+  "prompt_sha256": "45b2c4ccf2a1232969092fdf7eaf3db68f722b76210eafc8604cde922060b919",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOPyjEjaaUr10BUYEHMwPKzvrXNu",
+  "prompt_tokens": 8474,
+  "completion_tokens": 54,
+  "actual_usd": 0.0013035,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that data subject rights, including requests for information, rectification, and erasure, apply to the input and output of AI systems, as outlined in the GDPR."
+  }
+}

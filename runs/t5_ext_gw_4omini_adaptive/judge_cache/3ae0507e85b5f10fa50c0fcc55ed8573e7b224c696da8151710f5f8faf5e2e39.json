@@ -1,0 +1,14 @@
+{
+  "request_hash": "3ae0507e85b5f10fa50c0fcc55ed8573e7b224c696da8151710f5f8faf5e2e39",
+  "prompt_sha256": "ddd0bc5c6a6d2fabf38ee9b5078a1ab4d01dde8797005390f625659a3c344240",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOFiFLb1oYMzIZdsqStdaslWcX2l",
+  "prompt_tokens": 8061,
+  "completion_tokens": 42,
+  "actual_usd": 0.00123435,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a thorough explanation of Goodhart's Law and its implications in the context of compliance metrics, fully supporting the claim made in the Reference Answer."
+  }
+}

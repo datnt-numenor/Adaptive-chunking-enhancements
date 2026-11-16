@@ -1,0 +1,102 @@
+{
+  "method": "sdp_b",
+  "config": {
+    "max_tokens": 1100,
+    "min_tokens": 100,
+    "tau": 1.0,
+    "heading_bonus": [
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "continuation_penalty": 3.0,
+    "pronoun_penalty": 0.5,
+    "colon_penalty": 0.5,
+    "list_penalty": 0.3,
+    "small_penalty": 5.0,
+    "artifact_penalty": 2.0,
+    "max_units_per_chunk": 2000
+  },
+  "overrides": [],
+  "docs": [
+    "Norma (l\u00e9gal)_EDPS Generative AI guidelines",
+    "Ada (technique)_Standards - Explicability",
+    "Ada (technique)_Standards - Transparency",
+    "Ada (technique)_Standards - Robustness",
+    "Ada (technique)_Standards - Vigilance",
+    "Ada (technique)_Standards - Security",
+    "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3",
+    "Norma (l\u00e9gal)_EDPB statement on data protection authorities"
+  ],
+  "version_b": {
+    "embed_model": {
+      "name": "jinaai/jina-embeddings-v3",
+      "revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6"
+    },
+    "struct_weight": 0.1,
+    "icc_weight": 1.0,
+    "dcc_weight": 1.0,
+    "window_tokens": 3000,
+    "dinkelbach": {
+      "Norma (l\u00e9gal)_EDPS Generative AI guidelines": [
+        1.53894,
+        1.62729,
+        1.62729
+      ],
+      "Ada (technique)_Standards - Explicability": [
+        1.53611,
+        1.6061,
+        1.65508,
+        1.65508
+      ],
+      "Ada (technique)_Standards - Transparency": [
+        1.48577,
+        1.5639,
+        1.58988,
+        1.58988
+      ],
+      "Ada (technique)_Standards - Robustness": [
+        1.52451,
+        1.62454,
+        1.63417,
+        1.63417
+      ],
+      "Ada (technique)_Standards - Vigilance": [
+        1.56186,
+        1.62349,
+        1.6332,
+        1.6344,
+        1.6344
+      ],
+      "Ada (technique)_Standards - Security": [
+        1.55937,
+        1.62872,
+        1.64851,
+        1.65203,
+        1.65203
+      ],
+      "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3": [
+        1.48397,
+        1.59347,
+        1.6051,
+        1.6051
+      ],
+      "Norma (l\u00e9gal)_EDPB statement on data protection authorities": [
+        1.46842,
+        1.63408,
+        1.66051,
+        1.66302,
+        1.66302
+      ]
+    }
+  },
+  "postprocessing": "merge_small_chunks_to_neighbours(min=100,max=1150,next)",
+  "git_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19044-SP0",
+  "seconds": 0.3,
+  "created": "2026-11-09 02:56:17"
+}

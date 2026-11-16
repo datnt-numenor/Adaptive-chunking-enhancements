@@ -1,0 +1,14 @@
+{
+  "request_hash": "4255e96013ef7be3992ac75258f5de03d7af6025efb21038eca743d8e03c09fa",
+  "prompt_sha256": "08ab873cc08b0ffef374139d16b1e8e4fcd3bedc91b16737453ff54a93627fc2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjU99kSc9IFt8dBXTWSPzCClNDX",
+  "prompt_tokens": 7090,
+  "completion_tokens": 40,
+  "actual_usd": 0.0010875,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive details about the Evaluation Data section and the expectations for the Training Data section, fully supporting the claims made in the Reference Answer."
+  }
+}

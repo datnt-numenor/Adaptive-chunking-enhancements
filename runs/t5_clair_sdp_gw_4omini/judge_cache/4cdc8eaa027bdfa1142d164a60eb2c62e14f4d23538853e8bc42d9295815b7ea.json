@@ -1,0 +1,14 @@
+{
+  "request_hash": "4cdc8eaa027bdfa1142d164a60eb2c62e14f4d23538853e8bc42d9295815b7ea",
+  "prompt_sha256": "5de4ca0c56912c615be34959449e03a6a43d596bb6b67f80d4f168df311cfbac",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOYg178mDB2XLHvfa8ieZvhADsEf",
+  "prompt_tokens": 9365,
+  "completion_tokens": 51,
+  "actual_usd": 0.00143535,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the thresholds for modifications and the specific conditions under which they apply, including the adjustment to one third of the high-impact capabilities threshold for systemic-risk models."
+  }
+}

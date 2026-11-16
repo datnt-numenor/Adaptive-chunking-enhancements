@@ -1,0 +1,14 @@
+{
+  "request_hash": "917dd85a3f0aedc329c4fb24f2a1c145fe223e8eff7cd12e18aae3b779ea35fa",
+  "prompt_sha256": "acc61b41144a1e799b5624f3bb3ac7efb565a3e14f568027f33a16eba660a8ae",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPAH8iCShku2t1uO8zexU2sMHmqs",
+  "prompt_tokens": 4022,
+  "completion_tokens": 40,
+  "actual_usd": 0.0006272999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning that Microsoft and Google argue for a new 'deployer' designation for entities purchasing AI systems."
+  }
+}

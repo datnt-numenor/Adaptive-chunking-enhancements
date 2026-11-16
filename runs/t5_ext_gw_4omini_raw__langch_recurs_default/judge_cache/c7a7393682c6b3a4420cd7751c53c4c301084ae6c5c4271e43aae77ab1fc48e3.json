@@ -1,0 +1,14 @@
+{
+  "request_hash": "c7a7393682c6b3a4420cd7751c53c4c301084ae6c5c4271e43aae77ab1fc48e3",
+  "prompt_sha256": "f347f0ca253378a031a0a30baddf6f718d86652a98ef71e770dcd6aeb9811122",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQlEfM9gvItyYiEVNpPbXUaNSaj",
+  "prompt_tokens": 5867,
+  "completion_tokens": 41,
+  "actual_usd": 0.00090465,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the application of benchmarks to assess systemic bias and the importance of documenting assumptions and limitations, including data contamination."
+  }
+}

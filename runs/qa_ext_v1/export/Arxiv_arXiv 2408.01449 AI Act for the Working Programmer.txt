@@ -1,0 +1,401 @@
+DOCUMENT: arXiv 2408.01449 AI Act for the Working Programmer
+
+<<<PAGE 12>>>
+<!-- PageHeader: 12 Hermanns et al. -->
+
+- ensure an adequate level of cybersecurity protection for the general-purpose AI model with systemic risk and the physical infrastructure of the model. 41
+
+As soon as a GPAI model meets the technical requirements for systemic risks, the provider must notify the Commission within two weeks at the latest. 42 In its notification, the provider can also put forward arguments that the GPAI model does not present any systemic risks despite the technical circumstances. 43
+
+If a general-purpose AI model poses "systemic risks", as defined by high-impact capabilities, the AI Act additionally requires standardised evaluations, risk assessments, cybersecurity measures, incident reporting, and timely notification to the Commission.
+
+# 6 Requirements for the Provider of AI Systems
+
+If the developed AI system falls within the scope of application, three main types of relevant legal ramifications can arise from the AI Act: the system may (1) be prohibited, (2) be considered high-risk, or (3) be none of the two.
+
+# 6.1 Prohibited systems
+
+The AI Act defines a number of AI systems that are associated with what it considers to be unacceptable risks. These systems are prohibited under Article 5 [10]. 44 The catalogue of AI systems listed here encompasses certain use cases:
+
+- Subliminal techniques that have the objective or effect of materially distorting a person or group of persons' behaviour causing them or others significant harm. 45 This could affect the development of recommendation systems used in social media or advertising. The question that will arise here is when a distorting effect on one's own behavior reaches a material level. This also applies to other systems that exploit any vulnerability of natural persons due to their age, disability or a specific social or economic situation; 46
+
+- Systems for the evaluation or classification of natural persons or groups based on their social behavior or personality characteristic with a social score leading to detrimental or unfavourable treatment. 47 This refers to social evaluation systems that result in detrimental or unfavorable treatment in certain contexts that is either unrelated to the contexts in which the data was generated or disproportionate to the behavior of the individuals;
+
+\* 41 Article 55(1) lit. d) [10].
+
+\* 42 Article 52(1) [10].
+
+\* 43 Article 52(2) [10].
+
+\* 44 The systems listed there may be already prohibited by data protection law, Union law or the law of the Member States, for Union law explicitly Article 5(8) [10].
+
+\* 45 Article 5(1) lit. a) [10].
+
+\* 46 Article 5(1) lit. b) [10].
+
+\* 47 Article 5(1) lit. c) [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: AI Act for the Working Programmer 13 -->
+
+- Systems for risk assessment of natural persons to predict the risk of a person committing a criminal offence based solely on profiling or assessing personality traits and characteristics; 48
+
+- Creating or expanding facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage; 49
+
+- Systems to infer emotions of a natural person in the workplace or education institutions except for medical or safety reasons; 50
+
+- Biometric categorisation systems that categorise individually natural persons based on biometric data to infer protected attributes or characteristics. 51 This does not apply to the labelling or filtering of lawfully acquired biometric datasets or categorising of biometric data for law enforcement.
+
+The placing on the market, putting into service or use of the aforementioned AI systems is prohibited. In addition, only the use, but not the development, of "real-time" biometric identification systems in publicly accessible spaces for law enforcement is generally prohibited, yet subject to broad exceptions. 52
+
+Article 5 [10] prohibits AI systems with unacceptable risks that cause significant harm by distorting behavior, exploiting vulnerabilities, using social scoring, predicting criminal behavior based solely on profiling, scraping facial images, inferring emotions outside of medical or security contexts, or categorizing individuals based on biometrics, while also restricting real-time biometric identification in public spaces with exceptions.
+
+# 6.2 High-risk AI systems
+
+If AI systems are not prohibited by the AI Act, it is generally permissible to market such systems. However, the AI Act imposes specific requirements on the development of those AI systems that are deemed to pose high risks. There are two ways in which an AI system can be considered high risk (also cf. Figure 2).
+
+High-risk AI systems covered by Annex I The first option is found in Article 6(1) [10], which states that the AI system is considered high risk if two conditions are met. First, the AI system must serve as a safety component of a product covered by one of the harmonized EU acts listed in Annex I [10] or be such a product itself. 53 Second, the AI system must be subject to conformity assessment by a third party with a view to its placing on the market or putting into service on the basis of those acts listed in Annex I [10].
+
+\* 48 Article 5(1) lit. d) [10].
+
+\* 49 Article 5(1) lit. e) [10].
+
+\* 50 Article 5(1) lit. f) [10].
+
+\* 51 Article 5(1) lit. g) [10].
+
+\* 52 Article 5(1) lit. h), (2)-(7) [10].
+
+\* 53 "Safety components" are defined in Article 3(14) [10] as a component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: 14 Hermanns et al. -->
+
+<Figure>
+Fig. 2. Two avenues for an AI system to be classified as high-risk, represented as a Venn diagram.
+</Figure>
+
+Annex I [10] contains a large collection of EU legislation related to product safety law, e.g. the Medical Devices Directive, the Machinery Regulation and the Toys Directive. It is important to emphasise, however, that the AI system is not automatically considered high risk if the relevant product falls under one of these legal acts. This is because a third-party conformity assessment is only required in certain cases within the respective legal acts. For instance, the above-mentioned Machinery Directive regulates the safety of machinery placed on the market. Its scope is therefore quite broad. However, only some, but not all of the machinery mentioned need to undergo a third party assessment. 54 For this reason, the final classification of AI systems in these cases can only be determined on a case-by-case basis, which will likely require specialized legal expertise.
+
+Under Article 6(1) [10], an AI system is considered high-risk if it serves as a safety component of a product under harmonized EU legislation listed in Annex I [10] and requires third-party conformity assessment for its market placement or putting into service, though this has to be determined on a case-by-case basis.
+
+High Risk Systems covered by Annex III Secondly, pursuant to Article 6(2) [10] an AI system is considered to be high-risk if it is listed in Annex III [10]. The classification of these systems is more accessible than the list in Annex I [10] because general areas of application are outlined (points 1-8) and within each of these points specific use cases are listed exhaustively. Accordingly, AI systems used for the following use cases are generally considered high risk:
+
+- Biometrics, including AI systems used for remote biometric identification, biometric categorisation according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics, or emotion recognition;
+
+\* 54 Included are, for example, vehicle servicing lifts or, more relevant, safety components with fully or partially self-evolving behaviour using machine learning approaches to ensure safety functions, cf. Art. 25(1), (2) and Annex I Part A (3), (5) of the Machinery Regulation [9].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: AI Act for the Working Programmer 15 -->
+
+- AI systems for the use as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity;
+
+- Education and vocational training, including systems to determine access to institutions, to evaluate learning outcomes, assessing appropriate levels of education, or for monitoring students during tests;
+
+- Recruitment tools or systems used to make decisions affecting terms of employment, like promotion or termination of contractual relationships, allocation of tasks, or monitoring;
+
+- Access to and enjoyment of essential private or public services and benefits, like healthcare, credits, insurance, or assistance in emergencies;
+
+- Law enforcement, e.g. systems to be used to assess the risk of natural persons becoming victims of criminal offences, to evaluate the reliability of evidence, assess the risk of a person (re-)offending, or detect, investigate or prosecute criminal offences;
+
+- Migration, asylum and border control management, e.g. systems to assist authorities for the examination of applications, or for border control management;
+
+- Administration of justice and democratic processes, including to assist a judicial authority in researching and interpreting facts and the law or applying the law, or systems to influence the outcome of an election or referendum.
+
+There is, however, an exception to this general classification of high-risk AI systems, which was added during the finalisation of the text of the AI Act: even if the system in question falls under one of these categories it shall not be considered highrisk if it doesn't perform profiling of natural persons, 55 and doesn't pose a significant risk of harm to the health, safety or fundamental rights of natural persons, including when the system does not materially influence the outcome of a decision making process. 56 This applies if the system is intended to perform a narrow procedural task, to improve the results of prior human activity, to detect decision-making patterns or deviations therefrom without replacing human judgement, or to perform a preparatory task to an assessment related to the use cases in Annex III [10]. This could become an essential way to avoid the strict obligations that the AI Act defines for high-risk systems. However, the remaining legal uncertainties associated with the wording of these exceptions will need to be reduced in the future by the deciding courts.
+
+According to Article 6(2) [10], an AI system is high-risk if it is listed in Annex III [10] and thus used in sensitive areas such as biometrics, critical infrastructure, education, recruitment, essential services, law enforcement, migration or justice, although some exceptions apply in the absence of significant risk.
+
+Obligations: Safety requirements for high-risk AI systems Compliance with the following safety requirements contained in Articles 9 to 15 [10] must be ensured when placing high-risk systems on the market or putting them into service:
+
+\* 55 Article 6(3) subpara. 3 [10].
+
+\* 56 Article 6(3) subpara. 1 [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 16 Hermanns et al. -->
+
+- Establishment, application, documentation and maintenance of a risk management system, Article 9 [10];
+
+- Development and training of high-risk systems with training and validation data according to certain quality criteria, data governance, Article 10 [10];
+
+- Technical documentation, Article 11 [10];
+
+- Automatic recording of processes and events (logging) according to recognized standards, Article 12 [10];
+
+- Transparency and provision of information to the deployer, Article 13 [10];
+
+- Enabling human oversight during the use of the system, Article 14 [10];
+
+- Accuracy, robustness and cybersecurity in relation to the intended purpose of the specific system, Article 15 [10].
+
+In general, the system requirements are very broad, which can lead to difficulties for programmers during implementation. As mentioned above, technical standards being developed by European standardisation organisations are foreseen to make the obligations specific and to give clear guidance to providers. However, it remains to be seen whether these standards will be sufficient to provide a comprehensive and workable set of rules.
+
+Compliance with the safety requirements must be demonstrated by the provider through a conformity assessment procedure. 57 In most cases this procedure will take place as part of an internal control. This is particularly the case if a system is considered a high-risk system within the meaning of Annex III [10] and available technical standards have been applied completely. 58 All other high-risk systems must undergo an external assessment procedure under the above-mentioned harmonized acts, which will in future also verify compliance with the safety requirements of the AI Act. 59
+
+Furthermore, the provider's responsibility for a high-risk system does not end with the completion of the assessment procedure. Rather, ongoing compliance of the system must be ensured. This includes adjustments to the system if they have reason to consider that the AI system no longer meets the safety requirements. 60 In addition, a post-market monitoring system must be set up and maintained. 61 Finally, the assessment procedure must be repeated if substantial modifications have been made to the system. 62
+
+For high-risk AI systems, compliance with Articles 9 to 15 [10] mandates a comprehensive risk management system, adherence to quality data standards, technical documentation, automatic logging, transparency, human oversight, and cybersecurity, with initial and ongoing conformity assessments required to ensure safety before and after market entry.
+
+\* 57 Article 16 lit. f) [10].
+
+\* 58 Article 43(1), (2) [10], Annex VI [10].
+
+\* 59 So-called "notified bodies", Article 43(3) [10].
+
+\* 60 Article 20(1) [10].
+
+\* 61 Article 16 lit. h), 72 [10].
+
+\* 62 Article 43(4) [10]; note that self-learning systems do not have to go through a new assessment procedure for changes that were predetermined by the provider.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: AI Act for the Working Programmer 17 -->
+
+Obligations resulting indirectly from deployers' obligations? Lastly, it appears possible that further obligations of the provider result indirectly from obligations imposed on the deployer. An example for this phenomenon is rooted in the right to explanation, stipulated in Article 86 [10]. Deployers of high-risk systems within the meaning of Annex III [10] must provide clear and meaningful explanations about the role of the AI system in the decision-making process to affected persons. 63 Although the provision is aimed at deployers and its scope is controversial, it may also indirectly impose obligations on the provider. For example, this could result in an obligation to at least enable an explanation of the decisions of an AI system. This does not seem far-fetched, as the AI Act requires general transparency and explainability of high-risk systems in various instances. 64 However, there is currently very little clarity on what Article 86 [10] will entail for developers.
+
+Deployers of stand-alone high-risk AI systems must clearly explain the AI's decision-making role to affected persons, which may indirectly impose obligations on developers.
+
+# 6.3 Further transparency obligations for certain AI systems
+
+Lastly, certain AI systems must meet a number of transparency requirements according to Article 50 [10]. Transparency in this context means that programmers must provide specific information to the end user of their system. This information must be provided to the end user in a clear and perspicuous manner no later than at the time of the first interaction or exposure. 65
+
+On the one hand, this applies to systems that are designed to interact directly with end users. 66 These systems must be designed and developed to inform end users that they are interacting with an AI system if this is not obvious to a reasonably wellinformed, observant, and circumspect person. 67 In other words, chatbots, for example, must be designed and developed in such a way that they make it clear to their users that they are bots ("Bot-Disclosure"). 68
+
+On the other hand, generative AI must make clear the artificial origin of its output. 69 This equally applies to AI systems and GPAI models that generate synthetic audio, image, video or text content. The providers of these models must ensure that the output of their systems is labelled in a machine-readable format and can be identified as artificially generated or manipulated. 70 This obligation does not apply if the system or model makes minor changes to the input data. However, it is unclear at what point a change to an input is considered to be minor, so providers would be better advised to introduce a general label for all outputs.
+
+\* 63 Article 86(1) [10]; "deployers" are defined as any natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity, Article 3(4) [10].
+
+\* 64 Article 13, 14 [10].
+
+\* 65 Article 50(5) [10].
+
+\* 66 Article 50(1) [10].
+
+\* 67 Note the exception in Article 50(1) [10] for AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences.
+
+\* 68 Critique to this approach, cf. [27, p. 106].
+
+\* 69 Article 50(2) [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 18 Hermanns et al. -->
+
+Certain AI systems must meet transparency requirements according to Article 50 [10], necessitating that systems interacting with users clearly disclose their AI nature and that generative AI outputs are labelled as artificially created or manipulated.
+
+# 7 Building an AI System on top of a GPAI model
+
+We now aim at reflecting some practical consequences of what we discussed thus far. We consider the question of how to navigate the AI Act if aiming to build an AI system that uses a GPAI model as one of its core functional components. These downstream AI systems can take two forms under the AI Act. They can either be considered SPAI systems that are built on top of a GPAI model if they have specific purposes. Or they can be considered a GPAI system if the final system itself has the capability to serve a variety of purposes. 71
+
+# 7.1 Obligations for SPAI systems built on top of a GPAI model
+
+When integrating a GPAI model into an SPAI system that is categorised as high-risk, some compliance issues may arise. To illustrate these issues, let us elaborate a use case. Specifically, we consider the following hypothetical auto-ranking system used by a university admissions committee to decide which applicant should be granted admission to a particular degree program:
+
+Example 2. The AI system "AutoRa" produces a (partial) order of applicants by aggregating pairwise decisions of the form "candidate X is no less suited than candidate Y". The resulting partial order is presented to an admission board, which uses it to decide where to put the bar for acceptance, by basically cutting the order in two parts: one below the acceptance threshold (that are rejected), and one above (that are accepted). The individual decisions "candidate X is no less suited than candidate Y" are relegated to a GPAI model "SmartLLM", which AutoRa is built ontop. Among its multitude of competences, SmartLLM has the ability to directly process the complete application material of candidate X and of Y (each presented as a single pdf consisting of CV, motivation letter, reference letters, English language certificate, transcript of records, and other certificates). It thereby judges who, if any of the candidates, is better suited for the study program. Prompt engineering has been used to make sure SmartLLM will answer "Yes" or "No" according to its judgement to the question "Is candidate X is less suited than candidate Y?" Furthermore, the GPAI model has been fine tuned by retraining it based on the decisions taken over the past five years by the board, 72 using state-of-theart data curation techniques. The AI system AutoRa internally uses standard rules to minimize the number of calls to SmartLLM when assembling the partial order.
+
+\* 70 The AI Act also names some examples for appropriate techniques in its Recital 133 [10], such as watermarks, metadata identifications, cryptographic methods for proving provenance and authenticity of content, logging methods, fingerprints.
+
+\* 71 Defined in Article 3(66) [10]; Recital 100 [10] makes this clear when stating that "when a general-purpose AI model is integrated into or forms part of an AI system, this system should be considered to be general-purpose AI system when, due to this integration, this system has the capability to serve a variety of purposes".
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: AI Act for the Working Programmer 19 -->
+
+Legal classification under the AI Act. AutoRa, being an AI system that decides over the access to higher education, clearly falls under the high-risk systems listed in Annex III 3 (a) [10]. And thus AutoRa needs to fulfil the requirements for high-risk systems. This includes compliance with the quality requirements for training data under Article 10 [10], for instance with respect to possible biases that are likely to lead to discrimination, 73 a risk that is notoriously high for the university admission situation in our focus. In this regard, Article 10 [10] requires that the training, validation and testing data sets shall be subject to data governance and management practices appropriate for the intended purpose of the system, 74 and for this intended purpose it does not make a difference if the underlying technology uses a GPAI model or not.
+
+Compliance through the training of the underlying GPAI model. First, one could wonder if the original training of SmartLLM can fulfil these requirements and whether compliance could be reasonably ensured by the provider of AutoRa. We doubt that the training of GPAI models is sufficient for high-risk use cases, as they are usually trained on very large datasets and therefore lack the necessary curation. In any case, however, the providers of downstream AI systems probably won't have the necessary means to verify whether or not the training of the GPAI model suits the intended purposes of their AI system. As outlined above, the provider of GPAI models, in our case SmartLLM, has certain information obligations for the benefit of downstream providers who build an AI system with a specific purpose based on the GPAI model. 75 The provision of this information also is intended to make it easier for providers of downstream systems to comply with the obligations of the AI Act, 76 which in our setting is the provider of AutoRa. However, the information obligations shall apply without prejudice to the provider's intellectual property and trade secrets. 77 Accordingly, the majority of providers of GPAI models will reduce the provided information to a minimum, thereby hampering verification of compliance through downstream providers.
+
+We therefore doubt that the information requirements for GPAI model providers are sufficient to enable downstream providers to verify compliance. This is particularly true with regard to the obligations concerning training data, as according to our reading the AI Act stipulates that the provider of AutoRa as a high-risk AI system would have to duly examine the training data in view of possible biases that are likely to lead to prohibited discriminatory output and to take appropriate countermeasures. 78
+
+\* 72 We assume that the applications of earlier candidates where graded on a 5-point scale from "strong reject" to "strong accept" by the selection committee, and that the fine tuning is done according to these ratings.
+
+\* 73 Article 10(2) f) [10].
+
+\* 74 Article 10(2) [10].
+
+\* 75 Article 53(1) lit. b) [10].
+
+\* 76 Article 53(1) b) (i) [10].
+
+\* 77 Article 53(1) b) [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: 20 Hermanns et al. -->
+
+Compliance through fine-tuning. Another option to ensure compliance would be to adapt an existing GPAI model sufficiently to the purpose of the AI system built on top of it through fine-tuning, like it was done in the case of AutoRa. The AI Act mentions the modification of GPAI models through fine-tuning only in passing: According to Recital 109 [10], fine-tuning results in the responsible party entering into the obligations of GPAI model providers with respect to the changes. However, the question of how fine-tuning affects compliance with the requirements for high-risk systems remains unanswered. This being said, pre-training a general model and then fine-tuning it on specific downstream tasks has proven to be highly effective, particularly in natural language processing [12]. The advancement of LLMs, such as ChatGPT, exemplifies this success [35,33]. Fine-tuning algorithms can be categorized into additive, selective, reparameterized, and hybrid fine-tuning based on their operations [12]. Additive fine-tuning maintains the pre-trained model unchanged and introduces minimal trainable parameters, such as an adapter layer [30,23,14] or a soft prompt [29,17,19]. Instead of adding parameters, Selective fine-tunings select a subset of the existing parameters to adapt, enhancing model performance over downstream tasks [28,8,11]. Reparameterization involves equivalently transforming a model's architecture from one form to another by transforming its parameters. Research [1] shows that common pre-trained models exhibit exceptionally low intrinsic dimensionality, making low-dimensional reparameterization effective for fine-tuning [1,32,20,26]. Hybrid fine-tunings combine the advantages of diverse fine-tuning approaches or analyze the similarities among them to establish a unified perspective [15,4,21]. However, one could doubt that fine-tuning makes the AI system compliant with the requirements for high-risk systems. For instance, catastrophic forgetting in fine-tuning, which is directly caused by the inaccessibility of historical data, is a research problem that has been extensively studied by numerous researchers [13,31,5,7]. Determining what information from the pre-training data is retained or forgotten after fine-tuning is challenging. For reasons of privacy and fairness, techniques for deliberately forgetting specific information during fine-tuning have been proposed [6,2]. Thus, even if a fine-tuned GPAI model meets the requirements of the AI Act, we cannot directly demonstrate that a high-risk SPAI system using it will satisfy the data quality requirements for such systems under the AI Act. Additional techniques may address these issues, but they must be tested specifically. Finally, finetuning a GPAI model for a specific purpose could also make it more difficult to meet the other system requirements, in particular for accuracy, robustness and cybersecurity under Article 15 [10]. Though fine-tuning is effective for downstream tasks in terms of accuracy, its security and robustness are not guaranteed. Research [24] indicates that simply fine-tuning with benign and commonly used datasets can inadvertently degrade the safety alignment of LLMs. Their experimental results demonstrate that fine-tuning LLMs makes it easier to bypass their safety guardrails, causing the model to respond to nearly any harmful instructions [24]. Additionally, the security and robustness of general-purpose AI models, such as LLMs, remain unresolved challenges requiring further research [25,18,34,3]. These issues make it difficult to guarantee the safety of using GPAI models for high-risk applications.
+
+\* 78 Article 10(2)(f) and (g) [10]. See, however, regarding the obligations of the provider of a GPAI model in case of fine-tuning Recital 109 [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: AI Act for the Working Programmer 21 -->
+
+Upshot of example. The example of AutoRa illustrates the challenges associated with downstream uses of GPAI models in high-risk AI systems. To our understanding, the AI Act obliges the downstream system providers to ensure that the high-risk requirements are met, including with respect to the underlying GPAI model. This may pose a major hurdle for the downstream provider when using a third party's GPAI model. The legal approach chosen by the AI Act thus arguably makes it difficult in practice to integrate GPAI models into SPAI systems , thereby jeopardising economic efficiency and threatening to stifle innovation. If, on the other hand, European legislation had limited the legal obligations of downstream providers to the parts of the AI system they have developed themselves, this would not have met the objective of ensuring a high standard of protection for societal and individual interests. This shows the trade-offs faced by the European legislature when attempting to regulate GPAI models and to create an effective regulation along the AI value chain.
+
+Integrating a GPAI model into a high-risk SPAI system necessitates meeting strict system requirements, particularly concerning the quality of training data. Our case study demonstrated the significant challenges providers face in fulfilling these requirements.
+
+# 7.2 Obligations for GPAI systems
+
+GPAI systems (as opposed to GPAI models), on the other hand, are only briefly mentioned in the AI Act. For example, generative AI based on GPAI systems is subject to a special transparency obligation under Article 50(2) [10]. Beyond that there are no specific requirements for GPAI systems. However, it is unclear which other obligations may also apply.
+
+Applying high-risk requirements to GPAI systems. In our opinion, the applicable rules depend on the purposes of the GPAI system as designated by the provider. 79 When a GPAI system is designated to serve a variety of purposes, at least one of which are considered to be, e.g., high-risk, arguably the additional obligations for high-risk AI systems apply. However, when a GPAI system is determined to serve a variety of purposes none of which is categorized as high risk, even though a high-risk use might be factually possible, then additional obligations for high-risk AI systems do not apply. Article 25(1)(c) [10] seems to support this reading as it implies that GPAI systems can also be classified as high-risk AI systems.
+
+\* 79 Article 3(12) [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: 22 Hermanns et al. -->
+
+Repurposing GPAI systems. However, this approach can be criticised since it gives the providers the power to determine the applicable rules by defining the purposes of the GPAI system. Because the deployer could then use the GPAI system for different purposes anyway, this could arguably lead to circumventing the requirements for high-risk systems. The AI Act tries to address this issue in Article 25(1)(c) [10] which requires that a deployer who modifies the intended purpose of a GPAI system which has not been classified as high-risk in such a way that the system becomes a high-risk AI system. In this case, the deployer turns into the responsible provider and has to make sure that the relevant system requirements are met. 80 We refer to this new provider as a "deployerprovider". However, even though the AI Act obliges the initial provider of the initially non-high-risk GPAI system to cooperate with the deployer-provider, 81 it is difficult to imagine how the deployer-provider can fulfill all these obligations, e.g. with regard to the quality of training data. 82 These issues are reflected in our example in Section 7.1, which refers to the related case of using GPAI models inside a high-risk AI system. Additionally, the obligation to cooperate with the downstream provider does not apply if the original provider of the GPAI system has clearly specified that the system is not to be changed into a high-risk AI system. 83
+
+Implications for the Provider. For the initial provider, this means that they need to consider carefully what purposes they want to set for their GPAI system. In our view, they have three options: Either they commit to complying with the relevant system requirements, thereby enabling end users to use their systems for high-risk purposes. Or, second, they can define the purposes of the GPAI system without matching them with high-risk use cases, and then try to provide due support to downstream users. Third, they could define the purposes without high-risk use cases and specify in the terms of use that the system may not be used for high-risk purposes, thereby avoiding the necessary support. It should be noted, however, that the provider could reduce the attractiveness of its GPAI systems if it excludes high-risk uses in order to circumvent the legal requirements, as this will affect the overall usefulness of its product.
+
+When it comes to classifying a GPAI system as high-risk (or not), the AI Act does not focus on the system's capacities, but on its purposes as designated explicitly by the provider . A deployer using that system for a different purpose than designated becomes a provider as well and has to meet the thus induced legal obligations. Furthermore, obligations for GPAI systems include specific transparency requirements for generative AI.
+
+# 8 Conclusion
+
+This paper has navigated the AI Act from the perspective of the working programmer and has demonstrated that the AI Act contains numerous obligations of relevance for their daily work. Beyond that, other provisions of the AI Act may have an indirect effect on programmers and their working environment. For example, so-called regulatory sandboxes are to be established by the Member States 84 that are meant to enable the testing of AI systems in a controlled environment. Concerning programmers' personal skill set, the AI Act stipulates that providers and deployers have to ensure a sufficient level of "AI literacy" of their staff and other persons dealing with the operation and use of AI systems on their behalf. 85 AI literacy is defined as the skills, knowledge and understanding that allow providers, deployers and affected persons to make an informed deployment of the AI system, as well as to gain awareness about the opportunities and risks of AI and possible harm it can cause 86 and thus goes well beyond a purely technical expertise. So arguably, there will be an obligation for providers and deployers to organise training for staff members within the months to come.
+
+\* 80 Article 25(1)(c) [10] and Recital 84 [10].
+
+\* 81 Article 25(2) [10] and Recital 85 [10]. The initial provider "shall make available the necessary information and provide the reasonably expected technical access and other assistance".
+
+\* 82 Article 10 [10].
+
+\* 83 Article 25(2) [10], Recital 86 [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: AI Act for the Working Programmer 23 -->
+
+The AI Act was published in the Official Journal of the EU on 12 July 2024 and thus enters into force on 1 August 2024. However, most parts of the Regulation Act will only become binding two years after. This is meant to give enough time to adapt to the new legal situation. However, some provisions will become applicable earlier, such as the obligation to ensure that staff have sufficient AI literacy (Article 4 [10]) as well as bans on certain AI practices such as manipulative AI deploying subliminal techniques, social scoring and real-time biometric information systems (Article 5 [10]). Within 12 months, the provisions requiring Member States to set up authorities as well as procedures on notification of general-purpose AI models presenting systemic risks become applicable (Article 51 [10]). 87
+
+Our paper has also shown that there is still a significant degree of legal uncertainties. It is therefore to be hoped that the transition phase of two years will be used by standardisation organisations to develop technical standards as well as by the AI Office to come up with Codes of Conduct 88 to mitigate insecurities about the legal framework as far as possible. At the same time, this also opens up the opportunity for some working programmers to contribute to the shaping of the future legal framework by submitting comments and engaging in discussions within professional associations, conferences, etc.
+
+The AI Act has high relevance for the working programmer. This paper constitutes an attempt to pinpont the main facets. However, there is still considerable legal uncertainty.
+
+Acknowledgements This work has received financial support by the DFG under grant No. 389792660 as part of TRR 248 - CPEC, by VolkswagenStiftung as part of Grant AZ 98514 - EIS, and by the Federal Ministry of Education and Research of Germany and S¨achsisches Staatsministerium f¨ur Wissenschaft Kultur und Tourismus in the program Center of Excellence for AI-research "Center for Scalable Data Analytics and Artificial Intelligence Dresden/Leipzig" (ScaDS.AI).
+
+\* 84 Article 57 [10].
+
+\* 85 Article 4 [10].
+
+\* 86 Article 3(56) [10].
+
+\* 87 See Article 113 [10].
+
+\* 88 Article 95(2) lit. c) [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: 24 Hermanns et al. -->
+
+# References
+
+1. Aghajanyan, A., Zettlemoyer, L., Gupta, S.: Intrinsic dimensionality explains the effectiveness of language model fine-tuning. arXiv preprint arXiv:2012.13255 (2020)
+
+2. Baik, S., Hong, S., Lee, K.M.: Learning to forget for meta-learning. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp. 2379-2387 (2020)
+
+3. Chen, C., Shu, K.: Combating misinformation in the age of llms: Opportunities and challenges. arXiv preprint arXiv:2311.05656 (2023)
+
+4. Chen, J., Zhang, A., Shi, X., Li, M., Smola, A., Yang, D.: Parameter-efficient fine-tuning design spaces. arXiv preprint arXiv:2301.01821 (2023)
+
+5. Chen, S., Hou, Y., Cui, Y., Che, W., Liu, T., Yu, X.: Recall and learn: Fine-tuning deep pretrained language models with less forgetting. arXiv preprint arXiv:2004.12651 (2020)
+
+6. Chundawat, V.S., Tarun, A.K., Mandal, M., Kankanhalli, M.: Can bad teaching induce forgetting? unlearning in deep networks using an incompetent teacher. In: Proceedings of the AAAI Conference on Artificial Intelligence. vol. 37, pp. 7210-7217 (2023)
+
+7. Cong, Y., Zhao, M., Li, J., Wang, S., Carin, L.: Gan memory with no forgetting. Advances in Neural Information Processing Systems 33, 16481-16494 (2020)
+
+8. Ding, N., Qin, Y., Yang, G., Wei, F., Yang, Z., Su, Y., Hu, S., Chen, Y., Chan, C.M., Chen, W., et al.: Parameter-efficient fine-tuning of large-scale pre-trained language models. Nature Machine Intelligence 5(3), 220-235 (2023)
+
+9. European Parliament and Council of the EU: Regulation (EU) 2023/1230 of the European Parliament and of the Council of 14 June 2023 on machinery and repealing Directive 2006/42/EC of the European Parliament and of the Council and Council Directive 73/361/EEC (2023), https://eur-lex.europa.eu/eli/reg/2023/1230/oj
+
+10. European Parliament and Council of the EU: Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (2024), https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L 202401689
+
+11. Guo, D., Rush, A.M., Kim, Y.: Parameter-efficient transfer learning with diff pruning. arXiv preprint arXiv:2012.07463 (2020)
+
+12. Han, Z., Gao, C., Liu, J., Zhang, S.Q., et al.: Parameter-efficient fine-tuning for large models: A comprehensive survey. arXiv preprint arXiv:2403.14608 (2024)
+
+13. Hayes, T.L., Kafle, K., Shrestha, R., Acharya, M., Kanan, C.: Remind your neural network to prevent catastrophic forgetting. In: European Conference on Computer Vision. pp. 466-483. Springer (2020)
+
+14. Houlsby, N., Giurgiu, A., Jastrzebski, S., Morrone, B., De Laroussilhe, Q., Gesmundo, A., Attariyan, M., Gelly, S.: Parameter-efficient transfer learning for nlp. In: International conference on machine learning. pp. 2790-2799. PMLR (2019)
+
+15. Hu, Z., Wang, L., Lan, Y., Xu, W., Lim, E.P., Bing, L., Xu, X., Poria, S., Lee, R.K.W.: Llmadapters: An adapter family for parameter-efficient fine-tuning of large language models. arXiv preprint arXiv:2304.01933 (2023)
+
+16. Kr¨onke, C.: Das europ¨aische KI-gesetz : Eine Verordnung mit Licht und Schatten. Neue Zeitschrift f¨ur Verwaltungsrecht 43(8), 529-534 (2024), https://beck-online.beck.de/?vpath= bibdata%2Fzeits%2FNVWZ%2F2024%2Fcont%2FNVWZ%2e2024%2e529%2e1%2ehtm
+
+17. Lester, B., Al-Rfou, R., Constant, N.: The power of scale for parameter-efficient prompt tuning. arXiv preprint arXiv:2104.08691 (2021)
+
+18. Li, N., Pan, A., Gopal, A., Yue, S., Berrios, D., Gatti, A., Li, J.D., Dombrowski, A.K., Goel, S., Phan, L., et al.: The wmdp benchmark: Measuring and reducing malicious use with unlearning. arXiv preprint arXiv:2403.03218 (2024)
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: AI Act for the Working Programmer 25 -->
+
+19. Li, X.L., Liang, P.: Prefix-tuning: Optimizing continuous prompts for generation. arXiv preprint arXiv:2101.00190 (2021)
+
+20. Liu, Q., Wu, X., Zhao, X., Zhu, Y., Xu, D., Tian, F., Zheng, Y.: Moelora: An moe-based parameter efficient fine-tuning method for multi-task medical applications. arXiv preprint arXiv:2310.18339 (2023)
+
+21. Mao, Y., Mathias, L., Hou, R., Almahairi, A., Ma, H., Han, J., Yih, W.t., Khabsa, M.: Unipelt: A unified framework for parameter-efficient language model tuning. arXiv preprint arXiv:2110.07577 (2021)
+
+22. Paulson, L.C.: ML for the Working Programmer (2. ed.). Cambridge University Press (1996). https://doi.org/10.1017/CBO9780511811326
+
+23. Pfeiffer, J., Kamath, A., R¨uckl´e, A., Cho, K., Gurevych, I.: Adapterfusion: Non-destructive task composition for transfer learning. arXiv preprint arXiv:2005.00247 (2020)
+
+24. Qi, X., Zeng, Y., Xie, T., Chen, P.Y., Jia, R., Mittal, P., Henderson, P.: Fine-tuning aligned language models compromises safety, even when users do not intend to! arXiv preprint arXiv:2310.03693 (2023)
+
+25. Sun, L., Huang, Y., Wang, H., Wu, S., Zhang, Q., Gao, C., Huang, Y., Lyu, W., Zhang, Y., Li, X., et al.: Trustllm: Trustworthiness in large language models. arXiv preprint arXiv:2401.05561 (2024)
+
+26. Valipour, M., Rezagholizadeh, M., Kobyzev, I., Ghodsi, A.: Dylora: Parameter efficient tuning of pre-trained models using dynamic search-free low-rank adaptation. arXiv preprint arXiv:2210.07558 (2022)
+
+27. Veale, M., Borgesius, F.Z.: Demystifying the draft eu artificial intelligence act - analysing the good, the bad, and the unclear elements of the proposed approach. Computer Law Review International 22(4), 97-112 (2021). https://doi.org/doi:10.9785/cri-2021-220402
+
+28. Vucetic, D., Tayaranian, M., Ziaeefard, M., Clark, J.J., Meyer, B.H., Gross, W.J.: Efficient fine-tuning of bert models on the edge. In: 2022 IEEE International Symposium on Circuits and Systems (ISCAS). pp. 1838-1842. IEEE (2022)
+
+29. Wang, Q., Mao, Y., Wang, J., Yu, H., Nie, S., Wang, S., Feng, F., Huang, L., Quan, X., Xu, Z., et al.: Aprompt: Attention prompt tuning for efficient adaptation of pre-trained language models. In: Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. pp. 9147-9160 (2023)
+
+30. Wang, Y., Mukherjee, S., Liu, X., Gao, J., Awadallah, A.H., Gao, J.: Adamix: Mixtureof-adapter for parameter-efficient tuning of large language models. arXiv preprint arXiv:2205.12410 1(2), 4 (2022)
+
+31. Wang, Y.X., Ramanan, D., Hebert, M.: Growing a brain: Fine-tuning by increasing model capacity. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. pp. 2471-2480 (2017)
+
+32. Yang, A.X., Robeyns, M., Wang, X., Aitchison, L.: Bayesian low-rank adaptation for large language models. arXiv preprint arXiv:2308.13111 (2023)
+
+33. Yang, J., Jin, H., Tang, R., Han, X., Feng, Q., Jiang, H., Zhong, S., Yin, B., Hu, X.: Harnessing the power of llms in practice: A survey on chatgpt and beyond. ACM Transactions on Knowledge Discovery from Data (2023)
+
+34. Zeng, Y., Lin, H., Zhang, J., Yang, D., Jia, R., Shi, W.: How johnny can persuade llms to jailbreak them: Rethinking persuasion to challenge ai safety by humanizing llms. arXiv preprint arXiv:2401.06373 (2024)
+
+35. Zhong, Q., Ding, L., Liu, J., Du, B., Tao, D.: Can chatgpt understand too? a comparative study on chatgpt and fine-tuned bert. arXiv preprint arXiv:2302.10198 (2023)
+

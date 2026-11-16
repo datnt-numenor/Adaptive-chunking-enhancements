@@ -1,0 +1,14 @@
+{
+  "request_hash": "7a797a54d876af141897d5105310a7f14132753dd0d9af4c022fd9c11eab48aa",
+  "prompt_sha256": "8f56b50ae4960f5406ff8f700c28e6bfecc9fba6872ecc8ffc68f99c14231707",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNWKyLXtOLM0JfVHciqNMw7sRjUA",
+  "prompt_tokens": 8087,
+  "completion_tokens": 45,
+  "actual_usd": 0.00124005,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive information about algorithmic bias in hiring, including specific examples of discrimination based on race and gender, which fully supports the claims made in the Reference Answer."
+  }
+}

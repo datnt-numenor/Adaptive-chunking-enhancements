@@ -1,0 +1,14 @@
+{
+  "request_hash": "a6c233e206c92cc730dc9cacc3c4306f2c7f5a32ad56e33c088331cfa1a55adb",
+  "prompt_sha256": "51d23849f693c79b7fa65d92aac73cfc82fbe6d30cb531d332a65d44e1b3960d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOO40qDwecpf2mTA3k5vB2jiMfPz",
+  "prompt_tokens": 7314,
+  "completion_tokens": 48,
+  "actual_usd": 0.0011258999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a clear definition of agentic AI as systems that can plan across multiple steps to achieve specified objectives, emphasizing their independent planning and action capabilities."
+  }
+}

@@ -1,0 +1,371 @@
+DOCUMENT: EDPB Opinion 28-2024 AI Models
+
+<<<PAGE 12>>>
+inference while building an AI system include machine learning, logic- and knowledge-based approaches.
+
+20. 'AI models', on the other hand, are only indirectly defined in the AI Act: 'Although AI models are essential components of AI systems, they do not constitute AI systems on their own. AI models require the addition of further components, such as for example a user interface, to become AI systems. AI models are typically integrated into and form part of AI systems' 18 .
+
+21. The EDPB understands that the definition of an AI model proposed in the Request is narrower than the one from the AI Act, as it refers to 'AI model' as 'to encompass the product resulting from the training mechanisms that are applied to a set of training data, in the context of Artificial Intelligence, Machine Learning, Deep Learning or other related processing contexts' and further specifies that 'The term applies to AI Models which are intended to undergo further training, fine-tuning and/or development, as well as AI Models which are not.' 19
+
+22. On that basis, the EDPB adopted this Opinion under the understanding that an AI system will rely on an AI model to perform its intended objective by incorporating the model into a larger framework (e.g. an AI system for customer service might use an AI model trained on historical conversation data to provide responses to user queries).
+
+23. Furthermore, AI models (or "models") relevant for this Opinion are those developed through a training process. Such training process is a part of the development phase, where models learn from data to perform their intended task. Therefore, the training process requires a dataset from which the model will identify and 'learn' patterns. In these cases, the model will use different techniques to build a representation of the knowledge extracted from the training dataset. This is notably the case with machine learning.
+
+24. In practice, any AI model is an algorithm, whose functioning is determined by a set of elements. For example, deep learning models are often in the form of a neural network with multiple layers consisting of nodes connected by edges that have weights, which are adjusted during training to learn the relationships between inputs and outputs. The characteristics of a simple deep learning model would be: (i) the type and size of each layer, (ii) the weight attributed to each edge (sometimes called 'parameters'), (iii) the activation functions 20 between layers, and possibly (iv) other operations that may happen between layers. For instance, when training a simple deep learning model for image classification, inputs (the "image pixels") will be associated with outputs, and weights may be adjusted, so as to produce the right output most of the time.
+
+25. Other examples of deep learning models include LLMs and generative AI, which are used for e.g. generating human-like content and creating new data.
+
+26. Based on the above considerations, in line with the Request, the scope of this Opinion only covers the subset of AI models that are the result of a training of such models with personal data.
+
+# 3 On the merits of the request
+
+3.1 On the nature of AI models in relation to the definition of personal data
+
+\* 18 Recital 97 AI Act.
+
+\* 19 Request, p. 3.
+
+\* 20 I.e. functions that calculate, based on inputs and weights, the output of a neural node that will then be sent to the next layer of the neural network.
+
+<!-- PageFooter: Adopted 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+27. Article 4(1) GDPR defines personal data as 'any information relating to an identified or identifiable natural person' (i.e., the data subject). Furthermore, Recital 26 GDPR provides that data protection principles should not apply to anonymous information, namely information which does not relate to an identified or identifiable natural person, taking into account 'all the means reasonably likely to be used' by the controller or another person. This includes: (i) data that was never related to an identified or identifiable individual; and (ii) personal data which has been rendered anonymous in such a manner that the data subject is not or no longer identifiable.
+
+28. Accordingly, Question 1 21 of the Request can be answered by analysing if an AI model resulting from training which involves processing of personal data should, in all cases, be considered anonymous. Based on the phrasing of the question, the EDPB will refer in this section to the process of 'training' an AI model.
+
+29. First and foremost, the EDPB would like to provide the following general considerations. AI models, regardless of whether they are trained with personal data or not, are usually designed to make predictions or draw conclusions, i.e. they are designed to infer. Furthermore, AI models trained with personal data are often designed to make inferences about individuals different from those whose personal data were used to train the AI model. However, some AI models are specifically designed to provide personal data regarding individuals whose personal data were used to train the model, or in some way to make such data available. In these cases, such AI models will inherently (and typically necessarily) include information relating to an identified or identifiable natural person, and so will involve the processing of personal data. Therefore, these types of AI models cannot be considered anonymous. This would be the case, for example, (i) of a generative model fine-tuned on the voice recordings of an individual to mimic their voice; or (ii) any model designed to reply with personal data from the training when prompted for information regarding a specific person.
+
+30. Based on the above considerations, in answering Question 1 of the Request, the EDPB focuses on the situation of AI models that are not designed to provide personal data related to the training data.
+
+31. The EDPB considers that, even when an AI model has not been intentionally designed to produce information relating to an identified or identifiable natural person from the training data, information from the training dataset, including personal data, may still remain 'absorbed' in the parameters of the model, namely represented through mathematical objects. They may differ from the original training data points, but may still retain the original information of those data, which may ultimately be extractable or otherwise obtained, directly or indirectly, from the model. Whenever information relating to identified or identifiable individuals whose personal data was used to train the model may be obtained from an AI model with means reasonably likely to be used, it may be concluded that such a model is not anonymous.
+
+32. In this regard, the Request states that 'Existing research publications highlight some potential vulnerabilities that can exist in AI Models which could result in personal data being processed, 22 as well as the personal data processing that may go on when models are deployed for use with other data, either through Application Programming Interfaces ("APIs") or "prompt" interfaces' 23 .
+
+\* 21 'Is the final AI Model, which has been trained using personal data, in all cases, considered not to meet the definition of personal data (as set out in Article 4(1) GDPR)?'
+
+\* 22 Such as Membership Inference Attacks (OWASP), and Model Inversion Attacks (OWASP & Veale et al, 2018).
+
+\* 23 Request, p.1-2.
+
+<!-- PageFooter: Adopted 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+33. In the same vein, research on training data extraction is particularly dynamic 24 . It shows that it is possible, in some cases, to use means reasonably likely to extract personal data from some AI models, or simply to accidentally obtain personal data through interactions with an AI model (for instance as part of an AI system). Continuous research efforts in this field will help assessing further the residual risks of regurgitation 25 and extraction of personal data in any given case.
+
+34. Based on the above considerations, the EDPB considers that AI models trained on personal data cannot, in all cases, be considered anonymous. Instead, the determination of whether an AI model is anonymous should be assessed, based on specific criteria, on a case-by-case basis.
+
+# 3.2 On the circumstances under which AI models could be considered anonymous and the related demonstration
+
+35. Regarding Question 1 of the Request 26 , the EDPB is requested to clarify the circumstances in which an AI model, which has been trained using personal data, may be considered as anonymous. With regard to Question 1(i)(a) of the Request 27 , the EDPB is requested to clarify which proof and/or documentation SAs should take into account when assessing whether an AI model is anonymous.
+
+# 3.2.1 General consideration regarding anonymisation in the context at hand
+
+36. The use of the expression 'any information' in the definition of 'personal data' within Article 4(1) GDPR reflects the aim to assign a wide scope to that concept, that encompasses all kinds of information provided that it 'relates' to the data subject, who are identified or can be identified directly or indirectly.
+
+37. Information may relate to a natural person even when it is technically organised or encoded (for instance in an only machine-readable format, whether proprietary or open) in a way that does not make the relation with that natural person immediately apparent. In such cases, software applications may be used to easily identify, recognise and extract specific data. This is particularly true for AI models where parameters represent statistical relationships between the training data, and where it may be
+
+\* 24 See, in this regard, for instance: (i) Veale M., Binns R., Edwards L., 2018, Algorithms that remember: model inversion attacks and data protection law. Phil. Trans. R. Soc. A 376: 20180083, available at http://dx.doi.org/10.1098/rsta.2018.0083; (ii) Brown H., Lee K., Mireshghallah F., Shokri R., and Tramèr F., What
+
+\* Does it Mean for a Language Model to Preserve Privacy?, 2022, ACM Digital Library, FAccT '22, June 20, 2022, Seoul, Republic of Korea, available at https://dl.acm.org/doi/abs/10.1145/3531146.3534642; (iii) Vassilev A., Oprea A., Fordyce A., Anderson H., Adversarial Machine Learning A Taxonomy and Terminology of Attacks and Mitigations, January 2024, National Institute of Standards and Technology, available at https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf; (iv) Carlini N., Tramèr F., Wallace E., Jagielski M., Herbert-Voss A., Lee K., Roberts A., Brown T., Song D., Erlingsson U., Oprea A., Raffel C., Extracting Training Data from Large Language Models, arXiv:2012.07805v2 [cs.CR] 15 Jun 2021, available at https://arxiv.org/pdf/2012.07805; (v) Fredrikson M., Jha S., Ristenpart T., Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures, ACM Digital Library, 12 October 2015, available at https://dl.acm.org/doi/abs/10.1145/2810103.2813677; (vi) Zhang Y., Jia R., Pei H., Wang W., Li B., Song D., The Secret Revealer: Generative Model-Inversion Attacks Against Deep Neural Networks, arXiv:1911.07135v2 [cs.LG] 18 Apr 2020, available at https://arxiv.org/pdf/1911.07135.
+
+\* 25 For an AI system based on generative AI, regurgitation corresponds to the situation where outputs would directly relate to training data.
+
+\* 26 'What are the circumstances in which that might arise?'
+
+\* 27 'If so, how can the steps that have been taken to ensure that the AI Model is not processing personal data be demonstrated?'
+
+<!-- PageFooter: Adopted 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+- possible to extract accurate or inaccurate (because statistically inferred) personal data, either directly from the relationships between the data included in the model, or by querying that model.
+
+38. As AI models usually do not contain records that may be directly isolated or linked, but rather parameters representing probabilistic relationships between the data contained in the model, it may be possible to infer 28 information from the model, such as membership inference, in realistic scenarios. Therefore, for a SA to agree with the controller that a given AI model may be considered anonymous, it should check at least whether it has received sufficient evidence that, with reasonable means: (i) personal data, related to the training data, cannot be extracted 29 out of the model; and (ii) any output produced when querying the model does not relate to the data subjects whose personal data was used to train the model.
+
+39. Three elements should be considered by SAs in the assessment of whether these conditions are fulfilled.
+
+40. First, SAs should consider the elements identified in the most recent WP29 opinions and/or EDPB guidelines on the matter. Regarding anonymisation at the date of this Opinion, SAs should consider the elements included in the WP29 Opinion 05/2014 on Anonymisation Techniques (the "WP29 Opinion 05/2014"), which states that if it is not possible to single out, link and infer information from the supposedly anonymous dataset, the data may be considered anonymous 30 . It also states that, 'whenever a proposal does not meet one of the criteria, a thorough evaluation of the identification risks should be performed' 31 . Given the above-mentioned likelihood of extraction and inference, the EDPB
+
+\* 28 (i) Carlini N., Chien S., Nasr M., Song S., Terzis A., Tramer F., Membership Inference Attacks From First Principles, arXiv:2112.03570, available at https://arxiv.org/abs/2112.03570;
+
+\* (ii) Creţu A.M, Guépin F., and De Montjoye Y.A, Correlation inference attacks against machine learning models. Sci. Adv.10, eadj9260(2024). DOI:10.1126/sciadv.adj9260 available at
+
+\* https://www.science.org/doi/10.1126/sciadv.adj9260;
+
+\* (iii) Dana L., Pydi M. S., Chevaleyre Y., Memorization in Attention-only Transformers arXiv:2411.10115v1 [cs.AI] 15 November 2024, available at: https://arxiv.org/abs/2411.10115;
+
+\* (iv) Gehrke M., Liebenow J., Mohammadi E. & Braun T. et al. Lifting in Support of Privacy-Preserving Probabilistic Inference. Künstl Intell, 13 June 2024, available at: https://doi.org/10.1007/s13218-024-00851-y;
+
+\* (v) Hu H., Membership Inference Attacks and Defenses on Machine Learning Models Literature, available at: https://github.com/HongshengHu/membership-inference-machine-learning-literature;
+
+\* (vi) Nasr M., Carlini N., Hayase J., Jagielski M., Cooper A. F., Ippolito D., Choquette-Choo C. A., Wallace E., Tramèr F., and Lee K., Scalable Extraction of Training Data from (Production) Language Models, arXiv:2311.17035 28 November 2023, available at: https://arxiv.org/abs/2311.17035;
+
+\* (vii) Shokri R., Stronati M., Song C., Shmatikov V., Membership Inference Attacks against Machine Learning Models arXiv:1610.05820v2 [cs.CR], 31 March 2017, available at https://arxiv.org/abs/1610.05820;
+
+\* (viii) Staab R., Vero M., Mislav Balunović, Martin Vechev, 2024, Beyond Memorization: Violating Privacy Via Inference with Large Language Models, arXiv:2310.07298v2, 6 May 2024, available at https://arxiv.org/abs/2310.07298;
+
+\* (ix) Wu F., Cui L., Yao S., Yu S., Inference Attacks in Machine Learning as a Service: A Taxonomy, Review, and Promising Directions arXiv:2406.02027v1 [cs.LG], 27 June 2024, available at https://arxiv.org/abs/2406.02027v1;
+
+\* (x) Zhang J., Das D., Kamath G., Tramèr F., Membership Inference Attacks Cannot Prove that a Model Was Trained On Your Data arXiv:2409.19798v1, [cs.LG], 29 September 2024, available at https://arxiv.org/abs/2409.19798;
+
+\* (xi) Zhou Z., Xiang J., Chen C., and Su S., Quantifying and Analyzing Entity-Level Memorization in Large Language Models, arXiv:2308.15727v2 [cs.CL] 5 Nov 2023, available at: https://arxiv.org/abs/2308.15727 .
+
+\* 29 Extraction includes in particular the case where personal data is deduced from the AI model itself, with little or no use of the query interfaces.
+
+\* 30 WP29 Opinion 05/2014, p.24.
+
+\* 31 WP29 Opinion 05/2014, p.24.
+
+<!-- PageFooter: Adopted 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+# considers that AI models are very likely to require such a thorough evaluation of the risks of identification.
+
+41. Second, this assessment should be made taking into account 'all the means reasonably likely to be used' by the controller or another person to identify individuals 32 , and the determination of those means should be based on objective factors, as explained in Recital 26 GDPR, which may include:
+
+a. the characteristics of the training data itself, the AI model and the training procedure 33 ;
+
+b. the context in which the AI model is released and/or processed 34 ;
+
+c. the additional information that would allow the identification and may be available to the given person;
+
+d. the costs and amount of time that the person would need to obtain such additional information (in case it is not already available to them) 35 ; and
+
+e. the available technology at the time of the processing, as well as technological developments 36 .
+
+42. Third, SAs should consider whether controllers have assessed the risk of identification by the controller and by different types of 'other persons', including unintended third parties accessing the AI model, also considering whether they can reasonably be considered to be able to gain access or process the data in question.
+
+43. In sum, the EDPB considers that, for an AI model to be considered anonymous, using reasonable means, both (i) the likelihood of direct (including probabilistic) extraction of personal data regarding individuals whose personal data were used to train the model; as well as (ii) the likelihood of obtaining, intentionally or not, such personal data from queries, should be insignificant 37 for any data subject. By default, SAs should consider that AI models are likely to require a thorough evaluation of the likelihood of identification to reach a conclusion on their possible anonymous nature. This likelihood should be assessed taking into account 'all the means reasonably likely to be used' by the controller or another person, and should also consider unintended (re)use or disclosure of the model.
+
+# 3.2.2 Elements to evaluate the residual likelihood of identification
+
+44. While measures might be taken both at the development and the deployment stages in order to reduce the likelihood of obtaining personal data from an AI model, the evaluation of anonymity of an AI model should also consider direct access to the model.
+
+45. In addition, SAs should evaluate, on a case-by-case basis, if the measures implemented by the controller to ensure and prove that an AI model is anonymous are appropriate and effective.
+
+\* 32 CJEU judgment of 19 October 2016, Case C-582/14, Breyer v Bundesrepublik Deutschland (ECLI:EU:C:2016:779), paragraph 43.
+
+\* 33 This includes characteristics such as uniqueness of the records in the training data, precision of the information, aggregation, randomization, and in particular how these affect the vulnerability to identification.
+
+\* 34 This includes contextual elements, such as limiting access only to some persons and legal safeguards.
+
+\* 35 CJEU judgment of 7 March 2024, Case C-479/22 P, OC v European Commission (ECLI:EU:C:2024:215), paragraph 50.
+
+\* 36 CJEU judgment of 7 March 2024, Case C-479/22 P, OC v European Commission (ECLI:EU:C:2024:215), paragraph 50.
+
+\* 37 CJEU judgment of 19 October 2016, Case C-582/14, Breyer v Bundesrepublik Deutschland (ECLI:EU:C:2016:779), paragraph 46, and CJEU judgment of 7 March 2024, Case C-479/22 P, OC v European Commission (ECLI:EU:C:2024:215), paragraph 51.
+
+<!-- PageFooter: Adopted 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+46. In particular, the conclusion of a SA's assessment might differ between a publicly available AI model, which is accessible to an unknown number of people with an unknown range of methods to try and extract personal data, and an internal AI model only accessible to employees. While in both cases SAs should verify that controllers have fulfilled their accountability obligation under Article 5(2) and Article 24 GDPR, the 'means reasonably likely to be used' by other persons may have an impact on the range and nature of the possible scenarios to be considered. Therefore, depending on the context of development and deployment of the model, SAs may consider different levels of testing and resistance to attacks.
+
+47. In that regard, the EDPB provides below a non-prescriptive and non-exhaustive list of possible elements that may be considered by SAs when assessing a controller's claim of anonymity. Other approaches may be possible if they offer an equivalent level of protection, in particular taking into account the state of the art.
+
+48. The presence or absence of the elements listed below is not a conclusive criterion for assessing the anonymity of an AI model.
+
+# 3.2.2.1 AI model design
+
+49. Regarding AI model design, SAs should evaluate the approaches taken by controllers during the development phase. The application and effectiveness of four key areas (identified below) should be considered in this regard.
+
+# Selection of sources
+
+50. The first evaluation area involves examining the selection of sources used to train the AI model. This includes an evaluation, by SAs, of any steps taken to avoid or limit the collection of personal data, including, among other things, (i) the appropriateness of the selection criteria; (ii) the relevance and adequacy of the chosen sources considering the intended purpose(s); and (iii) whether inappropriate sources have been excluded.
+
+# Data Preparation and Minimisation
+
+51. The second area of evaluation relates to the preparation of data for the training phase. SAs should examine in particular: (i) whether the use of anonymous and/or personal data that has undergone pseudonymisation have been considered; and (ii) where it was decided not to use such measures, the reasons for this decision, taking into account the intended purpose; (iii) the data minimisation strategies and techniques employed to restrict the volume of personal data included in the training process; and (iv) any data filtering processes implemented prior to model training intended to remove irrelevant personal data.
+
+# Methodological choices regarding the training
+
+52. The third area of evaluation concerns the selection of robust methods in AI model development. SAs should assess methodological choices that may significantly reduce or eliminate the identifiability, including, among others: (i) whether that methodology uses regularisation methods to improve model generalisation and reduce overfitting; and, crucially, (ii) whether the controller implemented appropriate and effective privacy-preserving techniques (e.g. differential privacy).
+
+# Measures regarding outputs of the model
+
+53. The last area of evaluation concerns any methods or measures added to the AI model itself that may not have an impact on the risk of direct extraction of personal data for the model by anyone accessing it directly, but which might lower the likelihood of obtaining personal data related to training data from queries.
+
+<!-- PageFooter: Adopted 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+# 3.2.2.2 AI model analysis
+
+54. For SAs to assess the robustness of the designed AI model regarding anonymisation, a first step is to ensure that the design has been developed as planned and is subject to effective engineering governance. SAs should evaluate whether controllers have conducted any document-based audits (internal or external) that include an evaluation of the chosen measures and of their impact to limit the likelihood of identification. This could include the analysis of reports of code reviews, as well as a theoretical analysis documenting the appropriateness of the measures chosen to reduce the likelihood of re-identification of the concerned model.
+
+# 3.2.2.3 AI model testing and resistance to attacks
+
+55. Finally, SAs should take into consideration the scope, frequency, quantity and quality of tests that the controller has conducted on the model. In particular, SAs should take into account that successful testing which covers widely known, state-of-the-art attacks can only be evidence for the resistance to those attacks. At to the date of this Opinion, this could include, among others, structured testing against: (i) attribute and membership inference; (ii) exfiltration; (iii) regurgitation of training data; (iv) model inversion; or (v) reconstruction attacks.
+
+# 3.2.2.4 Documentation
+
+56. Articles 5, 24, 25, and 30 GDPR, and, in cases of likely high risk to the rights and freedoms of data subjects, Article 35 GDPR, require controllers to adequately document their processing operations. This also applies to any processing that would include the training of an AI model, even if the objective of the processing is anonymisation. SAs should consider such documentation and any regular assessment of the consequential risks for the processing carried out by controllers, as they are fundamental steps to demonstrate that personal data is not processed.
+
+57. The EDPB considers that SAs should take into account the documentation whenever a claim of anonymity regarding a given AI model needs to be evaluated. The EDPB notes that, if a SA is not able to confirm, after assessing the claim of anonymity, including in light of the documentation, that effective measures were taken to anonymise the AI model, the SA would be in a position to consider that the controller has failed to meet its accountability obligations under Article 5(2) GDPR. Therefore, compliance with other GDPR provisions should also be considered.
+
+58. Ideally, SAs should verify whether the controller's documentation includes:
+
+a. any information relating to DPIAs, including any assessments and decisions that determined that a DPIA was not necessary;
+
+b. any advice or feedback provided by the Data Protection Officer ("DPO") (where a DPO was - or should have been - appointed);
+
+c. information on the technical and organisational measures taken while designing the AI model to reduce the likelihood of identification, including the threat model and risk assessments on which these measures are based. This should include the specific measures for each source of training datasets, including relevant source URLs and descriptions of measures taken (or already taken by third-party dataset providers);
+
+d. the technical and organisational measures taken at all stages throughout the lifecycle of the model, which either contributed to, or verified the lack of personal data in the model;
+
+e. the documentation demonstrating the AI model's theoretical resistance to re-identification techniques, as well as the controls designed to limit or assess the success and impact of main attacks (regurgitation, membership inference attacks, exfiltration, etc.). This may include, in
+
+<!-- PageFooter: Adopted 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+particular: (i) the ratio between the amount of training data, and the number of parameters in the model, including the analysis of its impact on the model 38 ; (ii) metrics on the likelihood of re-identification based on the current state-of-the-art; (iii) reports on how the model has been tested (by whom, when, how and to which extent) and (iv) the results of the tests;
+
+f. the documentation provided to the controller(s) deploying the model and/or to data subjects, in particular the documentation related to the measures taken to reduce the likelihood of identification and regarding the possible residual risks.
+
+# 3.3 On the appropriateness of legitimate interest as a legal basis for processing of personal data in the context of the development and deployment of AI Models
+
+59. To answer Questions 2 and 3 of the Request, the EDPB will first provide general observations on some important aspects that SAs should take into account, regardless of the legal basis for processing, when assessing how controllers may demonstrate compliance with the GDPR in the context of AI models. The EDPB, building on the Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR 39 , will then consider the three steps required by the legitimate interest assessment in the context of the development and deployment of AI models.
+
+# 3.3.1 General observations
+
+60. The EDPB recalls that the GDPR does not establish any hierarchy between the different legal bases laid down in Article 6(1) GDPR 40 .
+
+61. Article 5 GDPR sets the principles relating to the processing of personal data. The EDPB highlights those that are significant for this Opinion and should at least be considered by SAs when assessing specific AI models, as well as the most relevant requirements from other provisions of the GDPR, taking into consideration the scope of this Opinion.
+
+62. Accountability principle (Article 5(2) GDPR) - This principle provides that the controller shall be responsible for, and be able to demonstrate, compliance with the GDPR. In this regard, the roles and responsibilities of the parties that process personal data in the context of the development or deployment of an AI model should be assessed before the processing takes place, in order to define the obligations of the controllers or joint controllers, and of processors (if any), from the outset.
+
+63. Lawfulness, fairness and transparency principles (Article 5(1)(a) GDPR) - When assessing the lawfulness of the processing in the context of AI models, in light of Article 6(1) GDPR, the EDPB considers it useful to distinguish the different stages of the processing of personal data 41 . The principle of fairness, which is closely related to the principle of transparency, requires that personal data is not processed by unfair methods, or by deception, or in a way that is 'unjustifiably detrimental, unlawfully
+
+\* 38 Ricciato F., A Cautionary Reflection on (Pseudo-)Synthetic Data from Deep Learning on Personal Data, Privacy in Statistical Databases conference (PSD 2024), Antibes, France, September 2024, slides available at: https://cros.ec.europa.eu/system/files/2024-10/20240926 PSD2024 Ricciato v6 1.pdf and Belkin M., Hsu D., Ma S., & Mandal S. (2019), Reconciling modern machine-learning practice and the classical bias-variance tradeoff. Proceedings of the National Academy of Sciences, 24 July 2019, 116(32) 15849-15854, available at: https://www.pnas.org/doi/10.1073/pnas.1903070116
+
+\* 39 See EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0, adopted on 8 October 2024.
+
+\* 40 Ibid, paragraph 1.
+
+\* 41 EDPB Report of the work undertaken by the ChatGPT Taskforce, adopted on 23 May 2024, paragraph 14.
+
+<!-- PageFooter: Adopted 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+- discriminatory, unexpected or misleading to the data subject' 42 . Considering the complexity of the technologies involved, information on the processing of personal data within AI models should therefore be provided in an accessible, understandable and user-friendly way 43 . Transparency about the processing of personal data includes, in particular, compliance with the information obligations as set out in Articles 12 to 14 GDPR 44 , which also require, in case of automated decision-making, including profiling, meaningful information about the logic involved, as well as the significance and the envisaged consequences of the processing for the data subject 45 . Bearing in mind that the development phases of AI models may involve the collection of large amounts of data from publicly accessible sources (such as via web scraping techniques), reliance on the exception provided under Article 14(5)(b) GDPR is strictly limited to when the requirements of this provision are fully met 46 .
+
+64. Purpose limitation and data minimisation principles (Article 5(1)(b), (c) GDPR) - In accordance with the data minimisation principle, the development and deployment of AI models requires that personal data should be adequate, relevant and necessary in relation to the purpose. This can include the processing of personal data to avoid the risks of potential biases and errors when this is clearly and specifically identified within the purpose, and the personal data is necessary for that purpose (e.g. they cannot be effectively achieved by processing other data, including synthetic or anonymised data) 47 . The WP29 already stressed that the 'purpose of the collection must be clearly and specifically identified [...]' 48 . When assessing whether the purpose pursued is legitimate, specific and explicit, and whether the processing complies with the data minimisation principle, one should first identify the processing activity at stake. Notably, the different stages within the development or deployment phases may constitute the same or different processing activities, and may entail successive controllers or joint controllers. In some cases, it is possible to determine the purpose which will be pursued during the deployment of the AI model at an early development stage. Even where this is not the case, some context for that deployment should already be clear, and therefore, how this context informs the purpose of the development should be considered. When reviewing the purpose of the processing in a given stage of development, SAs should expect a certain degree of detail from the controller(s) and an explanation as to how these details inform the purpose of processing. This may include, for example, information on the type of AI model developed, its expected functionalities, and any other relevant context that is already known at that stage. The context of deployment could also include, for example, whether a model is being developed for internal deployment, whether the controller intends
+
+42 EDPB Report of the work undertaken by the ChatGPT Taskforce, adopted 23 May 2024, paragraph 23; EDPB
+
+Guidelines 4/2019 on Article 25 Data Protection by Design and by Default, Version 2.0, adopted 20 October 2020,
+
+paragraph 69; Article 29 Working Party Guidelines on transparency under Regulation 2016/679, revised and
+
+adopted on 11 April 2018, endorsed by the EDPB on 25 May 2018, paragraph 2.
+
+43 Article 29 Working Party Guidelines on transparency under Regulation 2016/679, revised and adopted on 11
+
+April 2018, endorsed by the EDPB on 25 May 2018, paragraph 5.
+
+44 See also Recital 39 GDPR, which states that it 'should be transparent to natural persons that personal data
+
+concerning them are collected, used, consulted or otherwise processed and to what extent the personal data are
+
+or will be processed [...]'.
+
+45 Article 13(2)(f) GDPR and Article 14(2)(g) GDPR.
+
+46 EDPB Report of the work undertaken by the ChatGPT Taskforce, adopted on 23 May 2024 paragraph 27.
+
+47 In addition, Article 10(5) AI Act provides for specific rules for the processing of special categories of personal
+
+data in relation to the high-risk AI systems for the purpose of ensuring bias detection and correction.
+
+48 Article 29 Working Party Opinion 03/2013 on purpose limitation (WP203), pp. 15-16.
+
+<!-- PageFooter: Adopted 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+to sell or distribute the model to third parties after its development, including whether the model is primarily intended to be deployed for research or commercial purposes.
+
+65. Data subject rights (Chapter III GDPR) - Notwithstanding the need for SAs to ensure that all data subject rights are respected when AI models are developed and deployed by controllers, the EDPB recalls that whenever legitimate interest is relied upon as a legal basis by a controller, the right to object under Article 21 GDPR applies and should be ensured 49 .
+
+# 3.3.2 Considerations on the three steps of the legitimate interest assessment in the context of the development and deployment of AI models
+
+66. In order to determine whether a given processing of personal data may be based on Article 6(1)(f) GDPR, SAs should verify that controllers have carefully assessed and documented whether the three following cumulative conditions are met: (i) the pursuit of a legitimate interest by the controller or by a third party; (ii) the processing is necessary to pursue the legitimate interest; and (iii) the legitimate interest is not overridden by the interests or fundamental rights and freedoms of the data subjects 50 .
+
+# 3.3.2.1 First step - Pursuit of a legitimate interest by the controller or by a third party
+
+67. An interest is the broader stake or benefit that a controller or third party may have in engaging in a specific processing activity 51 . While the GDPR and the CJEU recognised several interests as being legitimate 52 , the assessment of the legitimacy of a given interest should be the result of a case-by-case analysis.
+
+68. As recalled by the EDPB in its Guidelines on legitimate interest 53 , an interest may be regarded as legitimate if the following three cumulative criteria are met:
+
+a. The interest is lawful 54 ;
+
+\* 49 According to Article 21 GDPR, if a data subject objects, on grounds relating to their particular situation, to the processing of personal data concerning them, the controller shall no longer process the personal data, unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims. Therefore, the two aspects to be taken into account by SAs is whether the controller is able to demonstrate such compelling overriding legitimate grounds and whether the right to object can be exercised.
+
+\* 50 CJEU, judgment of 4 July 2023, Case C-252/21, Meta v. Bundeskartellamt (ECLI:EU:C:2023:537), para. 106; CJEU, judgment of 11 December 2019, Case C-708/18, Asociaţia de Proprietari bloc M5A-ScaraA (ECLI:EU:C:2019:1064), paragraph 40. See also EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0 adopted on 8 October 2024, paragraph 12 and ff. As reminded in these Guidelines, this 'assessment should be made at the outset of the processing, with the involvement of the Data Protection Officer (DPO) (if designated), and should be documented by the controller in line with the accountability principle set out in Article 5(2) GDPR'.
+
+\* 51 EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0, adopted on 8 October 2024, paragraph 14.
+
+\* 52 EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0, adopted on 8 October 2024, paragraph 16.
+
+\* 53 EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0, adopted on 8 October 2024, paragraph 17.
+
+\* 54 CJEU, judgment of 4 October 2024, Case C-621/22, Koninklijke Nederlandse Lawn Tennisbond (ECLI:EU:C:2024:857), paragraph 49, where the CJEU stressed that a legitimate interest cannot be contrary to the law. In this regard, the EDPB emphasises that, as the case may be, legislative frameworks should be taken into account when assessing the lawfulness of a given interest. See for example: Article 26(3) and Article 28 of Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 on a Single Market
+
+<!-- PageFooter: Adopted 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+b. The interest is clearly and precisely articulated; and
+
+c. The interest is real and present, not speculative.
+
+69. Subject to the two other steps required by the legitimate interest assessment, the following examples may constitute a legitimate interest in the context of AI models: (i) developing the service of a conversational agent to assist users; (ii) developing an AI system to detect fraudulent content or behaviour; and (iii) improving threat detection in an information system.
+
+# 3.3.2.2 Second step - Analysis of the necessity of the processing to pursue the legitimate interest
+
+70. The second step of the assessment consists in determining whether the processing of personal data is necessary for the purpose of the legitimate interest(s) pursued 55 ("necessity test").
+
+71. Recital 39 GDPR clarifies that 'Personal data should be processed only if the purpose of the processing could not reasonably be fulfilled by other means'. According to the CJEU and previous EDPB guidance, the condition relating to the necessity of the processing should be examined in light of the fundamental rights and freedoms of the data subjects, and in conjunction with the data minimisation principle enshrined in Article 5(1)(c) GDPR 56 .
+
+72. The methodology referred to by the CJEU takes into account the context of the processing, as well as the effects on the controller and on the data subjects. The assessment of necessity therefore entails two elements: (i) whether the processing activity will allow the pursuit of the purpose 57 ; and (ii) whether there is no less intrusive way of pursuing this purpose 58 .
+
+\* For Digital Services and amending Directive 2000/31/EC (Digital Services Act) ('DSA') on forbidden targeted advertising to minors ; Article 5(1) and (2) of the AI Act on prohibited AI practices (manipulative practices and below the threshold of consciousness); processing in violation of intellectual property rights and the provisions in Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market.
+
+\* 55 EDPB Guidelines 1/2024 on processing of personal data based on Article 6(1)(f) GDPR, Version 1.0, adopted on 8 October 2024, paragraphs 28-30.
+
+\* 56 CJEU, judgment of 4 July 2023, Case C-252/21, Meta v. Bundeskartellamt (ECLI:EU:C:2023:537), para. 108 and 109, also referring to CJEU, judgment of 11 December 2019, Case C-708/18, Asociaţia de Proprietari bloc M5AScaraA (ECLI:EU:C:2019:1064), paragraph 48; CJEU, judgment of 9 November 2010, joined cases C-92/09 and C93/09, Volker und Markus Schecke (ECLI:EU:C:2010:662), paragraphs 85 and 86; CJEU, judgment of 22 June 2021, Case C-439/19, Latvijas Republikas Saeima (ECLI:EU:C:2021:504), paragraphs 98, 109, 110, 113. See also for example: EDPB Guidelines 3/2019 on processing of personal data through video devices, version 2.0, adopted on 29 January 2020, paragraphs 24-26 and 73; EDPB Guidelines 2/2019 on the processing of personal data under Article 6(1)(b) GDPR in the context of the provision of online services to data subjects, version 2.0, adopted on 8 October 2019, paragraphs 23-25; EDPB Opinion 11/2024 on the use of facial recognition to streamline airport passengers' flow, version 1.1, adopted on 23 May 2024, paragraph 27.
+
+\* 57 See CJEU, judgment of 16 December 2008, Case C-524/06, Heinz Huber v Bundesrepublik Deutschland (ECLI:EU:C:2008:724), paragraph 66. Also in the same case, see the Opinion of Advocate General Poiares Maduro in Case C-524/06, Heinz Huber v Bundesrepublik Deutschland (ECLI:EU:C:2008:194), paragraph 16, stating: 'the proper test here is one of effectiveness, and it is for the national court to apply it. The question it must ask is whether there are other ways of data processing by which the immigration authorities could enforce the rules on residence status. If it answers that question in the affirmative, the centralised data storage and processing for Union citizens should be declared unlawful. It is not necessary for the alternative system to be the most effective or appropriate; it is enough for it to be able to perform adequately. Put differently, even if the central register is more effective or convenient or user-friendly than its alternatives (such as the decentralised, local registers), the latter are clearly to be preferred if they can be used to indicate the residence status of Union citizens'.
+
+\* 58 See CJEU, judgment of 27 September 2017, Case C-73/16, Peter Puškár (ECLI:EU:C:2017:725), paragraph 113: 'It is thus for the national court to ascertain whether the establishment of the contested list and the inclusion of the names of the data subjects in such a register are suitable for achieving the objectives pursued by them and
+
+<!-- PageFooter: Adopted 22 -->
+
+<!-- PageBreak -->
+

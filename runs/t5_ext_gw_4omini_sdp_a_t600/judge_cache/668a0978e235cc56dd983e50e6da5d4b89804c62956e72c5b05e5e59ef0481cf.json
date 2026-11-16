@@ -1,0 +1,14 @@
+{
+  "request_hash": "668a0978e235cc56dd983e50e6da5d4b89804c62956e72c5b05e5e59ef0481cf",
+  "prompt_sha256": "29eadd3f64c7acc4f619aa5aa416d0661949a0ad8c023eb28e34606dcc42cfef",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNeqmjvqdCBKfcys4EZmt0q2t5nt",
+  "prompt_tokens": 7316,
+  "completion_tokens": 44,
+  "actual_usd": 0.0011237999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the ambiguity in assigning the extended daily driving time to the correct week, which is a key point of underspecification."
+  }
+}

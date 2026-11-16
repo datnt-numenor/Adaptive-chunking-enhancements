@@ -1,0 +1,14 @@
+{
+  "request_hash": "a2efb78e7441fd7dd4881c6b8b876772440e70f6085bbb2fad9e407e5346ddbf",
+  "prompt_sha256": "f5c24f3108430a26c8ed0d3ff6c11b029c20088b6efc070f30b0f7ecbcc19655",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8niR6DbLG2AqN52j1WDgBmjvkp",
+  "prompt_tokens": 7081,
+  "completion_tokens": 37,
+  "actual_usd": 0.00108435,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the four main categories of AI risks and providing details on their specific subcategories."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "mode": "full",
+  "started_at": "2026-11-08T13:49:31.475594+00:00",
+  "finished_at": "2026-11-08T13:49:31.785616+00:00",
+  "command": [
+    "runs\\qa_new\\review\\cross_review_qa.py",
+    "--targets",
+    "v2",
+    "--allow-paid-run"
+  ],
+  "model_requested": "gpt-4.1-2025-04-14",
+  "models_returned": {
+    "gpt-4.1-2025-04-14": 99
+  },
+  "system_fingerprints": {
+    "fp_9dba188b17": 97,
+    "fp_2363a7d7d1": 2
+  },
+  "params": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_completion_tokens": 800,
+    "context_chars": 1500,
+    "base_url": "https://api.openai.com/v1"
+  },
+  "instructions_sha256": "e5311c585a85323014aa1578ef579144b46a5565373c1ec6b0a059680c980f8a",
+  "schema_sha256": "6fb760351855926dbaeff9137769ad3cf380312d5e7f06806de97ad0d7c66cbb",
+  "script_sha256": "de5763f52e48ee8d0deb4da41285b2c427ef04f6f92cc53bde4becc4d0f3d853",
+  "inputs": {
+    "v2": {
+      "path": "runs\\qa_new\\review\\candidate_v2.jsonl",
+      "sha256": "b8bb620c8889af6bb20e7c7f0d761ae7731e6f6b6da776e89caf70d891872f50"
+    }
+  },
+  "claude_audit_sha256": "04b1567829d63f6b3dd4be7480ea97442150e03cd2d3ec86518d8bc87413b741",
+  "requests": 99,
+  "valid": 99,
+  "invalid": 0,
+  "cost_usd": 0.527314,
+  "adjudication_queue": 8
+}

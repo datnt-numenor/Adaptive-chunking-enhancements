@@ -1,0 +1,14 @@
+{
+  "request_hash": "3002728ea6ef160ea89f63c42d0614efac6891095ffbb8050c15341a13282e43",
+  "prompt_sha256": "2783bd41071f40609c9106bdf99219d3aa21435c23a125eead5a1055066771f3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8AXYqZOGzPoBoRYaFZZ2TYoGQe",
+  "prompt_tokens": 8898,
+  "completion_tokens": 44,
+  "actual_usd": 0.0013611,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by clearly defining P(doom) as the subjective probability of AI causing existential catastrophe and explaining its use among researchers."
+  }
+}

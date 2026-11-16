@@ -1,0 +1,10 @@
+{
+  "request_hash": "09e4302a58ea2f010249e6841cfe23848c75b68f52376754ed19089b1946d95c",
+  "prompt_sha256": "88cc9251864ef7491f7de5e2c1f325dc17d7b301667a0792fdb1a1c34e0dfcda",
+  "answer": "The main difference between Naive RAG and Graph RAG in handling document chunks is that Naive RAG retrieves information chunks based on keyword similarity, which can lead to missing essential information chunks and results in fragmented and less coherent responses. In contrast, Graph RAG constructs knowledge graphs from related and unrelated data and their relationships, enabling reasoning over connected nodes. This allows Graph RAG to retrieve information not just based on semantic similarity but also on relationships between entities, leading to more coherent and contextually rich responses.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN6ipKHL5pdihrImy9yXgU1O7AUk",
+  "prompt_tokens": 9296,
+  "completion_tokens": 102,
+  "actual_usd": 0.0014555999999999998
+}

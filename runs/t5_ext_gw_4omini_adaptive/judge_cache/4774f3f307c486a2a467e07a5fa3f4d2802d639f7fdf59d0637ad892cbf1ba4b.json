@@ -1,0 +1,14 @@
+{
+  "request_hash": "4774f3f307c486a2a467e07a5fa3f4d2802d639f7fdf59d0637ad892cbf1ba4b",
+  "prompt_sha256": "ec58fbc7b521d3bee99c43eebdf775b6e61bb6b14633bab739515d4abc5ad39a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNbnRVVXpKUi4yKcjGi87JqIVgfA",
+  "prompt_tokens": 5561,
+  "completion_tokens": 48,
+  "actual_usd": 0.0008629499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that while employers can review whether the AI's judgment was correct, they cannot verify if rejected candidates were truly unsuitable, which directly supports the claim in the Reference Answer."
+  }
+}

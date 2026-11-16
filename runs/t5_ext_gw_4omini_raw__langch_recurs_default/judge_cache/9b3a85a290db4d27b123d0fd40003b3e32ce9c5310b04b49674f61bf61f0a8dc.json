@@ -1,0 +1,14 @@
+{
+  "request_hash": "9b3a85a290db4d27b123d0fd40003b3e32ce9c5310b04b49674f61bf61f0a8dc",
+  "prompt_sha256": "1e32a1257fa4c4a8fa953259b4252527ec7cf653e5046f3f477c4f0f416fc1b7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9xgUrFq1yiPjtRyiC9DOkQrHGn",
+  "prompt_tokens": 6362,
+  "completion_tokens": 37,
+  "actual_usd": 0.0009765,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the implementation of informal feedback loops that facilitate internal learning and responsible review."
+  }
+}

@@ -1,0 +1,48 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+Processing document Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+[shard 0] 1/189     51s total     51s ext_v1 Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Part
+Found existing results for 1 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence

@@ -1,0 +1,14 @@
+{
+  "request_hash": "3892b01da46157f8ffdecbd683b4724b0e728aa69bdec533d076736a21427032",
+  "prompt_sha256": "89503716b2bcfe4d7873b707305717f6a911a81217a540ffd302c378bb7ce0b4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNcZxFur6XfPA27sP8XGqdhSNjoU",
+  "prompt_tokens": 6984,
+  "completion_tokens": 56,
+  "actual_usd": 0.0010811999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that healthcare is the most frequently targeted application domain with 10 studies, followed by robotics with 3 studies, and noting that 25 studies did not specify an application domain."
+  }
+}

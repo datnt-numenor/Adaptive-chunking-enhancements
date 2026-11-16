@@ -1,0 +1,14 @@
+{
+  "request_hash": "035a2c6ea3bf2c17013b1cdcae235f1ccdcef0bf2a72aefae9a51e7e5c5502e2",
+  "prompt_sha256": "aa0a795441b7ad5b38c52b69b7a2854ff4bcb8885b2c1cd1f765298c9cd19aa2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNU9ebYq6nrm8dgwEOLm5Bp1kx7x",
+  "prompt_tokens": 5962,
+  "completion_tokens": 47,
+  "actual_usd": 0.0009225,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how legal experts faced challenges with technical aspects and computer scientists struggled with legal terminology, leading to the use of 'not sure' tags."
+  }
+}

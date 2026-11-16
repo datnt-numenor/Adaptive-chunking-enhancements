@@ -1,0 +1,14 @@
+{
+  "request_hash": "2c385b977b46434d55ca005422eadf4e4bbaeb3fd84de720263976fa8479780f",
+  "prompt_sha256": "90f48632ef8eab6a71c0d787a1c068e41704292282bc30ba83c63ebee901c5c5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2GR9DGF8RkNAGcFun4qsNnp4tAV",
+  "prompt_tokens": 10021,
+  "completion_tokens": 59,
+  "actual_usd": 0.0015385499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics on the perception of AI among different age groups, including the specific positive image percentages for the 18-24 age group and the 35-49 age group, fully supporting the claims made in the Reference Answer."
+  }
+}

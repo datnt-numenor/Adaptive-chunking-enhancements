@@ -1,0 +1,14 @@
+{
+  "request_hash": "02cdd49056672d4ad4b42f83f1ef07d4494d7b103507af11220bf27ba17182a3",
+  "prompt_sha256": "05828da09acdef3c1989829876330a7a315cd86ff7f7d547ed7eaedec48b5cf5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOb9tvWKxLV41pchoauoziRhlTri",
+  "prompt_tokens": 9350,
+  "completion_tokens": 45,
+  "actual_usd": 0.0014295,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed breakdown of the calculations leading to the final estimate of 123.82 tonnes CO2eq, fully supporting the claims made in the Reference Answer."
+  }
+}

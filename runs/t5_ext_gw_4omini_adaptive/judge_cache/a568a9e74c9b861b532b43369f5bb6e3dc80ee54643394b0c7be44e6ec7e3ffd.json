@@ -1,0 +1,14 @@
+{
+  "request_hash": "a568a9e74c9b861b532b43369f5bb6e3dc80ee54643394b0c7be44e6ec7e3ffd",
+  "prompt_sha256": "f8214eed138b1d868922c678289d9aefec771c7856f63e5aaa7c9847ea3e5297",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSwi2CXo8uHO5bfFGMDURo9OKeF",
+  "prompt_tokens": 6923,
+  "completion_tokens": 38,
+  "actual_usd": 0.00106125,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating the requirement for data to adhere to ALCOA principles in the drug licensing process."
+  }
+}

@@ -1,0 +1,299 @@
+DOC_ID: Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+
+<<<PAGE 2>>>
+## TABLE OF CONTENTS
+
+<Table>
+| 0 | 1 |
+| --- | --- |
+| Acknowledgments | 1 |
+| Executive Summary | 2 |
+| Chapter 1: Introduction | 8 |
+| Chapter 2: Generative AI: The technology and supply chain | 29 |
+| Chapter 3: Challenges and risks of generative AI | 58 |
+| Chapter 4: Industry initiatives | 121 |
+| Chapter 5: Regulatory initiatives | 172 |
+| Chapter 6: International initiatives and negotiations | 405 |
+| Chapter 7: Final conclusions | 440 |
+| Appendices | 446 |
+| Selected Bibliography | 460 |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+## ACKNOWLEDGMENTS
+
+This work would not exist without the dedicated efforts of the members of the Governance of Emerging Technologies program at the Cyber Policy Center, directed by Florence G'sell and managed by Ben Rosenthal. We are greatly indebted to the Project Liberty Institute for their support of the Program on Governance of Emerging Technologies, which made this report possible.
+
+This report has greatly benefited from the significant inputs of several key contributors. Elliot Stewart focused on technology, meticulously examining the practices of major AI companies, a task made even more challenging by their constantly evolving practices and policies. Chris Suhler and Ashok Ayyar, assisted by Nikta Shahbaz, scrutinized the ongoing strategy of the U.S. federal administration as well as the regulations adopted and proposed at both the federal and state levels. Professor Jiaying Jiang, Jasmine Shao, and Sabina Nong joined their efforts to provide a comprehensive and precise overview of the Chinese framework. Zeke Gillman analyzed the frameworks of Canada, South Korea, Singapore, the UK, Israel, Saudi Arabia, and the Emirates, and also studied ongoing international initiatives. Arpit Gupta examined the legal framework of India and the collective practices of AI companies. Tally Smitas analyzed the legislation currently being adopted in Brazil. Ryoko Matsumoto provided an overview of Japan's framework. Professor Keeheon Lee offered significant insights into South Korea's regulatory strategy, while Nathan Levit and Maya Rodrigues finalized the presentation of the South Korean and Singaporean frameworks.
+
+It is also appropriate to express gratitude to Sanna Ali, Tamian Derivry, and Luca Lefevre for their research efforts and assistance on various topics throughout the drafting of this report.
+
+This report has also been enriched by the valuable feedback and comments of numerous colleagues who dedicated their time to review it and offer substantial and relevant suggestions. In particular, Professor Jingwen Wang and Professor Xinyu Fu provided invaluable insights on generative AI technology, while Dave Willner shared his expertise on the generative AI industry.
+
+This work has also benefited from the precious comments of Nate Persily, Carlos Escapa, Sarah Cen, David Shao, Jiankun Ni, Sijia Liu, Mick Li, Chun Yu Hong, Hiroki Habuka, Shayne Longpre, Rishi Bommasani, Kevin Klyman, Dan Ho, Mark Lemley, Daphne Keller, Presley Warner, Suzanne Marton, Jerrold Soh, Conor Chapman and Samidh Chakrabarti.
+
+Invaluable technical assistance was provided by copy editors Lisa Keen and Eden Beck, and designer Michi Turner.
+
+Nick Amador, Zeke Gillman, Nathan Levit, Nate Low, Jasmine Shao, Nikta Shahbaz, and Harith Khawaja completed the bluebooking.
+
+Finally, all the students of the Spring 2023 Governance and Regulation of Emerging Technologies Policy Practicum should be thanked for their inspiring work, which served as the starting point for this policy report: Taylor Applegate, Sindy Braun, Alexis Dye, Drew Edwards, Mary Rose Fetter, Dakota Foster, Christopher Giles, August Gweon, Caroline Hunsicker, Poramin Insom, Crys Jain, Harith Khawaja, Atsushi Kono, Ashley Denise Leon, Zahavah Levine, Miranda Lin Li, Katherine McCreery, Caroline Meinhardt, David Mollenkamp, Ilari Papa Kate Reinmuth, Gabriela A. Romero, Greg D. Schwartz, Sade Snowden- Akintunde, Elliot Stahr, Silva Stewart, Christine Strauss, Chris Suhler, Kiran Wattamwar, and Ashton E. Woods.
+
+<!-- PageFooter: page 1 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+## EXECUTIVE SUMMARY
+
+The revolution underway in the development of artificial intelligence promises to transform the economy and all social systems. It is difficult to think of an area of life that will not be affected in some way by AI, if the claims of the most ardent of AI cheerleaders prove true. Although innovation in AI has occurred for many decades, the two years since the release of ChatGPT have been marked by an exponential rise in development and attention to the technology. Unsurprisingly, governmental policy and regulation has lagged behind the fast pace of technological development. Nevertheless, a wealth of laws, both proposed and enacted, have emerged around the world. The purpose of this report is to canvas and analyze the existing array of proposals for governance of generative AI.
+
+Just as development of the technology has accelerated over the last two years, so too has the debate concerning the relative risks and benefits of generative Al. The "techno-optimists" who celebrate a future of pervasive Al point to exponential increases in human productivity, discovery, and creativity. Detractors worry about everything from severe economic and environmental impacts to existential risks from autonomous AI agents and new weapons of mass destruction. This very unsettled debate over the relative risks and benefits of AI casts a cloud of uncertainty over the policy debate related to regulation. As the technology emerges from its infancy, the rules considered and enacted now, with incomplete information, could have significant impacts on the trajectory of technological development.
+
+Although much of the policy debate, as expected, focuses on risks, most governments recognize the important benefits AI promises for their economies and population. Although no consensus has yet emerged as to the transformational potential of the current crop of generative AI, few dispute its widespread economic and social impact. Indeed, dramatic scientific breakthroughs have already been realized. For example, DeepMind's development of AlphaFold to predict protein structures has made dramatic progress in the field of computational biology. These early successes have led the most optimistic AI supporters to predict that AI will make possible any number of drug and medical breakthroughs that could cure or treat endemic diseases. They see AI providing technological solutions to seemingly intractable global challenges, such as climate change, pollution, and energy shortages. But the benefits will not be limited to scientific discovery. All sectors of the economy should expect some impact from Al -from data-intensive businesses to all creative industries. And as Al becomes "embodied" with robotics, the potential shall be realized in all forms of manual labor as well.
+
+Of course, some of these benefits are also viewed as risks or costs. Al's transformation of the economy, like all previous technological transformations, will come with massive job displacement. And while AI may help find ways to mitigate climate change and energy shortages, the building of massive data centers and the training of new models promises to significantly increase energy demands in the short term due to the buildout of AI technology. Those who warn of the societal impacts from Al are alarmed by the potential for catastrophic harms -from novel viruses and new weapons to uncontrollable AI agents and cyberattacks. Early in the immediate aftermath of ChatGPT, leading AI scientists and business leaders called on governments to begin addressing collectively the problems of new existential risks posed by Al. However, experts remain divided on the plausibility of "loss of control" scenarios, where a highly intelligent "rogue Al" could surpass human oversight and potentially spiral out of control. And critics of that concern over future existential risks suggest focus should be placed instead on the immediate and tangible risks posed by generative AI that
+
+<!-- PageFooter: page 2 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+require government action. Disinformation threats from synthetic imagery, an explosion in virtual child pornography, scams using voice mimicking technology to defraud unsuspecting victims, discrimination and bias in AI algorithms, and a host of problems due to vulnerabilities to jailbreaking and inaccurate responses provided by chatbots are just a few of the problems already presented by existing generative AI tools. As these tools are rolled out for use in law enforcement, criminal justice, judicial process, employment, education, healthcare, and any number of other domains, both the malfunctioning of the systems and their abuse by bad actors cautions against overreliance on AI and wholesale replacement of human oversight of these processes.
+
+Governance of generative AI, therefore, requires policymakers to walk the difficult line between enabling the tremendous benefits of AI while warding off both present day harms and future existential risks. Proposed and existing government regulation occurs along a continuum, from a laissez faire model, that mostly characterizes the United States, to a more command-and-control model characteristic of traditional forms of regulation, with China at the extreme opposite pole from the U.S. In the middle are different degrees of co-regulation, such as that prevalent in the European Union, in which governments exist in a dialogic relationship with companies to respond incrementally to new developments and discovered harms from the technology.
+
+To be clear, though, government regulation of some kind is inescapable, if only to clarify how existing laws will apply to the newest technologies. One of the most pressing issues relates to the fact that developers train their models by using extensive datasets, often gathered through online web scraping, a practice which may often scoop up copyrighted content or personal data. Multiple lawsuits have been filed around the world, alleging infringement by generative AI models -trained on copyrighted text and images- which sometimes produce Al-generated content that is remarkably similar to that of existing creative works. The law will have to determine whether the training of AI models brings with it the risk of intellectual property infringement. It will have to ascertain if a generative AI user, by merely writing a prompt, can be declared the author of whatever the AI tool produces in response to that prompt. It will also have to elucidate the implications of current practices by AI companies concerning privacy and data protection. The law of libel and defamation will need to adapt to the AI environment. When a model produces defamatory content about an individual, who should be held liable? Given that chatbots cannot produce foolproof answers to information requests, what steps (if any) should be taken to immunize companies from reputational and other harms created by use of such tools?
+
+Therefore, although the United States may be characterized as having a "hands-off" regulatory approach, either through the courts or through legislation, some regulation will be necessary. For now, most of the action in the US has occurred either in the executive branch or in the states. In addition to securing voluntary commitments from the major AI companies, the Biden administration issued Executive Order 14110, which outlines eight guiding principles and policy priorities for federal agencies and authorities. The Executive Order instructs various federal departments to issue reports, develop guidelines, and take actions under existing authority, as well as improve AI oversight in the federal government. Consequently, the National Institute of Standards and Technology (NIST) has published various documents detailing non-binding standards on AI risks and cybersecurity, developed through collaboration with the AI industry and stakeholders. The absence of a comprehensive legal framework has prompted some individual states to enact their own AI-related legislation, addressing issues such as deepfakes and algorithmic discrimination. Perhaps the most significant proposal, California's pending "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act," would impose significant compliance obligations on Al developers.
+
+<!-- PageFooter: page 3 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+The most significant and comprehensive piece of legislation passed thus far with respect to Al is the EU's Al Act. This legislation follows in a long line of recent European technology regulation: privacy protection through the General Data Protection Regulation (GDPR); digital platform content regulation through the Digital Services Act (DSA); competition regulation through the Digital Markets Act (DMA); and intellectual property regulation through the Copyright Directive. Some provisions in those laws, to a greater or lesser degree, apply to AI. In addition, some EU Member States, similar to some states in the United States, have their own laws that may apply to AI. Moreover, the AI Act is not the only European legislation adopted recently that implicates Al. The Cyber Resilience Act imposes several cybersecurity rules on "products with digital elements," and the new Product Liability Directive classifies software, including Al systems, as products that can be defective, thereby holding their producers strictly liable in case of defectiveness.
+
+The AI Act regulates AI systems based on risk levels and use cases, particularly in sensitive sectors. The Act categorizes risks based on the "intended" use of Al systems and classifies them into four risk categories: unacceptable risk, high risk, limited or "transparency" risk, and minimal or no risk. Depending on the risk level involved in the application, different legal requirements will apply.
+
+· Unacceptable -
+
+· Examples: social scoring, person-based crime prediction
+
+· Requirements: Such Al systems are prohibited
+
+· High risk -
+
+· Examples: critical infrastructure, education, health care and medicine, product safety, employment, law enforcement, border control, administration of justice and democracy
+
+· Requirements: risk management; data quality and governance, consistent recordkeeping, transparency and provision of information to deployers, guarantee of human oversight, ensuring system accuracy, robustness, and cybersecurity
+
+· Limited Risk -
+
+· Examples: chatbots, generative Al systems
+
+· Requirements: transparency to ensure that humans are informed when they are interacting with Al and labeling of AI-generated content
+
+· Minimal or No Risk -
+
+· Examples: video games and spam filters
+
+· Requirements: No specific regulation of Al
+
+During the negotiation process over the AI Act, provisions were added to regulate general-purpose (i.e., foundation) models, shifting the focus from specific use cases to the technology itself. Consequently, these general-purpose AI models, like GPT, Llama, or Claude, have numerous applications and are trained on massive amounts of data. Developers of these models must provide technical documentation, including information about the model's energy consumption, documentation for downstream providers, greater transparency relating to their training data sets, as well as a copyright policy. General-purpose AI models posing systemic risks must comply with additional obligations related to cybersecurity, red teaming, risk mitigation, incident reporting, and model evaluation.
+
+<!-- PageFooter: page 4 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+This report spends a considerable amount of space on the European Union's Al Act because it presents many of the fundamental regulatory choices policymakers must confront. Parts of the law represent a command-and-control model, specifically mandating rules for the development, deployment, and application of AI. The Act also has aspects of co-regulation to it. For example, stakeholders are involved in enforcement by developing codes of practice. The AI Act grapples with the challenges of regulating the technology itself, as well as the applications of AI. It also has certain exceptions for open-source models. Like other European tech regulations, the impact of the EU AI Act will be felt beyond Europe as it applies to all AI services used in the EU, which, as with GDPR, may set a new international standard for AI. Finally, the AI Act is also important because several other countries, such as Brazil, are emulating it.
+
+Aggressive state regulation of AI, as with any technology, can come in different forms. China presents one paradigm for authoritarian regimes. It has enacted an array of laws that place substantial constraints on the development of the technology. These include the Algorithm Recommendation Provisions, the Deep Synthesis Regulation, the Interim Measures for Generative AI Services, and the Basic Safety Requirements for Generative AI Services. Some of the goals in these laws are similar to those in democratic regimes. For instance, they call for labeling of AI-generated imagery and protection of privacy and intellectual property, at least with respect to the development of the technology by non-state actors and its impact on other citizens. However, for China, the laws are specifically crafted to ensure that the technology furthers national values. Reporting obligations for covered technologies (which extend well beyond typical generative AI applications to include all kinds of algorithms) include reporting to regulators on technology and uses that are capable of influencing public opinion or mobilizing the public. Users are subject to close monitoring, while generative AI tools must be trained and configured to minimize the production of "fake news" and "illegal or unhealthy information." Service providers must promptly address any infringements and implement measures to prevent future occurrences, such as by "optimizing the training" of Al models.
+
+Given the geopolitical implications of the race to control this new and powerful technology and the ease with which the technology will transcend the boundaries of a given regulator, it should come as no surprise that most major international organizations have proposed or are drafting new initiatives related to Al. The G7's Hiroshima Al Process has resulted in non-binding yet influential frameworks, such as its Guiding Principles and Code of Conduct for AI. The G20 has also published its own G20 AI Principles, and the EU-US Trade and Technology Council has released collaborative AI projects. The five-nation BRICS group has formed an AI Study Group to foster innovation and establish AI governance standards, in alignment with China's Global Al Governance Initiative. In May 2024, the Council of Europe adopted the first international AI treaty, the Framework Convention on Artificial Intelligence and Human Rights, Democracy, and the Rule of Law, which requires ratification by at least five states to enter into force. The United Nations established a High- Level Advisory Body on AI and adopted its first AI resolution. UNESCO provided ethical guidelines and global guidance on AI use in education and research. Additionally, the African Union published various policy documents to guide AI development in Africa. Most of these international initiatives have been strongly influenced by the work of the OECD's "Recommendation on Artificial Intelligence."
+
+<!-- PageFooter: page 5 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+Several high-level principles and observations emerge from this exploration of the different national and international initiatives related to AI:
+
+1. Regulation of the technology or its applications. Sector specific laws allow AI regulation to work incrementally and adapt laws in narrow ways to the changes made by AI. However, due to the uncertain reach and implications of AI technology and the development of general-purpose AI models, predicting future applications and use cases is challenging. Consequently, regulating the technology itself is particularly important. This necessity explains why some countries, such as the EU, have adopted specific provisions targeting AI models. Additionally, many countries, including the United Kingdom, the United States, Japan, and the European Union, have established dedicated AI Safety Institutes.
+
+2. The importance of transparency and auditing. Because the impacts of generative AI are unknown, transparency in the development of this technology is critical. "Model cards" and disclosures about training data represent only the beginning of the necessary transparency. To fully understand the implications of foundation models and generative AI applications, both developers and external third parties must rigorously test them prior to deployment. This testing should aim to evaluate performance, biases, alignment, and the potential to generate significant risks.
+
+3. Regulations and enforcement. Given the complexity and rapid pace of development of the technology, legislation can go only so far in specifying rules ex ante that will govern AI development and applications, even in the near future. Enforcement will prove as important, if not more so, than legislation. This will require governments to hire AI talent, which is both expensive and in short supply. It will also require government coordination with companies and civil society to provide continuous guidance on how the rules on the books apply to new and emerging contexts.
+
+4. The relative power of the public and private sectors. Almost all current generative AI models have been developed by private companies. The need to collect vast amounts of data, the scarcity of chips, and the high costs of computation have concentrated the resources required to develop and train the most powerful models in the hands of a few private companies. To "democratize" the production of Al may require massive public investment to ensure that actors other than those tied to the profit-maximizing mission of the commercial firms will be able produce the most cutting edge AI models.
+
+5. The promise and risks of open models. Although private companies are developing the most powerful models, some are publicly releasing the models and their weights. Meta and its Llama models have taken a lead in the production of powerful open-source models, although others, such as Mistral or Falcon, have released significant open-source models. Open-source models promise to make the benefits of AI available to the world. They also might create a competitive environment, quite different from that of social media and search engines, which have been controlled by a few oligopolistic actors. However, the openness of these models also generates significant concerns. Once the models are released, they can be used and fine-tuned by bad actors for all kinds of intended and unintended purposes. Moreover, once they are "out the door," there is little that the companies or governments can do to control their impact. Government regulation in this space must address the relative risks and benefits posed by open-source models.
+
+<!-- PageFooter: page 6 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+The title of this report - "Regulating Under Uncertainty: Governance Options for Generative Al" - seeks to convey the unprecedented position of governments as they confront the regulatory challenges AI poses. Regulation is both urgently needed and unpredictable. It also may be counterproductive, if not done well. However, governments cannot wait until they have perfect and complete information before they act, because doing so may be too late to ensure that the trajectory of technological development does not lead to existential or unacceptable risks. The goal of this report is to present all of the options that are "on the table" now with the hope that all stakeholders can begin to establish best practices through aggressive information sharing. The risks and benefits of AI will be felt across the entire world. It is critical that the different proposals emerging are assembled in one place so that policy proponents can learn from one another and move ahead in a cooperative fashion.
+
+<!-- PageFooter: page 7 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+# CHAPTER 1 Introduction
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: REGULATING UNDER UNCERTAINTY: Governance Options for Generative AI -->
+
+## CHAPTER 1 TABLE OF CONTENTS
+
+<Table>
+| 0 | 1 |
+| --- | --- |
+| CHAPTER 1 INTRODUCTION | 8 |
+| 1.1. Regulating under uncertainty | 10 |
+| 1.1.A. The ChatGPT turning point | 11 |
+| 1.1.B. Benefits | 12 |
+| 1.1.C. Fears and worries: a pause | 13 |
+| 1.1.D. Striking the right balance: Innovation vs. harm-prevention | 14 |
+| 1.2. Possible regulatory approaches | 15 |
+| 1.2.1. Self-regulation | 15 |
+| 1.2.1.A. What is self-regulation? | 16 |
+| 1.2.1.B. Advantages of self-regulation | 17 |
+| 1.2.1.C. Limitations of self-regulation | 17 |
+| 1.2.2. Co-regulation | 18 |
+| 1.2.3. Traditional government regulation | 20 |
+| 1.2.3.A. Objections to government regulation | 20 |
+| 1.2.3.B. Advantages of government regulation | 21 |
+| 1.2.3.C. Forms of government regulation | 22 |
+| 1.3. Positions within the industry | 23 |
+| 1.3.1. Calls for regulation | 23 |
+| 1.3.1.A. Licensing | 24 |
+| 1.3.1.B. The Microsoft Blueprint: "Know Your Cloud, Customers, and Content" | 26 |
+| 1.3.1.C. Paradoxical stances | 26 |
+| 1.3.2. Calls for international initiatives | 27 |
+| 1.4. Purpose and structure | 28 |
+</Table>
+
+<!-- PageFooter: 4 Table of Contents Chapter 1 Contents page 9 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: REGULATING UNDER UNCERTAINTY: Governance Options for Generative AI -->
+
+## CHAPTER 1 Introduction
+
+Effective regulation of emerging technologies inevitably presents legislators with a set of difficult choices. If they act aggressively to mitigate all hypothetical risks, they might inhibit the development of the technology. If they act too conservatively at the outset, they might miss the chance to steer the industry toward the safe development of the technology and away from foreseeable harms. These choices must also be made at a time when the knowledge and expertise about the technology resides mostly in the private sector. As a result, governments often do not have the necessary expertise to design and enforce a new regulatory regime.
+
+Perhaps more than any previous technology, artificial intelligence illustrates these regulatory trade-offs and challenges. Institutions inside and outside of government, including the AI companies themselves, are clamoring for legislation. Creating "rules of the road" is seen as necessary both for the prevention of harm and for the establishment of ground rules of the growing market for the technology. Consensus may exist around abstract principles, as seen in various voluntary commitments or guidelines, but that consensus often breaks down once discussions turn to implementation with concrete regulations that seek to strike the right balance.
+
+This report seeks to describe the different ways that legislators, regulators, and non-governmental actors have grappled with the problem of regulating generative AI. It presents a variety of proposals and approaches at varying levels of specificity in an attempt to assess the regulatory landscape as of June 2024. It begins with a description of the technology and the risks that regulation
+
+might seek to prevent. It then presents industry-led efforts at self-regulation, before turning to a discussion of proposals from around the world, with a particular focus on the European Union's Al Act, the most comprehensive legislative initiative passed thus far. The report then discusses the proposals from various international bodies before presenting a series of conclusions.
+
+### 1.1. REGULATING UNDER UNCERTAINTY
+
+Predictions of the future promised by artificial intelligence range from the apocalyptic to the utopian. There are those who see in the technology risks at the scale of the Terminator, with the threat of human extinction at the hands of killer robots, bioweapons, or a host of other intended or unintended innovations. Then, there are those who see it as humanity's saving grace, with the potential to solve a range of human problems, from cancer to climate change. As the capabilities of this technology rapidly become apparent, legislators are placed in the almost-impossible position of trying to preserve the upsides of this emerging technology while avoiding the potentially catastrophic consequences. This is all the more difficult because of the considerable uncertainty, at this early stage, as to when and how the most significant dangers and benefits will become readily apparent. To some extent, governments are legislating in the dark, as they set the ground rules for a technology presenting hypothesized existential risks, some present-day dangers, and potential long-term socially transformative benefits.
+
+<!-- PageFooter: 4 Table of Contents Chapter 1 Contents page 10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: CHAPTER 1 Introduction REGULATING UNDER UNCERTAINTY: Governance Options for Generative Al -->
+
+#### 1.1.A. The ChatGPT turning point
+
+Historians may look back on November 30, 2022, as the critical turning point in the development of generative Al. Although beforehand, the technology was in widespread use, particularly in academia, it was on that date that OpenAI released ChatGPT to the world. When it did so, it shot the starting gun for what has turned into an "Al arms race,"1 in which technology companies now compete to develop the most sophisticated models as quickly as possible.2 In March 2023, four months following the release of ChatGPT in November 2022, OpenAl launched GPT-4, a model with dramatically enhanced capabilities. Concurrently, Anthropic introduced Claude, a direct competitor to GPT-4.3 Meta unveiled its open model, Llama 2, in July 2023, Mistral Al released Mistral 7B in September 2023, Baidu launched Ernie 4.0 one month later, followed by X.ai's release of Grok in November and Google's release of Gemini at the close of 2023. The momentum continued into 2024, with Anthropic releasing Claude 3 in March, Meta introducing Llama 3 in April, and OpenAI releasing GPT-40 in May.
+
+At present, only a select few Al companies, often global tech giants, possess the expertise and financial resources necessary to develop the most advanced generative Al systems and models (see section 2.2.5.). Having invested in Al for many years, these leading Al companies are well-positioned to dominate the burgeoning generative Al market. Yet small- and medium-sized enterprises (SMEs), startups, researchers, and open-source developers are also playing a role in the generative Al ecosystem.
+
+In particular, while most leading Al companies opt to keep the proprietary details of their Al systems private, an increasing number of developers are choosing to be open.4 The presence of these open models facilitates a potentially competitive market that distinguishes this technological ecosystem from the monopolistic tendencies of recent technological advancements, for example, in social media and search engines. At the same time, the openness of the models necessarily presents unique risks, as the model developers cannot foresee or rein in the efforts of bad actors who might use these models to create harm (see section 3.2.6.A.).
+
+Competition in Al is not limited to companies, of course: It extends to nation states. Because of the potential power of this new technology, let alone its military and intelligence applications, the Al arms race has similarities to an actual arms race, as countries compete to develop offensive and defensive capabilities to promote national interests. The Al revolution, therefore, has far-reaching geopolitical implications. In the words of a Brookings Institution 2020 blog post: "Whoever leads in artificial intelligence in 2030 will rule the world until 2100."5
+
+The competition in Al is now often seen as a two-way race between the leading technological and economic superpowers, the United States and China. They are the clear front-runners in Al development, even though Europe also holds a significant position and a few other countries, such as the United Arab Emirates, have made significant investments. According to the Stanford Al Index Report
+
+\* 1 Kevin Roose, How ChatGPT Kicked Off an A.I. Arms Race, N.Y. TIMES (Feb. 3, 2023), https://www.nytimes.com/2023/02/03/technology/chatgpt-openai-artificial-intelligence.html.
+
+\* 2 In February 2023, Microsoft CEO Satya Nadella said, "Rapid innovation is going to come. In fact, a race starts today." Richard Waters & Madhumita Murgia, Microsoft targets Google's search dominance with Al-powered Bing, FINANCIAL TIMES (Feb. 8, 2023), https://www.ft.com/content/2d48d982-80b2-49f3-8a83-f5afef98e8eb.
+
+\* 3 The notable releases of 2023 are presented in Stanford's Artificial Intelligence Index Report, STAN. U. HUMAN-CENTERED ARTIFICIAL INTELLIGENCE (2024), at 78-80, https://aiindex.stanford.edu/report/ [hereinafter Stanford Al Index Report 2024].
+
+\* 4 "Since 2011, the number of Al-related GitHub projects has seen a consistent increase, growing from 845 in 2011 to approximately 1.8 million in 2023. Notably, there was a sharp 59.3% rise in the total number of GitHub Al projects in the last year alone." Id. at 69.
+
+\* 5 Indermit Gill, Whoever leads in artificial intelligence in 2030 will rule the world until 2100, BROOKINGS (Jan. 17, 2020), https://www.brookings.edu/articles/whoever-leads-in- artificial-intelligence-in-2030-will-rule-the-world-until-2100.
+
+<!-- PageFooter: Table of Contents Chapter 1 Contents page 11 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: CHAPTER 1 Introduction REGULATING UNDER UNCERTAINTY: Governance Options for Generative Al -->
+
+2024, 61 notable Al models were developed by US-based institutions in 2023, while 21 were developed in the European Union and 15 in China.6 The concentration of advanced Al model development in only a few developed countries raises concerns about this "Global Al Divide"7 that could render other countries dependent on critical technologies.
+
+#### 1.1.B. Benefits
+
+Over the past two decades, Al has progressively transformed various fields, showcasing significant advancements and benefits. One notable milestone was AlphaGo, developed by DeepMind, which defeated the world champion Go player in 2016. This achievement demonstrated the potential of Al in mastering complex tasks through deep learning and reinforcement learning techniques, marking a significant leap in Al capabilities. Another groundbreaking development was in the field of protein folding. In 2020, DeepMind's AlphaFold achieved a major breakthrough by predicting protein structures with remarkable accuracy, solving a 50-year-old challenge in biology (see below section 3.2.1.C.).
+
+Concerning generative Al in particular, its capabilities have rapidly expanded beyond mere content creation. Generative Al models are now adept at a wide array of tasks and can serve as the foundation for developing various specialized Al systems. With rapidly advancing capabilities, they are able to accomplish increasingly sophisticated tasks. One example, among many, was again
+
+provided by DeepMind: In December 2023, its Al model solved a previously unsolved mathematical problem. In a paper published in Nature,8 researchers stated that the accomplishment marked the first instance of a large language model being used to solve a long-standing unsolved mathematical problem. The solution was not present in the training data and was entirely novel.9
+
+Current generative Al tools can now produce various types of output, e.g .: text, images, computer code, music, videos, or even structure synthesis for 3D printing. A novel activity known as "prompt engineering" has emerged, involving the optimization of textual input to enhance communication with a generative Al tool, though future Al systems may render this unnecessary by becoming more intuitive and proficient in understanding natural language.1º In the creative industries, generative Al enhances content creation by generating images, music, and text, allowing artists and writers to experiment with new styles and ideas. It plays a crucial role in education by creating tailored learning experiences and materials, adapting to the needs of individual students. Businesses may benefit from generative Al through improved customer service, as it powers advanced chatbots and virtual assistants capable of handling complex inquiries.
+
+In the future, generative Al systems will be integrated into myriad products and services and applied in areas such as customer support, artistic creation, image enhancement, research initiatives, coding, and virtual assistants for
+
+\* 6 Stanford Al Index Report 2024 supra note 3 at 47.
+
+\* 7 Yoshua Bengio et al., International Scientific Report on the Safety of Advanced Al, Interim Report (May 2024), at 57, https://assets.publishing.service.gov.uk/
+
+\* media/6655982fdc15efdddf1a842f/international scientific report on the safety of advanced ai interim report.pdf [hereinafter International Scientific Report].
+
+\* 8 Bernardino Romera-Paredes et al., Mathematical discoveries from program search with large language models, NATURE 625, 468-75 (2024), https://doi-org.stanford.idm. oclc.org/10.1038/s41586-023-06924-6.
+
+\* 9 Will Douglas Heaven, Google DeepMind used a large language model to solve an unsolved math problem, MIT TECH. REV. (Dec. 14, 2023), https://www.technologyreview. com/2023/12/14/1085318/google-deepmind-large-language-model-solve-unsolvable-math-problem-cap-set/.
+
+\* 10 "Prompt engineering is the process of writing, refining and optimizing inputs to encourage generative Al systems to create specific, high-quality outputs." IBM, What is prompt engineering?, THINK (2024), https://www.ibm.com/topics/prompt-engineering. Among many studies, see Sander Schulhoff et al., The Prompt Report: A Systematic Survey of Prompting Techniques, arXiv (June 6, 2024), https://arxiv.org/abs/2406.06608. See also Oguz A. Acar, Al Prompt Engineering Isn't the Future, HARVARD BUSINESS REVIEW (June 6, 2023), https://hbr.org/2023/06/ai-prompt-engineering-isnt-the-future.
+
+<!-- PageFooter: Table of Contents Chapter 1 Contents page 12 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: CHAPTER 1 Introduction REGULATING UNDER UNCERTAINTY: Governance Options for Generative Al -->
+
+driving. Generative Al offers the potential to revolutionize multiple sectors-education, entertainment, healthcare, and scientific research-by enabling the creation of customized, scalable content, automating processes, generating hypotheses, and boosting efficiency. In software development, generative Al accelerates the coding process by generating code snippets and analyzing existing code to suggest optimizations. It also enhances data analysis, producing synthetic data that can be used to train models when real data are scarce or sensitive. Generative Al supports scientific research by generating hypotheses and simulating experiments, saving time and resources. In healthcare, it can assist in drug discovery and the development of personalized treatment plans by simulating complex biological processes. Finally, generative Al can aid in the detection and prevention of fraud by generating realistic scenarios that help identify vulnerabilities in security systems.
+
+Some characterize the opportunities offered by generative Al as extraordinary, with the expectation that the technology will lead to significant scientific breakthroughs, economic growth, and profound social transformations. The most extreme pronouncement of the utopian vision of Al comes from Marc Andreessen's Techno-Optimist Manifesto: "We believe technology is liberatory. Liberatory of human potential. Liberatory of the human soul, the human spirit. Expanding what it can mean to be free, to be fulfilled, to be alive. We believe technology opens the space of what it can mean to be human."11 In July 2023, the British Computer Society (BCS) appeared to agree with this approving
+
+assessment. The BCS released an open letter calling for the UK government and industry to recognize Al as "a transformational force for good, not an existential threat to humanity."12 The letter attracted over 1,300 signatures.
+
+#### 1.1.C. Fears and worries: a pause
+
+Since the release of ChatGPT, the excitement surrounding generative Al has been modulated by concerns the technology -open or closed source- has raised. In OpenAI CEO Sam Altman's words, "if this technology goes wrong, it can go quite wrong."13 Many worry that Al companies, in their rush to innovate, may overlook the importance of ensuring their models are safe and aligned with human values. This anxiety led numerous researchers and industry leaders, such as Elon Musk and Steve Wozniak, to sign an open letter14 in March 2023, calling on "all Al labs to immediately pause for at least 6 months the training of Al systems more powerful than GPT-4." Endorsed by over 33,000 signatories, the letter urged that stakeholders slow down, if not stop, the technological race. One signatory said the letter was provoked, at least in part, by an alleged "corporate irresponsibility,"15 presumably referring to a lack of self-regulation by major Al companies.
+
+Importantly, the open letter argued that companies like OpenAI are "locked in an out-of-control-race to develop and deploy ever more powerful digital minds that no one -not even their creators- can understand, predict, or reliably control." The proposed pause, the signers wrote, should allow independent experts and Al companies to generate a
+
+\* 11 Marc Andreessen, The Techno-Optimist Manifesto, ANDREESSEN HOROWITZ (Oct. 16, 2023), https://a16z.com/the-techno-optimist-manifesto/.
+
+\* 12 British Computer Society, BCS Open letter calls for Al to be recognised as 'force for good not threat to humanity,' BCS (July 18, 2023), https://www.bcs.org/articles-opinion- and-research/bcs-open-letter-calls-for-ai-to-be-recognised-as-force-for-good-not-threat-to-humanity/.
+
+\* 13 Ryan Tracy, ChatGPT's Sam Altman Warns Congress That Al 'Can Go Quite Wrong,' WALL ST. J. (May 16, 2023), https://www.wsj.com/articles/chatgpts-sam-altman-faces- senate-panel-examining-artificial-intelligence-4bb6942a.
+
+\* 14 PAUSE GIANT AI EXPERIMENTS: AN OPEN LETTER (Mar. 22, 2023), https://futureoflife.org/open-letter/pause-giant-ai-experiments/; Cade Metz & Gregory Schmidt, Elon Musk and Others Call for Pause on A.I., Citing 'Profound Risks to Society,' N.Y. TIMES (Mar. 29, 2023), https://www.nytimes.com/2023/03/29/technology/ai-artificial-intelligence-musk- risks.html.
+
+\* 15 Metz & Schmidt, supra note 14.
+
+<!-- PageFooter: Table of Contents Chapter 1 Contents page 13 -->
+<!-- PageBreak -->
+

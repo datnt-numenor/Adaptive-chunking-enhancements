@@ -1,0 +1,14 @@
+{
+  "request_hash": "9a61b8fee8d130d025eb2c301f0623b03a196c55af43ce84ed78cdd4aaab12ed",
+  "prompt_sha256": "af454d55bf2f9cd6bbc39c694daeef0854cb4282f6594a0d00c1d3755bde9673",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1CW1mYQdkNHqe45w6MEBn8Jv5H",
+  "prompt_tokens": 8241,
+  "completion_tokens": 50,
+  "actual_usd": 0.00126615,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining that international human rights law currently imposes obligations solely on states regarding AI risks, while noting the potential for future changes regarding private actors."
+  }
+}

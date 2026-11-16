@@ -1,0 +1,14 @@
+{
+  "request_hash": "99b4eec418f6133b86000e76ecf2fab8f53c1ff8fe215a63b2d2e69dd1224ce0",
+  "prompt_sha256": "4522e3d1722d8cbcbe17a6bec1319c931c78080d26aaecbf61990c06493431cc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNcxo3l12HvvxK27gp9bhLxILwtW",
+  "prompt_tokens": 8215,
+  "completion_tokens": 42,
+  "actual_usd": 0.00125745,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions healthcare as a targeted application domain but does not provide specific details about the number of studies focused on it, thus partially supporting the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+ "model_requested": "gemini-2.5-pro",
+ "model_returned": "gemini-2.5-pro",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer correctly summarizes the difference in focus between the two use cases, and this summary is directly supported by the provided evidence.\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer is a verbatim quote of the definition provided in the evidence.\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"drop\",\n      \"reason\": \"The evidence is insufficient to support the answer. The evidence only defines dynamic artefacts, but the answer also describes static artefacts, which are not mentioned in the quote.\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer is correct and fully supported by the evidence, which explicitly mentions 'Aequitas for fairness'.\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 9576,
+  "out": 2342
+ },
+ "created": "2026-11-09 18:44:52"
+}

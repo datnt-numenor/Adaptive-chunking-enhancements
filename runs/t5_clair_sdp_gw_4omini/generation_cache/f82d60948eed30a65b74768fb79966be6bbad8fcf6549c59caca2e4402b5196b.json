@@ -1,0 +1,10 @@
+{
+  "request_hash": "f82d60948eed30a65b74768fb79966be6bbad8fcf6549c59caca2e4402b5196b",
+  "prompt_sha256": "80df16c5c4ea260dd7ed156b43fb28a2af09948b110313bb8e134a730f78ae40",
+  "answer": "According to the responsible-AI standards chapter on Interpretability, an interpretable AI system gains the following three properties:\n\n1. **Explicable**: We can provide information and explanation about the system's decisions or predictions.\n2. **Transparent**: The system has a functioning that is intelligible to a human, meaning its operations can be understood.\n3. **Provable**: The system can provide proof of the accuracy of its results.\n\nBeing ‘transparent’ means that the workings of the AI system are clear and understandable to humans, while being ‘provable’ means that the system can demonstrate the correctness or reliability of its outputs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN1ia57CdYQeQv1JxNmPbL5IPsfg",
+  "prompt_tokens": 6959,
+  "completion_tokens": 128,
+  "actual_usd": 0.00112065
+}

@@ -1,0 +1,28 @@
+====================================================================================================
+Ada (technique)_Standards - Interpretability
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=#[^\\n]*\\n)|(?=^# )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Norma (légal)_EDPS Generative AI guidelines
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=#[^\\n]*\\n)|(?=^# )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=##? [^\\n]*\\n)|(?=^##? )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Sophia (sciences sociales)_Livre blanc - Impact AI
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=##? [^\\n]*\\n)\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=##? [^\\n]*\\n)|(?=^##? )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=## [^\\n]*\\n)|(?=^# )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk
+====================================================================================================
+Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape
+  Phan hoi cua LLM: '```regex\n(?<=\\n)(?=##[^\\n]*\\n)|(?=^## )\n```'
+  => Nguyen nhan: khong co the <regex> hoac regex khong hop le -> ca tai lieu thanh 1 chunk

@@ -1,0 +1,14 @@
+{
+  "request_hash": "d48eaeafeadc0df0b5e336a88e9dec7dd4576a3964d331278de89bd501fea0b4",
+  "prompt_sha256": "3a0ec3804761f6359f51fabbb3ebb61160e32c5858077e054d326c3ca09e56ad",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNf2oPuaotRGZqbv5bd1b3SmJAaX",
+  "prompt_tokens": 7797,
+  "completion_tokens": 39,
+  "actual_usd": 0.0011929500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how independent data collection provides auditors with a broader perspective compared to limited inside access."
+  }
+}

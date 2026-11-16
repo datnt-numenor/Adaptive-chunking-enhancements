@@ -1,0 +1,4 @@
+# Research artifacts under runs/ and data/clair_ext_set/ are verified by sha256 (manifests, frozen QA).
+# Never convert their line endings on checkout or commit.
+runs/** -text
+data/clair_ext_set/** -text

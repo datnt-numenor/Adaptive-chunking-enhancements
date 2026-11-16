@@ -1,0 +1,10 @@
+{
+  "request_hash": "e80a6849637e715edcf51da0bff34e4322387a7704fccf94a9c1dada02eb591e",
+  "prompt_sha256": "af1e2276098113f4d99ceeb7a2acc4e35e18d31af56815b00351d1d119f236cd",
+  "answer": "The CodeCarbon tool gathers CPU data using the command psutil to collect information about the CPU frequency and power consumed. It then computes the carbon impact using the formula: carbon impact = power used * time used * average carbon intensity.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMowdJElp0vXDCg5o9IRg4tLsZye",
+  "prompt_tokens": 8368,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012828
+}

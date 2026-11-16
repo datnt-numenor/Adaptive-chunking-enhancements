@@ -1,0 +1,14 @@
+{
+  "request_hash": "c6dfbaf888c60038f030271c8c9c88308c037a666ea2e45738cdf9e3d5b628c6",
+  "prompt_sha256": "76c148e232f560d447b516c07b5bac24411fb42d1fb6d334ebeb19021567f8f4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXCOVJaBALvWHOU2e1CF2Disk7F",
+  "prompt_tokens": 7795,
+  "completion_tokens": 43,
+  "actual_usd": 0.00119505,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the California Consumer Protection Act (CCPA) or its relationship to the GDPR, failing to support the claim made in the Reference Answer."
+  }
+}

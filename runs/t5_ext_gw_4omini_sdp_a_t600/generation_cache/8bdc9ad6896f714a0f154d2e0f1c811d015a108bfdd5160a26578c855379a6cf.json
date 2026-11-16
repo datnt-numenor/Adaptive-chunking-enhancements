@@ -1,0 +1,10 @@
+{
+  "request_hash": "8bdc9ad6896f714a0f154d2e0f1c811d015a108bfdd5160a26578c855379a6cf",
+  "prompt_sha256": "fc6dcb69d66027ceaeb5fe19c5f85f8cfd47279d7eb0d438abda1059a38d84b8",
+  "answer": "The main limitations of the MODERATIONBENCH study as described in arXiv 2609.10410 are:\n\n1. **Modalities Beyond Text and Images**: The study does not address the moderation of videos and audio content, leaving an open question about how these modalities affect VLM moderation performance.\n\n2. **Bias Evaluation**: While the study focuses on the effectiveness of VLMs in operationalizing moderation policies, it does not examine whether differing interpretations of these policies lead to systematic biases in moderation outcomes, which could involve demographic disparities among content creators or targets.\n\n3. **Context Overlooked**: The study treats each post as an atomic unit, ignoring the surrounding context, which is crucial for understanding labels like \"rude\" that may depend on broader conversation threads.\n\n4. **External Links**: The study does not account for posts containing links to external sources where harmful content may reside, leaving a gap in understanding how this affects moderation decisions.\n\n5. **Lack of Expert Annotations**: MODERATIONBENCH currently lacks annotations from expert moderators, which could strengthen the evaluation of moderation effectiveness.\n\n6. **Scalability Challenges**: The study evaluates VLM throughput on a static dataset and does not assess scalability or effectiveness in live, streaming settings, which poses practical challenges for real-time moderation.\n\n7. **Evolving Policies**: The study does not evaluate how changes in platform policies affect VLM moderation decisions and interpretations in practice, which is an important direction for future work.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJr9hz6UuHWODkN6GLLPi5BGLMx",
+  "prompt_tokens": 8333,
+  "completion_tokens": 303,
+  "actual_usd": 0.00143175
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "aa592c71dc6a5142df42d8f3e64b78a40ecb3e8e00d284b1318fd3b11c5f7311",
+  "prompt_sha256": "6f6ddccf51a3d0668302f296690a9c145e69ef7973c5cdd89ab279fd7b5290cb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORVAN9P4rdMTwOA6mVQTHHrz9h0",
+  "prompt_tokens": 9104,
+  "completion_tokens": 51,
+  "actual_usd": 0.0013961999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the FAIR framework, including its decomposition of cyber risk into factors and its methods for estimating probabilities and aggregating risks, fully supporting the claims made in the Reference Answer."
+  }
+}

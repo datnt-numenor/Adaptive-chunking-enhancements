@@ -1,0 +1,14 @@
+{
+  "request_hash": "e11a8b0df6f6114fd2a21c5c9773ccac3b12554699af65405905abc0a3b9557e",
+  "prompt_sha256": "131fb87d5c72030bf9669f84b1397e7cfd99cd000b8fc42a24fce738fce80f4a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNggjDFSU5jd7Dv2aK1iIalDs312",
+  "prompt_tokens": 7922,
+  "completion_tokens": 44,
+  "actual_usd": 0.0012147,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by emphasizing the importance of human oversight in AI decision-making and the necessity for users to provide feedback on AI predictions."
+  }
+}

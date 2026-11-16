@@ -1,0 +1,19 @@
+{"qas": [
+  {"question": "In 'Verification for International AI Governance', how could sandbagging by a password-locked model be uncovered, and why might standard capability elicitation fail to reveal it?",
+   "answer": "Small experiments on known datasets could estimate the secret algorithm's scaling law, which would expose sandbagging. Elicitation may fail because the password locking can leave no signal of the dangerous capabilities to boost.",
+   "evidence": [
+     {"page": 148, "quote": "small experiments could be done to test its ability-using known data sets. This could allow the scaling law for this algorithm to be estimated and thus allow sandbagging413 attempts to be discovered"},
+     {"page": 152, "quote": "The reason why basic capability elicitation efforts might not work is that there may be no signal to boost."}
+   ]},
+  {"question": "In 'Verification for International AI Governance', what occurs in the third step of the PUF-based device-model mating scheme, and what is a physical unclonable function?",
+   "answer": "After the model is installed, a physical or digital switch blows select fuses inside the enclosed hardware, which prevents any further model installation. A PUF uses a physical object as a private key, and the key is lost if the object changes even slightly.",
+   "evidence": [
+     {"page": 158, "quote": "3) When the model has been installed, a physical or digital switch is thrown, blowing select fuses inside the inner (enclosed) hardware, with the effect of disallowing another model installation thereafter."},
+     {"page": 158, "quote": "they are essentially a way to use physical objects as private keys. Crucially for the usage described here, if you change the object even slightly, the private key is lost."}
+   ]},
+  {"question": "In 'Verification for International AI Governance', how quickly should a chip answer the cryptographic puzzle proving it genuinely holds a declared AI model in memory?",
+   "answer": "The challenge should take about 50 milliseconds at most to complete. It also must not significantly interrupt ongoing inference work.",
+   "evidence": [
+     {"page": 161, "quote": "which takes a maximum of about 50 ms to complete-but which does not create a major interruption for ongoing inference calculations"}
+   ]}
+]}

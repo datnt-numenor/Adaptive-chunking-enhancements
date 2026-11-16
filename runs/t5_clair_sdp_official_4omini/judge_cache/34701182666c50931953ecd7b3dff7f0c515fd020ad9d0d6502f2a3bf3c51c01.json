@@ -1,0 +1,14 @@
+{
+  "request_hash": "34701182666c50931953ecd7b3dff7f0c515fd020ad9d0d6502f2a3bf3c51c01",
+  "prompt_sha256": "54171041076deafa09159f527ae6f772509f7c1ab8ee855d30bd598bb6f53ca4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN556qo9MI1hoM1dGH13f4eTSKvs",
+  "prompt_tokens": 9561,
+  "completion_tokens": 61,
+  "actual_usd": 0.0014707499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that the criterion for determining when a downstream modifier becomes a provider is based on the modification compute being greater than one third of the original model's training compute, and specifies the adjustment for systemic-risk models."
+  }
+}

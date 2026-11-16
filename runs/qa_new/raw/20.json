@@ -1,0 +1,21 @@
+{"qas": [
+  {"question": "Under GDPR Article 8, what is the default minimum age for a child's own consent to online services, the lowest national alternative, and the controller's verification duty?",
+   "answer": "A child must be at least 16, though Member States may set a lower age that is not below 13. For younger children, the controller must make reasonable efforts, considering available technology, to verify that a holder of parental responsibility gave or authorised consent.",
+   "evidence": [
+     {"page": 37, "quote": "the processing of the personal data of a child shall be lawful where the child is at least 16 years old."},
+     {"page": 37, "quote": "Member States may provide by law for a lower age for those purposes provided that such lower age is not below 13 years."},
+     {"page": 38, "quote": "The controller shall make reasonable efforts to verify in such cases that consent is given or authorised by the holder of parental responsibility over the child, taking into consideration available technology."}
+   ]},
+  {"question": "Under the GDPR Article 4 definitions, which bodies that receive disclosed personal data are nonetheless excluded from being treated as 'recipients'?",
+   "answer": "Public authorities that may receive personal data in the framework of a particular inquiry under Union or Member State law are not regarded as recipients. Their processing must still comply with the applicable data protection rules for its purposes.",
+   "evidence": [
+     {"page": 33, "quote": "'recipient' means a natural or legal person, public authority, agency or another body, to which the personal data are disclosed, whether a third party or not."},
+     {"page": 34, "quote": "framework of a particular inquiry in accordance with Union or Member State law shall not be regarded as recipients"}
+   ]},
+  {"question": "Under GDPR, did organisations relying on permission collected under the repealed 1995 data protection directive have to re-obtain it, and how long did existing processing have to adapt?",
+   "answer": "They did not need to obtain consent again if it had been given in a way that meets the GDPR's conditions. Processing already under way had two years to be brought into conformity.",
+   "evidence": [
+     {"page": 31, "quote": "Where processing is based on consent pursuant to Directive 95/46/EC, it is not necessary for the data subject to give his or her consent again if the manner in which the consent has been given is in line with the conditions of this Regulation"},
+     {"page": 31, "quote": "Processing already under way on the date of application of this Regulation should be brought into conformity with this Regulation within the period of two years after which this Regulation enters into force."}
+   ]}
+]}

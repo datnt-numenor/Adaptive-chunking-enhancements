@@ -1,0 +1,14 @@
+{
+  "request_hash": "9e54f20ede1f7fd5eedad213603a0b72b31065a13010e930c370a9f41cb151bb",
+  "prompt_sha256": "6ddadc30149fa1c73ef849d60c3fd1944ea0359b666a756c8658360c9718df8b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNR6ZadFvoo4gV9AWclVW2Pd39ZO",
+  "prompt_tokens": 7131,
+  "completion_tokens": 42,
+  "actual_usd": 0.0010948499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how proxies can hide protected attributes while still potentially revealing sensitive information, which can lead to discrimination."
+  }
+}

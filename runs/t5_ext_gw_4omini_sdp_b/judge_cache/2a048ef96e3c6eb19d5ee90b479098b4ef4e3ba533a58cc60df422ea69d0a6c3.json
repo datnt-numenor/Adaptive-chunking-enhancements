@@ -1,0 +1,14 @@
+{
+  "request_hash": "2a048ef96e3c6eb19d5ee90b479098b4ef4e3ba533a58cc60df422ea69d0a6c3",
+  "prompt_sha256": "ee6fb09dd7a9be74b6218b7c26573ba8e700d0010f181b713ede94188b8b802e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQqbU52vZ3pCNVYr0YzdiigHmEr",
+  "prompt_tokens": 8321,
+  "completion_tokens": 42,
+  "actual_usd": 0.00127335,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how the FAIR framework decomposes cyber risk into factors and utilizes probability distributions and Monte Carlo simulations for risk estimation."
+  }
+}

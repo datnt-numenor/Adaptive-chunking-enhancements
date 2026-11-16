@@ -1,0 +1,10 @@
+{
+  "request_hash": "25179b8695f87d9edb75c341e8e3b8d57e8a9339386d5d740a04b1fcb3332c40",
+  "prompt_sha256": "a07028eba142b80a93f11aecde694b379ce6750693f5a440f2846e6076ffe885",
+  "answer": "The CNIL's position is that it is possible, after a phase of sorting, to keep training data for audit purposes. This retention requires the implementation of certain security guarantees, including restrictions on access to the data, encryption, and pseudonymization or anonymization whenever possible. However, the retention of data cannot be justified merely by the anticipation that potential litigation may require access to the data for resolution.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNNvzJb5bigZsglWCqcZzQWwC19c",
+  "prompt_tokens": 8180,
+  "completion_tokens": 80,
+  "actual_usd": 0.001275
+}

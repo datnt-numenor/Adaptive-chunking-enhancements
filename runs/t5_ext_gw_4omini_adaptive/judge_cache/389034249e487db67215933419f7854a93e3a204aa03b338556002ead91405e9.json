@@ -1,0 +1,14 @@
+{
+  "request_hash": "389034249e487db67215933419f7854a93e3a204aa03b338556002ead91405e9",
+  "prompt_sha256": "c3241970d98c817d3a1ada7c91cb1cd2a3ca48a71eb48d96a1c89b5a08748fcd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3ZY5e1M4o21sKSPIRirhqZYftb",
+  "prompt_tokens": 8988,
+  "completion_tokens": 47,
+  "actual_usd": 0.0013764,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the EU AI Act's fixed risk categories and limited context sensitivity, while contrasting it with HAIG's flexible, context-sensitive dimensional approach."
+  }
+}

@@ -1,0 +1,337 @@
+DOCUMENT: arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+
+<<<PAGE 5>>>
+<Table>
+| Data            | Model                               | Precision                | Recall                   | F1                       |
+|:----------------|:------------------------------------|:-------------------------|:-------------------------|:-------------------------|
+| Random          | gemma4 qwen3.5 gemini3.5 gpt5.6 BMS | 0.42 0.44 0.55 0.31 1.00 | 0.67 0.62 0.67 0.58 0.12 | 0.52 0.52 0.60 0.41 0.22 |
+| Moderated       | gemma4 qwen3.5 gemini3.5 gpt5.6 BMS | 0.87 0.88 0.88 0.87 0.83 | 0.97 0.96 0.97 0.98 1.00 | 0.92 0.92 0.92 0.92 0.91 |
+| Near- moderated | gemma4 qwen3.5 gemini3.5 gpt5.6 BMS | 0.75 0.72 0.80 0.72 0.0  | 0.88 0.84 0.87 0.86 0.0  | 0.81 0.77 0.83 0.79 0.0  |
+</Table>
+
+The largest difference appears on Near-moderated Posts, where VLMs achieve high precision, recall, and F1, while the BMS scores zero across all metrics despite human annotators judging ≈35% of posts as policyviolating. Although expected since these posts are, by construction, left unmoderated by the BMS, this result shows that instruction-driven VLMs can identify many policy-violating, near-boundary posts missed by the deployed pipeline.
+
+Open-weight models are competitive with frontier models. The strongest open-weight VLM, gemma4 (31B), performs comparably to the frontier model gemini3.5, with slightly lower performance on Random Posts and comparable results on Moderated and Near-moderated Posts. Thus, instruction-driven moderation with open-weight VLMs can match frontier models while outperforming a live platform's deployed moderation system.
+
+Practical Efficiency of VLMs. Given their moderation effectiveness, we assess whether open-weight VLMs are practical at scale. Richer policy instructions add only modest runtime overhead: gemma4, for example, processes text+image posts at ≈49 posts/minute with the complete What, Why & How policy, compared with ≈61 using only labels. Latency is driven primarily by the model and input modality (Appendix F.3). Combined with their effectiveness close to frontier models, this throughput makes open-weight VLMs promising for aiding scalable moderation without potentially substantial frontier-model API costs (gemini: $26-$49; gpt: $17-$63 per setup over MODERATIONBENCH, increasing with policy granularity). Evaluating this potential in live, streaming settings remains an important direction for future work.
+
+<Figure>
+Figure 3: Moderation decision flows between gemma4 & qwen3.5 on Moderated. Decisions are largely consistent, with systematic patterns among disagreements.
+</Figure>
+
+# 4.3 Consistency in Moderation Decisions
+
+Content moderation is inherently subjective (Alipour et al., 2026): VLMs may differ in decisions or justify decisions using different policy parts. We therefore study both decision consistency (if models predict the same label) and judgment consistency (if they rely on similar policy rules).
+
+Decision Consistency. Fig. 3 compares predictions from gemma4 and qwen3.5 under complete policy instructions (What, Why & How). The dominant diagonal flows show that the models usually assign the same label. This holds quantitatively across model pairs and instruction levels (Appendix F.5); for example, gemma4-qwen3.5 achieves Gwet's AC1 of 0.78 on Moderated Posts, with higher agreement on the other subsets. Predictions are also stable within models as instruction granularity changes, with 95-96% remaining unchanged across settings (Appendix F.4.1). Frontier-model comparisons show similar patterns (Figures 14-15).
+
+Judgment Consistency. Since decision agreement is lowest on Moderated Posts (Appendix F.5), we analyze this subset in greater depth by asking models to provide a short justification and supporting policy excerpts (Appendix C.3).
+
+Models cite only a small subset of the policy. Fig. 16 shows that models rely on a limited subset of the 177 policy rules: 50.3% are never cited by gemma4, 47.5% by qwen3.5, and 40.1% by either model. Within the Rationale component (Table 3), for example, citations concentrate on a handful of rules under Safety First and Respect Others.
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<Figure>
+Figure 4: Each X-axis point represents a rule in the Bluesky moderation policy, grouped by policy part; the Y-axis shows its citation frequency for gemma4 (top) and qwen3.5 (bottom) when their moderation decisions disagree. Differences in the distributions reflect differences in policy judgment underlying these disagreements.
+</Figure>
+
+Models cite similar rules when decisions agree. When the models predict the same label, their policy citation distributions also align (Fig. 17), with high Spearman rank correlation (ρ = 0.82) and low Jensen-Shannon divergence (JSD= 0.08).
+
+Disagreements and Pluralism. When decisions disagree, policy citations diverge substantially (Fig. 4): Spearman correlation drops to ρ = 0.58, and JSD rises to 0.36. The same pattern holds across open- and closed-weight models (Figures 18-20); for example, gemma4-gemini3.5 shifts from ρ = 0.87, JSD =0.05 when decisions agree to ρ = 0.48, JSD= 0.40 when they disagree.
+
+Moderation disagreements show distinct patterns. Fig. 3 reveals two prominent shifts: (i) pluralism in unsafe categorization, where, e.g., adult content labeled sexual or figurative by gemma4 is often labeled porn by qwen3.5; and (ii) pluralism in safety adjudication, where, e.g., content labeled rude by gemma4 is often considered safe by qwen3.5. Policy citations reflect these shifts (Fig. 4): for adult content, gemma4 more often cites rules for sexual and figurative, whereas qwen3.5 cites porn; for rude-safe disagreements, gemma4 more often cites the rude definition, whereas qwen3.5 cites the exception rules (Details (Notes) in the figure).
+
+Table 8 illustrates these interpretive differences. For example, for "Christ can lick my dirty a**hole. You can too.", gemma4 focuses on targeting Christian sentiments and labels it intolerance, whereas qwen3.5 focuses on the crude language and labels it rude.
+
+Qualitative Assessment. To assess whether one interpretation is clearly preferable, two authors independently evaluated each disagreement along two dimensions: (i) the better moderation decision and (ii) the better policy support for each model's own decision, independent of (i). For each, annotators selected gemma4, qwen3.5, both, or neither. Agreement was only fair (Cohen's κ = 0.27 for decisions; 0.25 for policy support), showing substantial subjectivity. For the example above, one annotator selected both models on both dimensions, while the other preferred gemma4 on both.
+
+Human preferences vary across disagreement types. For sexual → porn, annotators preferred gemma4's decisions in 89% of cases and its policy support in 79%; for figurative → porn, these rates drop to 62% and 65%. Overall, gemma4's policy support is preferred in 51% of disagreements. The rude-safe cases are more subjective: annotators agree on the preferred policy support in 60% of cases, but on the preferred decision in only 40%.
+
+Overall, VLM disagreements reveal distinct ways of operationalizing the same policy. Understanding and reconciling these differences, for example, using techniques inspired by cognitive interviews, is an important direction for future work, as is examining whether they produce systematic biases.
+
+# 5 Example(Case)-driven Moderation
+
+Beyond instruction-driven guidance, VLMs can also be guided to solve novel tasks through incontext examples. We investigate whether this capability extends to moderation by providing prior multimodal moderation decisions from the Bluesky Moderation Service (BMS).
+
+# 5.1 Moderated Content as Examples
+
+We evaluate three strategies for selecting in-context example posts, each capturing a different notion of a useful moderation precedent.
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<Figure>
+Figure 5: Prototypical examples perform better on Random Posts in the example-driven paradigm.
+</Figure>
+
+<Table>
+| Data            | Model                 | Flag %               | Precision                          | Recall                             | F1                                 |
+|:----------------|:----------------------|:---------------------|:-----------------------------------|:-----------------------------------|:-----------------------------------|
+| Random          | gemma4 gemini gpt BMS | 7.1 3.0 7.8 0.3      | 0.31↓0.11 0.53↓0.02 0.27↓0.04 1.00 | 0.92↑0.25 0.67±0.00 0.88↑0.30 0.12 | 0.47↓0.05 0.59↓0.01 0.42↑0.01 0.22 |
+| Moderated       | gemma4 gemini gpt BMS | 95.6 90.8 96.4 100.0 | 0.85↓0.02 0.89↑0.01 0.85↓0.02 0.83 | 0.98↑0.01 0.97±0.00 0.99↑0.01 1.00 | 0.91↓0.01 0.93↑0.01 0.91↓0.01 0.91 |
+| Near- moderated | gemma4 gemini gpt BMS | 48.1 38.0 52.0 0.0   | 0.70↓0.05 0.81↑0.01 0.63↓0.09 0.0  | 0.98↑0.10 0.88↑0.01 0.95↑0.09 0.0  | 0.82↑0.01 0.84↑0.01 0.76↓0.03 0.0  |
+</Table>
+
+Random. Ten examples per label are randomly sampled from BMS-moderated posts, capturing violation diversity without selection bias.
+
+Prototypical. Ten examples per label are selected as the posts closest to the mean embedding of all posts assigned that label, capturing the characteristic exemplar of each violation.
+
+Contextual. Ten examples per label are selected dynamically as the semantically most similar BMSmoderated posts to the post under review.
+
+Additionally, ten safe posts from our curated collection are provided. Appendix D provides further details; Appendix G shows additional evaluations.
+
+# 5.2 Effectiveness of Moderation Decisions
+
+Prototypical examples perform the best across all models. Fig. 5 shows F1 scores across VLMs and setups on Random Posts. Most VLMs show their strongest performance with prototypical examples, where even some of the weaker models such as qwen3-vl, mistral3, and magistral outperform the BMS. However, the performance diminishes greatly with contextual examples. As observed in the instruction-driven setting, this performance drop can be attributed to increases in flagging rates. Specifically, with contextual examples, VLMs overflag content as particular categories like rude.
+
+Frontier models handle examples as effectively as detailed instructions. Table 5 reports the effectiveness of VLMs in the example-driven setting (with prototypical) across MODERATIONBENCH. Even with examples, gemini3.5 remains the bestperforming model, and gpt5.6 becomes the thirdbest-performing model. Gemma4 is the only openweight VLM to effectively handle examples, sitting between the two frontier models. In contrast, compared to the instruction-driven paradigm, other open-weight VLMs, e.g., the qwen models, show a performance drop in the example-driven paradigm.
+
+Policy guidance from both paradigms improves moderation beyond label definitions. Label definitions alone provide limited information about how a platform conducts moderation. Both paradigms provide additional platform-specific guidance: instruction-driven through textual policy details and example-driven through prior moderated and safe posts. Figures 1 and 5 show that both forms of guidance improve performance over the labels-only setting. For top-performing models such as gemini3.5 and gemma4, the best performance under the two paradigms is comparable (F1 ≈ 0.6 and 0.5, respectively). Overall, however, textual policy details yield more consistent gains, particularly for open-weight VLMs. Moreover, as we discuss below, example-driven prompting is substantially less efficient because it requires processing additional images.
+
+Practical Efficiency. Despite comparable performance for the best-performing models, exampledriven moderation incurs substantially higher computational and usage costs. With prototypical examples, gemma4 processes around 10 posts/minute, ≈ 6.5× slower than with full policy details, due to the multiple multimodal in-context examples included with each query. For frontier models, labeling costs across MODERATIONBENCH are 2.7× (gemini3.5) and 32× (gpt5.6) higher than in the instruction-driven setting. These higher costs bring no performance gain over the best instructiondriven setting, weakening the practical case for example-driven moderation. Further details are provided in Appendix G.3.
+
+# 5.3 Consistency of Moderation Decisions
+
+Figures 25 and 26 (Appendix G.4) compare moderation labels predicted by the best-performing models (gemma4 and gemini3.5) as well as between the two closed models (gemini3.5 and gpt5.6), respectively, under the best exampledriven setting (prototypical). The dominant diagonal flows indicate that models are largely consistent in their moderation decisions. We further quantify inter-model agreement using Gwet's AC1 (Appendix G.4). On Moderated Posts, for example, gemma4-gemini3.5 achieve high agreement (AC1 = 0.82) with prototypical examples, with higher agreement on the other subsets. Moderation decisions also remain largely consistent across the two prompting paradigms. In Appendix H.1, we show how, for gemma4, predictions remain largely consistent between instruction-driven with full policy and example-driven (prototypical) paradigms. Taken together, while the example-driven approach is comparable in terms of its effectiveness and consistency with the instruction-driven approach, this parity often comes at a significantly higher cost.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<Table>
+| Posts           | Model (policy)                                     | Flag %          | Precision      | Recall         | F1             |
+|:----------------|:---------------------------------------------------|:----------------|:---------------|:---------------|:---------------|
+| Random          | llama-guard (Own) llama-guard (Bsky) llama4 (Bsky) | 11.54 7.49 6.68 | 0.09 0.16 0.30 | 0.42 0.50 0.83 | 0.14 0.24 0.44 |
+| Random          | shieldstral (Bsky)                                 | 34.21           | 0.07           | 0.96           | 0.13           |
+| Random          | mistral (Bsky)                                     | 9.72            | 0.22           | 0.88           | 0.35           |
+| Moderated       | llama-guard (Own)                                  | 47.57           | 0.93           | 0.53           | 0.67           |
+| Moderated       | llama-guard (Bsky)                                 | 54.87           | 0.92           | 0.61           | 0.73           |
+| Moderated       | llama4 (Bsky)                                      | 91.70           | 0.87           | 0.96           | 0.92           |
+| Moderated       | shieldstral (Bsky)                                 | 96.02           | 0.85           | 0.97           | 0.91           |
+| Moderated       | mistral (Bsky)                                     | 93.25           | 0.86           | 0.96           | 0.91           |
+| Near- moderated | llama-guard (Own)                                  | 26.82           | 0.61           | 0.47           | 0.53           |
+| Near- moderated | llama-guard (Bsky)                                 | 27.33           | 0.66           | 0.52           | 0.58           |
+| Near- moderated | llama4 (Bsky)                                      | 49.29           | 0.65           | 0.93           | 0.76           |
+| Near- moderated | shieldstral (Bsky)                                 | 64.78           | 0.51           | 0.96           | 0.67           |
+| Near- moderated | mistral (Bsky)                                     | 53.85           | 0.61           | 0.95           | 0.75           |
+| Safe            | llama-guard (Own)                                  | 15.34           | 0.00           | -              | -              |
+|                 | llama-guard (Bsky)                                 | 4.46            | 0.00           | -              | -              |
+|                 | llama4 (Bsky)                                      | 1.97            | 0.00           | -              | -              |
+|                 | shieldstral (Bsky) mistral (Bsky)                  | 7.25 1.55       | 0.00 0.00      | - -            | - -            |
+</Table>
+
+# 6 AI Safety Models for Moderation
+
+Having evaluated general-purpose VLMs for multimodal content moderation, we now examine specialized AI safety models trained to detect unsafe user prompts and AI-generated responses, asking whether they transfer to real-world social media moderation under the Bluesky policy effectively.
+
+We evaluate two recent multimodal safety models: llama-guard4-12B (Meta AI, 2025) and shieldstral (Calvi et al., 2026). llama-guard is fine-tuned for its own safety taxonomy, so we evaluate it both under its native taxonomy (Own) and with the complete Bluesky policy supplied at inference time (Bluesky) to assess how well it adapts to a different moderation policy. We further compare it against its base instruct model, llama4-scout, to quantify the effect of safety finetuning. In contrast, shieldstral is fine-tuned to support different moderation policies at inference time. We evaluate it under the Bluesky policy and compare it against its corresponding base model, mistral. Table 6 summarizes the results.
+
+Safety models are ineffective for content moderation. Using its native taxonomy, llama-guard performs substantially worse than llama4 across all subsets of MODERATIONBENCH. It severely overflags benign content in Random and Safe Posts, while under-flagging unsafe content in Moderated and Near-moderated Posts, resulting in consistently lower F1 scores. shieldstral performs comparably to mistral on the more harmful subsets (Moderated and Near-moderated Posts), but also over-flags Random and Safe Posts, reducing precision and overall F1.
+
+Safety models specialized to a fixed taxonomy are difficult to steer. Replacing llama-guard's native taxonomy with the Bluesky policy reduces false positives on Random Posts and Safe Posts and improves overall performance. However, it remains consistently worse than its base instruct model across all four subsets, suggesting that finetuning to a fixed safety taxonomy limits adaptation to platform-specific moderation policies through prompting alone. Appendix H.2 further analyzes the models' decision disagreements, highlighting where llama-guard over-flags benign content or misses harmful posts.
+
+Overall, these results suggest that specialized AI safety models do not outperform general-purpose VLMs for platform moderation. Models specialized to a fixed taxonomy lack the flexibility needed to adapt to different moderation policies, while policy-adaptive safety models retain high recall but remain prone to over-flagging.
+
+# 7 Conclusion
+
+In this paper, we asked whether foundation models can reliably operationalize complex content moderation policies. To answer this, we introduced MODERATIONBENCH, a new benchmark grounded in the Bluesky platform, and conducted the first systematic comparison between instruction-driven and example-driven paradigms for VLM guidance. Our findings are unambiguous: while foundation models (using both paradigms) are able to outperform currently deployed moderation systems, the instruction-driven paradigm seems to be more adept at scaling for deployment at platform scale.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+Our study represents a first step and is not without limitations (discussed below). Nonetheless, even with its limitations, by answering a fundamental question of policy operationalization, we believe this work lays a meaningful foundation for transparent and adaptable platform governance.
+
+# Limitations
+
+This study has several limitations that point to important directions for future work.
+
+First, social media content extends beyond text and images to include videos and audio. Our evaluation does not address these modalities, and understanding how their inclusion affects VLM moderation performance remains an open question we leave for future work.
+
+Second, our focus is on how effectively VLMs can be steered to operationalize platform-specific moderation policies and on comparing instructiondriven and example-driven moderation. While our consistency analysis shows that disagreements between VLMs largely reflect different interpretations of the same policy rather than random variation, we do not examine whether these differing interpretations lead to systematic biases in moderation outcomes. Such biases are inherently multifaceted: disparities may concern the demographics of content creators, the demographics of the targets of harmful content, or both, and may originate from the underlying VLM, the platform policy itself, or the example moderation decisions used to guide the model. These represent distinct sources of bias that require different evaluation methodologies and mitigation strategies. Given the high stakes of such disparate impacts, a comprehensive bias evaluation is an important direction for future work and was beyond the scope of the current work.
+
+Third, we treat each post as an atomic unit, overlooking the role of surrounding context. This is particularly important for labels such as rude, where a reply may depend on the broader conversation thread. Future work should incorporate richer platform context, including conversation threads for bullying, external sources for fact-checking, and platform-wide activity for spam detection. Collecting and representing such context for VLM-based moderation remains an open challenge.
+
+Fourth, posts frequently contain links to external sources where the actual harmful content resides. Our study does not account for this, and understanding how retrieving and incorporating linked content shapes VLM moderation decisions remains an important avenue for research.
+
+We also acknowledge that MODERATIONBENCH currently does not include annotations from expert moderators. Obtaining expert judgments, particularly for political and other subjective categories, would strengthen the evaluation and is an important direction for extending this work.
+
+Finally, real-time moderation at platform scale poses substantial computational and practical challenges. While we evaluate VLM throughput on a static dataset, we do not assess scalability or effectiveness in live, streaming settings. Moreover, platform policies and taxonomies evolve over time. Instruction-driven moderation can accommodate such changes by directly providing updated policies to VLMs, offering a potential advantage over supervised approaches that may require new annotations and fine-tuning. However, how policy changes affect VLM moderation decisions and policy interpretations in practice remains an open question. Evaluating VLM-based moderation under evolving policies and at live-platform scale is therefore an important direction for future work.
+
+# Ethical Considerations
+
+Our research is grounded in a commitment to ethical and responsible analysis. The study relies exclusively on publicly available data-social media posts comprising text and images-with no collection of non-public account data or direct user interactions. All annotations were performed by the co-authors, and this work does not constitute human-subjects research.
+
+All data storage and processing were conducted on secure institutional infrastructure, with no data shared with external parties. Our benchmark was designed to minimize risk: we used open-weight models and open-source tools deployed entirely in-house, without interacting with platform users, deploying automated agents, or manipulating platform behavior in any way. All results are reported using aggregated or non-identifying statistics.
+
+Because the dataset contains sensitive, explicit, and graphic content, we will release it to the research community in a gated manner for noncommercial use only. This work carries no significant risks of misuse, as our use of foundation models is directed at detecting harmful content on online platforms-not circumventing or jailbreaking existing AI systems. We are confident that the positive impact of this work substantially outweighs any associated risks.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+# Generative AI Statement
+
+Generative AI assistants such as Claude Sonnet and ChatGPT were utilized to correct grammar and the structuring of text in the manuscript. These assistants were also used to assist in implementing specific helper functions in the code and for certain visualizations reported in the manuscript. However, the core implementation and the draft of the manuscript were generated by the authors. Moreover, all text and code revisions provided by AI models were reviewed and appropriately revised by the authors before final usage.
+
+# Acknowledgements
+
+Ingmar Weber is supported by funding from the Alexander von Humboldt Foundation and its founder, the Federal Ministry of Education and Research (Bundesministerium für Bildung und Forschung).
+
+# References
+
+- Shayan Alipour, Shruti Phadke, Seyed Shahabeddin Mousavi, Amirhossein Afsharrad, Morteza Zihayat, and Mattia Samory. 2026. The gray area: Characterizing moderator disagreement on reddit. In Proceedings of the Twentieth International AAAI Conference on Web and Social Media (ICWSM), volume 20, pages 58-75.
+
+- Shuai Bai, Yuxuan Cai, Ruizhe Chen, Keqin Chen, Xionghui Chen, Zesen Cheng, Lianghao Deng, Wei Ding, Chang Gao, Chunjiang Ge, and 1 others. 2025. Qwen3-vl technical report. arXiv preprint arXiv:2511.21631.
+
+- Bluesky. 2025. Community guidelines. https://bit.ly/3RfyP7I.
+
+- Bluesky. 2026. Bluesky 2025 transparency report. https://bit.ly/4nwAUZ5.
+
+- Bluesky Moderation Service. Bluesky moderation service. Bluesky profile, https://bsky.app/ profile/did:plc:ar7c4by46qjdydhdevvrndac. Handle: @moderation.bsky.app; DID: did:plc:ar7c4by46qjdydhdevvrndac. Accessed: 2026-05-24.
+
+- Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, and 1 others. 2020. Language models are few-shot learners. Advances in neural information processing systems, 33:1877-1901.
+
+- Antonia Calvi, Avinash Sooriyarachchi, Giada Pistilli, Guillaume Lample, Maarten Buyl, Maximilian Augustin, Maximilian Müller, Pierre Stock, Tom Bewley, Wassim Bouaziz, and 1 others. 2026. Shieldstral. arXiv preprint arXiv:2607.25857.
+
+- Mithun Das, Rohit Raj, Punyajoy Saha, Binny Mathew, Manish Gupta, and Animesh Mukherjee. 2023. Hatemm: A multi-modal dataset for hate video classification. In Proceedings of the International AAAI Conference on Web and Social Media, volume 17, pages 1014-1023.
+
+- Rene David and John EC Brierley. 1978. Major legal systems in the world today: an introduction to the comparative study of law. Simon and Schuster.
+
+- Claire-Hélène Demarty, Cédric Penet, Mohammad Soleymani, and Guillaume Gravier. 2015. Vsd, a public dataset for the detection of violent scenes in movies: design, annotation, analysis and evaluation. Multimedia Tools and Applications, 74(17):7379-7404.
+
+- EU. 2022. Digital services act: Council and european parliament provisional agreement for making the internet a safer space for european citizens. https://bit.ly/4nxWb4B.
+
+- Tarleton Gillespie. 2018. Custodians of the Internet: Platforms, content moderation, and the hidden decisions that shape social media. Yale University Press.
+
+Google DeepMind. 2026. Gemma 4 model card. https://ai.google.dev/gemma/docs/ core/model_card_4. Accessed: 2026-05-22.
+
+- Alon Halevy, Cristian Canton-Ferrer, Hao Ma, Umut Ozertem, Patrick Pantel, Marzieh Saeidi, Fabrizio Silvestri, and Ves Stoyanov. 2022. Preserving integrity in online social networks. Communications of the ACM, 65(2):92-98.
+
+- Lukas Helff, Felix Friedrich, Manuel Brack, Patrick Schramowski, and Kristian Kersting. 2024. Llavaguard: Vlm-based safeguard for vision dataset curation and safety assessment. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 8322-8326.
+
+- David Inserra. 2024. A guide to content moderation for policymakers while prominent social media platforms may be biased and imperfect, the government cannot solve these problems and will only make them worse. Policy Analysis.
+
+- Jeff Johnson, Matthijs Douze, and Hervé Jégou. 2019. Billion-scale similarity search with gpus. IEEE Transactions on Big Data.
+
+- Aishwarya Kamath, Johan Ferret, Shreya Pathak, Nino Vieillard, Ramona Merhej, Sarah Perrin, Tatiana Matejovicova, Alexandre Ramé, Morgane Rivière, Louis Rouillard, and 1 others. 2025. Gemma 3 technical report. arXiv preprint arXiv:2503.19786, 4.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+- Rishabh Kaushal, Jacob Van De Kerkhof, Catalina Goanta, Gerasimos Spanakis, and Adriana Iamnitchi. 2024. Automated transparency: A legal and empirical analysis of the digital services act transparency database. In Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency, pages 1121-1132.
+
+- Douwe Kiela, Hamed Firooz, Aravind Mohan, Vedanuj Goswami, Amanpreet Singh, Pratik Ringshia, and Davide Testuggine. 2020. The hateful memes challenge: Detecting hate speech in multimodal memes. Advances in neural information processing systems, 33:2611-2624.
+
+- Martin Kleppmann, Paul Frazee, Jake Gold, Jay Graber, Daniel Holmgren, Devin Ivy, Jeromy Johnson, Bryan Newbold, and Jaz Volpert. 2024. Bluesky and the at protocol: Usable decentralized social media. In Proceedings of the ACM Conext-2024 Workshop on the Decentralization of the Internet, CoNEXT '24, page 1-7. ACM.
+
+- Bo Li, Yuanhan Zhang, Dong Guo, Renrui Zhang, Feng Li, Hao Zhang, Kaichen Zhang, Peiyuan Zhang, Yanwei Li, Ziwei Liu, and 1 others. 2024. Llavaonevision: Easy visual task transfer. arXiv preprint arXiv:2408.03326.
+
+- Mingxin Li, Yanzhao Zhang, Dingkun Long, and 1 others. 2026. Qwen3-vl-embedding and qwen3-vlreranker: A unified framework for state-of-the-art multimodal retrieval and ranking. arXiv preprint arXiv:2601.04720.
+
+- Binny Mathew, Punyajoy Saha, Seid Muhie Yimam, Chris Biemann, Pawan Goyal, and Animesh Mukherjee. 2021. Hatexplain: A benchmark dataset for explainable hate speech detection. In Proceedings of the AAAI conference on artificial intelligence, volume 35, pages 14867-14875.
+
+- Meta. 2026. Community standards. https://transparency.meta.com/policies/communitystandards/.
+
+- Meta AI. 2025. The llama 4 herd: The beginning of a new era of natively multimodal ai innovation. https://ai.meta.com/blog/ llama-4-multimodal-intelligence/. Accessed: 2026-07-27.
+
+- Mistral AI. 2025. Mistral-small-3.2-24b-instruct2506. https://huggingface.co/mistralai/ Mistral-Small-3.2-24B-Instruct-2506. Accessed: 2026-05-22. License: Apache 2.0.
+
+- Daniel Moreira, Sandra Avila, Mauricio Perez, Daniel Moraes, Vanessa Testoni, Eduardo Valle, Siome Goldenstein, and Anderson Rocha. 2016. Pornography classification: The hidden clues in video spacetime. Forensic science international, 268:46-61.
+
+- Anna Neumann, Holli Sargeant, and Jatinder Singh. 2026. Prompt governance? on governing technologies governed by natural language. In The 2026 ACM
+
+- Conference on Fairness, Accountability, and Transparency, pages 6466-6509.
+
+- Konstantina Palla, José Luis Redondo García, Claudia Hauff, Francesco Fabbri, Andreas Damianou, Henrik Lindström, Dan Taber, and Mounia Lalmas. 2025. Policy-as-prompt: Rethinking content moderation in the age of large language models. In Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency, pages 840-854.
+
+- Yiting Qu, Xinyue Shen, Yixin Wu, Michael Backes, Savvas Zannettou, and Yang Zhang. 2025. Unsafebench: Benchmarking image safety classifiers on real-world and ai-generated images. In Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security, pages 3221-3235.
+
+- Qwen Team. 2026. Qwen3.5. https://qwen.ai/ blog?id=qwen3.5. Accessed: 2026-05-22. Released: 2026-02-16.
+
+- Abhinav Rastogi, Albert Q Jiang, Andy Lo, Gabrielle Berrada, Guillaume Lample, Jason Rute, Joep Barmentlo, Karmesh Yadav, Kartik Khandelwal, Khyathi Raghavi Chandu, and 1 others. 2025. Magistral. arXiv preprint arXiv:2506.10910.
+
+- Maarten Sap, Saadia Gabriel, Lianhui Qin, Dan Jurafsky, Noah A Smith, and Yejin Choi. 2020. Social bias frames: Reasoning about social and power implications of language. In Proceedings of the 58th annual meeting of the association for computational linguistics, pages 5477-5490.
+
+- Gautam Kishore Shahi, Benedetta Tessa, Amaury Trujillo, and Stefano Cresci. 2025. A year of the dsa transparency database: What it (does not) reveal about platform moderation during the 2024 european parliament election. arXiv preprint arXiv:2504.06976.
+
+- Pushpdeep Singh, Sayeh Jarollahi, Ayan Majumdar, Vabuk Pahari, Abhijnan Chakraborty, Krishna P. Gummadi, Ingmar Weber, and Abhisek Dash. 2026. Characterizing bluesky content moderation service: From automation of service to landscape of harms. Preprint, arXiv:2609.11373. To appear in AAAI ICWSM 2027.
+
+- The Hive. 2026. Visual moderation - overview. https://docs.thehive.ai/docs/ visual-content-moderation.
+
+- Amaury Trujillo, Tiziano Fagni, and Stefano Cresci. 2025. The dsa transparency database: Auditing selfreported moderation actions by social media. Proceedings of the ACM on Human-Computer Interaction, 9(2):1-28.
+
+- Keyon Vafa, Justin Y Chen, Ashesh Rambachan, Jon Kleinberg, and Sendhil Mullainathan. 2024. Evaluating the world model implicit in a generative model. Advances in Neural Information Processing Systems, 37:26941-26975.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+Weiyun Wang, Zhangwei Gao, Lixin Gu, Hengjun Pu, Long Cui, Xingguang Wei, Zhaoyang Liu, Linglin Jing, Shenglong Ye, Jie Shao, and 1 others. 2025a. Internvl3. 5: Advancing open-source multimodal models in versatility, reasoning, and efficiency. arXiv preprint arXiv:2508.18265.
+
+Zhenting Wang, Shuming Hu, Shiyu Zhao, Xiaowen Lin, Felix Juefei-Xu, Zhuowei Li, Ligong Han, Harihar Subramanyam, Li Chen, Jianfa Chen, and 1 others. 2025b. Mllm-as-a-judge for image safety without human labeling. In Proceedings of the Computer Vision and Pattern Recognition Conference, pages 14657-14666.
+
+Chen Yeh, You-Ming Chang, Wei-Chen Chiu, and Ning Yu. 2024. T2vs meet vlms: A scalable multimodal dataset for visual harmfulness recognition. Advances in Neural Information Processing Systems, 37:112950-112961.
+
+# A Data Gathering and Curation
+
+Here, we detail our data collection procedure from Bluesky and the corresponding benchmark curation. Our data gathering procedure closely follows prior work on characterizing Bluesky's content moderation system (Singh et al., 2026).
+
+Firehose Collection. Using the com.atproto.sync.subscribeRepos endpoint, we collected firehose events between March and December 2025, yielding 1.14B post records (events of type app.bsky.feed.post), of which 11.9M (∼1%) were labeled by BMS. Each post record contains the post text, creation timestamp, and optional embedded media content identifiers (CIDs); we retrieve the corresponding blobs (images, thumbnails, videos) via com.atproto.sync.getBlob.
+
+Random Posts. We select an equal number of posts from each month between March and December 2025, resulting in a total of 1,000 posts. This data is gathered from the firehose that has been mentioned previously.
+
+Moderated Posts. We collect the label stream for Bluesky Moderation Service for 2025 via the com.atproto.label.subscribeLabels endpoint and retrieve the corresponding post records using com.atproto.repo.getRecord. Figure 6 shows the distribution of label applications across harm labels: a small set of labels dominates, with the top labels accounting for the vast majority of all applications. We focus our analysis on nine harm categories that target post-level content: intolerance, rude, threat, graphic-media, self-harm, porn, sexual, figurative, and nudity. We exclude spam, as it reflects accountlevel behavior rather than the content of individual posts. We randomly sample 1,000 labeled posts, balanced across these nine categories, for the same duration as our firehose collection.
+
+<Figure>
+Figure 6: CDF of labels applied across harm labels on Bluesky. A small number of labels account for the vast majority of applications; we focus on the nine postlevel harm categories (excluding spam, which reflects account-level behavior).
+</Figure>
+
+Safe Posts. We collect safe posts from verified organizational accounts on Bluesky. Account collection followed two strategies: (i) we manually curated 47 accounts across news media, academic and research institutions, government and intergovernmental organizations, and NGOs, selected based on institutional accountability and domain-verified handles or Bluesky-issued verification badges; and (ii) we identified 1,003 accounts from 15 curated Bluesky starter packs spanning science communication, AI and ethics research, healthcare, and related domains. For each account, posts were retrieved via com.atproto.repo.listRecords and filtered to remove any post carrying a BMS moderation label as well as quote posts, yielding a pool of 844,344 posts from 194 organizational accounts. We randomly sample 1,000 posts from this pool, balanced across five organizational categories: news media, science and technology, academic, government, and NGO.
+
+Near-moderated Posts. The Near-moderated subset is designed to study potential false negatives from the deployed moderation system and evaluate how VLMs handle content that is semantically similar to previously moderated posts but was not flagged by the platform. We curate a subset of 40M posts drawn randomly from the March- June 2025 firehose window (383.2M posts total), restricted to text and single-image posts. For each post in the 40M subset, we compute multimodal embeddings using Qwen3-VL-Embedding-2B (Li et al., 2026) 1 . Each post is encoded as a multimodal instruction, combining available text and a single image into a 2048-dimensional vector. All embeddings are normalized and inserted sequentially into a faiss.IndexFlatIP index.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+We then query this index using the Moderated Posts posts (k=1000 candidates per query) and, for each labeled post, select the highest-ranked neighbor in the firehose index that carries no BMS label, thus yielding 1,000 semantically similar but unmoderated posts. Embedding-based retrieval makes semantic search feasible at this scale, but it is only one possible strategy for identifying potential false negatives on a live platform. Alternative retrieval or sampling approaches may surface different candidate posts. Analyzing how VLMs capture such potential harms is left for future work.
+
+Human Annotation Process. Our annotation procedure strictly followed the official Bluesky Moderation Service (BMS) label definitions, which served as the sole basis for annotation rather than annotator intuition. A post was labeled Unsafe only if it satisfied the criteria of a defined moderation category; otherwise, it was labeled Safe. Safe content therefore included everyday posts, news, humor, non-targeted strong language, fictional violence, journalism, and clearly labeled parody.
+
+We first conducted a 100-instance pilot in which two annotators independently labeled posts according to the official BMS definitions. They then jointly reviewed all disagreements to identify ambiguous cases, establish explicit decision rules for edge cases, and develop a shared annotation codebook that standardized labeling across harm categories. Each post was evaluated atomically and in isolation, without reply context, external links, or other platform metadata. Text and images were assessed jointly, and a post was labeled Unsafe if either modality independently satisfied an unsafecategory definition. For more subjective categories, particularly sexual, rude, intolerance, threat, and graphic-media, we supplemented the official definitions with explicit decision rules covering cases such as artistic nudity, figurative violent language, and political criticism.
+
+\* 1 https://huggingface.co/Qwen/ Qwen3-VL-Embedding-2B
+
+Using the finalized annotation guidelines, two annotators independently labeled the full dataset. For the Random Posts subset, they initially disagreed on 31 posts. Joint discussion resolved 21 of these cases and further refined the guidelines, while the remaining 10 cases were adjudicated by a third annotator. The refined guidelines were then applied to the remaining subsets. The Near-moderated Posts and Moderated Posts subsets produced 120 and 163 disagreements, respectively, all of which were resolved by a third annotator, whereas the Safe Posts subset had complete agreement. Most disagreements involved rude /intolerance /threat content, reflecting the greater subjectivity of these categories and Bluesky's own reliance on human moderation for such judgments.
+
+Notes on Data Usage. The primary purpose of the data provided as part of MODERATIONBENCH is to benchmark and analyze content moderation models. If later used for training or fine-tuning, downstream methods would need to account for both shifts in online content and adaptations in platform policies and labels. One promising direction is to move from a static benchmark toward streaming data collection, combined with continual adaptation to evolving content and policies.
+
+# B Bluesky Automod and Hive AI
+
+Bluesky's automated content moderation uses two components: Hive AI, a commercial multi-head vision classifier, and automod, Bluesky's opensource rule engine that converts Hive's raw scores into actionable labels. When a post containing an image (individual frames in case of video) is submitted, Bluesky submits it to the Hive API. Hive AI's visual moderation API returns a flat list of 128 class-score pairs organised into 54 model heads spanning five different domains: sexual content (26 heads, 59 classes), violence and gore (10 heads, 29 classes), drugs and vices (6 heads, 15 classes), hate imagery (5 heads, 10 classes), and miscellaneous image attributes (7 heads, 15 classes), as documented in the Hive Visual Moderation API (The Hive, 2026). Automod applies hard-coded threshold rules over Hive's output scores across the different classes to produce Bluesky labels. Each rule checks a specific Hive class against a fixed threshold: for example, yes_self_harm ≥ 0.96 triggers self-harm, and yes_sexual_activity ≥ 0.90 triggers porn. Automod's rules are hard-coded:
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+

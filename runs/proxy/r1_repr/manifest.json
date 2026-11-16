@@ -1,0 +1,127 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "note": "harness uses Qwen3-Embedding-4B; this is the only intended difference"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs\\table5_sdp_v1\\prepared",
+  "qa": "runs\\table5_v2\\qa-full\\qa_frozen.jsonl",
+  "systems": "adaptive,raw__langch_recurs_default,raw__page,sdp_a,sdp_b,sdp_bq",
+  "reprs": "plain,doc,docpath",
+  "summary": {
+    "adaptive@plain": {
+      "recall@10": 0.9065667816079687,
+      "recall@5": 0.7920640202717566,
+      "ndcg@10": 0.7008502973935062,
+      "hit@10": 0.9393939393939394
+    },
+    "adaptive@doc": {
+      "recall@10": 0.9248235453842568,
+      "recall@5": 0.8683317572300221,
+      "ndcg@10": 0.7665794924311331,
+      "hit@10": 0.9595959595959596
+    },
+    "adaptive@docpath": {
+      "recall@10": 0.9279590285928394,
+      "recall@5": 0.8581657510727982,
+      "ndcg@10": 0.7680664942218954,
+      "hit@10": 0.9494949494949495
+    },
+    "raw__langch_recurs_default@plain": {
+      "recall@10": 0.8439608512569801,
+      "recall@5": 0.7573610350860519,
+      "ndcg@10": 0.6809155638040375,
+      "hit@10": 0.8888888888888888
+    },
+    "raw__langch_recurs_default@doc": {
+      "recall@10": 0.904511365145176,
+      "recall@5": 0.8154360112132155,
+      "ndcg@10": 0.7447272514260757,
+      "hit@10": 0.9393939393939394
+    },
+    "raw__langch_recurs_default@docpath": {
+      "recall@10": 0.8879634172668466,
+      "recall@5": 0.7965337837330874,
+      "ndcg@10": 0.7356212255892715,
+      "hit@10": 0.9292929292929293
+    },
+    "raw__page@plain": {
+      "recall@10": 0.813087081724748,
+      "recall@5": 0.7483900957020293,
+      "ndcg@10": 0.6483238349004585,
+      "hit@10": 0.8787878787878788
+    },
+    "raw__page@doc": {
+      "recall@10": 0.8894427178406824,
+      "recall@5": 0.7980046451043741,
+      "ndcg@10": 0.7147706221090416,
+      "hit@10": 0.9393939393939394
+    },
+    "raw__page@docpath": {
+      "recall@10": 0.8857782689552154,
+      "recall@5": 0.8161744821590429,
+      "ndcg@10": 0.7265615229176156,
+      "hit@10": 0.9191919191919192
+    },
+    "sdp_a@plain": {
+      "recall@10": 0.8439342999663983,
+      "recall@5": 0.7238023417339268,
+      "ndcg@10": 0.6529387873793449,
+      "hit@10": 0.8787878787878788
+    },
+    "sdp_a@doc": {
+      "recall@10": 0.8845431855152531,
+      "recall@5": 0.7965172725493709,
+      "ndcg@10": 0.7176704732265369,
+      "hit@10": 0.9191919191919192
+    },
+    "sdp_a@docpath": {
+      "recall@10": 0.8683175810543545,
+      "recall@5": 0.8003329950350058,
+      "ndcg@10": 0.7150346106777339,
+      "hit@10": 0.898989898989899
+    },
+    "sdp_b@plain": {
+      "recall@10": 0.8370882345234044,
+      "recall@5": 0.750131195347469,
+      "ndcg@10": 0.6752059233083411,
+      "hit@10": 0.8888888888888888
+    },
+    "sdp_b@doc": {
+      "recall@10": 0.892223261092366,
+      "recall@5": 0.7865442313063603,
+      "ndcg@10": 0.7229605682195993,
+      "hit@10": 0.9191919191919192
+    },
+    "sdp_b@docpath": {
+      "recall@10": 0.8765528584356621,
+      "recall@5": 0.7898929365398192,
+      "ndcg@10": 0.7125244415875829,
+      "hit@10": 0.898989898989899
+    },
+    "sdp_bq@plain": {
+      "recall@10": 0.8720951768116808,
+      "recall@5": 0.8025501451064655,
+      "ndcg@10": 0.6848437329659,
+      "hit@10": 0.9090909090909091
+    },
+    "sdp_bq@doc": {
+      "recall@10": 0.9040589955035522,
+      "recall@5": 0.8176738626692588,
+      "ndcg@10": 0.7312735265294718,
+      "hit@10": 0.9292929292929293
+    },
+    "sdp_bq@docpath": {
+      "recall@10": 0.896930568375125,
+      "recall@5": 0.8110277411267892,
+      "ndcg@10": 0.7378117975905362,
+      "hit@10": 0.9292929292929293
+    }
+  },
+  "created": "2026-11-09 16:59:07"
+}

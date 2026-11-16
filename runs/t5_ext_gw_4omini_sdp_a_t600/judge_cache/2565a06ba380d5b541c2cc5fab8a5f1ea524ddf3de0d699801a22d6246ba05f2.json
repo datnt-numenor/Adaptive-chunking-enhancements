@@ -1,0 +1,14 @@
+{
+  "request_hash": "2565a06ba380d5b541c2cc5fab8a5f1ea524ddf3de0d699801a22d6246ba05f2",
+  "prompt_sha256": "6e7b198e1fc975a1ae36454c1e7774a0637a2089e901d66919296a1b2ec87514",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNadMomjG6C8I6AlNMOG4f9ZTGLK",
+  "prompt_tokens": 7918,
+  "completion_tokens": 37,
+  "actual_usd": 0.0012099,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of LIME, including how it approximates complex model predictions with simpler models to offer local explanations."
+  }
+}

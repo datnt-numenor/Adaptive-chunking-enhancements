@@ -1,0 +1,14 @@
+{
+  "request_hash": "184753792234b4b8c95f7b7d9a7c7183a3a28831f6493fdd3aeb56c373e1cdaf",
+  "prompt_sha256": "1f93e25ff92b7d5d9820f1f1061f3abd30e1da3442ac2fd55a371c221f9634d8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTuQGzLpzL0fU8ySHhPHpGoVuZy",
+  "prompt_tokens": 7002,
+  "completion_tokens": 41,
+  "actual_usd": 0.0010749,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the transparency requirements in GDPR, including the right to explanation and the emphasis on interpretability over technical details."
+  }
+}

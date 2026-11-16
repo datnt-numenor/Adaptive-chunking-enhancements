@@ -1,0 +1,10 @@
+{
+  "request_hash": "59c71de7fd840528b1856dc97e49503484cf2e1b0035802de67014a0508860c9",
+  "prompt_sha256": "f27409c8df01c3aa269fe741cc981fa7408c54f7fa19e512c18d2cb1b62b4325",
+  "answer": "The main limitations of the FAIR framework for cyber risk quantification, as mentioned in arXiv 2512.08723, include:\n\n1. **Reliance on Statistical Approximations**: Applied versions of FAIR often depend on statistical approximations to remain computationally tractable, which can introduce inaccuracies. This includes assumptions such as light-tailed or bounded distributions for inputs and independence between factors, which can understate tail losses and cross-system or accumulation risk.\n\n2. **Data Scarcity**: There is a serious lack of available data on cyber risk, particularly regarding the frequency and severity of rare but costly events, as many organizations do not publicly share breach data.\n\n3. **Dynamic Nature of Cyber Risks**: Cyber risks are highly interdependent and can cascade across connected systems. The framework may not adequately account for the rapid changes in threat landscapes and the adversarial nature of cyber risks, where attackers adapt to new defenses, making models based on past data quickly obsolete.\n\n4. **Assumptions of Independence**: The framework's reliance on independence among factors can lead to underestimating risks, particularly in interconnected systems where dependencies exist.\n\nThese limitations suggest that while the FAIR framework is a leading methodology, it may not fully capture the complexities and dynamics of cyber risk.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNB6H7JDW4uyGSZCkXaukY5YstPY",
+  "prompt_tokens": 9374,
+  "completion_tokens": 256,
+  "actual_usd": 0.0015596999999999998
+}

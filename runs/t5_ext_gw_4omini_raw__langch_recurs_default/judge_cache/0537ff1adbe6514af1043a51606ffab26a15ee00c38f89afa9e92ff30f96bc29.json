@@ -1,0 +1,14 @@
+{
+  "request_hash": "0537ff1adbe6514af1043a51606ffab26a15ee00c38f89afa9e92ff30f96bc29",
+  "prompt_sha256": "c7fd2eab7956d19216bb93599b6a1976307d637ebbfa8ecee9bcdc64313da28a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOALwnlDAnX5a15jAo0f4xx5Tgzd",
+  "prompt_tokens": 10551,
+  "completion_tokens": 43,
+  "actual_usd": 0.0016084499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the obligations of providers regarding the integration of AI models into downstream systems and the resulting cascading information obligations."
+  }
+}

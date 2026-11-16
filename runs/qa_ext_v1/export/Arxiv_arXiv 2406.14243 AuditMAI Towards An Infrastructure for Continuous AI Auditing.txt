@@ -1,0 +1,330 @@
+DOCUMENT: arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2406.14243v1 [cs.CY] 20 Jun 2024 -->
+
+# AuditMAI: Towards An Infrastructure for Continuous AI Auditing
+
+Laura Waltersdorfer
+
+TU Wien & WU Wien
+
+laura.waltersdorfer@wu.ac.at
+
+Tomasz Miksa
+
+TU Wien & SBA Research tomasz.miksa@sba-research.at
+
+# Abstract
+
+Artificial Intelligence (AI) Auditability is a core requirement for achieving responsible AI system design. However, it is not yet a prominent design feature in current applications. Existing AI auditing tools typically lack integration features and remain as isolated approaches. This results in manual, high-effort, and mostly one-off AI audits, necessitating alternative methods. Inspired by other domains such as finance, continuous AI auditing is a promising direction to conduct regular assessments of AI systems. The issue remains, however, since the methods for continuous AI auditing are not mature yet at the moment. To address this gap, we propose the Auditability Method for AI (AuditMAI), which is intended as a blueprint for an infrastructure towards continuous AI auditing. For this purpose, we first clarified the definition of AI auditability based on literature. Secondly, we derived requirements from two industrial use cases for continuous AI auditing tool support. Finally, we developed AuditMAI and discussed its elements as a blueprint for a continuous AI auditability infrastructure.
+
+# 1 Introduction
+
+Due to the increasing reports of incidents caused by Artificial Intelligence (AI) systems McGregor [2021], calls for countermeasures and alternative design principles for AI systems have been raised. AI auditability is often mentioned as one of the high-level requirements for responsible AI design AI [2019], UNESCO [2021], since AI audits are considered as relevant means to check and assess AI systems Prem [2023], Raji et al. [2020], Bandy [2021].
+
+Furthermore, a move towards continuous AI auditing practices to empower regular assessments of critical AI systems is needed due to the expected increased deployments of AI systems in critical and sensitive domains Minkkinen et al. [2022]. Continuous AI auditing -inspired by financial auditingimplies automatic periodic control and risk assessments of AI systems. However, the absence of clear standards, requirements, and technical tools leaves much space for ambiguity of how to achieve AI auditability especially continuous AI auditing.
+
+We argue that current approaches in AI auditing are hampered by the following two challenges:
+
+(C1) Unclear definitions of AI auditability and requirements. Current AI auditing approaches are described in heterogeneous vocabulary (e.g., impact assessment, technical or governance audits), leading to different expectations and requirements Ayling and Chapman [2022]. Although AI auditability is frequently mentioned as a desired system characteristic to build responsible algorithmic
+
+Fajar J. Ekaputra WU Wien & TU Wien
+
+fajar.ekaputra@wu.ac.at
+
+Marta Sabou WU Wien
+
+marta.sabou@wu.ac.at
+
+<!-- PageFooter: Preprint. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+systems Williams et al. [2022], existing AI Principles failed to provide concrete recommendations and requirements on how to implement AI auditability Shneiderman [2020].
+
+(C2) Lack of Automated AI auditing approaches and methods. AI auditing methods have been proposed and are mostly in the form of multiple one-time audits by external parties being conducted with detective purposes Bandy [2021]. Furthermore, the majority of published governance processes focus on manual trace and data collection Ayling and Chapman [2022], Minkkinen et al. [2022]. These facts reinforced the notion that continuous AI auditing practices Minkkinen et al. [2022], Ojewale et al. [2024] are not yet established. Audit artefacts are often described as static documents or plain text to be extracted and analysed by humans. Logging services are often only tailored to specific components and provide limited to no flexible configuration. Only a few approaches provide ways to increase the degree of automation through technical AI audits to increase the repeatability of audits and, thus, their frequency Minkkinen et al. [2022], Ojewale et al. [2024].
+
+While human oversight, evaluation, and interpretation -in the form of manual efforts- is and will be of crucial importance in AI auditability, increasing the degree of automation through continuous AI auditing is crucial towards achieving responsible AI design AI [2019], UNESCO [2021]. Therefore, to overcome these challenges, in this paper, we focus on the following research question:
+
+What are key elements of an infrastructure to enable continuous AI auditability?
+
+To answer this question, we propose AuditMAI (Auditability Method for AI), a framework to enable continuous AI audits. We describe key elements of an infrastructure enabling continuous AI auditing based on three levels: 1) knowledge, 2) process, and 3) architecture. To frame the scope of AuditMAI, we analysed literature for a working definition of AI auditability. In contrast to the top-down approach for the definition, we derived four main requirements bottom-up from two industrial research projects Ekaputra et al. [2021], Breit et al. [2023] focused on enabling continuous AI auditing. AuditMAI is comprised of three views: Knowledge, process, and architecture, targeting different interaction levels. AuditMAI framework aims to close the gap in current auditability research by offering a holistic view of essential elements relevant for establishing continuous AI auditing.
+
+The rest of this paper is structured as follows: In Section 2, we discuss related work and propose our own AI auditability definition. In Section 3, we present our two industrial use cases and derive requirements (cf. Figure 2) for technical support of continuous AI auditing. In Section 4, we propose AuditMAI (cf. Figure 3), distilling our results and finally concluding in Section 5.
+
+# 2 AI Auditability Definition
+
+AI auditability is frequently mentioned in responsible AI principles Díaz-Rodríguez et al. [2023]. However, despite the common description of this concept, a well-accepted definition with concrete technical implementation is missing. This lack of concrete requirements and definitions is hampering the creation of a continuous AI auditing framework. To overcome this gap, we summarized common themes in AI auditability (Section 2.1) as a foundation for our AI auditability definition to scope our context (Section 2.2).
+
+# 2.1 Background: Common Discussion Themes in AI Auditability
+
+In this section, we briefly discuss the following common themes on AI auditability: (i) AI audit goals, (ii) AI audit techniques, (iii) AI audit methods, (iv) AI auditing tools and (v) challenges for AI auditability.
+
+Goals. AI auditability is often aimed to achieve accountability Cobbe et al. [2021], Díaz-Rodríguez et al. [2023], Cloete et al. [2021] and transparency (either as a goal Cobbe et al. [2021], Cloete et al. [2021] or enabler of AI auditability Díaz-Rodríguez et al. [2023]). Accountability is the obligation of providing information related to standardization and regulation or consequences after incidents, while transparency means the provision of relevant information about the system.
+
+Techniques. Audit traces are mentioned to be essential to AI auditability Brundage et al. [2020], Shneiderman [2020], meaning record and log-keeping support provision of required information for AI auditability Cobbe et al. [2021], Cloete et al. [2021]. Traces are collected to provide a holistic overview, calling for inspection of the entire system context: Such information includes technical aspects such as data and algorithms and also contextual information or design decisions Cobbe et al. [2021], AI [2019], Díaz-Rodríguez et al. [2023], but what exactly is left to be decided at the practical level.
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+<Figure>
+Figure 1: Auditability Definition Key Elements (E1-E4) and Challenges (C1-C2b)
+</Figure>
+
+Methods. The following methods do not specifically define AI auditability but rather provide methods for different types of AI audits: Internal AI Audit methods Raji et al. [2020], specific model types such as Large Language Models Mökander et al. [2023] or for specific purposes, e.g. ethics Mökander and Floridi [2023]. While these methods provide valuable insights, they do not focus much on technical aspects of audit data models and tool support.
+
+Tools. A multitude of tools have been developed due to rising interest in responsible AI: Surveys collect frameworks and tools for ethical AI audits Ayling and Chapman [2022], continuous AI auditing Minkkinen et al. [2022], and a broader context Ojewale et al. [2024]. While these attempts establish a useful basis by categorizing single tools, there are remaining challenges: i) tools is a fuzzy term in AI auditing, not necessarily describing executable software but also guidelines Ayling and Chapman [2022], ii) isolated approaches since often tools are created for specific application contexts and use cases, it is unclear how to combine them along an AI auditing workflow Ojewale et al. [2024], and iii) context-dependence Forum [2023], e.g., the World Privacy Forum has identified that many popular fairness auditing tools implement US-specific legislation (US Four-Fifths Employment Rule for AI Fairness) Forum [2023], not suitable for the rest of the world.
+
+Needs. The need for a holistic assessment poses challenges to AI system providers and operators, because tracking everything is seldom feasible and also not sensible due to opacity Cobbe et al. [2021] or other issues (e.g. privacy, data management) Cloete et al. [2021]. This makes the selection and access of critical traces essential. Furthermore, traces typically come from very different system components in heterogeneous formats, so logs need to be integrated at a meaningful semantic level to gain insights from them.
+
+# 2.2 Proposed AI Auditability Definition
+
+Following our discussion on the common themes in AI Auditability and to establish the basis for our work, we define AI auditability as the following:
+
+Definition 1 AI auditability is the ability of an auditor to obtain accurate and relevant auditable artefacts for answering concrete audit questions, when examining an AI system.
+
+To further clarify our definition, we explain the key AI auditability elements mentioned within our definition (auditor, AI system, audit questions and auditable artefacts) in the following text and illustrate them in Figure 1 (E1-E4) together with two identified challenges (C2a and C2b).
+
+(1) Auditor is any stakeholder being authorized to examine a given AI system for a specific purpose, typically by asking a set of audit questions. In literature, auditors are classified as being first, second and third party auditors, as well as internal and external auditors Raji et al. [2022a].
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+(2) AI system includes its algorithmic and technical components, as well as non-technical components, e.g. implicit knowledge involving humans or organisational aspects. However, the major challenge remains for system developers and providers what exactly needs to be captured.
+
+(3) Audit questions are defining the information needs for auditing purposes. These questions can be related to applicable legislation or certification standards. Some questions target specific AI system components (e.g., machine learning component) or the entire AI system (e.g., overall performance statistics) and have different audit objectives (e.g., fairness or robustness). An example audit question is Who is the creator of this AI model?, and a more complicated one is Which bias mitigation measures were taken throughout the development of this AI model? Other forms of audit questions might be test cases to mitigate AI risks related to the system domain or task and also the chosen AI model (e.g., testing for adversarial input).
+
+(4) Auditable artefacts (also including audit traces, data statements, logs Brundage et al. [2020], Shneiderman [2020], Weigand et al. [2013], Cloete et al. [2021]), are the evidence used during AI audits to verify and validate the core functionality of an AI system by answering audit questions. We distinguish between static and dynamic artefacts: Static artefacts include documentation that is less frequently updated, e.g. design decisions. Raji et al. Raji and Buolamwini [2019] describe examples for more static auditable artefacts for internal audits, e.g. stakeholder map. Dynamic artefacts, including audit traces collected from the live systems, from the training or execution phase of a system (e.g. status or output logs). Furthermore, to avoid opacity and other issues as mentioned in Section 2.1, not all information that can be collected should be collected. Thus, it is essential to consider relevancy and accuracy of auditable artefacts. Both factors are closely linked to the overall audit goal and thus, related audit questions.
+
+The definition in this section clarified and addressed the first challenge (C1) unclear AI auditability definiton mentioned in Section 1. Furthermore, it also helped to clarify the scope of the second challenge (C2) lack of automated AI auditing approaches and methods. This challenge consists now of (C2a) the selection of relevant traces and documents within the AI system context, and (C2b) the provision of an AI auditability infrastructure to support the continuous AI auditing process.
+
+# 3 Use-case based AI Auditability Requirements
+
+We present two use cases (UC) from industrial research projects to derive requirements for the development of continuous AI auditing tool support in order to address challenge C2 (cf. Section 1). To this end, we first discuss them based on the previously introduced AI auditability elements, namely, Auditors, AI system, Audit questions and Auditable artefacts (cf. Section 2.2). Then, we summarize requirements derived from the use cases (cf. Fig. 2 and Table 1).
+
+# 3.1 Use Case Analysis
+
+The use cases are from different domains and UC partners: UC1 is situated in the environmental-legal domain in cooperation with a federal agency Breit et al. [2023]; while UC2 is conducted in the medical domain with several small companies Ekaputra et al. [2021].
+
+UC 1 The use case covers the ecological and legal domain of a federal agency dealing with environmental permits. The to-be audited AI system is to complement human manual extraction from legal permits through automatic extraction through machine learning. Key information items are extracted from legal permits (PDFs) to add metadata information of those permits for search purposes (e.g. operator or applicable law).
+
+Auditors. System operators, who are no machine learning experts are interested in underlying patterns of wrong predictions and frequently corrected key information types. Legal analysts are interested in single executions. Both qualify as internal auditors.
+
+AI System. Main components are: The user interface for document upload and transformation of PDF documents in machine-readable format. After data extraction from the documents, four services (2 ML and 2 non-ML services and an ontology) provide suggestions for key entity types. Finally, users can correct suggestions by the AI system.
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<Figure>
+Figure 2: A schematic overview of the UCs and derived requirements (R1-R4)
+</Figure>
+
+Audit Question. Examples included: What is the average confidence value per entity type over time? to analyse the overall model fit continuously. Another audit question was: Did this system execution run successfully? to ensure the correct functioning of single system runs.
+
+Auditable Artefact. Traces from the identified main AI system components need to be collected, such as version numbers, timestamps, and completion states, but also more concrete ones, such as the confidence values for key entity types or correction states.
+
+UC 2 This use case is situated in the medical domain of startups integrating health data from multiple application providers, under regulation, e.g. the General Data Protection Regulation (GDPR) in the European Union. Small health application providers choose for compliance reasons to store their users' data in a cloud platform. This way, they do not have to develop and run the platform themselves. The centralised platform manages data access to permit data analysis through privacy-preserving data analysis. Service provider upload their data with the applicable consent rights from users to the platform. Researchers can specify study criteria for applicable health data. Consent management is managed by the platform.
+
+Auditors. Analysts are interested in which software libraries were used for a certain analysis. System operators can inquire about the integrated logging concerning the data access and analysis actions performed by analysts for accountability of past studies. The former are considered external, while the latter are internal auditors.
+
+AI System. Components include: user data upload, data selection (including consent management) and analysis (through ML models).
+
+Audit Question. Example questions are: Was the consent evaluation executed during data collection to ensure compliance. To audit data analysis: Which software libraries have been used to analyse data in a specific study?
+
+Auditable Artefact. Traces from many sources needed to be collected. For example, the consent management (in RDF) for the consent result and the analysis module (in R) for used libraries.
+
+# 3.2 Auditability Requirements
+
+Several requirements can be derived from the generic continuous auditing approach Minkkinen et al. [2022]. However, since we aim to specify more concrete requirements specifically for AI systems, we derived a set of requirements through multiple rounds of workshops with the project partners to design and implement tool support for continuous AI auditing. We visualised the requirements (R1-R4) in Figure 2 and explain them in the following.
+
+R1: Identification of relevant auditable artefacts logging over different AI lifecycle phases: Similar to software engineering, AI systems undergo lifecycle phases from design until decommissioning. A key challenge is the identification of relevant audit information. In both UCs, the audit questions were iteratively derived and refined. In UC 1, the audit focus was put on the exploitation phase capturing runtime phrases of the system, with just a limited number of training parameters being captured, while in UC 2, the focus was on the overall system, also tracking main data flows during execution. Supporting the identification of relevant artefacts is vital to the preparation of AI auditing.
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<Table>
+| Elements            | UC 1                                                                                                                                                                                    | UC 2                                                                                                                                                             |
+|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Auditor             | (both internal) System operators, legal analysts                                                                                                                                        | (internal) System operators, (external) analysts                                                                                                                 |
+| AI System           | UI, 2 ML components, 2 non-ML ser- vices, ontology                                                                                                                                      | UI, consent check, ML-based analysis                                                                                                                             |
+| AQ System Operator  | What is the average confidence value per key entity type?                                                                                                                               | Was the consent evaluation executed during data collection?                                                                                                      |
+| AQ Analyst          | Did this system execution run success- fully?                                                                                                                                           | Which software libraries have been used in a specific study?                                                                                                     |
+| Auditable Artefacts | RDF traces, (ML) services output, user corrections                                                                                                                                      | R scripts, consent result                                                                                                                                        |
+| Requirements        | R1 (focus on exploitation phase of ML systems), R2 (log structure was partly pre-defined), R3 (full automation), R4 (query interface with pre-defined queries, detailed custom queries) | R1 (focus on data flows in entire sys- tem), R2 (log structure was flexible), R3 (full automation), R4 (query inter- face with pre-defined queries, custom ones) |
+</Table>
+
+R2: Flexibility of auditable artefact collection mechanisms: AI systems can handle multi-modal data ranging from text, images, video or sound, encoded in various formats. In both UCs, we encountered different software languages (Python, R, Java) and libraries, as well as artefact formats, such as JSON, CSV, TIFF, or RDF. Some log structures were predefined, while others could be adapted to the AI auditing needs. Flexibility is also needed in terms of granularity, since for different auditing objectives different information is needed (e.g. fairness vs. accountability). This flexibility in the system context must also be represented and feasible for AI auditability by offering flexible and variable collection mechanisms.
+
+R3: Automation of auditable artefact collection, transformation and management: Auditable artefacts are created by multiple components, in different system states as described in the previous requirements and include various artefacts in the design phase or high numbers of transactions per system execution during system execution. Therefore, collection, transformation and management of these artefacts during the system development and operation is critical, while manual logging is undesired. For both UCs, automatic collection and management was needed for effective AI auditability. Integrating heterogeneous trace data into a metadata representation is also needed to provide improved analysis capabilities.
+
+R4: Ease of analysing auditable artefacts: The artefacts need to be analysed to obtain audit results and plan further steps based on the outcome. Analysis capabilities include the investigation of auditable artefacts, writing of queries or computing metrics and visualisation of results for communication or reporting purposes. Different levels of expertise and professional backgrounds of potential auditors require easy analytics and reporting possibilities. In UC 1, there was only limited technical knowledge to be expected from the internal auditors and for UC 2, main requirement was to offer a query interface with pre-defined queries and possibility to write custom queries.
+
+All of these requirements, focusing on the handling and management of auditable artefacts are enablers for AI auditability. To the best of our knowledge, there does not yet exist a tool suite to cover all these requirements, but selected aspects. For example, MLOps tools e.g. MLflow provide capabilities especially for R2 and R3. Logging and analysis of common parameters and metadata for ML models can be easily executed with such tools. The selection and higher degree of granularity for specific parameters and metrics are more difficult to achieve. For R1 especially auditable artefacts beyond common MLOps artefacts are not covered. Also for R4 the integration and analysis mechanisms of auditable artefacts is not supported beyond common ones. To address this gap, we propose AuditMAI.
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+# 4 AuditMAI Framework
+
+To address both the identified challenges (cf. Section 2.2: C2a-C2b) as well as the requirements (cf. Section 3.2: R1-R4), we present AuditMAI (Auditability Method for AI) framework. The aim is to provide a blueprint for AI auditability through technical tools for the auditing process. The framework was iteratively built and refined based on our experiences of past projects. AuditMAI is partly implemented through our prototype AuditBox, leveraging semantic web technologies for auditable artefact integration and management Ekaputra et al. [2021], Breit et al. [2023].
+
+Framework Description. AuditMAI is divided into three views targeting different levels of the AI auditability infrastructure: (i) Knowledge View, (ii) Process View and (iii) Architecture View. The framework integrates the aspects of knowledge management, process understanding and architectural design for supporting continuous AI auditing showing relevant flows between each layer. In the following, we discuss them:
+
+I. Knowledge View - gathers knowledge about derived AI audit questions, test cases and risks, documentation standards and existing tools and metrics. It consists of three knowledge bases:
+
+Audit Questions, (cf. Section 2) suggest which information needs to be collected during the audit process. Initial collections have been made for different purposes e.g. explainability Liao et al. [2020] or accountability Naja et al. [2022] or trustworthy AI Poretschkin et al. [2021]. Initial risk taxonomies have been synthesised Raji et al. [2022b] through AI Incident databases, such as Incident DB McGregor [2021] and AIAAIC 1 .
+
+Documentation Standards, collect relevant metadata standards to describe and document relevant information of auditable artefacts. Well-known approaches such as ModelCards Mitchell et al. [2019] and Datasheets Gebru et al. [2021] have reached a certain adoption due their integration on popular online platforms e.g. HuggingFace or Github. However, current research indicates that AI documentation is failing to adequately include and communicate relevant AI system features Bhat et al. [2023], Longpre et al. [2023].
+
+Tool and Metrics differ depending on task and domain. Knowledge bases such as the OECD Catalogue 2 or surveys Minkkinen et al. [2022], Ayling and Chapman [2022] are helpful to investigate available tools. However, since terminology in AI auditing is still fuzzy, attempts such as the recently published AI audit tooling landscape map 3 aim to go beyond prior classifications by providing a more comprehensive audit tool taxonomy. The same is needed to organise metrics and evaluation techniques for AI auditability.
+
+II. Process View - focuses on the auditing process steps incorporating audit questions and auditable artefacts. It consists of four auditing steps:
+
+Step 1: Audit Scoping. To scope the audit process, two inputs are needed: i) the AI system description describing main data flows and algorithmic modules and ii) the overall audit goal, e.g. transparency or fairness. Both descriptions are then also input to the architectural component (cf. Audit Scoping Service) to provide recommendations and subsequent selection of applicable audit questions and risks also based on the input from the Knowledge View.
+
+Step 2: Audit Setup. After scoping the audit, this step is concerned with setting up the collection of auditable artefacts. These artefacts are derived based on the AI system description from the previous step. Furthermore, identified artefacts need to be integrated into a common view across the entire AI system to answer complex audit questions e.g. in a graph-based representation (cf. architectural component Audit Setup Service).
+
+Step 3: Audit Artefact Collection. This step deals with collecting auditable artefacts during the runtime of a system. Ideally, artefact collection is automated, with only limited data being collected or tested manually (cf. architectural component Audit Collection Service).
+
+Step 4: Audit Analysis and Reporting. In the final step, auditable artefacts are analysed to report results of the audit process to stakeholders and identify system improvements (cf. architectural component Audit Analytics & Reporting Service). Another audit process can be started then.
+
+\* 1 https://www.aiaaic.org
+
+\* 2 https://oecd.ai/en/catalogue/overview
+
+\* 3 https://tools.auditing-ai.com
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<Figure>
+Figure 3: AuditMAI: Combining knowledge management, process understanding and architectural design for AI Auditability Infrastructure
+</Figure>
+
+III. Architecture View - describes technical services to support the continuous AI auditing process, especially the definition of audit questions and management of relevant auditable artefacts. The four requirements (cf. Section 3.2) are targeted by the following four services:
+
+Audit Scoping Service. The audit scoping includes the selection of applicable audit questions, risks and test cases (R1 Identification of relevant auditable artefacts). This is highly dependent on the AI system, context and domain. The AI system workflow description with main data flows and algorithmic components assists in suggesting example audit questions or test cases in each phase of the system lifecycle. In line with continuous auditing, knowledge from past experiences is integrated, e.g., from AI incident databases, and an audit data model is output for subsequent steps.
+
+Audit Setup Service. This service aims to prepare the collection of auditable artefacts from available data sources (R2 Flexibility of auditable artefact collection mechanisms). Example data sources can be textual descriptions (e.g., Model Cards Mitchell et al. [2019]), automatic MLOps tools (e.g., MLflow 4 ), or specific automatic ones (e.g., Aequitas for fairness Saleiro et al. [2018]). Also, logs might be already collected for other purposes (e.g., debugging or security) and could be extended for auditing purposes. An overview of the required auditable artefacts and the needed artefact collection tools is the output of this step.
+
+Artefact Management Service. This service is responsible for storing and persisting collected artefacts (R3 Automation of auditable artefact management) for analysis and reporting. The choice of storage and retrieval of artefacts might depend on organisational contexts and requirements, such as given infrastructure. Due to the heterogeneity of auditable artefacts and to answer complex audit queries, data integration is important e.g. through Knowledge Graphs and Semantic Web technologies Naja et al. [2022], Breit et al. [2023].
+
+Audit Artefact Analytics and Reporting Service. This component provides analysis and investigation capabilities of auditable artefacts. Artefacts can be analysed through a provided dashboard, predefined or custom queries or generated reports accessing the artefact management service (R4 Ease of analysing auditable artefacts).
+
+# 5 Conclusion
+
+Through AuditMAI, we provide a framework for AI auditability infrastructure for continuous AI auditing. We aim to counteract unclear requirements hampering both process and technical maturity in AI auditability and the currently fragmented emerging AI audit tools landscape. To achieve this, the framework is scoped around our AI auditability definition and requirements from industrial projects structured into three different views. The aim is to reduce manual efforts and support preventive and continuous AI auditing.
+
+\* 4 https://mlflow.org
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+Discussion. While the use cases provided important insights into the needs and requirements for continuous AI auditing practices, they might be subject to selection and observer bias.
+
+Future Work. We plan to further analyze the capabilities of existing AI auditing tools and audit data models to extend our work on the AuditBox tool for AI Auditability Breit et al. [2023], specifically to cover all four steps of the AuditMAI framework. Furthermore, we plan to conduct a comprehensive evaluation of the AuditMAI framework with AuditBox as the reference implementation.
+
+# References
+
+- Sean McGregor. Preventing Repeated Real World AI Failures by Cataloging Incidents: The AI Incident Database. In Proceedings of the AAAI Conference on Artificial Intelligence, 2021.
+
+- HLEG AI. High-level Expert Group on Artificial Intelligence. European Commission, 2019.
+
+UNESCO. Recommendation on the Ethics of Artificial Intelligence, 2021.
+
+- Erich Prem. From Ethical AI Frameworks to Tools: A Review of Approaches. AI and Ethics, pages 1-18, 2023.
+
+- Inioluwa Deborah Raji, Andrew Smart, Rebecca N White, Margaret Mitchell, Timnit Gebru, Ben Hutchinson, Jamila Smith-Loud, Daniel Theron, and Parker Barnes. Closing the AI Acountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing. In Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency, pages 33-44, 2020.
+
+- Jack Bandy. Problematic Machine Behavior: A Systematic Literature Review of Algorithm Audits. Proceedings of the ACM on Human-Computer Interaction, 5(CSCW1):1-34, 2021.
+
+- Matti Minkkinen, Joakim Laine, and Matti Mäntymäki. Continuous Auditing of Artificial Intelligence: A Conceptualization and Assessment of Tools and Frameworks. Digital Society, 1(3):21, 2022.
+
+- Jacqui Ayling and Adriane Chapman. Putting AI Ethics to Work: Are the Tools Fit for Purpose? AI and Ethics, 2(3):405-429, 2022.
+
+- Rebecca Williams, Richard Cloete, Jennifer Cobbe, Caitlin Cottrill, Peter Edwards, Milan Markovic, Iman Naja, Frances Ryan, Jatinder Singh, and Wei Pang. From Transparency to Accountability of Intelligent Systems: Moving beyond Aspirations. Data & Policy, 4:e7, 2022.
+
+- Ben Shneiderman. Bridging the Gap Between Ethics and Practice: Guidelines for Reliable, Safe, and Trustworthy Human-centered AI systems. ACM Transactions on Interactive Intelligent Systems (TiiS), 10(4):1-31, 2020.
+
+- Victor Ojewale, Ryan Steed, Briana Vecchione, Abeba Birhane, and Inioluwa Deborah Raji. Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling. arXiv preprint arXiv:2402.17861, 2024.
+
+- Fajar J. Ekaputra, Andreas Ekelhart, Rudolf Mayer, Tomasz Miksa, Tanja Sarˇcevi´c, Sotiris Tsepelakis, and Laura Waltersdorfer. Semantic-enabled Architecture for Auditable Privacy-Preserving Data Analysis. Semantic Web Journal, 2021.
+
+- Anna Breit, Laura Waltersdorfer, Fajar J Ekaputra, Sotirios Karampatakis, Tomasz Miksa, and Gregor Käfer. Combining Semantic Web and Machine Learning for Auditable Legal Key Element Extraction. In European Semantic Web Conference, pages 609-624. Springer, 2023.
+
+- Natalia Díaz-Rodríguez, Javier Del Ser, Mark Coeckelbergh, Marcos López de Prado, Enrique Herrera-Viedma, and Francisco Herrera. Connecting the Dots in Trustworthy Artificial Intelligence: From AI Principles, Ethics, and Key Requirements to Responsible AI Systems and Regulation. Information Fusion, page 101896, 2023.
+
+- Jennifer Cobbe, Michelle Seng Ah Lee, and Jatinder Singh. Reviewable Automated Decision-Making: A Framework for Accountable Algorithmic Systems. In Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency, pages 598-609, 2021.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+- Richard Cloete, Chris Norval, and Jatinder Singh. Auditable augmented/mixed/virtual reality: The practicalities of mobile system transparency. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 5(4):1-24, 2021.
+
+- Miles Brundage, Shahar Avin, Jasmine Wang, Haydn Belfield, Gretchen Krueger, Gillian Hadfield, Heidy Khlaaf, Jingying Yang, Helen Toner, Ruth Fong, Tegan Maharaj, Pang Wei Koh, Sara Hooker, Jade Leung, Andrew Trask, Emma Bluemke, Jonathan Lebensold, Cullen O'Keefe, Mark Koren, Théo Ryffel, JB Rubinovitz, Tamay Besiroglu, Federica Carugati, Jack Clark, Peter Eckersley, Sarah de Haas, Maritza Johnson, Ben Laurie, Alex Ingerman, Igor Krawczuk, Amanda Askell, Rosario Cammarota, Andrew Lohn, David Krueger, Charlotte Stix, Peter Henderson, Logan Graham, Carina Prunkl, Bianca Martin, Elizabeth Seger, Noa Zilberman, Sean O hEigeartaigh, Frens Kroeger, Girish Sastry, Rebecca Kagan, Adrian Weller, Brian Tse, Elizabeth Barnes, Allan Dafoe, Paul Scharre, Ariel Herbert-Voss, Martijn Rasser, Shagun Sodhani, Carrick Flynn, Thomas Krendl Gilbert, Lisa Dyer, Saif Khan, Yoshua Bengio, and Markus Anderljung. Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims. 4 2020. URL http://arxiv.org/abs/2004.07213.
+
+- Jakob Mökander, Jonas Schuett, Hannah Rose Kirk, and Luciano Floridi. Auditing Large Language Models: A Three-Layered Approach. AI and Ethics, pages 1-31, 2023.
+
+- Jakob Mökander and Luciano Floridi. Operationalising AI Governance through Ethics-Based Auditing: an Industry Case Study. AI and Ethics, 3(2):451-468, 2023.
+
+- World Privacy Forum. Risky Analysis: Assessing and Improving AI Governance Tools. 2023.
+
+- Inioluwa Deborah Raji, Peggy Xu, Colleen Honigsberg, and Daniel Ho. Outsider Oversight: Designing a Third Party Audit Ecosystem for AI Governance. In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society, pages 557-571, 2022a.
+
+- Hans Weigand, Paul Johannesson, Birger Andersson, Maria Bergholtz, Faiza Allah Bukhsh, R Deneckere, and H Proper. Conceptualizing Auditability. In CAiSE forum, pages 49-56, 2013.
+
+- Inioluwa Deborah Raji and Joy Buolamwini. Actionable auditing: Investigating the impact of publicly naming biased performance results of commercial ai products. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society, pages 429-435, 2019.
+
+- Q Vera Liao, Daniel Gruen, and Sarah Miller. Questioning the AI: Informing Design Practices for Explainable AI User Experiences. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems, pages 1-15, 2020.
+
+- Iman Naja, Milan Markovic, Peter Edwards, Wei Pang, Caitlin Cottrill, and Rebecca Williams. Using Knowledge Graphs to Unlock Practical Collection, Integration, and Audit of AI Accountability Information. IEEE Access, 10:74383-74411, 2022.
+
+- Maximilian Poretschkin, Anna Schmitz, Maram Akila, Linara Adilova, Daniel Becker, Armin B Cremers, Dirk Hecker, Sebastian Houben, Michael Mock, Julia Rosenzweig, et al. Leitfaden zur Gestaltung vertrauenswürdiger künstlicher Intelligenz. KI-Prüfkatalog. Sankt Augustin: FraunhoferInstitut für Intelligente Analyse-und Informationssysteme IAIS, 2021.
+
+- Inioluwa Deborah Raji, I Elizabeth Kumar, Aaron Horowitz, and Andrew Selbst. The Fallacy of AI Functionality. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency, pages 959-972, 2022b.
+
+- Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, and Timnit Gebru. Model Cards for Model Reporting. In Proceedings of the Conference on Fairness, Accountability, and Transparency, pages 220-229, 2019.
+
+- Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé Iii, and Kate Crawford. Datasheets for datasets. Communications of the ACM, 64(12): 86-92, 2021.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+- Avinash Bhat, Austin Coursey, Grace Hu, Sixian Li, Nadia Nahar, Shurui Zhou, Christian Kästner, and Jin LC Guo. Aspirations and Practice of ML Model Documentation: Moving the Needle with Nudging and Traceability. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, pages 1-17, 2023.
+
+- Shayne Longpre, Robert Mahari, Anthony Chen, Naana Obeng-Marnu, Damien Sileo, William Brannon, Niklas Muennighoff, Nathan Khazam, Jad Kabbara, Kartik Perisetla, et al. The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI. arXiv preprint arXiv:2310.16787, 2023.
+
+- Pedro Saleiro, Benedict Kuester, Loren Hinkson, Jesse London, Abby Stevens, Ari Anisfeld, Kit T Rodolfa, and Rayid Ghani. Aequitas: A Bias and Fairness Audit Toolkit. arXiv preprint arXiv:1811.05577, 2018.
+
+<!-- PageFooter: 11 -->
+

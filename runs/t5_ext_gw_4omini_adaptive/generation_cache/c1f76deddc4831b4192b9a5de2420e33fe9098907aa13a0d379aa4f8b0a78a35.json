@@ -1,0 +1,10 @@
+{
+  "request_hash": "c1f76deddc4831b4192b9a5de2420e33fe9098907aa13a0d379aa4f8b0a78a35",
+  "prompt_sha256": "f1c3a7f3ec38d789695e8a400b8e2f0bd5f48f06eed297260193eedcfbcd7223",
+  "answer": "Near-moderated Posts are selected by identifying 1,000 unmoderated posts from the firehose that are semantically most similar to those in the Moderated Posts subset. This selection aims to identify potential harmful content that was missed by the existing moderation system.\n\nThe annotation process for labeling follows the official Bluesky Moderation Service (BMS) label definitions. Posts are labeled as Unsafe only if they meet the criteria of a defined moderation category; otherwise, they are labeled Safe. The process involves two annotators independently labeling posts, resolving disagreements through joint discussion, and using a third annotator for cases that remain unresolved. The final guidelines are applied to the Near-moderated Posts subset, and all disagreements are resolved by a third annotator.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNK3V0HUVWO88NlPkPA35boDPRRY",
+  "prompt_tokens": 9531,
+  "completion_tokens": 150,
+  "actual_usd": 0.0015196499999999998
+}

@@ -1,0 +1,1 @@
+{"content": "<regex>(?<=\\n)(?=#[^\\n]*\\n)|(?=^# )</regex>", "model_returned": "gpt-4o", "usage": {"in": 11604, "out": 26}, "time": "2026-11-09 18:27:23"}

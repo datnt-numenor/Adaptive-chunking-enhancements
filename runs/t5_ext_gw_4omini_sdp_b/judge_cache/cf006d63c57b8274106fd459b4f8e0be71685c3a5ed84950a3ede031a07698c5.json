@@ -1,0 +1,14 @@
+{
+  "request_hash": "cf006d63c57b8274106fd459b4f8e0be71685c3a5ed84950a3ede031a07698c5",
+  "prompt_sha256": "9ba07cd1e416ca1fbd27d75d99f9efca3810fc0fdb3e2d8a4ed6c24e3e7bfe06",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOK7pGYITtkr1ss9tDMBBtaPk6sT",
+  "prompt_tokens": 8386,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012836999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how European transport-safety authorities have responded to AI-induced phantom braking through monitoring, transparency, and human override mechanisms."
+  }
+}

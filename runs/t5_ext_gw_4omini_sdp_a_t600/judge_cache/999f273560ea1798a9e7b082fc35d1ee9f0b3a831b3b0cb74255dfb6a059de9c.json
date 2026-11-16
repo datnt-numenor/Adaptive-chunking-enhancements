@@ -1,0 +1,14 @@
+{
+  "request_hash": "999f273560ea1798a9e7b082fc35d1ee9f0b3a831b3b0cb74255dfb6a059de9c",
+  "prompt_sha256": "c9856e4d225f780489f6c3ac74f7a79e955300f0f3b5f4820886d160a0b18e6b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNUFZwvS1rBX0sagZXhxNXrmmmhk",
+  "prompt_tokens": 8220,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012606,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed discussion on the classification of predictive maintenance products and their dependency on the presence of traditional quality assurance mechanisms, fully supporting the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,243 @@
+DOCUMENT: arXiv 2608.25839 Non-Great-Power Conflict and AI Risk
+
+<<<PAGE 18>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+# 3 Catastrophic Terrorism
+
+# 3.1 Introduction
+
+There is consensus that increasingly advanced AI would increase the risk that nonstate actors are able to commit acts of catastrophic terrorism. 68 Here, we investigate a neglected aspect of that risk: would an increased incidence of NGPC increase the expected harm from catastrophic terrorism?
+
+The intuition is seemingly straightforward: NGPC is where non-state actors operate, and often where states arm them. Unlike GPC, NGPC occurs in under-governed spaces accessible to foreign fighters. 69 Several concerning dynamics operate in these spaces: operatives travel to war zones to acquire skills, states transfer capabilities to proxies, oversight over what capabilities are developed is limited.
+
+The empirical record supports this intuition. Recent editions of the Global Terrorism Index find that roughly nine in ten terrorist attacks and 98 percent of terrorism deaths occur in countries in conflict, and that attacks there are roughly five to six times deadlier than in peaceful countries. 70 The vast majority of these conflict-affected countries are experiencing non-great-power conflicts - from insurgencies in the Sahel and Myanmar, to proxy wars in Sudan and Yemen, to cartel violence in Mexico and Colombia. The causal channels are well-documented: states experiencing chronic failure are significantly more likely to host and produce transnational terrorist groups, 71 and the weaker a government's territorial control, the more terrorism it produces. 72 While the causal direction is debated, recent analysis confirms that state weakness drives terrorist group survival, not solely the reverse. 73
+
+\* 68 Jim Mitre and Joel B. Predd, Artificial General Intelligence's Five Hard National Security Problems (Santa Monica, CA: RAND Corporation, 2025), https://www.rand.org/pubs/perspectives/PEA3691-4.html. The authors identify "nonexperts empowered to develop weapons of mass destruction" as one of five hard national security problems posed by AI, noting that AI lowers barriers across chemical, biological, and cyber domains. See also United Nations Office of Counter-Terrorism and United Nations Interregional Crime and Justice Research Institute, Algorithms and Terrorism: The Malicious Use of Artificial Intelligence for Terrorist Purposes (New York: United Nations, 2021). In a survey of 27 experts from government, industry, academia, and international organizations, 44 percent assessed malicious use of AI for terrorist purposes as "very likely" and 56 percent as "somewhat likely"; no participants assessed it as unlikely.
+
+\* 69 Martha Crenshaw, "Transnational Jihadism and Civil Wars, " Dædalus 146, no. 4 (Fall 2017): 59-70, https://www.amacad.org/publication/transnational-jihadism-civil-wars. Crenshaw observes that "sanctuary in failed states or ungoverned spaces is only part of the story. Civil conflicts [what we are calling NGPC] are attractions for foreign fighters from the region or from distant countries. " See also Hanna Samir Kassab, Power Vacuums and Global Politics: Areas of State and Non-state Competition in Multipolarity (New York: Routledge, 2023), Kassab defines a power vacuum as the fundamental absence of legitimate state authority over a geographic territory, noting that with no state authority governing a geographical region, opportunistic states and organized criminal and terrorist networks may attempt to control that space.
+
+\* 70 Institute for Economics and Peace, Global Terrorism Index 2024 (Sydney: IEP, 2024), https://www.visionofhuma nity.org/maps/global-terrorism-index/. The GTI draws on Dragonfly's TerrorismTracker database.
+
+\* 71 James A. Piazza, "Incubators of Terror: Do Failed and Failing States Promote Transnational Terrorism?" International Studies Quarterly 52, no. 3 (2008): 469-488, https://doi.org/10.1111/j.1468-2478.2008.00511.x. Piazza's time-series, cross-national negative binomial analysis of 197 countries from 1973 to 2003 finds that states plagued by chronic state failures are statistically more likely to host terrorist groups that commit transnational attacks, have their nationals commit transnational attacks, and are more likely to be targeted by transnational terrorists themselves. See also Michael G. Findley and Joseph K. Young, "Terrorism and Civil War: A Spatial and Temporal Approach to a Conceptual Problem, " Perspectives on Politics 10, no. 2 (2012): 285-305, https://doi.org/10.1017/S1537592712000679.
+
+\* 72 Brian Lai, "'Draining the Swamp': An Empirical Examination of the Production of International Terrorism, 19681998, " Conflict Management and Peace Science 24, no. 4 (2007): 297-310 , https://doi.org/10.1080/07388940701643649. Lai finds strong support for the state strength approach: the lower a state's ability to impose costs on terrorist groups within its borders, the greater the amount of terrorism produced within that state.
+
+\* 73 Khusrav Gaibulloev, James A. Piazza, and Todd Sandler, "Do Failed or Weak States Favor Resident Terrorist Groups' Survival?" Journal of Conflict Resolution 68, no. 5 (2024): 823-848,
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+Conflict zones also generate terrorism through a foreign fighter pipeline that operates across ideological lines. Hegghammer's analysis found that one in nine (or less) of Western jihadist foreign fighters returned to take part in domestic terror plots, and that such plots were more likely to produce fatalities. 74 The same dynamic appears in far-right terrorism: the Ukraine conflict has provided combat skills and transnational networks to European extremists, at least one of whom was convicted of planning attacks in France using weapons acquired in eastern Ukraine. 75 The cartel drone pipeline (documented below) represents a third variant that is operational rather than ideological. Earlier pipelines followed the same logic: the IRA acquired weapons from Libya, FARC developed extensive military and illicit-financing capabilities over decades of Colombian civil war, and the Tamil Tigers further refined suicide-bombing tactics, including suicide belts and the systematic use of female attackers; similar tactics were subsequently adopted by armed groups elsewhere. 76 In each case, conflict zones provide what peacetime training cannot: hands-on, practical knowledge of how to deploy capabilities under real-world conditions, evade countermeasures, and integrate emerging technologies into existing tactics.
+
+What is less clear is whether these dynamics meaningfully change the risk of catastrophic terrorist attacks. Historically, implementation barriers have dominated: groups still need resources, organizational capacity, and the ability to move from planning to execution to perform an attack. 77
+
+https://doi.org/10.1177/00220027231183939. The authors note that "endogeneity, stemming from reverse causality and omitted variables, presents a threat to identifying the causal relationship" and apply an instrumental variables approach to address it, finding that weak states do favor resident terrorist groups' longevity. See also Khusrav Gaibulloev and Todd Sandler, "Are Resident Terrorist Groups Productive in Weak States?" Kyklos (2025), https://doi.org/10.1111/kykl.12458, which confirms that terrorist groups in weak states generate more attacks across all categories.
+
+74 Thomas Hegghammer, "Should I Stay or Should I Go? Explaining Variation in Western Jihadists' Choice between Domestic and Foreign Fighting, " American Political Science Review 107, no. 1 (2013): 1-15, https://doi.org/10.1017/S0003055412000615.
+
+75 On far-right foreign fighters and Ukraine, see Christian Kaunert, Alex MacKenzie, and Sarah Léonard, "Far-right Foreign Fighters and Ukraine: A Blind Spot for the European Union?" New Journal of European Criminal Law 14, no. 2 (2023): 247-266, https://doi.org/10.1177/20322844231164089; and Kacper Rękawek, Foreign Fighters in Ukraine (London: Routledge, 2023). The convicted individual is Grégoire Moutaux, a French far-right extremist who entered Ukraine in June 2015 and came to SBU attention in December 2015. He offered a Ukrainian serviceman €16,000 for five Kalashnikov rifles, two rocket-propelled grenade launchers, 125 kilograms of TNT, and 100 electric detonators; the serviceman alerted the SBU, which allowed the purchase to proceed as a controlled operation. Ukraine's SBU arrested him in May 2016 at the Polish-Ukrainian border; he had planned 15 attacks targeting mosques, synagogues, bridges, and infrastructure during the Euro 2016 football championship. He was convicted in Ukraine in 2018 on terrorism and smuggling charges. See "Ukraine Convicts Frenchman over Euro 2016 Attack Plot, " France 24, May 22, 2018, https://www.france24.com/en/20180522-ukraine-terrorism-convicts-frenchmanover-euro-2016-football-france-attack-plot; "French Suspect Arrested for Alleged Attack Plot, " Washington Post, June 6, 2016, https://www.washingtonpost.com/world/french-suspect-arrested-for-alleged-attack-plot-during-soccertournament-ukraine-says/2016/06/06/199d7c73-9546-421c-89af-1a1d59989fc1 _ story.html. For broader analysis, see New Lines Institute, "The Balkan Connection: Foreign Fighters and the Far Right in Ukraine, " September 2023, https://newlinesinstitute.org/nonstate-actors/the-balkan-connection-foreign-fighters-and-the-far-right-in-ukraine/.
+
+76 On the IRA-Libya connection, see Ed Moloney, A Secret History of the IRA (New York: W.W. Norton, 2002). On FARC, see James J. Brittain, Revolutionary Social Change in Colombia: The Origin and Direction of the FARC-EP (London: Pluto Press, 2010). On the spread of suicide bombing tactics refined by the Tamil Tigers, see Robert A. Pape, Dying to Win: The Strategic Logic of Suicide Terrorism (New York: Random House, 2005); Michael C. Horowitz, "Nonstate Actors and the Diffusion of Innovations: The Case of Suicide Terrorism, " International Organization 64, no. 1 (2010): 33-64.
+
+\* 77 National Academies of Sciences, Engineering, and Medicine, Nuclear Terrorism: Assessment of U.S. Strategies to Prevent, Counter, and Respond to Weapons of Mass Destruction (Washington, DC: National Academies Press, 2024), https://nap.nationalacademies.org/catalog/27215/. The report notes that "in order for a terrorist organization to carry out a nuclear attack with either a nuclear weapon or an improvised nuclear device, they would need the complicity of a state, the failure of the state's controls, or the failure of the state itself" (Chapter 3, "New Dynamics in Nuclear Terrorism Pose New Risks").
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+Knowledge of how to build a weapon has rarely been the only limiting factor. The desire to commit such an attack is also a barrier: terrorist groups that maintain close ties to local populations are constrained by those relationships, since indiscriminate and catastrophic violence risks alienating the very communities they depend on for recruits, resources, and legitimacy. 78 Even where intent exists, significant implementation barriers remain.
+
+While recent research suggests that AI appears to be lowering the knowledge barrier for catastrophic terrorism, 79 whether this translates into successful attacks depends on whether the remaining material and organizational barriers prove similarly tractable. Here, we aim to resolve some of that uncertainty in order to test the hypothesis that an increased incidence of NGPC increases the expected harm from catastrophic terrorism. Of the three pathways we examine, the first (capability transfer from conflict zones) is most distinctively tied to NGPC. The second and third (AI-assisted attack planning and AI-enabled coordination) are driven primarily by advances in AI, but we include them because NGPC amplifies both by expanding the pool of radicalized, operationally experienced actors and creating the fragmented environments where AI-enabled coordination is most valuable.
+
+# 3.2 Risk model
+
+We model the expected harm from catastrophic terrorism as a function of three parameters:
+
+Attempt rate is the frequency with which non-state actors attempt catastrophic attacks. Success rate is the probability that an attempted attack succeeds. Severity is the magnitude of harm conditional on success. This decomposition is standard in risk assessment and allows us to isolate where NGPC might have effects.
+
+We investigate three pathways through which NGPC, combined with increasingly advanced AI, could affect these parameters:
+
+1. Capability transfer from conflict zones: Conflict zones are where capabilities develop and spread to non-state actors. We assess whether this pathway primarily affects success rate (by improving operational capacity) or severity (by transferring more destructive capabilities).
+
+2. AI-assisted attack planning. AI lowers the knowledge barrier for attack planning. We assess whether this pathway affects attempt rate (by enabling more actors to attempt attacks) or success rate (by improving execution).
+
+\* 78 James A. Piazza, "Is Islamist Terrorism More Dangerous?: An Empirical Study of Group Ideology, Organization, and Goal Structure, " Terrorism and Political Violence 21, no. 1 (2009): 62-88, https://www.tandfonline.com/doi/full/10.1080/09546550802544698.
+
+\* 79 Department of Homeland Security, Countering Weapons of Mass Destruction Office, Report on the Potential Misuse of Artificial Intelligence to Develop or Deploy Chemical, Biological, Radiological, or Nuclear Weapons and Recommendations (Washington, DC: DHS, 2024), https://www.dhs.gov/sites/default/files/2024-06/24 _ 0620 _ cwmddhs-cbrn-ai-eo-report-04262024-public-release.pdf. The report finds that "LLMs have been shown to lower the educational and knowledge barriers for traditional biological agents and toxins by providing protocols and troubleshooting information at every step of the pathway, enabling non-experts to perform tasks with an enhanced degree of competency. " However, it also notes that "developing enhanced or novel biological agents and toxins with the use of advanced design tools will likely still necessitate subject matter expertise for most, if not all, stages of the pathway in the near and most likely medium term. " See also Bill Drexel and Caleb Withers, AI and the Evolution of Biological National Security Risks (Washington, DC: CNAS, 2024), https://www.cnas.org/publications/reports/aiand-the-evolution-of-biological-national-security-risks. CNAS notes that "nonstate actors-including lone wolves, terrorists, and apocalyptic groups-have an unnerving track record of attempting biological attacks, but with limited success due to the intrinsic complexity of building and wielding such delicate capabilities. "
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+3. AI-enabled coordination. AI could reduce the costs of coordination between nonstate actors. We assess whether this pathway affects attempt rate (by enabling more coordinated attempts), success rate (by improving operational synchronization), or severity (by combining complementary capabilities).
+
+Lastly, we assess each parameter using the PHIA Probability Yardstick and Analytical Confidence Ratings described in Section 1.
+
+# 3.3 Investigation
+
+We now assess each pathway against the risk model. The goal is to determine whether NGPC, combined with increasingly advanced AI, would meaningfully increase attempt rate, success rate, or severity. For each pathway, we summarize the mechanism, evaluate the evidence, and provide a qualitative assessment of likelihood.
+
+# 3.3.1 Capability Transfer from Conflict Zones
+
+State-level conflicts function as innovation hubs where tactical capabilities are developed under adaptive pressure and subsequently diffuse to non-state actors through two primary pathways: 1) operatives traveling to conflict zones to acquire training, and 2) states deliberately transferring capabilities to proxy groups. 80 NSAs can access AI tools through open-source downloads or commercial services, but these channels provide only the technology itself. Conflict zone pathways add something these channels cannot: tacit operational knowledge, how to deploy capabilities under real-world conditions, evade countermeasures, and integrate technologies into existing tactics. This mechanism affects success rate most directly: battlefield-tested skills mean attempted attacks are more likely to succeed. It does not substantially affect attempt rate, since capability transfer improves execution, not underlying motivation.
+
+We assume that the transfer pathways remain constant; the novel variable is what capabilities are transferred through them. 81 The transfer pipeline can also carry reverse-engineered capabilities. States capture adversary systems in conflict zones and reverse-engineer improvements. The US reverse-engineered a captured Iranian Shahed drone into the LUCAS system, fielded by CENTCOM rather than by any proxy. Analysts warn that Iran could exploit captured US drones in the same way, with improvements potentially reaching the Houthis and Hezbollah. 82 As autonomous weapons systems proliferate on NGPC battlefields, the volume of capturable and reverse-engineerable technology increases accordingly. While current transfers carry conventional skills, future transfers may carry AI capabilities. If this shift occurs, the mechanism may extend from improving success rate to also increasing severity: the ceiling on potential damages rises.
+
+\* 80 Linus Höller, "Drug Cartel Operatives Snuck into Ukraine for Drone Training: Report, " Defense News, July 30, 2025, https://www.defensenews.com/global/the-americas/2025/07/30/drug-cartel-operatives-snuck-into-ukraine-fordrone-training-report/; Broderick McDonald, "The Drones of Hayat Tahrir al-Sham, " GNET, December 20, 2024, https://gnet-research.org/2024/12/20/the-drones-of-hayat-tahrir-al-sham-the-development-and-use-of-uas-in-syria/.
+
+\* 81 In practice, this effect may be larger, because AI may enable new vectors of capability transfer.
+
+\* 82 On the US reverse-engineering of the Shahed, see "US Sets Up One-Way Attack Drone Squadron in the Middle East after Reverse-Engineering Iranian Drone, " CNN, December 3, 2025, https://www.cnn.com/2025/12/03/politics/dronesus-iran-middle-east. The US captured an Iranian Shahed drone, reverse engineered it, and redeployed it as the LUCAS system. On the concern that captured US drones could be similarly exploited, see Atlantic Council, "How the Houthis' Strikes on US MQ-9 Reaper Drones Serve a Wider Regional Agenda, " February 2025, https://www.atlanticcouncil.org/blogs/menasource/houthi-strikes-on-us-mq9-reaper-drones/, which notes that adversaries "could attempt to reverse engineer the components, design tailored countermeasures, and obtain potentially sensitive information. "
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+Drone swarm tactics illustrate this trajectory. By 2025, Ukrainian units were using AI systems that allow one operator to designate a target while groups of drones coordinate among themselves to execute the strike, the first known routine use of swarm technology in combat. 83 Full autonomy - swarms that select and engage targets without any human input - has not yet been observed in operational use. If AI-coordinated swarm capabilities transfer through the same conflict zone pathways that are already moving FPV skills to cartels and nonstate actors, however, the severity implications would be substantial. Kallenborn and Bleek have raised particular concern about the potential for drone swarms to deliver chemical, biological, or radiological agents, a scenario that would shift the severity parameter from incremental improvement to a qualitative change in the character of potential attacks. 84
+
+In these examples, the execution gap that has historically constrained catastrophic terrorism (materials acquisition, testing, organizational capacity) does not disappear, but conflict-zone transfer could help narrow it by pairing emerging AI tools with battlefield-tested operational knowledge. The combination of AI-assisted design plus operationally experienced personnel is not yet observed but seems likely to be enabled by pathways that are already in use.
+
+Assessment: This pathway primarily affects success rate. Battlefield-tested skills mean attempted attacks are more likely to succeed. An increase in attempt rate is unlikely both in the near term and as AI capabilities advance, since capability transfer improves execution, not underlying motivation. We assess the likelihood of an increase in success rate as likely or probable in the near term and highly likely as AI capabilities advance. The transfer pathways are already active: Latin American cartel operatives reportedly infiltrated Ukraine's International Legion to acquire drone warfare training, including FPV tactics. 85 Cartel drone attacks in Mexico increased from 5 in 2020 to 107 in 2021, 233 in 2022, and 260 in the first half of 2023; this growth predates the reported infiltration and is not attributed to it. 86 Reporting indicates Ukraine sent HTS about 150 FPV drones and about 20 experienced operators, though the same reporting assesses that this aid played only a modest role and HTS had been producing drones since 2019. 87
+
+The effect on severity is currently unlikely because these transfers carry conventional skills, not AI capabilities. The likelihood of an increase in severity becomes a realistic possibility as AI
+
+\* 83 Alistair MacDonald, "AI-Powered Drone Swarms Have Now Entered the Battlefield, " Wall Street Journal, September 2, 2025, https://www.wsj.com/world/ai-powered-drone-swarms-have-now-entered-the-battlefield-2cab0f05. MacDonald reports that Ukrainian forces have conducted swarm attacks for much of the past year using AI software that allows groups of drones to coordinate strikes with limited human oversight, the first known routine use of swarm technology in combat. A RUSI researcher noted that the operations fall short of what many would consider a full swarm of hundreds of drones moving together autonomously, but analysts described even limited autonomous teaming as a significant milestone.
+
+\* 84 Zachary Kallenborn and Philipp C. Bleek, "Swarming Destruction: Drone Swarms and Chemical, Biological, Radiological, and Nuclear Weapons, " The Nonproliferation Review 25, no. 5-6 (2018): 523543, https://doi.org/10.1080/10736700.2018.1546902. See also James Johnson, "Artificial Intelligence, Drone Swarming and Escalation Risks in Future Warfare, " The RUSI Journal 165, no. 2 (2020): 26-36, https://doi.org/10.1080/03071847.2020.1752026.
+
+\* 85 Stephen Honan, "Drug Cartels Are Adopting Cutting-Edge Drone Technology. Here's How the US Must Adapt, " Atlantic Council, September 29, 2025, https://www.atlanticcouncil.org/blogs/new-atlanticist/drug-cartels-areadopting-cutting-edge-drone-technology-heres-how-the-us-must-adapt/; Linus Höller, "Drug Cartel Operatives Snuck into Ukraine for Drone Training: Report, " Defense News, July 30, 2025, https://www.defensenews.com/global/theamericas/2025/07/30/drug-cartel-operatives-snuck-into-ukraine-for-drone-training-report/
+
+\* 86 Henry Ziemer, "Illicit Innovation: Latin America Is Not Prepared to Fight Criminal Drones, " CSIS, June 11, 2025, https://www.csis.org/analysis/illicit-innovation-latin-america-not-prepared-fight-criminal-drones.
+
+\* 87 Broderick McDonald, "The Drones of Hayat Tahrir al-Sham, " GNET, December 20, 2024, relaying David Ignatius, Washington Post, December 10, 2024, https://gnet-research.org/2024/12/20/the-drones-of-hayat-tahrir-al-sham-thedevelopment-and-use-of-uas-in-syria/; see also Combating Terrorism Center, "On the Horizon: The Ukraine War and the Evolving Threat of Drone Terrorism, " March 2025, https://ctc.westpoint.edu/on-the-horizon-the-ukraine-war-andthe-evolving-threat-of-drone-terrorism/
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+capabilities begin to flow through these same pathways: AI-enabled capabilities paired with battlefieldtested operational knowledge could raise the ceiling on potential damages. The maturation of AI-coordinated drone swarm technology in Ukraine represents the most concrete mechanism through which this shift could occur. The effect may be muted, however, by the fact that terrorist groups may prioritize local operational objectives over inflicting catastrophic harm, as discussed earlier. Lastly, this assessment carries uncertainty more broadly: we observe the pathways and the skills flowing through them, but do not yet observe AI capabilities making the same journey. We assign moderate confidence to this pathway: the evidence base for transfer mechanisms is strong, but the projection to AI capabilities is inferential.
+
+# 3.3.2 AI-Assisted Attack Planning
+
+AI lowers the knowledge barrier for attack planning, affecting both attempt rate and success rate. Individuals who previously lacked training or organizational support can now access conversational guidance on operational security, explosive composition, and target selection. 88 Such information existed before AI-bomb-making manuals, internet forums, instructional videos-but AI's contribution is qualitatively different. Previous sources were static: a manual cannot answer follow-up questions, adapt instructions to locally available materials, or troubleshoot when something goes wrong. Human mentors can do these things, but peer-to-peer communication creates detection risk. Every conversation is a potential point of exposure to informants or surveillance. AI combines the adaptability of human guidance with the operational security of working alone. It allows a plotter to walk through a process, iterating and refining, without ever exposing the plot to another person. This expands the pool of capable actors (attempt rate) while improving plan quality for those already motivated (success rate). 89
+
+The mechanism's effect on severity remains constrained by the execution gap. AI planning assistance alone does not eliminate the need to acquire materials, construct physical capabilities, and deploy them without detection. 90 The historical record supports the importance of this constraint: decades of freely available bomb-making manuals did not produce a surge in sophisticated attacks because execution barriers dominated. Further support stems from the fact that AI currently amplifies existing terrorism patterns rather than enabling catastrophic new ones. 91
+
+\* 88 Clara Broekaert and Lucas Webber, "AI Use in Terrorist Plots and Attacks Surges in 2025, " Militant Wire, December 23, 2025, https://www.militantwire.com/p/ai-use-in-terrorist-plots-and-attacks. On elicitation rates, see Gabriel Weimann, Alexander T. Pack, Rachel Sulciner, Joelle Scheinin, Gal Rapaport, and David Diaz, "Generating Terror: The Risks of Generative AI Exploitation, " CTC Sentinel 17, no. 1 (January 2024): 17-24, https://ctc.westpoint.edu/generating-terror-the-risks-of-generative-ai-exploitation/. Across 2,250 iterations on five platforms, prompts on attack planning returned responsive, relevant answers 30 percent of the time; jailbreak commands added almost nothing over unmodified prompts (50 versus 49 percent overall). Data were collected in July-August 2023 and predate current models.
+
+\* 89 Clara Broekaert and Lucas Webber, "AI Use in Terrorist Plots and Attacks Surges in 2025, " Militant Wire, December 23, 2025, https://www.militantwire.com/p/ai-use-in-terrorist-plots-and-attacks. The authors document multiple violent incidents and foiled plots involving AI use in operational planning, although evidence that AI improved attack outcomes remains limited.
+
+\* 90 Christopher A. Mouton, Caleb Lucas, and Ella Guest, The Operational Risks of AI in Large-Scale Biological Attacks: Results of a Red-Team Study, RR-A2977-2 (Santa Monica, CA: RAND Corporation, January 25, 2024).
+
+\* 91 David Wells, "Mapping Terrorist AI Use: Identifying Factors Behind a Relatively Slow Adoption Rate, " Global Network on Extremism and Technology, September 17, 2025, https://gnet-research.org/2025/09/17/mapping-terroristai-use-identifying-factors-behind-a-relatively-slow-adoption-rate/. Wells finds that terrorist adoption of generative AI "has remained largely ad hoc and experimental" and that "none of the currently publicly-available cases appear to demonstrate that Gen AI provided capabilities or techniques that would have been difficult to obtain via other means, or enabled any significant shift in capability. " Europol's 2024 data is consistent with this pattern: attack methods remained conventional: arson (22 attacks), bombings (11), stabbings (8), and shootings (6), while generative
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+Agentic systems could change this by beginning to bridge the execution gap itself. The previous paragraph identified material acquisition, device construction, and undetected deployment as barriers that planning assistance alone cannot overcome. Current agentic architectures are already demonstrating capabilities that could narrow parts of this gap. For example, in laboratory settings, agentic systems can autonomously design synthesis pathways, operate robotic equipment to execute experiments, and iteratively refine processes through closed-loop optimization. 92 This demonstrates increasingly autonomous lab experimentation. In the cyber domain, agents can identify vulnerabilities, generate exploits, and execute intrusions with minimal human intervention. 93 This constitutes digital artifact generation combined with partial operational execution. Across both domains, agentic systems could shorten timelines from weeks to hours, eliminate specialist handoffs by chaining tasks end-to-end, and iterate at machine speed. 94 The significance is not only improved planning, but the growing ability to connect planning with physical and digital execution.
+
+Deployment remains the domain where agentic capabilities are least developed. At present, agentic systems cannot independently bypass chemical purchase screening systems, overcome robust physical security measures, or physically place devices inside secured facilities. However, as autonomous systems gain expanded access to procurement platforms, robotics, networked infrastructure, and other cyber-physical interfaces, the separation between planning and real-world implementation may narrow. 95 If this trajectory continues, barriers that have historically constrained catastrophic terrorism could erode.
+
+Assessment: This pathway affects both attempt rate and success rate. AI expands access to planning guidance for individuals who previously lacked training or organizational support (attempt rate) while improving plan quality for those already motivated (success rate). Multiple attacks and plots involving AI use during planning occurred in 2025, though there is limited evidence that AI substantially improved outcomes beyond what traditional methods would have achieved. 96
+
+In the near term, we assess the likelihood of an increase in attempt rate as a realistic possibility: AI lowers the knowledge barrier, but motivation and organizational capacity still constrain who attempts attacks. The likelihood of an increase in success rate is also a realistic possibility: AI improves plan quality, but execution still depends on human skill and operational security. The effect on severity is unlikely: AI can assist with planning, but significant barriers remain in acquiring materials, building physical capabilities, and carrying out attacks without detection.
+
+In the future, the likelihood of an increase in attempt rate becomes likely or probable: agentic systems could enable actors who previously lacked capacity to attempt more sophisticated operations. The likelihood of an increase in success rate becomes likely or probable: time compression, chaining of attack stages, and iteration at scale improve execution. The likelihood of an increase in severity becomes a realistic possibility: agentic systems that can autonomously coordinate reconnaissance, procurement, and deployment could reduce the human bottlenecks that currently constrain attack complexity. We rate severity as "a realistic possibility" rather than "likely or probable" because, despite the capabilities described above, deployment remains the least developed agentic domain, and the gap between laboratory demonstrations and real-world operational use under adversarial conditions is substantial. We assign moderate confidence to this pathway: documented AI-assisted plots provide an evidence base, but projections about agentic systems remain forward-looking.
+
+\* AI was used for propaganda and hate speech. Europol, European Union Terrorism Situation and Trend Report 2025 (The Hague: Europol, June 2025), https://www.europol.europa.eu/publication-events/main-reports/european-unionterrorism-situation-and-trend-report-2025-eu-te-sat.
+
+\* 92 Daniil A. Boiko, Robert MacKnight, Ben Kline, and Gabe Gomes, "Autonomous Chemical Research with Large Language Models, " Nature 624, no. 7992 (2023): 570-578, https://doi.org/10.1038/s41586-023-06792-0.
+
+\* 93 Catherine A. Theohary and Kelley M. Sayler, "Agentic Artificial Intelligence and Cyberattacks, " Congressional Research Service, IF13151, January 14, 2026, updated July 6, 2026, https://www.congress.gov/crs-product/IF13151.
+
+\* 94 World Economic Forum, "How We Enhance Cybersecurity Defences Before the Attackers in an AGI World, " October 9, 2025, https://www.weforum.org/stories/2025/10/how-we-enhance-cybersecurity-defences-before-the-attackers-in-anagi-world/
+
+\* 95 Google DeepMind, "Gemini Robotics 1.5 brings AI agents into the physical world, " September 25, 2025, https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/
+
+\* 96 Broekaert and Webber, "AI Use in Terrorist Plots and Attacks Surges in 2025. " The article documents multiple cases in 2025 where AI tools were used for attack planning, including the Las Vegas Cybertruck bombing, New Orleans truck attack, Palm Springs clinic bombing, and others.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+# 3.3.3 AI-Enabled Coordination
+
+AI could help NSAs overcome barriers that currently limit coordination between groups. The barriers to NSA coordination may be less rigid than commonly assumed. In some terrorist networks, operational relationships can matter more than ideological leadership. 97 Transactional cooperation already occurs without shared ideology; groups need only a specific exchange that benefits both. 98 As AI systems become more capable at identifying patterns and facilitating communication, they become more attractive to NSAs seeking coordination.
+
+The risks that currently prevent coordination (exposure, verification problems, difficulty finding compatible partners) are reduced by AI. Secure communications can reduce exposure risks, while AI could help groups identify partners and opportunities for coordination. AI can identify opportunities humans miss, where plans would be more effective if synchronized, where complementary capabilities could enable attacks neither group could execute alone.
+
+AI could also enable coordination at scales that are currently infeasible for a wide range of actors. States without developed proxy networks could use AI to leapfrog the human infrastructure such networks require: the trust relationships and embedded presence that take decades to build. Iran's network took four decades of sustained training, materiel, and funding relationships. 99 AI could compress this timeline by automating the routine coordination, communication, and logistical planning that currently requires extensive human networks, allowing states to project influence through proxies without the slow accumulation of personal ties.
+
+Similarly, terrorist franchising could extend further: affiliates operate independently while AI helps to maintain strategic coordination. Thus, in the future it is a realistic possibility that NSAs would increasingly leverage AI to coordinate in ways that were previously too costly or risky. Such coordination would likely increase attack rates and effectiveness. Operations that would otherwise stall for lack of partners or capabilities become viable, increasing attempt rate. Coordinated attacks are harder to disrupt before execution, increasing success rate. And synchronized operations could overwhelm response capacity while complementary capabilities enable attacks no single group could execute alone, increasing severity.
+
+\* 97 Mirra Noor Milla, Joevarian Hudiyana, Wahyu Cahyono, and Hamdi Muluk, "Is the Role of Ideologists Central in Terrorist Networks? A Social Network Analysis of Indonesian Terrorist Groups, " Frontiers in Psychology 11 (2020): 333, https://doi.org/10.3389/fpsyg.2020.00333. Using social network analysis of data collected from documents and interviews with terrorist detainees in Indonesia, the authors find that relational trust with operational leaders plays a more important role in terrorist networks than ideological narratives. Operational leaders possess higher centrality than ideological leaders, and the strongest ties in the network are those involving personal relationships rather than shared ideology.
+
+\* 98 Assaf Moghadam, "Terrorist Affiliations in Context: A Typology of Terrorist Inter-Group Cooperation, " CTC Sentinel 8, no. 3 (March 2015), https://ctc.westpoint.edu/terrorist-affiliations-in-context-a-typology-of-terrorist-intergroup-cooperation/. Moghadam presents a typology of terrorist cooperation ranging from transactional cooperation (low-end, discrete exchanges) to mergers (high-end). He argues that not all cooperative ties are equal: transactional cooperation can occur without shared ideology when groups need only a specific exchange that benefits both parties. See also Assaf Moghadam, Nexus of Global Jihad: Understanding Cooperation among Terrorist Actors (New York: Columbia University Press, 2017).
+
+\* 99 Kali Robinson, "Iran's Regional Armed Network, " Council on Foreign Relations, April 15, 2024, https://www.cfr.org/articles/irans-regional-armed-network. The backgrounder documents how Iran, in the four decades since its Islamic Revolution, has formed and supported an expanding number of allied fighting forces throughout the Middle East, with the Quds Force serving as the main point of contact and providing training, weaponry, and funds.
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+<!-- PageHeader: Non-Great-Power Conflict and AI Risk Preprint -->
+
+Assessment: This pathway could affect all three parameters: more coordination could mean more attempts (attempt rate), coordinated attacks are harder to defend against (success rate), and synchronized operations could overwhelm response capacity (severity).
+
+In the near term, we assess the likelihood of an increase in attempt rate as unlikely: political barriers-trust, ideology, competition-remain significant even if AI reduces technical friction. The likelihood of an increase in success rate is also unlikely: coordination requires sustained relationships that AI cannot yet substitute. The effect on severity is unlikely: combining complementary capabilities requires a level of operational integration that transactional cooperation does not provide.
+
+In the future, the likelihood of an increase in attempt rate becomes a realistic possibility: AI could enable states to leapfrog traditional proxy infrastructure, which Iran built over four decades. 100 The likelihood of an increase in success rate becomes a realistic possibility: secure communications can reduce exposure risks, 101 while AI could further lower barriers to identifying partners and coordinating operations, making coordinated activity easier to sustain and harder to detect. The likelihood of an increase in severity becomes a realistic possibility: AI-enabled coordination could combine complementary capabilities across groups, enabling attacks of greater complexity than any single group could achieve alone.
+
+This pathway has the most uncertainty. The mechanism is plausible, but the evidence base is thin. We currently observe transactional cooperation between groups when objectives align, but we do not yet observe AI enabling new forms of coordination that were previously infeasible. 102 We assign low confidence to this pathway: the mechanisms are theoretically grounded but lack empirical support.
+
+# 3.3.4 Conclusion and Summary of Analysis
+
+We conclude that an increased incidence of NGPC is likely or probable to increase the expected harm from catastrophic terrorism. This overall assessment reflects the fact that the first two pathways independently support "likely or probable" (or higher) increases in success rate, while increases in attempt rate and severity (though individually assessed at lower confidence) compound the effect when considered together.
+
+Substantial uncertainty remains, however: the actual effect could be lower than we assess here, or significantly higher. This is particularly true for biological catastrophic terrorism. Recent research suggests AI may pose greater biological weapons risks than earlier studies found, and if these findings hold, severity in particular may be higher and more likely than we assess here. 103
+
+\* 100 Robinson, "Iran's Regional Armed Network, " https://www.cfr.org/articles/irans-regional-armed-network
+
+\* 101 Robert Graham, "How Terrorists Use Encryption, " CTC Sentinel 9, no. 6 (June 2016), https://ctc.westpoint.edu/ how-terrorists-use-encryption/
+
+\* 102 Moghadam, "Terrorist Affiliations in Context. "
+
+\* 103 A December 2025 RAND study found that contemporary foundation models can successfully guide users through technical processes required to develop biological weapons. Roger Brent and Greg McKelvey, Jr., Contemporary Foundation AI Models Increase Biological Weapons Risk (RAND Corporation, December 2025), https://www.rand.org/pubs/perspectives/PEA3853-1.html. CNAS has similarly warned that AI's ability to troubleshoot failed experiments could accelerate nonstate actors' acquisition of biological agents. Bill Drexel and Caleb Withers, AI and the Evolution of Biological National Security Risks (Center for a New American Security, August 2024), https://www.cnas.org/publications/reports/ai-and-the-evolution-of-biological-national-security-risks. This differs from Mouton, Lucas, and Guest (2024), which found no statistically significant improvement in biological-attack planning with LLM assistance; the studies used different methods and measured different outcomes.
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+

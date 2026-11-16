@@ -1,0 +1,14 @@
+{
+  "request_hash": "8fbb565c0b88007e31fac56da7b69c0b50c0dc4da29fe24dbd09069bc10dd677",
+  "prompt_sha256": "ac3378242b5174cb1cabd17e2df5a4393e0b4dddcb3df24524ca7c49410058bb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSYkF4j3tsYYj2gwdLTkgVsK0bg",
+  "prompt_tokens": 8104,
+  "completion_tokens": 37,
+  "actual_usd": 0.0012378,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning the ALCOA principles as essential for data integrity in the drug licensing process."
+  }
+}

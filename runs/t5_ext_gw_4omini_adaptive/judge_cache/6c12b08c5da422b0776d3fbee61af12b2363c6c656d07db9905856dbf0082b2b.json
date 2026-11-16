@@ -1,0 +1,14 @@
+{
+  "request_hash": "6c12b08c5da422b0776d3fbee61af12b2363c6c656d07db9905856dbf0082b2b",
+  "prompt_sha256": "97994528c0bd071b634c30a85128720e05cdbba63c65670d8df46ed6c266fc5e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOFKSZX4pOwe2oOU60It5H6NeABK",
+  "prompt_tokens": 9328,
+  "completion_tokens": 43,
+  "actual_usd": 0.001425,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of the PCAOB's role and its relevance as a model for AI auditing, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,371 @@
+DOC_ID: Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+
+<<<PAGE 31>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+## 1.2 FAUT-IL AVOIR PEUR DE L'IA ?
+
+Non, mais il faut être vigilant comme avec tout outil. L'IA actuelle ne va pas conduire à la fin de l'humanité. En revanche, les systèmes d'IA s'accompagnent déjà d'un ensemble de risques qui nécessitent d'être gérés.
+
+Au printemps 2023, 60 experts de l'IA et personnalités mondialement connues ont signé une déclaration qui a fait grand bruit9 : ils avertissaient que prévenir le risque d'une extinction de l'humanité causée par une IA hors de contrôle devait être une priorité mondiale, au même titre que prévenir les pandémies ou les conflits nucléaires. De fait, les discours entourant l'IA portent autant sur ses risques et ses dangers que sur son potentiel pour améliorer le quotidien de l'humanité, et souvent ce sont les risques les plus extrêmes qui sont mis en avant. L'extinction de l'humanité, ce n'est quand même pas rien !
+
+Cette ambivalence dans le traitement de l'IA influe sur la manière dont nous la percevons. La fascination côtoie la crainte. Un an après le lancement de ChatGPT, 77 % des Français déclarent que l'IA est une vraie révolution10, mais 68 % pensent qu'il faudrait faire une pause dans le développement de l'IA11. Nous ne sommes d'ailleurs pas les seuls, puisque 79 % des Chinois et 74 % des Américains y sont favorables.
+
+Sur ce plan, la situation de l'IA n'a rien de très original : toutes les technologies qui ont bouleversé notre quotidien ont, en leur temps, suscité des peurs, certaines imaginaires, d'autres bien réelles. La crainte que la vitesse des trains rende aveugles leurs passagers s'est avérée entièrement infondée, Dessin anti-électricité de 1900. mais le développement du chemin de fer a aussi été la source d'incidents, parfois sérieux, qui ont imposé une réponse des pouvoirs publics : les tunnels ferroviaires ont ainsi longtemps été considérés comme un milieu insalubre, voire dangereux. Même la « fée électricité » suscitait en 1900 des craintes sur les risques d'électrocution dans la rue.
+
+\* 9. « Pause Giant Al Experiments: An Open Letter » publiée par le Future of Life Institute le 22 mars 2023
+
+\* 10. Étude en ligne réalisée par Ipsos pour Sopra Steria en octobre et novembre 2023 auprès de 1 000 personnes représentatives de la population française âgée de 18 ans ou plus.
+
+\* 11. Étude en ligne réalisée par Ipsos pour AXA en mai et juin 2023 auprès de 3 226 experts de 50 pays et de 19 000 personnes dans 15 pays, représentatives de la population nationale âgée de 18 ans et plus.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 31 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+De la même manière que le train ou l'électricité, qui nous rendent d'immenses services et font partie de notre vie de tous les jours, l'IA présente des risques. Ces risques ne doivent pas être ignorés et ils appellent une réponse. Cette réponse doit être proportionnée et ne doit pas nous priver des bénéfices de l'IA. D'autant qu'il existera non pas « une IA », mais de nombreux outils intégrant des fonctionnalités d'IA. Par exemple, un outil d'IA dans la santé n'implique pas les mêmes risques qu'un outil d'IA dans la publicité en ligne, les précautions doivent donc être différentes.
+
+Les risques liés à la diffusion de l'IA peuvent être regroupés en trois grandes catégories.
+
+Des risques d'imperfection. De nombreux systèmes d'IA fonctionnent avec des probabilités. C'est ce qui leur donne leur flexibilité, mais aussi leur capacité de se « tromper ». Quand je demande à un modèle d'IA générative de m'expliquer « comment fonctionne une voiture », il peut me donner une réponse très bien formulée, mais fausse. Quand je lui demande de me dessiner une voiture, il peut oublier d'ajouter les portes de la voiture. C'est ce que l'on appelle les « hallucinations ». Par exemple, un avocat américain ne s'est pas rendu compte que ChatGPT lui avait fourni des exemples de cas totalement fictifs. Certaines de ces imperfections disparaitront avec le progrès technologique, d'autres n'auront pas d'incidence notable. Certaines perdureront, notamment quand les données d'entraînement seront biaisées ou fausses. Dans les domaines sensibles, comme la santé ou le maintien de l'ordre, l'utilisation de l'IA doit donc être évaluée soigneusement et encadrée.
+
+Des risques d'utilisation malveillante. Les cybercriminels n'ont pas attendu longtemps pour utiliser l'IA générative afin de produire des faux particulièrement convaincants, tout comme leurs prédécesseurs se sont saisis de la voiture il y a 100 ans pour s'enfuir après un braquage. Rien n'indique toutefois que l'IA changera durablement le rapport de force entre cybercriminels et ceux chargés de nous protéger, à condition que ces derniers puissent s'emparer de ces technologies. L'IA générative n'apparaît pas non plus rendre la production d'armes physiques, chimiques ou biologiques plus facile qu'une recherche en ligne12.
+
+Risques liés aux systèmes d'IA générative
+
+Source : Commission de l'IA
+
+\* 12. Mouton, C. A., C. Lucas, et E. Guest (2024) « The Operational Risks of Al in Large-Scale Biological Attacks: Results of a Red-Team Study », RAND Corporation.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 32 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+Des risques systémiques. Le développement de l'IA peut être source de risques pour l'ensemble de la société voire de l'humanité. Si le risque que l'IA se traduise par une destruction massive d'emplois semble limité, nous devons, cependant, nous préparer à ce que certains métiers soient fortement transformés, voire disparaissent (voir 1.4 L'IA : créatrice ou destructrice d'emplois ?). D'autres risques découlent de la concentration du développement des systèmes d'IA les plus en pointe entre les mains d'un petit nombre de pays, d'entreprises et de personnes. Ils appellent une réponse déterminée en termes de politique industrielle et de concurrence. En revanche, aucune IA n'est à ce jour en mesure de dépasser l'intelligence humaine dans toutes les tâches et moins encore de représenter une menace existentielle pour l'ensemble de l'humanité. Ces perspectives, encore hypothétiques et qui ne se concrétiseront peut-être jamais, ne peuvent constituer l'alpha et l'oméga de notre approche de l'IA. Elles imposent néanmoins de rester vigilant. Il est donc nécessaire que notre pays se dote d'une capacité d'évaluation des systèmes d'IA les plus avancés qui permette d'anticiper l'apparition de nouveaux risques et d'une gouvernance qui permette d'y répondre, au plan national comme au plan international.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 33 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 34>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+### 1.3 L'IA NOUS RENDRA-T-ELLE PLUS PROSPÈRES ?
+
+Certainement, car l'IA nous rendra plus productifs.
+
+L'ampleur de ces gains et la façon dont ils seront répartis dans la société sont incertaines et ne sont pas définies a priori. En 10 ans, ils pourraient augmenter le PIB de 250 à 420 milliards d'euros, soit autant que la valeur ajoutée de toute l'industrie.
+
+Depuis les Trente Glorieuses, l'économie française, et plus généralement les économies de la majorité des pays développés, ont connu une baisse de leur taux de croissance. Certains économistes en ont conclu que cette faible croissance était inéluctable, parlant même de « stagnation séculaire ».
+
+L'IA pourrait nous aider à retrouver des taux de croissance élevés dans nos économies développées par deux effets : (i) en augmentant notre productivité, c'est-à-dire la vitesse à laquelle nous produisons des biens et des services ; (ii) en augmentant notre capacité à générer de nouvelles idées, et donc de nouvelles innovations, de nouveaux produits ou de nouvelles formes d'organisation.
+
+#### L'IA AUGMENTE SIGNIFICATIVEMENT LA PRODUCTIVITÉ
+
+L'IA peut augmenter notre potentiel de croissance en automatisant des tâches dans la production de biens et services. Elle contribue ainsi à l'augmentation de la productivité, comme cela s'est produit avec la mécanisation dans le secteur agricole, l'invention de la chaîne de montage dans l'industrie, ou plus récemment la numérisation d'une part importante de l'économie. Les gains de productivité sur ces tâches contribueront à augmenter le taux de croissance.
+
+Une récente étude américaine13 s'intéresse justement aux effets de l'adoption de l'IA générative sur la productivité d'employés du service client d'une entreprise. L'entreprise a progressivement déployé un outil d'IA aidant les employés chargés de répondre à la clientèle via un chat en ligne en leur proposant des réponses générées automatiquement. Dans le cadre de cette étude, l'effet du déploiement de cet outil est substantiel : la productivité des employés ayant eu accès
+
+\* 13. Brynjolfsson, E., D. Li, et L. Raymond (2023), « Generative Al at Work », NBER Working paper.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 34 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 35>>>
+# COMMISSION DE L'INTELLIGENCE ARTIFICIELLE
+
+à l'assistant IA a crû de 25 %, dont 14 % dès le premier mois d'utilisation. L'effet est donc immédiat et persistant sur les cinq mois d'étude.
+
+<Figure>
+Graphique 1 : Effet de l'adoption de l'IA générative sur la productivité d'employés d'un service client.
+</Figure>
+
+Graphique 1 : Effet de l'adoption de l'IA générative sur la productivité d'employés d'un service client.
+
+Source : Brynjolfsson, Li et Raymond (2023)
+
+Lecture : Les employés ayant accès à l'IA voient leur productivité augmenter davantage que ceux n'y ayant pas accès, alors que leurs productivités évoluaient de façon similaire dans les 10 mois précédant l'introduction de l'IA.
+
+Bien entendu, ces résultats ne concernent qu'un type précis de profession au sein d'une entreprise donnée. Toutefois, deux études14 se concentrant sur des individus hautement qualifiés aux États-unis (consultants, managers, etc.) montrent que l'utilisation de ChatGPT permet une augmentation de la productivité des tâches typiques de ces métiers entre 25 % et 35 %.
+
+Cela semble montrer que les gains de productivité sont observés au sein d'un panel de professions large, avec des niveaux de qualification différents. Ces effets sont exprimés par les travailleurs eux-mêmes. En France, une vaste enquête de Pôle emploi « Les employeurs face à l'intelligence artificielle » (juin 202315) met aussi en avant un effet positif sur la productivité : 72 % des employeurs recourant à l'IA mentionnent un impact positif sur la performance de leurs salariés, en permettant notamment de réduire les tâches fastidieuses (63 %) ou le risque d'erreur (51 %).
+
+Si l'on cherche à dépasser le cadre d'une entreprise pour estimer l'impact global de l'IA sur l'économie, deux questions se posent : quand verra-t-on les gains économiques de l'IA, et quelle sera leur ampleur ? Nous pouvons faire le parallèle avec les effets sur la productivité des révolutions technologiques passées. Aux États-unis comme en Europe, dans le cas de l'électricité,
+
+\* 14. Noy, S., et W. Zhang (2023), « Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence », Science. // Dell'Aqua F., E. McFowland, E. Mollick, H. Lifshitz-Assaf, K. Kellogg, S. Rajendran, L. Krayer, F. Candelon, et Lakhani (2023), « Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Al on Knowledge Worker Productivity and Quality », Working paper.
+
+\* 15. Enquête menée par Pôle emploi auprès de 3 000 établissements de 10 salariés ou plus en juin 2023. L'étude ne précise pas si l'IA utilisée est générative ou non, alors que les études américaines se concentrent sur l'IA générative.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 35 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+les gains de productivité se sont matérialisés une vingtaine d'années après l'invention de la technologie.
+
+Pour bien comprendre ce décalage temporel, examinons le cas de l'électricité. Au début du XXe siècle, son adoption dans les entreprises était encore limitée. Les usines maintenaient une organisation interne semblable à celle qu'elles avaient adoptée lorsqu'elles étaient alimentées par des moulins à eau : avec un arbre de transmission central que faisait tourner l'énergie hydraulique. Ni l'apparition de la vapeur avec la première révolution industrielle ni celle de la dynamo au début de la seconde révolution industrielle n'ont conduit à une modification de l'organisation interne des usines. Or, la présence de cet arbre de transmission obligeait à placer les machines similaires côte à côte. Il a fallu attendre les années 1910 pour voir les gains de productivité liés à l'électricité, grâce à l'invention du fil électrique et la miniaturisation des moteurs électriques. Chaque machine devient alors alimentée de manière autonome par l'électricité. Cette innovation élimine l'arbre de transmission et permet un agencement plus efficace des machines : c'est l'invention de la chaîne de montage, qui marque la hausse de la productivité des usines.
+
+Le décalage temporel existera également pour l'IA, car son adoption nécessitera aussi bien une évolution de l'organisation du travail au sein des entreprises que des investissements complémentaires. Toutefois le décalage devrait être moins marqué avec l'IA générative, qui est bien plus aisée à déployer dans l'économie, et s'applique bien aux emplois de service de notre économie. L'industrie du jeu vidéo, par exemple, déploie l'IA générative rapidement pour générer l'esquisse d'un jeu en 2 mois au lieu de 6 mois, et générer beaucoup d'idées différentes d'un personnage. Par ailleurs, le foisonnement d'innovations dans l'IA date d'une dizaine d'années. Nous pourrions donc commencer à observer bientôt des gains de productivité.
+
+Cela nous conduit à une seconde question : quelle est l'ampleur des gains économiques à attendre ? Si l'on considère que les gains de productivité permis par la vague de l'IA au cours de la prochaine décennie seront comparables à ceux de la vague de l'électricité dans les années 1920 en Europe, la croissance de la productivité augmenterait alors de 1,3 point de pourcentage par an à partir de 202416.
+
+Si l'on préfère prendre comme point de comparaison la vague des technologies numériques de la fin des années 1990 et du début des années 2000 aux États-unis, la hausse de la croissance de la productivité serait d'environ 0,8 point de pourcentage par an. En comparaison, la productivité potentielle de la France17 est aujourd'hui estimée à 0,5 % par an à moyen terme. En étudiant plus en détail le différentiel de croissance entre la France et les États-unis sur la période 1997- 2006, on constate effectivement que ce sont les secteurs producteurs ou fortement utilisateurs de technologies numériques qui expliquent la quasi-totalité de l'écart observé : le développement et le déploiement d'une nouvelle technologie aussi déterminante que le numérique sont le principal facteur explicatif des écarts de prospérité entre les États-unis et la France sur cette période.
+
+Toutes choses égales par ailleurs18, les gains générés par l'IA augmenteraient significativement le taux de croissance de la France, estimé à 1,35 % par an à moyen terme. De tels gains de productivité pendant dix ans conduiraient à une hausse du PIB comprise dans une fourchette allant de 250 Md€ à 420 Md€ en 2034, soit l'équivalent de la valeur ajoutée de l'industrie dans son ensemble !
+
+\* 16. Estimation réalisée à partir des données de Bergeaud, A., G. Cette, et R. Lecat (2016), « Productivity Trends in Advanced Countries between 1890 and 2012 », Review of Income and Wealth, 62(3), pp 420-444.
+
+\* 17. Programme de stabilité pour la période 2022-2027.
+
+\* 18. En transposant ces gains de productivité au PIB potentiel ; sans évolution conjointe de l'emploi, point discuté en détail au 1.4. L'IA : créatrice ou destructrice d'emplois ?
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 36 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+En revanche, cette hausse de la croissance ne serait que transitoire : une fois l'IA adoptée par l'ensemble du tissu économique, les gains de productivités liés à cette adoption et les transformations engendrées cessent, c'est ce que présente le graphique ci-dessous.
+
+<Figure>
+Graphique 2 : Effet transitoire attendu de l'adoption de l'IA sur la croissance.
+</Figure>
+
+Graphique 2 : Effet transitoire attendu de l'adoption de l'IA sur la croissance.
+
+Source : Commission IA.
+
+Cette prédiction sera cependant considérée comme trop pessimiste pour certains, trop optimiste pour d'autres. Les premiers feront valoir que l'IA permet d'automatiser également la production d'idées, ce qui permet de générer un surcroît de croissance, et ce, de façon permanente. Les seconds mentionneront l'existence d'obstacles à la croissance, notamment l'absence de concurrence sur différents segments de la chaîne de valeur de l'IA.
+
+# L'IA DEVRAIT ÉGALEMENT FACILITER LA PRODUCTION DE NOUVELLES IDÉES
+
+L'IA pourrait automatiser la production de nouvelles idées, ou du moins la faciliter. Elle nous aidera donc à générer de nouvelles inventions et à résoudre des problèmes complexes, comme dans l'exemple d'AlphaFold qui permet de trouver de nouvelles protéines19, ou de GNoMe qui suggère de nouveaux matériaux qui pourraient équiper nos véhicules ou nos objets du quotidien20.
+
+L'impact de l'IA sur la science et l'innovation est difficile à quantifier. D'autant que la capacité de l'IA à générer de nouvelles idées pourrait se heurter à des difficultés pratiques : il ne suffit pas d'identifier 2,2 millions de nouveaux matériaux potentiels pour les produire, il faut encore les valider expérimentalement. Au minimum, l'IA facilitera le travail des chercheurs. Si des outils d'IA appuient progressivement l'humain pour identifier de nouvelles hypothèses, créer des protocoles et réaliser des expériences, alors la production d'idées pertinentes augmentera.
+
+\* 19. Jumper, J., Evans, R., Pritzel, A., et al. (2021) « Highly accurate protein structure prediction with AlphaFold ». Nature 596
+
+\* 20. Merchant, A., Batzner, S., Schoenholz, S.S. et al. (2023) « Scaling deep learning for materials discovery ». Nature 624
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 37 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+Cette perspective, incertaine, se profile toutefois à l'horizon. Près d'un article de recherche sur dix mentionne déjà l'utilisation de l'IA21.
+
+Quel serait alors l'effet de cette capacité de l'IA à générer de nouvelles idées sur la prospérité ? De nouveau, faisons un parallèle historique pour illustrer en quoi une innovation peut impacter sur le long terme le taux de croissance de la productivité. Au XVIIe siècle, l'invention du calcul infinitésimal a rendu possibles de gigantesques progrès en physique, notamment dans la compréhension des mouvements des projectiles ou des planètes. De même, les progrès effectués dans les techniques de polissage du verre ont conduit l'humanité à voir de plus en plus petit et de découvrir le monde des microbes, inconnu jusqu'alors. Ainsi, le microscope a permis des avancées cruciales en médecine. Au même titre, l'IA ouvre un champ des possibles difficile à imaginer. Ces effets induisent donc une augmentation permanente du taux de croissance de la productivité. La magnitude de cet effet n'est toutefois pas quantifiable.
+
+Projetons-nous à présent dans un avenir cumulant les effets transitoires sur la croissance, liés à l'automatisation de la production des biens et services, et les effets permanents sur la croissance, liés à l'automatisation de la production de nouvelles idées. C'est le scénario bleu dans le graphique ci-dessous, avec des gains potentiels plus importants encore que les 500 milliards d'euros d'ici 2034 présentés plus haut.
+
+<Figure>
+Graphique 3 : Effets totaux attendus de l'adoption de l'IA sur la croissance.
+</Figure>
+
+Graphique 3 : Effets totaux attendus de l'adoption de l'IA sur la croissance.
+
+Source : Commission IA.
+
+\* 21. Analyse du journal Nature sur la base de données Scopus.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 38 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+# L'IMPORTANCE DES INSTITUTIONS ET DE LA CONCURRENCE
+
+Ne sommes-nous pas trop optimistes dans nos prédictions de croissance : après tout, la révolution numérique, elle aussi, devait conduire à une accélération de la croissance. Or depuis le début des années 2000 les pays développés à commencer par les États-Unis, ont connu un fort déclin de leurs taux de croissance. Comment expliquer nos faibles taux de croissance malgré des innovations majeures qui ont considérablement changé notre quotidien : l'ordinateur, le smartphone, les réseaux sociaux, etc.
+
+Pour certains économistes il s'agit d'un simple problème de mesure, pour d'autres le signe que ces innovations numériques ont surtout amélioré notre divertissement22. Une explication plus convaincante est que la révolution des technologies de l'information et de la communication (TIC) a favorisé l'émergence d'entreprises « superstar », notamment les Gafam (Google, Amazon, Facebook, Apple, Microsoft). Issues de la révolution des TIC, les Gafam ont dans un premier temps contribué à l'augmentation observée du taux de croissance de la productivité pendant la décennie 1995-2005. Cependant, une politique de concurrence trop laxiste a permis aux Gafam de grossir jusqu'à contrôler certains pans entiers de l'économie américaine, ce qui a fini par décourager l'entrée de nouvelles entreprises innovantes avec des effets négatifs sur la croissance de l'économie dans son ensemble23.
+
+La différence entre la révolution des TIC et celle de l'IA est que cette fois les Gafam sont dominants dès le début, et donc peuvent immédiatement décourager l'entrée de nouvelles entreprises innovantes. L'absence de concurrence est particulièrement prononcée dans les segments amont de la chaîne de production de l'IA, à savoir l'accès aux données et l'accès à la puissance de calcul : ces segments sont dominés par un petit nombre de géants dont les Gafam. D'où l'importance d'adapter nos institutions et en particulier nos politiques de concurrence, pour que la révolution de l'IA puisse pleinement agir comme facteur de croissance (voir 2.3.3. Éviter les positions concurrentielles dominantes).
+
+# À L'INVERSE, UN RISQUE DE DÉCLASSEMENT ÉCONOMIQUE ET GÉOPOLITIQUE
+
+Le déploiement des systèmes d'intelligence artificielle dans notre économie et notre société n'est pas sans risques. Que se passerait-il donc si la France et l'Europe choisissaient de rester à l'écart de cette révolution technologique ? Il faut d'abord souligner qu'empêcher totalement la diffusion des systèmes d'IA dans la société est quasiment impossible. Cela supposerait en particulier d'isoler notre pays de la circulation mondiale des informations et d'imposer un contrôle très strict de la population. À part la Corée du Nord, peu de pays empruntent cette voie.
+
+Si l'isolement total est donc peu enviable, que se passerait-il si l'on freinait la diffusion de l'innovation ? Pour y répondre, tournons-nous vers l'histoire des révolutions industrielles. Le cas
+
+\* 22. Comme le disait l'investisseur Peter Thiel en 2022 sur les réseaux sociaux : « On nous avait promis des voitures volantes, et n'avons eu droit qu'à 140 caractères ».
+
+\* 23. Aghion P., A. Bergeaud, T. Boppart, P. Klenow et H. Li (2023), « A Theory of Falling Growth and Rising Rents >, Review of Economics Studies, 90(6).
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 39 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+de la Chine est très éclairant. Durant des siècles, l'empire du Milieu est de très loin la première puissance mondiale. À partir de la seconde moitié du XVIIe siècle, les dynasties Ming et Qing font le choix de s'opposer au commerce international par crainte des nouvelles technologies et de ses effets sur l'économie et la société24. Le contrôle de l'État sur la société et l'économie se renforce, allant même jusqu'à ordonner aux habitants vivant le long de la côte sud, de se déplacer de 30 kilomètres à l'intérieur des terres.
+
+Cet isolement vis-à-vis de l'innovation a changé le cours de l'histoire de la Chine. Au mitan du XVIIe siècle, le PIB par habitant en Chine est seulement inférieur de 10 % à 20 % à celui du Royaume-uni ou de la France25. Puis la Chine ne bénéficie pas des effets des révolutions industrielles qui se déploient en Europe. Deux siècles plus tard, le PIB par habitant en Chine est cinq fois plus faible ; dix fois plus faible en 1900 (graphique 4). Le décrochage économique conduit à un affaissement de la souveraineté de l'Empire, qui se voit imposer des traités inégaux par les puissances étrangères : c'est la « ruée sur la Chine ».
+
+<Figure>
+Graphique 4 : Comparaison du PIB par tête de la Chine à ceux du Royaume-Uni et de la France Source : Commission IA à partir des données du Maddison Project Database 2020.
+</Figure>
+
+Graphique 4 : Comparaison du PIB par tête de la Chine à ceux du Royaume-Uni et de la France Source : Commission IA à partir des données du Maddison Project Database 2020.
+
+De nombreux autres exemples montrent que l'absence de participation à une révolution technologique conduit à un déclassement économique et sociétal, qui hâte la domination étrangère et attise la convoitise internationale. Prévenir cette trajectoire délétère ne nécessite pas de s'emparer sans boussole de l'IA, mais de s'organiser pour les maîtriser et les orienter selon nos objectifs politiques.
+
+\* 24. Acemoglu D. et J. Robinson (2012), « Why Nations Fail: The Origins of Power, Prosperity, and Poverty >, Crown Business.
+
+\* 25. Selon les données 2020 du Maddison Project Database, base de données de référence pour les estimations historiques du PIB.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 40 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+# 1.4 L'IA : CRÉATRICE OU DESTRUCTRICE D'EMPLOIS ?
+
+Notre propre analyse empirique suggère un effet positif de l'IA sur l'emploi dans les entreprises qui adoptent l'IA, car celle-ci remplace des tâches, et non des emplois. Dans 19 emplois sur 20, il existe des tâches que l'IA ne peut pas accomplir. Les emplois directement remplaçables par l'IA ne représenteraient donc que 5 % des emplois d'un pays comme la France. Par ailleurs, la diffusion de l'IA va créer des emplois, dans de nouveaux métiers, mais aussi dans d'anciens métiers. Au total, certains secteurs ou certains domaines pourraient connaître des baisses nettes d'emplois, qui doivent être accompagnées par les pouvoirs publics, mais cela n'implique pas que l'IA aura un effet négatif sur l'emploi national en France.
+
+Des scénaristes et des acteurs d'Hollywood qui craignent pour leurs emplois, une entreprise française de veille médiatique qui déclenche un plan de sauvegarde de l'emploi sous couvert de l'IA : les actualités et les prises de position font redouter une fin du travail et un chômage technologique de masse.
+
+L'intelligence artificielle permet en particulier l'automatisation de tâches, qui est moteur essentiel de la croissance économique (voir 1.3. L'IA nous rendra-t-elle plus prospères ?), implique deux effets contraires sur l'emploi. D'un côté, l'automatisation déplace certaines tâches du travail humain vers les machines, ce qui tend à détruire des emplois : c'est l'effet d'éviction. De l'autre, l'automatisation augmente la productivité des individus, ce qui conduit à une augmentation du rapport qualité/prix des produits proposés aux consommateurs, donc à une demande plus élevée et, in fine, davantage d'embauches et la création de nouvelles tâches : c'est l'effet de productivité.
+
+Pour comprendre l'effet d'une nouvelle technologie sur l'emploi et le marché du travail, il faut donc comprendre qui de ces deux effets l'emporte. Pour cela, deux principales approches ont été retenues. Premièrement, en étudiant directement les effets de l'adoption de l'IA au sein des entreprises ou des secteurs. Deuxièmement, en étudiant les effets de l'IA sur les différentes tâches composant l'économie.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 41 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+## PREMIÈRE APPROCHE : LES EFFETS SUR L'EMPLOI DE L'ADOPTION DE L'IA PAR LES ENTREPRISES
+
+L'approche n'est pas nouvelle et a déjà été utilisée pour mesurer les effets sur l'emploi d'autres révolutions technologiques. Par exemple, une étude26 réalisée à partir de données françaises et s'intéressant à l'adoption des machines industrielles (machines-outils, robots, etc.) montre que les entreprises qui adoptent davantage ce type de nouvelles technologies baissent leurs prix, augmentent leurs ventes et leur emploi davantage que leurs concurrentes n'ayant pas adopté les technologies d'automatisation.
+
+Qu'en est-il dans le cas de l'IA ? Une enquête réalisée annuellement par l'Insee permet d'étudier les effets de l'adoption de l'IA par les entreprises en France27. On constate que l'emploi total des entreprises ayant adopté l'IA augmente davantage que dans les entreprises ne l'ayant pas adoptée, alors que ces deux groupes suivaient une tendance antérieure similaire (graphique 5). L'effet résulte principalement de la création de nouveaux emplois, plutôt qu'un maintien plus important d'emplois existants. On constate aussi qu'il n'y a pas d'effets différenciés sur les emplois occupés par des hommes par rapport à ceux occupés par des femmes : l'adoption de l'IA a des effets comparables pour l'emploi masculin et féminin.
+
+<Figure>
+Graphique 5 : Effet de l'adoption de l'IA sur l'emploi total au sein des entreprises en France Source : Commission IA. Lecture : Les entreprises adoptant l'IA augmentent leur emploi davantage que celles ne l'adoptant pas, alors qu'elles évoluaient de façon similaire dans les 3 années précédentes.
+</Figure>
+
+Graphique 5 : Effet de l'adoption de l'IA sur l'emploi total au sein des entreprises en France Source : Commission IA. Lecture : Les entreprises adoptant l'IA augmentent leur emploi davantage que celles ne l'adoptant pas, alors qu'elles évoluaient de façon similaire dans les 3 années précédentes.
+
+Cependant, cet effet de l'IA sur l'emploi total n'est pas uniforme d'un métier à l'autre. En particulier, certains échelons au sein de l'entreprise ou certains métiers risquent de subir des réductions nettes d'emplois. De fait, le graphique 6 montre que les entreprises qui adoptent
+
+\* 26. Aghion, P., C. Antonin, S. Bunel, et, X. Jaravel (2023), « Capital industriel moderne, demande de travail et dynamique des marchés de produits : le cas de la France >>, Document de travail Insee
+
+\* 27. Parmi les entreprises n'ayant pas déjà adopté l'IA en 2018, on peut comparer l'évolution de l'emploi entre les 321 entreprises l'ayant fait entre 2018 et 2020 et les 897 entreprises ne l'ayant pas fait.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 42 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+l'IA pour la gestion administrative ou le marketing voient leur emploi en « professions intermédiaires administratives et commerciales » diminuer.
+
+Graphique 6 : Effet de l'adoption d'IA pour le marketing ou la gestion administrative sur l'emploi des professions intermédiaires administratives et commerciales au sein des entreprises en France.
+
+Source : Commission IA.
+
+Lecture : Les entreprises adoptant l'IA pour le marketing ou la gestion administrative baissent leur emploi davantage que celles ne l'adoptant pas, alors qu'elles évoluaient de façon similaire dans les 3 années précédentes.
+
+Ces résultats sont nouveaux et importants, mais ils ne suffisent pas à appréhender l'ensemble des effets potentiels de l'IA sur le marché du travail. Il est notamment probable qu'une entreprise innovante qui adopte l'IA deviendra plus productive que les entreprises du même secteur qui ne l'adoptent pas, et que par suite l'entreprise innovante gagnera des parts de marché au détriment des entreprises concurrentes qui n'ont pas adopté l'IA. En termes d'emploi, cela se traduira par une création nette au sein de l'entreprise innovante mais au détriment de entreprises qui n'ont pas adopté l'IA : ces entreprises concurrentes risqueront de subir des destructions d'emplois. Au total, quel est l'effet agrégé de l'IA sur l'emploi lorsque l'on considère le marché du travail dans sa globalité ?
+
+Un premier élément de réponse à cette question est fourni par des études récentes, focalisées sur les États-unis et qui analysent les effets sur l'emploi de l'adoption de l'IA non générative par les entreprises. Ces études suggèrent un effet positif de l'IA sur l'emploi. En particulier, une étude américaine28 publiée en 2023 suggère que l'adoption de l'IA est associée à une augmentation de l'emploi et du chiffre d'affaires au niveau sectoriel, pas juste au niveau de l'entreprise qui se convertit à l'IA.
+
+Jusqu'à présent nous nous sommes concentrés sur les effets de l'IA non générative. Or, ce qui est nouveau avec l'IA générative, c'est que certains métiers de la connaissance, de la stratégie et de la créativité (médecins, enseignants, avocats, journalistes, artistes ... ), autrefois perçus comme des creusets de l'intelligence humaine, pourraient être concernés par une réduction du nombre total d'emplois.
+
+\* 28. Babina, T., A. Fedyk, A. He, et J. Hodson (2024), « Artificial Intelligence, Firm Growth, and Product Innovation », Journal of Financial Economics.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 43 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+Des travaux récents, réalisés à un niveau très microéconomique, s'intéressent précisément aux effets de l'adoption de l'IA générative. En particulier l'étude de Brynjolfsson et al.29 (voir 2.3. L'IA nous rendra-t-elle plus prospères) se concentre sur le cas de l'adoption d'un outil à base d'IA générative permettant d'assister les agents du service clientèle. Si cette étude ne permet pas de conclure à un effet sur l'emploi total, elle met néanmoins en avant le fait que la probabilité qu'un employé quitte son emploi pendant le mois en cours diminue de 8,6 points de pourcentage après l'adoption de l'IA, tout en augmentant la productivité des employés. L'effet est encore plus fort pour les employés dont l'embauche au sein de l'entreprise est récente (moins de six mois). Au total, cette étude suggère un effet positif de l'IA générative sur l'emploi.
+
+Cependant, une autre étude3º montre que l'arrivée de ChatGPT a eu un effet négatif sur l'emploi et la rémunération des travailleurs américains free-lance (travail rémunéré à la tâche). L'étude s'intéresse plus précisément à une plateforme proposant des missions ciblant des tâches de petite ou moyenne envergure au sein de plusieurs métiers (saisie de données, conception graphique, développement de logiciels, marketing, etc.) et met en évidence une baisse du nombre d'emplois et des revenus, y compris pour les actifs ayant une expérience plus importante, suite à la mise en service de ChatGPT en novembre 2022.
+
+En résumé, ces premières études suggèrent que l'effet de productivité domine en moyenne pour les salariés en entreprise, tandis que l'effet d'éviction semble être plus important pour les individus indépendants devant effectuer pour l'essentiel des tâches plus facilement remplaçables par l'IA.
+
+Au-delà de l'effet sur l'emploi, qu'en est-il de l'effet sur les inégalités ? La première série d'étude se concentrant sur l'IA non générative31 met en avant le fait que les entreprises qui adoptent l'IA embauchent par la suite des profils plus diplômés et plus techniques, en particulier en faveur des emplois dits « STIM » (science, technologie, ingénierie et mathématiques). Ceci conduirait à une hausse des inégalités, car ces profils complémentaires de l'adoption de l'IA ont des salaires plus élevés que la moyenne. Toutefois, la seconde vague d'étude sur l'IA générative32 bat en brèche cette vision en mettant en évidence le fait que les employés initialement les moins qualifiés ou les moins productifs sont ceux pour lesquels les gains de productivité offerts par l'utilisation de l'IA sont les plus importants. Ceci pourrait alors donner à ces employés des leviers pour renégocier à la hausse leur rémunération, et ainsi réduire les inégalités au sein des entreprises.
+
+Enfin, l'approche directe consistant à comparer a posteriori les entreprises ou secteurs ayant adopté l'IA par rapport à ceux l'ayant peu ou pas fait ne permet pas d'avoir un recul temporel très important, en particulier dans le cas de l'IA générative : la sortie du premier outil d'IA générative grand public date de novembre 2022, et ces études ne permettent pas encore de conclure à un effet sur un horizon de quelques années. En complément de l'approche directe, il est intéressant de s'appuyer sur une approche plus prospective par les tâches.
+
+\* 29. Brynjolfsson, E., D. Li, et L. Raymond (2023), « Generative Al at Work », NBER Working paper.
+
+\* 30. Hui, X., O. Reshef, et L. Zhou (2023), « The Short-Term Effects of Generative Artificial Intelligence on Employment: Evidence from an Online Labor Market », Working paper.
+
+\* 31. Babina, T., A. Fedyk, A. He, et J. Hodson (2023), « Firm Investments in Artificial Intelligence Technologies and Changes in Workforce Composition », NBER Working paper.
+
+\* 32. Brynjolfsson, E., D. Li, et L. Raymond (2023), op. cit. // Noy, S., et W. Zhang (2023), « Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence », Science.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 44 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 45>>>
+<!-- PageHeader: COMMISSION DE L'INTELLIGENCE ARTIFICIELLE -->
+
+### SECONDE APPROCHE : LES EFFETS DE L'ADOPTION DE L'IA SUR LES TÂCHES
+
+Comme la précédente, cette approche conduit à prédire un effet positif de l'IA sur l'emploi. C'est ce qu'a notamment montré une étude récente de l'Organisation internationale du travail (OIT)33. Celle-ci donne à chacune des tâches réalisées au sein de l'économie une probabilité de remplacement par l'IA. L'étude distingue deux cas. Si une part importante des tâches qui constituent une profession peuvent être effectuées par l'IA, cette profession a un potentiel de remplacement par l'IA. En revanche, si une profession est composée de quelques tâches automatisables, mais d'une majorité de tâches difficiles à automatiser, elle a un potentiel d'amélioration par l'IA : l'automatisation de certaines tâches permet de libérer du temps pour d'autres. Par exemple, les employés de bureau feraient face à un risque de remplacement, tandis que les managers auraient un potentiel d'amélioration.
+
+L'étude conclut que, dans l'ensemble du monde et y compris dans les pays développés, le nombre d'emplois ayant un potentiel d'amélioration par l'IA (13,4 %) est bien plus élevé que celui ayant un potentiel de remplacement par l'IA (5,1 %). L'étude note par ailleurs des inégalités de genre : 3,5 % des emplois principalement tenus par des femmes ont un potentiel de remplacement, contre 1,6 % des emplois principalement tenus par des hommes34. Une étude du Fonds monétaire international (FMI)35 adoptant une méthodologie relativement proche aboutit à des chiffres plus élevés : 60 % des emplois seraient fortement exposés à l'IA, environ la moitié de ces emplois pouvant profiter d'un potentiel d'amélioration par l'IA tandis que l'autre moitié ferait face à un potentiel de remplacement par l'IA.
+
+Concernant les inégalités de genre, l'étude note que dans les pays développés, les femmes sont plus exposées que les hommes à la fois pour les emplois ayant un potentiel de remplacement par l'IA mais aussi pour ceux ayant un potentiel d'amélioration par l'IA. Elle conclut que les femmes sont confrontées à la fois à de plus grands risques et à de plus grandes opportunités face à l'IA.
+
+Une récente note36 adapte la méthodologie de l'OIT au cas de la France afin de dresser un panorama des effets attendus de l'IA sur les 222 professions recensées par la nomenclature du ministère du travail. L'axe vertical (voir graphique 7 ci-après) représente l'exposition d'une profession à l'IA en général : plus un métier est haut sur ce graphique, plus il est globalement exposé à l'IA. L'axe horizontal représente quant à lui la part des tâches jugées difficiles à automatiser : plus une profession est située à droite sur ce graphique, plus une part importante des tâches ne semblent pas facilement remplaçables par l'IA. La taille des cercles est proportionnelle au nombre de personnes effectuant cette profession.
+
+Les métiers localisés au haut à gauche sont les plus vulnérables à l'IA : à la fois fortement exposés et avec peu de tâches très difficiles à remplacer par l'IA. Ceux en haut à droite combinent une forte exposition à l'IA mais une part importante des tâches peu susceptibles d'être remplacées. On peut donc s'attendre à des transformations majeures de ces emplois : certains travailleurs plus formés pourraient être en mesure de tirer parti des nouvelles possibilités offertes par l'IA
+
+\* 33. Gmyrek, P., J. Berg, et D. Bescond (2023), « Generative Al and jobs: A global analysis of potential effects on job quantity and quality », Document de travail OIT 96
+
+\* 34. Les professions de service à la clientèle, ou ceux de tâches administratives et de communication sont par exemple des professions très féminisées.
+
+\* 35. Pizzinelli, C., A. Panton, M. Mendes Tavares, M. Cazzaniga, et L. Li (2023), « Labor Market Exposure to Al: Cross-country Differences and Distributional Implications », Document de travail FMI.
+
+\* 36. A. Bergeaud (2024), « Exposition à l'intelligence artificielle générative et emploi : une application à la classification socio-professionnelle française », Document de travail.
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 45 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 46>>>
+## COMMISSION DE L'INTELLIGENCE ARTIFICIELLE
+
+générative tandis que d'autres travailleurs pourraient faire face à une concurrence plus importante, augmentant ainsi les inégalités salariales au sein de ces professions. Les métiers se trouvant dans la partie inférieure du graphique, en particulier dans le quadrant inférieur droit, semblent globalement à l'écart de l'impact de l'intelligence artificielle.
+
+<Figure>
+Graphique 7 : Effet attendu de l'IA sur les métiers en France.
+</Figure>
+
+Graphique 7 : Effet attendu de l'IA sur les métiers en France.
+
+Source : Bergeaud (2024)
+
+Lecture : Plus les métiers sont situés sur le haut du graphique, plus ils sont exposés à l'IA. Plus les métiers sont situés sur la droite du graphique, moins la part de leurs tâches susceptibles d'être remplacées est importante.
+
+Cette approche par l'exposition des tâches à l'IA a l'avantage de permettre d'estimer des effets agrégés au niveau de l'économie dans son ensemble, et de permettre des comparaisons entre pays. Toutefois, elle recèle plusieurs limites. Citons les deux principales. D'une part, c'est une approche statique : les études s'appuient sur les tâches existantes et ne tiennent donc pas compte des tâches qui pourraient être créées à la suite du développement de l'IA. Pour faire un parallèle, il était difficile d'imaginer que le métier de data scientist puisse prendre une telle place au début de la révolution numérique dans les années 2000, ou que le métier de dépanneur en électroménager puisse exister avant l'adoption massive de l'électricité au milieu du XXe siècle. D'autre part, cette approche repose sur une estimation de la probabilité de remplacement par l'IA des différentes tâches (voir l'encadré).
+
+<!-- PageFooter: 1. Dédiaboliser l'IA, sans pour autant l'idéaliser page 46 -->
+<!-- PageBreak -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "ec870670d844a26259a92bf35b542293bd362c2a8b545a500b3dbea6d7b0c456",
+  "prompt_sha256": "da7502423685582fc9f3f6cbae4103501612726608f3caf26082a4a48c1f3e89",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKPKLyByXsxo80khZK2qbtjMhNQ",
+  "prompt_tokens": 6144,
+  "completion_tokens": 46,
+  "actual_usd": 0.0009492,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the need for localized governance frameworks and the risks associated with directly importing foreign models without adaptation to Nigeria's unique circumstances."
+  }
+}

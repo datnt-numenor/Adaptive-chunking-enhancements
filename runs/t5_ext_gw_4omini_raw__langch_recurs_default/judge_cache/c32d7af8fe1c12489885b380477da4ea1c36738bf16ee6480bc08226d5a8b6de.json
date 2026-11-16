@@ -1,0 +1,14 @@
+{
+  "request_hash": "c32d7af8fe1c12489885b380477da4ea1c36738bf16ee6480bc08226d5a8b6de",
+  "prompt_sha256": "3e442e446ad9a18f0160362e6b9862c9d090cb3aab4f65b38f21dad282b4c717",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNyRtwpu1ZIemudTpUZWB6FNCVTE",
+  "prompt_tokens": 7871,
+  "completion_tokens": 34,
+  "actual_usd": 0.00120105,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention or support the concept of a 'context overload attack' or its effects on model vulnerability."
+  }
+}

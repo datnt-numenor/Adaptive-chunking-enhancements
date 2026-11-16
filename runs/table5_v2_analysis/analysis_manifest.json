@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-08T16:11:36.646036+00:00",
+  "finished_at": "2026-11-08T16:11:36.872726+00:00",
+  "command": [
+    "analyze_table5_v2.py",
+    "--results",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2_results\\table5_v2",
+    "--prepared",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2\\prepared",
+    "--audit",
+    "D:\\Project\\adaptive-chunking\\runs\\qa_new\\review\\qa_audit.jsonl",
+    "--output-dir",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2_analysis"
+  ],
+  "script_sha256": "7722ef944faed30ebbf097dabbe24f592cc39de87336577b2d03fcf831c8b200",
+  "inputs": {
+    "retrieval_evaluation.json": {
+      "path": "D:\\Project\\adaptive-chunking\\runs\\table5_v2_results\\table5_v2\\evaluation-full\\retrieval_evaluation.json",
+      "sha256": "dc098fa27124c2a7bacbc13dae3e7a4eed6c14cf5ff5d03a653ad0b0beb2af95"
+    },
+    "per_query_metrics.jsonl": {
+      "path": "D:\\Project\\adaptive-chunking\\runs\\table5_v2_results\\table5_v2\\evaluation-full\\per_query_metrics.jsonl",
+      "sha256": "cd9e31ea18a94ba1e0cbd7ce6ace493c0607dbd85eea797116bfb7bee3c82c48"
+    },
+    "folds.jsonl": {
+      "path": "D:\\Project\\adaptive-chunking\\runs\\table5_v2\\prepared\\folds.jsonl",
+      "sha256": "5eb74171aee489969c3eef6ddde96a3aa6117dbe86e584acb519ed65272f495f"
+    },
+    "adaptive_selections.json": {
+      "path": "D:\\Project\\adaptive-chunking\\runs\\table5_v2\\prepared\\adaptive_selections.json",
+      "sha256": "d2a7a932f4232b7ac3a46f50897c0c187222f72dcb0775e0139b78a92e7e0640"
+    },
+    "qa_audit.jsonl": {
+      "path": "D:\\Project\\adaptive-chunking\\runs\\qa_new\\review\\qa_audit.jsonl",
+      "sha256": "04b1567829d63f6b3dd4be7480ea97442150e03cd2d3ec86518d8bc87413b741"
+    }
+  },
+  "seed": 2026,
+  "bootstrap_samples": 10000,
+  "primary_metric": "ndcg@10",
+  "metrics": [
+    "ndcg@10",
+    "recall@10",
+    "recall@5",
+    "recall@1",
+    "mrr@10",
+    "hit@10"
+  ],
+  "unit": "document (mean of its QA)",
+  "test": "Wilcoxon signed-rank, two-sided, zero_method=pratt",
+  "multiple_comparisons": "Holm across comparators within each metric",
+  "best_fixed_cv_choices": {
+    "0": "raw__langch_recurs_default",
+    "1": "raw__langch_recurs_default",
+    "2": "raw__langch_recurs_default",
+    "3": "raw__langch_recurs_default",
+    "4": "raw__langch_recurs_default"
+  },
+  "harness_reproduction_max_abs_gap": 0.0,
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  }
+}

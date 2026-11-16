@@ -1,0 +1,14 @@
+{
+  "request_hash": "817af6a10e96829f73a48fcd55cc294b50d7c29a16bd0fa01551158ae325874e",
+  "prompt_sha256": "9992606f52d5940400103fe6cc19d640efd124c12973e31cadca504088f6af91",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKzKg4CURxto9Vj7xKsx3p9O2HQ",
+  "prompt_tokens": 7577,
+  "completion_tokens": 38,
+  "actual_usd": 0.00115935,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding Decision Trees, detailing their fine-grained explanations and sensitivity to data changes."
+  }
+}

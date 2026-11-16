@@ -1,0 +1,14 @@
+{
+  "request_hash": "cdb804f28682d558780599298d4ed9ccb8ffaf471db9da50ee91df9c6c311b17",
+  "prompt_sha256": "1b9d614f34bed1a3463bb3d6f81740309a0b6a2ec9244e0091f3f3c744b38537",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOTY46kbvrGEBwrPEPqZWs3InwVf",
+  "prompt_tokens": 5497,
+  "completion_tokens": 39,
+  "actual_usd": 0.00084795,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the recovery amounts for consumers and the administrative fines for violations, fully supporting the claims made in the Reference Answer."
+  }
+}

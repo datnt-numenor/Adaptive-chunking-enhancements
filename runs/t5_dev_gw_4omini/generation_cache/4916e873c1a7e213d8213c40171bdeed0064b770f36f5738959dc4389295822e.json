@@ -1,0 +1,10 @@
+{
+  "request_hash": "4916e873c1a7e213d8213c40171bdeed0064b770f36f5738959dc4389295822e",
+  "prompt_sha256": "8c283138b57710b4f116889c47a0ec7fab4d71393d60d3541a356b2494add5da",
+  "answer": "If the original model is a general-purpose AI model with systemic risk, the threshold should be replaced with a third of the threshold for a model being presumed to have high-impact capabilities (i.e. currently 10^25 FLOP). Otherwise, it should be replaced with a third of the threshold for a model being presumed to be a general-purpose AI model (i.e. currently 10^23 FLOP).",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1YpPoDtZeeGvcRmNDNRfIfaAuck",
+  "prompt_tokens": 9762,
+  "completion_tokens": 83,
+  "actual_usd": 0.0015141
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "15c55935b0556d1a9b06116d46634792efe60a3254a176d2bcf9bcc0fc576d78",
+  "prompt_sha256": "3868bdbcc0e45f488e5d18a9a259d6e541fe7f3527fe97f0ff7562c7613c92a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNlBnAt5S127HDjVW6hYuKXEyqrj",
+  "prompt_tokens": 5536,
+  "completion_tokens": 49,
+  "actual_usd": 0.0008598,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context mentions that the business can extend the response period by an additional 45 days, but it does not specify a total of 90 days, which makes the reference answer partially complete."
+  }
+}

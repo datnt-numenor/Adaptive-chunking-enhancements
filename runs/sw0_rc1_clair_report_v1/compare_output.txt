@@ -1,0 +1,20 @@
+﻿Documents compared: 33
+[B_default:sdp_b] chosen by Adaptive+5th candidate in 31/33 docs
+[sw0_rc1:sdp_b_sw0_rc1] chosen by Adaptive+5th candidate in 31/33 docs
+
+Method                                  RC     ICC     DCC      BI      SC   Mean5  SC+BI+RC  ICC+DCC
+llm_regex                            97.95   70.36   84.14   98.75   99.79   90.20    296.49   154.50
+our_recurs_1100                      98.96   66.57   89.76   98.13   99.97   90.68    297.06   156.32
+our_recurs_600                       97.19   69.54   84.69   94.78  100.00   89.24    291.97   154.23
+page                                 97.15   69.24   86.43   99.89   99.88   90.52    296.93   155.66
+Adaptive (4 cand.)                   98.96   68.35   88.63   99.42   99.93   91.06    298.31   156.97
+B_default:sdp_b                      97.81   75.98   85.99   99.94   99.96   91.94    297.71   161.97
+Adaptive + B_default:sdp_b           98.43   75.44   86.28   99.90   99.96   92.00    298.29   161.73
+sw0_rc1:sdp_b_sw0_rc1                99.80   77.76   85.15   99.94   99.96   92.52    299.71   162.91
+Adaptive + sw0_rc1:sdp_b_sw0_rc1     99.80   77.68   85.58   99.94   99.96   92.59    299.71   163.26
+
+Per-document paired comparison of the 5-metric mean (document = unit)
+  B_default:sdp_b - Adaptive (4 cand.)   mean +0.90  95% CI [+0.64, +1.15]  wins 31/33  Wilcoxon p=6.44e-07
+  B_default:sdp_b - our_recurs_1100      mean +1.29  95% CI [+1.00, +1.55]  wins 31/33  Wilcoxon p=2.49e-07
+  sw0_rc1:sdp_b_sw0_rc1 - Adaptive (4 cand.)   mean +1.50  95% CI [+1.23, +1.77]  wins 31/33  Wilcoxon p=3.26e-09
+  sw0_rc1:sdp_b_sw0_rc1 - our_recurs_1100      mean +1.89  95% CI [+1.60, +2.17]  wins 31/33  Wilcoxon p=1.16e-09

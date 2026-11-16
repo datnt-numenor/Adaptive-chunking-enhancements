@@ -1,0 +1,14 @@
+{
+  "request_hash": "c5780c59206262351599a131bb8924e8e34b578a29015591950f7488506c104e",
+  "prompt_sha256": "05bfb88af2ad1171f8a2e36dcf715d5c1674f43f063f4124bf5d6d9955754469",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3i2agYrZVq5a8i5lsq8BjJ0thE",
+  "prompt_tokens": 4041,
+  "completion_tokens": 42,
+  "actual_usd": 0.00063135,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how the HAIG framework allows for governance calibration based on specific application contexts rather than relying on static risk categories."
+  }
+}

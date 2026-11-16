@@ -1,0 +1,14 @@
+{
+  "request_hash": "05df744a76bc95cf77525c45bf4e38fe2dab90cfba27db075d4dd89caabb07ae",
+  "prompt_sha256": "dd90c206bd21787803a9b9d8d7f088b5c258b99b7d29960d852dc3771d459521",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjph3Mv0Ukgv7FndD3MOoqMx7Pj",
+  "prompt_tokens": 8223,
+  "completion_tokens": 45,
+  "actual_usd": 0.00126045,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how red-teaming is prone to biases towards known vulnerabilities and scenarios, which can lead to missing unforeseen risks."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "69d01519b76ea8ec378c4d1bef168bb1b1291c2ef57cdf7b5a7bd55beb0edcf0",
+  "prompt_sha256": "b33a17cce83fd888073c70b8e1c540f4e76dd6be142ec9981d41802f436539ab",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNsIXAFziJCOtGgS8QqwoCkbNT69",
+  "prompt_tokens": 6271,
+  "completion_tokens": 37,
+  "actual_usd": 0.00096285,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining 'intended purpose' and 'intended use' and explaining their differences."
+  }
+}

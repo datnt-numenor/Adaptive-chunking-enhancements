@@ -1,0 +1,14 @@
+{
+  "request_hash": "3d4de9f2cabc85f66e05adef7d80e04137392a9d86fee185c06295a1f2855cee",
+  "prompt_sha256": "279eec6f1e37488e98a3368ae4292bc11671c71083e51e34f871e1a1ff39a60e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXt9GwBvMIyg1q7cwscyy78tKXu",
+  "prompt_tokens": 7247,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011146499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining directly interpretable models and mentioning LIME and SHAP as tools for enhancing interpretability in non-directly interpretable models."
+  }
+}

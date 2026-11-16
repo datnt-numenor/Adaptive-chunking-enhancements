@@ -1,0 +1,14 @@
+{
+  "request_hash": "801625f8d07ba7cb1c90b70918e771922ef9fa23d551c6e6150335dea4567827",
+  "prompt_sha256": "0686d997cf311419534d2f18ad94f25659c36384aff64f7ef745fa4005cf54f9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOaxNCkXmj5yzTMWraPDzTLV6x2D",
+  "prompt_tokens": 5886,
+  "completion_tokens": 43,
+  "actual_usd": 0.0009086999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the recommendation for user manipulation of parameters in algorithmic systems and specifically mentioning the Politoscope tool as an example."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "37893069aa871ba9af197171a0c523c051d372e47bcb614ddab15b6cedd0dded",
+  "prompt_sha256": "7de89d17f258280bd77d58b2248cbcc6f3340a628466b8c18a0adf80364dcab1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOElQWVHV2paOCRuSlKRL5PtRfse",
+  "prompt_tokens": 3847,
+  "completion_tokens": 40,
+  "actual_usd": 0.00060105,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining AI Assurance Levels (AALs) as a standardized vocabulary for expressing confidence in audit findings."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4fb46e15ae5dd9a6c9ee7c00e39e5b352ba7e754a827166ca1904b7e13c15ae5",
+  "prompt_sha256": "a454e1c5a7f601ded8e6468838134332f87d1eeb24f9acc739a883f8950f4afd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOBSR8oxscSCRCaOu5rgy2Ujqo90",
+  "prompt_tokens": 8760,
+  "completion_tokens": 60,
+  "actual_usd": 0.00135,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific details about the online survey conducted from 16 to 19 October 2018, including the percentage of employees in IT and new technologies who have a good image of AI, fully supporting the claims made in the Reference Answer."
+  }
+}

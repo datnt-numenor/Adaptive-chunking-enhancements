@@ -1,0 +1,14 @@
+{
+  "request_hash": "55271315661e52fd99f3554dc4d7c6f663da0f7cd202cb3f7de1ca8c3777db6e",
+  "prompt_sha256": "575db2ea4d3a124f158b7b55c941c698a5adcba612cafd6c0ce5191329f9035e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODaGBJJLf90wRZo7fd6lg49bL3I",
+  "prompt_tokens": 10508,
+  "completion_tokens": 35,
+  "actual_usd": 0.0015972,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining OQE as verifiable statements about product/service quality necessary for certification."
+  }
+}

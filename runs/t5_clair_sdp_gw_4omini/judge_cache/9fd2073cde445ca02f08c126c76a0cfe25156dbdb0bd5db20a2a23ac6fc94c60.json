@@ -1,0 +1,14 @@
+{
+  "request_hash": "9fd2073cde445ca02f08c126c76a0cfe25156dbdb0bd5db20a2a23ac6fc94c60",
+  "prompt_sha256": "31f3a9490d30b3e335c9c2e5c907092e6feea199ede9629b6a91d7eba8ee5018",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP7rjCeyQnucj2nhscQ4ydpZ0Pg8",
+  "prompt_tokens": 7057,
+  "completion_tokens": 45,
+  "actual_usd": 0.00108555,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the requirements for reporting training energy in megawatt-hours with the specified precision and addressing the scenario where estimation is not possible."
+  }
+}

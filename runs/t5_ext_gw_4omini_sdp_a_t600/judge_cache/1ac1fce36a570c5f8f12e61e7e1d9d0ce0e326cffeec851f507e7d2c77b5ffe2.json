@@ -1,0 +1,14 @@
+{
+  "request_hash": "1ac1fce36a570c5f8f12e61e7e1d9d0ce0e326cffeec851f507e7d2c77b5ffe2",
+  "prompt_sha256": "e9c1a4d47e6c3dc59cf275d55108c99c096e38aa92c7eede789d8693246e0dec",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNxHZh7Xa6rtoZdjfvFMqu2ZxglF",
+  "prompt_tokens": 7305,
+  "completion_tokens": 50,
+  "actual_usd": 0.00112575,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that SDG3, SDG9, and SDG4 are the three most popular AI for SDGs research topics among all evaluated countries."
+  }
+}

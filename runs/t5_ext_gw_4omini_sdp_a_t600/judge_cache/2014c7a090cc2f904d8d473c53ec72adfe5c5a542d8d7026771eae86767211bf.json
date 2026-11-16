@@ -1,0 +1,14 @@
+{
+  "request_hash": "2014c7a090cc2f904d8d473c53ec72adfe5c5a542d8d7026771eae86767211bf",
+  "prompt_sha256": "2b04e8f73f467985be67df2cc57566c4b4ace4618543f5581759547a09d88bf1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMRYJ9WVfwX1H0ZMGSn7gaxnly6",
+  "prompt_tokens": 8099,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012394499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive information on post-deployment monitoring, including tracking model use and addressing behavioral drift, fully supporting the claims made in the Reference Answer."
+  }
+}

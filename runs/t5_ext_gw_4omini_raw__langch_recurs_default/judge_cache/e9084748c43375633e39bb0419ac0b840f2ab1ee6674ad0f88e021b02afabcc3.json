@@ -1,0 +1,14 @@
+{
+  "request_hash": "e9084748c43375633e39bb0419ac0b840f2ab1ee6674ad0f88e021b02afabcc3",
+  "prompt_sha256": "43b581c9f65f443af64ad78cf4949e684c479fa315dbf189674a0cbb8d952707",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOIcY8rWnz0nhtbd16p2o933dnha",
+  "prompt_tokens": 7360,
+  "completion_tokens": 38,
+  "actual_usd": 0.0011267999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how BERTopic uses cosine distance for clustering and class-based tf-idf ranking for labeling."
+  }
+}

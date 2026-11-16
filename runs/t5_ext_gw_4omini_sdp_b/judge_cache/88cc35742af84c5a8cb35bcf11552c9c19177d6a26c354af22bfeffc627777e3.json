@@ -1,0 +1,14 @@
+{
+  "request_hash": "88cc35742af84c5a8cb35bcf11552c9c19177d6a26c354af22bfeffc627777e3",
+  "prompt_sha256": "eb85ed0ff2f433a0885ca33ba1d4b2d9efeaaed712153391f7c7164f7071fa39",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOWz21NbQJ314udJLnrDCFeJR1xa",
+  "prompt_tokens": 5339,
+  "completion_tokens": 43,
+  "actual_usd": 0.00082665,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by emphasizing the importance of documenting data provenance and ensuring data quality attributes such as completeness, accuracy, and validity for effective auditing."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "fa80cc6981890897a54f94d4f50813123b643f3999eebd3e1cfeb41e3a5a2a51",
+  "prompt_sha256": "37cf0ebbd7f6afd43e285b06407aa5e99e9903811f52bea8461be48f1a8156b7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOeg2ERcIaWa5vE3gzbMehFG1Z0i",
+  "prompt_tokens": 7904,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012125999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer by defining interpretability in terms of explicability, transparency, and provability, and explaining what each term entails."
+  }
+}

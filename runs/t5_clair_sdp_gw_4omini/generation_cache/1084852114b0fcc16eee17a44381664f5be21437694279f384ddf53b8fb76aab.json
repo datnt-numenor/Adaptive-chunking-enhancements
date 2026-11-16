@@ -1,0 +1,10 @@
+{
+  "request_hash": "1084852114b0fcc16eee17a44381664f5be21437694279f384ddf53b8fb76aab",
+  "prompt_sha256": "78c2bab4219cfe84c7ee2b2cf178d413515cf3cd193666493fecf3106cd75a13",
+  "answer": "Each lifecycle environment of the generative AI system should have its own distinct accounts and secrets. This includes separate user and administrator accounts, as well as distinct secrets for each environment. \n\nGPU hardware may be shared between multiple AI models only if those models correspond to the same level of sensitivity and have homogeneous security needs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNKBLkbkkfcyouOjul8940hA3VDC",
+  "prompt_tokens": 8897,
+  "completion_tokens": 62,
+  "actual_usd": 0.00137175
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "2b3acbb68b4ae88eaa71d7e8126e91fd5607eb862c5ff8e53e635fe47e8426db",
+  "prompt_sha256": "142c00f23a161fc738a9e20c427589b3ccf841e2a848395cf7e7f926b9e3fdec",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3f6yOH8gAOdBwme998EaHymB1E",
+  "prompt_tokens": 7280,
+  "completion_tokens": 41,
+  "actual_usd": 0.0011166,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention any requirements for including random samples of inputs and outputs in the Model Report, which is a key claim in the Reference Answer."
+  }
+}

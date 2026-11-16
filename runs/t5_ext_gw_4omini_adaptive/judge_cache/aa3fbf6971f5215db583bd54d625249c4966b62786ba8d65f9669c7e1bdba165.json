@@ -1,0 +1,14 @@
+{
+  "request_hash": "aa3fbf6971f5215db583bd54d625249c4966b62786ba8d65f9669c7e1bdba165",
+  "prompt_sha256": "863babcd08f8f56b660de8b06841585b8a6fe045a5f2fa517d76256e6419c761",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJgBCuNNavTFrIsgzHuYnazlyMV",
+  "prompt_tokens": 8620,
+  "completion_tokens": 43,
+  "actual_usd": 0.0013188,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by detailing how watermarks can interfere with AI training and how editorial workflows in fact-checking disrupt provenance tracking."
+  }
+}

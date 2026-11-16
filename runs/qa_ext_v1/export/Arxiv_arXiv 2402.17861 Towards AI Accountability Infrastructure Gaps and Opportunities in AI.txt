@@ -1,0 +1,227 @@
+DOCUMENT: arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI
+
+<<<PAGE 7>>>
+<!-- PageHeader: Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling Preprint, March, 3, 2025 -->
+
+<Figure>
+Figure 2: Number of tools in each category within each stage of our taxonomy, grouped by type of organization. Tools may be used in multiple stages. Note that the scales differ-the Standards and Performance Analysis stages contain many more tools than the others. Nonprofit and university/academic developers account for relatively more Harms Discovery and Data Collection tools. For-profit developers contribute relatively more Performance Analysis and Transparency Infrastructure tools.
+</Figure>
+
+I think what I' ve seen is that companies and institutions... really, really struggle to understand, 'What should we even do when it comes to auditing or evaluating the use of machine learning in our organizations?' And while a template or a checklist is not the right answer, a lot of them don 't even know where to start... And so, (it helps) when you have a tool that...has some built in frameworks. (P8)
+
+Need for more standards beyond fairness. Some participants also thought that assessments templates and checklists were focused too narrowly on fairness assessment. One civil society auditor said, "I would love some guidance on audits generally and tools that describe the non-fairness components of an audit..." (P6) Another wished for resources that covered criteria such as explainability, privacy, and transparency: "Currently we have to.. find open source tools and put them together ourselves, and you need to have expertise to know what to look for" (P21).
+
+Need for clear and consistent regulatory guidance. Despite some participants' desire for official frameworks like NIST's Risk Management Framework (RMF) [17], multiple participants commented on the difficulty of harmonizing current or expected regulatory guidance with practical implementation. Regulatory guidance itself may function as a tool, providing a framework for compliance with emerging policies. One civil society auditor asked:
+
+What are we evaluating for? And the question of, even when we have some kind of legal or other benchmark in mind, what are the metrics, and what are the benchmarks and other ways in which to evaluate, technical and otherwise, which also remain quite unclear? We ' re seeing the ready adoption of audit language into policies, so that just kind of makes us nervous... What are we auditing for? (P2)
+
+Several emphasized the necessity of regulatory entities being more forthcoming in defining best practices. Some sought the guidance of the regulatory bodies in the domains they operate to establish their own frameworks but often struggle to translate industry expectations into meaningful standards for evaluation. Multiple participants felt there was a "culture or communications gap between the legal and compliance people on one side and the engineers on the other" (P12). As a result, some hoped for more collaborative approaches instead of command-and-control prescriptions: "Half the time we reach out [to regulators], and there ' s just no one to contact... it' s just a black hole... " (P13).
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: Preprint, March, 3, 2025 Ojewale et al. -->
+
+Implications. Standards for evaluating AI systems must be simultaneously holistic, context-specific, inclusive, and compatible with practice. Some of the tools we found made advances in one or more of these dimensions, but few accomplished all three. Microsoft's AI Fairness checklist, for example, was co-designed with practitioners [39] in an effort to be more compatible with practical challenges, but many of the other standards frameworks we found did not obviously consult practitioners and fewer involved affected stakeholders. Likewise, while NIST's AI RMF includes safety, security, reliability, transparency, explainability, and privacy, in addition to fairness, its guidance for specific evaluation techniques remains fairly broad [17].
+
+Research could continue to explore how regulatory standards could be translated into concrete metrics and other effective guidance for industry [16, 33]. One participant at a large tech company, for example, preferred a "must, could, should" (P14) structure for regulatory guidance: a non-technical legal minimum ("must") accompanied by more precise technical paths to compliance ("should") and a set of ideal best practices for high performers and innovators ("could").
+
+# 4.3 Data Collection & Transparency Infrastructure
+
+Gathering empirical evidence is a key step in AI auditing, but often poses the most significant challenge in practice. When model operators were unwilling or unable to release relevant documentation and other evidence, auditors turned to two main classes of tools to help.
+
+Tools for Transparency Infrastructure (𝑁 = 12) are interfaces and databases hosted by model operators that allow controlled access to relevant data. This category includes tools for Structured or Application Programming Interface (API) Access (tools that allow auditors to interact with models and live systems, such as Google's AI Test Kitchen [74]), tools for Data Sharing (platforms or trusts for hosting models and related data, such as the Gig Economy Data Hub [65]), and tools for Secure & Private sharing (tools that help mitigate concerns with sharing data, such as Airbnb's Project Lighthouse [4]).
+
+More commonly, though, tools for Data Collection (𝑁 = 47), helped external auditors in particular gather information outside auditee-controlled interfaces. These tools help auditors gather data about model behavior, including relevant information not routinely collected by model operators. This category includes tools for Field Data Collection, which collect data from real systems and real users-including tools for Data Donation (such as Mozilla's YouTube Regrets project [140]), Data Scraping (e.g., Tracking Exposed [128]), Interviews/Surveys, and Compelled Transparency (e.g. tools such as MuckRock, which facilitates public records requests). We also found tools for Simulation (e.g. Meta's Web Enabled Simulation platform for simulating interactions on Facebook [134]) and Bot Deployment (tools used for sock puppet auditing [94], such as Selenium or Appium), both used to test systems with artificial or semi-artificial interactions.
+
+Need for uncompromised data access. Data collection tools aim to address one of the challenges most frequently mentioned by our participants: the difficulty of accessing data and other vital information required to conduct meaningfully independent audits. Transparency Infrastructure tools provide external auditors with controlled access to models and data-especially for online platforms, in our dataset (Fig. E.4)-but they require investment from model operators. Despite court orders and regulations like Article 40 of the Digital Service Act [47] that require the construction of transparency tools, one participant noted that key APIs used for auditing are becoming more costly and undependable:
+
+There ' s a direct impact on shutting off the access to information that affects people doing audits... we saw that with Reddit charging for their API and shutting down... Twitter charging astronomical, now, amounts for their API. It' s because everybody is scraping public Reddit and public Twitter to train large [AI] models... (P24)
+
+They wished for "access to platform data... a context under which people can do controlled experiments, using data that is provided by platforms directly" (P24).
+
+Auditors also said that corporate control over APIs undermined their independence in conducting audits which aligns with our definition of an audit (Def. B.2). A civil society auditor said,
+
+I wish I had something to force people to give me their data... Part of the problem of auditing in general is that the only people who get let in are usually the people who are willing to say nice things about whatever the technology is being audited. (P6)
+
+In practice, participants reported that key details, such as data sampling methods, data provenance, model versioning, metrics, and design justifications, were often omitted or only partially disclosed. And currently, the vetting process for API use often requires the auditor to disclose their intent for the evaluation in advance, which may compromise the integrity of the study.
+
+I' m very much concerned that what' s going to happen is.. [platforms have] given all this access, and there will actually be... more of a cover up than there is now... They have so much power in this conversation to just share whatever information they want. (P7)
+
+Instead, one participant's ideal was an "inspectability API" (P7), a required, standardized interface to allow researchers to interact with online platforms, including the ability to test different profiles, geographies, and other variables needed to evaluate disparate treatment, misinformation, and other algorithmic harms. Similarly, an auditor at a startup wished for centralized data archive available to the public:
+
+If I really had to paint my perfect vision, it would be an independent database archive, or whatever, of all the relevant data. And then... different parts of society can tap into it... I think what you want is a lot of different innovative organizations and people and builders taking this data and building useful things with it, rather than a single one. (P12)
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling Preprint, March, 3, 2025 -->
+
+Challenges with independent data collection. Rather than rely on the model operator to provide access, auditors-especially external auditors-often turned to tools for Data Collection to obtain evidence themselves, sometimes developing and sharing their own tools and processes. Unlike the tools we found for Transparency Infrastructure, which were mostly not open source (25.0% open source in our dataset; see Fig. 3), tools for Data Collection were much more likely to be available under an open source license (68.1% open source in our dataset). Tools for Data Collection-most not built specifically for AI auditing-also comprised the most popular Github repositories in our dataset (Table E.2). For example, auditors used Selenium [105], a popular collection of open source tools for browser automation, to simulate user profiles while scraping data (known as a "sock puppet" audit [94]).
+
+While this approach gave auditors more freedom, it could also take more effort. Some of the tools we found-such as the Markup's Citizen Browser [37], a data donation platform-were built from scratch to collect specific kinds of data for auditing. Existing tools for data scraping were helpful but often required extensive adaptation:
+
+We almost always have to build custom scrapers to collect data... There ' s some templates right out there for these scrapers, and then you usually have to customize them. And then there ' s a huge amount of work to keep them alive... They break all the time with all these edge cases. And so they ' re really a pain. I don 't really know that there ' s a way to solve that. (P7)
+
+Despite these difficulties, external auditors-particularly the journalists in our sample-still saw advantages in independent data collection. The same journalist noted:
+
+There ' s a lot of requests for inside access, as if that' s the only way to do this type of thing, but in reality inside access can actually be a trap... your view inside the room is actually really limited. And so I have come to believe... that actually doing analysis from the outside can often be way more revealing... I usually never have insight into the algorithm itself, but I can do analysis on the outputs. And to me, that' s the right place for a journalist to operate, because the outputs are the real-life impact. (P7)
+
+Challenges with understanding and processing data. Even when they had access to the data they wanted, participants noted that basic challenges involved with managing and analyzing data required more labor than any other task. A government auditor said, "90% of the work is figuring out what different tables are, and what different columns are, and working out whether it makes sense to join certain things. And then figuring out some meaningful metrics that we can draw from that data..." (P25). Participants also spent lots of time reviewing and requesting additional documents from audit targets.
+
+Multiple participants wished for tools to help with tasks such as data collection and cleaning: "most of the value of data infrastructure is literally cleaning data" (P3). One auditor hoped for innovation in data quality management: "There are custom scrapers, a lot of human data quality work, and one thing that I have really wanted to do and never been able to do is try to figure out ways to get that data quality work done in more interesting ways" (P7).
+
+<Figure>
+(a) Number of open source tools in each taxonomy stage. Tools may be used in multiple stages.
+</Figure>
+
+<Figure>
+(b) Percentage of open source tools by organization type.
+</Figure>
+
+Data quality concerns intersected with concerns about audit integrity. "I think we often have to worry about... [whether] what we see is what we think it is" (P15). With recent datasets scaling up to staggering sizes, this concern has become more acute and auditors commented on how manual analysis was no longer feasible: "Given how much data we are able to process, we need new methods to analyze the data curation process and what kind of problems data comes with. And then we need tools to detect what is synthetic, what is real" (P20).
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: Preprint, March, 3, 2025 Ojewale et al. -->
+
+Risk of retaliation. Some external auditors also worried that external data collection tools-particularly tools for data scraping or data donation-may violate terms of service set by platforms and result in legal liability or retaliation. Auditors expressed concerns about legal risks from existing laws and regulations, particularly the Computer Fraud and Abuse Act (CFAA) and other privacy laws. Under the CFAA, for example, an auditor who violates a platforms' terms of service may be held criminally liable.
+
+It is difficult for auditors to determine what methods-such as public data scraping or even data donation-may be deemed "unauthorized" and criminal under the CFAA unless the audited organization grants authorization. In Sandvig v. Barr (2019), for example, the ACLU sued to allow researchers to set up false accounts (sock puppets) to audit computer algorithms [102, 103]. In 2021, Facebook used exactly this term of art-"unauthorized"-several times in its justification for disabling the accounts of a group of researchers auditing its advertising algorithms with a data donation tool called Ad Observer [100, 133]. Facebook initially insinuated that disabling the researchers' accounts was required by an Federal Trade Commission (FTC) consent decree, backtracking only after the FTC called the statement inaccurate [76]. One civil society auditor said,
+
+Even if the legal risks have not been acted upon as much, there ' s cases everyone points to in terms of attacks against researchers. It' s a matter of time before it ramps up. As soon as our work becomes threatening enough, that' s when it all really starts. (P24)
+
+As a result, auditors engaged in external data collection had to take great steps to guard against liability and retaliation. One journalist said, "[The CFAA] is an incredible legal hangover for the type of work I do... how much lawyering I need to even get one tool off the ground is insane" (P7). Auditors also expressed hesitation about reforms that give platforms more control over what data is released. The same journalist continued,
+
+Exemption from [the CFAA] would honestly be more helpful than these platform access roles that the E.U. is claiming that they ' re going to offer [e.g., in the Digital Services Act], which I am very skeptical about... I just feel like the history of these things is that when platforms have been required to provide API access, they have somehow always made it impossible to do real accountability. (P7)
+
+Even auditors hired internally may assume some degree of personal risk. One civil society auditor noted, for example:
+
+Another really frequent sort of question that I get [from organizations]... is what is my liability around doing this kind of [audit work]? And frankly, to your earlier question about building in-house versus contracting, that' s another main [reason to contract]... it' s like, okay, we ' re still going to do this thing, but just sort of outsource it. So I think that just remains like a really open question that people doing this kind of work are carrying a lot of legal risk in doing so. (P24)
+
+Implications. Future research could explore tools and processes for not only facilitating access to data-especially independently, through scraping or simulation-but also for ensuring data quality and integrity. Participants specifically wished for more tooling for data donation and user-driven auditing, a nascent area of research in human-computer interaction [106, 126, 132]. Auditors also faced challenges common to data work in general, and research on practices surrounding data quality and data integrity may be applied specifically to discrimination testing and AI auditing methods.
+
+Other challenges were more particular to auditing work. Future work could explore how auditors request information and interact with model operators. Transparency Infrastructure in particular is a nascent area of tooling that may become more common in auditing practice as AI regulation develops and as barriers to external data collection mount. Independent research may help guide these tools into more trustworthy mechanisms for disclosure, even as policymakers can ensure platform-controlled tools are not the only avenue for scrutiny.
+
+# 4.4 Performance Analysis
+
+Tools for Performance Analysis (𝑁 = 129) are designed to help auditors evaluate and explain model behavior, usually through the calculation of quantiative metrics related to accuracy/safety (𝑁 = 71), explainability (𝑁 = 36), or fairness (𝑁 = 30). This category includes tools for Fairness Evaluation, Accuracy Evaluation (including tools for A/B testing, benchmarking, and model monitoring, such as Meta's Dynabench or the Linux Foundation's Adversarial Robustness Toolbox), Explainability (tools for explaining the behavior of a model, such as IBM's AI Explainability 360, or for exploring training data, such as Hugging Face's ROOTS search tool [123]), and Qualitative Analysis.
+
+Concerns about methodological integrity. Despite the many tools developed for Performance Analysis-including the most popular AI-specific Github repositories in our dataset (e.g., OpenAI Evals [67]; see Table E.2)-practitioners expressed a need for more robust, well-vetted tools and methodologies. Internal auditors in particular had concerns about the validity, reproducibility, transparency, and trustworthiness of the methods used in popular Performance Analysis tools. One auditor at a tech startup said, "I' m still not convinced of the validity, even, of some of those methods" (P4) used in tools for monitoring and validation.
+
+For example, the most popular Performance Analysis tool we found on Github is SHAP (SHapley Additive exPlanations), a gametheoretic method for measuring feature importance in a model [9] (see Table E.2). But as Kumar et al. [95] argue, Shapley values are prone to misuse and may be unsuitable for normative evaluation. Interpretability and explainability methods promoted by popular tools vary widely in their goals [120] and, like many "snake oil" AI products [18, 59, 91], may encourage false confidence in their users [118]. Yet explainability tools such as SHAP are often suggested in official regulatory guidance [101].
+
+Some participants put methodological deficiencies down to differences in the rigor employed by the various disciplines involved with auditing. An auditor in civil society said, "The bar of the kind of threshold of... validity of findings and novelty of findings is much higher in academia than it is for civil society" (P24). Participants had concerns about maintenance, effectiveness of automated monitoring processes, and the efficacy of synthetic data for representing real users instead of functioning as "an academic exercise" (P4): "You can perturb all the different inputs you want. But they might not be realistic combinations of features for people who are actually using the system" (P25).
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling Preprint, March, 3, 2025 -->
+
+Need for inspectable, reproducible methods. To allay methodological concerns, several participants emphasized the importance of open-sourcing tools for others in the community to inspect. Some of our industry participants had reproducibility in mind when designing evaluation procedures: "You want to iterate... but you know that also makes the results less reproducible. And are you being deceptive then, if you [refer in published evaluations] to a model that' s different from the one that people analyze?" (P5) However, the Performance Analysis tools we found (48.1% of which were built by for-profit organizations) were disproportionately not open source compared to other tools in our dataset, especially tools for Explainability (Fig. E.3).
+
+Need for more analysis tools beyond fairness & explainability. Similar to Standards Identification & Management, our participants wished for tools to help evaluate a broader spectrum of criteria for AI systems. The Performance Analysis tools we foundthe most popular of which were built and maintained by disproportionately large, for-profit firms (Figures E.6)-often focused on a narrow set of technical fairness definitions and explainability methods popularized in academic literature. The tools we surveyed in this category often overlooked entire other areas of concern, including the basic functionality of the model [117] as well as other methods of evaluation. For example, tools specifically devoted to qualitative-as opposed to quantitative-analysis were much harder to find (𝑁 = 3) and rarely mentioned by our participants.
+
+Implications. While there are multiple studies on the use of tools for fairness evaluation [54, 70, 119] and explainability [1, 46, 72, 82, 85, 98], fewer studies examine how practitioners evaluate other criteria such as basic functionality [117], safety, privacy, or recourse, just as fewer tools exist for this purpose. Future work could develop and investigate tools for a broader range of evaluation criteria. Future work could also explore practitioners' standards for audit tooling [101], and policymakers may develop standards that require academic peer review or vetting by regulatory bodies for audit tooling.
+
+Moreover, research must examine further how tools may contribute to "audit washing," the use of auditing procedures to legitimize unethical practices [13]. A tool for accuracy evaluation, for example, may be used to analyze the accuracy of dubious technology for predicting "criminality" or "trustworthiness" without questioning underlying ethical issues with these applications [11, 91]. In general, tools may claim to provide auditing capabilitiesusing terms such as fairness, safety, or explainability-while failing to conduct evaluations that meaningfully contend with power dynamics and institutional barriers to accountability [104].
+
+# 4.5 Audit Communication & Advocacy
+
+Some of the most crucial accountability work of an AI audit comes after empirical evaluation is complete. We found two emerging sets of tools that begin to address this important stage of AI auditing:
+
+tools for Audit Communication, to effectively translate audit results to a broader audience, and tools for Advocacy, for reporting and campaigning for consequential outcomes in response to audit results. Tools to facilitate Audit Communication were the rarest in our dataset (𝑁 = 8), and consist mostly of tools for Dataset Visualization (e.g. Google's FACETS [56]) and Audit Reporting (e.g., the ACLU's repository of NYC Local Law 144 hiring bias audit reports [127]). We found more tools for Advocacy (𝑁 = 14)-including Community Spaces (e.g., the Benefits Tech Advocacy Hub [32], which facilitates collaboration between advocates who oppose algorithmbased cuts to public benefits), tools for Organizing/Resistance (e.g., the Algorithmic Ecology framework [112], a tool for mapping the non-technical dimensions of algorithmic impact), and tools for Legal Search (e.g., the generic case database Westlaw often used to identify relevant precedent for legal redress)-but still fewer than we found in other stages of our taxonomy.
+
+These types of tools were also mentioned less often in our interviews, compared to preceding stages of our taxonomy. Still, auditors wanted their evaluation work to inform consequential judgments, in line with our definition of an audit (Def. B.2). As one put it, "in the business of designing audits, it should be as important to design the consequences and penalties that accompany these audits" (P2). For the auditors we spoke to, tooling in this stage of auditing was mostly aspirational.
+
+Tools and resources for community building. Auditors especially wished for resources that would bring together the diverse, interdisciplinary groups involved in auditing, similar to the few tools for Community Spaces we found in our tool survey. As one auditor put it, "We have to have people in the accountability business" (P7). Auditors hoped greater communication could help unite the profession around policy developments, shared language, standards, and goals that could improve the impact of their work. One auditor at a tech startup said, "[NIST] has AI guidelines that come out, and we work with them... we send in comments, we give talks, all that kind of stuff. I think that' s an important part of the auditing community" (P4). Another described a workshop attended by civil society, academics, and consulting firms to help prepare for legislation in the European Union (P23). One auditor hoped that communication could lead to shared tooling: "How do we bring these interdisciplinary communities together so that we can use tools together?" (P20)
+
+Implications. Communicating audit findings, lessons, and insights learned can help build trust and validate audit findings, recommendations, and subsequent interventions. Audit report repositories could expand the forum holding model operators accountable, allowing policymakers, journalists, and other public stakeholders to engage with evaluations more easily. Embracing public evaluation results also helps audit practitioners to learn from each other's experiences. Despite these benefits, tooling to support these stages is rare. While we found some domain-specific spaces where auditors can interact-the Benefits Tech Advocacy Hub [32], for example-we found few audit reporting tools or tools for facilitating communication between auditors, journalists, and activists. Future design work and research could explore these emergent categories. Academic research could also explore in more detail the specific mechanisms of audit communication that are most likely to result in meaningful change-such as including concrete demands for action [10]-and imagine new tools to support those mechanisms.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: Preprint, March, 3, 2025 Ojewale et al. -->
+
+# 5 Discussion
+
+The HCI community has historically contributed key research to the design and development of AI audit tools and helped define the concept of AI auditing [27, 70, 104, 119]. In this section, we specifically discuss the important takeaways for that community in particular, as well as broader lessons for other stakeholders, including policymakers, audit practitioners, and funders.
+
+# 5.1 Moving beyond evaluation, towards accountability
+
+Costanza-Chock et al. [136] found that over 65% of surveyed AI audit practitioners felt that "accountability" (defined as a "commitment from auditee to address problems covered by audit within set time") was a top unmet need in their AI auditing work. This echoes a theme repeated several times throughout our interviews-AI auditors care deeply about accountability but struggled to achieve it.
+
+Despite searching deliberately for non-evaluation tools, we found more than five times as many tools in the evaluation stages of the AI audit process as we did tools for harms discovery, audit communication, or advocacy. Perhaps unsurprisingly, these are also the stages of the audit process that participants described as most requiring contextual awareness and typically under-studied participatory and community engagement methods. Research and development related to these and other practical challenges could bolster practitioners' accountability efforts. Promising new directions for HCI research and policy include:
+
+· Studying and developing tools for harms discovery, audit communication, and advocacy. Our tool survey identifies several neglected categories of tools-particularly tools for Incident Reporting, Education/Awareness, Target Identification, and Audit Communication-that are worthy subjects for future HCI research. For instance, promising recent research explores the existing limitations [139] and educational applications [111] of incident reporting databases, but little work explores complementary technical infrastructure, such as, for example, the AI inventories often used by journalists (such as Algorithm Tips) and previously required for federal agencies [53]. Likewise, auditors envisioned audit report databases as accountability tools to facilitate the amalgamation and communication of audit findings to key stakeholders, mirroring interventions such as the U.S. Security and Exchange Commission (SEC) EDGAR database for financial accounting audits [88]. These gaps in development also present meaningful opportunities for further investment and institutionalization by policy-makers and funders.
+
+· Validating existing tools in practice. Audits have limited impact if their results are not reliable or meaningfully connected to real world requirements [10]. Unreliable performance or accuracy analysis tools that fail to meaningfully assess the audit target operate as misleading "rubber stamps" for vendors and lead to "audit washing" [13], posing a serious challenge to the legitimacy of audit results. There is a growing opportunity for HCI researchers to explore ways that AI audit practices interact with existing accountability processes such as litigation or regulatory compliance.
+
+For instance, several tools surfaced in our survey (e.g., from Holistic.ai, Credo.ai) were explicitly marketed for use for NYC Local Law 144 compliance, but studies of audit practice suggest the produced measures may not be reliable or legally compatible [30, 84, 86]. Researchers might also investigate the validity and effectiveness of government-sponsored tooling [101] and court-mandated transparency infrastructure (e.g., Facebook Ad Library, built after settlements with civil rights groups [50]).
+
+# · Developing participatory methods for audit work.
+
+- Given the broader calls for a participatory turn in AI development [90, 92, 121], it is no surprise that participation is an increasing focus for AI audit practitioners and audit tool developers as well. Recent HCI work on user auditing [132], such as the "WeAudit" tool [126], exemplifies this shift and demonstrates the possibility of designing for a more participatory AI audit process [2, 52, 132]. Policymakers can also further emphasize participation as a requirement in audit guidance and invest in tools that support participatory methods.
+
+· Open & reproducible practices for AI audit tools. Some participants were concerned about the efficacy of many AI audit tools-particularly tools whose methods were not made available for public scrutiny. (Tools we found for Performance Analysis were less likely to be open source; Fig. 3). Making AI audit tools publicly available enables both external collaboration and third-party validation. Open tooling practices may also contribute to knowledge-sharing, standards-setting, transparency, accessibility, and trust, but can have complex interactions with power and oversight that are worthy of further study [137]. Researchers, policymakers, foundations, and other stakeholders developing audit tools should prioritize open practices. Policymakers could also consider requiring that published audit reports include clear explanations of auditors' methods and tools.
+
+· Independence in audit tool use and protection from retaliation. Power dynamics between auditors and the audited have a critical impact on accountability [14, 88]. Participants had audit results blocked from publication (P1) or unduly restricted in scope (P13) due to interventions from audit targets. Audit target retaliation and censorship was raised as a risk to both internal auditors (P5), who face the threat of firings, social dismissal or professional demotion [73, 110], and external auditors (P7), who face the threat of legal action under existing privacy and anti-hacking laws [88, 122]. HCI research has explored software engineers' attempts to act on ethics concerns in the face of similar risks [73, 93]; further work could explore auditors' experiences specifically. Policymakers and stakeholders can take steps to provide protections for auditors through legal reforms [6] or legal funds such as the Coalition for Independent Technology Research.
+
+# 5.2 Moving beyond ad hoc toolkits, towards shared infrastructure
+
+Participants agreed on the need for shared infrastructure that supports the auditing process. As one participant said, tools are "a superpower for journalists, and something that really is the future of accountability... There really needs to be some sort of public infrastructure [for auditing]" (P7). But developing high quality audit tools-even when adapting existing open source tools-took resources, and participants noted a lack of long-term investment: "We need more funding for this space... especially when it comes to infrastructure" (P20).
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling Preprint, March, 3, 2025 -->
+
+Currently, much of the funding for even open source audit tools comes from private, for-profit organizations. In our landscape analysis, we found that even the free tools currently dominating the audit tooling landscape were often built by large, for-profit tech companies (Fig. 2)-for example, 9 of the 12 Transparency Infrastructure tools we found were built by for-profit organizations. Audit tools like these can hold great power over the audit process:
+
+Our determination of the performance of the algorithm carries a lot of weight within the organization. It' s not like somebody else could just throw it and be like "Oh, we 'll go ask somebody else " ... because we built the infrastructure, so we have that lever... If you can control the data sources or the ways to integrate algorithms into the data sources, that gives you power. (P3)
+
+The external auditors we interviewed were especially skeptical of the data provided from these tools and aware of their unreliability, citing the shutdowns of transparency infrastructures like Reddit and Twitter's APIs (P24) as well as Facebook's CrowdTangle tool (P12). Open source tools (e.g., for data scraping) can sometimes fill the gap, but do not always cover the scope and complexity of practical audit work.
+
+Our participants' aspirations for tooling envision another path-a path towards lasting public infrastructure that gives auditors additional levers to hold model operators accountable [96]. Directions for HCI research and development include:
+
+· Tool catalogs & other shared infrastructure. Tool selection was a major source of uncertainty for practitioners; as one expert suggested, "it' s not just about creating a multitude of auditing tools but also about fostering decision support frameworks that empower practitioners to make informed choices based on the context they are dealing with" (P25). In addition to HCI work evaluating the efficacy of audit tools [7, 54, 101, 104, 119], future research could explore frameworks that assist audit practitioners in identifying and choosing between tools at each stage in an audit. Policymakers can invest in these frameworks and publish catalogs of vetted tools for auditors to reference, similar to the OECD's Tools for Trustworthy AI list [124]. In general, shared AI inventories, AI incident databases, AI audit report registries, tool catalogs, regulatory guidance, and other centralized repositories or common transparency infrastructure could increase awareness, accessibility, and knowledge sharing, particularly if the audit community and affected stakeholders are empowered to not only utilize this infrastructure but also contribute to its development.
+
+· Institutionalized tool maintenance & funding. Currently, the burden of building and maintaining tools to address technical debt falls on the auditors, raising concerns about the sustainability of auditing efforts. One participant suggested
+
+putting expiration dates on tools to avoid future inaccuracies (P7). They also hoped to find "funders who are on board for longer tool maintenance projects" (P7), but another noted that attempts to raise support by connecting "performance issues and ML to downstream business KPIs" (P4) was difficult when talking about "nebulous things, like fairness and bias" (P4). Policymakers and foundations should set aside funding and resources for long-term tooling projects to ensure that audit tools are high quality, long-lasting, and address the wide range of needs identified in this study. Some initiatives, such as the Mozilla Technology Fund [81], the U.K. AI Safety Institute's Systemic AI Safety Grants [60], and the French AI Action Summit Public Interest fund [97] are already positioned to make these investments. Researchers and practitioners should include long-term maintenance plans with newly developed tools, possibly in collaboration with civil society organizations such as the Linux Foundation, which hosts several of the open source tools we found (IBM's AI Fairness 360 [15], for example).
+
+# 5.3 Ongoing Impact
+
+This work was completed as part of the Open Source Audit Tooling (OAT) project at the Mozilla Foundation and has already had demonstrable impact in policy engagement and funding. After submitting public comments, these findings were cited several times in the U.S. National Telecommunication and Information Administration (NTIA) "Artificial Intelligence Accountability Policy Report" [83], the "Summary report on the call for evidence on the Delegated Regulation on data access" for the E.U. Digital Services Act [47], and the U.K. AI Safety Institute's "International AI Safety Report" [71]. OAT team members presented these findings to regulators at the U.K.'s OfCom and the U.S. Federal Trade Commission. OAT team members also participated in advising the selection of two rounds of Mozilla Technology Fund (MTF) awardees, including 5 teams in an inaugural cohort (2022), and 8 teams in a follow-up cohort (2023) focused on AI audit tooling.
+
+# 6 Conclusion
+
+Ideally, AI audit studies will translate into tangible outcomes of accountability, but this outcome is far from certain. In order for the audit process to truly be feasible and effective, we-researchers, policymakers, and audit practitioners-need to invest in the infrastructure required for accountability. This will require a full effort on multiple fronts, including everything from the design and development of new tools; to new community infrastructure, communication standard-setting; to considering advocacy for certain policy positions. We cannot accept the minimum from AI auditingwe must push the boundaries of this practice until it becomes the meaningful mechanism of accountability it has the potential to be.
+
+# Acknowledgments
+
+Thanks to our participants for volunteering their time and insight. Thanks also to seminar participants at Carnegie Mellon University and the Northeast HCI Meeting for their feedback on an earlier version of this work. This work was supported by the Mozilla Foundation. A.B. is supported by Science Foundation Ireland via the ADAPT Centre of Digital Content Technology funded under the European Regional Development Fund (ERDF) through Grant #13/RC/2106_P2. B.V. was supported by the University of Notre Dame IBM Tech-Ethics Lab.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+

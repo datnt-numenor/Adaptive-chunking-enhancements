@@ -1,0 +1,14 @@
+{
+  "request_hash": "e38ba9de107dd211126ba78383ada024b9a20f9221b1d72468bf4f5db14a98d4",
+  "prompt_sha256": "ca90d964098af4a01ab5f94b9bd522edb7ca64c61080597d0d729e55bf6ec3ad",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO54l4sd9S0ty5l2WqrPwtbHcIWj",
+  "prompt_tokens": 8873,
+  "completion_tokens": 50,
+  "actual_usd": 0.00136095,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the differences between Naive RAG and Graph RAG, specifically highlighting how Graph RAG constructs knowledge graphs to enhance coherence and context in answers."
+  }
+}

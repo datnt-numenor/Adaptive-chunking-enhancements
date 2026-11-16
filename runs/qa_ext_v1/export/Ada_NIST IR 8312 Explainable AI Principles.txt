@@ -1,0 +1,326 @@
+DOCUMENT: NIST IR 8312 Explainable AI Principles
+
+<<<PAGE 7>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+# Table of Contents
+
+<Table>
+| 0                                          | 1                                                                                                                                                                                                                          | 2                                                   | 3               |
+|:-------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------|:----------------|
+| 1 Introduction                             | 1 Introduction                                                                                                                                                                                                             | 1 Introduction                                      | 1               |
+| 2 Four Principles of Explainable AI        | 2 Four Principles of Explainable AI                                                                                                                                                                                        | 2 Four Principles of Explainable AI                 | 2               |
+|                                            | 2.1                                                                                                                                                                                                                        | Explanation                                         | 3               |
+|                                            | 2.2                                                                                                                                                                                                                        | Meaningful                                          | 3               |
+|                                            | 2.3                                                                                                                                                                                                                        | Explanation Accuracy                                | 4               |
+|                                            | 2.4                                                                                                                                                                                                                        | Knowledge Limits                                    | 5               |
+|                                            | 2.5                                                                                                                                                                                                                        | Summary                                             | 5               |
+| 3 Purposes and styles of explanations      | 3 Purposes and styles of explanations                                                                                                                                                                                      | 3 Purposes and styles of explanations               | 6               |
+| 4 Risk Management of Explainable AI        | 4 Risk Management of Explainable AI                                                                                                                                                                                        | 4 Risk Management of Explainable AI                 | 8               |
+| 5 Overview of Principles in the Literature | 5 Overview of Principles in the Literature                                                                                                                                                                                 | 5 Overview of Principles in the Literature          | 10              |
+| 6 Overview of Explainable AI Algorithms    | 6 Overview of Explainable AI Algorithms                                                                                                                                                                                    | 6 Overview of Explainable AI Algorithms             | 12              |
+|                                            | 6.1                                                                                                                                                                                                                        | Self-Interpretable Models                           | 12              |
+|                                            | 6.2                                                                                                                                                                                                                        | Post-Hoc Explanations                               | 13              |
+|                                            |                                                                                                                                                                                                                            | 6.2.1 Local Explanations                            | 13              |
+|                                            |                                                                                                                                                                                                                            | 6.2.2 Global Explanations                           | 14              |
+|                                            | 6.3                                                                                                                                                                                                                        | Adversarial Attacks on Explainability               | 15              |
+| 7                                          | Evaluating Explainable AI Algorithms                                                                                                                                                                                       | Evaluating Explainable AI Algorithms                | 15              |
+|                                            | 7.1                                                                                                                                                                                                                        | Evaluating Meaningfulness                           | 15              |
+|                                            | 7.2                                                                                                                                                                                                                        | Evaluating Explanation Accuracy                     | 17              |
+| 8                                          | Humans as a Comparison Group for Explainable AI                                                                                                                                                                            | Humans as a Comparison Group for Explainable AI     | 18              |
+|                                            | 8.1                                                                                                                                                                                                                        | Explanation                                         | 19              |
+|                                            | 8.2                                                                                                                                                                                                                        | Meaningful                                          | 19              |
+|                                            | 8.3                                                                                                                                                                                                                        | Explanation Accuracy                                | 20              |
+|                                            | 8.4 Knowledge Limits                                                                                                                                                                                                       | 8.4 Knowledge Limits                                | 20              |
+| 9 Discussion and Conclusions References    | 9 Discussion and Conclusions References                                                                                                                                                                                    | 9 Discussion and Conclusions References             | 21 23           |
+| List of Figures                            | List of Figures                                                                                                                                                                                                            | List of Figures                                     | List of Figures |
+| Fig.                                       | 1 Illustration of the four principles of explainable artificial intelligence. rows indicate that for a system to be explainable, it must provide an tion. The remaining three principles are the fundamental properties of | Ar- explana- those explanations.                    | 3               |
+| Fig.                                       | 2                                                                                                                                                                                                                          | Illustration of our elements of explanation styles. | 7               |
+</Table>
+
+<!-- PageFooter: iv -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+# 1. Introduction
+
+When the father of one of the authors was diagnosed with cancer, they went to speak with his oncologist. The oncologist described the state of his cancer and went through strategies and options for treatment. The oncologist answered the father's questions and explained his role in his treatment. The author's father felt he was a partner and had some control. The father trusted the treatment because he received a meaningful and understandable explanation about the process. The doctor's bedside manner won over the father. The medical arts have changed, and possessing a good bedside manner has become de rigueur. When artificial intelligence (AI) systems contribute to a diagnosis, they could support good bedside manners by explaining their recommendations to physicians.
+
+Medical diagnoses are just one example where AI systems contribute to decisions that impact a person's life. Other examples are systems which evaluate loan applications and recommend jail sentences. The nature of these decisions has spurred a drive to create algorithms, methods, and techniques to accompany outputs from AI systems with explanations. This drive is motivated in part by laws and regulations which state that decisions, including those from automated systems, must provide information about the reasoning behind those decisions 2 . It is also motivated by the desire to create trustworthy AI [49, 109, 131].
+
+Explainable AI is one of several properties that characterize trust in AI systems [121, 127, 134]. Other properties include resiliency, reliability, bias, and accountability. Usually, these terms are not defined in isolation, but as a part or set of principles or pillars. The definitions vary by author, and they focus on the norms that society expects AI systems to follow. Based on the calls for explainable systems [59], it can be assumed that the failure to articulate the rationale for an answer can affect the level of trust users will grant that system. Suspicions that the system is biased or unfair can raise concerns about harm to individuals and to society [119, 146]. This may slow societal acceptance and adoption of the technology.
+
+With the increased call for explanations, the field needs a principled method that characterizes a good explanation from an AI system. First, the characterization needs to be human-centered, because humans consume them. Second, they need to be understandable to people. Third, explanations should correctly reflect the system's process for generating the output. To foster confidence in explanations, the system should indicate when it is operating outside its designed conditions. These core concepts of a good explanation are the basis for our four principles of explainable AI.
+
+Although these principles may affect the methods in which algorithms operate to meet explainable AI goals, the focus of the concepts is not algorithmic methods or computations themselves. Also, the principles do not pertain to the system's usage during deployment. Rather, we present four principles organized around the humans that consume the explanations. They provide a structure to begin measuring components of explanations: their quality, goodness, accuracy, and limitations. To measure explanations in a structured way
+
+\* 2 The Fair Credit Reporting Act (FCRA) and the European Union (E.U.) General Data Protection Regulation (GDPR) Article 13.
+
+<!-- PageFooter: 1 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+is essential for the field to make progress toward concrete definitions by which explanation quality can be measured. They serve as a guide for future research directions for the field. The four principles support the foundation of explainable AI measurement, policy considerations, safety, acceptance by society, and other aspects of AI technology.
+
+We present and discuss the principles in Section 2. We adopt an expansive view of explanations and characterize the space in Section 3. We outline risks introduced by explainable AI - especially those introduced if the principles are not met (Section 4). To put current work into context, we provide a review of current explainable AI methods and evaluation metrics, and other existing principles for explainable AI (Sections 5, 6, and 7). Finally, we review existing literature to assess the extent to which humans meet the same principles we introduce for AI (Section 8). Performance expectations can vary for humans and machines. Although in some contexts, these differing expectations may or may not be appropriate, a baseline on which they could be compared is needed.
+
+# 2. Four Principles of Explainable AI
+
+We present four fundamental principles for explainable AI systems. These principles are heavily influenced by considering the AI system's interaction with the human recipient of the information. The requirements of the given situation, the task at hand, and the consumer will all influence the type of explanation deemed appropriate for the situation. These situations can include, but are not limited to, regulator and legal requirements, quality control of an AI system, and customer relations. Our four principles are intended to capture a broad set of motivations, reasons, and perspectives. Our principles apply to systems that produce explanations, and they support the full range of AI techniques, not only machine learning ones.
+
+Before we delve into the principles, for this document, we operationally define three key terms: explanation, output, and process. An explanation is the evidence, support, or reasoning related to a system's output or process. We define the output of a system as i) the outcome from or ii) the action taken by a machine or system performing a task. The output of a system differs by task. For a loan application, the output is a decision: approved or denied. For a recommendation system, the output could be a list of recommended movies. For a grammar checking system, the output is grammatical errors and recommended corrections. For a classification system, it could be an object identifier or a spam detector. For automated driving, it could be the navigation itself. The process refers to the procedures, design, and system workflow which underlie the system (c.f. [50]). This includes documentation about the system, information on data used for system development or data stored, and related knowledge about the system.
+
+Briefly, our four principles of explainable AI are:
+
+Explanation: A system delivers or contains accompanying evidence or reason(s) for outputs and/or processes.
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+- Meaningful: A system provides explanations that are understandable to the intended consumer(s).
+
+- Explanation Accuracy: An explanation correctly reflects the reason for generating the output and/or accurately reflects the system's process.
+
+- Knowledge Limits: A system only operates under conditions for which it was designed and when it reaches sufficient confidence in its output.
+
+These are defined and put into context in more detail below. Figure 1 shows the principles and indicates that for a system to be considered explainable, it must first have an explanation or contain accompanying evidence which can be accessed.
+
+<Figure>
+Fig. 1. Illustration of the four principles of explainable artificial intelligence. Arrows indicate that for a system to be explainable, it must provide an explanation. The remaining three principles are the fundamental properties of those explanations.
+</Figure>
+
+# 2.1 Explanation
+
+The Explanation principle states that for a system to be considered explainable it supplies evidence, support, or reasoning related to an outcome from or a process of an AI system. By itself, the explanation principle is independent of whether the explanation is correct, informative, or intelligible. This principle does not impose any metric of quality on those explanations. These factors are components of the meaningful and explanation accuracy principles. Explanations in practice will vary, and should, according to the given system and scenario. This means there will be a large range of ways an explanation can be executed or embedded into a system. To accommodate a large range of applications we adopt a deliberately broad definition of an explanation.
+
+# 2.2 Meaningful
+
+A system fulfills the Meaningful principle if the intended recipient understands the system's explanation(s). There are commonalities across explanations which can make them more
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+meaningful [84]. For example, stating why the system did behave a certain way can be more understandable than describing why it did not behave a certain way [76]. Many factors contribute to what individual people will consider a "good" explanation [55, 84, 139]. Therefore, developers need to consider the intended audience [44]. Several factors influence what information people will find important, relevant, or useful. These include a person's prior knowledge and experiences and the overall psychological differences between people [18, 64, 90]. Moreover, what they consider meaningful will change over time as they gain experience with a task or system [18]. Different groups of people will also have different desires from a system's explanations [13, 44, 50]. Groups may be defined broadly according to their role or relationship to the system. For example: developers of a system are likely to have different desires from an explanation compared to an end-user.
+
+In addition to its audience, what is considered meaningful will vary according to the explanation's purpose. Different scenarios and needs will drive what is important and useful in a given context. Meeting the Meaningful principle will be accomplished by understanding the audience's needs, level of expertise, and relevancy to the question or query at hand. We provide a more detailed discussion of these purposes in Section 3.
+
+Measuring the meaningful principle is an area of ongoing work (Section 7.1). The challenge is to develop measurement protocols that adapt to different audiences. Rather than viewing this as a burden, we argue that both the awareness and appreciation of an explanation's context support the ability to measure the quality of AI explanations. Scoping these factors will therefore bound the possibilities for how to execute the explanation in a goal-oriented and meaningful way.
+
+# 2.3 Explanation Accuracy
+
+Together, the Explanation and Meaningful principles only call for a system to produce explanations that are intelligible to the intended audience. These two principles do not require that an explanation correctly reflects a system's process for generating its output. The Explanation Accuracy principle imposes veracity on a system's explanations.
+
+Explanation accuracy is a distinct concept from decision accuracy. Decision accuracy refers to whether the system's judgment is correct or incorrect. Regardless of the system's decision accuracy, the corresponding explanation may or may not accurately describe how the system came to its conclusion or action. Researchers in AI have developed standard measures of algorithm and system accuracy [23, 29, 52, 96, 97, 99, 103, 114]. While these established decision accuracy metrics exist, researchers are in the process of developing performance metrics for explanation accuracy. In Section 7.2, we review current work on this subject.
+
+Additionally, explanation accuracy needs to account for the level of detail in the explanation. For some audiences and/or purposes, simple explanations will suffice. The given reasoning might succinctly focus on the critical point(s) or provide a high level reasoning without extensive detail. These simple explanations could lack nuances that are necessary to completely characterize the algorithm's process for generating its output. However, these
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+nuances may only be meaningful to certain audiences, such as experts of the system. This is similar to how humans approach explaining complex topics. A professor of neuroscience may explain a new finding with extensive and technical details to a colleague. That same finding will likely be distilled and changed for presenting to an undergraduate student in order to present the pertinent and higher level details. That same professor may explain the finding very differently to their untrained friends and parents.
+
+Together, this highlights the point that explanation accuracy and meaningfulness interact. A detailed explanation may accurately reflect the system's processing, but sacrifice how useful and accessible it is to certain audiences. Likewise, a brief, simple explanation may be highly understandable but would not fully characterize the system. Given these considerations, this principle allows for flexibility in explanation accuracy metrics.
+
+# 2.4 Knowledge Limits
+
+The previous principles implicitly assume that a system is operating within the scope of its design and knowledge boundaries. The Knowledge Limits principle states that systems identify cases in which they were not designed or approved to operate, or in cases for which their answers are not reliable. By identifying and declaring knowledge limits, this practice safeguards answers so that a judgment is not provided when it may be inappropriate to do so. This principle can increase trust in a system by preventing misleading, dangerous, or unjust outputs.
+
+There are two ways a system can reach or exceed its knowledge limits. In one way, the operation or query to the system can be outside its domain. For example, in a system built to classify bird species, a user may input an image of an apple. The system could return an answer to indicate that it could not find any birds in the input image; therefore, the system cannot provide an answer. This is both an answer and an explanation. In a second way, the confidence of the most likely answer may be too low, depending on an internal confidence threshold. To revisit an example of the bird classification system, the input image of a bird may be too blurry to determine its species. In this case, the system may recognize that the image is of a bird but that the image is of low quality. An example output may be: "I found a bird in the image, but the image quality is too low to identify it."
+
+# 2.5 Summary
+
+Given the wide range of needs and applications of explainable AI systems, a system may be considered more explainable, or better able to meet the principles, if it can generate more than one type of explanation. Further, the metrics used to evaluate the accuracy of an explanation may not be universal or absolute. A body of ongoing work currently seeks to develop and validate explainable AI methods. An overview of these efforts is provided in Sections 6 and 7. The four principles serve as a guidance for how to consider whether the explanation itself meets user needs.
+
+The field of explainable AI is an area of active research. Our understanding of these systems and their use will vary as the field grows with new knowledge and data. Therefore,
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+these principles serve as a way to guide how we think about the needs of the system. These principles provide a basis for approaching new challenges and questions.
+
+# 3. Purposes and styles of explanations
+
+To illustrate the broad range of explanations, we characterize explanations by two properties: purpose and style. Purpose is the reason why a person requests an explanation or what question the explanation intends to answer. Style describes how an explanation is delivered.
+
+The audience will strongly influence the purpose of the explanation and the information it provides. This information will vary according to different groups of people and their role in the system [13, 44, 50]. A system builder may want explanations related to debugging AI models or evaluating training data. Regulators may inquire if a system meets stated regulatory requirements [44].
+
+The explanation's purpose will in turn influence its style. In Figure 2, we visualize our three elements of style: level of detail, degree of interaction between the human and machine, and its format. These attributes are not exhaustive - explanations can take many forms. However, we highlight these elements as ones closely related to meeting the four principles. Therefore, considering these will lay the groundwork for producing explanations. We expound upon these in more detail below.
+
+The level of detail is depicted as a range, from sparse to extensive. By sparse, we mean that the amount of information provided is brief, limited, and/or at a high-level, lacking in detail. An example of a sparse explanation might be an explanation for a decision made by an alert system (e.g., "system processes slowed because of overheating."). An extensive explanation may contain detailed information about a system and/or provide a large amount of information (e.g., a report with relevant system information to understand its process).
+
+We place the degree of human-machine interaction into three categories: declarative explanations, one-way interaction, and two-way interaction. In a declarative explanation, the systems provides an explanation, and there is no further interaction. This describes most current explainable AI methods (Section 6). For example, a loan application system may always output the rationale for an acceptance or rejection. An object classifier may output a saliency map [120]. A model card [86] may contain pre-determined information about the system. A declarative explanation is based on a default query, such as "why did the object classifier produce this decision?". The human cannot alter the question being asked (barring a change in the system itself to produce something different).
+
+A higher degree of interaction is a one-way interaction. For this, the explanation is determined based on a query or question input to the system [20, 35, 142]. For example, this may be a graphical output depending on the factors a person wishes to visualize. This may allow the explanation's consumer the ability to probe further or to submit different queries.
+
+We define the category with the deepest interaction level as the two-way interaction. This models a conversation between people. The person can probe further, and the machine can probe back, ask clarifying questions, or provide new avenues of exploration. For
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+<Figure>
+Fig. 2. Illustration of our elements of explanation styles.
+</Figure>
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+example, a system may probe the user for additional details or propose alternate questions. To our knowledge, two-way interactions do not yet exist. Developing them is a future research direction.
+
+The explanation's format includes visual and graphical, verbal, and auditory or visual alerts. Examples of graphical formats include outputs from data analyses or saliency maps. Verbal formats can include written outputs and reports as well as auditory outputs, such as speech. These visual and verbal formats carry the assumption that the audience is expecting and attending to the explanation. Another form of explanation can capture an unaware audience's attention. A siren or light system can produce different alarms, light flashing patterns, and/or light colors as an explanation that alert the audience. For example, a specific siren pitch or pattern could indicate something about a system's status which may need attention.
+
+Each of these style elements will need to be considered to produce an explanation for its purpose and to meet the four principles. Some cases may call for a simple, declarative explanation as the most appropriate style to optimize how meaningful it is. This is sometimes the case in a weather emergency, such as when a tornado is in the area. A current weather alert from the National Weather Service, "Tornado Warning: Take Action!" 3 , operates as both an alert and a simple explanation. The alert is to "Take Action" with the simple explanation of "Tornado Warning." Depending on the metric, this explanation may not be considered highly accurate because the minimal level of detail: it does not include why a tornado warning is declared in its explanation. However, in this example, brevity is appropriate to ensure it is understood by a wide audience and to enable swift action. Although minimal, additional information with an alert may be helpful to address noncompliance in responding to weather alerts (e.g., "cry-wolf" effects) [73]. In a different scenario, such as when debugging a system, the explanation could include information on the internal steps of a system. This could be lengthy and contain field-specific language. The audience may need time and more effort to examine the explanation and to decide on their next actions. Here, more details in the user's preferred format would be helpful, and two-way interactions could become important.
+
+These different purposes, styles, and considerations illustrate the range and types of explanations. This points to the need for flexibility in addressing the scope of systems that require explanations. Because the circumstances under which an explanation is provided will differ, the four principles encourage adapting to different styles as appropriate. Some explanations will be easier to achieve than others, and designers will need to consider tradeoffs between accomplishing different goals.
+
+# 4. Risk Management of Explainable AI
+
+Risk is defined as "the effect of uncertainty of objectives" [22, pg. 6] and includes both negative outcomes (threats) as well as positive outcomes (opportunities). Risk management is a process that can be used to define, assess, and mitigate risk. Explainable AI can mitigate
+
+\* 3 https://www.weather.gov/safety/tornado-ww
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+the risks of artificial intelligence by assessing, measuring, or predicting the risk in a model or system. Explanations can be used to test for vulnerabilities [41]. Alternatively, explainable AI can introduce risks of its own, e.g., adversarial attacks discussed in Section 6.3. This section focuses on the latter, managing the potential risks introduced by explainable AI.
+
+Any explainable AI system will contain potential risks, both threats and opportunities. The degree to which stakeholders are prepared to accept the trade-off of general risk and goals is called the stakeholders' risk appetite [22]. Many risk management strategies share the common components: identifying, analyzing, responding, monitoring, and reviewing. For explainable AI, a risk management strategy will need to factor the four principles.
+
+An explanation, the first principle, is necessary for explainable AI, but an explanation itself introduces risks, both positive and negative. A potential negative outcome of having an explanation is the exposure of proprietary details [85]. A single explanation may not expose the inner workings of the system. However, multiple explanations, either from multiple independent queries or through a two-way interaction, could expose intellectual property when connected to each other. How many explanations must an end user have access to before they have an understanding of the system? The scope of each explanation may impact the number. These include explanations that describe the limit of the system's knowledge.
+
+However, explanations also have the potential for positive outcomes. A user can better understand the system. This could lead to improvements, such as increased trust in the system. Explanations may also be necessary for compliance with regulations, e.g., The Fair Credit Reporting Act (FCRA) and Article 13 of the European Union General Data Protection Regulation (GDPR).
+
+Explanations need to be meaningful for the audience. This is the second principle and introduces its own risks. A meaningful explanation can give deeper insight into the system, but it may expose intellectual property or system vulnerabilities by exposing its inner workings. An explanation that is not meaningful, on the other hand, is in jeopardy of being ignored or not recognized as an explanation.
+
+In order to be useful, an explanation not only needs to be meaningful, it must also be accurate, our third principle. A relevant potential risk is commonly known as model risk, the potential negative outcomes derived from an invalid or misapplied model. As stated in the Federal Reserve System [31], one of the two main sources for this type of risk is underlying errors in the model causing erroneous outputs. An inaccurate explanation can lead to a misinterpretation or misunderstanding of how the system works or arrived at an outcome. This is a negative risk for an end user, but AI systems are also used as one part of a larger system where the AI might bias a human.
+
+In face recognition, a human face examiner could receive information from an AI algorithm on which parts of the face are useful. An accurate explanation can help the examiner more accurately assess the pair of faces while an inaccurate explanation could lead to a wrong decision. In the judicial system, AI algorithms have been used in decision, such as if a defendant may be arrested again [8]. An inaccurate explanation of how the algorithm
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+arrived at its outcome could result in a miscarriage of justice. An accurate explanation can help create a more just society.
+
+The other main source of model risk is using the model incorrectly or beyond its knowledge limits [31]. Explanations that describe the knowledge limits of the system, the fourth principle, can provide assurance the model is not operating out of scope and nurture confidence. Describing the limits of a system can potentially expose the inner workings of the system, especially if combined with information collected from other explanations.
+
+Examining the potential risks of software exposure, there are different contexts, categories, and levels of risk. Who are the end users? If they are only internal to the organizations such as developers, the management strategy will be different than if the end users include external customers.
+
+Explainable AI introduces new threats to a system. However, it also introduces new opportunities as well. Whether the outcome is a threat or an opportunity sometimes depends on the audience. Risk management considers the trade-offs and possibilities of these and other factors. When assessing risk, two components often assessed are the likelihood of the risk and the impact of the outcome [37].
+
+In general for AI, there is a need to develop a risk management framework; a request for information by NIST 4 occurred on 2021-07-29. For more information on risk management, see [22, 37, 128].
+
+# 5. Overview of Principles in the Literature
+
+Theories and properties of explainable AI have been discussed from different perspectives, with commonalities and differences across these points of view [9, 26, 34, 50, 79, 111, 112, 141].
+
+Lipton [79] divides explainable techniques into two broad categories: transparent and post-hoc interpretability. Lipton [79] defines a transparent explanation as reflecting to some degree how a system came to its output. A subclass is simulatability, which requires that a person can grasp the entire model. This implies that explanations will reflect the inner workings of a system. Their post-hoc explanations "often do not elucidate precisely how a model works, they may nonetheless confer useful information for practitioners and end users of machine learning." For example, the bird is a cardinal because it is similar to cardinals in the training set.
+
+Rudin [111] argues that it should not be assumed that interpretability must be sacrificed for state-of-the-art accuracy. They recommend that for high stakes decisions, one should avoid a black-box model, unless one can prove that an interpretable model does not exist with the same level of accuracy. Note that we will we refer to black-box as closed-box for the remainder of this document [94]. Rudin et al. [113] builds on their previous work by presenting five principles and ten grand challenges of interpretable machine learning.
+
+Mueller et al. [91] reviews some of the basic concepts for user-centered explainable AI systems. Based on these concepts, they describe the Self-Explanation Scorecard, and
+
+\* 4 https://www.federalregister.gov/d/2021-16176; Date Accessed: 2021-08-31
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312 -->
+
+______________________________________________________________________________________________________
+
+present a set of user-centered design principles.
+
+From a psychological perspective, Broniatowski [17] makes the case that interpretability and explainability are distinct requirements for machine learning systems. The resulting analysis implies that system output should be tailored to different types of users.
+
+Wachter et al. [140] argue that explanations do need to meet the explanation accuracy property. They claim that counterfactual explanations are sufficient. "A counterfactual explanation of a prediction describes the smallest change to the feature values that changes the prediction to a predefined output [88];" e.g., if you had arrived to the platform 15 minutes earlier, you would have caught the train. Counterfactual explanations do not necessarily reveal the inner workings of a system. This property allows counterfactual explanations to protect intellectual property.
+
+Gilpin et al. [34] defines a set of concepts for explainable AI. Similar to the meaningful and explanation accuracy principles in our current work, Gilpin et al. [34] propose that explanations should allow for a trade-off between their interpretability and completeness. In addition, they state that trade-offs must not obscure key limitations of a system.
+
+Doshi-Velez and Kim [26] address the critical question: measuring if explanations are meaningful for users or consumers. They present a framework for a science to measure the efficiency of explanations. This paper discusses factors that are required to begin testing interpretability of explainable systems. The paper highlights the gap between these principles as a concept and creating metrics and evaluation methods.
+
+Information Commissioner's Office and The Alan Turing Institute [50] lays out principles to follow for explainable AI. These principles are: be transparent, be accountable, consider the context you are operating in, and reflect on the impact of your AI system on the individuals affected as well as the wider society [50]. In addition to discussing principles, they discuss different things that go into an explanation, including process-based explanations vs. outcome-based explanations, the rationale, the responsibility of who made what decisions, an explanation of the data, and design steps that maximize fairness, safety, and impact of the use of the system.
+
+Barredo Arrieta et al. [9] discuss these various terms used in different sources to describe explainability or interpretability: understandability, comprehensibility, interpretability, explainability, and transparency. They discuss how these terms are all different yet tied together.
+
+Weller [141] discusses types of transparency and how they address different classes of users or consumers of explanations. Similar to the explanation accuracy principle, the paper introduces faithfulness of an explanation as
+
+...broadly beneficial for society provided that explanations given are faithful, in the sense that they accurately convey a true understanding without hiding important details. This notion of faithful can be hard to characterize precisely. It is similar in spirit to the instructions sometimes given in courts to tell "the truth, the whole truth, and nothing but the truth." [141]
+
+Across these viewpoints, there exist both commonalities and disagreement. Similar to
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "3c270113c77becc1542bd8a1f54701309669103d6d1c640226a69a783e9bfff4",
+  "prompt_sha256": "223b6b8b3899adf957ea8bfd5aede32b5c0eee31ca6f3db2a9363e3b4e119ce3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9ZmFmEL8NHZI6YPAnWHMkPdgIU",
+  "prompt_tokens": 8910,
+  "completion_tokens": 37,
+  "actual_usd": 0.0013587,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics on the average number of unique AI-related sentences per filing, confirming the claim made in the Reference Answer."
+  }
+}

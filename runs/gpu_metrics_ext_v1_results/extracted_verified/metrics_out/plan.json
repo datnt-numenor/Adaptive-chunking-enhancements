@@ -1,0 +1,2282 @@
+{
+ "data_dir": "data/clair_ext_set",
+ "batch_size": 8,
+ "shards": [
+  [
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety",
+    "cost": 495
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management",
+    "cost": 344
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides",
+    "cost": 307
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey",
+    "cost": 257
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat",
+    "cost": 254
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-",
+    "cost": 212
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025",
+    "cost": 210
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate",
+    "cost": 203
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits",
+    "cost": 198
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_Singapore Model AI Governance Framework 2nd Edition",
+    "cost": 194
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models",
+    "cost": 179
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance",
+    "cost": 171
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_EDPB Opinion 28-2024 AI Models",
+    "cost": 166
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management",
+    "cost": 163
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice",
+    "cost": 150
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI",
+    "cost": 144
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_NIST AI RMF 1.0",
+    "cost": 144
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H",
+    "cost": 143
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach",
+    "cost": 141
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling",
+    "cost": 136
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A",
+    "cost": 134
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an",
+    "cost": 130
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence",
+    "cost": 124
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po",
+    "cost": 124
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2602.13244 Responsible AI in Business",
+    "cost": 119
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A",
+    "cost": 113
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing",
+    "cost": 109
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization",
+    "cost": 106
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act",
+    "cost": 103
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations",
+    "cost": 98
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk",
+    "cost": 93
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act",
+    "cost": 86
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet",
+    "cost": 85
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach",
+    "cost": 84
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA",
+    "cost": 83
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul",
+    "cost": 83
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications",
+    "cost": 82
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R",
+    "cost": 81
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc",
+    "cost": 78
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act",
+    "cost": 78
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude",
+    "cost": 75
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research",
+    "cost": 73
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance",
+    "cost": 69
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems",
+    "cost": 66
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga",
+    "cost": 65
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations",
+    "cost": 62
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh",
+    "cost": 58
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI",
+    "cost": 54
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A",
+    "cost": 54
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing",
+    "cost": 53
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI",
+    "cost": 49
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment",
+    "cost": 49
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI",
+    "cost": 45
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act",
+    "cost": 39
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Sophia_Defenseur des droits Algorithmes Discriminations",
+    "cost": 38
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl",
+    "cost": 36
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI",
+    "cost": 29
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_G7 Hiroshima Code of Conduct for Advanced AI",
+    "cost": 25
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety",
+    "cost": 105
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Sophia_CNIL Comment permettre a l'homme de garder la main",
+    "cost": 95
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management",
+    "cost": 71
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_GAO AI Accountability Framework",
+    "cost": 69
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks",
+    "cost": 60
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_NIST AI 100-4 Synthetic Content",
+    "cost": 58
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk",
+    "cost": 53
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_ENISA AI Cybersecurity Challenges",
+    "cost": 47
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits",
+    "cost": 45
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI",
+    "cost": 44
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-",
+    "cost": 44
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_NIST IR 8312 Explainable AI Principles",
+    "cost": 39
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation",
+    "cost": 37
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management",
+    "cost": 37
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models",
+    "cost": 36
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025",
+    "cost": 33
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_EDPB Opinion 28-2024 AI Models",
+    "cost": 32
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_NIST AI RMF 1.0",
+    "cost": 30
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A",
+    "cost": 29
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_Datatilsynet AI and Privacy",
+    "cost": 28
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A",
+    "cost": 27
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability",
+    "cost": 27
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H",
+    "cost": 26
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act",
+    "cost": 25
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act",
+    "cost": 25
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment",
+    "cost": 23
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards",
+    "cost": 23
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing",
+    "cost": 23
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance",
+    "cost": 22
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A",
+    "cost": 20
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains",
+    "cost": 17
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_Council of Europe HUDERIA Methodology",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige",
+    "cost": 13
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh",
+    "cost": 13
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems",
+    "cost": 12
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment",
+    "cost": 12
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar",
+    "cost": 11
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too",
+    "cost": 10
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI",
+    "cost": 10
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati",
+    "cost": 10
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act",
+    "cost": 8
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act",
+    "cost": 8
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Sophia_Defenseur des droits Algorithmes Discriminations",
+    "cost": 8
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations",
+    "cost": 7
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI",
+    "cost": 5
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Sophia_CNIL Comment permettre a l'homme de garder la main",
+    "cost": 112
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management",
+    "cost": 88
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides",
+    "cost": 81
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey",
+    "cost": 76
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_NIST AI 100-4 Synthetic Content",
+    "cost": 75
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_UK AI Regulation White Paper",
+    "cost": 73
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_ENISA AI Cybersecurity Challenges",
+    "cost": 66
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_NIST AI 600-1 Generative AI Profile",
+    "cost": 61
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk",
+    "cost": 59
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat",
+    "cost": 57
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-",
+    "cost": 56
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate",
+    "cost": 52
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI",
+    "cost": 51
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer",
+    "cost": 48
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation",
+    "cost": 47
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too",
+    "cost": 46
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_EDPB Opinion 28-2024 AI Models",
+    "cost": 45
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act",
+    "cost": 43
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A",
+    "cost": 42
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling",
+    "cost": 41
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance",
+    "cost": 40
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025",
+    "cost": 40
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within",
+    "cost": 38
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po",
+    "cost": 36
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains",
+    "cost": 35
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards",
+    "cost": 34
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro",
+    "cost": 33
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_Singapore Model AI Governance Framework 2nd Edition",
+    "cost": 33
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law",
+    "cost": 31
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_Datatilsynet AI and Privacy",
+    "cost": 31
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations",
+    "cost": 30
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_NIST SP 800-218A Secure Software Development GenAI",
+    "cost": 29
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking",
+    "cost": 29
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A",
+    "cost": 29
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries",
+    "cost": 28
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2602.13244 Responsible AI in Business",
+    "cost": 27
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk",
+    "cost": 26
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment",
+    "cost": 25
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance",
+    "cost": 25
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance",
+    "cost": 24
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A",
+    "cost": 23
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge",
+    "cost": 22
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou",
+    "cost": 22
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act",
+    "cost": 22
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A",
+    "cost": 21
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R",
+    "cost": 21
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research",
+    "cost": 20
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress",
+    "cost": 18
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga",
+    "cost": 18
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach",
+    "cost": 17
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing",
+    "cost": 16
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance",
+    "cost": 15
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act",
+    "cost": 15
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI",
+    "cost": 15
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance",
+    "cost": 14
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too",
+    "cost": 13
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar",
+    "cost": 13
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems",
+    "cost": 12
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati",
+    "cost": 12
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act",
+    "cost": 11
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability",
+    "cost": 10
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Sophia_Defenseur des droits Algorithmes Discriminations",
+    "cost": 10
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations",
+    "cost": 8
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI",
+    "cost": 6
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk",
+    "cost": 5
+   }
+  ],
+  [
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Sophia_CNIL Comment permettre a l'homme de garder la main",
+    "cost": 433
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_GAO AI Accountability Framework",
+    "cost": 385
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_UK AI Regulation White Paper",
+    "cost": 312
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks",
+    "cost": 273
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk",
+    "cost": 242
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri",
+    "cost": 234
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability",
+    "cost": 206
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc",
+    "cost": 201
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024",
+    "cost": 196
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI",
+    "cost": 189
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk",
+    "cost": 189
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too",
+    "cost": 170
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem",
+    "cost": 163
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act",
+    "cost": 157
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation",
+    "cost": 152
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech",
+    "cost": 148
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within",
+    "cost": 143
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A",
+    "cost": 142
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.15682 Transfeminist AI Governance",
+    "cost": 139
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law",
+    "cost": 131
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_OMB M-24-10 AI Governance Memo",
+    "cost": 131
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability",
+    "cost": 130
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro",
+    "cost": 119
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks",
+    "cost": 118
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act",
+    "cost": 116
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment",
+    "cost": 111
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_Datatilsynet AI and Privacy",
+    "cost": 107
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards",
+    "cost": 106
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer",
+    "cost": 106
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance",
+    "cost": 102
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking",
+    "cost": 101
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_Council of Europe HUDERIA Methodology",
+    "cost": 94
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act",
+    "cost": 89
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance",
+    "cost": 88
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance",
+    "cost": 87
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge",
+    "cost": 84
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries",
+    "cost": 84
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A",
+    "cost": 83
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou",
+    "cost": 82
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains",
+    "cost": 81
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa",
+    "cost": 79
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability",
+    "cost": 78
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti",
+    "cost": 76
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress",
+    "cost": 74
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis",
+    "cost": 71
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment",
+    "cost": 70
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance",
+    "cost": 68
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi",
+    "cost": 65
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act",
+    "cost": 63
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance",
+    "cost": 60
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige",
+    "cost": 58
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_EDPB ChatGPT Taskforce Report",
+    "cost": 58
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Sophia_CNIL Synthese consultation recommandation IA",
+    "cost": 56
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati",
+    "cost": 53
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review",
+    "cost": 52
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar",
+    "cost": 52
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too",
+    "cost": 45
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations",
+    "cost": 39
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability",
+    "cost": 38
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Norma_OECD Recommendation of the Council on AI",
+    "cost": 38
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act",
+    "cost": 34
+   },
+   {
+    "run": "ext_v1",
+    "run_dir": "runs/ext_v1",
+    "doc": "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk",
+    "cost": 29
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_NIST SP 1270 Bias in AI",
+    "cost": 68
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides",
+    "cost": 64
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey",
+    "cost": 60
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_UK AI Regulation White Paper",
+    "cost": 55
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri",
+    "cost": 51
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat",
+    "cost": 49
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_NIST AI 600-1 Generative AI Profile",
+    "cost": 45
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk",
+    "cost": 45
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability",
+    "cost": 44
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate",
+    "cost": 44
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too",
+    "cost": 38
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem",
+    "cost": 36
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI",
+    "cost": 35
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act",
+    "cost": 32
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling",
+    "cost": 32
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.15682 Transfeminist AI Governance",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_Singapore Model AI Governance Framework 2nd Edition",
+    "cost": 31
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po",
+    "cost": 30
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI",
+    "cost": 30
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance",
+    "cost": 29
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within",
+    "cost": 29
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc",
+    "cost": 28
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_OMB M-24-10 AI Governance Memo",
+    "cost": 27
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law",
+    "cost": 26
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro",
+    "cost": 26
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence",
+    "cost": 25
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks",
+    "cost": 25
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Ada_NIST SP 800-218A Secure Software Development GenAI",
+    "cost": 24
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization",
+    "cost": 24
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer",
+    "cost": 23
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk",
+    "cost": 22
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking",
+    "cost": 22
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2602.13244 Responsible AI in Business",
+    "cost": 22
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations",
+    "cost": 21
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul",
+    "cost": 19
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act",
+    "cost": 18
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach",
+    "cost": 17
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti",
+    "cost": 17
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc",
+    "cost": 16
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude",
+    "cost": 15
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet",
+    "cost": 15
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa",
+    "cost": 14
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance",
+    "cost": 13
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act",
+    "cost": 13
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A",
+    "cost": 13
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance",
+    "cost": 12
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing",
+    "cost": 11
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI",
+    "cost": 11
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI",
+    "cost": 11
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review",
+    "cost": 10
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_EDPB ChatGPT Taskforce Report",
+    "cost": 10
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_OECD Recommendation of the Council on AI",
+    "cost": 9
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Sophia_CNIL Synthese consultation recommandation IA",
+    "cost": 8
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability",
+    "cost": 7
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl",
+    "cost": 7
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk",
+    "cost": 6
+   },
+   {
+    "run": "sdp_a",
+    "run_dir": "runs/sdp_ext/A_target600",
+    "doc": "Norma_G7 Hiroshima Code of Conduct for Advanced AI",
+    "cost": 4
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety",
+    "cost": 138
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_GAO AI Accountability Framework",
+    "cost": 86
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_NIST SP 1270 Bias in AI",
+    "cost": 79
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks",
+    "cost": 76
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri",
+    "cost": 74
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk",
+    "cost": 72
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits",
+    "cost": 59
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach",
+    "cost": 57
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability",
+    "cost": 54
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_NIST IR 8312 Explainable AI Principles",
+    "cost": 50
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management",
+    "cost": 48
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem",
+    "cost": 47
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI",
+    "cost": 46
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models",
+    "cost": 46
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024",
+    "cost": 43
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice",
+    "cost": 43
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_NIST AI RMF 1.0",
+    "cost": 41
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc",
+    "cost": 40
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI",
+    "cost": 40
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech",
+    "cost": 38
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an",
+    "cost": 37
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.15682 Transfeminist AI Governance",
+    "cost": 36
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence",
+    "cost": 35
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_OMB M-24-10 AI Governance Memo",
+    "cost": 34
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability",
+    "cost": 33
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H",
+    "cost": 32
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act",
+    "cost": 31
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization",
+    "cost": 30
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act",
+    "cost": 29
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks",
+    "cost": 29
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing",
+    "cost": 28
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A",
+    "cost": 28
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A",
+    "cost": 26
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance",
+    "cost": 26
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act",
+    "cost": 25
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act",
+    "cost": 24
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul",
+    "cost": 23
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA",
+    "cost": 22
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability",
+    "cost": 22
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude",
+    "cost": 21
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti",
+    "cost": 21
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_Council of Europe HUDERIA Methodology",
+    "cost": 20
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment",
+    "cost": 19
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige",
+    "cost": 18
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis",
+    "cost": 18
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r",
+    "cost": 17
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa",
+    "cost": 17
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance",
+    "cost": 16
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review",
+    "cost": 15
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh",
+    "cost": 15
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment",
+    "cost": 14
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI",
+    "cost": 13
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_EDPB ChatGPT Taskforce Report",
+    "cost": 13
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI",
+    "cost": 12
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Sophia_CNIL Synthese consultation recommandation IA",
+    "cost": 11
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_OECD Recommendation of the Council on AI",
+    "cost": 10
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act",
+    "cost": 9
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl",
+    "cost": 8
+   },
+   {
+    "run": "sdp_b",
+    "run_dir": "runs/sdp_ext/B_default",
+    "doc": "Norma_G7 Hiroshima Code of Conduct for Advanced AI",
+    "cost": 6
+   }
+  ]
+ ],
+ "loads": [
+  11173,
+  11172
+ ]
+}

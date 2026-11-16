@@ -1,0 +1,14 @@
+{
+  "request_hash": "26cd053e0e6fcccc79b0b4e069599fdcf5b751006db08445d1b69f8fde052713",
+  "prompt_sha256": "ddaaf3c7ab446ce5ea6367fbb830344481c1cc26cd841c4d8c779443c6eb8647",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1mNvTABaX4GGrwWWyAYufJ7oION",
+  "prompt_tokens": 7662,
+  "completion_tokens": 57,
+  "actual_usd": 0.0011835,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of infection attacks, including how they contaminate AI systems during training, and explicitly mentions the three categories of attacks (manipulation, infection, exfiltration) from the CNIL's taxonomy."
+  }
+}

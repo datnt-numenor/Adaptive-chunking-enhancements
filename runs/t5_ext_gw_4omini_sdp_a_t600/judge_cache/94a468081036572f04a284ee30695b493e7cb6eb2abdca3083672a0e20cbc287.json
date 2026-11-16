@@ -1,0 +1,14 @@
+{
+  "request_hash": "94a468081036572f04a284ee30695b493e7cb6eb2abdca3083672a0e20cbc287",
+  "prompt_sha256": "39a378da1992c41a65e58dd825dad22282465e9b39f43cbd9bbde31c38e8c38f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNbDyLwm7mmsWnLScjIlqWBbScEQ",
+  "prompt_tokens": 8272,
+  "completion_tokens": 37,
+  "actual_usd": 0.001263,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that employers cannot review whether rejected candidates were truly unsuitable, which directly supports the claim made in the Reference Answer."
+  }
+}

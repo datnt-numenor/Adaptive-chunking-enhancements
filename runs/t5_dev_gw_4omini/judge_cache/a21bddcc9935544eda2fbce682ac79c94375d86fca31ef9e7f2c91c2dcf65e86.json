@@ -1,0 +1,14 @@
+{
+  "request_hash": "a21bddcc9935544eda2fbce682ac79c94375d86fca31ef9e7f2c91c2dcf65e86",
+  "prompt_sha256": "d87b2ca2525a31f8145a1802436c97a41fda71eb1772e6a7c0cd435402e6a47f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1tSxsdySG0fImyKGoOfv9WKdIa2",
+  "prompt_tokens": 8024,
+  "completion_tokens": 44,
+  "actual_usd": 0.00123,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer regarding the federal clause in Article 33(1) of the Convention, detailing its implications for federal states."
+  }
+}

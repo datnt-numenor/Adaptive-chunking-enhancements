@@ -1,0 +1,14 @@
+{
+  "request_hash": "c131050ef03ef2ac069f7a81551e93a6f60a5eba438387feea4d7052c7ec4163",
+  "prompt_sha256": "87ec698d00487e502cf1561bb049f2c22d57d416d7676a5a76ffda5ad5a7c056",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNVnFSobxvrjxqEgsnHCPUf6mZu2",
+  "prompt_tokens": 7023,
+  "completion_tokens": 56,
+  "actual_usd": 0.00108705,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that Stackelberg and Nash equilibria diverge in general-sum games and that the structural properties for efficient computation of Nash equilibrium do not apply to Stackelberg equilibrium."
+  }
+}

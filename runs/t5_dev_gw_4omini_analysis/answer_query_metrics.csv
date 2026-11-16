@@ -1,0 +1,298 @@
+system_id,qa_id,doc_name,doc_id,domain,completeness,correct,correct_cov,abstain,partial_abstain
+adaptive,qnew-01-1,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-01-2,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9962673112120418,0.9962673112120418,0.0,False
+adaptive,qnew-01-3,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9985936375591123,0.9985936375591123,0.0,False
+adaptive,qnew-02-1,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.8805776255469754,0.8805776255469754,0.0,False
+adaptive,qnew-02-2,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.8330924872823753,0.8330924872823753,0.0,False
+adaptive,qnew-02-3,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.9817574467303821,0.9817574467303821,0.0,False
+adaptive,qnew-03-1,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-03-2,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-03-3,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,0.8377540668798144,0.8377540668798144,0.0,False
+adaptive,qnew-04-1,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9430945887089196,0.9430945887089196,0.0,False
+adaptive,qnew-04-2,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9939913343514281,0.9939913343514281,0.0,False
+adaptive,qnew-04-3,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-05-1,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,1.0,0.8781321152289779,0.8781321152289779,0.0,False
+adaptive,qnew-05-2,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,1.0,0.7292728958117184,0.7292728958117184,0.0,False
+adaptive,qnew-05-3,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,0.0,,0.0,1.0,False
+adaptive,qnew-06-1,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-06-2,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-06-3,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,0.8304592687996584,0.8304592687996584,0.0,False
+adaptive,qnew-07-1,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.9880797067026197,0.9880797067026197,0.0,False
+adaptive,qnew-07-2,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.8806398490536056,0.8806398490536056,0.0,False
+adaptive,qnew-07-3,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,1.0,1.0,0.0,False
+adaptive,qnew-08-1,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.9679178699175394,0.9679178699175394,0.0,False
+adaptive,qnew-08-2,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.9481079592591067,0.9481079592591067,0.0,False
+adaptive,qnew-08-3,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.8835483545296144,0.8835483545296144,0.0,False
+adaptive,qnew-09-1,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.9710842474602762,0.9710842474602762,0.0,False
+adaptive,qnew-09-2,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.6415733455395086,0.6415733455395086,0.0,False
+adaptive,qnew-09-3,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.8415776489933897,0.8415776489933897,0.0,False
+adaptive,qnew-10-1,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,0.9970687770944575,0.9970687770944575,0.0,False
+adaptive,qnew-10-2,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,0.5,,0.0,1.0,False
+adaptive,qnew-10-3,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,0.8854038600274119,0.8854038600274119,0.0,False
+adaptive,qnew-11-1,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9932453313553056,0.9932453313553056,0.0,False
+adaptive,qnew-11-2,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9407150503110673,0.9407150503110673,0.0,False
+adaptive,qnew-11-3,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,0.5,0.4325023002133673,0.4325023002133673,0.0,False
+adaptive,qnew-12-1,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.7573690014218053,0.7573690014218053,0.0,False
+adaptive,qnew-12-2,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,0.5,0.8498952065195183,0.8498952065195183,0.0,False
+adaptive,qnew-12-3,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.9851952796329894,0.9851952796329894,0.0,False
+adaptive,qnew-13-1,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.5,0.9999999999999998,0.9999999999999998,0.0,False
+adaptive,qnew-13-2,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+adaptive,qnew-13-3,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+adaptive,qnew-14-1,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.9970687766492755,0.9970687766492755,0.0,False
+adaptive,qnew-14-2,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.952256856732198,0.952256856732198,0.0,False
+adaptive,qnew-14-3,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.820553720525273,0.820553720525273,0.0,False
+adaptive,qnew-15-1,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.8880797071719776,0.8880797071719776,0.0,False
+adaptive,qnew-15-2,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.8199983619421483,0.8199983619421483,0.0,False
+adaptive,qnew-15-3,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.9817574485083463,0.9817574485083463,0.0,False
+adaptive,qnew-16-1,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.8377540675801802,0.8377540675801802,0.0,False
+adaptive,qnew-16-2,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.8679178712162947,0.8679178712162947,0.0,False
+adaptive,qnew-16-3,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.9021869829722521,0.9021869829722521,0.0,False
+adaptive,qnew-17-1,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.6728239897144968,0.6728239897144968,0.0,False
+adaptive,qnew-17-2,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,1.0,1.0,0.0,False
+adaptive,qnew-17-3,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.982972630213666,0.982972630213666,0.0,False
+adaptive,qnew-18-1,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,0.8148047203670107,0.8148047203670107,0.0,False
+adaptive,qnew-18-2,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,,0.0,1.0,False
+adaptive,qnew-18-3,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.0,,0.0,1.0,False
+adaptive,qnew-19-1,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8190554049692891,0.8190554049692891,0.0,False
+adaptive,qnew-19-2,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.7728068042169027,0.7728068042169027,0.0,False
+adaptive,qnew-19-3,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8614891353879288,0.8614891353879288,0.0,False
+adaptive,qnew-20-1,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.9796622134255127,0.9796622134255127,0.0,False
+adaptive,qnew-20-2,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.8089778718179026,0.8089778718179026,0.0,False
+adaptive,qnew-20-3,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.9979667647547789,0.9979667647547789,0.0,False
+adaptive,qnew-21-1,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.8031083985721443,0.8031083985721443,0.0,False
+adaptive,qnew-21-2,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.7244692273408052,0.7244692273408052,0.0,False
+adaptive,qnew-21-3,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.8813072870536276,0.8813072870536276,0.0,False
+adaptive,qnew-22-1,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9777299856015768,0.9777299856015768,0.0,False
+adaptive,qnew-22-2,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.8846681599367336,0.8846681599367336,0.0,False
+adaptive,qnew-22-3,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9655838156189969,0.9655838156189969,0.0,False
+adaptive,qnew-23-1,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.9109259159846885,0.9109259159846885,0.0,False
+adaptive,qnew-23-2,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.5878110043635368,0.5878110043635368,0.0,False
+adaptive,qnew-23-3,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.8562176500885798,0.8562176500885798,0.0,False
+adaptive,qnew-24-1,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9056778880938163,0.9056778880938163,0.0,False
+adaptive,qnew-24-2,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9914900951512493,0.9914900951512493,0.0,False
+adaptive,qnew-24-3,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,1.0,1.0,0.0,False
+adaptive,qnew-25-1,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8357666001569714,0.8357666001569714,0.0,False
+adaptive,qnew-25-2,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8799249970787217,0.8799249970787217,0.0,False
+adaptive,qnew-25-3,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8020185480422388,0.8020185480422388,0.0,False
+adaptive,qnew-26-1,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,0.8794879012422104,0.8794879012422104,0.0,False
+adaptive,qnew-26-2,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,1.0,1.0,0.0,False
+adaptive,qnew-26-3,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,0.8365849734289578,0.8365849734289578,0.0,False
+adaptive,qnew-27-1,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.8917758025556856,0.8917758025556856,0.0,False
+adaptive,qnew-27-2,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.993245331261452,0.993245331261452,0.0,False
+adaptive,qnew-27-3,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.9136177811977687,0.9136177811977687,0.0,False
+adaptive,qnew-28-1,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,1.0,0.85,0.85,0.0,False
+adaptive,qnew-28-2,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,0.5,1.0,1.0,0.0,False
+adaptive,qnew-28-3,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,1.0,0.9867035764955799,0.9867035764955799,0.0,False
+adaptive,qnew-29-1,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.6264925186736006,0.6264925186736006,0.0,False
+adaptive,qnew-29-2,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.8589313346820747,0.8589313346820747,0.0,False
+adaptive,qnew-29-3,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,0.0,,0.0,1.0,False
+adaptive,qnew-30-1,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.8679178705669169,0.8679178705669169,0.0,False
+adaptive,qnew-30-2,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.5594226019941224,0.5594226019941224,0.0,False
+adaptive,qnew-30-3,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.7546255296814113,0.7546255296814113,0.0,False
+adaptive,qnew-31-1,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.8362436698722977,0.8362436698722977,0.0,False
+adaptive,qnew-31-2,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.9630522251644684,0.9630522251644684,0.0,False
+adaptive,qnew-31-3,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.8883687932066113,0.8883687932066113,0.0,False
+adaptive,qnew-32-1,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.7817574471748733,0.7817574471748733,0.0,False
+adaptive,qnew-32-2,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,1.0,1.0,0.0,False
+adaptive,qnew-32-3,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.8019633293704347,0.8019633293704347,0.0,False
+adaptive,qnew-33-1,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9679178699175394,0.9679178699175394,0.0,False
+adaptive,qnew-33-2,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9939913350667554,0.9939913350667554,0.0,False
+adaptive,qnew-33-3,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9447569221767566,0.9447569221767566,0.0,False
+raw__langch_recurs_default,qnew-01-1,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-01-2,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9904650525460814,0.9904650525460814,0.0,False
+raw__langch_recurs_default,qnew-01-3,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,0.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-02-1,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.9731058566911021,0.9731058566911021,0.0,False
+raw__langch_recurs_default,qnew-02-2,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.8330924872823753,0.8330924872823753,0.0,False
+raw__langch_recurs_default,qnew-02-3,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.9835483530958907,0.9835483530958907,0.0,False
+raw__langch_recurs_default,qnew-03-1,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-03-2,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-03-3,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,0.8377540668798144,0.8377540668798144,0.0,False
+raw__langch_recurs_default,qnew-04-1,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9430945887089196,0.9430945887089196,0.0,False
+raw__langch_recurs_default,qnew-04-2,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9851952798209368,0.9851952798209368,0.0,False
+raw__langch_recurs_default,qnew-04-3,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-05-1,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,1.0,0.9096489834839673,0.9096489834839673,0.0,False
+raw__langch_recurs_default,qnew-05-2,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,1.0,0.7292728958117184,0.7292728958117184,0.0,False
+raw__langch_recurs_default,qnew-05-3,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,0.5,,0.0,1.0,False
+raw__langch_recurs_default,qnew-06-1,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,0.9984093607967462,0.9984093607967462,0.0,False
+raw__langch_recurs_default,qnew-06-2,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-06-3,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,0.8813072878879524,0.8813072878879524,0.0,False
+raw__langch_recurs_default,qnew-07-1,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.9880797067026197,0.9880797067026197,0.0,False
+raw__langch_recurs_default,qnew-07-2,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.8748926528915071,0.8748926528915071,0.0,False
+raw__langch_recurs_default,qnew-07-3,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-08-1,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.9679178699175394,0.9679178699175394,0.0,False
+raw__langch_recurs_default,qnew-08-2,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.9195332535893938,0.9195332535893938,0.0,False
+raw__langch_recurs_default,qnew-08-3,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,0.5,0.8049620767246843,0.8049620767246843,0.0,False
+raw__langch_recurs_default,qnew-09-1,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.9904650545383641,0.9904650545383641,0.0,False
+raw__langch_recurs_default,qnew-09-2,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.6227190020516378,0.6227190020516378,0.0,False
+raw__langch_recurs_default,qnew-09-3,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.8415776489933897,0.8415776489933897,0.0,False
+raw__langch_recurs_default,qnew-10-1,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-10-2,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,0.5,,0.0,1.0,False
+raw__langch_recurs_default,qnew-10-3,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,0.7933778857514558,0.7933778857514558,0.0,False
+raw__langch_recurs_default,qnew-11-1,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9471472411449897,0.9471472411449897,0.0,False
+raw__langch_recurs_default,qnew-11-2,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9835483530958907,0.9835483530958907,0.0,False
+raw__langch_recurs_default,qnew-11-3,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,0.5,0.6667397823821994,0.6667397823821994,0.0,False
+raw__langch_recurs_default,qnew-12-1,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.9066010410377284,0.9066010410377284,0.0,False
+raw__langch_recurs_default,qnew-12-2,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,0.5,0.846633631453128,0.846633631453128,0.0,False
+raw__langch_recurs_default,qnew-12-3,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.9851952796329894,0.9851952796329894,0.0,False
+raw__langch_recurs_default,qnew-13-1,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.5,0.9999999999999998,0.9999999999999998,0.0,False
+raw__langch_recurs_default,qnew-13-2,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-13-3,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-14-1,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.9974042640635863,0.9974042640635863,0.0,False
+raw__langch_recurs_default,qnew-14-2,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.952256856732198,0.952256856732198,0.0,False
+raw__langch_recurs_default,qnew-14-3,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.8377540668798147,0.8377540668798147,0.0,False
+raw__langch_recurs_default,qnew-15-1,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-15-2,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.8423169661128875,0.8423169661128875,0.0,False
+raw__langch_recurs_default,qnew-15-3,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,0.5,,0.0,1.0,False
+raw__langch_recurs_default,qnew-16-1,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.9731058572770515,0.9731058572770515,0.0,False
+raw__langch_recurs_default,qnew-16-2,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.8679178712162947,0.8679178712162947,0.0,False
+raw__langch_recurs_default,qnew-16-3,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.8532244339591463,0.8532244339591463,0.0,False
+raw__langch_recurs_default,qnew-17-1,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.9880797087365041,0.9880797087365041,0.0,False
+raw__langch_recurs_default,qnew-17-2,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.9999999999999998,0.9999999999999998,0.0,False
+raw__langch_recurs_default,qnew-17-3,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.982972630213666,0.982972630213666,0.0,False
+raw__langch_recurs_default,qnew-18-1,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,0.2559136640490901,0.2559136640490901,0.0,False
+raw__langch_recurs_default,qnew-18-2,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,,0.0,1.0,False
+raw__langch_recurs_default,qnew-18-3,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,,0.0,1.0,False
+raw__langch_recurs_default,qnew-19-1,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8625599920585783,0.8625599920585783,0.0,False
+raw__langch_recurs_default,qnew-19-2,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8562176500885798,0.8562176500885798,0.0,False
+raw__langch_recurs_default,qnew-19-3,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8614891353879288,0.8614891353879288,0.0,False
+raw__langch_recurs_default,qnew-20-1,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.997966764435702,0.997966764435702,0.0,False
+raw__langch_recurs_default,qnew-20-2,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.9962673116270173,0.9962673116270173,0.0,False
+raw__langch_recurs_default,qnew-20-3,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.9987568350633227,0.9987568350633227,0.0,False
+raw__langch_recurs_default,qnew-21-1,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.7964533994169852,0.7964533994169852,0.0,False
+raw__langch_recurs_default,qnew-21-2,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.9403164889121036,0.9403164889121036,0.0,False
+raw__langch_recurs_default,qnew-21-3,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.8805341387690147,0.8805341387690147,0.0,False
+raw__langch_recurs_default,qnew-22-1,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9304592687996582,0.9304592687996582,0.0,False
+raw__langch_recurs_default,qnew-22-2,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.8017653832021306,0.8017653832021306,0.0,False
+raw__langch_recurs_default,qnew-22-3,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.85,0.85,0.0,False
+raw__langch_recurs_default,qnew-23-1,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.8571488291821705,0.8571488291821705,0.0,False
+raw__langch_recurs_default,qnew-23-2,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.5798000744200447,0.5798000744200447,0.0,False
+raw__langch_recurs_default,qnew-23-3,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.8566660655548292,0.8566660655548292,0.0,False
+raw__langch_recurs_default,qnew-24-1,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9056778880938163,0.9056778880938163,0.0,False
+raw__langch_recurs_default,qnew-24-2,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9979667648401132,0.9979667648401132,0.0,False
+raw__langch_recurs_default,qnew-24-3,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-25-1,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,0.5,0.7061954558555629,0.7061954558555629,0.0,False
+raw__langch_recurs_default,qnew-25-2,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8021789378414408,0.8021789378414408,0.0,False
+raw__langch_recurs_default,qnew-25-3,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.7340498458489467,0.7340498458489467,0.0,False
+raw__langch_recurs_default,qnew-26-1,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,0.8918686344706808,0.8918686344706808,0.0,False
+raw__langch_recurs_default,qnew-26-2,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-26-3,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,0.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-27-1,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.8962839418162993,0.8962839418162993,0.0,False
+raw__langch_recurs_default,qnew-27-2,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.9893309414575521,0.9893309414575521,0.0,False
+raw__langch_recurs_default,qnew-27-3,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,,0.0,1.0,False
+raw__langch_recurs_default,qnew-28-1,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,0.5,,0.0,1.0,True
+raw__langch_recurs_default,qnew-28-2,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,0.5,0.7909794117736723,0.7909794117736723,0.0,False
+raw__langch_recurs_default,qnew-28-3,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,1.0,0.9867035764955799,0.9867035764955799,0.0,False
+raw__langch_recurs_default,qnew-29-1,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.7647485337685149,0.7647485337685149,0.0,False
+raw__langch_recurs_default,qnew-29-2,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.8965546626488775,0.8965546626488775,0.0,False
+raw__langch_recurs_default,qnew-29-3,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.9874135569400753,0.9874135569400753,0.0,False
+raw__langch_recurs_default,qnew-30-1,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.8320821307318385,0.8320821307318385,0.0,False
+raw__langch_recurs_default,qnew-30-2,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.40614609177233724,0.40614609177233724,0.0,False
+raw__langch_recurs_default,qnew-30-3,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.7546255296814113,0.7546255296814113,0.0,False
+raw__langch_recurs_default,qnew-31-1,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-31-2,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.9630522251644684,0.9630522251644684,0.0,False
+raw__langch_recurs_default,qnew-31-3,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.8883687932066113,0.8883687932066113,0.0,False
+raw__langch_recurs_default,qnew-32-1,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.5008518452749737,0.5008518452749737,0.0,False
+raw__langch_recurs_default,qnew-32-2,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,1.0,1.0,0.0,False
+raw__langch_recurs_default,qnew-32-3,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.8019633293704347,0.8019633293704347,0.0,False
+raw__langch_recurs_default,qnew-33-1,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9562176500885797,0.9562176500885797,0.0,False
+raw__langch_recurs_default,qnew-33-2,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9867035756366418,0.9867035756366418,0.0,False
+raw__langch_recurs_default,qnew-33-3,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9447569221767566,0.9447569221767566,0.0,False
+raw__page,qnew-01-1,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9999999999999998,0.9999999999999998,0.0,False
+raw__page,qnew-01-2,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9655838160315617,0.9655838160315617,0.0,False
+raw__page,qnew-01-3,Ada (technique)_Discussion Paper Hamburg DPA KI Models,doc-a909d7d972acd5a1,Ada,1.0,0.9962673111183376,0.9962673111183376,0.0,False
+raw__page,qnew-02-1,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.8182228605612124,0.8182228605612124,0.0,False
+raw__page,qnew-02-2,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.823797297676984,0.823797297676984,0.0,False
+raw__page,qnew-02-3,Ada (technique)_Recommandations de sécurité pour un système d'IA générative,doc-30a3a633a04ec2d7,Ada,1.0,0.8830138559370535,0.8830138559370535,0.0,False
+raw__page,qnew-03-1,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,0.5,,0.0,1.0,False
+raw__page,qnew-03-2,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,1.0,1.0,1.0,0.0,False
+raw__page,qnew-03-3,Ada (technique)_Standards - Explicability,doc-364dccd872cfeb95,Ada,0.5,0.8377540668798144,0.8377540668798144,0.0,False
+raw__page,qnew-04-1,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9999999999999998,0.9999999999999998,0.0,False
+raw__page,qnew-04-2,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,0.9939913347301308,0.9939913347301308,0.0,False
+raw__page,qnew-04-3,Ada (technique)_Standards - Interpretability,doc-01f838df39cb180f,Ada,1.0,1.0,1.0,0.0,False
+raw__page,qnew-05-1,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,1.0,0.8999999999999998,0.8999999999999998,0.0,False
+raw__page,qnew-05-2,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,0.5,0.21192524697369347,0.21192524697369347,0.0,False
+raw__page,qnew-05-3,Ada (technique)_Standards - Robustness,doc-005667a94f7dc506,Ada,0.0,,0.0,1.0,False
+raw__page,qnew-06-1,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,0.5,,0.0,1.0,False
+raw__page,qnew-06-2,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,0.7458848691888937,0.7458848691888937,0.0,False
+raw__page,qnew-06-3,Ada (technique)_Standards - Security,doc-db74dba46ee96f25,Ada,1.0,0.8884472889812571,0.8884472889812571,0.0,False
+raw__page,qnew-07-1,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.992414182520189,0.992414182520189,0.0,False
+raw__page,qnew-07-2,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,0.8806398490536056,0.8806398490536056,0.0,False
+raw__page,qnew-07-3,Ada (technique)_Standards - Sustainability,doc-17b2498036f50ba9,Ada,1.0,1.0,1.0,0.0,False
+raw__page,qnew-08-1,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,1.0,0.9893309399663469,0.9893309399663469,0.0,False
+raw__page,qnew-08-2,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,0.5,,0.0,1.0,False
+raw__page,qnew-08-3,Ada (technique)_Standards - Transparency,doc-5801334fd2dbf7d4,Ada,0.0,,0.0,1.0,False
+raw__page,qnew-09-1,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.9952574125307766,0.9952574125307766,0.0,False
+raw__page,qnew-09-2,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.619022088339873,0.619022088339873,0.0,False
+raw__page,qnew-09-3,Ada (technique)_Standards - Vigilance,doc-d567563544dd70c4,Ada,1.0,0.8415776489933897,0.8415776489933897,0.0,False
+raw__page,qnew-10-1,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,0.9985936369870412,0.9985936369870412,0.0,False
+raw__page,qnew-10-2,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,0.5,,0.0,1.0,False
+raw__page,qnew-10-3,Norma (légal)_Artificial Intelligence for Europe,doc-3abd29c684b1b0be,Norma,1.0,0.8854038600274119,0.8854038600274119,0.0,False
+raw__page,qnew-11-1,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9932453313553056,0.9932453313553056,0.0,False
+raw__page,qnew-11-2,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,1.0,0.9407150503110673,0.9407150503110673,0.0,False
+raw__page,qnew-11-3,Norma (légal)_CCPA Act,doc-46d885bf154ed13d,Norma,0.5,0.4325023002133673,0.4325023002133673,0.0,False
+raw__page,qnew-12-1,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.7573690014218053,0.7573690014218053,0.0,False
+raw__page,qnew-12-2,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.8098059450789415,0.8098059450789415,0.0,False
+raw__page,qnew-12-3,Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,doc-9d20972cffb84cd9,Norma,1.0,0.9851952796329894,0.9851952796329894,0.0,False
+raw__page,qnew-13-1,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,1.0,0.2559136626947485,0.2559136626947485,0.0,False
+raw__page,qnew-13-2,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+raw__page,qnew-13-3,Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,doc-59eff03fc55c3df8,Norma,0.0,,0.0,1.0,False
+raw__page,qnew-14-1,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.9970687766492755,0.9970687766492755,0.0,False
+raw__page,qnew-14-2,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.952256856732198,0.952256856732198,0.0,False
+raw__page,qnew-14-3,Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,doc-a2629bcf49e46373,Norma,1.0,0.8699944180561788,0.8699944180561788,0.0,False
+raw__page,qnew-15-1,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.9437823499114202,0.9437823499114202,0.0,False
+raw__page,qnew-15-2,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.8423169661128875,0.8423169661128875,0.0,False
+raw__page,qnew-15-3,"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",doc-2fc737ad98d4565a,Norma,1.0,0.9904650533815549,0.9904650533815549,0.0,False
+raw__page,qnew-16-1,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.9004768331409296,0.9004768331409296,0.0,False
+raw__page,qnew-16-2,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.8679178712162947,0.8679178712162947,0.0,False
+raw__page,qnew-16-3,Norma (légal)_EDPB statement on data protection authorities,doc-9096c4f83af78377,Norma,1.0,0.9021869829722521,0.9021869829722521,0.0,False
+raw__page,qnew-17-1,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.6728239897144968,0.6728239897144968,0.0,False
+raw__page,qnew-17-2,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,1.0,1.0,0.0,False
+raw__page,qnew-17-3,Norma (légal)_EDPS Generative AI guidelines,doc-f884eedf83661b3e,Norma,1.0,0.982972630213666,0.982972630213666,0.0,False
+raw__page,qnew-18-1,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,1.0,0.8148047203670107,0.8148047203670107,0.0,False
+raw__page,qnew-18-2,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.5,,0.0,1.0,False
+raw__page,qnew-18-3,Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,doc-ad2599c8e0e046cc,Norma,0.0,,0.0,1.0,False
+raw__page,qnew-19-1,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,,0.0,1.0,False
+raw__page,qnew-19-2,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,0.0,,0.0,1.0,False
+raw__page,qnew-19-3,Norma (légal)_European Convention On Human Rights,doc-bae09a7694a07581,Norma,1.0,0.8614891353879288,0.8614891353879288,0.0,False
+raw__page,qnew-20-1,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.997966764435702,0.997966764435702,0.0,False
+raw__page,qnew-20-2,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,0.9962673116270173,0.9962673116270173,0.0,False
+raw__page,qnew-20-3,Norma (légal)_GDPR,doc-c33a88950d754e5f,Norma,1.0,1.0,1.0,0.0,False
+raw__page,qnew-21-1,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.8019633291733397,0.8019633291733397,0.0,False
+raw__page,qnew-21-2,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.9544159858633172,0.9544159858633172,0.0,False
+raw__page,qnew-21-3,Norma (légal)_Harmonising AI - OXIL,doc-0c9d910e648ff5ea,Norma,1.0,0.8796711716916746,0.8796711716916746,0.0,False
+raw__page,qnew-22-1,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9880797088929565,0.9880797088929565,0.0,False
+raw__page,qnew-22-2,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9076529154820105,0.9076529154820105,0.0,False
+raw__page,qnew-22-3,Norma (légal)_Les fiches pratiques IA -  CNIL,doc-d21622ac4886cd8b,Norma,1.0,0.9238341811007331,0.9238341811007331,0.0,False
+raw__page,qnew-23-1,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.9463887575465701,0.9463887575465701,0.0,False
+raw__page,qnew-23-2,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.533073881375499,0.533073881375499,0.0,False
+raw__page,qnew-23-3,Norma (légal)_Provider Guidelines - European Commission,doc-ca7862c70401cd2c,Norma,1.0,0.8562176500885798,0.8562176500885798,0.0,False
+raw__page,qnew-24-1,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9238364719969197,0.9238364719969197,0.0,False
+raw__page,qnew-24-2,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,0.9979667648401132,0.9979667648401132,0.0,False
+raw__page,qnew-24-3,Norma (légal)_The AI Act,doc-6e712798758b54ab,Norma,1.0,1.0,1.0,0.0,False
+raw__page,qnew-25-1,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8357666001569714,0.8357666001569714,0.0,False
+raw__page,qnew-25-2,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8799249970787217,0.8799249970787217,0.0,False
+raw__page,qnew-25-3,Norma (légal)_Verification for International AI Governnace,doc-7fdd12fd3c954046,Norma,1.0,0.8020185480422388,0.8020185480422388,0.0,False
+raw__page,qnew-26-1,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,0.8987326493153944,0.8987326493153944,0.0,False
+raw__page,qnew-26-2,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,1.0,1.0,0.0,False
+raw__page,qnew-26-3,Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,doc-0e35d2296535d358,Sophia,1.0,0.8365849734289578,0.8365849734289578,0.0,False
+raw__page,qnew-27-1,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,0.5,,0.0,1.0,False
+raw__page,qnew-27-2,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,0.5,0.9979667648883457,0.9979667648883457,0.0,False
+raw__page,qnew-27-3,"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",doc-4dc04dea6e19beb9,Sophia,1.0,0.9731058584489496,0.9731058584489496,0.0,False
+raw__page,qnew-28-1,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,1.0,0.8562176500885798,0.8562176500885798,0.0,False
+raw__page,qnew-28-2,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,0.5,0.7507981539199434,0.7507981539199434,0.0,False
+raw__page,qnew-28-3,Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,doc-8efc4bd70f55cab6,Sophia,1.0,0.9867035764955799,0.9867035764955799,0.0,False
+raw__page,qnew-29-1,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.7463887564485954,0.7463887564485954,0.0,False
+raw__page,qnew-29-2,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.8794879032380221,0.8794879032380221,0.0,False
+raw__page,qnew-29-3,Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,doc-3897e7c6c3437bb1,Sophia,1.0,0.6518458570053869,0.6518458570053869,0.0,False
+raw__page,qnew-30-1,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.8679178705669169,0.8679178705669169,0.0,False
+raw__page,qnew-30-2,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.5594226019941224,0.5594226019941224,0.0,False
+raw__page,qnew-30-3,Sophia (sciences sociales)_Livre blanc - Impact AI,doc-15c3701fd5f76bc2,Sophia,1.0,0.7546255296814113,0.7546255296814113,0.0,False
+raw__page,qnew-31-1,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.8362436698722977,0.8362436698722977,0.0,False
+raw__page,qnew-31-2,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.9630522251644684,0.9630522251644684,0.0,False
+raw__page,qnew-31-3,Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,doc-6f3a07f7d42928d0,Sophia,1.0,0.8883687932066113,0.8883687932066113,0.0,False
+raw__page,qnew-32-1,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.8094384133322741,0.8094384133322741,0.0,False
+raw__page,qnew-32-2,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,1.0,1.0,0.0,False
+raw__page,qnew-32-3,Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,doc-0de3b969e617bc9f,Sophia,1.0,0.9252744305765164,0.9252744305765164,0.0,False
+raw__page,qnew-33-1,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9622459338205511,0.9622459338205511,0.0,False
+raw__page,qnew-33-2,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9437823499114202,0.9437823499114202,0.0,False
+raw__page,qnew-33-3,Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,doc-a3837379847b18a7,Sophia,1.0,0.9403164887105019,0.9403164887105019,0.0,False

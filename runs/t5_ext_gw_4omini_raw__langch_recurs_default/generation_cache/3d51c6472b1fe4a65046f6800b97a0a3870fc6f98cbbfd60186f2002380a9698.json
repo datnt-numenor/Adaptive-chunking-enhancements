@@ -1,0 +1,10 @@
+{
+  "request_hash": "3d51c6472b1fe4a65046f6800b97a0a3870fc6f98cbbfd60186f2002380a9698",
+  "prompt_sha256": "73a4cea208227d29851c37d461995482e9c95e8e72279f4164d6c2180cde5bab",
+  "answer": "Black-box access allows users to design inputs for a system, query it, and analyze the resulting outputs. In contrast, gray-box access offers users limited visibility into a system's operations, such as partial access to internal workings like chain-of-thought, sampling probabilities, or some activation patterns.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNCgS6suOufEzt75xImYPlpwW7sC",
+  "prompt_tokens": 7437,
+  "completion_tokens": 58,
+  "actual_usd": 0.0011503499999999999
+}

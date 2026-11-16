@@ -1,0 +1,223 @@
+DOCUMENT: arXiv 2405.20868 Responsible AI for Earth Observation
+
+<<<PAGE 12>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+Stigmatization may occur in cases where urban neighborhoods are categorized as slums [76, 77], or categorizations of crime rates or poverty levels adversely affect public perceptions of a community [78]. The resulting territorial stigmatization may influence decision-making and negatively affect the local population. Similarly, stigmatization applies to AI4EO applications failing to consider the realities on the ground, for example, designed to expose illegal activities, such as deforestation, fire use, or mining activities, without knowledge about potential concessions to conduct the respective activity. Similarly, stigmatization may occur when global or broad-scale analyses fail to sufficiently consider local realities. For example, small-scale farming has been found to be responsible for 97% of deforestation on the African continent [79], but regional dynamics such as the rapid emergence of medium-scale commercial farming operations [80, 81], the increasing role of export-oriented commodity crops such as cocoa, cashew and oil palm in deforestation [82], and trade-offs between environmental degradation, food production, livelihoods and labor opportunities in semi-subsistence agriculture [83, 84] allow for a more nuanced perspective of such dynamics. As such, avoiding stigmatization of people, communities, or localities requires a high level of awareness of researchers in the design of research questions and label heuristics, as well as embedding scientific findings and their limitations in the realities of the region under investigation [85]. We highlight that cooperation with regionally knowledgeable partners in the early project design phase is an efficient way to avoid pitfalls of stigmatization in responsible AI4EO [86].
+
+# 5.2 Honesty
+
+Truthfulness and trustworthiness are inherent to scientific inquiry, but the current replication crisis undermines the credibility of science and, thus, hampers the societal uptake of scientific outputs. As a community producing knowledge with real-world impact, responsible AI4EO requires transparency, explainability, and data veracity [67].
+
+In AI4EO, transparency not only requires thorough documentation and referencing of the datasets and workflows used but also that need to understand and clearly communicate ambiguities, potential biases, and errors, or conceptual limitations. In light of the ongoing democratization of EO data and workflows through cloud platforms, and accessible user interfaces, empowerment through access to EO data requires a thorough understanding of the limitations of EO data and workflows. Furthermore, transparency enables critical reflection of scientific findings. One example is a recent study linking the observed emerging abilities of LLMs (sudden, unexpected increases in performance) to study design choices made by researchers (e.g. evaluation metrics) [87].
+
+Assuring explainability in AI4EO continues to be challenging, but is a prerequisite for early diagnostics regarding unwanted bias and sources of error. We strongly encourage the community to conduct research on XAI, and incorporate it, wherever possible. Focusing research on explainable AI4EO will contribute to the recognition of EO data as a distinct modality in the AI community at large, by better understanding how AI models leverage the information contained in EO data [68]. Greater explainability may also profit the emerging sub-field of self-supervised learning [88], and help to ensure oversight of (geographic) biases in AI4EO foundation models which claim high degrees of geographic generalization, but which are trained in selected world regions [89]. Such biases are, for example, present in LLMs [90], and may lead to error propagation to many downstream applications [91].
+
+Data veracity in EO concerns both the imagery and the EO data pre-processing workflows used, as well as reference data / labels being in accordance with a (non-stigmatizing) heuristic defining the objects of interest. Using wellestablished and tested processing pipelines to assure the highest possible quality of EO data, for example, in terms of atmospheric correction [92], but also regarding QA flags, including cloud masks for optical data [93], is recommended to avoid downstream errors related to poor data quality. Labeling (the process of categorizing real-world phenomena into distinct classes or groups) is highly context-specific. Therefore, it requires regional expertise and knowledge, is ideally coordinated with local experts, and can be considered an iterative process in which exchange of knowledge from various disciplinary lenses is an effective means to reduce the risk of false categorizations or stigmatization [85].
+
+# 5.3 Integrity
+
+Technical robustness and uncertainty reporting are key elements of integrity in AI4EO. Detailed documentation and reporting of the employed processing pipelines, including the respective processor version, enhances the reproducibility of AI4EO analyses. Detailed reporting of biases, errors, and uncertainty adds credibility and is detrimental to avoid erroneous use of datasets in downstream applications. Given the increasingly close interactions between the ML and EO communities, the maintenance and use of well-established evaluation standards particular to the EO domain, such as in reporting map accuracies and area estimates in categorical settings [94], or for detecting trends in spatiotemporal data [95] is key.
+
+In AI4EO research, a focus on single aggregate evaluation metrics (e.g. overall accuracy), as discussed in Section 2, is insufficient, as often the detection of minority classes is most relevant in many AI4EO applications. Generally, and for imbalanced problems in particular, reporting area-adjusted class-specific user´s and producer´s accuracies from an independent and randomized sample must be preferred over simplistic one-dimensional statistics. Similarly, class area estimates are to be derived from reference samples rather than pixel counting in maps with non-random error distribution. For continuous targets (e.g. reflectance, biomass, crop yields, canopy height), reporting multiple error metrics and assessing them across the entire value range reveals heteroskedasticity and can inform downstream users of potential pitfalls when using a product [96].
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+# 5.4 Fairness
+
+Fairness here refers to avoiding bias, and to respecting all aspects of diversity and sociocultural differences, ultimately creating standards based on principles related to fairness. Bias may relate to all stages of AI4EO analyses, beginning with defining a research question, through the workflow itself, and ending with the manifold downstream impacts related to interpreting the results - as laid out in 2. We will not delve deeper into the broader ethical framework discussed elsewhere [71, 97]. Instead, we focus on core needs, before, during and after setting up an AI4EO workflow.
+
+Before setting up an AI4EO workflow, we may consider opportunities to invite potential stakeholders of anticipated outcomes to participate in co-creating the research agenda [98]. Stakeholders typically include different institutions across all levels, from village heads in an area of interest to the United Nations or the World Bank. Stakeholders may also be citizens who are acquainted with the topic or the area of interest, ideally (but not mandatory) being engaged in related citizen-science opportunities [99], such as data sampling or field-based mapping evaluation [100, 101]. Citizens and institutions acquainted with the research questions will help to mitigate bias in the project design phase.
+
+During workflow creation, interpretable AI, as discussed in Section 3, should support paving the way towards optimizing workflows and avoiding downstream misinterpretations [102, 103]. Interpretable AI also allows tuning algorithms and workflows based on the scientists' and non-science stakeholders' expertise [104]. Non-scientists thereby provide consultancy to EO scientists to overcome the different biases mentioned in Section 2 during the workflow implementation and roll-out, including historical, representation, measurement, aggregation and evaluation bias (compare 2 A). Next to training data creation, providing sufficient and independent evaluation data for accuracy assessment is both of core importance and often one of the most challenging tasks (see also 5.3).
+
+Implicitly, avoiding workflow-related bias is also tightly connected to recognizing deployment bias. Deployment bias relates to the inappropriate interpretation of results after the data analysis, which is often related to downstream decision-makers. This underlines the importance of co-creation and co-production to minimize and mitigate deployment bias early on. In other words, confronting stakeholders with results created in the scientific "ivory tower" without engaging with them in the design and production phase regularly creates unsatisfactory results for those affected or supposed to build their decision-making processes on AI4EO outcomes.
+
+Deployment bias also points directly to the need to respect diversity and sociocultural differences. For example, we need to recognize different ethnic or religious communities, as well as AI4EO experts compared to non-expert stakeholders to avoid mis-interpretations or disrespectful outcomes of AI4EO workflows. Typical examples are the mapping of slums or of agricultural practices in the Global South [76, 105]. Many studies on related research questions need to integrate stakeholders early on in AI4EO to include the necessary expertise to create meaningful results, specifically across large areas of interest, where diverse and multicultural stakeholders are needed. AI4EO workflows also rarely consider resource restrictions in the Global South - regarding the "data desert", limited processing resources, or limited financial backup, e.g. for implementing cloud computing or using HPC or supercomputing facilities [106]. In other words, cooperation at "eye level" is needed to embed AI4EO in the proper sociocultural context, specifically when solving SDG-related questions and global change issues in the Global South [86, 102]. In conclusion, we create win-win situations when joining the forces of stakeholders "on the ground" (deliberately including stakeholders across scales from local dwellers to global institutions, depending on the research questions to be tackled) with AI4EO experts.
+
+# 5.5 Responsibility
+
+The need for interdisciplinary and regional collaboration related to domain knowledge across the entire workflow of AI4EO and unwanted outcomes or interpretations were tackled in the section on "Fairness". We, therefore, here focus on handling the distinctness of EO data well [68].
+
+It has been argued that the AI/ML community urgently needs to recognize the distinct features of satellite-based EO data and to "move out of the comfort zone" of applying AI methods established in other domains without improved adaptation to EO or satellite data machine learning (SatML, [68]). The reasons are manifold as, for example:
+
+· Satellite data is rarely "analysis-ready data" (ARD) [107]), requiring state-of-the-art preprocessing to represent the same values for the same features in different images, i.e., to avoid pseudo-variance.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+· Spatial autocorrelation according to Tobler's first law of geography [108] is rarely used to improve AI4EO, even less so newer concepts like Partitioned Autoregressive Time-Series (PARTS) that consider both spatial and temporal autocorrelation in a congruent fashion [95]
+
+· Satellite data provide a wide range of spatial resolutions (from very-fine-resolution to pixels of several km2 ) and extend across all scales to be observed (from local, fine-scale objects in urban environments to global phenomena). Both very diverse spatial detail and multi-scale research ask for adapted solutions.
+
+· Different temporal resolutions, i.e., data densities over time, represent the same land surface differently. In other words, change analyses over years or decades are far from trivial, and need contextualization [96, 109]. This is even more important when phenology is considered and specific temporal windows across the seasons are crucial to identify the relevant phenomena, e.g. different crop types, land use intensities or tree species separable only at certain phenological stages [110-112].
+
+· Most AI algorithms for image analyses were developed on three-band red-green-blue (RGB) imagery, often based on VHR drone data. Today's multi- to hyperspectral satellite data ask for more sophisticated approaches to detect not just the obvious, but the relevant. This is aggravated by more spectral detail in radiometric data beyond 8-bit and even more by using virtual constellations [113], ranging from optical over radar to LiDAR data.
+
+· Sparse labeling problems occur with increasing areas of interest enabled by AI4EO. More severe problems are inherited by biased samples across larger regions or non-trivial features to be sampled from existing data or the imagery itself [114, 115].
+
+While all these aspects are relevant for any EO analysis framework, opportunities have increased rapidly with AI4EO (e.g., regarding the size of areas of interest that can be handled). Along with these are the related risks and potential awareness deficits. Many, if not the majority of, AI4EO studies focused on comparably small use cases in the past to develop or apply algorithms. However, the roll-out to real-world problems, for example, at the national, continental or even global scale, requires ubiquitous algorithms that can handle much more diverse feature spaces (over time). There is indeed a lack of upscaling studies demonstrating the suitability of most algorithms for tackling real-world problems [68, 116, 117].
+
+# 5.6 Sustainability
+
+Since 2015, the United Nations has set an ambitious agenda related to the Sustainable Development Goals (SDG), aiming to improve social, economic and environmental conditions globally by 2030 [118, 119], with a wealth of implications for AI and also specifically for AI4EO [106]. Here, we take the broadest possible standpoint, including the intrinsic sustainability of AI4EO workflows and the external impacts for all three SDG dimensions. Given that AI at large offers the potential for both positive and negative impacts across all SDGs, with a majority on social sustainability [120], AI4EO has a similar potential for both positive and negative impacts.
+
+Focusing on environmental sustainability, EO is data- and energy-hungry, thereby creating immense CO2 emissions. This footprint relates to the entire lifecycle of EO engineering, science and outcomes, including but not being limited to building, launching and running satellite missions, data creation and curation, data storage and data analysis workflows - the data-related aspects being core for AI4EO [121].
+
+Zooming in on economic and social SDG, the FAIR principles are highly relevant: We thematized avoiding "helicopter research" already in 5.4 [86]. Offering inclusiveness is non-trivial to deliver, as many EO scientists and companies, specifically in the Global South, do not have access to powerful cloud computing or HPC services or to GPU-equipped high-performance workstations. Even if access to online services may become available through dedicated programs or international cooperations, proper education and training for the next generation of AI4EO scientists is of utmost importance [106].
+
+The outcomes from AI4EO research may greatly support improvements along the lines of the UN SDGs [119, 120] - but may also lead to ill-posed conclusions. Such conclusions can, in the worst case, create an existential economic threat (e.g., if loans or insurance are not provided based on AI4EO-derived indicators [122]). Also, local stakeholders including indigenous people, who may not even be aware of governments' decision making processes, are regularly impacted, though. Last but not least, AI4EO may be in the "wrong hands"; for example, used by autocrats, dictators, or criminals to suppress or threaten specifically environmental and social SDGs. The most disturbing examples of this are ubiquitous AI4EO-supported surveillance and warfare.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+# 6 AI&EO for Social Good
+
+In this section, we build upon the discussions in Section 5 regarding the use of AI4EO for social good, which involves applying AI technologies to address and solve social, economic and environmental challenges such as healthcare, education, environmental sustainability, poverty alleviation and disaster response. By leveraging AI technologies and the ethical considerations mentioned in the previous sections, these initiatives seek to improve outcomes and make a positive difference in people's lives, which is the ultimate goal of responsible AI.
+
+Although the applications of AI4EO for social good are extensive [123, 124], we focus here primarily on understanding disaster risks and evaluating their impacts through several key examples crucial for effective disaster management and financing strategies [125-127]. Robust frameworks are necessary for investing in projects that enhance resilience to climate change and its associated disasters. AI, leveraging integrated EO data, can significantly contribute to building these frameworks by analyzing such data through innovative computational methods [125, 126, 128]. However, it is also crucial to implement policies and decisions at the local level, as the impacts of climate change vary over time and across different regions [125, 129-132].
+
+Understanding disaster risks and evaluating their impacts are crucial for effective disaster management and financing strategies [125-127]. Robust frameworks are necessary for investing in projects that enhance resilience to climate change and its associated disasters. AI leveraging integrated EO data can contribute significantly to building these frameworks by analyzing such data through innovative computational methods [125, 126, 128]. Moreover, it is also crucial to address the implementation of policies and decisions at the local level, as the impacts of climate change vary over time and across space [125, 129-132]. For example, rising temperatures in Europe can intensify evapotranspiration, potentially causing more floods in Germany and water shortages in Italy. Meanwhile, Portugal, France, and Greece may face increased wildfires due to similar processes [125, 129, 130, 133]. Global warming also impacts the water cycle, necessitating increased irrigation for vegetation health and food security. This can heighten the occurrence of natural hazards, even across significant distances. For example, irrigation in North America's Central Valley, High Plains, and Mississippi River Valley affects precipitation in regions like the Colorado River, USA Midwest, and Southeast, respectively [134-137].
+
+The above instances emphasize the diverse impacts of climate change on different regions, even at relatively close range. Thus, it is crucial to enable each region to be prepared and ready to implement specific contingency plans based on local changes to environmental events characterized by changes in atmospheric and oceanographic variables [125, 127, 129, 130]. It is also worth noting that these changes might affect the socio-economic fabric of diverse biogeographic regions, thereby influencing the stability and security of human welfare and demographic fluxes [125127, 129-131]. It is, therefore, paramount for AI to provide a deep understanding of EO data so that decision- and policymakers are enabled to implement climate change adaptation and mitigation strategies. These strategies affect investments and solutions that citizens, local authorities, and businesses can undertake. Additionally, it implies the ability to engage stakeholders and public opinion to gain societal consensus [128-130, 133].
+
+To provide concrete examples of the actual impact and possibilities unlocked by the appropriate use of AI in decisionmaking processes, we present two instances of operational scenarios that would benefit greatly from a deep understanding of Earth processes to enhance human welfare and improve communities' wellbeing.
+
+# 6.1 Early Warning Systems for Mass Movements
+
+One of the most severe effects of climate change is the increased occurrence of catastrophic events caused by mass movements. This affects human welfare and results in huge economic losses. As such, the development of early warning systems (EWSs) is crucial to the everyday decisions of local governments and communities, and exemplify Responsible AI by prioritizing human safety and equity through timely alerts and accessible technology [125-127, 129, 130].
+
+Historically, the main objective of EWSs has been to quantify the degree of immediate danger that every human settlement in each region of interest is exposed to (see, [138-141]). In fact, state-of-the-art EWSs used in operational pipelines are based on the analysis of data and measurements at the regional level, which are then aggregated to avoid issues related to the irregularity of the temporal and spatial scale at which each record can be acquired. In this way, state-of-the-art EWSs are prone to highly sensitive and coarse classifications and predictions, potentially leading to a poor perception of risk and inadequate local management plans. Moreover, the classic structure of operational EWSs does not account for cascading effects affecting local communities at social and economic levels. For example, stateof-the-art EWSs for mass movements do not consider a town that can be cut off from transportation and communication systems because of landslides blocking the roads around it as relevant for early warning [141].
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+AI4EO can be a game-changer in this arena [129, 133]. Recent studies [142] have shown the improvement to stateof-the-art EWSs' capacity provided by analysis of the environmental (hydrological and geological) characteristics of mass movements derived from remote sensing platforms and the connectivity information of formal settlements and road network data in terms of graph structures. This architecture allows us to study the interaction of the probabilistic mass movement susceptibility (derived from the environmental properties by means of a supervised ensemble graph neural network) on the graph representing the communication network (that could involve roads, electricity grids, water pipelines) connecting the formal settlements. Investigating this structure by graph-based methods (e.g., spectral clustering) results in the derivation of indices to quantify the probability of each human settlement to be directly or indirectly affected by mass movements (i.e., the probability to be hit by a mass movement event - such as a landslide - or the probability to be isolated as a result of mass movements affecting their surroundings) [142]. This approach has the capacity to pave the way for measures and policies for adaptation and mitigation through a new holistic graphical perspective to assess various large-scale geospatial datasets of risk elements such as exposure, vulnerability and hazard. In particular, it has been shown that this strategy can deliver robust and reliable outcomes for hindcasting and forecasting of the impact of mass movements at different scales (local, regional, and national), able to explore long temporal trends (e.g., over 68,000 incidents of reported mass movements since 1957) and accurately identify the critical factors for climate change-induced mass movements [142].
+
+<Figure>
+Figure 7: Estimation of mass movements susceptibility index across the Norwegian territory by means of the architecture proposed in [142].
+</Figure>
+
+# 6.2 Climate Teleconnections
+
+One of the most important open challenges in environmental monitoring and climate change studies is represented by the analysis of climate teleconnections, that is, the investigation of the interplay between weather phenomena at widely separated locations on Earth. This implies the study of climate patterns that span thousands of kilometers. Examples of teleconnection phenomena include shifts of atmospheric mass and/or pressure back and forth between two distant locations, where changes in atmospheric pressure in one location lead to corresponding changes in pressure in another location far away [143-145]. Therefore, responsible AI-driven insights are crucial for informing global climate strategies and policies to ensure that all communities benefit equitably.
+
+The water cycle is one of the primary drivers of climate teleconnections worldwide. In this respect, the three world poles (i.e., Arctic, Antarctic, high mountain Asia (HMA)) play a key role in influencing global weather patterns through their impact on teleconnections [146-149]. Specifically, the weather and climate of HMA and the surrounding region have been demonstrated to be influenced by global modes of variability (MoV), which are fluctuations of atmospheric and oceanographic variables (e.g., sea surface temperature, rainfall, surface pressure, wind speed) caused by the continuous exchange of mass, momentum and energy on all timescales between Earth's atmosphere, oceans, cryosphere and continental hydrology. For example, the planetary-scale Rossby-wave propagation that causes the intra-seasonal variability over central Asia and the northern part of India has been demonstrated to be affected by the Eurasian teleconnection. Also well-known is the interplay and impact on HMA climate variations of the Indian Ocean Dipole (IOD) and El Ni˜no Southern Oscillation (Nino34), North Atlantic Oscillation (NAO), the Central Indian Ocean mode, and the boreal summer intraseasonal oscillation. However, a thorough understanding of the historical behavior of global MoV and its influence on weather patterns within the HMA has not yet been derived [143, 144, 146-151].
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+The use of advanced technologies for machine learning, relying on records acquired by EO platforms, plays a key role [143, 145]. In fact, as remote sensors can acquire properties of the previously mentioned environmental variables with precision at a global scale, they enable the investigation of MoVs that drive climate teleconnections worldwide. In particular, when considering HMA, the integration of remote sensing data with hydrometeorological climate variables (e.g., geopotential height at 250 hPa (z250), 2-m air temperature (T2M), total precipitation (PRECTOT), and fractional snow cover area (fSCA)) leads to a comprehensive exploration of the interactions across several MoVs over HMA (e.g., the Eurasian teleconnection, the IOD, the NAO and the Nino34). This results in the quantification of correlations and cause/effect scenarios across MoVs and climate variables, as well as the predictability of weather and climate patterns of the variables of interest, so that proper planning of resources and policies to address and adapt to climate change can be put in place [125-127, 129-131, 133].
+
+# 7 Responsible AI Integration in Business Innovation and Sustainability
+
+The integration of AI with low-cost, high-performance computing is fostering business innovation, with organizations spanning various sectors and industries, disrupting both commercial and sustainability-focused business models. These may include monitoring remote infrastructure, assessing climate risk, dynamically managing supply chains and decision-making processes across various industries. For example, an oil and gas company could enhance the monitoring of its infrastructures, such as the pipelines used for the transportation of natural gas, crude and refined petroleum by incorporating geotagged data into the operational workflow of the status and health of its distributed systems. These insights could facilitate timely and cost-effective decisions, guiding preventive maintenance efforts to reduce oil spills and gas leakages. However, the use of AI-based solutions requires appropriate governance and safeguards to mitigate potential negative impacts. Therefore, emphasizing governance, standards, open-source solutions, and innovative business models is crucial to foster the fair adoption of AI for EO. For example, while satellite data proves invaluable in agricultural management, farmers may lack direct access to the collected data. In contrast, business competitors with greater resources may access this information and potentially use it to acquire land at favorable terms. On the other hand, biases embedded within AI models may lead to outcomes that lack equity and inclusivity across different regions and populations. For example, the use of farm imagery without agricultural knowledge could result in the implementation of costly regulations or insurance premiums, adversely affecting farmers. The integration of AI-based solutions into climate action and sustainable growth provides consistent, objective measurements, fostering trust and transparency in efforts toward achieving a net-zero economy. The convergence of AI and Environmental, Social, and Governance (ESG) factors represents a significant milestone in today's dynamic business environment. In this context, sustainability refers to how a company's business model, including its products and services, contributes to sustainable development. By incorporating AI into ESG risk management and strategies, commercial data providers can achieve their sustainability objectives and explore novel pathways for fostering sustainable development and innovation. ESG reports are generally published yearly by commercial satellite providers such as Maxar Technologies [152], Planet [153] and Airbus [154], and technology companies such as Microsoft [155], Google [156], and IBM [157]. Some examples of ESG-oriented use-cases of AI in Earth observation include:
+
+· Carbon footprint of AI models: the growing carbon footprint of the AI industry inspired the University of Copenhagen to develop "carbontracker" [158], a tool that estimates the carbon emissions associated with different hardware and software configurations, and forecasts training runs' carbon footprint. It also supports predicting the total duration, energy, and carbon footprint of training an AI model. Then, the carbon intensity is used to indicate the carbon footprint in ESG reports.
+
+· Distribution of open-source training data: SpaceNet [159] is a nonprofit consortium dedicated to accelerating the research and application of open-source AI technology for geospatial applications. Co-founded by CosmiQ Works and Maxar Technologies, SpaceNet includes partners such as Amazon Web Services (AWS), Capella Space, IEEE Geoscience and Remote Sensing Society (GRSS), National Geospatial-Intelligence Agency (NGA), Oak Ridge National Lab, Open Geospatial Consortium (OGC), Planet, Topcoder, and Umbra. SpaceNet offers open, precision-labeled, electro-optical and synthetic aperture radar satellite datasets and runs challenges to encourage the development of algorithms designed specifically for geospatial applications.
+
+· Integrating diverse datasets to facilitate comprehensive situation and monitoring changes over time: Microsoft's Planetary Computer [160] combines a multi-petabyte catalog of global environmental data that
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+be queried via APIs, a scientific environment that allows users to answer global questions about that data, and applications that put those answers in the hands of conservation stakeholders.
+
+· Identifying sources of environmental issues, such as methane emissions from landfills, farms, or pipelines: Carbon Mapper [161] is a nonprofit organization co-founded by the State of California, NASA's Jet Propulsion Laboratory (JPL), Planet, the University of Arizona, Arizona State University (ASU), High Tide Foundation, and RMI that plans to deploy a hyperspectral satellite constellation with the ability to pinpoint, quantify and track point-source methane and CO2 emissions.
+
+# 8 Conclusions, Remarks and Future Directions
+
+# 8.1 Conclusions and Remarks
+
+This paper addresses the pressing need to navigate the ethical and societal complexities inherent in AI4EO applications. By synthesizing insights from diverse sources, including the academic literature, business models and ethical frameworks, it provides actionable guidance for researchers and practitioners in this rapidly evolving field. The paper's significance lies in its comprehensive examination of ethical dimensions such as privacy, security, fairness, responsibility and mitigating (unfair) biases, shedding light on key considerations that underpin responsible AI practices in EO missions. Through fostering collaboration and dialogue among stakeholders, the paper aims to advance ethical discourse and promote a culture of responsible AI development and deployment. It serves as a foundational framework for navigating ethical dilemmas and guiding the responsible integration of AI technologies into EO missions. Ultimately, the paper underscores the transformative potential of AI4EO applications in addressing global challenges while emphasizing the importance of upholding ethical principles. However, it is crucial to acknowledge that in the current context of significant global conflicts, some state actors may resort to non-peaceful means to achieve their own interests over the collective good defined at the global level. Ensuring that these technologies contribute to a more equitable and sustainable world requires navigating these complex realities.
+
+Given the current geopolitical state of the world, the role of AI in Earth observation (AI4EO) takes on heightened significance in contributing to global stability and peace. Aligning with UNSDG 16, which emphasizes peace, justice, and strong institutions, this work underscores the critical importance of leveraging AI4EO to support these goals and mitigate conflict.
+
+Furthermore, the research paper explores the significant effects of AI4EO applications on political, societal and environmental landscapes. It frames the United Nations Sustainable Development Goals as the guiding North Star for the ethical use of AI4EO, emphasizing that these goals should define what 'good' looks like. By aligning AI4EO efforts with the SDGs, the paper sets a clear benchmark for transparency, reproducibility and trust in AI4EO research. The paper advocates for open access to data and code to facilitate evidence-based decision-making processes in policy-making, enabling stakeholders to make well-informed choices. Societally, it highlights the critical need to address biases and safeguard privacy rights to promote fair outcomes and reduce stigmatization in vulnerable communities. The emphasis on responsible AI practices prioritizes fairness and inclusivity, fostering societal trust and cohesion. Environmentally, the paper stresses AI's vital role in addressing pressing environmental challenges through sustainable resource management and conservation efforts. By aligning AI4EO workflows with sustainability principles, the paper offers a path for leveraging AI technologies to advance the SDGs, thereby contributing to a more resilient and sustainable future for humanity and the planet.
+
+# 8.2 Future Investigations
+
+Future investigations, as indicated multiple times throughout this paper, should focus on developing strategies that facilitate the open sharing of data for scientific advancements while simultaneously preserving sensitive personal or group information. Ensuring the ethical use and protection of such data is crucial, particularly in applications like mapping deprived urban areas or victim detection, where the responsible use of AI can have significant societal impacts. These applications critically depend on the availability of large benchmark datasets, which are currently lacking. To promote responsible AI, it is essential to implement robust privacy-preserving techniques and data anonymization methods that protect individuals' identities while maintaining the utility of the data for research purposes. This includes using techniques like differential privacy, federated learning, and secure multiparty computation to safeguard sensitive information. Additionally, it is vital to establish clear guidelines and ethical standards for data sharing and usage. These guidelines should ensure that data are used in a manner that respects the rights and dignity of individuals and communities. Collaboration with stakeholders, including ethicists, legal experts and representatives from affected communities, is necessary to create frameworks that balance the need for scientific progress with the imperative to protect sensitive information. Moreover, transparency in data collection, processing and sharing practices is essential. Researchers and organizations must be open about the sources of their data, the methods used to process it, and the steps taken to protect privacy. This transparency builds trust and ensures that AI advancements are grounded in ethical practices. By prioritizing the responsible handling of sensitive data, the research community can develop AI-based methods that contribute to societal well-being while respecting individual and group privacy.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Responsible AI for Earth Observation A PREPRINT -->
+
+In the early 2020s, following decades of model-centric approaches and the deep learning revolution, there was a notable shift from model-centric to data-centric learning. The concept of data-centric AI began gaining traction, emphasizing the quality of data over the complexity of models. Concurrently, a strong societal push emerged with the advent of Responsible AI recommendations and legislation, as outlined in this paper. This necessitates research to develop methods that can capture biases in compliance with such legislation while maintaining scientific robustness and addressing the unique characteristics of GRS data. Responsible AI must consider the entire machine learning pipeline and involve multiple stakeholders. This includes identifying sensitive attributes and integrating specific domain knowledge into bias mitigation techniques. Currently, there is a balanced focus on both data quality and model innovation (the era of data-model-centric approaches). Techniques such as foundation models, synthetic data generation, uncertainty modeling and explainability, and robust data validation are employed to enhance datacentric approaches, emphasizing both model and data equally. Ethical considerations, including fairness, transparency, and bias mitigation, are also integral to these AI practices.
+
+# References
+
+[1] P. Ghamisi et al., "New frontiers in spectral-spatial hyperspectral image classification: The latest advances based on mathematical morphology, markov random fields, segmentation, sparse representation, and deep learning," IEEE geoscience and remote sensing magazine, vol. 6, no. 3, pp. 10-43, 2018.
+
+[2] X. X. Zhu et al., "Deep learning in remote sensing: A comprehensive review and list of resources," IEEE geoscience and remote sensing magazine, vol. 5, no. 4, pp. 8-36, 2017.
+
+[3] J. Buolamwini and T. Gebru, "Gender shades: Intersectional accuracy disparities in commercial gender classification," in Conference on fairness, accountability and transparency, PMLR, 2018, pp. 77-91.
+
+[4] K. Shahriari and M. Shahriari, "Ieee standard review-ethically aligned design: A vision for prioritizing human wellbeing with artificial intelligence and autonomous systems," in 2017 IEEE Canada International Humanitarian Technology Conference (IHTC), IEEE, 2017, pp. 197-201.
+
+[5] D. Gotterbarn et al., "Acm code of ethics and professional conduct," 2018.
+
+[6] A. Hleg, "Ethics guidelines for trustworthy ai," B-1049 Brussels, vol. 6, 2019.
+
+[7] L. Galindo, K. Perset, and F. Sheeka, "An overview of national ai strategies and policies," 2021.
+
+[8] G. Mai et al., "On the opportunities and challenges of foundation models for geospatial artificial intelligence," arXiv preprint arXiv:2304.06798, 2023.
+
+[9] D. Hong et al., "Spectralgpt: Spectral foundation model," arXiv preprint arXiv:2311.07113, 2023.
+
+[10] V. Dignum, Responsible artificial intelligence: how to develop and use AI in a responsible way. Springer, 2019, vol. 2156.
+
+[11] P. Ghamisi et al., "The potential of machine learning for a more responsible sourcing of critical raw materials," IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, vol. 14, pp. 8971-8988, 2021. DOI: 10.1109/JSTARS.2021.3108049.
+
+[12] J. Fjeld, N. Achten, H. Hilligoss, A. Nagy, and M. Srikumar, "Principled artificial intelligence: Mapping consensus in ethical and rights-based approaches to principles for ai," Berkman Klein Center Research Publication, no. 2020-1, 2020.
+
+[13] B. Friedman and H. Nissenbaum, "Bias in computer systems," ACM Transactions on information systems (TOIS), vol. 14, no. 3, pp. 330-347, 1996.
+
+[14] C UNESCO, Recommendation on the ethics of artificial intelligence, 2021.
+
+[15] Proposal for a regulation of the european parliament and of the council laying down harmonised rules on artificial intelligence (artificial intelligence act) and amending certain union legislative acts, Apr. 21, 2021. [Online]. Available: https : / / eur - lex . europa . eu / legal - content / EN / TXT / ?uri = CELEX % 3A52021PC0206.
+
+[16] H. Suresh and J. Guttag, "A framework for understanding sources of harm throughout the machine learning life cycle," in Equity and access in algorithms, mechanisms, and optimization, 2021, pp. 1-9.
+
+[17] T. Hellstr¨om, V. Dignum, and S. Bensch, "Bias in machine learning-what is it good for?" arXiv preprint arXiv:2004.00686, 2020.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+

@@ -1,0 +1,427 @@
+DOCUMENT: arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk
+
+<<<PAGE 45>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+With the development of suitable evaluations and benchmarks (Section 6.3), determining potential inroads for RUU improvement in AI tools becomes possible. However, we must not lose sight of the potential limitations on improvement - the NP-hardness of combinatorial explosiveness and deep uncertainty inherent to RUU - when determining appropriate ambition and expectations of performance improvements. Instead, and sufficient to head off key RUUT concerns, there is an imperative to develop and confirm reliable improvements over human performance.
+
+In the context of AI development avenues, there are a number of potentially fruitful avenues for exploring potential RUU improvements (given aforementioned work on sufficient measurement), many of which we note are not only independently additive, but mutually assistive:
+
+Prompt Engineering: For RUU tasks, prompt engineering can involve designing queries that explicitly probe for underlying reasoning processes, and assess appropriate and consistent accounting for uncertainties and ambiguities. For example, expansion of chain of thought reasoning probes to encompass more generalised "tree of thought" prompting have begun to yield gains in novel planning tasks (Yao et al., 2023). Another fruitful avenue of guidance for prompt engineering can be found in the DMDU literature. Specifically, key insights from the study of how to make better, higher quality decisions when faced with deep uncertainty involve knowing the correct questions to ask (and correspondingly, the more appropriate metrics against which to judge outputs (for a review see Marchau et al., 2019). Setting appropriate task constraints and metrics is key to salvaging performance, and in this case avoiding higher likelihoods of hallucinated (erroneous) responses that stem from having asked the wrong question (e.g., shifting away from predictive accuracy to robustness, Lempert et al., 2003).
+
+Hyperparameter Tuning: Adjusting the hyperparameters of AI models is a necessary method for seeking out possible optimisations of problem-domain to response output accuracy and consistency, particularly given available data (and conversely, remaining uncertainty) are central to hyperparameter tuning considerations, and inherent to RUU problems/tasks.
+
+Developing Specialized Training Sets: Given the aforementioned need for the creation of gold standard datasets for evaluation and benchmarking purposes (Section 6.3), the skills and labour required also lend themselves to training set developments that can assist in training AI models to better handle RUU scenarios. These datasets should include a wide variety of problem types and levels of uncertainty.
+
+APIs and User Training: The development of APIs and user training initiatives can not only independently reduce potential misuse risks (e.g., improving understanding of appropriate RUU performance expectations), but can also be leveraged to address more troublesome aspects of RUU tasks, including more explicit consideration of combinatorial explosiveness and deep uncertainty influences (e.g., APIs that can assist in estimating problem "size", and/or provide subsequent iterated probes of posed problems and questions to help illustrate the impact of residual uncertainty).
+
+More concretely, when it comes to improving the quality of outputs, given the end-goal is better quality decisions, we can again turn to the considerable work in DMDU to develop approaches that address the hard challenges associated with RUU problems described here. In this particular case, APIs could be developed that integrate one or more DMDU approaches to best leverage these insights for more effective model outputs - as they pertain to not only the user's needs, but also the hard realities of the problem spaces. Some examples include (but are not limited to):
+
+<!-- PageFooter: 45 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 46>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+Robust Decision Making (RDM): Shifting the focus from trying to make better predictions, to yielding policies/decisions that perform well across a range of potential scenarios, via a combination of techniques, including Assumption-Based Planning, scenarios, and Exploratory Modelling (Lempert et al., 2003). Robustness of model outputs is already of interest to AI research and development, this can be considered an extension of the same principles.
+
+Info-Gap Decision Theory (IG): Identifying disparities between known and potential unknowns as they pertain to the robustness of policies to failure. Such a technique is computational in nature, evaluating actions in a non-probabilistic fashion (Ben-Haim, 2006). Actions and alternatives (the basis of this analysis) could be generated through an API / series of prompts, incorporating both human and AI tool generation. Identified gaps could then be fed into further decision-approach processes, or at minimum made clear to users.
+
+Dynamic Adaptive Planning (DAP): Focusses on adaptation of plans and contingencies to changing/updating conditions - split into design and implementation phases, both of which entail a monitoring component (Walker et al., 2001). Within the context of AI RUU APIs, such an approach can be integrated into response structuring, tagging, and revision components, with monitoring thresholds being maintained by separate agents (human. Machine, or both conceivably).
+
+In general, the integration of these approaches into an RUU focussed API will boost decision quality (and therefore remediate the RUUT) via 1) identification of problem-relevant combinatorial explosiveness / deep uncertainty factors (e.g., expansive decision-option sets; shifting/changing timelines), 2) application of more appropriate metrics for deriving relative quality among decisions (e.g., robustness), and 3) appropriate outputs that minimise risks of overconfidence (i.e., via inadvertent exposure / corruption from unaccounted deep uncertainty influences). For a relevant review of DMDU approaches, see Marchau et al (2019).
+
+Leveraging Advanced Hardware: Outside of work with existing models and hardware, one obvious consideration is the direction and speed of hardware development. As mentioned previously (see Sections 3.3 and 3.4), development of quantum computing can offer greater returns on handling degrees of necessary compute dictated by the combinatorial explosiveness of the RUU problem in question. Of course, code-bases, softwares, and models that can better leverage these hardwares (current and prospective) could further garner meaningful gains in performance via broader coverage of possible worlds.
+
+In line with our structural / socio-technical perspective for addressing the risk of RUUT, there are additional "levers" that should be considered beyond the development of AI tools. Specifically, formulating and implementing effective AI safety policies is critical, as it can impact not only classes of actors in the system (developers, users) directly, but also shift system goals and incentives for more efficient alignments. We outline several areas of AI policy as potentially fruitful avenues:
+
+Accountability in Usage: Just as scientists are expected to detail their methods and tools, there is value in users of AI tools for critical decision-making scenarios being held accountable for how they use these tools. This includes documenting the AI models used, the rationale behind their choices, and acknowledging the limitations of these tools.
+
+<!-- PageFooter: 46 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 47>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+Disclaimers and Flags: To not only enable accountability initiatives, but also ensure incentivisation appropriately reaches developers, we suggest there is value in mandating the attachment of bolstered disclaimers or warning flags to outputs generated by AI tools, especially for functions prone to inaccuracies. This practice (though present in limited, voluntary degrees) will help users remain cognizant of the potential errors and approach the information with the necessary scepticism, but also continues to incentivise accuracy-based development (the caveat here remaining effective external corroboration and evaluation of tool performance).
+
+Broad Perspectives in Oversight: In line with recent calls (Lazar & Nelson, 2023; Gruetzemacher et al., 2023), AI safety and oversight should involve diverse expertise, backgrounds, and perspectives. This diversity is essential to identify and mitigate risks that may not be apparent from a single perspective, and reduce the potential influence of compromised incentives (e.g., internal self-policing).
+
+Adaptive Foresight in Policy Frameworks: We have also raised the issue of wicked problems, of which AI safety and governance is one. The immediate policy imperative is to adjust the policy framework towards adaptation/dynamism, such as 'adaptive foresight' approaches (Eriksson & Weber, 2008).
+
+In addressing the RUUT problem, interventions must span both the development of AI tools and the policies governing their use. On the development front, continuous improvement in AI's RUU capabilities through technical advancements and training is paramount. Concurrently, AI safety policies need to emphasise accountability, transparency, adaptability and broad structural perspectives, to ensure not only that these tools are used responsibly and effectively, but that potential associated structural risks are not only detected, but accounted for. This dual approach, combining technical innovation with robust policy frameworks, offers the most promising path to enhancing AI's capacity for reasoning under uncertainty and ensuring its safe and beneficial application.
+
+# 6.5. Summary: Correcting the Timeline
+
+This chapter has outlined a prospective strategy to address the Reasoning-Under-Uncertainty Trap (RUUT), highlighting the need for a multi-pronged approach to tackle the complex and structural risks inherent in the misuse of AI tools in RUU problems. The solution to the challenges posed by RUUT lies not only in the technical development of AI but also in considering the broader structural aspects involving user behaviour, governance, and the AI development community. Specifically, we have outlined 3 categories of solution, each building off the last, but of substantive independent worth:
+
+Awareness: The first critical step in mitigating the risks of RUUT is raising awareness among developers, users, and governance bodies about the limitations of AI in reasoning under uncertainty. This awareness is foundational for setting realistic expectations, guiding responsible usage, and informing policy-making.
+
+Investigation: Following awareness, the investigation phase involves developing robust evaluation and benchmarking tools to accurately assess the current RUU capabilities of AI systems. This step is crucial for identifying specific areas for improvement and for understanding how AI tools handle complexities involving uncertainty and decision-making, and the risks relating to relative performance against human counterparts.
+
+<!-- PageFooter: 47 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 48>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+Intervention: The final step in addressing RUUT is intervention, which includes both technical enhancements in AI development and the formulation of effective safety policies. This involves improving AI's RUU functionalities through methods like prompt engineering and hyperparameter tuning, as well as implementing policies that ensure accountability in AI usage, and smart adaptability in AI safety policy.
+
+Collectively, these initiatives-awareness, investigation, and intervention-have the potential to counteract and possibly reverse the harmful compounds within RUUT. By addressing both the technical and structural aspects of RUUT, these steps can lead to safer, more reliable, and effective use of AI tools, and serve as an example for dealing with structural risks.
+
+An overarching theme in this approach is the necessity for identifying and exploiting sensitive intervention points in policy-making (Farmer et al., 2019). By identifying the compounding effects and feedback loops within structural risks, we enable more effective targeting of more impactful influences over desired goal states. Given the issue of AI safety is ultimately a wicked problem, tackling this requires not only a deeper, broader understanding of risk factors, and how they interrelate, but also an adaptive and dynamic approach to policy formulation and implementation. The concept of 'adaptive foresight' serves as a valuable example in this regard (Eriksson & Weber, 2008). It suggests that policy frameworks should be flexible and capable of evolving in response to new information and changing circumstances. This adaptability is essential in the fast-evolving domain of AI, where new developments can rapidly alter the landscape of risks and opportunities.
+
+In summary, the journey towards mitigating the risks associated with RUUT and safely navigating the development and application of AI is intricate and multi-dimensional. It necessitates a concerted effort across various domains, involving technical advancements, enhanced awareness, rigorous evaluation, and dynamic policy-making. By identifying and exploiting sensitive intervention points across these areas, there is potential to steer the use of AI towards a trajectory that maximises benefits while minimising risks, ultimately contributing to a safer and more responsible AI-enabled world.
+
+<!-- PageFooter: 48 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 49>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+# 7.1. The RUUT problem
+
+The challenges facing humanity are immense and interconnected, demanding solutions to some of the most complex reasoning tasks ever encountered. Understanding and intervening in a future rife with uncertainty and complexity ranks among these formidable challenges. In an age where the capabilities of Large Language Models (LLMs) and other AI tools are rapidly advancing, there is an increasing temptation, especially among decision-makers who may not fully understand the intricacies of these technologies, to rely on them for addressing complex and uncertain problems. This reliance is not without risk. The allure of AI as a panacea for complex decision-making is a siren call, leading potentially to a landscape where critical decisions are made without fully grasping the limitations and implications of the tools at hand.
+
+Here we have described a phenomenon that we term the Reasoning-Under-Uncertainty Trap (RUUT), which is a current AI risk that stems from the above demand/challenge. The problem manifests in two distinct but interconnected aspects:
+
+Awareness and Misuse Risks: There exists a significant lack of awareness about the capabilities and weaknesses of AI tools in reasoning under uncertainty. This gap in understanding poses a substantial risk of misuse, particularly among users who may naively apply these tools to solve complex problems. As a result, we risk costly misuse errors that, given the opacity of the wicked problems at hand, we are unlikely to catch and correct. The crucial question is not only about the inherent limits of AI tools in RUU scenarios but also about ensuring that their performance is robust and reliable, especially when compared to human decision-makers.
+
+Systemic and Structural Risks: The risks associated with the misuse of AI tools do not exist in a vacuum. They are embedded within a broader system or structure that is dynamic and responsive. Within this system, interlinked feedback loops can compound, exacerbate and accelerate the harms associated with this misuse. For example, as unchecked use leads to growing misplaced trust, incentives to retain (costly) human oversights diminish, and this weakened oversight sets new harmful norms where the already compromised capacity to detect and prevent errors is reduced even further.
+
+The RUUT problem we describe here highlights how AI risks are not standalone issues, but are deeply embedded within a network of systemic interactions. We have illustrated how one central "component failure" (AI tool misuse for RUU problems) can interact with the dynamics of the complex systems users, problems, tools, developers, markets, and governance, inhabit, producing cascading effects across the entire system. The implications of RUUT as emblematic of a broader class of AI risk are profound and far-reaching. As decision-makers increasingly turn to AI tools to navigate complex scenarios, the potential for misuse and the resulting systemic risks rise correspondingly. This makes it imperative to address these forms of risk not just at the level of individual AI tools or users, but with an understanding of the broader systemic and structural dimensions at play.
+
+In sum, the RUUT problem presents a scenario where the unexamined use of AI tools in complex decision-making could lead to significant and unintended consequences. It calls for a concerted effort to understand and mitigate these risks, emphasising the need for awareness, investigation, and intervention at multiple levels. As we navigate towards increasingly uncertain futures, addressing the RUUT problem becomes not just a matter of technological advancement, but a
+
+# Chapter 7: Conclusions
+
+<!-- PageFooter: 49 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 50>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+fundamental requirement for responsible and effective decision-making in a world shaped by artificial intelligence.
+
+# 7.2. Solutions & Implications
+
+Addressing the RUUT challenge requires a multifaceted approach that begins with awareness and extends into targeted interventions in AI tool development and safety policy.
+
+Awareness is the cornerstone of addressing the RUUT problem. Without a clear understanding of the risks associated with AI tool misuse, particularly in reasoning under uncertainty, decision-makers, developers, and users remain vulnerable to costly errors. Elevating awareness does more than just reduce the immediate risk of misuse; it actively counters several harmful compounds within the system, such as misplaced trust in AI capabilities and weakening oversight mechanisms. This approach aligns with the principles of Sensitive Intervention Points (SIPs; Farmer et al., 2019), and the leverage points in complex systems (Meadows, 2008). By enhancing awareness, we can initiate a chain reaction that mitigates broader risks and facilitates more informed decision-making. This is particularly essential given the temporal sensitivity inherent to non-linear systems (i.e., it is easiest to prevent/mitigate non-linear effects before they snowball), but even more so in a problem-space where the acting impetus (i.e., AI tool) is also subject to rapidly evolving timeframes.
+
+Following initial, system-wide awareness, there are two interrelated paths towards not only mitigating RUUT, but addressing and improving RUU-related outcomes:
+
+In the realm of AI tool development, there is substantive necessary work to expand current evaluation shortcomings. In particular, evaluating RUU requires a rigorous approach to creating gold standard datasets and rubrics, which cover a wide range of underlying problem structures, questions, and contexts. This approach is essential not only for evaluating AI capabilities but also for informing the design of effective training sets that can improve AI performance in RUU scenarios. However, insights should be integrated both from accompanying empirical work into comparative human performance across these same problem-question pairings, but also by integrating principles from Decision-Making under Deep Uncertainty (DMDU) approaches to effectively matriculate and address deep uncertainty related limitations within the problem space (e.g., shifting focus to decision robustness; for a review of approaches see Marchau et al., 2019). Both of these aspects are essential to understanding potential risks, but also in the improvement of model performance (e.g., via integrated APIs and prompt engineering). This endeavour will require a concerted effort, however the potential benefits extend beyond risk minimisation, to potentially substantial gains in dealing with the complex nature of real-world decision-making in uncertain and dynamic environments - which characterise many of the most critical problems we face globally.
+
+In terms of AI safety policy, the emphasis must be on learning to be dynamic and adaptive. In this manner, policy solutions to RUUT are emblematic of dealing with the broader risk class of structural and socio-technical risk factors. Adopting a structural approach that considers multiple levers of change is key to addressing the wicked problem characteristics inherent to determining effective AI safety and governance. Such an approach includes not only the development of multi-faceted and flexible policies but also the establishment of oversight mechanisms that are capable of evolving with the changing landscape of AI technology and its applications. This approach is in line with 'adaptive foresight' (Eriksson & Weber, 2008) and other responses to policy-making when faced with deep uncertainty, and gel with the broader perspectives on socio-technical and structural risks and the recognition of the need for diverse insights in research, development, and policy formulation (e.g., Lazar & Nelson, 2023). For example, the rapid identification of structural risks (e.g., via structural risk evaluations incorporating techniques like system mapping) is not only necessary at the point of AI development governance, but also for policy-makers to identify system vulnerabilities (and conversely, leverage points) for mitigating or reversing harms across the broader spectrum of a changing society.
+
+<!-- PageFooter: 50 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 51>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+Furthermore, much like the raising of awareness regarding AI tool RUU capabilities, the advantages of adopting this perspective in policy-making is not limited to effective risk identification and mitigation efforts, but the vulnerabilities identified in system mapping and adaptive policy efforts are themselves often potential points of leverage for producing outsized positive gains. By way of analogy, identifying a tipping point potential in the establishment of a harmful norm (e.g., naive model misuse) reveals not only the vulnerability that should be mitigated in the case of misuse (e.g., raising awareness of RUU errors), but also unveils a leverage point to lean into (e.g., via increasing transparency) when that norm can instead be turned positive (e.g,. AI tool use for RUU does now outperform human counterparts). Against the backdrop of fast moving and temporally sensitive, non-linear problems, identifying and exploiting non-linear intervention points is not only desirable, but a necessity, both in AI safety policy, and beyond.
+
+The solutions for RUUT - as emblematic of structural risks more broadly - must be interconnected, with ongoing initiatives that emphasise oversight and transparency in AI development and use. This interconnectedness ensures that the efforts to mitigate the risks associated with AI tool misuse in RUU scenarios are comprehensive and aligned with the broader goals of AI safety and responsible innovation. In this regard, the example proposition of increased emphasis on oversight and transparency underscores the necessity of incorporating multiple perspectives and external oversight in AI governance (see e.g., Gruetzemacher et al., 2023).
+
+In conclusion, addressing the RUUT problem requires a holistic approach that intertwines awareness, investigation, intervention, and policy adaptation. As we navigate an increasingly uncertain future, the need to understand and mitigate the risks associated with AI in complex decision-making becomes not just a technological imperative but a fundamental requirement for responsible governance and effective policy-making. By adopting this multifaceted approach, we can ensure that AI is used safely and effectively, harnessing its capabilities to navigate the uncertainties of our world while safeguarding against its potential pitfalls.
+
+# Acknowledgements
+
+Our thanks to David Mannheim, Ross Gruetzemacher, Kyle Killian, and Iyngkarran Kumar for their comments and suggestions on earlier forms of this manuscript. This work was sponsored by the Transformative Futures Institute.
+
+Correspondence should be addressed to Toby D. Pilditch at: tdpilditch@gmail.com
+
+<!-- PageFooter: 51 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 52>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+# References
+
+- Agrawal, A., Gans, J., and Goldfarb, A. (2023, June). How Large Language Models Reflect Human Judgment [Online]. Available at: https://hbr.org/2023/06/how-large-language-models-reflect-human-judgment
+
+- APEC Policy Support Unit. (2022, November). Artificial Intelligence in Economic Policymaking (Policy Brief No. 52).
+
+- Armstrong, J. S. (Ed.). (2001). Principles of forecasting: a handbook for researchers and practitioners (Vol. 30). Boston, MA: Kluwer Academic.
+
+- Arrieta, A. B., Díaz-Rodríguez, N., Del Ser, J., Bennetot, A., Tabik, S., Barbado, A., ... & Herrera, F. (2020). Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI. Information fusion, 58, 82-115.
+
+- Barbrook-Johnson, P. and Penn, A. S. (2022). Systems Mapping: How to build and use causal models of systems. Palgrave-Macmillan: Cham, Switzerland.
+
+- Beard, S., Rowe, T., & Fox, J. (2020). An analysis and evaluation of methods currently used to quantify the likelihood of existential hazards. Futures, 115, 102469.
+
+- Ben-Haim, Y. (2006). Info-gap decision theory: decisions under severe uncertainty. Elsevier.
+
+- Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies. Oxford University Press.
+
+- Bresnahan, T. F., & Trajtenberg, M. (1995). General purpose technologies 'Engines of growth'?. Journal of econometrics, 65(1), 83-108.
+
+- Brier, G. W. (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review, 78(1), 1-3.
+
+- Business Wire (2023, June). Chinese Workers Want ChatGPT To Help With Decisions - automatica 2023 survey reveals [Online]. Available at: https://www.businesswire.com/news/home/20230601006138/en/Chinese-Workers-Want-Chat GPT-To-Help-With-Decisions-%E2%80%93-automatica-2023-survey-reveals
+
+- Callaway, E. (2022). What's next for the AI protein-folding revolution. Nature, 604, 234-238.
+
+- Chater, N., & Oaksford, M. (2018). The enigma is not entirely dispelled: A review of Mercier and Sperber's The Enigma of Reason. Mind & Language, 33(5), 525-532.
+
+- Cheng, P. W., & Holyoak, K. J. (1985). Pragmatic reasoning schemas. Cognitive psychology, 17(4), 391-416.
+
+- Christiano, P., Cotra, A., & Xu, M. (2022). Eliciting latent knowledge. Technical report, ARC, 2022. URL https://docs. google. com/document/d/1WwsnJQstPq91_ Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit.
+
+- Chui, M., Yee, L., Hall, B., & Singla, A. (2023). The state of AI in 2023: Generative AI's breakout year. McKinsey & Company.
+
+- Cooke, R. M. (1991). Experts in uncertainty: opinion and subjective probability in science. Oxford University Press, USA.
+
+- Cooper, G. F. (1990). The computational complexity of probabilistic inference using Bayesian belief networks. Artificial intelligence, 42(2-3), 393-405.
+
+- Creswell, A., Shanahan, M., & Higgins, I. (2022). Selection-inference: Exploiting large language models for interpretable logical reasoning. arXiv preprint arXiv:2205.09712.
+
+<!-- PageFooter: 52 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 53>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+- Dagum, P., & Luby, M. (1993). Approximating probabilistic inference in Bayesian belief networks is NP-hard. Artificial intelligence, 60(1), 141-153.
+
+- Davis, P. K., Perry, W. L., Hollywood, J. S., & Manheim, D. (2016). Uncertainty-sensitive heterogeneous information fusion: assessing threat with soft, uncertain, and conflicting evidence (p. 0169). Rand Corporation.
+
+- Desai, S. A. C., Pilditch, T. D., & Madsen, J. K. (2020). The rational continued influence of misinformation. Cognition, 205, 104453.
+
+- Dias, R., & Torkamani, A. (2019). Artificial intelligence in clinical and genomic diagnostics. Genome medicine, 11(1), 1-12.
+
+- Doshi, A. R., & Hauser, O. (2023). Generative artificial intelligence enhances creativity. Available at SSRN.
+
+- Eriksson, E. A., & Weber, K. M. (2008). Adaptive foresight: navigating the complex landscape of policy strategies. Technological Forecasting and Social Change, 75(4), 462-482.
+
+- Farmer, J. D., Hepburn, C., Ives, M. C., Hale, T., Wetzer, T., Mealy, P., ... & Way, R. (2019). Sensitive intervention points in the post-carbon transition. Science, 364(6436), 132-134.
+
+- Forrester, J. W. (1961). Industrial Dynamics. Pegasus Communications: Waltham, MA.
+
+- Frederick, S., Loewenstein, G., & O'donoghue, T. (2002). Time discounting and time preference: A critical review. Journal of economic literature, 40(2), 351-401.
+
+- Geist, E. (2022). Why Reasoning Under Uncertainty Is Hard for Both Machines and People-and an Approach to Address the Problem. Adaptive Engagement for Undergoverned Spaces, 265.
+
+- Gigerenzer, G. (2002). Adaptive thinking: Rationality in the real world. Evolution and Cognition.
+
+- Gigerenzer, G., & Goldstein, D. G. (1996). Reasoning the Fast and Frugal Way: Models of Bounded Rationality. Psychological Review, 103(4), 650-669.
+
+- Gilovich, T., Vallone, R., & Tversky, A. (1985). The hot hand in basketball: On the misperception of random sequences. Cognitive psychology, 17(3), 295-314.
+
+- Glass, D. H. (2002). Coherence, explanation, and Bayesian networks. In M. O'Neill, R. F. E. Sutcliffe, C. Ryan, M. Eaton, and N. J. L. Griffith (Eds.), Artificial Intelligence and Cognitive Science, 13th Irish Conference, AICS 2002, pp. 177-182. Berlin: Springer.
+
+- Goldstein, J. (2011). Emergence in complex systems. The sage handbook of complexity and management, 65-78.
+
+- Griffiths, T. L., & Tenenbaum, J. B. (2006). Optimal predictions in everyday cognition. Psychological science, 17(9), 767-773.
+
+- Gruetzemacher, R., & Paradice, D. (2019). Toward Mapping the Paths to AGI. In Artificial General Intelligence: 12th International Conference, AGI 2019, Shenzhen, China, August 6-9, 2019, Proceedings 12 (pp. 70-79). Springer International Publishing.
+
+- Gruetzemacher, R., & Whittlestone, J. (2022). The transformative potential of artificial intelligence. Futures, 135, 102884.
+
+- Gruetzemacher, R., Chan, A., Frazier, K., Manning, C., Los, Š., Fox, J., ... & Kilian, K. (2023). An International Consortium for Evaluations of Societal-Scale Risks from Advanced AI. arXiv preprint arXiv:2310.14455.
+
+<!-- PageFooter: 53 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 54>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+- Hahn, U., & Harris, A. J. (2014). What does it mean to be biased: Motivated reasoning and rationality. In Psychology of learning and motivation (Vol. 61, pp. 41-102). Academic Press.
+
+- Hahn, U., & Oaksford, M. (2007). The rationality of informal argumentation: a Bayesian approach to reasoning fallacies. Psychological review, 114(3), 704.
+
+- Hendrycks, D., Mazeika, M., & Woodside, T. (2023). An Overview of Catastrophic AI Risks. arXiv preprint arXiv:2306.12001.
+
+- Heninger, J., & Johnson, A. (2023, April). Superintelligence Is Not Omniscience [Online]. Available at: https://aiimpacts.org/superintelligence-is-not-omniscience
+
+- Heuer, R. J. (1999). Psychology of intelligence analysis. Center for the Study of Intelligence.
+
+- Hutter, M. (2007). Universal algorithmic intelligence: A mathematical top→ down approach. In Artificial general intelligence (pp. 227-290). Berlin, Heidelberg: Springer Berlin Heidelberg.
+
+- Intelligence Advanced Research Projects Activity (2016): Crowdsourcing Evidence, Evaluation, Argumentation, Thinking and Evaluation, IARPA-BAA-15-11.
+
+- Imani, S., Du, L., & Shrivastava, H. (2023). Mathprompter: Mathematical reasoning using large language models. arXiv preprint arXiv:2303.05398.
+
+- Jacobs, A. Z. (2021). Measurement as governance in and for responsible AI. arXiv preprint arXiv:2109.05658.
+
+- Jacobs, A. Z., & Wallach, H. (2021, March). Measurement and fairness. In Proceedings of the 2021 ACM conference on fairness, accountability, and transparency (pp. 375-385).
+
+- Jarvik, M. E. (1951). Probability learning and a negative recency effect in the serial anticipation of alternative symbols. Journal of Experimental Psychology, 41, 291-291.
+
+- Jin, Z., Chen, Y., Leeb, F., Gresele, L., Kamal, O., Lyu, Z., ... & Schölkopf, B. (2023). CLADDER: Assessing Causal Reasoning in Language Models.
+
+- Karvetski, C. W. (2021). Superforecasters: A Decade of Stochastic Dominance. White Paper.
+
+- Keynes, J.M. (1921). Treatise on Probability. London: Macmillan.
+
+- King, M., & Kay, J. (2020). Radical uncertainty: Decision-making for an unknowable future. Hachette UK.
+
+- King, R. D., Rowland, J., Oliver, S. G., Young, M., Aubrey, W., Byrne, E., ... & Clare, A. (2009). The automation of science. Science, 324(5923), 85-89.
+
+- Kleinberg, J., & Raghavan, M. (2021). Algorithmic monoculture and social welfare. Proceedings of the National Academy of Sciences, 118(22), e2018340118.
+
+- Knight, F. H. (1921). Risk, uncertainty and profit (Vol. 31). Houghton Mifflin.
+
+- Krishan, N. (2023, April). Congress gets 40 ChatGPT Plus licenses to start experimenting with generative AI. [Online]. Available at: https://fedscoop.com/congress-gets-40-chatgpt-plus-licenses/
+
+- Krynski, T. R., & Tenenbaum, J. B. (2007). The role of causality in judgment under uncertainty. Journal of Experimental Psychology: General, 136(3), 430.
+
+- Kurshan, E. (2023). Systematic AI Approach for AGI: Addressing Alignment, Energy, and AGI Grand Challenges. arXiv preprint arXiv:2310.15274.
+
+<!-- PageFooter: 54 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 55>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+- Lagnado, D. A. (2021). Explaining the evidence: How the mind investigates the world. Cambridge University Press.
+
+- Lanham, T., Chen, A., Radhakrishnan, A., Steiner, B., Denison, C., Hernandez, D., ... & Perez, E. (2023). Measuring faithfulness in chain-of-thought reasoning. arXiv preprint arXiv:2307.13702.
+
+- Laouchez, J-M., and Misiaszek, T. (2023). Humans still wanted: The future of work in an AI-driven world [Online]. Available at: https://www.kornferry.com/content/dam/kornferry-v2/pdf/institute/kfi-humans-still-wanted-aisurvey-insights.pdf
+
+- Lazar, S., & Nelson, A. (2023). AI safety on whose terms?. Science, 381(6654), 138-138.
+
+- Lempert, R. J., Popper, S. W., Bankes, S. C. (2003). Shaping the Next One Hundred Years: New Methods For Quantitative, Long-Term Policy Analysis. RAND. 10.1016/j.techfore.2003.09.006.
+
+- Lempert, R. J., Popper, S. W., Groves, D. G., Kalra, N., Fischbach, J. R., Bankes, S. C. et al. (2013). Making Good Decisions Without Predictions: Robust Decision Making for Planning Under Deep Uncertainty. Santa Monica, CA: RAND, RB-9701
+
+- Lempert, R. J., Schlesinger, M. E., & Bankes, S. C. (1996). When we don't know the costs or the benefits: Adaptive strategies for abating climate change. Climatic Change, 33(2), 235-274
+
+- Levin, K., Cashore, B., Bernstein, S., & Auld, G. (2012). Overcoming the tragedy of super wicked problems: constraining our future selves to ameliorate global climate change. Policy sciences, 45(2), 123-152.
+
+- Lipsey, R. G., Bekar, C., & Carlaw, K. (1998). What requires explanation. In General purpose technologies and economic growth, 2, 15-54.
+
+- Liu, Y., Yao, Y., Ton, J. F., Zhang, X., Cheng, R. G. H., Klochkov, Y., ... & Li, H. (2023). Trustworthy LLMs: a Survey and Guideline for Evaluating Large Language Models' Alignment. arXiv preprint arXiv:2308.05374.
+
+- Lord, C., Ross, L., & Lepper, M. R. (1979). Biased assimilation and attitude polarization: The effects of prior theories on subsequently considered evidence. Journal of Personality and Social Psychology, 37, 2098-2109.
+
+- Macdougall, R. (1906). On secondary bias in objective judgments. Psychological Review, 13, 97-120.
+
+- Marcus, G., & Davis, E. (2020). Experiments testing GPT-3's ability at commonsense reasoning: results.
+
+- Matheny, J., & Rieber, S. (2015). Aggregative contingent estimation (ACE). Intelligence Advanced Research Projects Agency.
+
+- McLachlan, S., Dube, K., Hitman, G. A., Fenton, N. E., & Kyrimi, E. (2020). Bayesian networks in healthcare: Distribution by medical condition. Artificial intelligence in medicine, 107, 101912.
+
+- Meadows, D. H. (2008). Thinking in Systems: A Primer. Chelsea Green Publishing.
+
+- Marblestone, A. (2023, January). General Automation, and Science [Online]. Available at: https://longitudinal.blog/2023/01/10/general-automation-and-science/
+
+- Marchau, V. A., Walker, W. E., Bloemen, P. J., & Popper, S. W. (2019). Decision making under deep uncertainty: from theory to practice (p. 405). Springer Nature.
+
+<!-- PageFooter: 55 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 56>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+- Matute, H., Blanco, F., Yarritu, I., Díaz-Lago, M., Vadillo, M. A., & Barberia, I. (2015). Illusions of causality: How they bias our everyday thinking and how they could be reduced. Frontiers in psychology, 6, 888.
+
+- Mellers, B., Stone, E., Atanasov, P., Rohrbaugh, N., Metz, S. E., Ungar, L., ... & Tetlock, P. (2015). The psychology of intelligence analysis: Drivers of prediction accuracy in world politics. Journal of experimental psychology: applied, 21(1), 1.
+
+- Mercier, H., & Sperber, D. (2011). Why do humans reason? Arguments for an argumentative theory. Behavioral and brain sciences, 34(2), 57-74.
+
+- Miller, J. H., & Page, S. E. (2009). Complex adaptive systems: an introduction to computational models of social life: an introduction to computational models of social life. Princeton university press.
+
+- Moore, R. (2015). A compendium of research and analysis on the Offender Assessment System (OASys). Ministry of Justice Analytical Series.
+
+- Moore, P. B., Hendrickson, W. A., Henderson, R., & Brunger, A. T. (2022). The protein-folding problem: Not yet solved. Science, 375(6580), 507-507.
+
+- Muennighoff, N., Rush, A. M., Barak, B., Scao, T. L., Piktus, A., Tazi, N., ... & Raffel, C. (2023). Scaling Data-Constrained Language Models. arXiv preprint arXiv:2305.16264.
+
+- Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of general psychology, 2(2), 175-220.
+
+- Nyberg, E. P., Nicholson, A. E., Korb, K. B., Wybrow, M., Zukerman, I., Mascaro, S., ... & Lagnado, D. (2022). BARD: A structured technique for group elicitation of bayesian networks to support analytic reasoning. Risk Analysis, 42(6), 1155-1178.
+
+- Nye, M., Andreassen, A. J., Gur-Ari, G., Michalewski, H., Austin, J., Bieber, D., ... & Odena, A. (2021). Show your work: Scratchpads for intermediate computation with language models. arXiv preprint arXiv:2112.00114.
+
+- Oaksford, M., & Chater, N. (1994). A rational analysis of the selection task as optimal data selection. Psychological Review, 101, 608-631.
+
+- Oaksford, M., & Chater, N. (Eds.). (1998). Rational models of cognition (pp. 372-398). Oxford: Oxford University Press.
+
+- O'Brien, A.. (2022, June). The Power and Pitfalls of AI for US Intelligence [Online]. Available at: https://www.wired.com/story/ai-machine-learning-us-intelligence-community/
+
+- OECD/CAF. (2022). The Strategic and Responsible Use of Artificial Intelligence in the Public Sector of Latin America and the Caribbean. OECD Public Governance Reviews. Paris.
+
+- OpenAI (2019, April). OpenAI Charter [Online]. Available at: https://openai.com/charter
+
+- Oreskes, N., Shrader-Frechette, K., & Belitz, K. (1994). Verification, validation, and confirmation of numerical models in the earth sciences. Science, 263(5147), 641-646.
+
+- Palmer, A., & Spirling, A. (2023). Large Language Models Can Argue in Convincing and Novel Ways About Politics: Evidence from Experiments and Human Judgement. (Working paper), Technical report.
+
+- Patel, J., Manetti, M., Mendelsohn, M., Mills, S., Felden, F., Littig, L., & Rocha, M. (2021). AI brings science to the art of policymaking. Boston Consulting Group.
+
+<!-- PageFooter: 56 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 57>>>
+<!-- PageHeader: TFI Research RUUT T. D. Pilditch -->
+
+- Pearl, J. (1988). Probabilistic reasoning in intelligent systems. San Francisco, CA: Morgan Kaufmann.
+
+- Pearl, J. (2009). Causality. Models, reasoning, and inference. Second edition. New York: Cambridge University Press.
+
+- Peres, R., Muller, E., & Mahajan, V. (2010). Innovation diffusion and new product growth models: A critical review and research directions. International journal of research in marketing, 27(2), 91-106.
+
+- Pettigrew, R. (2016). Accuracy and the Laws of Credence. Oxford University Press.
+
+- Phillips, L. D., & Edwards, W. (1966). Conservatism in a simple probability inference task. Journal of experimental psychology, 72(3), 346.
+
+- Pilditch, T. D., Fenton, N., & Lagnado, D. (2019). The zero-sum fallacy in evidence evaluation. Psychological science, 30(2), 250-260.
+
+- Pilditch, T. D., Hahn, U., Fenton, N., & Lagnado, D. (2020). Dependencies in evidential reports: The case for informational advantages. Cognition, 204, 104343.
+
+- Pitz, G. F. (1969a). The influence of prior probabilities on information seeking and decision-making. Organizational Behavior and Human Performance, 4, 213-226.
+
+- Qiu, L., Jiang, L., Lu, X., Sclar, M., Pyatkin, V., Bhagavatula, C., ... & Ren, X. (2023). Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement. arXiv preprint arXiv:2310.08559.
+
+- Raji, I. D., Kumar, I. E., Horowitz, A., & Selbst, A. (2022, June). The fallacy of AI functionality. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (pp. 959-972).
+
+- Rittel, H. W., & Webber, M. M. (1973). Dilemmas in a general theory of planning. Policy sciences, 4(2), 155-169.
+
+- Robb, C. S., Silberman, L. H., Levin, R. C., McCain, J., Rowen, H. S., Slocombe, W. B., ... & Cutler, L. (2005). The commission on the intelligence capabilities of the united states regarding weapons of mass destruction: Report to the president of the united states. Commission on Intelligence Capabilities Regarding WMD, Washington, DC.
+
+- Ross, L., Greene, D., & House, P. (1977). The "false consensus effect": An egocentric bias in social perception and attribution processes. Journal of Experimental Social Psychology, 13, 279-301.
+
+- Saltelli, A., Tarantola, S., Campolongo, F., & Ratto, M. (2004). Sensitivity analysis in practice: a guide to assessing scientific models (Vol. 1). New York: Wiley.
+
+- Sanders, M., Snijders, V., & Hallsworth, M. (2018). Behavioural science and policy: where are we now and where are we going?. Behavioural Public Policy, 2(2), 144-167.
+
+- Schoenegger, P., & Park, P. S. (2023). Large Language Model Prediction Capabilities: Evidence from a Real-World Forecasting Tournament. arXiv preprint arXiv:2310.13014.
+
+- Schum, D. A. (1994). The evidential foundations of probabilistic reasoning. Northwestern University Press.
+
+- Shafer, G. (1976). A Mathematical Theory of Evidence, Princeton, N.J.: Princeton University Press.
+
+<!-- PageFooter: 57 -->
+
+<!-- PageBreak -->
+

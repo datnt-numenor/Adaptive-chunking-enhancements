@@ -1,0 +1,14 @@
+{
+  "request_hash": "62594e1c2351d3a9731527afd5485969d50db2ae1ea0395826828aacf8b8c35e",
+  "prompt_sha256": "e2099f6256f8ae8f4eb70f721bb6311b3231330dbd081ae42bce4659655289f4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAqwfP1VNAfJnwrVYe8B3HBinQS",
+  "prompt_tokens": 8604,
+  "completion_tokens": 48,
+  "actual_usd": 0.0013193999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly states that 'human rights' and 'sustainable' were not mentioned at all in the technical documentation of any company, fully supporting the claims made in the reference answer."
+  }
+}

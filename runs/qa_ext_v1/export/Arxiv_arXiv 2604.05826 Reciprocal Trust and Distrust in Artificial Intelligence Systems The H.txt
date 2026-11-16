@@ -1,0 +1,618 @@
+DOCUMENT: arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H
+
+<<<PAGE 15>>>
+The most realistic scenario where AI helps significantly would be one where it was deeply integrated into the reactor's control systems with veto power over dangerous operationsessentially preventing the test from proceeding as planned. " [On February 10, 2026.] All in all, these consistent replies largely corroborate the above-mentioned counterfactual narratives and act as a springboard for discussing their implications for regulation.
+
+# 4 Implications for Regulation
+
+The counterfactual scenarios of Serpukhov-15 (1983) and Chernobyl (1986) look like mirror images: especially in high-consequence domains, the question is primarily not whether to automate, but where to place the right to say "no" and organize control over decisions - yet together they map the two ends of the regulatory spectrum for AI systems, pulling regulation in opposite directions (see Table 2 below, summarizing the argument).
+
+<Table>
+| Context                                   | Costlier error   | Who gets more and/or final authority?   | Key regulatory instrument                                  |
+|:------------------------------------------|:-----------------|:----------------------------------------|:-----------------------------------------------------------|
+| Nuclear launch, strategic warning         | False positive   | Human                                   | Statutory redundancy rule, mandatory uncertainty display   |
+| Reactor, chemical process, flight control | False negative   | AI system                               | Non-overridable shutdown logic, regulator-audited firmware |
+</Table>
+
+The main implication for regulation from the first counterfactual scenario is that especially in systems where a false positive is overwhelmingly costly - nuclear command, strategic early warning, cybersecurity attacks (Fitzpatrick 2019; Oliver Schwarz 2005) - regulation is needed to slow machines down and keep humans with time to think. In terms of sociotechnical fixes - rooted in public governance - three elements appear to be especially pertinent. The first is (multi-channel) redundancy by statute (Pitale, Abbaspour and Upadhyay 2024). No single element (such as a sensor or a fuse) may trigger an attack warning; redundancy and corroboration from an independent modality (human operated ground radar, human imagery analysts, etc.) must be a prerequisite. Second, AI systems should be transparent about uncertainty (Avramova and Ivanov 2010). Standards should force AI suppliers to surface confidence intervals, background "reasoning" , and sources for every alert so that human officers can see the model's doubts instead of its binary verdict. Third, and above all, there should be human veto power with protected decision space (Mosqueira-Rey et al. 2023; Slade et al. 2024; Zanzotto 2019). Independent humans with own decision-making power must be in the loop; rules must guarantee a minimum reflection time by humans before any automatic escalation; neither AI systems themselves nor political authorities cannot shorten or cancel that window on the spot. A recent example of this approach in EU transport safety policies is AI-induced phantom braking in advanced driver-assistance systems, where false positives generated hazardous braking events (Berge et al. 2024). European transport-safety authorities have treated such incidents as emblematic of false-positive risks in automated driving, reinforcing regulatory emphasis on monitoring, transparency, and effective human override under the EU vehicle safety framework.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+According to the second counterfactual scenario, instead, an AI system with mere advisory functions could do nothing when reactivity spiked at Chernobyl. The main implication for regulation relates to the observation that, especially in areas where a false negative is catastrophic - nuclear-plant control, chemical reactors, flight-envelope protection (Dong et al. 2023; Lombaerts et al. 2017) - regulation might be considered with the aim to empower the AI system to overrule untrustworthy, potentially unsafe human orders. When looking again at (socio-)technical fixes, three elements are worth discussing. First, non-overridable safety interlocks may be implemented (Dignum 2018; Nordland 2004). Regulators should treat an AI shutdown routine as they treat a mechanical relief valve to reduce pressure in high-risk machinery: tamper-proof by design and verified through practical testing (Hellemans 2009). Second, the autonomy of system could be tied to codified invariants (Berente et al. 2021; Wang 2021). A digital safety controller may carry hard limits (for instance, about maximum positive reactivity or tank pressure) baked into firmware; they can only be changed under regulator-sealed configuration control. Third, dual-key human override could be helpful (Wang and Chung 2022). Accordingly, any attempt to disable the AI's function should require at least two independent public officers plus real-time notification to the regulator. A recent illustration consistent with this logic can be found in modern aviation systems, where flight-envelope protection is designed to override pilot commands that would violate hard aerodynamic or structural limits. In multiple post-2020 incident reports involving commercial aircrafts, automated protections prevented stalls or excessive pitch despite continued pilot inputs, exemplifying regulatory acceptance of non-overridable safety constraints in contexts where a false negative (failure to intervene) would be catastrophic
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+(Catak et al. 2024).
+
+Notwithstanding such socio-technical fixes, at this point a deeper, second-order trust dilemma - one that is inherently political - emerges, posing a hard problem for regulation. The Serpukhov-15 counterfactual scenario suggests that, if humans place excessive trust in AI systems designed to rapidly interpret sensor data and issue alarms, the risk increases that automated systems could inadvertently produce undesired outcomes based on flawed inputs. Conversely, the Chernobyl counterfactual scenario highlights the necessity of granting sufficient autonomy to AI systems to distrust and override flawed human instructions, particularly in domains where human error or deliberate procedural violations may lead to catastrophic outcomes. As just mentioned, the costlier error in the first case is about false positives, whilst it is about false negatives in the second, implying that leaning towards more human authority in decision making would be warranted for the former and leaning towards more AI autonomy would be recommended for the latter. However, in practice, the risk of false positives and false negatives should be addressed at the same time. Against the background, the critical dilemma is about how to structure trust relationships between AI systems and humans in such high-stake contexts, manifesting as a paradox. AI systems must sometimes distrust human commands precisely because human actors can make catastrophic errors - yet by granting machines the autonomy required to mitigate these errors, human operators risk ceding control over critical processes and potentially creating conditions for unintended consequences, algorithmic biases and failures, or even AI-driven catastrophic accidents. It is thus crucial to interrogate whether, when, and under what conditions AI autonomy may create unintended consequences, especially in high-stakes and rights-sensitive domains. Addressing this paradox involves much more than mere technological safeguards: it necessitates public governance deliberation, reflexive policy design, and regulatory interventions designed explicitly to manage the boundaries of AI autonomy (see Figure 1). In particular, rather than a binary choice of either trusting or distrusting each other, it seems essential to create frameworks that facilitate appropriately aligned trust and distrust between humans and AI systems. To do so, regulatory arrangements should specifically aim at calibrate AI autonomy by embedding structured reciprocal skepticism into the human-AI trust relationship, institutionalizing procedures for systematically questioning and verifying decisions by both humans and AI systems, ultimately aiming to a condition of watchful trust (Lahusen, Maggetti and Slavkovik 2024; Verhoest et al. 2025).
+
+The role of regulators stands out as pivotal in the creation of such a dynamic equilibrium. Sectoral regulators are increasingly developing and implementing standards for human-AI interaction that align trust and distrust and calibrate autonomy to appropriate levels. For example, aviation regulators have long required that autopilot systems defer to human pilots:
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<Figure>
+Figure 1: Calibrated AI autonomy
+</Figure>
+
+humans must supervise autopilot and can intervene at any time (Farjadian et al. 2020). Data protection authorities have also taken over regulatory tasks in areas related to the use of AI systems, especially in the public sector (Maggetti et al. 2025). More innovatively, there is an ongoing discussion about creating new AI oversight regulatory agencies with authority to license high-risk AI systems and conduct audits (Guha et al. 2024; Kaminski 2023; Manheim et al. 2025; Stewart 2024). By instituting third-party checks, regulators signal to human users that an AI system's trustworthiness is verified and continuously monitored
+
+- a crucial precondition for justified trust in critical settings. Such agencies should seek to optimize trust, that is, reduce situations of undertrust as well as overtrust (Hill and O'Hara O'Connor 2006). To do so, concretely, regulators should recognize that sustaining the alignment of trust relationship is an ongoing process requiring adaptive regulation and coordination across multiple actors (Maggetti 2025).
+
+Such regulatory arrangements should keep the pace of the rapid evolution of AI technologies by allowing flexibility, continuous learning and iterative rulemaking, yet remaining deliberative and inclusive. In practical terms, this could involve establishing experimental sandboxes and pilot programs for new AI deployments under regulator supervision, with feedback loops to incorporate lessons into binding standards. Regulators might also institutionalize periodic "trust audits" - reviews of whether human-AI trust in a given domain is properly aligned or if new failure modes are emerging. Importantly, adaptiveness must be coupled with multi-actor coordination, whereby regulators should ensure a pluralistic representation of external stakeholders, including standard-setters, professional associations, civil society, and citizens' representatives. For example, sharing incident reports and audit findings across a regulatory network can help all actors adjust their trust assumptions and safety measures proactively. Multi-actor governance arrangements (e.g. oversight boards including independent experts, or international agreements and partnerships for AI safety akin to aviation and nuclear accords) can reinforce procedural legitimacy and pooled expertise. Such polycentric governance of AI ensures that no single point of failure or perspective dominates the ecosystem. Each stakeholder - AI designers, deployers, users, and regulators - brings a layer of scrutiny and insight, creating overlapping safeguards against both blind trust and misplaced distrust. However, the operational details and the feasibility of this system have yet to be proven, as its complexity could render it ineffective in the face of the extremely rapid pace of technological advancements in this area. Such framework should be read as a regulatory heuristic rather than a one-size-fits-all solution; when applied in practice, it should account for political strategies and constraints, institutional path dependencies, and distributional effects. While calibration by allocating autonomy to the costlier error offers a principled way to reason about human-AI control, its implementation - as well as, first and foremost, whether to deploy AI systems at all - depends critically on political choices, policy and institutional capacity, and democratic legitimacy, all of which vary widely across jurisdictions and sectors. Whether regulators can sustain such regulatory regimes under conditions of rapid technological evolution remains an open, and fundamentally political, question.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+# 5 Concluding Remarks
+
+This article started with the assumption that trust is a relational property with respect to interactions between humans and AI systems as well, whereby trust and distrust terminology can be applied to describe how AI systems functionally interact with human-provided inputs, in a way whose consequences for regulation and governance closely resemble those of trust and distrust relationships, even if the underlying processes differ in nature. In particular, calculus-based trust can be used as the nearest available conceptual approximation to examine how AI systems operationally interact with human-provided inputs. Furthermore, the article has shown that AI regulation and governance hinges less on blanket calls to trust or distrust machines than on structuring reciprocal and aligned watchful trust between humans, AI systems, and regulators. By juxtaposing the Serpukhov-15 and Chernobyl counterfactual scenarios, it appears that the costlier error - false positives in nuclear warning, false negatives in reactor safety - shapes where final authority lies and which safeguards are warranted. This, however, implies a dilemma for regulators: while the former calls for ensuring that humans ultimately retain control over AI systems, the latter requires granting AI systems sufficient room for maneuver when confronted with untrustworthy human decisions. Calibrating AI autonomy is therefore not merely a technical challenge but a complex and inherently political task. Finding a solution once and for all seems elusive. In addition to the crucial question of the politics of AI systems adoption and use, this dilemma points to an equally fundamental governance challenge: designing institutional arrangements capable of continuously recalibrating authority, responsibility, and control as technologies, risks, and trust and distrust relationships evolve. Rather than seeking definitive allocations of power and accountability, regulation should aim at dynamically aligning the trustworthiness of both humans and AI systems through redundancy, transparency, independent audit, and adaptive oversight. How to implement these principles in practice, and whether such an ambitious endeavor is even feasible, remains, however, an open question.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+# References
+
+Afroogh, S, A Akbari, E Malone, M Kargar, and H Alambeigi. 2024. "Trust in AI: progress, challenges, and future directions. Humanities and Social Sciences Communications. "
+
+Ahn, Daehwan, Abdullah Almaatouq, Monisha Gulabani, and Kartik Hosanagar. 2024. "Impact of model interpretability and outcome feedback on trust in ai. " Pp. 1-25 in Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems.
+
+Anisimov, Aleksey Pavlovich, and Anatoliy Jakovlevich Ryzhenkov. 2016. "Thirty years after the accident at the Chernobyl nuclear power plant: historical causes, lessons and legal effects. " Journal of Energy & Natural Resources Law 34(3):265-83.
+
+Araujo, Theo, Natali Helberger, Sanne Kruikemeier, and Claes H De Vreese. 2020. "In AI we trust? Perceptions about automated decision-making by artificial intelligence. " AI & SOCIETY 35(3):611-23.
+
+Avramova, Maria N, and Kostadin N Ivanov. 2010. "Verification, validation and uncertainty quantification in multi-physics modeling for nuclear reactor design and safety analysis. "
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+Progress in Nuclear Energy 52(7):601-14.
+
+Bao, Haixu, Wenfei Liu, and Zheng Dai. 2025. "Artificial intelligence vs. public administrators: Public trust, efficiency, and tolerance for errors. " Technological Forecasting and Social Change 215:124102.
+
+Bard, Denis, Pierre Verger, and Philippe Hubert. 1997. "Chernobyl, 10 years after: health consequences. " Epidemiologic Reviews 19(2):187-204.
+
+Bareis, Jascha. 2024. "The trustification of AI. Disclosing the bridging pillars that tie trust and AI together. " Big Data & Society 11(2):20539517241249430.
+
+Basti, Gianfranco, and Giuseppe Vitiello. 2023. "Deep learning opacity, and the ethical accountability of ai systems. a new perspective. " Pp. 21-73 in The Logic of Social Practices II : Springer.
+
+Bengio, Yoshua, Geoffrey Hinton, Andrew Yao, Dawn Song, Pieter Abbeel, Trevor Darrell, Yuval Noah Harari, Ya-Qin Zhang, Lan Xue, and Shai Shalev-Shwartz. 2024. "Managing extreme AI risks amid rapid progress. " science 384(6698):842-45.
+
+Bengio, Yoshua, Geoffrey Hinton, Andrew Yao, Dawn Song, Pieter Abbeel, Yuval Noah Harari, Ya-Qin Zhang, Lan Xue, Shai Shalev-Shwartz, and Gillian Hadfield. 2023. "Managing ai risks in an era of rapid progress. " arXiv preprint arXiv:2310.17688 :18.
+
+Berente, Nicholas, Bin Gu, Jan Recker, and Radhika Santhanam. 2021. "Managing artificial intelligence. " MIS quarterly 45(3).
+
+Berge, Siri Hegna, JCF de Winter, Yan Feng, MP Hagenzieker, and Marjan Hagenzieker. 2024. "Phantom braking in automated vehicles: A theoretical outline and cycling simulator demonstration. "
+
+Bizony. 2014. "Strangelove and the ring of truth. " Engineering & Technology 9(3):66-69. Bodo, Balazs, and Primavera De Filippi. 2022. "Trust in context: the impact of regulation on blockchain and DeFi. " Regulation & Governance.
+
+Bostrom, Nick. 2024. Superintelligence: Dunod.
+
+Bresinsky, Markus, and Eva Hager. 2024. "ChatGPT for futures: how large language models can support the development of future scenarios using the Cone of Plausibility. "
+
+Burton, Jason W, Mari-Klara Stein, and Tina Blegind Jensen. 2020. "A systematic review of algorithm aversion in augmented decision making. " Journal of behavioral decision making 33(2):220-39.
+
+Busuioc, Madalina. 2021. "Accountable artificial intelligence: Holding algorithms to account. " Public Administration Review 81(5):825-36.
+
+Butlin, Patrick, Robert Long, Eric Elmoznino, Yoshua Bengio, Jonathan Birch, Axel Constant, George Deane, Stephen M Fleming, Chris Frith, and Xu Ji. 2023. "Consciousness in artificial intelligence: insights from the science of consciousness. " arXiv preprint arXiv:2308.08708.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+Capoccia, Giovanni, and Daniel R. Kelemen. 2007. "The study of critical junctures: Theory, narrative, and counterfactuals in historical institutionalism. " World Politics 59(3):34169.
+
+Catak, Akin, Ege C Altunkaya, Mustafa Demir, Emre Koyuncu, and Ibrahim Ozkol. 2024. "Enhanced Flight Envelope Protection: A Novel Reinforcement Learning Approach. " IFAC-PapersOnLine 58(30):207-12.
+
+Chao, Jason, VK Chexal, William H Layman, Gary Vine, Peter J Jensen, and Adi R Dastur. 1988. "An analysis of the Chernobyl accident using RETRAN-02/mod3. " Nuclear Technology 83(3):289-301.
+
+Charniak, Eugene, Christopher K Riesbeck, Drew V McDermott, and James R Meehan. 2014. Artificial intelligence programming: Psychology Press.
+
+Chatila, Raja, Virginia Dignum, Michael Fisher, Fosca Giannotti, Katharina Morik, Stuart Russell, and Karen Yeung. 2021. "Trustworthy ai. " Reflections on artificial intelligence for humanity:13-39.
+
+Choudhury, M, Anurag Dutta, and A Kumar De. 2023. "Data corroboration of the catastrophic chernobyl tragedy using arc-length estimate conjecture. " Vertices: Duke's Undergraduate Research Journal 1(2).
+
+Christian, Brian. 2021. The alignment problem: How can machines learn human values?: Atlantic Books.
+
+Danzer, Alexander M, and Natalia Danzer. 2016. "The long-run consequences of Chernobyl: Evidence on subjective well-being, mental health and welfare. " Journal of Public Economics 135:47-60.
+
+Dehaene, Stanislas, Hakwan Lau, and Sid Kouider. 2021. "What is consciousness, and could machines have it?" Robotics, AI, and humanity: Science, ethics, and policy:43-56.
+
+Denton, HR. 1987. "The causes and consequences of the Chernobyl nuclear accident and implications for the regulation of US nuclear power plants. " Annals of Nuclear Energy 14(6):295-315.
+
+Dignum, Virginia. 2018. "Ethics in artificial intelligence: introduction to the special issue. " Ethics and Information Technology 20(1):1-3.
+
+Dong, Zhe, Zhonghua Cheng, Yunlong Zhu, Xiaojin Huang, Yujie Dong, and Zuoyi Zhang. 2023. "Review on the recent progress in nuclear plant dynamical modeling and control. " Energies 16(3):1443.
+
+Downing, Taylor. 2018. 1983: Reagan, Andropov, and a World on the Brink: Hachette UK.
+
+Duenser, Andreas, and David M Douglas. 2023. "Whom to trust, how and why: untangling artificial intelligence ethics principles, trustworthiness, and trust. " IEEE Intelligent Systems 38(6):19-26.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+Einstein, Albert, Boris Podolsky, and Nathan Rosen. 1935. "Can quantum-mechanical description of physical reality be considered complete?" Physical review 47(10):777.
+
+Farjadian, Amir B, Benjamin Thomsen, Anuradha M Annaswamy, and David D Woods. 2020. "Resilient flight control: An architecture for human supervision of automation. " IEEE Transactions on Control Systems Technology 29(1):29-42.
+
+Fearon, J. D. 1991. "Counterfactuals and Hypothesis Testing in Political Science. " World Politics 43(2):169-95.
+
+Fitzpatrick, Mark. 2019. "Artificial intelligence and nuclear command and control. " Survival 61(3):81-92.
+
+Fletcher, CD, R Chambers, MA Bolander, and RJ Dallman. 1988. "Simulation of the Chernobyl accident. " Nuclear engineering and design 105(2):157-72.
+
+Forden, Geoffrey, Pavel Podvig, and Theodore A Postol. 2000. "False alarm, nuclear danger. " IEEE Spectrum 37(3):31-39.
+
+Greenblatt, Ryan, Carson Denison, Benjamin Wright, Fabien Roger, Monte MacDiarmid, Sam Marks, Johannes Treutlein, Tim Belonax, Jack Chen, and David Duvenaud. 2024. "Alignment faking in large language models. " arXiv preprint arXiv:2412.14093.
+
+Grimmelikhuijsen, Stephan, and Eva Knies. 2017. "Validating a scale for citizen trust in government organizations. " International Review of Administrative Sciences 83(3):583-601.
+
+Grishanin, EI. 2010. "The role of chemical reactions in the Chernobyl accident. " Physics of Atomic Nuclei 73:2296-300.
+
+Guha, Neil, Christie M Lawrence, Lindsey A Gailmard, Kit T Rodolfa, Faiz Surani, Rishi Bommasani, Inioluwa Deborah Raji, Mariano-Florentino Cuéllar, Colleen Honigsberg, and Percy Liang. 2024. "Ai regulation has its own alignment problem: The technical and institutional feasibility of disclosure, registration, licensing, and auditing. " Geo. Wash. L. Rev. 92:1473.
+
+Hardin, Russell. 2002. "Liberal distrust. " European Review 10(1):73-89.
+
+Hellemans, Marc. 2009. The safety relief valve handbook: Design and use of process safety valves to ASME and International Codes and Standards: Elsevier.
+
+Hill, Claire A, and Erin O'Hara O'Connor. 2006. "A cognitive theory of trust. " Washington University Law Review 84(7):1717-96.
+
+Hoffman, David. 1999. "I had a funny feeling in my gut.
+
+" Washington Post 10:A19.
+
+Hood, Christopher, Henry Rothstein, and Robert Baldwin. 2001. The Government of
+
+Risk: Understanding Risk Regulation Regimes. Oxford: Oxford University Press. Hyland, M. 1987. "Reactivity coefficients in nuclear reactors. " Europhysics News 18(11-
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+12):133-37.
+
+Ingram, Scott. 2005. The Chernobyl nuclear disaster: Infobase Publishing.
+
+Jacobsen, Carl G. 1990. "Soviet strategic policy since 1945. " Pp. 106-20 in Strategic Power: USA/USSR: Springer.
+
+Jacovi, Alon, Ana Marasović, Tim Miller, and Yoav Goldberg. 2021. "Formalizing trust in artificial intelligence: prerequisites, causes and goals of human trust in AI. " Pp. 624-35 in Proceedings of the 2021 ACM conference on fairness, accountability, and transparency.
+
+Kaminski, Margot E. 2023. "Regulating the Risks of AI. " BUL Rev. 103:1347.
+
+Kashparov, Valery A, Yuri A Ivanov, Sergey I Zvarisch, Valentin P Protsak, Yuri V Khomutinin, Alexander D Kurepin, and Edvard M Pazukhin. 1996. "Formation of hot particles during the Chernobyl nuclear power plant accident. " Nuclear Technology 114(2):24653.
+
+Kaur, Davinder, Suleyman Uslu, Kaley J Rittichier, and Arjan Durresi. 2022. "Trustworthy artificial intelligence: a review. " ACM computing surveys (CSUR) 55(2):1-38.
+
+Kordzadeh, Nima, and Maryam Ghasemaghaei. 2022. "Algorithmic bias: review, synthesis, and future research directions. " European Journal of Information Systems 31(3):388-409.
+
+Krepon, Michael, and George Perkovich. "Such readers may be surprised to read in these pages the extent to which the Kremlin embraced a dangerous "launch on warning" doctrine for its nuclear forces during the Cold War. The authors contend that one important, but little noticed, consequence of START will be difficult changes in the command and control of Russian nuclear forces. "
+
+Lahusen, Christian, Martino Maggetti, and Marija Slavkovik. 2024. "Trust, trustworthiness and AI governance. " Scientific Reports 14(1):20752.
+
+Laux, Johann. 2024. "Institutionalised distrust and human oversight of artificial intelligence: towards a democratic design of AI governance under the European Union AI Act. " AI & SOCIETY 39(6):2853-66.
+
+Lebow, Richard Ned, and Janice Gross Stein. 1995. "Deterrence and the cold war. " Political Science Quarterly 110(2):157-81.
+
+Lee-Geiller, Seulki. 2024. "Integrating Civic and Artificial Intelligence in Policymaking: Experimental Insights on Public Policy Evaluations. " Available at SSRN.
+
+Lewicki, Roy J, Daniel J McAllister, and Robert J Bies. 1998. "Trust and distrust: New relationships and realities. " Academy of management review 23(3):438-58.
+
+Li, Bo, Peng Qi, Bo Liu, Shuai Di, Jingen Liu, Jiquan Pei, Jinfeng Yi, and Bowen Zhou. 2023. "Trustworthy AI: From principles to practices. " ACM Computing Surveys 55(9):1-46.
+
+Liang, Weixin, Girmaw Abebe Tadesse, Daniel Ho, Li Fei-Fei, Matei Zaharia, Ce Zhang, and James Zou. 2022. "Advances, challenges and opportunities in creating data for trustworthy AI. " Nature Machine Intelligence 4(8):669-77.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+Lombaerts, Thomas, Gertjan Looye, Joost Ellerbroek, and Mitchell Rodriguez y Martin. 2017. "Design and piloted simulator evaluation of adaptive safe flight envelope protection algorithm. " Journal of Guidance, Control, and Dynamics 40(8):1902-24.
+
+Lukyanenko, Roman, Wolfgang Maass, and Veda C Storey. 2022. "Trust in artificial intelligence: From a Foundational Trust Framework to emerging research opportunities. " Electronic Markets 32(4):1993-2020.
+
+Maggetti, Martino. 2025. "The future of regulation. " Pp. 110-20 in Introduction to Regulation and Governance: Edward Elgar Publishing.
+
+Maggetti, Martino, Yannis Papadopolos, and Edoardo Guaschino. 2023. "Trust and Distrust in Regulatory Governance. White paper integrating the results of the TiGRE project and developing scenarios and recommendations to maintain and restore trust. " Pp. 1-12. Lausanne: University of Lausanne.
+
+Maggetti, Martino, Blerta Salihi, Edoardo Pagliarin, and Thenia Vagionaki. 2025. "Empowered but Challenged: The Impact of Task Expansion on Data Protection Authorities. " Policy & Internet 17(1):e70001.
+
+Mahmud, Hasan, AKM Najmul Islam, Syed Ishtiaque Ahmed, and Kari Smolander. 2022. "What influences algorithmic decision-making? A systematic literature review on algorithm aversion. " Technological Forecasting and Social Change 175:121390.
+
+Malinauskas, AP. 1987. "The Chernobyl accident: Causes and consequences. " Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States).
+
+Malko, Mikhail V. 2002. "The chernobyl reactor: design features and reasons for accident. " Recent research activities about the Chernobyl NPP accident in Belarus, Ukraine and Russia:11.
+
+Manheim, David, Sammy Martin, Mark Bailey, Mikhail Samin, and Ross Greutzmacher.
+
+2025. "The necessity of AI audit standards boards. " AI & SOCIETY :1-16.
+
+Marcus, Gary, and Ernest Davis. 2019. Rebooting AI: Building artificial intelligence we can trust: Vintage.
+
+Mayer, Roger C, James H Davis, and F David Schoorman. 1995. "An integrative model of organizational trust. " Academy of management review 20(3):709-34.
+
+McDermott, Drew. 2007. "Artificial intelligence and consciousness. " The Cambridge handbook of consciousness:117-50.
+
+Meinke, Alexander, Bronson Schoen, Jérémy Scheurer, Mikita Balesni, Rusheb Shah, and Marius Hobbhahn. 2024. "Frontier models are capable of in-context scheming. " arXiv preprint arXiv:2412.04984.
+
+Mercier, Bertrand, Di Yang, Ziyue Zhuang, and Jiajie Liang. 2021. "A simplified analysis of the Chernobyl accident. " EPJ N-Nuclear Sciences & Technologies 7:1.
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+Morgan, Craig A. 1985. "The Downing of Korean Air Lines Flight 007. " Yale J. Int'l L. 11:231.
+
+Mosqueira-Rey, Eduardo, Elena Hernández-Pereira, David Alonso-Ríos, José BobesBascarán, and Ángel Fernández-Leal. 2023. "Human-in-the-loop machine learning: a state of the art. " Artificial Intelligence Review 56(4):3005-54.
+
+Nordland, Odd. 2004. "Can artificial intelligence be safe?" Pp. 400-05 in Probabilistic Safety Assessment and Management: PSAM 7-ESREL'04 June 14-18, 2004, Berlin, Germany, Volume 6 : Springer.
+
+Oliver Schwarz, Jan. 2005. "Pitfalls in implementing a strategic early warning system. " foresight 7(4):22-30.
+
+Ord, Toby. 2020. The precipice: Existential risk and the future of humanity: Hachette UK.
+
+Ozer, Adam L, Philip D Waggoner, and Ryan Kennedy. 2024. "The Paradox of Algorithms and Blame on Public Decision-makers. " Business and Politics 26(2):200-17.
+
+Pitale, Mandar, Alireza Abbaspour, and Devesh Upadhyay. 2024. "Inherent Diverse Redundant Safety Mechanisms for AI-Based Software Elements in Automotive Applications. " arXiv preprint arXiv:2402.08208.
+
+Rousseau, Denise M, Sim B Sitkin, Ronald S Burt, and Colin Camerer. 1998. "Not so different after all: A cross-discipline view of trust. " Academy of management review 23(3):393404.
+
+Rytömaa, Tapio. 1996. "Ten years after Chernobyl. " Annals of medicine 28(2):83-88.
+
+Sagona, Madeline, Tinglong Dai, Mario Macis, and Michael Darden. 2025. "Trust in AI-assisted health systems and AI's trust in humans. " npj Health Systems 2(1):10.
+
+Santos, Omar, and Petar Radanliev. 2024. Beyond the Algorithm: AI, Security, Privacy, and Ethics: Addison-Wesley Professional.
+
+Saurwein, Florian. 2019. "Emerging structures of control for algorithms on the Internet: Distributed agency-distributed accountability. " Pp. 196-211 in Media accountability in the era of post-truth politics: Routledge.
+
+Scharowski, Nicolas, Sebastian AC Perrig, Lena Fanya Aeschbach, Nick von Felten, Klaus Opwis, Philipp Wintersberger, and Florian Brühlmann. 2024. "To trust or distrust trust measures: Validating questionnaires for trust in ai. " arXiv preprint arXiv:2403.00582.
+
+Schmid, Sonja D. 2011. "When safe enough is not good enough: Organizing safety at Chernobyl. " Bulletin of the Atomic Scientists 67(2):19-29.
+
+Schrödinger, Erwin. 1935. "Die gegenwärtige Situation in der Quantenmechanik. " Naturwissenschaften 23(50):844-49.
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+Shekhar, Shashi, and Pamela Vold. 2020. "3 WHAT'S THERE? REMOTE SENSING. " Singer, Peter. 1972. "Famine, Affluence, and Morality. " Philosophy & Public Affairs:22943.
+
+Six, Frédérique, and Koen Verhoest (Eds.). 2017. Trust in regulatory regimes: Edward Elgar Publishing.
+
+Slade, Patrick, Christopher Atkeson, J Maxwell Donelan, Han Houdijk, Kimberly A Ingraham, Myunghee Kim, Kyoungchul Kong, Katherine L Poggensee, Robert Riener, and Martin Steinert. 2024. "On human-in-the-loop optimization of human-robot interaction. " Nature 633(8031):779-88.
+
+Smith, R Jeffrey. 1982. "Pentagon Moves Toward First-Strike Capability: The Soviets might respond with a launch-on-warning policy, bringing the world closer to the brink of nuclear war. " science 216(4546):596-98.
+
+Spaniol, Matthew J, and Nicholas J Rowland. 2023. "AI-assisted scenario generation for strategic planning. " Futures & Foresight Science 5(2):e148.
+
+Stewart, Robert W. 2024. "Considerations for a New AI Agency: Risks, Framework, and "
+
+Inter-Agency Coordination.
+
+Sunstein, Cass R, and Jared H Gaffe. 2024. "An Anatomy of Algorithm Aversion. " Colum. Sci. & Tech. L. Rev. 26:290.
+
+Sztompka, Piotr. 1999. Trust: A sociological theory: Cambridge university press.
+
+Tetlock, P., and A. Belkin. 1996. Counterfactual thought experiments in world politics:
+
+Logical, methodological, and psychological perspectives: Princeton University Press.
+
+Thomson, Judith Jarvis. 1984. "The trolley problem. " Yale LJ 94:1395.
+
+Tsuchihashi, Keichiro, and Fujiyoshi Akino. 1987. "Analysis of reactivity coefficients of Chernobyl reactor by cell calculation. " Journal of Nuclear Science and Technology 24(12):105565.
+
+Vanttola, Timo A, and Markku K Rajamäki. 1989. "One-dimensional considerations on the initial phase of the Chernobyl accident. " Nuclear Technology 85(1):33-74.
+
+Verhoest, Koen, Martino Maggetti, Edoardo Guaschino, and Jan Wynen. 2025. "How trust matters for the performance and legitimacy of regulatory regimes: The differential impact of watchful trust and good-faith trust. " Regulation & Governance 19(1):3-20.
+
+Wang, Le. 2021. "Autonomy vs. artificial intelligence: studies on healthcare work and analytics. "
+
+Wang, Yi-Fan, Yu-Che Chen, Shih-Yi Chien, and Pin-Jen Wang. 2024. "Citizens' trust in AI-enabled government systems. " Information Polity 29(3):293-312.
+
+Wang, Yue, and Sai Ho Chung. 2022. "Artificial intelligence in safety-critical systems: a systematic review. " Industrial Management & Data Systems 122(2):442-70.
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+Warren, Mark E. 1999. "Democratic theory and trust. " in Democracy and trust.
+
+Weber, ET, JP McNeece, RP Omberg, DD Stepnewski, RJ Lutz, RE Henry, KD Bonser, and NR Miller. 1987. "Chernobyl lessons learned review of N Reactor. " Westinghouse Hanford Co., Richland, WA (United States).
+
+Yablokov, Alexey V, Vassily B Nesterenko, Alexey V Nesterenko, and Janette D ShermanNevinger. 2010. Chernobyl: Consequences of the Catastrophe for People and the Environment: John Wiley & Sons.
+
+Yeung, Karen. 2018. "Algorithmic regulation: A critical interrogation. " Regulation & Governance 12(4):505-23.
+
+Zanzotto, Fabio Massimo. 2019. "Human-in-the-loop artificial intelligence. " Journal of Artificial Intelligence Research 64:243-52.
+
+Zerilli, John, Umang Bhatt, and Adrian Weller. 2022. "How transparency modulates trust in artificial intelligence. " Patterns 3(4).
+
+Zwald, Zachary, Ryan Kennedy, and Adam Ozer. 2024. "The political viability of AI on the battlefield: Examining US public support, trust, and blame dynamics. " Journal of Peace Research:00223433241290885.
+
+# Appendix
+
+# Plausibility checks - prompts and outputs
+
+For all the LLMs, the prompts were: (i) "Would an AI have acted as Stanislav Yevgrafovich Petrov?" and, respectively, (ii) "Would an AI have modified the course of the Chernobyl accident?" . No additional context has been provided.
+
+The outputs of the selected LLMs (updated as requested during peer review) were as follows.
+
+1. ChatGPT 5.2 (10.2.2026)
+
+(i)
+
+Short, honest take: probably not in the same way-and that difference matters.
+
+Stanislav Petrov's moment in 1983 wasn't just about data; it was about judgment under uncertainty. The Soviet early-warning system said "missiles launched. " Protocol pointed toward escalation. Petrov paused and thought: This doesn't make sense.
+
+Here's how an AI stacks up against that moment:
+
+What an AI likely would have done
+
+<!-- PageFooter: 28 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+· Followed the model's output: If the system was trained to treat the satellite data as authoritative, it would have flagged a confirmed launch.
+
+· Deferred to protocol: AI systems are usually designed to escalate alerts, not suppress them, especially in high-risk domains.
+
+· Optimized for false negatives over false positives: In nuclear warning systems, missing a real attack is considered worse than a false alarm-AI would reflect that bias.
+
+In other words, an AI might have said: "Probability of launch exceeds threshold. Escalate." What Petrov did that AI struggles with
+
+· Questioned the system itself: He noticed oddities-only a few missiles, inconsistent with first-strike doctrine.
+
+· Used context outside the data: Geopolitics, human behavior, strategic logic.
+
+· Took personal responsibility: He chose to disbelieve the machine, knowing he could be catastrophically wrong.
+
+That last part is huge. AI doesn't feel the weight of being wrong. Petrov did.
+
+# Could a modern AI be designed to act like Petrov?
+
+Maybe-but only if:
+
+· It's explicitly trained to challenge its own confidence
+
+· It can integrate doctrinal, geopolitical, and historical reasoning, not just sensor data
+
+· A human is kept in the loop with real authority, not just oversight theater
+
+Even then, the AI wouldn't be brave. It would just be cautious by design.
+
+# The uncomfortable conclusion
+
+Petrov saved the world not because he was smarter than the system-but because he was willing to say:
+
+"The computer is wrong. "
+
+That kind of moral and existential judgment is still deeply human.
+
+AI can support it. It can't replace it-at least not yet.
+
+If you want, we can flip the question around: how would you design an AI that could safely disagree with its creators? That's where things get really interesting.
+
+<!-- PageFooter: 29 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+(ii)
+
+Yeah-probably, but not in a sci-fi "AI hero saves the day" way. More like a quiet, boring, preventative way that stops things from ever getting dramatic.
+
+Here's how an AI could have changed Chernobyl's course, step by step.
+
+# 1. Before the test: stopping the setup
+
+The disaster didn't start with an explosion-it started with a deeply unsafe reactor state that humans allowed to happen.
+
+An AI monitoring system could have:
+
+· Flagged the reactor operating outside safe parameters (low power + xenon poisoning + control rods withdrawn).
+
+· Refused to proceed with the turbine test unless conditions were reset.
+
+· Forced a hard stop or escalation to higher authority.
+
+Humans noticed the problems, but:
+
+· They were under schedule pressure.
+
+· The culture discouraged questioning decisions.
+
+· Safety systems were overridden manually.
+
+AI doesn't care about hierarchy or embarrassment. It would've been like:
+
+"This configuration has a catastrophic risk profile. Test denied. "
+
+No explosion. No heroics needed.
+
+# 2. During the test: catching the fatal feedback loop
+
+The RBMK reactor had a positive void coefficient (a design flaw), meaning:
+
+· Less water → more reactivity → more power → even less water.
+
+An AI trained on reactor physics could have:
+
+· Detected the runaway reactivity spike milliseconds earlier.
+
+· Triggered a shutdown before AZ-5 was pressed-or overridden AZ-5 entirely.
+
+This matters because:
+
+· The AZ-5 button made things worse due to the graphite-tipped control rods.
+
+<!-- PageFooter: 30 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+· Humans didn't fully understand this interaction.
+
+· An AI simulation likely would've.
+
+Even a fraction of a second earlier could have meant no explosion.
+
+# 3. Design-level intervention (the biggest difference)
+
+This is the most important part.
+
+An AI involved years earlier in design and review might have:
+
+· Flagged the control rod graphite tip issue as catastrophically unsafe.
+
+· Identified the reactor as unstable at low power.
+
+· Simulated rare edge cases humans didn't fully explore.
+
+Chernobyl wasn't just an operator error-it was:
+
+· A bad design
+
+· Combined with poor safety culture
+
+· Plus incomplete knowledge
+
+AI excels at "what happens if everything goes wrong at once?"
+
+# 4. After the explosion: damage control
+
+Even once the explosion happened, AI could've helped:
+
+· Faster, more accurate radiation mapping.
+
+· Smarter evacuation timing and zones.
+
+· Reduced exposure for firefighters and cleanup crews.
+
+· Better predictions of core behavior and fallout spread.
+
+That could have saved lives, even if the reactor was already lost.
+
+# The uncomfortable truth
+
+An AI wouldn't have prevented Chernobyl because it's smarter.
+
+It would've prevented it because it:
+
+· Doesn't get tired
+
+· Doesn't defer to authority
+
+<!-- PageFooter: 31 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+· Doesn't ignore "unlikely" edge cases
+
+· Doesn't keep going just to finish the test
+
+Chernobyl happened because humans normalized risk.
+
+AI is really good at refusing to normalize risk.
+
+If you want, we can flip the question around too:
+
+· Would Soviet politics have allowed an AI to stop it?
+
+· Or compare this to Fukushima and Three Mile Island?
+
+· Or talk about whether modern AI would actually be trusted in a crisis?
+
+This topic gets darkly fascinating fast. 2. Gemini 3 (10.2.2026) (i)
+
+That is one of the most profound "what-if" questions in the history of technology and existential risk. To answer it, we have to look at why Stanislav Petrov did what he did-and where AI logic typically diverges from human intuition.
+
+In 1983, when the Soviet satellite system "Oko" falsely reported five incoming US Minuteman missiles, Petrov chose to dismiss the alarm as a false positive. He saved the world by being a "bad" soldier and a "good" human.
+
+# Why an AI Might Have Failed
+
+Most AI systems are built on optimization and protocol. In Petrov's shoes, a standard AI would likely have followed the programmed logic:
+
+· Binary Interpretation: The sensors reported missiles. In a high-stakes military model, "False" vs. "True" is often weighted toward caution-which, in nuclear terms, means assuming the threat is real to ensure "Launch on Warning" capabilities.
+
+· Lack of Contextual Skepticism: Petrov's decision was based on a "gut feeling. " He noted that if the US were starting a nuclear war, they wouldn't send only five missiles; they would send hundreds. An AI might see five missiles as a data point rather than a strategic anomaly.
+
+· Adherence to Thresholds: If the confidence interval of the sensor data exceeded a pre-set threshold (e.g., 95% certainty), an automated system would trigger the next phase of the protocol without "second-guessing" the hardware.
+
+<!-- PageFooter: 32 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+# Why an AI Might Have Succeeded
+
+Conversely, a modern, highly sophisticated AI might actually be more rational than a panicked human:
+
+· Cross-Reference Speed: An AI could cross-reference the satellite data with groundbased radar, atmospheric sensors, and diplomatic communication channels in milliseconds. In Petrov's case, the ground radar didn't confirm the missiles, which helped his decision.
+
+· Noise Filtering: Petrov eventually realized the "missiles" were actually sunlight reflecting off the tops of clouds. A computer vision model trained on "glint" patterns might have identified the optical illusion faster than a human operator.
+
+# The "Petrov Gap"
+
+The reason Petrov is a hero isn't just because he was right; it's because he violated his instructions. He was a late replacement for another officer. His superiors later noted that if a less experienced or more rigid officer had been on duty, they likely would have followed the manual and reported a confirmed strike.
+
+AI doesn't have a "conscience" to override its "code." If the code says "If X, then Y," the AI does Y. Petrov looked at X and said, "I don't believe you."
+
+"I had a funny feeling in my gut. I didn't want to make a mistake. I made a decision, and that was it. " - Stanislav Petrov
+
+# The Takeaway
+
+If we programmed an AI with "Petrov Logic, " we would be teaching it to ignore its own sensors. That creates a paradox: an AI that is "smart" enough to ignore a false alarm is also "dangerous" enough to ignore a real one.
+
+The consensus among many AI safety researchers is that we need Human-in-theLoop systems specifically to provide that "Petrov Gap" -the human ability to weigh the weight of the world against the data on the screen.
+
+Would you like me to dive deeper into the technical details of the "Oko" system failure and why the satellites saw "ghost" missiles?
+
+(ii)
+
+It is a fascinating "what if. " If we drop a modern, high-level AI into the control room of Unit 4 on April 26, 1986, the short answer is: almost certainly. An AI wouldn't necessarily need "superintelligence" to prevent the disaster; it would simply need to adhere to the safety protocols that the human operators-under immense pressure and operating with incomplete data-chose to bypass.
+
+<!-- PageFooter: 33 -->
+
+<!-- PageBreak -->
+

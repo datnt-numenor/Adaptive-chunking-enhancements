@@ -1,0 +1,14 @@
+{
+  "request_hash": "135cf845f3057c3a6638411c07ef1f2870b942856f7f075dd76ba30cb8301015",
+  "prompt_sha256": "3b24e4ae33e9bd0a0092584eaecc731efb1dbb59724adc5be38795b3ef145a73",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNWQjBudIpCNEY1CRlqc4n6I0qmz",
+  "prompt_tokens": 8669,
+  "completion_tokens": 40,
+  "actual_usd": 0.00132435,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of how hiring algorithms can introduce algorithmic bias, including specific examples that support the claims made in the Reference Answer."
+  }
+}

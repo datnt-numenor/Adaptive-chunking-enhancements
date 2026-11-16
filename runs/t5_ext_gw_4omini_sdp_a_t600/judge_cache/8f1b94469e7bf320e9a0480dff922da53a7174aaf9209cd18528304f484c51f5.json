@@ -1,0 +1,14 @@
+{
+  "request_hash": "8f1b94469e7bf320e9a0480dff922da53a7174aaf9209cd18528304f484c51f5",
+  "prompt_sha256": "44b94b1b4dd509ac6b36115fc324ce9c37644efde8012cbb555bca0c6914f8b8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOEAFwQr0GyBCP21UhjAijiCUyyu",
+  "prompt_tokens": 7661,
+  "completion_tokens": 44,
+  "actual_usd": 0.00117555,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a detailed description of Operational Process Mitigations and their role in promoting safety, security, and accountability in AI systems."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "1da6b4ae2429c7a0521fb1381822e953b8bf8b21f01172e12e0f63c3ba7bd646",
+  "prompt_sha256": "60dc052f67f2bccc5df47ded761e1f59b70879d6a000b5d2ae33e5bed12bd22f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOEY6bc8lnLlePHXcYXEADfWV7b2",
+  "prompt_tokens": 5893,
+  "completion_tokens": 41,
+  "actual_usd": 0.0009085499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how insurance markets depend on verified data from third-party audits to accurately price AI risks and avoid adverse selection."
+  }
+}

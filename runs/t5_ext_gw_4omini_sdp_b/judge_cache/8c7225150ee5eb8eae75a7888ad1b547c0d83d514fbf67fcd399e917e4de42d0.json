@@ -1,0 +1,14 @@
+{
+  "request_hash": "8c7225150ee5eb8eae75a7888ad1b547c0d83d514fbf67fcd399e917e4de42d0",
+  "prompt_sha256": "b83693cea661f13b7378e44b38ce7c189bddae9721d66a856b454c2abdd6be44",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOYPlidzfj33HrH9l1XIckFQ5vWq",
+  "prompt_tokens": 6046,
+  "completion_tokens": 32,
+  "actual_usd": 0.0009261,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information or support for the definition of validation as stated in the Reference Answer."
+  }
+}

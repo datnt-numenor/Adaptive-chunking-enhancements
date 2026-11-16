@@ -1,0 +1,115 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "note": "harness uses Qwen3-Embedding-4B; this is the only intended difference"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs\\table5_proxy_prep_v1\\prepared",
+  "qa": "runs\\table5_v2\\qa-full\\qa_frozen.jsonl",
+  "systems": "proc_recurs1100,proc_recurs600,proc_page,proc_llm_regex,raw_langch1100,sdp_a_def,sdp_a_t600,sdp_a_t1000",
+  "reprs": "plain,doc",
+  "summary": {
+    "proc_recurs1100@plain": {
+      "recall@10": 0.8815824254180141,
+      "recall@5": 0.7895625808557969,
+      "ndcg@10": 0.7046080192015929,
+      "hit@10": 0.898989898989899
+    },
+    "proc_recurs1100@doc": {
+      "recall@10": 0.8957187072443589,
+      "recall@5": 0.8450878089233977,
+      "ndcg@10": 0.7402917724336033,
+      "hit@10": 0.9292929292929293
+    },
+    "proc_recurs600@plain": {
+      "recall@10": 0.8036290765758564,
+      "recall@5": 0.7251098059286432,
+      "ndcg@10": 0.6355534567719594,
+      "hit@10": 0.8585858585858586
+    },
+    "proc_recurs600@doc": {
+      "recall@10": 0.8725779201960302,
+      "recall@5": 0.7824135046962951,
+      "ndcg@10": 0.7102093988242971,
+      "hit@10": 0.9191919191919192
+    },
+    "proc_page@plain": {
+      "recall@10": 0.8229447034652115,
+      "recall@5": 0.7530985346734166,
+      "ndcg@10": 0.6575489520869877,
+      "hit@10": 0.8787878787878788
+    },
+    "proc_page@doc": {
+      "recall@10": 0.9042521669130796,
+      "recall@5": 0.7926120739747512,
+      "ndcg@10": 0.7237467153046507,
+      "hit@10": 0.9494949494949495
+    },
+    "proc_llm_regex@plain": {
+      "recall@10": 0.8089667666953028,
+      "recall@5": 0.7300299206580098,
+      "ndcg@10": 0.6568785338995963,
+      "hit@10": 0.8383838383838383
+    },
+    "proc_llm_regex@doc": {
+      "recall@10": 0.8909701807672792,
+      "recall@5": 0.8273934035984842,
+      "ndcg@10": 0.7339092038854934,
+      "hit@10": 0.9292929292929293
+    },
+    "raw_langch1100@plain": {
+      "recall@10": 0.8508865855515726,
+      "recall@5": 0.7890358467881166,
+      "ndcg@10": 0.7125408475229105,
+      "hit@10": 0.8787878787878788
+    },
+    "raw_langch1100@doc": {
+      "recall@10": 0.9097890813147328,
+      "recall@5": 0.8576334785648622,
+      "ndcg@10": 0.76252227495079,
+      "hit@10": 0.9393939393939394
+    },
+    "sdp_a_def@plain": {
+      "recall@10": 0.889606889589988,
+      "recall@5": 0.7930609524115957,
+      "ndcg@10": 0.7119704880376828,
+      "hit@10": 0.9292929292929293
+    },
+    "sdp_a_def@doc": {
+      "recall@10": 0.8946412244767352,
+      "recall@5": 0.79387409877809,
+      "ndcg@10": 0.7289180430867338,
+      "hit@10": 0.9292929292929293
+    },
+    "sdp_a_t600@plain": {
+      "recall@10": 0.8761024614212164,
+      "recall@5": 0.7890287712685412,
+      "ndcg@10": 0.7117528145899292,
+      "hit@10": 0.9090909090909091
+    },
+    "sdp_a_t600@doc": {
+      "recall@10": 0.9266075119262669,
+      "recall@5": 0.844172698771549,
+      "ndcg@10": 0.7772821241669041,
+      "hit@10": 0.9595959595959596
+    },
+    "sdp_a_t1000@plain": {
+      "recall@10": 0.8617153856445214,
+      "recall@5": 0.7445444190219958,
+      "ndcg@10": 0.677533764756737,
+      "hit@10": 0.8888888888888888
+    },
+    "sdp_a_t1000@doc": {
+      "recall@10": 0.8805637986346034,
+      "recall@5": 0.7756998230240306,
+      "ndcg@10": 0.711039044495902,
+      "hit@10": 0.9191919191919192
+    }
+  },
+  "created": "2026-11-09 17:54:41"
+}

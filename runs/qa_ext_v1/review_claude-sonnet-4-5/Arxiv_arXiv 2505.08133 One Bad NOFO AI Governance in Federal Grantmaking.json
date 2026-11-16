@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"drop\",\n      \"reason\": \"Answer incorrectly links two separate facts (USAID's actions and AI Training Act limitation) as if causally related; the Act limitation is a general federal issue, not a specific USAID challenge\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Directly supported by document text; question is self-contained\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Directly supported by agency abbreviation table; substantive reference material\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Directly and completely supported by document text\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Fully supported by evidence; jargon mentioned in context, brevity and vagueness explicit\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Directly and completely supported by document text\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 11581,
+  "out": 1257
+ },
+ "created": "2026-11-09 18:36:56"
+}

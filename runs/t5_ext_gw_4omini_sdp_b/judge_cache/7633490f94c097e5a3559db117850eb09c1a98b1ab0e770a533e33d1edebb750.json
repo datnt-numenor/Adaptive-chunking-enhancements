@@ -1,0 +1,14 @@
+{
+  "request_hash": "7633490f94c097e5a3559db117850eb09c1a98b1ab0e770a533e33d1edebb750",
+  "prompt_sha256": "648fbf8a9615c1d4501bcef016f0f427dadc4f583d2e1a44b3390fd1c313c062",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtqpGAOdf3Ch11yHd91lFY7qv77",
+  "prompt_tokens": 6872,
+  "completion_tokens": 42,
+  "actual_usd": 0.001056,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of STIT logic, including the definition of the STIT operator, which fully supports the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "7b60b241dec7e90a31ed22e6492850746b4ff3ef25493795725dc43be4929fd9",
+  "prompt_sha256": "933a05c5ac2fd4c3aa9d7285cd0f5b62c40374c800a69d061ecfa7ec8750daec",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO5essA9oQ6fBqWQvyl7muXT2tum",
+  "prompt_tokens": 7710,
+  "completion_tokens": 55,
+  "actual_usd": 0.0011895,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the global search process in the Graph RAG model, including how community summaries are shuffled, divided, and rated for helpfulness, which fully supports the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "acb371fa62e7e44692e7cc3f50e536d02de7635f3cf3ba87154913340f29720f",
+  "prompt_sha256": "19f5dc597e3b67b01b0b5e9375a6e218bcc82baa1f9dfe2c9102960230b468cb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNcxaSyPx2OO0b7fdrMg7xVOdwph",
+  "prompt_tokens": 9450,
+  "completion_tokens": 47,
+  "actual_usd": 0.0014457,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the limitations of black-box access, including its inability to identify certain failures such as jailbreaks, adversarial inputs, and backdoors."
+  }
+}

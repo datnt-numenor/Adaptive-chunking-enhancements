@@ -1,0 +1,14 @@
+{
+  "request_hash": "0dd47cf213fdc22021b011683ae9556d798a26eccd4893121f22dce00b79405d",
+  "prompt_sha256": "e00e788b9ed78c923eaf7d48b45e57bea5f5b2419c4db0a42fa5051dbe7d50a6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLuOJyisIE6RaWfJM0wal7fo7yB",
+  "prompt_tokens": 4924,
+  "completion_tokens": 42,
+  "actual_usd": 0.0007638,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the importance of post-deployment monitoring, tracking model behavior, and addressing potential risks such as unsafe behavioral drift."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "300833dc5e985f428b4edda969180bdbf31d18d8d815d5b0fb417a5d18d7e4a3",
+  "prompt_sha256": "5cd8c0dc01185043d9ea9c7b85e8057f0f2c7617476d4225c41fae32fcc1e3a3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNDCko8hl3C1l1SbR7Bb0gs2HkFn",
+  "prompt_tokens": 9440,
+  "completion_tokens": 49,
+  "actual_usd": 0.0014454000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by explicitly stating that the Disparate Impact Remover requires the user to specify a repair_level to indicate the desired overlap of group distributions."
+  }
+}

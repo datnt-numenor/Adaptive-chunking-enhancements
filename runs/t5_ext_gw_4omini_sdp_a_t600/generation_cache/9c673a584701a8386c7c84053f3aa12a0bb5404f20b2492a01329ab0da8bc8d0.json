@@ -1,0 +1,10 @@
+{
+  "request_hash": "9c673a584701a8386c7c84053f3aa12a0bb5404f20b2492a01329ab0da8bc8d0",
+  "prompt_sha256": "3f45baa2f00709bb08904f6a4cbb9be5d982ad5fb93c34a7b6e6cd0cdcdfa777",
+  "answer": "In arXiv 2601.11699, insurance markets play a crucial role in AI risk management by providing standardized, quantifiable risk data that insurers need to underwrite coverage for frontier AI systems. This helps lower the cost of capital and clarifies accountability in the event of harm. However, frontier AI risks are difficult to insure due to their novelty, potential catastrophic nature, and poor characterization, leading some insurers to exclude AI-related harms altogether.\n\nThird-party audits are necessary for insurance markets because they provide the reliable, verified information that insurers require to differentiate risk profiles across companies and systems. Without such audits, adverse selection can occur, preventing meaningful coverage or pricing. Audits help unlock insurance markets for both frontier AI developers and businesses building on AI models by giving insurers visibility into risks that would otherwise be opaque, allowing them to offer better terms to businesses that choose audited models over unaudited alternatives.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNDh4mDfM5avuebgx14q3J0R0v2K",
+  "prompt_tokens": 8314,
+  "completion_tokens": 180,
+  "actual_usd": 0.0013551
+}

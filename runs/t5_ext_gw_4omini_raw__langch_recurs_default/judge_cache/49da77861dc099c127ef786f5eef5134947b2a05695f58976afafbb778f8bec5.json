@@ -1,0 +1,14 @@
+{
+  "request_hash": "49da77861dc099c127ef786f5eef5134947b2a05695f58976afafbb778f8bec5",
+  "prompt_sha256": "6b6120744ad8d6348abb0bf66cff9126dd1e71f151ef3ecb8c47a507c528b062",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOV0Yy4rkIuZwFrJiZAHtHkqzBwR",
+  "prompt_tokens": 7547,
+  "completion_tokens": 40,
+  "actual_usd": 0.00115605,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how RAIRD enables research on data while preventing individual identification through the use of metadata and aggregated data."
+  }
+}

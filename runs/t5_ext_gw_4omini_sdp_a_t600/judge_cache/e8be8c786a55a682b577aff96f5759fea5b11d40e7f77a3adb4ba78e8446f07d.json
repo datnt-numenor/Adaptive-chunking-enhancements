@@ -1,0 +1,14 @@
+{
+  "request_hash": "e8be8c786a55a682b577aff96f5759fea5b11d40e7f77a3adb4ba78e8446f07d",
+  "prompt_sha256": "a15ca8e4f0ab763f4e4225b7b7154c0664377b892d5c93b72ef6ca1266ecf379",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNxrF0g7lXXosBmqwcwjx9PI1fFQ",
+  "prompt_tokens": 6838,
+  "completion_tokens": 50,
+  "actual_usd": 0.0010557000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by explaining how scaling inference-at-deployment reduces the number of model copies and diminishes the value of securing model weights due to high inference costs."
+  }
+}

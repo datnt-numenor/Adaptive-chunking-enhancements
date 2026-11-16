@@ -1,0 +1,14 @@
+{
+  "request_hash": "0c24b9e8a7c7b88d293abb97175606985eb19a3d7ab01f4c48d3a402f1211da7",
+  "prompt_sha256": "c754576ff69381f20a0f5ca4eab7cd61ff894bcd14997a4b9f386aa673517337",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP26REocCuRHFxZGemeftKM6NcaS",
+  "prompt_tokens": 7659,
+  "completion_tokens": 56,
+  "actual_usd": 0.0011824499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about LearnEnjoy's tablet technology, including its purpose of automating the pre-diagnosis of autism and the current average time for diagnosis in France, fully supporting the claims made in the Reference Answer."
+  }
+}

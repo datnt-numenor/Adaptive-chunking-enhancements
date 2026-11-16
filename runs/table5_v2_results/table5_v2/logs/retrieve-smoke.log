@@ -1,0 +1,69 @@
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files: 100%|██████████| 14/14 [00:00<00:00, 3081.62it/s]
+Fetching 22 files:   0%|          | 0/22 [00:00<?, ?it/s]Fetching 22 files:  36%|███▋      | 8/22 [00:00<00:01, 13.16it/s]Fetching 22 files:  41%|████      | 9/22 [00:19<00:28,  2.21s/it]Fetching 22 files:  45%|████▌     | 10/22 [00:25<00:30,  2.50s/it]Fetching 22 files:  50%|█████     | 11/22 [00:31<00:31,  2.91s/it]Fetching 22 files:  55%|█████▍    | 12/22 [00:32<00:26,  2.69s/it]Fetching 22 files:  64%|██████▎   | 14/22 [00:33<00:18,  2.37s/it]Fetching 22 files:  73%|███████▎  | 16/22 [00:44<00:16,  2.81s/it]Fetching 22 files:  77%|███████▋  | 17/22 [01:00<00:17,  3.56s/it]Fetching 22 files:  82%|████████▏ | 18/22 [01:00<00:13,  3.38s/it]Fetching 22 files:  86%|████████▋ | 19/22 [01:17<00:12,  4.05s/it]Fetching 22 files:  91%|█████████ | 20/22 [01:31<00:09,  4.58s/it]Fetching 22 files: 100%|██████████| 22/22 [01:37<00:00,  4.45s/it]Fetching 22 files: 100%|██████████| 22/22 [01:37<00:00,  4.45s/it]
+Loaded document store with 668 documents from /workspace/t5v2/table5_v2/index-smoke/adaptive/document_store.json
+/workspace/t5v2/.venv/lib/python3.11/site-packages/haystack/core/component/component.py:301: FutureWarning: `SentenceTransformersTextEmbedder` will be removed from Haystack in version 3.0, as it is moving to the `sentence-transformers-haystack` package. To continue using it, install that package with `pip install sentence-transformers-haystack` and update your import to `from haystack_integrations.components.embedders.sentence_transformers import SentenceTransformersTextEmbedder`.
+  instance = super().__call__(*args, **kwargs)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 56.29it/s]
+Loaded document store with 670 documents from /workspace/t5v2/table5_v2/index-smoke/raw__langch_recurs_default/document_store.json
+/workspace/t5v2/.venv/lib/python3.11/site-packages/haystack/core/component/component.py:301: FutureWarning: `SentenceTransformersTextEmbedder` will be removed from Haystack in version 3.0, as it is moving to the `sentence-transformers-haystack` package. To continue using it, install that package with `pip install sentence-transformers-haystack` and update your import to `from haystack_integrations.components.embedders.sentence_transformers import SentenceTransformersTextEmbedder`.
+  instance = super().__call__(*args, **kwargs)
+Loaded document store with 614 documents from /workspace/t5v2/table5_v2/index-smoke/raw__page/document_store.json
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "status": "complete",
+  "created_at": "2026-11-08T14:57:38.826672+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "embedding_model": "Qwen/Qwen3-Embedding-4B",
+  "embedding_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+  "reranker_model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+  "reranker_revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a",
+  "retrieval": {
+    "bm25_top_k": 50,
+    "dense_top_k": 50,
+    "reranker_top_k": 10,
+    "reranker_strategy": "bi_encoder_cosine",
+    "reranker_query_prompt": "model_prompt_name:query"
+  },
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "attention_implementation": "flash_attention_2",
+  "query_prompt_sha256": "df4b2898bf22e00bacddddd489243a3f8793730e38b842ec10161cebd94d36d6",
+  "input_qa_sha256": "face0c1b603be0b015dd2da2ae149de7f390aa7edef3af11b40bf7840363a935",
+  "input_index_manifest_sha256": "b088f049775536b891ed0b109a650995b4a7335157579bc57c3b8c8fcc27c55f",
+  "systems": {
+    "adaptive": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/retrieval-smoke/adaptive.jsonl",
+      "sha256": "fce05a242db849376c7aeaf128b293d24fd66de80235f7f9b2aff28bf5647ac9",
+      "queries": 6
+    },
+    "raw__langch_recurs_default": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/retrieval-smoke/raw__langch_recurs_default.jsonl",
+      "sha256": "6bb59ff13955b6f337f9dc0e7555c87dd1a5917792883144bc6aed39b13cbf44",
+      "queries": 6
+    },
+    "raw__page": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/retrieval-smoke/raw__page.jsonl",
+      "sha256": "e1394936153589a4587fd733fff6b452e94fdb789f8025ce386de1c428b2dc31",
+      "queries": 6
+    }
+  },
+  "gpu": {
+    "name": "NVIDIA RTX A5000",
+    "compute_capability": [
+      8,
+      6
+    ],
+    "bf16_supported": true,
+    "torch_version": "2.6.0+cu124",
+    "flash_attn_version": "2.7.4.post1"
+  },
+  "environment": {
+    "path": "/workspace/t5v2/table5_v2/environment.txt",
+    "sha256": "cb60cf9144de0acfab3046773cec134cd206fdf865bb17bff7c5d27886c89ab6"
+  }
+}

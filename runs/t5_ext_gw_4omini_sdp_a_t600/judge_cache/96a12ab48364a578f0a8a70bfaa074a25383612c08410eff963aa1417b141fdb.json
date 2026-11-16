@@ -1,0 +1,14 @@
+{
+  "request_hash": "96a12ab48364a578f0a8a70bfaa074a25383612c08410eff963aa1417b141fdb",
+  "prompt_sha256": "570896dc97a09b43490b58ee3fd48cf054ac970c9dc9416bc9b86b4f8941ac23",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOB1tMrzfl8RFqLIavr8iwCQKmik",
+  "prompt_tokens": 8655,
+  "completion_tokens": 39,
+  "actual_usd": 0.0013216500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how Google connects responsible AI to its mission and mentions its publication of a yearly responsible AI report."
+  }
+}

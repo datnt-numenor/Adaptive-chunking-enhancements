@@ -1,0 +1,10 @@
+{
+  "request_hash": "45cad1b3ac228f8721f396bc026ea831d246801d1815509b3bfad94e4c0a0f7a",
+  "prompt_sha256": "a25dfe014a65783c47927d7602eb62e9cc74e819872319a63b762592f720b7e3",
+  "answer": "Bluesky's automod converts Hive AI's output into moderation labels by applying hard-coded threshold rules over Hive's output scores across different classes. Each rule checks a specific Hive class against a fixed threshold to produce Bluesky labels. For example, if the score for self-harm (yes_self_harm) is greater than or equal to 0.96, it triggers a self-harm label, and if the score for sexual activity (yes_sexual_activity) is greater than or equal to 0.90, it triggers a porn label. This process involves using a fixed set of heads and thresholds, which can lead to some posts slipping through unlabeled if their scores are just under the thresholds or if the harmful content is not covered by the heads used in automod.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNKF4IZtwkPhtFaFmQ6NoFAXE1Uj",
+  "prompt_tokens": 9356,
+  "completion_tokens": 158,
+  "actual_usd": 0.0014981999999999999
+}

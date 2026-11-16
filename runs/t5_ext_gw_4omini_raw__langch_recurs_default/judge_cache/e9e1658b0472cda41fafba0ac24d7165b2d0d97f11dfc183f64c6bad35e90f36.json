@@ -1,0 +1,14 @@
+{
+  "request_hash": "e9e1658b0472cda41fafba0ac24d7165b2d0d97f11dfc183f64c6bad35e90f36",
+  "prompt_sha256": "a915e96e6569878644b46d9bbdf679ae73d129002904a0cbb92a6f73c604da83",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNa0uNAajyWLuwHFkkOG4sV7zYGy",
+  "prompt_tokens": 7119,
+  "completion_tokens": 47,
+  "actual_usd": 0.0010960499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly defining RAI as encompassing responsible AI/computing, ethical AI/computing, trustworthy AI/computing, and related topics."
+  }
+}

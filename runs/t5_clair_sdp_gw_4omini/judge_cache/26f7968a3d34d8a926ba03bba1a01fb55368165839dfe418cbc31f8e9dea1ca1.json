@@ -1,0 +1,14 @@
+{
+  "request_hash": "26f7968a3d34d8a926ba03bba1a01fb55368165839dfe418cbc31f8e9dea1ca1",
+  "prompt_sha256": "f148783885d1e55ee182972e489319dc9e42a2e5aa6cc55ac3a8e2e1953f6bab",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOYUJGwTJmkZVtHpYnuQOHINFNJl",
+  "prompt_tokens": 8929,
+  "completion_tokens": 41,
+  "actual_usd": 0.0013639499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the exemptions for open-source providers of AI models that are not classified as systemic-risk models."
+  }
+}

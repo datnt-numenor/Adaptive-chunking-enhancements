@@ -1,0 +1,25 @@
+{
+  "version": "v2",
+  "sha256": "81cb31e5f5b3ba10368e8aa8aaedf9f786c64a9a4fe758d8894a599809e34e3c",
+  "n_qa": 99,
+  "n_docs": 33,
+  "generator": "Claude Opus 5.5, claude.ai, 03/11/2026",
+  "prompt_sha256": "3a6e3d54b587f7c43e5214d8da15e0b578191fb7f564d8f52a00e67760be5d0e",
+  "parent_sha256": "dca47521d0d5922b034f376496c55f960b85c604ef74d1923a31a1ccb6c8bb31",
+  "candidate_sha256": "b8bb620c8889af6bb20e7c7f0d761ae7731e6f6b6da776e89caf70d891872f50",
+  "audit_sha256": "04b1567829d63f6b3dd4be7480ea97442150e03cd2d3ec86518d8bc87413b741",
+  "cross_review_manifest_sha256": "accdd9804f87c27d0cb23f1191269b89559a72a5a49ccf30628187884eca6cc5",
+  "cross_review_cost_usd": 0.527314,
+  "decisions_sha256": "e29250713d9e486363a1accd086bcf0d86417d1d9a403b606e52f594dd986cb9",
+  "reviewer": "Claude (audit) + GPT-4.1 gpt-4.1-2025-04-14 (cross-review, blind) + human approval of text changes",
+  "build_script_sha256": "6c79f3ed3fcfabaf92e47cc2ae61d53eabb2e20496dcea4227681dffe98f1b38",
+  "changes": {
+    "items_changed": 58,
+    "evidence_only": 50,
+    "question_changed": 8,
+    "answer_changed": 1,
+    "evidence_changed": 56
+  },
+  "warnings": [],
+  "frozen_at": "2026-11-08 13:52:13 UTC"
+}

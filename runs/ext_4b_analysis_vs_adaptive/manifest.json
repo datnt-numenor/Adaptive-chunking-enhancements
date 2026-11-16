@@ -1,0 +1,22 @@
+{
+  "primary": "recall@10",
+  "budget_tokens": 8510,
+  "candidates": [
+    "sdp_a_t600@doc",
+    "sdp_b@doc",
+    "sdp_a_t600@plain",
+    "sdp_b@plain"
+  ],
+  "references": [
+    "adaptive@doc",
+    "adaptive@plain",
+    "raw__langch_recurs_default@plain"
+  ],
+  "run": "runs\\gpu_retrieval_ext_4b_results\\extracted_verified\\out\\ext_4b_part0",
+  "qa": "runs\\qa_ext_v1\\qa_frozen.jsonl",
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "unit": "document"
+}

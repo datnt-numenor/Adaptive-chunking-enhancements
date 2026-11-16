@@ -1,0 +1,10 @@
+{
+  "request_hash": "83fbb8cdf458715adc5750e3b07fef59d597a3761fa8e292df772e4eedb04e4d",
+  "prompt_sha256": "f6b56f525ca98243853e84c16d0ccff53c2fa7f6f060630ea42de755e354c856",
+  "answer": "ArXiv 2401.14446 discusses several limitations of using only input/output analysis, known as black-box evaluations, to evaluate AI systems:\n\n1. **Inability to Develop Generalizable Understanding**: Black-box access limits evaluators to analyzing a system using only inputs and outputs, making it impractical to develop a complete understanding due to the vast number of possible inputs.\n\n2. **Inability to Study System Components Separately**: Black-box access prevents the separate study of system components, which is essential for tracing problems and enabling targeted interventions.\n\n3. **Potential for Misleading Results**: Black-box evaluations can produce biased conclusions based on how evaluators design inputs, leading to misconstrued understandings of the system's characteristics.\n\n4. **Unreliable Explanation Methods**: Black-box methods struggle to provide reliable explanations for an AI system's decisions, often failing to identify causal relationships between input features and outputs.\n\n5. **Limited Insights for Addressing Failures**: Black-box evaluations offer little insight into how to address problems they discover, as they primarily enable training on problematic examples without addressing underlying issues.\n\nOverall, the paper emphasizes that black-box evaluations are inherently limited and can lead to unreliable assessments of AI systems.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMn5lePI1qSvOVzKzNJJrtMj5KlW",
+  "prompt_tokens": 9290,
+  "completion_tokens": 247,
+  "actual_usd": 0.0015417
+}

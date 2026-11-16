@@ -1,0 +1,238 @@
+DOCUMENT: arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach
+
+<<<PAGE 16>>>
+# 4.2.2. Non-Sequential Configuration Adoption and the Limits of Accumulated Governance Experience
+
+The same functional purpose can be served by systems occupying very different positions on the HAIG continua, and each positional shift carries distinct trustworthiness conditions even when the organisational mission remains constant. Medical diagnostics illustrates this clearly. The diagnostic function has remained stable across decades, but the governance position of systems serving that function has shifted substantially as rule-based expert systems have given way to statistical ML and then to foundation model-based multimodal analysis. Each configuration introduces distinct trustworthiness conditions (see Table 1) that are not reducible to one another and cannot be addressed by governance frameworks designed for a prior configuration. The application context is constant; the governance requirements are not.
+
+Where institutions have moved through configurations in sequence, accumulated governance experience can inform trustworthiness assessment of successor configurations - transferring not the specific mechanisms but the institutional capacity to recognise when governance frameworks are becoming misaligned with technical capabilities. This is, however, the exception rather than the rule. The more consequential and more common pattern is that institutions adopt new configurations out of sequence: skipping intermediate configurations under competitive or regulatory pressure, deploying new capabilities before governance frameworks for prior configurations are fully consolidated, or finding that deep familiarity with one configuration creates institutional resistance to recognising the governance demands of a successor. In these circumstances - which are precisely the circumstances HAIG is designed to address - accumulated sequential experience is absent, partial, or actively misleading. Positional tracking across the HAIG continua matters most where orderly progression cannot be assumed, because it provides governance orientation that experience transfer cannot supply.
+
+This dynamic complements contextual variation by identifying a second axis along which governance requirements vary independently of technical capability: the accumulated governance readiness of the deploying institution. Taken together, 4.2.1 and 4.2.2 establish that position on the HAIG continua is jointly determined by deployment context, institutional readiness, regulatory environment, and stakeholder trust - with technical configuration as one input among several rather than a determinant.
+
+# 4.2.3. Bi-Directional Movement and Non-Uniform Progression
+
+Configuration adoption patterns are not only non-sequential - movement along the HAIG continua is also non-uniform in direction and rate. Organisations do not simply advance toward greater AI authority and autonomy; they frequently reverse course, and they rarely progress across all three dimensions simultaneously.
+
+Bi-directional movement is well documented in practice. Content moderation provides a clear example - several major platforms initially progressed toward AI-dominant moderation but subsequently reintroduced stronger human oversight when stakeholder trust was damaged by false positives. This reversal was not a governance failure but a governance response: public and institutional acceptance functioned as a constraint on progression regardless of technical capability, and organisations that had advanced along the Decision Authority dimension retreated when that advancement proved unsustainable. The direction of movement is therefore not simply a function of what a system can do, but of whether stakeholders will sustain the trust that expanded AI authority requires.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+Non-uniform progression across dimensions is equally significant - and arguably more consequential for governance design. Organisations typically advance at different rates along each of the three HAIG dimensions, producing what might be termed governance asymmetries: configurations in which, for instance, Process Autonomy has advanced substantially while Decision Authority remains constrained. Financial services illustrate this clearly - many institutions have granted AI systems significant process autonomy for fraud detection while maintaining tight constraints on decision authority, a pattern driven by the interplay between competitive pressures (which accelerate Process Autonomy) and regulatory frameworks (which simultaneously constrain Decision Authority). Such asymmetries are not anomalies to be corrected but characteristic governance patterns that HAIG is designed to surface and track.
+
+The governance implication is that dimensional calibration cannot be reduced to a single axis. Organisations must assess their positioning - and the direction and rate of movement - across all three dimensions simultaneously. Systems approaching the verification-to-delegation threshold on Process Autonomy while remaining well below the information-to-authority threshold on Decision Authority present a qualitatively different governance challenge than systems advancing uniformly. The threshold architecture introduced in Section 4.3 is designed precisely to provide orientation in these asymmetric cases - marking the points where movement along any single dimension produces qualitative discontinuity in governance requirements, regardless of where the other two dimensions stand.
+
+# 4.3. Critical Trust Thresholds Along the HAIG Dimensions
+
+While movement along the HAIG continua is continuous and bi-directional, it is not uniformly smooth. Within and between capability configurations, AI systems reach critical points where existing governance mechanisms become insufficient and qualitatively different approaches are required. These points are termed trust thresholds rather than trustworthiness thresholds because they are irreducibly relational: they mark points where shifts in system-level trustworthiness conditions interact with the trust attitudes of relevant stakeholders - institutional, professional, or public - to produce a qualitative discontinuity in governance requirements that neither dimension alone determines. Trust thresholds therefore represent not merely quantitative increases in capability or agency but qualitative shifts in the conditions under which warranted trust can be sustained, and consequently in the governance arrangements needed to maintain it. Four primary thresholds are identified, representing fundamental transitions in human-AI governance relationships, supported by several secondary thresholds that further delineate the governance landscape (Figure 3).
+
+# 4.3.1. Primary Trust Thresholds
+
+Verification to Delegation Trust Threshold: This threshold marks the transition from systems where humans verify all AI outputs to those where statistical verification of samples becomes the primary trust mechanism. This shift fundamentally alters how confidence is established and maintained. In tax administration, for example, when systems cross this threshold, governance mechanisms shift from comprehensive review of all algorithmic determinations to sample-based auditing, altering the basis on which warranted trust can be maintained.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<Figure>
+Figure 3: Illustration of non-linear Trust Complexity evolution across the Human-AI Governance (HAIG) Continuum. The segmented exponential curve represents significant increases in trust complexity as systems progress from human-dominant to AI-dominant positions. Vertical dashed lines (blue) indicate primary trust thresholds, while dotted lines (orange) represent secondary thresholds. The blue gradient background intensifies across capability development phases, reflecting increasing systemic integration and governance complexity as AI systems evolve from rule-based systems to multi-agent networks.
+</Figure>
+
+This threshold typically emerges as organisations move from rule-based system configurations with comprehensive verification to advanced ML configurations processing too many decisions for complete review. The threshold's position varies by domain-healthcare applications maintain comprehensive verification longer than financial services due to differing risk tolerances.
+
+Governance implications include development of statistically valid sampling methodologies, establishment of performance benchmarks that justify selective verification, creation of exception triggers for cases requiring comprehensive review, and regular calibration of sampling rates based on performance metrics.
+
+Process to Outcome Trust Threshold: This threshold marks the shift from warranted trust being established primarily through understanding internal processes to that being established through validated outcomes despite partial opacity. This transition fundamentally changes the basis for trust in AI systems. When judicial decision support systems cross this threshold, for example, they move from simple, fully explainable rule-based systems to more complex statistical models where complete process transparency is no longer possible.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+This threshold aligns with the progression along both the Decision Authority and Process Autonomy continua, particularly during the transition from rule-based to advanced ML systems. It represents a fundamental recalibration of trust dynamics where outcome reliability begins to outweigh process visibility as the dominant trustworthiness mechanism. As noted in Section 4.2.2, organisations often progress non-uniformly across dimensions, sometimes maintaining stronger process transparency requirements even as they embrace more complex ML methods.
+
+Governance implications include development of robust outcome validation methodologies, establishment of counterfactual testing approaches, implementation of fairness and bias auditing frameworks, and creation of compensatory transparency mechanisms.
+
+Information to Authority Trust Threshold: This threshold combines aspects of the information-torecommendation and recommendation-to-authority transitions, marking the broader shift from systems that inform human decisions to those exercising direct decision authority in defined domains. This progression fundamentally transforms accountability relationships and trust requirements. In healthcare, systems initially provide information for human judgment, then advance to making specific recommendations that shape decisions, and ultimately may exercise direct authority for certain standardised decisions.
+
+This threshold directly corresponds to advancement along the Decision Authority continuum, representing the critical juncture where AI systems transition from supporting human decisions to making autonomous determinations. The bi-directional movement described in Section 4.2.3 is particularly evident at this threshold, where organisations often experiment with increased AI authority before recalibrating to more conservative governance approaches after encountering trust failures.
+
+Governance implications include development of recommendation quality metrics, clear delineation of authority boundaries, robust exception detection mechanisms, regular auditing of automated decisions, and effective human intervention processes.
+
+Individual to Collective AI Trust Threshold: This threshold marks the point where trust must extend from individual AI systems to networks of interacting systems. This transition requires new approaches to establishing confidence in collective behaviour rather than just individual components. In smart city implementations, when multiple algorithmic systems begin coordinating across domains like transportation, energy, and emergency services, governance mechanisms for trustworthiness must address emergent properties.
+
+This threshold emerges primarily in the Complex Systems scenario, as organisations transition from single-system governance to multi-agent ecosystems. It reflects a qualitative shift in all three HAIG dimensions simultaneously-Decision Authority becomes distributed across system networks, Process Autonomy extends to collective self-organisation, and Accountability Configuration must address emergent behaviours that arise from system interactions rather than individual components. The contextual variation discussed in Section 4.2.1 becomes particularly challenging at this threshold, as systems may function individually in some contexts and collectively in others.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+Governance implications include development of system-of-systems testing methodologies, implementation of interaction monitoring frameworks, creation of collective governance mechanisms, and establishment of responsibility frameworks for emergent outcomes.
+
+# 4.3.2. Secondary Trust Thresholds
+
+While the primary thresholds represent fundamental transitions, several additional thresholds further delineate the HAIG framework:
+
+Direct to Indirect Supervision Threshold: This threshold occurs when systems transition from operating under direct human supervision to functioning with more indirect oversight mechanisms. This shift changes how trust is maintained during system operation. Governance mechanisms for trustworthiness evolve from direct control to boundary enforcement and performance monitoring, correspondingly shifting the basis for sustained warranted trust.
+
+This threshold corresponds primarily to advancement along the Process Autonomy continuum as systems progress from human-led to semi-autonomous processes. It represents a fundamental shift in operational governance emerging during transitions between different capability configurations, with organisations often advancing Process Autonomy at different rates than Decision Authority.
+
+Governance adaptations include clearly defined operational boundaries, real-time monitoring systems that flag boundary approaches, periodic comprehensive reviews of autonomous operations, and intervention mechanisms that maintain ultimate human control.
+
+Institutional to Public Trust Threshold: This threshold occurs when AI systems become visible enough to require public trust rather than merely institutional confidence. This transition expands trust requirements beyond technical validation to include public perception and acceptance. For example, when welfare eligibility systems cross this threshold by moving from back-office operations to citizen-facing application processing, governance mechanisms must expand to address public understanding and confidence, cultivating warranted public trust.
+
+While not directly aligned with a single HAIG continuum, this threshold intersects with the Accountability Configuration dimension, as public visibility necessitates more distributed accountability frameworks that incorporate stakeholder perspectives. Systems crossing this threshold encounter the contextual variation challenges discussed in Section 4.2.1, as public-facing deployments often require different governance approaches than internal applications of the same technology.
+
+Governance adaptations include development of public communication strategies, creation of accessible explanation mechanisms, implementation of transparent appeals processes, and engagement with community stakeholders in governance.
+
+Operational to Strategic Trust Threshold: This threshold occurs when AI systems shift from executing defined operational tasks to influencing strategic outcomes through their cumulative operations. This transition expands trust requirements from technical reliability to normative alignment with public values. For example, when predictive policing algorithms cross this threshold, they move from tactical resource allocation to shaping broader policing strategy and priorities.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+This threshold emerges from the interaction of Decision Authority and Accountability Configuration dimensions, occurring when systems with high process autonomy begin to shape organisational priorities through their cumulative actions rather than merely executing predefined tasks. It highlights the non-uniform progression described in Section 4.2.2, where advancements in operational capability can produce unintended strategic impacts if governance frameworks focus exclusively on tactical performance.
+
+Governance adaptations include regular assessment of system impacts on policy outcomes, stakeholder engagement in strategic alignment, value alignment frameworks and auditing, and democratic oversight of strategic implications.
+
+These secondary thresholds further demonstrate HAIG's flexibility by revealing how trust requirements shift not only across technical dimensions, but also in response to visibility, governance scope, and societal impact-exemplifying the contextual variation principle introduced in Section 4.2.1.
+
+# 4.4. Trust-Building Strategies Across the HAIG Framework
+
+As organisations navigate the HAIG dimensions, trust-building approaches must evolve alongside both technological configurations and deployment context.
+
+Effective trust assessment begins with relationship mapping - identifying stakeholder requirements across internal users, oversight bodies, affected citizens, and partner organisations, each demanding different trust types from technical reliability to value alignment. Organisations must identify which trust thresholds they are approaching, since governance arrangements nearing verification-to-delegation require fundamentally different mechanisms than those approaching the process-to-outcome threshold. Gap analysis typically reveals significant discrepancies, with technical teams holding confidence that affected citizens do not share.
+
+Different positions along the continua require distinct approaches. At early positions, trustworthiness rests on transparency and comprehensive verification. Middle positions - recommendation systems with shared authority - require demonstrated reliability and confidence calibration. Advanced positions need outcome-focused governance with effective exception handling. Complex multi-agent positions must address emergent collective behaviours through demonstrated control over system interactions.
+
+Trust in public sector AI must anchor in democratic values across all continuum positions. This requires transparency calibrated to stakeholder needs and system position rather than applied uniformly; contestability mechanisms through which individuals can challenge outcomes, with rights scaling to AI authority levels; and stakeholder participation that ensures governance reflects democratic values beyond technical considerations. Regular value alignment reviews - intensifying as systems advance - identify misalignments before they undermine institutional legitimacy.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+# 5. Applications: Healthcare AI and EU Regulatory Governance
+
+This section demonstrates how the Human-AI Governance (HAIG) framework applies to concrete governance challenges. The following subsections move from sector-specific application (5.1, healthcare) to regulatory system analysis (5.2, EU AI Act) to regulatory design implications (5.3), each illustrating a distinct mode of HAIG's analytical utility: dimensional calibration within a domain, complementarity with categorical frameworks, and foundations for adaptive regulation.
+
+# 5.1. The Evolving Physician-AI Relationship: Healthcare Through the HAIG Lens
+
+Healthcare presents an ideal domain for applying the HAIG framework due to its graduated complexity, high-stakes decisions, and evolving regulatory landscape (Dennstädt et al., 2025; Lee et al., 2024). This abbreviated case study demonstrates how the HAIG framework's dimensions and thresholds can be operationalised in a concrete domain, illustrating the analytical advantages of a dimensional approach over categorical frameworks while acknowledging that comprehensive analysis would require more extensive examination than this paper permits.
+
+Healthcare AI has progressed through distinctive phases across various medical domains, with radiology serving as a particularly illustrative example. The evolution spans from rule-based clinical decision support systems with minimal decision authority (Papadopoulos et al., 2022), to advanced ML systems with greater process autonomy (Wang & Summers, 2012), to foundation model-based diagnostic partners (Qiu et al., 2024), and emerging multi-agent care coordination systems (Moritz et al., 2025). In radiology specifically, early computer-aided detection systems utilised rule-based pattern matching (Giger et al., 2008), then evolved toward convolutional neural networks requiring statistical validation (Chartrand et al., 2017), and most recently to foundation model-based diagnostic systems introducing challenges around emergent capabilities (Thieme et al., 2023)-all while serving the same fundamental diagnostic purpose. This technological evolution within a stable application context (Steiner et al., 2021) demonstrates why dimensional governance approaches provide more precise calibration than categorical frameworks.
+
+The Decision Authority continuum in healthcare spans from purely informational systems to those with significant diagnostic authority. Examples range from basic reference tools like drug interaction databases (Knox et al., 2024), to early warning systems generating alerts (Henry et al., 2015), to diagnostic systems for standardised image interpretation with significant classification authority (McKinney et al., 2020). Stroke diagnosis AI systems exemplify this evolution, progressing from simple support tools to systems with differentiated authority based on case complexity (American Heart Organisation, 2024). Importantly, this movement is bi-directional in healthcare settings. Some systems initially progressed toward greater AI decision authority in medication management but subsequently reintroduced stronger human oversight after encountering unexpected edge cases (Lyell & Coiera, 2017), while automated sepsis alert systems were often scaled back after experiencing alert fatigue (Ginestra et al., 2019), demonstrating how organisations calibrate authority distribution through experimentation and learning.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+For Process Autonomy, systems range from requiring explicit clinician input for each parameter at the human-led end, to patient monitoring systems that autonomously collect data but require human activation in the middle range, to advanced platforms that autonomously adjust data collection frequency based on patient condition. Modern ICU (Intensive Care Unit) monitoring systems (Gutierrez, 2020) demonstrate effective navigation of the Direct-to-Indirect Supervision threshold through defined operational boundaries and exception flagging.
+
+The Accountability Configuration dimension illustrates how responsibility distributes across stakeholders as AI systems evolve (Shortliffe & Sepúlveda, 2018; Char et al., 2018; Gerke et al., 2020). For early-stage diagnostic tools, accountability rests primarily with clinicians. As systems progress, healthcare institutions assume greater responsibility for validation protocols while clinicians maintain decision accountability. Advanced systems operate with complex configurations involving developers, institutions, regulatory bodies, and clinicians in shared responsibility frameworks. This progression demonstrates why binary accountability models are insufficient, particularly as systems cross the Individual-to-Collective AI threshold.
+
+The Process-to-Outcome threshold is particularly significant in healthcare, marking the transition from trusting systems for their transparent processes to trusting them based on validated outcomes despite partial opacity. Sepsis prediction models (Fleuren et al., 2020) illustrate effective management through outcome validation frameworks, while the Information-to-Authority threshold is demonstrated by automated retinopathy screening systems (Grauslund, 2022; Abràmoff et al., 2018) through graduated authority implementation.
+
+Healthcare implementations face domain-specific challenges that illustrate the interplay between HAIG's core dimensions: Clinical Validation Calibration (Park et al., 2021) shows how validation requirements must adapt as authority increases; Professional Authority Negotiation (Jussupow et al., 2021; Asan et al., 2020) reflects tensions at the intersection of Decision Authority and Accountability; Patient Trust Triangulation (Longoni et al., 2019) exemplifies how accountability must address multiple stakeholder relationships; and Contextual Authority Calibration (Grote & Berens, 2020) demonstrates the contextual variation principle of HAIG.
+
+These challenges demonstrate why HAIG's dimensional approach provides more nuanced governance guidance than categorical frameworks alone. While this brief case illustrates the framework's applicability, future research should extend this approach through comprehensive, domain-specific analyses across different healthcare contexts and applications.
+
+# 5.2. The HAIG Framework and the EU AI Act: Complementary Governance Paradigms
+
+The EU AI Act's risk-based categorisation (2024) and the HAIG framework's dimensional approach represent different but potentially complementary governance paradigms. Table 2 maps these two approaches across six governance elements, illustrating where they diverge and where they are most productively combined. The most fundamental difference lies in their organising logic: where the EU AI Act assigns systems to fixed risk categories with standardised requirements, HAIG tracks positional movement along continuous dimensions and calibrates governance responses accordingly. This yields contrasting approaches to adaptation and context-sensitivity - the Act reassigns systems between categories when their risk profile changes, while HAIG accommodates incremental movement and contextual variation without requiring reclassification. Crucially, these differences do not make the frameworks incompatible; rather, the EU AI Act's categorical structure provides regulatory clarity and baseline requirements, while HAIG's dimensional approach offers the finer-grained calibration that static categories cannot supply within themselves.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+The European Union's AI Act establishes a risk-based approach with four tiers: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency requirements), and minimal risk (unregulated). While providing regulatory clarity, this categorical framework faces challenges with systems that evolve over time or operate differently across contexts (Schuett, 2023; Laux et al., 2024; Kusche, 2024). As Kaminski (2023) notes, categorical approaches struggle with contextual variation, and tend to focus primarily on risks rather than benefits (Ebers, 2024). Given the 'multifunctionality' of foundation models across sectors (Coglianese & Crum, 2025), regulation needs more flexibility than static categorisation permits.
+
+<Table>
+| Governance Element    | EU AI Act Approach                                         | HAIG Framework Approach                                                            |
+|:----------------------|:-----------------------------------------------------------|:-----------------------------------------------------------------------------------|
+| Fundamental Structure | Four discrete risk categories with fixed requirements      | Three continuous dimensions with evolving trust thresholds                         |
+| Classification Basis  | Application domain and potential harm                      | Position along decision authority, process autonomy, and accountability dimensions |
+| Regulatory Emphasis   | Risk mitigation through categorical compliance             | Trust building through dimensional calibration                                     |
+| Adaptation Mechanism  | Reassignment to different risk category                    | Bi-directional movement along dimensions                                           |
+| Context Sensitivity   | Limited - systems classified primarily by application type | High - recognises contextual variation across deployments                          |
+| Implementation Focus  | Standardised requirements within each category             | Tailored governance based on specific dimensional positioning                      |
+</Table>
+
+To illustrate how dimensional calibration offers finer-grained insights, we map each EU AI Act risk category across HAIG's core dimensions. Each risk category in the EU AI Act displays distinct patterns across the HAIG dimensions, though with critical variations in agency distribution that static categories cannot capture:
+
+Prohibited Systems (Unacceptable Risk) typically feature high AI decision authority beyond the "Information to Authority" threshold, high process autonomy beyond direct supervision, and distributed accountability that obscures responsibility. Social scoring systems exemplify this category, crossing critical trust thresholds without adequate safeguards. Even within this category, variations exist-subliminal manipulation techniques may exercise extreme decision authority (they directly influence human behaviour) with moderate process autonomy (systems can operate within relatively defined parameters or methodologies), while citizen scoring might feature more balanced authority (sytems assign scores but humans determine consequences) but higher process autonomy (systems independently gather and process information).
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+High-Risk Systems typically span the "Verification to Delegation" threshold, often approach the "Process to Outcome" threshold, but typically remain on the human side of the "Information to Authority" threshold. This category shows substantial dimensional variation-healthcare diagnostic AI generally maintains strong human decision authority (physicians retaining final diagnostic decisions) while exercising significant process autonomy (analysing medical images or patient data), whereas recruitment AI might exercise moderate decision authority in candidate screening but operate with more limited process autonomy due to structured inputs and explicit criteria.
+
+Limited Risk Systems typically operate below the "Information to Authority" threshold but may cross the "Direct to Indirect Supervision" threshold in process autonomy. Chatbots exemplify this category, often with significant process autonomy in conversation management but limited decision authority in terms of real-world consequences. Emotion recognition systems present a different profile, exercising moderate decision authority in specific domains (e.g. customer satisfaction analysis) but limited process autonomy due to their narrow functional scope.
+
+Minimal Risk Systems generally remain below critical thresholds across all dimensions, functioning more as tools than partners. However, even here, dimensional variations emerge-video game AI might exercise significant process autonomy in gameplay adaptation while maintaining minimal decision authority beyond the game environment, while simple data analysis tools might have moderate decision authority in narrow domains but require explicit human activation.
+
+Our analysis underscores how the HAIG framework can complement the EU AI Act's categorical approach by providing more precise governance calibration. Systems within the same risk category often occupy different positions across HAIG dimensions, suggesting the need for tailored governance approaches despite shared categorical status.
+
+Several EU AI Act articles could be strengthened through HAIG principles. Examples include: Risk Management (Article 9) could be calibrated to specific dimensional positioning-systems with higher process autonomy require more robust runtime monitoring, while greater decision authority demands enhanced oversight. Human Oversight (Article 14) should be tailored to specific trust thresholds rather than uniformly applied-systems approaching verification-to-delegation require different oversight than those near process-to-outcome. Quality Management (Article 17) could be proportional to dimensional positioning rather than using a one-size-fits-all approach. Post-Market Monitoring (Article 72) could focus resources on systems approaching critical trust thresholds, with monitoring depth reflecting specific dimensional positions.
+
+The HAIG framework addresses critical governance challenges that categorical approaches struggle with. For foundation models that simultaneously operate across multiple risk categories, HAIG allows precise governance calibration based on specific application contexts rather than forcing classification into a single category. For evolving systems, the framework tracks incremental movement along dimensions before major thresholds are crossed, enabling preventive rather than reactive governance. For borderline cases that fall between risk categories, HAIG provides continuous governance guidance without requiring arbitrary classification. This dimensional approach helps regulators address the implementation gap between categorical rules and the complex reality of AI systems that exhibit contextual variation across applications.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+Rather than viewing categorical and dimensional approaches as competing frameworks, they should be seen as complementary governance perspectives. The EU AI Act's risk-based approach provides essential regulatory clarity and baseline requirements, establishing clear boundaries for unacceptable uses and minimum standards for high-risk applications. The HAIG framework complements this foundation by enabling more precise governance calibration within established categories, addressing the complex reality of evolving human-AI relationships. This integration allows regulators to maintain clear regulatory boundaries while implementing nuanced oversight mechanisms that respond to specific dimensional positions and approaching thresholds. Together, these approaches create a governance ecosystem that combines regulatory clarity with operational precision. By enabling continuous calibration, HAIG offers modular governance scaffolding that adjusts in response to both contextual deployments and technological evolution-something fixedtier systems inherently struggle with.
+
+For effective integration of these complementary approaches, we recommend: (1) Regulators should maintain categorical classifications for baseline requirements while using dimensional analysis to develop implementation guidance that addresses variations within categories; (2) Organisations should first determine their systems' risk category for compliance, then assess their specific dimensional positions to identify appropriate governance mechanisms; (3) Oversight bodies should develop monitoring approaches that track movement along HAIG dimensions, with particular attention to systems approaching critical thresholds; (4) Industry standards should integrate dimensional considerations into testing and validation protocols, particularly for high-risk applications where dimensional variation is greatest. This hybrid approach maintains regulatory clarity while enabling the governance precision needed for complex AI systems.
+
+# 5.3. HAIG as a Basis for Adaptive Regulatory Design
+
+Beyond complementing categorical frameworks, HAIG can serve as an alternative regulatory foundation for jurisdictions seeking governance approaches that evolve alongside technological capabilities rather than requiring periodic legislative revision (e.g. NIST AI RMF, 2023).
+
+A HAIG-based regulatory approach would establish graduated requirements that scale with a system's position across the three governance dimensions rather than assigning fixed requirements by application type. Its modular structure - admitting new dimensions, additional thresholds, and refined trajectories as implementation experience accumulates - provides adaptability that categorical frameworks structurally cannot achieve. Governance intensity remains proportional to trust requirements rather than predetermined risk categories, balancing innovation benefits against potential harms without requiring frequent legislative revision.
+
+Where categorical frameworks provide regulatory clarity, HAIG provides calibration precision. Together they constitute a governance architecture capable of maintaining appropriate oversight across the full range of human-AI relationships - from the most constrained deployments to the most autonomous.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+# 6. Discussion and Conclusions
+
+The HAIG framework addresses a governance deficit that the existing AI governance literature has identified but not resolved. Birkstedt et al. (2023) document persistent knowledge gaps around how governance frameworks evolve alongside AI capabilities; Laux et al. (2024) show that the EU AI Act conflates trustworthiness with acceptable risk, losing the relational dimension of trust; Coglianese and Lehr (2017) diagnose the core accountability challenge of algorithmic governance as incremental authority migration that escapes categorical notice. HAIG responds to all three. By representing governance relationships as positions along three continuous dimensions rather than as members of discrete categories, the continuum architecture tracks how authority, autonomy, and accountability are actually distributed and how that distribution evolves. Its trust-utility orientation restores the relational logic that risk-based approaches suppress. And its threshold system provides structured early warning precisely where categorical frameworks go blind: at the points where quantitative shifts in any dimension produce qualitative discontinuities in governance requirements.
+
+The framework's three analytical contributions are distinct. The first is the governance asymmetry diagnostic: tracking the three dimensions simultaneously makes visible the misalignments - rapid Process Autonomy advancement against constrained Decision Authority; accountability frameworks lagging both - that single-axis approaches systematically miss. The second is the non-sequential configuration insight: institutions that adopt new AI configurations out of sequence cannot rely on accumulated governance experience to orient them, and positional tracking provides the orientation that experience transfer cannot. The third is the threshold architecture as a research programme: rather than producing principles to be endorsed or categories to be assigned, HAIG generates specific, empirically evaluable propositions about where governance mechanisms will encounter difficulty - the response to Mittelstadt's (2019) observation that principles alone cannot guarantee ethical AI.
+
+The framework's implications differ by audience. For regulators, the EU AI Act analysis demonstrates that dimensional calibration and categorical compliance are complementary, not competing: categorical frameworks establish baseline requirements; HAIG provides the finergrained calibration within categories that static tiers structurally cannot. For deploying organisations, the key practical contribution is the diagnostic function - governance choices about how much of the authority space technical capabilities open up to actually exercise should be made deliberately, with attention to positioning across all three dimensions simultaneously. For oversight bodies, the threshold architecture offers what Coglianese and Lehr's diagnosis demands: a mechanism for anticipating authority migration rather than responding to it after the fact.
+
+The framework's primary limitation is the absence of longitudinal empirical validation. This is also its most significant research direction: whether the trust thresholds predict governance failure points in practice, whether asymmetry patterns recur characteristically across sectors, and how institutional governance readiness mediates configuration transitions are all open empirical questions. The threshold architecture is designed to generate testable propositions toward this end. Secondary directions include operationalising dimensional measurement, extending the framework to the individual and international levels, and developing governance theory for the multi-agent frontier that the Individual to Collective AI threshold marks.
+
+As AI systems continue to evolve in capability and deployment scope, the governance challenge is not primarily one of identifying new risks but of maintaining alignment between technical capability, governance arrangements, and warranted stakeholder trust - across contexts, over time, and in advance of capability shifts rather than in response to them. HAIG is designed to make that alignment trackable.
+
+<!-- PageFooter: Human-AI Governance (HAIG): A Trust-Utility Approach, (revised) 25 April 2026 27 -->
+
+<!-- PageBreak -->
+

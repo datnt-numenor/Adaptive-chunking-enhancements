@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "status": "complete",
+  "created_at": "2026-11-08T15:11:34.622400+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "embedding_model": "Qwen/Qwen3-Embedding-4B",
+  "embedding_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "attention_implementation": "flash_attention_2",
+  "batch_size": 1,
+  "mode": "full",
+  "qa_count": 99,
+  "source_documents": 33,
+  "input_qa_sha256": "71b4c9842351dd233b726b5e9e007ad7038b3f14371394f8104dfcd2fe8f3419",
+  "input_prepare_manifest_sha256": "b08193d9c25b46526a6a3e99e5ea2653dfab8565d7bae7072cbecd1e9058e6bd",
+  "document_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "query_prompt_sha256": "df4b2898bf22e00bacddddd489243a3f8793730e38b842ec10161cebd94d36d6",
+  "systems": {
+    "adaptive": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/index-full/adaptive/document_store.json",
+      "sha256": "029475d35193c053acee5bbac49e685e4d9b86e1faeb1c5e76b2eae051863e66",
+      "chunks": 1633,
+      "source_documents": 33
+    },
+    "raw__langch_recurs_default": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/index-full/raw__langch_recurs_default/document_store.json",
+      "sha256": "26b70995c32447e69186ae5a217718ad9d0ce86e0c63d599aa3dc4ad39f78ab2",
+      "chunks": 1557,
+      "source_documents": 33
+    },
+    "raw__page": {
+      "status": "created",
+      "path": "/workspace/t5v2/table5_v2/index-full/raw__page/document_store.json",
+      "sha256": "4086eb5d32026508d916089fc7740a68ed463acb5285cc07b0228a127dcf8f35",
+      "chunks": 1761,
+      "source_documents": 33
+    }
+  },
+  "runtime": {
+    "python": "3.11.18 (main, Oct 26 2026, 15:28:55) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39"
+  },
+  "gpu": {
+    "name": "NVIDIA RTX A5000",
+    "compute_capability": [
+      8,
+      6
+    ],
+    "bf16_supported": true,
+    "torch_version": "2.6.0+cu124",
+    "flash_attn_version": "2.7.4.post1"
+  },
+  "environment": {
+    "path": "/workspace/t5v2/table5_v2/environment.txt",
+    "sha256": "cb60cf9144de0acfab3046773cec134cd206fdf865bb17bff7c5d27886c89ab6"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "9847bc7940486dac7f29f23e83dbbf9b035903c79cf838483fa9cd9ee7bcd837",
+  "prompt_sha256": "12b5172053e26f5c4204121dc607db25806cd59f3b73be2c9fa0cc6a0dfe973a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOBSOY2U7tc73UKQbo4rQFmfxo8V",
+  "prompt_tokens": 8080,
+  "completion_tokens": 51,
+  "actual_usd": 0.0012426,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining that metrics for group fairness cannot be used to estimate individual fairness, emphasizing the necessity of evaluating both granularities to capture all aspects of fairness."
+  }
+}

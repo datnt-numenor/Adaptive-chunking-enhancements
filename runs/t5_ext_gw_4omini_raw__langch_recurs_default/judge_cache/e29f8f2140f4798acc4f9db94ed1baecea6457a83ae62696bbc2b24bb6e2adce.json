@@ -1,0 +1,14 @@
+{
+  "request_hash": "e29f8f2140f4798acc4f9db94ed1baecea6457a83ae62696bbc2b24bb6e2adce",
+  "prompt_sha256": "39815837047282f51e567c033328a3ee1ab48089b74a735eeb2bcf43b8b833e2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSbui3V7TGIY9DZ4PJb0oKc0I4p",
+  "prompt_tokens": 7018,
+  "completion_tokens": 42,
+  "actual_usd": 0.0010779000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly mentioning the ALCOA principles as part of the legal requirements for software validation in drug licensing."
+  }
+}

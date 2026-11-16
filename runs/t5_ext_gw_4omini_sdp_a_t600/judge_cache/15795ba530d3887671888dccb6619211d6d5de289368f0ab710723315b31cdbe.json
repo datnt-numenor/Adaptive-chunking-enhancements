@@ -1,0 +1,14 @@
+{
+  "request_hash": "15795ba530d3887671888dccb6619211d6d5de289368f0ab710723315b31cdbe",
+  "prompt_sha256": "9c6fca7bf626fceca0c62cd9113e329328e0471f279a498ce1342382559f61ee",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNwhsYnd3zY4H7pDfKX96REKrvvW",
+  "prompt_tokens": 7659,
+  "completion_tokens": 45,
+  "actual_usd": 0.00117585,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses the importance of democratic governance in AI, emphasizing representation, accountability, and participation from affected stakeholders, which directly supports the claims made in the Reference Answer."
+  }
+}

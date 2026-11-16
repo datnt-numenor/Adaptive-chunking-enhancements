@@ -1,0 +1,14 @@
+{
+  "request_hash": "e0534538a17b9158e2b9e28ff707e08469dbe145813b0a36c3f21c890bf35cc3",
+  "prompt_sha256": "b6947c45b44431f81c3e4dbf9e51676d291b72ea2e6c6b15b4fde57313ee8735",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOZBtRnPAaP4jnYX6YSReLKJTFe6",
+  "prompt_tokens": 6871,
+  "completion_tokens": 42,
+  "actual_usd": 0.0010558499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly identifying and describing the three major categories of AI bias as systemic, computational and statistical, and human-cognitive."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "c92d32317dfd9980cd0b71211fa6df44c4fda07a1732de04b2a15834841c4d5b",
+  "prompt_sha256": "5597840f5b58d088953dd5d85a35d9959f15bd87be181608d4063d5dd0868807",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLlK8WLFOKCndBTqfi7Ds8EdBQY",
+  "prompt_tokens": 7308,
+  "completion_tokens": 55,
+  "actual_usd": 0.0011292000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the exemptions for open-source providers of non-systemic-risk models from certain obligations, while still requiring compliance with copyright law and the publication of a training content summary."
+  }
+}

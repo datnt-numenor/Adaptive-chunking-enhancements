@@ -1,0 +1,18 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+proc_recurs1100@plain                         recall@10=0.8816 recall@5=0.7896 ndcg@10=0.7046 hit@10=0.8990  chunks=1345  t=213s
+proc_recurs1100@doc                           recall@10=0.8957 recall@5=0.8451 ndcg@10=0.7403 hit@10=0.9293  chunks=1345  t=420s
+proc_recurs600@plain                          recall@10=0.8036 recall@5=0.7251 ndcg@10=0.6356 hit@10=0.8586  chunks=2381  t=604s
+proc_recurs600@doc                            recall@10=0.8726 recall@5=0.7824 ndcg@10=0.7102 hit@10=0.9192  chunks=2381  t=796s
+proc_page@plain                               recall@10=0.8229 recall@5=0.7531 ndcg@10=0.6575 hit@10=0.8788  chunks=1780  t=1006s
+proc_page@doc                                 recall@10=0.9043 recall@5=0.7926 ndcg@10=0.7237 hit@10=0.9495  chunks=1780  t=1221s
+proc_llm_regex@plain                          recall@10=0.8090 recall@5=0.7300 ndcg@10=0.6569 hit@10=0.8384  chunks=1899  t=1422s
+proc_llm_regex@doc                            recall@10=0.8910 recall@5=0.8274 ndcg@10=0.7339 hit@10=0.9293  chunks=1899  t=1636s
+raw_langch1100@plain                          recall@10=0.8509 recall@5=0.7890 ndcg@10=0.7125 hit@10=0.8788  chunks=1675  t=1851s
+raw_langch1100@doc                            recall@10=0.9098 recall@5=0.8576 ndcg@10=0.7625 hit@10=0.9394  chunks=1675  t=2058s
+sdp_a_def@plain                               recall@10=0.8896 recall@5=0.7931 ndcg@10=0.7120 hit@10=0.9293  chunks=1317  t=2265s
+sdp_a_def@doc                                 recall@10=0.8946 recall@5=0.7939 ndcg@10=0.7289 hit@10=0.9293  chunks=1317  t=2470s
+sdp_a_t600@plain                              recall@10=0.8761 recall@5=0.7890 ndcg@10=0.7118 hit@10=0.9091  chunks=1475  t=2679s
+sdp_a_t600@doc                                recall@10=0.9266 recall@5=0.8442 ndcg@10=0.7773 hit@10=0.9596  chunks=1475  t=2895s
+sdp_a_t1000@plain                             recall@10=0.8617 recall@5=0.7445 ndcg@10=0.6775 hit@10=0.8889  chunks=1275  t=3094s
+sdp_a_t1000@doc                               recall@10=0.8806 recall@5=0.7757 ndcg@10=0.7110 hit@10=0.9192  chunks=1275  t=3308s
+Saved -> runs\proxy\r2_fixed

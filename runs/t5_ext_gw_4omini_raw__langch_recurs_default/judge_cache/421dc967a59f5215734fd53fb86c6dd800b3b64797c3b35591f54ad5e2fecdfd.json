@@ -1,0 +1,14 @@
+{
+  "request_hash": "421dc967a59f5215734fd53fb86c6dd800b3b64797c3b35591f54ad5e2fecdfd",
+  "prompt_sha256": "16447e1c674e60bbf24777c9844ffe85dfa8e7e455eed3a9184e256d985041f6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJg7VFkqhCMsixdzCSYalTC6wQx",
+  "prompt_tokens": 7027,
+  "completion_tokens": 42,
+  "actual_usd": 0.00107925,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer regarding the issues of watermarks in synthetic data and the challenges of maintaining provenance in fact-checking workflows."
+  }
+}

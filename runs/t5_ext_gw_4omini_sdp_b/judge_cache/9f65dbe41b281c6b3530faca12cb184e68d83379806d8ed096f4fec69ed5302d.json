@@ -1,0 +1,14 @@
+{
+  "request_hash": "9f65dbe41b281c6b3530faca12cb184e68d83379806d8ed096f4fec69ed5302d",
+  "prompt_sha256": "fd67b6e0eefa2a05eb93a9d2bf0e7ab928204e1bc39f04c36e15ef47cb9b266f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNj0p7Wh1IdOEDlGotzLG29hHzQx",
+  "prompt_tokens": 9157,
+  "completion_tokens": 39,
+  "actual_usd": 0.00139695,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning UNESCO, Meta, and the State of California in relation to environmental inequity and AI."
+  }
+}

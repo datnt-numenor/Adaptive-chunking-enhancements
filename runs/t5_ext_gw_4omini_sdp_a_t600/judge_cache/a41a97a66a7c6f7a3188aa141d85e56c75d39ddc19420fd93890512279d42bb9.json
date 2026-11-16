@@ -1,0 +1,14 @@
+{
+  "request_hash": "a41a97a66a7c6f7a3188aa141d85e56c75d39ddc19420fd93890512279d42bb9",
+  "prompt_sha256": "1fc971ac69920e1b804ee51909199365839b966122460b73f67b9ec4201a9ca7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNdm1W5HWiQBgQmyleMR5gQB5srH",
+  "prompt_tokens": 8824,
+  "completion_tokens": 52,
+  "actual_usd": 0.0013548,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides specific data indicating that 'explainability/explanations/explanation/xai' appears in 3.8% of studies' keywords, fully supporting the claim made in the reference answer."
+  }
+}

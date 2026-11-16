@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, answer fully supported by evidence, specific percentages provided\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, clear monotonic relationship shown in table evidence\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, notation directly from document's table\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, answer directly stated in evidence\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, answer supported by evidence on binary compliance handling\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained, answer directly supported by evidence explanation\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 13221,
+  "out": 916
+ },
+ "created": "2026-11-09 18:35:53"
+}

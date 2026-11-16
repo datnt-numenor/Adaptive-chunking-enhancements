@@ -1,0 +1,10 @@
+{
+  "request_hash": "91d1cab7db658ef3e3599f3a808ef9b8c2fccae8b32523b1b387a2c4fbcb22ce",
+  "prompt_sha256": "8e807466ebb82cb659c8888de38d01c96171228523da73541f75f60fcc758bb7",
+  "answer": "For arXiv 2501.04014, the information about AI models that must be made available to downstream AI providers includes:\n\n1. The model's release date.\n2. The model's input data.\n3. The model's output data.\n4. The model's license.\n5. The model's use policy.\n\nThis is reflected in AICat's requirements under CQ3, which specifies the need for documentation regarding the models used by the system, including the aforementioned elements.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMxbBVhlvkLlSM2DgZXadliC5OQ3",
+  "prompt_tokens": 6937,
+  "completion_tokens": 98,
+  "actual_usd": 0.0010993499999999998
+}

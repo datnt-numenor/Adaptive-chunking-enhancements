@@ -1,0 +1,14 @@
+{
+  "request_hash": "274e5deca4ff20d036469317c16b528ae3ac916e82c5686e8b1ad7e083f4670f",
+  "prompt_sha256": "006f583b3cd2ec704c9e51e57368a8d51562a8094dc14b88d25e3792d63d281f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOdn18PKduAhibClelKpkqXZDOro",
+  "prompt_tokens": 7997,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012265499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that IT and data analysis professions are criticized for lacking diversity and are unaware of the risks to fundamental rights caused by algorithms."
+  }
+}

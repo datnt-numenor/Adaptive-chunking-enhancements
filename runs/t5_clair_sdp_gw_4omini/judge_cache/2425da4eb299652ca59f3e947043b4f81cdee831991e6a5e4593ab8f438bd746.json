@@ -1,0 +1,14 @@
+{
+  "request_hash": "2425da4eb299652ca59f3e947043b4f81cdee831991e6a5e4593ab8f438bd746",
+  "prompt_sha256": "56667532515c965bae70c91fef2afed73de7ed4932ea0bb67856fdd67ef08455",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP8fmMH4aS5Hq4iPZUBPAhPNF6nH",
+  "prompt_tokens": 8371,
+  "completion_tokens": 38,
+  "actual_usd": 0.0012784499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context clearly defines EUIs as EU institutions, bodies, offices, and agencies, fully supporting the claim made in the reference answer."
+  }
+}

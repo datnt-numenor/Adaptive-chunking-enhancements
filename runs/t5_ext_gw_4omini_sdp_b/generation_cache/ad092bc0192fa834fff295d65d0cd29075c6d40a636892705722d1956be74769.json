@@ -1,0 +1,10 @@
+{
+  "request_hash": "ad092bc0192fa834fff295d65d0cd29075c6d40a636892705722d1956be74769",
+  "prompt_sha256": "cba2b8b2d1f1215bf139cf21428d9ab0833d44d1beb59b58fe410dde106d845b",
+  "answer": "NIST AI 100-4 describes the challenge of determining consent in NCII detection as being particularly difficult because consent may be limited to specific contexts. For instance, there could be consent for the use of a person's image to create a new GAI image but not for the distribution of that image. Additionally, consent is hard to discern on social media platforms, and human vetting is required for accurate labeling, which can impact the mental health of reviewers. The context of consent is complex and not typically evident from the images themselves, making it challenging to adjudicate consent effectively.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMaP8FIBZ0HYoT7wnAvoPtgMLIXg",
+  "prompt_tokens": 7082,
+  "completion_tokens": 115,
+  "actual_usd": 0.0011313
+}

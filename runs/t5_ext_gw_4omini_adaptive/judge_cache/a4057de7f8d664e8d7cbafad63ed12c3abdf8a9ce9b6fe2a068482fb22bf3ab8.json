@@ -1,0 +1,14 @@
+{
+  "request_hash": "a4057de7f8d664e8d7cbafad63ed12c3abdf8a9ce9b6fe2a068482fb22bf3ab8",
+  "prompt_sha256": "9e84e2f22b81af034b97e9e98165df9d2b3a0bd83064e247c4140bee065bd4be",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOGSKSdnPNRtTU9iS2HEQobi6IuW",
+  "prompt_tokens": 8717,
+  "completion_tokens": 47,
+  "actual_usd": 0.00133575,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining risk as the combination of probability and severity of harm, and it discusses the goal of managing this risk for high-risk AI systems."
+  }
+}

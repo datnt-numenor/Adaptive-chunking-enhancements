@@ -1,0 +1,14 @@
+{
+  "request_hash": "11f550b63e6e6d1dd43b6aa6a534193bf52420f4b3fb51527102a6634a2af128",
+  "prompt_sha256": "705ab5c6dde5155ca8d89da869d468d9f57708f199e7d12ceae79756a701b385",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNGvMo6W8pDrmNz0WmlvI0jWEEZY",
+  "prompt_tokens": 9147,
+  "completion_tokens": 38,
+  "actual_usd": 0.00139485,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the age requirements for consent regarding children's data processing under Article 8 of the GDPR."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "a1850e3d8d74b267dc971ac8d713f74144cd247f32a8a340f6e2d923d8b7d4f2",
+  "prompt_sha256": "1d3993ecc7fe2f17b1bffa7a449ac69ce7fb18e058bdc98c84dc5012d9cb070b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNnbKJDgthuckbHr8tbgeUniWNos",
+  "prompt_tokens": 6813,
+  "completion_tokens": 46,
+  "actual_usd": 0.00104955,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining the asymmetry of statistical significance and its implications for the null hypothesis in the context of NYC Local Law 144."
+  }
+}

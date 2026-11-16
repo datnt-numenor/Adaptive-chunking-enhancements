@@ -1,0 +1,14 @@
+{
+  "request_hash": "d0d446eedab5ec28614dadefcc5c4d8cc4edcfbf3f0b7e20cc7f2c539e2ecc02",
+  "prompt_sha256": "37ba2a81612fd68661a428713f739ed88f24f72aa41214614a731190a1929e6a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXI5BSKjY9YOtKjOhJr8vi05Gm6",
+  "prompt_tokens": 8295,
+  "completion_tokens": 46,
+  "actual_usd": 0.00127185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing China's state-controlled approach to AI regulation and highlighting the risks associated with centralized control, including the mention of a significant data leak incident."
+  }
+}

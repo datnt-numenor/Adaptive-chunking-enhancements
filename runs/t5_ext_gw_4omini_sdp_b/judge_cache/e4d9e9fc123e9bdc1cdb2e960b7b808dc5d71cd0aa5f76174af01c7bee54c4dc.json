@@ -1,0 +1,14 @@
+{
+  "request_hash": "e4d9e9fc123e9bdc1cdb2e960b7b808dc5d71cd0aa5f76174af01c7bee54c4dc",
+  "prompt_sha256": "d71fce2e76720c453d0a4f78cd24c2611c9aa7c57e714a12fca26e981f0493ac",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO2ASQeZk36e86WRtzCp4fHMH1XZ",
+  "prompt_tokens": 5305,
+  "completion_tokens": 42,
+  "actual_usd": 0.0008209500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining 'Cyberlearners' as a joint learning entity of humans and AI that interacts with various external elements."
+  }
+}

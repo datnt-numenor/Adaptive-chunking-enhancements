@@ -1,0 +1,14 @@
+{
+  "request_hash": "1b4fc8d8e466deb012311d09b84ce228f235e88be65b4b12914f2d92a90b054f",
+  "prompt_sha256": "bd814babf30854b8ea3700f99737e96b8bd33592e059c31d6e12539f7880f76d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei29Jv5cDF8bnJ8IiS9ADXH8Keqvk",
+  "prompt_tokens": 7997,
+  "completion_tokens": 42,
+  "actual_usd": 0.00122475,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive details about the obligations of providers of GPAI models to supply information to downstream providers, fully supporting the claims made in the Reference Answer."
+  }
+}

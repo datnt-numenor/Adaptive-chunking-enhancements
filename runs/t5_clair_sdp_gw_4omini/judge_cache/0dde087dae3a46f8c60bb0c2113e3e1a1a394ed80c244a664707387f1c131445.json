@@ -1,0 +1,14 @@
+{
+  "request_hash": "0dde087dae3a46f8c60bb0c2113e3e1a1a394ed80c244a664707387f1c131445",
+  "prompt_sha256": "dfd50dc8d18ccadab1617fb144c6344461a9162db868ce7de47fa4cce592818c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP0kw9yj9NVDW1IRbx6cbtsJ32ny",
+  "prompt_tokens": 8480,
+  "completion_tokens": 44,
+  "actual_usd": 0.0012984000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about patient data, including the specific patient number, age range, and blood pressure, which fully supports the claims made in the Reference Answer."
+  }
+}

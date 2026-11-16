@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "input_dir": "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\judge-smoke",
+  "expected_queries_per_system": 6,
+  "systems": 3,
+  "rows": 18,
+  "same_query_ids": true,
+  "score_policy": {
+    "raw_outputs_modified": false,
+    "accepted_roundoff_tolerance": 1e-12,
+    "normalized_roundoff_scores": 0
+  },
+  "input_sha256": {
+    "adaptive": "0956b47f28281dcf9afa853d15c6c1716d7759571354fd29e01a9c02cb402cef",
+    "raw__langch_recurs_default": "bc1f93092108060b3177416b1ba4f5f04c135d7e8e0eb00a6deaada35dd76ccf",
+    "raw__page": "fcbe593af847fac7f85aca3ac13faac989bd41de0ff20dfe40a109e5e04ccc8d"
+  },
+  "summary": [
+    {
+      "system": "adaptive",
+      "label": "Adaptive",
+      "retrieval_completeness_mean_pct": 83.33333333333334,
+      "retrieval_completeness_std_pct": 40.8248290463863,
+      "answer_correctness_mean_pct": 82.82440946567675,
+      "answer_correctness_std_pct": 17.265704797964716,
+      "final_score_pct": 83.10200430258034,
+      "coverage_adjusted_correctness_pct": 69.0203412213973,
+      "answered_queries": 5,
+      "abstentions": 1,
+      "total_queries": 6,
+      "normalized_roundoff_scores": 0
+    },
+    {
+      "system": "raw__langch_recurs_default",
+      "label": "Raw LangChain recursive default",
+      "retrieval_completeness_mean_pct": 100.0,
+      "retrieval_completeness_std_pct": 0.0,
+      "answer_correctness_mean_pct": 93.6628182051273,
+      "answer_correctness_std_pct": 9.223742140534863,
+      "final_score_pct": 96.83140910256364,
+      "coverage_adjusted_correctness_pct": 93.6628182051273,
+      "answered_queries": 6,
+      "abstentions": 0,
+      "total_queries": 6,
+      "normalized_roundoff_scores": 0
+    },
+    {
+      "system": "raw__page",
+      "label": "Raw page",
+      "retrieval_completeness_mean_pct": 100.0,
+      "retrieval_completeness_std_pct": 0.0,
+      "answer_correctness_mean_pct": 82.22531894366945,
+      "answer_correctness_std_pct": 15.350806926125177,
+      "final_score_pct": 91.11265947183472,
+      "coverage_adjusted_correctness_pct": 82.22531894366944,
+      "answered_queries": 6,
+      "abstentions": 0,
+      "total_queries": 6,
+      "normalized_roundoff_scores": 0
+    }
+  ]
+}

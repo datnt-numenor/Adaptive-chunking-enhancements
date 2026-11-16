@@ -1,0 +1,14 @@
+{
+  "request_hash": "78960999f124401ed33cdf6c39551eade3e74dd0eb40bbd7d57930691040f2ce",
+  "prompt_sha256": "046d693d7be41c790246e6d9b7f321c7d9210679d6c1ee8e7536367d3de8315c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTCr2XZzQdK8gSiW3I3JD9pRKsq",
+  "prompt_tokens": 4782,
+  "completion_tokens": 59,
+  "actual_usd": 0.0007526999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the requirements for transparency and interpretability in Articles 13 and 14 of the AI Act, as well as the assertion that these do not establish a right to technical interpretability."
+  }
+}

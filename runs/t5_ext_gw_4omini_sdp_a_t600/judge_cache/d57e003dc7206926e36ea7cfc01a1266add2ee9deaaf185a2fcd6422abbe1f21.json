@@ -1,0 +1,14 @@
+{
+  "request_hash": "d57e003dc7206926e36ea7cfc01a1266add2ee9deaaf185a2fcd6422abbe1f21",
+  "prompt_sha256": "4e42b1a022984c5b307c1a2539ec6a72d3e62dbe7db309ebdba155f94a7233f8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpatKuddrJuOFPF1ZnZTFL375hn",
+  "prompt_tokens": 7662,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011775,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that maintaining a lower, more affordable test price is essential for ensuring broad accessibility for all test takers, which fully supports the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,12 @@
+﻿sw0_rc1 metrics file: methods = ['sdp_b_sw0_rc1'] | documents = 33 | same 33 docs as baseline: True
+chunks scored: 2042 chunks, 33 docs; num_chunks metric sum = 2042
+documents with a value, per metric (RC ICC DCC BI SC): [31, 33, 32, 33, 33] | Adaptive: [31, 33, 33, 33, 33] | SDP-B: [31, 33, 33, 33, 33]
+
+row                             RC     ICC     DCC      BI      SC       T  per-doc mean
+Adaptive, rerun              98.96   68.35   88.63   99.42   99.93   91.06         90.95
+SDP-B                        97.81   75.98   85.99   99.94   99.96   91.94         91.85
+SDP-B optimised (sw0_rc1)    99.80   77.76   85.15   99.94   99.96   92.52         92.45
+SDP-B - Adaptive: mean +0.903  CI [+0.64, +1.15]  higher in 31/33  Wilcoxon p = 6.4e-07;  T difference +0.88
+sw0_rc1 - Adaptive: mean +1.504  CI [+1.23, +1.76]  higher in 31/33  Wilcoxon p = 3.3e-09;  T difference +1.47
+T exact: 91.057 91.9364 92.5239 | per-doc exact: 90.9492 92.4537
+doc without DCC in sw0_rc1: ['Norma (légal)_EDPS Generative AI guidelines'] | docs without RC: ["Ada (technique)_Recommandations de sécurité pour un système d'IA générative", 'Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL']

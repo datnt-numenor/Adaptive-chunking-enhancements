@@ -1,0 +1,14 @@
+{
+  "request_hash": "2ae2ee7756d90e5b7fc0403be588bb969d8389e9822effd59fabb1a653b6467e",
+  "prompt_sha256": "edddd06dd8d446b67d7f0daeff755c13b52d9b100638e2ff10680120fd553994",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAvswvYQO2yb2NkEu05BFYwv2Z4",
+  "prompt_tokens": 9212,
+  "completion_tokens": 49,
+  "actual_usd": 0.0014112,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed breakdown of the carbon emissions associated with the training of the BLOOM model, including the initial estimate and subsequent adjustments, fully supporting the claims made in the Reference Answer."
+  }
+}

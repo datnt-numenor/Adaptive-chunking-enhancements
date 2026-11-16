@@ -1,0 +1,14 @@
+{
+  "request_hash": "30f80f0246259b7e21fa6377abc7e53412ed205db5f1169a50048c75930b2e0a",
+  "prompt_sha256": "241a7ebb35b9af5861ea2ed1830950f82cb388f70e8b2fe41f40ac510411108e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei23Ko83kyxPQv4E68Qfx9VqXnI1X",
+  "prompt_tokens": 9818,
+  "completion_tokens": 57,
+  "actual_usd": 0.0015069,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that linear regression, logistic regression, and simple decision trees are directly interpretable, and it also mentions LIME and SHAP as tools for models that are not directly interpretable."
+  }
+}

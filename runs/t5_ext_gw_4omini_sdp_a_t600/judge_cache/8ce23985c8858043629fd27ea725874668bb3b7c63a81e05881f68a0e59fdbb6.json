@@ -1,0 +1,14 @@
+{
+  "request_hash": "8ce23985c8858043629fd27ea725874668bb3b7c63a81e05881f68a0e59fdbb6",
+  "prompt_sha256": "23c4e4bdec94b67a2cfc035e2ab1eb2682045e94dfc6aad5d42d8735b979e455",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMaHZHOkDA4F0oqbJUHCdIdiiaJ",
+  "prompt_tokens": 7522,
+  "completion_tokens": 34,
+  "actual_usd": 0.0011487000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining asset gain and providing examples of the types of special assets involved."
+  }
+}

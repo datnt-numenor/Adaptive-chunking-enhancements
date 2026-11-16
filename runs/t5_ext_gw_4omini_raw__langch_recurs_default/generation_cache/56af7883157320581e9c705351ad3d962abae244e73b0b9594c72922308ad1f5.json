@@ -1,0 +1,10 @@
+{
+  "request_hash": "56af7883157320581e9c705351ad3d962abae244e73b0b9594c72922308ad1f5",
+  "prompt_sha256": "7c33c13c2a14631332cf8cc4d365e4db52393a008b190446045cc029a165e2bf",
+  "answer": "Paper Copilot collects review data for fully open AI/ML conferences by using automated retrieval via public APIs and site bots, which retrieve key metrics such as ratings, confidence levels, and reviewer comments from publicly available review data. For fully closed conferences, where data are not shared publicly during the review process, Paper Copilot invites authors to voluntarily submit anonymized review information via Google Forms embedded on the Paper Copilot website. This community-driven approach allows for the collection of data even when official policies restrict open peer review data.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMzhfA31polb8S8yssZrEKhpVTWL",
+  "prompt_tokens": 8438,
+  "completion_tokens": 103,
+  "actual_usd": 0.0013275
+}

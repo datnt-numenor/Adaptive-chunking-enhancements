@@ -1,0 +1,10 @@
+{
+  "request_hash": "6c7ef8158b004703797f7962118c2e8dd4e67fa3fd68102671f56e7894862bc4",
+  "prompt_sha256": "34470e2e0573f61177732a771d5905e0201e8537116077d62600190f8d18aecb",
+  "answer": "When gemma4 and qwen3.5 disagree on Bluesky moderation, the citation frequency pattern shows that their policy citations diverge substantially. Specifically, gemma4 tends to cite rules related to sexual and figurative content more often, while qwen3.5 cites rules related to porn. For disagreements regarding rude versus safe content, gemma4 more frequently cites the rude definition, whereas qwen3.5 cites the exception rules. This indicates distinct interpretive differences in how the two models operationalize the same policy.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNK9L8WUuxYN8KyrWaveuZqRMQT4",
+  "prompt_tokens": 9161,
+  "completion_tokens": 106,
+  "actual_usd": 0.0014377499999999998
+}

@@ -1,0 +1,544 @@
+{
+ "document_name": "Sophia_CNIL Synthese consultation recommandation IA",
+ "pages": {
+  "1": "# Consultation publique - fiches pratiques sur la constitution de bases de données pour la conception de systèmes d'IA\n\n# Synthèse des contributions\n\n# Février 2024\n\nLa CNIL a lancé, le 11 octobre 2023, une consultation publique sur la constitution de bases de données d'apprentissage des systèmes d'intelligence artificielle.\n\nLes contributions ont nourri les travaux sur ce premier lot de huit fiches pratiques en vue de leur publication définitive sur le site.\n\n<!-- PageBreak -->\n\n",
+  "2": "# La synthèse en chiffres\n\nLa CNIL a publié, le 11 octobre 2023, une première série de huit fiches pratiques sur la constitution de bases de données d'apprentissage des systèmes d'IA, afin d'accompagner les acteurs du secteur dans leurs démarches de mise en conformité avec la législation sur la protection des données personnelles et de répondre à leurs principales interrogations.\n\nÀ l'issue de la consultation publique, le 15 décembre 2023, la CNIL a reçu 42 contributions, par des contributeurs représentatifs de différents secteurs :\n\n- des organismes à but lucratif de différents secteurs (IA, finance, santé, aéronautique, opérateurs de plateformes en ligne, publicité en ligne, jeux vidéo, audiovisuel, etc.) :\n\n- o 10 organisations représentantes des professionnels ;\n\n- o 18 entreprises privées ;\n\n- o 1 cabinet de conseil\n\n- des organismes à but non lucratif :\n\n- o 1 association représentative de la société civile ;\n\n- o 2 instituts de recherche et 1 groupement d'instituts de recherche publique ;\n\n- o 1 think tank indépendant ;\n\n- o 3 syndicats professionnels de salariés.\n\n- 4 particuliers ;\n\n- 3 établissements publics.\n\n# Ces contributions ont permis à la CNIL :\n\n- de faire évoluer ses projets de fiches pratiques en apportant des clarifications supplémentaires et consolider ses analyses au regard des observations formulées dans les contributions ;\n\n- d'apporter des réponses, dans la synthèse ci-dessous, aux préoccupations les plus fréquemment partagées par les contributeurs.\n\n<!-- PageFooter: 2 -->\n\n<!-- PageBreak -->\n\n",
+  "3": "# Contributions d'ordre général sur l'ensemble des fiches\n\n# Sur la valeur juridique des fiches pratiques\n\n# Synthèse des contributions\n\nPlusieurs contributeurs se sont interrogés sur la valeur juridique des fiches ainsi que le caractère contraignant ou non des préconisations qui y sont formulées.\n\n# Réponse de la CNIL\n\nLa fiche introductive a été complété pour souligner que ces fiches rappellent les obligations posées par la règlementation (par exemple, « le responsable du traitement doit (…) ») et formulent des recommandations pour s'y conformer (par exemple, « peut permettre »). Ces recommandations ne sont toutefois pas contraignantes : les responsables de traitement peuvent s'en écarter, à condition de pouvoir justifier leur choix et sous leur responsabilité.\n\nCertaines recommandations sont également formulées à titre de bonnes pratiques (par exemple, « il est recommandé, à titre de bonnes pratiques »). Le suivi de ces bonnes pratiques va au-delà de ce que la règlementation impose.\n\nElle effectue également une distinction plus nette dans les fiches, entre ce qui relève d'un rappel des obligations applicables, de recommandations de mise en conformité ou simplement de bonnes pratiques.\n\n# Sur l'articulation avec la proposition de règlement européen sur l'intelligence artificielle\n\n# Synthèse des contributions\n\nDe nombreux contributeurs jugent qu'il serait utile que les fiches se référent plus explicitement à la proposition de règlement européen sur l'IA (RIA) afin de clarifier leur articulation, au motif que certaines dispositions ou orientations de ce texte seraient déjà stabilisées.\n\nLes problèmes d'articulation identifiés par les acteurs concernent notamment les sujets suivants : la définition de système d'IA, la qualification des acteurs, la définition des risques, les obligations en termes de documentation ainsi que le traitement de données sensibles pour la détection et correction des biais.\n\n# Réponse de la CNIL\n\nDans l'attente de l'adoption définitive du RIA, la CNIL a rappelé, dans la fiche introductive, que le RGPD s'appliquait déjà indépendamment du RIA (qui n'a pas le même champ d'application). Elle précise, lorsque cela est pertinent, certains points d'articulation (en particulier sur la qualification des acteurs et sur la nécessité d'une AIPD pour les systèmes identifiés comme à haut risque dans le RIA).\n\n# Sur le découpage par phases : du développement au déploiement\n\n# Synthèse des contributions\n\nCertaines contributions interrogent le choix de découpage proposé entre les phases de développement et de déploiement.\n\n# Réponse de la CNIL\n\nCe découpage permet une séparation chronologique entre les différentes phases de traitement de données personnelles, qui correspondent à des traitements distincts (possiblement mis en œuvre par des organismes différents) et ainsi des ensembles différents de personnes concernées.\n\nLa CNIL est consciente qu'une part importante des développements actuellement réalisés en IA peut consister à les mettre en œuvre directement ou les adapter à des cas d'usage spécifiques (par apprentissage par transfert ou fine-tuning par exemple). Ces pratiques complexifient le découpage en deux phases proposées par la CNIL. Toutefois, la CNIL ne peut pas exclure le cas où un fournisseur conçoit un modèle entièrement, que cela soit afin de développer un système directement utilisé en phase de déploiement ou d'un modèle général (ou de fondation) qui sera adapté par la suite par le fournisseur ou un tiers. Cette étape est cruciale à encadrer car c'est celle qui fait intervenir la plus grande quantité de données (puisqu'elle consiste à initialiser le modèle) présentant donc des risques pour les personnes concernées.\n\n<!-- PageFooter: 3 -->\n\n<!-- PageBreak -->\n\n",
+  "4": "# Fiche introductive - Le périmètre des fiches pratiques sur l'IA\n\n# Sur le choix de la définition d'IA\n\n# Synthèse des contributions\n\nLe périmètre des systèmes concernés entend englober tous les outils utilisant des données personnelles - donc soumis au RGPD - et utilisant des techniques assimilables à de l'IA. Les contributeurs demandent si la définition choisie correspond à celle du RIA.\n\n# Réponse de la CNIL\n\nLa CNIL propose de clarifier son périmètre en utilisant explicitement la définition du Parlement Européen telle qu'écrite dans la proposition de règlement IA. Une fois le RIA adopté, une mise à jour sera réalisée avec la définition finalement retenue.\n\n# Sur l'inclusion de l'ajustement (fine tuning) dans le périmètre\n\n# Question soulevée\n\nCertains contributeurs demandent à inclure l'ajustement (fine-tuning) dans le périmètre des fiches, voire à découper les phases de traitement en fonction de l'utilisation de modèles préexistants.\n\n# Réponse de la CNIL\n\nLa CNIL a inclus l'ajustement ou encore l'apprentissage par transfert dans son périmètre : ces traitements sont assimilables à des traitements en phase de développement.\n\nSi le fine-tuning d'un modèle existant est un cas courant d'utilisation des modèles d'IA, il ne remet toutefois pas en question le découpage en deux phases de développement et déploiement d'un système d'IA. En effet, le fine-tuning, au même titre que le développement d'un modèle à partir de zéro, nécessite la réalisation de choix de conception, la collecte d'une base de données, ainsi qu'une phase d'apprentissage. L'organisme réalisant le fine-tuning aura un rôle de fournisseur de système pour le modèle qu'il aura conçu et sera tenu par les mêmes obligations.\n\nUne différence est à noter en ce qui concerne le modèle préexistant utilisé comme base pour le fine-tuning : ce modèle sera issu d'une phase de développement antérieure à l'issue de laquelle il aura été transmis ou mis à disposition (par exemple en open source). En l'absence de spécificités au stade du développement, les questionnements relatifs à la transmission ou à la mise à disposition du modèle pré-entraîné ne seront traitées qu'à un stade ultérieur.\n\n# Sur les risques de présence des données personnelles\n\n# Synthèse des contributions\n\nCertains contributeurs demandent des clarifications sur la manière d'identifier les risques de présence de données personnelles dans un jeu de données.\n\n# Réponse de la CNIL\n\nLa présence de données personnelles constitue un risque pour les personnes concernées qui n'est pas assimilable à la notion de risque tel que défini par le RIA. Si les indices permettant d'évaluer la présence de données personnelles sont nombreux, et qu'il n'est pas possible d'en faire la liste exhaustive, des précisions ont toutefois été apportées sur la distinction entre les bases de données contenant possiblement des données à caractère personnel, et celles en contenant très probablement. La CNIL reconnait ainsi que, les volumes mobilisés pour le développement de systèmes d'IA étant potentiellement très important et les données utilisées complexes (texte non structuré, audio, vidéo, etc.), il est dans de nombreux cas très difficile d'être certain qu'aucune donnée personnelle ne figure dans un jeu de données.\n\n<!-- PageFooter: 4 -->\n\n<!-- PageBreak -->\n\n",
+  "5": "# Sur la distinction entre « modèle d'IA » et « système d'IA »\n\n# Synthèse des contributions\n\nPlusieurs contributions ont souligné la nécessité de distinguer les notions de « modèle » et de « système ».\n\n# Réponse de la CNIL\n\nCette distinction, qui recoupe celle entre « modèles de fondation » et « systèmes d'IA à usage général » dégagée notamment au cours des négociations sur le RIA, a été reprise lorsque cela était pertinent. Ainsi, la CNIL considère le modèle comme le produit de l'entrainement réalisé à partir des données d'apprentissage et le système comme l'intégration logicielle du modèle qui pourra ensuite faire l'objet d'un déploiement ou d'un ajustement (fine-tuning).\n\nLa CNIL considère toutefois que cette distinction n'est pas structurante au regard de la conformité au RGPD des traitements de données personnelles en phase de développement.\n\n# Fiche 1 - Déterminer le régime juridique applicable\n\n# Synthèse des contributions\n\nDe nombreuses contributions témoignent d'une incompréhension de l'objectif et du périmètre de la fiche, notamment au regard des éléments suivants :\n\n· l'absence de définition de « régime juridique » ;\n\n· l'absence d'indications quant à l'applicabilité du RGPD ou de la directive « police-justice » ;\n\n· une confusion entre les différents cas présentés.\n\n# Réponse de la CNIL\n\nL'objectif de cette fiche est d'aider le responsable du traitement à déterminer quelle est la réglementation applicable en matière de protection des données (RGPD, directive « police-justice » ou traitements intéressant la défense nationale ou la sûreté de l'État) lors du développement de systèmes d'IA.\n\nEn réponse à ces observations, la CNIL a clarifié la notion de « régime juridique » et intégré des illustrations supplémentaires s'agissant des systèmes d'IA à usage général.\n\n# Fiche 2 - Définir une finalité\n\n# Sur les critères de définition de la finalité pour les systèmes d'IA à usage général\n\n# Synthèse des contributions\n\nPlusieurs contributeurs se sont interrogés sur la pertinence des critères de définition de la finalité pour les systèmes d'IA à usage général :\n\n· une partie des contributeurs considèrent que ces critères sont trop flexibles et qu'ils ne permettent pas de répondre effectivement au critère de précision de la finalité, ce qui pourrait porter préjudice au respect des principes qui en découlent (notamment la minimisation des données et la limitation des finalités) ;\n\n· une autre partie des contributeurs considèrent que ces critères sont trop prescriptifs, compte tenu notamment de l'impossibilité de prévoir les usages des systèmes d'IA dès la phase de développement.\n\n# Réponse de la CNIL\n\nLa CNIL a bien identifié les complexités liées à la définition d'une finalité suffisamment précise.\n\n<!-- PageFooter: 5 -->\n\n<!-- PageBreak -->\n\n",
+  "6": "En réponse, elle rappelle, dans la version définitive de la fiche 2, des critères permettant de prendre en compte les difficultés pour le responsable du traitement de définir, au stade du développement d'un système d'IA, l'ensemble de ses applications futures, tout en garantissant que le principe de finalité soit respecté.\n\nPour assurer la sécurité juridique des acteurs, la CNIL a également clarifié la distinction entre les préconisations qui relèvent ou non de l'ordre de la bonne pratique.\n\n# Sur la réutilisation des données de recherche scientifique à d'autres fins\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont appelé à une clarification de la notion de recherche scientifique ainsi que des conditions dans lesquelles il est envisageable de réutiliser les données d'une recherche scientifique à d'autres fins, notamment commerciales.\n\n# Réponse de la CNIL\n\nLa réutilisation de données anonymisées ou de modèle n'ayant pas mémorisé de données personnelles, même en dehors d'une finalité de recherche, ne pose pas de difficultés.\n\nEn revanche, la CNIL rappelle, dans la version définitive de la fiche 4, le principe selon lequel la réutilisation de données personnelles initialement traitées à des fins de recherche pour des finalités hors recherche n'est légale que pour des finalités jugées compatibles. Ce nouveau traitement devra se conformer à l'ensemble des principes posés par le RGPD (information des personnes, respect des droits, identification d'une nouvelle exception pour le traitement de données sensibles le cas échéant, etc.).\n\n# Fiche 3 - Déterminer la qualification juridique des fournisseurs de systèmes d'IA\n\n# Sur l'articulation avec la proposition de règlement sur l'IA\n\n# Synthèse des contributions\n\nPlusieurs contributions ont appelé à une clarification plus explicite des rôles et qualifications au sens du RGPD en articulation avec la proposition de règlement sur l'IA encore en cours d'élaboration.\n\n# Réponse de la CNIL\n\nBien que le RIA n'ait pas encore été adopté, des développements ont été rajoutés pour clarifier les qualifications qu'un « fournisseur de système d'IA » pourrait endosser au sens du RGPD. Par ailleurs, un exemple illustre désormais le cas particulier de l'ajustement d'un modèle (fine-tuning) qui aurait mémorisé des données personnelles.\n\nEn effet, la diffusion, la conservation ou encore la maintenance d'un tel modèle sont considérés comme des traitements de données personnelles. Cela entraîne des conséquences en termes de responsabilités, notamment pour le fournisseur de tels modèles d'IA.\n\n# Sur la valeur des critères et des exemples donnés\n\n# Synthèse des contributions\n\nCertaines contributions ont estimé que les critères et les exemples de qualification étaient trop prescriptifs.\n\n# Réponse de la CNIL\n\nLa qualification juridique des fournisseurs de systèmes d'IA doit se faire au cas par cas. Cette fiche n'a pas vocation à créer de nouveaux critères, mais bien à éclairer les indices permettant de mener cette analyse, déjà évoqués dans les lignes directrices 07/2020 du Comité européen de protection des données concernant les notions de responsable du traitement et de sous-traitant.\n\n<!-- PageFooter: 6 -->\n\n<!-- PageBreak -->\n\n",
+  "7": "# Fiche 4 - Assurer que le traitement est licite\n\n# La base légale de l'obligation légale\n\n# Synthèse des contributions\n\nPlusieurs contributions s'interrogent sur la possibilité de mobiliser la base légale de l'obligation légale (article 6.1.c du RGPD) pour le développement et l'utilisation de systèmes d'IA pour certaines finalités. Plusieurs exemples sont donnés (lutte contre le blanchiment et financement du terrorisme (LCB-FT) ou encore de modération de contenus).\n\n# Réponse de la CNIL\n\nLa CNIL a complété la fiche pour préciser les limites de l'obligation légale comme base légale pertinente pour le développement de modèle. Cela n'interdit toutefois pas de recourir à un système d'IA déjà développé pour répondre à une obligation légale lorsque les conditions de mobilisation de la base juridique sont remplies.\n\n# Sur le traitement de données sensibles de manière incidente\n\n# Synthèse des contributions\n\nPlusieurs contributeurs s'interrogent sur la présence incidente de données sensibles dans les bases de données d'apprentissage. Ils soulignent la difficulté voire l'impossibilité, dans certains cas, de garantir l'absence de données sensibles, notamment lorsque la base de données est constituée par la collecte de données en ligne.\n\n# Réponse de la CNIL\n\nLe traitement de données sensibles n'est possible, en principe, que sur le fondement de l'une des exceptions limitativement listées à l'article 9.1 du RGPD.\n\nÀ noter : une précision est ajoutée sur les conditions dégagées par la jurisprudence récente (CJUE, 4 juillet 2023, affaire C-252/21) pour mobiliser l'exception relative à la collecte des données « manifestement rendues publiques ».\n\nLa CNIL a précisé les règles applicables en cas de collecte incidente de données sensibles lors de l'utilisation d'outils de moissonnage (web scraping) pour la constitution de bases de données d'IA :\n\n· Le responsable du traitement est tenu de mettre en œuvre toutes les mesures permettant d'exclure automatiquement la collecte de données sensibles non pertinentes. Il doit notamment appliquer des filtres empêchant la collecte de certaines catégories de données et/ou s'abstenir de réaliser la collecte sur certains sites comportant des données sensibles par nature.\n\n· Si, malgré les mesures prises, l'organisme traite de manière incidente et résiduelle des données sensibles qu'il n'avait pas cherché à collecter, cela n'est pas considéré comme illégal. En revanche, si l'organisme vient à savoir qu'il traite des données sensibles, il est tenu de procéder, autant que possible, à leur suppression immédiate et automatisée.\n\n# Sur les vérifications supplémentaires en cas de réutilisation de bases de données librement accessibles\n\n# Synthèse des contributions\n\nCertains contributeurs considèrent que les préconisations relatives aux vérifications à opérer pour s'assurer qu'une base de données n'a pas fait l'objet d'une décision de justice interdisant sa réutilisation sont trop contraignantes. Plusieurs contributeurs demandent également de clarifier la question relative à la preuve de l'absence de « doutes flagrants » sur la licéité de la base de données et de préciser les procédures détaillées pour la vérification de la légalité des bases de données réutilisées.\n\n<!-- PageFooter: 7 -->\n\n<!-- PageBreak -->\n\n",
+  "8": "# Réponse de la CNIL\n\nL'illicéité manifeste doit s'apprécier au cas par cas. De ce fait, la CNIL considère qu'il appartiendra au responsable du traitement d'effectuer les vérifications nécessaires selon le cas de figure.\n\n# Fiche 5 - Réaliser une analyse d'impact si nécessaire\n\n# Sur l'articulation avec la proposition de règlement européen sur l'IA\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont souligné que l'approche par les risques de la proposition du RIA n'était pas la même que celle conduisant à la réalisation d'une AIPD. En particulier, il a été demandé de clarifier si une AIPD était obligatoire pour les systèmes à haut risque dont le développement nécessite de traiter des données personnelles.\n\n# Réponse de la CNIL\n\nConformément à la position tenue par la CNIL et ses homologues dans l'opinion publiée conjointement avec le contrôleur européen à la protection des données, il est précisé qu'une AIPD serait obligatoire pour les systèmes classés à haut risque par la proposition de RIA.\n\nDes précisions supplémentaires sur la nécessité d'une AIPD pour les modèles de fondation et sur les systèmes à usage général ont par ailleurs été apportées.\n\nEnfin, en réponse aux interrogations de plusieurs contributeurs, des précisions ont été apportées concernant l'articulation entre les exigences de documentation de la proposition de RIA et la réalisation d'une AIPD, de nombreux éléments pouvant être communs aux deux productions.\n\n# Sur l'évaluation des risques sur les modèles provenant de tiers\n\n# Synthèse des contributions\n\nCertaines contributions ont soulevé qu'il pouvait être difficile de réaliser une AIPD pour les concepteurs de systèmes reposant sur des modèles tiers pré-entraînés (qu'ils adaptent à leurs besoins par ajustement, ou finetuning par exemple).\n\n# Réponse de la CNIL\n\nLa CNIL considère que la recommandation, formulée à l'intention des concepteurs de modèles, de réaliser une AIPD afin de la transmettre aux réutilisateurs, et notamment à ceux souhaitant les intégrer dans leur propre phase de développement (notamment pour l'ajustement) est une mesure suffisante pour permettre aux utilisateurs de modèles pré-entrainés de réaliser leur propre AIPD.\n\nPar ailleurs, la recommandation de la CNIL invitant les concepteurs de modèles à rendre publiques leurs AIPD doit apporter des garanties sur la transmission des informations nécessaires aux utilisateurs pour la réalisation de leur propre AIPD dans le cas des modèles publiés en source ouverte. Pour être conformes aux attentes de la CNIL, ces AIPD doivent être suffisamment complètes afin de permettre aux utilisateurs d'évaluer les risques liés à l'utilisation du modèle au sein de leur traitement.\n\n# Sur les critères nécessitant la réalisation d'une AIPD\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont soulevé que ces critères, parmi lesquels figurent les « usages innovants » et les « traitements à grande échelle », pouvaient être difficiles à apprécier sans un seuil exact. Ils invitent la CNIL à apporter ces précisions.\n\n<!-- PageFooter: 8 -->\n\n<!-- PageBreak -->\n\n",
+  "9": "# Réponse de la CNIL\n\nLa CNIL considère que l'identification de ces seuils ne peut se faire d'une manière générale pour l'ensemble des traitements concernés. Elle relève de l'appréciation des responsables de traitement, qui devront tenir compte du contexte propre à leur traitement.\n\n# Fiche 6 - Tenir compte de la protection des données dans la conception du système\n\n# Sur le respect du principe de minimisation\n\n# Synthèse des contributions\n\nLes contributeurs relèvent que le principe de minimisation semble difficile à articuler avec le développement d'un système d'IA.\n\nEn particulier, les contributeurs signalent qu'il peut être difficile d'anticiper quelle sera l'architecture la plus adéquate avant d'avoir testé le système sur des données, par exemple en phase pilote.\n\n# Réponse de la CNIL\n\nSi le principe de minimisation demande que la méthode choisie pour atteindre un objectif soit la plus économe possible en données, il ne prévoit pas de seuil explicite et n'interdit pas la collecte de grands ensembles de données. En revanche, la CNIL appelle à anticiper le mieux possible la collecte de données et à identifier les données nécessaires avant de se lancer dans la collecte, afin de permettre de ne traiter que ce qui est strictement nécessaire à la conception du système d'IA. Les conditions du respect du principe de minimisation ont à cet égard été clarifiées : les méthodes d'apprentissage profond doivent être réservées aux cas où aucune alternative plus économe n'existe, et doivent être justifiées. De la même manière, les solutions nécessitant de recourir à des types de données particulièrement identifiantes comme des vidéos ou des photos doit être nécessaire à l'atteinte de l'objectif.\n\n# Sur le rôle du Comité éthique\n\n# Synthèse des contributions\n\nPlusieurs contributions demandent des précisions concernant le rôle d'un comité éthique.\n\n# Réponse de la CNIL\n\nLa constitution et la consultation d'un tel comité est une bonne pratique à associer à la validation d'un projet de développement d'IA qui ne saurait être assimilée à de la gouvernance, ni se substituer aux autorités compétentes en la matière. Même s'il peut intégrer des membres externes, son rôle est de donner un avis interne sur la pertinence de la poursuite d'un projet d'IA.\n\nEtant donné que la constitution d'un comité éthique dépend de la taille et des moyens de la structure dont il dépend, une bonne pratique alternative peut aussi être de consulter ou de mobiliser un « référent IA ».\n\n# Fiche 7 - Tenir compte de la protection des données dans la collecte et la gestion des données\n\n# Sur la conservation des données à des fins d'audit\n\n# Synthèse des contributions\n\nLes contributions ont souligné que la limitation de la durée de conservation pour les données d'apprentissage pouvait être un frein à la réalisation d'audit du système d'IA et en particulier à la mesure des biais.\n\n<!-- PageFooter: 9 -->\n\n<!-- PageBreak -->\n\n",
+  "10": "# Réponse de la CNIL\n\nD'un point de vue technique, ces analyses sont en effet souvent facilitées par un accès aux données d'apprentissage. La possibilité de conduire ces audits est d'une importance cruciale à la sécurité des systèmes en phase de déploiement, en particulier au regard du risque de discrimination qu'ils comportent.\n\nS'il était déjà précisé dans la fiche que des audits sont prévus dans la phase de maintenance qui peut justifier une conservation des données, la CNIL a souhaité clarifier sa position. La fiche a ainsi été modifiée de sorte à :\n\n· préciser qu'il est possible, après une phase de tri, de conserver les données d'apprentissage à des fins d'audit ;\n\n· indiquer que cette conservation nécessite la mise en œuvre de certaines garanties de sécurité portant notamment sur la restriction des accès aux données, leur chiffrement et leur pseudonymisation ou anonymisation dès que cela est possible.\n\nEn revanche, la conservation des données ne peut être justifiée par anticipation qu'un éventuel contentieux nécessite l'accès aux données pour sa résolution.\n\n<!-- PageFooter: 10 -->\n\n"
+ },
+ "full_text": "# Consultation publique - fiches pratiques sur la constitution de bases de données pour la conception de systèmes d'IA\n\n# Synthèse des contributions\n\n# Février 2024\n\nLa CNIL a lancé, le 11 octobre 2023, une consultation publique sur la constitution de bases de données d'apprentissage des systèmes d'intelligence artificielle.\n\nLes contributions ont nourri les travaux sur ce premier lot de huit fiches pratiques en vue de leur publication définitive sur le site.\n\n<!-- PageBreak -->\n\n# La synthèse en chiffres\n\nLa CNIL a publié, le 11 octobre 2023, une première série de huit fiches pratiques sur la constitution de bases de données d'apprentissage des systèmes d'IA, afin d'accompagner les acteurs du secteur dans leurs démarches de mise en conformité avec la législation sur la protection des données personnelles et de répondre à leurs principales interrogations.\n\nÀ l'issue de la consultation publique, le 15 décembre 2023, la CNIL a reçu 42 contributions, par des contributeurs représentatifs de différents secteurs :\n\n- des organismes à but lucratif de différents secteurs (IA, finance, santé, aéronautique, opérateurs de plateformes en ligne, publicité en ligne, jeux vidéo, audiovisuel, etc.) :\n\n- o 10 organisations représentantes des professionnels ;\n\n- o 18 entreprises privées ;\n\n- o 1 cabinet de conseil\n\n- des organismes à but non lucratif :\n\n- o 1 association représentative de la société civile ;\n\n- o 2 instituts de recherche et 1 groupement d'instituts de recherche publique ;\n\n- o 1 think tank indépendant ;\n\n- o 3 syndicats professionnels de salariés.\n\n- 4 particuliers ;\n\n- 3 établissements publics.\n\n# Ces contributions ont permis à la CNIL :\n\n- de faire évoluer ses projets de fiches pratiques en apportant des clarifications supplémentaires et consolider ses analyses au regard des observations formulées dans les contributions ;\n\n- d'apporter des réponses, dans la synthèse ci-dessous, aux préoccupations les plus fréquemment partagées par les contributeurs.\n\n<!-- PageFooter: 2 -->\n\n<!-- PageBreak -->\n\n# Contributions d'ordre général sur l'ensemble des fiches\n\n# Sur la valeur juridique des fiches pratiques\n\n# Synthèse des contributions\n\nPlusieurs contributeurs se sont interrogés sur la valeur juridique des fiches ainsi que le caractère contraignant ou non des préconisations qui y sont formulées.\n\n# Réponse de la CNIL\n\nLa fiche introductive a été complété pour souligner que ces fiches rappellent les obligations posées par la règlementation (par exemple, « le responsable du traitement doit (…) ») et formulent des recommandations pour s'y conformer (par exemple, « peut permettre »). Ces recommandations ne sont toutefois pas contraignantes : les responsables de traitement peuvent s'en écarter, à condition de pouvoir justifier leur choix et sous leur responsabilité.\n\nCertaines recommandations sont également formulées à titre de bonnes pratiques (par exemple, « il est recommandé, à titre de bonnes pratiques »). Le suivi de ces bonnes pratiques va au-delà de ce que la règlementation impose.\n\nElle effectue également une distinction plus nette dans les fiches, entre ce qui relève d'un rappel des obligations applicables, de recommandations de mise en conformité ou simplement de bonnes pratiques.\n\n# Sur l'articulation avec la proposition de règlement européen sur l'intelligence artificielle\n\n# Synthèse des contributions\n\nDe nombreux contributeurs jugent qu'il serait utile que les fiches se référent plus explicitement à la proposition de règlement européen sur l'IA (RIA) afin de clarifier leur articulation, au motif que certaines dispositions ou orientations de ce texte seraient déjà stabilisées.\n\nLes problèmes d'articulation identifiés par les acteurs concernent notamment les sujets suivants : la définition de système d'IA, la qualification des acteurs, la définition des risques, les obligations en termes de documentation ainsi que le traitement de données sensibles pour la détection et correction des biais.\n\n# Réponse de la CNIL\n\nDans l'attente de l'adoption définitive du RIA, la CNIL a rappelé, dans la fiche introductive, que le RGPD s'appliquait déjà indépendamment du RIA (qui n'a pas le même champ d'application). Elle précise, lorsque cela est pertinent, certains points d'articulation (en particulier sur la qualification des acteurs et sur la nécessité d'une AIPD pour les systèmes identifiés comme à haut risque dans le RIA).\n\n# Sur le découpage par phases : du développement au déploiement\n\n# Synthèse des contributions\n\nCertaines contributions interrogent le choix de découpage proposé entre les phases de développement et de déploiement.\n\n# Réponse de la CNIL\n\nCe découpage permet une séparation chronologique entre les différentes phases de traitement de données personnelles, qui correspondent à des traitements distincts (possiblement mis en œuvre par des organismes différents) et ainsi des ensembles différents de personnes concernées.\n\nLa CNIL est consciente qu'une part importante des développements actuellement réalisés en IA peut consister à les mettre en œuvre directement ou les adapter à des cas d'usage spécifiques (par apprentissage par transfert ou fine-tuning par exemple). Ces pratiques complexifient le découpage en deux phases proposées par la CNIL. Toutefois, la CNIL ne peut pas exclure le cas où un fournisseur conçoit un modèle entièrement, que cela soit afin de développer un système directement utilisé en phase de déploiement ou d'un modèle général (ou de fondation) qui sera adapté par la suite par le fournisseur ou un tiers. Cette étape est cruciale à encadrer car c'est celle qui fait intervenir la plus grande quantité de données (puisqu'elle consiste à initialiser le modèle) présentant donc des risques pour les personnes concernées.\n\n<!-- PageFooter: 3 -->\n\n<!-- PageBreak -->\n\n# Fiche introductive - Le périmètre des fiches pratiques sur l'IA\n\n# Sur le choix de la définition d'IA\n\n# Synthèse des contributions\n\nLe périmètre des systèmes concernés entend englober tous les outils utilisant des données personnelles - donc soumis au RGPD - et utilisant des techniques assimilables à de l'IA. Les contributeurs demandent si la définition choisie correspond à celle du RIA.\n\n# Réponse de la CNIL\n\nLa CNIL propose de clarifier son périmètre en utilisant explicitement la définition du Parlement Européen telle qu'écrite dans la proposition de règlement IA. Une fois le RIA adopté, une mise à jour sera réalisée avec la définition finalement retenue.\n\n# Sur l'inclusion de l'ajustement (fine tuning) dans le périmètre\n\n# Question soulevée\n\nCertains contributeurs demandent à inclure l'ajustement (fine-tuning) dans le périmètre des fiches, voire à découper les phases de traitement en fonction de l'utilisation de modèles préexistants.\n\n# Réponse de la CNIL\n\nLa CNIL a inclus l'ajustement ou encore l'apprentissage par transfert dans son périmètre : ces traitements sont assimilables à des traitements en phase de développement.\n\nSi le fine-tuning d'un modèle existant est un cas courant d'utilisation des modèles d'IA, il ne remet toutefois pas en question le découpage en deux phases de développement et déploiement d'un système d'IA. En effet, le fine-tuning, au même titre que le développement d'un modèle à partir de zéro, nécessite la réalisation de choix de conception, la collecte d'une base de données, ainsi qu'une phase d'apprentissage. L'organisme réalisant le fine-tuning aura un rôle de fournisseur de système pour le modèle qu'il aura conçu et sera tenu par les mêmes obligations.\n\nUne différence est à noter en ce qui concerne le modèle préexistant utilisé comme base pour le fine-tuning : ce modèle sera issu d'une phase de développement antérieure à l'issue de laquelle il aura été transmis ou mis à disposition (par exemple en open source). En l'absence de spécificités au stade du développement, les questionnements relatifs à la transmission ou à la mise à disposition du modèle pré-entraîné ne seront traitées qu'à un stade ultérieur.\n\n# Sur les risques de présence des données personnelles\n\n# Synthèse des contributions\n\nCertains contributeurs demandent des clarifications sur la manière d'identifier les risques de présence de données personnelles dans un jeu de données.\n\n# Réponse de la CNIL\n\nLa présence de données personnelles constitue un risque pour les personnes concernées qui n'est pas assimilable à la notion de risque tel que défini par le RIA. Si les indices permettant d'évaluer la présence de données personnelles sont nombreux, et qu'il n'est pas possible d'en faire la liste exhaustive, des précisions ont toutefois été apportées sur la distinction entre les bases de données contenant possiblement des données à caractère personnel, et celles en contenant très probablement. La CNIL reconnait ainsi que, les volumes mobilisés pour le développement de systèmes d'IA étant potentiellement très important et les données utilisées complexes (texte non structuré, audio, vidéo, etc.), il est dans de nombreux cas très difficile d'être certain qu'aucune donnée personnelle ne figure dans un jeu de données.\n\n<!-- PageFooter: 4 -->\n\n<!-- PageBreak -->\n\n# Sur la distinction entre « modèle d'IA » et « système d'IA »\n\n# Synthèse des contributions\n\nPlusieurs contributions ont souligné la nécessité de distinguer les notions de « modèle » et de « système ».\n\n# Réponse de la CNIL\n\nCette distinction, qui recoupe celle entre « modèles de fondation » et « systèmes d'IA à usage général » dégagée notamment au cours des négociations sur le RIA, a été reprise lorsque cela était pertinent. Ainsi, la CNIL considère le modèle comme le produit de l'entrainement réalisé à partir des données d'apprentissage et le système comme l'intégration logicielle du modèle qui pourra ensuite faire l'objet d'un déploiement ou d'un ajustement (fine-tuning).\n\nLa CNIL considère toutefois que cette distinction n'est pas structurante au regard de la conformité au RGPD des traitements de données personnelles en phase de développement.\n\n# Fiche 1 - Déterminer le régime juridique applicable\n\n# Synthèse des contributions\n\nDe nombreuses contributions témoignent d'une incompréhension de l'objectif et du périmètre de la fiche, notamment au regard des éléments suivants :\n\n· l'absence de définition de « régime juridique » ;\n\n· l'absence d'indications quant à l'applicabilité du RGPD ou de la directive « police-justice » ;\n\n· une confusion entre les différents cas présentés.\n\n# Réponse de la CNIL\n\nL'objectif de cette fiche est d'aider le responsable du traitement à déterminer quelle est la réglementation applicable en matière de protection des données (RGPD, directive « police-justice » ou traitements intéressant la défense nationale ou la sûreté de l'État) lors du développement de systèmes d'IA.\n\nEn réponse à ces observations, la CNIL a clarifié la notion de « régime juridique » et intégré des illustrations supplémentaires s'agissant des systèmes d'IA à usage général.\n\n# Fiche 2 - Définir une finalité\n\n# Sur les critères de définition de la finalité pour les systèmes d'IA à usage général\n\n# Synthèse des contributions\n\nPlusieurs contributeurs se sont interrogés sur la pertinence des critères de définition de la finalité pour les systèmes d'IA à usage général :\n\n· une partie des contributeurs considèrent que ces critères sont trop flexibles et qu'ils ne permettent pas de répondre effectivement au critère de précision de la finalité, ce qui pourrait porter préjudice au respect des principes qui en découlent (notamment la minimisation des données et la limitation des finalités) ;\n\n· une autre partie des contributeurs considèrent que ces critères sont trop prescriptifs, compte tenu notamment de l'impossibilité de prévoir les usages des systèmes d'IA dès la phase de développement.\n\n# Réponse de la CNIL\n\nLa CNIL a bien identifié les complexités liées à la définition d'une finalité suffisamment précise.\n\n<!-- PageFooter: 5 -->\n\n<!-- PageBreak -->\n\nEn réponse, elle rappelle, dans la version définitive de la fiche 2, des critères permettant de prendre en compte les difficultés pour le responsable du traitement de définir, au stade du développement d'un système d'IA, l'ensemble de ses applications futures, tout en garantissant que le principe de finalité soit respecté.\n\nPour assurer la sécurité juridique des acteurs, la CNIL a également clarifié la distinction entre les préconisations qui relèvent ou non de l'ordre de la bonne pratique.\n\n# Sur la réutilisation des données de recherche scientifique à d'autres fins\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont appelé à une clarification de la notion de recherche scientifique ainsi que des conditions dans lesquelles il est envisageable de réutiliser les données d'une recherche scientifique à d'autres fins, notamment commerciales.\n\n# Réponse de la CNIL\n\nLa réutilisation de données anonymisées ou de modèle n'ayant pas mémorisé de données personnelles, même en dehors d'une finalité de recherche, ne pose pas de difficultés.\n\nEn revanche, la CNIL rappelle, dans la version définitive de la fiche 4, le principe selon lequel la réutilisation de données personnelles initialement traitées à des fins de recherche pour des finalités hors recherche n'est légale que pour des finalités jugées compatibles. Ce nouveau traitement devra se conformer à l'ensemble des principes posés par le RGPD (information des personnes, respect des droits, identification d'une nouvelle exception pour le traitement de données sensibles le cas échéant, etc.).\n\n# Fiche 3 - Déterminer la qualification juridique des fournisseurs de systèmes d'IA\n\n# Sur l'articulation avec la proposition de règlement sur l'IA\n\n# Synthèse des contributions\n\nPlusieurs contributions ont appelé à une clarification plus explicite des rôles et qualifications au sens du RGPD en articulation avec la proposition de règlement sur l'IA encore en cours d'élaboration.\n\n# Réponse de la CNIL\n\nBien que le RIA n'ait pas encore été adopté, des développements ont été rajoutés pour clarifier les qualifications qu'un « fournisseur de système d'IA » pourrait endosser au sens du RGPD. Par ailleurs, un exemple illustre désormais le cas particulier de l'ajustement d'un modèle (fine-tuning) qui aurait mémorisé des données personnelles.\n\nEn effet, la diffusion, la conservation ou encore la maintenance d'un tel modèle sont considérés comme des traitements de données personnelles. Cela entraîne des conséquences en termes de responsabilités, notamment pour le fournisseur de tels modèles d'IA.\n\n# Sur la valeur des critères et des exemples donnés\n\n# Synthèse des contributions\n\nCertaines contributions ont estimé que les critères et les exemples de qualification étaient trop prescriptifs.\n\n# Réponse de la CNIL\n\nLa qualification juridique des fournisseurs de systèmes d'IA doit se faire au cas par cas. Cette fiche n'a pas vocation à créer de nouveaux critères, mais bien à éclairer les indices permettant de mener cette analyse, déjà évoqués dans les lignes directrices 07/2020 du Comité européen de protection des données concernant les notions de responsable du traitement et de sous-traitant.\n\n<!-- PageFooter: 6 -->\n\n<!-- PageBreak -->\n\n# Fiche 4 - Assurer que le traitement est licite\n\n# La base légale de l'obligation légale\n\n# Synthèse des contributions\n\nPlusieurs contributions s'interrogent sur la possibilité de mobiliser la base légale de l'obligation légale (article 6.1.c du RGPD) pour le développement et l'utilisation de systèmes d'IA pour certaines finalités. Plusieurs exemples sont donnés (lutte contre le blanchiment et financement du terrorisme (LCB-FT) ou encore de modération de contenus).\n\n# Réponse de la CNIL\n\nLa CNIL a complété la fiche pour préciser les limites de l'obligation légale comme base légale pertinente pour le développement de modèle. Cela n'interdit toutefois pas de recourir à un système d'IA déjà développé pour répondre à une obligation légale lorsque les conditions de mobilisation de la base juridique sont remplies.\n\n# Sur le traitement de données sensibles de manière incidente\n\n# Synthèse des contributions\n\nPlusieurs contributeurs s'interrogent sur la présence incidente de données sensibles dans les bases de données d'apprentissage. Ils soulignent la difficulté voire l'impossibilité, dans certains cas, de garantir l'absence de données sensibles, notamment lorsque la base de données est constituée par la collecte de données en ligne.\n\n# Réponse de la CNIL\n\nLe traitement de données sensibles n'est possible, en principe, que sur le fondement de l'une des exceptions limitativement listées à l'article 9.1 du RGPD.\n\nÀ noter : une précision est ajoutée sur les conditions dégagées par la jurisprudence récente (CJUE, 4 juillet 2023, affaire C-252/21) pour mobiliser l'exception relative à la collecte des données « manifestement rendues publiques ».\n\nLa CNIL a précisé les règles applicables en cas de collecte incidente de données sensibles lors de l'utilisation d'outils de moissonnage (web scraping) pour la constitution de bases de données d'IA :\n\n· Le responsable du traitement est tenu de mettre en œuvre toutes les mesures permettant d'exclure automatiquement la collecte de données sensibles non pertinentes. Il doit notamment appliquer des filtres empêchant la collecte de certaines catégories de données et/ou s'abstenir de réaliser la collecte sur certains sites comportant des données sensibles par nature.\n\n· Si, malgré les mesures prises, l'organisme traite de manière incidente et résiduelle des données sensibles qu'il n'avait pas cherché à collecter, cela n'est pas considéré comme illégal. En revanche, si l'organisme vient à savoir qu'il traite des données sensibles, il est tenu de procéder, autant que possible, à leur suppression immédiate et automatisée.\n\n# Sur les vérifications supplémentaires en cas de réutilisation de bases de données librement accessibles\n\n# Synthèse des contributions\n\nCertains contributeurs considèrent que les préconisations relatives aux vérifications à opérer pour s'assurer qu'une base de données n'a pas fait l'objet d'une décision de justice interdisant sa réutilisation sont trop contraignantes. Plusieurs contributeurs demandent également de clarifier la question relative à la preuve de l'absence de « doutes flagrants » sur la licéité de la base de données et de préciser les procédures détaillées pour la vérification de la légalité des bases de données réutilisées.\n\n<!-- PageFooter: 7 -->\n\n<!-- PageBreak -->\n\n# Réponse de la CNIL\n\nL'illicéité manifeste doit s'apprécier au cas par cas. De ce fait, la CNIL considère qu'il appartiendra au responsable du traitement d'effectuer les vérifications nécessaires selon le cas de figure.\n\n# Fiche 5 - Réaliser une analyse d'impact si nécessaire\n\n# Sur l'articulation avec la proposition de règlement européen sur l'IA\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont souligné que l'approche par les risques de la proposition du RIA n'était pas la même que celle conduisant à la réalisation d'une AIPD. En particulier, il a été demandé de clarifier si une AIPD était obligatoire pour les systèmes à haut risque dont le développement nécessite de traiter des données personnelles.\n\n# Réponse de la CNIL\n\nConformément à la position tenue par la CNIL et ses homologues dans l'opinion publiée conjointement avec le contrôleur européen à la protection des données, il est précisé qu'une AIPD serait obligatoire pour les systèmes classés à haut risque par la proposition de RIA.\n\nDes précisions supplémentaires sur la nécessité d'une AIPD pour les modèles de fondation et sur les systèmes à usage général ont par ailleurs été apportées.\n\nEnfin, en réponse aux interrogations de plusieurs contributeurs, des précisions ont été apportées concernant l'articulation entre les exigences de documentation de la proposition de RIA et la réalisation d'une AIPD, de nombreux éléments pouvant être communs aux deux productions.\n\n# Sur l'évaluation des risques sur les modèles provenant de tiers\n\n# Synthèse des contributions\n\nCertaines contributions ont soulevé qu'il pouvait être difficile de réaliser une AIPD pour les concepteurs de systèmes reposant sur des modèles tiers pré-entraînés (qu'ils adaptent à leurs besoins par ajustement, ou finetuning par exemple).\n\n# Réponse de la CNIL\n\nLa CNIL considère que la recommandation, formulée à l'intention des concepteurs de modèles, de réaliser une AIPD afin de la transmettre aux réutilisateurs, et notamment à ceux souhaitant les intégrer dans leur propre phase de développement (notamment pour l'ajustement) est une mesure suffisante pour permettre aux utilisateurs de modèles pré-entrainés de réaliser leur propre AIPD.\n\nPar ailleurs, la recommandation de la CNIL invitant les concepteurs de modèles à rendre publiques leurs AIPD doit apporter des garanties sur la transmission des informations nécessaires aux utilisateurs pour la réalisation de leur propre AIPD dans le cas des modèles publiés en source ouverte. Pour être conformes aux attentes de la CNIL, ces AIPD doivent être suffisamment complètes afin de permettre aux utilisateurs d'évaluer les risques liés à l'utilisation du modèle au sein de leur traitement.\n\n# Sur les critères nécessitant la réalisation d'une AIPD\n\n# Synthèse des contributions\n\nPlusieurs contributeurs ont soulevé que ces critères, parmi lesquels figurent les « usages innovants » et les « traitements à grande échelle », pouvaient être difficiles à apprécier sans un seuil exact. Ils invitent la CNIL à apporter ces précisions.\n\n<!-- PageFooter: 8 -->\n\n<!-- PageBreak -->\n\n# Réponse de la CNIL\n\nLa CNIL considère que l'identification de ces seuils ne peut se faire d'une manière générale pour l'ensemble des traitements concernés. Elle relève de l'appréciation des responsables de traitement, qui devront tenir compte du contexte propre à leur traitement.\n\n# Fiche 6 - Tenir compte de la protection des données dans la conception du système\n\n# Sur le respect du principe de minimisation\n\n# Synthèse des contributions\n\nLes contributeurs relèvent que le principe de minimisation semble difficile à articuler avec le développement d'un système d'IA.\n\nEn particulier, les contributeurs signalent qu'il peut être difficile d'anticiper quelle sera l'architecture la plus adéquate avant d'avoir testé le système sur des données, par exemple en phase pilote.\n\n# Réponse de la CNIL\n\nSi le principe de minimisation demande que la méthode choisie pour atteindre un objectif soit la plus économe possible en données, il ne prévoit pas de seuil explicite et n'interdit pas la collecte de grands ensembles de données. En revanche, la CNIL appelle à anticiper le mieux possible la collecte de données et à identifier les données nécessaires avant de se lancer dans la collecte, afin de permettre de ne traiter que ce qui est strictement nécessaire à la conception du système d'IA. Les conditions du respect du principe de minimisation ont à cet égard été clarifiées : les méthodes d'apprentissage profond doivent être réservées aux cas où aucune alternative plus économe n'existe, et doivent être justifiées. De la même manière, les solutions nécessitant de recourir à des types de données particulièrement identifiantes comme des vidéos ou des photos doit être nécessaire à l'atteinte de l'objectif.\n\n# Sur le rôle du Comité éthique\n\n# Synthèse des contributions\n\nPlusieurs contributions demandent des précisions concernant le rôle d'un comité éthique.\n\n# Réponse de la CNIL\n\nLa constitution et la consultation d'un tel comité est une bonne pratique à associer à la validation d'un projet de développement d'IA qui ne saurait être assimilée à de la gouvernance, ni se substituer aux autorités compétentes en la matière. Même s'il peut intégrer des membres externes, son rôle est de donner un avis interne sur la pertinence de la poursuite d'un projet d'IA.\n\nEtant donné que la constitution d'un comité éthique dépend de la taille et des moyens de la structure dont il dépend, une bonne pratique alternative peut aussi être de consulter ou de mobiliser un « référent IA ».\n\n# Fiche 7 - Tenir compte de la protection des données dans la collecte et la gestion des données\n\n# Sur la conservation des données à des fins d'audit\n\n# Synthèse des contributions\n\nLes contributions ont souligné que la limitation de la durée de conservation pour les données d'apprentissage pouvait être un frein à la réalisation d'audit du système d'IA et en particulier à la mesure des biais.\n\n<!-- PageFooter: 9 -->\n\n<!-- PageBreak -->\n\n# Réponse de la CNIL\n\nD'un point de vue technique, ces analyses sont en effet souvent facilitées par un accès aux données d'apprentissage. La possibilité de conduire ces audits est d'une importance cruciale à la sécurité des systèmes en phase de déploiement, en particulier au regard du risque de discrimination qu'ils comportent.\n\nS'il était déjà précisé dans la fiche que des audits sont prévus dans la phase de maintenance qui peut justifier une conservation des données, la CNIL a souhaité clarifier sa position. La fiche a ainsi été modifiée de sorte à :\n\n· préciser qu'il est possible, après une phase de tri, de conserver les données d'apprentissage à des fins d'audit ;\n\n· indiquer que cette conservation nécessite la mise en œuvre de certaines garanties de sécurité portant notamment sur la restriction des accès aux données, leur chiffrement et leur pseudonymisation ou anonymisation dès que cela est possible.\n\nEn revanche, la conservation des données ne peut être justifiée par anticipation qu'un éventuel contentieux nécessite l'accès aux données pour sa résolution.\n\n<!-- PageFooter: 10 -->\n\n",
+ "split_points": [
+  465,
+  485,
+  1623,
+  1986,
+  2010,
+  2030,
+  2330,
+  3238,
+  3964,
+  4393,
+  4608,
+  4911,
+  5738,
+  5762,
+  5782,
+  6177,
+  6452,
+  6737,
+  6930,
+  7497,
+  7958,
+  8197,
+  9043,
+  9067,
+  9087,
+  9291,
+  9773,
+  9949,
+  10388,
+  10892,
+  11715,
+  11838,
+  11862,
+  11882,
+  12379,
+  12739,
+  12933,
+  13446,
+  13829,
+  14449,
+  14645,
+  15053,
+  15077,
+  15097,
+  15569,
+  15919,
+  16345,
+  17687,
+  18335,
+  18359,
+  18379,
+  18601,
+  19102,
+  19834,
+  20173,
+  21080,
+  21420,
+  21444,
+  21464,
+  21748,
+  22243,
+  23178,
+  23331,
+  23950,
+  24347,
+  24371,
+  24391,
+  25472
+ ],
+ "titles": [
+  {
+   "title": "# Consultation publique - fiches pratiques sur la constitution de bases de données pour la conception de systèmes d'IA",
+   "start": 0,
+   "level": 1,
+   "end": 120
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 120,
+   "level": 1,
+   "end": 150
+  },
+  {
+   "title": "# Février 2024",
+   "start": 150,
+   "level": 1,
+   "end": 485
+  },
+  {
+   "title": "# La synthèse en chiffres",
+   "start": 485,
+   "level": 1,
+   "end": 1623
+  },
+  {
+   "title": "# Ces contributions ont permis à la CNIL :",
+   "start": 1623,
+   "level": 1,
+   "end": 2030
+  },
+  {
+   "title": "# Contributions d'ordre général sur l'ensemble des fiches",
+   "start": 2030,
+   "level": 1,
+   "end": 2089
+  },
+  {
+   "title": "# Sur la valeur juridique des fiches pratiques",
+   "start": 2089,
+   "level": 1,
+   "end": 2137
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 2137,
+   "level": 1,
+   "end": 2330
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 2330,
+   "level": 1,
+   "end": 3238
+  },
+  {
+   "title": "# Sur l'articulation avec la proposition de règlement européen sur l'intelligence artificielle",
+   "start": 3238,
+   "level": 1,
+   "end": 3334
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 3334,
+   "level": 1,
+   "end": 3964
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 3964,
+   "level": 1,
+   "end": 4393
+  },
+  {
+   "title": "# Sur le découpage par phases : du développement au déploiement",
+   "start": 4393,
+   "level": 1,
+   "end": 4458
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 4458,
+   "level": 1,
+   "end": 4608
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 4608,
+   "level": 1,
+   "end": 5782
+  },
+  {
+   "title": "# Fiche introductive - Le périmètre des fiches pratiques sur l'IA",
+   "start": 5782,
+   "level": 1,
+   "end": 5849
+  },
+  {
+   "title": "# Sur le choix de la définition d'IA",
+   "start": 5849,
+   "level": 1,
+   "end": 5887
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 5887,
+   "level": 1,
+   "end": 6177
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 6177,
+   "level": 1,
+   "end": 6452
+  },
+  {
+   "title": "# Sur l'inclusion de l'ajustement (fine tuning) dans le périmètre",
+   "start": 6452,
+   "level": 1,
+   "end": 6519
+  },
+  {
+   "title": "# Question soulevée",
+   "start": 6519,
+   "level": 1,
+   "end": 6737
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 6737,
+   "level": 1,
+   "end": 7958
+  },
+  {
+   "title": "# Sur les risques de présence des données personnelles",
+   "start": 7958,
+   "level": 1,
+   "end": 8014
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 8014,
+   "level": 1,
+   "end": 8197
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 8197,
+   "level": 1,
+   "end": 9087
+  },
+  {
+   "title": "# Sur la distinction entre « modèle d'IA » et « système d'IA »",
+   "start": 9087,
+   "level": 1,
+   "end": 9151
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 9151,
+   "level": 1,
+   "end": 9291
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 9291,
+   "level": 1,
+   "end": 9949
+  },
+  {
+   "title": "# Fiche 1 - Déterminer le régime juridique applicable",
+   "start": 9949,
+   "level": 1,
+   "end": 10004
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 10004,
+   "level": 1,
+   "end": 10388
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 10388,
+   "level": 1,
+   "end": 10892
+  },
+  {
+   "title": "# Fiche 2 - Définir une finalité",
+   "start": 10892,
+   "level": 1,
+   "end": 10926
+  },
+  {
+   "title": "# Sur les critères de définition de la finalité pour les systèmes d'IA à usage général",
+   "start": 10926,
+   "level": 1,
+   "end": 11014
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 11014,
+   "level": 1,
+   "end": 11715
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 11715,
+   "level": 1,
+   "end": 12379
+  },
+  {
+   "title": "# Sur la réutilisation des données de recherche scientifique à d'autres fins",
+   "start": 12379,
+   "level": 1,
+   "end": 12457
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 12457,
+   "level": 1,
+   "end": 12739
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 12739,
+   "level": 1,
+   "end": 13446
+  },
+  {
+   "title": "# Fiche 3 - Déterminer la qualification juridique des fournisseurs de systèmes d'IA",
+   "start": 13446,
+   "level": 1,
+   "end": 13531
+  },
+  {
+   "title": "# Sur l'articulation avec la proposition de règlement sur l'IA",
+   "start": 13531,
+   "level": 1,
+   "end": 13595
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 13595,
+   "level": 1,
+   "end": 13829
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 13829,
+   "level": 1,
+   "end": 14449
+  },
+  {
+   "title": "# Sur la valeur des critères et des exemples donnés",
+   "start": 14449,
+   "level": 1,
+   "end": 14502
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 14502,
+   "level": 1,
+   "end": 14645
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 14645,
+   "level": 1,
+   "end": 15097
+  },
+  {
+   "title": "# Fiche 4 - Assurer que le traitement est licite",
+   "start": 15097,
+   "level": 1,
+   "end": 15147
+  },
+  {
+   "title": "# La base légale de l'obligation légale",
+   "start": 15147,
+   "level": 1,
+   "end": 15188
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 15188,
+   "level": 1,
+   "end": 15569
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 15569,
+   "level": 1,
+   "end": 15919
+  },
+  {
+   "title": "# Sur le traitement de données sensibles de manière incidente",
+   "start": 15919,
+   "level": 1,
+   "end": 15982
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 15982,
+   "level": 1,
+   "end": 16345
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 16345,
+   "level": 1,
+   "end": 17687
+  },
+  {
+   "title": "# Sur les vérifications supplémentaires en cas de réutilisation de bases de données librement accessibles",
+   "start": 17687,
+   "level": 1,
+   "end": 17794
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 17794,
+   "level": 1,
+   "end": 18379
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 18379,
+   "level": 1,
+   "end": 18601
+  },
+  {
+   "title": "# Fiche 5 - Réaliser une analyse d'impact si nécessaire",
+   "start": 18601,
+   "level": 1,
+   "end": 18658
+  },
+  {
+   "title": "# Sur l'articulation avec la proposition de règlement européen sur l'IA",
+   "start": 18658,
+   "level": 1,
+   "end": 18731
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 18731,
+   "level": 1,
+   "end": 19102
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 19102,
+   "level": 1,
+   "end": 19834
+  },
+  {
+   "title": "# Sur l'évaluation des risques sur les modèles provenant de tiers",
+   "start": 19834,
+   "level": 1,
+   "end": 19901
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 19901,
+   "level": 1,
+   "end": 20173
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 20173,
+   "level": 1,
+   "end": 21080
+  },
+  {
+   "title": "# Sur les critères nécessitant la réalisation d'une AIPD",
+   "start": 21080,
+   "level": 1,
+   "end": 21138
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 21138,
+   "level": 1,
+   "end": 21464
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 21464,
+   "level": 1,
+   "end": 21748
+  },
+  {
+   "title": "# Fiche 6 - Tenir compte de la protection des données dans la conception du système",
+   "start": 21748,
+   "level": 1,
+   "end": 21833
+  },
+  {
+   "title": "# Sur le respect du principe de minimisation",
+   "start": 21833,
+   "level": 1,
+   "end": 21879
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 21879,
+   "level": 1,
+   "end": 22243
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 22243,
+   "level": 1,
+   "end": 23178
+  },
+  {
+   "title": "# Sur le rôle du Comité éthique",
+   "start": 23178,
+   "level": 1,
+   "end": 23211
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 23211,
+   "level": 1,
+   "end": 23331
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 23331,
+   "level": 1,
+   "end": 23950
+  },
+  {
+   "title": "# Fiche 7 - Tenir compte de la protection des données dans la collecte et la gestion des données",
+   "start": 23950,
+   "level": 1,
+   "end": 24048
+  },
+  {
+   "title": "# Sur la conservation des données à des fins d'audit",
+   "start": 24048,
+   "level": 1,
+   "end": 24102
+  },
+  {
+   "title": "# Synthèse des contributions",
+   "start": 24102,
+   "level": 1,
+   "end": 24391
+  },
+  {
+   "title": "# Réponse de la CNIL",
+   "start": 24391,
+   "level": 1,
+   "end": 25497
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "fa44913bbf419422dc117d03163b504ab88754be132032e19e75db16c16449ba",
+  "prompt_sha256": "cde865408243ece66dcf48bcdee1459420e7debf546f879ebf0d924ef34af2c6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOE1xylz5U2vnNBOUWXhVlafzM0j",
+  "prompt_tokens": 6560,
+  "completion_tokens": 44,
+  "actual_usd": 0.0010104,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the exclusion of non-English documents or sector-specific mitigations, nor does it discuss the need for a systematic review with a wider expert panel."
+  }
+}

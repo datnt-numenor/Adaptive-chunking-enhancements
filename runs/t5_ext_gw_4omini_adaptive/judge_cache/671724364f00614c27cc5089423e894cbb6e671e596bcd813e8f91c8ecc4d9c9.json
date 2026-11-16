@@ -1,0 +1,14 @@
+{
+  "request_hash": "671724364f00614c27cc5089423e894cbb6e671e596bcd813e8f91c8ecc4d9c9",
+  "prompt_sha256": "f351dc3a7dd5a3adb9aa90e18e01f1ea10edee43c54a74e3bc40e3b0359f7fab",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOCUIvNIo7kmzYYf1qZwRcTbulne",
+  "prompt_tokens": 9554,
+  "completion_tokens": 35,
+  "actual_usd": 0.0014540999999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention 'AI in Science' or provide any information that supports the claim made in the reference answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "f483d20f9bc766cf7df0c86bc862a502d0da260cde2bc96029112eef68500dac",
+  "prompt_sha256": "b9ec72d23711b431fed21a39e4f91787c73c5105cb3926ed18befa5e3ee30a37",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQX5OxPXy5BJp6imSpFgJ4GIKzQ",
+  "prompt_tokens": 6860,
+  "completion_tokens": 45,
+  "actual_usd": 0.001056,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by stating that consent, which is crucial for classifying NCII, is not typically discernible from the image itself."
+  }
+}

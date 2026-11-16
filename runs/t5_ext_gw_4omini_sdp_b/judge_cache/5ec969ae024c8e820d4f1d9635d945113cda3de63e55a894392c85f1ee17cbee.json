@@ -1,0 +1,14 @@
+{
+  "request_hash": "5ec969ae024c8e820d4f1d9635d945113cda3de63e55a894392c85f1ee17cbee",
+  "prompt_sha256": "efd5fd3c136f27588743707d6507c62d56fd17e91c1c8d403773ec6538048384",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOUAPGWJVq0ryqI81GImNjewiQcO",
+  "prompt_tokens": 8310,
+  "completion_tokens": 40,
+  "actual_usd": 0.0012705,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the requirements for general and specific information that must be provided to data subjects regarding automated decision-making processes."
+  }
+}

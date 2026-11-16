@@ -1,0 +1,14 @@
+{
+  "request_hash": "9eb6791296bb03342632f70fa9bf3ca5790b31d131a38159b789437d30d7e55f",
+  "prompt_sha256": "faed605d6db4c216c3295c70f77372c3eafedaf404ce52c6e23184bcffa9f344",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOd2FLtOkMTU7JeJ6E3SNv0ZQj8d",
+  "prompt_tokens": 8144,
+  "completion_tokens": 50,
+  "actual_usd": 0.0012515999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of how Predpol software operates, its reliance on historical crime data, and the resulting reinforcement of biases and inequalities, fully supporting the claims made in the Reference Answer."
+  }
+}

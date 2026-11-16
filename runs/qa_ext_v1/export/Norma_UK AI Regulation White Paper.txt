@@ -1,0 +1,414 @@
+DOCUMENT: UK AI Regulation White Paper
+
+<<<PAGE 67>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+- o Multiple sectors, multiple regulators: a sandbox capable of operating with one or more regulators in one or more industry sectors to help AI innovators reach their target market. The DRCF is piloting a version of this model. 146
+
+97. We intend to focus an initial pilot on a single sector, multiple regulator sandbox. Recognising the importance of AI innovations that have implications in multiple sectors (like generative AI models), we would look to expand this capability to cover multiple industry sectors over time.
+
+98. Initially, we envisage focusing the sandbox on a sector where there is a high degree of AI investment, industry demand for a sandbox, and appetite for improved collaboration between regulators to help AI innovators take their products to market. We invite consultation feedback on this proposal as well as suggestions for industry sectors that meet these criteria.
+
+99. We would also like to build a deeper understanding of what service offering would be most helpful to industry. Some sandboxes offer supervised real-life or simulated test environments where innovators can trial new products, often under relaxed regulatory requirements. 147 In other scenarios, a team of technologists and regulation experts give customised advice and support to participating innovators over a number of months to help them understand and overcome regulatory barriers so they can reach their target market. 148 Our current preference is for the customised advice and support model, as we think this is where we can deliver benefits most effectively in the short term. We will explore options for developing a safe test environment capability at a later date, informed by our initial pilot work.
+
+100. The implementation of an AI regulatory sandbox will also be closely informed by Sir Patrick Vallance's review into digital regulation and his recommendation to establish a multi-regulator sandbox. 149 The review sets out a number of design principles, which we will build into our pilot approach. This includes targeting such initiatives at start-ups and small to medium-sized businesses. As a matter of priority, we will engage with businesses to understand how such an approach should be designed and delivered to best support their needs.
+
+# Consultation questions:
+
+- S1. To what extent would the sandbox models described in section 3.3.4 support innovation?
+
+- S2. What could government do to maximise the benefit of sandboxes to AI innovators?
+
+- S3. What could government do to facilitate participation in an AI regulatory sandbox?
+
+- S4. Which industry sectors or classes of product would most benefit from an AI sandbox?
+
+\* 146 Enabling innovation - piloting a multi-agency advice service for digital innovators, Regulators' Pioneer Fund, 2022.
+
+\* 147 The MHRA's 'airlock process' is an example of this kind of service, designed for AI products meeting certain criteria. See: Software and AI as a medical device change programme, MHRA, 2022.
+
+\* 148 For an example, see: NHS Innovation Service, Accelerated Access Collaborative, 2023. For AI projects, see: AI and Digital Regulations Service, Care Quality Commission, Health Research Authority, Medicines and Healthcare Products Regulatory Agency, National Institute for Health and Care Excellence, 2023.
+
+\* 149 Pro-innovation Regulation of Technologies Review: Digital Technologies, HM Treasury, 2023.
+
+<!-- PageFooter: 61 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 68>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# 3.3.5 Regulator capabilities
+
+101. Government has prioritised the ongoing assessment of the different capability needs across the regulatory landscape. We will keep this under close review as part of our ongoing monitoring and evaluation activity.
+
+102. While our approach does not currently involve or anticipate extending any regulator's remit, 150 regulating AI uses effectively will require many of our regulators to acquire new skills and expertise. Our research 151 has highlighted different levels of capability among regulators when it comes to understanding AI and addressing its unique characteristics. Our engagement has also elicited a wide range of views on the capabilities regulators require to address AI risks and on the best way for regulators to acquire these.
+
+103. We identified potential capability gaps among many, but not all, regulators, primarily in relation to:
+
+AI expertise. Particularly:
+
+- o Technical expertise in AI technology. 152 For example, on how AI is being used to deliver products and services and on the development, use and applicability of technical standards. 153
+
+- o Expertise on how AI use cases interact across multiple regulatory regimes.
+
+- o Market intelligence on how AI technologies are being used to disrupt existing business models, both in terms of the potential opportunities and risks that can impact regulatory objectives.
+
+Organisational capacity. A regulator's ability to:
+
+- o Effectively adapt to the emergence of AI use cases and applications, and assimilate and share this knowledge throughout the organisation.
+
+- o Work with organisations that provide assurance techniques (e.g. assurance service providers) and develop technical standards (i.e. standards development organisations), to identify relevant tools and embed them into the regulatory framework and best practice.
+
+- o Work across regulators to share knowledge and cooperate in the regulation of AI use cases that interact across multiple regulatory regimes.
+
+\* 150 Any attempt by a regulator to enforce a principle beyond its existing remit and powers may be legally challenged on the basis of going beyond its legal authority.
+
+\* 151 Including but not limited to Common Regulatory Capacity for AI, The Alan Turing Institute, 2022.
+
+\* 152 There is evidence that this is predominantly a recruitment problem. Regulators are trying to recruit but often cannot find the right candidates as they are competing for a limited supply of suitable candidates.
+
+\* 153 Evidence showed that technical standards expertise varies across regulators. MHRA regularly uses and designates standards to clarify legal requirements, provide presumptive conformity and demonstrate the state of the art. Other regulators recognise their potential to support regulatory guidance but their thinking is nascent.
+
+<!-- PageFooter: 62 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 69>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+- o Establish relationships and communicate effectively with organisations and groups not normally within their remit.
+
+104. In the initial phases of implementation, government will work collaboratively with key partners to leverage existing work on this topic. For example, the Digital Regulation Cooperation Forum (DRCF) is already exploring ways of addressing capability gaps within its members.
+
+105. There are options for addressing capability gaps within individual regulators and across the wider regulatory landscape, which we will continue to explore. It may, for example, be appropriate to establish a common pool of expertise that could establish best practice for supporting innovation through regulatory approaches and make it easier for regulators to work with each other on common issues. An alternative approach would be to explore and facilitate collaborative initiatives between regulators - including, where appropriate, further supporting existing initiatives such as the DRCF - to share skills and expertise.
+
+# Consultation questions:
+
+19. As a regulator, what support would you need in order to apply the principles in a proportionate and pro-innovation way?
+
+20. Do you agree that a pooled team of AI experts would be the most effective way to address capability gaps and help regulators apply the principles?
+
+<!-- PageFooter: 63 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 70>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Part Four: Tools for trustworthy AI to support implementation
+
+# 4.1 AI assurance techniques
+
+106. Tools for trustworthy AI including assurance techniques and technical standards will play a critical role in enabling the responsible adoption of AI and supporting the proposed regulatory framework. Industry and civil society were keen to see a range of practical tools to aid compliance. Government is already supporting the development of these tools by publishing a Roadmap to an effective AI assurance ecosystem in the UK 154 and establishing the UK AI Standards Hub 155 to champion the use of technical standards. 156
+
+107. To assure AI systems effectively, we need a toolbox of assurance techniques to measure, evaluate and communicate the trustworthiness of AI systems across the development and deployment life cycle. These techniques include impact assessment, audit, and performance testing along with formal verification methods.
+
+108. It is unlikely that demand for AI assurance can be entirely met through organisations building inhouse capability. The emerging market for AI assurance services and expertise will have an important role to play in providing a range of assurance techniques to actors within the AI supply chain. There is an opportunity for the UK to become a global leader in this market as the AI assurance industry develops. This will enable organisations to determine whether AI technologies are aligned with relevant regulatory requirements.
+
+109. To help innovators understand how AI assurance techniques can support wider AI governance, the government will launch a Portfolio of AI assurance techniques in Spring 2023. The Portfolio is a collaboration with industry to showcase how these tools are already being applied by businesses to real-world use cases and how they align with the AI regulatory principles.
+
+# 4.2 AI technical standards
+
+110. Assurance techniques need to be underpinned by available technical standards, which provide common understanding across assurance providers. Technical standards and assurance techniques will also enable organisations to demonstrate that their systems are in line with the UK's AI regulatory principles.
+
+111. Multiple international and regional standards development organisations are developing, or have already released, AI-specific technical standards, addressing topics such as risk management,
+
+\* 154 Roadmap to an effective AI assurance ecosystem in the UK, DSIT (formerly DCMS), 2021.
+
+\* 155 The AI Standards Hub is led by The Alan Turing Institute in partnership with the British Standards Institution (BSI) and the National Physical Laboratory (NPL) and supported by the UK Government.
+
+\* 156 Technical standards are generally voluntary and developed through an industry-led process in global standards development organisations (SDOs), based on the principles of consensus, openness, and transparency, and benefiting from global technical expertise and best practice. In this paper, when referring to "technical standards", we are referring to standards developed in standards development organisations.
+
+<!-- PageFooter: 64 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 71>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+transparency, bias, safety and robustness. Accordingly, technical standards can be used by regulators to complement sector-specific approaches to AI regulation by providing common benchmarks and practical guidance to organisations. 157 Overall, technical standards can embed flexibility 158 into regulatory regimes and drive responsible innovation by helping organisations to address AI-related risks. 159
+
+112. The UK plays a leading role in the development of international technical standards, working with industry, international and UK partners. 160 The government will continue to support the role of technical standards in complementing our approach to AI regulation, including through the UK AI Standards Hub.
+
+# Box 4.1: Supporting a layered approach to AI technical standards
+
+The government will complement its context-specific approach to AI regulation by proposing a proportionate 'layered approach' to applying available AI technical standards. This involves regulators identifying relevant technical standards and encouraging their adoption by actors in the AI life cycle to support the integration of the AI regulation principles into technical and operational business processes:
+
+Layer 1: To provide consistency and common foundations across regulatory remits, in the first instance regulators could seek to encourage adoption of sector-agnostic standards which can be applied across AI use cases to support the implementation of cross-sectoral principles. For example, management systems, risk management, and quality standards 161 can provide industry with good practices for the responsible development of AI systems. The adoption of these standards should be encouraged by multiple regulators as tools for regulated entities to establish common good practices for AI governance.
+
+Layer 2: To adapt these governance practices to the specific risks raised by AI in a particular context, regulators could look at encouraging adoption of additional standards addressing specific issues such as bias and transparency. 162 Such standards would act as tools for industry to operationalise compliance with specific AI regulation principles. As these standards will provide good practices for AI governance applicable to multiple sectors, regulators could complement these with sector-specific guidance.
+
+\* 157 AI-specific standards addressing trustworthiness characteristics such as safety, transparency and robustness, amongst others, have been developed or are currently being developed ("*" indicates standards which are under development at the time of writing) in SDOs such as ISO/IEC and IEEE (e.g. IEEE 7001, ISO/IEC TS 6254*, ISO/IEC TR 5469*, ISO/IEC 240292*).
+
+\* 158 Technical standards can be updated as good practices and the technology develop, allowing flexibility for requirements to adapt to technological change.
+
+\* 159 Standards help organisations to manage and mitigate risks, as well as helping to unlock and scale the benefits of their products and services. In doing so, standards play a role in responsible innovation both as tools supporting good governance and as mechanisms for enabling and accelerating innovation.
+
+\* 160 The UK government established a strategic coordination initiative with the British Standards Institution (BSI) and the National Physical Laboratory (NPL) to step up UK's engagement in the global development of standards.
+
+\* 161 For example, these include ISO/IEC DIS 42001* , ISO/IEC FDIS 23894* and ISO/IEC DIS 25059.
+
+<!-- PageFooter: 65 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 72>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+For example, standards for bias mitigation could be promoted by the Financial Conduct Authority (FCA) and the Equality and Human Rights Commission (EHRC) as practical tools for providers of AI scoring models to identify and mitigate relevant sources of bias to ensure the fairness of the outcomes when the AI model is applied to financial services (credit scoring) and HR practices (candidate scoring) respectively.
+
+Layer 3: Where relevant, regulators could encourage adoption of sector-specific technical standards to support compliance with specific regulatory requirements and performance measures. 163
+
+# Consultation questions:
+
+21. Which non-regulatory tools for trustworthy AI would most help organisations to embed the AI regulation principles into existing business processes?
+
+\* 162 For example, transparency standards include ISO/IEC AWI 12792*, IEEE P7001-2021 and ISO/IEC AWI TS 6254*. Bias mitigation standards include ISO/IEC TR 24027:2021 and ISO/IEC AWI TS 12791*.
+
+\* 163 For example, safety in healthcare can be addressed by the joint application of management system, risk management and quality standards along with horizontal thematic safety standards (e.g., ISO 5469*) and sector specific standards (e.g. BS 30440*). Accordingly, regulators such as MHRA might decide to reference sector-specific standards in their regulatory guidance as tools for AI providers to demonstrate compliance with regulatory requirements for AI as a medical device.
+
+<!-- PageFooter: 66 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 73>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Part Five: Territorial application
+
+# 5.1 Territorial application of the regulatory framework
+
+113. Our AI regulation framework applies to the whole of the UK. AI is used in various sectors and impacts on a wide range of policy areas, some of which are reserved and some of which are devolved. We will continue to consider any devolution impacts of AI regulation as the policy develops and in advance of any legislative action. Some regulators share remits with their counterparts in the devolved administrations. Our framework, to be initially set out on a nonstatutory basis, will not alter the current territorial arrangement of AI policy. We will rely on the interactions with existing legislation on reserved matters, such as the Data Protection Act 2018 and the Equality Act 2010, to implement our framework.
+
+114. We will continue to engage devolved administrations, businesses, and members of the public from across the UK to ensure that every part of the country benefits from our pro-innovation approach. We will, for example, convene the devolved administrations for views on the functions we expect the government to perform and on the potential implications of introducing a statutory duty on regulators to have due regard to the principles.
+
+# 5.2 Extraterritorial application of the regulatory framework
+
+115. While we expect our principles-based approach to influence the global conversation on AI governance, we are not currently proposing the introduction of new legal requirements. Our framework will not therefore change the territorial applicability of existing legislation relevant to AI (including, for example, data protection legislation).
+
+<!-- PageFooter: 67 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 74>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Part Six: Global interoperability and international engagement
+
+# 6.1 Our regulatory framework on the world stage
+
+116. Countries and jurisdictions around the world are moving quickly to set the rules that govern AI. The UK is a global leader in AI with a strategic advantage that places us at the forefront of these developments. The UK is ranked third in the world for AI publications and also has the third highest number of AI companies. 164 We want to build on this position, making the UK the best place to research AI and to create and build innovative AI companies. At the same time, we recognise the importance of working closely with international partners. As such, the UK's approach to both our domestic regulation and international discussions will continue to be guided by our ambition to develop AI frameworks that champion our democratic values and economic priorities.
+
+117. In line with our domestic approach, we will focus on supporting the positive global opportunities AI can bring while protecting citizens against the potential harms and risks that can emanate across borders. We will work closely with international partners to both learn from, and influence, regulatory and non-regulatory developments (see examples in box 6.1). Given the complex and cross-border nature of AI supply chains, with many AI businesses operating across multiple jurisdictions, close international cooperation will strengthen the impact of our proposed framework.
+
+118. We will promote interoperability and coherence between different approaches, challenging barriers which may stand in the way of businesses operating internationally. We will ensure that the UK's regulatory framework encourages the development of a responsive and compatible system of global AI governance. We will build our international influence, allowing the UK to engage meaningfully with like-minded partners on issues such as cross-border AI risks and opportunities.
+
+119. The UK will continue to pursue an inclusive, multi-stakeholder approach, from negotiating new global norms to helping partner countries build their awareness and capacity in relation to the benefits and risks of AI technology. We will, for example, support other nations to implement regulation and technical standards that support inclusive, responsible and sustainable artificial intelligence. More widely, the International Tech Strategy reiterates how we will shape global AI activities in line with UK values and priorities, protecting against efforts to adopt and apply AI technologies in the service of authoritarianism and repression. We will work with UK industry leaders to ensure that we stay at the forefront of AI and share our best practice with like-minded nations. Similarly, we will learn from our international partners, encouraging them to share lessons we can integrate into our framework.
+
+120. Our international approach will include ensuring that proven, effective, and agreed upon assurance techniques and international technical standards play a role in the wider regulatory ecosystem. Such measures will also support cross-border trade by setting out risk management and AI governance practices that are globally recognised by trading partners, reducing technical
+
+\* 164 Global AI Index, Tortoise Media, 2022; AI rankings by country, AI Rankings, 2023.
+
+<!-- PageFooter: 68 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 75>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+barriers to trade and increasing market access. We will also use our world-leading innovation provisions in Free Trade Agreements to address the challenges innovators in AI may face and ensure that businesses are able to take advantage of the opportunities it presents.
+
+121. In multilateral engagements, we will work to leverage each forum's strengths, expertise and membership to ensure they are adding maximum value to global AI governance discussions and are relevant to our democratic values and economic priorities.
+
+# Box 6.1: Examples of international engagement and collaboration
+
+The UK has played an active and leading role on the international AI stage and will continue to do so. Some (non-exhaustive) examples of activities are:
+
+# Multilateral AI engagement
+
+· OECD AI Governance Working Party (AI-GO): The UK is an active member of the OECD's Working Party on AI Governance (AIGO), which supports the implementation of the OECD's AI principles and enables the exchange of experience and best practice to advance the responsible stewardship of AI. 165
+
+· Global Partnership on AI (GPAI): The UK is a key contributor to - and founding member of - the Global Partnership on AI (GPAI), which is an independent organisation consisting of 29 countries and a range of international experts. GPAI was launched in 2020 as the first international multilateral forum to focus solely on AI and the UK has played a significant role in shaping its development and influencing its agenda. 166
+
+- o At the 2022 GPAI Ministerial Summit in Japan, we demonstrated the scale of the UK's AI ambitions by announcing £1.2m of funding to develop a Net Zero Data Space for AI Applications (which will also support our Net Zero policy objectives). 167 This is in addition to the previous £1m investment to advance GPAI research on data justice (collaborating with The Alan Turing Institute and 12 pilot partners in low and medium income countries).
+
+· G7: The UK is actively engaged in the G7's work on AI and we are working closely with Japan - which holds the G7 Presidency for 2023 - to encourage greater international collaboration, support the development of consistent, proportionate and interoperable regulatory interventions, and champion the role of tools for trustworthy AI where appropriate.
+
+\* 165 OECD Working Party and Network of Experts on Artificial Intelligence Governance (AIGO), OECD, 2023.
+
+\* 166 Global Partnership on Artificial Intelligence, GPAI, 2023.
+
+\* 167 Climate Change and AI: Recommendations for Government Action, Global Partnership on AI GPAI, Climate Change AI and the Centre for AI & Climate, 2021.
+
+<!-- PageFooter: 69 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 76>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+· Council of Europe Committee on AI (CAI): The UK holds a Bureau position and we are working closely with like-minded nations on the proposed Convention on AI, to help protect human rights, democracy and rule of law. 168
+
+· UNESCO: The UK was actively involved in the development of the UNESCO Ethics of AI Recommendations and UK organisations have been supporting the development of implementation tools. 169
+
+· Global standards development organisations: The UK will continue to work with international partners and global standards development organisations to develop and promote global technical standards for AI, including through the UK AI Standards Hub. 170 For example, the UK is playing a leading role in the International Organisation for Standardisation and International Electrotechnical Commission 171 (ISO/IEC) on four active AI projects. 172 Through the British Standards Institution (BSI), 173 we are also a member of the Open Community for Ethics in Autonomous and Intelligent Systems (OCEANIS). 174
+
+# Bilateral AI engagement
+
+· The UK is engaging with individual nations and jurisdictions as they develop regulatory and governance approaches to AI. These include the European Union (and its Member States), US, Canada, Singapore, Japan, Australia, Israel, Norway, and Switzerland, amongst many others. We will continue to maintain close dialogues to share information and knowledge, learn from and adapt our approach in collaboration with others, and work together to shape the international landscape.
+
+\* 168 Committee on Artificial Intelligence (CAI), Council of Europe, 2023.
+
+\* 169 Artificial Intelligence, UNESCO, 2023.
+
+\* 170 AI Standards Hub, 2023.
+
+\* 171 International Organisation for Standardisation and International Electrotechnical Commission, ISO, 2023.
+
+\* 172 The ISO/IEC work programme, which the UK is contributing to alongside our partners, includes the development of an AI Management System Standard (MSS), which intends to help solve some of the implementation challenges relating to AI governance. This standard will be known as ISO/IEC 42001 and will help organisations develop or use artificial intelligence responsibly when pursuing their objectives, and fulfil their obligations to interested parties. Additionally, through BSI, the UK is leading the development of AI international standards in concepts and terminology at ISO/IEC, including those on data, bias, governance implications, and data life cycles. At the European Telecommunications Standards Institute (ETSI) we have led the creation of documents including the ETSI GR SAI 002 on Data Supply Chain Security, out of the UK's National Cyber Security Centre.
+
+\* 173 British Standards Institution, 2023.
+
+\* 174 The Open Community for Ethics in Autonomous and Intelligent Systems (OCEANIS), 2023.
+
+<!-- PageFooter: 70 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 78>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Part Seven: Conclusion and next steps
+
+# 7.1 Conclusion and next steps
+
+122. Our proportionate approach to regulating AI is designed to strengthen the UK's position as a global leader in artificial intelligence, harness AI's ability to drive growth and prosperity, 175 and increase public trust in these technologies. The approach we set out is proportionate, adaptable, and context-sensitive to strike the right balance between responding to risks and maximising opportunities.
+
+123. The proposals set out in this document have been informed by the feedback we received from over 130 respondents as part of our call for views on our 2022 policy paper. We will continue to work closely with businesses and regulators as we start to establish the central functions we have identified. Ongoing engagement with industry will be key to our monitoring and evaluation. Feedback will ensure the framework can adapt to new evidence, future-proofing the UK's role as a leader in AI innovation and ensuring that we can take a leading role in shaping the global narrative on AI regulation.
+
+124. Given the pace at which AI technologies and risks emerge, and the scale of the opportunities at stake, we know that there is no time to waste if we are to strengthen the UK's position as one of the best places in the world to start an AI company. In collaboration with regulators, we are already exploring approaches to implementing the framework and will scale up this activity over the coming months. We are committed to an adaptable, iterative approach that allows us to learn and improve the framework. Our sovereign parliamentary system enables us to deliver targeted and proportionate measures - including by adapting existing legislation if necessary - based on emerging evidence. 176 There are therefore aspects of our implementation work that will be delivered in parallel with the wider consultation set out in this white paper.
+
+125. In the first six months following publication we will:
+
+· Engage with industry, the public sector, regulators, academia and civil society through the consultation period.
+
+· Publish the government's response to this consultation.
+
+· Issue the cross-sectoral principles to regulators, together with initial guidance to regulators for their implementation. We will work with regulators to understand how the description of AI's characteristics can be applied within different regulatory remits and the impact this will have on the application of the cross-sectoral principles.
+
+· Design and publish an AI Regulation Roadmap with plans for establishing the central functions (detailed in section 3.3.1), including monitoring and coordinating implementation of the principles. This roadmap will set out key partner organisations and identify existing initiatives that will be scaled-up or leveraged to deliver the central functions. It will also
+
+\* 175 The AI sector is estimated to contribute £3.7bn in GVA (Gross Value Added) to the UK economy. AI Sector Study 2022, DSIT, 2023.
+
+\* 176 What is the constitution? The Constitution Unit, University College London, 2023
+
+<!-- PageFooter: 72 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 79>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+include plans to pilot a new AI sandbox or testbed.
+
+· Analyse findings from commissioned research projects and improve our understanding of:
+
+· Potential barriers faced by businesses seeking to comply with our framework and ways to overcome these.
+
+· How accountability for regulatory compliance is currently assigned throughout the AI life cycle in real-world scenarios.
+
+· The ability of key regulators to implement our regulatory framework, and how we can best support them.
+
+· Best practice in measuring and reporting on AI-related risks across regulatory frameworks.
+
+126. In the six to twelve months after publication we will:
+
+· Agree partnership arrangements with leading organisations and existing initiatives to deliver the first central functions.
+
+· Encourage key regulators to publish guidance on how the cross-sectoral principles apply within their remit.
+
+· Publish proposals for the design of a central M&E framework including identified metrics, data sources, and any identified thresholds or triggers for further intervention or iteration of the framework. This will be published for consultation.
+
+· Continue to develop a regulatory sandbox or testbed with innovators and regulators.
+
+# 127. In the longer-term, twelve months or more after publication, we will:
+
+· Deliver a first iteration of all the central functions required to ensure the framework is effective.
+
+· Work with key regulators that have not published guidance on how the cross-sectoral principles apply within their remit to encourage and support them to do so.
+
+· Publish a draft central, cross-economy AI risk register for consultation.
+
+· Develop the regulatory sandbox or testbed drawing on insights from the pilot.
+
+· Publish the first monitoring and evaluation report. This will evaluate how well the crosssectoral principles are functioning and the delivery of the central functions. Performance will be measured against our framework characteristics: pro-innovation, proportionate, trustworthy, adaptable, clear and collaborative. The report will also consider existing regulatory activity and the role of government in supporting this, including whether appropriate guidance (including joint guidance) has been issued. In the report, we will include considerations on the need for any iteration of the framework, including the need for statutory interventions.
+
+· Publish an updated AI Regulation Roadmap which will set out plans for the future delivery of the central functions. In particular, it will assess whether a central government team is the most appropriate mechanism for overseeing the central functions in the longer term or if a more independent body would be more effective.
+
+<!-- PageFooter: 73 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 80>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Consultation questions:
+
+22. Do you have any other thoughts on our overall approach? Please include any missed opportunities, flaws, and gaps in our framework.
+
+<!-- PageFooter: 74 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 81>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+# Annex A: Implementation of the principles by regulators
+
+# A.1 Factors that government believes regulators may wish to consider when providing guidance/implementing each principle
+
+<Table>
+| Principle                                   | Implementation considerations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:--------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Safety, security and robustness             | We anticipate that regulators will need to: · Provide guidance about this principle including: o considerations of good cybersecurity practices, such as the NCSC principles for the security of machine learning, 177 as a secured system should be capable of maintaining the integrity of information. o considerations of privacy practices such as accessibility only to authorised users and safeguards against bad actors. · Refer to a risk management framework that AI life cycle actors should apply. Models should be regularly reviewed over time as a mitigation strategy. · Consider the role of available technical standards, for example addressing AI safety, security, testing, data quality, and robustness (e.g. ISO/IEC 24029-2*, ISO/IEC 5259-1*, ISO/IEC 5259-3* , ISO/IEC 5259-4* , ISO/IEC TR 5469*) to clarify regulatory guidance and support the |
+| Appropriate transparency and explainability | implementation of risk treatment measures. We anticipate that regulators will need to: 128. Set expectations for AI life cycle actors to proactively or retrospectively provide information relating to: o the nature and purpose of the AI in question including information relating to any specific outcome, o the data being used and information relating to training data, o the logic and process used and where relevant information to support explainability of decision- making and outcomes, o accountability for the AI and any specific outcomes. 129. Set explainability requirements, particularly of higher risk systems, to ensure appropriate balance between information needs for regulatory enforcement (e.g. around safety) and technical tradeoffs with system robustness.                                                                             |
+</Table>
+
+\* 177 Principles for the security of machine learning, National Cyber Security Centre, 2022.
+
+<!-- PageFooter: 75 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 82>>>
+<!-- PageHeader: A pro-innovation approach to AI regulation -->
+
+<Table>
+| 0                             | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                               | 130. Consider the role of available technical standards addressing AI transparency and explainability (e.g. IEEE 7001, ISO/IEC TS 6254*, ISO/IEC 12792*) 178 to clarify regulatory guidance and support the implementation of risk treatment measures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Fairness                      | We anticipate that regulators will need to: · Interpret and articulate 'fairness' as relevant to their sector or domain, · Decide in which contexts and specific instances fairness is important and relevant (which it may not always be). · Design, implement and enforce appropriate governance requirements for 'fairness' as applicable to the entities that they regulate. · Where a decision involving use of an AI system has a legal or similarly significant effect on an individual, regulators will need to consider the suitability of requiring AI system operators to provide an appropriate justification for that decision to affected parties. · AI systems should comply with regulatory requirements relating to vulnerability of individuals within specific regulatory domains. Regulators will need to consider how use of AI systems may alter individuals' vulnerability, pursuant to their existing powers and remits. · Consider the role of available technical standards addressing AI fairness, bias mitigation and ethical considerations (e.g. ISO/IEC TR 24027:2021, ISO/IEC 12791*, ISO/IEC TR 24368:2022) to clarify regulatory guidance and support the implementation of risk |
+| Accountability and governance | treatment measures. We anticipate that regulators will need to: · Determine who is accountable for compliance with existing regulation and the principles. In the initial stages of implementation, regulators might provide guidance on how to demonstrate accountability. In the medium to long term, government may issue additional guidance on how accountability applies to specific actors within the ecosystem. · Provide guidance on governance mechanisms including, potentially, activities in scope of appropriate risk management and governance processes (including reporting duties). · Consider how available technical standards addressing AI governance, risk management, transparency and other issues can support responsible behaviour and                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+</Table>
+
+\* 178 Technical standards marked with "*" are under development.
+
+<!-- PageFooter: 76 -->
+
+<!-- PageBreak -->
+

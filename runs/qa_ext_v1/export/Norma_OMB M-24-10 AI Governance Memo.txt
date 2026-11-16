@@ -1,0 +1,405 @@
+DOCUMENT: OMB M-24-10 AI Governance Memo
+
+<<<PAGE 16>>>
+Agencies must document their implementation of these practices and be prepared to report them to OMB, either as a component of the annual AI use case inventory, periodic accountability reviews, or upon request as determined by OMB.
+
+The practices in this section represent an initial baseline for managing risk from the use of AI. Agencies must identify additional context-specific risks that are associated with their use of AI and address them as appropriate. Such risk considerations may include impacts to safety, security, civil rights, civil liberties, privacy, democratic values, human rights, equal opportunities, worker well-being, access to critical resources and services, agency trust and credibility, and market competition. To address these potential risk management gaps, agencies are encouraged to promote and to incorporate, as appropriate, additional best practices for AI risk management, such as from the National Institute of Standards and Technology (NIST) AI Risk Management Framework, 29 the Blueprint for an AI Bill of Rights, 30 relevant international standards, 31 and the workforce principles and best practices for employers established pursuant to Section 6(b)(i) of Executive Order 14110. Agencies are also encouraged to continue developing their own agency-specific practices, as appropriate and consistent with this memorandum and the principles in Executive Order 13960, Executive Order 14091, and Executive Order 14110.
+
+The practices in this section also do not supersede, modify, or direct an interpretation of existing requirements mandated by law or governmentwide policy, and responsible agency officials must coordinate to ensure that the adoption of these practices does not conflict with other applicable law or governmentwide guidance.
+
+i. Exclusions from Minimum Practices. Agencies are not required to follow the minimum practices outlined in this section when using AI solely to:
+
+A. evaluate a potential vendor, commercial capability, or freely available AI capability that is not otherwise used in agency operations, exclusively for the purpose of making a procurement or acquisition decision; or
+
+B. achieve its conformity with the requirements of this section, such as using an AI application in controlled testing conditions to carry out the minimum testing requirements below. 32
+
+ii. Extensions for Minimum Practices. Agencies may request from OMB an extension of up to one year, for a particular use of AI that cannot feasibly meet the minimum requirements in this section by that date. OMB will not grant renewals beyond the initial one-year extension. Any extension requests shall be submitted prior to October 15, 2024. The request must be accompanied by a detailed justification for why the agency cannot achieve compliance for the use of AI in question and what practices the agency has in
+
+\* 29 Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST Publication AI 100-1, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf.
+
+30 Blueprint for an AI Bill of Rights, White House Office of Science and Technology Policy,
+
+https://www.whitehouse.gov/wp-content/uploads/2022/10/Blueprint-for-an-AI-Bill-of-Rights.pdf.
+
+\* 31 For example, ISO/IEC 23894:2023 Information technology - Artificial intelligence - Guidance on risk management, https://www.iso.org/standard/77304.html.
+
+\* 32 This exclusion must not be applied to any use of AI in real-world conditions, except as specifically allowed by this section.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+place to mitigate the risks from noncompliance, as well as a plan for how the agency will come to implement the full set of required minimum practices from this section. OMB will issue detailed instructions for extension requests through its Integrated Data Collection process or an OMB-designated successor process.
+
+iii. Waivers from Minimum Practices. In coordination with other relevant officials, an agency CAIO may waive one or more of the requirements in this section for a specific covered AI application or component 33 after making a written determination, based upon a system-specific and context-specific risk assessment, that fulfilling the requirement would increase risks to safety or rights overall or would create an unacceptable impediment to critical agency operations. An agency CAIO may also revoke a previously issued waiver at any time. This responsibility shall not be delegated to other officials. In addition to the certification and publication requirements in Section 5(a)(ii) of this memorandum, CAIOs must centrally track waivers, reassess them if there are significant changes to the conditions or context in which the AI is used, and report to OMB within 30 days of granting or revoking any waiver, detailing the scope, justification, and supporting evidence.
+
+iv. Minimum Practices for Either Safety-Impacting or Rights-Impacting AI. No later than December 1, 2024, agencies must follow these practices before using new or existing covered safety-impacting or rights-impacting AI:
+
+A. Complete an AI impact assessment. Agencies should update their impact assessments periodically and leverage them throughout the AI's lifecycle. In their impact assessments, agencies must document at least the following:
+
+1. The intended purpose for the AI and its expected benefit, supported by specific metrics or qualitative analysis. Metrics should be quantifiable measures of positive outcomes for the agency's mission-for example to reduce costs, wait time for customers, or risk to human life-that can be measured using performance measurement or program evaluation methods after the AI is deployed to demonstrate the value of using AI. 34 Where quantification is not feasible, qualitative analysis should demonstrate an expected positive outcome, such as for improvements to customer experience, and it should demonstrate that AI is better suited to accomplish the relevant task as compared to alternative strategies.
+
+2. The potential risks of using AI, as well as what, if any, additional mitigation measures, beyond these minimum practices, the agency will take to help
+
+\* 33 CAIOs may also grant waivers applicable to groups of AI applications or components that are closely related by design or deployment context, provided that: (1) those systems have undergone a risk assessment that adequately considers the risks from each individual system or from all possible systems in the group; and (2) the systems are substantially identical in their risk profiles.
+
+\* 34 For supervised and semi-supervised AI, agencies should use a target variable which can be reliably measured and adequately represents the desired real-world outcomes.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+reduce these risks. Agencies should document the stakeholders 35 who will be most impacted by the use of the system and assess the possible failure modes of the AI and of the broader system, both in isolation and as a result of human users and other likely variables outside the scope of the system itself. Agencies should be especially attentive to the potential risks to underserved communities. The expected benefits of the AI functionality should be considered against its potential risks, and if the benefits do not meaningfully outweigh the risks, agencies should not use the AI.
+
+3. The quality and appropriateness of the relevant data. Agencies must assess the quality of the data used in the AI's design, development, training, testing, and operation and its fitness to the AI's intended purpose. In conducting assessments, if the agency cannot obtain such data after a reasonable effort to do so, it must obtain sufficient descriptive information from the vendor (e.g., AI or data provider) to satisfy the reporting requirements in this paragraph. At a minimum, agencies must document:
+
+a. the data collection and preparation process, which must also include the provenance of any data used to train, fine-tune, or operate the AI;
+
+b. the quality 36 and representativeness 37 of the data for its intended purpose;
+
+c. how the data is relevant to the task being automated and may reasonably be expected to be useful for the AI's development, testing, and operation;
+
+d. whether the data contains sufficient breadth to address the range of realworld inputs the AI might encounter and how data gaps and shortcomings have been addressed either by the agency or vendor; and
+
+e. if the data is maintained by the Federal Government, whether that data is publicly disclosable as an open government data asset, in accordance with applicable law and policy. 38
+
+B. Test the AI for performance in a real-world context. Agencies must conduct adequate testing to ensure the AI, as well as components that rely on it, will work in its intended real-world context. Such testing should follow domain-specific best practices, when available, and should take into account both the specific technology used and feedback from human operators, reviewers, employees, and
+
+\* 35 Stakeholders will vary depending on how AI is being used. For example, if an agency is using AI to control a water treatment process, stakeholders may include (1) local residents; (2) state, local, tribal, and territorial government representatives; and (3) environmental experts.
+
+\* 36 Consistent with OMB Memorandum M-19-15, Improving Implementation of the Information Quality Act, https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-15.pdf, if applicable. Agencies should also consider the National Science and Technology Council's report Protecting the Integrity of Government Science, https://www.whitehouse.gov/wp-content/uploads/2022/01/01-22-
+
+\* Protecting_the_Integrity_of_Government_Science.pdf.
+
+\* 37 Agencies should assess whether the data used can produce or amplify inequitable outcomes as a result of poor data representativeness or harmful bias. Such outcomes can result from historical discrimination, such as the perpetuation of harmful gender-based and racial stereotypes in society.
+
+\* 38 See 44 U.S.C. § 3502(20).
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+customers who use the service or are impacted by the system's outcomes. Testing conditions should mirror as closely as possible the conditions in which the AI will be deployed. Through test results, agencies should demonstrate that the AI will achieve its expected benefits and that associated risks will be sufficiently mitigated, or else the agency should not use the AI. In conducting such testing, if an agency does not have access to the underlying source code, models, or data, the agency must use alternative test methodologies, such as querying the AI service and observing the outputs or providing evaluation data to the vendor and obtaining results. Agencies are also encouraged to leverage pilots and limited releases, with strong monitoring, evaluation, and safeguards in place, to carry out the final stages of testing before a wider release.
+
+C. Independently evaluate the AI. Agencies, through the CAIO, an agency AI oversight board, or other appropriate agency office with existing test and evaluation responsibilities, must review relevant AI documentation to ensure that the system works appropriately and as intended, and that its expected benefits outweigh its potential risks. At a minimum, this documentation must include the completed impact assessment and results from testing AI performance in a realworld context referenced in paragraphs (A) and (B) of this subsection. Agencies must incorporate this independent evaluation into an applicable release or oversight process, such as the Authorization to Operate process. The independent reviewing authority must not have been directly involved in the system's development.
+
+No later than December 1, 2024 and on an ongoing basis while using new or existing covered safety-impacting or rights-impacting AI, agencies must ensure these practices are followed for the AI:
+
+D. Conduct ongoing monitoring. In addition to pre-deployment testing, agencies must institute ongoing procedures to monitor degradation of the AI's functionality and to detect changes in the AI's impact on rights and safety. Agencies should also scale up the use of new or updated AI features incrementally where possible to provide adequate time to monitor for adverse performance or outcomes. Agencies should monitor and defend the AI from AI-specific exploits, 39 particularly those that would adversely impact rights and safety.
+
+E. Regularly evaluate risks from the use of AI. The monitoring process in paragraph (D) must include periodic human reviews to determine whether the deployment context, risks, benefits, and agency needs have evolved. Agencies must also determine whether the current implementation of the memorandum's minimum practices adequately mitigates new and existing risks, or whether
+
+\* 39 For example, the AI-specific exploits outlined in the MITRE ATLAS framework, see https://atlas.mitre.org/ and NIST's taxonomy for adversarial machine learning, see https://csrc.nist.gov/pubs/ai/100/2/e2023/final.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+updated risk response options are required. 40 At a minimum, human review is required at least on an annual basis and after significant modifications to the AI or to the conditions or context in which the AI is used, and the review must include renewed testing for performance of the AI in a real-world context. 41 Reviews must also include oversight and consideration by an appropriate internal agency authority not directly involved in the system's development or operation.
+
+F. Mitigate emerging risks to rights and safety. Upon identifying new or significantly altered risks to rights or safety through ongoing monitoring, periodic review, or other mechanisms, agencies must take steps to mitigate those risks, including, as appropriate, through updating the AI to reduce its risks or implementing procedural or manual mitigations, such as more stringent human intervention requirements. As significant modifications make the existing implementation of the other minimum practices in this section less effective, such as by making training or documentation inaccurate, agencies must update or repeat those practices, as appropriate. Where the AI's risks to rights or safety exceed an acceptable level and where mitigation strategies do not sufficiently reduce risk, agencies must stop using the AI as soon as is practicable. 42
+
+G. Ensure adequate human training and assessment. Agencies must ensure there is sufficient training, assessment, and oversight for operators of the AI to interpret and act on the AI's output, combat any human-machine teaming issues (such as automation bias), and ensure the human-based components of the system effectively manage risks from the use of AI. Training should be conducted on a periodic basis, determined by the agency, and should be specific to the AI product or service being operated and how it is being used.
+
+H. Provide additional human oversight, intervention, and accountability as part of decisions or actions that could result in a significant impact on rights or safety. Agencies must assess their rights-impacting and safety-impacting uses of AI to identify any decisions or actions in which the AI is not permitted to act without additional human oversight, intervention, and accountability. When immediate human intervention is not practicable for such an action or decision, agencies must ensure that the AI functionality has an appropriate fail-safe that minimizes the risk of significant harm. 43
+
+\* 40 In some cases, this may require a program evaluation, as defined under requirements of the Foundations for Evidence-Based Policymaking Act of 2018, Pub. L. No. 115-435, to determine the extent to which the AI is advancing the agency's mission and objectives.
+
+\* 41 For customer-facing services, agencies should consider customer feedback in their human review criteria.
+
+\* 42 Agencies are responsible for determining how to safely decommission AI that was already in use at the time of this memorandum's release, without significant disruptions to essential government functions.
+
+\* 43 For example, an AI-enabled safety mechanism may require an immediate and automated action to prevent a harm from occurring. It would not be practicable in this case to require human intervention to approve the activation of the safety mechanism. However, agencies must still determine the appropriate oversight and accountability processes for such a use of AI.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+I. Provide public notice and plain-language documentation. Agencies must ensure, to the extent consistent with applicable law and governmentwide guidance, including concerning protection of privacy and of sensitive law enforcement, national security, and other protected information, that the AI's entry in the use case inventory provides accessible documentation in plain language of the system's functionality to serve as public notice of the AI to its users and the general public. Where people interact with a service relying on the AI and are likely to be impacted by the AI, agencies must also provide reasonable and timely notice 44 about the use of the AI and a means to directly access any public documentation about it in the use case inventory. Where agencies' use cases are not included in their public inventories, they may still be required to report relevant information to OMB and must ensure adequate transparency in their use of AI, as appropriate and consistent with applicable law.
+
+# v. Additional Minimum Practices for Rights-Impacting AI.
+
+No later than December 1, 2024, agencies must follow the above minimum practices for AI that is either safety-impacting or rights-impacting. In addition, no later than December 1, 2024, agencies must also follow these minimum practices before initiating use of new or existing rights-impacting AI:
+
+# A. Identify and assess AI's impact on equity and fairness, and mitigate algorithmic discrimination when it is present. Agencies must:
+
+1. Identify and document in their AI impact assessment when using data that contains information about a class protected by Federal nondiscrimination laws (e.g., race, age, etc.). Given the risks arising when AI may correlate demographic information with other types of information, agencies should also assess and document whether the AI model could foreseeably use other attributes as proxies for a protected characteristic and whether such use would significantly influence model performance;
+
+2. Assess the AI in a real-world context to determine whether the AI model results in significant disparities in the model's performance (e.g., accuracy, precision, reliability in predicting outcomes) across demographic groups;
+
+3. Mitigate disparities that lead to, or perpetuate, unlawful discrimination or harmful bias, or that decrease equity as a result of the government's use of the AI; and
+
+4. Consistent with applicable law, cease use of the AI for agency decisionmaking if the agency is unable to adequately mitigate any associated risk of unlawful discrimination against protected classes. Agencies should maintain appropriate documentation to accompany this decision-making, and should disclose it publicly to the extent consistent with applicable law and governmentwide policy.
+
+\* 44 Wherever feasible, agencies should provide notice to a user before the AI takes an action that significantly impacts them.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+B. Consult and incorporate feedback from affected communities and the public. Consistent with applicable law and governmentwide guidance, agencies must consult affected communities, including underserved communities, and they must solicit public feedback, where appropriate, in the design, development, and use of the AI and use such feedback to inform agency decision-making regarding the AI. The consultation and feedback process must include seeking input on the agency's approach to implementing the minimum risk management practices established in Section 5(c) of this memorandum, such as applicable opt-out procedures. Agencies should consider and manage the risks of public consultation in contexts like fraud prevention and law enforcement investigations, where consulting with the targeted individual is impractical but consulting with a representative group may be appropriate. 45
+
+Agencies are strongly encouraged to solicit feedback on an ongoing basis from affected communities in particular as well as from the public broadly, especially after significant modifications to the AI or the conditions or context in which it is used. 46 In the course of assessing such feedback, if an agency determines that the use of AI in a given context would cause more harm than good, the agency should not use the AI.
+
+To carry out such consultations and feedback processes, agencies must take appropriate steps to solicit input from the communities and individuals affected by the AI, which could include: 47
+
+1. direct usability testing, such as observing users interacting with the system;
+
+2. general solicitations of comments from the public, such as a request for information in the Federal Register or a "Tell Us About Your Experience" sheet with an open-ended space for responses;
+
+3. post-transaction customer feedback collections; 48
+
+4. public hearings or meetings, such as a listening session;
+
+5. outreach to relevant Federal employee groups and Federal labor organizations, including on the appropriate fulfillment of collective bargaining obligations, where applicable; or
+
+6. any other transparent process that seeks public input, comments, or feedback from the affected groups in a meaningful, equitable, accessible,
+
+\* 45 For example, an agency using an AI tool to detect Federal benefits fraud is not required to consult with the target of their investigation. However, an agency should discern when it is appropriate to consult with civil society groups, academia, or other experts in the field to understand the technology's impact.
+
+\* 46 The affected communities will vary depending on an agency's deployment context, but may include customers (for example, individuals, businesses, or organizations that interact with an agency) or Federal employee groups and employees' union representatives, when applicable.
+
+\* 47 Agencies are encouraged to engage with OMB on whether they are required to submit information collection requests for OMB clearance under the Paperwork Reduction Act (44 U.S.C. § 3507) for the purposes of these consultations and feedback processes.
+
+\* 48 Information on post-transaction customer feedback surveys can be found in OMB Circular A-11, Section 280 - Managing Customer Experience and Improving Service Delivery, https://www.whitehouse.gov/wpcontent/uploads/2018/06/s280.pdf.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+and effective manner.
+
+No later than December 1, 2024 and on an ongoing basis while using new or existing covered rights-impacting AI, agencies must ensure these practices are followed for the AI:
+
+C. Conduct ongoing monitoring and mitigation for AI-enabled discrimination. As part of the ongoing monitoring requirement established in Section 5(c)(iv)(D), agencies must also monitor rights-impacting AI to specifically assess and mitigate AI-enabled discrimination against protected classes, including discrimination that might arise from unforeseen circumstances, changes to the system after deployment, or changes to the context of use or associated data. Where sufficient mitigation is not possible, agencies must safely discontinue use of the AI functionality.
+
+D. Notify negatively affected individuals. Consistent with applicable law and governmentwide guidance, agencies must notify individuals when use of the AI results in an adverse decision or action that specifically concerns them, such as the denial of benefits or deeming a transaction fraudulent. 49 Agencies should consider the timing of their notice and when it is appropriate to provide notice in multiple languages and through alternative formats and channels, depending on the context of the AI's use. The notice must also include a clear and accessible means of contacting the agency and, where applicable, provide information to the individual on their right to appeal. Agencies must also abide by any existing obligations to provide explanations for such decisions and actions. 50
+
+E. Maintain human consideration and remedy processes. Where practicable and consistent with applicable law and governmentwide guidance, agencies must provide timely human consideration and potential remedy, if appropriate, to the use of the AI via a fallback and escalation system in the event that an impacted individual would like to appeal or contest the AI's negative impacts on them. Agencies that already maintain an appeal or secondary human review process for adverse actions, or for agency officials' substantive or procedural errors, can leverage and expand such processes, as appropriate, or establish new processes to meet this requirement. These remedy processes should not place unnecessary burden on the impacted individual, and agencies should follow OMB guidance on
+
+\* 49 In some instances, such as an active law enforcement investigation, providing immediate notice may be inappropriate or impractical, or disclosure may be more appropriate at a later stage (for example, prior to a defendant's trial).
+
+\* 50 Explanations might include, for example, how and why the AI-driven decision or action was taken. This does not mean that agencies must provide a perfect breakdown of how a machine learning system came to a conclusion, as exact explanations of AI decisions may not be technically feasible. However, agencies should still characterize the general nature of such AI decisions through context such as the data that the decision relied upon, the design of the AI, and the broader decision-making context in which the system operates. Such explanations should be technologically valid, meaningful, useful, and as simply stated as possible, and higher-risk decisions should be accompanied by more comprehensive explanations.
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+- calculating administrative burden. 51 Whenever agencies are unable to provide an opportunity for an individual to appeal due to law, governmentwide guidance, or impracticability, they must create appropriate alternative mechanisms for human oversight of the AI.
+
+F. Maintain options to opt-out for AI-enabled decisions. Agencies must provide and maintain a mechanism for individuals to conveniently opt-out from the AI functionality in favor of a human alternative, where practicable and consistent with applicable law and governmentwide guidance. An opt-out mechanism must be prominent, readily available, and accessible, and it is especially critical where the affected people have a reasonable expectation of an alternative or where lack of an alternative would meaningfully limit availability of a service or create unwarranted harmful impacts. Agencies should also seek to ensure that the optout mechanism itself does not impose discriminatory burdens on access to a government service. Agencies are not required to provide the ability to opt-out if the AI functionality is solely used for the prevention, detection, and investigation of fraud 52 or cybersecurity incidents, or the conduct of a criminal investigation. Pursuant to the authority for waivers defined in Section 5(c)(ii), CAIOs are additionally permitted to waive this opt-out requirement if they can demonstrate that a human alternative would result in a service that is less fair (e.g., produces a disparate impact on protected classes) or if an opt-out would impose undue hardship on the agency.
+
+# d. Managing Risks in Federal Procurement of Artificial Intelligence
+
+This section provides agencies with recommendations for responsible procurement of AI, supplementing an agency's required risk management practices above for rights-impacting AI and safety-impacting AI. In addition to these recommendations and consistent with section 7224(d) of the Advancing American AI Act and Section 10.1(d)(ii) of Executive Order 14110, OMB will also develop an initial means to ensure that Federal contracts for the acquisition of an AI system or service align with the guidance in this memorandum.
+
+i. Aligning with the Law. Agencies should ensure that procured AI is consistent with the Constitution and complies with all other applicable laws, regulations, and policies, including those addressing privacy, confidentiality, intellectual property, cybersecurity, human and civil rights, and civil liberties.
+
+ii. Transparency and Performance Improvement. Agencies should take steps to ensure transparency and adequate performance for their procured AI, including by:
+
+A. obtaining adequate documentation to assess the AI's capabilities, such as through the use of model, data, and system cards;
+
+\* 51 See OMB M-22-10 and supporting document "Strategies for Reducing Administrative Burden in Public Benefit and Service Programs."
+
+\* 52 Some uses of AI in these categories, such as the use of biometrics for identity verification, may be subject to requirements in other guidance that would necessitate an option to opt-out, and this memorandum does not replace, supersede, otherwise interfere with any such requirements.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+B. obtaining adequate documentation of known limitations of the AI and any guidelines on how the system is intended to be used;
+
+C. obtaining adequate information about the provenance of the data used to train, fine-tune, or operate the AI;
+
+D. regularly evaluating claims made by Federal contractors concerning both the effectiveness of their AI offerings as well as the risk management measures put in place, including by testing the AI in the particular environment where the agency expects to deploy the capability;
+
+E. considering contracting provisions that incentivize the continuous improvement of procured AI; and
+
+F. requiring sufficient post-award monitoring of the AI, where appropriate in the context of the product or service acquired.
+
+iii. Promoting Competition in Procurement of AI. Agencies should take appropriate steps to ensure that Federal AI procurement practices promote opportunities for competition among contractors and do not improperly entrench incumbents. Such steps may include promoting interoperability so that, for example, procured AI works across multiple cloud environments, and ensuring that vendors do not inappropriately favor their own products at the expense of competitors' offerings.
+
+iv. Maximizing the Value of Data for AI. In contracts for AI products and services, agencies should treat relevant data, as well as improvements to that data-such as cleaning and labeling-as a critical asset for their AI maturity. Agencies should take steps to ensure that their contracts retain for the Government sufficient rights to data and any improvements to that data so as to avoid vendor lock-in and facilitate the Government's continued design, development, testing, and operation of AI. Additionally, agencies should consider contracting provisions that protect Federal information used by vendors in the development and operation of AI products and services for the Federal Government, so that such data is protected from unauthorized disclosure and use and cannot be subsequently used to train or improve the functionality of the vendor's commercial offerings without express permission from the agency.
+
+v. Overfitting to Known Test Data. When testing AI using data that its developer may have access to-including test data that the agency has itself shared or releasedagencies should ensure, as appropriate, that their AI developers or vendors are not directly relying on the test data to train their AI systems. 53
+
+vi. Responsible Procurement of AI for Biometric Identification. When procuring systems that use AI to identify individuals using biometric identifiers-e.g., faces, irises, fingerprints, or gait-agencies are encouraged to:
+
+A. Assess and address the risks that the data used to train or operate the AI may not be lawfully collected or used, or else may not be sufficiently accurate to support reliable biometric identification. This includes the risks that the biometric information was collected without appropriate consent, was originally collected
+
+\* 53 For instance, using validation data to train a model could lead the model to learn spurious correlations that make the model appear accurate in tests but harm the real-world performance of the AI system.
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+for another purpose, embeds unwanted bias, or was collected without validation of the included identities; and
+
+B. Request supporting documentation or test results to validate the accuracy, reliability, and validity of the AI's ability to match identities.
+
+vii. Responsibly Procuring Generative AI. Agencies are encouraged to include risk management requirements in contracts for generative AI, and particularly for dual-use foundation models, including:
+
+A. requiring adequate testing and safeguards,
+
+B. requiring results of internal or external testing and evaluation, to include AI redteaming against risks from generative AI, such as discriminatory, misleading, inflammatory, unsafe, or deceptive outputs;
+
+C. requiring that generative AI models have capabilities, as appropriate and technologically feasible, to reliably label or establish provenance for their content as generated or modified by AI; and
+
+D. incorporating relevant NIST standards, defined pursuant to Sections 4.1(a) and 10.1(d) of Executive Order 14110, as appropriate.
+
+viii. Assessing for Environmental Efficiency and Sustainability. When procuring computationally intensive AI services, for example those that rely on dual-use foundation models, agencies should consider the environmental impact of those services, including whether the vendor has implemented methods to improve the efficiency and sustainability of such AI. This should include considering the carbon emissions and resource consumption from supporting data centers.
+
+# 6. DEFINITIONS
+
+The below definitions apply for the purposes of this memorandum.
+
+Accessibility: The term "accessibility" has the meaning provided in Section 2(e) of Executive Order 14035.
+
+Agency: The term "agency" has the meaning provided in 44 U.S.C. § 3502(1).
+
+Algorithmic Discrimination: The term "algorithmic discrimination" has the meaning provided in Section 10(f) of Executive Order 14091 of February 16, 2023.
+
+Artificial Intelligence (AI): The term "artificial intelligence" has the meaning provided in Section 238(g) of the John S. McCain National Defense Authorization Act for Fiscal Year 2019, 54 which states that "the term 'artificial intelligence' includes the following":
+
+1. Any artificial system that performs tasks under varying and unpredictable circumstances without significant human oversight, or that can learn from experience and improve performance when exposed to data sets.
+
+\* 54 Pub. L. No. 115-232, § 238(g), https://www.govinfo.gov/content/pkg/PLAW-115publ232/pdf/PLAW115publ232.pdf.
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+2. An artificial system developed in computer software, physical hardware, or other context that solves tasks requiring human-like perception, cognition, planning, learning, communication, or physical action.
+
+3. An artificial system designed to think or act like a human, including cognitive architectures and neural networks.
+
+4. A set of techniques, including machine learning, that is designed to approximate a cognitive task.
+
+5. An artificial system designed to act rationally, including an intelligent software agent or embodied robot that achieves goals using perception, planning, reasoning, learning, communicating, decision making, and acting.
+
+For the purposes of this memorandum, the following technical context should guide interpretation of the definition above:
+
+1. This definition of AI encompasses, but is not limited to, the AI technical subfields of machine learning (including deep learning as well as supervised, unsupervised, and semisupervised approaches), reinforcement learning, transfer learning, and generative AI.
+
+2. This definition of AI does not include robotic process automation or other systems whose behavior is defined only by human-defined rules or that learn solely by repeating an observed practice exactly as it was conducted.
+
+3. For this definition, no system should be considered too simple to qualify as covered AI due to a lack of technical complexity (e.g., the smaller number of parameters in a model, the type of model, or the amount of data used for training purposes).
+
+4. This definition includes systems that are fully autonomous, partially autonomous, and not autonomous, and it includes systems that operate both with and without human oversight.
+
+AI and AI-Enabling Roles: The term "AI and AI-enabling roles" refers to individuals with positions and major duties whose contributions are important for successful and responsible AI outcomes. AI and AI-Enabling Roles include both technical and non-technical roles, such as data scientists, software engineers, data engineers, data governance specialists, statisticians, machine learning engineers, applied scientists, designers, economists, operations researchers, product managers, policy analysts, program managers, behavioral and social scientists, customer experience strategists, human resource specialists, contracting officials, managers, and attorneys.
+
+AI Maturity: The term "AI maturity" refers to a Federal Government organization's capacity to successfully and responsibly adopt AI into their operations and decision-making across the organization, manage its risks, and comply with relevant Federal law, regulation, and policy on AI.
+
+AI Model: The term "AI model" has the meaning provided in Section 3(c) of Executive Order 14110.
+
+AI Red-Teaming: The term "AI red-teaming" has the meaning provided for "AI red-teaming" in Section 3(d) of Executive Order 14110.
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+Applied Research: The term "applied research" refers to original investigation undertaken in order to acquire new knowledge to determine the means by which a specific practical aim or objective may be met.
+
+Automation Bias: The term "automation bias" refers to the propensity for humans to inordinately favor suggestions from automated decision-making systems and to ignore or fail to seek out contradictory information made without automation.
+
+Basic Research: The term "basic research" refers to experimental or theoretical work undertaken primarily to acquire new knowledge of the underlying foundations of phenomena and observable facts without a specific application towards processes or products in mind.
+
+CFO Act Agency: The term "CFO Act Agency" refers to the agencies identified in 31 U.S.C. § 901(b).
+
+Custom-Developed Code: The term "custom-developed code" has the meaning provided in Appendix A of OMB Memorandum M-16-21.
+
+Customer Experience: The term "customer experience" has the meaning established in Section 3(b) of Executive Order 14058. 55
+
+Data Asset: The term "data asset" has the meaning provided in 44 U.S.C § 3502.
+
+Dual-Use Foundation Model: The term "dual-use foundation model" has the meaning provided in Section 3(k) of Executive Order 14110.
+
+Equity: The term "equity" has the meaning provided in Section 10(a) of Executive Order 14091. 56
+
+Federal Information: The term "Federal information" has the meaning provided in OMB Circular A-130.
+
+Generative AI: The term "generative AI" has the meaning provided in Section 3(p) of Executive Order 14110.
+
+Intelligence Community: The term "intelligence community" has the meaning provided in 50 U.S.C. § 3003.
+
+Model Weight: The term "model weight" has the meaning provided in Section 3(u) of Executive Order 14110.
+
+\* 55 Executive Order 14058, Transforming Federal Customer Experience and Service Delivery To Rebuild Trust in Government, https://www.federalregister.gov/documents/2021/12/16/2021-27380/transforming-federal-customerexperience-and-service-delivery-to-rebuild-trust-in-government.
+
+\* 56 Executive Order 14091, Further Advancing Racial Equity and Support for Underserved Communities Through the Federal Government, https://www.govinfo.gov/content/pkg/FR-2023-02-22/pdf/2023-03779.pdf.
+
+<!-- PageFooter: 28 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+National Security System: The term "National Security System" has the meaning provided in 44 U.S.C. § 3552(b)(6).
+
+Open Government Data Asset: The term "open government data asset" has the meaning provided in 44 U.S.C § 3502.
+
+Open Source Software: The term "open source software" has the meaning provided in Appendix A of OMB Memorandum M-16-21.
+
+Rights-Impacting AI: 57 The term "rights-impacting AI" refers to AI whose output serves as a principal basis for a decision or action concerning a specific individual or entity that has a legal, material, binding, or similarly significant effect on that individual's or entity's:
+
+1. Civil rights, civil liberties, or privacy, including but not limited to freedom of speech, voting, human autonomy, and protections from discrimination, excessive punishment, and unlawful surveillance;
+
+2. Equal opportunities, including equitable access to education, housing, insurance, credit, employment, and other programs where civil rights and equal opportunity protections apply; or
+
+3. Access to or the ability to apply for critical government resources or services, including healthcare, financial services, public housing, social services, transportation, and essential goods and services.
+
+Risks from the Use of AI: The term "risks from the use of AI" refers to risks related to efficacy, safety, equity, fairness, transparency, accountability, appropriateness, or lawfulness of a decision or action resulting from the use of AI to inform, influence, decide, or execute that decision or action. This includes such risks regardless of whether:
+
+1. the AI merely informs the decision or action, partially automates it, or fully automates it;
+
+2. there is or is not human oversight for the decision or action;
+
+3. it is or is not easily apparent that a decision or action took place, such as when an AI application performs a background task or silently declines to take an action; or
+
+4. the humans involved in making the decision or action or that are affected by it are or are not aware of how or to what extent the AI influenced or automated the decision or action.
+
+While the particular forms of these risks continue to evolve, at least the following factors can create, contribute to, or exacerbate these risks:
+
+1. AI outputs that are inaccurate or misleading;
+
+2. AI outputs that are unreliable, ineffective, or not robust;
+
+3. AI outputs that are discriminatory or have a discriminatory effect;
+
+4. AI outputs that contribute to actions or decisions resulting in harmful or unsafe outcomes, including AI outputs that lower the barrier for people to take intentional and harmful actions;
+
+5. AI being used for tasks to which it is poorly suited or being inappropriately repurposed in a context for which it was not intended;
+
+6. AI being used in a context in which affected people have a reasonable expectation that a human is or should be primarily responsible for a decision or action; and
+
+\* 57 Appendix I(2) of this memorandum lists AI applications that are presumed to be rights-impacting.
+
+<!-- PageFooter: 29 -->
+
+<!-- PageBreak -->
+

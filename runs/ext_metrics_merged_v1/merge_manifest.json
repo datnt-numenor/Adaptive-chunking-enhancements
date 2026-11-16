@@ -1,0 +1,47 @@
+{
+ "pod": "runs\\gpu_metrics_ext_v1_results\\extracted_verified\\metrics_out",
+ "laptop": {
+  "ext_v1": "runs/ext_v1/metrics",
+  "sdp_a": "runs/sdp_ext/A_target600/metrics",
+  "sdp_b": "runs/sdp_ext/B_default/metrics"
+ },
+ "runs": {
+  "ext_v1": {
+   "docs_pod": 120,
+   "docs_laptop_only": [
+    "Ada_ENISA AI Cybersecurity Challenges",
+    "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI",
+    "Ada_NIST AI 100-4 Synthetic Content",
+    "Ada_NIST AI 600-1 Generative AI Profile",
+    "Ada_NIST IR 8312 Explainable AI Principles",
+    "Ada_NIST SP 1270 Bias in AI",
+    "Ada_NIST SP 800-218A Secure Software Development GenAI",
+    "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r",
+    "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A"
+   ],
+   "docs_overlap": 0,
+   "max_abs_diff_overlap_pod_vs_laptop": null,
+   "missing_doc_method": 0,
+   "extra_doc_method": 0,
+   "duplicates": 0
+  },
+  "sdp_a": {
+   "docs_pod": 129,
+   "docs_laptop_only": [],
+   "docs_overlap": 32,
+   "max_abs_diff_overlap_pod_vs_laptop": 0.001076340675354004,
+   "missing_doc_method": 0,
+   "extra_doc_method": 0,
+   "duplicates": 0
+  },
+  "sdp_b": {
+   "docs_pod": 129,
+   "docs_laptop_only": [],
+   "docs_overlap": 0,
+   "max_abs_diff_overlap_pod_vs_laptop": null,
+   "missing_doc_method": 0,
+   "extra_doc_method": 0,
+   "duplicates": 0
+  }
+ }
+}

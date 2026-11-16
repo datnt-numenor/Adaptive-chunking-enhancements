@@ -1,0 +1,249 @@
+DOCUMENT: arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2311.11776v1 [cs.AI] 20 Nov 2023 -->
+
+# Responsible AI Research Needs Impact Statements Too
+
+<Table>
+| Alexandra Olteanu   | Michael Ekstrand   | Carlos Castillo   | Jina Suh           |
+|:--------------------|:-------------------|:------------------|:-------------------|
+| Microsoft Research  | Drexel University  | ICREA and UPF     | Microsoft Research |
+</Table>
+
+All types of research, development, and policy work can have unintended, adverse consequenceswork in responsible artificial intelligence (RAI), ethical AI, or ethics in AI is no exception.
+
+The work of the responsible AI community has illustrated how the design, deployment, and use of computational systems-including machine learning (ML), artificial intelligence (AI), and natural language processing (NLP) systems-engender a range of adverse impacts. As a result, in recent years, the authors of ML, AI, and NLP research papers have been required to include reflections on possible unintended consequences and negative social impacts as dedicated sections or extensive checklists (see e.g., Ashurst et al., 2022; Nanayakkara et al., 2021; Boyarskaya et al., 2020; Prunkl et al., 2021). Even though such requirement traces its roots to work done within the responsible AI community (e.g., Hecht et al., 2018), responsible AI conferences and publication venues, such as FAccT, 1 AIES, 2 FORC, 3 or EAAMO, 4 have yet to explicitly enforce similar requirements. Surprisingly, many papers on responsible AI, ethical AI, ethics in AI, or related topics 5 do not include similar reflections on possible adverse impacts. RAI research and work is often taken to be inherently beneficial with little to no potential for harm and can thus paradoxically fail to consider any possible adverse consequences it may give rise to (Boyarskaya et al., 2020). This is also the case for many RAI artifacts which were found to, e.g., "not contend with the organizational, labor, and political implications of AI ethics work in practice" (Wong et al., 2023).
+
+This trend of failing to reflect on the possible negative impact of our own work should concern all of us, as the research we conduct and the artifacts we build are more often than not value-laden, and thus encode all kinds of implicit practices, assumptions, norms, and values (e.g., Jakesch et al., 2022; Raji et al., 2022; Wilkinson et al., 2023; Pinney et al., 2023; Zhou et al., 2022). Similarly to our colleagues from other research communities, we-RAI researchers and practitioners-can and often do also suffer from similar "failures of imagination" when it comes to the impact of our own work, and we need to at least keep ourselves to the same standard that we expect other communities to adhere to.
+
+We believe responsible AI research needs impact statements, too.
+
+Requiring adverse impact statements for RAI research is long overdue. There have been growing concerns about how our own work has routinely failed to engage with and address deeper patterns of injustice and inequality, often assuming that many elements of the status quo are immutable (Keyes et al., 2019; Green and Viljoen, 2020; Abebe et al., 2020; Laufer et al., 2022). We know that common RAI values may conflict in certain deployment settings and that different groups assess and prioritize responsible AI values differently (Jakesch et al., 2022), with RAI research still largely centering mostly Westernized and US-centric perspectives (Septiandri et al., 2023). All these can have profound implications for what problems and solutions end up being prioritized.
+
+\* 1 ACM Conference on Fairness, Accountability, and Transparency https://facctconference.org/
+
+\* 2 AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society https://www.aies-conference.com
+
+\* 3 Symposium on Foundations of Responsible Computing https://responsiblecomputing.org
+
+\* 4 ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization https://eaamo.org
+
+\* 5 Throughout this viewpoint, we use the acronym RAI to broadly refer to work on responsible AI/computing, ethical AI/computing, trustworthy AI/computing, ethics in AI/computing, or any related topics.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+Even well-intentioned applications, policies, or interventions to mitigate known issues can and often do lead to harm, e.g., (Green and Viljoen, 2020). Scrutiny is required even when a system, practice or framework seems to address real needs stakeholders might have, as there can be subtle patterns of problematic uses, system behavior, or outcomes that might be harder to discern (Sandvig et al., 2014; Robertson et al., 2021; Olteanu et al., 2019). For instance, Bennett and Keyes (2020) discuss how fixating on certain notions of fairness can reinforce existing dynamics and exacerbate harms. Indeed, blindly adhering to some RAI frameworks without considering what exactly are we trying to make, e.g., fair or transparent, can lead to these frameworks being used to legitimize harmful, absurd technologies (Keyes et al., 2019) and to a "checkbox culture" (Balayn et al., 2023) where researchers and practitioners do not meaningfully engage with RAI considerations or the social, economic, and political origins of these considerations.
+
+Furthermore, a focus on bias and fairness claims often assumes that these issues are due to poor implementation of a system and center the algorithmic systems themselves, distracting from both basic validation of functionality (Raji et al., 2022) and the factors that led to injustices in the first place (Bennett and Keyes, 2020). RAI research, similarly to much of AI research, inadvertently may take for granted that AI systems work or that they are inevitable (Raji et al., 2022), failing to reflect on whether techno-solutions are even justifiable. Similarly, RAI interventions targeting the design phase of AI life-cycle tend to ignore important contextual factors that determine the outcomes resulting from the implementation, deployment, and use of AI systems (Gansky and McDonald, 2022). This is because many algorithms developed to help guarantee various, e.g., "fairness" requirements are developed "without policy and societal contexts in mind." 6
+
+There are also concerns about how RAI practice and research risks to facilitate paying lip service to the issues it ostensibly aims to address (e.g., Ali et al., 2023), rather than driving meaningful changes. RAI work might ignore organizational power dynamics and structures (Wong et al., 2023; Ali et al., 2023) that are critical to enacting change, as well as the fact that in practice the responsibility of doing this work many times falls on the shoulders of either individuals coming from marginalized backgrounds (Birhane et al., 2022) and/or on those of time-constrained and untrained practitioners (Rakova et al., 2021; Buçinca et al., 2023). Raising concerns and performing RAI work can also take a psychological toll on RAI practitioners (Widder et al., 2023; Heikkilä, 2022) as, e.g., they might be exposed to harmful content or might need to take great personal risks.
+
+Examples of how RAI research and work can thus also inadvertently lead to harmful outcomes abound.
+
+What are other research communities doing? Following the call by Hecht et al. (2018) for researchers to disclose possible negative consequences of their work, conferences like the Conference on Neural Processing Information Systems (NeurIPS) (Ashurst et al., 2020) and the International Conference on Machine Learning (ICML) have started requiring authors to reflect on "whenever there are risks associated with the proposed methods, methodology, application or data collection and data usage, authors are expected to elaborate on the rationale of their decision and potential mitigations." 7 These requirements have evolved over time from dedicated statements on "potential broader impact of their work, including its ethical aspects and future societal consequences" (Ashurst et al., 2020) to a detailed paper checklist. 8 Similarly, the International Conference on Learning Representations (ICLR) also encourages authors to include an Ethics Statement in their papers that covers reflections about "potentially harmful insights, methodologies and applications." 9 The current Association for Computational Linguistics (ACL) rolling review call for papers-used by most ACL venues-explicitly encourages the authors "to discuss the limitations of their work in a dedicated section" and "devote a section of their paper to concerns about the ethical impact of the work and to a discussion of broader impacts of the work," 10 while also providing a responsible NLP research checklist. 11 The conference on Empirical Methods in Natural Language Processing (EMNLP) made the "discussion of limitations" mandatory in 2023, while also encouraging authors to include "an optional broader impact statement or other discussion of ethics." 12 To nudge authors to be comprehensive in their discussions of limitations, ethical considerations, and adverse impacts, these venues typically do not count these sections or discussions towards the page limit.
+
+\* 6 https://www.wired.com/story/bias-statistics-artificial-intelligence-healthcare/
+
+\* 7 NeurIPS Code of Ethics: https://neurips.cc/public/EthicsGuidelines
+
+\* 8 NeurIPS Paper Checklist Guidelines: https://neurips.cc/public/guides/PaperChecklist
+
+\* for the International Conference on Learning Representations:
+
+\* 9 Author guide https://iclr.cc/Conferences/2024/AuthorGuide
+
+\* 10 https://aclrollingreview.org/cfp
+
+\* 11 https://aclrollingreview.org/responsibleNLPresearch/
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+What do RAI venues do? The ACM Conference on Fairness, Accountability, and Transparency (FAccT) recent calls for papers have mainly guided authors towards the new ACM Code of Ethics and Professional Conduct, 13 and ask them to "adhere to precepts of ethical research and community norms." Similarly, past call for papers of other RAI venues such as FORC and EEAMO only briefly note that authors e.g., "are encouraged to reflect on relevant ethics guidelines" such as the ACM Code of Ethics, respectively that "papers should include a discussion of ethical impacts and precautions taken, including disclosure regarding whether the study was approved by an Institutional Review Board (IRB)." AIES' call for papers 14 does not seem to include any language requiring or encouraging papers to include ethical considerations, limitations, or impact statements. Overall, these CFPs do not feature explicit calls for authors to include reflections on possible adverse impacts their work might give rise to, do not explicitly enforce such requirements, and do not provide explicit guidance or incentives to do so (e.g., extra pages, checklists).
+
+# Suggestions for More Meaningful Engagement with the Impact of RAI Research
+
+To help others understand not only the benefits or positive outcomes, but also the possible harmful outcomes or adverse impacts of our own research, we believe RAI papers should go one step beyond what other research communities are currently doing and include: 1) reflections on how the researchers' disciplinary background, lived experiences, and goals might affect the way they approach their work (as part of researcher positionality statements), 2) a description of the ethical concerns the authors grappled with and mitigated while conducting the work (as part of ethical considerations statements), 3) reflections on the limitations of their methodological choices (as part of a discussion of limitations), and-informed by a researcher positionality, known ethical concerns, and known limitations-4) reflections on possible adverse impacts the work might lead to once published (as part of adverse impact statements).
+
+By distinguishing between these four different elements of research practice and outcomes-which have at times been conflated-without being too prescriptive, we hope to provide both some clarity and guidance about what each of these statements could include. In doing so, we draw on emerging practices in other communities (e.g., Ashurst et al., 2020; Hecht, 2020). However, we recognize that the RAI community comes from diverse disciplinary backgrounds, and some of these elements might be unfamiliar or might be less applicable for some types of work than others.
+
+1) RAI papers should include researcher positionality statements. Our research, development, and policy work necessarily rely on various (explicit and implicit) assumptions that we make and that are being shaped by our values, disciplinary backgrounds, knowledge, and lived experiences. We collectively hold a variety of goals and theories of change that motivate and guide our work (Wilkinson et al., 2023). Positionality statements are meant to provide added transparency and scaffold readers' understanding of how our background and experiences influence or inform our work, and how our perspectives might as a result differ from those of others (Liang et al., 2021). If the authors believe that their worldview does not affect their work, that by itself reflects a position that the authors operate under, and they could simply state that in their positionality statement.
+
+We, however, recognize that authors might also be concerned about how such statements may end up disclosing axes of their identity that might negatively impact how their work is being perceived and evaluated. Positionality statements, however, do not necessarily need to disclose demographic or other sensitive attributes, or "include an identity disclosure" (Liang et al., 2021). They can instead focus on any other aspects that help the reader understand where the authors are coming from by providing clarity about the lenses they are using when conducting the work (Liang et al., 2021). As a starting point, we recommend checking the researcher guide by Holmes (2020) and the thoughtful suggestions and examples provided by Liang (2021).
+
+\* 12 https://2023.emnlp.org/calls/main_conference_papers/
+
+\* 13 The ACM Code of Ethics and Professional Conduct notes that computing professionals' responsibilities include: "Give comprehensive and thorough evaluations of computer systems and their impacts, including analysis of possible risks." and "Foster public awareness and understanding of computing, related technologies, and their consequences."
+
+\* 14 https://www.aies-conference.com/2022/call-for-papers/index.html
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+2) RAI papers should include ethical considerations statements. By its very nature, RAI work centers humans. It is thus critical that ethical considerations remain top of mind for researchers and practitioners, who should carefully consider how the individual autonomy, agency, and wellbeing-of e.g., those producing or represented in datasets, of those involved in (or excluded from) any other part of the research and development processes (e.g., study participants, researchers, engineers, content moderators, red team-ers), or of those expected to benefit or engage with the research outcomes-are impacted by the use of data or by how the research was conducted. Ethical considerations statements should especially cover ethical concerns the authors had and mitigated while conducting the work. These statements could include whether the authors obtained an IRB's approval for any human subject research and the concerns covered by the IRB. However, while IRBs to some extent set common standards and provide researchers with a framework to reflect critically about risks and benefits, and whether these risks and benefits are justly apportioned (Olteanu et al., 2019), the ethical considerations statements should not necessarily be limited to them.
+
+3) RAI papers should include discussions of limitations. Reflecting on and making any data and methodological limitations explicit can further help illustrate the issues these limitations (and the resulting work) might lead to. Such limitations can include aspects related to research design choices such as problem framing or data and methodological choices, or aspects related to constraints that researchers need to navigate, such as access to participants, computing, or other resources. The discussion about limitations could, for instance, include reflections on the assumptions that a given problem framing or methodological approach makes and when those assumptions might not hold, or on the way that data biases or lack of data coverage limits the insights that can be drawn from it. It could also include considerations related to internal, external, or construct validity (Olteanu et al., 2019; Jacobs and Wallach, 2021; Blodgett et al., 2021). If the authors believe their work has no limitations, they could note this. While discussions of methodological limitations are more commonly included in research papers across disciplines, we believed it is worth foregrounding them here as well, even only to clarify how they are different from ethical concerns and adverse impacts. The work by Smith et al. (2022) might provide a useful starting point for thinking about limitations.
+
+4) RAI papers should include adverse impact statements. While impact statements about possible adverse impacts can be informed by the researcher positionality, ethical considerations, and discussions of methodological limitations, they are not the same. For example, positionality statements are important when thinking about impacts as they help contextualize how authors prioritize problems, and thus help understand possible blind-spots they might have. In a good impact statement, authors critically reflect on not only the impact of how the work was done (which might be covered by ethical concerns), but also on the impact the work will have once it is put out into the world and used by others-e.g., work using crowd judges to label harmful content does not only raise concerns when the research is conducted (which could go under ethical considerations), but also due to possibly recommending others to do the same. Adverse impact statements could also include reflections of how unintended consequences could possibly be handled, including recourse mechanisms and possible checks and balances that might help identify such consequences early on.
+
+Decoupling the anticipation of adverse impacts (e.g., ideating about what harms our work can give rise to) from their mitigation (e.g., how can we mitigate these possible harms), might also help authors avoid conflating the two and avoid hyper-focusing only on issues they might know how to mitigate (Buçinca et al., 2023). For those unfamiliar with this practice, the guide for writing the NeurIPS impact statements (Ashurst et al., 2020) might provide a helpful starting point, along with papers that have examined such practices at NeurIPS and ACL (e.g., Boyarskaya et al., 2020; Nanayakkara et al., 2021; Liu et al., 2022; Benotti and Blackburn, 2022).
+
+***
+
+We recommend all four reflections and discussions to center marginalized and vulnerable communities, particularly those at the intersection of race, ethnicity, class, gender, nationality, and other characteristics that historically and at present have led to marginalization. For instance, a domain that historically has motivated the development of a large portion of algorithmic fairness research are technologies and algorithms used by police, prisons, and/or judicial authorities (e.g., Angwin et al., 2016). Adverse impacts, ethical considerations, limitations, and researcher positionality statements are particularly critical and urgent for research motivated by, conducted in, or impacting situations in which the capacity to exercise one's rights might be diminished ("low-rights situations" described by Eubanks, 2018), especially that of marginalized and vulnerable populations such as prison inmates, heavily policed communities, migrants, and asylum seekers. Authors should also remember that those conducting the RAI research, those developing RAI policies and practices, or those being expected to enforce RAI policies and practices (e.g., practitioners who volunteer to do RAI, red teamers, content moderators) can and often do come from more marginalized backgrounds (e.g., Ali et al., 2023).
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+# Concluding Reflections
+
+We echo the growing body of work and the calls for embracing critical, dissenting voices (Matthews, 2022; Young et al., 2022) and self-reflection in our own community (Barocas et al., 2020; Boyarskaya et al., 2020). We believe our community should do more to critically reflect on and mitigate the possible risks and harms that RAI research and work might also give rise to. We hope this perspective provides a starting point and some guidance on how authors of RAI research could more meaningfully engage with possible adverse impacts of their own work.
+
+Adverse impact statement. Articulating, writing, and sharing this viewpoint is not without risks either. Anticipating harms or unintended consequences is hard even when guidance is provided, and researchers and practitioners often lack training and are time and resource-constrained. Thus, while we believe there are benefits from requiring reflections 1) on how our backgrounds shape our work, 2) on what ethical issues we identified while conducting the work and how we engaged with them, 3) on the limitations of our work, and 4) on the types of unintended consequences that the resulting work can have, we also recognize that these are not a panacea (e.g., Stahl et al., 2023) as many factors affect by whom, whether and when adverse impacts are foreseeable (Boyarskaya et al., 2020). These practices might, in fact, end up just reflecting and promoting the same perspective and values of the status quo regarding what should be prioritized as those shaping the work our community does.
+
+There is also a risk of overwhelming researchers and practitioners with too many requirements, and thus disincentivizing them from meaningfully engaging with the task of ideating about adverse impacts, or the task of reporting on ethical concerns and limitations, or even from conducting RAI research. As other communities are already doing, it might be worth for our community to explore various formats for how authors could report limitations, ethical concerns, and possible adverse impacts.
+
+We also want to once more acknowledge that there are concerns surrounding how positionality statements could inadvertently affect marginalized researchers and practitioners. Authors might be affected not only by being perceived as belonging to a group but also by being assumed as not being part of a group, as "careless requests for such statements or using them in absolutist ways that control who can and cannot do the work can cause some of the very same harms that those who request them are hoping to mitigate" (Liang et al., 2021). There is also a risk of misguided deference where the authors' identity is used to misconstrue their position as representative of an entire marginalized group (see Táíwò, 2020). Positionality statements might also accidentally deanonymize authors during peer-review if authors disclose attributes that are shared by only a few, and venues should explore how these might interact with specific anonymization requirements.
+
+Finally, our perspective might be failing to foresee situations where it might not be appropriate to ask authors to include some or any of the statements we highlighted earlier. RAI researchers and practitioners might also face more opposition and friction while conducting their work, and these requirements might unwittingly and unnecessarily further strain already overwhelmed researchers and practitioners.
+
+Positionality statement. The research, disciplinary background, and personal views of the lead author, AO, have significantly influenced this perspective, as her own work has examined how our choices of what problems to prioritize and work on, of how we do our work, and of how we interpret research results are often shaped by unstated or implicit values, norms, goals, practices, and assumptions, as well as by our own "failures of imagination." ME similarly draws from several years of efforts to bridge between different communities, particularly RAI and the recommendation and information retrieval (IR) communities, and his use of the pedagogical idea of "scaffolding" to model and advocate for continuous improvement in the quality of RAI work in these communities and the attention of that work to the needs and impact on marginalized communities (including shifts in his own research methods and writing). CC is influenced by a perspective centered on computing research, computing applications, and computing education, and by the specific concerns of the FAccT conference with which they have been involved for the past five years. JS draws from her research at the intersection of technology and human well-being where she examines the role of technologies, design choices, and values embedded in them in shifting power dynamics and improving individual and organizational well-being. In relation to the perspective presented in this article, she draws on her research on worker well-being, especially surrounding the invisible forms of labor that underlie the creation and deployment of technologies.
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+***
+
+While these two statements are imperfect examples of adverse impacts and researcher positionality, we hope they illustrate how even such a viewpoint can benefit from them. Our critique, however, very much applies to our own work as well, and even to this perspective. We might have also failed to recognize and highlight possible ethical concerns and limitations of both how our perspective on how "RAI research needs impact statements too" came together, and of what it currently covers.
+
+# Acknowledgements
+
+We would like to thank Alexandra Chouldechova for early discussions about impact statements for RAI research, and Reuben Binns for insightful feedback about positionality statements.
+
+# References
+
+- Rediet Abebe, Solon Barocas, Jon Kleinberg, Karen Levy, Manish Raghavan, and David G Robinson. 2020. Roles for computing in social change. In Proceedings of the 2020 conference on fairness, accountability, and transparency. 252-260.
+
+- Sanna J Ali, Angèle Christin, Andrew Smart, and Riitta Katila. 2023. Walking the Walk of AI Ethics: Organizational Challenges and the Individualization of Risk among Ethics Entrepreneurs. In Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 217226.
+
+- Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner. 2016. Machine bias. ProPublica (2016).
+
+- Carolyn Ashurst, Markus Anderljung, Carina Prunkl, Jan Leike, Yarin Gal, Toby Shevlane, and Allan Dafoe. 2020. A guide to writing the NeurIPS impact statement. Centre for the Governance of AI. URL: https://perma. cc/B5R8-2B9V (2020).
+
+- Carolyn Ashurst, Emmie Hine, Paul Sedille, and Alexis Carlier. 2022. Ai ethics statements: analysis and lessons learnt from neurips broader impact statements. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 2047-2056.
+
+- Agathe Balayn, Mireia Yurrita, Jie Yang, and Ujwal Gadiraju. 2023. "Fairness Toolkits, A Checkbox Culture?" On the Factors that Fragment Developer Practices in Handling Algorithmic Harms. In Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society. 482-495.
+
+- Solon Barocas, Asia J Biega, Benjamin Fish, J˛edrzej Niklas, and Luke Stark. 2020. When not to design, build, or deploy. In Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. 695-695.
+
+- Cynthia L Bennett and Os Keyes. 2020. What is the point of fairness? Disability, AI and the complexity of justice. ACM SIGACCESS Accessibility and Computing 125 (2020), 1-1.
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+- Luciana Benotti and Patrick Blackburn. 2022. Ethics consideration sections in natural language processing papers. In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing. 4509-4516.
+
+- Abeba Birhane, Elayne Ruane, Thomas Laurent, Matthew S. Brown, Johnathan Flowers, Anthony Ventresque, and Christopher L. Dancy. 2022. The forgotten margins of AI ethics. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 948-958.
+
+- Su Lin Blodgett, Gilsinia Lopez, Alexandra Olteanu, Robert Sim, and Hanna Wallach. 2021. Stereotyping Norwegian salmon: An inventory of pitfalls in fairness benchmark datasets. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 1004-1015.
+
+- Margarita Boyarskaya, Alexandra Olteanu, and Kate Crawford. 2020. Overcoming failures of imagination in AI infused system development and deployment. arXiv preprint arXiv:2011.13416 (2020).
+
+- Zana Buçinca, Chau Minh Pham, Maurice Jakesch, Marco Tulio Ribeiro, Alexandra Olteanu, and Saleema Amershi. 2023. AHA!: Facilitating AI Impact Assessment by Generating Examples of Harms. arXiv preprint arXiv:2306.03280 (2023).
+
+- Virginia Eubanks. 2018. Automating inequality: How high-tech tools profile, police, and punish the poor. St. Martin's Press.
+
+- Ben Gansky and Sean McDonald. 2022. CounterFAccTual: How FAccT undermines its organizing principles. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 1982-1992.
+
+- Ben Green and Salomé Viljoen. 2020. Algorithmic realism: expanding the boundaries of algorithmic thought. In Proceedings of the 2020 conference on fairness, accountability, and transparency. 1931.
+
+- Brent Hecht. 2020. Suggestions for Writing NeurIPS 2020 Broader Impacts Statements. Medium. https://medium. com/@ BrentH/suggestions-for-writing-neurips-2020-broader-impactsstatements-121da1b765bf (2020).
+
+- Brent Hecht, Lauren Wilcox, Jeffrey P Bigham, Johannes Schöning, Ehsan Hoque, Jason Ernst, Yonatan Bisk, Luigi De Russis, Lana Yarosh, Bushra Anjum, et al. 2018. It's time to do something: Mitigating the negative impacts of computing through a change to the peer review process. ACM Future of Computing Blog (2018).
+
+- Melissa Heikkilä. 2022. Responsible AI has a burnout problem. MIT Technology Review. October 28 (2022), 2022.
+
+- Andrew Gary Darwin Holmes. 2020. Researcher Positionality-A Consideration of Its Influence and Place in Qualitative Research-A New Researcher Guide. Shanlax International Journal of Education 8, 4 (2020), 1-10.
+
+- Abigail Z Jacobs and Hanna Wallach. 2021. Measurement and fairness. In Proceedings of the 2021 ACM conference on fairness, accountability, and transparency. 375-385.
+
+- Maurice Jakesch, Zana Buçinca, Saleema Amershi, and Alexandra Olteanu. 2022. How different groups prioritize ethical values for responsible AI. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 310-323.
+
+- Os Keyes, Jevan Hutson, and Meredith Durbin. 2019. A mulching proposal: Analysing and improving an algorithmic system for turning the elderly into high-nutrient slurry. In Extended abstracts of the 2019 CHI conference on human factors in computing systems. 1-11.
+
+- Benjamin Laufer, Sameer Jain, A Feder Cooper, Jon Kleinberg, and Hoda Heidari. 2022. Four years of FAccT: A reflexive, mixed-methods analysis of research contributions, shortcomings, and future prospects. In 2022 ACM Conference on Fairness, Accountability, and Transparency. 401-426.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+Calvin Liang. 2021. Reflexivity, positionality, and disclosure in HCI.
+
+- Calvin A Liang, Sean A Munson, and Julie A Kientz. 2021. Embracing four tensions in humancomputer interaction research with marginalized people. ACM Transactions on Computer-Human Interaction (TOCHI) 28, 2 (2021), 1-47.
+
+- David Liu, Priyanka Nanayakkara, Sarah Ariyan Sakha, Grace Abuhamad, Su Lin Blodgett, Nicholas Diakopoulos, Jessica R Hullman, and Tina Eliassi-Rad. 2022. Examining Responsibility and Deliberation in AI Impact Statements and Ethics Reviews. In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society. 424-435.
+
+- Jeanna Matthews. 2022. Embracing critical voices. , 7-7 pages.
+
+- Priyanka Nanayakkara, Jessica Hullman, and Nicholas Diakopoulos. 2021. Unpacking the expressed consequences of AI research in broader impact statements. In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society. 795-806.
+
+- Alexandra Olteanu, Carlos Castillo, Fernando Diaz, and Emre Kıcıman. 2019. Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in big data 2 (2019), 13.
+
+- Christine Pinney, Amifa Raj, Alex Hanna, and Michael D Ekstrand. 2023. Much Ado About Gender: Current Practices and Future Recommendations for Appropriate Gender-Aware Information Access. In CHIIR '23. Association for Computing Machinery, New York, NY, USA, 269-279.
+
+- Carina EA Prunkl, Carolyn Ashurst, Markus Anderljung, Helena Webb, Jan Leike, and Allan Dafoe. 2021. Institutionalizing ethics in AI through broader impact requirements. Nature Machine Intelligence 3, 2 (2021), 104-110.
+
+- Inioluwa Deborah Raji, I Elizabeth Kumar, Aaron Horowitz, and Andrew Selbst. 2022. The fallacy of AI functionality. In 2022 ACM Conference on Fairness, Accountability, and Transparency. 959-972.
+
+- Bogdana Rakova, Jingying Yang, Henriette Cramer, and Rumman Chowdhury. 2021. Where responsible AI meets reality: Practitioner perspectives on enablers for shifting organizational practices. Proceedings of the ACM on Human-Computer Interaction 5, CSCW1 (2021), 1-23.
+
+- Ronald E Robertson, Alexandra Olteanu, Fernando Diaz, Milad Shokouhi, and Peter Bailey. 2021. "I can't reply with that": Characterizing problematic email reply suggestions. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems. 1-18.
+
+- Christian Sandvig, Kevin Hamilton, Karrie Karahalios, and Cedric Langbort. 2014. Auditing algorithms: Research methods for detecting discrimination on internet platforms. Data and discrimination: converting critical concerns into productive inquiry 22, 2014 (2014), 4349-4357.
+
+- Ali Akbar Septiandri, Marios Constantinides, Mohammad Tahaei, and Daniele Quercia. 2023. WEIRD FAccTs: How Western, Educated, Industrialized, Rich, and Democratic is FAccT?. In Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 160171.
+
+- Jessie J Smith, Saleema Amershi, Solon Barocas, Hanna Wallach, and Jennifer Wortman Vaughan. 2022. Real ml: Recognizing, exploring, and articulating limitations of machine learning research. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 587597.
+
+- Bernd Carsten Stahl, Josephina Antoniou, Nitika Bhalla, Laurence Brooks, Philip Jansen, Blerta Lindqvist, Alexey Kirichenko, Samuel Marchal, Rowena Rodrigues, Nicole Santiago, et al. 2023. A systematic review of artificial intelligence impact assessments. Artificial Intelligence Review (2023), 1-33.
+
+- Olúfé.mi Táíwò. 2020. Being-in-the-room privilege: Elite capture and epistemic deference. The Philosopher 108, 4 (2020), 61-70.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+- David Gray Widder, Derrick Zhen, Laura Dabbish, and James Herbsleb. 2023. It's about power: What ethical concerns do software engineers have, and what do they (feel they can) do about them?. In Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 467-479.
+
+- Daricia Wilkinson, Michael Ekstrand, Janet A. Vertesi, and Alexandra Olteanu. 2023. Theories of Change in Responsible AI. CRAFT Session at the 2023 Conference on Fairness, Accountability, and Transparency.
+
+- Richmond Y Wong, Michael A Madaio, and Nick Merrill. 2023. Seeing like a toolkit: How toolkits envision the work of AI ethics. Proceedings of the ACM on Human-Computer Interaction 7, CSCW1 (2023), 1-27.
+
+- Meg Young, Michael Katell, and PM Krafft. 2022. Confronting power and corporate capture at the FAccT Conference. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. 1375-1386.
+
+- Kaitlyn Zhou, Su Lin Blodgett, Adam Trischler, Hal Daumé III, Kaheer Suleman, and Alexandra Olteanu. 2022. Deconstructing NLG Evaluation: Evaluation Practices, Assumptions, and Their Implications. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 314-324.
+
+<!-- PageFooter: 9 -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "5aa89a78b681226f43c4b80ba2aabc489d5b9864cd79871f8fe38da49216ea83",
+  "prompt_sha256": "4ac38e67bba32d06065e42c9563478e6c3e4a62da962dc003b218a3130a2e616",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNyIXx5ajpcbZYebjPdn4LHuJ1FS",
+  "prompt_tokens": 7643,
+  "completion_tokens": 34,
+  "actual_usd": 0.00116685,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition and concern regarding context overload attacks, fully supporting the claim made in the Reference Answer."
+  }
+}

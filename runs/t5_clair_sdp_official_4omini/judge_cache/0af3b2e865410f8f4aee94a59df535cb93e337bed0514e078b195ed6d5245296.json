@@ -1,0 +1,14 @@
+{
+  "request_hash": "0af3b2e865410f8f4aee94a59df535cb93e337bed0514e078b195ed6d5245296",
+  "prompt_sha256": "6051b2ddc9932bdb0bbb5c7027d585f9108e3ddcca87d51124109e8de7d7045c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNMqpr5FIpNi5NXs8feaCA0hJelw",
+  "prompt_tokens": 9564,
+  "completion_tokens": 54,
+  "actual_usd": 0.001467,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about Ekimetrics' approach to measuring and mitigating bias in AI models, specifically mentioning a case where bias against women was identified and addressed, fully supporting the claims made in the Reference Answer."
+  }
+}

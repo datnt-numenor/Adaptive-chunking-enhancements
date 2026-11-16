@@ -1,0 +1,10 @@
+{
+  "request_hash": "16ff16d26d90c2aef3ab6171a6cbc6f6d6d3c44f3f82d1dc5c4de0b531943716",
+  "prompt_sha256": "371330a57b34b6631972d62faa73dd89b491367e003adaf25babd7bed1056137",
+  "answer": "Scaling inference-at-deployment affects the number of simultaneously served model copies by lowering this number. For example, if inference-at-deployment is scaled by two orders of magnitude, the number of copies that can be immediately deployed decreases by a factor of 100, meaning the new model can only be deployed in 1% as many tasks as it would have if it had been scaled by pre-training compute.\n\nAdditionally, the value of securing model weights is reduced. If frontier models plateau at a level like GPT-4 while inference-at-deployment scales significantly, the value of stealing model weights does not increase over time. The primary cost becomes the high inference-at-deployment costs, which would be much higher than the training costs of the model that was stolen. Thus, even if the weights were stolen, the thief would still face substantial costs to use the model at scale.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN156txw2NAzwgIDHOfz4U320rGh",
+  "prompt_tokens": 8081,
+  "completion_tokens": 173,
+  "actual_usd": 0.0013159499999999998
+}

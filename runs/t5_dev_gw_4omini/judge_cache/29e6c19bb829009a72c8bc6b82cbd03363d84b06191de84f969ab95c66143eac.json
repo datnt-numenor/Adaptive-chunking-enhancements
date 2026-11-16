@@ -1,0 +1,14 @@
+{
+  "request_hash": "29e6c19bb829009a72c8bc6b82cbd03363d84b06191de84f969ab95c66143eac",
+  "prompt_sha256": "5e1bff41dfa9d39355a731b239961686ecee9fd6c013e5dd6b7440176e4e908b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei282HyuIuMNl4j93yyG8PTF9ZxZM",
+  "prompt_tokens": 8300,
+  "completion_tokens": 39,
+  "actual_usd": 0.0012684,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the allocation of funds in the Consumer Privacy Fund, specifying the percentages and purposes for each allocation."
+  }
+}

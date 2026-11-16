@@ -1,0 +1,10 @@
+{
+  "request_hash": "cf507e49d2ae97af789601a5e0a40d1aa75a106dd5d4f9dff8341063d15d09b8",
+  "prompt_sha256": "780cdf0b2d87014cf879f887389585cf116da28b11e6de3f9a9e3a030fd4871c",
+  "answer": "According to the AI Act, the main obligations for providers of high-risk AI systems include:\n\n1. Establishment, application, documentation, and maintenance of a risk management system (Article 9).\n2. Development and training of high-risk systems with training and validation data according to certain quality criteria and data governance (Article 10).\n3. Preparation of technical documentation before the high-risk AI system is placed on the market (Article 11).\n4. Automatic recording of processes and events (logging) according to recognized standards (Article 12).\n5. Transparency and provision of information to the deployer (Article 13).\n6. Enabling human oversight during the use of the system (Article 14).\n7. Ensuring a high level of robustness, security, and accuracy (Article 15).\n\nCompliance must be demonstrated through a conformity assessment procedure, which may involve internal controls for high-risk systems that meet certain criteria, or external assessments for other high-risk systems. Ongoing compliance must also be ensured, including adjustments to the system if it no longer meets safety requirements, and a post-market monitoring system must be established and maintained. Additionally, the assessment procedure must be repeated if substantial modifications are made to the system.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMrswJNf80nxBXnVnrIHiDhlcybH",
+  "prompt_tokens": 7189,
+  "completion_tokens": 243,
+  "actual_usd": 0.0012241499999999998
+}

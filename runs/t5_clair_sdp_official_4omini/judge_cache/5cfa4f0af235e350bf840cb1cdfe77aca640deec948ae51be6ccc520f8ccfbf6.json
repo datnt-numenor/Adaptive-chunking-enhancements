@@ -1,0 +1,14 @@
+{
+  "request_hash": "5cfa4f0af235e350bf840cb1cdfe77aca640deec948ae51be6ccc520f8ccfbf6",
+  "prompt_sha256": "f341ccc9cc8ed2c6c359d1fc5c5b852101ceb292e055b490fd9a526e8f0326b7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOc5nQYp0K3QjIIjk9iIG7EocTJ",
+  "prompt_tokens": 9252,
+  "completion_tokens": 40,
+  "actual_usd": 0.0014118,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides detailed information about various types of attacks on AI systems, including model extraction, which directly supports the claim made in the reference answer."
+  }
+}

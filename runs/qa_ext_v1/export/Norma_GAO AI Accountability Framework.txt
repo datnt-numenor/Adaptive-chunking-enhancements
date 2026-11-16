@@ -1,0 +1,490 @@
+DOCUMENT: GAO AI Accountability Framework
+
+<<<PAGE 27>>>
+<Table>
+| U.S. government entities                        | Framework title                                                                           | Date      | Description                                                                                                                                                                                                                                                                                                                                                            |
+|:------------------------------------------------|:------------------------------------------------------------------------------------------|:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Food and Drug Administration                    | Artificial Intelligence/Machine Learning- Based Software as a Medical Device Action Plan  | Jan. 2021 | The plan outlines the FDA's next steps toward furthering oversight for artificial intelligence/machine learning based software as a medical device.                                                                                                                                                                                                                    |
+| Office of the Director of National Intelligence | Artificial Intelligence Ethics Framework for the Intelligence Community                   | June 2020 | The framework provides guidance on how to procure, design, build, use, protect, consume, and manage AI and related data in alignment with ethical principles adopted by the Intelligence Community.                                                                                                                                                                    |
+| Office of Management and Budget                 | Memorandum M-21-06, Guidance for Regulation of Artificial Intelligence Applications       | Nov. 2020 | The Memorandum sets out policy considerations that should guide, to the extent permitted by law, regulatory and non-regulatory approaches to AI applications developed and deployed outside of the federal government. In addition, it contains 10 principles for the stewardship of AI applications.                                                                  |
+| White House                                     | Executive Order No. 13,960, Promoting the Use of Trustworthy AI in the Federal Government | Dec. 2020 | The Executive Order includes principles that direct federal agencies to ensure that the design, development, acquisition, and use of AI is done in a manner that protects privacy, civil rights, civil liberties, and American values (Office of Management and Budget is directed to develop common policy guidance across agencies for implementing the principles). |
+</Table>
+
+Source: GAO analysis of U.S. government documents. | GAO-21-519SP
+
+a According to NIST officials, this document is a guidance or a reference document. Aspects of this guidance-such as the nine focus areas for AI standards-may help inform the development of a governance framework and processes.
+
+b In addition, DOD issued its Ethical Principles for AI in Feb 2020, with the goal of assisting the U.S. military in ensuring its AI development and use is responsible, equitable, traceable, reliable, and governable.
+
+These AI Governance frameworks identify principles for implementing AI in the U.S. government. They note that AI systems should be responsible, equitable, traceable, reliable, and governable. 22 These frameworks also highlight the need for developing standards, metrics and guidelines for accuracy, explainability, 23 and safety of such systems. One recent framework provides more detailed information on technical questions to consider and procedures to undertaken when assessing AI systems. 24
+
+<!-- PageFooter: Page 23 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+\* 22 One agency-DOD-provides definitions for these terms. For example, it defines responsible as human beings exercising appropriate levels of judgment and responsibility for the development, deployment, use, and outcomes of DOD's AI systems; equitable as taking deliberate steps to avoid unintended bias in the development and deployment of combat or non-combat AI systems that would inadvertently cause harm to persons; traceable as having an engineering discipline that is sufficiently advanced such that technical experts possess an appropriate understanding of the technology, development processes, and operational methods of its AI systems, including transparent and auditable methodologies, data sources, and design procedure and documentation; reliable as having an explicit, well-defined domain of use, and the safety, security, and robustness of such systems should be tested and assured across their entire life cycle within that domain of use; and governable as designed and engineered to fulfill their intended function while possessing the ability to detect and avoid unintended harm or disruption, and for human or automated disengagement or deactivation of deployed systems that demonstrate unintended escalatory or other behavior. See: Department of Defense, Defense Innovation Board, AI Principles: Recommendations on the Ethical Use of Artificial Intelligence by the Department of Defense (Washington, D.C.: Oct., 2019).
+
+23 Explainability refers "the details and reasons a model gives to make its functioning clear or easy to understand." See A. Barredo Arrieta, N. Diaz Rodriguez, J. Del Ser, A. Bennetot, S. Tabik, A. Barbado González, S. Garcia, S. Gil-López, D. Molina, R. Benjamins, R. Chatila, and F. Herrera, "Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI," Information Fusion, vol. 58 (2020), pp. 82-115.
+
+24 Office of the Director of National Intelligence (ODNI), Artificial Intelligence Ethics Framework for the Intelligence Community version 1.0 (Washington, D.C.: June 2020), accessed June 22, 2021, https://www.intelligence.gov/artificial-intelligence-ethicsframework-for-the-intelligence-community.
+
+<!-- PageFooter: Page 24 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+FRAMEWORK PRINCIPLE
+
+1.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+# Governance Principle:
+
+Promote accountability by establishing processes to manage, operate, and oversee implementation.
+
+Source: GAO. | GAO-21-519SP
+
+Management, and those charged with oversight of AI, can use governance structures and processes to manage risk, demonstrate the importance of integrity and ethical values, and ensure compliance with relevant laws, regulations, and guidance. GAO developed nine key practices for this principle, grouped into two categories:
+
+· Organizational level: Governance at the organizational level helps entities ensure oversight and accountability and manage risks of AI systems.
+
+· System level: Governance at the system level helps entities ensure AI systems meet performance requirements.
+
+# Governance at the Organizational Level
+
+Managers should establish and maintain an environment throughout the entity that sets a positive attitude toward internal controls. The Federal Internal Control Standards note that "the oversight body and management set the tone at the top and throughout the organization by their example." 25 Similarly, forum participants highlighted the need for entities to establish governance structures for AI systems that incorporate organizational values, consider risks, assign clear roles and responsibilities, and involve multidisciplinary stakeholders. To help entities establish governance structures and processes, as well as mitigate risks of implementing AI systems, GAO identified six key practices. The following provides detail on these practices based primarily on forum discussions, literature review, and expert interviews.
+
+1.1 Clear goals: Define clear goals and objectives for the AI system to ensure intended outcomes are achieved.
+
+1.2 Roles and responsibilities: Define clear roles, responsibilities, and delegation of authority for the AI system to ensure effective operations, timely corrections, and sustained oversight.
+
+According to literature we reviewed and discussions with forum participants, a key first step in the life cycle of an AI system is to clearly define its goals and objectives. The goals and objectives should be
+
+25 GAO-14-704G.
+
+<!-- PageFooter: Page 26 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+specific and measurable to enable management to identify, analyze, and respond to risks related to achieving those objectives. 26 Objectives may relate to the effectiveness and efficiency of the AI system, the reliability of using the information generated by the system, and compliance with applicable laws and regulations. Management should also define roles and responsibilities and delegate authority for various stages of the AI system's life cycle, including design, development, deployment, assessment, and monitoring. The roles and responsibilities of personnel should be appropriate and clearly understood, according to Executive Order 13,960 and forum participants. 27
+
+1.3 Values: Demonstrate a commitment to values and principles established by the entity to foster public trust in responsible use of the AI system.
+
+1.4 Workforce: Recruit, develop, and retain personnel with multidisciplinary skills and experiences in design, development, deployment, assessment, and monitoring of AI systems.
+
+# Deficit of AI Talent in the Federal Government
+
+As noted by the final report of the National Security Commission on Artificial Intelligence, "The human talent deficit is the government's most conspicuous AI deficit and the single greatest inhibitor to buying, building, and fielding AI-enabled technologies for national security purposes. This is not a time to add a few new positions in national security departments and agencies for Silicon Valley technologists and call it a day. We need to build entirely new talent pipelines from scratch."
+
+Source: National Security Commission on Artificial Intelligence, Final Report (Washington, D.C. Mar. 1, 2021). | GAO-21-519SP
+
+As management establishes the governance processes, it should also consider that "accountability is driven by the tone at the top and supported by a commitment to integrity, ethical values, organizational structure, and expectations of competence," according to the Federal Internal Control Standards. 28 Management should demonstrate its commitment to values and principles through directives, attitudes, and behaviors. One way to do so is by ensuring the entity recruits and retains competent personnel who have skills and experiences with design, development, assessment, and monitoring of the AI system. (See sidebar for a discussion on current talent deficits in the federal workforce.) The literature we reviewed and forum participants stressed the importance of having a multidisciplinary team that can address the technical aspects and the societal impacts of the AI system, whether the system is developed in house or procured. 29
+
+\* 26 ODNI, Artificial Intelligence Ethics Framework; Info-comm Media Development Authority (IMDA) and Personal Data Protection Commission (PDPC), Model Artificial Intelligence Governance Framework, Second Edition (Singapore: Jan. 21 2020).
+
+\* 27Exec. Order No. 13,960, Promoting the Use of Trustworthy Artificial Intelligence in the Federal Government (Dec. 3, 2020), 85 Fed. Reg. 78,939, 78,940 (Dec. 8, 2020).
+
+\* 28 GAO-14-704G.
+
+\* 29 ODNI, Artificial Intelligence Ethics Framework; World Economic Forum, Companion to the Model AI Governance Framework - Implementation and Self-Assessment Guide for Organizations, (Cologny/Geneva, Switzerland: Jan. 2020).
+
+<!-- PageFooter: Page 27 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+1.5 Stakeholder involvement: Include diverse perspectives from a community of stakeholders throughout the AI life cycle to mitigate risks.
+
+Forum participants and the literature we reviewed also emphasize the importance of including diverse perspectives throughout the AI life cycle. Strategies to incorporate diverse perspectives include establishing collaborative processes and multidisciplinary teams that involve subject matter experts in data science, software development, civil liberties, privacy and security, legal counsel, and risk management. These processes and teams should also engage with individuals who may be using or operating the system, or who may be affected by the AI system. The engagement of such a community of stakeholders can increase the likelihood of effectively identifying known and unknown risks, problematic assumptions, and limitations associated with the AI system, according to forum participants and the ODNI framework. 30
+
+1.6 Risk management: Implement an AI-specific risk management plan to systematically identify, analyze, and mitigate risks.
+
+# Example of a Risk Management Tool
+
+The Government of Canada's Directive on Automated Decision-Making requires government agencies to use the Algorithmic Impact Assessment tool to assess risks and impacts prior to the production of any automated decision-making system. The assessment provides a questionnaire to help agencies assess and mitigate the risks associated with deploying such a system, and consider the impact level of an AI system by reviewing its underlying capabilities and algorithms.
+
+Source: Government of Canada's Directive on Automated Decision-Making. | GAO-21-519SP
+
+Implementing a risk management plan for the AI system helps managers systematically identify, analyze, and mitigate risks associated with achieving the defined goals and objectives. Entities should consider implementing the risk management plan throughout the AI system life cycle to ensure risk mitigation is continuous and timely. For example, prior to developing the AI system, managers should first consider whether a particular use case is appropriate and identify the level of risk and potential societal harm. 31 (See sidebar for an example of a risk management tool.) Furthermore, risk management should distinguish between risks inherent to the business or subject matter and those associated with the AI system. For example, financial institutions may face risks associated with financial crimes, investments, and compliance. Such risks should be factored in; however, to ensure appropriate risk management and mitigation, they should not be comingled with those introduced by the AI system. Moreover, in the case of entities procuring AI systems from vendors, contracts should include provision for appropriate access to data, models, and parameters to enable sufficient oversight and auditing.
+
+\* 30 ODNI, Artificial Intelligence Ethics Framework.
+
+\* 31 According to the 2021 Final Report of the National Security Commission on Artificial Intelligence, "agencies should institute specific oversight and enforcement practices, including…a mechanism that would allow thorough review of the most sensitive/high-risk AI systems to ensure auditability and compliance with responsible use and fielding requirements…" National Security Commission on Artificial Intelligence, Final Report, (Washington, D.C.: Mar. 1 2021). In addition, according to one forum participant, entities should consider mitigating risks by limiting the scope of the AI system when there is not sufficient confidence that the stated goals and objectives can be achieved.
+
+<!-- PageFooter: Page 28 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+# Governance at the System Level
+
+Establishing governance structures and processes at a system level helps managers ensure the AI system achieves its intended outcomes and complies with relevant laws and regulations. GAO identified three key practices for system-level governance. The following provides detail on these practices from forum discussions, literature, and expert interviews.
+
+1.7 Specifications: Establish and document technical specifications to ensure the AI system meets its intended purpose.
+
+The Federal Internal Control Standards state that documentation is a necessary part of an internal control system and is required for the effective design, implementation, and operation. 32 The Singapore Model Artificial Intelligence Governance Framework (2 nd Edition) suggests incorporating descriptions of the AI system's design and expected behavior into the documentation of technical specifications as a way to demonstrate accountability to individuals and regulators. 33 Management should use judgment in determining the extent of documentation that is necessary to provide sufficient assurance that AI objectives will be met. The level and nature of documentation vary based on the complexity of the operational processes the entity performs, and the risk level of the AI system. For example, entities may identify certain AI systems as high risk, thus requiring a higher level of documentation, according to a forum participant. 34
+
+\* 32 GAO-14-704G.
+
+\* 33 IMDA and PDPC, Model Artificial Intelligence Governance Framework.
+
+<!-- PageFooter: Page 29 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 34>>>
+1.8 Compliance: Ensure the AI system complies with relevant laws, regulations, standards, and guidance.
+
+Entities can also take a proactive approach to ensuring compliance by considering applicable laws and regulations, industry standards, and guidance from federal agencies and other entities. Federal laws and regulations specific to AI are largely still under development, but data privacy and non-discrimination laws are likely to be relevant for AI systems that process personally identifiable information or sensitive data. Numerous private and public organizations have developed guidance on incorporating ethical principles such as fairness, accountability, transparency, and safety in AI use. 35 Considering such guidance when defining goals and objectives can help entities demonstrate a commitment to principles and values that foster public trust in responsible AI use.
+
+1.9 Transparency: Promote transparency by enabling external stakeholders to access information on the design, operation, and limitations of the AI system.
+
+Documentation and external communication can offer a way for entities to provide transparency. Communication may include disclosing relevant information regarding the use of AI systems, such as (a) what the system is for, (b) what it is not for, (c) how it was designed, and (d) what its limitations are. 36 These disclosures should also take into account privacy issues, whether sensitive law enforcement and personally identifiable information is involved, national security issues, and concerns related to other kinds of protected information. In addition, forum participants noted the importance of promoting transparency and explainability, while also protecting individual privacy and the developer's intellectual property rights. 37 The text box below provides an example of how documentation can provide increased transparency in AI systems.
+
+\* 34 The Singapore Model AI Governance Framework provides an example of a company which conducts initial risk scoring to determine the risk of the proposed AI activity based on multiple factors-including the impact on individuals from AI decisions. If an AI project has been identified as high risk, it will be referred to the Governance Council for review. Low-risk projects will not be subjected to a review and can proceed to the model development stage. Similarly, the final report of the National Security Commission on Artificial Intelligence also states that "agencies should institute specific oversight and enforcement practices, including auditing and reporting requirements; a mechanism that would allow thorough review of the most sensitive/high-risk AI systems to ensure auditability and compliance with responsible use…" National Security Commission on Artificial Intelligence, Final Report.
+
+\* 35 IBM Research, AI Fairness 360, accessed June 2, 2021, https://aif360.mybluemix.net/; IEEE Standards Association, Raising the Standards in Artificial Intelligence Systems (AIS), accessed Mar. 18, 2021, https://standards.ieee.org/initiatives/artificial-intelligence-systems/index.html; ODNI, Artificial Intelligence Ethics Framework.
+
+<!-- PageFooter: Page 30 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 35>>>
+# Example of Transparency through Documentation
+
+According to the nonprofit organization Partnership for AI, "transparency requires that the goals, origins, and form of a system be made clear and explicit to users, practitioners, and other impacted stakeholders seeking to understand the scope and limits of its appropriate use. One simple and accessible approach to increasing transparency in [machine learning] lifecycles is through an improvement in both internal and external documentation. This documentation process begins in the machine learning system design and set up stage, including system framing and high-level objective design. This involves contextualizing the motivation for system development and articulating the goals of the system in which this system is deployed, as well as providing a clear statement of team priorities and objectives throughout the system design process."
+
+Source: Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles (ABOUT ML). | GAO-21-519SP
+
+\* 36ODNI, Artificial Intelligence Ethics Framework.
+
+\* 37 See key practice 2.8 for additional questions to consider regarding data privacy.
+
+<!-- PageFooter: Page 31 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+# 1. Governance Framework
+
+# Governance at the Organizational Level
+
+1.1 Clear goals: Define clear goals and objectives for the AI system to ensure intended outcomes are achieved.
+
+# Questions to Consider
+
+· What goals and objectives does the entity expect to achieve by designing, developing, and/or deploying the AI system?
+
+· To what extent do stated goals and objectives represent a balanced set of priorities and adequately reflect stated values?
+
+· How does the AI system help the entity meet its goals and objectives?
+
+· To what extent does the entity communicate its AI strategic goals and objectives to the community of stakeholders?
+
+· To what extent does the entity have the necessary resources-funds, personnel, technologies, and time frames-to achieve the goals and objectives outlined for designing, developing and deploying the AI system?
+
+· To what extent does the entity consistently measure progress towards stated goals and objectives?
+
+1.2 Roles and responsibilities: Define clear roles, responsibilities, and delegation of authority for the AI system to ensure effective operations, timely corrections, and sustained oversight.
+
+# Questions to Consider
+
+· What are the roles, responsibilities, and delegation of authorities of personnel involved in the design, development, deployment, assessment and monitoring of the AI system?
+
+· To what extent has the entity clarified the roles, responsibilities, and delegated authorities to relevant stakeholders?
+
+# Audit Procedures
+
+· Collect organizational charts, governance board charters, policies or guidance documents that define roles, responsibilities, and delegated authorities for personnel involved in design, development, deployment, assessment, and monitoring of the AI system.
+
+· Review organizational documents that outline roles, responsibilities, and delegation of authority to assess whether they are defined and clarified to relevant stakeholders. In addition, assess whether the operational structure enables timely corrections and oversight.
+
+· Interview management, program managers, and relevant stakeholders to determine whether roles, responsibilities, and delegated authorities are defined, clarified, and understood at all levels.
+
+Source: GAO analysis of U.S. and foreign government, industry, academic, and nonprofit organization documents; interviews; and forum discussion. | GAO-21-519SP Notes: In this table, "Community of stakeholders" can include management, program managers, developers, data scientists, legal and policy officers, information technology officers, subject matter experts, civil liberty advocates, and users.
+
+# Audit Procedures
+
+· Collect strategic and implementation plans that describe the goals and objectives for the design, development, and deployment of each AI system.
+
+· Review goals and objectives relevant to each AI system to assess whether they are specific, measurable, and clear so that they are understood at all levels of the entity. Assess whether the goals and objectives clearly define what is to be achieved, who is to achieve it, how it will be achieved, and the time frames for achievement. In addition, determine whether the AI system provides functions more effectively, efficiently, economically, ethically, and equitably relative to conventional approaches used by the entity to achieve its goals and objectives.
+
+· Interview community of stakeholders-management, program managers, developers, data scientists, legal and policy officers, information technology officers, subject matter experts, civil liberty advocates, and end users, to determine whether goals and objectives are clearly defined and understood
+
+<!-- PageFooter: Page 32 Artificial Intelligence Accountability Framework | GAO-21-519SP -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+# 1. Governance Framework
+
+# Governance at the Organizational Level
+
+1.3 Values: Demonstrate a commitment to values and principles established by the entity to foster public trust in responsible use of the AI system.
+
+# Questions to Consider
+
+· How does the entity demonstrate a commitment to stated values and principles?
+
+· To what extent has the entity operationalized its stated core values and principles for the AI system?
+
+· What policies has the entity developed to ensure the use of the AI system is consistent with its stated values and principles?
+
+· To what extent do these policies foster public trust and confidence in the use of the AI system?
+
+# Audit Procedures
+
+· Collect strategic plans, policies, design documents, and mission statements that state values and principles applicable to the AI system.
+
+· Review strategic plans, policies, and mission statements to determine whether management has established and prioritized values and principles, including those that ensure sufficient oversight.
+
+· Interview management, program managers, legal and policy officers, subject matter experts, civil liberty advocates, and relevant stakeholders to determine whether entity's use of the AI system reflects a commitment to stated values and principles.
+
+1.4 Workforce: Recruit, develop, and retain personnel with multidisciplinary skills and experiences in design, development, deployment, assessment, and monitoring of AI systems.
+
+# Questions to Consider
+
+· How does the entity determine the necessary skills and experience needed to design, develop, deploy, assess, and monitor the AI system?
+
+· What efforts has the entity undertaken to recruit, develop, and retain competent personnel?
+
+· What efforts has the entity undertaken to recruit, develop, and retain a workforce with backgrounds, experience, and perspectives that reflect the community impacted by the AI system?
+
+· How does the entity assess whether personnel have the necessary skills, training, resources, and domain knowledge to fulfill their assigned responsibilities?
+
+# Audit Procedures
+
+· Collect position descriptions, recruitment practices, performance reviews, and workforce development documents that describe job responsibilities, qualifications, training, guidance, and resources for personnel involved in the design, development, deployment, assessment, and monitoring the AI system.
+
+· Review recruitment/retention practices, training programs, needs assessments, candidate evaluations, performance reviews, certifications (e.g., conferences, training, and learning), and workforce development documents to assess alignment with necessary technical skills, competencies, backgrounds, experiences, and knowledge required.
+
+· Interview management, program managers, and human resource specialists to assess recruitment, development, and training practices.
+
+Source: GAO analysis of U.S. and foreign government, industry, academic, and nonprofit organization documents; interviews; and forum discussion. | GAO-21-519SP
+
+<!-- PageFooter: Page 33 Artificial Intelligence Accountability Framework | GAO-21-519SP -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+# 1. Governance Framework
+
+# Governance at the Organizational Level
+
+1.5 Stakeholder involvement: Include diverse perspectives from a community of stakeholders throughout the AI life cycle to mitigate risks.
+
+# Questions to Consider
+
+· What factors were considered when identifying the community of stakeholders involved throughout the life cycle?
+
+· Which stakeholders did the entity include throughout the design, development, deployment, assessment, and monitoring life cycle?
+
+· To what extent do the teams responsible for developing and maintaining the AI system reflect diverse opinions, backgrounds, experiences, and perspectives?
+
+· What specific perspectives did stakeholders share, and how were they integrated across the design, development, deployment, assessment, and monitoring of the AI system?
+
+· To what extent has the entity addressed stakeholder perspectives on the potential negative impacts of the AI system on end users and impacted populations?
+
+1.6 Risk management: Implement an AI-specific risk management plan to systematically identify, analyze, and mitigate risks.
+
+# Questions to Consider
+
+· To what extent has the entity developed an AI-specific risk management plan to systematically identify, analyze, and mitigate known and unknown operational, technical, as well as societal risks associated with the AI system?
+
+· To what extent has the entity defined its risk tolerance for using the AI system?
+
+· To what extent does the plan specifically address risks associated with acquisition, procurement of packaged software from vendors, cybersecurity controls, computational infrastructure, data, data science, deployment mechanics, and system failure?
+
+# Audit Procedures
+
+· Collect risk management plans and evaluation documents that describe the entity's risk management approach for the AI system.
+
+· Review risk management plans to assess how the entity identifies, reviews, and mitigates risks associated with the AI system, including those associated with civil liberties, privacy, and packaged software from vendors. In addition, assess whether risks identified existed prior to the use of the AI system and related to the inherent nature of the issue area. Assess whether the entity has determined if the information submitted and received from vendors is complete, accurate, and valid.
+
+· Interview management, program managers, legal and policy officers, subject matter experts, vendors, and relevant stakeholders to assess extent to which risk management plans are established.
+
+Source: GAO analysis of U.S. and foreign government, industry, academic, and nonprofit organization documents; interviews; and forum discussion. | GAO-21-519SP Notes: In this table, "Community of stakeholders" can include management, program managers, developers, data scientists, legal and policy officers, information technology officers, subject matter experts, civil liberty advocates, and end users.
+
+# Audit Procedures
+
+· Collect documentation that describes stakeholders and their involvement throughout the life cycle of the AI system.
+
+· Review outreach documents and correspondence to assess whether perspectives from a community of stakeholders were collected, assessed, and integrated throughout the life cycle.
+
+· Interview community of stakeholders to determine how their perspectives were assessed and integrated, if at all, throughout the life cycle of the AI system.
+
+<!-- PageFooter: Page 34 Artificial Intelligence Accountability Framework | GAO-21-519SP -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+# 1. Governance Framework
+
+# Governance at the Systems Level
+
+1.7 Specifications: Establish and document technical specifications to ensure the AI system meets its intended purpose.
+
+# Questions to Consider
+
+· What challenge/constraint is the AI system intended to solve?
+
+· To what extent has the entity clearly defined technical specifications and requirements for the AI system?
+
+· How do the technical specifications and requirements align with the AI system's goals and objectives?
+
+· What justifications, if any, has the entity provided for the assumptions, boundaries, and limitations of the AI system?
+
+# Audit Procedures
+
+· Collect documents on technical specifications and requirements, including architecture diagrams, workflows, data characterization, and test plans.
+
+· Review documents to map program goals with technical specifications and requirements, including components and test plans, to ensure the system meets its intended purpose. In addition, identify constraints and assumptions incorporated into the AI system.
+
+· Interview program managers, developers, data scientists, subject matter experts, and systems engineers to determine whether the AI system's technical specifications align with its goals and objectives.
+
+1.8 Compliance: Ensure the AI system complies with relevant laws, regulations, standards, and guidance.
+
+# Questions to Consider
+
+· To what extent has the entity identified the relevant laws, regulations, standards, and guidance, applicable to the AI system's use?
+
+· How does the entity ensure that the AI system complies with relevant laws, regulations, standards, federal guidance, and policies?
+
+· To what extent is the AI system in compliance with applicable laws, regulations, standards, federal guidance, and entity policies?
+
+# Audit Procedures
+
+· Collect strategic, design, and implementation documents that describe the AI system's compliance with relevant laws and regulations, standards, federal guidance, and entity policies.
+
+· Review relevant laws, regulation, standards, federal guidance, and entity policies; and assess whether the entity has established controls to ensure the AI system meets these requirements.
+
+· Interview management, program managers, legal and policy officers, subject matter experts, and relevant stakeholders to assess compliance with relevant laws and regulations.
+
+Source: GAO analysis of U.S. and foreign government, industry, academic, and nonprofit organization documents; interviews; and forum discussion. | GAO-21-519SP
+
+<!-- PageFooter: Page 35 Artificial Intelligence Accountability Framework | GAO-21-519SP -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+# 1. Governance Framework
+
+# Governance at the Systems Level
+
+1.9 Transparency: Promote transparency by enabling external stakeholders to access information on the design, operation, and limitations of the AI system.
+
+# Questions to Consider
+
+· What type of information is accessible on the design, operations, and limitations of the AI system to external stakeholders, including end users, consumers, regulators, and individuals impacted by use of the AI system?
+
+· How easily accessible and current is the information available to external stakeholders?
+
+· To what extent is this information sufficient and appropriate to promote transparency?
+
+# Audit Procedures
+
+· Collect information from entity's public websites, correspondence, and related outreach efforts on information shared with external stakeholders on use and limitation of the system.
+
+· Review the public websites, correspondence, and related documents to assess whether the type of information shared is clear, appropriate, and sufficient to promote awareness of the use and limitation of the AI system. In addition, consider conducting structured interviews, focus groups, and/or surveys of impacted users, regulators, consumers and other individuals affected to assess the extent to which outreach efforts provide the public with necessary information on the use and limitation of the AI system.
+
+· Interview community of stakeholders to assess entity's information communication and outreach efforts.
+
+Source: GAO analysis of U.S. and foreign government, industry, academic, and nonprofit organization documents; interviews; and forum discussion. | GAO-21-519SP Notes: In this table, "Community of stakeholders" can include management, program managers, developers, data scientists, legal and policy officers, information technology officers, subject matter experts, civil liberty advocates, and end users.
+
+<!-- PageFooter: Page 36 Artificial Intelligence Accountability Framework | GAO-21-519SP -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+# Data Principle:
+
+Ensure quality, reliability, and representativeness of data sources, origins, and processing.
+
+Source: GAO. | GAO-21-519SP
+
+Data used to train, test, and validate AI systems should be of sufficient quality and appropriate for the intended purpose to ensure the system produces consistent and accurate results. 38 Management should provide reasonable assurance of the quality, reliability, and representativeness of the data included in the system, from its development stage to system operation. GAO developed eight key practices for this principle, divided into two categories:
+
+· Data used for model development: This category refers to training data used in developing a probabilistic component, such as a machine learning model for use in an AI system, as well as data sets used to test and validate the model.
+
+· Data used for system operations: This category refers to the various data streams that have been integrated into the operation of an AI system, which may include multiple models. 39
+
+# Data Used for Model Development
+
+AI based on machine learning models begins with data and infers rules or decision procedures that predict outcomes. Quality, reliability, and representativeness of the data therefore may affect the accuracy, precision, recall, and biases of the predicted outcomes of the AI models. We have identified five key practices to help entities use appropriate data for developing AI models.
+
+\* 38 Machine learning systems learn from data, known as the training set, in order to perform a task. A testing set is a subset of the data used to test the trained model. The testing set should be large enough to yield statistically relevant results and be representative of the data set as a whole.
+
+\* 39 M. Arnold, R.K.E. Bellamy, M. Hind, S. Houde, S. Mehta, A. Mojsilovíc, R. Nair, K. Natesan Ramamurthy, D. Reimer, A. Olteanu, D. Piorkowski, J. Tsay, and K. R. Varshney, "FactSheets: Increasing Trust in AI Services through Supplier's Declarations of Conformity," IBM Journal of Research and Development, vol. 63, no. 4/5 (2019): pp. 6:16:13.
+
+<!-- PageFooter: Page 38 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+2.1 Sources: Document sources and origins of data used to develop the models underpinning the AI system.
+
+The Federal Internal Control Standards describe the importance of documentation to ensure effective design, implementation, and operational effectiveness. 40 According to our review of literature and forum participants, documenting the provenance 41 and use of data in AI models can ensure data quality and enable third-party assessments. 42 In addition to documenting how the data were collected, entities should document how they were curated, and used to increase transparency and accountability. Forum participants and literature identified several key sources of evidence that auditors may collect to assess data used for AI models, including documentation on: 1) how data have been collected, prepared, labeled, and maintained; and 2) how data are monitored on a continual basis. According to OECD, when data used in the AI system are well documented and traceable, it enables analysis of the system's outcomes and ensures they are consistent and appropriate for the use case. 43
+
+\* 40 GAO-14-704G.
+
+\* 41 The term "data provenance" refers to a record that accounts for the origin of a piece of data (in a database, document, or repository), together with an explanation of how and why it got to the present place. A provenance record will document the history for each piece of data.
+
+\* 42 European Union Agency for Fundamental Rights (EU-FRA), Data Quality and Artificial Intelligence - Mitigating Bias and Error to Protect Fundamental Rights (Vienna, Austria: June 11, 2019); S. Holland, A. Hosny, S. Newman, J. Joseph, and K. Chmielinski, The Dataset Nutrition Label: A Framework to Drive Higher Data Quality Standards, https://arxiv.org/pdf/1805.03677.
+
+\* 43 OECD, Recommendation of the Council on Artificial Intelligence.
+
+<!-- PageFooter: Page 39 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+2.2 Reliability: Assess reliability of data used to develop the models.
+
+# GAO Guidance on Data Reliability
+
+In an audit environment, reliability of data means that data are applicable for audit purposes and are sufficiently complete and accurate.
+
+Applicability for audit purpose refers to whether the data, as collected, are valid measures of the underlying concepts being addressed in the objectives.
+
+Completeness refers to the extent to which relevant data records and fields are present and sufficiently populated.
+
+Accuracy refers to the extent to which recorded data reflect the actual underlying information.
+
+Source: Adapted from GAO-20-283G. | GAO-21-519SP
+
+Entities should also ensure that data used to develop the models in the AI models are reliable because data reliability affects the accuracy of model predictions, according to literature and forum participants. 44 For auditors and entities being audited, GAO provided guidance on what data reliability means (see sidebar). According to GAO's Federal Information System Controls Audit Manual, "The entity should implement procedures to reasonably assure that (1) data are inputted in a controlled manner, (2) data inputted into the application are complete, accurate, and valid, (3) any incorrect information is identified, rejected, and corrected for subsequent processing, and (4) the confidentiality of the data is adequately protected. Inadequate controls can result in incomplete, inaccurate, and/or invalid records in the application data or unauthorized disclosure of application data." 45 Entities should also assess the extent to which the data accurately and verifiably represent constituent populations served by the AI system. AI models trained on data that are not representative of the target population may produce biased results, in that the model performs well for the characteristics that are well represented and poorly for the characteristics that are underrepresented, according to literature we reviewed and one forum participant. 46
+
+2.3 Categorization: Assess attributes used to categorize data.
+
+Entities should document their rationale for organizing the data and how they are segregated into training, development, and testing sets prior to model development. The documentation can allow a third-party to determine whether the data segregation is appropriate. Inadequate separation between the training and testing data could result in overfitting-that is, the model may perform well during testing but underperform in the operational environment when it encounters unfamiliar data. 47
+
+\* 44 EU-FRA, Data Quality and Artificial Intelligence.
+
+\* 45 GAO, Federal Information System Controls Audit Manual (FISCAM), GAO-09-232G, (Washington, D.C.: Feb. 2, 2009).
+
+\* 46 The Supreme Audit Institutions of Finland, Germany, the Netherlands, Norway and the UK, Auditing machine learning algorithms (Oct. 14, 2020).
+
+<!-- PageFooter: Page 40 GAO-21-519SP Artificial Intelligence Accountability Framework -->
+
+<!-- PageBreak -->
+

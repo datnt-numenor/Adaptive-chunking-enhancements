@@ -1,0 +1,14 @@
+{
+  "request_hash": "d0ab98a1b2f4101d8f07ae575c4a844aa0950dea3f2ecd9efe3a66537daa77ba",
+  "prompt_sha256": "dbe566a089edafd95232146812dc5c3ceff180de3244a96f77efa0e1631d223d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei28bJyoPSmi5X75KdWIfx0yluVvr",
+  "prompt_tokens": 7814,
+  "completion_tokens": 54,
+  "actual_usd": 0.0012045,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by mentioning the need for Signatories to comply with copyright law and avoid infringing sites, but it does not explicitly state that a dynamic list of hyperlinks will be made publicly available."
+  }
+}

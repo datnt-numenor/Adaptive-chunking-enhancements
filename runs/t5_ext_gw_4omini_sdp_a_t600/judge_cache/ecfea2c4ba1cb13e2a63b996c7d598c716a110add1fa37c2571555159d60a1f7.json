@@ -1,0 +1,14 @@
+{
+  "request_hash": "ecfea2c4ba1cb13e2a63b996c7d598c716a110add1fa37c2571555159d60a1f7",
+  "prompt_sha256": "6e9218d70fea3ceb1284eb419cec72d35813417d5c5881bc82f5ac840ef6fa05",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNX0UcM3F2KBtq42bckZiC29jao6",
+  "prompt_tokens": 7947,
+  "completion_tokens": 45,
+  "actual_usd": 0.00121905,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive details about the International Panel on Artificial Intelligence (IPAI), including its goals and foundational principles, which fully support the claims made in the Reference Answer."
+  }
+}

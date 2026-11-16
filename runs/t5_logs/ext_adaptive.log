@@ -1,0 +1,38 @@
+=== D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_adaptive prepare Mon Nov  9 23:30:05 SEAST 2026
+}
+[table5_run] generation_plan.json ghi model = gpt-4o-mini-2024-07-18
+"requests": 438
+"generation_upper_usd": 0.725077
+=== generate Mon Nov  9 23:30:06 SEAST 2026
+  "new_requests": 438,
+  "selected_requests": 438,
+  "budget_liability_usd": 0.595533
+}
+=== export Tue Nov 10 00:24:43 SEAST 2026
+  }
+}
+=== judge Tue Nov 10 00:24:44 SEAST 2026
+  "judge_liability_usd": 0.600712,
+  "combined_liability_usd": 1.196245,
+  "pending_requests": 0
+}
+=== summarize Tue Nov 10 01:44:55 SEAST 2026
+Traceback (most recent call last):
+  File "D:\Project\adaptive-chunking\research\table5_ext\t5_multi.py", line 84, in <module>
+    main()
+  File "D:\Project\adaptive-chunking\research\table5_ext\t5_multi.py", line 80, in main
+    exec(compile(LAUNCHER.read_text(encoding="utf-8"), str(LAUNCHER), "exec"), spec_globals)
+  File "D:\Project\adaptive-chunking\runs\gw\table5_run.py", line 138, in <module>
+    main()
+  File "D:\Project\adaptive-chunking\runs\gw\table5_run.py", line 120, in main
+    result = module.main()
+             ^^^^^^^^^^^^^
+  File "D:\Project\Adaptive-chunking-enhancements\research\week3\phase_i_summarize.py", line 183, in main
+    result = summarize(args.input_dir, args.output_dir, expected_queries=args.expected_queries)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\Adaptive-chunking-enhancements\research\week3\phase_i_summarize.py", line 67, in summarize
+    raise SummaryError(f"Missing judge output: {path}")
+phase_i_summarize.SummaryError: Missing judge output: D:\Project\adaptive-chunking\runs\t5_ext_gw_4omini_adaptive\judge-full\adaptive\generated_questions_evaluation_results.json
+[t5_multi] systems=adaptive@plain qa=438 in-memory patched sha256={'phase_i_table5': 'edf6dd2039dfa2acb9d4d5ba2aaf08c36e2f931ec2648ce566d62559bed3375d'}
+[table5_run] model=gpt-4o-mini-2024-07-18 | gia=0.15/0.6 | stage=summarize  | base URL host=(khong goi API)
+JOB DONE D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_adaptive Tue Nov 10 01:44:55 SEAST 2026

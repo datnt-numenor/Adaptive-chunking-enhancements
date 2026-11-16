@@ -1,0 +1,14 @@
+{
+  "request_hash": "3b1402377d744c4e64b4605c7a981fdd7ff9b04beb512cd7aaa2f4afc4ca7d4f",
+  "prompt_sha256": "b079e71e1ae3f5076de96894855b4732a41e4ec718d6347a8ba8ae05e2ea671d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNzLWXIWKeiOXmMw2jRzP6uW5M2Y",
+  "prompt_tokens": 7523,
+  "completion_tokens": 39,
+  "actual_usd": 0.00115185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the definitions of explicability, transparency, and provability in interpretable systems."
+  }
+}

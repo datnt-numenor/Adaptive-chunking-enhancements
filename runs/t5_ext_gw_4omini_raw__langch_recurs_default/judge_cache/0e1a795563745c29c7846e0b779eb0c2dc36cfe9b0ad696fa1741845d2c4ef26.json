@@ -1,0 +1,14 @@
+{
+  "request_hash": "0e1a795563745c29c7846e0b779eb0c2dc36cfe9b0ad696fa1741845d2c4ef26",
+  "prompt_sha256": "5b5072874c8d85f7e2c884fec8a549c398e70f7bd97e249894de0178e64b18f2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOSjo2tn4W0ObUKBt2SrjU50eO4a",
+  "prompt_tokens": 8551,
+  "completion_tokens": 29,
+  "actual_usd": 0.0013000499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer regarding the limitations of the study."
+  }
+}

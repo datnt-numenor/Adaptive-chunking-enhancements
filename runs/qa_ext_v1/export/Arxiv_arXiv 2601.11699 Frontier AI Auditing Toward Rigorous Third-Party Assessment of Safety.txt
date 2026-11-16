@@ -1,0 +1,507 @@
+DOCUMENT: arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+
+<<<PAGE 80>>>
+[273] Federal Aviation Administration, "Section 7: Safety, accident, and hazard reports," in Aeronautical Information Manual. Accessed: Dec. 21, 2025. [Online]. Available: https://www.faa.go v/air_traffic/publications/atpubs/aim_html/chap7_section_7.ht ml
+
+[274] Federal Aviation Administration, "Key grant programs," U.S. Department of Transportation. Accessed: Dec. 21, 2025. [Online]. Available: https://www.transportation.gov/r ural/grant-toolkit/usdot-competitive-grants-by-agency/faa
+
+[275] U.S. Department of Transportation, "Aviation systems engineering," Volpe National Transportation Systems Center, May 14, 2025. Accessed: Dec. 21, 2025. [Online]. Available: https://www .volpe.dot.gov/our-work/air-traffic-systems-operations/aviat ion-systems-engineering
+
+[276] "United States v. The Boeing Company, Court Docket No.: 4:21-CR-005-O (N.D. Texas)," 2025. [Online]. Available: https://www.justice.gov/criminal/criminal-fraud /case/united-states-v-boeing-company
+
+[277] House Committee on Transportation and Infrastructure, "The Boeing 737 MAX: Examining the Design, Development, and Marketing of the Aircraft," U.S. House of Representatives, Final Committee Report, Sep. 2020. [Online]. Available: https://transportation.house .gov/imo/media/doc/2020.09.15%20FINAL%20737%20MAX%20Report%20 for%20Public%20Release.pdf
+
+[278] U.S. Congress, "Aircraft Certification, Safety, and Accountability Act, Pub. L. No. 116-260, 116th Cong." 2020. [Online]. Available: https://www.congress.gov/bill/116th-con gress/house-bill/8408
+
+[279] Federal Aviation Administration, "Out front on airline safety: Two decades of continuous evolution," Aug. 2, 2018. Accessed: Dec. 21, 2025. [Online]. Available: https://www.faa.gov /newsroom/out-front-airline-safety-two-decades-continuous-ev olution
+
+[280] International Civil Aviation Organization, "Latest ICAO aviation safety data reveals need for renewed focus, despite continuous long-term improvements," Aug. 11, 2025. Accessed: Dec. 21, 2025. [Online]. Available: https://www.icao.int/news/latest-icao-aviati on-safety-data-reveals-need-renewed-focus-despite-continuous -long-term
+
+[281] PTES, "Penetration testing execution standard." Accessed: Jan. 10, 2026. [Online]. Available: http://www.pentest-standard.org/index.php/Main_Page
+
+[282] Bank of England, "CBEST threat intelligence-led assessments implementation guide." Accessed: Jan. 10, 2026. [Online]. Available: https://www.bankofengland.co.uk/financ ial-stability/operational-resilience-of-the-financial-sector /cbest-threat-intelligence-led-assessments-implementation-gu ide
+
+[283] European Central Bank, "TIBER-EU framework: How to implement the European Framework for threat intelligence-based ethical red teaming," Jan. 2025. [Online]. Available: https://www .ecb.europa.eu/pub/pdf/other/ecb.tiber_eu_framework_2025~b32e ff9a10.en.pdf?0309990e5e167a47ca4748370a949064
+
+[284] PCI Security Standards Council, "Penetration testing guidance," Version Number: 1.1. [Online]. Available: https://listings.pcisecuritystandards.org/documents/Pe netration-Testing-Guidance-v1_1.pdf
+
+<!-- PageFooter: 80 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 81>>>
+[285] Karen Scarfone, Murugiah Souppaya, Amanda Cody, and Angela Orebaugh, "NIST SP 800-115: Technical guide to information security testing and assessment," NIST, Sep. 2008. Accessed: Dec. 21, 2025. [Online]. Available: https://www.nist.gov/privacy-framework /nist-sp-800-115
+
+[286] Google DeepMind, "Frontier safety framework (version 1.0)," Google, 2024. [Online]. Available: https://perma.cc/3C44-RSAN
+
+[287] OpenAI, "GPT-4o system card," 2024. [Online]. Available: https://cdn.openai.com/g pt-4o-system-card.pdf
+
+[288] Anthropic, "System Card: Claude Sonnet 4.5," Sep. 2025. [Online]. Available: https://as sets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet4-5-System-Card.pdf
+
+[289] Irregular, "Irregular x OpenAI: Evaluating GPT-5's cybersecurity capabilities," Aug. 7, 2025. Accessed: Jan. 10, 2026. [Online]. Available: https://www.irregular.com/public ations/evaluating-gpt-5
+
+[290] OpenAI, "GPT-4 system card," 2023. [Online]. Available: https://cdn.openai.com/p apers/gpt-4-system-card.pdf
+
+[291] Amazon, "Evaluating the critical risks of Amazon's Nova Premier under the frontier model safety framework," Amazon Science, Jul. 10, 2025. Accessed: Jan. 10, 2026. [Online]. Available: https://assets.amazon.science/59/0e/fd60057640a4a02bcd3072029 958/evaluating-the-critical-risks-of-amazons-nova-premier-un der-the-frontier-model-safety-framework.pdf
+
+[292] OpenAI, "Detecting and reducing scheming in AI models," Dec. 18, 2025. Accessed: Dec. 21, 2025. [Online]. Available: https://openai.com/index/detecting-and-reduc ing-scheming-in-ai-models/
+
+[293] OpenAI, "OpenAI o1 system card," Dec. 5, 2024. [Online]. Available: https://cdn.opena i.com/o1-system-card-20241205.pdf
+
+[294] Anthropic, "Tracing model outputs to the training data," Aug. 8, 2023. Accessed: Dec. 22, 2025. [Online]. Available: https://www.anthropic.com/research/influence-fun ctions
+
+[295] Anthropic, "Tracing the thoughts of a large language model." Accessed: Dec. 21, 2025. [Online]. Available: https://www.anthropic.com/research/tracing-thoughts-la nguage-model
+
+[296] Tomek Korbak, Mikita Balesni, Elizabeth Barnes, Yoshua Bengio, Joe Benton, Joseph Bloom, Mark Chen, Alan Cooney, Allan Dafoe, Anca Dragan, Scott Emmons, Owain Evans, David Farhi, Ryan Greenblatt, Dan Hendrycks, Marius Hobbhahn, Evan Hubinger, Geoffrey Irving, Erik Jenner, Daniel Kokotajlo, Victoria Krakovna, Shane Legg, David Lindner, David Luan, Aleksander M ˛ adry, Julian Michael, Neel Nanda, Dave Orr, Jakub Pachocki, Ethan Perez, Mary Phuong, Fabien Roger, Joshua Saxe, Buck Shlegeris, Martín Soto, Eric Steinberger, Jasmine Wang, Wojciech Zaremba, Bowen Baker, Rohin Shah, and Vlad Mikulik, "Chain of thought monitorability: A new and fragile opportunity for AI safety," 2025, arXiv:2507.11473v2, Available: [Online]. Available: https://arxiv.org/abs/2507.11473
+
+<!-- PageFooter: 81 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 82>>>
+[297] Alexandra Chouldechova, Chad Atalla, Solon Barocas, A. Feder Cooper, Emily Corvi, P. Alex Dow, Jean Garcia-Gathright, Nicholas Pangakis, Stefanie Reed, Emily Sheng, Dan Vann, Matthew Vogel, Hannah Washington, and Hanna Wallach, "A shared standard for valid measurement of generative AI systems' capabilities, risks, and impacts," 2024, arXiv: 2412.01934, Available: [Online]. Available: https://arxiv.org/abs/2412.01934
+
+[298] Inioluwa Deborah Raji, Emily M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna, "AI and the everything in the whole wide world benchmark," 2021, arXiv: 2111.15366, Available: [Online]. Available: https://arxiv.org/abs/2111.15366
+
+[299] Timothy R. McIntosh, Teo Susnjak, Nalin Arachchilage, Tong Liu, Dan Xu, Paul Watters, and Malka N. Halgamuge, "Inadequacies of large language model benchmarks in the era of generative artificial intelligence," in IEEE Transactions on Artificial Intelligence, 1, vol. 7, Institute of Electrical and Electronics Engineers (IEEE), Jan. 2026, pp. 22-39. DOI: 10.1109/tai.2025.35695 16 [Online]. Available: http://dx.doi.org/10.1109/TAI.2025.3569516
+
+[300] Richard Ren, Steven Basart, Adam Khoja, Alice Gatti, Long Phan, Xuwang Yin, Mantas Mazeika, Alexander Pan, Gabriel Mukobi, Ryan H. Kim, Stephen Fitz, and Dan Hendrycks, "Safetywashing: Do AI safety benchmarks actually measure safety progress?" 2024, arXiv: 2407.21792, Available: [Online]. Available: https://arxiv.org/abs/2407.21792
+
+[301] Alexandra Chouldechova, A. Feder Cooper, Solon Barocas, Abhinav Palia, Dan Vann, and Hanna Wallach, "Comparison requires valid measurement: Rethinking attack success rate comparisons in AI red teaming," in The Thirty-Ninth Annual Conference on Neural Information Processing Systems Position Paper Track, 2025. [Online]. Available: https://openreview.net/forum?id =d7hqAhLvWG
+
+[302] Michael Feffer, Anusha Sinha, Wesley Hanwen Deng, Zachary C. Lipton, and Hoda Heidari, "Red-Teaming for Generative AI: Silver Bullet or Security Theater?" 2024, arXiv: 2401.15897, Available: [Online]. Available: https://arxiv.org/abs/2401.15897
+
+[303] Yarin Gal, "Towards a science of AI evaluations," Mar. 11, 2024. Accessed: Jan. 10, 2026. [Online]. Available: https://www.cs.ox.ac.uk/people/yarin.gal/website/blog _98A8.html
+
+[304] Tom Reed, Tegan McCaslin, and Luca Righetti, "What do model reports say about their ChemBio benchmark evaluations? Comparing recent releases to the STREAM framework," 2025, arXiv:2510.20927, Available: [Online]. Available: https://arxiv.org/abs/2510.20 927
+
+[305] Maxwell Zeff, "OpenAI ships GPT-4.1 without a safety report," TechCrunch, Apr. 15, 2025. Accessed: Dec. 22, 2025. [Online]. Available: https://techcrunch.com/2025/04/1 5/openai-ships-gpt-4-1-without-a-safety-report/
+
+[306] Shakeel Hashim, "Google breaks its promises," Transformer, Dec. 5, 2024. [Online]. Available: https://www.transformernews.ai/p/google-breaks-its-promises
+
+[307] David Glukhov, Ilia Shumailov, Yarin Gal, Nicolas Papernot, and Vardan Papyan, "LLM censorship: A machine learning challenge or a computer security problem?" 2023, arXiv: 2307.10719, Available: [Online]. Available: https://arxiv.org/abs/2307.10719
+
+[308] OpenAI, "ChatGPT agent system card," OpenAI, Jul. 17, 2025. [Online]. Available: https://c dn.openai.com/pdf/6bcccca6-3b64-43cb-a66e-4647073142d7/chatg pt_agent_system_card_launch.pdf
+
+<!-- PageFooter: 82 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 83>>>
+[309] Anthropic, "Detecting and countering misuse of AI: August 2025," Aug. 27, 2025. Accessed: Jan. 12, 2026. [Online]. Available: https://www.anthropic.com/news/detecti ng-countering-misuse-aug-2025
+
+[310] Google Threat Intelligence Group, "Adversarial misuse of generative AI," Jan. 30, 2025. Accessed: Jan. 10, 2026. [Online]. Available: https://cloud.google.com/blog/topics/t hreat-intelligence/adversarial-misuse-generative-ai
+
+[311] SaferAI, "Methodology," Risk Management Ratings. Accessed: Jan. 12, 2026. [Online]. Available: https://ratings.safer-ai.org/methodology/
+
+[312] AI Shortlist, "AI safety index 2025: How major AI companies stack up." Accessed: Jan. 12, 2026. [Online]. Available: https://aishortlist.tech/blog/ai-safety-index-20 25
+
+[313] Amy Chang, Nicholas Conley, Harish Santhanalakshmi Ganesan, and Adam Swanda, "Death by a thousand prompts: Open model vulnerability analysis," 2025, arXiv: 2511.03247, Available: [Online]. Available: https://arxiv.org/abs/2511.03247
+
+[314] Shanghai AI Lab and Concordia AI, "Frontier AI risk management framework," Jul. 2025. [Online]. Available: https://concordia-ai.com/wp-content/uploads/2025/07/Fr ontier-AI-Risk-Management-Framework-v1.0-en.pdf
+
+[315] Samm Sacks, "Data security and U.S.-China tech entanglement," Lawfare, 2020. [Online]. Available: https://www.lawfaremedia.org/article/data-security-and-us -china-tech-entanglement
+
+[316] Zhangyu Wang, Benjamin Gregg, and Li Du, "Regulatory barriers to US-China collaboration for generative AI development in genomic research," Cell Genomics, vol. 4, no. 6, p. 100 564, 2024. [Online]. Available: https://doi.org/10.1016/j.xgen.2024.100564
+
+[317] Liv McMahon, "AI system resorts to blackmail if told it will be removed," BBC, May 23, 2025. Accessed: Dec. 21, 2025. [Online]. Available: https://www.bbc.com/news/article s/cpqeng9d20go
+
+[318] OpenAI, "Security & privacy," 2025. Accessed: Jan. 12, 2026. [Online]. Available: https://o penai.com/security-and-privacy/
+
+[319] Anthropic, "Anthropic trust center," 2025. Accessed: Jan. 10, 2026. [Online]. Available: https: //trust.anthropic.com/
+
+[320] Google Cloud, "Google Cloud trust center." Accessed: Jan. 10, 2026. [Online]. Available: http s://cloud.google.com/trust-center
+
+[321] AI Evaluator Forum, "Our members." Accessed: Dec. 21, 2025. [Online]. Available: https: //aievaluatorforum.org/about/members
+
+[322] "International network of AI safety institutes," NIST, Nov. 21, 2024. Accessed: Dec. 22, 2025. [Online]. Available: https://www.nist.gov/system/files/documents/2024 /11/20/Mission%20Statement%20-%20International%20Network%20of %20AISIs.pdf
+
+<!-- PageFooter: 83 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 84>>>
+[323] Department for Science, Innovation and Technology, AI Security Institute, and Kanishka Narayan, "Efforts to share best practices on AI measurement and evaluations driven forward through the International Network for Advanced AI Measurement, Evaluation and Science," 2025. Accessed: Dec. 22, 2025. [Online]. Available: https://www.gov.uk/government/news/eff orts-to-share-best-practices-on-ai-measurement-and-evaluatio ns-driven-forward-through-the-international-network-for-adva nced-ai-measurement-evalua
+
+[324] AISI, "International joint testing exercise: Agentic testing," AI Security Institute. Accessed: Dec. 22, 2025. [Online]. Available: https://www.aisi.gov.uk/blog/international-j oint-testing-exercise-agentic-testing
+
+[325] AISI, "AISI research & publications," AI Security Institute. Accessed: Dec. 22, 2025. [Online]. Available: https://www.aisi.gov.uk/research
+
+[326] Esther Duflo, Michael Greenstone, Rohini Pande, and Nicholas Ryan, "Truth-telling by third-party auditors and the response of polluting firms: Experimental evidence from India," The Quarterly Journal of Economics, vol. 128, no. 4, pp. 1499-1545, Nov. 2013. DOI: 10.1093/qje/qjt024
+
+[327] Frontier Model Forum, "Frontier Model Forum - about us." Accessed: Dec. 21, 2025. [Online]. Available: https://www.frontiermodelforum.org/about-us/
+
+[328] Stephen Casper, Luke Bailey, and Tim Schreier, "Practical principles for AI cost and compute accounting," 2025, arXiv:2502.15873, Available: DOI: 10.48550/arXiv.2502.15873
+
+[329] Girish Sastry, Lennart Heim, Haydn Belfield, Markus Anderljung, Miles Brundage, Julian Hazell, Cullen O'Keefe, Gillian K. Hadfield, Richard Ngo, Konstantin Pilz, George Gor, Emma Bluemke, Sarah Shoker, Janet Egan, Robert F. Trager, Shahar Avin, Adrian Weller, Yoshua Bengio, and Diane Coyle, "Computing power and the governance of artificial intelligence," 2024, arXiv:2402.08797, Available: DOI: 10.48550/arXiv.2402.08797
+
+[330] Lennart Heim and Leonie Koessler, "Training compute thresholds: Features and functions in AI regulation," 2024, arXiv:2405.10799, Available: DOI: 10.48550/arXiv.2405.10799
+
+<!-- PageFooter: 84 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 85>>>
+# A Glossary
+
+# Abstraction error
+
+Forming the wrong conclusion by treating a partial or simplified unit of analysis (e.g., evaluating a specific component in isolation) as if it were sufficient to assess overall system and organizational risk.
+
+# Accidents
+
+Harms arising from AI systems behaving in unintended ways [123].
+
+# AI (artificial intelligence)
+
+Digital systems that are capable of performing tasks commonly thought to require intelligence, with these tasks typically learned via data and/or experience [160].
+
+# AI Assurance Levels (AALs)
+
+A proposed standardized vocabulary for expressing how much weight to place on audit findings - i.e., how confident a skeptical third party can be in an auditor's conclusions given the engagement's access, evidence, and methods.
+
+# AI assurance tracker
+
+A proposed public platform (maintained by the independent oversight body proposed within Section 6.4) that would show, in a standardized format, items such as each frontier AI company's stated policies, applicable regulations, incident reports, lead auditor, and recent safety/security publications - updated as relevant changes occur.
+
+# Alignment
+
+Effort to ensure that "AI systems behave in line with human intentions and values" [240].
+
+# Assessment
+
+Any effort to determine the properties of an AI system or an AI company/developer, whether based on public or non-public information and whether rigorous or informal.
+
+# Assurance level
+
+The degree of confidence that can reasonably be placed in an audit's conclusions, determined in part by the audit's scope, access, and methods.
+
+# Audit
+
+A systematic, evidence-based process in which a qualified party examines an organization's activities, records, technologies, and claims to provide assurance that stated information is accurate and/or that applicable standards are being met.
+
+# Audit report
+
+<!-- PageFooter: 85 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 86>>>
+A document produced by an independent auditor that communicates the results of a frontier AI audit in a way that external stakeholders can rely on. It should include the audit's scope, assurance level (AAL), auditor's conclusions, the reasoning behind those conclusions, conditions under which the conclusion is valid, and recommendations for remediation. A full, unredacted version may be shared with a company's board/executives, with a redacted or summarized version released for external stakeholders.
+
+# Black-box access
+
+A level of model access in which evaluators can query the model through an external interface (e.g., API) and observe its outputs, but cannot inspect internal components such as weights, activations, or intermediate computations. Black-box access is typical of most current third-party evaluations [5].
+
+# Chain-of-thought
+
+Intermediate reasoning steps generated by a model when solving problems, either explicitly through prompting techniques or captured through access to internal model traces. Chain-of-thought can reveal capabilities and risks not apparent from final outputs alone.
+
+# Clean rooms
+
+Physically or logically isolated digital environments where sensitive information can be analyzed with reduced risk of external exposure.
+
+# Clean teams
+
+Personnel who have access to confidential information but are insulated from competitive decision-making within their organization [166].
+
+# Closed-weight model
+
+AI models that can only be accessed through API or similar means, to ensure their code and weights are not directly accessible.
+
+# Compartmentalization (of an audit)
+
+A structuring approach where different auditors learn about and assess different aspects of a company's operations [168].
+
+# Completeness problem
+
+At high assurance levels, the core verification challenge of confirming that all relevant systems, training runs, and governance processes have been surfaced - i.e., nothing material has been omitted.
+
+# Consortium (of auditors)
+
+Two or more organizations jointly conducting audits, with no organization serving as the lead auditor.
+
+# Continuous monitoring
+
+Ongoing monitoring of a frontier AI system (or other aspects of a frontier AI company) in order to detect changes that might invalidate previous audit conclusions.
+
+<!-- PageFooter: 86 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 87>>>
+# Defense in depth
+
+The idea that assessment is needed at multiple different lifecycle stages.
+
+# Emergent social phenomena
+
+Risks that arise from interaction between humans and AI systems and do not fit neatly into "misuse" or "unintended behavior," but can nevertheless cause significant harm if left unaddressed. Examples include addiction to or emotional dependence on AI systems, AI-induced or AI-enabled psychosis, and facilitation of self-harm.
+
+# Evaluation
+
+Any activity that measures, characterizes, or analyzes properties of AI models or systems and the organizations operating them.
+
+# Event-triggered reviews
+
+Audits conducted following key points such as major training runs, model releases, significant incidents, or notable novel integrations.
+
+# Expectations gap
+
+The gap between what the public believes audits guarantee (e.g., the absence of fraud) and the more limited mandate auditors actually operate under.
+
+# FlexHEGs (Flexible Hardware-Enabled Guarantees)
+
+A technical direction for on-chip, privacy-preserving verification of claims (for example, verifying that training runs have not exceeded certain compute thresholds without revealing proprietary details).
+
+# Flow-down agreements
+
+A contract provision under which certain obligations (such as those related to confidentiality) "flow down" from a lead contractor to subcontractors. In this context, we are referring to domain specialists hired by a lead auditor.
+
+# Frontier AI
+
+General-purpose AI models and systems whose performance is no more than a year behind the state-ofthe-art on a broad suite of general capability benchmarks.
+
+# Frontier AI auditing
+
+Rigorous third-party verification of frontier AI developers' safety and security claims and evaluation of their systems and practices against relevant standards, drawing on deep, secure access to non-public information.
+
+# Frontier AI developers
+
+Companies that train models from scratch themselves or significantly extend their capabilities (e.g., via further training or creation of an agentic scaffold), producing AI systems that qualify as frontier-level per the definition above.
+
+<!-- PageFooter: 87 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 88>>>
+# Goodhart's Law
+
+The phenomenon that when specific metrics become targets for compliance, actors optimize for those targets rather than the underlying outcomes the metrics were meant to capture.
+
+# Gray-box access
+
+A level of model access that provides evaluators with some visibility into internal model components beyond what is available through standard interfaces, such as chain-of-thought outputs, logits, or sampling of internal logs, but without full access to model weights or complete system internals. Gray-box access is intermediate between black-box and white-box access [5].
+
+# Hardware attestation
+
+A verification mechanism in which hardware components provide cryptographically signed evidence about their identity, configuration, and operating state.
+
+# High-tech pathway
+
+One pathway toward higher assurance that focuses on developing new technical infrastructure for secure information sharing that reduces how much any single party must be trusted.
+
+# Independence
+
+A core principle for audits: results should be trustworthy because auditors are genuinely independent third parties and conflicts of interest are carefully managed.
+
+# Information security
+
+A risk category covering failures of confidentiality or integrity affecting critical AI assets, including theft of model weights, sensitive research, or customer data; risks to user privacy; sabotage of highly capable AI systems; and unauthorized use of compute resources.
+
+# Intentional misuse
+
+The use of frontier AI systems by malicious actors to enable or scale harmful activities (examples include cyberattacks; chemical, biological, radiological, or nuclear weapons development; large-scale disinformation; violent and criminal activity; fraud; and generation of CSAM or NCII).
+
+# Inter-rater reliability
+
+The extent to which different auditors converge on the same conclusions given the same evidence.
+
+# Live certification and deprecation
+
+The idea that audit certifications should remain valid only while their underlying assumptions hold, and should automatically downgrade (or be flagged for review) when material changes occur.
+
+<!-- PageFooter: 88 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 89>>>
+# Logits
+
+The raw, unnormalized output values produced by a neural network before they are converted to probabilities (e.g., through a softmax function). Access to logits provides evaluators with more finegrained information about model behavior and confidence than observing only the final outputs.
+
+# Low-tech pathway
+
+One pathway toward higher assurance that brings auditors into the organization's trust boundary using existing legal and physical infrastructure (e.g., corporate devices, clean room arrangements, and confidentiality obligations).
+
+# Misuse
+
+A broad category of risks related to AI systems, specifically those that stem from the use of an AI system in a way that is different from its intended purpose. Misuse may or may not be malicious.
+
+# Model checkpoints
+
+Saved snapshots of a model's parameters at specific points during training or fine-tuning. Access to checkpoints enables evaluators to examine how model capabilities and behaviors evolve over the training process.
+
+# Open-weight model
+
+AI models whose weights are publicly released and can be freely copied or redistributed.
+
+# Organizational perspective
+
+The principle that culture, governance, and security matter - not just specific AI systems.
+
+# PCAOB
+
+The Public Company Accounting Oversight Board, a US non-profit corporation established by the Sarbanes-Oxley Act of 2002. The PCAOB oversees audits of public companies by setting auditing standards, registering and inspecting audit firms, and disciplining auditors for misconduct. It coordinates with audit regulators in over 50 jurisdictions. In this paper, the PCAOB model is referenced as a potential template for independent oversight of frontier AI auditors.
+
+# Reasonable assurance
+
+A term of art (from financial auditing) used to indicate a higher degree of confidence in an audit's conclusions compared to one involving only "limited" assurance. In our framework, this corresponds to AAL-2, and we also consider still higher degrees of assurance beyond this at AAL-3 and AAL-4.
+
+# Safe harbor provisions
+
+Conditional protections designed to encourage auditing and disclosure - modeled in the paper on regimes where entities that discover violations through systematic auditing, disclose promptly, and correct issues can receive reduced penalties or immunity under specified conditions (with exclusions for certain serious or bad-faith cases).
+
+<!-- PageFooter: 89 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 90>>>
+# Safeguard
+
+A technical measure or process designed to prevent AI systems from causing harm.
+
+# Safety
+
+The functioning of AI systems in a way that avoids causing significant harm, ranging from accident risks (unintended harmful behavior due to factors such as misspecified goals, operator error, or system bias) to misuse risks (harms caused intentionally by the deployer or user of an AI system).
+
+# Safety case
+
+Structured arguments supported by evidence that justify the safety of a system [131].
+
+# Security
+
+The protection of the AI system itself as well as surrounding infrastructure, intellectual property, and user data against unauthorized access, exfiltration, manipulation, or disruption. In the frontier AI context this includes, for example, protecting model weights and other sensitive artifacts from theft, as well as preventing adversaries from hijacking an AI system to cause harm.
+
+# Structural risks
+
+Risks emerging from how AI systems reshape systems, incentives, and environments in which they are deployed [123]. We intend for "emergent social phenomena" to be distinct from this category in the sense that emergent social phenomena, while distributed across society, are nevertheless directly connected to the deployment of specific, identifiable AI systems.
+
+# System cards
+
+Descriptions of the properties and risk profile of AI systems. Introduced here and commonly used as a label for reports produced by frontier AI companies about their latest model or system releases. "Model card," an earlier term, is often used for such documents as well, and while technically this denotes a model rather than system level of analysis, in practice, model cards often discuss system-level components and vice versa.
+
+# Transparency-security trade-off
+
+The tension between making information open (which enables accountability, trust, and collaboration) and keeping it hidden (which protects against those who would exploit that knowledge to cause harm).
+
+# Treaty-grade verification
+
+Very high assurance in which one can have confidence in audit conclusions even assuming the audited party will take every available opportunity to cut corners and deceive.
+
+# Unintended system behavior
+
+AI systems behaving in ways unintended or unsafe from the perspective of developers and users that are serious enough to risk large-scale harm, including accidents in high-stakes deployment contexts caused by misaligned behavior (e.g., reward hacking), capability failures, biased outputs, or behaviors that circumvent human intent and effective human oversight.
+
+<!-- PageFooter: 90 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 91>>>
+# Validity period
+
+An explicit time period during which an audit finding or conclusion is treated as valid, with the expectation that conclusions should be deprecated or revisited when assumptions no longer hold due to system change.
+
+# Verification
+
+The activity of confirming whether a specific claim, commitment, or property (e.g., an evaluation result, a training compute figure, or a claim about mitigation effectiveness) is true.
+
+# White-box access
+
+The most comprehensive level of model access, granting evaluators full visibility into model weights, architecture, training data, and all internal components [5]. White-box access enables the deepest forms of technical analysis but requires the strongest intellectual property protections and is typically reserved for higher assurance levels.
+
+# Zero-knowledge proofs (ZKPs)
+
+A cryptographic protocol that enables one party (the prover) to demonstrate to another party (the verifier) that a statement is true without revealing any information beyond the statement's validity itself.
+
+<!-- PageFooter: 91 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 92>>>
+# B Additional motivations for frontier AI auditing
+
+# Enabling risk price discovery through insurance
+
+Quantifying the actual risks of frontier AI systems remains a fundamental challenge. Expert judgment is valuable but struggles to aggregate dispersed information into actionable signals. Insurance markets offer a complementary mechanism: insurers have strong financial incentives to price risk accurately. They can do this by translating private assessments of safety practices, loss histories, and exposure pathways into premiums, coverage terms, and exclusions that function as observable signals of risk.
+
+These markets cannot function without reliable information. Third-party audits give insurers the verified, standardized data they need to differentiate risk profiles across companies and systems. Without this, adverse selection prevents meaningful coverage or pricing. 28
+
+The societal value extends well beyond risk transfer. Insurance pricing is one of the few mechanisms that can translate diffuse uncertainty about AI risk into a single, continuously updating number. This gives policymakers an independent measure of risk to inform regulation. It gives the public a legible signal of whether safety is improving or deteriorating over time. And it creates a common reference point around which developers, regulators, insurers, and civil society can coordinate. A credible auditing ecosystem is the foundation on which such a market can be built.
+
+# Maintaining international stability
+
+The development of frontier AI has profound implications for international security and stability. Intense competition between nations can create a "race to the bottom" dynamic, where actors may feel pressured to cut corners on safety to accelerate development. A lack of verified information about competitors' AI capabilities can fuel destabilizing arms-race dynamics.
+
+Third-party auditing offers a crucial mechanism for de-escalation. By providing a trusted, neutral means to verify that all parties are adhering to shared safety commitments, audits can build confidence and reduce the incentive for competitive risk-taking. Competing governments are unlikely to grant each other deep access for meaningful verification. Independent auditors can serve as trusted intermediaries to confirm compliance with agreed-upon ground rules. 29
+
+Looking ahead, a well-developed international auditing regime can serve as a foundational platform for future treaties governing AI. Just as arms control agreements rely on inspection mechanisms to verify compliance, international agreements on AI safety will require a credible verification system. A shared audit framework creates a common vocabulary and benchmarks for risk, facilitating international cooperation and providing the tools needed to ensure that commitments are being met. This extends to security concerns like counter-proliferation, where audits of a developer's operational security and cybersecurity provide assurance that powerful models will not be stolen by hostile actors.
+
+# Ensuring accountability for risk creation
+
+\* 28 This mirrors early cyber insurance markets, which struggled until standardized security assessments provided sufficient data.
+
+\* 29 It is not inconceivable that direct bidirectional access could be granted to some AI systems or components thereof - indeed, there is precedent for this in arms control contexts (e.g., mutual inspection of missile facilities). We are making the more conservative assumption that this is off the table, in order to be prepared for a wider range of possible scenarios.
+
+<!-- PageFooter: 92 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 93>>>
+As AI's influence over society expands, the public requires strong evidence that frontier models do not place them at undue risk. Public skepticism toward corporate "safety-washing" is rising, creating demand for credible, external validation of safety claims - demand that auditing can directly address. Recent polling suggests that the American public supports [241] independent expert evaluation of AI systems over self-assessment, and even prefers it to direct government testing. Research across multiple industries consistently shows that auditing improves the perceived credibility of organizational claims compared with self-reporting alone [242, 243, 244, 245]. This is intuitive: organizations naturally seek to present themselves positively, whereas third parties will - assuming conflicts of interest are well-managed - have better incentives to provide accurate risk assessments, as this capacity represents the entirety of their institutions' identities and reputations.
+
+As policymakers develop and enact AI governance frameworks, they require reliable mechanisms to verify compliance. Currently, compliance with voluntary commitments is uneven [246]. As risks increase, companies will have an increasing need to comply with safety and security standards, alongside government regulation. Governments typically do not conduct audits directly, although they have a key role to play in standard-setting and enforcement after a violation has emerged. Frontier AI audits could demonstrate that companies are complying with laws, allowing regulators to hold companies accountable. Auditing can facilitate documentation and subsequent accurate and proportional assignment of liability in cases of safety and security incidents post-deployment. 30
+
+There are also structural reasons to prefer that accountability be mediated through third-party auditors, rather than through direct government audits. Distributing authority reduces the concentration of power in any single entity and makes politically-motivated investigations less likely. Private sector auditors can offer specialized technical expertise and higher salaries, and scale more readily than government agencies.
+
+\* 30 While we generally emphasize ways incentives for responsible behavior can be increased where they might be lacking by default, the converse motivation is also relevant, namely avoiding excessive blame directed to a company that in fact behaved responsibly. Favorable evidence from an audit could help exculpate a company in a lawsuit or regulatory context by establishing compliance with relevant best practices, and suggest that blame can be found elsewhere, such as on the user of a product.
+
+<!-- PageFooter: 93 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 94>>>
+# C Access types (non-exhaustive)
+
+<Table>
+| Category               | Access type                             | Description                                                                                                                                                                                                          |
+|:-----------------------|:----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| System access          | Sampling interfaces                     | Ability to query the model via API, specify sampling parameters, and access output probabilities and logits                                                                                                          |
+| System access          | Production model variants               | Access to deployed model versions with all safety mitigations in place, to assess real-world behavior                                                                                                                |
+| System access          | Low-mitigation model vari- ants         | Access to versions of the model with minimal safety mitigations (e.g., "helpful-only" variants) to avoid refusal contamination during capability evaluation                                                          |
+| System access          | Fine-tuning                             | Ability to fine-tune models through supervised learning, reinforce- ment learning, or custom loss functions                                                                                                          |
+| System access          | Model internals                         | Access to activations, attention patterns, gradients, embeddings, chain-of-thought traces (when available), and raw outputs                                                                                          |
+| System access          | Routing algorithms                      | For mixtures-of-experts (MoEs) and other multi-model systems, access to routing policies and related algorithms                                                                                                      |
+| System access          | Model weights                           | Privacy-preserving access to model weights for interpretability and verification                                                                                                                                     |
+| System information     | Model specifications                    | System prompts, architectural details, hyperparameters, and train- ing data summaries                                                                                                                                |
+| System information     | Model families and lineage              | Collections of models of varying sizes and fine-tuning levels, includ- ing checkpoint histories                                                                                                                      |
+| System information     | Architecture and training documentation | Detailed model architecture, training procedures, and design deci- sions                                                                                                                                             |
+| System information     | Evaluation results and arti- facts      | Results from internal and third-party evaluations of model capa- bilities, limitations, and potential risks, including methodology documentation, test datasets, prompts, scoring rubrics, and logs of model outputs |
+| System information     | System documentation                    | Documents explaining how production systems work and are used                                                                                                                                                        |
+| System information     | Monitoring systems                      | Tools and dashboards for observing model behavior in production                                                                                                                                                      |
+| System information     | System logs                             | Records of events, operations, and state changes within deployed systems                                                                                                                                             |
+| System information     | Compute accounting records              | Compute allocation logs, training run records, access controls, hard- ware configuration, and declared vs. logged compute reconciliation                                                                             |
+| Governance and process | Process documentation                   | Internal documents describing procedures and responsibilities                                                                                                                                                        |
+| Governance and process | Board and governance min- utes          | Records of discussions, decisions, and actions from board and governance meetings                                                                                                                                    |
+| Governance and process | Internal reports                        | Documents describing experiment results, incidents, or process outcomes                                                                                                                                              |
+| Continued on next page | Continued on next page                  | Continued on next page                                                                                                                                                                                               |
+</Table>
+
+<!-- PageFooter: 94 -->
+
+<!-- PageBreak -->
+

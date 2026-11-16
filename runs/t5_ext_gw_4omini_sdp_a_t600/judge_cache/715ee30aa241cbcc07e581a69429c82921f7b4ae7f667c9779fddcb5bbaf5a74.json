@@ -1,0 +1,14 @@
+{
+  "request_hash": "715ee30aa241cbcc07e581a69429c82921f7b4ae7f667c9779fddcb5bbaf5a74",
+  "prompt_sha256": "34d28ce2bba2e795a4bad2f86d79e05fc097f17367ee556ac32d2231b532abeb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOdHjWAi5NRacP8T8pbgnz2WnoWf",
+  "prompt_tokens": 9039,
+  "completion_tokens": 40,
+  "actual_usd": 0.00137985,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the CRPA's requirements for transparency regarding the algorithm's contribution, data processed, and processing parameters."
+  }
+}

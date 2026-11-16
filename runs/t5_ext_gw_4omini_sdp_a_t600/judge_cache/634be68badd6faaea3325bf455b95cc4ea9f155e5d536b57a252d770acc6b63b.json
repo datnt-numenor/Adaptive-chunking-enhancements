@@ -1,0 +1,14 @@
+{
+  "request_hash": "634be68badd6faaea3325bf455b95cc4ea9f155e5d536b57a252d770acc6b63b",
+  "prompt_sha256": "9584250b93fab1dd000968f78d8515b98e9bfdd01a50dd430c0d0d48dcd4747c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOUxx0JkLcj95RhcEfp3rI5jWWKd",
+  "prompt_tokens": 7315,
+  "completion_tokens": 41,
+  "actual_usd": 0.00112185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how RAIRD enables research on data while preventing direct access to individual-level data and providing only aggregated information."
+  }
+}

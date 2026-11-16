@@ -1,0 +1,14 @@
+{
+  "request_hash": "2bd6e316ee1aee73e39db13cf8d8c26189a597be88af67c9c803a6fae8e67fba",
+  "prompt_sha256": "d8fd1a7a5d1b34a2f58204a5c3d76b803890bfdcbac45185dae0b5d1c9de5108",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOIHuHQOq5WLq8JCl6cR1TMnf8gW",
+  "prompt_tokens": 7624,
+  "completion_tokens": 44,
+  "actual_usd": 0.00117,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing how CyberGym evaluates a larger and more diverse set of vulnerabilities, thereby providing higher statistical guarantees and rigor."
+  }
+}

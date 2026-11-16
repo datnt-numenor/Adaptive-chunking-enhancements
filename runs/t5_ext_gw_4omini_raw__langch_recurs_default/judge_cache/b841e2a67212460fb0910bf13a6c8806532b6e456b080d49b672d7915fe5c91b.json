@@ -1,0 +1,14 @@
+{
+  "request_hash": "b841e2a67212460fb0910bf13a6c8806532b6e456b080d49b672d7915fe5c91b",
+  "prompt_sha256": "180ebddc03462b6eef2b7b449cf1935fe591a6f5289704d414bbbda5b1df3d19",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRP37ygtzX7EfPsYs9uA58XuWep",
+  "prompt_tokens": 7945,
+  "completion_tokens": 41,
+  "actual_usd": 0.00121635,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how proxies can lead to discrimination and the risks associated with using demographic information in AI systems."
+  }
+}

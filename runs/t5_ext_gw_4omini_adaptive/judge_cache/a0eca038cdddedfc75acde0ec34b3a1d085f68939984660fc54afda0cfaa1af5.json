@@ -1,0 +1,14 @@
+{
+  "request_hash": "a0eca038cdddedfc75acde0ec34b3a1d085f68939984660fc54afda0cfaa1af5",
+  "prompt_sha256": "d519f025e9cdccb521dab5a66643610797397c6180f73ec36256dc26e451724d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNe8zDtez1SzAf8oeTMtk5fIY47e",
+  "prompt_tokens": 7731,
+  "completion_tokens": 59,
+  "actual_usd": 0.00119505,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data showing that 'explainability/explanations/explanation/xai' appears in 12 studies, which corresponds to 3.8% of the total studies, fully supporting the claim made in the Reference Answer."
+  }
+}

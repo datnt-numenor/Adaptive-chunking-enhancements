@@ -1,0 +1,14 @@
+{
+  "request_hash": "11ae61f98890e2837e943ca00c521dbf6a7f8bfeb80ac7205530d8e3d9b607ed",
+  "prompt_sha256": "c53aa198a8d565174e2ccfe128e5f20837dcb0dc410e96e5016f31b96f17b67f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOgiVVqppI8X9IaSY2vofFxOB1iU",
+  "prompt_tokens": 7896,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012089999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the concept of 'protected_attribute' and how it relates to defining privileged and unprivileged groups."
+  }
+}

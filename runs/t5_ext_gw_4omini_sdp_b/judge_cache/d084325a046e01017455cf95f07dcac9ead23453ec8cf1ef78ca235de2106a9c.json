@@ -1,0 +1,14 @@
+{
+  "request_hash": "d084325a046e01017455cf95f07dcac9ead23453ec8cf1ef78ca235de2106a9c",
+  "prompt_sha256": "5b81c176224a5aebba5b53b5bcda1791158dfa53c6fc9e32722fb7f0fa82a700",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOBttSZ4HarijNXO0iZ9xUFu6Ulz",
+  "prompt_tokens": 7021,
+  "completion_tokens": 55,
+  "actual_usd": 0.00108615,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that min-max normalization is applied to ensure that the score 0 corresponds to the fairest case and 1 to the unfairest case, thereby facilitating easier interpretation."
+  }
+}

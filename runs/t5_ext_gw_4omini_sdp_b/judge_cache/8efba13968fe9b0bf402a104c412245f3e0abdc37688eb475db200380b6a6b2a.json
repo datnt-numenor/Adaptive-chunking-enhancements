@@ -1,0 +1,14 @@
+{
+  "request_hash": "8efba13968fe9b0bf402a104c412245f3e0abdc37688eb475db200380b6a6b2a",
+  "prompt_sha256": "a4e40dd322c26a5b4f5f6101282f5fe51ec3f90a3cb59af7ff127b4cd952ceb1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4U4aDTsbhxLbZTJicFUUB5VxMU",
+  "prompt_tokens": 7397,
+  "completion_tokens": 46,
+  "actual_usd": 0.00113715,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by explicitly stating that the Federal Funding Accountability and Transparency Act requires grant spending records to be searchable on USASpending.gov."
+  }
+}

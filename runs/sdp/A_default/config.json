@@ -1,0 +1,30 @@
+{
+  "method": "sdp_a",
+  "config": {
+    "max_tokens": 1100,
+    "min_tokens": 100,
+    "tau": 1.0,
+    "heading_bonus": [
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "continuation_penalty": 3.0,
+    "pronoun_penalty": 0.5,
+    "colon_penalty": 0.5,
+    "list_penalty": 0.3,
+    "small_penalty": 5.0,
+    "artifact_penalty": 2.0,
+    "max_units_per_chunk": 2000
+  },
+  "overrides": [],
+  "postprocessing": "merge_small_chunks_to_neighbours(min=100,max=1150,next)",
+  "git_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19044-SP0",
+  "seconds": 1.6,
+  "created": "2026-11-09 02:50:58"
+}

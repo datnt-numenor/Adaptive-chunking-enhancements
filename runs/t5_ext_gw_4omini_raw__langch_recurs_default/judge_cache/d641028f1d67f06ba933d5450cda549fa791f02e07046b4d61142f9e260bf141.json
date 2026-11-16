@@ -1,0 +1,14 @@
+{
+  "request_hash": "d641028f1d67f06ba933d5450cda549fa791f02e07046b4d61142f9e260bf141",
+  "prompt_sha256": "f9b68ed95d02fbf396196a8321becf15d6d4bcae94ed3a77119ada1157fbaabb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtVS8oYup5zTtdPA4henO88hgUK",
+  "prompt_tokens": 8167,
+  "completion_tokens": 44,
+  "actual_usd": 0.00125145,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the requirement for the AI Office to develop a questionnaire and automated tool to assist deployers in compliance with their obligations."
+  }
+}

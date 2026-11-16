@@ -1,0 +1,10 @@
+{
+  "request_hash": "e46561ba43c53b3882a0c45ffbf89c80400580984958711751443ed259457714",
+  "prompt_sha256": "18edaa276db83911bc3f7f862451dd1bfd3886d7be97ed8307f205f0f08ca712",
+  "answer": "ArXiv 2307.12218 describes China's generative AI regulation as firmly rooted in strict state control, with the rationale hinging on the idea that tight control can help coordinate the rapid advancement of technology with the need for regulation. This approach ensures that the government's active involvement in AI development and deployment upholds safety, ensures responsible use, and aligns the technology's progression with the nation's strategic objectives. The regulatory framework requires generative AI service providers to terminate services, archive records, and report illegal content to administrative authorities.\n\nAn incident that illustrates the risks associated with this state-controlled approach is the hacking of sensitive data from 48.5 million people, which was collected via a health QR code system used to trace COVID-19 close contacts and suspected cases. This incident highlights the potential vulnerabilities within the AI infrastructure and the significant risks that can arise from centralized control.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMiDc7t7LslGdhuWEMDroQQnPb0t",
+  "prompt_tokens": 9970,
+  "completion_tokens": 173,
+  "actual_usd": 0.0015993
+}

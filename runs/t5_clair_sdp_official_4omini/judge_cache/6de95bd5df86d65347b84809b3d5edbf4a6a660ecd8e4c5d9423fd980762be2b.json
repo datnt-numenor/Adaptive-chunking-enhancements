@@ -1,0 +1,14 @@
+{
+  "request_hash": "6de95bd5df86d65347b84809b3d5edbf4a6a660ecd8e4c5d9423fd980762be2b",
+  "prompt_sha256": "8fd46b00cf08f03cdce2e53c0ecd24e5bfcb5bae6452093b046cc95afd104540",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNB4eqbnoqz5799FEr1QSzrr3sBJ",
+  "prompt_tokens": 9133,
+  "completion_tokens": 32,
+  "actual_usd": 0.00138915,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the reference answer by explicitly mentioning the suggested labels for expressing the reliability of AI predictions."
+  }
+}

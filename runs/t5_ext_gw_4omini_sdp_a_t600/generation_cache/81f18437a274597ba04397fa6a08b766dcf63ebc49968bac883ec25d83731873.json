@@ -1,0 +1,10 @@
+{
+  "request_hash": "81f18437a274597ba04397fa6a08b766dcf63ebc49968bac883ec25d83731873",
+  "prompt_sha256": "f0641a4cb7f72831c4c1bd24440c78a18af1621deb49f6b7a36346d65693402e",
+  "answer": "In the context of ML algorithm audits in arXiv 2403.07904, 'process access' refers to a level of access where auditors can only indirectly observe a system's behavior. This means they rely on frameworks, checklists, model cards, datasheets, method papers, and technical reports to conduct their audits. Auditors do not have direct access to the model or its internal workings, and they must reverse-engineer the system's functioning based on the available documentation. This type of access is limited and primarily supports document audits, which assess algorithmic risk and impact without direct interaction with the model itself.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMpqzXuCwm1lecNnHIq2qvJQ50Dw",
+  "prompt_tokens": 7937,
+  "completion_tokens": 124,
+  "actual_usd": 0.0012649500000000001
+}

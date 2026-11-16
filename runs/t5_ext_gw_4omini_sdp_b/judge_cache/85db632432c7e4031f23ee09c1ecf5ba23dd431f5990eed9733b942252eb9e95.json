@@ -1,0 +1,14 @@
+{
+  "request_hash": "85db632432c7e4031f23ee09c1ecf5ba23dd431f5990eed9733b942252eb9e95",
+  "prompt_sha256": "e45c6316514efaa51ab66b73370469b342c761720b6c3e7bbd7576b74dd7ae95",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO7nnSWqAuQ4tjVzPXE2Q8affNd2",
+  "prompt_tokens": 7761,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011917499999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the U.S. Executive Order on AI (2023) and its use of compute-based thresholds as regulatory triggers."
+  }
+}

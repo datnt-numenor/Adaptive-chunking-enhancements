@@ -1,0 +1,14 @@
+{
+  "request_hash": "270c239bc050f88bc52b89e0d9c8121bfc961f1007eb551a5ccf9d09c789c3c7",
+  "prompt_sha256": "78c6e93725cf2b46bee2a5eb5e881f09d55a27b4693ae1c2458f3fbc81110b0e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNmOuXGrm4SQtN4FR5DvT06KaJmr",
+  "prompt_tokens": 7938,
+  "completion_tokens": 47,
+  "actual_usd": 0.0012189000000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on how increasing the percentage of minority class data leads to a decrease in the equalized odds score, which directly supports the claim made in the Reference Answer."
+  }
+}

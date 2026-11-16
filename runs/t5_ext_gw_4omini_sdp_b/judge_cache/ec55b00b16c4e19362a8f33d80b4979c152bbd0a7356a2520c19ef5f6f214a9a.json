@@ -1,0 +1,14 @@
+{
+  "request_hash": "ec55b00b16c4e19362a8f33d80b4979c152bbd0a7356a2520c19ef5f6f214a9a",
+  "prompt_sha256": "a567027cf6d0ece71d29e6f98cfc2a91e7a22fe3a54782285cd4050c00b243eb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXxsuOZhCx48R4nVhxoEksPZHPY",
+  "prompt_tokens": 6716,
+  "completion_tokens": 39,
+  "actual_usd": 0.0010308,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses the trade-offs between privacy, accuracy, and fairness in AI systems, fully supporting the claims made in the Reference Answer."
+  }
+}

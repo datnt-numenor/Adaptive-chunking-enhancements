@@ -1,0 +1,14 @@
+{
+  "request_hash": "79dbe261bdb653c5c8b38275d38fe1af6ec607ea35524d5064cc37dfad07db77",
+  "prompt_sha256": "e04d14f494f0f16f737110dfff1bc1704e7943cbebf419bcd75d300788bec63d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNmQ3i5bw9sjcQPLMi0Rf0rv8BwU",
+  "prompt_tokens": 9074,
+  "completion_tokens": 37,
+  "actual_usd": 0.0013832999999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention 'pϵ' or its meaning, thus failing to support the claim made in the Reference Answer."
+  }
+}

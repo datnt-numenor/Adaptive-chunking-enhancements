@@ -1,0 +1,14 @@
+{
+  "request_hash": "ed23ba12d96ee5df2a104a6aa4a4539124210bd5115ff9f266157efee6f7b516",
+  "prompt_sha256": "afa2124ab6c73d5f9ab57374204b6d8fd1bd9a4777a84029fab14b334c0b9c35",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNP197wpAUsQPW5YJiYgtMhFlVxP",
+  "prompt_tokens": 8760,
+  "completion_tokens": 47,
+  "actual_usd": 0.0013422,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by explicitly discussing non-determinism in AI systems and the test oracle problem, detailing how these issues affect security properties and testing."
+  }
+}

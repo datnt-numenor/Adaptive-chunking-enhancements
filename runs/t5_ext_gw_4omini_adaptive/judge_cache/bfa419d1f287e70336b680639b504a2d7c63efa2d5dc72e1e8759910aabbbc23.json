@@ -1,0 +1,14 @@
+{
+  "request_hash": "bfa419d1f287e70336b680639b504a2d7c63efa2d5dc72e1e8759910aabbbc23",
+  "prompt_sha256": "49bab9e46273f6bf887a20c1634b77017f6ddb70ddb38f7db7e77e82a4983083",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO5MsBNoPSUSlG50lPuCNjnpRAIl",
+  "prompt_tokens": 8403,
+  "completion_tokens": 47,
+  "actual_usd": 0.0012886500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the differences between Naive RAG and Graph RAG, including their methods of retrieval and the resulting coherence and richness of answers."
+  }
+}

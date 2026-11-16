@@ -1,0 +1,14 @@
+{
+  "request_hash": "779e9b08efab8509b222ad6eb5b8284a01d8d28f7de729fe0d03d1fe6af2562b",
+  "prompt_sha256": "8c2952c8e692e5dfb5df98ced153176f4fe9065f58263bef142d9a48409512e1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPDp3ZiI5mUv9tzMM09qlDeA4FF2",
+  "prompt_tokens": 7700,
+  "completion_tokens": 51,
+  "actual_usd": 0.0011856,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the LearnEnjoy project, including the average time for autism diagnosis in France and the technology used for pre-diagnosis, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "036d3fd744de50497001fc39d0595f922704b0dc548d545f1d54273e71300187",
+  "prompt_sha256": "6db4c66c1cd49614102842501eea60ef1778dd26c93b4db068e940086e6f2e6c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN0bL9JvbXfwxZQpucxBTu0FFswq",
+  "prompt_tokens": 8232,
+  "completion_tokens": 32,
+  "actual_usd": 0.001254,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention any requirements for including random samples of inputs and outputs in model evaluations or reports."
+  }
+}

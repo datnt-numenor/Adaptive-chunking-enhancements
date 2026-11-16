@@ -1,0 +1,14 @@
+{
+  "request_hash": "a8ef79df86dd057d132903beb36912a85ddb2a58b32d26fb335cfebe87680624",
+  "prompt_sha256": "5f0cf7c7727606a4da7d3c7296d2e7dc385dc0a748c9d2e7c4643d0724206902",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtexWuEYOxaAt297t0STB3ITX5w",
+  "prompt_tokens": 6070,
+  "completion_tokens": 44,
+  "actual_usd": 0.0009369,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed examples and explanations of contrary-to-duty obligations (CTDs) and their relationship with temporal constraints, fully supporting the claim made in the Reference Answer."
+  }
+}

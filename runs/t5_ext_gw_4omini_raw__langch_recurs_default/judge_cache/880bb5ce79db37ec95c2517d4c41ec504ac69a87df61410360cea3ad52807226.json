@@ -1,0 +1,14 @@
+{
+  "request_hash": "880bb5ce79db37ec95c2517d4c41ec504ac69a87df61410360cea3ad52807226",
+  "prompt_sha256": "bba9fbcae17b3df5e5705e46907fadf7f7a72c64f894108e3d3cd6ac1cdbcef8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNiE47lw648cgcE0QVuJ0TMrYAcB",
+  "prompt_tokens": 7598,
+  "completion_tokens": 69,
+  "actual_usd": 0.0011811,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the principles in Anthropic's constitution are drawn from the UN Declaration of Human Rights, trust and safety best practices inspired by Apple's Terms of Service, DeepMind's Sparrow principles, and values that encourage the consideration of Non-Western perspectives."
+  }
+}

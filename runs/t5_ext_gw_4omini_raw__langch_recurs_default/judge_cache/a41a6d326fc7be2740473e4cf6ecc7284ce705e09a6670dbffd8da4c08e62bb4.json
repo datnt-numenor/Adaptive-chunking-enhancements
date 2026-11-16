@@ -1,0 +1,14 @@
+{
+  "request_hash": "a41a6d326fc7be2740473e4cf6ecc7284ce705e09a6670dbffd8da4c08e62bb4",
+  "prompt_sha256": "53b9d09f078d33a9e2bed5992facebff75e22fab1a5e5595bc1612de5fb275bc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOT7S4pM4Qx9ahpDIvQRjwG353fc",
+  "prompt_tokens": 8738,
+  "completion_tokens": 57,
+  "actual_usd": 0.0013449,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the divergence in policy citation distributions between gemma4 and qwen3.5, including the specific Spearman correlation and Jensen-Shannon divergence values, fully supporting the claim made in the Reference Answer."
+  }
+}

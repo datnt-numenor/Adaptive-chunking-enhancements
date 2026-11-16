@@ -1,0 +1,14 @@
+{
+  "request_hash": "bb5c44526fccac323e29608b42f2ae5257446d10310a855cecbfc2ff3c9f61be",
+  "prompt_sha256": "cc9294a9a14d5db989be8341694e03e1494abf1970130e391501758f936eb09f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNnD3Nb1JUd0uhGfIXs7oMUn8fHX",
+  "prompt_tokens": 6416,
+  "completion_tokens": 44,
+  "actual_usd": 0.0009888,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining that the null hypothesis reflects the presumption of compliance for the algorithm, which can only be rejected with sufficient evidence."
+  }
+}

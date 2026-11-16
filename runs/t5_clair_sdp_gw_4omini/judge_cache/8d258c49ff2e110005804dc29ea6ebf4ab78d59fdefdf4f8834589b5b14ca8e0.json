@@ -1,0 +1,14 @@
+{
+  "request_hash": "8d258c49ff2e110005804dc29ea6ebf4ab78d59fdefdf4f8834589b5b14ca8e0",
+  "prompt_sha256": "5b2f204f7a26643eb3e99d5dfbeda59a762d72ed3aa67fb1e191a3c5e802df01",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP79Spk0hBWISuaHjunFCC0obHf3",
+  "prompt_tokens": 8130,
+  "completion_tokens": 58,
+  "actual_usd": 0.0012542999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the commitment of Signatories to exclude websites recognized as infringing copyright from their web-crawling activities, along with the provision for a dynamic list of such websites to be made publicly available."
+  }
+}

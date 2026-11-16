@@ -1,0 +1,14 @@
+{
+  "request_hash": "4543a2ce8eed6bfb9e64332b2109d91606f38ca3c8d6db368fcd54a7440249b0",
+  "prompt_sha256": "4e7344df9f7b97ed890dde0c7ad3745357c62f4276b3129d10cca60b53b6959a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOY0nvMCwhNHcDnYj1SnYOpYZB15",
+  "prompt_tokens": 8215,
+  "completion_tokens": 49,
+  "actual_usd": 0.00126165,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context mentions the Office of the Director of National Intelligence and its framework for AI ethics, but does not explicitly state that it focuses on procuring, designing, building, and managing AI."
+  }
+}

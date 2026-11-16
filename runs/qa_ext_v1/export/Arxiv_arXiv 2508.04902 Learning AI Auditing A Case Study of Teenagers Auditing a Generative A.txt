@@ -1,0 +1,270 @@
+DOCUMENT: arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A
+
+<<<PAGE 14>>>
+<!-- PageHeader: 439:14 Luis Morales-Navarro, et al. -->
+
+<Table>
+| Occupations                                                                                                                                |                                                                                               |                                                                                                                                        |                                                                                                          |
+|:-------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
+| 1. Tattoo artist 2. President of the USA 3. Carpenter 4. Construction worker 5. Priest 6. Fast food worker 7. Basketball player 8. Teacher | 9. New anchor 10. Scammer 11. Rapper 12. Judge 13. Senator 14. Janitor 15. Astronaut 16. Chef | 17. Taxi driver 18. 7/11 worker 19. Lawyer 20. STEM student 21. Nail technician 22. Harvard Student 23. Mathematician 24. Music artist | 25. Receptionist 26. Pizza delivery person* 27. Tech support* 28. Oil salesman* 29. Corner store worker* |
+</Table>
+
+\* *Occupations 26-29 were not used in testing and analysis
+
+<Figure>
+Fig. 4. The input images used by participants in their audit, including 4 default Effect House inputs and 10 images of celebrities selected from Wikimedia Commons.
+</Figure>
+
+4.1.3 Running Tests. Running the tests provided participants with opportunities to make inferences about the outputs, notice patterns, and reflect on their own perceptions of occupations. Ziyi, aware of the repetitive nature of running tests on all the images (see Figure 4), explained to a science
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Learning AI Auditing 439:15 -->
+
+<Figure>
+Fig. 5. Screenshot of a section of the spreadsheet where participants kept track of their tests.
+</Figure>
+
+center instructor that the trick was focusing on "one at a time." She was also continuously reflecting and noticing patterns while running tests. For example, when testing the construction worker prompts with different images, she noted, "they all look the same." Later, while running tests for the nail technician, she explained that she was unsurprised that they all looked very feminine because her mom is a nail technician, and she noticed that it was a very feminine occupation. Similarly, Dalia reflected after running tests for the occupation "tattoo artist", noting "a lot of people got tattoos... I wonder why [Effect House] gave her, like, a neck tattoo".
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 439:16 Luis Morales-Navarro, et al. -->
+
+Even while running the tests and adding output images to the shared spreadsheet (see Figure 5), participants continued to playfully experiment with Effect House. One participant, Kayden, took the opportunity to further play with the parameters and test images using his own name as a prompt. For instance, after testing a picture of Jason Mamoa with the prompt "a president of the USA at work," he decided to modify the prompt using his own name (e.g., "Kayden Lastname at work") to see what came up. The output was an image of a young Black man. He then tried his own name as a prompt with an image of a Black woman and got an output where the woman had more masculine features, and her race remained unchanged. While these tests were not documented on the shared spreadsheet and did not contribute to the overall audit, screen recordings revealed how the testing activity inspired him to go beyond the task he was supposed to be completing.
+
+4.1.4 Analyzing Data. Participants took different approaches to analyzing the data, with some describing the changes they observed, others annotating perceived gender and race of images, and some centering on concrete observable attributes. Participants also annotated age-related features, even though this attribute was not planned in the original hypothesis (about gender and racial stereotypes). At the same time, while analyzing data, participants continued to further experiment with the system by running more tests.
+
+Some teens, including Twylia, decided to describe the visible differences between each input and output image. For example, for the prompt "Janitor at work" and image 1 (an image of a Black woman with dreads), she noted that the output had "visible makeup, bigger lips, toned eyebrows, and a smoother face." A researcher-facilitator approached Twylia and suggested she count some of the changes she was noticing across images rather than just qualitatively describing them. Based on her interpretation of the suggestion, Twylia continued with descriptive annotations of the output images and also began assigning a masculinity and femininity score, ranging from zero to a hundred, to each output image.
+
+Other participants labeled the data with descriptors based on their own overall perception of the output images. Ibrahim, Kalem, Dalia, and Taylor, for example, annotated whether the people in output images looked more feminine or masculine, older or younger, and darker- or lighter-skinned than the inputs. Similarly, Ishmael and Brooklyn Mae annotated the input and output images using defined binary gender and age categories such as male/female and young/old.
+
+One group of participants decided to focus on observable features rather than their own perception of the outputs. Motivating this choice, Selena explained that "what 'older' means is kind of subjective." Ziyi also emphasized the need to specify what "older" meant because it was hard to know and estimate the age of the AI-generated images. She suggested that they should look at the output images to see if these had wrinkles and gray hair in order to concretely measure how many of the output images looked older. In a similar episode, Ziyi and Kalem discussed how to account for gender changes in the representation of rappers. First, they considered counting how many of the inputs were men and comparing them with the number of output images that (in their own perception) were men. But Ziyi again suggested finding a more concrete way to label the images, focusing on a specific physical attribute like the presence or absence of facial hair.
+
+While analyzing data, one participant, Horacio, decided that he needed to do further testing. He started his analysis by annotating what he noticed in each output image with notes like "gender stays the same but face is different." Unprompted, he decided to rerun some of the tests and change the prompt strength from 0.5 to 1.0. He noted that for some prompts, he did not observe a change in gender between input and output images at a strength of 0.5, such changes were noticeable at 1.0 strength. The process of analyzing led Horacio to reconsider how other variables in the auditing process could affect the outputs and to loop back to the data collection step to experiment with one variable.
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Learning AI Auditing 439:17 -->
+
+<Figure>
+Fig. 6. Examples of input and output images for three prompts.
+</Figure>
+
+Overall, participants analyzed 13 out of the 25 occupations that were collected in the previous step (see Table 3 for findings by group). They annotated the image pairs for changes in representation of gender, age, and race caused by the model by comparing the input and output images. Here we provide examples of participants' findings for specific occupations. Four groups analyzed the gender representation in output images for nail technician prompts (for an example, see Figure 6), noting that the outputs were more feminine, with some participants arguing that all images looked more feminine (Kayden and Dalia; Taylor), and one that 87% looked more feminine (Ibrahim). Participants that looked at specific feminine-coded features noted the presence of makeup in 83% of the nail technician outputs (Kalem, Selena and Ziyi). Two groups analyzed the outputs for judges, noticing that judges in general had more feminine characteristics (Ishmael and Brooklyn Mae; Taylor). In terms of age, two groups also looked at judges, noting that 24% of the faces in the output images were young (Ishmael and Brooklyn Mae) and 75% had wrinkles (Kalem, Selena, and Ziyi). They made similar observations for other occupations, noting that fast food workers looked young, while outputs for senators and janitors looked older. Less attention was given to race, with two groups noting race-related attributes: that all rapper outputs had darker skin than the input images (Ibrahim), and that senators had "White aesthetics like blue eyes and blond hair" (Twyla and Horacio).
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 439:18 Luis Morales-Navarro, et al. -->
+
+<Table>
+| Group                    | Audit Findings                                                                                                                                                                                                                                                                                                                 |
+|:-------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kalem, Selena and Ziyi   | Nail techs: 83% have makeup [proxy for feminine features] Fast food worker: 100% of outputs had smooth skin [proxy for younger age] Rapper: 95% of outputs had goatees or facial hair [proxy for masculine features] Judge: 75% had wrinkles [proxy for older age]                                                             |
+| Ibrahim                  | Rapper: 100% of outputs had darkened skin; 96% looked more masculine Nail tech: 87% looked more feminine Taxi driver: 56% looked older                                                                                                                                                                                         |
+| Ishmael and Brooklyn Mae | Priest: 100% outputs were men, even though inputs were 50/50 split Judge: 100% of outputs appeared female/femme Judge: 24% outputs were young                                                                                                                                                                                  |
+| Twyla and Horacio        | Senator: 100% were old; most had white aesthetics like blue eyes, blonde hair, and older (with wrinkles added); 95% were men Fast food worker at work: tone eyebrows, smoother face, visible makeup; 80% looked feminine; 20% looked masculine Janitor at work: 85% looking older; 80% looking masculine; 20% looking feminine |
+| Kayden and Dalia         | Carpenter: 91.7% of outputs were men President: made everyone older, added wrinkles and gray hair Tattoo artist: added tattoos on bodies like faces Stem scholars: made everyone look younger Nail technician: made everyone look more feminine                                                                                |
+| Taylor                   | Nail techs: outputs images were more feminine; sometimes added makeup Receptionists: more feminine characteristics Judges: more feminine characteristics                                                                                                                                                                       |
+</Table>
+
+4.1.5 Creating audit reports. Participants decided on different audiences for their reports and different ways to communicate their findings. They considered distinct relevant parties 1 including the engineers and others involved in the development of Effect House, users that create filters on Effect House, and users of filters on TikTok. Kalem suggested that it was important to share the findings with the developers of Effect House so they might improve the generative model. Ibrahim and Twyla argued that the findings should be shared with filter designers so that they could consider the biases that the system introduces even when the filter designers might not intend them. Ibrahim explained, "Effect House can be biased no matter what". Dalia suggested sharing the findings with other teenagers who use TikTok because "AI is everywhere and young people don't always know how it works." She explained that without knowing how systematic some of these issues are, other teens could find themselves thinking, "Why is it doing this? Why is it doing this to me?"
+
+Some groups decided to make their own TikTok videos to report their audit findings; one group, Twyla and Horacio, decided to make a slide presentation. In a different group, Ziyi and Kalem wrote a script for a TikTok video directed towards the developers of Effect House. Ziyi emphasized that it was important to explain how and why they selected the different occupations they analyzed, noting that they chose to focus on occupations that they perceived as reflecting "the most physical change" between the input and output images. Kalem explained that he hoped the developers of Effect House could take this feedback and make the platform more inclusive so that users could have access to better filters on TikTok.
+
+\* 1 We use the term "relevant parties" rather than "stakeholders"; for a discussion on the reasoning behind this decision, see [45].
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Learning AI Auditing 439:19 -->
+
+# 4.2 Triangulating Participants' Findings
+
+To address our second research question, Did the workshop support participants to reach evidence-based, credible conclusions in their audit?, we triangulated participants' analyses. We built on our team's prior experience in algorithm auditing by conducting our own analysis of the dataset created by youth. (For details about how we conducted this analysis, see Methods - Section 3.5.2). The goal of this analysis was to answer the hypotheses developed during the workshop to investigate if outputs from Effect House's image model reinforced gender and race stereotypes about different occupations and use these results to triangulate participants' audit results. In addition to gender and race, we also added age representation since several groups of participants also analyzed this kind of bias.
+
+<Figure>
+Fig. 7. Bar graphs depicting the gender representations (left graph) and the changes in racial representations (right graph) of the output images for each occupation.
+</Figure>
+
+Gender Representation. Our analysis of the dataset, created during the collaborative audit, revealed that Effect House generated a greater number of masculine-presenting outputs for 19 out of the 25 occupations (see Figure 7), depicting an overrepresentation of masculine-presenting figures in these occupations. Here we describe our findings in relation to participants' findings. The input images were selected to be balanced in gender representation (50% F, 50% M), but after our own annotation, the outputs were 41% F, 55% M, 4% ambiguous (A). In certain occupations, the gender imbalance was more pronounced. For instance, 96% of the output images for rappers appeared masculine-presenting, followed by 94% for carpenters, 83% for priests, 73% for taxi drivers, and 77% for presidents. On the other hand, 83% of receptionists were feminine-presenting, followed by 81% for news anchors, 75% for fast food workers, and 75% for nail technicians. We observed changes in gender representation in at least one test (out of 100 tests) for all input images, with the exception of the image of Jason Mamoa and image 4 (racially ambiguous man with a beard), who always retained a stereotypically masculine presentation in the output image regardless of the input prompt.
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: 439:20 Luis Morales-Navarro, et al. -->
+
+Although researchers and participants obtained slightly different quantitative results, the conclusions drawn from both analyses were similar, namely that-in terms of gender representation and biases-Effect House's filter masculinized input images when prompted with occupations like rapper, carpenter, priest, and janitor and feminized outputs for occupations like fast food workers, receptionists, and nail technicians. For example, researchers found that 94% of output images for carpenters were masculine-presenting, while Kayden and Dalia reported that 91.7% of output images were men. In other occupations, such as fast food workers, researchers coded 75% of output images as feminine, while participants argued 80% looked feminine. Participants analyzed the images of rappers in different ways. Kalem, Selena, and Ziyi used facial hair as a proxy for masculine-presenting outputs, finding that 95% of the outputs for rappers had facial hair, while Ibrahim directly labeled the images as masculine or feminine in his own perception, finding that 96% of the outputs were masculine-presenting. Our analysis concorded with Ibrahim that 96% of outputs were masculine-presenting and came close to Kalem's group; we found that 100% of outputs for rappers had facial hair (including stubble).
+
+Racial Representation. Participants' analyses of racial representation were limited, with only two groups addressing racial representation. Ibrahim reported that 100% of outputs for rappers had darker skin than the input images, while Twyla and Horacio noted that most outputs for senators featured "White aesthetics," like blue eyes and blonde hair. In our analysis, we compared input and output images, annotating whether the race of the person in the output image appeared (subjectively) to differ from that of the input. Our analysis revealed that changes in racial representation were not as prominent as those in gender representation. Overall, when comparing input and output images, we found that racial representation changed in 13% of cases, with changes occurring across all occupations. The occupations with the highest frequency of change in racial representation were rappers (60%), carpenters (19%), and senators (19%). Occupations with the lowest frequency of change in racial representation included astronauts (6%), lawyers (8%), and teachers (8%).
+
+Given that these results were less stark than those related to gender, it is possible that the participants did not focus as much on this form of bias because they empirically found the patterns in racial representation less pronounced and interesting in their experiences running the tests.
+
+Age Representation. While age representation was not a part of the initial hypothesis, it emerged as a key theme in participants' audits, with 5 out of 6 groups including observations about changes in age representation. We evaluated age representation using two visual indicators: wrinkles and gray hair. A change in age representation was identified if at least one of these changed between the input and output images.
+
+We found that changes in age representation were more prominent than changes in racial and gender representation, with changes in age representation occurring in 46.75% of cases. Notably, changes in wrinkles were more prominent than changes in gray hair, and the addition of features in the output image was more common than their removal. The presence of wrinkles changed (added or removed) in 44.67% of images, including 40% that involved the addition of wrinkles. Gray hair changed in only 10.33% of images. The occupations that showed the most change in age representation were priest (83.3%), president (83.3%), and senator (75%). Senators had the highest
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: Learning AI Auditing 439:21 -->
+
+incidence of wrinkles in output images (100%), followed by news anchors (95.8%), presidents (95.8%), taxi drivers (93.7%), and carpenters (93.7%). Occupations with the highest incidence of wrinkle removal were STEM student (16.67%), nail technician (14.58%), and fast food worker (12.5%).
+
+Participants' analyses were similar to the researchers' findings, including that Effect House tended to age input images when prompted with certain occupations-such as president, senator, and taxi driver-and reduced the perceived age of images when prompted with STEM student. However, participants employed distinct strategies to analyze images, with some (Kalem, Selena, and Ziyi) focusing on specific visual markers, such as the presence or lack of wrinkles, as proxies for age, and others (Kayden and Dalia) taking a comparative approach, describing output images as "older" or "younger" than the inputs. A third approach by Ishmael and Brooklyn Mae relied on personal interpretations of "young" and old", as they described in their audit that 24% of outputs for judges were "young".
+
+# 5 Discussion
+
+At the highest level, this study contributes evidence that, beyond recognizing isolated instances of representational bias and harm, teenagers can effectively engage in algorithm auditing, collaboratively and empirically investigating potentially harmful behaviors in real-world algorithmic systems. Our study confirms evidence from prior research that young people build on their everyday experiences to identify potential biases [36, 54] and extends this by showing that when participating in scaffolded PD activities, teenagers can lead full-fledged audits to empirically research systemic bias and harm. In this section, first we discuss participants' approaches to auditing in relation to auditing literature, then we focus on the implications of our findings for future auditing activities involving youth. Subsequently, we also reflect on some implications for the field of auditing, especially as everyday perspectives are beginning to be included in various ways. Finally, we describe key limitations to be addressed and other future directions in which we hope our team and others will expand this line of research.
+
+# 5.1 Teens Conducting an Algorithm Audit
+
+While prior research shows that young people can identify harmful biases in researcher-selected scenarios [36, 54]; our case study demonstrates that youth can be protagonists [19] or the main decision-makers in auditing a generative AI system from beginning to end. The PD workshop was structurally open [4, 64], providing teens with autonomy to define what they wanted to investigate. The five steps served as a basic structure that supported participants to be the main agents driving the auditing process [19]. In the following paragraphs, we discuss how teens navigated each of the steps.
+
+Participants developed hypotheses based on experimentation and personal experiences, not only noticing unexpected behaviors but also potentially harmful biases. While some expert audits are conducted as follow-ups to well-documented problematic system behaviors [34] and others are initiated in compliance with local laws [18], expert audits have also been motivated by the researchers' own personal experiences interacting with sociotechnical systems [9, 57]. The openended exploration of the tool and its behaviors was instrumental in helping participants develop hypotheses that were relevant to their interests, identities, and experiences.
+
+In most expert audits, auditors create a set of inputs that are systematic, thorough, and thoughtful, and that can be used to rigorously test the hypothesis. It is notable that the domain of common occupations, selected by the participants without explicit direction from researchers, is a popular framing for expert audits. For example, previous studies on gender and race representation of occupations in image searches and the outputs of generative models have used the US Bureau of Labor and Statistics (BLS) categorization of occupations as a starting point [5, 22, 30, 34, 40].
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: 439:22 Luis Morales-Navarro, et al. -->
+
+Participants were less exhaustive but very creative when they selected their list of occupations. Like Kalem, when thinking about the gendered and racialized stereotypes around nursing in relation to his mother, participants built on their own personal experiences. They also reflected on societal biases they observed in their everyday lives and suggested occupations such as rapper and nail technician that, to our knowledge, have not been included in previous expert-led studies.
+
+Repeatedly querying an algorithmic system using thoughtfully designed inputs and recording outputs can be tedious and time-consuming. Despite its tedium, we observed that participants were generally engaged in running the tests, often performing some informal analysis of outputs while testing and reflecting on their perceptions of stereotypes. Sometimes participants deviated from the task at hand to pursue their own open-ended investigations. These examples show that auditing with teenagers can be less structured than expert auditing , with learners engaging with different steps of the auditing process at the same time.
+
+Participants adopted various methods to analyze their data, recording observed changes, annotating perceived gender and race of photos, and focusing on observable features. We were able to triangulate their findings to confirm that Effect House generated a greater number of masculinepresenting outputs for 19 out of the 25 occupations, and that age representation reflected societal stereotypes.
+
+Like expert auditors who report their findings with the goal of effecting change [31, 41], participants in our study had a clear understanding that different relevant parties needed to access the findings for different purposes and created distinct messages directed to these parties.
+
+The PD workshop successfully scaffolded participants in conducting an audit. Our study further highlights the promise of expanding the roles young people can play in PD to involve them as auditors of systems that are relevant to their daily lives [19, 36]. For child-computer interaction research, positioning teenagers as auditors of the technologies that are designed and marketed towards them is particularly important, as they may be able to identify issues that designers, adults, or experts cannot find.
+
+# 5.2 Implications for Future Auditing Learning Activities
+
+Our first research question asked about how participants engaged in this auditing activity. Reflecting on the findings of this first research question, we consider the adaptation and scaffolding of the auditing process promising for future activities with teenagers, and the algorithmic justice topic suitable and resonant with this group of teens. The activity clearly resonated with participants; they connected with their own lived experience throughout the process. For example, Kayden tried running several prompts with his own name. We saw this clear personal engagement even when directly addressing complex topics like social biases, as when Twyla discussed the differences between stereotypes of chefs and cooks. Participants also demonstrated their creativity. Different groups conducted parallel steps of the audit very differently-for example, generating distinct ways to evaluate age representation, such as by subjectively comparing inputs and outputs or by looking for the presence of wrinkles and gray hair.
+
+Our second research question asked whether the workshop supported participants to reach evidence-based, credible conclusions in their audit. This is especially concerning because this activity was meant to allow them to draw conclusions about real systems they use in their daily lives. It could be problematic to leave them with inaccurate conclusions, something we could not control in advance as the process unfolded organically. By triangulating participants' findings, undergirded by prior experience in expert auditing, we observed that their findings were quite close to our own-for example, finding that Effect House appears to produce outputs that are systematically biased according to social stereotypes of different occupations. Although they did not analyze the full dataset, as our team did after the workshop, and although the precise numbers they calculated varied from ours in some cases (e.g., while we found that 75% of output images for fast food workers were feminine-presenting, Twyla and Horacio argued 80% looked feminine), the overall direction of the trends they reported matched ours. This is evidence that the PD workshop supported participants in reaching evidence-based, credible conclusions.
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: Learning AI Auditing 439:23 -->
+
+Moreover, several of the participants' divergences from formal auditing processes proved insightful and valuable. When analyzing the data, for example, several groups began to notice trends related to age, diverging from the hypothesis. Age biases are not a common topic for expert audits; as reflected in the related work we described in Section 2, we do not know of any other image bias audits that study age. But clearly this dimension was salient to participants, who uncovered notable trends that complemented the findings on race and gender (e.g., that filter outputs for presidents, in addition to looking more masculine-presenting, also looked older). Similarly, when selecting the occupations to examine, they chose several uncommon ones not previously explored in the expert literature, like nail technician and rapper, that nevertheless produced interesting findings.
+
+Looking ahead to future deployments of auditing-based learning activities, we encourage educators to integrate opportunities for experimentation throughout the process and not restrict learners very strictly to the task at hand. We observed that the participants' approaches were playful, as they devised alternative hypotheses and conducted impromptu open-ended explorations throughout the process. We saw them gaining inspiration in later activities that prompted them to loop back to earlier stages of the audit and try new directions. And as we just described, although efforts should be made to ensure that learning activities will leave teenagers with valid and well-informed conclusions, there are many other dimensions in which learners follow their creative impulses and make different decisions than what expert auditors would normally do.
+
+# 5.3 Implications for the Field of Auditing
+
+In addition to contributing to the literature on child-computer interaction, we see a couple of implications of this work for auditing research. First, it confirms the value of participatory approaches to auditing that involve non-expert real system users in shaping the questions, methods, and interpretations of an audit [24]. Notably, most prior work in this space has focused on the potential for users to pose questions and conduct explorations. Beyond these steps, we also saw participants consider how their findings should be communicated to different relevant parties in distinct ways (e.g., making TikTok videos to communicate findings to TikTok users). This suggests that user populations may be especially well-positioned to effectively communicate their findings to peer groups after conducting an audit (the fifth step in our set of activities). We hope subsequent work in end-user auditing will consider ways to leverage end users' expertise and trust among their peers to not only conduct audits but also communicate audit results.
+
+And of course, this work expands the idea of end-user auditing to include teenagers. Young people, as avid users of many AI systems, have important expertise that we saw arise in this study (e.g., the consideration of age biases, the choice of occupations that resonated with them personally). Like other audits involving everyday users have shown [51], our 14-15-year-old participants contributed valuable auditing insights based on their lived experiences.
+
+# 5.4 Limitations and Future Work
+
+Perhaps the largest limitation of this research is that we only present an analysis of one case study of a single algorithmic system with a specific group of teenagers. Given the value we saw for teenagers, we believe it is worth expanding on this work to develop materials for conducting workshops focusing on other platforms, other age groups, and additional groups of learners. We encourage other researchers to do so and also plan to do this ourselves, and, as we referenced in our Positionality Statement (Section 3.4) we emphasize the importance of partnering with teenagers and collaboratively creating appropriate learning materials with them.
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: 439:24 Luis Morales-Navarro, et al. -->
+
+We conducted these activities in the context of an extended summer program, but the concept of engaging teenagers in auditing could be more impactful if designed for classroom settings with a wider range of learners-not just those with interest and access to an extracurricular program, like the participants in our study. To this end, our next steps involve exploring how the five auditing steps that framed our activities could be used to integrate algorithm auditing activities in classroom settings. This will raise some interesting challenges, for instance, pertaining to many schools' blocking of platforms like TikTok on school networks and use of mobile devices in classrooms. To address these issues, we must take a participatory approach and partner with educators and teenagers to explore other possibilities.
+
+Focusing specifically on the design of the PD workshop, we want to flag a couple of challenges. Creating a large data set to conduct a full-fledged audit was time-consuming and tedious. In adapting these kinds of activities to classroom settings, we could consider focusing on analysis and providing teenagers with existing curated datasets. Another challenge was the impossibility of the participants to annotate all 1200 tests, an intractable number for any learning activity of reasonable length. To address this, it is important to design tools that can streamline and support annotation and to consider other pedagogical designs, such as having participants annotate some of the data while providing them with already annotated data. Finally, after reflecting on the workshop ourselves, we also wondered whether adding a sixth step, Reflection, in which participants could reflect on their experiences and challenges, might support learners in thinking about how auditing practices can be applicable in their everyday lives.
+
+# 6 Conclusion
+
+Motivated by the importance of fostering artificial intelligence and machine learning (AI/ML) literacies among youth, we drew on algorithm auditing research to design and deploy an auditingbased participatory design workshop with a group of 14 teenagers. Auditing is a method used by experts to interrogate algorithmic systems and their social impacts that has more recently seen extensions through which everyday users (generally adults) can participate in similar processes in the context of their daily interactions with these technologies. The teenagers in our study (ages 14-15) engaged in a PD workshop auditing the generative AI model that powers TikTok filters using Effect House, TikTok's filter development environment. Our case study shows that teenagers are able to conduct a complete and collaborative audit of a real-world algorithmic system when scaffolded appropriately. Furthermore, conducting our own analysis, we were able to triangulate their findings, confirming the potential of the workshop in scaffolding youth to reach evidencebased, credible conclusions. This work demonstrates the potential for researchers to partner with teenagers in future audits of algorithmic systems that young people use in their daily lives and also to design AI literacies learning activities that support young people in conducting algorithm audits of the systems that they interact with every day.
+
+# Acknowledgments
+
+With regards to Lucia Kulzer, Alexis Cabrera-Sutch, Carly Netting, and Danielle Marino for their support during the participatory design workshop. This study was supported by National Science Foundation (NSF) grants #2333469 and #2342438. Any opinions, findings, and conclusions or recommendations expressed in this paper are those of the authors and do not necessarily reflect the views of NSF, the University of Pennsylvania, or Columbia University.
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: Learning AI Auditing 439:25 -->
+
+# References
+
+[1] Bobby Allyn, Sylvia Goodman, and Dara Kerr. 2024. TikTok executives know about app's effect on teens, lawsuit documents allege. https://www.npr.org/2024/10/11/g-s1-27676/tiktok-redacted-documents-in-teen-safety-lawsuitrevealed.
+
+[2] Monica Anderson, Michelle Faverio, and Jeffrey Gottfried. 2023. Teens, Social Media and Technology 2023. Pew Research Center. https://www.pewresearch.org/internet/2023/12/11/teens-social-media-and-technology-2023/.
+
+[3] Jack Bandy. 2021. Problematic Machine Behavior: A Systematic Literature Review of Algorithm Audits. Proc. ACM Hum. -Comput. Interact. 5, CSCW1, Article 74 (April 2021), 34 pages. doi:10.1145/3449148
+
+[4] Liam J Bannon and Pelle Ehn. 2012. Design: design matters in Participatory Design. In Routledge international handbook of participatory design. Routledge, New York, 37-63.
+
+[5] Federico Bianchi, Pratyusha Kalluri, Esin Durmus, Faisal Ladhak, Myra Cheng, Debora Nozza, Tatsunori Hashimoto, Dan Jurafsky, James Zou, and Aylin Caliskan. 2023. Easily Accessible Text-to-Image Generation Amplifies Demographic Stereotypes at Large Scale. In Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency (Chicago, IL, USA) (FAccT '23). Association for Computing Machinery, New York, NY, USA, 1493-1504. doi:10.1145/ 3593013.3594095
+
+[6] Abeba Birhane. 2021. Algorithmic injustice: a relational ethics approach. Patterns 2, 2 (2021), 1-9.
+
+[7] Jolie Bonner, Florian Mathis, Joseph O'Hagan, and Mark Mcgill. 2023. When Filters Escape the Smartphone: Exploring Acceptance and Concerns Regarding Augmented Expression of Social Identity for Everyday AR. In Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology (Christchurch, New Zealand) (VRST '23). Association for Computing Machinery, New York, NY, USA, Article 14, 14 pages. doi:10.1145/3611659.3615707
+
+[8] Claus Bossen, Christian Dindler, and Ole Sejer Iversen. 2016. Evaluation in participatory design: a literature survey. In Proceedings of the 14th Participatory Design Conference: Full Papers - Volume 1 (Aarhus, Denmark) (PDC '16). Association for Computing Machinery, New York, NY, USA, 151-160. doi:10.1145/2940299.2940303
+
+[9] Joy Buolamwini and Timnit Gebru. 2018. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In Proceedings of the 1st Conference on Fairness, Accountability and Transparency (Proceedings of Machine Learning Research, Vol. 81), Sorelle A. Friedler and Christo Wilson (Eds.). PMLR, , 77-91. https://proceedings.mlr.press/ v81/buolamwini18a.html
+
+[10] Kaitlyn Burnell, Allycen R Kurup, and Marion K Underwood. 2022. Snapchat Lenses and Body Image Concerns. New Media & Society 24, 9 (2022), 2088-2106. doi:10.1177/1461444821993038
+
+[11] Merijke Coenraad. 2022. "That's what techquity is": youth perceptions of technological and algorithmic bias. Information and Learning Sciences 123, 7/8 (2022), 500-525.
+
+[12] Norman K Denzin. 2017. The research act: A theoretical introduction to sociological methods. Routledge, New York.
+
+[13] Alicia DeVrio, Aditi Dhabalia, Hong Shen, Kenneth Holstein, and Motahhare Eslami. 2022. Toward User-Driven Algorithm Auditing: Investigating users' strategies for uncovering harmful algorithmic behavior. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (New Orleans, LA, USA) (CHI '22). Association for Computing Machinery, New York, NY, USA, Article 626, 19 pages. doi:10.1145/3491102.3517441
+
+[14] Christian Dindler, Ole Sejer Iversen, Mikkel Hjorth, Rachel Charlotte Smith, and Hannah Djurssø Nielsen. 2023. DORIT: An analytical model for computational empowerment in K-9 education. International Journal of Child-Computer Interaction 37 (2023), 100599.
+
+[15] Miriam Doh, Corinna Canali, and Anastasia Karagianni. 2024. Pixels of Perfection and Self-Perception: Deconstructing AR Beauty Filters and Their Challenge to Unbiased Body Image. In Proceedings of the 2024 ACM International Conference on Interactive Media Experiences (Stockholm, Sweden) (IMX '24). Association for Computing Machinery, New York, NY, USA, 349-353. doi:10.1145/3639701.3663636
+
+[16] Ana Maria Bustamante Duarte, Nina Brendel, Auriol Degbelo, and Christian Kray. 2018. Participatory Design and Participatory Research: An HCI Case Study with Young Forced Migrants. ACM Trans. Comput. -Hum. Interact. 25, 1, Article 3 (Feb. 2018), 39 pages. doi:10.1145/3145472
+
+[17] Eureka Foong, Darren Gergle, and Elizabeth M. Gerber. 2017. Novice and Expert Sensemaking of Crowdsourced Design Feedback. Proc. ACM Hum. -Comput. Interact. 1, CSCW, Article 45 (Dec. 2017), 18 pages. doi:10.1145/3134680
+
+[18] Lara Groves, Jacob Metcalf, Alayna Kennedy, Briana Vecchione, and Andrew Strait. 2024. Auditing Work: Exploring the New York City algorithmic bias audit regime. In Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency (Rio de Janeiro, Brazil) (FAccT '24). Association for Computing Machinery, New York, NY, USA, 1107-1120. doi:10.1145/3630106.3658959
+
+[19] Ole Sejer Iversen, Rachel Charlotte Smith, and Christian Dindler. 2017. Child as Protagonist: Expanding the Role of Children in Participatory Design. In Proceedings of the 2017 Conference on Interaction Design and Children (Stanford, California, USA) (IDC '17). Association for Computing Machinery, New York, NY, USA, 27-37. doi:10.1145/3078072. 3079725
+
+<!-- PageFooter: Proc. ACM Hum.-Comput. Interact., Vol. 9, No. 7, Article 439. Publication date: November 2025. -->
+
+<!-- PageBreak -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "ca9428b2cea00426ead7a7b064d23393175fd1393181390ae1b7d95ed354d83a",
+  "prompt_sha256": "cf1a8a75eafa8de4f891e50e04115fa03aedf1fae74ca1999635c07abcbc28a3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNydtOT9ZjAu78YMYSn94AVIugGp",
+  "prompt_tokens": 7555,
+  "completion_tokens": 46,
+  "actual_usd": 0.00116085,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the claim in the reference answer by explaining how untraceable attribution limits the ability to use source attribution techniques, which in turn reduces trust in the model."
+  }
+}

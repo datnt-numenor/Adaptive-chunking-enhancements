@@ -1,0 +1,10 @@
+{
+  "request_hash": "2971cd8c9a982126424ac846df5e2055f9dd051aed39e940cea2c18813ec6736",
+  "prompt_sha256": "19fbfb58586db4ad7b4b996725906aacb359af8f54b2f5963bca7e5d9ad1243d",
+  "answer": "In Data For Good's generative AI white paper, a PUE (Power Usage Effectiveness) value of 1.10 is assumed for ChatGPT's hyperscaler data center. PUE accounts for the ratio of total energy consumed by a data center to the energy consumed by its IT equipment, thereby including the consumption of non-IT equipment such as cooling, lighting, and office spaces in addition to the servers themselves.",
+  "model": "gpt-4.1-2025-04-14",
+  "response_id": "chatcmpl-Ei0SdfKLQV0Y8fNbhVqSOjBjeiLhI",
+  "prompt_tokens": 10332,
+  "completion_tokens": 85,
+  "actual_usd": 0.021344
+}

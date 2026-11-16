@@ -1,0 +1,14 @@
+{
+  "request_hash": "6887294a99df56214aad9dc745b7cff0503565c1cffdec55ae350bd4296e7847",
+  "prompt_sha256": "d58b6bad81e948fed4195824e0d084ca4df3ec0e7573c487ee557ef8de0ce323",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvCQBUrrTYcZVJQpoYUJl7ciYxY",
+  "prompt_tokens": 7211,
+  "completion_tokens": 51,
+  "actual_usd": 0.0011122499999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing that the U.S. Executive Order on AI includes binding reporting requirements and mandatory actions by government agencies, which can indeed be modified or revoked by the President."
+  }
+}

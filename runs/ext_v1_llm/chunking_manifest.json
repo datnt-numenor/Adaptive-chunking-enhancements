@@ -1,0 +1,10 @@
+{
+  "data_dir": "data\\clair_ext_set",
+  "methods": [
+    "llm_regex"
+  ],
+  "llm_model": "gpt-4o",
+  "llm_cache": "runs\\openai_cache_ext",
+  "postprocessing": "replicate.run_chunking 1b/1c",
+  "created": "2026-11-09 18:28:51"
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "8003b9a2f447535e7b3060d6c459d3df1e165068c50199174e5a7d79af18b1df",
+  "prompt_sha256": "948b8cb29abfa795ccfce1a24761e7f98ba2dd3bd814346a098be8245dec76d9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1Lzq4FJlp0wQtMkPRYGR8rB50wi",
+  "prompt_tokens": 7755,
+  "completion_tokens": 44,
+  "actual_usd": 0.00118965,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that inference accounts for 65% of the overall impact, while training accounts for 35%."
+  }
+}

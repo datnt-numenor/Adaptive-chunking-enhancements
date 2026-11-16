@@ -1,0 +1,14 @@
+{
+  "request_hash": "0972bd1ff5fb4406386d5f9bd811894f8f43641c748387369f62b65230f86510",
+  "prompt_sha256": "402e62bf662851b07473f6cf29296f4c4d595eeafd00627ab0a21d450abaca6e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODUZeE36HmlwCZjBCFF6CQzgjyB",
+  "prompt_tokens": 8173,
+  "completion_tokens": 56,
+  "actual_usd": 0.00125955,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear and detailed explanation of Conditional Value-at-Risk (CVaR), including its definition and how it relates to Value-at-Risk (VaR), fully supporting the claim made in the Reference Answer."
+  }
+}

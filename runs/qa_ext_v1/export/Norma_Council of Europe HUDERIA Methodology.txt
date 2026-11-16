@@ -1,0 +1,443 @@
+DOCUMENT: Council of Europe HUDERIA Methodology
+
+<<<PAGE 10>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+(b) identify and enumerate the relevant areas of concern 14 and, with this in mind, answer the question of whether the system may have potential or actual impacts on specific human rights, democracy, and the rule of law;
+
+(c) for each potential and actual impact identified, describe the nature of the potential and actual impact 15 , taking account of differential impacts on affected persons and groups given relevant contextual characteristics including protected characteristics and vulnerability factors;
+
+Analysing these points will provide information for the initial assessment of key risk variables - severity (scale, scope, reversibility) and probability - that assist in determining risk and choosing the right approach to the subsequent elements of the methodology, which will help ensure that governance interventions and mitigation measures are aligned with the needs throughout the AI system lifecycle.
+
+The results of this analysis can also help identify opportunities for using the AI system to support positive actions that advance human rights, including promoting and ensuring nondiscrimination.
+
+# Determination of Risk Level
+
+The following variables may be employed to index the risk level of each of the potential adverse impacts to human rights, democracy and the rule of law that have been identified in as the result of the mapping exercise:
+
+1. The scale 16 of the potential adverse impacts (i.e. the seriousness of the potential harm);
+
+2. The scope of the potential adverse impacts (including the number of persons affected, the protected characteristics or vulnerability of individuals or groups and the timeframe of the impacts);
+
+3. The reversibility 17 of the potential adverse impacts is the information on the possible reparability or restoration for affected persons to their pre-impact situation or equivalent.
+
+4. The probability 18 of the potential adverse impacts.
+
+Relevant teams should go through each of the potential impacts that have been identified and consider for each area of concern related to human rights, democracy and the rule of law, and each affected group, the scale, scope, reversibility and probability of the potential or actual adverse effect. Domestic law or policy may provide more detailed definitions that can be used to inform this determination of risk and to determine suitable and proportionate approaches to subsequent HUDERIA activities (e.g., stakeholder engagement).
+
+Consideration may be given to establishing a method for combining these variables to enable the calibration of risk and the determination of suitable and proportionate approaches to subsequent HUDERIA activities (e.g., stakeholder engagement) as well as the extent and depth of downstream governance interventions and risk management and mitigation measures. This may involve the formulation of quantitative or semi-quantitative methods of risk calculation, risk matrices, or more qualitative or rules-based procedures. Any risk calibration mechanism resulting from the combination of these variables for the purposes of the HUDERIA assessment may take into account:
+
+\* 14 COBRA Resources E could be used to identify potential areas of concern related to human rights, democracy and the rule of law.
+
+\* 15 For clarity of assessment both adverse or restrictive impacts as well as beneficial, enhancing or otherwise positive impacts produced by AI systems should be accounted for, since various issues with bias and discrimination may arise in respect of systems that produce both types of impacts.
+
+\* 16 The term "scale" may sometimes be referred to as "gravity" in risk assessment contexts.
+
+\* 17 The term "reversibility" may sometimes be referred to as "remediability" in risk assessment contexts.
+
+\* 18 The term "probability" may sometimes be referred to as "likelihood" in risk assessment contexts.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+- regarding human rights, low scope and high gravity effects as well as high scope and low gravity effects on each affected person;
+
+- regarding democracy and the rule of law, the mechanism could take into account in particular high scope and long-lasting effects on persons, institutions and the society in general.
+
+# Triage
+
+# Objectives
+
+The main purpose of this stage is to build on the information collected in previous COBRA activities, and therefore:
+
+- to facilitate the task of identifying and triaging systems that pose significant risk, so that the HUDERIA Methodology is not onerous for minimal or low risk AI systems;
+
+- to make an initial determination of whether the AI system should be developed or deployed, based on whether the benefits of developing or deploying the AI system outweigh its risks, particularly given its potential impacts on human rights, democracy and the rule of law, as well as whether the use of the AI system is incompatible with respect for human rights, democracy and the rule of law.
+
+# Adaptable approach to triaging
+
+The prior activities in this stage provide a preliminary picture of the risk profile of the AI system.
+
+The information gathered may, for example, be sufficient to determine that the system is unlikely to have any impact on human rights, democracy, or the rule of law, making the subsequent elements of HUDERIA unnecessary. A similar conclusion could be reached if the identified impacts are insignificant or unlikely. If the identified impacts lead to a decision that an AI system will not be developed or deployed because it is considered incompatible with respect for human rights, democracy and the rule of law, subsequent elements of HUDERIA are also unnecessary. Finally, in cases where serious potential impacts are identified, a range of risk management strategies and responses (including the Stakeholder Engagement Process described in the next section) may be justified. To address this complexity, the HUDERIA does not prescribe detailed guidance for adjusting risk management efforts, but simply sets out proposed elements that may be applied as appropriate based on the risk of adverse impacts to human rights, democracy and the rule of law. Different approaches to determining risk management steps based on the potential and actual impacts identified - or a combination of them - may be applied based on the specific domestic regulatory framework or environment, industry, system, and context (e.g., threshold-based, scenario-based, proportionality, dynamic, or context-specific approaches).
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+The final determination of whether to use a qualitative, quantitative, mixed or any other method is left to the discretion of the authorities or, where applicable, the AI project teams responsible for the system.
+
+# 'Zero questions'
+
+To help determine whether the benefits of building or deploying the AI system, including additional social benefits that may result from the use of the system beyond its primary purpose, outweigh its risks given the risks factors and potential impacts identified, consider:
+
+- whether the use of the system is appropriate considering the nature of the problem that the AI system is trying to solve;- the extent to which existing technologies and processes already in place to solve the problem under consideration are better placed to do so, considering the risk profile and potential adverse impacts of the prospective system with a particular focus, where appropriate, on any marginal risk added by introducing AI into the current context;
+
+- the extent to which the prospective system will be able to meet the deployer's needs and expectations;
+
+- the extent to which the impacts of the prospective system will be equitable across affected groups;
+
+- the extent to which the quality and representativeness of currently or potentially available data is sufficient for the prospective system to be effective, safe, and reasonably avoid potential harmful bias;
+
+- the extent to which sufficient resources (human and material) are available and able to meet technical requirements and perform technical and governance actions to adequately mitigate identified risks; and
+
+- the system's potential use contexts and risks for misuse or abuse, including through deployment beyond its intended purpose.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# II. The Stakeholder Engagement Process (SEP)
+
+# Introduction
+
+The possibility to run this step can be considered in order to improve the quality of information for the next element of the HUDERIA - the Risk and Impact Assessment - by incorporating the views of identified potentially affected persons, including those in vulnerable situations.
+
+Stakeholder engagement, as set out in the HUDERIA Methodology, may take various forms. The level of participation of affected persons should be informed by the risks factors and potential and actual impacts identified as part of the COBRA stage. Involving stakeholders throughout the AI system lifecycle can also offer a variety of additional benefits, such as fostering transparency, building trust and improving usability and performance of the AI system.
+
+# Explanation
+
+The SEP involves five key steps 19 : Stakeholder Analysis, Positionality Reflection, Establishment of Engagement Objectives, Determination of Engagement Method, and Implementation.
+
+# Stakeholder analysis
+
+The stakeholder analysis identifies stakeholder groups which may be affected by, or may affect, the activities within the lifecycle of the system. Such analysis 20 assesses the relative interests, rights, potential and existing vulnerabilities and advantages of identified stakeholders as well as the salience of identified stakeholder groups. At this step, consider meaningfully including the views of those who:
+
+1) are disproportionately at risk from the use of the system;
+
+2) are particularly vulnerable to potential harms; or
+
+3) have particularly limited ability to influence how the system is designed and used (e.g., currently or historically marginalised, disadvantaged or underrepresented groups or persons in situations of vulnerability or presenting specific needs).
+
+# Positionality reflection
+
+The next step involves reflection on the positional standpoint vis-à-vis affected stakeholders with a view to recognising the limitations of HUDERIA users' perspectives and identifying missing viewpoints which would strengthen the assessment of the system's potential and actual impacts.
+
+\* 19 The process described in this section is illustrative in nature with the final determination on the process of stakeholder engagement being up to the discretion of the authorities or, where applicable, the AI project teams responsible for the system.
+
+\* 20 SEP Resources A (List of Questions to Assess Relative Stakeholder Salience) [to be elaborated and adopted by the CAI in 2025] provides detailed questions and tools to guide the identification of relevant stakeholders.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+Depending on the relevant risk factors and potential impacts identified at the COBRA element, this may include an assessment of HUDERIA users' self-identified demographics, education and training, socioeconomic background, and the institutional and team context.
+
+The main questions on which HUDERIA users should reflect when undertaking this stage of the methodology are:
+
+- To what extent do my personal characteristics, group identifications, socioeconomic status, educational, training and work background, team composition, and institutional frame represent sources of power and advantage or sources of marginalisation and disadvantage?
+
+- How does this positionality influence my and my team's ability to identify and understand affected stakeholders and the potential impacts of the AI system?
+
+Depending on the risk factors identified during the COBRA process, HUDERIA users should also consider engaging external stakeholders or consultants with specific expertise, such as human rights law expertise, related to the system's potential and actual human rights impacts.
+
+# Establishment of Engagement Objectives
+
+Setting clear objectives for stakeholder engagement aims to create a clear understanding of how and why engagement activities are being conducted. These facilitate the inclusive, informed and meaningful involvement of potentially affected persons 21 .
+
+# Determination of Engagement Method
+
+Determining the appropriate stakeholder engagement method(s) 22 necessitates evaluation and accommodation of the needs of potentially affected persons, taking into consideration, as appropriate, the outcomes of the COBRA process and other relevant factors such as resource constraints, difficulties in reaching isolated or socially excluded groups, capacities constraints such as challenges resulting from digital divides or information gaps, timeframes, etc.
+
+The following criteria may serve as guidance in the SEP element:
+
+1) engagement - meaningful involvement of affected or potentially affected persons is integrated during the relevant elements of the process;
+
+2) equality and prohibition of discrimination - engagement and consultation processes are inclusive, gender-sensitive, and account for the needs of persons and groups with protected characteristics or who may be at risk of vulnerability or marginalisation;
+
+3) empowerment - consideration of age-appropriateness and accessibility needs, and capacity building of persons and groups with protected characteristics or who may be at risk of vulnerability or marginalisation is undertaken to ensure their meaningful involvement;
+
+4) transparency - provide for the sharing of meaningful and intelligible information between stakeholders at relevant and regular intervals, make available information about the AI system to participating stakeholders that is adequate for giving a comprehensive
+
+\* 21 SEP Resources B [to be elaborated and adopted by the CAI in 2025] provides indicative detailed questions and the description of options for stakeholder engagement.
+
+\* 22 SEP Resources C (Examples of Relevant Engagement Methods with Relevant Questions) [to be elaborated and adopted by the CAI in 2025] provides possible examples of relevant engagement methods and a list of relevant questions that can aid determination of appropriate stakeholder groups.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+understanding of potential implications and human rights impacts, where appropriate, publicly communicate HUDERIA findings and impact management plans (action plans); and
+
+5) accountability - responsibility for the implementation, monitoring and follow-up of mitigation measures is assigned to particular entities, individuals or functions within the organisation.
+
+# Implementation
+
+Having completed the prior four activities, the appropriate engagement processes can be performed. It should be consistent with the results of the stakeholder analysis, positionality reflection and established engagement objectives and methods, and be appropriately documented.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# III. The Risk and Impact Assessment
+
+# Introduction
+
+The purpose of the Risk and Impact Assessment is to provide detailed evaluations of the potential and actual impacts which the activities within the lifecycle of an AI system could have on human rights, democracy and the rule of law.
+
+In accordance with the triage made in the COBRA step, carrying out the Risk and Impact Assessment is particularly important for AI systems that may pose significant risks to human rights, democracy and the rule of law. Following the triage of the COBRA analysis, this step of the processes may be needed only for certain AI systems, in particular those assessed as posing significant risks to human rights, democracy and the rule of law.
+
+The Risk and Impact Assessment aims at:
+
+- re-examining, contextualising and corroborating the potential and actual harms identified in the COBRA;
+
+- identifying and analysing further potential and actual harms by engaging in extended reflection to pinpoint gaps in the completeness and comprehensiveness of the previously enumerated harms;
+
+- evaluating the risk variables of scale, scope, reversibility and probability of the potential adverse impacts, so that their risks can be better assessed to be subsequently prioritised, managed and mitigated;
+
+The Risk and Impact Assessment builds upon the initial identification of the context-based risk factors to human rights, democracy, and the rule of law and the mapping of potential impact on human rights, democracy and the rule of law carried out in the COBRA and the potential insights from the SEP to address the potential and actual impacts of the AI system.
+
+This is done meaningfully through a two-step process that enables the formation of a Mitigation Plan and establishment of Access to Remedies at the next step of the HUDERIA Methodology.
+
+# Explanations regarding the Risk and Impact Assessment questions and prompts
+
+# Introduction
+
+The Risk and Impact Assessment in the context of the HUDERIA is organised in two steps.
+
+At the first step, the focus is identifying potential impacts and, more specifically, "how" the potential and actual impacts identified at the COBRA and eventually SEP steps could occur, enabling a more open-ended and exploratory approach that allows for deeper analysis of the specific contexts, scope, scale and reversibility of impacts, particularly concerning individuals in vulnerable situations or vulnerable groups.
+
+At the second step, the assessment of the risk variables of scale, scope, reversibility and probability of potential or actual impacts identified takes place. A thorough context-responsive consideration of these variables helps prioritise mitigation actions by differentiating the severity of AI system impacts.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# Scale
+
+The scale of a potential and actual adverse impact refers to the seriousness of the potential harm's expected consequence.
+
+Consideration of the gravity of any potential harm should include reflection on the different ways and different extents to which persons or groups (in particular, those who possess characteristics that could make them more vulnerable to the adverse impact) could suffer that harm.
+
+Deliberations on scale should consider the following additional questions:
+
+1) For each potential and actual adverse impact identified, are there persons or groups who possess characteristics that could make them more vulnerable to the impact? If so, what are these characteristics and could those who possess them suffer the harm more acutely or seriously than others?
+
+2) For each potential and actual adverse impact identified, which persons or groups could encounter the gravest impact from the harm under consideration?
+
+Responses to these questions will subsequently serve an important function during the mitigation planning stage when the redress and prioritisation of potential harms are under consideration.
+
+# Scope
+
+The scope of a potential and actual adverse impact refers to the estimation of both the number of affected persons and of the timeframe of the impacts.
+
+The estimations of scope for identified potential and actual adverse impacts are analysed one by one with special consideration given to the exposure levels of particular groups of affected persons to harm and to cumulative or aggregate impacts of the system on present and future potentially affected persons and groups of persons.
+
+Deliberations on scope may include consideration of these questions:
+
+1) For the potential and actual adverse impact identified, are there groups who possess characteristics which could make them vulnerable to higher levels of exposure 2324 to the impact? If so, how much exposure could these groups face?
+
+2) For the potential and actual adverse impact identified, consider the overall timescale of the AI system's impacts on the right or area of concern (in the case of democracy or the rule of law) under consideration. Are there cumulative or aggregate impacts of the system on affected persons and future affected persons that could expand the impacts of the system beyond the scope of impact already identified?
+
+\* 23 SEP Resources A and B [to be elaborated and adopted by the CAI in 2025] provide detailed questions (List of Questions to Assess Relative Stakeholder Salience) and the description of formats of stakeholder engagement (List of Factors Determining the Objectives and Levels of Stakeholder Engagement) that can assist project teams in determining particularly relevant stakeholder groups and objectives for engagement.
+
+\* 24 The term "level of exposure" here is understood as the proportion of a group that is adversely impacted by an AI system, where, in the case that a small fraction of the group is impacted, members have low levels of exposure and in the case that a very large fraction of the group is impacted, members have high levels of exposure. As an example, members of a group that is characterised by low socioeconomic status may have a high level of exposure to the potential adverse impacts of an AI model that is used to allocate public benefits.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+Some "big picture" questions to reflect on when assessing cumulative or aggregate impacts may include:
+
+- could the provision and use of the system contribute to wider adverse human rights, democracy or the rule of law impacts when its deployment is coordinated with (or occurs in tandem with) other systems that serve similar functions or purposes?
+
+- could the provision and use of the system replicate, reinforce or augment sociohistorically entrenched legacy harms or inherent characteristics in ways that could create knock-on effects for impacted persons and groups?
+
+- could the provision and use of the system be understood to contribute to wider aggregate adverse impacts (e.g. on the environment and public health) when its deployment is considered in combination with other systems that may have similar impacts?
+
+# Reversibility
+
+As explained previously, reversibility refers to the information about the degree of reparability or restoration that is possible for potentially affected persons as the result of efforts to overcome the adverse impact under consideration and to restore those affected to a situation similar or equivalent to their situation before the impact. Much as with considerations surrounding the scale of a potential impact, gaining an understanding of how reversable a harm is will depend on knowledge both about the specific context of the harm and about the affected persons who are subjected to it. Establishing the degree of reversibility for a potential adverse impact involves considerations about the effort needed to overcome and (potentially) reverse the harm.
+
+Members of different groups may require different levels of effort to overcome adverse impacts, depending on their age, their positions in society and the circumstances of the harm (with vulnerable and marginalised groups often possessing less resilience than other dominant, privileged or majority groups).
+
+# Probability
+
+Assessing the probability of a risk involves estimating the likelihood that a given adverse impact will occur, based as appropriate on qualitative judgment, quantitative analysis, and contextual understanding.
+
+Determining a risk's level of probability involves a broad analysis of contextual and operational conditions and generally determined by the level (kind, quantity and quality) of information that the risk is likely to materialise. This ensures that risk assessments are grounded in both data and expert insights, making it easier to prioritise and mitigate potential risks.
+
+# Outcome of the Risk and Impact Assessment
+
+After questions and prompts on identifying and assessing potential and actual adverse impacts have been completed, impact prevention as well as mitigation prioritisation and planning can be launched. The process of impact mitigation planning and setting up access to remedies is covered in the next step.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# IV. Mitigation Plan
+
+# Introduction
+
+Once potential and actual adverse impacts have been identified and assessed, a Mitigation Plan should be drawn up and a reflection regarding the provision of access to remedies to potentially affected persons should take place, as appropriate.
+
+This part of the HUDERIA process specifies the actions and processes aiming at addressing potential and actual adverse impacts through:
+
+- formulating mitigation measures;
+
+- drawing up a Mitigation Plan based upon the severity and probability of the identified harms;
+
+- where appropriate, setting up access to remedy for potentially affected persons and other relevant parties.
+
+# Explanations
+
+# Scoping and prioritisation
+
+Diligent risk and impact prevention and mitigation planning begins with a scoping and prioritisation stage. With input from engaged affected persons if and as appropriate, one should go through each identified potential and actual adverse impacts and map out the interrelations and interdependencies between them as well as surrounding social risk factors identified at the COBRA stage (such as, for instance, contextually specific vulnerabilities and precariousness).
+
+Where prioritisation of prevention and mitigation actions is necessary (for instance, where delays in addressing a potential harm or the specific vulnerability of an affected individual or group could reduce its reversibility), decision-making should be steered by considerations of the relative probability and severity of the impacts under consideration.
+
+# Legal obligations
+
+An important consideration in the elaboration of a Mitigation Plan is that legal obligations in regard to the respect for human rights, democracy and the rule of law, as set forth in applicable international and domestic law, should be taken into account at this stage of the HUDERIA process in considering whether and, if so how, potential adverse impacts can be mitigated and actual adverse impacts can be addressed.
+
+The availability and effectiveness of legal remedies, including restoration or compensation as legal remedies, are determined by applicable international and domestic law.
+
+# Mitigation Hierarchy
+
+When deciding upon the range of available actions that can be taken to prevent or mitigate potential adverse impacts, a structured approach called the "mitigation hierarchy" (avoid, mitigate, restore, compensate) may be used.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+During the early stages of the AI system lifecycle, the impacts under consideration will not yet have occurred, so mitigation options of "avoid" and "mitigate" will be more relevant. In later iterations of the monitoring, review and re-evaluation (i.e. during the deployment stage) adverse impacts may have already occurred, making mitigation options of "restore" and "compensate" relevant alongside "avoid" and "mitigate".
+
+Descriptions of the options of the mitigation hierarchy are as follows:
+
+<Table>
+| AVOID                                                                                                                                                                                                                                                                            | MITIGATE                                                                                                                                                                                       | RESTORE                                                                                                                                                     | COMPENSATE                                                                                                                 |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| Making changes to the design, development or deployment processes behind the production and use of the Al system, or to the Al system itself, at the outset, to avoid adverse impact. It is important to note that avoid does not equate to ignoring potential negative impacts. | Implementing actions in the design, development or deployment processes behind the production and use of the Al system, or making changes to the Al system itself, to minimise adverse impact. | Making changes to restore or rehabilitate affected persons to a situation similar to, or at least equivalent to, their situation before the adverse impact. | Compensation in kind or by other means, where feasible and other mitigation approaches are neither possible nor effective. |
+| Level 1                                                                                                                                                                                                                                                                          | Level 2                                                                                                                                                                                        | Level 3                                                                                                                                                     | Level 4                                                                                                                    |
+| Most preferred …                                                                                                                                                                                                                                                                 | Most preferred …                                                                                                                                                                               | Least Preferred                                                                                                                                             | Least Preferred                                                                                                            |
+</Table>
+
+The use of the term "mitigation hierarchy" suggests giving precedence to avoiding potential and actual adverse impacts altogether, in the first instance, and then to reducing and remediating them. It is also notable that, at later stages of the AI system lifecycle, where options of restoration and compensation become more relevant, more than one of these mitigation options may be relevant (as, for instance, where an affected individual needs to be rehabilitated simultaneously as immediate actions to minimise further harms are also taken).
+
+In all situations, decisions about which prevention and/or mitigation action(s) to take should be guided by considerations prioritising the protection of human rights, democracy and the rule of law, and choices made to avoid and mitigate adverse impacts should be preferred to choices to compensate or remunerate potentially impacted persons for suffered harms.
+
+In view of the entirety of the information obtained at this stage of the HUDERIA process, there is an opportunity to revisit the zero questions. This information may also be useful in informing the discussion of the question whether the lifecycle activities of the AI system at issue (under development or currently already in use in case of iterative review) align with human rights, democracy and the rule of law.
+
+# Access to remedies
+
+Measures to address adverse impacts are not limited to legal remedies. Such impacts can be addressed using other mitigation measures such as those set out in policy, guidance, or other instruments.
+
+When putting in place such measures the following points could be considered:
+
+a) whether there are in place existing accountability measures and mechanisms in relation to human rights, democracy and the rule of law. It is essential that these existing frameworks are applied to the context of artificial intelligence systems;
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+b) the technical complexity, opacity, and data-driven nature of some AI systems can limit their transparency. This can create a significant imbalance in access to, understanding of, or control over information between the various parties involved in the AI system's lifecycle. Steps to document and provide information about the AI system and its impacts to affected persons can facilitate the provision and accessibility of effective remedies for adverse impacts on them;
+
+c) the information provided in these measures should be context-appropriate, clear, and meaningful, ensuring that persons can effectively use it to exercise their rights in proceedings related to decisions impacting them;
+
+d) if and as appropriate, the provision of further effective procedural guarantees and safeguards to the affected persons, in line with applicable international and domestic law, may be required.
+
+# Outcome of this element of the HUDERIA process
+
+This element should produce a clear description of the measures and actions to address the risk and impacts identified, along with a clarification of the roles and responsibilities of the various actors involved in mitigation, management, and monitoring. Where appropriate, this element should also produce an accessible outline of the remedial mechanisms and measures available to impacted persons.
+
+Additionally (see the Iterative Review section below), a plan is established for monitoring mitigation efforts, and for iteratively re-assessing and re-evaluating these efforts throughout subsequent phases of the AI system lifecycle.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# Iterative Review
+
+# Introduction
+
+Carrying out the HUDERIA at the beginning of the AI system's lifecycle is the first - albeit critical - step in a longer, iterative process of responsible monitoring and re-assessment. The process of Iterative Review ensures that risk and impact assessment remains effective throughout the whole AI system lifecycle. It is an ongoing process, offering regular opportunities to identify new impacts and update the Mitigation Plan.
+
+Over time, the impacts of the AI system are likely to evolve, either due to decisions made during its development and implementation, contextual applications, or because of external changes in the real-world environment. These changes, which may include those regarding the data lifecycle, AI system development and design, procurement processes, changes in AI techniques, system integration or operationalisation, security vulnerabilities, as well as significant events or occurrences leading to harmful or unintended consequences, can influence the AI system's performance and/or its impact on affected persons and groups.
+
+Such changes necessitate review to ensure that human rights, democracy, and the rule of law are continuously upheld throughout the AI system lifecycle. Particular attention should be paid to how these changes affect the system's performance and its impact on persons and communities.
+
+# Production, implementation and deployment factors
+
+Choices made at any point during the lifecycle of the system as well as events occurring during the system's deployment may require review of prior decisions and assessments, particularly those made as a result of the HUDERIA process, creating the need for re-assessment, reconsideration, and amendment.
+
+These changes, specifically those regarding the data lifecycle, AI system development and design, changes in AI techniques, system integration or operationalisation, security vulnerabilities, as well as significant events or occurrences leading to harmful or unintended consequences, can influence the AI system's performance and/or its impact on affected persons and groups. The processes of an AI system lifecycle are iterative and often non-linear, frequently requiring revision and updates, as appropriate.
+
+# Real-world Environment Factors
+
+Changes in social, regulatory, policy or legal environments in which the system is in production or use may have effects on how well the AI system works and on how it impacts the rights of affected persons or groups.
+
+Likewise, regulatory and policy changes or changes in data recording methods may take place in the population of concern in ways that affect whether the data used to train the model accurately portrays phenomena, populations or related factors in an accurate manner.
+
+In the same vein, cultural or behavioural shifts may occur within affected populations which alter the underlying data distribution and hamper the performance of a model, which has been trained on data collected prior to such shifts. All of these alterations of contextual conditions can have a significant effect on how an AI system performs and on the way it impacts affected persons, groups, communities and society in general.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: CAI(2024)16rev2 -->
+
+# Implementing the iterative review
+
+While the HUDERIA Methodology provides flexibility regarding the exact modalities, thresholds, triggers, monitoring and governance mechanisms for the Iterative Review process, the following principles could be considered:
+
+a) continued review of the HUDERIA plays a pivotal role in its continued efficacy and reliability;
+
+b) a plan is established for monitoring impacts and for re-assessing and re-evaluating the HUDERIA during each phase of the project lifecycle up to system retirement or decommissioning;
+
+c) processes used for iterative review should remain as responsive as possible to the way the AI system interacts with its operating environments and with impacted persons (e.g. possible application areas of the AI system, the emergence of new forms of system misuse etc.);
+
+d) in rapidly evolving or changing contexts, there may be a need for more frequent reassessment and re-evaluation interventions.
+
+<!-- PageFooter: 23 -->
+

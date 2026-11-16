@@ -1,0 +1,14 @@
+{
+  "request_hash": "f11b2af18b05e3f1cff7ed145bcd523c9a5d0144e78eeb4fddfd8c5ddecfea0d",
+  "prompt_sha256": "a767e379a47353588347615bb65654e061c0560b0fd8693a736aa506916c1672",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2DOw5m992MeTQcd1byY3uVmhTuE",
+  "prompt_tokens": 7689,
+  "completion_tokens": 41,
+  "actual_usd": 0.0011779499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the thresholds for modification compute and the adjustments when the original model is a systemic-risk model."
+  }
+}

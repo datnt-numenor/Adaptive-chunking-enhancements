@@ -1,0 +1,14 @@
+{
+  "request_hash": "11d5fc5aa1af8720457c7a525c03903f2533d39fb63e0b302d345329a38861c0",
+  "prompt_sha256": "98739fdde3389cedbe07b4a6b0040ed407ecd18f90c681a7e4cf42311ec6d134",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN74eL9dPEj5ZlkbEYM1OaJPAdJR",
+  "prompt_tokens": 10055,
+  "completion_tokens": 45,
+  "actual_usd": 0.00153525,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about patient data, including the specific patient mentioned in the Reference Answer, confirming the absence of recorded weight and providing the age range and blood pressure."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "1c5ca6c68d4d1c4e93974e1ce43afbdcac031ca734d5f6b0fedef955a80959f8",
+  "prompt_sha256": "2b86098bc129c89b08f3f33e922be490eaecf67adedfb9dcd7d74622489b83c7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOF8AObgj89SSK5XBypsrxugguI7",
+  "prompt_tokens": 6374,
+  "completion_tokens": 45,
+  "actual_usd": 0.0009831,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of AI Assurance Levels (AALs), including their purpose, definitions, and implications, fully supporting the claims made in the Reference Answer."
+  }
+}

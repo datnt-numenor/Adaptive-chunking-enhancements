@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "prepared",
+  "created_at": "2026-11-09T16:31:06.548920+00:00",
+  "harness_sha256": "85f3e3e58c8cd5df7142f3c8f086d8448065ffa9925385b2507f5e1ac330fbb6",
+  "source_commit": "211094783958787703f0388f4787dbe66c485d35",
+  "python": "3.11.9",
+  "model": "gpt-4o-mini-2024-07-18",
+  "systems": [
+    "raw__langch_recurs_default@plain"
+  ],
+  "qa": 438,
+  "requests": 438,
+  "max_output_tokens": 512,
+  "input_hashes": {
+    "qa": "f5b127f4bd890c15d29d2b53fc83b9a6ac177e3ca195516f6c782978618c6159",
+    "evaluation": "62b12cfb229e71b90561bb31240ebbc142f513cef859e85554a39df71cfe8133",
+    "raw__langch_recurs_default@plain": "a8b8c8990cb7a48c91e0c66ea8574f55cfa276b61a2815c44135fa57d754c0e3"
+  },
+  "previous_output_cap": null,
+  "chat_framing_reserve_tokens_per_request": 256,
+  "requests_sha256": "511de1f21f62afc30ff6886b3add1d095ebe4bd2cdcacbff586ff28e44a2fdfb",
+  "answer_prompt_sha256": "cf55e5098e8dc1fa5ef6e2ffbcbfcb58b1934eef11990fc87016692ec1b87ef9",
+  "input_tokens_estimate": 3637903,
+  "generation_upper_usd": 0.697058,
+  "smoke_doc_ids": [
+    "doc-bcc84d74f4554530",
+    "doc-b5aac75f65a72c2e"
+  ],
+  "smoke_requests": 12,
+  "smoke_input_tokens_estimate": 106910,
+  "smoke_generation_upper_usd": 0.020184,
+  "price": {
+    "input_usd_per_million": 0.15,
+    "output_usd_per_million": 0.6,
+    "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+    "checked_on": "2026-09-23"
+  },
+  "deviations": [
+    "A 512-token output cap is added as a cost guard; the upstream generator leaves output uncapped.",
+    "Frozen human-reviewed QA replaces the paper's undocumented QA sample."
+  ],
+  "judge_status": "not_started"
+}

@@ -1,0 +1,13 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 98.99it/s]
+adaptive@plain                                recall@10=0.8528 recall@5=0.7661 ndcg@10=0.6890 hit@10=0.8676  chunks=3333  t=316s
+adaptive@doc                                  recall@10=0.8527 recall@5=0.7680 ndcg@10=0.6897 hit@10=0.8630  chunks=3333  t=594s
+raw__page@plain                               recall@10=0.8507 recall@5=0.7741 ndcg@10=0.6725 hit@10=0.8676  chunks=3501  t=901s
+raw__page@doc                                 recall@10=0.8592 recall@5=0.7859 ndcg@10=0.6856 hit@10=0.8721  chunks=3501  t=1207s
+sdp_b@plain                                   recall@10=0.8445 recall@5=0.7434 ndcg@10=0.6723 hit@10=0.8562  chunks=4169  t=1510s
+sdp_b@doc                                     recall@10=0.8630 recall@5=0.7722 ndcg@10=0.6872 hit@10=0.8767  chunks=4169  t=1812s
+raw__langch_recurs_default@plain              recall@10=0.8444 recall@5=0.7657 ndcg@10=0.6947 hit@10=0.8607  chunks=3700  t=2114s
+raw__langch_recurs_default@doc                recall@10=0.8494 recall@5=0.7829 ndcg@10=0.6979 hit@10=0.8653  chunks=3700  t=2420s
+sdp_a_t600@plain                              recall@10=0.8518 recall@5=0.7850 ndcg@10=0.6930 hit@10=0.8676  chunks=3255  t=2689s
+sdp_a_t600@doc                                recall@10=0.8577 recall@5=0.7850 ndcg@10=0.7060 hit@10=0.8721  chunks=3255  t=2962s
+Saved -> out/ext_4b_part0

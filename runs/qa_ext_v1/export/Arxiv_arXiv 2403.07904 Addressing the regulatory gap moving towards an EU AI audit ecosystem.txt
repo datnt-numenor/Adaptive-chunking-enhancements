@@ -1,0 +1,268 @@
+DOCUMENT: arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem
+
+<<<PAGE 13>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 13 -->
+
+\* 58 Cf. Art. 29 (2)(3) AIA.
+
+\* 59 Cf. Art. 6(f) AIA.
+
+\* 60 Cf. Art. 43(4) AIA, for the definition in Art. 3(15) AIA.
+
+\* 61 Art. 18 (1)(g), Art. 22 (3)(b) AIA.
+
+\* 62 Annex VI No. 2, No. 4 AIA
+
+\* 63 Annex VI No. 3 AIA
+
+\* 64 Cf. Rec. (86) AIA.
+
+\* 65 Annex VII No. 4.3 AIA.
+
+\* 66 Annex VII No. 4.4 and 4.5 AIA.
+
+\* 67 Cf. Art. 31(7) and Art. 78 AIA.
+
+\* 68 Art. 44(1) and (2) AIA.
+
+\* 69 Art. 44(3) AIA
+
+\* 70 Art. 43(6) and Art. 97, Rec. (173) AIA.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: 14 D. Hartmann et al. -->
+
+No Data Access for Vetted Researchers The AIA does not contain a regulation comparable to Art. 40 DSA. This is surprising, as the regulation aims to ensure that relevant entities, such as digital innovation hubs, testing experimentation facilities and researchers, should be able to access and use high quality datasets within their respective fields of activities for the development and assessment of high-risk AI systems.71 The European data space created by the AIA and the facilitated exchange of data should also provide trustful, accountable and non-discriminatory access to high quality data for the training, validation and testing of AI systems.72
+
+# 4 Creating a Diverse AI Audit Ecosystem for Accountability by Involving Research and Civil Society
+
+In this section, we describe an AI audit ecosystem that ensures two key accountability components. For that, we draw on a definition of accountability in the AI context. We look at three aspects which demonstrate why internal audits are not sufficient to create an audit ecosystem. In three additional aspects, we point out why third-party audits are valuable for an AI audit ecosystem . This will be the blueprint under which we will explore whether the analyzed EU legislation can create an AI audit ecosystem.
+
+# 4.1 Third-Party Audits by Researchers and Civil Society
+
+Buolamwini and Gebru [14], Larson et al. [49], Nicoletti and Bass [65], Ribeiro et al. [80], Sweeney [89] are some examples of algorithm audits in the United States that have uncovered problematic algorithmic behavior or algorithm impacts that could potentially cause harm. Regarding algorithmic audits in the EU, audits of the Austrian AMS algorithm [5], and Rotterdam's welfare fraud algorithm by the Wire [20], come to mind. These audits were third-party audits, that is, audits by independent, external parties combining independent researchers, civil society, regulators, journalists, and other stakeholders. They were responsible for uncovering deeply-rooted sociotechnical harms in algorithmic systems related mainly to representational harms due to discriminatory design choices. As a result, they showed the extent of the potential harms brought by AI systems' biases.
+
+With respect to social media platforms, third-party audits uncovered social system harms due to the propagation of disinformation on social media, hate speech increase on Twitter [41] and uncovered bias with respect to right-winged content recommendation on YouTube [80]. It has to be noted that third-party audits by researchers and civil society are not conventionally considered audits per se due to their narrow target specification [76], but they have repeatedly shown their significance. Our argument, therefore, favors their integration in an AI audit ecosystem.
+
+\* 71 Rec. (68) AIA.
+
+\* 72 Recital No. 45 AIA.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 15 -->
+
+Third-party audits aim for a material change in the situation (e.g., a product update, policy change, or recall) to minimize the harm experienced by those they represent [73]. In contrast, first- and second-party audits that seek to validate procedural expectations, aim to minimize liability and solely test for compliance to AI principles and legal constraints [73]. Despite the important oversight of third-party audits in platform research and algorithmic systems, it has been difficult for them to audit these models formally and legally. Until now, evaluations are usually done through the application developers' voluntary public disclosures of possibly incomplete transparency reports or by voluntarily providing certain data access through an API [3].
+
+Third-Party Platform Data Access Olteanu et al. [68] reports four obstacles with systematic platform research through third parties: (1) Many social platforms discourage data collection by third parties as some platforms such as Facebook block their API for researchers and other platforms that block scrapers. Additionally, there is a shift toward APIs of major platforms and products being closed, a scenario described as the "post-API scenario" [93]. This leads to more open-source products or products being audited by third parties by deployers, who are probably more concerned about the compliance of their products. This leads ultimately to an imbalance in oversight [76]. (2) Even API access comes with limitations as they limit the quantity of data, increase the monthly costs and provide only query languages with limited expressiveness. (3) Additionally, these platforms may not give access to all data as they safeguard privacy-related content although the platforms could anonymize them. (4) Finally, the platform may revoke access every time.
+
+For example, access for researchers has changed recently for the Twitter API [69] and the Reddit API, as both have raised the costs for third-party API access [79]. Nevertheless, attempts by third parties such as NGOs, research and investigative journalists to expose these accountability concerns by data donations or scraping are thwarted by companies. For example, the NGO AlgorithmWatch was prevented to conduct an audit of the Instagram algorithm via data donations. Facebook sued them for disregarding the terms of service [44]. Data donations are only necessary because the APIs for limited 'black-box' access have been shut down or made considerably more expensive by many platforms and services [69, 79, 93].
+
+The DSA will provide data access for vetted researchers. However, as demonstrated vetted researchers may not include NGOs and investigative journalists, although many of the case studies mentioned were conducted by newspapers and were accompanied by NGOs that were able to contribute with their domain knowledge to potential harms. We will discuss reasons for this being critical later.
+
+Third-Party ADM and ML-Model Access It appears to be just as challenging with ADMs and ML-driven products. Many of the products do not have access for researchers and regulatory audits. Therefore, mostly commercial APIs have to be used as in the Gender Shades case [14]. If there is no API, the data can only be scraped, which is mostly illegal or prevented by other means. US Researchers are currently campaigning against the use of anti-hacking laws in the US that prevent audit studies by scraping. At the same time, according to Raji et al. [76], companies continue to seek to prevent audits by (1) paywalls, (2) prohibition laws through terms of services, and (3) structuring the product to obscure any clear set of test points. Raji et al. [76] describes it as an extraordinary effort for researchers, NGOs, investigative journalists to gain access and knowledge of ML and ADM systems.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 16 D. Hartmann et al. -->
+
+It was shown that the AIA does not encompass data or model access provisions for third parties, even in the context of high-risk systems. Nonetheless, in the subsequent discussion, we will explore the potential access levels and, consequently, the knowledge accessible to third parties concerning AI technologies. Based on these findings, we will determine to what extent it is possible to make statements about a system even with limited access.
+
+Technical Methods and Access Levels Third-party audit methods [8, 60, 82, 90] - such as code audits, user audits, automated audits (including scraping audits, sock puppet audits and API audits), document audits, crowdsourced audits, and experimental audits [90] - contribute various approaches to auditing platforms and AI systems. Whether social media platform, ADM or ML model audits, the methods for third-party audits are similar.
+
+Document audits are often broad sets of information that can be analysed in different ways [60] and ensure the possiblity for third-party impact evaluations or conformity assessments as intended by the AIA. However, only process-based compliance is feasible through document audits, there are no standards for most of these reports and they are impossible to verify if no other data access is provided [60].
+
+Code audits entail direct access to a system's code and involve the dynamic execution of code with various inputs to observe corresponding output behaviors [90]. While they are suitable for some audits, code audits might not be ideal for AI product audits because of the need for training data. Furthermore, potential complexities in reverse engineering system behavior - especially for dynamically trained algorithms such as recommender systems - hamper code audits' feasibility.
+
+Scraping audits, on the other hand, lack randomization and interventions. This limits their utility primarily to descriptive tasks [8]. They additionally lack personalization for specific user accounts [60]. Furthermore, scraping and sock puppet audits often violate terms of services of platforms [60]. API access limitations were already discussed.
+
+Experimental audits involve the change of the algorithm and can thereby establish causal evidence since interventions are feasible [33]. However, full access to the system is necessary for experimental audits, and experiments with social platforms such as Facebook on emotional contagion exhibit ethical difficulties [84].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 17 -->
+
+Crowdsourced audits, including data donations, have two major advantages: They include users in the audit, and they transfer parts of the training data so that more statements are possible. However, in the past, large platforms or companies have prevented such crowdsourcing audits as in the case of AlgorithmWatch. Recognizing the inherent advantages and limitations across various audit types, a comprehensive analysis of these factors would extend beyond the scope of this article73. Consequently, our focus is confined to examining access to AI systems.
+
+Technical access and the knowledge of a system can be categorized on a continuum from "white-box" to "black-box" and is related to these audit types. Koshiyama et al. [48] have defined seven levels of auditing access that range from "process-access," where only indirect observation of a system is possible, and the system's behavior in a sociotechnical system must be reverse-engineered, to "white-box," where details of the encompassing model are disclosed. The latter is usually not applicable to third-party audits, as it would conceal all information about the model, which could have security, privacy, and trade secret issues [48]. Thus, Koshiyama et al. [48] have described an "information concealed versus feedback detail trade-off."
+
+Table 2 shows different access levels that Koshiyama et al. [48] have proposed for ML algorithm audits. We matched them with third-party evaluation tools, feasible audit types, and case study third-party audits. This representation is a simplification because platforms and general-purpose AI consist of several models that interact with each other and ADMs can consist of several models and a complex decision function. Nevertheless, the presentation is useful to show three aspects. First, with more access, more knowledge about a system is possible and more audit types are available. Second, there is a trade-off between trade secrets and model access. Third, case study third-party audits in the past that had only 'black-box' access - mostly through an API, scraping, or sock puppets - demonstrate that low-level access can contribute to accountability.
+
+Some audits, such as the Austrian AMS algorithm relied solely on process access. The prediction model has not been made public [5]. Generally, releasing personal data relating to ADMs would obviously be dangerous. In this case, anonymization methods would have to be used to release the data for scientific purposes like it is planned by the DSA. These document audits have little expressiveness as they have to reverse engineer the whole system's functioning without the knowledge or verification that the documents are actually accurate. Others with at least 'black-box' access could provide more information.
+
+For example, Bloomberg's stable diffusion audit [65], or in YouTube's radicalization audit [80], the prediction model was accessed via the API. Thus, problematic behaviour like biases could already be shown in both cases. The original Gender Shades study as well operated within the constraints of accessing their audit targets via a commercial API, mirroring the actions of a user within these platforms and thus using a socket puppet [74]. Others had even more access. In Table 2. The Table presents leveled access modes from 'process access' to 'white-box access'. We connected access modes with 'what is accessed', tools and feasible audit types. The table must be read so that in each access mode possible tools, audit types and accesses are added to those that were in the level before. This may not be the case only for process access, since documents are not available in each access level. The table is inspired and derived from Koshiyama et al. [48], Koshiyama et al. [47] and Brown et al. [13]. As in the case of table 1, this table should provide only an overview. We derived the table via literature review and not via systematic methods. A systematic evaluation may not be feasible as the field is still emerging. However, we aim to illustrate the connection between data access and audit methods and demonstrate the trade-off between access and revealed information.
+
+\* 73 For a comprehensive analysis of connections between audit types and recommender system elements see [60].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 18 D. Hartmann et al. -->
+
+<Table>
+|                                              | What is accessed                                                                                         | Tools and possible evalua- tions                                                                                                                                                          | Feasible audit types                                                                 | Case study third- party audit(s)                                                                                                     |
+|:---------------------------------------------|:---------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| Process access                               | Frameworks, check- lists, model Cards, datasheets, method paper, technical reports                       | Checklists for explainability, robustness, fairness and pri- vacy                                                                                                                         | Document audits (al- gorithmic risk assess- ment and algorithmic impact evaluations) | Audit Austrian AMS algorithm[5]                                                                                                      |
+| Model access ('black- box')                  | Access to the predic- tor model f(·) using artificial data x∗                                            | Feature relevance plots, par- tial dependency plots, ad- versarial attacks, adversar- ial fairness, statistical disclo- sure                                                              | Scraping, API, sock puppet audit and code Audit                                      | Bloomberg stable diffusion audit[65], discrimination in online ad delivery, [89], auditing radi- calization pathways on YouTube [80] |
+| Input ac- cess                               | Access to the predic- tor model f(·) and training data x to predict f(x)                                 | Surrogate explanations, syn- thetic data, bias in outcome                                                                                                                                 | Crowdsourced Au- dit74 , API audit with training data                                | Cooperative audit of pymetrics' can- didate screening software[100]                                                                  |
+| Outcome access ('grey- box')                 | Access to the predic- tor model f(·), train- ing data x to predict f(x) = ˆ y and the ac- tual outcome y | Accuracy of explanations, concept drift analysis, bias in opportunity, inversion at- tacks of                                                                                             | API audit with train- ing data and history actual outcomes                           | ProRepublicas inves- tigation of North- pointe's recidivism risk scoring system [49]                                                 |
+| Parameter control and learn- ing goal access | Learning procedure and target L, param- eters φ, L(fφ(x)) can be retrained of                            | Stability of explanations, stability analysis, stability bias metrics, function- ality stealing, model com- plexity, stress-testing, trade- off of bias and loss metric, model extraction | Retraining of the ac- tual model with dif- ferent parameters                         | Audit of the Rotter- dams' welfare fraud ADM[20, 21]                                                                                 |
+| White-box access                             | Access to the whole architecture f and all documents                                                     | Documents and specific ex- planations, model selection and validation, model se- lection and development, model security evaluation                                                       | Experimental audits (interventions)                                                  | Accessible by first- parties and possibly second-parties                                                                             |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 19 -->
+
+the case of the cooperative audit of pymetrics' candidate screening software the auditors had 'grey-box' access, as the outcome is not feasible75 for recruitment algorithms76[101]. In the case of ProRepublicas investigation of the recidivism risk scoring system they had access to the model, the training data and the actual outcome [49]. In the case of Rotterdam's welfare fraud audit, the auditors had parameter control and learning goal access [20]. Model access alone has shown its effectiveness through certain case study audits. Audits, including Bloomberg's stable diffusion audit [65], examinations of discrimination in online ad delivery [89], and the audit of radicalization pathways on YouTube [80], have achieved auditing outcomes with limited access, albeit frequently encountering challenges due to legal constraints. Especially in the case of Gender Shades, where after the audit there was an improvement in several facial recognition tools in terms of functionality for black women [74]. This proofs limited 'black-box' access for researchers can contribute to mitigating harm.
+
+While other levels of access might provide more comprehensive insights into a system, the prevalence of reverse-engineering methods underscores the significant influence of third-party audits. Admittedly, a system-tailored approach is necessary, given the nuances involved, and model-agnostic audits, such as partial dependency plots and feature relevance plots, present challenges [39]. Nonetheless, it is evident that third-party audits, even with 'black-box' access, have managed to provide insights when combined with evaluations of the sociotechnical framework. Particularly because they contribute to a system for which the depth of knowledge acquired corresponds to the access level, audits with even minimal access can generate momentum for obtaining greater access. In some cases, this may involve collaborating with other auditors and stakeholders. This concept is further explored in the next section (section 4.2) It is worth noting that substantial examination by sock puppets or API audits is often feasible only for products that possess open APIs.
+
+# 4.2 An AI Audit Ecosystem
+
+Algorithmic accountability regards a networked account for an algorithmic system, where several actors must explain and justify to a forum or several fora their use or design of an algorithmic system, as well as the decisions and the subsequent effects concerning the system. The fora can be internal and external, as well as formal and informal [99]. Novelli et al. [66] have defined the goals of AI accountability as (1) compliance, (2) reporting, (3) oversight, and (4) enforcement. Although audits interfere with reporting and enforcement, they primarily achieve compliance and oversight. Compliance concerns the binding of the system to align with ethical, legal, or technical norms. For example, performing an ethical assessment may constitute compliance. Typically, compliance refers to compliance with the law. Oversight seeks to find relevant facts about the system, such as performance, bias metrics, or other measures, through an overseeing body that can be internal or external.
+
+\* 75 As it's unknowable if someone would have performed well that did not get the job. 76 This audit was criticized as [103] claimed that the authors got funded by the company for reducing the scope of the audit. If this claim is justified, this would mean that the audit would not been conducted by independent external auditors, but dependent and thus internal auditors. The example again demonstrates the power of tech companies.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: 20 D. Hartmann et al. -->
+
+In order to ensure oversight and compliance, Raji et al. [76] and Albert [3] have proposed establishing an AI audit ecosystem that includes internal and external auditors. Sambasivan et al. [81] have called for the establishment of an ecosystem for accountability in India that includes various stakeholders and empowers oppressed communities. M¨ okander et al. [62], meanwhile, have argued that the AIA de facto proposes to establish an AI audit ecosystem. However, none of these authors have described what constitutes an audit ecosystem or why we need one. While following this line of reasoning about the importance of including diverse auditors, we define an audit ecosystem and argue that the AIA does not establish an AI audit ecosystem.
+
+We define an AI audit ecosystem as an open dynamic partial self-organizing community of hierarchically independent, yet interdependent heterogeneous auditors and audit types77 . The characteristics are described by the following:
+
+- open, meaning that it interferes with other accountability processes, such as reporting, enforcement, and harm incident reporting
+
+- dynamic over time (and thereby adaptive to new forms of AI systems, which may have to be audited differently) and over stakeholders (it must involve potentially affected communities and users)
+
+- partial self-organization of auditors in an enabling environment78 and a promotion of sharing audit information through interaction between auditors (formal and informal)
+
+The audit ecosystem is needed to ensure compliance and oversight throughout the AI lifecycle. We argue that for such an ecosystem, third-party audits by researchers and civil society are a vital component to fulfill the characteristics of the ecosystem and thus also provide both oversight and compliance through first-party audits. Novelli et al. [66] have stated that "[o]verseers may act at different levels that may overlap, e.g., an internal audit is compatible with judicial review accountability." However, we argue that overseers should act at different levels, as (1) internal audits are prone to audit-washing as well as false assurances, and they may only ensure compliance (see section 4.3) and are (2) not adaptive to new technologies (see section 4.3). Additionally we argue that (3) NGOs and researchers possess valuable experience in incorporating a holistic perspective that encompasses socioecological-technical systems. They are able to draw from a background in conducting impact assessments and human rights considerations (see section 4.4) and (4) tend to include affected communities more than companies as they have other audience and incentives (see section 4.4).
+
+\* 77 Inspired by ecological, digital and innovation ecosystems: "a community of hierarchically independent, yet interdependent heterogeneous participants who collectively generate an ecosystem output"[92].
+
+\* 78 See in anti-corruption social accountability ecosystems [38]
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 21 -->
+
+# 4.3 Why Are Internal Audits Insufficient?
+
+Internal audits and assessments have emerged as a prevalent focus in the aca-
+
+demic discourse. In alignment with this trend several regulations - the Algorithmic Accountability Act of 2022 in the US, the AIA, and GDPR enforcement - call for first-party audits, underscoring their outsized focus in academia and
+
+governance [76]. Internal audits have the advantage that the developers know their system best and have "white-box" access [48]. This provides them the most technical knowledge about the system and they can intervene at any stage of the design process as well as throughout the AI lifecycle. It also puts the burden of responsibility for harm prevention on the shoulders of the developers and deployers 79 and thus on those who establish a business model with it. Nonetheless, as demonstrated by precedent audit domains, the adequacy of internal audits in ensuring comprehensive oversight has been called into question, as [76] has highlighted.
+
+"Audit Washing" and False Assurances Furthermore, the overreliance on internal audits could lead to unverifiable assertions that the AI systems has passed ethical and legal standards, leading to even more harm and less oversight [36]. There is an ongoing discussion within research communities on how to translate ethics into practice. The discussion evolves around which fairness metrics should be used as fairness remains a contested term [61]. General standards and norms for audits [22] are therefore absent. This leads to an environment conducive to the phenomenon of "audit-washing". A firm's business goals may not always align with harm-reduction through course-correction or ethical design of their products. Developers and deployers may ignore audit recommendations that threaten their business interests [64].
+
+Empirical research substantiate these concerns. McNamara et al. [58] have discovered that instructing developers to incorporate ethical codes yielded no notable change in their established practices. Moreover, studies involving AI development companies [95] and startup-like environments[94] have shown a disconnect between acknowledging the significance of ethics and integrating them into AI practices, indicating a substantial gap between ethical research and practical implementation and auditing.
+
+Such absence of standards and norms in corporate environments could lead to using tools and metrics that play down the risks of ones own product [43]. Statistically, through p-hacking or data dredging, and more generally through fairness gerrymandering, it may always be possible to suggest that your system is fair [8]. Issues concerning independence of second-party auditors were discussed frequently in financial audits. The opinion paper on this issue of Bazerman et al. [9] highlights the the emerging bias towards the client in contractual relationship audits. In addition to intentional false assurances of the absence of harm, audits may be performed incorrectly or issues may go unaddressed. That is what happened in the Gender Shades audit [14]. It revealed first assessment and benchmarks by the U.S. National Institute of Technology (NIST) failed to measure demographic differences in their regular Facial Recognition Vendor's Test [76].
+
+\* 79 If both parties are the same company.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: 22 D. Hartmann et al. -->
+
+Several possible adjustments address for these issues. Costanza-Chock et al. [22] have proposed mandating (1) the publishing of (first-party) audit results, (2) harm incident reporting and other measures to detect and report harms, (3) the involvement of affected parties, and (4) the consideration of accreditation and standards for evaluation. Although all points are valuable for an audit ecosystem, we argue that the involvement of affected parties and standards for evaluation are only valuable if third-party audits support the ecosystem. (1) and (2) are particularly important for an open and balanced ecosystem, as information-sharing is promoted, and multiple self-organized auditors can immediately note and review potential harm incidents. While (4) is especially important for functioning enforcement, (3) is a basic condition for a dynamic audit ecosystem; otherwise, possible harm remains unnoticed.
+
+Standards, Gaming the System and Goodhart's Law The development of standards is vital for compliance and verification. However, hard standards and technical targets (e.g. bias metrics) can also lead to decoupling from the intended purpose. In financial audits, decoupling was described as an audit process that becomes "ceremonial" and rote. This can happen when the entity undergoing auditing has internal control structures that ritualize and channel outside audits
+
+[70].Gaming the system is connected to Goodhart's law, which is usually paraphrased as "When a measure becomes a target, it ceases to be a good measure." Thus, behaviors are created to achieve the metrics while pursuing other business incentives simultaneously. It could encourage adherence to metrics while maintaining business. Methods to game the system emerge to avoid implementing the desired behavior measured by the metrics [70]. For example, in the financial crisis, banks went bankrupt, which had been recently testified solvent [86].
+
+The Wirecard scandal in Germany shows that hard standards do not necessarily help to uncover harm. Even though the company was audited several times by different second-party auditors it was still not revealed that the business model of Wirecard was a financial fraud [54]. In both cases, the companies learned to game the system, and game the standards. The Wirecard scandal was ultimately uncovered by investigative journalists [56]. This example demonstrates once again that there should be external oversight by such institutions, which do not have to adhere to hard standards and entrenched audit processes. This is all the more evident when it comes to new technologies that are developing rapidly.
+
+Non-adaptivity to New AI Technologies Through Hard Standards Internal audits and hard standards have several drawbacks. First, social accountability in the public sector has demonstrated that strict process-based evaluations often slow down government action and suppress creativity. Therefore performance-based evaluations in audits are preferable to process-based ones. The role of civil society can be crucial in that regard, as it functions as a vigilant watchdog over both procedural integrity and performance outcomes. The involvement of civil society can introduce innovative performance metrics to supplement existing measures [1].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 23 -->
+
+Especially the AI standardization process, as currently envisaged under the AIA, has its challenges with respect to that. In this standardization process, harmonized standards are adopted following a standardization request (mandate) from the Commission to the European Standardization Organizations (CEN, CENELEC, building the CEN-CENELEC JTC21 technical joint committee) for the application of Union harmonization legislation to harmonize AI standards
+
+[57].This process was criticized several times [52, 57, 102]. First, the process itself is non-participatory in nature [102]. Second, the imposition of hard standards on ethical questions that are inherently context-sensitive and dynamic with new technologies is problematic [52].
+
+Third, in an audit ecosystem of hard standards - like in the AIA case - 'gaming the system' can occur from companies trying to exploit those standards and find loopholes. At the same time, new technologies in particular can create standardization gaps. To create an adaptive and dynamic audit ecosystem informal audits without hard standards and processes could help to expose potential harm.
+
+This becomes particularly evident if there is no external oversight from third parties capable of reproducing these evaluations. Novel AI products and technologies could necessitate the development of new evaluation methods. New ethical questions arise, which may have to include ethical trade-offs navigated by local and diverse stakeholder inclusion. For example, in the aforementioned Gender Shades case [14] or in recent examples of LLMs and stable diffusion [65]. Although the relevant legislation and standards do not yet exist, it is difficult to imagine that if evaluation standards had existed, they would have worked for these type of AI systems. Developing standards for evaluating technology will take a long time, which is why it is necessary that third parties with limited access to the model engage in evaluating and understanding emerging systems. This happened with the stable diffusion audit by Bloomberg[65] 80 and with ChatGPT, which researchers extensively evaluated and which showed biases [78].
+
+# 4.4 Why Should We Include Researchers and Civil Society in the AI Audit Ecosystem?
+
+Third-party Domain Knowledge We emphasized the significance of auditing both the visible external connections and the internal self-regulatory mechanisms of algorithmic systems. NGOs, researchers, journalists, and members of civil society offer domain expertise that is absent in the organizations deploying algorithms [1]. Identifying such contextualities involves a broad range of perspectives about the impacts that such systems might entail. AI experts might not be capable of addressing this issue.
+
+\* 80 Reporters used stable diffusion to generate 5,100 images of people using a simple recurring prompt iterating through different categories. Through data-labeling
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: 24 D. Hartmann et al. -->
+
+According to Li et al. [53], AI auditors are not always aware of the way digital technologies affect marginalized communities, and their tools for investigating bias, for example, might not necessarily detect behavior that could not be reasonably predicted before its deployment. Instead, the authors write, "most expert-led auditing methods were developed to detect statistical disparities not, for example, if an algorithm is censuring or harmfully depicting a marginalized community in images or the provision of online services." This is why we argue that researchers and civil society representatives potentially have specific domain knowledge that include sociotechnical system thinking, as they have knowledge of the human rights impacts that might take place in specific domains exactly for their proximity to marginalized or affected communities. However, including also the communities impacted by the systems, and not those who research or support them, may also prove fundamental for the advancement of systems that duly protect rights.
+
+Inclusion of Affected Communities Pro-accountability endeavors that encompass diverse interests and ideologies incorporate more legitimacy than those driven by a limited group of professionals [1]. This is why scholars (e.g. [22], [53]) have recommended the inclusion of stakeholders who are or can be affected by AI technologies, or their representatives, in audits.
+
+We call this a participatory audit81 , as it consists of a framework that aims to promote the participation of affected stakeholders in different stages of the design, development, and deployment of AI systems. Audits that consider individual or collective accounts of experiences related to algorithmic bias, harm, or injustice through incident reporting are currently predominantly third-party algorithmic audits [77].
+
+Some authors have cited similar approaches for AI auditing as user-engaged approaches; these would consist of the direct participation of users of AI-based applications in surfacing harmful algorithmic behaviors in activities such as those called "bias bounty" [34]. . In this sense, one can frame participatory audits as a set of different methodologies to include users or affected individuals and groups as a whole in AI auditing processes.
+
+\* 81 At this point, it is important to note that the terminology surrounding what we call participatory audits has not yet been consolidated. When affirming the relevance of participatory audits in the context of governments' accountability,[10] refers to "social audits" in a way that is very similar to what we describe as participatory. According to him, they differ from other forms of audits because they are performed by nonexperts and rely on engagement from citizens and/or civil society organizations. It is a mechanism of oversight, of exerting control on government officials to ensure transparency, responsiveness, and effectiveness by putting citizens in the position of active participants, not mere sources of information [10].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: Towards an EU AI Auditing Ecosystem 25 -->
+
+Through methods such as workshops, bias bounty programs, and direct interviews, individuals potentially harmed by these systems can identify problems and help find solutions. That is why civil society organizations, researchers and investigative journalists could benefit from involving affected communities and users in their analysis of these technologies. Besides, AI developers and providers should have the capability to do the same, so as to involve impacted groups from the early design of their systems. The same applies to auditors, who can have their assessments of algorithms from having access to other perspectives in order to identify other impacts posed by these technologies. However, despite the potential benefits, there is lack of incentives for such participatory methodologies to be put into place. That is why regulation and incentives should lead developers, deployers and auditors to take this sort of action. Successful community engagement depends on the willingness of the audited organization to genuinely listen, respond, and act on the concerns and recommendations identified during the audit process [1]. Affected communities may trust third-party auditors more than internal audits conducted by the organization itself. This trust can encourage community members to openly share their perspectives, concerns, and experiences during the audit process.
+
+Information and Power Asymmetries In the past, understanding and evaluating platforms has encountered considerable challenges due to insufficient transparency in their operations despite their vast power and influence. For years, users and regulators were frequently unaware of these digital platforms' internal functioning, inhibiting the effective resolution of misinformation, data protection, and content moderation. Although the DSA points in the right direction by challenging information and power asymmetries, 'audit capture' is possible. The risk is that large tech companies leverage their market power against their new mandatory auditors [50]. Because we have let the market power of large tech companies evolve for years without proper regulation.
+
+A comparable scenario is occurring with AI products with the focus on conformity assessments by the AIA. In general power asymmetries are present in the standardization process, too. As the process of standardizing audits is ongoing, and the extent of public involvement remains uncertain, standards are usually developed by standard-setting organizations in which industry representatives exert significant influence. In contrast, the voices of civil society and consumer advocates are often overheard [17]. Therefore, researchers [23] demand that policymakers take the necessary steps to improve the overall standardization process, including the structural and organizational framework of standardization organizations, to facilitate an inclusive and democratic system that provides for broad stakeholder engagement and dialogue and input on the development of technical standards. Third-party data access is one measure to involve civil society.
+
+In section 4.1, we learned that third-party audits can uncover harms even with limited access. To understand possible harms, researchers must be able to access data. This understanding is crucial for developing new standards. Currently, there is an imbalance where data is collected about both users and nonusers of platforms and algorithmic systems, but there is only limited access for researchers to understand how this data is used [96]. Therefore, an audit ecosystem needs to provide leveled access to different auditors who should publish and share their audit results. This leveled access can help reduce these information and power imbalances.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+<!-- PageHeader: 26 D. Hartmann et al. -->
+
+# 4.5 Challenges Of Third-Party Audits
+
+Third-party audits have some drawbacks. These auditors may lack the technical knowledge or capacity to thoroughly research a system. There is also a risk of revealing secret information or company secrets, which can be prevented by including nondisclosure clauses. However, to protect the auditors, safe harbor clauses should be included as well to prevent them from intentional or unknowingly leaking trade secrets. Companies may fear to share their model and data [22]. However, there are best-practices in the case of VLOPs via an API and a vetting process. Further, there are techniques available for adequately protecting or anonymizing data while still providing access and other industries like the finance sector where there are legal ptrotections in the case of data leakage [16].
+
+At the same time, one could say that p-hacking [8] allows third parties to select the metrics that indicate harm. However, this is not the same as the first-party audit case, as other researchers could quickly verify the harm. Civil society and social organizations would have no interest in making a bad name for themselves.
+
+Furthermore, the AI Now Institute argues that third-party audits shift responsibility to researchers and affected communities. However, we cannot rely on these groups to have the resources to audit AI technologies [43] effectively. We see it as one measure that can work alongside other measures, such as audits through regulators, internal audits, transparency, and the aforementioned accountability processes.
+
+While solving these problems presents considerable challenges, it is worth noting that the absence of civil society oversight would yield even more unfavorable outcomes. Adequate funding is essential to alleviate the burdens on civil society and research. Without such audits, achieving comprehensive accountability remains inadequate.
+
+Recognizing the difficulties inherent in civil society and researcher audits, it is crucial to acknowledge that algorithm auditing represents only a single facet within the broader algorithm accountability framework. To establish genuine algorithm accountability, it is imperative to consider that algorithm auditing operates with various other factors, forming an intricate ecosystem [2]. This is why we demand the AI audit ecosystem to be open and interfere with other accountability processes. An essential component for that is actual enforcement, that is, post-audit actions such as Raji and Buolamwini [74]'s demands for harm reduction. This in turn requires European institutions that implement proper enforcement.
+
+<!-- PageBreak -->
+

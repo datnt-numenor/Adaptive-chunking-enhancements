@@ -1,0 +1,14 @@
+{
+  "request_hash": "723f04ff5f453eb4e29869bef758fce804527a96220d98a6b85af31b6fd5461e",
+  "prompt_sha256": "62af1bce0056a56cc74045f878364eae04c943bb8ca1eb7b761bd757b7ead819",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO46orw6Ojm63da5KisuT0Va2j4E",
+  "prompt_tokens": 6225,
+  "completion_tokens": 35,
+  "actual_usd": 0.00095475,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition of the abbreviation 'DOS' as the Department of State, fully supporting the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "8272ee6fc6998e2dbe8ae2fc911d40bbfc928ae46242e504477e5299743c2a66",
+  "prompt_sha256": "a512b5ae1aaf6f7afbbc9fadd64b25edcef0736f2be3b16a60eb0a373b2737c8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTxosT8LtdzmuZYVcDyidJjorwK",
+  "prompt_tokens": 8055,
+  "completion_tokens": 46,
+  "actual_usd": 0.00123585,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining the importance of interpretability in AI models, particularly in financial contexts, and detailing how factors and their relationships should be communicated clearly."
+  }
+}

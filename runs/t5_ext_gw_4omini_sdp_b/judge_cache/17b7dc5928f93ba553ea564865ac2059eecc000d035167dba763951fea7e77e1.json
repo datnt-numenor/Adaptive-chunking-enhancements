@@ -1,0 +1,14 @@
+{
+  "request_hash": "17b7dc5928f93ba553ea564865ac2059eecc000d035167dba763951fea7e77e1",
+  "prompt_sha256": "fcd668662f00b8af0ceaf619ec841d0216d5a2dbddfc87045538b17acb9d29d2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNk734JchnO7J2AQNpJ6vjOVuEMz",
+  "prompt_tokens": 4987,
+  "completion_tokens": 47,
+  "actual_usd": 0.00077625,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the obligations of GPAI model providers to supply information to downstream providers and explaining the challenges posed by minimal information due to intellectual property concerns."
+  }
+}

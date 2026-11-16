@@ -1,0 +1,14 @@
+{
+  "request_hash": "69feaa2b577267bb3e18f97a39f88d4c2ef60260acb970a66e228cdd7b103a16",
+  "prompt_sha256": "3ee36606bdb1ae26f07dc4d4b18e6077bc147adf6380b1e23af732e198e5c308",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNlTJUZ7coveV2A72Q9s92pedTbN",
+  "prompt_tokens": 5652,
+  "completion_tokens": 41,
+  "actual_usd": 0.0008724,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific numbers of prohibited use categories for Anthropic, Cohere, and OpenAI, fully supporting the claims made in the Reference Answer."
+  }
+}

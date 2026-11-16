@@ -1,0 +1,14 @@
+{
+  "request_hash": "f5c8ad0b10761329a2c2af494c2267b586723521c3e25a38dbcead698a095a1c",
+  "prompt_sha256": "f99871a62ecedf4a78e090150e36895cc56121a376d3f51c8ab457c9b18915db",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNnS6x2eehm4qCHtKe67A1yGZCul",
+  "prompt_tokens": 7732,
+  "completion_tokens": 42,
+  "actual_usd": 0.001185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the null hypothesis as the presumption of compliance for the algorithm, which aligns with the auditing framework discussed."
+  }
+}

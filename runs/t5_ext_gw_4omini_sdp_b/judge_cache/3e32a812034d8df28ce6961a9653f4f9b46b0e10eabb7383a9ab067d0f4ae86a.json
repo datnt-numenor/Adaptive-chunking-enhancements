@@ -1,0 +1,14 @@
+{
+  "request_hash": "3e32a812034d8df28ce6961a9653f4f9b46b0e10eabb7383a9ab067d0f4ae86a",
+  "prompt_sha256": "5459ee5e63fa0836ec2077a7d4aa6fd5741c41ddf05298483f6c8b3272944d7a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO16KjXVs6HnNqKVfDEdk7xoP4O1",
+  "prompt_tokens": 7478,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011499000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that international human rights law imposes obligations on states to regulate AI, while noting the current lack of legal obligations for private actors."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "3f99f026b6be32422ffd2b06e63086bc8ae4b25a4c537f9e001feaee543b63a4",
+  "prompt_sha256": "599ec4357524d505d123fcc3bcad6b37e1153c2fc37a63cf51306ddb9681668f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpaDyLzfXY30BRFbrZ9pG0Q9Az3",
+  "prompt_tokens": 5204,
+  "completion_tokens": 46,
+  "actual_usd": 0.0008082,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the roles of multiple parties in running evaluations as specified in the EU AI Act and the requirements of the Frontier AI Safety Commitments."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "889db529fa031258c89fd1a88638689d7b0f83d055cf3970f5c19317e9674cde",
+  "prompt_sha256": "3e5db53964b1f4910a83ccfad990d5f8ca662a48b7203d6a1fcda7964952a324",
+  "answer": "In ANSSI’s generative AI security recommendations, each lifecycle environment (training, deployment, and production) should have dedicated accounts for privileged operations, and the principle of least privilege should be applied. Operations requiring privileges must be defined and validated, and these operations should be performed from dedicated administrative accounts.\n\nGPU hardware may be shared between multiple AI models only if those models correspond to the same level of sensitivity and have homogeneous security needs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMZQHuFmZuuDzra6pRZk1Jj82g8X",
+  "prompt_tokens": 5904,
+  "completion_tokens": 85,
+  "actual_usd": 0.0009366
+}

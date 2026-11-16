@@ -1,0 +1,14 @@
+{
+  "request_hash": "fd02f81bed831424331940de2a232cf0ae8aa021e8cf616d196eae7688099bc8",
+  "prompt_sha256": "651df1da8dbf2c31872131bd0e5a53e762404a46ee09ce27dccd33c6000211ae",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvFpQ9EgWwBRt5fGJ0xCzaUJhNk",
+  "prompt_tokens": 8013,
+  "completion_tokens": 52,
+  "actual_usd": 0.0012331500000000001,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context supports the use of automated bots and APIs for fully open venues but does not clearly state that community submissions via Google Forms are specifically for fully closed venues, only mentioning partially open or closed-review venues."
+  }
+}

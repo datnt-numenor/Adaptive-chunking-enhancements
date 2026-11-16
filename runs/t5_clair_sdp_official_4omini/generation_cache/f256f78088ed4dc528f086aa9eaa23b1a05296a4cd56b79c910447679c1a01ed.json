@@ -1,0 +1,10 @@
+{
+  "request_hash": "f256f78088ed4dc528f086aa9eaa23b1a05296a4cd56b79c910447679c1a01ed",
+  "prompt_sha256": "f0627f95027f16a86a062285917afc625dd6ada3fa0ee30ca6ac6d15331bb606",
+  "answer": "In CNIL’s practical AI guidance sheets, age information should be handled by prioritizing the least intrusive format without losing relevant information for the intended objective. For example, using age ranges or categories instead of exact birth dates is recommended to minimize the intrusiveness of the data collected.\n\nIn the context of a diagnosis-aid system, it is important to ensure that the age data included in the training set is relevant and necessary for the system's objectives. This means that the presence of age information should be justified based on its utility in improving the system's performance while adhering to the principle of data minimization.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMrcH1a72UmqZnYBGSlEG3E5zba6",
+  "prompt_tokens": 8590,
+  "completion_tokens": 121,
+  "actual_usd": 0.0013610999999999999
+}

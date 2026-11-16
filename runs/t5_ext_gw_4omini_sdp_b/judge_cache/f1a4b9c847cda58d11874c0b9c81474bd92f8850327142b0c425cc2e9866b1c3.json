@@ -1,0 +1,14 @@
+{
+  "request_hash": "f1a4b9c847cda58d11874c0b9c81474bd92f8850327142b0c425cc2e9866b1c3",
+  "prompt_sha256": "6ab4deb424fdc30cfde7db80e61ea3f3a150abf697574a70c5ba7555b9ae68b0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNwSq6qWBcYJYXVvgo2jVMT7KHRD",
+  "prompt_tokens": 6230,
+  "completion_tokens": 39,
+  "actual_usd": 0.0009579,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses democratic governance in AI, emphasizing representation, accountability, and participation, which directly supports the claims made in the Reference Answer."
+  }
+}

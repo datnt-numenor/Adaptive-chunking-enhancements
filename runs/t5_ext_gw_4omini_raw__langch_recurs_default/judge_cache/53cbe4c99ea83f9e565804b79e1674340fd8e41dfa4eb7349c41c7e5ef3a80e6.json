@@ -1,0 +1,14 @@
+{
+  "request_hash": "53cbe4c99ea83f9e565804b79e1674340fd8e41dfa4eb7349c41c7e5ef3a80e6",
+  "prompt_sha256": "41a14b585e50d7cf348c0b68ae92cf4e2e49b3efa0c975fa86655a6420035e79",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvpK6XmtWW2dajIY2WwhCxKN43y",
+  "prompt_tokens": 7839,
+  "completion_tokens": 40,
+  "actual_usd": 0.00119985,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data indicating that 59.9% of users arrive via organic search, fully supporting the claim made in the Reference Answer."
+  }
+}

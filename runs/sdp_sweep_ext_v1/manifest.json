@@ -1,0 +1,42 @@
+{
+  "sweep": [
+    {
+      "name": "base",
+      "_data": "data\\clair_ext_set"
+    },
+    {
+      "name": "sw0",
+      "sw": 0.0,
+      "_data": "data\\clair_ext_set"
+    },
+    {
+      "name": "rc1",
+      "rc": 1.0,
+      "_data": "data\\clair_ext_set"
+    },
+    {
+      "name": "sw0_rc1",
+      "sw": 0.0,
+      "rc": 1.0,
+      "_data": "data\\clair_ext_set"
+    }
+  ],
+  "calibration_runs": {
+    "B_default": [
+      "runs/sdp_ext/B_default/chunks/small_merged/chunks.parquet",
+      "runs/ext_metrics_merged_v1/sdp_b/chunking_metrics.parquet"
+    ],
+    "A_target600": [
+      "runs/sdp_ext/A_target600/chunks/small_merged/chunks.parquet",
+      "runs/ext_metrics_merged_v1/sdp_a/chunking_metrics.parquet"
+    ]
+  },
+  "reference": "B_default",
+  "data_dir": "data\\clair_ext_set",
+  "beta": {
+    "d_icc_p": 1.2,
+    "d_dcc_s": 1.34,
+    "d_dcc_c": 1.700679454249559
+  },
+  "seconds": 14.3
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "a04458637afeaf3728911e0d23fddd55337cd36d6866f32357f64b3f787a00d8",
+  "prompt_sha256": "c3986d909e94554ccffa684f0e494aa0041ee7bfd99ced51bc5ee0310fa04352",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRVvNmZfYs1J0BpyhtCEpQdgSOj",
+  "prompt_tokens": 9395,
+  "completion_tokens": 41,
+  "actual_usd": 0.00143385,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how proxies can lead to discrimination and the risks associated with using proxy variables in AI systems."
+  }
+}

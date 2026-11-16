@@ -1,0 +1,14 @@
+{
+  "request_hash": "dbd5d9fe2f029566aa1c05c9213f9589e176c3fff3d98297091de0ecc4114e87",
+  "prompt_sha256": "831978ea66326d2b2da723979a95e72fb465f612ab923143cd6f4ce783970f2b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOVFNChb5Z2oEWxWGHDqBsskdqtw",
+  "prompt_tokens": 7777,
+  "completion_tokens": 45,
+  "actual_usd": 0.00119355,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the objectives of Explainable AI (XAI) and the importance of providing understandable explanations to promote user confidence."
+  }
+}

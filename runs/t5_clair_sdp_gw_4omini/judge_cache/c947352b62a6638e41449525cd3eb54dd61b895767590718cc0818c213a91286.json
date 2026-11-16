@@ -1,0 +1,14 @@
+{
+  "request_hash": "c947352b62a6638e41449525cd3eb54dd61b895767590718cc0818c213a91286",
+  "prompt_sha256": "7091a284758cf3ceba5c7ffe3a272b5887a889132ba0bf10e7fdb52b17176eaa",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOO8SW4NS2N8HMO1wTcnqRDVhnos",
+  "prompt_tokens": 6894,
+  "completion_tokens": 48,
+  "actual_usd": 0.0010628999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed breakdown of the carbon footprint calculations, including the initial estimate, adjustments for additional factors, and the final total, fully supporting the claims made in the Reference Answer."
+  }
+}

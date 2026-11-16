@@ -1,0 +1,14 @@
+{
+  "request_hash": "dd9b1af1aadff73f8365fae8ed30010467c108903f55ff65a0df0da887e3ce42",
+  "prompt_sha256": "e3c5cf94abed5ff8093de43e4ee9c6b0d323136fcecb3539328acfbed423dca7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP817DlrKvVGT1gUW0KRFOtAqMc8",
+  "prompt_tokens": 5712,
+  "completion_tokens": 37,
+  "actual_usd": 0.000879,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention Article 33(1) or any specific reservations related to federal states, making the Reference Answer unsupported."
+  }
+}

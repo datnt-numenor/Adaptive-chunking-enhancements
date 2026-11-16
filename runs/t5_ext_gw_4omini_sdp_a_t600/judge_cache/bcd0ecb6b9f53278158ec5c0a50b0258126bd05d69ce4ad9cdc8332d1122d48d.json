@@ -1,0 +1,14 @@
+{
+  "request_hash": "bcd0ecb6b9f53278158ec5c0a50b0258126bd05d69ce4ad9cdc8332d1122d48d",
+  "prompt_sha256": "6ac2c5a0078c2d34b6a1fe11b7dd3c075df50a49569c165ca557856c4af10e8b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXE1welBc1ShoUpqu8QrI1LmguR",
+  "prompt_tokens": 6766,
+  "completion_tokens": 43,
+  "actual_usd": 0.0010407,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of documenting data provenance and ensuring data quality attributes such as completeness, accuracy, and validity for AI systems."
+  }
+}

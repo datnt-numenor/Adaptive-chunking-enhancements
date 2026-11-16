@@ -1,0 +1,78 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "D:/Project/models/Qwen3-Embedding-0.6B@97b0c61",
+    "note": "default = Qwen3-Embedding-0.6B@97b0c61 (proxy); harness uses Qwen3-Embedding-4B"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs\\ext_prepared_v1\\prepared",
+  "qa": "runs\\qa_ext_v1\\qa_frozen.jsonl",
+  "systems": "adaptive,raw__langch_recurs_default,raw__page,sdp_a_t600,sdp_b",
+  "reprs": "plain,doc",
+  "summary": {
+    "adaptive@plain": {
+      "recall@10": 0.8528047481706637,
+      "recall@5": 0.7772888690875545,
+      "ndcg@10": 0.6895896429006019,
+      "hit@10": 0.867579908675799
+    },
+    "adaptive@doc": {
+      "recall@10": 0.8526936035709519,
+      "recall@5": 0.7816897386298759,
+      "ndcg@10": 0.6919829647999006,
+      "hit@10": 0.863013698630137
+    },
+    "raw__langch_recurs_default@plain": {
+      "recall@10": 0.8466748742274304,
+      "recall@5": 0.7758499219127736,
+      "ndcg@10": 0.6935780548843334,
+      "hit@10": 0.863013698630137
+    },
+    "raw__langch_recurs_default@doc": {
+      "recall@10": 0.8526319528718806,
+      "recall@5": 0.7910099218644824,
+      "ndcg@10": 0.6992620501356888,
+      "hit@10": 0.867579908675799
+    },
+    "raw__page@plain": {
+      "recall@10": 0.8537651154100884,
+      "recall@5": 0.7760815327117314,
+      "ndcg@10": 0.6721872041155115,
+      "hit@10": 0.8698630136986302
+    },
+    "raw__page@doc": {
+      "recall@10": 0.8637931046493815,
+      "recall@5": 0.7950298454205748,
+      "ndcg@10": 0.687872393318879,
+      "hit@10": 0.8767123287671232
+    },
+    "sdp_a_t600@plain": {
+      "recall@10": 0.8492436418408591,
+      "recall@5": 0.7814460605430298,
+      "ndcg@10": 0.6961308513116564,
+      "hit@10": 0.863013698630137
+    },
+    "sdp_a_t600@doc": {
+      "recall@10": 0.857742592185053,
+      "recall@5": 0.7849886782309293,
+      "ndcg@10": 0.7082942588684705,
+      "hit@10": 0.8721461187214612
+    },
+    "sdp_b@plain": {
+      "recall@10": 0.8342037712788075,
+      "recall@5": 0.7444227962931811,
+      "ndcg@10": 0.6633739132065929,
+      "hit@10": 0.8470319634703196
+    },
+    "sdp_b@doc": {
+      "recall@10": 0.863508914022402,
+      "recall@5": 0.7694434885551056,
+      "ndcg@10": 0.6873976928400596,
+      "hit@10": 0.8767123287671232
+    }
+  },
+  "created": "2026-11-09 23:25:10"
+}

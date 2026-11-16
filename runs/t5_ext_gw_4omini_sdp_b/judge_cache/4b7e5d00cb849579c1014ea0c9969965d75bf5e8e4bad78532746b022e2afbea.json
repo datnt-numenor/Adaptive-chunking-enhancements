@@ -1,0 +1,14 @@
+{
+  "request_hash": "4b7e5d00cb849579c1014ea0c9969965d75bf5e8e4bad78532746b022e2afbea",
+  "prompt_sha256": "b5e14761ad967d09c7ab38131bb3a43c0ca41ab0225152e5ff74235356ef01cc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4pExZrcFOENMC0d72cQ4z3hcuh",
+  "prompt_tokens": 6879,
+  "completion_tokens": 46,
+  "actual_usd": 0.0010594499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the differences between Naive RAG and Graph RAG, including their methods of retrieval and the advantages of using knowledge graphs."
+  }
+}

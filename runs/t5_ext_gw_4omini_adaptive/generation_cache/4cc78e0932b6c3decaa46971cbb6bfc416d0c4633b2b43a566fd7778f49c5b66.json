@@ -1,0 +1,10 @@
+{
+  "request_hash": "4cc78e0932b6c3decaa46971cbb6bfc416d0c4633b2b43a566fd7778f49c5b66",
+  "prompt_sha256": "2456e4ab2449e01dad5b7be3b544af6e79d1dbec64b007df74b03ea15b99bc83",
+  "answer": "A potential negative effect of static regulatory limits on AI system properties is that they can become a target for compliance, leading to pressure to get as close as possible to the limit without exceeding it. This can result in unintended consequences, such as models being designed to meet the minimum requirements rather than ensuring safety or ethical standards. Additionally, static standards can lead to issues like leakage, where data about the test set is included in the training data, compromising the integrity of the evaluation process.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMpf2zgUfwb9dtP80GJRQPqCciks",
+  "prompt_tokens": 9407,
+  "completion_tokens": 95,
+  "actual_usd": 0.00146805
+}

@@ -1,0 +1,60 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "D:/Project/models/Qwen3-Embedding-0.6B@97b0c61",
+    "note": "default = Qwen3-Embedding-0.6B@97b0c61 (proxy); harness uses Qwen3-Embedding-4B"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs\\table5_proxy_prep_v4\\prepared",
+  "qa": "runs\\table5_v2\\qa-full\\qa_frozen.jsonl",
+  "systems": "adaptive,raw__langch_recurs_default,sdp_b,sdp_b_rc1,sdp_b_sw0_rc1,sdp_b_keepcont_rc1,sdp_b_noart_rc1",
+  "reprs": "plain",
+  "summary": {
+    "adaptive@plain": {
+      "recall@10": 0.9065667816079687,
+      "recall@5": 0.7920640202717566,
+      "ndcg@10": 0.7008502973935062,
+      "hit@10": 0.9393939393939394
+    },
+    "raw__langch_recurs_default@plain": {
+      "recall@10": 0.8439608512569801,
+      "recall@5": 0.7573610350860519,
+      "ndcg@10": 0.6809155638040375,
+      "hit@10": 0.8888888888888888
+    },
+    "sdp_b@plain": {
+      "recall@10": 0.8370882345234044,
+      "recall@5": 0.750131195347469,
+      "ndcg@10": 0.6752059233083411,
+      "hit@10": 0.8888888888888888
+    },
+    "sdp_b_rc1@plain": {
+      "recall@10": 0.8689502993991679,
+      "recall@5": 0.8057443896290017,
+      "ndcg@10": 0.6932390905392669,
+      "hit@10": 0.9090909090909091
+    },
+    "sdp_b_sw0_rc1@plain": {
+      "recall@10": 0.8117654106011544,
+      "recall@5": 0.7224360537025556,
+      "ndcg@10": 0.648664000011479,
+      "hit@10": 0.8787878787878788
+    },
+    "sdp_b_keepcont_rc1@plain": {
+      "recall@10": 0.813697837582996,
+      "recall@5": 0.7360843143599621,
+      "ndcg@10": 0.6629157375679122,
+      "hit@10": 0.8888888888888888
+    },
+    "sdp_b_noart_rc1@plain": {
+      "recall@10": 0.8737855840993245,
+      "recall@5": 0.7942734821203737,
+      "ndcg@10": 0.6877142793787836,
+      "hit@10": 0.9191919191919192
+    }
+  },
+  "created": "2026-11-12 15:06:21"
+}

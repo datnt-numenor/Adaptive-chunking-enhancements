@@ -1,0 +1,281 @@
+DOCUMENT: arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2401.14446v3 [cs.CY] 29 May 2024 -->
+
+# Black-Box Access is Insufficient for Rigorous AI Audits
+
+<Table>
+| 0                                          | 1                                                            | 2                                                 |
+|:-------------------------------------------|:-------------------------------------------------------------|:--------------------------------------------------|
+| Stephen Casper ∗ scasper@mit.edu MIT CSAIL | Carson Ezell ∗ cezell@college.harvard.edu Harvard University | Charlotte Siegmann MIT                            |
+| Noam Kolt University of Toronto            | Taylor Lynn Curtis MIT CSAIL                                 | Benjamin Bucknall Centre for the Governance of AI |
+| Andreas Haupt MIT                          | Kevin Wei Harvard Law School                                 | Jérémy Scheurer Apollo Research                   |
+| Marius Hobbhahn Apollo Research            | Lee Sharkey Apollo Research                                  | Satyapriya Krishna Harvard University             |
+| Marvin Von Hagen MIT                       | Silas Alberti Stanford University                            | Alan Chan Mila, Centre for the Governance of AI   |
+| Qinyi Sun MIT                              | Michael Gerovitch MIT                                        | David Bau Northeastern University                 |
+| Max Tegmark MIT                            | David Krueger University of Cambridge                        | Dylan Hadfield-Menell MIT CSAIL                   |
+</Table>
+
+# ABSTRACT
+
+External audits of AI systems are increasingly recognized as a key mechanism for AI governance. The effectiveness of an audit, however, depends on the degree of access granted to auditors. Recent audits of state-of-the-art AI systems have primarily relied on black-box access, in which auditors can only query the system and observe its outputs. However, white-box access to the system's inner workings (e.g., weights, activations, gradients) allows an auditor to perform stronger attacks, more thoroughly interpret models, and conduct fine-tuning. Meanwhile, outside-the-box access to training and deployment information (e.g., methodology, code, documentation, data, deployment details, findings from internal evaluations) allows auditors to scrutinize the development process and design more targeted evaluations. In this paper, we examine the limitations of black-box audits and the advantages of white- and outside-thebox audits. We also discuss technical, physical, and legal safeguards
+
+\* ∗ Equal Contribution.
+
+\* Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org.
+
+\* FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil © 2024 ACM.
+
+ACM ISBN 979-8-4007-0450-5/24/06
+
+for performing these audits with minimal security risks. Given that different forms of access can lead to very different levels of evaluation, we conclude that (1) transparency regarding the access and methods used by auditors is necessary to properly interpret audit results, and (2) white- and outside-the-box access allow for substantially more scrutiny than black-box access alone.
+
+# CCS CONCEPTS
+
+· Security and privacy → Social aspects of security and privacy; · Social and professional topics → Governmental regulations.
+
+# KEYWORDS
+
+Auditing, Evaluation, Governance, Regulation, Policy, Risk, Fairness, Black-Box Access, White-Box Access, Adversarial Attacks, Interpretability, Explainability, Fine-Tuning
+
+# ACM Reference Format:
+
+Stephen Casper, Carson Ezell, Charlotte Siegmann, Noam Kolt, Taylor Lynn Curtis, Benjamin Bucknall, Andreas Haupt, Kevin Wei, Jérémy Scheurer, Marius Hobbhahn, Lee Sharkey, Satyapriya Krishna, Marvin Von Hagen, Silas Alberti, Alan Chan, Qinyi Sun, Michael Gerovitch, David Bau, Max Tegmark, David Krueger, Dylan Hadfield-Menell, and . 2024. Black-Box Access is Insufficient for Rigorous AI Audits . In The 2024 ACM Conference on Fairness, Accountability, and Transparency (FAccT '24), June 3-6, 2024, Rio de Janeiro, Brazil. ACM, New York, NY, USA, 19 pages. https://doi.org/ 3630106.3659037
+
+<!-- PageFooter: https://doi.org/3630106.3659037 1 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+<!-- PageHeader: FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil Casper, Ezell, et al. -->
+
+# Contents
+
+<Table>
+| Abstract        | Abstract                                                                          |   1 |
+|:----------------|:----------------------------------------------------------------------------------|----:|
+| Contents        | Contents                                                                          |   2 |
+| 1               | Introduction                                                                      |   2 |
+| 2               | Background                                                                        |   3 |
+| 2.1             | Black, Grey, White, and Outside-the-Box Access                                    |   3 |
+| 2.2             | Regulatory Frameworks' Reliance on Audits                                         |   3 |
+| 2.3             | Audits in the Status Quo                                                          |   5 |
+| 3               | Limitations of Black-Box Access                                                   |   5 |
+| 4               | Advantages of White-Box Access                                                    |   6 |
+| 4.1             | White-box attack algorithms are more effective and efficient.                     |   6 |
+| 4.2             | White-box interpretability tools aid in diagnostics.                              |   6 |
+| 4.3             | Fine-tuning reveals risks from latent knowledge or post-deployment modifications. |   7 |
+| 5               | Advantages of Outside-the-Box Access                                              |   7 |
+| 6               | Methods to Address Security Risks                                                 |   8 |
+| 7               | Discussion                                                                        |   9 |
+| Acknowledgments | Acknowledgments                                                                   |   9 |
+| References      | References                                                                        |  10 |
+| A               | Motivations for External Audits                                                   |  18 |
+| B               | Technical Assistance as a form of Outside-the-Box Access                          |  18 |
+| C               | Innovation on Auditing Tools                                                      |  18 |
+| D               | Beyond Access: Other Aspects of Rigorous Audits.                                  |  19 |
+</Table>
+
+# 1 INTRODUCTION
+
+External evaluations of AI systems are emerging as a key component of AI oversight [10, 11, 19, 25, 32, 151, 160, 165, 177, 190-192, 194, 196, 201, 247, 249, 252, 272, 274, 276, 279, 284, 293, 294, 324, 333] and governance frameworks [61, 85, 217, 311, 314]. There is a rich history in academic AI research of evaluating systems to explain their behaviors [4, 343] and evaluate risks including those related to privacy [43, 285, 289, 291, 337], intellectual property rights [40, 47, 139], fairness and discrimination [12, 28, 37, 59, 64, 75, 81, 102, 154, 188, 302, 327], harmful content, [23, 24, 244, 253, 304, 305], circumvention of safeguards (jailbreaks) [42, 180, 255, 277, 281, 325, 355], misinformation and deception [125, 127, 133, 231, 271], dangerous capabilities [54, 56, 147, 222, 284], and broader societal impacts [294, 328].
+
+Historically, most academic work on evaluating AI systems has been conducted on models where parameters, data, and methodology are openly available. AI systems that are not available to the public, including ones that are proprietary or in pre-deployment, pose challenges for oversight. AI audits are structured evaluations designed to identify risks and improve transparency by assessing how well models and methods meet specific desiderata [67, 202]. Norms for AI audits are not yet well established, and their effectiveness can vary depending on the degree of system access granted to auditors [11, 33, 252]. This is crucial because existing calls for audits are often agnostic to the form of access, and industry actors have previously lobbied for limiting access given to auditors. 1
+
+\* 1 For example, Google made the unsubstantiated claim in 2021 that "There will always be better methods for verifying the performance of an AI system (ex: input/output
+
+Recently, some developers of prominent state-of-the-art AI systems have kept most details of their models private [29]. To public knowledge, voluntary external audits of these systems have primarily involved analysis of the input/output behavior of models [13, 192, 221, 306]. This form of access, in which auditors are only able to see outputs for given inputs, is known as black-box. Unfortunately, black-box access is very limiting for auditors. Some problems, such as anomalous failures, are difficult to find with black-box access [150], and others, such as dataset biases, can be actively reinforced by testing data [278].
+
+The ability to query a black-box system is useful, but many of today's evaluation techniques require access to weights, activations, gradients, or the ability to fine-tune the model [34]. Whitebox access refers to the unrestricted ability to observe a system's internal workings. It enables evaluators to apply more powerful attacks to automatically identify weaknesses [107, 228], study internal mechanisms responsible for undesirable model behaviors [132, 153, 164], and identify harmful dormant capabilities through fine-tuning [242, 342]. Meanwhile, outside-the-box access involves additional contextual information about a system's development or deployment such as methodology, code, documentation, hyperparameters, data, deployment details, and findings from internal evaluations. It allows auditors to study risks that stem from methodology or data [24, 46, 195, 278] and makes it easier to design useful tests. This paper makes four contributions:
+
+(1) We present shortcomings of black-box methods for evaluating AI systems (Section 3).
+
+(2) We overview the ways in which white-box methods involving attacks, model interpretability, and fine-tuning substantially expand the capabilities of evaluators (Section 4).
+
+(3) Similarly, we examine how outside-the-box access, including methodology, code, documentation, hyperparameters, data, deployment details, and findings from internal evaluations, allow for more thorough evaluations (Section 5).
+
+(4) Finally, we describe methods to conduct white- and outsidethe-box audits securely to avoid leaks of sensitive information. These include technical solutions involving application programming interfaces, physical solutions involving secure research environments, and legal mechanisms that have precedent in other industries with audits (Section 6).
+
+Given the growing evidence that different forms of access can facilitate very different levels of evaluation, we draw two conclusions. First, transparency regarding model access and evaluation methods is necessary to properly interpret the results of an AI audit. Second, white- and outside-the-box access allow for substantially more scrutiny than black-box access alone. When higher levels of scrutiny are desired, audits should be conducted with higher levels of access. 2
+
+\* auditing) than direct access to source code," while lobbying the European Union on a draft of the EU AI Act [108].
+
+\* 2 Jointly with this paper, we submitted a comment on policy questions related to whiteand outside-the-box audits to a request for information from the US National Institute of Standards and Technology [207].
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+<!-- PageHeader: Black-Box Access is Insufficient for Rigorous AI Audits -->
+
+FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil
+
+<Figure>
+Figure 1: Black-box access lets auditors query the system and analyze the resulting outputs. Grey-box access lets auditors access limited internal information. White-box access lets users access the full system. Outside-the-box access gives auditors contextual information. In this paper, we argue that white- and outside-the-box access are key for rigorous AI audits.
+</Figure>
+
+# 2 BACKGROUND
+
+# 2.1 Black, Grey, White, and Outside-the-Box Access
+
+In accordance with literature on security and software testing [144], we differentiate black-, grey-, and white-box access. We also introduce two new concepts: "de facto white-box" access and "outsidethe-box" access. Figure 1 illustrates these categories, and Table 1 summarizes which techniques each type of access allows.
+
+(1) Black-box access allows users to design inputs for a system, query it, and analyze the resulting outputs.
+
+(2) Grey-box access offers users limited access to a system's inner workings. For neural networks, this can include information such as input embeddings, inner neuron activations, or sampling probabilities. There are many ways that users can be given information about a system's inner workings and many corresponding shades of grey. De facto whitebox access is a very light grey form of access that allows users to run arbitrary processes on a system indirectly with the constraint that the system's parameters cannot be copied. We discuss this and other methods to minimize the possibility of leaks in Section 6.
+
+(3) White-box access allows users full access to the system. This includes access to weights, activations, gradients, and the ability to fine-tune the model.
+
+(4) Outside-the-box access grants users access to additional information about the system's development and deployment. There are many types, which can include methodological details, source code, documentation, hyperparameters, training data, deployment details, and findings from internal evaluations. Different forms of outside-the-box access can vary
+
+greatly in their comprehensiveness. For example, possessing high-level details (such as a "model card," [195]) is less informative compared to having comprehensive documentation from training and testing.
+
+# 2.2 Regulatory Frameworks' Reliance on Audits
+
+Emerging frameworks for AI governance have been designed to rely on high-quality audits. Audits have been called for in the White House Executive Order on AI [217], European Union policy [8587], other policy initiatives [61, 68, 211, 311], general AI principles [60, 94, 208, 216, 312], voluntary standards [214, 235, 314], multilateral commitments [5], and position papers [209, 236]. In particular, audits in these proposals are intended to provide trustworthy assessments of potential harm and explanations of system behaviors.
+
+Regulatory frameworks have called for evaluations to accurately assess risks. Some jurisdictions may require risk assessment evaluations for AI systems used in certain contexts. These can include tests to ensure non-discrimination, such as New York City's requirement for bias audits of automated employment decision tools [68], or quality and performance evaluations [116]. The draft EU AI Act [87] has more recently harmonized quality assurance standards across several high-risk use cases, with provisions for external oversight. Regulators are also increasingly interested in external oversight of AI systems with potentially harmful capabilities. Recently, U.S. Executive Order 14110 [217] required developers of certain foundation models to share test results with the Federal Government. It also instructed the National Institute of Standards and Technology (NIST) to develop evaluation guidelines for harmful AI capabilities, and it tasked the Department of Energy with developing tools and testbeds to evaluate threats from AI systems to security and critical infrastructure. Companies may also voluntarily subject their systems to external evaluations beyond regulatory requirements. For example, the NIST Risk Management Framework provides recommendations for audits related to system design and reliable operation [314]. In Section 3, Section 4, and Section 5, we overview advantages of white- and outside-the-box access over black-box access for rigorous assessments.
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+<!-- PageHeader: FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil Casper, Ezell, et al. -->
+
+<Table>
+|                                                   | Access Level   | Black- Box   | Grey- Box   | De facto White-box   | White- Box   | Outside- the-box   |
+|:--------------------------------------------------|:---------------|:-------------|:------------|:---------------------|:-------------|:-------------------|
+| Test sets (Section 3)                             | Queries        | ✔            | ✔           | ✔                    | ✔            | ✗                  |
+| Manual attacks (Section 3)                        | Queries        | ✔            | ✔           | ✔                    | ✔            | ✗                  |
+| Transfer-based attacks (Section 4.1)              | Queries        | ✔            | ✔           | ✔                    | ✔            | ✗                  |
+| Gradient-free attacks (Section 4.1)               | Queries        | ✔            | ✔           | ✔                    | ✔            | ✗                  |
+| Sampling-probability-guided attacks (Section 4.1) | Probabilities  | ✗            | ✔           | ✔                    | ✔            | ✗                  |
+| Gradient-based attacks (Section 4.1)              | Gradients      | ✗            | ✗           | ✔                    | ✔            | ✗                  |
+| Hybrid attacks (Section 4.1)                      | Gradients      | ✗            | ✗           | ✔                    | ✔            | ✗                  |
+| Latent space attacks (Section 4.1)                | Weights/       | ✗            | ✗           | ✔                    | ✔            | ✗                  |
+| Mechanistic interpretability (Section 4.2)        | Activations    | ✗            | ✗           | ✔                    | ✔            | ✗                  |
+| Fine-tuning (Section 4.3)                         | Fine-tuning    | ✗            | ✗           | ✔                    | ✔            | ✗                  |
+| Methodological evaluations (Section 5)            | Outside-       | ✗            | ✗           | ✗                    | ✗            | ✔                  |
+| Data evaluations (Section 5)                      |                | ✗            | ✗           | ✗                    | ✗            | ✔                  |
+| Complementary evaluations (Section 5)             | the-Box        | ✗            | ✗           | ✗                    | ✗            | ✔                  |
+| Using source code (Section 5)                     |                | ✗            | ✗           | ✗                    | ✗            | ✔                  |
+| Copying system parameters (Section 6)             | Unrestricted   | ✗            | ✗           | ✗                    | ✔            | ✗                  |
+</Table>
+
+<Table>
+| Goal                                  | Technique                  | Advantage                                                                                          |
+|:--------------------------------------|:---------------------------|:---------------------------------------------------------------------------------------------------|
+| Identifying problems                  | Attacks                    | White-box methods are more reliable for detecting anomalous failures.                              |
+| Identifying problems                  | Attacks                    | White-box attacks are more efficient.                                                              |
+| Identifying problems                  | Attacks                    | White-box methods provide auditors with more attack options.                                       |
+| Identifying problems                  | Attacks                    | Robustness to white-box attacks confers greater robustness assurances.                             |
+| Identifying problems                  | Fine-tuning                | Fine-tuning enables searching for harmful dormant capabilities.                                    |
+| Identifying problems                  | Interpretability           | Interpretability tools enable stronger assurances of what knowledge and capabilities a system has. |
+| Identifying problems                  | Outside-the-box assessment | Information helps auditors target complementary evaluations.                                       |
+| Incentivizing responsible development | Outside-the-box assessment | Information about deployment assists with assessing societal impacts.                              |
+| Incentivizing responsible development | Outside-the-box assessment | Auditors can trace problems to datasets and methodological decisions made by developers.           |
+| Incentivizing responsible development | Outside-the-box assessment | Auditors can assess risk-mitigation strategies.                                                    |
+| Increasing transparency               | Interpretability           | White-box methods can address misconceptions about model outputs, characteris- tics, and risks.    |
+| Increasing transparency               | Interpretability           | White-box methods assist with providing more accurate and meaningful explana- tions.               |
+| Enabling debugging                    | Attacks                    | Stronger attacks produce stronger instances of failures to incorporate into training data.         |
+| Enabling debugging                    | Interpretability           | Interpretability techniques enable more precise debugging.                                         |
+</Table>
+
+Assessing model explanations enables scrutiny of automated decisions. Regulatory frameworks also use audits to provide those affected by automated decision-making with explanations of the decisions [111, 238]. In some jurisdictions, such as the European Union, when individuals are harmed by automated decision-making systems, they may have the right to an explanation, and the results of these explanations may entitle them to remediation [36, 116]. Further, explanation requirements may exist for particularly high-risk systems, such as EU platform regulations (the Digital Markets Act and the Digital Services Act) that require transparency from large online platforms using AI systems (e.g., ranking algorithms) to protect against discrimination and abuse of market power [88, 115]. Finally, disclosure of evidence may be required under liability rules, such as the Product and AI Liability Directives in the EU, to enable potential claimants to adequately defend damage claims [35, 114]. When producing explanations, a report from NIST emphasizes the importance of explanation accuracy, or [a]n explanation [that] correctly reflects the reason for generating the output and/or accurately reflects the system's process [237]. In Section 3 and Section 4.2, we overview advantages of white-box access over black-box access for generating reliable explanations.
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<!-- PageHeader: Black-Box Access is Insufficient for Rigorous AI Audits FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil -->
+
+# 2.3 Audits in the Status Quo
+
+Recent advancements in AI capabilities - especially from large generative models - have increased public attention on AI audits. As of January 2024, there are no widely adopted norms for conducting AI audits [25]. Details of AI audits can vary because they depend upon the system, how it will be used, and what risks it poses. Auditing frameworks and metrics have been proposed for specific use cases, including hiring [142, 245], facial recognition [143, 250], healthcare [177, 183], recommender systems [57, 260], and general purpose language models [202]. However, Raji et al. [252] identifies five general limitations for algorithmic audits: scope, independence, level of access, professionalism, and public disclosure of methods and results.
+
+Currently, evaluations of proprietary or pre-deployment AI systems are predominantly performed in-house by developers with selective disclosure of methods and outcomes. Some developers have voluntarily partnered with external auditors and provided them with black-box access to state-of-the-art systems [13, 147, 192, 222, 306]. Additionally, some developers run programs for external researchers to support their internal evaluation process (e.g., OpenAI's Preparedness Challenge [223] and Red-Teaming Network [224]). However, to public knowledge, these industry-based efforts have involved black-box and limited outside-the-box access such as model cards [195].
+
+# 3 LIMITATIONS OF BLACK-BOX ACCESS
+
+Black-box evaluations of AI systems are based on analysis of their inputs and outputs only. Such evaluations often involve assessing performance on test sets [121, 172, 269, 297, 299, 320] or searching for inputs that elicit harmful outputs [51, 147, 233, 234, 271, 325]. Generative AI audits often attempt to elicit undesirable capabilities or behaviors (e.g., [30, 118, 140, 147, 198, 206, 266, 284, 292, 301]). However, black-box methods are inherently limited in their ability to identify harms or provide meaningful explanations. Readers with a computer science background can consider the analogy of attempting to evaluate the performance of software without reading or modifying its source code.
+
+Black-box methods are not well suited to develop a generalizable understanding. Black-box access limits evaluators to analyzing a system using only inputs and outputs. However, the vast number of possible inputs to AI systems makes it intractable to develop a complete understanding from this alone. This forces evaluators to rely on heuristics to produce 'relevant' inputs for evaluation. For this reason, black-box methods have been shown to be unreliable for detecting failures that elude typical test sets including jailbreaks, adversarial inputs, or backdoors [58, 325, 353].
+
+Black-box access prevents system components from being studied separately. Analyzing components of a system separately is ubiquitous in science and engineering. It enables engineers to trace problems to support more targeted interventions. However, black-box access obscures what subsystems the AI system is composed of. For example, black-box access does not allow input or output filters to be studied separately from the rest of the system. Other issues can arise from a lack of outside-the-box access to data. Datasets can inform evaluations related to privacy and copyright [262], and can help to avoid problems from data contamination [72, 105, 131]. Having a lack of outside-the-box knowledge about how the system is deployed also prevents evaluators from making a more practical assessment of broader societal impacts [328].
+
+Black-box evaluations can produce misleading results. Since black-box evaluations rely entirely on the queries made to the system, they are biased by how evaluators design inputs [138, 205, 326]. This can lead to misconstrued conclusions about the system's characteristics. For example, systems may satisfy simple statistical tests for non-discrimination, but they may still have undesirable biases in their underlying reasoning [246]. Developers with information about the black-box tests can exacerbate this problem by modifying the model's output behavior on test cases despite unresolved flaws in its internal reasoning. In addition, Schaeffer et al. [270] provide examples of black-box prompt-based evaluation methods for language models that can lead to misunderstandings of their emergent capabilities.
+
+Black-box explanation methods are often unreliable. Using black-box methods alone to produce explanations for an AI system's decisions is difficult [117, 264]. Many black-box techniques to provide counterfactual explanations for model decisions are misleading because they fail to reliably identify causal relationships between the system's input features and outputs [62]. Explanation methods for black-box systems can also be exploited by adversaries to produce misleading explanations for harmful decisions [6, 290]. Furthermore, when generative language models are asked to explain their decisions, their justifications do not tend to be faithful to their actual reasoning [310].
+
+Black-box evaluations offer limited insights to help address failures. Black-box evaluations offer little insight into ways to address problems they discover. The main technique they enable is to train on problematic examples, but this can fail to address the underlying problem [78, 97], be sample-inefficient [322], and may introduce new issues. Corrective actions are not robust when they fail to address a problem at its root. For example, some recent works have shown that safety measures built into large language models can be almost entirely undone by fine-tuning on a small number of harmful examples [168, 242, 336, 342]. In contrast, white-box methods reveal more about the nature of flaws, facilitating more precise debugging methods [322].
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil Casper, Ezell, et al. -->
+
+# 4 ADVANTAGES OF WHITE-BOX ACCESS
+
+White-box offers a wider range of techniques to detect symptoms, understand causes, and mitigate harms in a targeted manner [34]. Even for a system that will only be deployed as a black box, whitebox audits are still more useful for finding problems. Here, we survey techniques for white-box evaluations and their advantages over black-box ones.
+
+# 4.1 White-box attack algorithms are more effective and efficient.
+
+In machine learning, adversarial attacks refer to inputs that are designed specifically to make a system fail. AI systems have a long history of having unexpected failure modes that can be triggered by very subtle features in their inputs [7, 346]. Attacks play a central role in evaluations because they help to assess a system's worst-case behavior.
+
+White-box algorithms produce stronger attacks. White-box algorithms allow for gradient-based optimization of adversarial inputs, which is powerful compared to simpler search methods. For example, white-box adversarial attack algorithms against vision systems typically use the gradient of the adversarial objective with respect to the input pixels to design adversarial inputs [107, 228]. This is much more effective for finding vulnerabilities than unguided black-box search methods. Consequently, white-box attacks are dominant in vision applications. In reinforcement learning, white-box access to a target agent also helps develop stronger adversarial attacks against it [49, 323]. For language models, optimizing adversarial inputs with gradient-based methods is more challenging because text (unlike pixels) is discrete which prevents gradient propagation. Nonetheless, there are various state-of-the-art white-box techniques for attacking language models. These include using a differentiable approximation to the process of sampling text [112, 295, 318], projecting adversarial embeddings onto text embeddings [329], and performing gradient-informed searches over modifications to textual changes [80, 136, 170, 175, 258, 287, 355].
+
+Many black-box and grey-box attack algorithms are simply indirect or inefficient versions of white-box ones. Many blackbox attacks against AI systems involve attacking a white-box model with a white-box algorithm and then testing the resulting attack on the target black-box model [179, 350]. For vision models, the main motivation behind studying black-box attacks is that white-box access is not always available to attackers [21]. Additionally, several of the most effective attacks against state-of-the-art models, such as GPT-4 and Claude-2, have simply been the result of transferring a white-box attack generated against an open-source model to the intended black-box target model [355]. Other types of blackand grey-box attack algorithms involve inefficiently estimating gradients by analyzing outputs or sampling probabilities across many queries [110, 128] when more precise gradients could be obtained trivially with white-box access.
+
+Latent space attacks help to make stronger assurances. Typically, AI systems are attacked by crafting inputs meant to make them exhibit undesirable behavior. However, input space attacks are not well-suited to diagnose certain hard-to-find issues, including high-level misconceptions [300], anomalous failures [353], backdoors [58, 334], and deception [63, 231]. A complementary technique for attacking systems in the input space is to relax the problem and attack their internal latent representations. The motivation of latent space attacks is that some failure modes are easier to find in the latent space than in the input space [53] because concepts important to the system's reasoning are represented at a higher level of abstraction inside the model [16, 135, 275, 309, 354]. Thus, robustness to latent attacks enables evaluators to make stronger assurances of safe worst-case performance. Latent space attacks are also more efficient to produce because they require less gradient propagation than input space attacks [229, 243], allowing for more thorough debugging work to be conducted on a limited time and computing budget. Latent space attacks are still an active area of research, but some works have emerged showing that robustness to latent space attacks effectively indicates robustness to input space attacks in vision models [158, 178, 226, 267, 344, 351]. Since textual inputs to language models are discrete, only latent space attacks allow for the direct use of gradient-based optimization, rendering them especially useful for language models [119, 134, 148, 156, 171, 176, 227, 265, 352].
+
+White-box methods expand the attack toolbox. Some blackbox attack methods are competitive, particularly against language models. These include methods based on local search [240], rejection sampling at scale [96], Langevin dynamics [157, 286], evolutionary algorithms [162], and reinforcement learning [51, 74, 233]. Additionally, some of the most effective methods for attacking language models involve human or human-guided generation of adversarial prompts [180, 277, 325]. However, even when blackbox attacks are useful, white-box algorithms are complementary because they generate qualitatively different kinds of attacks. For example, many black-box techniques produce attacks that appear as natural language (e.g., [277]) while white-box algorithms are stateof-the-art for synthesizing adversarial prompts which appear to humans as unintelligible text (e.g., [355]). Relying only on black-box methods would likely miss out on these types of failures entirely because finding them with black-box searches or human inductive biases would be highly improbable. Black- and white-box methods can also be combined to conduct hybrid attacks by using the results of one method as an initialization for another. Combinations of attacks tend to be better at helping humans find vulnerabilities than a single method alone [50].
+
+# 4.2 White-box interpretability tools aid in diagnostics.
+
+While it is possible to infer properties of a system from studying inputs and outputs, understanding its internal processes allows evaluators to more thoroughly assess its trustworthiness [103, 256]. Interpreting the inner mechanisms of models has been recognized as a key part of agendas for reducing harms from AI systems [126, 137, 212], and explaining how models make specific decisions has also been recognized as a way to protect the rights of individuals affected by AI [111, 238].
+
+White-box interpretability tools help evaluators discover novel failure modes. White-box algorithms and interpretability tools have aided researchers in finding vulnerabilities. Examples have involved identifying novel attacks [353], internal representations of spurious features [95, 184], brittle feature representations [44, 48, 50, 52, 101, 123, 199, 335, 341], and limitations of key-value memories in transformers [99, 100, 189]. As an added benefit, attributing the problem to specific parts of the system's architecture or representations allows developers to address it in a more precise way [322].
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: Black-Box Access is Insufficient for Rigorous AI Audits FAccT '24, June 03-06, 2024, Rio de Janeiro, Brazil -->
+
+Studying internal representations can help to establish the presence or lack of specific capabilities. White-box methods allow for more precise identification of what knowledge and capabilities a system has [8, 18]. Tools such as concept vectors [2, 146] and probes [66] allow humans to assess the extent to which system internals can be understood in terms of familiar concepts. For example, these techniques have been used to study features related to fairness in visual classifiers [109], provide evidence that language models internally represent space and time [113], and show that networks sometimes represent truth-like features along linear directions [38, 185]. Methods for this are imperfect and still an active area of research [14, 84, 257], but interpretations like these offer a potentially powerful way to identify whether a model represents specific concepts.
+
+Consider an example. Suppose that an auditor wants to assess sycophancy: a language model's tendency to pander to the biases of users who chat with it [234, 280]. For example, an evaluator might be concerned that the system will respond differently when the user says they are conservative or liberal in the chat. Blackbox techniques could only be used to argue that the system is not sycophantic by producing examples and analyzing them for apparent sycophancy. However, a white-box interpretability-based approach could offer much more information. For example, if it were not possible for a classifier to distinguish whether the user revealed themselves to be conservative or liberal from the model's internal representations, then this would offer stronger evidence that the system will reliably not exhibit this type of sycophancy.
+
+Mechanistic understanding helps to make stronger assurances. In general, it is impossible to make guarantees about blackbox systems using a finite number of queries without additional assumptions. In contrast to black-box methods, which can only show the existence of failures by finding inputs that elicit them, thoroughly understanding the computations inside of a model gives auditors a complementary way to find evidence against the existence of failure modes. A mechanistic understanding can help researchers develop a predictive model of how the system would act for broad classes of inputs. Some works have aimed to provide thorough investigations of how networks perform simple tasks [39, 204, 348]. Although scaling thorough analysis is an open challenge [303], it offers a strategy for making strong assurances. Recent works have attempted to make progress on this problem by using sparse autoencoders to allow evaluators to more thoroughly study the features represented inside of large language models [31, 69, 184].
+
+White-box methods expand the toolbox for explaining specific AI system decisions. As discussed in Section 2, existing regulatory frameworks have been designed with specific desiderata for model explanations in order to determine accountability and protect individual rights. Many techniques are used to provide explanations of model behaviors during audits [343]. Black-box techniques can only attribute decisions to input features using techniques that involve modifying inputs and analyzing how model outputs change [259]. However, these techniques are frequently misleading [264] and can fail to reliably identify causal relationships between the system's input features and output [62]. White-box access expands and strengthens the toolbox by allowing for gradient-based techniques [70, 79, 173, 347]. It also allows for explainability tools to be combined with interpretations of the model mechanisms to explain a model's behaviors in terms of more abstract concepts.
+
+# 4.3 Fine-tuning reveals risks from latent knowledge or post-deployment modifications.
+
+State-of-the-art AI systems are typically trained on large amounts of internet data, often in multiple stages. This can cause them to learn undesirable capabilities, such as knowledge of how to perform illegal activities [277, 354] or the ability to produce harmful content [23, 24, 98, 182, 253, 278, 304, 305]. Developers attempt to remove harmful abilities through fine-tuning, but they can unexpectedly resurface through "jailbreaks" [9, 55, 73, 169, 180, 220, 241, 255, 277, 282, 308, 325, 339, 340, 355] or further fine-tuning models on a small number of new examples [168, 242, 336, 342]. The existence of harmful dormant capabilities in models thus poses risks from attacks and fine-tuning, especially if they are leaked (e.g. Stable Diffusion [161]), open-sourced (e.g., Llama-2 [306]), or deployed with fine-tuning access via API (e.g., GPT-3.5 [221]). Consequently, being able to fine-tune the model offers another strategy to search for evidence of undesirable capabilities and assess the risks in deployment.
+
+# 5 ADVANTAGES OF OUTSIDE-THE-BOX ACCESS
+
+In addition to having access to AI systems themselves, giving auditors outside-the-box access to contextual information also helps to identify risks. This can include methodological details, source code, documentation, hyperparameters, training data, deployment details, and the findings of internal evaluations. While it can come in many types, all outside-the-box information can be useful to auditors for three common reasons: (1) helping auditors more effectively design and implement tests, (2) offering clues about potential issues, and (3) helping auditors trace problems to their sources. See also Appendix B where we discuss how outside-the-box access to technical assistance from developers can also be useful for auditors.
+
+Code, documentation, and hyperparameters help auditors work more efficiently. As discussed in Section 4, audits can require a number of technical evaluations. Having code and documentation from developers can streamline the process of designing them. For example, consider fine-tuning evaluations. Fine-tuning a model typically requires precisely configured code and hyperparameters that have been carefully selected after extensive testing, often over the course of weeks or months. Using the developer's existing resources is a much more efficient option for auditors compared to re-implementing everything from scratch.
+
+Access to methodological details helps to identify risks. Knowing methodological details can reveal shortcuts taken during development, which can guide evaluators toward discovering problems. For example, if a system was trained with human-generated data using a non-representative cohort of humans, this can suggest specific social biases that the system may have internalized [46, 268, 298]. Knowing the findings of internal evaluations is especially useful for helping auditors target their efforts toward a set of complementary evaluations. Furthermore, when developers attempt to mitigate flaws, auditors can better assess the effectiveness of these efforts if they have detailed information about the attempted mitigation (e.g., fine-tuning datasets, both old and new versions of model weights, etc.) [239].
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+

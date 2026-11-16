@@ -1,0 +1,14 @@
+{
+  "request_hash": "c26aea223256f570429b252f8d16fd5cae50ac5417db9f59984e19573aed5813",
+  "prompt_sha256": "8d3e2f275b81fa972779c32a6880b7fd0b709b75fa00dd8cf2fd9ed773a4eb63",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOunRCgW9gfQGFBhDIflX2o166iQ",
+  "prompt_tokens": 8507,
+  "completion_tokens": 59,
+  "actual_usd": 0.00131145,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the claim in the reference answer by explicitly stating that signatories will act on complaints in a diligent, non-arbitrary manner and within a reasonable time, unless a complaint is manifestly unfounded or has already been addressed."
+  }
+}

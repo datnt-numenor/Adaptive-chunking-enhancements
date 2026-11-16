@@ -1,0 +1,14 @@
+{
+  "request_hash": "cb54cdce6c73f37278ffbb3c2d62b1922cf5ee167c49ec296062ae1cdd9d4aaa",
+  "prompt_sha256": "12ff918115206e81c4a6051df73800069e59ced83e10552b7adc98860b9b3b2d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMuZgiWHFQYwwWPWOee3cpeDyo1",
+  "prompt_tokens": 8705,
+  "completion_tokens": 45,
+  "actual_usd": 0.00133275,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how model hallucinations and jailbreaks can translate into physical safety risks when AI models are embodied in robotic systems."
+  }
+}

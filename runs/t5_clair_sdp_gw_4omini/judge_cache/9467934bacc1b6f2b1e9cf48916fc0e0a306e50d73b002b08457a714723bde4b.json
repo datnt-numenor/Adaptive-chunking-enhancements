@@ -1,0 +1,14 @@
+{
+  "request_hash": "9467934bacc1b6f2b1e9cf48916fc0e0a306e50d73b002b08457a714723bde4b",
+  "prompt_sha256": "373f172dc17bd486b54dcf8ddd93e8eeb087bc9f6cc6dc5b48162f0777335b81",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP6aPY3IsB0TlsrcYnR4kZKWvJLH",
+  "prompt_tokens": 8150,
+  "completion_tokens": 36,
+  "actual_usd": 0.0012441,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the fines and damages a consumer may recover, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "b346310c86cbb65187b2a2b72dfd24c17c9fe665fabb1672e7231eafe892502c",
+  "prompt_sha256": "45cd9ff3624c3118e2085695ec3a0415171928efb7aff5cb83b713ece4176c0b",
+  "answer": "The term used in the IBM AI Risk Atlas for the inability to access training data for source attribution is \"untraceable attribution.\" The consequence is that without the ability to access training data content, the possibility of using source attribution techniques can be severely limited or impossible, making it difficult for users, model validators, and auditors to understand and trust the model.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN0rBzJ75178ofRFT3i4H4wrrPJz",
+  "prompt_tokens": 5344,
+  "completion_tokens": 71,
+  "actual_usd": 0.0008442
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "1925e91d21fc89992c571d4c0197938ddb7d3457b98eaf093032d2d41b289967",
+  "prompt_sha256": "cdb6205e85357e12cb79e91eb571da96d253e12d434da945f79871b79d688f47",
+  "answer": "A key reason that evaluating only isolated answers from patient-facing medical chatbots is insufficient for deployment is that a clinically appropriate recommendation depends on obtaining relevant information, interpreting it correctly, and communicating guidance that the patient can understand and use. Validation must therefore examine complete interactions in the intended population and setting, including recognition of uncertainty, elicitation of missing information, and timely escalation to clinical care. Evidence of medical knowledge alone cannot establish the validity of autonomous patient guidance.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNIXN8XKp7l5lx4WTEmpWA1t5R7t",
+  "prompt_tokens": 9298,
+  "completion_tokens": 90,
+  "actual_usd": 0.0014487
+}

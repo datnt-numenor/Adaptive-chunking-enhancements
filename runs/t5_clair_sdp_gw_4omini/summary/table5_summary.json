@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "input_dir": "D:\\Project\\adaptive-chunking\\runs\\t5_clair_sdp_gw_4omini\\judge-full",
+  "expected_queries_per_system": 99,
+  "systems": 3,
+  "rows": 297,
+  "same_query_ids": true,
+  "score_policy": {
+    "raw_outputs_modified": false,
+    "accepted_roundoff_tolerance": 1e-12,
+    "normalized_roundoff_scores": 3
+  },
+  "input_sha256": {
+    "adaptive": "9886731790c378b1fb07a9c32f0f435cbbe22a294b7a3c7d96813bb63ae5a68b",
+    "raw__langch_recurs_default": "0f30daf0fda7aba09acf941be16a08cb893393f82ef23a7d6b7665e3db6a95d7",
+    "raw__page": "15eccc0d1a13c732a3f73a2bdb7cdebc324a57fa7bebd79e60a335ac5731ffa0"
+  },
+  "summary": [
+    {
+      "system": "adaptive",
+      "label": "Adaptive",
+      "retrieval_completeness_mean_pct": 92.42424242424242,
+      "retrieval_completeness_std_pct": 21.857185298320562,
+      "answer_correctness_mean_pct": 89.1103115379982,
+      "answer_correctness_std_pct": 11.550270054845514,
+      "final_score_pct": 90.82800346332897,
+      "coverage_adjusted_correctness_pct": 82.80958243935186,
+      "answered_queries": 92,
+      "abstentions": 7,
+      "total_queries": 99,
+      "normalized_roundoff_scores": 0
+    },
+    {
+      "system": "raw__langch_recurs_default",
+      "label": "Raw LangChain recursive default",
+      "retrieval_completeness_mean_pct": 90.9090909090909,
+      "retrieval_completeness_std_pct": 22.994715856656846,
+      "answer_correctness_mean_pct": 88.95558503779722,
+      "answer_correctness_std_pct": 13.810663159000022,
+      "final_score_pct": 89.9953542918729,
+      "coverage_adjusted_correctness_pct": 78.1730898817006,
+      "answered_queries": 87,
+      "abstentions": 12,
+      "total_queries": 99,
+      "normalized_roundoff_scores": 1
+    },
+    {
+      "system": "raw__page",
+      "label": "Raw page",
+      "retrieval_completeness_mean_pct": 87.87878787878788,
+      "retrieval_completeness_std_pct": 26.81275691176958,
+      "answer_correctness_mean_pct": 87.67025681891724,
+      "answer_correctness_std_pct": 14.782157785209257,
+      "final_score_pct": 87.78184911582098,
+      "coverage_adjusted_correctness_pct": 76.15800087299878,
+      "answered_queries": 86,
+      "abstentions": 13,
+      "total_queries": 99,
+      "normalized_roundoff_scores": 2
+    }
+  ]
+}

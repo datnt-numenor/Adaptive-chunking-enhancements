@@ -1,0 +1,14 @@
+{
+  "request_hash": "e6c80f0fefece6fb74bbd08ee9bd8cd534dc4b72ebfdb09ac8a229c40dacd42f",
+  "prompt_sha256": "861221c4a9a960ed31fbe13e725a466eb69a1580ca285280171ac7b40efe606a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNu5rQb2Afz4V6ppFKCuV3CtNnsM",
+  "prompt_tokens": 7237,
+  "completion_tokens": 42,
+  "actual_usd": 0.00111075,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the STIT operator, including its introduction and axiomatization, which fully supports the claim made in the Reference Answer."
+  }
+}

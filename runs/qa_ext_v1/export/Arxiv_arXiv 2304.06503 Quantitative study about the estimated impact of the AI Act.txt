@@ -1,0 +1,315 @@
+DOCUMENT: arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act
+
+<<<PAGE 9>>>
+# 5.1 Interrater agreement
+
+The interrater agreement is a method to enumerate the agreement of assignments. It is used wherever no definite correct assignment is known (in which case quality measures, like sensitivity or specificity are more reasonable choices) [2]. Generally, there are various methods to compute the interrater agreement [3]. For our study, we compare the respective decisions for a regulatory class or the not sure option on all entries we could agree or resolve our disagreement on. For 311 of the 514 entries, all of us agreed on the criticality level without any discussion (60,5%). Given the final classifications in regulatory classes, a random assignment would have left us with an interrater agreement of 26%13. Considering that the descriptions of the entries were not intended to be evaluated on the basis of the AI Act and were not phrased accordingly, we consider this level of agreement to be very high. Notably, agreement between any two raters was the least between the legal scientist and one of the computer scientists (on 349 entries, 67,9%), but between the other computer scientist and the legal scientist (on 379 entries, 73,74%) and the two computer scientists (on 382 entries, 74,32%), agreement was almost equal high. In 139 cases, at least one of us tagged not sure (27,04%), while in 3 cases all of us tagged not sure.
+
+Neither the agreement rate, nor the number of not sure tags significantly changed over time with increasing experience. The causes of uncertainties and disagreements were rather rarely due to a lack of experience with the application of the AI Act or the general understanding of AI Systems. More often, the difficulty for the computer scientists lied in deeper understanding of other legal texts, as the AI Act contains many references. The legal scientist, on the other hand, was challenged by understanding very specific AI applications that lacked a proper explanation for non-domain experts. Further problems lied in ambiguous descriptions of entries and definition gaps in the AI Act (see section 6 for extreme examples we could not resolve in our discussions).
+
+# 5.2 Distribution of risk-categories in the dataset
+
+From 514 cases for which we could agree on a risk level, 199 would fall under the new regulation while 315 would be classified as low-risk. Among the regulated cases, none of them would fall under prohibition, 160 would fall under high-risk (∼31,13% among all), and 39 would fall under transparency obligations only14 (∼7,59% among all) (see Table 1). Of the 160 high-risk cases, the categorization of 98 cases is based on Art. 6 para. 1. Annex II, Section A, No. 11 (medical devices) (see Table 215 ). Of the 39 transparency obligation cases, the categorization of 34 cases is based on Art. 52 para. 1 (interaction with natural persons) (see Table 3).
+
+<Table>
+| 0                                                                                |   1 | 2        |
+|:---------------------------------------------------------------------------------|----:|:---------|
+| Number of cases with unambiguous category and reasoning                          | 514 | (100%)   |
+| Number of cases that would be prohibited                                         |   0 | (0%)     |
+| Number of cases that would be categorized as high-risk                           | 160 | (31,13%) |
+| Number of cases that would be categorized as cases with transparency obligations |  39 | (7,59%)  |
+| Number of cases that would be categorized as low-risk                            | 315 | (61,28%) |
+</Table>
+
+From the 21 cases that raised questions, for 8 cases it was unclear whether the term safety component applies (Art. 6 Abs. 1 i.c.w. Annex II, Abschnitt A und B). For 4 cases, we could not assess whether the product could result in an overload of the power grid (Art. 6 para. 2 i.c.w. Annex III, Nr. 2), for 6 cases the term interaction was not sufficiently defined (Art. 52(1)) and 3 cases each raised unique questions.
+
+\* 13 0.31133 + 0.07593 + 0.61283 = 0.2607
+
+\* 14As mentioned earlier, the classification as high-risk does not necessarily exclude a system from also falling under the transparency obligations set out in Art. 52 AI Act.
+
+\* 15The table refers to Annex II in the initial draft of the AI Act. In the latest version, civil aviation is now No. 8, whereas No. 7 covers an additional regulation on motor vehicles and associated trailers.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<Table>
+| 0                                                                                                        | 1      |
+|:---------------------------------------------------------------------------------------------------------|:-------|
+| Art. 6 para. 1. Annex II, section A, No. 1 (machinery)                                                   | 16     |
+| Art. 6 para. 1. Annex II, section A, No. 10 (burning gaseous fuels)                                      | 1      |
+| Art. 6 para. 1. Annex II, section A, No. 11 (medical devices)                                            | 98     |
+| Art. 6 para. 1. Annex II, section A, No. 12 (in vitro diagnostic)                                        | 2      |
+| Art. 6 para. 1. Annex II, section B, No. 2 (two- or three-wheel vehicles and quadricycles)               | 5      |
+| Art. 6 para. 1. Annex II, section B, No. 4 (marine equipment)                                            | 3      |
+| Art. 6 para. 1. Annex II, section B, No. 6 (motor vehicles and associated trailers, systems, components, | ...) 9 |
+| Art. 6 para. 1. Annex II, section B, No. 7 (civil aviation)                                              | 1      |
+| Art. 6 para. 2. Annex III, No. 1 (biometric identification and categorization)                           | 8      |
+| Art. 6 para. 2. Annex III, No. 2 (critical infrastructure)                                               | 6      |
+| Art. 6 para. 2. Annex III, No. 3 (education and vocational training)                                     | 1      |
+| Art. 6 para. 2. Annex III, No. 4 (Employment, workers management and access to self-employment)          | 6      |
+| Art. 6 para. 2. Annex III, No. 5 (private and public services and benefits)                              | 1      |
+| Art. 6 para. 2. Annex III, No. 6 (law enforcement)                                                       | 2      |
+| Art. 6 para. 2. Annex III, No. 7 (migration, asylum and border control management)                       | 1      |
+</Table>
+
+<Table>
+| 0                                                                             |   1 |
+|:------------------------------------------------------------------------------|----:|
+| Art. 52 para. 1 (interaction with natural persons)                            |  34 |
+| Art. 52 para. 2 (emotion recognition and biometric categorization)            |   5 |
+| Art. 52 para. 3 (generation or manipulation of image, audio or video content) |   0 |
+</Table>
+
+# 6 Discussion of the results
+
+It is not surprising that no harmful AI systems were found in this study: the self-selection bias of how entries came into the database makes it very unlikely that anyone would publicly announce a system that is deemed to be harmful, e.g., lethal autonomous weapons. Most high-risk systems are in the medical sector. This is not surprising, as it was a highly regulated area before. However, no statement about the distribution of AI products can be derived from this, as the collection of use cases considered does not necessarily correspond to their real distribution. The ratio of systems classified as low-risk (61,28%) to those not classified as low-risk (38,72%) serves as an indication that there is no need to fear over-regulation by the AI Act. However, it may be that the Plattform lernende Systeme just contains an overproportionate number of low-risk systems.
+
+As mentioned before, we were not able to categorize 21 use cases, due to challenges within the AI act. The exact challenges are explained with case IDs below. The full texts of the respective cases are listed in A.
+
+# 6.1 Challenges of applying the AI Act
+
+The regulation refers, especially in the context of the definition of high-risk systems, to 'safety components'. According to Art. 3 No. 14 AI Act, a "safety component of a product or system means a component of a product or of a system which fulfills a safety function for that product or system or the failure or malfunctioning of which endangers the health and safety of persons or property". Whether a use case contains a safety component according to this definition could only be roughly estimated on the basis of the description alone. In 8 cases we could not come to a clear conclusion:
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+· Case 262 involves robotic systems for decontamination in hostile environments. It could be argued that their failure makes human intervention necessary. Since without this product human intervention would be inevitable, it seems reasonable not to classify this product as a high-risk AI system. However, the wording of the regulation is not so clear.
+
+· Case 141 is about the AI-supported development of sea ice maps to support the navigation of ships. It remains unclear if sea maps are somehow integrated in ships; if so, the failure of this system would reduce the safety of the component of a ship. This case raises the question if a 'safety component' must be integrated in a product.
+
+· Case 17 introduces a hearing aid whose noise reduction is optimized with the help of AI. A failure might result in severe hearing difficulties as it is not clear from the description whether there is a fall back to traditional noise reduction. However, the distinction between a 'safety function' and the main function of an AI system is not clear at all.
+
+· Case 42 presents the AI-supported production of plasma. Based on the description we could not asses, whether any mistakes in the production process may lead to safety critical consequences.
+
+· Case 210 involves the development of AI-based radar systems. Whether or not these are safety components depends heavily on how they are integrated and used in an overall system. The question arises as to whether the manufacturer of an initially unregulated AI component would need to determine a specific intended use in order to determine whether it falls under the AI Act. Thus, the responsibility for compliance under the AI Act could fall on the user in the case of a non-intended use. However, the case of a general purpose radar system would most likely fall under the scope of the general purpose AI systems which have become part of the AI Act in its recent version (see Section ??).
+
+· Three cases involve predictive maintenance products (ID 73, ID 367, ID 434). It is unclear whether, if these products fail, classic quality assurance mechanisms will kick in. In this case, these products would presumably not be safety components. Even if this were currently the case, it seems likely that redundant quality assurance mechanisms will be dismantled as trust in predictive maintenance products increases. In this scenario, the products would presumably be safety components. Such considerations are not taken into account by the AI act.
+
+According to the heading of Annex III, No. 1, this category of high-risk AI deals with "Biometric identification and categorization of natural persons", but the detailed explanation only refers to "AI systems intended to be used for the 'real-time' and 'post' remote biometric identification of natural persons", not considering categorizations at all. Case 682 describes a digital advertising surface whose content adapts to passers-by. The passers-by are categorized on the basis of current video information in order to select suitable advertising content. No data is stored in the process. Due to the inconsistency between heading and description of Art. 6 para. 2 i.c.w. Annex III, No. 1, it remains unclear whether this case should be considered a high-risk product. This issue has been addressed by the latest amendmends to the draft AI Act: The category is now purely described as "biometrics", the (single) use case is not limited to 'post' biometric identification any longer. Nonetheless, the use case is still restricted to 'remote' biometric identification. Thus, Case 682 should now be classified as high-risk AI.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+Art. 6 para. 2 i.c.w. Annex III, No. 2 addresses "AI systems intended to be used as safety components in the management and operation of road traffic and the supply of water, gas, heating and electricity". This might mean that any AI system that might lead to power supply failure can be considered a safety component. Cases 189, 529, 93, 274 deal with products that allow dynamic production and/or consumption of energy. Whether scenarios that threaten the power supply are realistic cannot be assessed on the basis of the descriptions. In the current version of the draft AI Act, 'critical digital infrastructure' has been added to the use case. We welcome this amendment, as certain use cases dealing with digital infrastructure - which is highly important for society and our daily lives - did not clearly fall within the scope of the initial AI Act draft (e.g., ID 679).
+
+As Art. 6 para. 2 i.c.w. Annex III, No. 8 deals with "AI systems intended to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts". That means a categorization might not only depend on the product but also on the operator. Case 482 deals with a system that is able to analyze chats to identify adults that try to "obtain private information and photos or even arrange personal meetings" with children. If used by a judicial authority this product would most likely fall under this provision. The description did not mention a specific operator though.
+
+Even though we agreed on how to handle the unclear term interaction (see Section 4.4), we could not agree on whether the cases 25, 670, 232, 537, 539 an 401 would fall under Art. 52(1).
+
+The cases that made it difficult for us to categorize are particularly interesting. They show, on the one hand, where the AI Act needs further sharpening, and on the other hand, how much information is needed regarding the concrete application of a technical system. Additionally, the distribution of the other cases gives an indication of where more regulation is needed and where we could also work with lighter regulation models.
+
+# 6.2 Need for interdisciplinarity
+
+It has become clear that the legal assessment of AI systems based on the AI Act requires both a deep understanding of the law and technical expertise in the AI context. The legal expertise was necessary to get to the bottom of individual legal terms (such as the legal definition of the term safety component) and the many references to other legal texts. For many entries this was the reason for the two computer scientists to tag not sure (65 and 47 times respectively). The expertise in the field of computer science was necessary to understand what is behind certain technologies. For many entries this was the reason for the legal scientist to tag not sure (59 times). Only in 3 cases all participants used the not sure tag.
+
+# 7 Threats to validity
+
+This study is based on a shaky ground, as the database entries were input by whoever wanted to add an entry. In principle, the entries can thus be faked or only describe ideas which are not yet implemented. However, each/most entries were accompanied with a link on which further information could be found which induces more effort for fake entries. Additionally, we are not aware of any advantage for adding AI projects to the Plattform lernende Systeme other than contributing to the landscape of projects in Germany to foster awareness. Due to the self-selection process, the percentage of high-risk or low-risk applications of AI could be higher or lower: it might be that some projects were deemed too unimportant to report or people might not even realize that AI is part of a project16 . High-risk projects might not want to get public attention. Certainly, the database is not known to all persons or companies that use AI systems. Governmental uses of AI systems were not systematically announced here, either.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+Another threat to validity is that the descriptions of the projects were very short. Those, that did not lend itself to a classification, were thus deleted in the preprocessing, however, it might be that a classification would be different if more was known about a specific system and its application.
+
+# 8 Summary and future questions
+
+The percentages of the different classes can only be taken with a large grain of salt. However, the categorization of use cases is as thoroughly worked out and communicated as it can be at the moment. For the Plattform lernende Systeme database, the fear of overregulation does not seem to be confirmed. Furthermore, the high-risk systems in our study were mostly medical systems, which already belong to the most regulated systems in Germany, i.e., they pose a well-known risk and are regulated accordingly. Nonetheless, the public observation of AI based systems on the media seems to focus much more on the high-risk systems. The method can be transferred to other databases to get a more complete picture. It can also be repeated to get a conclusion on the final version of the AI Act when it enters into force. The procedure can also be helpful in the context of the regular review of the list of AI systems in Annex III by the European Commission (see Art. 84 para. 1b AI Act) in order to determine the need to add further AI systems to Annex III (or, if necessary, to delete some).
+
+Our study identified several formulations in the AI Act that are too imprecise to be able to assess all applications. In addition, a few weaknesses regarding its applicability became apparent. In particular, if an application is to be used in several contexts, the application of the AI Act remained unclear due to the fact that a system or a trained model might be used for different purposes. This problem seems to be significantly reduced due to the integration of general purpose AI systems in Art. 4a-4c of the recent draft of the AI Act. Developers of AI systems will have to investigate the possible scope of the systems they provide.
+
+The AI Act is expected to be passed this year (2023) and then undergo a two-year review period. During this time, the approach presented here could be repeated with the then provisionally final version of the AI Act to assess its impact and identify possible improvement.
+
+# 9 Acknowledgement
+
+The research was performed within the project GOAL "Governance of and by algorithms" (Funding code 01IS19020; https://goal-projekt.de/en/) which is funded by the German Federal Ministry of Education and Research and the projects "Deciding about, by, and together with algorithmic decision making systems" and "Explainable Intelligent Systems" (Funding code AZ 98 511; https://www.eis.science), both funded by the Volkswagen Foundation.
+
+# References
+
+\* [1] H. AI, Ethics guidelines for trustworthy ai (2019).
+
+\* 16The reverse also happened: Projects were listed that did not seem to contain a component that would be addressed by the AI act. These were cleaned in the preprocessing step.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+[2] J. N. Mandrekar, Measures of interrater agreement, Journal of Thoracic Oncology 6 (1) (2011) 6-7.
+
+[3] N. Gisev, J. S. Bell, T. F. Chen, Interrater agreement and interrater reliability: key concepts, approaches, and applications, Research in Social and Administrative Pharmacy 9 (3) (2013) 330-338.
+
+# A Full text use cases
+
+All use cases we refer to in this document are listed in full text below. Their original sources are referenced in footnotes, however, the descriptions may change there over time. The entries of finished projects or products that are not available anymore may be removed. The full list of original use cases and how we evaluated them has been uploaded to the journal to provide replicability.
+
+· ID 1517: Im Projekt TraMeExCo werden am Beispiel zweier klinischer Fragestellungen (Pathologie, Schmerzanalyse), neue Verfahren des Maschinellen Lernens erforscht und an verschiedenen Datens¨atzen untersucht (Mikroskopiebilder, Schmerzvideos, EKG-Signale). Im Maschinellen Lernen kann grob zwischen zwei Arten von Lernverfahren ("Black-Box", "White-Box") unterschieden werden. Ein "Black-Box"-Lernverfahren (z. B. Deep Learning) "lernt" durch Beispiele (Bilder, T¨one, Daten, etc.) verschiedene Muster (Klassen). "Black-Box"-Verfahren werden in den letzten Jahren immer erfolgreicher eingesetzt, allerdings haben sie den Nachteil, dass die interne Verarbeitung der Eingabeparameter f¨ur den Betrachter nicht nachvollziehbar ist. Bei einem "White-Box"-Verfahren kann der Beobachter nachvollziehen bzw. begr¨unden, wie die Eingabedaten verarbeitet werden, allerdings sind diese Verfahren bei weitem nicht so erfolgreich in der Mustererkennung. Die Hauptaufgabe im Projekt ist, durch die Kombination von "Black-Box"-Lernverfahren mit "White-Box"-Lernverfahren, die Nachvollziehbarkeit der gefundenen Erkenntnisse f¨ur den Arzt zu erh¨ ohen und die erfolgreiche Mustererkennung weiter zu erm¨oglichen. Hierbei sollen auch die zugrundeliegenden Unsicherheiten von System und Daten beachtet werden. Als Ergebnis des Projektes entstehen zwei prototypische "Transparente Begleiter f¨ur Medizinische Anwendungen", die die relevanten Informationen in den großen Datenmengen f¨ur die ¨Arzte einfacher zug¨anglich machen.
+
+· ID 1718 : Die Reduzierung unerw¨unschter Umgebungsger¨ausche ist ein wichtiges Merkmal heutiger H¨ orger¨ ate. Daher ist die L¨ armreduzierung heute in fast jedem handels¨ublichen Ger¨at enthalten. Die Mehrheit dieser Algorithmen beschr¨ankt sich jedoch auf die Reduzierung von station¨aren Ger¨auschen. Aufgrund der Vielzahl unterschiedlicher Hintergrundger¨ ausche im Alltag ist es schwierig, heuristische L¨ osungen f¨ur alle Ger¨auschkulissen zu finden. Deep learning basierte Algorithmen stellen eine m¨ogliche L¨ osung f¨ur dieses Dilemma dar, aber manchmal fehlt es ihnen an Robustheit und Anwendbarkeit im strengen Kontext von H¨ orger¨ aten.
+
+In diesem Projekt untersuchen wir mehrere deep learning Methoden zur St¨orger¨ auschreduzierung unter den Bedingungen moderner H¨ orger¨ ate. Dies beinhaltet eine Signalverarbeitung mit geringer Latenzzeit sowie den Einsatz einer im H¨ orger¨ at eingesetzten Filterbank. Ein weiteres wichtiges Ziel ist die Robustheit der entwickelten Methoden. Daher werden die Verfahren mit reale Rauschsignale getestet, die mit H¨ orger¨ aten aufgenommen wurden.
+
+Die Reduzierung unerw¨unschter Umgebungsger¨ausche ist ein wichtiges Merkmal heutiger H¨ orger¨ ate. Daher ist die L¨ armreduzierung heute in fast jedem handels¨ublichen Ger¨at enthalten. Die Mehrheit dieser Algorithmen beschr¨ankt sich jedoch auf die Reduzierung von station¨aren Ger¨auschen. Aufgrund der Vielzahl unterschiedlicher Hintergrundger¨ ausche im Alltag ist es schwierig, heuristische L¨ osungen f¨ur alle Ger¨auschkulissen zu finden. Deep learning basierte Algorithmen stellen eine m¨ogliche L¨ osung f¨ur dieses Dilemma dar, aber manchmal fehlt es ihnen an Robustheit und Anwendbarkeit im strengen Kontext von H¨orger¨ aten.
+
+\* 17 https://www.plattform-lernende-systeme.de/anwendung.html?AID=516
+
+\* 18 https://www.plattform-lernende-systeme.de/anwendung.html?AID=831
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+· ID 2519: Elf Milliarden Mahlzeiten werden j¨ahrlich in europ¨aischen Kantinen serviert. Die manuelle Bezahlung dieser Mahlzeiten f¨uhrt nicht nur zu langen Wartezeiten f¨ur die Kunden, sondern auch zu hohen Kosten f¨ur die Betreiber. auvisus erm¨oglicht einen Self-Checkout durch Bildverarbeitung mit k¨unstlicher Intelligenz: Kunden platzieren ihr Tablett einfach unter einer Kamera - dort erkennt ein Algorithmus die Gerichte: sofort und pr¨azise.
+
+· ID 4220 : Die Forschungsgruppe Laser- und Plasmatechnologie ist ein Teil der Fakult¨ at Naturwissenschaft und Technik der Hochschule f¨ur angewandte Wissenschaft und Kunst Hildesheim/ Holzminden/ G¨ottingen (HAWK). Die Kernkompetenz der Forschungsgruppe ist die Forschung an kalten Atmosph¨arendruckplasmen. Im Zuge dessen, werden in der Forschungsgruppe seit vielen Jahren speziell ausgerichtete Plasmaquellen gebaut, erforscht und optimiert.
+
+Da die Plasmaqualit¨ at von vielen Parametern abh¨angt, ist Prozesssicherheit bei Plasmabehandlungen ein wichtiges Thema. Insbesondere Umwelteinfl¨usse wie Luftdruck, Luftfeuchte und Lufttemperatur haben einen sehr starken Einfluss auf das Plasma. Aber auch Parameter wie der Abstand von Plasmaelektrode zu Substrat oder das Prozessgasgemisch sind von großer Bedeutung.
+
+Um diese und weitere Einfl¨usse bei der Plasmaerzeugung zu kompensieren, werden in der Forschungsgruppe Sensoren zur schnellen Detektion von Plasmaeigenschaften entwickelt. Da Plasma ein sehr starker elektromagnetischer St¨orer ist, ist diese Arbeit nicht trivial. Auf Basis der Sensordaten, entwickelt die Forschungsgruppe intelligente Algorithmen, welche Plasmaquellen dauerhaft in einem Arbeitspunkt ausregeln k¨onnen.
+
+Abh¨angig vom gew¨ahlten Arbeitspunkt k¨onnen Plasmaquellen unterschiedliche Effekte erzeugen. So k¨onnen Sie zur Aktivierung, zur Beschichtung oder zur Feinstreinigung von Oberfl¨ achen genutzt werden. Aber auch weitere Anwendungen sind in unterschiedlichen Arbeitspunkten m¨oglich. Dazu z¨ ahlen die Desinfektion von Oberfl¨ achen, eine erh¨ohte Keimung von Saatgut, die Beseitigung von Sch¨ adlingen und das Heilen von Wunden.
+
+Durch die Forschung an intelligenten Algorithmen, k¨onnen Plasmaquellen geschaffen werden, die selbstst¨andig vorgegebene Arbeitspunkte anfahren und halten. Auf Basis dieser Technologie kann Prozesssicherheit f¨ur vielf¨ altige Plasmaanwendungen dauerhaft und unabh¨ angig von Umwelteinfl¨ussen gew¨ahrleistet werden.
+
+· ID 7321: Die Flugzeugproduktion steht vor zahlreichen technischen Herausforderungen, wie z.B. großen Produktabmessungen, komplexen F¨ugeverfahren und der Organisation von Montageaufgaben im Rahmen der stetig steigenden Flugzeugproduktion.
+
+Durch die Ausstattung eines Human-Robot-Collaboration-f¨ahigen Systems mit Kamera, KraftDrehmoment- und Laser-Linien-Sensoren ist eine kollaborative Qualit¨ atspr¨ufaufgabe von Mensch und Roboter m¨oglich. Zus¨atzlich werden die Sensoren eingesetzt, um den Nietvorgang in Echtzeit zu ¨uberwachen und Endkontrollaufgaben mittels KI durchzuf¨uhren, was den Produktionsprozess schneller und effizienter macht.
+
+\* 19 https://www.plattform-lernende-systeme.de/best-practice.html?AID=814
+
+\* 20This use case is no longer available online
+
+\* 21 https://www.plattform-lernende-systeme.de/anwendung.html?AID=765
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+Die aus dem Scan gewonnenen Daten werden durch ein trainiertes neuronales Netzwerk geleitet, um das betreffende Objekt als gut oder schlecht in Bezug auf die Qualit¨ at zu klassifizieren.
+
+Um eine umfassende L¨ osung zu entwickeln, visualisiert eine Augmented-Reality-Anwendung den aktuellen Status des Prozesses und erm¨oglicht eine intuitive Interaktion mit dem System. Dies erm¨oglicht es dem Bediener, notwendige Wartungsarbeiten m¨uhelos durchzuf¨uhren.
+
+· ID 9322: Der steigende Anteil energieproduzierender Privatverbraucher (sog. Prosumer), die ihren eigenen Strom aus erneuerbaren Energien mit hohen Schwankungen produzieren, verlangt von den Energieversorgern nachvollziehbare Vorhersagen und ein viel genaueres Verst¨andnis der Entwicklung des lokalen Energiebedarfs als bislang m¨oglich, um diesen mit der lokalen Produktion zu harmonisieren und optimal zu gestalten. Diese Situation stellt eine besondere Herausforderung f¨ur kleinere Stadtwerke und Energieanbieter dar, die keinen Zugang zu sophistizierten Modellierungs- und Prognosemethoden und zum f¨ur ihre Anwendung erforderlichen Fachwissen haben. Auch stellen die oft nicht direkt nachvollziehbaren Funktionsweisen und Ergebnisse der zugrundeliegenden KI-Methoden existierender L¨ osungsans¨atze eine große H¨urde f¨ur ihre Anwendung dar.
+
+Diesem Problem wird im SIT4Energy-Projekt durch einen Ansatz begegnet, welcher Methoden des maschinellen Lernens mit visueller Analytik kombiniert, um erkl¨ arbare Vorhersagen und Analysen des lokalen Energiebedarfs in Prosumer-Umgebungen zu erm¨oglichen. Auf dieser Basis wird ein nutzerzentriertes interaktives Werkzeug entwickelt, mit welchen auch kleinere Energieversorger effektive Vorhersagen des lokalen Energiebedarfs anhand historischer Daten und Simulationsparameter f¨ur verschiedene Szenarien auf eine f¨ur sie nachvollziehbare Weise erstellen und analysieren k¨onnen.
+
+· ID 12123: BirdieMatch ist das Job-Matching-Portal f¨ur Logistiker und funktioniert nach dem Prinzip von Partnerb¨orsen. Der Rekrutierungsprozess wird durch Matching-Technologie digitalisiert. So ist eine innovative Online-Plattform entstanden, die als digitaler Headhunter fungiert. Das Besondere ist neben der Technologie die Spezialisierung auf Logistikberufe. Mehr als 600 logistikspezifische Matching-Kriterien bringen Stellen und Arbeitskr¨ afte auf fachlich/sachlicher Ebene schnell und einfach zusammen. Zudem werden die Heart-Skills der Kandidaten sowie Benefits der Unternehmen einbezogen. Die Matching-Technologie ist nicht nur durch mehr als 20-j¨ ahrige Erfahrung im Bereich Logistik & Recruiting entstanden, sondern wird auch st¨andig durch neue Trainingsdaten weiter optimiert.
+
+BirdieMatch konzentriert sich derzeit allein auf Logistiker und zeichnet sich hier durch die M¨ oglichkeit sehr tiefreichender und fachlicher Beschreibungen von Kenntnissen, Erfahrungen und Jobanforderungen aus, die miteinander gematcht werden.
+
+· ID 14124: Mittels neuronaler Netzwerke werden Signaturen von verschiedenen Meereisklassen auf SAR Bildern vollautomatisch unterschieden und so hochaufl¨osende Eiskarten in naheEchtzeit erstellt. Dar¨uber hinaus wird die Eisdrift abgeleitet und so eine Kurzzeitvorhersage der Eisverh¨ altnisse erm¨oglicht. Auf Basis dieser Daten werden Risikokarten erstellt, die zur Navigationsunterst¨utzung verwendet werden k¨onnen oder auf deren Basis direkt Routenempfehlungen gegeben werden. Besonders f¨ur Schifffahrtswege wie die arktische Nord-Ost- und Nord-West-Passagen mit hoher wirtschaftlicher Attraktivit¨ at aufgrund der k¨urzeren Distanz wird so die Sicherheit des Schiffsverkehrs erh¨ oht.
+
+\* 22This use case is no longer available online
+
+\* 23This use case is no longer available online
+
+\* 24 https://www.plattform-lernende-systeme.de/anwendung.html?AID=687
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+· ID 18925: Um die Energiewende zu schaffen, bedarf es einer Vielzahl von Anstrengungen. Eine ist die Ausnutzung des Lastenverschiebungspotenzials, welches durch den Einsatz von erneuerbaren Energien immer mehr an Bedeutung gewinnt. Dies bedingt eine Ver¨anderung und Steuerung des Verhaltens von Energieerzeugern und -verbrauchern. Die hierf¨ur notwendigen Anreize k¨onnen z.B. ¨uber dynamische Stromtarife gesetzt werden. Auf der Basis von Verbrauchsinformationen, wie sie bspw. von Smart-Metern zur Verf¨ugung gestellt werden, er¨offnen sich im Zusammenspiel mit Heimautomationsanlagen neue M¨oglichkeiten f¨ur eine Lastenverschiebung im privaten Umfeld. Um die Kundenakzeptanz zu erh¨ ohen, muss sowohl die Auswertung der Verbrauchsinformation als auch die Auswahl des Tarifs automatisch erfolgen k¨onnen.
+
+Eine automatisierte Aussch¨ opfung des Lastenverschiebungspotenzials kann nur erfolgreich sein, wenn Anreize gesetzt werden (hier durch dynamische Stromtarife), und wenn auch technisch wenig interessierte Nutzer diese verwenden k¨onnen. Daher kommen auf Verbraucherseite maschinelle Lernalgorithmen zum Einsatz, die ohne aktive Eingriffe des Nutzers den Stromverbrauch optimieren und sich an Ver¨anderungen anpassen k¨onnen, ohne f¨ur den Nutzer negative Entscheidungen zu treffen.
+
+· ID 21026: Die hochaufl¨osenden automotive 3D Radarsensoren der neuesten Generation der Astyx GmbH sind erstmalig in der Lage, gen¨ugend dichte Daten zu liefern, anhand derer eine robuste 3D Objekterkennung mit geringer Anzahl an Falschzielen und somit stark erh¨ ohter Zuverl¨assigkeit m¨oglich ist.
+
+Diese robuste Erkennung kann jedoch nur mit Deep Learning basierten, auf untrainierte Situationen generalisierenden Verfahren der KI bewerkstelligt werden.
+
+Dadurch erlangt die Astyx GmbH erstmalig die algorithmische Bef¨ ahigung eines solchen, hochaufl¨osenden Automotive Radars zur wetterunabh¨ angigen und st¨orsicheren Fahrumfelderkennung f¨ur die Anwendung im automatisierten bis autonomen Fahren (Level 3-5).
+
+· ID 23227: Um Kunden einen besseren ¨Uberblick ihrer Finanzen zu bieten hat die Commerzbank AG gemeinsam mit Accenture reagiert und das digitale, KI-basierte Produkt "CashRadar" in einem hochgradigen agilen und vollst¨andig Cloud-basierten Liefermodell entwickelt. Herzst¨uck der Applikation ist der Prognose-Algorithmus basierend auf der Technologie "R".
+
+Mithilfe des CashRadars k¨onnen Unternehmer ihre zuk¨unftige Liquidit¨at berechnen. Basierend auf den Umsatzdaten des Nutzers berechnet der CashRadar eine Liquidit¨atsprognose von bis zu 120 Tagen in die Zukunft. Der Liquidit¨atsmanager stellt dem Nutzer eine Gesamt¨ubersicht der gebuchten und prognostizierten Zahlungsein- und -ausg¨ ange, ¨uber einen Zeitraum von insgesamt 7 Monaten, bereit.
+
+Mit CashRadar beh¨alt der Unternehmer alle Ums¨atze im Blick, kann Handlungsbedarf fr¨uhzeitig identifizieren und kennt die aktuellen M¨ oglichkeiten und zuk¨unftigen Potentiale seines Unternehmens.
+
+· ID 26228: M¨ussen chemisch verseuchte Areale saniert oder kerntechnische Anlagen zur¨uckgebaut werden, sind die Arbeiter - allen Vorsichtsmaßnahmen und Schutzausr¨ustungen zum Trotz - erheblichen Gesundheitsrisiken ausgesetzt.
+
+\* 25 https://www.plattform-lernende-systeme.de/anwendung.html?AID=642
+
+\* 26 https://www.plattform-lernende-systeme.de/anwendung.html?AID=1252
+
+\* 27This use case is no longer available online
+
+\* 28This use case is no longer available online
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+ROBDEKON steht f¨ur "Robotersysteme f¨ur die Dekontamination in menschenfeindlichen Umgebungen" und ist der Erforschung von autonomen oder teilautonomen Robotersystemen gewidmet, damit Menschen der Gefahrenzone in Zukunft fernbleiben k¨onnen.
+
+Das FZI erforscht im Rahmen des Projektes, wie mobile Roboter mit k¨unstlicher Intelligenz beispielsweise automatisierte kraftbasierte Greifstrategien beim Bergen von Gefahrenstoffen nutzen und so den Bediener entlasten. F¨ur die weitere Nutzerunterst¨utzung mit Hilfe k¨unstlicher Intelligenz arbeitet das FZI außerdem an den Themen 3D-Umgebungserfassung, sichere Navigation, aber insbesondere auch an intuitiven Eingabemethoden mit Augmentedoder auch Virtual-Reality-Technologien.
+
+· ID 27329: Die automatische Online-Klassifikation kritischer Netzsituationen (z.B. Generatorund Leitungsausf¨ alle) auf Basis hochdynamischer Phasormessungen erm¨oglicht die Einleitung von Gegenmaßnahmen zur Vermeidung von Versorgungsausf¨allen und erh¨ oht die Netzstabilit¨ at. Hierzu wurde neuartige Assistenzsysteme entwickelt zur Erg¨ anzung klassicher ¨Ubertragungsnetzleitwarten unter Einsatz maschineller Lernverfahren (z.B. Rekurrente Neuronale Netze). Verschiedene Ans¨ atze wurden hierzu umgesetzt zur Auswertung von Online-Daten sowie zur un¨uberwachten Extraktion kritischer Fehlermuster in historischen Massendaten. Die Umsetzung der Methoden erfolgte in Python sowie Matlab unter Verwendung verschiedener ML-Toolboxen (z.B. Keras, Scikit, Tslearn).
+
+· ID 27430: Verluste des H¨ ochstspannungsnetzes m¨ussen vom ¨Ubertragungsnetzbetreiber (¨UNB) an der B¨orse im Voraus beschafft werden. Dazu wird ein separater Bilanzkreis vom ¨UNB bewirtschaftet. Grundlage der Beschaffung ist eine Prognosemethode, die vom Fraunhofer IOSB-AST entwickelt wurde und auf KI Technologie basiert. Die Methode ist Teil der Modellbibliothek der Softwarel¨osung EMS-EDM PROPHET(r). Weiterhin ist die Methode in als Deep Learning Methode in Keras umgesetzt.
+
+· ID 29531: Ziel dieses Projekts ist die Erforschung und Entwicklung geeigneter Methoden zum robusten und erkl¨ arbaren Maschinellen Lernen auf zwei komplement¨ aren Anwendungen aus dem Gesundheitsbereich. Dazu soll der Nachweis der M¨ oglichkeit einer (diagnostischen) Vorhersage auf komplexen Daten und der damit verbundenen Transparenz und Erkl¨ arung dieser Entscheidung gegen¨uber dem klinischen Fachpersonal mittels geeigneten Verfahren erbracht werden. Ein weiteres Ziel ist durch die Modellierung von Unsicherheiten in den Eingangsdaten eine Fehlerabsch¨ atzung der Vorhersagen zu ermitteln. Als Fallbespiele werden dabei zwei Szenarien der klinischen Routineversorgung adressiert (Pathologie, Schmerzanalyse). Als Ergebnis entstehen zwei prototypische "Transparente Begleiter f¨ur Medizinische Anwendungen" f¨ur diese beiden klinischen Fragestellungen.
+
+Partner im Verbundsprojekt ist die Otto-Friedrich-Universit¨at Bamberg.
+
+· ID 36732: Das Straßennetz der DACH-L¨ ander unterliegt einem permanenten Alterungsprozess und ben¨otigt eine m¨oglichst l¨uckenlose Zustandserfassung und -bewertung um notwendige bauliche Maßnahmen fr¨uhzeitig durchf¨uhren zu k¨onnen. Dazu ist eine regelm¨ aßige Erfassung der Fahrbahnoberfl¨ ache notwendig. Bei der bildhaften Erfassung mit Messfahrzeugen wird bereits ein hoher Automatisierungsgrad erreicht. Die Auswertung des Bildmaterials erfolgt jedoch bisher nur durch menschliche Experten. Dieser Prozess ist zeitintensiv und fehleranf¨allig.
+
+\* 29 https://www.plattform-lernende-systeme.de/anwendung.html?AID=542
+
+\* 30This use case is no longer available online
+
+\* 31 https://www.plattform-lernende-systeme.de/anwendung.html?AID=516
+
+\* 32 https://www.plattform-lernende-systeme.de/anwendung.html?AID=465
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+Im Forschungsprojekt kann gezeigt werden, dass unter Einsatz von Convolutional Neural Networks vielversprechende automatisierte Erkennungsleistungen erreicht werden. Zur Erh¨ ohung der Generalisierungsf¨ahigkeit soll eine breitere Datenbasis eingesetzt werden, welche unterschiedliche Straßenoberfl¨ achen im D-A-CH Raum abdeckt. Dabei soll mittels Maschineller Lernverfahren gezielt untersucht werden, welche Daten den gr¨oßten Beitrag zu guter Generalisierung leisten.
+
+· ID 40133: ARADIN ist ein Robo-Advisor zur effizienten Beratung von Privatkunden f¨ur Ihre finanzielle Risikoabsicherung und Vorsorge. Die vielf¨ altigen M¨ oglichkeiten einer Absicherung ¨uberfordert Berater als auch eine regelbasierte Ermittlung. Basierend auf der Finanzanalyse nach DIN7723 wird gemeinsam mit dem Kunden und Vermittler die KI mit relevanten Daten beliefert. ARADIN wird aktuell mit Millionen von F¨allen trainiert, um optimierte Handlungsempfehlungen f¨ur Absicherung und Vorsorge zu ermitteln. Ziel: Steigerung der Beratungsqualit¨at f¨ur den Kunden und effizienterer Vertrieb. Das Projekt ist gef¨ordert durch das Bundesministerium f¨ur Wirtschaft und Energie auf Beschluss des Deutschen Bundestages.
+
+· ID 41434: AnyPPA, kurz f¨ur Anonymous Predictive People Analytics, besch¨ aftigt sich mit der datenschutzkonformen Auswertung von Daten. Kernziel ist dabei die Verringerung von Defiziten in der Personalentwicklung und -auswahl in Unternehmen, beispielsweise hinsichtlich Diversit¨at und Fairness.
+
+Der Fokus liegt auf fortgeschrittenen pr¨adiktiven Datenverarbeitungsverfahren, mit welchen Daten aus einer Vielzahl von IT-Systemen f¨ur die Verbesserung von unternehmerischen Entscheidungen genutzt werden k¨onnen. anacision denkt "People Analytics" (die Analyse von Besch¨ aftigtendaten) neu und aus Sicht der Besch¨ aftigten. Zudem werden systematische Schwachstellen in der gesamten Personalentwicklung aufgedeckt und minimiert (z.B. Subjektivit¨at, Biases in Personalauswahl und -entwicklung, F¨orderung von Diversit¨at und Fairness). Im Ergebnis sollen HR-Verantwortliche dabei unterst¨utzt werden, Entscheidungen zu treffen, die auf empirischen Erkenntnissen basieren und zum Unternehmenserfolg beitragen.
+
+· ID 43435: Um Wasserverluste in einem Leitungsnetz zu reduzieren, m¨ussen auftretende Sch¨ aden zeitnah lokalisiert und das Netz im Sinne einer nachhaltigen Rehabilitationsstrategie kontinuierlich erneuert werden. Die Lokalisierung von auftretenden Sch¨ aden ist dabei von verschiedenen Faktoren abh¨angig. Bei den Stadtwerken M¨unchen ist es bisher notwendig, das Leitungsnetz kontinuierlich zu begehen und abzuhorchen, um Sch¨aden zu identifizieren.
+
+Aktuell setzen die Stadtwerke M¨unchen ein Konzept der bilanzierbaren Zonen um. Ziel der SWM Infrastruktur GmbH&CoKG ist es, durch den Einbau verschiedener Sensoren im Leitungsnetz Daten zu Durchfluss, Druck, Temperatur und Ger¨ausch aufzuzeichnen, um diese Daten nach vorgegebenen Mustern automatisch durchsuchen zu lassen. Im Ergebnis wird erwartet, dass auftretende Sch¨ aden automatisiert und deutlich schneller erkannt werden k¨onnen. Somit wird die Lecklaufzeit, die maßgeblich f¨ur die H¨ ohe der Wasserverluste ist, deutlich verk¨urzt und das vorhandene Personal kann zielgerichteter eingesetzt werden.
+
+· ID 46836: Luminovo entwickelt KI basierte L¨ osungen zur Automatisierung von repetitiven und kostenintensiven Aufgaben. Das Hybride System unterst¨utzt den Mensch beim Klassifizieren und ¨Uberpr¨ufen von Bildern und Texten sowie dem Extrahieren von Informationen. Das
+
+\* 33 https://www.plattform-lernende-systeme.de/anwendung.html?AID=431
+
+\* 34 https://www.plattform-lernende-systeme.de/anwendung.html?AID=423
+
+\* 35 https://www.plattform-lernende-systeme.de/anwendung.html?AID=333
+
+\* 36 https://www.plattform-lernende-systeme.de/anwendung.html?AID=288
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+

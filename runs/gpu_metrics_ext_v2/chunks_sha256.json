@@ -1,0 +1,30 @@
+{
+ "ext/sw0_rc1": {
+  "path": "runs/sdp_sweep_ext_v4/sw0_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "644a531e5dc2e0010781f3a6f1a53402ca5e26f610abe791ffd0d1ebccf4cf4a"
+ },
+ "ext/rc1": {
+  "path": "runs/sdp_sweep_ext_v4/rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "e701df4a1ce9556dab9f1ddf2fd91b180299c5e4b8179a37190b90881c112b5f"
+ },
+ "ext/keepcont_rc1": {
+  "path": "runs/sdp_sweep_ext_v4/keepcont_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "55f227b1a0b0a03b01889afafb93ccda6b66bb0a37da7e5365e7ccc39a8e7153"
+ },
+ "ext/noart_rc1": {
+  "path": "runs/sdp_sweep_ext_v4/noart_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "1569a559428cf84885c9fc91977c187ea838a32ba0efd8f4c98827af3d517a00"
+ },
+ "clair/sw0_rc1": {
+  "path": "runs/sdp_sweep_v2/sw0_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "b47b8975ece48d34a156e74943e4eb01e0bab49d97cdf4c36003bc4c69c08a85"
+ },
+ "clair/keepcont_rc1": {
+  "path": "runs/sdp_sweep_v4/keepcont_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "26866d79fc6aae23b3ae1713cb9a44f55710a4761e32dbced827b17ba1b276d0"
+ },
+ "clair/noart_rc1": {
+  "path": "runs/sdp_sweep_v4/noart_rc1/chunks/small_merged/chunks.parquet",
+  "sha256": "d8c68f00a1e06f3ff842f2c657052a1f53508d93384d4713e805b6d88b8e15c7"
+ }
+}

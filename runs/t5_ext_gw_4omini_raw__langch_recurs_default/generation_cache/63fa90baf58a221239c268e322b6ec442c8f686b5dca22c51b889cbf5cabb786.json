@@ -1,0 +1,10 @@
+{
+  "request_hash": "63fa90baf58a221239c268e322b6ec442c8f686b5dca22c51b889cbf5cabb786",
+  "prompt_sha256": "0293cfa4c071b3d8df4e8191b43672a8c5ba557ff053d91073147dc7a7473496",
+  "answer": "The HAIG framework proposes to handle AI systems that operate across multiple risk categories, such as foundation models, by allowing precise governance calibration based on specific application contexts rather than forcing classification into a single category. It enables continuous governance guidance without requiring arbitrary classification, tracking incremental movement along dimensions before major thresholds are crossed. This approach facilitates preventive rather than reactive governance, addressing the implementation gap between categorical rules and the complex reality of AI systems that exhibit contextual variation across applications.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN5eSQIC7dgiYUwCYqKPFXCsCYnh",
+  "prompt_tokens": 7166,
+  "completion_tokens": 91,
+  "actual_usd": 0.0011294999999999999
+}

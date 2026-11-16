@@ -1,0 +1,14 @@
+{
+  "request_hash": "102f4622f3036bbda4fd43f892ff3e48706b1b46125d1c736525070c7ebd1685",
+  "prompt_sha256": "e9ce5aaa1c363099db374f65cc11a5d46cbb7754cdad412123bd7737f4382574",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLWthTFR9mxWr07efuCE1TEMqMS",
+  "prompt_tokens": 7553,
+  "completion_tokens": 38,
+  "actual_usd": 0.00115575,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly mentions 'Safety Assessment Principles (SAPs)' from the ONR, directly supporting the claim made in the reference answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "c4ad3358698d12837f388d0e307e72604b6e9486767409ecaa14b6c94573c902",
+  "prompt_sha256": "e922723120077b318e5190d465092ebb625b97d373ecbd84feedcc842d519658",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNadwYgDNMLyOHJqmMutamckMEVC",
+  "prompt_tokens": 8512,
+  "completion_tokens": 44,
+  "actual_usd": 0.0013032,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive overview of Responsible AI (RAI), including its definitions, frameworks, and implementation challenges, fully supporting the claims made in the Reference Answer."
+  }
+}

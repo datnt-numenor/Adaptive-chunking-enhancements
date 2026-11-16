@@ -1,0 +1,14 @@
+{
+  "request_hash": "8553f840b6883092335f2390c21d3d413ac09a5521f587842a3086f7daa8dcea",
+  "prompt_sha256": "bc5a4fbf105e92f5aea2bbda4283d5072fe97cfdad3fd7c71637562a77f024ec",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPB6VVQ0w0xY92FyYzEAsvWWRXI4",
+  "prompt_tokens": 7088,
+  "completion_tokens": 51,
+  "actual_usd": 0.0010938,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that exclusive hosting on a provider's platform, even if access is free, constitutes monetisation, which disqualifies the model from open-source exemptions."
+  }
+}

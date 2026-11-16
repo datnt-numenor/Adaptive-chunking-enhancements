@@ -1,0 +1,14 @@
+{
+  "request_hash": "49d1dddf8fbdd77c6a15d31730a98718031f86b3e80626c10878442ac0e4cba2",
+  "prompt_sha256": "f0d0cdcd34534c4bdbaf6a93d54b73f2200713ff505680fc2b6b3f2eb629f424",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO6BmisP1oXa5iV3H2cSsVITAqaE",
+  "prompt_tokens": 5535,
+  "completion_tokens": 52,
+  "actual_usd": 0.00086145,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics and a Chi-square test result that fully supports the claims made in the Reference Answer regarding the proportions of articles covering Socioeconomic & Environmental Risks in South Africa and the U.S."
+  }
+}

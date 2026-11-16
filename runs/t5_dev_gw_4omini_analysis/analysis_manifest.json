@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "label": "gpt-4o-mini-2024-07-18 qua gateway (phat trien)",
+  "started_at": "2026-11-08T19:17:19.477538+00:00",
+  "command": [
+    "D:\\Project\\adaptive-chunking\\runs\\analyze_answers_table5.py",
+    "--judge-dir",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\judge-full",
+    "--summary",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\summary\\table5_summary.json",
+    "--retrieval-eval",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2_results\\table5_v2\\evaluation-full",
+    "--prepared",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2\\prepared",
+    "--label",
+    "gpt-4o-mini-2024-07-18 qua gateway (phat trien)",
+    "--output-dir",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini_analysis"
+  ],
+  "script_sha256": "0935e0861ca873fcfe8a5435a81c32fb918fcef0eb787f60e5c3fd903cbd82d5",
+  "inputs": {
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\summary\\table5_summary.json": "e05c39aa39aa8f87c5bb8b2addad7c41ada422bc4a5fdb39249d41d7788d0149",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2_results\\table5_v2\\evaluation-full\\per_query_metrics.jsonl": "cd9e31ea18a94ba1e0cbd7ce6ace493c0607dbd85eea797116bfb7bee3c82c48",
+    "D:\\Project\\adaptive-chunking\\runs\\table5_v2\\prepared\\folds.jsonl": "5eb74171aee489969c3eef6ddde96a3aa6117dbe86e584acb519ed65272f495f",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\judge-full\\adaptive\\generated_questions_evaluation_results.json": "55ef0d157c2a191b636deb72bcc528878ffac275768a3c18c86499a15c73d444",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\judge-full\\raw__langch_recurs_default\\generated_questions_evaluation_results.json": "a0facbf874b453da9c9bb08f6ae0d38cd18ffdec886b43c8d50fdbba01409024",
+    "D:\\Project\\adaptive-chunking\\runs\\t5_dev_gw_4omini\\judge-full\\raw__page\\generated_questions_evaluation_results.json": "468c652c4ece5547d32cdbc2c6d2440b60e4e1bd4ffd5e63628392428a9e92dc"
+  },
+  "seed": 2026,
+  "bootstrap_samples": 10000,
+  "abstention_rule": "substring",
+  "summary_reproduction_gap": 1.4210854715202004e-14,
+  "identical_context_pairs": {
+    "adaptive~raw__langch_recurs_default": 0,
+    "adaptive~raw__page": 11,
+    "raw__langch_recurs_default~raw__page": 0
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  }
+}

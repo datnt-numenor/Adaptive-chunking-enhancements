@@ -1,0 +1,20 @@
+{
+  "primary": "recall@10",
+  "budget_tokens": 7929,
+  "candidates": [
+    "adaptive__doc",
+    "sdp_a_t600__doc",
+    "raw__langch_recurs_default__doc",
+    "sdp_a_t600"
+  ],
+  "references": [
+    "adaptive"
+  ],
+  "run": "runs\\table5_repr_results\\table5_sdp",
+  "qa": "runs\\table5_v2\\qa-full\\qa_frozen.jsonl",
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "unit": "document"
+}

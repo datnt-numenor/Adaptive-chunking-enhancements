@@ -1,0 +1,14 @@
+{
+  "request_hash": "7bce7c8e318b1d2f6fe6f10f7ecdb8dd5583878c9b83921f498d2eb082412edf",
+  "prompt_sha256": "8d57245275a9fd275533ca52a99c0606daabac6f72c0091cca43551325a1b928",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOd56oRy2i8BG3MGTMZ73x7PXERm",
+  "prompt_tokens": 9038,
+  "completion_tokens": 42,
+  "actual_usd": 0.0013809,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how Predpol software directs police to areas with higher recorded offences, leading to biased data and reinforcing existing inequalities."
+  }
+}

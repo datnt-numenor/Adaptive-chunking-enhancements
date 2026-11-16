@@ -1,0 +1,10 @@
+{
+  "request_hash": "e02c853c29adbc335802da87cb5b1d72b24f7ea5f392de2cc211627254c73cc0",
+  "prompt_sha256": "bc5e98e4f2cfe17f99dfb8a0a4e36cee4b2c2489439bccacb304488aa353ee3b",
+  "answer": "Some fairness metrics can become unusable due to invalid mathematical operations, such as division by zero, which can cause the metric to crash upon computation and output no scores for fairness assessment.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNBU0aOkAa6nBG1qBw5x4AuFFruM",
+  "prompt_tokens": 9939,
+  "completion_tokens": 36,
+  "actual_usd": 0.0015124499999999998
+}

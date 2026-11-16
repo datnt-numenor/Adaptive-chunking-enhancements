@@ -1,0 +1,14 @@
+{
+  "request_hash": "f77962e99653e4c24f4072e497471b620c2d931a4a75b33cae8cdcbd8bcc6215",
+  "prompt_sha256": "1970ae82ec46acc106dc3520f09a6dc8df287e4bdfa8a0deec11df3ce9eeef99",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOgHGf4bp3YntC7vXi18LGnL0fC9",
+  "prompt_tokens": 7645,
+  "completion_tokens": 43,
+  "actual_usd": 0.0011725499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive details about the structure and requirements of model cards, including the Evaluation Data section, which aligns fully with the claims made in the Reference Answer."
+  }
+}

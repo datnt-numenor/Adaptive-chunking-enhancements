@@ -1,0 +1,389 @@
+DOCUMENT: arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law
+
+<<<PAGE 11>>>
+· It checks $y -the value in the register y- and if it is larger than 0, then it will makes the value in the register y one smaller
+
+(If $y > 0, then $y := $y - 1)
+
+otherwise (that is, if $y = 0) it will HALT.
+
+Let us see for example how Π will act when we give it the input 3. Then, a run of Π(3) would go as follows:
+
+· In the first step Π reads the input and stores it at the register y so that $y = 3;
+
+· In the next step, Π checks if $y is larger than 0. Since 3 > 0 it proceeds to replace the current value 3 of the register by 3 - 1 so that we get $y = 2;
+
+· In the next step, Π checks if $y is larger than 0. Since 2 > 0 it proceeds to replace the current value 2 of the register by 2 - 1 so that we get $y = 1;
+
+· Repeating we get at the next step that $y = 0;
+
+· In the next step, it checks if $y is larger than 0. Since it is not the case that 0 > 0 the program will simply HALT by definition of its code.
+
+We conclude that the program Π on input 3 does indeed give rise to a terminating computation. That is, the computation halts and we write Π(3) ↓ to denote this. It is of course easy to see that this program Π simply subtracts 1 from the input until hitting 0 when it will halt. Thus Π will halt on any natural number as input. Actually, the Π that we have described above is more like an algorithm than a program. A program would be an algorithm implemented in one of the standard programming languages like C, Pascal or similar. We will refrain from distinguishing programs and algorithms here.
+
+Let us now see an easy program ˜Π that will not halt on any natural number input x. We will write ˜Π(x) ↑ to denote that the program ˜Π on input x does not halt. We also say that ˜Π loops on input x.
+
+We define the program ˜Π that does the following:
+
+· It reads an input natural number and stores it at the register y;
+
+· It checks $y -the value in the register y- and if $y = $y, then it will makes the value in the register y one bigger
+
+(If $y = $y, then $y := $y + 1)
+
+otherwise (that is, if $y ̸= $y) it will HALT.
+
+Since ˜Π can only halt when some value is not equal to itself, we see that the ˜Π indeed will never halt. A run of Π(0) would go as follows:
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+· $y = 0;
+
+· $y = 1;
+
+· $y = 2;
+
+.
+
+·
+
+.
+
+.
+
+So far, we have seen a program Π that halts on all natural number inputs and a program ˜Π that loops on all natural number inputs. Moreover, in the two examples that we have seen so far it was clear what happened. Sometimes this is not so clear and we will now exhibit a program ˆΠ with a less predictable behaviour.
+
+ˆΠ does the following:
+
+· It reads an input natural number and stores it at the register y;
+
+· It repeats the following: If the number is even, divide it by two. If the number is odd and larger than 1, triple it and add one.
+
+· And only HALT when we reach one.
+
+Let us now see what happens when we feed a particular input to ˆΠ. Thus, a run of Π(3) (starting with $y = 3) would look as follows:
+
+· $y = 3; Since the value is not 1, the program does not halt. Rather it checks whether $y is even or odd. Since 3 is odd, the program proceeds to triple it and adding one to the result (3 × 3 + 1 = 10) making this the new value of the register content.
+
+· Thus, at the next step we start with $y = 10. Since this is not 1 and since it is even, the program will halve the value.
+
+· $y = 5; Since this is not 1, and since it is odd, the program will triple it and add one to it. Thus, in the next step we will start with 3 × 5 + 1 = 16.
+
+· $y = 16; Since 16 not 1, and since it is even, it will be divided by two arriving at:
+
+· $y = 8; Since 8 not 1, and since it is even, it will be divided by two arriving at:
+
+· $y = 4; Since 4 not 1, and since it is even, it will be divided by two arriving at:
+
+· $y = 2; Since 2 not 1, and since it is even, it will be divided by two arriving at:
+
+· $y = 1; Since now the value equals 1, the program instruction tells the program to HALT.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+For this particular program ˆΠ and this particular input 3 we have seen that ˆΠ(3) ↓, that is ˆΠ on input 3 eventually halts. It is a mathematical open problem (Collatz conjecture) whether ˆΠ halts on every natural number input [16]. The program ˆΠ has been tested for astronomically large input values x and always it has been observed that ˆΠ(x) ↓. However, it has not yet been proven that ˆΠ will halt for all possible inputs.
+
+# 4.2 The Undecidability of the Halting problem
+
+Above we have seen a program Π that halted on all inputs, a program ˜Π that looped on all inputs and a program ˆΠ for which it is currently still unknown if it halts on all inputs or not. Before we will give a proof sketch of the Undecidability of the Halting problem, let us first see why it is important to know whether a program halts on a certain input or not.
+
+Suppose we have a computer program Π that computes tax return. So, if the program Π is given some revenues file x of a citizen, then Π should compute Π(x) which is the amount of tax to be returned or to be paid. We would like this program Π to halt at a certain stage and give the answer. If we want to fully understand how Π works, we would at least like to know that Π will halt (and provide an output). The theorem about the unsolvability of the Halting problem states that in general it is not possible to tell whether an arbitrary program Π halts on an arbitrary input x. Of course, for a particular program Π with a particular input x it may be possible to prove that this particular program Π halts on this particular input x. Hopefully indeed the tax return program will always halt and we can attest to this.
+
+An example of a program that better never halts could be an operating system. So, if Π is now the operating system (for example of a smart phone) and x is some beginconfiguration (for example, the configuration it had when bought in the shop), then we would prefer that Π(x) would never stop and that the operating system keeps on running forever (to keep managing the phone).
+
+If we wish to have some control on software and what it does, in particular, we should be able to tell whether a program halts on a certain input. The next theorem tells us that this is in its unrestricted form simply impossible.
+
+Theorem (Unsolvability of the Halting problem). There cannot exist a computer program H that solves the halting problem telling whether an arbitrary computer program Π will eventually end its computation when it starts on input x.
+
+Again, we stress that the impossibility of such a program H does not depend on our current ignorance. It is a logical hurdle that can simply not be taken. Advanced AI cannot help with this; not now and not ever in the future. We will now proceed to give a proof sketch of the theorem.
+
+The proof will go by a so-called reasoning by contradiction. Thus, we assume there existed a program H that for any inputs X and Y tells me whether the program X will halt on input Y . After some reasoning we arrive at an impossibility so that we conclude that our original assumption (there exists such an H) must actually be wrong: there cannot be such a program H.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+Suppose there existed a program H that given another program X and given an input Y to X tells us whether the program X halts on input Y . Without loss of generality we will assume that H will output the value 1 in case the program X halts on input Y and that H will output the value 0 in case the program X loops on input Y . The program H thus takes two arguments and we write H(X, Y ) for the outcome of H. In short, we assume that there existed a program H(X, Y ) with the property that
+
+We emphasise that the program H has two inputs, a program 5 X and an input Y for the program X. For our current generation the fact that a program can also be an input is not really strange since we are used to computers. For example, H could be an operating system, X and app that we downloaded and Y an input for the app X. The operating system H would then load X in the working memory, feed it input Y and run how the program X should perform on input Y . Thus, the program H has as input another program X. For generations before us this was a bit of a mental twist. But again, we are so used that a program in the end is just stored as a binary number. In particular, we are fine with feeding the code of a program X (as binary number) as input to the program X itself; this situation would be denoted by X(X). It is exactly this trick that we are going to play now to get some self reference going on.
+
+Thus, using the alleged halting program H it is not hard to see that we can tweak H to get a program ˜H(X) with just one argument X with the property
+
+How would we make the program ˜H? We want ˜H(X) = 0 in case X(X) ↑. How can we decide whether X(X) ↑? Of course, we use the program H to this end and simply run H(X, X) and we will program ˜H so that it outputs a 0 in case that H(X, X) = 0. However, in case H(X, X) = 1 we are going to do something special: we make ˜H(X) enter in a silly loop. For example, through executing the program ˜Π from the previous subsection. The thus described algorithm gives us the new program ˜H.
+
+So, ˜H is a determinate program and we can feed it to itself as input, that is we can evaluate ˜H( ˜H). But now, we get a contradiction since in case ˜H( ˜H) ↓ this can only be in case ˜H( ˜H) = 0 and then, by definition of ˜H this is exactly the case when ˜H( ˜H) ↑. And vice-versa, if ˜H( ˜H) ↑, then by the definition of ˜H, this can only be when ˜H( ˜H) ↓. This is clearly a contradiction since we have concluded
+
+\* 5 The fact that X may not be a program or that Y is not a valid input for X are technicalities that are not essential for the argument.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+Thus, our original assumption that there existed such a program H with the properties as stated in (2) lead to a contradiction and we conclude that there exists no such algorithm. This completes the proof sketch of the undecidability of the Halting problem.
+
+The Halting problem and related problems turn up in various real life problems. A direct corollary of it is that there cannot be an infallible virus-scanner; with or without AI. Likewise, the Halting problem yields that unrestricted program correctness verification (what we so much want for software that affects citizens) is impossible. Again, all this impossibilities hold with or without AI. Simply, these problems are not computable.
+
+# 5 Computational Complications
+
+In the previous section we have seen limits on computational tasks. These limits are naturally imposed by mere logic itself. We saw that certain problems, like the Halting problem, are what is called uncomputable: there cannot exist a computer program that solves the problem in its full generality. AI cannot help at all here.
+
+We thus have computable and uncomputable problems. Clearly, the uncomputable problems pose a limit on AI and applications. In this section we will see that even in the realm of computable problems things can be bad. Some problems are computable in the sense that we can in principle solve them: we know a methodology to solve the problem. However, this methodology may essentially need more computational resources than available in the entire visible universe.
+
+One may think that those problems are artificial and do not pop up in real life. This is unfortunately wrong. Computable but unfeasible problems are actually abundant in real life. Let us imagine there is the following law:
+
+Upon matrimonial divorce, each item in the common patrimony should be assigned a € amount and then the patrimony should be split between the partners in such a way that causes the minimal € difference in the division of goods between the partners.
+
+The law looks fairly decent and one can imagine such a law being in force in some society. Moreover, we can imagine that it will be a computer that performs the task of finding an optimal distribution of the goods between the divorcing partners. Then, as legal supervisors we would like to be sure that the computer has been fair in its decision. We now stand for an unfeasible taks: there are typically too many possible distributions. If there are n items in the common patrimony, then there are 2n many ways to distribute the goods between the divorcing partners. Recall that 2n stands for n times ︷ ︸︸ ︷ 2 × . . . × 2 and that this grows pretty fast: with 22 = 2×2 = 4, with 23 = 2×2×2 = 8, with 24 = 2 × 2 × 2 × 2 = 16, etc.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+If the partners have 1000 items in the common patrimony, there are 21000 many possible distributions of the items between the divorcing partners. The legal authority/supervisor would have perform 21000 many checks. This is impossibly huge. To give an impression, let us write this out.
+
+10715086071862673209484250490600018105614048117055336 07443750388370351051124936 12249319837881569585812759467291755314682518714528569 23140435984577574698574803 93456777482423098542107460506237114187795418215304647 49835819412673987675591655 43946077062914571196477686542167660429831652624386837205668069376.
+
+Okey, one may say that's a big number allright. However, we now have supercomputers, we have AI and we have all kinds of fancy computing devices and support. But all of this will not help. To given an impression: scientists estimate that the number of elementary particles in the visible universe does not exceed 10100 . So there is simply not enough matter in the entire universe to write down all the possible options to distribute the items. So memory space just runs out. But even if we had some smart way of not having to write everything down, there is simply not enough time to check all distributions. To give an idea, there are a bit less than 32 million seconds in a year. With the estimated age of the universe of around 15 bilion years, there have elapsed less than 1018 seconds since the big bang. You see, we are not even getting close.
+
+The astute reader may think that there is a clever way to find the optimal distribution that will not require just checking all 21000 possible distributions. For example, we do not need to consider the distributions where one of the partners gets everything and the other gets nothing. However, such simple considerations do mostly not substantially reduce the complexity of the problem. In particular, theoretical computer science tells us that there are tons of problems like the one above where one can mathematically prove that no smarter solution exists than roughly checking all exponentially many possibilities. In other situations this is only conjectured with the most famous example being the problem whether P = NP.
+
+Problems like this show up in many places. Theoretical computer science can prove ([39, 29]) that various problems are not solvable in realistic time: with or without AI. Whereas the uncomputability from the previous section formed a clear boundary to AI, in this section we have seen that various problems are solvable in principle but in practice they are not feasible: they can not be computed using all available computational resources.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+# 6 Mathematical Mischiefs
+
+In the previous sections we have seen problems of AI that were of a fundamental nature: certain computational problems are not computable at all, or computable but requiring an astronomically large amount of computational resources. Let us call this class of problems fundamental AI problems for the moment. We shall see that fundamental problems do not evidently manifest themself so often. Then we shall consider a class of problems/issues in AI that we so far not yet considered: AI problems/issues that are due to underspecification, ambiguity, or unexpected dynamics in the natural language law.
+
+# 6.1 Fundamental AI problems rarely show up
+
+Fundamental AI problems do not manifest themselves often in society. This is for good reason. If an AI application happens to need to solve a fundamental AI problem, the users of the program will just find out that the program gets frequently stuck and engineers will find some other approach that avoids the fundamental AI problem (possibly by simply ignoring the technical specs if needed).
+
+It can happen though that a fundamental AI problem only manifests itself in very rare occasions. In such a situation, the fundamental AI problem may go by unnoticed for a long time. In particular, the AI problem may not manifest itself during the development and testing stage of the software. One can then only hope that when the fundamental AI problem does manifest itself later, this is not in a critical situation that can lead to much damage or even casualties. Another argument why formal methods are important: to warrant good behaviour of the program at the level of logic and in particular to warrant that the program is free of fundamental AI problems. However, in most AI systems, there will be no casualties nor much damage in case of malfunctioning. So in most of the cases, if a fundamental AI problem does manifest itself, the user of the AI application will notice that the "system gets stuck" , get annoyed and probably reset. Often, the fundamental AI problem will disappear with a different set of parameters after the reset and the fundamental AI problem has gone by unnoticed.
+
+Summing up, either a fundamental AI problem often manifests itself in an application so that the engineers will remove it (possibly ignoring the program specs) or the fundamental AI problem in an application only manifests itself once a blue moon in which case the user will try to find a work-around possibly by simply resetting. In both cases, a fundamental AI problem will not be consciously noticed and recognised as such by the user.
+
+The kind of problems that we most often see in automated decision making is of a different nature. In this paper, we collect those problems by the name of mathematical mischiefs. These are situations where the law or specification implies bad mathematical behaviour. Often this is behaviour that was not even realised to be present in the law/specification by the programmers or those who draft laws.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+# 6.2 Mathematical mischiefs
+
+It is common practice that law is written in natural language even if this law is meant to be enforced in an automated fashion. The process From Law to Code is much discussed in the literature and in general it still remains unclear what optimal practices are. Some projects opt for semi-natural-languages like the Catala project [25, 19] but natural language is still the most commonly accepted mode.
+
+Especially if law is written in natural language and if that law deals with numerical stipulations, then this law is typically very prone to imply possibly rather wild mathematical or otherwise undesired behaviour. In the next section we will illustrate this by giving various examples of mathematical problems in law. Many other examples are around in the literature [24, 11] but here we shall mainly take examples from 6 European traffic regulations as described in [27]. We shall see that some of our examples could also have remained unnoticed in case the law were written in (pseudo)code. Thus, switching to pseudo-code will not be a medicine for all mathematical mischiefs.
+
+# 7 Multiple Mathematical Mischiefs
+
+In this section we shall exhibit various peculiarities of one single regulation: Regulation (EC) no 561/2006 of the European Parliament and of the Council of 15 march 2006 on the harmonisation of certain social legislation relating to road transport.
+
+The main purpose of the traffic regulation is to warrant road safety. The regulation aims to contribute to safety on public roads by imposing enough rest-periods between driving for, among others, truck drivers. The activities of the drivers are being recorded by a so-called tachograph. For the sake simplicity and exposition we will consider here only a small selection of articles from the regulation and omit others. Thus, we will consider a single driver whose time dedication will be labeled either as driving, resting or other work which will also be archived on a so-called driver card of the truck driver. Legal issues and problems are known to occur often in the realm of temporal (computable) laws [26].
+
+The peculiarities that we point out in this paper all fall mainly in the category of Mathematical Mischiefs originating from undesired interactions between sorts that are of fundamentally different nature. For example formal language versus natural language, formal ontology versus informal ontology, legal language versus natural language, etc.
+
+\* 6 Some examples are not in [27] but only in an unabridged online version of it http://www.joostj joosten.nl//papers/2023ModelCheckingInFoundationsComputableLaws.pdf.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+We will try to classify the mischiefs by using different subsections.
+
+# 7.1 Underspecification
+
+A classical source of trouble with computable laws can be called underspecification. A legal article A will stipulate certain requirements to comply with the law. Then there will often be some situation S where it is unclear weather S is legal according to the article A or not. Sometimes, the underspecification in A is evident, sometimes it is more subtle. We will begin with a simple example of certain subtlety. To this end we first give the relevant article which is Article 6, Point 1.
+
+Article 6.1: The daily driving time shall not exceed nine hours. However, the daily driving time may be extended to at most 10 hours not more than twice during the week.
+
+At first sight, the article looks unproblematic. To spot the underspecification is a bit subtle. To see the problem of Article 6.1, we first need to comment on some of the words in the article.
+
+First, there is word week. The regulation in its Article 4 (i) is very explicit in what it understands by a week:
+
+Article 4 (i): 'a week' means the period of time between 00.00 on Monday and 24.00 on Sunday.
+
+If we really want to be pedantic: Article 4 (i) of the regulation does not explicitly state that the Sunday actually refers to the first Sunday following the Monday under consideration. Oh well, that's not too bad and one can defend that a bit of common knowledge may be assumed. But still, common knowledge is not too stable and the programmer will need to read between the lines if (s)he is to write a program that implements the law for tachograph readers (that clearly will be executed on a computer).
+
+Another pedantic subtlety lies in possibility of so-called leap seconds. Leap seconds ([20, 1]) are seconds that may be added to a day to compensate for the (positive or negative) acceleration of the rotation of the earth. Let us not go into details here but every half year the International Earth Rotation and Reference Systems Service may decide to add or subtract a leap second to our calendar. Thus, a calendar minute can be either 59 seconds (in case of a negative leap second), or 60 seconds (for a regular minute) or 61 seconds (in case of a positive leap second is added to this particular minute). By convention there can be at most two leap seconds per year to be included at the end of the last day of the month, preferably in June or December.
+
+It may thus happen that Sunday either ends at 23:59 or at 24:01. In the first case, what should the programmer do? Due to the negative leap second, Sunday will end at
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+23:59 and the moment 24:00 on Sunday does not exist? If the programmer is to follow the letter of the law, the week will then end on the next Sunday 24:00? We think that according to the spirit of the law, it is clear how to act. We should understand that Article 4 (i) really means to say: "A week is the period of time comprised between the start of a Monday and the end of the next Sunday after it. " Innocent, but indeed the programmer should make a legal decision here. Again, this is a rather innocent example, but it will get worse. To see how the ambiguity present in Article 6.1 gets worse we will have to tell what the regulation understands by daily driving time. In Article 4 (k) we learn that
+
+Article 4 (k): 'daily driving time' means the total accumulated driving time between the end of one daily rest period and the beginning of the following daily rest period or between a daily rest period and a weekly rest period;
+
+Let us continue in the pedantic mode and observe some minor unimportant issues. First we observe that daily does not refer to what most people understand by day. If we recall the discussion from Subsection 2.2 on adjectives, we could say that in the phrase "daily driving time" we work with a privative rather than a subsective modifier. As we will also observe in Subsection 7.4 the use of privative modifiers in communication between legal and IT scholars seems to be begging for problems.
+
+But, there is another underspecification here: What about driving time between two weekly rest periods? Imagine that a driver holds a weekly rest period and then only works one day before taking another weekly rest period. This seems to be a non-standard situation and a situation that the employer would desire not to occur. Nonetheless, the situation can perfectly take place and, according to the letter of the regulation, it is legal 7 to have a weekly rest be followed by four and a half hours of driving, then 45 minutes rest, then four and a half hours of driving, then 45 minutes rest, four and a half hours of driving, to be followed by a next weekly rest period.
+
+At first sight, since we squeezed 13.5 hours of driving in a short period, it seems that we have a violation with Article 6.1 as quoted above. However, since our driving activity is immediately delimited by two weekly rest periods, the driving activity is strictly speaking not defining a daily driving time. Clearly this is not according to the spirit of the law. We will give some more examples of this in Subsection 7.3.
+
+\* 7 The nature of our example is shaped to comply with the other requirements imposed by Article 7 and Article 8.2. Here Article 7 says "After a driving period of four and a half hours a driver shall take an uninterrupted break of not less than 45 minutes, unless he takes a rest period." and Article 8.2 says "Within each period of 24 hours after the end of the previous daily rest period or weekly rest period a driver shall have taken a new daily rest period.". Moreover, Article 8.3 says "A daily rest period may be extended to make a regular weekly rest period or a reduced weekly rest period". It is a bit unclear if you extend a daily rest period to become a weekly rest-period if than that strip of time is then simultaneously a daily and weekly rest period. To have our example work we understood that if a daily rest period is extended to become a weekly rest period, then it ceases to be a daily rest period and becomes only a weekly rest period.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+Before we go on to expose the most striking under-determinacy of Article 6.1 let us mention yet another pedantic issue of Article 6.1 in combination with Article 4(k). There is a degenerate boundary case that is problematic to Article 4 (k). Namely when a driver is new to the office. When a driver is new to the office and will start driving, the corresponding driver card will not have any activities recorded and in particular will not have a (daily) rest period yet so there cannot be any daily driving time either. Of course, there is an easy and natural way to deal with this slightly academic anomaly. But again, this is an example of a (straightforward in this case) decision left to the programmer/modeller.
+
+By now it should be clear that a daily driving activity can fall in between two days. Now let us consider the situation that a driver starts driving on a Sunday evening, ending on a Monday early morning. So far so good. However, if the accumulated daily driving time in that period added up to 10 hours we see yet another underspecification. According to the regulation it is allowed to have a driving period of 10 hours but not more than twice per week. Since week is defined as starting on Monday 00:00 and ending on Sunday 24:00, Article 6.1 of the regulation is not clear as to which week the extended daily driving time should be attributed: to the week that contained the Sunday where the driving started, or to the week containing the Monday where the driving ended. Is the driver free to choose? Again, the regulation is underspecified here. In the disambiguation presented in [27] the extended daily rest period is assigned always to the week that starts on the Monday where the driving ended. Various different tachograph readers seem to make different choices and hence they implement different laws. Some tachograph softwares have an option to fix your choices or to choose the distribution as to minimise the fine. Clearly, all this uncertainty could have been avoided by having unambiguous articles in the regulation. Without the use of formal methods, it is very likely that underspecification still is present somewhere possibly at a hidden or unexpected place.
+
+# 7.2 Inconsistencies
+
+Legal regulations can contain simple inconsistencies. This can then lead to a situation where there is no legal behaviour at all. We will also speak of inconsistency when there is no reasonable legal behaviour at all. A famous example comes from a 20th century train regulation 8 from Kansas:
+
+When two trains approach each other at a crossing, both shall come to a full stop and neither shall start up again until the other has gone.
+
+Once two trains will meet at a crossing, it is clear that the trains enter in a deadlock and must stay there forever if they wish to obey the law. Staying put forever is clearly not reasonable. The example from the European traffic regulation that we point out her comes from Article 7.
+
+\* 8 We do not have exact reference to the regulation and it may as well be an apocryphal origin. The example serves a mere illustration.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+Article 7 (1st part): After a driving period of four and a half hours a driver shall take an uninterrupted break of not less than 45 minutes, unless he takes a rest period.
+
+Article 7 (2nd part): This break may be replaced by a break of at least 15 minutes followed by a break of at least 30 minutes each distributed over the period in such a way as to comply with the provisions of the first paragraph.
+
+We observe that Article 7.2 strictly speaking is inconsistent in the following sense. The second part of Art. 7.2 describes a situation which is in conflict with the first paragraph but allowed by way of exception. So far so good, but then it says "in such a way as to comply with the provisions of the first paragraph" which we observed is impossible. This is an innocuous inconsistency because everyone will simply tacitly understand that this last phrase - "in such a way as to comply with the provisions of the first paragraph" -should simply be ignored. However, it is a decision that needs to be made to consistently interpret the law and in a sense, it is a free choice up to the programmer or modeller. More subtle examples of the modeller taking essential interpretational decisions are dealt with in [7, 11].
+
+# 7.3 Mismatch spirit versus formalisation of the law
+
+Often, legal regulations allow situations that are not according to the spirit of the law or the purpose of the law. The purpose of our leading example, the European traffic Regulation (EC) no 561/2006 is to make sure that drivers take regular rest periods and do not spend too much time in a row in their truck. Spending too much time in a truck will make the driver tired and sleepy and less alert thereby increasing the chance of traffic accidents. We shall now exhibit a a situation that is legal but where the driver just spends so much time in the truck that we doubt that it is intended to be legal. We think that the authors of this law simply never considered this possibility.
+
+To exhibit our example, we continue with Article 7 which stipulates that driving periods should have rests between them. The question is, what is exactly a driving period? Let us consider some different driving patterns.
+
+Driving Pattern 1 A driver drives for one hour, then stands put for a minute and then drives another hour.
+
+Should we consider Driving pattern 1 as two distinct driving periods of one hour separated by one minute of rest? Or should we consider Driving pattern 1 as a single driving period with a duration of two hours and one minute? As humans, we feel that some context is missing: did the driver stand put while being in the truck, for example, while being caught in a traffic jam? If the driver had indeed been caught in a traffic jam, the minute of rest is not really rest and should be counted as work and not as rest. We should remember that this is a case distinction that a tachograph cannot make. The tachograph just measures motion and cannot do much more than that. On the other hand, if the driver really went out the truck to go to the restroom or do some stretching, then we are in a different situation. In this case, we could consider Driving Pattern 1 to consist of two driving periods of one hour, separated by one minute of rest. Again, our human condition speaks up: can one really speak of rest if the duration of the rest period lasted only for a single minute? It seems that the regulators also had this reflection and in another European regulation ((EU) 2016/799) it is stipulated (see o.a. [7, 13] for details) that any minute of rest that is immediately preceded and immediately succeeded by driving should be regarded driving. Hence, Driving Pattern 1 should indeed be considered as a driving period of 121 minutes. When does a intercalated rest really constitute rest then? According to the law, two minutes is already good. So let us consider the next driving pattern:
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+Driving Pattern 2 A driver drives for one hour, then stands put for two minutes and then drives another hour.
+
+As mentioned, the two minutes of non-movement should not be considered driving but as rest instead. But then, how should we consider Driving Pattern 2? The rest is not long enough according to the above-mentioned Article 7 to really have two different driving periods. It thus seems that we should conceive Driving Pattern 2 as a single driving period with a duration of 120 minutes. This reading is also reinforced by:
+
+Article 4 (j) : 'driving time' means the duration of driving activity recorded:
+
+- automatically or semi-automatically by the record- ing equipment as defined in Annex I and Annex IB of Regulation (EEC) No 3821/85, or
+
+- manually as required by Article 16(2) of Regulation (EEC) No 3821/85;
+
+Now that we seem to understand how to recognise driving periods and their durations, we consider the next:
+
+Driving Pattern 3 A driver drives for one minute, then stands put for two minutes and then drives another minute.
+
+In the light of what we have seen before, Driving Pattern 3 defines a single driving period of a total duration of two minutes. So far, so good, but now we can now take Driving Pattern 3 to the extreme and repeat it very often. Admittedly, it gives rise to an artificial/academic driving pattern but nonetheless it is a pattern that can occur.
+
+Driving Pattern 4 A driver repeats Driving Pattern 3 for 135 times straight in a row.
+
+Each Driving Pattern 3 adds two minutes to the total duration inside Driving Pattern 4. Thus, Driving Pattern 4 defines a driving period of 135 × 2 minutes = 270 minutes =
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+4.5 hours. So, as far as the regulation is concerned, and in particular Article 7 of the regulation, Driving Pattern 4 is completely legal. However, we doubt that it should indeed be legal, given that the total duration of Driving Pattern 4 is nine hours. The legality seems to violate the spirit of the law since engaging for nine hours straight in the execution of Driving Pattern 4 would most certainly create an exhausted driver prone to engage in a traffic accident.
+
+# 7.4 Bad formal ontologies and names
+
+The previous subsection observed that driving was never really defined in the regulation. This is particularly doubtful for a regulation that has to regulate exactly that: allowed driving periods and required resting periods. But a moment of thought prompts that actually driving is a complicated ontology indeed. Especially in the case of computable law. Recall that in computable law, the regulations should be evaluated against the data files in an automated fashion. Typically, the data collection also proceeds in an automated fashion as in the case of the tachographs.
+
+The undefinedness of driving illustrates a more general point. Ideally, legal ontologies in Computable Law should be directly related to formal ontologies in the sense of Subsection 3.2. Clearly, driving is not an physical observable. There is human judgement involved to decide whether some stretch of time should be considered driving or not. Thus, in the case of Computable Law one should strive for ontologies that are physical observables like speed, weight, etc. If some ontology is not a physical observable, the regulation should tell how the ontology is interpreted in terms of physical observables. As an example, we have seen the poorly designed equation (with some minor amendments) of driving time to moments with positive speed.
+
+We would like to conclude with a comment on the names that regulations in Computable Law use. Of course, some names are to be used. Regulations are still primarily written in natural language (see [15] for a discussion). However, often it is not clear if a word in a regulation denotes some technical meaning or the common sense meaning. If someone says that she is going for a week on holidays, nobody will think "ah, you are going from Monday 00:00 through Sunday 24:00 on holidays" . No, rather one will think of a holiday with a duration of seven days.
+
+Of course, it is fine to have a technical definition of a week in a regulation. However, one should be very clear about this. Regulation 561/2006 is not too clear about it though. It does not help that the regulation also uses the informal meaning of week when using the modifier "weekly rest period": this is also a technical definition but in most of the cases it will simply coincide with our informal usage of week: a period of seven days.
+
+One can imagine guidelines of good practice for filing computable laws. For example, if a technical meaning is given to a word used in common language, the usage of the technical term should be flagged somehow. For example by annotating the word where, e.g., week would denote to the technical term and week to the common-sense term. An alternative could be to invent new words like 'formalweek' . The latter approach has been taken in [9]. Another good practice would be to avoid the usage of privative modifiers where, for example, 'weekly rest period' defines something that has little to do with the meaning of week. There is even a rather amusing article in the regulation that clearly illustrates this.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+Article 8 (9): A weekly rest period that falls in two weeks may be counted in either week, but not in both.
+
+# 7.5 Hidden mathematical dynamics
+
+From mathematics we know that simple rules can give rise to very complicated structures. And from logic in a sense we know that obtaining complicated structures cannot be avoided. Probably the most famous example of extremely complex behaviour arising from a very simple rule is the Mandelbrot set.
+
+<Figure>
+Figure 2: The Mandelbrot set
+</Figure>
+
+In a sense, the Mandelbrot set is generated by the following simple rule: Take a number, multiply it by itself and add a constant to it and repeat this. In mathematical notation, the Mandelbrot set arises by iterating z ↦→ z2 + c, a very simple rule indeed.
+
+Computational Law imposes rules typically on numerical data. These rules then can give rise to unexpected mathematical behaviour. Even though not so complex as the above Mandelbrot set we will now mention two particular examples of complex behaviour that we uncovered from legal rules in traffic regulation. Probably, if the authors of the regulation would have been aware of the resulting complex behaviour, they would have rather chosen a different regulation.
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+Non locality As first example, we mention a result of the dynamics of Regulation 561/2006 which is peculiar: to test legality of a driver in a particular week, we may need to look what the driver has done five weeks ago, or twelve weeks ago, or any arbitrary number of weeks away from where we are now. We cannot imagine that this is a desirable property of legal regulation. We will not go into the technical details here and rather refer to [7]. The non-locality dynamics is ignited by the following articles:
+
+Article 4(h): 'regular weekly rest period' means any period of rest of at least 45 hours.
+
+Article 8.6 (1st part): In any two consecutive weeks a driver shall take at least
+
+- two regular weekly rest periods, or one regular weekly rest period and one reduced weekly rest period of at least 24 hours.
+
+- one regular weekly rest period and one reduced weekly rest period of at least 24 hours. However, the reduction shall be compensated by an equivalent period of rest taken en bloc before the end of the third week following the week in question.
+
+The main idea now is that to compensate in a week, one can do so in two weeks later, which by compensating, will need compensation itself and so can carry on arbitrarily far away from the week under consideration. Again, we refer to [7] for details, but the idea of the dynamics is nicely captured in Figure 3 below.
+
+<Figure>
+Figure 3: Compensating reduced weekly rest periods
+</Figure>
+
+In the current paper in Section 7.1 we observe that non-locality also occurs due to Article 6.1.
+
+Shift Invariance. As a second example of hidden mathematical dynamics we mention a peculiarity from Regulation (EU) 2016/799 [12]: tachographs may record differently if you start your minute shifted by some seconds. This seems to be an innocuous feature since one may think that it is perfectly well defined when each minute starts, for example, the first minute of the day starts at 9 00:00:00 and ends at 00:59. So where is the problem?
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+

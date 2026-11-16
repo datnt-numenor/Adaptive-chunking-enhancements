@@ -1,0 +1,14 @@
+{
+  "request_hash": "cf52bc66c2f9acc9f32a1eb9775ec9cad1b2b68dad066a41373ca248073507ec",
+  "prompt_sha256": "f955acf31a3e31a54f8a2a026e566c3b4107cc7896f55d605c4219f98be3aedb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNrpaAwZJQCKbwoMtXlzKB78At5F",
+  "prompt_tokens": 8572,
+  "completion_tokens": 57,
+  "actual_usd": 0.00132,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the requirements for general-purpose AI models, including the need for information on use policy, date of release, input/output data, and license, as specified in the AICat documentation."
+  }
+}

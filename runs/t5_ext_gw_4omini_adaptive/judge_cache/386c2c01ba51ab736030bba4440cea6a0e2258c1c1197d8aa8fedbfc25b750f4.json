@@ -1,0 +1,14 @@
+{
+  "request_hash": "386c2c01ba51ab736030bba4440cea6a0e2258c1c1197d8aa8fedbfc25b750f4",
+  "prompt_sha256": "25578844cf46a1d3401d0ed648b29961dba2c87c3223cd61a21c736d24ed597d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNwDDnmWcEvUmrytt25a1pXu85wV",
+  "prompt_tokens": 8725,
+  "completion_tokens": 40,
+  "actual_usd": 0.00133275,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data indicating that 59.9% of engaged users arrive via organic search, directly supporting the claim in the Reference Answer."
+  }
+}

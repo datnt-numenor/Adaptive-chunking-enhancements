@@ -1,0 +1,14 @@
+{
+  "request_hash": "41f399cc55b76c92773835501040e8c9943bb31405316cbac58e9ab23811565c",
+  "prompt_sha256": "d7da6a11fd504bf82db2414a009dc0b6635137cb44b17e331bfcd22d909bfa4b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSYNfcqGsvqytJeKgEy7Gxzbfur",
+  "prompt_tokens": 7997,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012241499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining ex-ante explainability and detailing the requirements for instructions for use as outlined in the AI Act."
+  }
+}

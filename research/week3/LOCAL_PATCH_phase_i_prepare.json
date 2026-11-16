@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-08T16:29:24.269933+00:00",
+  "file": "research/week3/phase_i_table5.py",
+  "sha256_before": "904fa995e678fcbe75d1f55f9e22dc3c2e20ed2a6d2cb9a26f793b708da8e628",
+  "sha256_after": "85f3e3e58c8cd5df7142f3c8f086d8448065ffa9925385b2507f5e1ac330fbb6",
+  "bug": "prepare() raised NameError on a fresh output directory (operator precedence on line 220)",
+  "change": "initialise old=None; read old only when an earlier plan exists"
+}

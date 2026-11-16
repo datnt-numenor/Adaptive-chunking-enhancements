@@ -1,0 +1,14 @@
+{
+  "request_hash": "29480d4727ffdad45a1ff93848fb7bfff2102f68fa0fd0335a8df477b1ec0e71",
+  "prompt_sha256": "7fe89be7f281d3e7e5074f9a08d4f18f023a89d17be52fb18e6469a6d7aab2b8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNw1Yl5RGctenqltODCwJ1k37sfi",
+  "prompt_tokens": 8112,
+  "completion_tokens": 40,
+  "actual_usd": 0.0012408,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the increase in productivity and the decrease in job turnover probability after the adoption of AI."
+  }
+}

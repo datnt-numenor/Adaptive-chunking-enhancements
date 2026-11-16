@@ -1,0 +1,14 @@
+{
+  "request_hash": "6c5795dda82875bd5dcdcfd8c8107a25848862d4bb911d07f133a0d4466019ee",
+  "prompt_sha256": "7ebdb706d05fb13406a474f09a028d3feb7dfc20cb04fb6d042172c639cfce44",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNnoqYvpU1SkCcYH8EgR2KP8wuDo",
+  "prompt_tokens": 7645,
+  "completion_tokens": 49,
+  "actual_usd": 0.0011761500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining the nature of statistical significance, its application to null hypotheses, and the potential issues with requiring statistical significance in audits under NYC Local Law 144."
+  }
+}

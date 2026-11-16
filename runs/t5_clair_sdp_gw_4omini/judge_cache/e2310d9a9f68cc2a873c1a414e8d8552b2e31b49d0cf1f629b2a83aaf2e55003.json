@@ -1,0 +1,14 @@
+{
+  "request_hash": "e2310d9a9f68cc2a873c1a414e8d8552b2e31b49d0cf1f629b2a83aaf2e55003",
+  "prompt_sha256": "1caaf2e35848ae605683e6ce1cedc5cecc9e1d794970a250556673cf9f3a6213",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOtRJ9NJr0WrtMQ56AsyvETgIi5t",
+  "prompt_tokens": 8864,
+  "completion_tokens": 50,
+  "actual_usd": 0.0013595999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that MAIF published useful open-source toolboxes on ethical AI, which contributed to its strong ethical and expert positioning in the market."
+  }
+}

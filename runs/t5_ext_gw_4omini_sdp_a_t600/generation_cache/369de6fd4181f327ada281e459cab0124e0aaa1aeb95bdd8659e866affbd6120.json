@@ -1,0 +1,10 @@
+{
+  "request_hash": "369de6fd4181f327ada281e459cab0124e0aaa1aeb95bdd8659e866affbd6120",
+  "prompt_sha256": "8e133165f2d58d9bca15fdfeb08717a27899ba57377f5963435b47eb5e315735",
+  "answer": "The main argument against relying solely on post-hoc explainability techniques for legal or regulatory purposes is that these techniques have significant limitations, such as being unstable and exhibiting low fidelity, which makes it difficult to convincingly prove that there is no discrimination. They are often unable to establish prima facie discrimination and require contextualization and limitation in their use. Therefore, they cannot be promoted as panaceas and should not be valued in isolation without considering more comprehensive fairness metrics. This raises concerns about their substantive legal weight in proving non-discriminatory outputs in high-stakes situations.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMgUCGTHA3foAhPTgHMwPe45JGib",
+  "prompt_tokens": 8915,
+  "completion_tokens": 114,
+  "actual_usd": 0.00140565
+}

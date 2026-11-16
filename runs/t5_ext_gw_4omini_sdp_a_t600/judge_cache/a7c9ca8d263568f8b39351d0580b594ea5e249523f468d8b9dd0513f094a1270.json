@@ -1,0 +1,14 @@
+{
+  "request_hash": "a7c9ca8d263568f8b39351d0580b594ea5e249523f468d8b9dd0513f094a1270",
+  "prompt_sha256": "b45a1ea07a17923037271970f3c1214ad0fd50e3c28927f6dee8a00a3cd5fd66",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNs0wXFiVlWkMEaowgaEavb0ewQS",
+  "prompt_tokens": 8323,
+  "completion_tokens": 62,
+  "actual_usd": 0.0012856500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the registration requirements for high-risk AI systems as specified in Article 49(1) and Annex VIII (A), including the obligation for AI providers to register this information in the public EU database before market placement."
+  }
+}

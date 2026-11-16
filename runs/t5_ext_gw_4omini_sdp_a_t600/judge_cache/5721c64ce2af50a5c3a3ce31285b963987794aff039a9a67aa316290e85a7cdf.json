@@ -1,0 +1,14 @@
+{
+  "request_hash": "5721c64ce2af50a5c3a3ce31285b963987794aff039a9a67aa316290e85a7cdf",
+  "prompt_sha256": "1f03daa749a3c7463d53cb9e583e392d796ecf799aa84d19cff3a217ba2958a6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1aJd7H4BxoRvhRA5i3MYQ1AsHZ",
+  "prompt_tokens": 7809,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011989499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly mentions that working hours per week is used as a reference for measuring effort in the evaluation of socio-economic parity, fully supporting the claim made in the reference answer."
+  }
+}

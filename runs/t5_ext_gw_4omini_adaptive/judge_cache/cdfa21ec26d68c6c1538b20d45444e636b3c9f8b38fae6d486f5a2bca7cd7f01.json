@@ -1,0 +1,14 @@
+{
+  "request_hash": "cdfa21ec26d68c6c1538b20d45444e636b3c9f8b38fae6d486f5a2bca7cd7f01",
+  "prompt_sha256": "9642a5916176830fe2c0bf2c73ecfad1e246fd585d2b2b72fea0bdf6fd7990b4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOCuFH67F5U82GM1WRdQnYISmIJq",
+  "prompt_tokens": 7701,
+  "completion_tokens": 40,
+  "actual_usd": 0.00117915,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how the REACH Regulation differentiates between scientific and product-oriented R&D based on scale and purpose."
+  }
+}

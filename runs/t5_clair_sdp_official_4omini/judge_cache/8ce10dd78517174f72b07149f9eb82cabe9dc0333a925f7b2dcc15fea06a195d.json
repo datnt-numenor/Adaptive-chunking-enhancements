@@ -1,0 +1,14 @@
+{
+  "request_hash": "8ce10dd78517174f72b07149f9eb82cabe9dc0333a925f7b2dcc15fea06a195d",
+  "prompt_sha256": "84528f99b75b268b59dfa009984c3cb921bcc2a83e5772ee13e304b90c10d5ad",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNT5FunYgHwzh2KzFiUN1abhNe4B",
+  "prompt_tokens": 9491,
+  "completion_tokens": 40,
+  "actual_usd": 0.0014476499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the age requirements for a child's consent and the obligations of the data controller regarding parental consent verification."
+  }
+}

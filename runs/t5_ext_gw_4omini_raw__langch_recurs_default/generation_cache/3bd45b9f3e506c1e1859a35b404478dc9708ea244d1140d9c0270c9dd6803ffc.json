@@ -1,0 +1,10 @@
+{
+  "request_hash": "3bd45b9f3e506c1e1859a35b404478dc9708ea244d1140d9c0270c9dd6803ffc",
+  "prompt_sha256": "62b82faabc27344a3ef94b818951abe5aee8e987014e89f991cd8f754c542f57",
+  "answer": "The dataset used to predict whether a student will pass is the \"oulad\" dataset. The target variable, 'final_result', is binarised to be 1 if a person passed and 0 if not.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNDx9fCn1H5ihF8tmZjr9ZaZcgzK",
+  "prompt_tokens": 7706,
+  "completion_tokens": 44,
+  "actual_usd": 0.0011823
+}

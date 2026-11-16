@@ -1,0 +1,78 @@
+{
+  "label": "CLAIR 99 QA v2, gpt-4o-mini-2024-07-18 qua gateway",
+  "spec": {
+    "label": "CLAIR 99 QA v2, gpt-4o-mini-2024-07-18 qua gateway",
+    "systems": {
+      "adaptive": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/adaptive/generated_questions_evaluation_results.json",
+      "raw__langch_recurs_default": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/raw__langch_recurs_default/generated_questions_evaluation_results.json",
+      "raw__page": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/raw__page/generated_questions_evaluation_results.json",
+      "adaptive__doc": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/adaptive__doc/generated_questions_evaluation_results.json",
+      "sdp_a_t600": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/sdp_a_t600/generated_questions_evaluation_results.json",
+      "sdp_a_t600__doc": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/sdp_a_t600__doc/generated_questions_evaluation_results.json",
+      "sdp_b": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/judge-full/sdp_b/generated_questions_evaluation_results.json"
+    },
+    "families": {
+      "vs_adaptive": [
+        [
+          "raw__langch_recurs_default",
+          "adaptive"
+        ],
+        [
+          "raw__page",
+          "adaptive"
+        ],
+        [
+          "sdp_a_t600",
+          "adaptive"
+        ],
+        [
+          "sdp_b",
+          "adaptive"
+        ],
+        [
+          "adaptive__doc",
+          "adaptive"
+        ],
+        [
+          "sdp_a_t600__doc",
+          "adaptive"
+        ]
+      ],
+      "doc_vs_plain": [
+        [
+          "adaptive__doc",
+          "adaptive"
+        ],
+        [
+          "sdp_a_t600__doc",
+          "sdp_a_t600"
+        ]
+      ],
+      "h1_doc": [
+        [
+          "sdp_a_t600__doc",
+          "adaptive__doc"
+        ]
+      ]
+    },
+    "check_summary": "D:/Project/adaptive-chunking/runs/t5_clair_sdp_gw_4omini/summary/table5_summary.json"
+  },
+  "input_sha256": {
+    "adaptive": "9886731790c378b1fb07a9c32f0f435cbbe22a294b7a3c7d96813bb63ae5a68b",
+    "raw__langch_recurs_default": "0f30daf0fda7aba09acf941be16a08cb893393f82ef23a7d6b7665e3db6a95d7",
+    "raw__page": "15eccc0d1a13c732a3f73a2bdb7cdebc324a57fa7bebd79e60a335ac5731ffa0",
+    "adaptive__doc": "decceb29f91f9be9bb01d77d12209eceed470f948543a6017f1c96f1c20cb5cd",
+    "sdp_a_t600": "061f72227a0a627a7888425657a2dceaa1554092faf7dd0d7d2bea507bf62a66",
+    "sdp_a_t600__doc": "38f3349542dd855d3fb81e267626bc08eb35e5313567117b998e04032dec7c66",
+    "sdp_b": "c9ca6f2b876943e5b29749bb0760dfc62d33ef62e3946ce4cf8ca860b4a75927"
+  },
+  "summary_check_max_abs_diff": {
+    "adaptive": 0.0,
+    "raw__langch_recurs_default": 1.4210854715202004e-14,
+    "raw__page": 2.842170943040401e-14
+  },
+  "seed": 2026,
+  "boot": 10000,
+  "unit": "document",
+  "abstain_rule": "contains"
+}

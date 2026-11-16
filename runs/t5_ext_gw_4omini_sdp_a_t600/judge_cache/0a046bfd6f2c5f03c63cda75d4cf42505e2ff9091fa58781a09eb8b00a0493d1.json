@@ -1,0 +1,14 @@
+{
+  "request_hash": "0a046bfd6f2c5f03c63cda75d4cf42505e2ff9091fa58781a09eb8b00a0493d1",
+  "prompt_sha256": "00f627d89b2c5ccce20787d146d0ed931fcdc7dc2ac212d661e44e96373b4163",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfuCO024Whxj2eVx66pWjFhogSM",
+  "prompt_tokens": 7467,
+  "completion_tokens": 39,
+  "actual_usd": 0.00114345,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of 'process access' and its relation to document audits, fully supporting the claims made in the Reference Answer."
+  }
+}

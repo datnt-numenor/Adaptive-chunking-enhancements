@@ -1,0 +1,14 @@
+{
+  "request_hash": "74f0e4b45e2de921c162220da3e9fd5a6a2ed94d504327c76c256fcfdde11577",
+  "prompt_sha256": "cdf5f2aac5763f138b163896622f8c4525e1662efaaa88eeccff037ea18ab6fd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNveANlc3LP0KXeVjCuMd8VlXY2J",
+  "prompt_tokens": 9727,
+  "completion_tokens": 43,
+  "actual_usd": 0.00148485,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides a comprehensive overview of the different peer review models, including fully open, partially open, and fully closed systems, which directly supports the reference answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "2112d32f4b1004173ee62e7e451a27be53d550392a1b86c83b93fda82f26b561",
+  "prompt_sha256": "16b57f284111192d470e334fc32cf24fa46ca969cdef59f05a064def26cb32a0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNM7Ty05PbHgS0UgaN32Y2FqXwkO",
+  "prompt_tokens": 6917,
+  "completion_tokens": 51,
+  "actual_usd": 0.00106815,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that during the Ming and Qing dynasties, the state ordered residents living along the southern coast to move 30 kilometers inland, fully supporting the claim made in the Reference Answer."
+  }
+}

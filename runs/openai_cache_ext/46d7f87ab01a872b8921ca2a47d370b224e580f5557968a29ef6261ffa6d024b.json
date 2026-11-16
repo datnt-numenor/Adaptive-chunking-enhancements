@@ -1,0 +1,1 @@
+{"content": "<regex>(?<=\\n)(?=#[^\\n]*\\n)|(?=^# )|(?=<!-- PageBreak -->)|(?=</?Table>)|(?=</?Figure>)</regex>", "model_returned": "gpt-4o", "usage": {"in": 11461, "out": 47}, "time": "2026-11-09 18:26:58"}

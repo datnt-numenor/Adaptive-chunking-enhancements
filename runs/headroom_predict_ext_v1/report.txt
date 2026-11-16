@@ -1,0 +1,11 @@
+﻿CLAIR proxy error (real - predicted): ICC -0.00 (sd 0.58), DCC -0.67 (sd 0.98, n=32)
+
+                                        RC     ICC     DCC      BI      SC       T  per-doc   vs Adaptive [CI], higher in   vs SDP-B
+Adaptive (real)                      96.23   69.27   89.30   98.42   99.96   90.63    90.62
+SDP-B (real)                         94.63   76.96   86.80   99.63   99.92   91.59    91.58
+sw0_rc1 raw proxy                    98.47   78.63   86.40   99.63   99.92   92.61    92.60   +1.97 [+1.86,+2.09] 128/129   +1.02
+sw0_rc1 with CLAIR DCC correction    98.47   78.63   85.73   99.63   99.92   92.47    92.46   +1.84 [+1.73,+1.95] 128/129   +0.88
+sw0_rc1 pessimistic (2x corr.)       98.47   78.63   85.06   99.63   99.92   92.34    92.33   +1.70 [+1.59,+1.82] 128/129   +0.75
+
+Adaptive sd over documents on clair_ext: {'RC': np.float64(5.0), 'ICC': np.float64(4.3), 'DCC': np.float64(2.6), 'BI': np.float64(1.6), 'SC': np.float64(0.4), 'mean5': np.float64(1.3)}
+RC is real here: sw0_rc1 98.47 vs SDP-B 94.63 vs Adaptive 96.23

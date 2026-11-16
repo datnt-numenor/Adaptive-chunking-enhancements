@@ -1,0 +1,14 @@
+{
+  "request_hash": "a0b1524dca49a19f0c5ce32ba5af9a36fa503a2073833639fc540d19de908002",
+  "prompt_sha256": "567bcfa996b5f8aba6fbbb66473d840ff0f3a9a2a72e80a442c66e8d2b42f6c0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNBTe4OmQvcSYd3gP9ldAzsMJ7AY",
+  "prompt_tokens": 9385,
+  "completion_tokens": 56,
+  "actual_usd": 0.0014413499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the findings of Kindermans et al. (2018) and Ghorbani et al. (2019) about the reliability of saliency maps."
+  }
+}

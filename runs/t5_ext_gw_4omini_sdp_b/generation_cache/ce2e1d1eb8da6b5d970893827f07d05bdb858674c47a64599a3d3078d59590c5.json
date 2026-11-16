@@ -1,0 +1,10 @@
+{
+  "request_hash": "ce2e1d1eb8da6b5d970893827f07d05bdb858674c47a64599a3d3078d59590c5",
+  "prompt_sha256": "cb1a701902e793fa062d2f9edfde7c42c903e7fad9d4b68a4544124d9c8c6022",
+  "answer": "For arXiv 2501.04014, the information about AI models that must be made available to downstream AI providers includes the model's input data, output data, date of release, license, and use policy. This is reflected in AICat's requirements through specific metadata fields such as:\n\n- Model's input data: represented by the property `airo:hasInput`\n- Model's output data: represented by the property `airo:hasOutput`\n- Model's date of release: represented by the property `dct:issued`\n- Model's license: represented by the property `airo:hasLicense`\n- Model's use policy: represented by the property `odrl:hasPolicy`\n\nThese elements ensure that downstream providers have the necessary documentation to integrate the AI models into their systems and comply with the obligations set forth in the AI Act.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMwz5xCWCwPi6fNvxXFyP2v6zYwU",
+  "prompt_tokens": 7343,
+  "completion_tokens": 172,
+  "actual_usd": 0.00120465
+}

@@ -1,0 +1,31 @@
+You are building a HARD evaluation set for document retrieval. Below is an excerpt of one document.
+Page boundaries are marked as <<<PAGE n>>>.
+
+Write exactly 3 question-answer pairs that a retrieval system can only answer well if the document was
+split into good chunks. Use these three types, one each:
+
+1. MULTI-PART: the answer needs facts from at least TWO separate places (different paragraphs or
+   sections, ideally on different pages). Give one evidence quote for each place.
+2. STRUCTURE: the answer depends on a table, a list, or a definition whose details appear later,
+   or on a sentence that uses a pronoun/abbreviation defined earlier.
+3. PARAPHRASED: a specific detail (not a heading), asked WITHOUT reusing the document's distinctive
+   wording, so keyword search alone is not enough.
+
+Rules:
+- Ground every answer strictly in the excerpt. No outside knowledge.
+- Each question must be self-contained: name the law, organisation, standard or report it is about.
+  Never write "this document", "the report", "the text", "above".
+- Questions in English, at most 30 words. Answers concise (1-3 sentences), in English.
+- Evidence: 1-3 quotes per question. Copy each quote VERBATIM from the excerpt (same characters,
+  same markdown symbols), 40-300 characters, and it must appear only once on its page.
+  Give the page number n from the <<<PAGE n>>> marker that precedes the quote.
+- Do not ask about page headers, footers, or the table of contents.
+
+Return ONLY this JSON, no commentary:
+{"qas": [
+  {"question": "...", "answer": "...", "evidence": [{"page": 3, "quote": "..."}, {"page": 5, "quote": "..."}]},
+  {"question": "...", "answer": "...", "evidence": [{"page": 4, "quote": "..."}]},
+  {"question": "...", "answer": "...", "evidence": [{"page": 2, "quote": "..."}]}
+]}
+
+Document excerpt:

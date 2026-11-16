@@ -1,0 +1,10 @@
+{
+  "request_hash": "8bdb92eda5a57e67fad54ab1b91a0b9524fe8a66157b460f08f53e15f898a65d",
+  "prompt_sha256": "075bdeeaec039d323bba258bbacd97b41cc3afb2cbbd8727a964aa6e19406034",
+  "answer": "According to Data For Good's generative AI white paper, 65% of a Meta translation model's two-year footprint came from serving predictions (the inference phase), while 35% came from learning (the training phase).",
+  "model": "gpt-4.1-2025-04-14",
+  "response_id": "chatcmpl-Ei0U28MBnuEqcjRsLxADIK52DmFdm",
+  "prompt_tokens": 8105,
+  "completion_tokens": 45,
+  "actual_usd": 0.01657
+}

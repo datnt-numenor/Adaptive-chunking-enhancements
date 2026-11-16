@@ -1,0 +1,12 @@
+{
+  "status": "ready_for_judge",
+  "scope": "full",
+  "systems": [
+    "sdp_b@plain"
+  ],
+  "qa_per_system": 438,
+  "requests_sha256": "757c4a59ff358d31ae13c91c004acfcf884df2ed827f7a14b297f479fbc04c24",
+  "answer_files_sha256": {
+    "sdp_b@plain": "88c48a7cb7ef82f0b5c0d0a85cbed59faf4d90fdf847e855265d3ff33828c631"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4d477b72e884712d476d4670b52db9cefefd92faeed577567fb77e6933ecc339",
+  "prompt_sha256": "f7f79f5492819ad6a2c3ccd0fd50c05c2be6decdc0dc5e5cd58d950e14eef7cd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOStYQsph93D6W4mnAeQzz8UHv6f",
+  "prompt_tokens": 6627,
+  "completion_tokens": 48,
+  "actual_usd": 0.0010228499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context clearly states that gemma4 is the only open-weight VLM that effectively handles examples and provides comparative performance details with frontier models, fully supporting the claim in the Reference Answer."
+  }
+}

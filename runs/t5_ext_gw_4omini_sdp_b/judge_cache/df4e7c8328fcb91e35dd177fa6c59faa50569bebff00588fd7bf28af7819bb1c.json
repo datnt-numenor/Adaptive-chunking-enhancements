@@ -1,0 +1,14 @@
+{
+  "request_hash": "df4e7c8328fcb91e35dd177fa6c59faa50569bebff00588fd7bf28af7819bb1c",
+  "prompt_sha256": "f9a4709d968599a502bdec94eba068faa98ca813bc08872fb80b1991c87773f4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvmyTWx0cWnjPQ0AvGJAwetgux7",
+  "prompt_tokens": 6157,
+  "completion_tokens": 38,
+  "actual_usd": 0.0009463499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific metrics for ICLR, including the highest views and active users, directly supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,529 @@
+DOCUMENT: arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence
+
+<<<PAGE 9>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+Participating agents submit models with compliance,
+
+Remark 4 (Improved Utility & Participation). Through introduction of premium compensation, agent utility is improved, in Equations 9 and 12, versus Reserve Thresholding in Equation 3. As a result, more agents break the zero-utility barrier of entry for participation, boosting both overall agent utility and participation rate.
+
+The proofs of Theorems 1 and 2, Proposition 1, as well as Corollaries 1 and 2 are found within Appendix B. Since the premium compensation value vp i is a product of two random variables, the PDF and CDF of vp i becomes a piece-wise function (as shown within Appendix B). As a result, the optimal bidding and subsequent utility also becomes piece-wise in both Corollaries 1 and 2. Empirically, the correctness of the computed PDF and CDFs are verified in Appendix C.
+
+Why CIRCA for AI Regulation? We believe that CIRCA is designed for practical AI regulatory settings:
+
+· Multiple AI Developers, One Regulator. The current AI landscape features many simultaneously competing model builders (e.g., Google, OpenAI, or Mistral) with private valuations for their model's deployment (i.e., each generating different revenue). Furthermore, a single regulatory body is often in charge of regulating model deployment. The regulator's primary role is to evaluate submitted models and not to collaborate on their development. CIRCA is designed with this exact setting in mind.
+
+· Sunk AI Compliance Costs. Compliance costs in AI are sunk and non-recoverable. Agents that invest in safety alignment, adversarial robustness, or data curation cannot get their money back whether or not the resulting model gets approved. The backbone of CIRCA is an all-pay auction which models this setting.
+
+· Required AI Model Compliance. Existing regulatory frameworks [Code of Federal Regulations, 1995, U.S. Environmental Protection Agency, 2024a,b, Van Norman, 2016], only allow products to enter the market once compliance is met. With AI being deployed in increasingly high-stakes settings, this same principle must hold for AI models. AI institutions are already grading AI model compliance [Vanschoren et al., 2025, Bengio et al., 2025, Future of Life Institute, 2025, AI Security Institute, 2025], and so too can a regulator. Thus, it is necessary for an AI regulatory framework to evaluate model compliance and deploy models only once they reach a compliance threshold. CIRCA incorporates such a reserve threshold to ensure only compliant models can enter the market.
+
+· AI Over-Compliance & Participation. Incentivizing over-compliance is critical within AI regulatory frameworks to safeguard our society against rapid AI development. Minimum compliance thresholds today may be insufficient tomorrow due to the rapid capability growth of AI models. CIRCA smartly pits agents against one another in sub-contests to spur agents to overbid on model compliance and participate at a higher rate (Theorem 2 and Remark 4).
+
+# 6 Experiments
+
+We demonstrate, in Section 5, that CIRCA incentivizes compliance-exceeding models and participation at higher rates than the Reserve Thresholding mechanism (Section 4). Below, we validate these theoretical results empirically.
+
+Lack of Baseline Regulatory Mechanisms. To the best of our knowledge, there are no other comparable compliance mechanisms to regulate AI. As a result, the Reserve Threshold mechanism that is proposed in Section 4 is used as a baseline. While simple, the Reserve Threshold mechanism is a realistic baseline to compare against. Existing regulatory bodies, like the Environmental Protection Agency (EPA), follow similar steps before clearing products (e.g., the EPA authorizes permits for discharging pollutants into water sources once water quality criteria are met).
+
+Verifiable Nash Bidding Equilibria. In our first experiment, our goal is to validate that the theoretical bidding functions found in Corollaries 1 and 2 constitute Nash Equilibria. That is, an agent receives worse utility if it deviates from this bidding strategy while other agents abide by it. To test this, we conduct a Monte Carlo simulation with N = 100, 000 trials. In each trial, two agents, i and j, independently draw their valuations from either a Uniform or Beta(2,2) distribution (Figure 2). Each agent also receives a scaling factor λi that splits the total value into deployment vd i = (1 - λi)Vi and premium compensation vp i = λiVi values. Once private values are provided, agents bid according to their optimal strategies for Uniform and Beta(2,2) distributions in Corollaries 1 and 2 respectively. Finally, we perturb agent i's optimal bid by ±50% and record the utility gained or lost by participating in CIRCA across the range of bids bi ∈ [b∗i /2, 3b∗i /2]. We note that comparisons only occur if the other agent's bid is at least pϵ, in order to accurately reflect how the auction mechanism in Algorithm 1 functions.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+<Figure>
+Figure 2: Validation of Nash Bidding Equilibrium. Agent utility is maximized when agents follow the theoretically optimal bidding function (red line) across different distributions and varying compliance prices pϵ ∈ {0.25, 0.5, 0.75}. Top row: Uniform distribution results with the optimal bid derived in Corollary 1. Bottom row: Beta(α = β = 2) distribution results with the optimal bid derived in Corollary 2. In all cases, agents attain strictly less utility when deviating from the optimal bid.
+</Figure>
+
+When inspecting Figure 2, it is clear that agent i's utility is maximized at its optimal bid b∗i . Deviating from b∗i results in less utility gained for agent i. Thus, our Monte Carlo simulations validate our Nash Equilibria claims: the Uniform and Beta optimal-bidding functions in Corollaries 1 and 2 indeed maximize agent utility in Figure 2. Agent i's utility decays much quicker when bidding below its optimal bid b∗i , since agents are (i) less likely to win the premium reward and (ii) at risk of losing the value from deployment if the bid does not reach pϵ. At a certain point, utility increases linearly once the agent continuously fails to bid pϵ. The linear improvement stems from the agent saving the cost of its bid, -bi, shown in Equation 6.
+
+Improved Agent Participation and Bid Size. In our second experiment, we showcase that agents participate at a higher rate and have a larger expected bid when participating in CIRCA compared to our Reserve Thresholding baseline, irrespective of the compliance threshold.
+
+Agents participate when they can gain positive utility. For our Reserve Thresholding baseline this is simple, an agent i participates when their deployment value outstrips the price of compliance vd i > pϵ. Thus, the participation rate for Reserve Thresholding is simply this probability P(vd i > pϵ) across varying pϵ. In CIRCA, this probability, via Equation 7, is P(vd i + ∫ vp i 0 F (z)dz > pϵ) across varying pϵ. We approximate these probabilities for both Uniform and Beta(2,2) distributions and plot the results in Figure 3. As expected, one can see that CIRCA achieves a greater participation rate, by upwards of 15%, compared to the Reserve Thresholding baseline across all values of pϵ. We note that participation rates are similar between the two methods for very low or high values of pϵ. The reason is simple. As pϵ → 0, all agents will achieve positive utility, and thus participate, irrespective of the mechanism. Likewise, as pϵ → 1, no agents will be able to achieve positive utility, and thus no agents will participate irrespective of the mechanism.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+<Figure>
+Figure 3: Improved Participation with Uniform & Beta Values. When total value stems from a (left) Uniform Vi ∼ U(0, 1) or (right) Beta distribution Vi ∼ Beta(α = β = 2), agents participate at a higher rate in CIRCA than Reserve Thresholding.
+</Figure>
+
+<Figure>
+Figure 4: Improved Compliance with Uniform & Beta Values. When total value stems from a (left) Uniform Vi ∼ U(0, 1) or (right) Beta distribution Vi ∼ Beta(α = β = 2), agents bid more compliant models in CIRCA than Reserve Thresholding.
+</Figure>
+
+To analyze the expected participating bid in CIRCA, we leverage the results of Proposition 1. Namely, we approximate the integral in Equation 8, for both Uniform and Beta(2,2) distributions, to compute the expected agent bid for various values of pϵ. The results, provided in Figure 4, show that CIRCA incentivizes agents to bid more than they would under our Reserve Thresholding baseline, by upwards of 20%, across all values of pϵ.
+
+Compliance-Cost Case Study. Finally, in our third experiment, a case study is conducted to demonstrate that in realistic settings, compliance is mapped to cost in a monotonically increasing way (as detailed in Assumption 2). While there are many compliance metrics to consider when gauging AI deployment, model fairness is analyzed, via equalized odds, for image classification in this study. Equalized odds measures if different groups have similar true positive rates and false positive rates (lower is better). Multiple VGG-16 models are trained on the Fairface dataset [Karkkainen and Joo, 2021] for fifty epochs (repeated ten times with different random seeds), and consider a gender classification task with race as the sensitive attribute. Models with the largest validation classification accuracy during training are selected for testing. Many types of costs exist for training compliant models, such as extensive architecture and hyper-parameter search. In this study, the cost of an agent acquiring more minority class data is considered. Acquiring more minority class data leads to a larger and more balanced dataset. Various mixtures of training data are simulated, starting from a 95:5 skew and scaling up to fully balanced training data with respect to the sensitive attribute. In this study, equalized odds performance is gauged on well-balanced test data for the models trained on various mixtures of data. The results of this case study are shown in Figure 5 and Table 2.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+<Table>
+| Minority Class %   |   Mean EO Score |
+|:-------------------|----------------:|
+| 5%                 |           22.55 |
+| 10%                |           22.31 |
+| 15%                |           18.97 |
+| 20%                |           17.46 |
+| 25%                |           15.78 |
+| 30%                |           15.44 |
+| 35%                |           13.09 |
+| 40%                |           11.01 |
+| 45%                |            9.83 |
+| 50%                |            9.38 |
+</Table>
+
+<Figure>
+Figure 5: Strictly Monotonic Compliance-Cost Relationship. As the percentage of minority class data increases (greater cost), equalized odds metric improves (greater compliance) on Fairface.
+</Figure>
+
+As expected, in Table 2, the equalized odds score decreases (more compliant model) when collecting more minority class data (increased cost). To adjust equalized odds to fit into the setting where ϵ ∈ (0, 1), the original equalized odds score is inverted and normalized. In Figure 5, one can see that compliance level is indeed monotonically increasing with respect to the cost.
+
+# 7 Conclusion
+
+As AI models grow, the risks associated with their misuse become significant, particularly given their opaque, black-box nature. Establishing robust algorithmic safeguards is crucial to protect users from unethical, unsafe, or illegallydeployed models. In this paper, we present a regulatory framework designed to ensure that only models deemed compliant by a regulator can be deployed for public use. Our key contribution is the development of an auction-based regulatory mechanism that simultaneously (i) enforces compliance standards and (ii) provably incentivizes agents to exceed minimum compliance thresholds. This approach encourages broader participation and the development of more compliant models compared to baseline regulatory methods. Empirical results confirm that our mechanism increases agent participation by 15% and raises agent spending on compliance by 20%, demonstrating its effectiveness at promoting more compliant AI deployment.
+
+# Ethical Considerations Statement
+
+Unchecked AI deployment runs the risk of unsafe consequences that can harm users and stoke division within our society. It is imperative to outline and employ regulatory frameworks to mitigate these dangers and ensure user safety. However, regulation in AI is heavily under-researched. The goal of this paper is to take a step towards designing realistic and effective regulation to ensure AI model compliance. We hope that the impact of our paper will spur future research into regulatory AI, and soon provide a robust solution for governments to implement.
+
+# Acknowledgements
+
+Bornstein, Che, and Huang are supported by DARPA Transfer from Imprecise and Abstract Models to Autonomous Technologies (TIAMAT) 80321, National Science Foundation NSF-IIS-2147276 FAI, DOD-ONR-Office of Naval Research under award number N00014-22-1-2335, DOD-AFOSR-Air Force Office of Scientific Research under award number FA9550-23-1-0048, DOD-DARPA-Defense Advanced Research Projects Agency Guaranteeing AI Robustness against Deception (GARD) HR00112020007, Adobe, Capital One and JP Morgan faculty fellowships.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+# References
+
+- EU Artificial Intelligence Act. The eu artificial intelligence act, 2024.
+
+- AI Security Institute. Frontier AI trends report. Technical report, Department for Science, Innovation and Technology, UK Government, December 2025. URL https://www.aisi.gov.uk/frontier-ai-trends-report. First public analysis drawing on two years of evaluations of over 30 frontier AI models across cyber, biology, chemistry, and autonomous capabilities.
+
+- Erwin Amann and Wolfgang Leininger. Asymmetric all-pay auctions with incomplete information: the two-player case. Games and economic behavior, 14(1):1-18, 1996.
+
+- Dipto Barman, Ziyi Guo, and Owen Conlan. The dark side of language models: Exploring the potential of llms in multimedia disinformation generation and dissemination. Machine Learning with Applications, 16:100545, 2024. ISSN 2666-8270. doi: https://doi.org/10.1016/j.mlwa.2024.100545. URL https://www.sciencedirect.co m/science/article/pii/S2666827024000215.
+
+- Michael R Baye, Dan Kovenock, and Casper G De Vries. The all-pay auction with complete information. Economic Theory, 8:291-305, 1996.
+
+- Yoshua Bengio, Sören Mindermann, Daniel Privitera, Tamay Besiroglu, Rishi Bommasani, Stephen Casper, Yejin Choi, Philip Fox, Ben Garfinkel, Danielle Goldfarb, Hoda Heidari, Anson Ho, Sayash Kapoor, Leila Khalatbari, Shayne Longpre, Sam Manning, Vasilios Mavroudis, Mantas Mazeika, Julian Michael, Jessica Newman, et al. International AI safety report, January 2025. URL https://arxiv.org/abs/2501.17805. DSIT 2025/001. Mandated by 30 nations, the UN, OECD, and EU at the Bletchley AI Safety Summit. Led by Yoshua Bengio with 96 contributing experts.
+
+- Paolo Bertoletti. Reserve prices in all-pay auctions with complete information. Research in Economics, 70(3):446-453, 2016.
+
+V. Bhaskar. Lecture 8: All pay auction, January 2018.
+
+- Jack Brewster. How i built an ai-powered, self-running propaganda machine for $105, 2024. URL https://www. wsj.com/politics/how-i-built-an-ai-powered-self-running-propaganda-machine -for-105-e9888705.
+
+- Alexandra Bruell. New york times sues microsoft and openai, alleging copyright infringement, 2023. URL https: //www.wsj.com/tech/ai/new-york-times-sues-microsoft-and-openai-alleging-cop yright-infringement-fd85e1c4.
+
+- Paul F Christiano, Jan Leike, Tom Brown, Miljan Martic, Shane Legg, and Dario Amodei. Deep reinforcement learning from human preferences, 2017.
+
+- Code of Federal Regulations. Title 42 - public health, part 84 - approval of respiratory protective devices, 1995. URL https://www.ecfr.gov/current/title-42/chapter-I/subchapter-G/part-84. Effective July 1995.
+
+C. Coglianese and R.A. Kagan. Regulation and Regulatory Processes. International library of essays in law and society. Ashgate, Aldershot, England, 2007. ISBN 9780754625186. URL https://books.google.com/books?i d=C0RnNQAACAAJ.
+
+- Josef Dai, Xuehai Pan, Ruiyang Sun, Jiaming Ji, Xinbo Xu, Mickel Liu, Yizhou Wang, and Yaodong Yang. Safe rlhf: Safe reinforcement learning from human feedback, 2024.
+
+- Patricia Gomes Rêgo de Almeida, Carlos Denner dos Santos, and Josivania Silva Farias. Artificial intelligence regulation: a framework for governance. Ethics and Information Technology, 23(3):505-525, 2021.
+
+- Dominic DiPalantino and Milan Vojnovic. Crowdsourcing and all-pay auctions, 2009.
+
+- Future of Life Institute. Ai safety index: Winter 2025. Technical report, Future of Life Institute, December 2025. URL https://futureoflife.org/wp-content/uploads/2025/12/AI-Safety-Index-Report_ 131225_Full_Report_Digital.pdf. Third edition. Independent assessment of eight leading AI companies' safety practices.
+
+- Ian Gemp, Thomas Anthony, Janos Kramar, Tom Eccles, Andrea Tacchetti, and Yoram Bachrach. Designing all-pay auctions using deep learning and multi-agent simulation. Scientific Reports, 12(1):16937, 2022.
+
+- Jacob K Goeree and John L Turner. All-pay-all auctions, 2000.
+
+- Lawrence H Goulder and Andrew R Schein. Carbon taxes versus cap and trade: a critical review. Climate Change Economics, 4(03):1350010, 2013.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+- The White House. Fact sheet: President biden issues executive order on safe, secure, and trustworthy artificial intelligence, 2023.
+
+- Nikolaus Howe, Ian McKenzie, Oskar Hollinsworth, Michał Zajac, Tom Tseng, Aaron Tucker, Pierre-Luc Bacon, and Adam Gleave. Effects of scale on language model robustness, 2024.
+
+- Lei Huang, Weijiang Yu, Weitao Ma, Weihong Zhong, Zhangyin Feng, Haotian Wang, Qianglong Chen, Weihua Peng, Xiaocheng Feng, Bing Qin, et al. A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions. ACM Transactions on Information Systems, 43(2):1-55, 2025.
+
+- California Legislative Information. Sb-1047 safe and secure innovation for frontier artificial intelligence models act. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=2023202 40SB1047, 2024.
+
+- Denny Jacob. Openai forms new committee to evaluate safety, security, 2024. URL https://www.wsj.com/te ch/ai/openai-forms-new-committee-to-evaluate-safety-security-4a6e74bb.
+
+- Meena Jagadeesan, Michael I Jordan, and Jacob Steinhardt. Safety vs. performance: How multi-objective learning reduces barriers to market entry, 2024.
+
+- Todd Kaplan, Israel Luski, Aner Sela, and David Wettstein. All-pay auctions with variable rewards. The Journal of Industrial Economics, 50(4):417-430, 2002.
+
+- Kimmo Karkkainen and Jungseock Joo. Fairface: Face attribute dataset for balanced race, gender, and age for bias measurement and mitigation, 2021.
+
+- Timo Kaufmann, Paul Weng, Viktor Bengs, and Eyke Hüllermeier. A survey of reinforcement learning from human feedback, 2023.
+
+- Vijay Krishna. Auction theory. Academic Press, Burlington, MA, 2009.
+
+- Benjamin Laufer, Jon Kleinberg, and Hoda Heidari. The backfiring effect of weak ai safety regulation, 2025.
+
+- Zheyuan Liu, Guangyao Dou, Zhaoxuan Tan, Yijun Tian, and Meng Jiang. Towards safer large language models through machine unlearning, 2024.
+
+- Cade Metz, Cecilia Kang, Sheera Frenkel, Stuart A. Thompson, and Nico Grant. How tech giants cut corners to harvest data for a.i., 2024. URL https://www.nytimes.com/2024/04/06/technology/tech-giants-h arvest-data-artificial-intelligence.html.
+
+- Benny Moldovanu and Aner Sela. Contest architecture. Journal of Economic Theory, 126(1):70-96, 2006.
+
+J. Edward Moreno. Boom in a.i. prompts a test of copyright law, 2023. URL https://www.nytimes.com/20 23/12/30/business/media/copyright-law-ai-media.html.
+
+- Gary D Lopez Munoz, Amanda J Minnich, Roman Lutz, Richard Lundeen, Raja Sekhar Rao Dheekonda, Nina Chikanov, Bolor-Erdene Jagdagdorj, Martin Pouliot, Shiven Chawla, Whitney Maxwell, et al. Pyrit: A framework for security risk identification and red teaming in generative ai system, 2024.
+
+- Terrence Neumann, Sooyong Lee, Maria De-Arteaga, Sina Fazelpour, and Matthew Lease. Diverse, but divisive: Llms can exaggerate gender differences in opinion related to harms of misinformation, 2024.
+
+- Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. Training language models to follow instructions with human feedback. Advances in neural information processing systems, 35:27730-27744, 2022.
+
+- Mark R Powell. Science at EPA: Information in the regulatory process. Routledge, New York, NY, 2014.
+
+- Tori Qiu, Benjamin Laufer, Jon Kleinberg, and Hoda Heidari. Modeling the economic impacts of ai openness regulation, 2025.
+
+- Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. SQuAD: 100,000+ questions for machine comprehension of text. In Jian Su, Kevin Duh, and Xavier Carreras, editors, Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, pages 2383-2392, Austin, Texas, November 2016. Association for Computational Linguistics. doi: 10.18653/v1/D16-1264. URL https://aclanthology.org/D16-126 4/.
+
+- Adi Robertson. Google apologizes for 'missing the mark' after gemini generated racially diverse nazis, 2024. URL https://www.theverge.com/2024/2/21/24079371/google-ai-gemini-generative-ina ccurate-historical.
+
+- Manuel J García Rodríguez, Vicente Rodríguez-Montequín, Pablo Ballesteros-Pérez, Peter ED Love, and Regis Signor. Collusion detection in public procurement auctions with machine learning algorithms. Automation in Construction, 133:104047, 2022.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+- Deepa Seetharaman. Openai, meta and google sign on to new child exploitation safety measures, 2024. URL https://www.wsj.com/tech/ai/ai-developers-agree-to-new-safety-measures-to-f ight-child-exploitation-2a58129c.
+
+- Ron Siegel. All-pay contests. Econometrica, 77(1):71-92, 2009.
+
+- Robert N Stavins. A meaningful us cap-and-trade system to address climate change. Harv. Envtl. L. Rev., 32:293, 2008.
+
+- Yanshen Sun, Jianfeng He, Limeng Cui, Shuo Lei, and Chang-Tien Lu. Exploring the deceptive power of llm-generated fake news: A study of real-world detection challenges, 2024.
+
+- Eva Tardos. Lecture 17: All-pay auctions, March 2017. URL https://www.cs.cornell.edu/courses/c s6840/2017sp/lecnotes/lec17.pdf.
+
+- U.S. Environmental Protection Agency. Multi-pollutant emissions standards for model years 2027 and later light-duty and medium-duty vehicles, 2024a. Final Rule, 89 FR 27842.
+
+- U.S. Environmental Protection Agency. National pollutant discharge elimination system (NPDES), 2024b. URL https://www.epa.gov/npdes.
+
+- U.S. Food and Drug Administration. E19 a selective approach to safety data collection in specific late-stage pre-approval or post-approval clinical trials, 2022. URL https://www.fda.gov/regulatory-information/searc h-fda-guidance-documents/e19-selective-approach-safety-data-collection-spe cific-late-stage-pre-approval-or-post-approval.
+
+- Gail A Van Norman. Drugs, devices, and the fda: part 2: an overview of approval processes: Fda approval of medical devices. JACC: Basic to Translational Science, 1(4):277-287, 2016.
+
+- Joaquin Vanschoren, David Fernández Llorca, Maria Eriksson, and Emilia Gómez. The role of AI safety benchmarks in evaluating systemic risks in general-purpose AI models. Technical Report JRC143259, European Commission, Joint Research Centre, Luxembourg, October 2025. URL https://publications.jrc.ec.europa.eu/repo sitory/handle/JRC143259.
+
+- Boxin Wang, Weixin Chen, Hengzhi Pei, Chulin Xie, Mintong Kang, Chenhui Zhang, Chejian Xu, Zidi Xiong, Ritik Dutta, Rylan Schaeffer, et al. Decodingtrust: A comprehensive assessment of trustworthiness in gpt models., 2023.
+
+- Jeremy White. How strangers got my email address from chatgpt's model, 2023. URL https://www.nytimes. com/interactive/2023/12/22/technology/openai-chatgpt-privacy-exploit.html.
+
+- Jeremy White. See how easily a.i. chatbots can be taught to spew disinformation, 2024. URL https://www.nyti mes.com/interactive/2024/05/19/technology/biased-ai-chatbots.html.
+
+- Adina Williams, Nikita Nangia, and Samuel Bowman. A broad-coverage challenge corpus for sentence understanding through inference. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers), pages 1112-1122, New Orleans, Louisiana, 2018. Association for Computational Linguistics. URL http://aclweb.org/anthology /N18-1101.
+
+- Fasheng Xu, Xiaoyu Wang, Wei Chen, and Karen Xie. The economics of ai foundation models: Openness, competition, and governance, 2025.
+
+- Mohammad Yaghini, Patty Liu, Franziska Boenisch, and Nicolas Papernot. Regulation games for trustworthy machine learning, 2024.
+
+- Rui-Jie Yew. Break it 'til you make it: An exploration of the ramifications of copyright liability under a pre-training paradigm of ai development. In Proceedings of the 2024 Symposium on Computer Science and Law, CSLAW '24, page 64-72, New York, NY, USA, 2024. Association for Computing Machinery. ISBN 9798400703331. doi: 10.1145/3614407.3643707. URL https://doi.org/10.1145/3614407.3643707.
+
+- Wojciech Zaremba, Evgenia Nitishinskaya, Boaz Barak, Stephanie Lin, Sam Toyer, Yaodong Yu, Rachel Dias, Eric Wallace, Kai Xiao, Johannes Heidecke, and Amelia Glaese. Trading inference-time compute for adversarial robustness. https://cdn.openai.com/papers/trading-inference-time-compute-for-adv ersarial-robustness-20250121_1.pdf, 2025.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+# A Notation Table
+
+<Table>
+| Definition                                                | Notation   |
+|:----------------------------------------------------------|:-----------|
+| Regulator                                                 | R          |
+| Number of Agents                                          | n          |
+| Compliance Threshold                                      | ϵ          |
+| Compliance-to-Cost Function                               | M          |
+| Price of Attaining Compliance                             | pϵ         |
+| Agent i Bid                                               | bi         |
+| Agent i's Optimal Bid                                     | b∗i        |
+| All Other Agents Bids                                     | b-i        |
+| Agent i Utility                                           | ui         |
+| Agent i Model Compliance                                  | si         |
+| Total Value for Agent i                                   | Vi         |
+| Total Value Distribution                                  | DV         |
+| Agent i Scaling Factor                                    | λi         |
+| Scaling Factor Distribution                               | Dλ         |
+| Deployment Value for Agent i                              | vd i       |
+| Premium Compensation Value for Agent i                    | vp i       |
+| Probability Density Function for Premium Compensation     | fv         |
+| Cumulative Distribution Function for Premium Compensation | Fv         |
+</Table>
+
+# B Theoretical Proofs
+
+Below, we provide the full proofs of our Theorems and Corollaries presented within our work.
+
+# B.1 Proof of Theorem 1
+
+Theorem 1 (Restated). Under Assumption 2, agents participating in Reserve Thresholding Equation 2 have an optimal bid and utility of,
+
+and submit models with the following compliance level,
+
+Proof. From agent i's utility within Reserve Thresholding, Equation 2, it is clear that ui(0) = 0. We proceed to break the proof up into cases where agents have (1) a deployment value equal to or less than the price of compliance pϵ and (2) a deployment value larger than pϵ.
+
+# Appendix
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+Case 1: vd i ≤ pϵ. Leveraging Equation 2, when b < pϵ the indicator function returns 1(b≥pϵ) = 0. Therefore, agent utility is always negative when bidding less than pϵ,
+
+When b ≥ pϵ, the indicator function returns 1(b≥pϵ) = 1. Thus, agent utility becomes,
+
+Since this function is strictly decreasing with respect to b, the function is maximized at the smallest bid b = pϵ,
+
+For an agent with deployment value at most equal to pϵ, the upper bound on attainable utility when it participates, i.e., b ∈ (0, 1], is zero (Equation 16). Thus, agents have nothing to gain by participating, as they already start at zero utility ui(0) = 0. As a result, agents will not submit a model, s∗i = M(0) = 0.
+
+Case 2: vd i > pϵ. By the same two-region argument as Case 1, bidding b < pϵ results in negative utility. Similarly, bidding b ≥ pϵ results in an agent optimally bidding b∗i = pϵ. However, in Case 2, the agent utility becomes,
+
+An agent with deployment value larger than pϵ will have a positive optimal utility when it participates (Equation 17). Furthermore, at this optimal bid, the corresponding compliance level is s∗i = M -1 (pϵ) = ϵ.
+
+# B.2 Proof of Theorem 2
+
+Theorem 2 (Restated). Agents participating in CIRCA Equation 6 follow an optimal bidding strategy ˆb∗i of,
+
+where F (·) denotes the cumulative distribution function (CDF) of the random premium reward variable corresponding to the premium reward vp i = Viλi with F (vp i ) > 0 for vp i > 0.
+
+Proof. Before beginning our proof, we note that each agent i cannot alter its own valuation vp i for winning the all-pay auction. Each valuation is private (unknown by other agents) and predetermined: total reward Vi and partition factor λi are randomly selected from a given distribution D on [0, 1] and [0, 1/2] respectively by "nature". We define the cumulative distribution function for the auction reward vp i = Viλi as F (·) and the probability distribution function as f(·). From Equation 6, we find that not participating (i.e., b = 0) results in no utility,
+
+An agent receives negative utility if its bid does not reach the price of compliance pϵ,
+
+Consequently, rational agents will either opt not to participate (notated as the set of agents N) or participate (notated as the set of agents P ) and bid at least pϵ. We define these groups as,
+
+From here, we only focus on agents i ∈ P which participate (i.e., have utility to be gained by participating). As a result from Equations 18 and 19, Equation 21 transforms into,
+
+The result of Equation 22 is that participating agents bid at least pϵ. This is important, as every participating agent knows that all rival agents j they will possibly be compared against have bj ∈ [pϵ, 1]. Agents can dictate how much they bid, and we design our auction to ensure that agents bid in proportion to their valuation. Following previous literature [Amann and Leininger, 1996, Bhaskar, 2018, Tardos, 2017, Krishna, 2009], we desire a monotone increasing equilibrium bidding function β(vp ) : [0, 1/2] → [pϵ, 1]. We conjecture that all rival agents j ̸= i follow this bidding function β(vp j ). We then derive agent i's best response under this conjecture, and verify that the best response is β(vp i ), establishing Nash equilibrium by symmetry. Using a bidding function transforms agent utility, for a given bid b, into the following,
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+Since β(·) is monotone increasing up to 1, and agents bidding b = 1 automatically win, one can see that P(β(b) > β(vp j )) = P(b > vp j ). Since vp j ∼ F , it follows that P(b > vp j ) = F (b). Thus, the utility function above becomes,
+
+At equilibrium, truthful reporting b = vp i must be optimal. Differentiating with respect to b and solving the first order conditions at b = vp i yields,
+
+This yields the following ODE (as vp i takes on values between 0 and 1/2),
+
+Now, solving the ODE at the specific value vp i ,
+
+From Equation 22, all participating agents bid at a minimum β(0) = pϵ. Therefore, β(0) = pϵ is our boundary condition. Using integration by parts, and applying the boundary condition yields our desired result,
+
+Since ∫ vp i 0 F (z)dz < ∫ vp i 0 F (vp i )dz = vp i F (vp i ) for vp i > 0, it follows that,
+
+The general utility for CIRCA is detailed in Equation 5 as ui(b; b-i, vd i , vp i ) = vd i - pϵ + vp i · 1[agent i wins]. This is represented more formally as,
+
+Substituting in the optimal bid yields,
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+# B.3 Proof of Proposition 1
+
+Proposition 1 (Restated). Let ˆb∗i denote the optimal bidding strategy from Theorem 2. The expected participating agent's bid over the distribution of premium rewards vp i , where F (·) and f(·) denote the CDF and probability density function (PDF) of vp i , is,
+
+Proof. From Theorem 2, the optimal bid is,
+
+We simplify vp i F (vp i ) - ∫ vp i 0 F (z) dz using integration by parts. Recall that for any function F ,
+
+Therefore,
+
+Taking expectations over vp i , and applying the Law of the Unconscious Statistician, yields
+
+where the outer f(v) is the PDF of vp i and the domain upper limit is 1/2 since vp i = Viλi ≤ 1/2 by construction. The double integral is taken over the region {(z, v) : 0 ≤ z ≤ v ≤ 1/2}, which is a triangle in the (z, v) plane with vertices (0, 0), (0, 1/2), and (1/2, 1/2). Since zf(z)f(v) ≥ 0 on this region, we can switch the order of integration (via Fubini's theorem). For a fixed z, v ranges over [z, 1/2], giving,
+
+The inner integral evaluates (since F (1/2) = 1 as vp i ≤ 1/2) to,
+
+The final inequality holds since z, f(z), and (1 - F (z)) are positive for some z ∈ (0, 1/2) (since F (vp i ) > 0 for vp i > 0).
+
+# B.4 Proof of Corollary 1
+
+Corollary 1 (Restated). Under Assumption 2, for agents having total value Vi and scaling factor λi both stemming from a Uniform distribution, with vd i = (1 - λi)Vi, and vp i = λiVi, their optimal bid and utility participating in CIRCA (Equation 6) are,
+
+This leads to our final result,
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+Participating agents submit models with compliance,
+
+Proof. Let vp i := Viλi, where Vi ∼ U[pϵ, 1] and λi ∼ U[0, 1/2]. The reason that Vi is within the interval [pϵ, 1], is that all participating agents must have a value of at least pϵ or else they would not have rationale to bid. The smallest value of Vi such that this is possible is pϵ, so it is the lower bound on this interval. Our first goal is to find the PDF of vp i , fvp i (·).
+
+We begin solving for fvp i (·) by using a change of variables. For the product of two random variables v = x1 · x2, let y1 = x1 · x2 and y2 = x2. Thus, we find inversely that x2 = y2 and x1 = y1/y2. Since x1 and x2 are independent and both uniform, we find that,
+
+When using the change of variables this becomes,
+
+Marginalizing out y2 (a non-negative value) yields,
+
+The bounds of integration depend upon the value of y1. The change of variable to the (y1, y2) space, where 0 ≤ y1, y2 ≤ 1/2, results in a new region of possible variable values. This region is a triangle bounded by the three vertices: (0, 0), (pϵ/2, 1/2), and (1/2, 1/2). Thus, the bounds of marginalization depend upon the value of y1. For 0 ≤ y1 ≤ pϵ/2 we have,
+
+For pϵ/2 ≤ y1 ≤ 1/2 we have,
+
+Thus, as a piecewise function the PDF is formally,
+
+Now, the CDF is determined through integration,
+
+We can integrate the CDF to get,
+
+Plugging all of this back into Equation 7 yields,
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+Since bi cannot be larger than 1, we cap the bidding function at one via,
+
+The utility gained by agent i for using such a bidding function is,
+
+When this utility is larger than 0, the agent will participate otherwise the agent will not submit a model to the regulator. Finally, we can find the optimal compliance level by using Assumption 2,
+
+# B.5 Proof of Corollary 2
+
+Corollary 2 (Restated). Under Assumption 2, let agents have total value Vi and scaling factor λi stem from Beta (α, β = 2) and Uniform distributions respectively, with vd i = (1 - λi)Vi and vp i = λiVi. Denote the CDF of the Beta distribution on [0, 1] as Fβ(x) = 3x2 - 2x3 . Optimal bid and utility for agents participating in CIRCA (Equation 6) are,
+
+Participating agents submit models with compliance,
+
+Proof. Similar to Corollary 1, we begin solving for fvp i (·) using a change of variables. For the product of two random variables v = x1 · x2, let y1 = x1 · x2 and y2 = x2. Inversely, x2 = y2 and x1 = y1/y2. While x1 and x2 are independent, x1 comes from a Beta distribution and x2 from a Uniform one. The PDF and CDF of a Beta distribution, with α = β = 2, on [0, 1] are defined as,
+
+Now, the PDF over y1, y2 is defined as,
+
+When using the change of variables this becomes,
+
+Marginalizing out y2 (a non-negative value) yields,
+
+The bounds of integration depend upon the value of y1. The change of variable to the (y1, y2) space, where 0 ≤ y1, y2 ≤ 1/2, results in a new region of possible variable values. This region is a triangle bounded by the three vertices: (0, 0),
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+(pϵ/2, 1/2), and (1/2, 1/2). Thus, the bounds of marginalization depend upon the value of y1. For 0 ≤ y1 ≤ pϵ/2 we have,
+
+For pϵ/2 ≤ y1 ≤ 1/2 we have,
+
+Thus, as a piecewise function the PDF is formally,
+
+Now, the CDF is determined through integration,
+
+We can integrate the CDF to get,
+
+Plugging all of this back into Equation 7 yields,
+
+Since bi cannot be larger than 1, we cap the bidding function at one via,
+
+The utility gained by agent i for using such a bidding function is,
+
+When this utility is larger than 0, the agent will participate otherwise the agent will not submit a model to the regulator. Finally, we can find the optimal compliance level by using Assumption 2,
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+# C Additional Experiments
+
+Within this section, we verify empirically that our computed PDF and CDFs in Corollaries 1 and 2 are correct. To accomplish this, we randomly sample and compute the product of Vi and λi fifty million times. We then plot the PDF and CDF of the resultant products and compare it with our theoretical PDF and CDF. The theoretical PDF and CDF for Corollary 1 are defined in Equations 47 and 48, while those for Corollary 2 are found in Equations 61 and 62. The results of these simulations, which validate our computed PDFs and CDFs, are shown in Figures 6 and 7. To ensure correctness, we perform testing on different values of pϵ. As expected, our theory lines up exactly with our empirical simulations for both Corollaries as well as across varying pϵ. We note that all experiments are computationally light, with all run locally on an M3 chip with 16GB of RAM.
+
+<Figure>
+Figure 6: Numerical validation of our derivations for fv(vp i ) and Fv(vp i ), where vp i := Viλi, for Vi and λi coming from Uniform distributions (Corollary 1). The price of attaining ϵ is set as pϵ = 1/4 (top row) and pϵ = 1/2 (bottom row).
+</Figure>
+
+# D Binary and Discrete Compliance in Circa
+
+Our framework still works within binary or discrete settings. This is important when dealing with properties or metrics that are not continuous, like how the EU AI Act evaluates AI risk into minimal, limited, high, and unacceptable tiers [Act, 2024]. The rationale behind why CIRCA works for binary or discrete settings is that models can still be ranked or compared against each other depending on how well they satisfy the given metric or property.
+
+For example, models can be separated into Pass/Fail categories, where the Pass category can be further split into High/Medium/Low sub-categories. All models achieving at least Low Pass compliance are cleared for deployment. While a model either complies or does not, the models can still be gauged on how well they comply (e.g., High/Medium/Low). Since a ranking of models can still be generated, premium rewards can be provided to higherpassing models.
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: Auction-Based Regulation for Artificial Intelligence -->
+
+<Figure>
+Figure 7: Numerical validation of our derivations for fv(vP i ) and Fv(vP i ), where vp i := Viλi, for Vi coming from a Beta distribution and λi from a Uniform distributions (Corollary 2). The price of attaining ϵ is set as pϵ = 1/4 (top row) and pϵ = 1/2 (bottom row).
+</Figure>
+
+In situations where the regulatory policy is black and white, for example "your model must be trained with differential privacy", CIRCA still holds as an ordering or ranking between models can still be ascertained. In the example of differential privacy, any model that is trained with differential privacy would be cleared for deployment. However, it is also true that differential privacy can be gauged by a level of privacy ϵDP (not to be confused with our compliance threshold ϵ). Models with smaller values of ϵDP will be provided additional premium rewards since they are more compliant (i.e., more private). Thus, CIRCA would still incentivize agents to become more private even when there is a binary compliance metric.
+
+# E Repeating CIRCA Auctions
+
+The current auction structure (Algorithm 1) expects agents to submit a single model trained solely for the upcoming auction. There is no expectation that the model will be reused for a future auction, or indication that the model has been submitted to a previous auction. Looking towards the future, we would like to design CIRCA to fit a repeatable auction structure, in which approved or rejected models may be resubmitted in subsequent auctions.
+
+Repeated Agent Utility. Previously, in Algorithm 1, agents start the regulatory process with zero cost and value (i.e., they are building their models from scratch). In repeating CIRCA auctions, agent cost and value are accumulated across all previous auction submissions. For example, if an agent trains its already-accepted model further to attain a higher compliance level si, its total accumulated training cost is M(si). This agent's total value becomes the value its model gained from previous auction submissions plus any value gained from the current auction.
+
+By allowing repeated CIRCA auctions, an agent is able to repeatedly submit its model for regulatory review. We note that repeated submissions decrease the value of model deployment; once an agent earns the reward for deploying their model, subsequent deployments of the same model with improved compliance levels can be realistically expected to earn less value than the initial deployment. We characterize this loss in value for repeated submissions with an indicator function in the utility function that only allows deployment value to be obtained once, on initial acceptance of a model. While we allow agents to win premium rewards across multiple auctions, we note that a regulator can curb this by either limiting the number of auction submissions per agent or the number of auctions held per year. We now define the repeated CIRCA auction utility of agent i, who has participated in a - 1 previous auctions, as:
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+

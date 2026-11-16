@@ -1,0 +1,14 @@
+{
+  "request_hash": "a62df5f6111414d2646737a7e8c0232dae095c6ef3a8b377bee01a9f4bfb1a72",
+  "prompt_sha256": "f0f6d9d3d5a7c30cc485f3bd8c1592a21bb468267dda7e1337881d68da081dc2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOgZcxzcqGvvPauO46ibIABJYYYH",
+  "prompt_tokens": 8420,
+  "completion_tokens": 34,
+  "actual_usd": 0.0012834,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the Disparate Impact metric and the four-fifths rule."
+  }
+}

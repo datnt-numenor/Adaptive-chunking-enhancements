@@ -1,0 +1,14 @@
+{
+  "request_hash": "0fe467c49309ab219678029f6b8d2f669da9b9fe6417d523b3641a7c4cd979aa",
+  "prompt_sha256": "f0cbe90ea6fc18118a03fac085e62a24d955385ac9e00d404fe840d055a989e4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNezHgiNejKmbMWk5jfCAwelhphd",
+  "prompt_tokens": 8356,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012791999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the challenges auditors face with costly or restricted APIs and the legal risks associated with unauthorized data collection under the CFAA."
+  }
+}

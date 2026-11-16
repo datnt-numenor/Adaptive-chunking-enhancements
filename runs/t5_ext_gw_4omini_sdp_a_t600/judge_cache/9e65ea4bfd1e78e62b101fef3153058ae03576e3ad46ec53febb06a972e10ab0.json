@@ -1,0 +1,14 @@
+{
+  "request_hash": "9e65ea4bfd1e78e62b101fef3153058ae03576e3ad46ec53febb06a972e10ab0",
+  "prompt_sha256": "eedb38d7211795d8dc6f9eee95183f2b03d8a9831a748d3b87a2d7612a602522",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQQDVC2cmSzjAg7qcUQnYrnoVcD",
+  "prompt_tokens": 8204,
+  "completion_tokens": 49,
+  "actual_usd": 0.00126,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the challenges of determining consent for NCII and the difficulties faced by human labelers and automated filters in accurately classifying such content."
+  }
+}

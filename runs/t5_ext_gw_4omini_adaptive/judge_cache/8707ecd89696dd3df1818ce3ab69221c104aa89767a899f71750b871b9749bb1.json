@@ -1,0 +1,14 @@
+{
+  "request_hash": "8707ecd89696dd3df1818ce3ab69221c104aa89767a899f71750b871b9749bb1",
+  "prompt_sha256": "6af9f8b6769bacdc06347c7dfef18d401d5bd2834eed85cf2e725979d39b884c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO7aV8NHfVhouAnkL2vOH7VGqI6V",
+  "prompt_tokens": 8910,
+  "completion_tokens": 39,
+  "actual_usd": 0.0013599,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that occupations 26-29 were not used in testing and analysis, directly supporting the claim made in the Reference Answer."
+  }
+}

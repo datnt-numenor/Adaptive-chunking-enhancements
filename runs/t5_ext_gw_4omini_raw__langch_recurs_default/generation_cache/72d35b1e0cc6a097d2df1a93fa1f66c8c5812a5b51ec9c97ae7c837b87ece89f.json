@@ -1,0 +1,10 @@
+{
+  "request_hash": "72d35b1e0cc6a097d2df1a93fa1f66c8c5812a5b51ec9c97ae7c837b87ece89f",
+  "prompt_sha256": "a8e6e743ea8dab933e45e3364f1a470439b67cb8ad58eb8391efb1fd8ec35bb0",
+  "answer": "The evaluation method described as providing the highest statistical guarantees and rigor is CyberGym. This is because CyberGym can evaluate a larger and more diverse set of vulnerabilities compared to HonestCyberEval and BountyBench, achieving highly realistic evaluations of end-to-end discovery and exploitation of vulnerabilities. By covering more instances of the same task, it also provides higher statistical guarantees, raising its rigor above the other two methods.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNEfoxWtEdxQ7RtMt7jpZCcdFe22",
+  "prompt_tokens": 8242,
+  "completion_tokens": 80,
+  "actual_usd": 0.0012843
+}

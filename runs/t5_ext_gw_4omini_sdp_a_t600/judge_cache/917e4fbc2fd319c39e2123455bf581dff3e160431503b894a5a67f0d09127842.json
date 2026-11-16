@@ -1,0 +1,14 @@
+{
+  "request_hash": "917e4fbc2fd319c39e2123455bf581dff3e160431503b894a5a67f0d09127842",
+  "prompt_sha256": "5b5f4834da75b70f7bf57344c586feddf7727dbfc0cf913fe0bebdbe48e91b49",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiObI2ilwbYJoGgFkN8UePjt043FO",
+  "prompt_tokens": 9021,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013807499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of design in algorithmic systems and specifically mentioning the Politoscope tool as an example of enabling user interaction with data."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "b9a97b674e124ab256ba557b545c39178acc149f75c7b62ca888596d3cddb8d9",
+  "prompt_sha256": "f6b7357f3cc212b8ea047db44e7391e9da2574b5b1aef3f0099d2f5171e58af4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOa5WDx9wyDBdhwc8xvQHx86vvQm",
+  "prompt_tokens": 7338,
+  "completion_tokens": 55,
+  "actual_usd": 0.0011337,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the requirements for agencies to document various aspects of data used in AI, including collection, preparation, quality, representativeness, relevance, breadth, and public disclosability."
+  }
+}

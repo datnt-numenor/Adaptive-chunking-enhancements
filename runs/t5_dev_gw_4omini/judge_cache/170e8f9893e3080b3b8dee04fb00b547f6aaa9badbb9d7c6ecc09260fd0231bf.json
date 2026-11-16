@@ -1,0 +1,14 @@
+{
+  "request_hash": "170e8f9893e3080b3b8dee04fb00b547f6aaa9badbb9d7c6ecc09260fd0231bf",
+  "prompt_sha256": "d84f516de080ed435f0857c9e420496e07732b00ba07c4ba63d862ab191f5d13",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei29qIcH1bFQL0P5EfXiaysQmaXY8",
+  "prompt_tokens": 8024,
+  "completion_tokens": 55,
+  "actual_usd": 0.0012365999999999998,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions the 'Conference of the Parties' and its role in assessing the implementation of the Framework Convention, but it does not explicitly state that the Conference must adopt its own rules of procedure by consensus within twelve months."
+  }
+}

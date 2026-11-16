@@ -1,0 +1,14 @@
+{
+  "request_hash": "f0d3d6dc889b7f7aa5bd884ff0a4dbbb36aca046198ce3ccf9b78c6779a6a182",
+  "prompt_sha256": "166a58469d1f81289a1889681db25ff802af982f230507525de5e1536f1aacf7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXAT9pdSeL8DvTegqupuvSJw8hc",
+  "prompt_tokens": 8239,
+  "completion_tokens": 38,
+  "actual_usd": 0.0012586499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of algorithmic bias in hiring, including specific examples that directly support the claims made in the Reference Answer."
+  }
+}

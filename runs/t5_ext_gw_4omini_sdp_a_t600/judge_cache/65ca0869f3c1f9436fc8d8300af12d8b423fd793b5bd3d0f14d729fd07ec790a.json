@@ -1,0 +1,14 @@
+{
+  "request_hash": "65ca0869f3c1f9436fc8d8300af12d8b423fd793b5bd3d0f14d729fd07ec790a",
+  "prompt_sha256": "6d742466a0ca3ca74c3dfaef35642e5d15911761366c096b7a834d64874ec210",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhbbTCN6qTdgVLa7a9TjjSKcOqX",
+  "prompt_tokens": 9378,
+  "completion_tokens": 46,
+  "actual_usd": 0.0014343,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about Carbon Mapper, including its co-founders and its mission to track methane and CO2 emissions, fully supporting the claims made in the Reference Answer."
+  }
+}

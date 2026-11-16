@@ -1,0 +1,14 @@
+{
+  "request_hash": "3334c2fefac699313f86c790f8f932dbef65a0f41b7c3ec1d094818520e4d174",
+  "prompt_sha256": "ab700a3801baf6119e960a4d728d5b111008f2dc540f822091435df8dca2ee8b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNy9SduAuOH0Oo3KIiXQqz0W5mjl",
+  "prompt_tokens": 7749,
+  "completion_tokens": 48,
+  "actual_usd": 0.0011911499999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information related to the cost of queries, technical expertise, or the specifics of comparing extracted data against training data, which are key claims in the Reference Answer."
+  }
+}

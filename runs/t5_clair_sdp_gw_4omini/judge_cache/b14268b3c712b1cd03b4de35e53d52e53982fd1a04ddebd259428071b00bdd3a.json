@@ -1,0 +1,14 @@
+{
+  "request_hash": "b14268b3c712b1cd03b4de35e53d52e53982fd1a04ddebd259428071b00bdd3a",
+  "prompt_sha256": "69b1cfaf9173600a3f9659600905b56c598b5c78853ab2a36dc6705e359c5042",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP4yfSveIELMUnKZ4PtDTbByAsf4",
+  "prompt_tokens": 8202,
+  "completion_tokens": 40,
+  "actual_usd": 0.0012542999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly discussing data integrity issues, including inconsistencies, missing values, type mismatches, and range anomalies."
+  }
+}

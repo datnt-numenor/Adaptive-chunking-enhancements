@@ -1,0 +1,10 @@
+{
+  "request_hash": "61eaf0fc94ed3502c911b20b7a838dfba724dece3aa90520ef138ff1741e405b",
+  "prompt_sha256": "0aa8163c1b2b589949e5145c59a899a9c1510ab97d8f790b7230c26baca553e8",
+  "answer": "Agencies must document the following about the data used for AI, beyond just its source, according to OMB M-24-10:\n\na. The data collection and preparation process, including the provenance of any data used to train, fine-tune, or operate the AI;\n\nb. The quality and representativeness of the data for its intended purpose;\n\nc. How the data is relevant to the task being automated and may reasonably be expected to be useful for the AI's development, testing, and operation;\n\nd. Whether the data contains sufficient breadth to address the range of real-world inputs the AI might encounter and how data gaps and shortcomings have been addressed either by the agency or vendor;\n\ne. If the data is maintained by the Federal Government, whether that data is publicly disclosable as an open government data asset, in accordance with applicable law and policy.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNMw2Q4PeifLqBGNaYjf115rdECY",
+  "prompt_tokens": 7539,
+  "completion_tokens": 174,
+  "actual_usd": 0.00123525
+}

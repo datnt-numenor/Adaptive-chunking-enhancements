@@ -1,0 +1,14 @@
+{
+  "request_hash": "99f112e4ba36e461c8de619b49ae50d63129c14c61fec70a329d67f5a7e1daae",
+  "prompt_sha256": "6768a32e9a972956db0f2da9a55be59d5974ea79e12649dad7541503fc99c1fb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4aAYY7AmriQMGn5laMM7FFB7EY",
+  "prompt_tokens": 7756,
+  "completion_tokens": 37,
+  "actual_usd": 0.0011856,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information about the abbreviation 'DOS' or its meaning, making it unable to support the Reference Answer."
+  }
+}

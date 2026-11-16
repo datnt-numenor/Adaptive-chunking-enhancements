@@ -1,0 +1,12 @@
+Norma (légal)_EDPS Generative AI gu our_recurs_1100               size_compliance     1.000000      1.000000  0.000000
+Norma (légal)_EDPS Generative AI gu            page               size_compliance     1.000000      1.000000  0.000000
+Norma (légal)_EDPS Generative AI gu our_recurs_1100               block_integrity     1.000000      1.000000  0.000000
+Norma (légal)_EDPS Generative AI gu            page               block_integrity     1.000000      1.000000  0.000000
+Norma (légal)_EDPS Generative AI gu our_recurs_1100           intrachunk_cohesion     0.619569      0.619690  0.000121
+Norma (légal)_EDPS Generative AI gu            page           intrachunk_cohesion     0.683201      0.683149  0.000052
+Norma (légal)_EDPS Generative AI gu our_recurs_1100 document_contextual_coherence          NaN           NaN       NaN
+Norma (légal)_EDPS Generative AI gu            page document_contextual_coherence     0.882648      0.882316  0.000332
+Norma (légal)_EDPS Generative AI gu our_recurs_1100       references_completeness     1.000000      1.000000  0.000000
+Norma (légal)_EDPS Generative AI gu            page       references_completeness     1.000000      1.000000  0.000000
+
+max |local - kaggle| = 8.36e-04; seconds = 4.2; {'torch': '2.6.0+cu124', 'device': 'NVIDIA H100 80GB HBM3', 'jina_revision': 'ab036b023d30b4d1138c4c3bfa9f0c445ab455d6', 'code_revision': 'bd55a5ec8e6c0fb1d6c26efb4b6a4a74ce8a88d3', 'dtype': 'torch.bfloat16', 'python': '3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]', 'platform': 'Linux-6.8.0-147-generic-x86_64-with-glibc2.39', 'seconds': 4.2}

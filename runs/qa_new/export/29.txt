@@ -1,0 +1,428 @@
+DOC_ID: Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative
+
+<<<PAGE 76>>>
+certain nombre d'outils open-source pour l'analyse des biais dans les modèles d'IA générant des images. De l'analyse de biais dans les images générées en fonction des adjectifs choisis [128] à la compilation de « visage moyen » des images générées [129], ces outils permettent d'appréhender de façon interactive et ludique la question des biais algorithmiques de l'IA générative.
+
+Les recommandations de Data For Good pour les entités construisant et diffusant les modèles
+
+Comme pour la véracité des modèles, l'absence de biais doit être contrôlée et documentée à chaque étape de la construction et de la diffusion du modèle. Que cela soit dans les données d'entraînement, les prompts demandés par les utilisateurs, les réponses apportées, les data scientists doivent s'interroger sur ce qui pourrait créer des biais et causer du tort aux utilisateurs.
+
+D'autres approches que les LLM peuvent être considérées pour éviter leurs biais et difficulté d'interprétation. En particulier selon les besoins et usages, on pourra considérer des modèles plus simples et plus explicables. On pourra de même considérer des solutions d'identification et de correction de biais a posteriori. Évidemment, ces solutions techniques doivent être largement documentées.
+
+# IA générative et politique
+
+Les conséquences du West Coast Effect
+
+La grande majorité des algorithmes d'IA générative développés ces dernières années sont issus d'entreprises privées américaines. Ces outils développés par des géants de la Silicon Valley et à destination des territoires d'influence occidentale portent le biais de leur vision du monde.
+
+Le cas de l'annonce par Google de son modèle Bard [130] mi-février 2023 en est un bon exemple. Bard est un concurrent principal de ChatGPT mais sa présentation au grand public ne s'est pas déroulée comme prévu : devant les spectateurs stupéfaits, Bard affirme avec conviction que James Webb est le premier télescope à avoir capté des images d'une exoplanète. Cette information est fausse, le premier télescope à l'avoir fait étant le VLT en 2004, un matériel européen installé au Chili.
+
+Il n'est pas question ici uniquement de fiabilité de l'information - sujet discuté au premier chapitre du présent ouvrage, mais d'une pente glissante de propagation d'une idéologie. Les modèles de langage étant essentiellement des perroquets
+
+\* [128] https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer
+
+\* [129] https://huggingface.co/spaces/society-ethics/Average_diffusion_faces
+
+\* [130] https://www.01net.com/actualites/bard-ia-google-grosse-gaffe-commence-bien.html
+
+<!-- PageFooter: page 74 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 77>>>
+stochastiques, ils génèrent des mots et les concepts les plus plausibles dans un contexte donné. Cela signifie qu'avec les données fournies en apprentissage, la réponse la plus plausible était que le premier télescope à capter des images d'une exoplanète était américain.
+
+Cet incident illustre très bien le tropisme américano-centriste dont souffre la technologie en général, et les produits des GAFAM en particulier. Google a certainement mis sur pied une stratégie de validation des résultats du modèle par des humains. Pourtant personne n'a visiblement remis en question que le télescope américain était le premier à prendre cette incroyable mesure.
+
+De l'autre côté du monde, la Chine déploie elle aussi ses outils d'IA générative [131] Et met en place une régulation punitive de leur mauvaise utilisation [132], rendue possible par l'absence d'anonymat sur l'internet chinois. Mais en ce qui concerne les biais des modèles, si des biais ethniques et de disparité physique ont déjà été détectés dans Different Dimension Me [133], l'équivalent de LENSA AI déjà mentionné ici, il n'existe pas (encore?) d'étude sur la tendance politique de ERNIE, l'équivalent chinois de chatGPT.
+
+Il est toutefois à noter que les discussions politiques avec les IA génératrices de texte sont prohibées [134] et que ERNIE-ViLG (135], IA génératrice d'images, ne vous générera aucune représentation de la place Tian'anmen [136], avec ou sans chars.
+
+Wall Street Journal [134]
+
+N'en déplaise à certains, ce n'est pas demain que nous pourrons assister à un débat politique entre l'IA chinoise et l'IA américaine !
+
+\* [133] https://pandaily.com/tencents-anime-ai-picture-generator-hits-global-social-platforms/
+
+\* [134] https://www.youtube.com/watch?v=xRr/OjXcSHk
+
+\* [135] https://huggingface.co/spaces/PaddlePaddle/ERNIE-ViLG
+
+[136] https://www.technologyreview.com/2022/09/14/1059481/baidu-chinese-image-ai-tiananmen/
+
+<!-- PageFooter: [131] https://techcrunch.com/2022/12/31/how-china-is-building-a-parallel-generative-ai-universe/ [132] https://techcrunch.com/2022/12/13/chinas-generative-ai-rules-set-boundaries-and-punishments- for-misuse/ Biais algorithmiques de l'IA générative 75 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 78>>>
+## Si ChatGPT tronait au G20, serait-il plutôt Emmanuel Macron, Justin Trudeau ou Joe Biden ?
+
+Concentrons-nous donc sur chatGPT qui, lui, peut nous parler politique.
+
+D'ailleurs à en croire des tests politiques soumis à ChatGPT [137] en 2022, l'outil conversationnel serait plutôt d'orientation centre gauche, progressiste et libéral. Quand on lui demande quelles personnalités politiques sont de ce bord politique, l'outil nous propose des noms comme Emmanuel Macron, Justin Trudeau ou encore Joe Biden.
+
+DA Peux tu me donner une liste des personnalités politiques les plus connues du grand public qui sont ouvertement de gauche modérée, progressistes et libérale ?
+
+ChatGPT, analyse Data for Good, mars 2023.
+
+Comment se traduit ce positionnement ? D'après les résultats de ces tests politiques, chatGPT est favorable au multiculturalisme, à l'accueil des migrants, aux droits des minorités et préoccupé par les enjeux écologiques.
+
+Et malgré ses réponses qui nous paraissent habituellement peu clivantes, ChatGPT, qui évolue très fréquemment sur ces questions de positionnement, semblait au moment de premiers tests fermement ancré dans ses positions. Par exemple, à la question « doit-on punir les gens qui ne votent pas dans les démocraties ? », la réponse du modèle est sans appel : non, c'est mal de vouloir punir les citoyens qui ne votent pas, et les démocraties ne punissent pas mais éduquent les citoyens car seul le dialogue garantit la démocratie.
+
+<!-- PageFooter: [13] https://www.lepoint.fr/societe/woke-ou-reac-pour-qui-vote-chatgpt-27-01-2023-2506461_23.php page 76 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 79>>>
+S
+
+Dans les démocraties, le droit de vote est un droit fondamental et l'exercice de ce droit est une responsabilité citoyenne importante. Cependant, il est important de reconnaître que tout le monde ne peut pas voter pour diverses raisons, telles que l'âge, la citoyenneté ou des problèmes de santé.
+
+Il n'est donc pas approprié de punir les personnes qui ne votent pas. La participation électorale doit être encouragée, mais cela doit être fait de manière positive, en offrant des incitations pour encourager les gens à voter plutôt qu'en les punissant pour ne pas voter.
+
+De plus, certaines personnes peuvent ne pas avoir de préférences politiques claires ou ne pas être suffisamment informées sur les enjeux et les candidats pour prendre une décision éclairée lors d'une élection. Il est donc important de fournir des informations claires et impartiales sur les enjeux et les candidats pour aider les gens à prendre des décisions éclairées lorsqu'ils vont voter.
+
+Enfin, il est important de reconnaître que la démocratie est basée sur la liberté individuelle et le droit de choisir de voter ou non. Les gouvernements ne devraient pas imposer de sanctions pour ne pas voter, mais plutôt encourager la participation démocratique et respecter les choix individuels des citoyens.
+
+Réponse de chatGPT à la question « Doit- on punir les gens qui ne votent pas dans les démocraties ? », chatGPT, analyse Data for Good, mars 2023.
+
+Or plusieurs États démocratiques comme la Belgique ou l'Australie ont instauré un vote obligatoire dans le cadre duquel le refus de voter est passible de poursuites et de sanctions.
+
+La question n'est pas de savoir si l'on est pour ou contre le vote obligatoire, mais de montrer un positionnement de l'outil.
+
+## ChatGPT, premier bénévole actif d'un candidat politique ?
+
+L'analyse sémantique des discours politiques par l'intelligence artificielle[138] est en plein essor, et chatGPT reprend bien les codes sémantiques identifiés des différents courants politiques.
+
+Liste de mots-clés par courants politiques, chatGPT, analyse Data for Good, mars 2023.
+
+Techniquement donc, chatGPT peut être utilisé comme outil d'aide à la rédaction de fiches politiques ou de discours. A la manière de Frank Lepage, capable d'improviser
+
+[138] http://lexicometrica.univ-paris3.fr/jadt/JADT2020/jadt2020_pdf/GUARESI_JADT2020.pdf
+
+<!-- PageFooter: Biais algorithmiques de l'IA generative 77 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 80>>>
+un discours politique à partir d'une suite aléatoire de mots-clés [139], ChatGPT va générer des discours politiques creux mais sémantiquement viables. Seul le choix de vocabulaire fera basculer le discours d'un bord à l'autre de l'échiquier politique, en fonction des spécificités de la demande. Sans préciser le bord politique attendu, chatGPT produira un contenu assez consensuel de centre gauche libérale américaine.
+
+### ST Chers concitoyens,
+
+Nous vivons dans une période de paix relative en Europe, une paix que nous avons chèrement gagnée après des siècles de conflits sanglants. Mais cette paix est fragile et nous devons la protéger à tout prix. Pour cela, nous devons soutenir notre armée et nos forces de sécurité, et leur donner les moyens nécessaires pour défendre notre pays et nos intérêts nationaux.
+
+Nous devons également travailler en étroite collaboration avec nos alliés européens pour renforcer la sécurité collective de notre continent. Cela signifie une coopération accrue en matière de défense, de renseignement et de lutte contre le terrorisme. Nous devons également être fermes dans nos relations avec les puissances extérieures qui cherchent à saper la stabilité de notre continent.
+
+Mais la paix en Europe ne se limite pas à la sécurité militaire. Nous devons également promouvoir la prospérité économique et le développement durable pour garantir un avenir pacifique pour les générations futures. Cela nécessite des politiques économiques qui encouragent l'innovation, la création d'emplois et la compétitivité, ainsi que des politiques environnementales responsables pour protéger notre planète.
+
+En tant que nation fière et souveraine, nous avons la responsabilité de protéger notre pays et notre continent contre toute menace. Ensemble, nous pouvons travailler pour assurer la paix et la prospérité durables en Europe. Merci.
+
+Discours politique généré par chatGPT sur la paix en Europe, d'un point de vue de droite, de gauche, et sans précision, chatGPT, analyse Data for Good, mars 2023.
+
+Bien sûr, la fiabilité de l'information n'est pas au rendez-vous - nous en parlons au chapitre 1 du présent ouvrage. Les fiches de synthèses fabriquées par ChatGPT relayent les fake news dès lors qu'elles sont suffisamment présentes pour peser dans la balance statistique, et ChatGPT n'a pas de considération pour l'exactitude des données chiffrées. Tout cela reste donc dans la pure tradition de la langue de bois [140], telle que décrite par Christian Delporte.
+
+# Gare à l'effet boule de neige
+
+Le biais, c'est le talon d'Achille de l'intelligence artificielle, générative ou pas. Il s'insinue partout, plus ou moins à notre insu. Il faut pourtant s'en affranchir pour
+
+[139] https://www.youtube.com/watch?v=LVqOC4fiHvk [140] https://editions.flammarion.com/une-histoire-de-la-langue-de-bois/9782081249554
+
+<!-- PageFooter: page 78 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 81>>>
+retirer le meilleur de l'IA. Pour maîtriser cette technologie, il est nécessaire de se remettre en question, d'avoir connaissance des biais possibles, dont nous venons de faire un tour d'horizon non exhaustif, et de travailler à s'en affranchir.
+
+De plus en plus de méthodes scientifiques émergent pour corriger les biais algorithmiques : en corrigeant les données d'apprentissage [141], en contraignant les algorithmes[142], en implémentant la discrimination positive [1431 .. Ces méthodes viennent soutenir la vision européenne d'une intelligence artificielle raisonnée et éthique, qui se traduit par la proposition de loi visant à encadrer les pratiques d'intelligence artificielle (EU Al Act [14]).
+
+Cependant aucune solution ne permettra de supprimer pleinement des biais, et ce tant que ce ne sera pas la préoccupation principale de tout l'écosystème. Tant que le gain économique sera considéré comme supérieur aux risques éthiques, sociaux et politiques, les solutions techniques ne suffiront pas.
+
+La limite informelle d'acceptabilité est aujourd'hui au niveau de la génération de contenu toxique ou d'appel à la haine. Les modèles d'IA générative qui dérapent se voient vite retirés du marché - ce fut le cas récemment pour Galactica [145], de Meta. OpenAI a réussi l'exploit de suffisamment contraindre ChatGPT, grâce à une couche humaine de renforcement d'apprentissage, pour limiter les contenus toxiques. En revanche, les biais algorithmiques sont dénoncés, moqués, mais semblent aujourd'hui finalement socialement juste assez acceptables pour ne pas contraindre l'avancée de l'IA générative.
+
+S'il semble difficile d'imaginer un arrêt de l'expansion d'usage de cette nouvelle technologie, il est crucial pour la société à venir de poser la question des limites qu'on souhaite ou non y apporter : sur l'accentuation des pensées culturelles et politiques de masse qu'elle cristallise, et sur la généralisation des inégalités qu'elle accentue.
+
+## 3 6 Les recommandations de Data For Good pour les décideurs
+
+Le contrôle d'absence de biais doit être généralisé et adapté aux contextes des modèles génératifs. En particulier la vérification de l'absence de biais ne doit plus être qu'un sujet de données sensibles, mais doit concerner les usages, notamment les prompts effectués et les réponses apportées.
+
+Au-delà des données et des modèles, il pourrait être utile de vérifier que les instances gouvernantes des entités créant et diffusant les modèles soient construites de manière à prévenir ces biais. Le monde du machine learning, souvent majoritairement blanc, masculin et aisé, pourrait avoir du mal à se sentir concerné et à agir contre les différents biais.
+
+\* [141] https://arxiv.org/abs/2302.14063
+
+\* [142] https://hal.science/hal-03253111v4/document
+
+\* [143] https://twitter.com/rzhang88/status/1549472829304741888
+
+\* [14] https://digital-strategy.ec.europa.eu/fr/library/proposal-regulation-laying-down-harmonised-rules- artificial-intelligence
+
+\* [145] https://www.technologyreview.com/2022/11/18/1063487/meta-large-language-model-ai-only- survived-three-days-gpt-3-science/
+
+<!-- PageFooter: Biais algorithmiques de l'IA générative 79 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 82>>>
+<!-- PageHeader: Partie 4 -->
+
+# Enjeux environnementaux
+
+<!-- PageBreak -->
+
+
+<<<PAGE 83>>>
+## Introduction
+
+Dans ce chapitre, nous allons traiter des enjeux environnementaux liés à l'IA générative. Pour rappel, il est nécessaire de considérablement diminuer les émissions de gaz à effet de serre pour maintenir l'augmentation des températures moyennes à + 1,5 °℃ par rapport à l'ère préindustrielle. Chaque secteur d'activité doit effectuer sa transition pour atteindre une réduction globale des émissions de gaz à effet de serre. Cela comprend donc le secteur de l'Intelligence Artificielle, ou plus largement, le secteur du numérique ICT (Information and Communication Technology).
+
+En 2020, on estimait que les émissions de gaz à effet de serre du secteur du numérique étaient responsables de 2,1 à 3,9 % des émissions mondiales. Ce secteur est toujours en forte croissance et l'IA encore plus particulièrement. En 2025, ces émissions auront doublé et constitueront 4 à 8 % des émissions mondiales (Freitag, et al. [146]). Par ailleurs, l'impact du numérique est préoccupant, non seulement du point de vue des émissions de gaz à effet de serre, mais aussi en termes de consommation énergétique, d'utilisation de l'eau, des ressources minérale et métallique, et de réduction de la biodiversité.
+
+Le domaine de l'IA doit également faire sa part dans cette transition environnementale et réduire son impact. Malheureusement, les récents travaux et projets en IA générative ne semblent pas tous prendre cette direction. C'est pourquoi dans ce chapitre, nous traiterons de l'impact environnemental entraîné par cette nouvelle technologie. Comment évaluer cet impact, et sur quoi se baser ? Quelles pourraient être les éventuelles pistes de réduction de ces impacts, aussi bien au niveau technique que pratique ? Quels seraient les cas d'usages positifs (for good) qui pourraient encourager l'utilisation d'une telle technologie afin de construire un avenir plus responsable et durable ?
+
+## Matérialité du numérique et de l'IA
+
+Les services numériques, dont l'IA générative fait partie, reposent systématiquement sur des équipements informatiques, et ces derniers consomment de l'énergie pour leur fonctionnement. L'impact environnemental de l'IA générative est souvent associé à sa consommation énergétique. Il ne faut pas oublier pour autant que la production d'équipements informatiques a des impacts sur l'environnement au moins aussi importants que la consommation énergétique.
+
+## Consommation d'électricité
+
+Les programmes offrant des services d'IA générative sont, dans la grande majorité des cas, hébergés sur des serveurs installés dans des data centers localisés partout dans le monde. Pour fonctionner, les serveurs consomment de l'électricité, qui, n'étant pas une énergie primaire, provient nécessairement d'une centrale de production d'électricité.
+
+La production d'électricité a un impact sur l'environnement qui dépend du moyen de production. On peut comparer les impacts sur l'environnement provoqués par différents modes de production en considérant les facteurs d'impact associés. Le plus
+
+<!-- PageFooter: [146] https://doi.org/10.1016/j.patter.2021.100340 Enjeux environnementaux 81 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 84>>>
+connu et le plus utilisé dans ce domaine est l'intensité carbone, qui mesure la quantité de gaz à effet de serre rejetés dans l'atmosphère. Elle s'exprime en « équivalent CO2 » (CO2eq), c'est-à-dire la quantité de gaz à effet de serre émis rapportée à la participation au réchauffement climatique globale du CO2. En effet, les gaz à effet de serre englobent non seulement le CO2, mais aussi d'autres gaz tels que le méthane ou le protoxyde d'azote. Bien que l'intensité carbone soit le facteur d'impact le plus regardé, il en existe bien d'autres permettant de quantifier d'autres types d'impacts, tels que la consommation d'eau, l'extraction de ressources minérales, ou bien l'impact sur la biodiversité.
+
+Toutes les centrales ne sont pas égales du point de vue de leur impact sur l'environnement. En effet, les centrales à combustible fossile (charbon, gaz naturel, fioul) émettent beaucoup plus de gaz à effet de serre que les centrales à énergie renouvelable (solaire, éolien, hydraulique) ou encore les centrales nucléaires.
+
+Émissions de gaz à effet de serre par type de centrale (gCO2 / kWh)
+
+<Figure>
+Émissions de gaz à effet de serre par type de centrale (gCO2 / kWh)
+</Figure>
+
+Au sein d'un même pays, plusieurs types de centrales électriques sont installés afin de répondre à la demande d'électricité. En particulier, les centrales à combustible fossile peuvent être utilisées pour absorber les creux de production des énergies renouvelables (lorsqu'il n'y pas de vent ou de soleil). À l'échelle d'un pays, on parle de mix électrique pour quantifier la part de production de chaque type de centrale. En France, où il y a une majorité de centrales nucléaires, l'intensité carbone du mix électrique reste faible comparé à d'autres pays.
+
+Base Empreinte ADEME [147]
+
+<!-- PageFooter: [147] https://base-empreinte.ademe.fr/donnees/jeu-donnees page 82 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 85>>>
+<Figure>
+[148]. ElectricityMaps.org
+Intensité carbone du mix électrique par pays (gCO2eq./ kWh)
+</Figure>
+
+[148]. ElectricityMaps.org
+
+Intensité carbone du mix électrique par pays (gCO2eq./ kWh)
+
+Base Empreinte ADEME [147]
+
+L'impact environnemental de l'IA générative est dépendant des impacts du mode de production de l'électricité. À titre d'exemple, un même modèle d'IA peut émettre presque 10 fois plus de gaz à effet de serre lorsqu'il s'exécute aux États-unis plutôt qu'en France. Ce facteur multiplicatif est d'autant plus important que l'intensité en calcul de l'IA générative peut être très élevée en phase d'entraînement.
+
+## Cycle de vie des équipements numériques
+
+La consommation électrique des serveurs accueillant des modèles d'IA générative n'est pas le seul facteur qui entre en compte dans l'évaluation des impacts sur l'environnement. Le cycle de vie des équipements numériques comprend en amont l'extraction des matières premières, la fabrication et la distribution des serveurs et de ses composants électroniques, auxquels il faut ajouter la fin de vie. Toutes ces étapes du cycle de vie représentent une part importante des impacts qu'il faut considérer.
+
+<!-- PageFooter: [148] https://app.electricitymaps.com/map Enjeux environnementaux 83 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 86>>>
+Les impacts liés au cycle de vie complet des équipements informatiques sont plus difficiles à estimer, et ce pour plusieurs raisons que nous aborderons dans les parties suivantes. Néanmoins, la première raison reste le manque de données d'impact de la part des constructeurs et fournisseurs.
+
+Pour estimer les impacts sur l'environnement d'un serveur, on peut estimer les impacts de chacun de ses composants séparément, que l'on peut ensuite agréger. Pour l'IA générative, on se base très souvent sur des composants de type GPU (Graphics Processing Unit), en plus des composants d'un serveur classique : CPU, RAM, disques, carte mère, alimentation, etc. Dans un certain nombre de ces composants, on trouve une ou plusieurs puces de silicium dont la fabrication à un impact important. L'impact environnemental de la fabrication d'un serveur servant à l'entraînement de modèle d'IA se situe autour de 3 700 kg CO2eq [149], pour une durée de vie d'environ 6 ans.
+
+6 ans de serveur =
+
+✈ 3 × Paris +> New York
+
+ou 25 × Paris +> Toulouse
+
+Impactco2.fr [150]
+
+Aujourd'hui, les estimations des impacts environnementaux des serveurs ou même plus largement des équipements numériques prennent généralement uniquement en compte le critère des émissions carbone. Or, il a été démontré que les impacts sont en réalité multicritères [151]. Évaluer les émissions de gaz à effet de serre n'est pas suffisant pour estimer l'impact réel de la production des équipements numériques. Il faut également étudier les critères de raréfaction des ressources naturelles, de la consommation et pollution de l'eau, la consommation d'énergie, de la diminution de la biodiversité, pollution de l'air, etc.
+
+## Impacts directs de l'IA générative
+
+Puisque l'IA reste un programme informatique, ses impacts directs sur l'environnement proviennent notamment de l'extraction des ressources, de la fabrication, du transport et de la fin de vie des équipements numériques et de la consommation d'électricité de ces derniers. Dans cette partie, nous traiterons des impacts lors des phases d'entraînement et d'inférence (utilisation) du modèle en nous basant sur la littérature scientifique. Nous aborderons également plus en détail le cas des modèles de langage ou large language model (LLM) qui sont utilisés dans les services comme ChatGPT. Le même type de développement peut être conduit pour des modèles génératifs d'image, de son ou de vidéo.
+
+Les modèles d'IA générative de texte connus aujourd'hui sont fondés sur une architecture transformer inventée en 2017 par une équipe de recherche chez Google Brain. OpenAI a publié GPT en 2018. Depuis cette invention, le nombre et la taille des modèles de langage n'a cessé de croître, entraînant ainsi l'augmentation de la quantité d'énergie et d'équipement informatique nécessaires pour entraîner et utiliser ces modèles. Le premier modèle GPT contenait 120 millions de paramètres, contre 175 milliards pour GPT-3, sorti en 2020. Aujourd'hui, l'architecture exacte de GPT-4 est inconnue, mais il a été estimé qu'il pouvait être encore 10 fois supérieur à son prédécesseur.
+
+\* [151] https://arxiv.org/pdf/2011.02839.pdf
+
+<!-- PageFooter: [149] https://arxiv.org/pdf/2211.02001.pdf [150] https://impactco2.fr/ page 84 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 87>>>
+Évolution de la taille des modèles dans le domaine du trainement du langage naturel
+
+<Figure>
+Évolution de la taille des modèles dans le domaine du trainement du langage naturel
+</Figure>
+
+Sevilla, et al. (2022) [152]
+
+Par la suite, nous nous intéresserons à deux LLM comparables : GPT-3 et BLOOM. GPT-3 est le dernier modèle fourni par OpenAI dont on connaît l'architecture et la méthode de création, ce qui en permet l'estimation des impacts. BLOOM est un modèle de langage très semblable à GPT-3, open-source pour lequel une analyse d'impact détaillée a été conduite (153], que nous utiliserons en référence. Nous étudierons séparément la phase d'entraînement et d'inférence (ou utilisation) de ces modèles d'IA générative.
+
+### Entraînement des modèles
+
+Lorsque l'on parle de l'impact environnemental des modèles d'IA, il est souvent mentionné que c'est lors de la phase d'entraînement que ces derniers consomment le plus de ressources et d'énergie. L'entraînement des modèles d'IA générative de texte comme GPT-3 nécessite par exemple de rassembler de nombreuses ressources numériques (serveurs, GPUs) et de données. Cette phase peut durer plusieurs jours, semaines ou mois. Le principe est d'utiliser des bases de données de texte massives provenant d'internet. Une tâche d'entraînement classique pour un modèle de langage consiste à prédire le mot suivant dans une phrase ou un paragraphe. Dans cette partie, nous n'entrerons pas plus dans les détails de l'entraînement, mais nous concentrerons plutôt sur les ressources employées pour réaliser cet exercice.
+
+Nous comparerons les impacts sur l'environnement des deux modèles GPT-3 et BLOOM, comparaison rendue possible par la proximité des modèles et par notre connaissance suffisante des détails techniques.
+
+<Table>
+| 0 | 1 | 2 |
+| --- | --- | --- |
+|  | GPT-3 (OpenAI) | BLOOM (BigScience) |
+| Nombre de paramètres | 175 milliards | 176 milliards |
+| Architecture | Transformer (decoder-based) | Transformer (decoder-based) |
+</Table>
+
+<!-- PageFooter: [152] https://ourworldindata.org/grapher/artificial-intelligence-parameter-count [153] https://arxiv.org/pdf/2211.02001.pdf Enjeux environnementaux 85 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 88>>>
+Dans l'étude de Patterson et al. [154], l'impact environnemental de GPT-3 est estimé à 552 tonnes CO2eq. Ce chiffre a été calculé sur la base de la consommation électrique des serveurs utilisés pour entraîner le modèle GPT-3. Cette phase a mobilisé 10 000 GPUS [155] (NVIDIA V100) pendant presque 15 jours, un chiffre rarement égalé. L'estimation inclut aussi le PUE (Power Usage Effectiveness) sur la période d'entraînement. Le PUE est un ratio toujours supérieur à 1 qui sert à tenir compte de la consommation des équipements non informatiques dans un data center (climatisation, éclairage, espaces bureaux, etc.).
+
+Entraînement de GPT-3
+
+Énergie consommée (15 jours) 1 287 MWh
+
+➔ ~270 ménages (1 an) en France [156]
+
+Impact carbone (15 jours) 552 tonnes CO2eq ➔
+
+✈
+
+~200 allers-retours Paris +> New York [157]
+
+Dans le cadre de l'évaluation d'impact environnemental de BLOOM mené dans l'étude de Luccioni et al. (158], la même approche d'estimation a été conduite et nous donne des résultats assez différents. D'abord l'énergie consommée est presque 3 fois inférieure, cela peut s'expliquer par les serveurs et GPUs utilisés qui peuvent être plus efficaces énergétiquement parlant, mais également par les techniques d'entraînement du modèle. Cependant, l'écart le plus important porte sur l'impact carbone, environ 18 fois inférieur. Cette réduction s'explique, tout d'abord, par le fait que la consommation énergétique est plus faible dans le cas de BLOOM. Différents facteurs entrent en compte dans la consommation d'énergie, comme le profil de consommation des serveurs utilisés, la durée de l'entraînement ou encore l'architecture du modèle. Par ailleurs, l'entraînement du modèle a eu lieu en France dont l'intensité carbone de la production d'électricité est environ 7,4 fois inférieur (57 g CO2eq / kWh contre 427 g CO2eq / kWh pour GPT-3).
+
+<Table>
+| 0 | 1 | 2 |
+| --- | --- | --- |
+|  | Entraînement GPT-3 | Entraînement BLOOM |
+| Énergie consommée | 1 287 MWh | 433 MWh |
+| Intensité carbone de la production d'électricité | 423 g CO2eq / kWh | 57 g CO2eq / kWh |
+| Impact carbone | 552 tonnes CO2eq | 30 tonnes CO2eq |
+</Table>
+
+Il est cependant capital de noter que ces chiffres sont des estimations et que le périmètre de l'analyse est restreint. Dans l'étude de Luccioni et al. [159], une estimation plus poussée a été menée, afin d'étendre le périmètre de calcul. Trois améliorations sont envisageables. Tout d'abord, quantifier la vraie consommation résiduelle
+
+\* [154] https://arxiv.org/pdf/2104.10350.pdf
+
+\* [155] https://news.microsoft.com/source/features/innovation/openai-azure-supercomputer/
+
+\* [156] https://particuliers.engie.fr/electricite/conseils-electricite/conseils-tarifs-electricite/consommation- moyenne-electricite-personne.html
+
+\* [157] https://impactco2.fr/ [158] https://arxiv.org/pdf/2211.02001.pdf
+
+[159] https://arxiv.org/pdf/2211.02001.pdf
+
+<!-- PageFooter: page 86 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 89>>>
+d'électricité du data center. Ensuite, introduire les impacts liés à la fabrication des serveurs de calcul. Enfin, tenir compte de la phase de développement du modèle.
+
+L'un des problèmes de l'approche précédente est de ne pas tenir compte du fonctionnement d'un data center et de sa consommation électrique réelle. Le premier résultat inclut certes la consommation des serveurs ainsi que des externalités comme la climatisation, ou l'éclairage du bâtiment grâce au PUE. Cependant, cette approche ignore complètement la consommation des autres équipements présents dans le data center et qui sont essentiels à son fonctionnement. Cela inclut, par exemple, les switchs et routers pour les communications réseaux ou les serveurs de stockage de données. Si l'on tient compte de ces appareils supplémentaires, la consommation nécessaire à l'entraînement du modèle BLOOM passe de 433 MWh à 690 MWh, soit une augmentation de presque 60%. On peut recalculer l'impact carbone sans tenir compte du PUE (inclus dans la consommation résiduelle) pour arriver à un impact de 39,3 tonnes CO2eq.
+
+Pour calculer un impact environnemental complet selon les méthodologies d'Analyse de Cycle de Vie (ACV), il est nécessaire d'intégrer l'impact de la fabrication des serveurs utilisés. Comme développé dans la partie précédente, la fabrication des équipements numériques a un impact environnemental fort. Il est par conséquent important de l'intégrer dans les calculs d'impacts. L'ajout des impacts à la fabrication se fait souvent en considérant le ratio du temps d'utilisation des ressources informatiques sur leur durée de vie. Dans le cadre de l'étude des impacts du modèle BLOOM, il a été considéré une durée de vie de 6 ans et l'impact de la fabrication d'un serveur de 2 500 kg CO2eq et d'un GPU de 150 kg CO2eq. Ces chiffres d'impacts sont très probablement des sous-estimations, mais restent cohérents en termes d'ordre de grandeur. Intégré à notre calcul précédent, l'impact de l'entraînement du modèle BLOOM passe maintenant de 39,3 à 50,5 tonnes CO2eq.
+
+Le développement de modèle d'IA générative n'est pas un processus linéaire, en réalité un certain nombre de tests, évaluations et corrections ont lieu lors de l'entraînement. Dans le cadre de BLOOM, il a été estimé que cette phase de développement ajoute 73,32 tonnes CO2eq supplémentaires. La phase de développement a plus d'impact que l'entraînement complet du modèle de bout en bout. Il est donc primordial de quantifier également cette phase, qui est très souvent ignorée dans les études. L'impact total du modèle calculé est maintenant de 123,82 tonnes CO2eq, soit 4 fois plus que la première estimation plus naïve.
+
+Bien que méthodologiquement cette approche ne soit pas applicable aux estimations d'impact réalisées pour GPT-3, l'impact carbone augmenterait à ~ 2200 tonnes CO2eq. Cela représente cette fois l'impact de 1 600 allers-retours Paris - New York, soit plus de 4 vols par jour sur une année.
+
+### Phase d'inférence
+
+Après la phase d'entraînement, on parle de phase d'inférence lorsque le modèle est rendu disponible aux utilisateurs finaux. Au cours de cette phase, les paramètres du modèle sont figés et on calcule uniquement le résultat d'une requête. Le mode d'inférence consomme moins de ressources que le mode d'entraînement et il est
+
+<!-- PageFooter: Enjeux environnementaux 87 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 90>>>
+possible d'avoir recours à des optimisations techniques pour réduire le temps de calcul que nous traiterons dans une partie dédiée. Ces opérations d'optimisation sont couramment mises en place, car elles permettent en général de faire des économies en réduisant les ressources nécessaires, et donc les impacts.
+
+La méthodologie d'estimation des impacts d'un modèle en phase d'inférence reste proche de celle liée à l'estimation des impacts de la phase d'entraînement. Il est nécessaire de prendre en compte la consommation électrique des équipements informatiques. À laquelle on ajoute aussi les impacts de la fabrication des équipements en fonction du temps d'utilisation et de leur durée de vie.
+
+La comparaison des impacts liés aux phases d'entraînement et d'inférence sont encore plus difficilement trouvables dans la littérature scientifique. C'est un manquement qui peut s'avérer critique lorsque l'on regarde l'intégralité du cycle de vie d'un modèle.
+
+Cependant dans le cas de l'IA générative, il semblerait que la part des émissions de GES liées à la phase d'inférence peut dépasser
+
+largement celle liée à l'entraînement. Dans ce cas, l'utilisation du modèle prend le dessus sur son entraînement en termes d'impact, notamment poussé par le nombre d'utilisateurs. Autrement dit, la consommation unitaire est plus faible mais le volume est beaucoup plus élevé.
+
+Dans l'étude de Luccioni et al. (160] du modèle BLOOM, une expérimentation en phase d'inférence a été conduite sur 18 jours. Durant cette période, l'API exposant le modèle traitait en moyenne 558 requêtes par heure. Le modèle était déployé sur un serveur Google Cloud Platform. Il a été mesuré que le serveur a consommé 914 kWh d'électricité, soit 50,8 kWh par jour. En comparaison, lors de l'entraînement de BLOOM, les serveurs ont consommé 3 671 kWh par jour, soit 72 fois plus. Il est important de noter que dans ce cadre, la différence dans le nombre de requêtes pèse dans la balance, avec 558 pour BLOOM contre plusieurs millions de requêtes par heure pour ChatGPT.
+
+Une autre étude publiée par Meta (Wu et al. 2022) [161] démontre un cas d'usage un peu plus réaliste du déploiement d'un modèle de langage en phase d'inférence. Il s'agit d'un modèle de langage à base d'architecture Transformer utilisé pour faire de la traduction de texte. Les modèles sont utilisés pour produire plusieurs milliards de milliards de prédictions par jour. Pendant deux ans, les impacts de la phase d'entraînement et d'inférence du modèle de langage ont été quantifiés. Sur cette période, l'impact de l'entraînement correspond à 35% de l'impact global, les 65 % restant correspondant à la phase d'inférence. Utilisés à grande échelle, les modèles peuvent être source d'émissions de GES importantes durant leur phase d'utilisation.
+
+Les calculs d'impacts en phase d'inférence, bien qu'ils soient similaires aux calculs faits lors de la phase d'entraînement, sont très souvent absents des études. Cette absence peut s'expliquer par les mêmes freins rencontrés pour la phase d'entraînement,
+
+<!-- PageFooter: [160] https://arxiv.org/pdf/2211.02001.pdf [161] https://arxiv.org/pdf/2111.00364.pdf page 88 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 91>>>
+notamment le manque de méthodologie standard. Néanmoins, on peut y ajouter le manque de données relatives au déploiement dans des services cloud dont leurs fonctionnements restent opaques et rendent les estimations difficiles.
+
+Étant donné que les impacts lors de l'inférence ont lieu après l'entraînement du modèle et sur de plus longues périodes, il se pose la question des usages. Pour estimer les impacts d'inférence, il faut anticiper les usages liés aux modèles ce qui peut s'avérer être difficile. C'est encore plus le cas lorsque les modèles sont open- source, il devient impossible d'estimer l'impact total en inférence. Cependant, il est important de noter qu'il est tout-à-fait envisageable de fournir (comme dans le cadre de l'analyse de BLOOM) des données sur l'utilisation du modèle sur une période de test. Il serait intéressant de calculer des facteurs d'émissions standards afin de pouvoir comparer les modèles.
+
+Afin de nous donner une idée plus claire de ce que peut représenter l'impact d'utilisation de ChatGPT avec le modèle GPT-3, nous allons extrapoler certaines données des études précédentes. Une approche possible est d'estimer l'énergie consommée pour répondre à une requête utilisateur, en partant des données de l'étude du modèle BLOOM [162]. L'énergie consommée pour une requête serait donc d'environ 3,96 Wh. Si on estime le nombre moyen de requêtes par jour sur ChatGPT, on peut donc calculer l'énergie totale consommée. En se basant sur les hypothèses développées par Patel et Ahmad [163], il y a 13 millions d'utilisateurs actifs par jour faisant chacun 15 requêtes. L'énergie consommée chaque mois par les serveurs est d'environ 23 GWh. En considérant un PUE classique d'un data center hyperscaler d'environ 1,10, l'énergie consommée par le data center passe à 25,3 GWh. On peut calculer l'impact GES avec l'intensité carbone du mix électrique moyen mondiale de 0,39 kgCO2eq. / kWh [164], ce qui résulte en 9 867 tCO2eq uniquement liée à la consommation d'énergie directe. Ces estimations de consommation d'énergie et d'impact GES ne nous donnent qu'un ordre de grandeur. Dans d'autres publications de Kasper Groes Albin Ludvigsen (165], il est tenté également selon différents scénarios d'estimer la consommation énergétique de ChatGPT entre 1 GWh et 23 GWh par mois.
+
+À l'estimation précédente, on peut ajouter une estimation de l'impact de la fabrication du matériel. Dans la modélisation de Patel et Ahmad [166], il est estimé que OpenAI utilise environ 3 617 serveurs HGX A100 et un total de 28 936 GPUs. L'impact GES d'un serveur de calcul haute performance peut être estimé à 3 700 kg CO2eq. auquel sont ajoutés 1 200 kg CO2eq. pour les 8 GPUs par serveur. Si on considère une durée de vie de 6 ans, l'impact de la fabrication des serveurs est ramené à un mois d'utilisation et donne 246 t CO2eq. Ce chiffre reste une très large sous-estimation de l'impact total des équipements numériques présents dans un data center. Si l'on combine l'impact de la consommation d'électricité et l'impact de la fabrication du matériel, on a donc un impact mensuel d'environ 10 113 t CO2eq par mois. Si l'on se projette sur une année complète, cela représente l'émission d'environ 122 351 t CO2eq. Bien que cette modélisation soit très incomplète, on se rend compte que les impacts à l'utilisation peuvent dépasser largement les impacts de l'entraînement du modèle, qui était autour de 552 t CO2eq. Le déploiement de services similaires à ChatGPT dans d'autres domaines comme la recherche sur internet pourrait d'autant plus décupler les impacts de ces modèles, en
+
+\* [162] https://arxiv.org/pdf/2211.02001.pdf
+
+\* [163] https://www.semianalysis.com/p/the-inference-cost-of-search-disruption
+
+\* [164] https://base-empreinte.ademe.fr/donnees/jeu-donnees
+
+\* [165] https://towardsdatascience.com/chatgpts-electricity-consumption-
+
+\* 7873483feac4# :~: text=ChatGPT's%20electricity%20consumption%20per%20query%20is, as%20 BLOOM's%2C%20i.e.%200.00396%20KWh
+
+\* [166] https://www.semianalysis.com/p/the-inference-cost-of-search-disruption
+
+<!-- PageFooter: Enjeux environnementaux 89 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 92>>>
+touchant cette fois non pas une dizaine de millions de personnes, mais des milliards.
+
+Notons également, que nous n'avons évoqué que les impacts liés à GPT-3. Or, selon les dernières rumeurs, GPT-4 serait composé de 8 sous-modèles, chacun plus gros que GPT-3 pour un nombre total de paramètres d'environ 1 760 milliards. L'énergie consommée et les impacts à l'usage d'un tel modèle sont probablement entre 10 et 100 fois plus importants.
+
+<Table>
+| 0 | 1 |
+| --- | --- |
+| Entraînement GPT-3 pour ChatGPT | Utilisation de ChatGPT (GPT-3) en janvier 2023 |
+| 552 tonnes CO2eq | 10 113 |
+</Table>
+
+tonnes CO2eq
+
+Notons que nous avons abordé de façon assez large la question des impacts directs des modèles d'IA générative sous le prisme des phases d'entraînement et d'inférence de ces modèles. Nous avons omis un certain nombre de facteurs comme le fine- tuning des modèles, l'impact de la collecte, du stockage des données, la fréquence de mise à jour, etc. Les impacts directs sont par conséquent sous-estimés. Même lorsqu'on se concentre sur une phase spécifique, il n'est pas évident (et rarement établi) de prendre en compte l'ensemble du périmètre d'émissions liées à l'utilisation des équipements numériques. Enfin, nous traiterons plus en détail dans les parties suivantes les facteurs de difficultés à produire une évaluation des impacts fiable, la question de la réduction des impacts et enfin les impacts indirects et les effets rebond découlant des usages des modèles d'IA générative.
+
+## 3 Les recommandations de Data For Good pour les utilisateurs
+
+S'interroger sur ses pratiques et ses besoins, limiter l'usage des modèles génératifs au nécessaire. Il faut envisager et préférer des solutions techniques moins gourmandes quand cela est possible (recours à des templates, des moteurs de recherches classiques).
+
+## Les recommandations de Data For Good pour les data scientists
+
+Ne pas nécessairement utiliser de l'IA générative pour tous les cas d'usage. Par exemple, les expressions régulières sont parfois plus pertinentes pour extraire de l'information. Le fine-tuning d'un modèle de classification est beaucoup plus pertinent, frugal et facile à entraîner avec des techniques de few shot learning qu'avec de l'IA générative [167).
+
+Ne pas toujours utiliser le modèle le plus puissant (par exemple GPT-4) par défaut, voire mettre en place des systèmes de routage automatique qui choisiront le modèle le plus pertinent et frugal en fonction du cas d'usage.
+
+<!-- PageFooter: page 90 -->
+<!-- PageBreak -->
+

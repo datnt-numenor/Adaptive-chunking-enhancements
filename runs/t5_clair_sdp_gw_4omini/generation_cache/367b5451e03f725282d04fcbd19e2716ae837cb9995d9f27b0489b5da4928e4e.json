@@ -1,0 +1,10 @@
+{
+  "request_hash": "367b5451e03f725282d04fcbd19e2716ae837cb9995d9f27b0489b5da4928e4e",
+  "prompt_sha256": "de9a9708fc5f5e4c1cb474713dce537ec190a3287f59df0c9c93ad176859a8de",
+  "answer": "Under the European Commission's EU AI Act guidelines, providers of open-source general-purpose AI models are exempted from the following obligations:\n\n1. The obligation to draw up and keep up-to-date the technical documentation of the model (Article 53(1), point (a)).\n2. The obligation to draw up, keep up-to-date, and make available information and documentation to providers of AI systems who intend to integrate the general-purpose AI model into their AI systems (Article 53(1), point (b)).\n3. The obligation to appoint an authorised representative for providers of general-purpose AI models established in third countries (Article 54 AI Act).\n\nHowever, they must still fulfil the following obligations:\n\n1. The obligation to put in place a policy to comply with Union copyright law (Article 53(1), point (c)).\n2. The obligation to produce a summary about the content used for training (Article 53(1), point (d)). \n\nThese exemptions apply as long as the model is not a general-purpose AI model with systemic risk and the conditions for the exemptions are met.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMkeRpxlimfA1g5ldfZ5mXUizqqo",
+  "prompt_tokens": 9124,
+  "completion_tokens": 220,
+  "actual_usd": 0.0015006
+}

@@ -1,0 +1,96 @@
+
+=== A. Table 3 - CLAIR (33 docs) ===
+method                              SC      BI     ICC     DCC      RC   mean5     tok
+llm_regex                        99.79   98.75   70.36   84.14   97.95   90.14  537.04
+our_recurs_1100                  99.97   98.13   66.57   89.76   98.96   90.56  834.52
+our_recurs_600                  100.00   94.78   69.54   84.69   97.19   89.16  474.11
+page                             99.88   99.89   69.24   86.43   97.15   90.43  547.07
+langch_recurs_default            98.69   95.16   65.54   88.99   96.06   88.79  760.46
+A_default                        99.93   99.94   66.44   90.45   98.37   90.92  877.51
+A_target600                      99.94   99.94   67.30   89.28   98.81   90.95  752.49
+A_target800                      99.93   99.94   66.69   90.36   98.71   91.02  849.89
+A_target1000                     99.93   99.94   66.20   90.70   97.71   90.80  908.97
+B_default                        99.96   99.94   75.98   85.99   97.81   91.85  555.62
+B_qwen                           99.96   99.94   76.10   85.87   97.18   91.73  565.65
+-- per-document oracle (argmax of the 5-metric mean; = Adaptive selector on that pool)
+Adaptive (4 cand.)               99.93   99.42   68.35   88.63   98.96   90.95  688.30   vs Adaptive +0.00 [+0.00,+0.00]
+SDP-A pool only                  99.93   99.94   66.81   90.48   99.05   91.13  844.78   vs Adaptive +0.19 [-0.01,+0.38]
+SDP-B pool (B_default,B_qwen)    99.96   99.94   76.16   86.13   97.81   91.92  564.65   vs Adaptive +0.97 [+0.73,+1.20]
+4 cand + SDP-A pool              99.99   99.83   67.89   89.97   99.24   91.28  791.29   vs Adaptive +0.33 [+0.21,+0.46]
+all SDP (A+B)                    99.96   99.94   75.22   86.65   98.57   91.97  594.43   vs Adaptive +1.02 [+0.84,+1.22]
+4 cand + all SDP                 99.96   99.94   75.22   86.65   98.57   91.97  594.43   vs Adaptive +1.03 [+0.84,+1.22]
+utopia (each metric max)        100.00   99.94   76.81   91.06   99.29   93.34   <- upper limit, not one chunking
+-- within-document Spearman across methods (median over documents; share of documents with rho<0)
+   tok~ICC  median -0.79   negative in 32/33 docs
+   tok~DCC  median +0.89   negative in 0/32 docs
+   ICC~DCC  median -0.74   negative in 31/32 docs
+   tok~RC   median +0.48   negative in 5/24 docs
+
+=== A. Table 3 - clair_ext (129 docs) ===
+method                              SC      BI     ICC     DCC      RC   mean5     tok
+llm_regex                        99.62   97.80   70.60   86.29   94.43   89.74  635.95
+our_recurs_1100                  99.96   96.95   67.62   90.78   95.91   90.23  898.01
+our_recurs_600                  100.00   92.84   69.77   85.36   93.44   88.27  493.64
+page                             99.73   99.16   69.87   87.86   94.91   90.30  663.39
+sdp_a_t600                       99.84   99.63   70.06   89.14   95.37   90.80  755.75
+sdp_b                            99.92   99.63   76.96   86.80   94.63   91.58  598.70
+-- per-document oracle (argmax of the 5-metric mean; = Adaptive selector on that pool)
+Adaptive (4 cand.)               99.96   98.42   69.27   89.30   96.23   90.62  769.74   vs Adaptive +0.00 [+0.00,+0.00]
+SDP pool (A_t600,B)              99.89   99.63   76.46   87.03   95.15   91.62  611.74   vs Adaptive +1.00 [+0.87,+1.13]
+4 cand + SDP pool                99.95   99.53   76.12   87.19   95.67   91.68  622.85   vs Adaptive +1.06 [+0.95,+1.17]
+utopia (each metric max)        100.00   99.63   76.97   90.84   97.01   92.88   <- upper limit, not one chunking
+-- within-document Spearman across methods (median over documents; share of documents with rho<0)
+   tok~ICC  median -0.59   negative in 124/129 docs
+   tok~DCC  median +0.94   negative in 0/129 docs
+   ICC~DCC  median -0.54   negative in 125/129 docs
+   tok~RC   median +0.53   negative in 16/117 docs
+
+=== B. Intrinsic vs retrieval, per-document differences vs adaptive - CLAIR_A5000 ===
+system                   n  d_mean5   d_ICC   d_DCC   d_tok  d_rec@10  d_ndcg   rho(d_mean5,d_rec) rho(d_ICC,d_rec) rho(d_DCC,d_rec) rho(d_tok,d_rec) rho(d_mean5,d_ndcg)
+sdp_a                   32     0.10   -1.51    1.72     158    -0.051  -0.048      +0.26 (p=0.16)   -0.09 (p=0.64)   +0.23 (p=0.20)   -0.03 (p=0.86)     +0.41 (p=0.02)
+sdp_a_t600              32     0.03   -0.88    0.64      58    -0.018   0.013      +0.46 (p=0.01)   -0.08 (p=0.68)   +0.43 (p=0.01)   +0.04 (p=0.84)     +0.19 (p=0.30)
+sdp_b                   33     0.90    7.63   -2.64    -133    -0.060  -0.027      +0.08 (p=0.64)   -0.10 (p=0.60)   +0.30 (p=0.09)   +0.03 (p=0.87)     +0.35 (p=0.05)
+sdp_bq                  33     0.78    7.75   -2.76    -123    -0.038  -0.021      -0.04 (p=0.80)   -0.13 (p=0.47)   +0.25 (p=0.16)   -0.08 (p=0.67)     +0.44 (p=0.01)
+   documents with any change in recall@10: 52/130 (the rest are ties: the chunker did not change recall@10 at all)
+
+=== B. Intrinsic vs retrieval, per-document differences vs adaptive@plain - clair_ext_4B ===
+system                   n  d_mean5   d_ICC   d_DCC   d_tok  d_rec@10  d_ndcg   rho(d_mean5,d_rec) rho(d_ICC,d_rec) rho(d_DCC,d_rec) rho(d_tok,d_rec) rho(d_mean5,d_ndcg)
+sdp_a_t600@plain       126     0.18    0.79   -0.14     -14    -0.005   0.003      +0.14 (p=0.11)   +0.09 (p=0.33)   -0.07 (p=0.45)   -0.01 (p=0.90)     +0.18 (p=0.04)
+sdp_b@plain            126     0.95    7.63   -2.49    -170    -0.006  -0.018      +0.08 (p=0.38)   -0.02 (p=0.80)   -0.02 (p=0.80)   +0.07 (p=0.46)     +0.17 (p=0.06)
+   documents with any change in recall@10: 74/252 (the rest are ties: the chunker did not change recall@10 at all)
+
+(retrieval systems available for CLAIR per-query join: adaptive, adaptive__doc, raw__langch_recurs_default, raw__langch_recurs_default__doc, raw__page, raw__page__doc, sdp_a, sdp_a_t600, sdp_a_t600__doc, sdp_b, sdp_b__doc, sdp_bq, sdp_bq__doc)
+
+=== C. Table 5 - CLAIR_gateway ===
+system                          n     cov  ans-only  refuse   cov if no refusal    gap
+adaptive                       99    82.8      89.1       7                89.1    6.3
+raw__langch_recurs_default     99    78.2      89.0      12                89.0   10.8
+raw__page                      99    76.2      87.7      13                87.7   11.5
+adaptive__doc                  99    82.7      89.0       7                89.0    6.3
+sdp_a_t600                     99    80.1      90.1      11                90.1   10.0
+sdp_a_t600__doc                99    82.6      88.8       7                88.8    6.3
+sdp_b                          99    77.0      86.6      11                86.6    9.6
+per-question oracle over 7 systems (best system chosen per question, NOT attainable): 89.7
+questions refused by ALL systems: 4/99;  by at least one: 24;  by none: 75
+refusals by recall@10 of the same question and system:
+   adaptive                   recall=0: 5/7 refused | 0<recall<1: 0/6 | recall=1: 2/86 refused, answered-only correctness 90.0
+   raw__langch_recurs_default recall=0: 8/10 refused | 0<recall<1: 2/8 | recall=1: 2/81 refused, answered-only correctness 90.9
+   raw__page                  recall=0: 9/10 refused | 0<recall<1: 1/11 | recall=1: 3/78 refused, answered-only correctness 89.6
+   adaptive__doc              recall=0: 4/5 refused | 0<recall<1: 2/7 | recall=1: 1/87 refused, answered-only correctness 89.4
+   sdp_a_t600                 recall=0: 8/8 refused | 0<recall<1: 1/6 | recall=1: 2/85 refused, answered-only correctness 91.1
+   sdp_a_t600__doc            recall=0: 4/5 refused | 0<recall<1: 1/6 | recall=1: 2/88 refused, answered-only correctness 89.6
+   sdp_b                      recall=0: 9/12 refused | 0<recall<1: 1/7 | recall=1: 1/80 refused, answered-only correctness 88.5
+
+=== C. Table 5 - clair_ext_gateway ===
+system                          n     cov  ans-only  refuse   cov if no refusal    gap
+adaptive                      438    76.4      87.8      57                87.8   11.4
+sdp_a_t600                    438    77.2      87.9      53                87.9   10.6
+sdp_b                         438    76.8      87.4      53                87.4   10.6
+raw__langch_recurs_default    438    76.9      87.4      53                87.4   10.6
+per-question oracle over 4 systems (best system chosen per question, NOT attainable): 84.8
+questions refused by ALL systems: 27/438;  by at least one: 91;  by none: 347
+refusals by recall@10 of the same question and system:
+   adaptive                   recall=0: 47/58 refused | 0<recall<1: 5/13 | recall=1: 5/367 refused, answered-only correctness 88.3
+   sdp_a_t600                 recall=0: 44/58 refused | 0<recall<1: 2/13 | recall=1: 7/367 refused, answered-only correctness 88.4
+   sdp_b                      recall=0: 44/63 refused | 0<recall<1: 1/11 | recall=1: 8/364 refused, answered-only correctness 88.0
+   raw__langch_recurs_default recall=0: 44/61 refused | 0<recall<1: 3/15 | recall=1: 6/362 refused, answered-only correctness 87.8

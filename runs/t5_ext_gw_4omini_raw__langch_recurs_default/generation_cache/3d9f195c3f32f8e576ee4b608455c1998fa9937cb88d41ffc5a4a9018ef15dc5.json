@@ -1,0 +1,10 @@
+{
+  "request_hash": "3d9f195c3f32f8e576ee4b608455c1998fa9937cb88d41ffc5a4a9018ef15dc5",
+  "prompt_sha256": "698cbc7efd9a1e29aa18967eb511cce36a92540ed7d53c5369058e94ee6a0c30",
+  "answer": "In arXiv 2608.05800, two requirements for regulatory transparency in consequential AI are: \n\n1. Transparency must extend beyond how a model produces an output to the evidential basis for interpreting and acting on that output.\n2. The regulatory transparency must make the basis for assessing validity available for scrutiny, which includes disclosing the meaning of the target, the justification for its measurement, the assumptions connecting observations to conclusions, and the evidence supporting use in the intended population and setting.\n\nAffected people should be enabled to challenge inferences by exposing the limits of the model's computation and allowing them to question the validity of the inferences made based on the AI outputs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNHyp4BmEJzgAYQRPQBVPBP32UJU",
+  "prompt_tokens": 7897,
+  "completion_tokens": 134,
+  "actual_usd": 0.0012649500000000001
+}

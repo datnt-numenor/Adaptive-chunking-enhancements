@@ -1,0 +1,14 @@
+{
+  "request_hash": "4cdc8eaa027bdfa1142d164a60eb2c62e14f4d23538853e8bc42d9295815b7ea",
+  "prompt_sha256": "5de4ca0c56912c615be34959449e03a6a43d596bb6b67f80d4f168df311cfbac",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNIP4MuYsMRigo4aNRAtxmBJAmzX",
+  "prompt_tokens": 9365,
+  "completion_tokens": 59,
+  "actual_usd": 0.00144015,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that if the original model is a systemic-risk model and the modification compute is unknown, the threshold is set to one third of the high-impact capabilities threshold of 10^25 FLOP."
+  }
+}

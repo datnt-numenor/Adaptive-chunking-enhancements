@@ -1,0 +1,14 @@
+{
+  "request_hash": "5aa3827544ac9d6ba0fd57d43db5858bdbc82edd5eabc278d1c8848bbfc43773",
+  "prompt_sha256": "46430574c107429a0c552a2a40696aef5511e79c8f5bcd0c6663d43ada19da52",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMfYF8a49ys9ZnAPN4KvyHV5MLf",
+  "prompt_tokens": 6735,
+  "completion_tokens": 38,
+  "actual_usd": 0.00103305,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of asset gain, detailing its definition and examples, which fully supports the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "6f8551f18c468b9e69b1a711ac32ffdf246319f5fb667b529c0867bc3f3dcd1f",
+  "prompt_sha256": "233e8ee4f6207c83d7751129de1d583550774dcb58587630b9c3f24ab65a3808",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNsgMr4IdCZZPvctYEeDTwrmO8Ww",
+  "prompt_tokens": 7053,
+  "completion_tokens": 31,
+  "actual_usd": 0.00107655,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the namespace and prefix used for the proposed ontology."
+  }
+}

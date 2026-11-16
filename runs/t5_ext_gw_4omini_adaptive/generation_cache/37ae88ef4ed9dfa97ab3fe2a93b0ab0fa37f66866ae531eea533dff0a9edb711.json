@@ -1,0 +1,10 @@
+{
+  "request_hash": "37ae88ef4ed9dfa97ab3fe2a93b0ab0fa37f66866ae531eea533dff0a9edb711",
+  "prompt_sha256": "bb08d60007dd84cca76236aeb9c4f48b2feeb19aa1f01afe1bc0dc4e1b2f3728",
+  "answer": "When gemma4 and qwen3.5 disagree on Bluesky moderation, the citation frequency pattern shows that the models rely on a limited subset of the policy rules. Specifically, 50.3% of the rules are never cited by gemma4, 47.5% by qwen3.5, and 40.1% by either model. This indicates that when the models predict the same label, their policy citation distributions align, but when they disagree, the policy citations diverge significantly.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNKKNQPEDIY9sg0YHJ5ln8fe5XhQ",
+  "prompt_tokens": 9251,
+  "completion_tokens": 103,
+  "actual_usd": 0.00144945
+}

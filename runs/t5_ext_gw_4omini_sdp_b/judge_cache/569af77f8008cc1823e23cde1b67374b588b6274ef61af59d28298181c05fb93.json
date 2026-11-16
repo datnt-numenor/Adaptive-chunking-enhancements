@@ -1,0 +1,14 @@
+{
+  "request_hash": "569af77f8008cc1823e23cde1b67374b588b6274ef61af59d28298181c05fb93",
+  "prompt_sha256": "888500263d6784d4ad6385bc8f7a28e506110bd3c47a5bcd855c890bd323b19c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNZrkoGadO8haQGw2nyjQjJl90sV",
+  "prompt_tokens": 5622,
+  "completion_tokens": 46,
+  "actual_usd": 0.0008709,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer by detailing the necessity of including researcher positionality, ethical considerations, limitations, and adverse impact statements in RAI papers."
+  }
+}

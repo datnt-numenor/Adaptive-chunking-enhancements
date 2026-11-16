@@ -1,0 +1,14 @@
+{
+  "request_hash": "18d1fc41fc1afbbe91e269617c4d5d988cf1b93d58c250086ffcc1869b09069d",
+  "prompt_sha256": "4ebc3393aff644fad90b7d0a45748fb80dd0cd1ae18c2bbe11f10c0cb03ba46d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPC455H3pKnYHSOaQzS0HSeXwK7A",
+  "prompt_tokens": 4747,
+  "completion_tokens": 43,
+  "actual_usd": 0.0007378499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the use of random sampling as a control tool to mitigate risks like discrimination in high-risk AI systems."
+  }
+}

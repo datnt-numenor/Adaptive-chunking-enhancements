@@ -1,0 +1,14 @@
+{
+  "request_hash": "04a17c72fee99a17da3f538ad8fa78ed582622b0ad11cd04aa987fea24f75b2f",
+  "prompt_sha256": "627dd977b98b2da8cfa712bb2874a3eaef7721bcb77bd4431e52f77dae55a5b3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNuKKFd8MrMwnO1shh6Tc0vRob4w",
+  "prompt_tokens": 9132,
+  "completion_tokens": 43,
+  "actual_usd": 0.0013955999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of STIT logic, including its operator and its relevance to agentive obligations, fully supporting the claim made in the Reference Answer."
+  }
+}

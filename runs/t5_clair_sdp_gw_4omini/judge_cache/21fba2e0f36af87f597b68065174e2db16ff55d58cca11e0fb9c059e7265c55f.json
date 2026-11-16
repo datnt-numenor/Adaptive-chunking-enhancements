@@ -1,0 +1,14 @@
+{
+  "request_hash": "21fba2e0f36af87f597b68065174e2db16ff55d58cca11e0fb9c059e7265c55f",
+  "prompt_sha256": "5b5bdc48059cc5422094bf3b5ffe0b5d0e8bfcf8065f8223c4fae87097ad07c1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOHPgocAIw9UrTcEiU3bdQ5eIvYL",
+  "prompt_tokens": 7341,
+  "completion_tokens": 57,
+  "actual_usd": 0.0011353499999999998,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by mentioning the obligation for Signatories to exclude websites recognized as infringing copyright from web-crawling, but it does not explicitly state that a dynamic list of hyperlinks will be made publicly available."
+  }
+}

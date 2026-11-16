@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer fully supported by evidence; question is self-contained and specific\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Accurate answer with sufficient evidence; question clearly names the framework\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer supported by evidence; question references specific source and context\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Clear definitions supported by evidence; question names the specific test\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer accurate and complete; evidence directly supports both claims\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer supported by evidence; question is self-contained and specific\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 12060,
+  "out": 798
+ },
+ "created": "2026-11-09 18:35:58"
+}

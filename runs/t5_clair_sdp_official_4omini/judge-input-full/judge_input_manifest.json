@@ -1,0 +1,16 @@
+{
+  "status": "ready_for_judge",
+  "scope": "full",
+  "systems": [
+    "adaptive",
+    "adaptive__doc",
+    "sdp_a_t600__doc"
+  ],
+  "qa_per_system": 99,
+  "requests_sha256": "2fd54c0b69cb978a21f0f1122bdc23c93c41866ba123cafd04c1da6303abf6e4",
+  "answer_files_sha256": {
+    "adaptive": "13fdccc7443c9ba9123e77fbeb7cd0ddf3df7ff092f8d9ac073256c118f18274",
+    "adaptive__doc": "b34112fc25bfdaa07cf80ee7c131ab2b773f4430d4f7bb429d2b83f44e6480f9",
+    "sdp_a_t600__doc": "f20865e8c365a7130ee9d824917920866b1e56b01684425c1900e46967c33717"
+  }
+}

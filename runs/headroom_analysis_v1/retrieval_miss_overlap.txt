@@ -1,0 +1,24 @@
+﻿
+== clair_ext 4B plain: 438 questions, systems = ['adaptive@plain', 'raw__langch_recurs_default@plain', 'raw__page@plain', 'sdp_a_t600@plain', 'sdp_b@plain']
+mean recall@10 per system: {'adaptive@plain': np.float64(0.853), 'raw__langch_recurs_default@plain': np.float64(0.844), 'raw__page@plain': np.float64(0.851), 'sdp_a_t600@plain': np.float64(0.852), 'sdp_b@plain': np.float64(0.844)}
+recall@10 = 0 per system : {'adaptive@plain': 58, 'raw__langch_recurs_default@plain': 61, 'raw__page@plain': 58, 'sdp_a_t600@plain': 58, 'sdp_b@plain': 63}
+miss (recall=0) in ALL systems: 29;  in at least one: 102
+per-question oracle recall@10 (best chunker per question, not attainable): 0.926
+questions where every system has the same recall@10: 345/438
+mean recall@5 per system : {'adaptive@plain': np.float64(0.766), 'raw__langch_recurs_default@plain': np.float64(0.766), 'raw__page@plain': np.float64(0.774), 'sdp_a_t600@plain': np.float64(0.785), 'sdp_b@plain': np.float64(0.743)}
+
+== CLAIR A5000 plain: 99 questions, systems = ['adaptive', 'raw__langch_recurs_default', 'raw__page', 'sdp_a_t600', 'sdp_b']
+mean recall@10 per system: {'adaptive': np.float64(0.9), 'raw__langch_recurs_default': np.float64(0.854), 'raw__page': np.float64(0.845), 'sdp_a_t600': np.float64(0.886), 'sdp_b': np.float64(0.84)}
+recall@10 = 0 per system : {'adaptive': 7, 'raw__langch_recurs_default': 10, 'raw__page': 10, 'sdp_a_t600': 8, 'sdp_b': 12}
+miss (recall=0) in ALL systems: 2;  in at least one: 22
+per-question oracle recall@10 (best chunker per question, not attainable): 0.961
+questions where every system has the same recall@10: 63/99
+mean recall@5 per system : {'adaptive': np.float64(0.798), 'raw__langch_recurs_default': np.float64(0.763), 'raw__page': np.float64(0.75), 'sdp_a_t600': np.float64(0.804), 'sdp_b': np.float64(0.749)}
+
+== CLAIR A5000 +doc title: 99 questions, systems = ['adaptive__doc', 'raw__langch_recurs_default__doc', 'raw__page__doc', 'sdp_a_t600__doc', 'sdp_b__doc']
+mean recall@10 per system: {'adaptive__doc': np.float64(0.915), 'raw__langch_recurs_default__doc': np.float64(0.905), 'raw__page__doc': np.float64(0.905), 'sdp_a_t600__doc': np.float64(0.917), 'sdp_b__doc': np.float64(0.892)}
+recall@10 = 0 per system : {'adaptive__doc': 5, 'raw__langch_recurs_default__doc': 6, 'raw__page__doc': 5, 'sdp_a_t600__doc': 5, 'sdp_b__doc': 8}
+miss (recall=0) in ALL systems: 2;  in at least one: 13
+per-question oracle recall@10 (best chunker per question, not attainable): 0.957
+questions where every system has the same recall@10: 77/99
+mean recall@5 per system : {'adaptive__doc': np.float64(0.862), 'raw__langch_recurs_default__doc': np.float64(0.81), 'raw__page__doc': np.float64(0.82), 'sdp_a_t600__doc': np.float64(0.848), 'sdp_b__doc': np.float64(0.785)}

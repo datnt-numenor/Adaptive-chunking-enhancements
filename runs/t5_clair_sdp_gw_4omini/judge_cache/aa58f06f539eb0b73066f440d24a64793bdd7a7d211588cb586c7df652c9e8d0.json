@@ -1,0 +1,14 @@
+{
+  "request_hash": "aa58f06f539eb0b73066f440d24a64793bdd7a7d211588cb586c7df652c9e8d0",
+  "prompt_sha256": "62d5dcf851e4773acb4bed03f36053b95c0e5c328ad1aadaff594b084a7cc63e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNuumICG0gQ15JDGF51YYn6Acsh0",
+  "prompt_tokens": 8954,
+  "completion_tokens": 52,
+  "actual_usd": 0.0013743,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed calculations and explanations that fully support the claims made in the Reference Answer regarding the increase in estimated carbon emissions from 30 tonnes CO2eq to 123.82 tonnes CO2eq."
+  }
+}

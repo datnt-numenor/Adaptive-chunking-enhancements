@@ -1,0 +1,14 @@
+{
+  "request_hash": "1ee80e6ae702345b23a429ce9ba482d74a7b3e761bfa25c89828442fff6e9dac",
+  "prompt_sha256": "05078574c13d8318a05061d58bce4b9e336ec90149c793cf901cadd5af8af2b6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO6KkBPho7dMwxgzgxNolAFxk79e",
+  "prompt_tokens": 9781,
+  "completion_tokens": 42,
+  "actual_usd": 0.00149235,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context provides relevant information about AI research and development activity but does not explicitly mention UNESCO Article 83, which is a key part of the Reference Answer."
+  }
+}

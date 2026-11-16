@@ -1,0 +1,14 @@
+{
+  "request_hash": "b1368b88bb9db1289f4c2ce1c935ab99b25811b9c3f425815df03f804b33bf23",
+  "prompt_sha256": "706e51d1df6e12f54833a7320499aef506897b33e86b7d8e752f6651a7fa713f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNy3iAxztDV9ICiS7oYaC0osXbrF",
+  "prompt_tokens": 7951,
+  "completion_tokens": 38,
+  "actual_usd": 0.0012154499999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention 'OOM' or provide any information related to 'orders of magnitude' in the context of estimating model capabilities."
+  }
+}

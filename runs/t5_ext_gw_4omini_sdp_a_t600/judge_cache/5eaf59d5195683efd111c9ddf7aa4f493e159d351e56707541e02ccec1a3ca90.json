@@ -1,0 +1,14 @@
+{
+  "request_hash": "5eaf59d5195683efd111c9ddf7aa4f493e159d351e56707541e02ccec1a3ca90",
+  "prompt_sha256": "1c4133e23677796a97fe2cda1d6c55db88beb1cf05262b7ede88e6ca7550f227",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNc7RcFRkdJK6NEBisW5L42qXTBz",
+  "prompt_tokens": 7988,
+  "completion_tokens": 48,
+  "actual_usd": 0.001227,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the frameworks and studies, confirming that study N29 is the only one that addresses all 3W1H questions, thus fully supporting the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "19b578e6b70cbc1e8c705fc2ecdcfd383a3a59324667165b763a1f0c2832b240",
+  "prompt_sha256": "8783082dce8709b422bfb00e91fa19727c131da1e6e2037a31be0bc0d045cef2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKcbASYJKf5PROHm0OEEXjQks2m",
+  "prompt_tokens": 7249,
+  "completion_tokens": 61,
+  "actual_usd": 0.0011239499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the exclusion of Anchors, CEM, and DiCE, as well as the identification of Decision Trees, RuleFit, and RuleSHAP as the best low-complexity candidates."
+  }
+}

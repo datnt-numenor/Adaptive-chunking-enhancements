@@ -1,0 +1,10 @@
+{
+  "request_hash": "000368c1e02bb2b71e0b9f2e2215efeeccb255d4c3686b3456349c39f96b4c49",
+  "prompt_sha256": "8d3f2b36f2f26e445b5d82ede5091c8f707985d1a94ae7512cfe778c3cb6971f",
+  "answer": "ArXiv 2401.14446 discusses several limitations of using only input/output analysis, known as black-box evaluations, to evaluate AI systems. These limitations include:\n\n1. **Inability to Identify Harms**: Black-box methods are limited in their ability to identify harms or provide meaningful explanations, as they only analyze inputs and outputs without understanding the internal workings of the system.\n\n2. **Generalizability Issues**: Black-box access restricts evaluators to analyzing the system based solely on inputs and outputs, making it impractical to develop a complete understanding due to the vast number of possible inputs.\n\n3. **Reliance on Heuristics**: Evaluators must rely on heuristics to produce 'relevant' inputs for evaluation, which can lead to unreliable results.\n\n4. **Undetected Failures**: Black-box methods have been shown to be unreliable for detecting failures that are not captured by typical test sets, such as jailbreaks, adversarial inputs, or backdoors.\n\n5. **Misleading Results**: Black-box evaluations can produce biased results based on how evaluators design inputs, potentially leading to misconstrued conclusions about the system's characteristics.\n\n6. **Lack of Component Analysis**: Black-box access prevents the separate study of system components, which is essential for tracing problems and making targeted interventions.\n\nOverall, the document emphasizes that black-box evaluations are insufficient for rigorous AI audits and that more comprehensive access methods, such as white-box or outside-the-box access, are necessary for effective evaluation.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMmiHuzcgpgljbfU7HXgABXhJZdk",
+  "prompt_tokens": 5851,
+  "completion_tokens": 306,
+  "actual_usd": 0.00106125
+}

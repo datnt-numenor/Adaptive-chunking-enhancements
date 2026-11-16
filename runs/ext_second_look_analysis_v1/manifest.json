@@ -1,0 +1,15 @@
+{
+  "pod": "runs\\gpu_metrics_ext_v2_results\\extracted_verified\\metrics_out",
+  "ext_base": "runs\\ext_metrics_merged_v1",
+  "primary": "sw0_rc1",
+  "secondary": [
+    "rc1",
+    "keepcont_rc1",
+    "noart_rc1"
+  ],
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "unit": "document"
+}

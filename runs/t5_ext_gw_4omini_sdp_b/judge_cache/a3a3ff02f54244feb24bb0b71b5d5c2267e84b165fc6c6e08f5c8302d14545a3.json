@@ -1,0 +1,14 @@
+{
+  "request_hash": "a3a3ff02f54244feb24bb0b71b5d5c2267e84b165fc6c6e08f5c8302d14545a3",
+  "prompt_sha256": "61f2e1b20ec8b09bcbd87e38c4d2c211fb94ae32d8d2951de49dc1c3b76790fc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9uaABsoOM2DFgD5LmB2SbfMA7Q",
+  "prompt_tokens": 7353,
+  "completion_tokens": 40,
+  "actual_usd": 0.00112695,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the responsibilities of providers regarding the integration of models into downstream systems and the resulting obligations."
+  }
+}

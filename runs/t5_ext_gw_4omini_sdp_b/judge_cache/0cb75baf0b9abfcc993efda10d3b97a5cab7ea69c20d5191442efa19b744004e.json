@@ -1,0 +1,14 @@
+{
+  "request_hash": "0cb75baf0b9abfcc993efda10d3b97a5cab7ea69c20d5191442efa19b744004e",
+  "prompt_sha256": "f068d6b1e1cc4bfdbc5cadbc0d71ea60b2c505d30a0ee441a2d679fe5bfc7c71",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJ2TLqqWxOfV11pIegnHipW7wXy",
+  "prompt_tokens": 5594,
+  "completion_tokens": 50,
+  "actual_usd": 0.0008691,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the three categories of auditing tools ideated by participants, which are tracing sources, identifying perspectives in generated outputs, and flagging instances of harmful content."
+  }
+}

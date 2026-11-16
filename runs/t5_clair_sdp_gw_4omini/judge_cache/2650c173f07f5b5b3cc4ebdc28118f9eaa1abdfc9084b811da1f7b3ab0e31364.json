@@ -1,0 +1,14 @@
+{
+  "request_hash": "2650c173f07f5b5b3cc4ebdc28118f9eaa1abdfc9084b811da1f7b3ab0e31364",
+  "prompt_sha256": "1ad1954497b9e7665de5e779b24e0cc7f96fd8ce4339fc9e96dd4ed1063fa352",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOgBoHu3liWL66ujKkzFYAFOOUFL",
+  "prompt_tokens": 8682,
+  "completion_tokens": 47,
+  "actual_usd": 0.0013305,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the origin of model cards in a 2019 Google Research paper and mentioning the introduction of the Model Card Toolkit in 2020."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "2cdddbca41472f85b95323c78eb6cde4849b1e7abc5e9b21618dbe9791ac7183",
+  "prompt_sha256": "1d0fec47cd5881ab44a168cdf689282f783499cbdc5ef01b1f4e9aca983ea09b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNeqDww7pVNXTe1sZ1kKYuxQbB7e",
+  "prompt_tokens": 7239,
+  "completion_tokens": 39,
+  "actual_usd": 0.00110925,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the challenges auditors face regarding costly or restricted APIs and the legal risks associated with the CFAA."
+  }
+}

@@ -1,0 +1,437 @@
+DOCUMENT: Datatilsynet AI and Privacy
+
+<<<PAGE 17>>>
+<!-- PageHeader: 17 -->
+
+Yet the development and application of artificial intelligence often requires many different types of personal data - information that in some cases has been collected for other purposes. For example, it is possible that a person's Facebook activities are built into an algorithm that determines whether she will obtain a mortgage from the bank. Such recycling of information may be useful and provide more accurate analyses than those which were technically feasible previously, but it can also be in contravention of the purpose limitation principle.
+
+In cases where previously-retrieved personal data is to be re-used, the controller must consider whether the new purpose is compatible with the original one. If this is not the case, new consent is required or the basis for processing must be changed. In the Facebook example discussed above, the data subject must consent to Facebook information being used by the bank in connection with mortgage applications in order to ensure that processing is conducted in compliance with the purpose limitation principle.
+
+# New technology - new science?
+
+The purpose limitation principle is highly important in ensuring that the data subject exercises control over his or her own personal information. There are, however, exceptions to the principle. Further processing of data is, for example, considered to be compatible with the original purpose if it takes place in connection with scientific or historical research, or for statistical and archival purposes in the public interest. This begs the question as to what constitutes scientific research, and to what extent the development and application of artificial intelligence is scientific research.
+
+More and more university and hospital research environments are working on developing tools that use artificial intelligence. Examples include models that identify the risk of tax or social benefit fraud, or image recognition software that diagnoses cancer in tumours. But how do we really define scientific research?
+
+The General Data Protection Regulation does not define what constitutes scientific research. A general understanding of the concept, however, is that it must relate to efforts aimed at discovering new knowledge or
+
+# Matters for consideration
+
+The Regulation's preface (Recital 50) states that the following factors should be included when ascertaining whether the further processing of personal data is compatible with the original purpose:
+
+· any connection between the original purpose and the purposes of the intended further processing
+
+· the context in which the data was collected
+
+· the data subject's relation to the controller and how this may affect the subject's reasonable expectations with regard to further processing
+
+· the nature of the personal data
+
+· the consequences for the data subject of the intended further processing
+
+· whether the original processing operations and the new ones are subject to the appropriate safeguards
+
+This list is not exhaustive and all issues that are relevant in the individual case must be included in the appraisal.
+
+know-how. 10 The GDPR's preface (Recital 159) states that scientific research should be interpreted broadly and include technological development and demonstration, basic research, as well as applied and privately financed research. These elements would indicate that - in some cases - the development of artificial intelligence may be considered to constitute scientific research.
+
+Applying artificial intelligence to assess a person's creditworthiness cannot, however, be said to be aimed at gaining new knowledge. In this case, the use of artificial intelligence cannot be defined as scientific research. But is it always possible to differentiate between the development and the application of AI?
+
+\* 10 Store Norske Leksikon
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 18 -->
+
+When the completed model is static (offline), development and use can be clearly differentiated. A model developed using training data is tested on similar data before it is used. Once the model is put into use, the training data is removed from the algorithm and the model will only process the personal data to which it is applied, such as information about loan applicants. Because the algorithm is static, it will not learn anything further from the personal data it is currently processing. Consequently, nor will it develop intelligence once it has been put into use.
+
+Other models develop and improve continuously as they are fed more personal data. These include models that provide decision support for doctors. The model learns something new about every patient it receives data about, or every scientific article it reads. This new knowledge can then be used on the next patient.
+
+When a model develops on a continuous basis, it is difficult to differentiate between development and use, and hence where research stops and usage begins. Accordingly, it is therefore difficult to reach a conclusion regarding the extent to which the development and use 0f these models constitute scientific research or not. The limits on what constitutes scientific research will need to be reviewed once the new data protection regulations come into force.
+
+We emphasise that the use of personal data for scientific research is governed by specific rules in the GDPR (Article 89). Use in such instances must be subject to the appropriate safeguards to secure the data subject's rights and freedoms. The safeguards must ensure that technical and organisational measures are in place to protect the data minimisation principle in particular.
+
+# Artificial intelligence meets data minimisation
+
+It often takes huge amounts of personal data to develop artificial intelligence.
+
+On the other hand, the principle of data minimisation requires that the data used shall be adequate, relevant and limited to what is necessary for achieving the purpose for which the data is processed. This means that a controller cannot use more personal data than is necessary, and that the information selected must be relevant to the purpose.
+
+A challenge when developing AI is that it may be difficult to define the purpose of processing because it is not possible to predict what the algorithm will learn. The purpose may also be changed as the machine learns and develops. This challenges the data minimisation principle as it is difficult to define which data is necessary.
+
+However, data minimisation is more than a principle limiting the amount of detail included in training or in the use of a model. The principle also stipulates proportionality, which restricts the extent of the intervention in a data subject's privacy that the use of personal data can involve. This may be achieved by making it difficult to identify the individuals contained in the basic data. The degree of identification is restricted by both the amount and the nature of the information used, as some details reveal more about a person than others. The use of pseudonymisation or encryption techniques protect the data subject's identity and help limit the extent of intervention.
+
+This principle also forces developers to thoroughly examine the intended area of application of the model to facilitate selection of relevant data necessary for the purpose. Furthermore, the developer must consider how to achieve the objective in a way that is least invasive for the data subjects. The assessments performed need to be documented, so that they can be presented to the Data Protection Authority in the event of an inspection, or in connection with a preliminary discussion.
+
+# Data protection impact assessment
+
+Before personal information is processed the impacts on data protection must be assessed if it is likely that the process will represent a risk to the rights and freedoms of natural persons. This is particularly the case when using new technology, and consideration must be given to the nature of the processing, its scope and purpose, and the context in which it is performed.
+
+If the risk is high, and the data controller cannot limit it, he or she is duty bound to initiate preliminary discussions with the Data Protection Authority.
+
+(GDPR Articles 35 and 36)
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: 19 -->
+
+Although it is difficult to establish in advance the exact information that will be necessary and relevant to the development of an algorithm - and this may change during the project - it is essential for the data minimisation principle to be adhered to by means of continuous assessment of the actual requirements. This not only protects the rights of the data subjects, but also minimises the risk of irrelevant information leading the algorithm to find correlations that rather than being significant are coincidental and to which no weight should be attached.
+
+The pressure to use personal data is intensifying as AIbased analyses are employed to promote increased efficiency and better services. The Data Protection Authority believes that the principle of data minimisation should play a major role in the development of artificial intelligence so that the rights of data subjects are protected and general confidence in the models retained.
+
+# The black box meets the principle of transparent processing
+
+Data protection is largely about safeguarding the rights of individuals to decide how information about themselves is used. This requires that controllers are open about the use of personal data, that such use is transparent.
+
+Transparency is achieved by providing data subjects with process details. Data subjects must be informed about how the information will be used, whether this information is collected by the data subjects themselves or by others (GDPR Articles 13 and 14). Besides, the information must be easily available, on a home page for example, and be written in a clear and comprehensible language (GDPR Articles 12). This information shall enable the data subjects to exercise their rights pursuant to the GDPR.
+
+It can be challenging to satisfy the transparency principle in the development and use of artificial intelligence. Firstly, this is because the advanced technology employed is difficult to understand and explain, and secondly because the black box makes it practically impossible to explain how information is correlated and weighted in a specific process.
+
+It is also challenging that information about the model may reveal commercial secrets and intellectual property rights, which according to the GDPR's preface (Recital
+
+63) the right of access must avoid. Consideration of others' rights, such as the commercial secrets of an organisation, may nevertheless not be used to deny a data subject access to all data relating to her. The answer is to find a pragmatic solution. In most cases, furnishing the data subject with the information she needs to protect her interests, without at the same time disclosing trade secrets, will not be problematical.
+
+Although AI is complex, and difficult to understand and explain, the principle of transparent processing of personal data applies with full force in the development and use of artificial intelligence.
+
+Below we will discuss the duty to inform and the rights of data subjects.
+
+# General information
+
+When personal data is collected, the data controller must always provide some general information such as
+
+· the identity of the data controller
+
+· how the data controller can be contacted
+
+· the purpose of processing
+
+· the legal basis for processing
+
+· the categories of personal data that are processed
+
+· and the data subjects' right to inspect the data
+
+Information must also be provided regarding risks, rules, safeguards, and the rights of the data subjects in connection with processing, as well as how these rights can be exercised.
+
+In addition, an extended duty to inform will apply when personal data is collected for automated decisionmaking. The use of artificial intelligence is a form of automated processing, and, moreover, in some cases the decision is taken by the model. It is important that we clarify what is required for a decision to be described as automated, before we take a closer look at the extended duty to inform.
+
+# Individual automated decisions
+
+Individual automated decisions are decisions relating to individuals that are based on machine processing. An example of this is the imposition of a fine on the basis of an image recorded by an automatic speed camera. Automated decisions are defined and regulated in Article 22 of the GDPR.
+
+Essentially, automated individual decisions are not permitted. Exceptions apply, however, if the automated decision is a necessary condition for entering into a contract, is permitted by law, or is based on the explicit consent of the data subject. The regulation does not define what constitutes explicit consent as opposed to ordinary consent, but the phrase indicates that an express gesture by the data subject is required.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: 20 -->
+
+In order to meet the requirements of the Regulation, the decision must be based solely on automated processing, and it must produce legal effect, or similarly significantly affect a person.
+
+That an automated decision must be based solely on automated processing, means that there cannot be any form of human intervention in the decision-making process. "Human intervention" means that a natural person must have undertaken an independent assessment of the underlying personal data, and be authorised to re-examine the recommendations the model has produced. The rules governing automated decision-making cannot be circumvented by fabricating human intervention.
+
+What is meant by legal effect is not defined in the preface. It would be natural to understand this phrase as meaning that the automated decision must impact on the data subject's rights or duties, such as legal rights, or the rights set out in a contract. See the examples listed in the fact box.
+
+# GDPR Article 22
+
+Our interpretation of Article 22 is based on the latest draft of the Article 29 Working Party's guidelines on automated decisionmaking.
+
+This draft is based on submissions from 64 organisations, and is planned for publication at the beginning of February 2018.
+
+The Article 29 Working Party consists of representatives of the EU states' data protection authorities. As an EEA country, Norway has observer status. The working party's statements normally carry considerable weight.
+
+(Article 29 Data Protection Working Party: xx/2017 on Automated individual decision-making and Profiling for the purposes of Regulation 2016/679)
+
+Nor is the alternative that the automated decision similarly significantly affects a person defined more closely. We assume that the decision must have the potential to affect the circumstances, behaviour or choices of the person who is subject to the automated decision. Yet it is difficult to state precisely where the line should be drawn, as there are considerable subjective elements in such an appraisal.
+
+When automated decisions are applied, measures must be implemented to protect the data subject's rights, freedoms and rightful interests. The data subject must be able to demand that a human being takes the final decision, and she must have the right of appeal.
+
+Automated decisions that involve special categories of personal data (sensitive personal data) are permitted only if the data subject has consented, or if they are legally warranted.
+
+It is important to be aware that the alignment of different types of personal data can reveal sensitive information about individuals. Operating with this data will involve the processing of special categories of personal data.
+
+For example, one study combined "likes" on Facebook with information from a simple survey and predicted male users' sexual orientation with an accuracy of 88 per cent. Moreover, they predicted ethnicity with 95 per cent
+
+# Legal effect:
+
+· If you are banned from entering a country
+
+· If you satisfy the requirements for receiving unemployment benefit or social security benefit
+
+· If your electricity supply is cut off because you have not paid your bills
+
+# Decisions that similarly significantly affect a person:
+
+· Automatic rejection of a credit application on the Internet
+
+· Electronic recruitment without human intervention
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: 21 -->
+
+accuracy, and whether a user was Christian or Muslim with 82 per cent accuracy. 11 A study of this nature is subject to the same legal obligations pursuant to the GDPR as if sensitive personal data had been processed from the outset.
+
+# Special categories of personal data
+
+Special categories of personal data include information about racial or ethnic origin, political convictions, religious or philosophical beliefs or trade union membership, as well as the processing of genetic and biometric data with the aim of uniquely identifying a natural person, health details or information regarding a person's sexual relationships or sexual orientation.
+
+(GDPR Article 4)
+
+# Right to information in connection with individual automated decisions
+
+In addition to receiving the above-mentioned general information, data subjects must be informed that their personal data is being collected for use in an automated decision-making process. Relevant information must also be given regarding the underlying logic of the model, as well as the significance and anticipated impacts of the automated process.
+
+The information given regarding the model's logic will cover, for example, such aspects as whether decision trees are to be used, and how the data is to be weighted and correlated. Because the information must be readily understood by the data subject, it is not always necessary to provide a thorough explanation of the algorithm, or even to include the algorithm.
+
+Data subjects must also be informed about how automated decisions may affect them. An insurance company that employs automated decision-making to set its motor insurance premiums on the basis of policy holders' driving patterns, should inform its customers of the possible impacts of this, and that careless driving can lead to higher premiums.
+
+The data subject must receive the information described here before automated processing commences. It will enable the data subject to lodge a complaint against processing, or to consent to it.
+
+# The right to an explanation of an automated decision?
+
+Can the data subject request an explanation of the content of the decision once it has been reached, in other words an explanation of how the model arrived at its result?
+
+The preface states that the necessary guarantees given in cases of automated processing shall include "specific information … and the right to … obtain an explanation of the decision reached after such an [automated] assessment" (Recital 71). The preface states that the data subject is entitled to an explanation of how the model arrived at the result, in other words how the data was weighted and considered in the specific instance.
+
+However, the right to an explanation does not appear in the GDPR itself. The implications of the linguistic differences between the preface and the wording of the articles are unclear, 12 but the preface itself is not legally binding and cannot of itself grant the right to an explanation.
+
+Regardless of what the differences in language mean, the data controller must provide as much information as necessary in order for the data subject to exercise his or her rights. This means that the decision must be explained in such a way that the data subject is able to understand the result.
+
+The right to an explanation does not necessarily mean that the black box must be opened, but the explanation has to enable the data subject to understand why a particular decision was reached, or what needs to change in order for a different decision to be reached. 13 The data subject must be informed as to how he can oppose the decision, either by appealing or by requesting human intervention.
+
+\* 11 Michael Kosinski, David Stilwell and Thore Graepel. «Private traits and attributes are predictable from digital records of human behaviour. Proceedings of the National Academy of Sciences of the United States of America»: http://www.pnas.org/content/110/15/5802.full.pdf
+
+\* 12 See for example Andre Burt, «Is there a right to explanation for machine learning in the GDPR?»: https://iapp.org/news/a/is-there-a-right-toexplanation-for-machine-learning-in-the-gdpr/ cf. Sandra Wachter, Brent Mittelstadt, Luciano Floridi, International Data Privacy law, forthcoming, «Why a right to explanation of automated decision-making does not exist in the General Data Protection Regulation», available at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2903469
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: 22 -->
+
+Does one have a right to an explanation when a human being makes a decision based on the model's recommendtion?
+
+Sometimes an automated process occurs that does not lead to an automated decision. Instead, a human utilises the information produced by the automated process to reach a decision, for example by employing a decision support tool. The preconditions for an automated decision to have been taken will therefore not have been satisfied. The question will therefore be whether the data subject is entitled to the same explanation as in the case of an automated decision.
+
+There are no articles in the GDPR, or statements in the preface, regarding the right to an explanation of a specific decision when the preconditions for automated decisions are not satisfied.
+
+The data subject is nevertheless entitled to be given the information necessary for her to safeguard her rights. The transparency principle also sets information requirements.
+
+The right to access information also gives the data subject the right to obtain information about the personal data used in reaching the decision. However, it does not grant the right to be given an explanation of the decision.
+
+Even though there is no right to an explanation when a decision is not automated, the transparency principle requires that the data controller should give an explanation similar to those given for automated decisions.
+
+# Other relevant regulations
+
+In addition to the GDPR, there are other regulations requiring that a decision is explained.
+
+For example, the public sector is subject to the Public Administration Act that requires, inter alia, individual decisions to be substantiated. The person concerned has the right to be informed of the regulations and the actual circumstances underpinning a decision, as well as the main considerations that have been decisive. (Public Administration Act: Sections 24 and 25).
+
+\* 13 See for example Sandra Wachter, Brent Mittelstadt and Chris Russel, «Counterfactual explanations without opening the black box: automated decisions and the GDPR».
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: 23 -->
+
+# Controlling the Algorithms
+
+In the future we will find that more and more decisions affecting us will be made by AI. They may be decisions regarding whether we can obtain a loan, what our motor insurance premium will be or which content our online newspaper shows us. At the same time, it is getting to be more and more difficult to comprehend and gain insight into the complex systems that make decisions on our behalf. So, we are dependent on service providers processing our data in the appropriate manner and in compliance with the data protection regulations.
+
+The Data Protection Authority (DPA) is tasked with supervising organisations in both the private and the public sector and ensuring that they comply with the data protection regulations. But how can an algorithm hidden in a black box be supervised?
+
+# The DPA's supervisory competence
+
+The GDPR establishes the investigative authority vested in that the DPA in connection with its supervisory role. To control whether personal data is being processed in accordance with the regulations, the DPA may conduct an investigation. An inspection shall clarify whether the data controller has routines and guidelines in place designed to ensure compliance with the regulations, and whether the routines and guidelines are followed.
+
+In connection with an investigation, representatives from the DPA may ask for all the information they require to perform their tasks. This might consist of documentation relating to organisational and technical measures, risk assessments, data protection impact assessments, employee training and the ways in which approaches made by data subjects are followed up.
+
+The representatives may also require to be given access to premises, data processing equipment and means, as well as to the personal data that is being processed. Access to premises, data processing equipment and means shall be granted in accordance with the procedural rules that apply nationally. When consulted on the subject of the new Personal Data Act in Norway, the Norwegian DPA proposed that consideration be given to granting the Authority powers of securing evidence similar to those currently wielded by the Norwegian Competition Authority.
+
+# Investigating the use of AI
+
+An organisation developing or utilising AI is bound by the same legal constraints as any other organisation that is processing personal data. In the course of a normal inspection the DPA will check whether the organisation has a basis for processing, whether it has satisfactory internal controls and routines, that risk assessments have been carried out, and that technical and organisational measures are in place in order to protect the data.
+
+There are some areas that may be particularly important to control at organisations utilising AI, such as compliance with the principles described earlier in this report; that data is not re-used for new purposes without an adequate processing basis; that organisations do not process more personal data than they need; that measures are in place to ensure fair treatment; and that the data subjects are informed as required by law.
+
+If an organisation develops AI, it may be relevant to control the nature and quantity of the training data used, as well as how this data is applied during the training process. If an organisation uses an AI-based system, it may be relevant to check whether it tests the results and conducts audits to ensure that personal data is not being utilised in an unlawful or discriminatory manner. It will also be relevant to investigate whether the system has been developed on the basis of privacy by design.
+
+# How deep can an investigation go?
+
+In most investigations it will be sufficient for the DPA to obtain documentation to determine whether the organisation is in compliance with the regulations. An organisation must be able to explain and document, and in some cases, demonstrate, that they process personal data in accordance with the rules. This means that the organisation must know how a system processes personal data and be able to account for this. If an organisation cannot account for how it uses personal data, the DPA is authorised to impose a fine and temporary or definitive ban on processing activities.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: 24 -->
+
+If the DPA suspects that the account given by an organisation is wrong or contains erroneous information, it can ask the organisation to verify the details of its routines and assessments, for example by having the organisation demonstrate how their system processes personal data. This may be necessary when, for example, there is a suspicion that an algorithm is using data that the organisation has no basis for processing, or if there is a suspicion that the algorithm is correlating data that will lead to a discriminatory result.
+
+The DPA currently carries out few IT system controls when out on inspection. In some cases where there is a need, the DPA checks what is taking place inside a system, for example by investigating how long a camera recording is stored for. We expect that the need to control IT systems will increase in the coming years in line with the greater use of automated analyses and decision-making in all sectors. Moreover, the Personal Data Act places greater emphasis on the data controller's duty to carry out responsible operations and internal controls, and less emphasis on preliminary controls conducted by the DPA. 14
+
+# How to inspect a "black box"?
+
+"Ordinary" algorithms are relatively straightforward to deal with. They are programmed to carry out specific actions. If, for example, your income is x and your debts y, you can obtain a loan of z. This is a much-simplified example, but it shows how it is possible to see what the inputs are and how the data is processed in order to obtain a given result.
+
+However, models based on deep learning and neural networks are complex and have low transparency, making it challenging to control what is actually taking place inside the system. Considerable knowledge of AIbased systems is required in order to know what to look for, as well as which questions to ask. In an inspection situation, where we identify a need to delve more deeply into the system, advanced technological expertise will be required.
+
+From a resource utilisation standpoint, the solution may be to hire external expertise in those cases where a "deep" control is required of an AI-based system. It is important that the DPA has both the knowledge and the resources required to discover breaches of the regulations, so as to avoid algorithms that reinforce social differences or lead to arbitrary discrimination, as well as the unlawful re-use of data.
+
+\* 14 See the guidelines on the responsibilities of enterprises under the GDPR on the Norwegian DPA's web site (in Norwegian),
+
+<!-- PageFooter: https://www.datatilsynet.no/regelverk-og-skjema/veiledere/virksomhetensansvar-etter-nytt-regelverk -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: 25 -->
+
+# Solutions and recommendations
+
+A data protection principle which underpins all AI development and applications, is accountability. This principle is central to the GDPR and places greater responsibility on the data controller for ensuring that all processing is conducted in compliance with the rules. Data processors are also bound by the accountability principle.
+
+In this chapter we shall present examples of tools and solutions that can help the data controller to comply with the rules. But first, we will discuss two of the requirements in the GDPR that are especially important in connection with the development and application of AI; data protection impact assessment (DPIA) and privacy by design. Following that, we look at tools and methods that can help protect privacy in systems that use AI. Finally, we shall propose some recommendations for developers, system suppliers, organisations buying and using AI, end users and the authorities.
+
+# Assess the data protection impact - and build privacy into your system!
+
+The new data protection regulations will enhance the rights of individuals. At the same time, the duties of organisations will be tightened up. Two new requirements that are especially relevant for organisations using AI, are the requirements privacy by design and DPIA.
+
+# Privacy by design
+
+The data controller shall build privacy protection into the systems and ensure that data protection is safeguarded in the system's standard settings. These requirements are described in Article 25 of the GDPR and apply when developing software, ordering new systems, solutions and services, as well as when developing these further.
+
+The rules require that data protection is given due consideration in all stages of system development, in routines and in daily use. Standard settings shall be as protective of privacy as possible, and data protection features shall be embedded at the design stage. 15 The principle of data minimisation is expressly mentioned in the provision relating to privacy by design.
+
+# Data Protection Impact Assessment
+
+Anyone processing personal data has a duty to assess the risks involved. If an enterprise believes that a planned process is likely to pose a high risk to natural persons' rights and freedoms, it has a duty to conduct data protection impact assessment (DPIA). This is described in Article 35 of the GDPR.
+
+When a risk is assessed, consideration shall be given to the nature, scope, context and purpose of the process. The use of new technology must also be taken into account. Moreover, there is a requirement to assess the impact on personal privacy by systematically and extensively considering all personal details in cases where this data is used in automated decision making, or when special categories of personal data (sensitive personal data) are used in on a large scale. The systematic and large-scale monitoring of public areas also requires documentation showing that a DPIA has been conducted.
+
+The impact assessment should include the following as a minimum:
+
+· a systematic description of the process, its purpose and which justified interest it protects
+
+· an assessment of whether the process is necessary and proportional, given its purpose
+
+· an assessment of the risk that processing involves for people's rights, including the right to privacy
+
+· the measures selected for managing risk identified
+
+The DPA shall be involved in preliminary discussions should an impact analysis reveal that the planned process may represent a high risk for data subjects, and that the risk cannot be reduced by the data controller (GDPR Article 36).
+
+\* 15 Read the Norwegian DPA's guidelines on software development with embedded privacy: https://www.datatilsynet.no/en/regulations-andtools/guidelines/data-protection-by-design-and-by-default/
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+<!-- PageHeader: 26 -->
+
+# Tools and methods for good data protection in AI
+
+Artificial intelligence is a rapidly developing technology. The same applies to the tools and methods that can help meet the data protection challenges posed by the use of AI. We have collected a number of examples to illustrate some of the available options. These methods have not been evaluated in practice, but assessed according to their possible potential. This means that technically they are perhaps unsuitable today, but the concepts are exciting, and they have the potential for further research and future use.
+
+We have placed the methods in three categories:
+
+· Methods for reducing the need for training data.
+
+· Methods that uphold data protection without reducing the basic dataset.
+
+· Methods designed to avoid the black box issue.
+
+# 1. Methods for reducing the need for training data
+
+One of the challenges we have pointed out in this report, is that there is often a need for huge amounts of data during machine learning. However, by selecting the right features, and adjusting them appropriately, the data requirement can be reduced. Here is a selection of methods that can help achieve this:
+
+# Generative Adversarial Networks 16
+
+Generative Adversarial Networks (GAN) are used for generating synthetic data. As of today, GAN has mainly been used for the generation of images. But it also has the potential for becoming a method for generating huge volumes of high quality, synthetic training data in other areas. This will satisfy the need for both labelled data and large volumes of data, without the need to utilise great amounts of data containing real personal information.
+
+# Federated learning 17
+
+This is a form of distributed learning. Federated learning works by downloading the latest version of a centralized model to a client unit, for example a mobile phone. The model is then improved locally on the client, on the basis of local data. The changes to the model are then sent back to the server where they are consolidated with the change information from models on other clients. An average of the changed information is then used to improve the centralized model. The new, improved centralized model may now be downloaded by all the clients. This provides an opportunity to improve an existing model, on the basis of a large number of users, without having to share the users' data.
+
+# Matrix capsules 18
+
+Matrix capsules are a new variant of neural networks, and require less data for learning than what is currently the norm for deep learning. This is very advantageous because a lot less data is required for machine learning.
+
+# 2. Methods that protect privacy without reducing the data basis
+
+The optimal solution would be if one could use as much data as one wished for machine learning, without compromising privacy. The field of cryptology offers some promising possibilities in this area:
+
+# Differential privacy 19
+
+Let us, for example, start with a database that contains natural persons and features related to these persons. When information is retrieved from the database, the response will contain deliberately-generated "noise", enabling information to be retrieved about persons in the database, but not precise details about specific individuals. A database must not be able to give a markedly different result to a query if an individual person is removed from the database or not. The overriding trends or characteristics of the dataset will not change.
+
+# Homomorphic encryption
+
+This is an encryption method that enables the processing of data whilst it is still encrypted. This means that confidentiality can be maintained without limiting the usage possibilities of the dataset. At present, homomorphic encryption has limitations, which mean that systems employing it will operate at a much lower rate of efficiency. The technology is promising, however.
+
+\* 16 https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf
+
+\* 17 https://research.googleblog.com/2017/04/federated-learningcollaborative.html
+
+\* 18 https://openreview.net/pdf?id=HJWLfGWRb
+
+\* 19 https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf, https://arxiv.org/abs/1412.7584
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+<!-- PageHeader: 27 -->
+
+Microsoft for example has published a white paper on a system that uses homomorphic encryption in connection with image recognition. 20 Active efforts are also underway to standardise homomorphic encryption solutions. 21
+
+# Transfer learning 22
+
+It is not the case that it is always necessary to develop models from scratch. Another possibility is to utilise existing models that solve similar tasks. By basing processing on these existing models, it will often be possible to achieve the same result with less data and in a shorter time. There are libraries containing pretrained models that can be used.
+
+# RAIRD
+
+Statistics Norway (SSB) and the Norwegian Centre for Research Data (NSD) have developed a system called RAIRD 23 that permits research to be carried out on data without having direct access to the complete dataset.
+
+In short, this system works by means of an interface that allows the researchers to access only the metadata of the underlying dataset. The dataset may, for example, be a cancer diagnosis register containing fields for age, gender, date of and place of birth. The researcher can then submit queries based on the metadata and obtain a report containing aggregated data only.
+
+This solution has been designed to prevent the retrieval of data relating to very small groups and individual persons. This type of system can therefore be used when data for machine learning is needed. Instead of receiving a report as an end result, one could obtain a model from the system.
+
+# 3. Methods for avoidiing the black box issue
+
+One of the issues mentioned is the lack of transparency in connection with machine learning and automated decision-making. This represents a challenge both for those using such a system and for the people whose data is processed by it. System developers who base their work on machine learning would derive great benefit from knowing what takes place under the bonnet, as it were, in order to quality assure and improve their products.
+
+# Explainable AI (XAI) 24
+
+XAI is the idea that all the automated decisions made should be explicable. With people involved in a process, it is often desirable that an explanation is given for the outcome. There are some interesting possibilities in two areas. There will also be a need to be able to control systems that do not have this embedded. It will probably also be attractive for developers employing transfer learning.
+
+There is also a project underway in this field, being run by the Defense Advanced Research Projects Agency (DARPA), where the objective is to gain more knowledge about providing understandable explanations for automated decisions. They have sponsored Oregon State University, awarding an amount of USD 6.5 million over four years for research into this topic. The goal is to create AI that can explain its decisions in such a way that is understandable and promotes confidence in using the system. There are in any case good grounds for believing that this research will drive the field forward.
+
+# LIME 25
+
+LIME is an approach to XAI. It is a model-agnostic solution that produces explanations ordinary people can understand. In the case of image recognition, for example, it will be able to show which parts of the picture are relevant for what it thinks the image is. This makes it easy for anyone to comprehend the basis for a decision.
+
+\* 20 https://www.microsoft.com/en-us/research/publication/cryptonetsapplying-neural-networks-to-encrypted-data-with-high-throughput-andaccuracy/
+
+\* 21 http://homomorphicencryption.org/
+
+\* 22 http://www.cs.utexas.edu/~ml/publications/area/125/transfer_learning
+
+\* 23 http://raird.no/
+
+\* 24 https://www.darpa.mil/program/explainable-artificial-intelligence
+
+\* 25 https://www.oreilly.com/learning/introduction-to-local-interpretablemodel-agnostic-explanations-lime
+
+<!-- PageBreak -->
+

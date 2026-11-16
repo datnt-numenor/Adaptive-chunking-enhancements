@@ -1,0 +1,10 @@
+{
+  "request_hash": "387de11233014797b06db250e30f9a5adc45d3d4e66485ad52d5542a98bc758b",
+  "prompt_sha256": "9b1ee69e37484c4614765301f62f44c01d6286b50f284394d25b47d1857eeb27",
+  "answer": "Stackelberg games are more challenging to compute than Nash equilibria in general-sum settings for two reasons: \n\n1. The structural properties that lead to efficient computation of Nash equilibrium are not sufficient for the case of Stackelberg equilibrium, indicating that the latter is more complex to compute.\n2. Stackelberg and Nash equilibria typically diverge under the general-sum setting, which adds to the computational challenges associated with finding Stackelberg equilibria.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMgaU6NAxtP5Id8WEnoCJZzOu3Ou",
+  "prompt_tokens": 8248,
+  "completion_tokens": 92,
+  "actual_usd": 0.0012924000000000002
+}

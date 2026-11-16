@@ -1,0 +1,14 @@
+{
+  "request_hash": "d18eebdee9336bb6e8e81ec15e008f9fd0146009a0b982799df85e45d3ab39d7",
+  "prompt_sha256": "e36aa0cfcdd4c5ee9aebf99079329e5bbd34fb04dd4b264a0b96eb894a30d9ba",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOibuveT2cKh2A0J2oEMKIqyWItv",
+  "prompt_tokens": 7460,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011442,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive information about the obligations of general-purpose AI model providers to share documentation with downstream providers, fully supporting the claims made in the Reference Answer."
+  }
+}

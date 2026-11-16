@@ -1,0 +1,14 @@
+{
+  "request_hash": "fa56888d72975e2b659a79d6341cb8723dfa8295c6c756ca8f5ac9eec959cf16",
+  "prompt_sha256": "acc40dc8a20a57bd91c94db50d514a38d896b71c0edc4448a04fd1cbfe11acbf",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO0KMETyJVDz99osLKacSpP9lZx6",
+  "prompt_tokens": 9278,
+  "completion_tokens": 39,
+  "actual_usd": 0.0014151,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly defining g as a continuous, monotonic function and providing examples of its forms."
+  }
+}

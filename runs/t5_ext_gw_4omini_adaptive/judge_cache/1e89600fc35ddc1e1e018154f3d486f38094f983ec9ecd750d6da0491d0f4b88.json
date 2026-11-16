@@ -1,0 +1,14 @@
+{
+  "request_hash": "1e89600fc35ddc1e1e018154f3d486f38094f983ec9ecd750d6da0491d0f4b88",
+  "prompt_sha256": "c1182bced50f3f9563a0312af7ad34833d3a71ecbd8b9713c966af693742af99",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJ3LWSdRmIYR4RvlepvIVC41VFU",
+  "prompt_tokens": 9016,
+  "completion_tokens": 32,
+  "actual_usd": 0.0013716,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention VOSViewer or its use in creating figures, making the reference answer unsupported."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "7a6b9eff3afd5c40847f97040ea30e9a045ba3378b15fd7d75ba2143ba542bd4",
+  "prompt_sha256": "6f5c5ef7f852c37460a05ba42ed863c3b32dda4c067cb433e13384fb3ff0f67e",
+  "answer": "The main organizational structure of the Eticas AI Risk Taxonomy is a three-level hierarchy that organizes AI risks across 10 top-level categories, which are further decomposed into 21 sub-groups and 70 active subcategories. This structure is designed to be audit-oriented and navigable, allowing for coherent assessment protocols without recursive decomposition.\n\nIn contrast, the IBM AI Risk Atlas organizes risks by lifecycle stage (input, inference, output, non-technical, and agentic) and integrates with a tooling suite called Risk Atlas Nexus. This lifecycle organization aligns with development workflows but complicates compliance crosswalks, as regulators typically organize by domain of harm. The Eticas taxonomy emphasizes operationalization and comparability across audits, while the IBM framework focuses on lifecycle stages and automated detection, which may underweight the importance of governance and process controls.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNHU4IMYXgBCM74xZONdIo6CIM8n",
+  "prompt_tokens": 7568,
+  "completion_tokens": 167,
+  "actual_usd": 0.0012354
+}

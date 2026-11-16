@@ -1,0 +1,14 @@
+{
+  "request_hash": "d7a4824c26064370487787435102ce434796ad177867c0c9dbcb468efcfbd9f2",
+  "prompt_sha256": "23304aa9a4bac4b48d3ab066ab108e9c5836e5340bdf6b4d47e8a49171387671",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOihbUUh6CzsuHtNUGQg1LeN8NI2",
+  "prompt_tokens": 8209,
+  "completion_tokens": 59,
+  "actual_usd": 0.00126675,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by specifying that the amount of energy used for training must be reported in megawatt-hours with at least two significant figures, and it also addresses the situation where this information cannot be estimated."
+  }
+}

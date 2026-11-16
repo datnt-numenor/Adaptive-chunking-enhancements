@@ -1,0 +1,14 @@
+{
+  "request_hash": "f0764b21412de6feaca3dc1a3b91da95a1842d9ffda2e90aa31b912b45c5fb43",
+  "prompt_sha256": "3fbc1fefb12a52d009d2ec3051fe64bb884c67472b1f11f80e955926918a3c39",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOZVWtosBIsUm4t8NJanRSgBR1Hq",
+  "prompt_tokens": 7228,
+  "completion_tokens": 55,
+  "actual_usd": 0.0011172,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the requirements for agencies to submit extension requests before October 15, 2024, and the responsibilities of CAIOs to track and report waivers within 30 days."
+  }
+}

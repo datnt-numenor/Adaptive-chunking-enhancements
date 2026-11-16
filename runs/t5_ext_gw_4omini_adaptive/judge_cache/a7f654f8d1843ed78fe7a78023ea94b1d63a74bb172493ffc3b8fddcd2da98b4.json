@@ -1,0 +1,14 @@
+{
+  "request_hash": "a7f654f8d1843ed78fe7a78023ea94b1d63a74bb172493ffc3b8fddcd2da98b4",
+  "prompt_sha256": "2dcf8a7f1e5da3bceb1255f3e9434764f3cde3eea35335e04c6f44c05e344c52",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOE68Jg22eNnSQ8A90UDvNLfP1gJ",
+  "prompt_tokens": 9575,
+  "completion_tokens": 47,
+  "actual_usd": 0.00146445,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context supports the main categories of the AI Risk Mitigation Taxonomy but does not provide specific examples like 'Model Alignment' and 'System Documentation' mentioned in the Reference Answer."
+  }
+}

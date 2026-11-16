@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer fully supported by MS-2.11-001 evidence; question is self-contained\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Both answer components directly supported by quoted evidence from MS-2.7-006 and MS-2.7-009\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"drop\",\n      \"reason\": \"Evidence only shows TEVV as a label, not the definition claimed in the answer\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Action ID and description directly supported by MS-2.7-005 evidence\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Action ID and purpose directly supported by MS-2.5-001 evidence\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer fully supported by MS-2.8-003 evidence; question is self-contained\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 6306,
+  "out": 893
+ },
+ "created": "2026-11-09 18:34:13"
+}

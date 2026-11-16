@@ -1,0 +1,10 @@
+{
+  "request_hash": "323bf392799e507acb5872a1ae8c3e5ff57062ea84d837bbcdf737935708223e",
+  "prompt_sha256": "af01d20439205a7ce0c98336d6432a2aced68358462ad52c6bb054c0a2e39505",
+  "answer": "NIST SP 1270 describes the challenge of measuring fairness in generative models, such as large language models, by highlighting that these models produce outputs that are free form text, audio, or video. It notes that there are serious social ramifications associated with measuring fairness in these emergent classes of deployed generative models. The document emphasizes that while academic research into mathematical notions of fairness has increased, the procedures for testing fairness in regulatory and litigation settings have been established for decades. It also points out that traditional statistical tests can be applied to determine whether automated decision-making systems are acting outside the bounds of applicable law, but the complexity of generative models adds to the difficulty of ensuring fairness.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMbFjIyakNoXTtYE9QZlaJadUIT1",
+  "prompt_tokens": 9962,
+  "completion_tokens": 137,
+  "actual_usd": 0.0015765
+}

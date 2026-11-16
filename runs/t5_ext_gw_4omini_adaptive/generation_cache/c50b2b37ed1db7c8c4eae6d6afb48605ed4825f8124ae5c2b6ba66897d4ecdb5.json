@@ -1,0 +1,10 @@
+{
+  "request_hash": "c50b2b37ed1db7c8c4eae6d6afb48605ed4825f8124ae5c2b6ba66897d4ecdb5",
+  "prompt_sha256": "d4cae604535b87ff66ccde4f76af4eaeab44661e1babbc4cac36224189dc9909",
+  "answer": "NIST SP 800-218A recommends handling AI model inputs and outputs carefully by ensuring that all inputs and outputs are logged, analyzed, and validated within the context of the AI model. Those inputs and outputs that have issues should be sanitized or dropped, and they should be encoded to prevent the execution of unauthorized code.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMb9zqxUlGI7MEbeYSzG77h26nb4",
+  "prompt_tokens": 7387,
+  "completion_tokens": 64,
+  "actual_usd": 0.00114645
+}

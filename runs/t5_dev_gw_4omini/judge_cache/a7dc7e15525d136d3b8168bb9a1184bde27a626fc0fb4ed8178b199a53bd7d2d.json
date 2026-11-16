@@ -1,0 +1,14 @@
+{
+  "request_hash": "a7dc7e15525d136d3b8168bb9a1184bde27a626fc0fb4ed8178b199a53bd7d2d",
+  "prompt_sha256": "b641edb9b3e7198fa295f94bd2ca8ee51e09476c02423b96db59be821d08be29",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2L9Z8C6vK7SWIIg986dKmc3HKJN",
+  "prompt_tokens": 8636,
+  "completion_tokens": 36,
+  "actual_usd": 0.0013169999999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention MAIF or any specific open-source toolboxes related to ethical AI, making the Reference Answer unsupported."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "1fbc556db6f2017d0f0aed08644bf627d255c23c1f632a9d1981de838404e4ef",
+  "prompt_sha256": "c01125d7c75a6e8934b1325c5f40bdf41333342ac1e758242c6ddf2f7c220ec5",
+  "answer": "In arXiv 2608.05800, two requirements for regulatory transparency in consequential AI are:\n\n1. **Access to the evidential basis for interpreting and acting on outputs**: This includes making clear the meaning of the target, the justification for its measurement, the assumptions connecting observations to conclusions, and the evidence supporting use in the intended population and setting.\n\n2. **Disclosure of the model's computation**: While access to source code, model parameters, or feature attributions can help explain how an output was produced, it does not establish what that output legitimately tells us about the world.\n\nAffected people should be enabled to challenge inferences by ensuring that transparency exposes the limits of the model's outputs and allows them to scrutinize the basis for the conclusions drawn from those outputs. This means that individuals should have the means to understand and contest the inferences made by AI systems that impact them.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNI0omzoAQ1TKMNRlqjzAWLFBaCm",
+  "prompt_tokens": 9936,
+  "completion_tokens": 180,
+  "actual_usd": 0.0015983999999999998
+}

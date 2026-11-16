@@ -1,0 +1,14 @@
+{
+  "request_hash": "32f5455a308d3f64ca4d51b0a6e6f3f9d1b5bc54c325f96420cf614d7db532d5",
+  "prompt_sha256": "356a431a681f12261be566807931ffbb687bd31084b6a3ea63959b92d386bc57",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOOoy1QTSGxkL4oTSajna9PN96Ch",
+  "prompt_tokens": 6814,
+  "completion_tokens": 53,
+  "actual_usd": 0.0010538999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about LearnEnjoy's technology, including the three-year average for autism diagnosis in France and the tablet's functionality for pre-diagnosis, fully supporting the claims made in the Reference Answer."
+  }
+}

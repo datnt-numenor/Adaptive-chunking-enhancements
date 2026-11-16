@@ -1,0 +1,14 @@
+{
+  "request_hash": "b25544770bf793541be12432eef1e2937de9b813075184727baa204ec745fce5",
+  "prompt_sha256": "0d49b9df408ea212e09c81fece1df400ca2756493ba16491389fa2821c1997aa",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhYd0zb1PNaLpPV7RGZpm7dZN3h",
+  "prompt_tokens": 7379,
+  "completion_tokens": 50,
+  "actual_usd": 0.00113685,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about both use cases (UC1 and UC2), including their focus areas, components, and specific audit questions, which fully supports the claims made in the Reference Answer."
+  }
+}

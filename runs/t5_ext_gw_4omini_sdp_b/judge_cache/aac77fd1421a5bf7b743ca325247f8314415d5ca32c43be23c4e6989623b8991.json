@@ -1,0 +1,14 @@
+{
+  "request_hash": "aac77fd1421a5bf7b743ca325247f8314415d5ca32c43be23c4e6989623b8991",
+  "prompt_sha256": "fe87e5635551adb1d0c95362d35e1b9cb23d416570ff0f008020d552663affa0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOHnVFn4I8FjwhigX7xOftKq1mXh",
+  "prompt_tokens": 6360,
+  "completion_tokens": 37,
+  "actual_usd": 0.0009762000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the two main types of costs associated with AI evaluations: development costs and execution costs."
+  }
+}

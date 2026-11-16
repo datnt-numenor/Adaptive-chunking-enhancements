@@ -1,0 +1,12 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+adaptive@plain                                recall@10=0.8528 recall@5=0.7773 ndcg@10=0.6896 hit@10=0.8676  chunks=3333  t=522s
+adaptive@doc                                  recall@10=0.8527 recall@5=0.7817 ndcg@10=0.6920 hit@10=0.8630  chunks=3333  t=1026s
+raw__langch_recurs_default@plain              recall@10=0.8467 recall@5=0.7758 ndcg@10=0.6936 hit@10=0.8630  chunks=3700  t=1611s
+raw__langch_recurs_default@doc                recall@10=0.8526 recall@5=0.7910 ndcg@10=0.6993 hit@10=0.8676  chunks=3700  t=2245s
+raw__page@plain                               recall@10=0.8538 recall@5=0.7761 ndcg@10=0.6722 hit@10=0.8699  chunks=3501  t=3070s
+raw__page@doc                                 recall@10=0.8638 recall@5=0.7950 ndcg@10=0.6879 hit@10=0.8767  chunks=3501  t=3804s
+sdp_a_t600@plain                              recall@10=0.8492 recall@5=0.7814 ndcg@10=0.6961 hit@10=0.8630  chunks=3255  t=4305s
+sdp_a_t600@doc                                recall@10=0.8577 recall@5=0.7850 ndcg@10=0.7083 hit@10=0.8721  chunks=3255  t=4807s
+sdp_b@plain                                   recall@10=0.8342 recall@5=0.7444 ndcg@10=0.6634 hit@10=0.8470  chunks=4169  t=5327s
+sdp_b@doc                                     recall@10=0.8635 recall@5=0.7694 ndcg@10=0.6874 hit@10=0.8767  chunks=4169  t=5992s
+Saved -> runs\proxy_ext\r1

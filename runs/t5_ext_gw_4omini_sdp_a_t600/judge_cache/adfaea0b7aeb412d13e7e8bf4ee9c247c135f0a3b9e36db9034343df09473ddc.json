@@ -1,0 +1,14 @@
+{
+  "request_hash": "adfaea0b7aeb412d13e7e8bf4ee9c247c135f0a3b9e36db9034343df09473ddc",
+  "prompt_sha256": "bed60d2f094d92e433fdb55a725437a6f5eb60789dff8c7df99d720c52d5de10",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNznDDfGlYjVUypB203gJTthzgbV",
+  "prompt_tokens": 7706,
+  "completion_tokens": 53,
+  "actual_usd": 0.0011876999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the widespread limitations of AI governance knowledge, expertise, and financial resources within smaller organizations, which hinders their ability to participate meaningfully in AI governance."
+  }
+}

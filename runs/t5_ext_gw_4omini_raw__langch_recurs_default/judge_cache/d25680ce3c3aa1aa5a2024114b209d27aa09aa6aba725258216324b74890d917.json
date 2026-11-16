@@ -1,0 +1,14 @@
+{
+  "request_hash": "d25680ce3c3aa1aa5a2024114b209d27aa09aa6aba725258216324b74890d917",
+  "prompt_sha256": "3c9048601aff88fea61ded7fe65c9a5b9efc159d63bea492db9f1f646389141a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQxoNeazE56ZqFlhUMSGRPMQRH7",
+  "prompt_tokens": 5066,
+  "completion_tokens": 37,
+  "actual_usd": 0.0007821,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the need for regular assessment of security measures and the implementation of recommendations from security checks."
+  }
+}

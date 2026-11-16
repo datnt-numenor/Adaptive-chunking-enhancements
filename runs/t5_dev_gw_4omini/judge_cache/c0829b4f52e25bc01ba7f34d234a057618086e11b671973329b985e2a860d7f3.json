@@ -1,0 +1,14 @@
+{
+  "request_hash": "c0829b4f52e25bc01ba7f34d234a057618086e11b671973329b985e2a860d7f3",
+  "prompt_sha256": "dfcb271e2aa83ba9955febb06d0ebbb3e09681b597a7df472574c29fc123d442",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2CifBugOB7VfuqYlTPz8Aq7qIyJ",
+  "prompt_tokens": 8562,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013119,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly detailing the four dimensions of data selection—volume, categories, typology, and sources—along with a description of typology."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "ca645c311e418af45e8d7fe9b55ca6ae326f70df4bfedb512ccc67a85ee95149",
+  "prompt_sha256": "18ef6021b6be9661139af237ff87e7f15f8edb48644804a9fdadde892ca6a8f7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4ZYmaQddGEelYPWRO4YX8zd5mj",
+  "prompt_tokens": 7779,
+  "completion_tokens": 44,
+  "actual_usd": 0.00119325,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the Library of Congress program prohibits the use of generative AI tools, including those mentioned in the Reference Answer."
+  }
+}

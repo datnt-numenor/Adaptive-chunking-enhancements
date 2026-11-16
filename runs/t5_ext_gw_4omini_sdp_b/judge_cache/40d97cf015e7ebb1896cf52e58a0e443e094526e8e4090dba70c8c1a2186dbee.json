@@ -1,0 +1,14 @@
+{
+  "request_hash": "40d97cf015e7ebb1896cf52e58a0e443e094526e8e4090dba70c8c1a2186dbee",
+  "prompt_sha256": "683df9f75b235a7dc0cd0801f81b2f115bfbe5b9130698eb32f8aa018ab44568",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNenU9yhpFZV1B829WMWkp5klpf9",
+  "prompt_tokens": 5279,
+  "completion_tokens": 42,
+  "actual_usd": 0.00081705,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the ambiguity in Article 6.1 regarding the assignment of extended daily driving time to the appropriate week."
+  }
+}

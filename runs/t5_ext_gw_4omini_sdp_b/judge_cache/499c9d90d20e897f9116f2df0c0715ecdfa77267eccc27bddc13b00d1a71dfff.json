@@ -1,0 +1,14 @@
+{
+  "request_hash": "499c9d90d20e897f9116f2df0c0715ecdfa77267eccc27bddc13b00d1a71dfff",
+  "prompt_sha256": "b8e8097cc65ece50e4066f63c7b4aa63503e785bca4ce7b7b1b69ba078bb669d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO6lDLzvcwhLAl6XIiQccSjk9R8v",
+  "prompt_tokens": 7447,
+  "completion_tokens": 51,
+  "actual_usd": 0.0011476499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that GPT-4o achieved a macro-averaged F1-score of 0.90 for classifying impacts into risk categories."
+  }
+}

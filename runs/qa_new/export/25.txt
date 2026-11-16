@@ -1,0 +1,285 @@
+DOC_ID: Norma (légal)_Verification for International AI Governnace
+
+<<<PAGE 147>>>
+a solution to this problem. See also the related Appendix F which grapples with a similar problem relating to evaluation content instead of algorithms.
+
+Strict coding practices: Strict and modular coding practices for both evaluations and algo- rithms might allow the potentially rampant complexity of these objects to be brought down to a more manageable level. Decades of progress in software engineering techniques have unearthed numerous ways to manage complexity and ensure that modules (including mod- ules with unknown internals) abide by strict behavioral protocols.
+
+Open-source code: An extreme transparency measure is using open-source code. In such a scenario, the Prover does not have any security concerns about their code and therefore there is no concern about letting it be inspected.
+
+Third party efforts to minimize the "algorithmic overhang": If open-source techniques are far behind closed-source techniques, then an "algorithmic overhang" may exist, where a Prover could undertake training that appears compliant but is not (see for example the pass- word locked model example provided above). Minimizing the algorithmic overhang may therefore be desirable for a number of reasons. Third party states or other organizations could attempt to advance the state of open-source capabilities in an attempt to reduce this overhang and therefore provide less wiggle room for states to "sandbag" with their mod- els. Of course, expanding the capabilities of open-source algorithms will also proliferate the ability to produce more capable models. One potential way to mitigate broad proliferation would be for state of the art algorithms to be shared among a more select group, such as a small group of experts or representatives of key states who contribute to the Verifier's knowl- edge of what the expectations should be for the performance of leading models. Of course, such a proposal would likely be strongly opposed by those who want to see broad-based development of AI.
+
+Algorithm registry and layers of judgments: An algorithm registry could be as simple as a hash of the algorithm code along with an owner.412 Judgments about algorithms would be rendered by authorities with the power to see algorithms in their full detail (such as domestic regulatory agencies). These judgments would be public. Therefore, if a large model is being proposed in a training plan (see Section 4.5.1.1.1), the algorithm it employs should already have been judged compliant by a domestic regulatory agency. If a regulatory and verifica- tion process at the international level calls into question the compliance of the algorithm, this could cast doubt on the ability or trustworthiness of the domestic regulatory agency that signed off on the algorithm in the first place. Third-party assessments of the algorithm could lend weight to this judgment. Hypothetically, the explicit endorsement of the algorithm by the domestic regulatory agency should make it more costly for the Prover in a scenario in which they are caught, thus slightly reducing the desirability of defection. Finally, if an agree- ment also requires that an algorithm be subjected to future evaluations that are developed, the Prover considering a regulatory circumvention would have to believe that they would eventually face a very serious risk of either being revealed to be out of compliance or having
+
+\* 412 See also the related idea of a model registry (Appendix L.3).
+
+<!-- PageFooter: page 146 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 148>>>
+to say "no" in response to a perfectly reasonable evaluation-which other actors might take as them being out of compliance just the same. See also Appendix F for more on this point.
+
+Estimate the capability scaling of algorithm code: Even keeping the algorithm secret, small experiments could be done to test its ability-using known data sets. This could allow the scaling law for this algorithm to be estimated and thus allow sandbagging413 attempts to be discovered (see more on this in Appendix G).
+
+Require an open API version of every algorithm: Building on the idea above, another highly speculative technique for ensuring that the general capabilities of algorithms are well-known would be to require that an open API serve a small or medium-sized model trained using that algorithm and employing similar data to the real proposed model. Metadata about the small model could be available publicly, thus allowing some publicly verifiable tests of the learning capabilities of the model. The key reason why this approach may be entirely unworkable for sensitive applications is that even access to a small model over an API might reveal a lot about what the model is designed for, what it is capable of, and what its weak points are. All of these factors may in fact be deemed sensitive by the Prover for sensitive models. However, in the civilian realm, such a proposal is less outlandish provided that it can guard against the theft of trade secrets or training data.
+
+Algorithmic escrow: Building on the simple algorithm registry discussed above, one can also build a political agreement that requires the open-sourcing of any algorithm that meets certain criteria-and the cryptographic commitments about the algorithm code mean that the revealed code will have to match the true code. For example, algorithms submitted to the registry more than a few years earlier might reasonably be revealed, presuming that the capabilities of open source models have caught up-or that all meaningful competitor mod- els built by corporations or states are presumed to have already embodied these insights. Another potential trigger for open sourcing would be a desire to build a model with a large compute budget. It is important to realize that small specialized models differ from large multimodal models in compute budget by several orders of magnitude. If international gov- ernance is primarily worried about the loss of control or strategic effects of extremely large models, then that governance system could require that larger models have to reveal their algorithms more quickly-perhaps even before training is completed for those models that are at the upper end of the compute budget. A variant of this idea would include various levels of revelation described above, including limited assessor access, limited release to key personnel, open API access to a small model, and finally open-sourcing.
+
+\* 413 Teun van der Weij et al., 'AI Sandbagging: Language Models Can Strategically Underperform on Evaluations' (arXiv, 6 February 2025), https ://doi.org/10.48550/arXiv.2406.07358.
+
+<!-- PageFooter: page 147 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 149>>>
+## Appendix F: The "Who watches the watchers?" problem with privacy-preserving evaluations
+
+Another variant of this problem is that the Verifier's secret evaluation content might be used to meaningfully explore the Prover's data in a security damaging way. For example, the Verifier might be able to test whether a Prover-provided AI model is capable of recognizing a particular camouflage pattern for military hardware-thus revealing information about a potential vulnerability of the Prover's military. Guarding against this kind of attack requires that Verifier-provided evaluation code and data also be subject to evaluation checks. Natu- rally, one might ask how the evaluation checks used in this domain are verified-thus creat- ing a potentially infinite regress evocative of the "Who watches the watchers?" problem in politics-where empowered authorities must also be watched over by someone, thus raising the question of who is watching them in turn.
+
+Robustly addressing this kind of problem is beyond the scope of this report, but a few avenues of work are worth mentioning:
+
+1. Third-party states or institutions might be able to acquire somewhat more access to private code and data due to their political neutrality (see the process described in Sec- tion 3.5, but imagine that assessors are from neutral states). Their involvement in a verification process might allow an important check on the behaviors of the Prover and Verifier.
+
+2. Public meta-evaluation code and data might be developed for testing private evalua- tions. While it would be possible for sophisticated efforts to circumvent these checks because they are publicly available, these circumventions do not come with zero cost. They would make it more difficult and costly for the circumvention to take place.
+
+3. Similarly, private evaluation and meta-evaluation capabilities might be developed by many actors simultaneously, thus allowing direct comparison of outputs and checks among this set of codes. If a comparison effort yielded diverging results among different kinds of evaluations, it could lead to an escalating process of verification of those tools (see Section 3.5 for how humans might be brought in).
+
+4. If declarations are made about the strict purpose and design of evaluations, then it is possible to imagine that the algorithm or the data of the algorithm could be subject to random changes-exchanging them with open-source evaluations that are collabora- tively developed. If the behavior of the evaluation sharply diverges from the declaration when code or data is interchanged, it would be an indication that something is wrong with the declaration. To be feasible, this approach would need a very tight specification for evaluation code and data for the declaration to be built around.
+
+<!-- PageFooter: page 148 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 150>>>
+5. Similarly, strictly structured declarations about the intent and structure of an evalua- tion would allow for claims about the private algorithm and data to be tested by various means such as simple codes. If the Prover does not get to see the code until after they have committed to the evaluation content (via a cryptographic commitment), then they run the risk of either being detected in their circumvention or having to say "no" in re- sponse to a clearly benign evaluation. In either way, the Prover would be embarrassed in front of its peers and potentially deemed out of compliance with the agreement. The challenge with this approach is that revelation of the code of meta-evaluations would be ongoing, thus reducing their usefulness as they can only be used in this way once (after use of such an evaluation, the Prover can prepare their own evaluations to face all known meta-evaluations). Overall, this approach does allow for the Prover to be "kept guessing" about the tests to which their committed evaluation will be subject to, thus making them potentially more leery of submitting evaluations that are in fact ac- complishing different goals than their declared purpose. Furthermore, an agreement might require that an algorithm or evaluation is subject to any future tests as well-thus making any commitment by either side subject to a potentially infinite series of unseen tests, a prospect that would likely be politically daunting for any actor seeking to submit a resource that diverges from their declaration.
+
+<!-- PageFooter: page 149 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 151>>>
+## Appendix G: Model evaluation
+
+Model evaluation encompasses a wide range of techniques that attempt to understand the capabilities and characteristics of AI models. This section will contextualize the problem and then provide a brief description of a few specific issue areas that relate to verification.
+
+This section presumes that infrastructure for running code-based evaluations against AI models already exists and is privacy-preserving for both the Prover and the Verifier. For a description of how this might be done, see Section 3.5 Note also that in the context of verification, earlier parts of this report also discuss the regulation of model inputs (such as data, algorithms, and hyperparameters) and model behavior and attributes (Sections 4.5.1.2.2 and 4.5.1.2.3). Furthermore, another appendix examines the related challenge of algorithm verification (Appendix E). The question of how evaluation code and data can come to be trusted even if it is hidden is examined in Appendix F.
+
+Presuming that privacy-preserving infrastructure exists, the remaining challenges may still be substantial. Sufficient information needs to be gleaned via tests using code and data, and they must be of reasonable compute and time requirements. 414
+
+Evaluations are an incredibly diverse category, including tools that differ on the basis of sev- eral dimensions, including:
+
+· Goals, including benchmarking capabilities-such as dangerous capabilities like CBRN weapon construction knowledge; testing compliance with rules; and testing political dimensions such as apparent bias. 415
+
+· Technological implementations, including: request-response tests for a model, deep inspection of model activations and weights, and tests enabled by other AI tools- including everything ranging from simple classifiers to large multimodal models.
+
+· Complexity of efforts to find hidden capabilities, including deep inspection as men- tioned above and also capability elicitation using various kinds of tuning-including prompt tuning or fine-tuning of the entire model.
+
+A much more complete survey of model evaluation is available in Reuel and Bucknall (2024), section 3.1.
+
+### G.1 Open-ended challenges
+
+Even with full access to all the model inputs, model training snapshots, and the model itself, verifying some rules is far from trivial. Three major challenges are worth a brief discussion: sandbagging, aggregate models, and distillation. The issues in these spaces indicate that fur-
+
+\* 414 For compute budget, see also Reuel and Bucknall (2024), Section 3.3.2.
+
+\* 415 These are sometimes desired by the creators, regulators, or users.
+
+<!-- PageFooter: page 150 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 152>>>
+ther work will be necessary to understand the potential and limits of model assessment even presuming that the assessment efforts have full access to model inputs, weights, and infer- ence exchanges with a substantial compute budget.
+
+#### G.1.1 Sandbagging
+
+Under normal circumstances, model capabilities are often gradually discovered for months after the model's release as users attempt to accomplish different tasks with them. Evalua- tions of capabilities must always be seen therefore as a lower bound on model capability, not an upper bound.416
+
+A more dangerous and concerning form of this problem is a covertly adversarial Prover who is attempting to hide non-compliant AI capabilities in a way that evaluation suites will not find them.417 Most likely, a circumvention of this kind will require a non-public algorithmic insight that notably advances the capability frontier (see Appendix E). For example, a Prover might train a model with non-compliant (and perhaps dangerous) capabilities, but have those capabilities locked with a password. Without the password known only to the Prover, the dangerous capabilities will not be demonstrated. In theory, this allows the Prover to submit this model for evaluation fully expecting that no known evaluation technique will catch its dangerous capabilities-evaluation results might look reasonable, and capability elicitation may not work. 418
+
+It is not clear at this juncture whether such an attack would require algorithmic changes which could in theory be detected (see Appendix E) or whether it could be accomplished via data manipulations that are difficult to detect. It is also unclear whether even skilled humans with full information access could catch an attack of this kind unless they had the time and resources to extensively test the provided algorithm on other (known to be uncorrupted) data sets and thus check its scaling laws, since knowing the true capability curve of the algorithm might allow sandbagging to be detected (see Section 3.5 for more on human-in-the-loop full-text verification).
+
+In terms of governance of this kind of attack, another avenue is to cap the maximum size of models somewhat below what is believed to be the smallest model that could possibly pose a significant threat, given public knowledge on the issue (see also 'Third party efforts to minimize the "algorithmic overhang"' in Appendix E).
+
+\* 416 See Reuel and Bucknall (2024), Section 3.3.1.
+
+\* 417 Teun van der Weij et al., 'AI Sandbagging: Language Models Can Strategically Underperform on Evaluations' (arXiv, 6 February 2025), https ://doi.org/10.48550/arXiv.2406.07358.
+
+\* 418 This is an open area of investigation. The reason why basic capability elicitation efforts might not work is that there may be no signal to boost. That is, the password locking of the model might be so effective that there are no hints of dangerous capabilities and thus weight updates based on those hints might not be possible. Direct manipulation of model weights would of course be possible, but that is an open research domain of its own. In general, without a clear understanding of how the model is actually thinking (another research domain known as interpretability), these efforts may fail.
+
+<!-- PageFooter: page 151 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 153>>>
+#### G.1.2 Aggregate models
+
+Another particularly thorny challenge is aggregate systems such as "mixture of experts" ap- proaches. It might be unclear to the automated evaluations how the particular system being examined will relate to other systems. It might be possible to circumvent safeguards and build an enormous system that is composed of smaller models tied together. It is not clear precisely how a combination of evals could catch this type of circumvention. Perhaps one approach would be relatively rigid regulatory rules about the clear and obvious connection between 1) the types of training data and 2) the declared uses of the system-where mis- matches between these expectations or obfuscation of either data or model uses would be an immediate cause for alarm. For example, known public algorithms could be trained on a random portion of the declared data to prove that the data actually is what it is supposed to be-or known public data could be used to train using the secret algorithm to prove that the algorithm is doing what it is supposed to be doing (see also Appendix E). Relatedly, strict declarations might be needed about data and control flow to prove that none of the declared AIs are the overseer of other powerful AIs.
+
+#### G.1.3 Data-centric distillation
+
+Distillation techniques may allow extremely capable AI models to be created from less data. This might be accomplished via an existing model being used to create training data that has the express purpose of being used to make a more powerful model. It is not known how powerful this technique could be.419 Explicitly testing for the use of this technique might be very difficult, since it might employ otherwise standard algorithms and compute budgets. One hypothetical approach is data provenance-where the Prover has to demonstrate some- how where their data has come from to demonstrate that it is not distilled (e.g., by tracking all inference from all large models-which would be a gargantuan and probably infeasible task). It may be more practical to assume that techniques like this will be used, and both algorithmic progress indicators and the regulations that are based on them must also take these kinds of capability changes into account to ensure that regulations (and verification) are appropriately tuned to the challenge as it evolves.
+
+\* 419 Toby Ord, 'Inference Scaling Reshapes AI Governance', 12 February 2025, https: //www.tobyord.com/wr iting/inference-scaling-reshapes-ai-governance.
+
+<!-- PageFooter: page 152 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 154>>>
+## Appendix H: Systemically risky AI
+
+One potential definition of systemically risky AI takes into account two pathways to systemic risk: a) a credible chance of great power war (such as via a major power shift) and b) the potential loss of human control and its consequent risk to all humans. 420
+
+Given what is known today about our limited ability to understand and control complex AI systems, one clear example of such a systemically risky AI would be an attempt to build an agentic artificial superintelligence. This category is largely unrelated to the in- tentions or character of the institution(s) building the AI, since there are hypothetical AIs powerful enough that no existing institution would reasonably be trusted with their creation and control.
+
+For clarity, several other kinds of AI should be excluded from the definition of systemically risky AIs. These include:
+
+· economically or socially valuable AIs which are clearly not capable enough to credibly cause either a great power war or loss of human control.
+
+· many forms of "transformative AI", since widespread transformations might be accom- plished via relatively small, narrow, and safe AIs.421 While maintaining peace in such a scenario might be challenging, the strategic risks are very different from those posed by either the creation of a singular superintelligent system or by the race to create it-and therefore those risks should be dealt with in different ways.
+
+· AIs that great powers are willing to allow to be proliferated. Even if a given AI or system of AIs is very capable, if leading states are not trying to control proliferation of such systems, that is a strong signal that such systems are not deemed a systemic risk. In fact, state efforts against proliferation should be expected for AIs that fall well short of being systemically risky, such as AIs with significant potential for misuse.
+
+Systems of many AIs in combination should be considered as well, such as the "mixture of experts" approach, but this line of reasoning is not deeply explored in this report.
+
+A new definition was desirable despite overlapping with several prior definitions because no prior definition explicitly captures systemic danger (an issue of clear international concern) without covering many kinds of AI which are not systemically dangerous.422 Rather than a more technical definition centered on particular characteristics of an AI system, this new
+
+\* 420 The EU AI Act has a narrower definition for models with systemic risk. They focus only on the potential for the models to directly harm humans, not their potential for triggering war. 'General-Purpose AI Models in the AI Act - Questions & Answers', European Commission, 20 November 2024, https://digital-strategy.ec. e uropa. eu/en/faqs/general-purpose-ai-models-ai-act-questions-answers.
+
+\* 421 Karnofsky, 'Some Background on Our Views Regarding Advanced Artificial Intelligence'.
+
+\* 422 For example, 'transformative AI' covers economically transformative AI without distinguishing between sys- temic risk and a more gradual and diffuse transformation. See Karnofsky.
+
+<!-- PageFooter: page 153 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 155>>>
+definition foregrounds the potential political effects of an AI system and is therefore also workable in a world in which AI development paradigms sharply change.
+
+<!-- PageFooter: page 154 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 156>>>
+## Appendix I: Hardware configurations for "fixed set" policies
+
+Verified hardware could be placed into configurations that reduce the usefulness of that hard- ware in non-compliant training runs. One example of such a configuration is the "fixed set" approach, where hardware controls prevent chips from being used in a large collaborating array by only allowing high-bandwidth communication with a specific, limited set of chips- thus making extremely large training runs more difficult and costly to complete.428
+
+Prior work has described how on-chip hardware mechanisms could be implemented which enforce such a policy.424 However, another approach is to implement communication limi- tations in other ways, such as via network hardware. For example, a pod of a few dozen GPUs could be configured to only be connected to the rest of the world through a single network interface with limited bandwidth in order to prevent it from being used as part of a larger cluster. Hardware controls and monitoring could then be used to verify that the cluster's physical configuration has not been changed. Such hardware configurations would be easily reconfigured to be non-compliant, thus necessitating comprehensive monitoring.
+
+Depending on the politically desired slowdown in the training of the largest models, the inter-pod bandwidth in such a design would need to be surprisingly low (e.g., 1 Mb/s) to be robust against reasonable advances in the efficiency of distributed training.425 If either kind of fixed set approach could be implemented and verified, it would allow a Verifier to be more confident that the maximum rate at which the Prover can train large systems is limited.
+
+\* 423 Such runs typically require tens of thousands of chips running in tight synchrony for months.
+
+\* 424 Gabriel Kulp et al., 'Hardware-Enabled Governance Mechanisms: Developing Technical Solutions to Exempt Items Otherwise Classified Under Export Control Classification Numbers 3A090 and 4A090' (RAND Corpora- tion, 18 January 2024), https://www.rand.org/pubs/working_papers/WRA3056-1.html.
+
+\* 425 Scher & Thiergart (2024) present calculations that help calibrate our expectations of how difficult this would be. They examine the challenge of making training approximately 100 times as difficult as it would be on un- governed hardware-including expected advances in distributed training efficiency. What they find is that the inter-pod bandwidth limitations would need to be surprisingly low (e.g, 1 Mb/s), thus necessitating alternative methods for other crucial operations, such as loading models into memory. Aaron Scher and Lisa Thiergart, 'Mechanisms to Verify International Agreements About AI Development' (Machine Intelligence Research Insti- tute, November 2024), page 121, https ://techgov.intelligence.org/research/mechanisms-to-verify-i nternational-agreements-about-ai-development.
+
+<!-- PageFooter: page 155 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 157>>>
+## Appendix J: Chip density controls
+
+If distributed hardware were deemed politically desirable, such controls could help verify such distributions. Equally however, the relative feasibility of distributed training might cre- ate a desire for increased chip concentration in a small number of governed data centers, as each controlled facility would require further marginal costs. 426
+
+Overall, chip concentration limits may be politically challenging given that commercial data center construction tends to concentrate data centers in specific regions such as Northern Virginia due to the ready availability of electric power, internet backbone connections, and other infrastructure. Furthermore, for military AI chips, only very coarse-grained location verification can be expected to be tolerable to militaries (see Section 1.5.1.1), thus requiring other approaches for the regulation of training scale (see Section 2.5.4.2).
+
+Therefore, different chip location tracking regimes may be needed for the civilian and mili- tary spheres, since location accuracy that is fine-grained enough to mitigate concerns about a dense region such as Northern Virginia may be precise enough to be intolerable for mili- taries. Finally, the realistic potential for large improvements in the efficiency of distributed training may make it infeasible for a governance regime to make large models infeasible via location tracking alone-although other regulatory goals might be served well by such a system. 427
+
+\* 426 Scher & Thiergart (2024).
+
+\* 427 Scher & Thiergart (2024).
+
+<!-- PageFooter: page 156 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 158>>>
+## Appendix K: Potential approaches for device-model mating with an encrypted model
+
+As noted in Section 4.5.2.3.6.c, it could be useful to have a technique for embedding a model in a device in a way such that downstream users cannot feasibly a) exfiltrate the model or b) repurpose the hardware. This appendix outlines one speculative approach to the problem and another potentially interesting avenue of investigation.
+
+Hardware functionality supporting model-hardware mating might be accomplished through the inventive use of a physical unclonable function (PUF).428 This idea has roughly four parts: 1) A physical enclosure is placed around a chip, with the enclosure material creating a sensi- tive PUF which is then used as the private key of the device. 2) When a model is loaded onto the device, it is encrypted using the device's PUF-backed private key.429 3) When the model has been installed, a physical or digital switch is thrown, blowing select fuses inside the inner (enclosed) hardware, with the effect of disallowing another model installation thereafter. 4) Inference conducted by the model requires the encryption of inputs and the decryption of outputs using the PUF-backed private key. Thus, the model should be functional, but never reside at rest or even in memory in the hardware in a way that is decryptable without the private key. Exfiltrating the private key might be possible, but might be very difficult de- pending on how sensitive and reliable the PUF enclosure is. One of several major unknowns with this approach is whether a PUF enclosure can reasonably withstand the normal stresses of the environments in which these devices would be placed without deforming and thus rendering the device inoperable.
+
+A very different approach to at least part of the problem would be to employ in-memory processing and a form of encrypted memory to protect the model. It should be noted at the outset that in-memory processing for AI inference might be impossible or very impractical. However, if it is possible, then a random bit mask could be generated at the hardware level which reliably flips half the bits that are stored in non-volatile memory. An attempt to extract the model from the memory units directly would also have to extract the entire bit mask. In-memory processing would be desirable because it would prevent the model from being loaded into random access memory in order for it to be used for inference. The combination of these mechanisms would mean that the model is never available in plaintext.
+
+\* 428 For readers unfamiliar with physical unclonable functions, they are essentially a way to use physical objects as private keys. Crucially for the usage described here, if you change the object even slightly, the private key is lost. A similar scheme is described in Vincent Immler et al., 'Secure Physical Enclosures from Covers with Tamper-Resistance', IACR Transactions on Cryptographic Hardware and Embedded Systems, 2019, 51-96, http s : //doi.org/10.13154/tches.v2019.i1.51-96.
+
+\* 429 Note that being encrypted with the PUF means that only this device can produce the decryption key, and that key would be destroyed if the enclosure is tampered with.
+
+<!-- PageFooter: page 157 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 159>>>
+## Appendix L: Other verification mechanisms
+
+### L.1 Model-specific training licensing
+
+A model-specific training licensing system is a licensing mechanism that is intended to be used for permitting model training. Therefore it combines a training plan-all infor- mation needed to train a model, including the code, data, and hyperparameters (see Sec- tion 4.5.1.1.1)-with a licensing system that only allows hardware to be unlocked with an ap- propriately signed license. With such a scheme in place, the governed hardware can only be unlocked for model training purposes if the license issuing authority attaches a valid license to a training plan. Cryptographic techniques can be used to ensure that the license and train- ing plan are only valid together, thus allowing the licenser (or anyone verifying all licenses) to see what models are being permitted to be built.
+
+While basic licenses such as those described in the prior section appear to be a relatively well-scoped and workable hardware mechanism that could be added to future hardware,430 it remains less clear at this point whether such a mechanism could be designed to verifiably enforce adherence to a training plan-making this a speculative mechanism.431 In addition to being able to enforce offline licenses, this hardware mechanism would also have to be able to enforce training plans-or enable their enforcement. Therefore, if data or hyperparame- ters submitted by the Prover to the training process actually differ from the commitments made in the licensed training plan, the hardware must either refuse these non-compliant operations or take some other kind of enforcement action.432
+
+How could this be used for governance? Consider that a licensing authority (see Section 3.6.2) could require that a training plan be put through privacy-preserving evaluation (see Sec- tion 3.5) before it is allowed to begin. This would mean that the data, algorithm, and hy- perparameters would be verified before training could begin. Given that the hardware is locked-and this could be confirmed via other channels as well (see Section 2.5.2.2)-this would then be a credible mechanism for demonstrating that the governed hardware is not conducting training without the Verifier seeing and verifying the training plans via the pre- licensing process.
+
+\* 430 Aarne, Fist, and Withers, 'Secure, Governable Chips: Using On-Chip Mechanisms to Manage National Secu- rity Risks from AI & Advanced Computing'; Kulp et al., 'Hardware-Enabled Governance Mechanisms'.
+
+\* 431 Confidential computing can accomplish similar governance goals, but given its general-purpose nature, it might be more difficult to secure than a purpose-built mechanism.
+
+\* 432 Such action could be designed to enable later inspection of the chip (via remote attestation or physically) to detect that non-compliant training information was used. An important caveat for this sort of thing is that digital errors do occur, so a reasonable rate of errors should be expected and planned for when rolling out a scheme like this to many tens of thousands of chips.
+
+<!-- PageFooter: page 158 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 160>>>
+### L.2 Model-specific inference licensing
+
+Using the same approach as that described for licensing of training plans above, this mecha- nism would only unlock the full power of hardware for inference purposes if an appropriate license is provided along with the licensed inference plan (see Section 4.5.2.2.1). The same technical and political limitations apply to this mechanism as its cousin described above, with two changes. First, single-chip inference licensing is somewhat more likely than single chip training licenses, since a minimal inference system for a relatively small model might indeed be using a single chip. Still, licensing at the level of a pod would probably be more common and useful. Second, automatically enforcing an inference plan might be meaningfully dif- ferent from enforcing a training plan. One way to make these different processes depend on the same hardware mechanism would be to have the "plan" in either case simply be a cryptographic commitment for the complete package of code and settings which contains all of the information needed to either train a model or perform inference on it. This kind of simplification might allow both inference plan enforcement and training plan enforcement to be enabled via the same mechanism. 433
+
+### L.3 Model registry
+
+A model registry is a database tracking crucial governance information for each model.434 For example, the data pertaining to a single model could include its fingerprint alongside other metadata such as who created the model, what evaluations were done on the model, and the results of those evaluations, and the total compute budget of the training process including all prior models used as inputs. 435 A model registry can be useful for governance processes such as recognizing models later in time and also tracking how they have been tested. Depending on the sensitivity of the information contained in a model registry-or how crucial it is for successful verification-detailed questions might arise about its technical composition and location. This report does not investigate this particular question further, but engages in a similar discussion in Section 3.6.
+
+### L.4 Model fingerprint attestation
+
+The goal of model fingerprint attestation is to credibly demonstrate that a given model is actually loaded into memory on specified hardware (e.g., a chip or pod). Simple versions of this are available via remote attestation and confidential computing (see Sections 2.2.4.2 and 2.2.4.4), but more specialized hardware-enabled versions are also theoretically possible and may have some advantages.
+
+\* 433 The similarity between this mechanism and remote attestation is not accidental. Both mechanisms rely on the hardware root of trust to provide credibility to the attestations. Neither mechanism can fully guard against circumventions post-attestation without either a more complicated protocol or other supporting mechanisms.
+
+\* 434 34 Elliot Mckernon et al., 'AI Model Registries: A Foundational Tool for AI Governance' (arXiv, 12 October 2024), https://doi.org/10.48550/arXiv.2410.09645.
+
+\* 435 The idea of a "compute graph" or similar concept mapping all compute embodied in all models is also raised in Petrie et al. (2024).
+
+<!-- PageFooter: page 159 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 161>>>
+Ideally, such a mechanism could robustly demonstrate that a precise, identifiable chip (or pod) has precisely a specific model in memory. In practice, it might actually be advisable for this commitment mechanism to lean less on the hardware private key and more on computa- tions that can only be done by a chip of at least the expected capability with the model already in memory. This means that even if the hardware root of trust is violated on all the chips, thus allowing the Prover to run other models on their chips-the Prover would still have to keep an equal-or greater performance chip geared up and prepared to respond to cryptographic challenges about the model that it is claiming to be running. Since loading the model into memory would take at least a number of seconds (if not much longer), it would be infeasi- ble for hardware running a completely different model to respond to the challenge rapidly enough if the time horizon for the challenge is kept short enough. This approach would be similar in concept to a proof of work,436 but conceptually it would be a proof of work that could only be done by a chip that is not lying about the work that it is doing. Designing a cryptographic challenge that fits the design specifications of this mechanism is an area for future work.437
+
+Presuming that a neutral cluster is available, these proofs could be verified in batches there, where a copy of the model can be used. Doing these proofs after the challenges have taken place provides an additional level of certainty. For example, even if the Verifier's communi- cations could all be read by the Prover, if the random challenges are generated right before they are sent, there is no way for the Prover to prepare their answers ahead of time-and even the Verifier does not know the right answer when the challenge is sent.
+
+An expanded version of this mechanism challenges all inference chips in the Prover's in- ventory simultaneously, essentially amounting to a proof that the right models are loaded for all the declared chips simultaneously (thus making it infeasible for the prover to use de- clared chips to cover for each other). This kind of broad proof of work would cause a small system-wide slowdown for the Prover, so the workload would have to be designed to pro- vide a credible response relatively quickly without costing much marginal computational power or time (presuming that the Prover actually has the models loaded that they say they have loaded).
+
+\* 436 A proof of work allows a Prover to demonstrate that they completed a computationally costly operation. In examining a proof of work, the Verifier would have to spend extremely little computing power. The asymmetry between these two processes can allow a Prover to credibly demonstrate what they did with a portion of their total computing power, thus allowing other verification processes to focus on the remaining portion of their computing power. On this latter point, see Scher and Theirgart (2024).
+
+\* 437 Roughly, what is needed is a problem which fits criteria something like the following. Provide a problem which can only feasibly be responded to by hardware of the appropriate type (or more powerful than the declared type) using an entire model (or pre-allocated shard) in memory, and which takes a maximum of about 50 ms to complete-but which does not create a major interruption for ongoing inference calculations. The overhead must be minimal. There can't be obvious ways to truncate the difficulty of the problem to allow attacks. This idea should all be developed in public and subjected to incentivized attacks (bug bounties) to find issues. If it is infeasible for current hardware to do challenges this fast, then the problem can be reframed to only use a random portion of the in-memory weights. Since this portion is randomly based on the content of the challenge, it would not be feasible for the Prover to prepare the chip memory before the challenge arrives except to actually have their model or shard in memory as expected. As the total computational burden of the challenge is brought down, the timing requirements can be tightened, with them culminating in a very tight check that costs very little, and can thus be run relatively often.
+
+<!-- PageFooter: page 160 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 162>>>
+### L.5 Model tenancy ledger attestation
+
+This mechanism allows hardware to attest to the identity of all models that have been loaded into its memory. A simple version of this would have the hardware write to a nonvolatile memory store at least the model fingerprints and timestamps for all operations that load models into memory. A remote attestation call or local inspection could reveal this list of fingerprints and timestamps, thus allowing verification. Eventually this list could be quite long, so in theory it could be truncated assuming that timestamps are included. It is unclear whether this scheme can be robustly secured other than relying on the hardware private key as is done for remote attestation and confidential computing. One conceptually similar idea with the potential to be more difficult to circumvent would be fingerprint attestations as described above (Appendix L.4) that are done extremely often by a neutral system-thus demonstrating that it is infeasible that any other models are being run at scale.
+
+<!-- PageFooter: page 161 -->
+<!-- PageBreak -->
+

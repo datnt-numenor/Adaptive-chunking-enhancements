@@ -1,0 +1,10 @@
+{
+  "request_hash": "37810b4230e8a148d6ca5e758a1aa7fd4f0dc34ab41bd07a74663790bb4ce97a",
+  "prompt_sha256": "91a7e74142645bee2e52c3bf325e8f7d686a6a050e8e9264b8e6783cb51d2315",
+  "answer": "The purpose of min-max normalisation in corrected fairness metrics is to ensure that the score 0 is correctly mapped to the fairest possible case and 1 to the unfairest possible case. This allows for easier interpretation of the corrected metrics compared to the original metrics, which may have had issues with computation and interpretation.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNAa12gSzqBrf8zrDzli62fmhDeW",
+  "prompt_tokens": 7474,
+  "completion_tokens": 64,
+  "actual_usd": 0.0011595
+}

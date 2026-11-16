@@ -1,0 +1,14 @@
+{
+  "request_hash": "de962918cfa616665802b4a4c48551825bf4ba08c1cc7279c2a1ed51f07ed1b3",
+  "prompt_sha256": "dd19c72a2c0e239159bc7dfff8fb2d246853e2fd7bcf711e3c5072ce511881e8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP3GxTrmmiiya06iXWJu7XNDgWwC",
+  "prompt_tokens": 8363,
+  "completion_tokens": 50,
+  "actual_usd": 0.0012844500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed account of the bias measurement process, the findings regarding women's targeting, and the successful mitigation of bias without compromising model performance, fully supporting the claims made in the Reference Answer."
+  }
+}

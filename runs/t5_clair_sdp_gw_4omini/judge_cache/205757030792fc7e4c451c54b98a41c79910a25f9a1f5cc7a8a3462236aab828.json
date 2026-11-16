@@ -1,0 +1,14 @@
+{
+  "request_hash": "205757030792fc7e4c451c54b98a41c79910a25f9a1f5cc7a8a3462236aab828",
+  "prompt_sha256": "f57c0fee6880a40b721b0b5274d73bf7364c818fef6598fa5d2008bce49b7277",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAFsx4PcVL6Kt0UyROomyGZ14XU",
+  "prompt_tokens": 8706,
+  "completion_tokens": 42,
+  "actual_usd": 0.0013311,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides complete information about Patient 1268833, including their age range, blood pressure, and the fact that their weight is recorded as null."
+  }
+}

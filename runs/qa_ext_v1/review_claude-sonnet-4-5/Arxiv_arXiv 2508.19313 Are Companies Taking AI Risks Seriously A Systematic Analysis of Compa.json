@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"drop\",\n      \"reason\": \"Answer misleadingly implies 583 enforcement actions were AI-related when evidence shows these are total SEC enforcement actions in 2024; also lacks comparison data to show 'change' between 2022-2024 as question asks\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer correctly identifies all four risk categories with table reference; fully supported by evidence\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer about boilerplate language is directly supported by evidence quote\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer correctly defines Risk Factors section and its legal requirement; fully supported\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer about software companies having 75%+ AI mentions is directly confirmed by evidence\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer provides exact numbers from table showing trend increase; fully supported\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 11830,
+  "out": 858
+ },
+ "created": "2026-11-09 18:37:16"
+}

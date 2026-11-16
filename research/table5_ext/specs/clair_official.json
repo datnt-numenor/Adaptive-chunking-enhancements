@@ -1,0 +1,3 @@
+{"label":"CLAIR 99 QA v2, gpt-4o-mini-2024-07-18 qua API chinh thuc",
+ "systems":{"adaptive":"D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/adaptive/generated_questions_evaluation_results.json","adaptive__doc":"D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/adaptive__doc/generated_questions_evaluation_results.json","sdp_a_t600__doc":"D:/Project/adaptive-chunking/runs/t5_clair_sdp_official_4omini/judge-full/sdp_a_t600__doc/generated_questions_evaluation_results.json"},
+ "families":{"vs_adaptive":[["adaptive__doc","adaptive"],["sdp_a_t600__doc","adaptive"]],"h1_doc":[["sdp_a_t600__doc","adaptive__doc"]]}}

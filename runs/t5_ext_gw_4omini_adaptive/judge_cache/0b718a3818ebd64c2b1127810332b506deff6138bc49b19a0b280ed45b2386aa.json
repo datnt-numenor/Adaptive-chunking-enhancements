@@ -1,0 +1,14 @@
+{
+  "request_hash": "0b718a3818ebd64c2b1127810332b506deff6138bc49b19a0b280ed45b2386aa",
+  "prompt_sha256": "23fa9b3f04cfb6dc6fa5172021e125ec961f0c6790d306ad560775beda1d04d7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOVO77L9VHtrqUJ07OHgxBA1nsxI",
+  "prompt_tokens": 8596,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013169999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer about RAIRD allowing research on data without direct access to the full dataset and providing aggregated data to prevent identification of individuals."
+  }
+}

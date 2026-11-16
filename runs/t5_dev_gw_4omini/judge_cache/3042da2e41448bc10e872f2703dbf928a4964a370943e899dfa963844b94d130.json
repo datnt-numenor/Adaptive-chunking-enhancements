@@ -1,0 +1,14 @@
+{
+  "request_hash": "3042da2e41448bc10e872f2703dbf928a4964a370943e899dfa963844b94d130",
+  "prompt_sha256": "51c3ea5a3ff1a90d10acf2b7b413bd72028c0d4e54da3f5628773aaa3eb5035f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2GhFOxExyrhHubbRxgrgZhzhn9r",
+  "prompt_tokens": 8821,
+  "completion_tokens": 39,
+  "actual_usd": 0.00134655,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed evidence supporting the claims in the Reference Answer, including specific productivity increases and the reduction in job turnover probability after AI adoption."
+  }
+}

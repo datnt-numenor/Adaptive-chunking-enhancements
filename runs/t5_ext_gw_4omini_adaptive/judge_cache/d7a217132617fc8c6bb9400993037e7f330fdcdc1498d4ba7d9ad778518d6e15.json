@@ -1,0 +1,14 @@
+{
+  "request_hash": "d7a217132617fc8c6bb9400993037e7f330fdcdc1498d4ba7d9ad778518d6e15",
+  "prompt_sha256": "8be027ee2ee3c451cc0b1658bbf20ed9a5b0d358efba5c85584f4f3568ed6816",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRMnX9zSRTcMx1mcOAg7S2YViwQ",
+  "prompt_tokens": 5397,
+  "completion_tokens": 41,
+  "actual_usd": 0.00083415,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of regular assessments of AI systems, including security measures and the implementation of recommendations from security checks."
+  }
+}

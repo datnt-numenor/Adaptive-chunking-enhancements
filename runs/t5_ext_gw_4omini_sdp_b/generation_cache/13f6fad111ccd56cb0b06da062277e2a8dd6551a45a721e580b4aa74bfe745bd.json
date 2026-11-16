@@ -1,0 +1,10 @@
+{
+  "request_hash": "13f6fad111ccd56cb0b06da062277e2a8dd6551a45a721e580b4aa74bfe745bd",
+  "prompt_sha256": "cd1168d233a3fc335dcbe357c6a3a5a9d97984a37c213ad1230a7806aa58a2c8",
+  "answer": "The measured effect of the SynthID-Text watermark on prose quality does not exceed the effect of changing the sampling seed. Specifically, the mean change in perplexity was -0.3% on each model, and the semantic similarity between watermarked and unwatermarked responses matched the similarity between the two unwatermarked runs to within one half of one percent.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJiEOi0MwKNRhGDEUVEk4s2Otum",
+  "prompt_tokens": 6565,
+  "completion_tokens": 72,
+  "actual_usd": 0.0010279500000000001
+}

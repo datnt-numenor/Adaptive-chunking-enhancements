@@ -1,0 +1,14 @@
+{
+  "request_hash": "3344530b8bc45dbf73487050eaf598b7ae6fc2c94f12296fd36a09c5b9c6b52e",
+  "prompt_sha256": "09eaaa9caf19c5ce22297521c3200b069d8a40611bd70c5b9e64cfc99322c88f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO38mcdT4B5kgD2derhQYbEH877C",
+  "prompt_tokens": 3396,
+  "completion_tokens": 39,
+  "actual_usd": 0.0005327999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the differences in context sensitivity and adaptability between the EU AI Act and the HAIG framework."
+  }
+}

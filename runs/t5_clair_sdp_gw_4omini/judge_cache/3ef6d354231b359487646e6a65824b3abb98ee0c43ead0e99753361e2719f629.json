@@ -1,0 +1,14 @@
+{
+  "request_hash": "3ef6d354231b359487646e6a65824b3abb98ee0c43ead0e99753361e2719f629",
+  "prompt_sha256": "e7a9c60bf3671205b6b3d479f54a83cb458c61c443d97263ea34e2a852aaf150",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP4KcijFxjBnBpvJgyVDEHw13idG",
+  "prompt_tokens": 6363,
+  "completion_tokens": 34,
+  "actual_usd": 0.0009748499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding users' biases in judging probabilities of rare and common events."
+  }
+}

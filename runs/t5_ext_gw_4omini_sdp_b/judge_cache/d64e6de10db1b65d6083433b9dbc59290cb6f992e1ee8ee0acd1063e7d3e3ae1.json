@@ -1,0 +1,14 @@
+{
+  "request_hash": "d64e6de10db1b65d6083433b9dbc59290cb6f992e1ee8ee0acd1063e7d3e3ae1",
+  "prompt_sha256": "ce14ce235c85fb6db435c154f21d798b7d9878e0d25c68a87b56ddc3e536f6a6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhYvgRbGn3pdKTEQTXrcxQao7rI",
+  "prompt_tokens": 8358,
+  "completion_tokens": 33,
+  "actual_usd": 0.0012735,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing detailed information about Carbon Mapper's mission and its co-founders."
+  }
+}

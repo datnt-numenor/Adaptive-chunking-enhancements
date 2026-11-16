@@ -1,0 +1,14 @@
+{
+  "request_hash": "93a5c84e6cad9a231964a8c76a38721ab0a35203e64f53b57aa562b842e42f85",
+  "prompt_sha256": "c15fecfea7361b8bdb43fe4e35afda3ee551f0437417fa87208ed9ac0e7eb9f8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNmUampH7XKPCeB2skAPYPF8Yhl5",
+  "prompt_tokens": 8638,
+  "completion_tokens": 38,
+  "actual_usd": 0.0013185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the relationship between minority class data and equalized odds, fully supporting the claim made in the Reference Answer."
+  }
+}

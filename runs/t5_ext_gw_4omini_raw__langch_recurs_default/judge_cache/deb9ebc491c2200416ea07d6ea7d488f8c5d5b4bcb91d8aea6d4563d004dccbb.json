@@ -1,0 +1,14 @@
+{
+  "request_hash": "deb9ebc491c2200416ea07d6ea7d488f8c5d5b4bcb91d8aea6d4563d004dccbb",
+  "prompt_sha256": "5de3bcf8bc4c627edf4051f1f90c1ee8d4ee4bd6b592ccd5ebb68332ff9bff5f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNcPOQYAQEnqjo30X6OokyzTIa2u",
+  "prompt_tokens": 7935,
+  "completion_tokens": 36,
+  "actual_usd": 0.00121185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data on the number of studies targeting healthcare and robotics, fully supporting the claims made in the Reference Answer."
+  }
+}

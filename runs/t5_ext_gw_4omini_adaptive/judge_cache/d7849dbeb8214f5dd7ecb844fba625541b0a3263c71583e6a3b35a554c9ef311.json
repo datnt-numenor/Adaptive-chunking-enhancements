@@ -1,0 +1,14 @@
+{
+  "request_hash": "d7849dbeb8214f5dd7ecb844fba625541b0a3263c71583e6a3b35a554c9ef311",
+  "prompt_sha256": "175799ffd46c82cfb33c8b9c5ff48ff8dbd6f0a453f6d71b6f39cdbd5d7c9041",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPVW330RqbKJzWzcbZVrdfQ0mOd",
+  "prompt_tokens": 6974,
+  "completion_tokens": 35,
+  "actual_usd": 0.0010670999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer regarding non-determinism and the test oracle problem in AI systems."
+  }
+}

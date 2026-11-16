@@ -1,0 +1,1071 @@
+{
+  "method": "sdp_b",
+  "config": {
+    "max_tokens": 1100,
+    "min_tokens": 100,
+    "tau": 1.0,
+    "heading_bonus": [
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "continuation_penalty": 3.0,
+    "pronoun_penalty": 0.5,
+    "colon_penalty": 0.5,
+    "list_penalty": 0.3,
+    "small_penalty": 5.0,
+    "artifact_penalty": 2.0,
+    "target_tokens": null,
+    "target_weight": 1.0,
+    "max_units_per_chunk": 2000
+  },
+  "overrides": [],
+  "docs": [
+    "Ada_ENISA AI Cybersecurity Challenges",
+    "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI",
+    "Ada_NIST AI 100-4 Synthetic Content",
+    "Ada_NIST AI 600-1 Generative AI Profile",
+    "Ada_NIST IR 8312 Explainable AI Principles",
+    "Ada_NIST SP 1270 Bias in AI",
+    "Ada_NIST SP 800-218A Secure Software Development GenAI",
+    "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r",
+    "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A",
+    "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey",
+    "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability",
+    "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act",
+    "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri",
+    "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance",
+    "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems",
+    "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks",
+    "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance",
+    "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige",
+    "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl",
+    "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A",
+    "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge",
+    "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress",
+    "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too",
+    "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment",
+    "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance",
+    "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI",
+    "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review",
+    "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits",
+    "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability",
+    "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk",
+    "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk",
+    "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law",
+    "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI",
+    "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem",
+    "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards",
+    "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization",
+    "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation",
+    "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing",
+    "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude",
+    "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI",
+    "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R",
+    "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro",
+    "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer",
+    "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations",
+    "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models",
+    "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations",
+    "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence",
+    "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an",
+    "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act",
+    "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet",
+    "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance",
+    "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act",
+    "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi",
+    "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act",
+    "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment",
+    "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA",
+    "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis",
+    "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance",
+    "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh",
+    "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati",
+    "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024",
+    "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing",
+    "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance",
+    "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc",
+    "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act",
+    "Arxiv_arXiv 2503.15682 Transfeminist AI Governance",
+    "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk",
+    "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate",
+    "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act",
+    "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar",
+    "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach",
+    "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach",
+    "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking",
+    "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act",
+    "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025",
+    "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po",
+    "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A",
+    "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI",
+    "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries",
+    "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat",
+    "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa",
+    "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga",
+    "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications",
+    "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research",
+    "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI",
+    "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI",
+    "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act",
+    "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management",
+    "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling",
+    "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti",
+    "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety",
+    "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance",
+    "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within",
+    "Arxiv_arXiv 2602.13244 Responsible AI in Business",
+    "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations",
+    "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides",
+    "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too",
+    "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc",
+    "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A",
+    "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H",
+    "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou",
+    "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability",
+    "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management",
+    "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks",
+    "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains",
+    "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A",
+    "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment",
+    "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul",
+    "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice",
+    "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act",
+    "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk",
+    "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech",
+    "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A",
+    "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-",
+    "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability",
+    "Norma_Council of Europe HUDERIA Methodology",
+    "Norma_Datatilsynet AI and Privacy",
+    "Norma_EDPB ChatGPT Taskforce Report",
+    "Norma_EDPB Opinion 28-2024 AI Models",
+    "Norma_G7 Hiroshima Code of Conduct for Advanced AI",
+    "Norma_GAO AI Accountability Framework",
+    "Norma_NIST AI RMF 1.0",
+    "Norma_OECD Recommendation of the Council on AI",
+    "Norma_OMB M-24-10 AI Governance Memo",
+    "Norma_Singapore Model AI Governance Framework 2nd Edition",
+    "Norma_UK AI Regulation White Paper",
+    "Sophia_CNIL Comment permettre a l'homme de garder la main",
+    "Sophia_CNIL Synthese consultation recommandation IA",
+    "Sophia_Defenseur des droits Algorithmes Discriminations"
+  ],
+  "version_b": {
+    "embed_model": {
+      "name": "jinaai/jina-embeddings-v3",
+      "revision": "ab036b023d30b4d1138c4c3bfa9f0c445ab455d6"
+    },
+    "struct_weight": 0.1,
+    "icc_weight": 1.0,
+    "dcc_weight": 1.0,
+    "window_tokens": 3000,
+    "dinkelbach": {
+      "Ada_ENISA AI Cybersecurity Challenges": [
+        1.47695,
+        1.57366,
+        1.58065,
+        1.58065
+      ],
+      "Ada_ENISA Multilayer Framework for Good Cybersecurity Practices for AI": [
+        1.51396,
+        1.63639,
+        1.65354,
+        1.65439,
+        1.65439
+      ],
+      "Ada_NIST AI 100-4 Synthetic Content": [
+        1.50118,
+        1.61293,
+        1.6277,
+        1.62815,
+        1.62816,
+        1.62816
+      ],
+      "Ada_NIST AI 600-1 Generative AI Profile": [
+        1.50818,
+        1.61277,
+        1.63107,
+        1.63172,
+        1.63172
+      ],
+      "Ada_NIST IR 8312 Explainable AI Principles": [
+        1.46804,
+        1.59457,
+        1.62684,
+        1.62831,
+        1.62831
+      ],
+      "Ada_NIST SP 1270 Bias in AI": [
+        1.42956,
+        1.56086,
+        1.59546,
+        1.59671,
+        1.59671
+      ],
+      "Ada_NIST SP 800-218A Secure Software Development GenAI": [
+        1.52749,
+        1.58137,
+        1.5825,
+        1.5825
+      ],
+      "Arxiv_arXiv 2302.07103 Validation of artificial intelligence containing products across the r": [
+        1.50612,
+        1.57713,
+        1.60189,
+        1.6041,
+        1.6041
+      ],
+      "Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A": [
+        1.58199,
+        1.7183,
+        1.73133,
+        1.73276,
+        1.73276
+      ],
+      "Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey": [
+        1.48174,
+        1.62064,
+        1.64189,
+        1.6425,
+        1.6425
+      ],
+      "Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability": [
+        1.41711,
+        1.57495,
+        1.61477,
+        1.61684,
+        1.61684
+      ],
+      "Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act": [
+        1.44944,
+        1.58937,
+        1.63274,
+        1.63685,
+        1.63685
+      ],
+      "Arxiv_arXiv 2305.02231 Connecting the Dots in Trustworthy Artificial Intelligence From AI Pri": [
+        1.52715,
+        1.65235,
+        1.6675,
+        1.6677,
+        1.6677
+      ],
+      "Arxiv_arXiv 2305.14865 A Game-Theoretic Framework for AI Governance": [
+        1.36441,
+        1.52121,
+        1.57139,
+        1.58245,
+        1.58245
+      ],
+      "Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems": [
+        1.54203,
+        1.65615,
+        1.67994,
+        1.68687,
+        1.68687
+      ],
+      "Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks": [
+        1.485,
+        1.61833,
+        1.65421,
+        1.65749,
+        1.65749
+      ],
+      "Arxiv_arXiv 2307.03198 A multilevel framework for AI governance": [
+        1.48465,
+        1.60807,
+        1.64397,
+        1.64647,
+        1.64665,
+        1.64665
+      ],
+      "Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige": [
+        1.544,
+        1.66492,
+        1.68702,
+        1.6904,
+        1.6904
+      ],
+      "Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl": [
+        1.59605,
+        1.69864,
+        1.71076,
+        1.71076
+      ],
+      "Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A": [
+        1.387,
+        1.50174,
+        1.53334,
+        1.5342,
+        1.5342
+      ],
+      "Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge": [
+        1.48853,
+        1.61723,
+        1.64342,
+        1.64358,
+        1.64358
+      ],
+      "Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress": [
+        1.52039,
+        1.66216,
+        1.67908,
+        1.68023,
+        1.68023
+      ],
+      "Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too": [
+        1.50725,
+        1.59374,
+        1.60858,
+        1.60858
+      ],
+      "Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment": [
+        1.40599,
+        1.52768,
+        1.55446,
+        1.55874,
+        1.55874
+      ],
+      "Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance": [
+        1.61302,
+        1.70522,
+        1.72118,
+        1.72135,
+        1.72135
+      ],
+      "Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI": [
+        1.54484,
+        1.66788,
+        1.69306,
+        1.69378,
+        1.69378
+      ],
+      "Arxiv_arXiv 2401.10896 Responsible AI Governance A Systematic Literature Review": [
+        1.53405,
+        1.66605,
+        1.69385,
+        1.69593,
+        1.69593
+      ],
+      "Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits": [
+        1.46863,
+        1.63036,
+        1.64064,
+        1.64074,
+        1.64074
+      ],
+      "Arxiv_arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability": [
+        1.4595,
+        1.62425,
+        1.64707,
+        1.64787,
+        1.64787
+      ],
+      "Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk": [
+        1.50797,
+        1.62876,
+        1.66421,
+        1.66609,
+        1.66609
+      ],
+      "Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk": [
+        1.47431,
+        1.59279,
+        1.62047,
+        1.62203,
+        1.62203
+      ],
+      "Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law": [
+        1.43809,
+        1.56487,
+        1.60638,
+        1.6088,
+        1.60887,
+        1.60887
+      ],
+      "Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI": [
+        1.51393,
+        1.65141,
+        1.68263,
+        1.68599,
+        1.68617,
+        1.68617
+      ],
+      "Arxiv_arXiv 2403.07904 Addressing the regulatory gap moving towards an EU AI audit ecosystem": [
+        1.45862,
+        1.60087,
+        1.62684,
+        1.62865,
+        1.62865
+      ],
+      "Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards": [
+        1.45369,
+        1.60865,
+        1.63827,
+        1.63827
+      ],
+      "Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization": [
+        1.50983,
+        1.64553,
+        1.66062,
+        1.66062
+      ],
+      "Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation": [
+        1.46656,
+        1.60252,
+        1.6209,
+        1.62197,
+        1.62197
+      ],
+      "Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing": [
+        1.54361,
+        1.64095,
+        1.66961,
+        1.66961
+      ],
+      "Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude": [
+        1.5325,
+        1.64914,
+        1.67354,
+        1.67456,
+        1.67456
+      ],
+      "Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI": [
+        1.43207,
+        1.61496,
+        1.64291,
+        1.64476,
+        1.64476
+      ],
+      "Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R": [
+        1.47613,
+        1.58896,
+        1.64582,
+        1.65172,
+        1.65172
+      ],
+      "Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro": [
+        1.47258,
+        1.62354,
+        1.66239,
+        1.66477,
+        1.66477
+      ],
+      "Arxiv_arXiv 2408.01449 AI Act for the Working Programmer": [
+        1.47059,
+        1.5285,
+        1.52984,
+        1.52984
+      ],
+      "Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations": [
+        1.58597,
+        1.68476,
+        1.70884,
+        1.70886,
+        1.70886
+      ],
+      "Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models": [
+        1.4917,
+        1.64268,
+        1.6761,
+        1.67762,
+        1.67762
+      ],
+      "Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations": [
+        1.49886,
+        1.60416,
+        1.63679,
+        1.63735,
+        1.63735
+      ],
+      "Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence": [
+        1.48347,
+        1.61182,
+        1.63842,
+        1.64072,
+        1.64078,
+        1.64078
+      ],
+      "Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an": [
+        1.51226,
+        1.636,
+        1.66019,
+        1.66226,
+        1.66226
+      ],
+      "Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act": [
+        1.54157,
+        1.65408,
+        1.6749,
+        1.67676,
+        1.67676
+      ],
+      "Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet": [
+        1.4245,
+        1.54627,
+        1.5821,
+        1.58406,
+        1.58406
+      ],
+      "Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance": [
+        1.50543,
+        1.62754,
+        1.65686,
+        1.65905,
+        1.65905
+      ],
+      "Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act": [
+        1.57157,
+        1.72879,
+        1.74047,
+        1.74172,
+        1.74172
+      ],
+      "Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi": [
+        1.50857,
+        1.63472,
+        1.66523,
+        1.66584,
+        1.66584
+      ],
+      "Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act": [
+        1.51656,
+        1.6374,
+        1.66185,
+        1.66331,
+        1.66331
+      ],
+      "Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment": [
+        1.53522,
+        1.684,
+        1.71857,
+        1.71878,
+        1.71878
+      ],
+      "Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA": [
+        1.55067,
+        1.68779,
+        1.73008,
+        1.73144,
+        1.73144
+      ],
+      "Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis": [
+        1.52368,
+        1.65997,
+        1.67896,
+        1.68164,
+        1.68164
+      ],
+      "Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance": [
+        1.41299,
+        1.5534,
+        1.56558,
+        1.56589,
+        1.56589
+      ],
+      "Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh": [
+        1.58902,
+        1.67079,
+        1.69078,
+        1.69203,
+        1.69203
+      ],
+      "Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati": [
+        1.48581,
+        1.66218,
+        1.6812,
+        1.68206,
+        1.68206
+      ],
+      "Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024": [
+        1.4709,
+        1.58211,
+        1.60785,
+        1.60993,
+        1.60993
+      ],
+      "Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing": [
+        1.50922,
+        1.65392,
+        1.67299,
+        1.67358,
+        1.67358
+      ],
+      "Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance": [
+        1.47425,
+        1.61152,
+        1.64556,
+        1.64744,
+        1.64767,
+        1.64767
+      ],
+      "Arxiv_arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc": [
+        1.61249,
+        1.67758,
+        1.70061,
+        1.70135,
+        1.70135
+      ],
+      "Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act": [
+        1.4801,
+        1.62573,
+        1.64397,
+        1.64397
+      ],
+      "Arxiv_arXiv 2503.15682 Transfeminist AI Governance": [
+        1.43424,
+        1.58068,
+        1.60567,
+        1.60624,
+        1.60624
+      ],
+      "Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk": [
+        1.46885,
+        1.58264,
+        1.61298,
+        1.61298
+      ],
+      "Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate": [
+        1.45755,
+        1.54961,
+        1.55283,
+        1.55283
+      ],
+      "Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act": [
+        1.49782,
+        1.64947,
+        1.66132,
+        1.66184,
+        1.66184
+      ],
+      "Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar": [
+        1.53183,
+        1.63634,
+        1.66346,
+        1.66371,
+        1.66371
+      ],
+      "Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach": [
+        1.38843,
+        1.5273,
+        1.56118,
+        1.5651,
+        1.56529,
+        1.56529
+      ],
+      "Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach": [
+        1.49972,
+        1.55828,
+        1.56263,
+        1.56263
+      ],
+      "Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking": [
+        1.56846,
+        1.67312,
+        1.68718,
+        1.68762,
+        1.68762
+      ],
+      "Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act": [
+        1.49045,
+        1.61848,
+        1.65297,
+        1.65413,
+        1.65413
+      ],
+      "Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025": [
+        1.5286,
+        1.62582,
+        1.64596,
+        1.64755,
+        1.64755
+      ],
+      "Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po": [
+        1.54554,
+        1.68172,
+        1.69537,
+        1.6956,
+        1.6956
+      ],
+      "Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A": [
+        1.49624,
+        1.61632,
+        1.64837,
+        1.64936,
+        1.64936
+      ],
+      "Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI": [
+        1.51269,
+        1.61954,
+        1.63945,
+        1.64049,
+        1.64049
+      ],
+      "Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries": [
+        1.54127,
+        1.67648,
+        1.69476,
+        1.69585,
+        1.69585
+      ],
+      "Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat": [
+        1.42818,
+        1.55296,
+        1.59631,
+        1.60015,
+        1.60016,
+        1.60016
+      ],
+      "Arxiv_arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa": [
+        1.55616,
+        1.6697,
+        1.7066,
+        1.70927,
+        1.70927
+      ],
+      "Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga": [
+        1.59384,
+        1.7004,
+        1.71813,
+        1.71823,
+        1.71823
+      ],
+      "Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications": [
+        1.48901,
+        1.63612,
+        1.66836,
+        1.67107,
+        1.67107
+      ],
+      "Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research": [
+        1.45854,
+        1.59238,
+        1.63228,
+        1.63878,
+        1.63878
+      ],
+      "Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI": [
+        1.4936,
+        1.62644,
+        1.65061,
+        1.65061
+      ],
+      "Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI": [
+        1.55084,
+        1.635,
+        1.65363,
+        1.65975,
+        1.65975
+      ],
+      "Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act": [
+        1.49313,
+        1.61861,
+        1.63296,
+        1.63301,
+        1.63301
+      ],
+      "Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management": [
+        1.47,
+        1.60249,
+        1.62376,
+        1.62518,
+        1.62518,
+        1.62518
+      ],
+      "Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling": [
+        1.43991,
+        1.57469,
+        1.5981,
+        1.59899,
+        1.59899
+      ],
+      "Arxiv_arXiv 2512.11931 Mapping AI Risk Mitigations Evidence Scan and Preliminary AI Risk Miti": [
+        1.51703,
+        1.63649,
+        1.65745,
+        1.65944,
+        1.65944
+      ],
+      "Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety": [
+        1.45814,
+        1.59659,
+        1.63016,
+        1.63176,
+        1.63176
+      ],
+      "Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance": [
+        1.41425,
+        1.55952,
+        1.58881,
+        1.58992,
+        1.58992
+      ],
+      "Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within": [
+        1.5127,
+        1.61758,
+        1.64253,
+        1.64358,
+        1.64358
+      ],
+      "Arxiv_arXiv 2602.13244 Responsible AI in Business": [
+        1.3915,
+        1.54735,
+        1.58487,
+        1.58755,
+        1.58755
+      ],
+      "Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations": [
+        1.55262,
+        1.6561,
+        1.6847,
+        1.69395,
+        1.69395
+      ],
+      "Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides": [
+        1.39256,
+        1.54194,
+        1.56404,
+        1.5649,
+        1.5649
+      ],
+      "Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too": [
+        1.48352,
+        1.6322,
+        1.65437,
+        1.6546,
+        1.6546
+      ],
+      "Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc": [
+        1.51632,
+        1.58718,
+        1.59055,
+        1.59055
+      ],
+      "Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A": [
+        1.43073,
+        1.47208,
+        1.4727,
+        1.4727
+      ],
+      "Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H": [
+        1.45798,
+        1.56228,
+        1.58035,
+        1.58035
+      ],
+      "Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou": [
+        1.42414,
+        1.58174,
+        1.59748,
+        1.59748
+      ],
+      "Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability": [
+        1.49198,
+        1.6233,
+        1.65072,
+        1.65297,
+        1.65297
+      ],
+      "Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management": [
+        1.41379,
+        1.5614,
+        1.58963,
+        1.59175,
+        1.59178,
+        1.59178
+      ],
+      "Arxiv_arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks": [
+        1.51966,
+        1.63621,
+        1.66909,
+        1.67281,
+        1.67281
+      ],
+      "Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains": [
+        1.42364,
+        1.48107,
+        1.48499,
+        1.48499
+      ],
+      "Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A": [
+        1.50715,
+        1.6197,
+        1.66041,
+        1.66417,
+        1.66427,
+        1.66427
+      ],
+      "Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment": [
+        1.54731,
+        1.65787,
+        1.67593,
+        1.67593
+      ],
+      "Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul": [
+        1.40112,
+        1.55572,
+        1.60218,
+        1.60826,
+        1.60845,
+        1.60845
+      ],
+      "Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice": [
+        1.50463,
+        1.65046,
+        1.67289,
+        1.67289
+      ],
+      "Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act": [
+        1.49916,
+        1.61152,
+        1.64501,
+        1.64778,
+        1.64778
+      ],
+      "Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk": [
+        1.47309,
+        1.60163,
+        1.60732,
+        1.60743,
+        1.60743
+      ],
+      "Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech": [
+        1.48938,
+        1.62307,
+        1.6609,
+        1.66351,
+        1.66351
+      ],
+      "Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A": [
+        1.50176,
+        1.64568,
+        1.66394,
+        1.66438,
+        1.66438
+      ],
+      "Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-": [
+        1.54843,
+        1.65053,
+        1.67388,
+        1.67442,
+        1.67442
+      ],
+      "Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability": [
+        1.50204,
+        1.61422,
+        1.62697,
+        1.62771,
+        1.62771
+      ],
+      "Norma_Council of Europe HUDERIA Methodology": [
+        1.51966,
+        1.64115,
+        1.6561,
+        1.6561
+      ],
+      "Norma_Datatilsynet AI and Privacy": [
+        1.48676,
+        1.60635,
+        1.65913,
+        1.66151,
+        1.66151
+      ],
+      "Norma_EDPB ChatGPT Taskforce Report": [
+        1.54181,
+        1.64649,
+        1.66002,
+        1.66079,
+        1.66079
+      ],
+      "Norma_EDPB Opinion 28-2024 AI Models": [
+        1.5291,
+        1.6328,
+        1.65432,
+        1.6553,
+        1.6553
+      ],
+      "Norma_G7 Hiroshima Code of Conduct for Advanced AI": [
+        1.56288,
+        1.61343,
+        1.62852,
+        1.62852
+      ],
+      "Norma_GAO AI Accountability Framework": [
+        1.57837,
+        1.67824,
+        1.69297,
+        1.69383,
+        1.69384,
+        1.69384
+      ],
+      "Norma_NIST AI RMF 1.0": [
+        1.50135,
+        1.61442,
+        1.6283,
+        1.62937,
+        1.62937
+      ],
+      "Norma_OECD Recommendation of the Council on AI": [
+        1.51632,
+        1.65883,
+        1.69549,
+        1.69851,
+        1.69851
+      ],
+      "Norma_OMB M-24-10 AI Governance Memo": [
+        1.44526,
+        1.6021,
+        1.63008,
+        1.63032,
+        1.63032
+      ],
+      "Norma_Singapore Model AI Governance Framework 2nd Edition": [
+        1.44323,
+        1.57286,
+        1.61357,
+        1.61853,
+        1.61853
+      ],
+      "Norma_UK AI Regulation White Paper": [
+        1.51777,
+        1.63104,
+        1.65736,
+        1.65964,
+        1.65966,
+        1.65966
+      ],
+      "Sophia_CNIL Comment permettre a l'homme de garder la main": [
+        1.45542,
+        1.59737,
+        1.62949,
+        1.63152,
+        1.63153,
+        1.63153
+      ],
+      "Sophia_CNIL Synthese consultation recommandation IA": [
+        1.55984,
+        1.64093,
+        1.67365,
+        1.67573,
+        1.67573
+      ],
+      "Sophia_Defenseur des droits Algorithmes Discriminations": [
+        1.47011,
+        1.58694,
+        1.62262,
+        1.62618,
+        1.62618
+      ]
+    }
+  },
+  "postprocessing": "merge_small_chunks_to_neighbours(min=100,max=1150,next)",
+  "git_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19044-SP0",
+  "seconds": 211.5,
+  "created": "2026-11-09 19:50:14"
+}

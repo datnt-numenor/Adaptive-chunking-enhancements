@@ -1,0 +1,14 @@
+{
+  "request_hash": "1abb0d28a691efd7ac5f3498d68a309555a7d0b0b13b817444823fdcadb1167e",
+  "prompt_sha256": "64ce73b618dab55345e3d1b72cfe7a2f90e96ea0fc4dcf092c88d9e1584f987f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQPJMvt6EBEXVrTtWcGbyDiOhxD",
+  "prompt_tokens": 7944,
+  "completion_tokens": 52,
+  "actual_usd": 0.0012228,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing infection attacks as a form of contamination during the training phase and explicitly mentioning the three categories of attacks, including infection, as outlined in the CNIL's taxonomy."
+  }
+}

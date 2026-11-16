@@ -1,0 +1,14 @@
+{
+  "request_hash": "9ca2ba13bc47dd9ac360756d4a63e57bec94dd08ad79ba041d43879f2f6cc5f1",
+  "prompt_sha256": "b26ed1c7cb075c808db600fb7fb4cbb9fe51226b50a943c6eaca1c2e6faef127",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJsPRCbhSROrM944Rnuf0veNdlz",
+  "prompt_tokens": 6841,
+  "completion_tokens": 45,
+  "actual_usd": 0.0010531499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the lack of interoperable standards and the resulting fragmentation in implementations for both synthetic data and fact-checking systems."
+  }
+}

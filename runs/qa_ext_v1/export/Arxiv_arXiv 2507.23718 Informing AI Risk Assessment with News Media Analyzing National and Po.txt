@@ -1,0 +1,253 @@
+DOCUMENT: arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po
+
+<<<PAGE 5>>>
+# 4.2 Using the MIT risk taxonomy to classify impacts from news media
+
+To classify the negative impacts of AI reported in news media, we manually annotated each reported impact from a random sample of 300 negative impacts from our corpus into one of the seven risk categories defined by the "domain taxonomy" of the MIT AI Risk Repository: Discrimination & toxicity, Privacy & security, Misinformation, Malicious actors & misuse, Human-computer interaction, Socioeconomic & environmental harms, AI system safety failure & limitations. A full list of the sub-categories defining these seven domain risk categories can be found in Appendix A.3. Although other expert-driven taxonomies of AI risks exist (Solaiman et al. 2023; Shelby et al. 2023; Weidinger et al.), prior research found that these taxonomies may suffer from inadvertent expert or selection biases and may not be as representative of international perspectives of AI risks and harms (Allaham, Kieslich, and Diakopoulos 2024; Bonaccorsi, Apreda, and Fantoni 2020; Crawford 2016; Hagerty and Rubinov 2019; Jobin, Ienca, and Vayena 2019). Accordingly, rather than relying on a single expert-driven taxonomy, we chose to focus on the MIT Risk Repository because it presents an aggregated perspective into the risks and harms of AI across 56 taxonomies that are sourced from academia, government, and industry and are authored by teams of researchers from several countries around the world (Slattery et al. 2024). The resulting annotated sample using the domain taxonomy of AI risks serves as a baseline to evaluate the capability and performance of the LLM on this classification task.
+
+Next, using a zero-shot prompting approach, we sent requests via the OpenAI API instructing GPT-4o to classify each impact summary from the 300 randomly sampled impacts into only one of the defined domain risk categories of the MIT Risk Repository, as outlined in Prompt A.9. In addition, we included in the prompt an instruction for the LLM to assign an "other" label for impacts that do not fit any of the categories defined in the prompt, mirroring the best practices of thematic analysis (Braun and Clarke 2012). We prompted the model using the sub-domain categories of AI risks to align with the conceptual framework of the domain taxonomy (see A.3), which organizes risks into specific sub-domains, as outlined in the original paper of the MIT Risk Repository (Slattery et al. 2024). For instance, Human-computer interaction risks are defined in the domain taxonomy in terms of Overreliance and unsafe use and Loss of human agency and autonomy risks, which were used in prompt A.9. Accordingly, if GPT-4o deemed an excerpt of text to fit the definition of any of these two sub-categories, the excerpt is considered a risk relevant to Human-computer interaction. Therefore, for our analysis aimed at describing the prevalence of the categories of AI risks identified by the MIT Risk Repository and reported in the news media across different countries, we aggregate and present results at the domain, rather than the sub-domain, level of AI risk categories as they are anchored to capture the incremental and expanding nature of the sub-categories of risks that emerge over time with the (mis)use of AI across domains.
+
+Based on the human annotated sample of negative impacts, the performance evaluation of the LLM for classifying impacts from news media into the seven categories of risks from the domain taxonomy of AI risks demonstrates a strong performance by GPT-4o in classifying impacts into their corresponding risk category with a macro-averaged F1-score of 0.90 2 . To scale up the classification for the remaining summaries of negative impacts in our corpus, we applied the same zero-shot approach described previously. The prevalence of the categories of risks across countries is analyzed and described in the results section.
+
+# 5 Results
+
+In section 5.1, we present our findings from analyzing the prevalence of AI risks in a cross-national sample of news media at the country-level, and then further analyze the association between these risks and the countries of the news outlets covering them. Next, in section 5.2, we analyze the potential influence of the political orientation of news outlets on the reporting of AI risks, focusing our analysis only on a sample of articles from the U.S.
+
+# 5.1 Prevalence of AI Risks in a cross-national sample of news media
+
+To measure the prevalence of AI risk categories identified by the MIT domain risk taxonomy in our cross-national sample of news media, we calculate, for each country, the proportion of articles reporting on each risk category relative to the total number of articles from that country (see Table A.6 for details). We find that the prevalence of AI risks in news media tend to vary by risk category and across countries, as illustrated in Figure 1.
+
+In order to examine whether the prevalence of AI risks is associated with the country reporting on these risk, for each risk category, we conducted a Chi-square test of independence on the number of articles covering that risk in each country. Results indicate a statistically significant association between countries and the coverage of AI risks in news articles, with an exception of Privacy & Security which was not found to be statistically significant, indicating that the coverage of AI risks varies by country (details of these tests are included below). We elaborate on our findings for each risk category in the subsequent sections.
+
+The proportion of articles covering issues related to increased inequality, economic and cultural impacts, environmental harms, and more as described by the Socioeconomic & Environmental Risks varied notably, with the highest proportions observed in South Africa (44.6%), United States (37.3%), United Kingdom (36.8%), and Australia (34.5%), while lower proportions were found in India (28.9%) and Israel (25.1%). A Chi-Square test for this risk category was conducted on the number of articles covering this risk yielding a statistically significant result (χ2 (5) = 54.76, p <0.001), indicating that the distribution of articles discussing socio-economic and environmental risks is not independent of country. Rather, the findings suggest that media coverage of socioeconomic and environmental risks vary in the extent to which each country emphasize this risk category, reflecting differences in public discourse or local reporting on socio-economic and environmental harms around AI.
+
+\* 2 The per-category F1-scores range from 0.76 (for HumanComputer Interaction) to 1.00 (for AI system safety, failures, & limitations), with most categories achieving F1-scores above 0.85, indicating high overall classification performance across categories.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<Figure>
+Figure 1: Prevalence of AI risk categories in news coverage across six countries in our sample, based on the proportion of articles reporting each AI risk category in the United States, the United Kingdom, India, Australia, Israel, and South Africa.
+</Figure>
+
+Next, for AI risks relevant to disinformation, cyberattacks, and targeted manipulation that are encompassed by Malicious Actors & Misuse risk category, we use Chi-square test of independence to assess the cross-country variation in media coverage of this risk category relative to expected number of articles covering this category per country. The test reveals significant differences in the proportion of articles addressing this risk across countries (χ2 (5) = 46.9, p <0.001). Particularly, the United States had the least coverage of this risk category (31.1%) compared to any other country. In contrast, Australia (38.6%) had the highest proportion of articles focusing on this risk category, very similar to the proportion of articles exhibited in the U.K. (38.0%). All remaining countries, Israel (34.9%), India (34.5%), and South Africa (32.5%), had a more comparable proportion of coverage of this risk to each other. These findings highlight geographic variation in the framing of AI risks, with some countries prioritizing the coverage of potential implications and concerns of the malicious use and misuse of AI more prominently in public discourse than others.
+
+Discrimination & Toxicity Risks - Both Israel (25.9%) and South Africa (24.2%) have the highest proportion of articles covering this risk category, which captures issues pertaining to discrimination, misrepresentation, and exposure to toxic content. This could be attributed to salient historical and political contexts surrounding the debates related to the post-apartheid state in South Africa and the implications of the ongoing conflicts in the Middle East on identity and social cohesion which could contribute to heightened coverage for risks related to AI-generated misrepresentation or AI-powered content moderation algorithms. In comparison, Australia (20.5%), U.K (21.2%), and the U.S. (20.2%) have a comparable emphasis on this category in their news coverage. However, India (15.5%) had the least coverage of this risk category in comparison to other countries in our sample. Similar to the previous risk categories, the Chi-Square test of independence was found to be significant (χ2 (5) = 25.96, p <0.001) showing a consistent pattern, as observed from the other risk categories so far, of varying prioritization in the coverage of risk categories by the news media across different countries.
+
+Despite the prominence of research related to misinformation (and its risks from AI-generated content) as well as the safety of AI systems in possessing dangerous capabilities (Mitchell et al. 2025; Kolt 2025), we observe the two categories of AI System Safety, Failures, & Limitations (χ2 (5)=28.88, p <0.001) and Misinformation Risks (χ2 (5)=12.69, p=0.0264) not being among the leading risk categories covered by news media. Both Israel (21.4%) and U.S. (20.0%) had the highest proportion of articles in our sample emphasizing AI systems, safety, failures, & limitations in their coverage. As for misinformation risks, Australia (21.9%) had the most prominent coverage of this risk, with a comparable representation of coverage in U.S (19.5%), South Africa (18.9%), and U.K. (18.4%). However, India and Israel had the least proportion of articles covering this risk relative to other countries, accounting for only 16.4% and 15.4% of their respective coverage.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+Lastly, Privacy & Security Risks and Human-Computer Interaction Risks were the least covered risks in our sample across all six countries. Although Privacy & Security Risks was the second to last most prevalent category in our sample, the variation in news coverage for this risk between countries was found not be significant based on a Chi- square test. As for the Human-Computer Interaction Risks, which reflect risks related to over-reliance, unsafe use, and loss of human agency, it received the least news coverage of AI risks across all countries (9.3%). On average, 8.3% of the news coverage in each country focused on reporting human-computer interaction risks, with the U.K. leading this coverage (10.8%). Despite these minor differences in the proportion of articles covering this risk in each country, still a Chi-square test resulted in a statistically significant differences in the distribution of articles across countries for this risk (χ2 (5)=11.17, p=0.04).
+
+# 5.2 Analyzing the coverage of AI risks across bias categories of U.S. news outlets
+
+Although news sources in our sample spanning across six countries is useful for insights about patterns of media coverage of AI risks, prior research has shown that the political bias of news domains tend to influence the discourse around scientific topics such as climate change (Chinn, Hart, and Soroka 2020; Allaham et al. 2025) or emerging technologies (e.g., nuclear energy), including AI (Brennen 2018; Roe and Perkins 2023; Vergeer 2020). This has also been reflected in U.S. politics, with President Trump rescinding the Executive Order 14110 on Artificial Intelligence signed by former President Biden.
+
+Based on the limitations of our sample, specifically with respect to the number of articles and representation of media coverage in some countries (see section 7), and difficulties in taking into account and attributing the political-orientation for news domains beyond the authors' expertise in U.S.- based media, we chose to only focus on articles in our sample from the U.S. to explore the influence of political orientation of news outlets on risk reporting of AI. To this end, we used domain-level bias ratings from Media Bias Fact Check (MBFC) (Check 2025) to identify the political orientations of the U.S.-based outlets included in our dataset.
+
+Although MBFC proposes one way of rating bias in news domains, we recognize that it is not the only approach. However, we selected MBFC because it is an independent website maintained by researchers and journalists that relies on human fact-checkers affiliated with the International FactChecking Network to evaluate media sources along different dimensions such as factual reporting and bias (Lin et al. 2023). After annotating the 69 U.S. domains in our sample with MBFC ratings, all 7,893 articles from 69 domains are distributed across four political bias categories: Left
+
+(12.25%) Left-Center (53.4%), Least Biased (5.8%), RightCenter (22.6%), and Right (5.8%). A list of news domains, their associated bias categories, and the corresponding number of articles from each domain in our sample is provided in Table A.5 in the Appendix.
+
+To statistically test the association between the coverage of various AI risks and domain-bias categories in U.S.-based outlets, we conducted a Chi-square test of independence on the number of articles reporting each risk category for each bias category. In addition, we report the proportion of articles covering each risk category by counting the number of articles related to each risk category, and divided this number by the total number of articles in each bias category.
+
+As shown in Figure 2, we find that right-biased sources under-emphasize Socioeconomic & Environmental Risks based on the proportion of articles reporting on this risk (25.7%) in comparison to the proportion of articles published by least-biased (35.1%), left-center (37.7%), leftbiased (36.7%), and event right-center (40.2%) news outlets. Indeed the contrast between right-biased and right-center outlets had the greatest gap. This observed variability in news coverage across the different categories of domain bias is statistically significant, as indicated by the Chi-square test of independence (χ2 (4) = 34.89, p <0.001). This highlights the association between news coverage of AI risks and domain bias, potentially contributing to our understanding of the agenda-setting process of news media that shapes and influence the public perceptions of AI and its impacts on society.
+
+As for Malicious Actors & Misuse Risks, right-biased and left-biased sources had the highest and second highest proportions of articles, accounting for 43.1% and 36.2% of their respective coverage, focusing on this risk category compared to outlets with other domain biases. Specifically, right-biased news outlets reported risks related to the misuse of AI by the "government" to "make AI woke", "push a leftist agenda", or "to clean the internet of conservative thought and replace it with leftist narratives", posing a threat to "free speech". Other reported risks focus on the potential misuse of AI's role in influencing the "public consumption and perception of news media", including "AI models favor[ing] leftist outlets like The Washington Post, NPR, and PBS" and "recommending news sources perceived as leftistbiased as the best". As for left-bias outlets, the reporting is focused on how the misuse of AI could "elevate extremist content" on the internet, "push far-right agenda on social media", and "enable far-right conspiracy theorists to push baseless claims about voter fraud", with a very few instances of articles reporting on the potential misuse of AI to advise "terror groups on biological weaponry".
+
+Similarly, for the Discrimination & Toxicity risks, the proportion of articles published by right-biased (36.1%) and left-biased domains (24.9%) over-emphasize the coverage of this risk category, compared to center-bias and least-bias outlets. However, consistent with the Malicious actors & Misuse Risks, the reporting of risks relevant to this category in right vs. left bias outlets include markers of politicized language. For instance, right-bias outlets mentioned risks pertaining to the false portrayal of "the founding fathers as people of color" by Gemini AI and how AI systems like ChatGPT "trained using Wikipedia, may produce responses skewed against conservatives and in favor of leftists". Another set of examples focused on the "bias in content moderation systems", including how the "negative comments about women are more likely to be flagged as hateful compared to the same comments about men". In contrast, left-bias media outlets reported on risks about the "inclusion of far-right and non-reputable sources" in AI training data which leads to the "dissemination of hate speech through AI responses". Furthermore, risks covered by left-bias outlets also focus on reporting the negative impacts of AI technologies experienced by people of color such as "financial discrimination" as a result of "mortgage approval algorithms discriminat[ing] against applicants of color", or the wrongful arrest of "eight month pregnant Porscha Woodruff" due an AI facial recognition tool flagging Porscha's face as a "carjacking suspect".
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<Figure>
+Figure 2: Proportion of news articles in our sample from U.S. domains across five media bias categories, as rated by Media Bias Fact Check (MBFC): Left, Left-Center, Least Biased, Right-Center, and Right.
+</Figure>
+
+The Chi-square test results for both Malicious Actors & Misuse Risks and Discrimination & Toxicity Risks categories indicate that media coverage of these risk varies by the political bias of the reporting outlet, χ2 (4) = 84.87, p <0.001, and χ2 (4) = 116.52, p <0.001, respectively.
+
+Emerging as one of the short-term and most severe global risks to human society (World Economic Forum Report 2024), Misinformation Risks received a consistent share of coverage by left (21.6%) and right (20.8%) biased news outlets, per the proportion of articles reporting this risk. However, the way these risks are reported on in news media seem to vary. Besides the need for AI systems to minimize hallucinations and improve factuality, as reported by several news articles, there are a number of articles reporting on the impacts of misinformation on democracy. For instance, some right-bias outlets voiced concerns about the risks of AIgenerated content on electoral process and participatory policymaking, potentially "impacting democracy". This observation is also consistent with left-bias news outlets that view AI's capability to undermine democratic processes and accountability through AI-generated content that "spread unreliable information", "conspiracy theories", and "false information to [mislead] voters". Despite that relatively consistent coverage of misinformation risks across the four domain bias categories, Chi-square test shows that there is a statistically significant association (χ2 (4) = 13.55, p <0.01) between the coverage of misinformation risks and the domain bias of the outlets reporting on this risks category.
+
+The remaining three risk categories receiving low coverage from news media, AI Systems Safety, Failures, & Limitations, Privacy & Security, and Human-Computer Interaction also show significant associations between the coverage of these risks and domain bias, χ2 (4) = 16.56, p=0.002, χ2 (4) = 37.40, p <0.001, χ2 (4) = 17.76, p=0.001, respectively. Unlike the previous categories, the coverage of these risks did not include politicized language, though we did observe some differences in the scope in which these risks are communicated in right vs. left biased outlets. For instance, for AI Systems Safety, Failures, & Limitations risks, articles published by left-biased outlets scoped the reporting on AI systems' lack of capability and robustness such as "ChatGPT lack[ing] a real moral compass and relies on crude guardrails that can be easily broken". In contrast, right-based outlets were centering their coverage for this risk category on the potentials of AI possessing dangerous capabilities that can cause mass harm or extinction "annihilat[ing] humankind in some sort of existential catastrophe" or "pose[ing] a risk of loss of control over human civilization". Similarly, leftbiased outlets scoped their coverage of Human-Computer Interaction risks on the over-reliance on AI systems such as Doctors accepting the output of AI systems in medicine "without sufficient scrutiny", but less on how AI could transform human relations "potentially diminishing genuine human connections" and "deepen[ing] what some are calling an epidemic of loneliness", as observed in right-biased sources.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+Collectively, our findings highlight how the coverage of AI risks varies by country and based on the political bias of news outlets reporting on these risks. We also illustrated through a few examples how the prevalence of AI risks, especially amongst left v.s. right-biased outlets, doesn't entail an equivalent scoping and communication of these risks by news media. While our analysis is focused on analyzing and describing the prevalence of AI risks in news reporting on AI, future work accounting for how AI risks and harms are framed, in the U.S. and abroad, in biased news outlets will help complement our findings and further inform how politically-biased media is shaping the public opinion and attitudes towards AI, and subsequently the public support (or opposition) of AI-related policies.
+
+# 6 Discussion
+
+This research illustrates through a comparative analysis of AI risks covered in a cross-national sample of news media spanning 6 countries (the U.S., the U.K., India, Australia, Israel, and South Africa) the influence of national (as indicated by country) and political (as indicated by political orientations) variations in the coverage of AI risks in news media. Considering the role of news media in mapping AI risks in real-world contexts, our findings can help inform risk assessors and policy-makers about the importance of accounting for national and political nuances in media coverage of AI risks and potentially calibrate ongoing AI incident monitoring initiatives to also include these nuances when incorporating news media as part of risk-based regulatory practices.
+
+In particular, by considering the cross-national variations in the analysis of AI risks reported on in the news media, our research articulates how various AI risks identified by the academic community (synthesized by the MIT domain risk taxonomy) are reported on and prioritized (i.e., which risks are deemed important) by the media per the coverage of these risks in each country. Moreover, insights from the comparative analysis of AI risks across countries can complement existing risk assessment practices looking to incorporate more diverse perspectives into the identification and prioritization of these risks, particularly for AI systems developed in the US (or other Western countries) with a global user base. This inclusion is especially important as a way to counteract the potential for expert bias in assessment practices (Bonaccorsi, Apreda, and Fantoni 2020; Crawford 2016).
+
+Furthermore, even a well-documented and performed risk assessment in a Western country may not reflect the risks realized in or prioritized by another country. Thus, the choice of risk taxonomy for mapping AI risks and the national context in which these risks are identified does matter. While we encourage risk assessors to consider findings from our research as part of assessing AI systems that are developed in the Global North (e.g., the U.S.), but have users in other countries in the Global South (e.g., South Africa and India), we emphasize the importance of leveraging news media as a complementary source for risk assessments, while accounting for its national and political variations, in providing an analytical lens to help quantify the prioritization of AI risks across regions and countries. For instance, we find that the U.K. deems malicious actors and misuse risks as the most important category (see Figure 1), while it is not as important in South Africa. There, socioeconomic and environmental harms are reflected in our sample as a more pressing risk, which may reflect the high importance of social justice values especially in regards to diversity and ethnic neutrality in African countries (Mengesha, Belay, and Adams 2024). These findings may re-orient risk assessors to contribute region-specific socio-technical methods and evaluations that AI-developers can leverage to align LLMs to address the risks more salient in each nation.
+
+Focusing on the U.S., our study also reveals clear differences regarding the prevalence of AI risk in media coverage across outlets with different political leanings. We find that right-biased outlets deviate in their coverage of AI risks from centered and left-biased outlets. Specifically, right-biased media have a clear focus on the risks related to malicious actors & misuse as well as discrimination & toxicity. Our exploratory analysis shows that right-biased media outlets identify these risks from a lens that supports their agenda on topics relevant to freedom of expression and the presence of a culture war that are also endorsed by right-wing politicians. We also find that right-biased media call out a perceived cancel culture and woke-movement that is also carried out and enforced with and by AI technologies. The perceived risk is then not about the discrimination of marginalized groups, but the alleged suppression of majority voices.
+
+The differences between the prevalence of AI risks between U.S. news outlets with different political leanings also show signs of polarization. This is an indicator for an emerging politicization of AI risks, which is further confirmed by the different standpoints of different media stances towards the risk categories. There is a possibility that the politicized language used to cover AI risks is further fueled by recent developments in U.S. politics, where Big Tech advocates are promised a more active and open role in political procedures (e.g. Elon Musk heading the DOGE initiative). This in turn could lead into public discussions on AI governance that are likely to intersect with politics, which could have implications for bi-partisan efforts aiming to protect the public from the negative impacts of AI. Accordingly, we encourage future research to extrapolate on our findings and trace in more detail how AI risks are framed in news media, the impact of such framing on public attitudes towards AI, and how the framing of AI risks could evolve with the political climate and democratic processes (e.g., elections) in the U.S.
+
+Taking a step back, our research also finds that while the research community often focuses on potential risks of AI systems from technical (e.g., AI system safety failures and limitations) and socio-technical perspectives (i.e., implications of AI systems on society), per the prevalence of these risks in research papers included as part of the MIT Risk Repository (Slattery et al. 2024), news media reporting have a stronger focus on harms that tend to prioritize tangible societal implications of AI risks (such as socioeconomic & environmental harms; malicious actors & misuse; misinformation). This difference in the prioritization of reporting on some AI risks is evident by the prominence of Malicious actors & Misuse risks being ranked as the third most prevalent risk category in the corpus of academic papers included in constructing the MIT Risk Repository (i.e., 71% of academic papers mention this risk) compared to it being ranked second in our corpus of articles from news media. In addition, Misinformation risks plays a larger role in media reporting than in the MIT risk repository (ranked 7th based on its prevalence of 46% in academic papers). This finding supports our rationale that including news media coverage can support expert risk assessment practices in adding more nuances and societal importance indicators to the assessment practice. Collectively, these findings may warrant future research to explore how the difference in incentives and priorities between academic research and news media tend to influence what risks are discussed in the public sphere, which impacts are deemed important (and which aren't), and which impacts will ultimately be prioritized.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+# 7 Limitations
+
+Although our study includes news articles from six countries across different geographical regions, it also has its limitations. First, our sample doesn't capture perspectives or discourse around AI risks by news domains with paidsubscriptions (see Data section). Rather, it relies primarily on news domains that are "freely available" (i.e., not behind paywalls), publicly accessible, and can be scraped, especially in countries beyond the U.S. Accordingly, our findings, based on analyzing news coverage from some of the most widely read and publicly accessed news outlets, are likely to capture and reflect a partial, yet broad, view of public concerns of AI risks as reported in these leading news sources in each of the six countries (Newman et al. 2024).
+
+Second, our sample focuses primarily on articles written and published in the English language, excluding outlets in other regions (e.g., Latin America) and potentially missing other important and relevant news coverage, as well as local perspectives, on AI risks that are expressed in other languages beyond English that are native to some underrepresented countries in our sample, such as South Africa or India.
+
+Third, analyzing the public discourse around AI from news outlets, especially in countries in the Global South, requires deep expertise in these countries to account for social, political, economic, and even legacy colonial ties which collectively have an influence on the discourse around how the impacts of AI are communicated and realized in communities in these countries (Dewitt Prat et al. 2024; Baguma et al.
+
+2023). We, as a research team, do not claim to have this expertise, and, thus, took a descriptive approach to risk prevalence. However, country specific interpretations require cooperation with local scholars which is beyond the scope of this paper.
+
+Lastly, despite the cross-national nature of our sample, we recognize that the six countries are not representative of the regions or political perspectives these countries belong to. For instance, although the U.K. is geographically located in Europe, it is no longer a part of the European Union which adopts a different perspective on AI risks than the U.K., as reflected in the EU AI Act (Montasari 2023; Cath et al. 2018; Akinola, Tunbosun, and Oladapo 2022).
+
+# 8 Conclusion
+
+This work highlights the importance of incorporating national and political variations embedded in the reporting of AI risks when considering news media as a complementary source in risk assessment and incidents monitoring practices. Through a comparative analysis of a cross-national sample of news media spanning 6 countries (the U.S., the U.K., India, Australia, Israel, and South Africa), we find that AI risks are prioritized differently across nations, as reflected in the prevalence of these risks from each country's media coverage. We further elaborate on our findings by considering the political orientation of news outlets in our analysis, particularly in the U.S. We find the reporting of AI risks by these outlets to contain politicized language across Malicious Actors & Misuse Risks, Discrimination & Toxicity, and Misinformation risks. Our research presents risk assessors, AI developers, and policymakers, with an analytical lens to help quantify the prioritization of AI risks based on the national and political variations of news media. Moreover, our findings may re-orient risk assessors' perspectives towards contributing region or country-specific evaluations that account for the socio-political contexts in various regions, especially in the Global South. In doing so, AI-developers can leverage these evaluations in their assessment frameworks to capture the societal (mis)alignment of AI systems, such as LLMs, with the values and risks most salient for each nation using these systems, without disregarding other globally emerging risks. Failing to account for the social and political contexts surrounding the identification, interpretation, and communication of AI risks may lead to assessors overlooking how these nuances are influencing the public perception of AI and its risks, and potentially hindering progress towards shaping more inclusive AI governance policies and regulations.
+
+# References
+
+Akinola, O.; Tunbosun, O. A.; and Oladapo, B. 2022. Comparative Analysis Regulatory of AI and Algorithm in UK, EU and USA. EU and USA (September 7, 2022).
+
+Allaham, M.; Kieslich, K.; and Diakopoulos, N. 2024. Towards Leveraging News Media to Support Impact Assessment of AI Technologies. In EvalEval Workshop at NeurIPS 2024. https://arxiv.org/pdf/2411.02536.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+Allaham, M.; Lokmanoglu, A. D.; Hart, P.; and Nisbet, E. C. 2025. Enhancing LLMs for Governance with Human Oversight: Evaluating and Aligning LLMs on Expert Classification of Climate Misinformation for Detecting False or Misleading Claims about Climate Change. In International Workshop on AI Governance: Alignment, Morality and Law (AIGOV) 2025. AAAI Conference on Artificial Intelligence. https://arxiv.org/abs/2501.13802.
+
+Angwin, J.; Larson, J.; Mattu, S.; and Kirchner, L. 2022. Machine bias. In Ethics of data and analytics, 254-264. Auerbach Publications.
+
+Avin, S.; Gruetzemacher, R.; and Fox, J. 2020. Exploring AI Futures Through Role Play. In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society, 8-14. New York NY USA: ACM. ISBN 978-1-4503-7110-0.
+
+Baguma, R.; Namuwaya, H.; Nakatumba-Nabende, J.; and Rashid, Q. M. 2023. Examining potential harms of large language models (llms) in africa. In International Conference on Safe, Secure, Ethical, Responsible Technologies and Emerging Applications, 3-19. Springer.
+
+Becker, H. A. 2001. Social impact assessment. European Journal of Operational Research, 128(2): 311-321.
+
+Biden, J. R. 2023. Executive order on the safe, secure, and trustworthy development and use of artificial intelligence.
+
+Bommasani, R.; Hudson, D. A.; Adeli, E.; Altman, R.; Arora, S.; von Arx, S.; Bernstein, M. S.; Bohg, J.; Bosselut, A.; Brunskill, E.; et al. 2021. On the opportunities and risks of foundation models. arXiv preprint arXiv:2108.07258.
+
+Bonaccorsi, A.; Apreda, R.; and Fantoni, G. 2020. Expert biases in technology foresight. Why they are a problem and how to mitigate them. Technological Forecasting and Social Change, 151: 119855.
+
+Braun, V.; and Clarke, V. 2012. Thematic analysis. American Psychological Association.
+
+Brennen, J. 2018. An industry-led debate: How UK media cover artificial intelligence. Publisher: Reuters Institute for the Study of Journalism.
+
+Brennen, J.; Howard, P. N.; and Nielsen, R. K. 2018. An industry-led debate: How UK media cover artificial intelligence. RISJ Fact-Sheet.
+
+Brennen, J. S.; Howard, P. N.; and Nielsen, R. K. 2022. What to expect when you're expecting robots: Futures, expectations, and pseudo-artificial general intelligence in UK news. Journalism, 23(1): 22-38.
+
+Bunz, M.; and Braghieri, M. 2022. The AI doctor will see you now: assessing the framing of AI in news coverage. AI & SOCIETY, 37(1): 9-22.
+
+Burtell, M.; and Woodside, T. 2023. Artificial influence: An analysis of AI-driven persuasion. arXiv preprint arXiv:2303.08721.
+
+Cath, C.; Wachter, S.; Mittelstadt, B.; Taddeo, M.; and Floridi, L. 2018. Artificial intelligence and the 'good society': the US, EU, and UK approach. Science and engineering ethics, 24: 505-528.
+
+Check, M. B. 2025. Media Bias/Fact Check: The Most Comprehensive Media Bias Resource. Accessed on January 17, 2025.
+
+Chinn, S.; Hart, P. S.; and Soroka, S. 2020. Politicization and polarization in climate change news content, 1985-2017. Science Communication, 42(1): 112-129.
+
+Chuan, C.-H.; Tsai, W.-H. S.; and Cho, S. Y. 2019. Framing artificial intelligence in American newspapers. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society, 339-344.
+
+Constantaras, E.; Geiger, G.; Braun, J.-C.; Mehrotra, D.; and Aung, H. 2023. Inside the suspicion machine. Technical report.
+
+Crawford, K. 2016. Artificial intelligence's white guy problem. The New York Times, 25(06): 5.
+
+De Wilde, P. 2011. No polity for old politics? A framework for analyzing the politicization of European integration. Journal of European integration, 33(5): 559-575.
+
+Dewitt Prat, L.; NDLOVU LUCAS, O. N.; GOLIAS, C.; and LEWIS, M. 2024. Decolonizing LLMs: An Ethnographic Framework for AI in African Contexts. In Ethnographic Praxis in Industry Conference Proceedings, volume 2024, 46-85. Wiley Online Library.
+
+Diakopoulos, N. 2015a. Algorithmic accountability: Journalistic investigation of computational power structures. Digital journalism, 3(3): 398-415.
+
+Diakopoulos, N. 2015b. Algorithmic Accountability: Journalistic investigation of computational power structures. Digital Journalism, 3(3): 398 - 415.
+
+Diakopoulos, N. 2025. Prospective Algorithmic Accountability and the Role of the News Media. In Moorman, M.; and Verdicchio, M., eds., Computer Ethics Across Disciplines: Deborah G. Johnson and Algorithmic Accountability.
+
+Fast, E.; and Horvitz, E. 2017. Long-term trends in the public perception of artificial intelligence. In Proceedings of the AAAI conference on artificial intelligence, volume 31. Issue: 1.
+
+Filippucci, F.; Gal, P.; Jona-Lasinio, C.; Leandro, A.; and Nicoletti, G. 2024. The impact of Artificial Intelligence on productivity, distribution and growth: Key mechanisms, initial evidence and policy challenges.
+
+Ganguli, D.; Lovitt, L.; Kernion, J.; Askell, A.; Bai, Y.; Kadavath, S.; Mann, B.; Perez, E.; Schiefer, N.; Ndousse, K.; et al. 2022. Red teaming language models to reduce harms: Methods, scaling behaviors, and lessons learned. arXiv. URL: http://arxiv. org/abs/2209.07858 [accessed 2023-09-20].
+
+Gilardi, F.; Kasirzadeh, A.; Bernstein, A.; Staab, S.; and Gohdes, A. 2024. We need to understand the effect of narratives about generative AI. Nature Human Behaviour, 1-2.
+
+Hagerty, A.; and Rubinov, I. 2019. Global AI ethics: a review of the social impacts and ethical implications of artificial intelligence. arXiv preprint arXiv:1907.07892.
+
+Hartmann, D.; De Pereira, J. R. L.; Streitb¨orger, C.; and Berendt, B. 2024. Addressing the regulatory gap: moving towards an EU AI audit ecosystem beyond the AI Act by including civil society. AI and Ethics.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+Hautala, J.; and Heino, H. 2023. Spectrum of AI futures imaginaries by AI practitioners in Finland and Singapore: The unimagined speed of AI progress. Futures, 153: 103247.
+
+Hernandes, R.; and Corsi, G. 2024. Auditing Google's Search Algorithm: Measuring News Diversity Across Brazil, the UK, and the US. arXiv preprint arXiv:2410.23842.
+
+Hilgard, J.; and Li, N. 2017. A Recap: The Science of Communicating Science, volume 1. Oxford University Press.
+
+Ittefaq, M.; Zain, A.; Arif, R.; Ala-Uddin, M.; Ahmad, T.; and Iqbal, A. 2025. Global news media coverage of artificial intelligence (AI): A comparative analysis of frames, sentiments, and trends across 12 countries. Telematics and Informatics, 96: 102223.
+
+Jobin, A.; Ienca, M.; and Vayena, E. 2019. The global landscape of AI ethics guidelines. Nature Machine Intelligence, 1(9): 389-399.
+
+Kieslich, K. 2024. The role of public opinion on ethical AI principles and its implication for a common good-oriented implementation. Ph.D. thesis, Universit¨at Hohenheim.
+
+Kieslich, K.; Diakopoulos, N.; and Helberger, N. 2024. Anticipating impacts: using large-scale scenario-writing to explore diverse implications of generative AI in the news environment. AI and Ethics.
+
+Kieslich, K.; Doˇsenovi´c, P.; and Marcinkowski, F. 2022. Everything, but hardly any science fiction. Technical Report 7, Meinungsmonitor K¨unstliche Intelligenz.
+
+Kieslich, K.; Helberger, N.; and Diakopoulos, N. 2024. My Future with My Chatbot: A Scenario-Driven, UserCentric Approach to Anticipating AI Impacts. In The 2024 ACM Conference on Fairness, Accountability, and Transparency, 2071-2085. Rio de Janeiro Brazil: ACM. ISBN 9798400704505.
+
+Kieslich, K.; Helberger, N.; and Diakopoulos, N. 2025. Scenario-Based Sociotechnical Envisioning (SSE): An Approach to Enhance Systemic Risk Assessments.
+
+Kieslich, K.; L¨unich, M.; and Doˇsenovi´c, P. 2023. Ever Heard of Ethical AI? Investigating the Salience of Ethical AI Issues among the German Population. International Journal of Human-Computer Interaction, 1-14.
+
+Kolt, N. 2025. Governing ai agents. arXiv preprint arXiv:2501.07913.
+
+Leetaru, K.; and Schrodt, P. A. 2013. Gdelt: Global data on events, location, and tone, 1979-2012. In ISA annual convention, volume 2, 1-49. Citeseer.
+
+Lin, H.; Lasser, J.; Lewandowsky, S.; Cole, R.; Gully, A.; Rand, D. G.; and Pennycook, G. 2023. High level of correspondence across different news domain quality rating sets. PNAS nexus, 2(9): pgad286.
+
+Madiega, T. 2021. Artificial intelligence act. European Parliament: European Parliamentary Research Service.
+
+Mazeika, M.; Phan, L.; Yin, X.; Zou, A.; Wang, Z.; Mu, N.; Sakhaee, E.; Li, N.; Basart, S.; Li, B.; et al. 2024. Harmbench: A standardized evaluation framework for automated red teaming and robust refusal, 2024. URL https://arxiv. org/abs/2402.04249.
+
+McCombs, M. E.; and Shaw, D. L. 1972. The agenda-setting function of mass media. Public opinion quarterly, 36(2): 176-187.
+
+McGregor, S. 2021. Preventing repeated real world AI failures by cataloging incidents: The AI incident database. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35, 15458-15463.
+
+Media Cloud. 2025. Collection 9272347. Accessed on January 17, 2025.
+
+Meißner, F. 2024. Risks and opportunities of 'generative A.I.': How do news media cover ChatGPT? In International Crisis and Risk Communication Conference Proceedings. International Crisis and Risk Communication Association.
+
+Mengesha, G. H.; Belay, E. G.; and Adams, R. 2024. Social justice considerations in developing and deploying AI in Africa. Data & Policy, 6: e65.
+
+Metcalf, J.; Moss, E.; Watkins, E. A.; Singh, R.; and Elish, M. C. 2021. Algorithmic impact assessments and accountability: the co-construction of impacts. Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency.
+
+Mitchell, M.; Ghosh, A.; Luccioni, A. S.; and Pistilli, G. 2025. Fully Autonomous AI Agents Should Not be Developed. arXiv preprint arXiv:2502.02649.
+
+Montasari, R. 2023. National artificial intelligence strategies: a comparison of the UK, EU and US approaches with those adopted by state adversaries. In Countering Cyberterrorism: The Confluence of Artificial Intelligence, Cyber Forensics and Digital Policing in US and UK National Cybersecurity, 139-164. Springer.
+
+Nanayakkara, P.; Hullman, J.; and Diakopoulos, N. 2021. Unpacking the expressed consequences of AI research in broader impact statements. In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society, 795-806.
+
+Nechushtai, E.; Zamith, R.; and Lewis, S. C. 2024. More of the same? Homogenization in news recommendations when users search on Google, YouTube, Facebook, and Twitter. Mass Communication and Society, 27(6): 1309-1335.
+
+Newman, N.; Fletcher, R.; Robertson, C. T.; Arguedas, A. R.; and Nielsen, R. K. 2024. Reuters Institute Digital News Report 2024. Report, Reuters Institute for the Study of Journalism, Oxford.
+
+Nguyen, D.; and Hekman, E. 2022. A 'New Arms Race'? Framing China and the U.S.A. in A.I. News Reporting: A Comparative Analysis of the Washington Post and South China Morning Post. Global Media and China, 7(1): 5877.
+
+Nguyen, D.; and Hekman, E. 2024. The news framing of artificial intelligence: a critical exploration of how media discourses make sense of automation. AI & SOCIETY, 39(2): 437-451.
+
+<!-- PageBreak -->
+

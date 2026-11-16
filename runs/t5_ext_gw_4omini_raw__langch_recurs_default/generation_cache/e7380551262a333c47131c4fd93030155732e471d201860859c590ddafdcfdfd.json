@@ -1,0 +1,10 @@
+{
+  "request_hash": "e7380551262a333c47131c4fd93030155732e471d201860859c590ddafdcfdfd",
+  "prompt_sha256": "d162d2b5db65311e139b1c3f9d25ef2b77b1b41274c20a95223ffeb6d2e29662",
+  "answer": "1. In general-sum settings, the reward functions of the leader and follower are not opposite, making the computation of Stackelberg equilibria more complex compared to zero-sum games where Nash and Stackelberg equilibria are interchangeable.\n\n2. The structural properties that lead to efficient computation of Nash equilibria are not sufficient for the case of Stackelberg equilibria, indicating that the latter is more challenging to compute.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMgaztrb9Vev9jeOJTorGGzfOLYE",
+  "prompt_tokens": 7675,
+  "completion_tokens": 85,
+  "actual_usd": 0.00120225
+}

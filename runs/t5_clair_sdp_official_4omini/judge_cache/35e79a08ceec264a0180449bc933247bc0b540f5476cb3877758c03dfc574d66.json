@@ -1,0 +1,14 @@
+{
+  "request_hash": "35e79a08ceec264a0180449bc933247bc0b540f5476cb3877758c03dfc574d66",
+  "prompt_sha256": "4deeb089b375061aaa4b878c3b69f7580400adbb29c86385397f29414565ede3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN6Bm2qfWMcqGpqcuHBO1UPgYySI",
+  "prompt_tokens": 7701,
+  "completion_tokens": 47,
+  "actual_usd": 0.00118335,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer regarding the use of a physical or digital switch to blow fuses and the role of a PUF as a private key."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "899da076e2dc8718fd79cf01d69456555eab86031791e0ab88a8022a470d8999",
+  "prompt_sha256": "28938e42e27fbccf7d09324e4a70aa86c296141ef194ff016900f4057309856e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPDDS2Y3izftBCKVkL3xErS8X3EI",
+  "prompt_tokens": 7834,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012021,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the carbon emissions estimates, including the initial estimate and the factors that contributed to the increase, fully supporting the claims made in the Reference Answer."
+  }
+}

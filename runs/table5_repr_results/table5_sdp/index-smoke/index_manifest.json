@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "status": "complete",
+  "created_at": "2026-11-09T12:00:03.020328+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "embedding_model": "Qwen/Qwen3-Embedding-4B",
+  "embedding_revision": "5cf2132abc99cad020ac570b19d031efec650f2b",
+  "device": "cuda:0",
+  "dtype": "bfloat16",
+  "attention_implementation": "flash_attention_2",
+  "batch_size": 1,
+  "mode": "smoke",
+  "qa_count": 6,
+  "source_documents": 2,
+  "input_qa_sha256": "face0c1b603be0b015dd2da2ae149de7f390aa7edef3af11b40bf7840363a935",
+  "input_prepare_manifest_sha256": "ea17ec5dfc94d05a10f1e5fd2caf776d41e50568f7e5ab5063ea60d3f96c2b71",
+  "document_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "query_prompt_sha256": "df4b2898bf22e00bacddddd489243a3f8793730e38b842ec10161cebd94d36d6",
+  "systems": {
+    "adaptive": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/adaptive/document_store.json",
+      "sha256": "f93bc3a6df1e3ba210c90ba1e091e2b2fb09db3fc41b16043ef60f8b4d7df820",
+      "chunks": 668,
+      "source_documents": 2
+    },
+    "raw__langch_recurs_default": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/raw__langch_recurs_default/document_store.json",
+      "sha256": "4b81489b36c58dd99051bcd5b4e5044ef5bcde090a87198ffd0f23f7c81401a5",
+      "chunks": 670,
+      "source_documents": 2
+    },
+    "raw__page": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/raw__page/document_store.json",
+      "sha256": "912dabe288886b527ce2391638701662eb142b0defec385dd32be48b52b042eb",
+      "chunks": 614,
+      "source_documents": 2
+    },
+    "sdp_a_t600": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_a_t600/document_store.json",
+      "sha256": "c96b77d3547e1152b4d8b6786ecdd4a81672213baa61ad906af61668e9aec899",
+      "chunks": 603,
+      "source_documents": 2
+    },
+    "sdp_b": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_b/document_store.json",
+      "sha256": "4c8a3337a8f1b4b91ce175877c85a22d78350197ef7aa6cb682d57170ce677ac",
+      "chunks": 888,
+      "source_documents": 2
+    },
+    "sdp_bq": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_bq/document_store.json",
+      "sha256": "d3371cb1b5cc896589e1e7550a4d8021585d0af10d3387473c544c4e9431a7ed",
+      "chunks": 874,
+      "source_documents": 2
+    },
+    "adaptive__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/adaptive__doc/document_store.json",
+      "sha256": "b16b36ce630c8a69ef60a50a5761b1ac631ed6f40ed1cd88e7a4d57fdb156360",
+      "chunks": 668,
+      "source_documents": 2
+    },
+    "raw__langch_recurs_default__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/raw__langch_recurs_default__doc/document_store.json",
+      "sha256": "054b522bb034358031e9d180dc0a5d0e71b3d123c5a2afcc7294edd1c04b0a89",
+      "chunks": 670,
+      "source_documents": 2
+    },
+    "raw__page__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/raw__page__doc/document_store.json",
+      "sha256": "42e4914b3938fe7ad8c8b26dfb42cf507e35f369128db6da331bb08aba502d0c",
+      "chunks": 614,
+      "source_documents": 2
+    },
+    "sdp_a_t600__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_a_t600__doc/document_store.json",
+      "sha256": "ea1d4fc9385a8c77f9b4f91f3ae550cf3ebf28047fff5a1f5f14a5883ce6e857",
+      "chunks": 603,
+      "source_documents": 2
+    },
+    "sdp_b__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_b__doc/document_store.json",
+      "sha256": "208e674ee6cb1c17a07a655e7a8b06348ed046cfeb941430a0b66e689f11d6da",
+      "chunks": 888,
+      "source_documents": 2
+    },
+    "sdp_bq__doc": {
+      "status": "created",
+      "path": "/workspace/table5_sdp/index-smoke/sdp_bq__doc/document_store.json",
+      "sha256": "b2145739bb08d8b92084aea2840ff2dd9d9d871661a46ea857d791271f8f01c4",
+      "chunks": 874,
+      "source_documents": 2
+    }
+  },
+  "runtime": {
+    "python": "3.11.18 (main, Oct 26 2026, 15:28:55) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39"
+  },
+  "gpu": {
+    "name": "NVIDIA RTX A5000",
+    "compute_capability": [
+      8,
+      6
+    ],
+    "bf16_supported": true,
+    "torch_version": "2.6.0+cu124",
+    "flash_attn_version": "2.7.4.post1"
+  },
+  "environment": {
+    "path": "/workspace/table5_sdp/environment.txt",
+    "sha256": "f13fd97cd9b4c315c8845f55cfb918abaf72b555815b019f37c0c94364c8f341"
+  }
+}

@@ -1,0 +1,527 @@
+DOCUMENT: ENISA Multilayer Framework for Good Cybersecurity Practices for AI
+
+<<<PAGE 21>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+<Figure>
+Figure 9: AI characteristics mapping to policy documents
+</Figure>
+
+# Security controls
+
+On the other hand, specific ML security controls can be mapped for the introduced threats to provide efficient ways of prevention and mitigation. For evasion, tools can be implemented to detect whether a given input is an adversarial example, adversarial training can be used to make the model more robust, and models that are less easily transferable can be used to significantly decrease the ability of a given attacker to properly study the algorithm that works underneath the system.
+
+Similarly, for poisoning attacks, processes that maintain the security levels of ML components over time should be implemented, the exposure level of the used model should be assessed, the training data set should be enlarged as much as possible to reduce its susceptibility to malicious samples, and pre-processing steps that clean the training data from such malicious samples must also be considered.
+
+Model or data disclosure can be protected by applying proper access control and federated learning to minimise the risk of data breaches. Similarly, to reduce the level of compromise of ML application components, these should be compliant with protection policies, fully integrated to existing security operations and asset management processes, and evaluated according to the level of security of their foundation blocks (e.g. libraries that are responsible for the algorithm implementation). Finally, to prevent failure or malfunction of ML applications, employed algorithms should have their bias reduced, should be properly evaluated to ensure that they are resilient to the environment in which they will operate and should encompass explainability strategies.
+
+June 2023
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+<Figure>
+Figure 10: The relation between AI threats and security controls
+</Figure>
+
+# Security testing
+
+In 2022, the ETSI working group on AI published draft of Security Testing of AI 61 . This report identifies methods and techniques that are appropriate for security testing of ML-based components. The scope of this report covers the following elements.
+
+· Security testing approaches for AI (used to generate test cases that are executed against the ML component).
+
+· Security test oracles for AI (enable the calculation of a test verdict to determine whether a test case has passed, i.e. no vulnerability has been detected, or failed, i.e. a vulnerability has been identified).
+
+· Definitions of test adequacy criteria for security testing (used to determine the overall progress and can be employed to specify a stop condition for security testing).
+
+According to the report, security testing of AI does not end at the component level. As for testing of traditional software, its integration with other components of a system needs to be tested as well.
+
+Security testing of AI has some commonalities with security testing of traditional systems, but also provides new challenges and requires different approaches, due to:
+
+· significant differences between subsymbolic AI and traditional systems that have strong implications on their security and on how to test their security properties;
+
+· non-determinism that may result from self-learning, i.e. AI-based systems may evolve over time and as a consequence, security properties may degrade;
+
+· the test oracle problem, where assigning a test verdict is different and more difficult for AI-based systems, since not all expected results are known a priori;
+
+· data-driven algorithms, where in contrast to traditional systems, (training) data forms the behaviour of subsymbolic AI.
+
+# AI-related standards
+
+Several initiatives are underway to provide standards and specific guidelines for AI security and trustworthiness: ISO/IEC is working on RM, trustworthiness and management systems; ETSI provides an AI threat ontology and data supply chain security, among other items; and IEEE is working on AI explainability. In this section, a list of the current available standards and initiatives is presented. The reader can find a list with AI-related standards in Annex II.
+
+# Ethical and trustworthy AI
+
+Besides the standardisation organisations, other groups are also working on guidelines for ethical and trustworthy AI. The following list shows some examples that we identified during our desktop research:
+
+\* 61 https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=58860
+
+June 2023
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI June 2023 -->
+
+# Tools
+
+In addition to legislation and standards, we have identified other initiatives and tools that focus on a more practical approach to assess and guide the achievement of AI security and risk assessment.
+
+· The Assessment List for Trustworthy Artificial Intelligence 67 is a practical tool that helps businesses and organisations to self-assess the trustworthiness of their AI systems under development. It was developed by the High-Level Expert Group on Artificial Intelligence in the Ethics Guidelines for Trustworthy Artificial Intelligence report, which provides a detailed assessment list.
+
+· The OECD 68 provides a classification of AI systems and tools for developing trustworthy AI systems.
+
+· MITRE ATLAS 69 is a knowledge base of adversary tactics, techniques and case studies for ML systems based on real-world observations, demonstrations from ML red teams and security groups, and the state of the possible from academic research. ATLAS is modelled after the MITRE ATT&CK framework and its tactics and techniques are complementary to those in ATT&CK.
+
+· AI security risk assessment 70 . Counterfit is an automation tool for security testing AI systems as an open-source project. Counterfit helps organisations conduct AI security risk assessments to ensure that the algorithms used in their businesses are robust, reliable, and trustworthy. This tool was provided by Microsoft as a means to automate techniques in MITRE's Adversarial ML Threat Matrix.
+
+· GuardAI 71 is a platform for evaluating AI model robustness against adversarial attacks and natural noises. The goal of GuardAI is to simulate adversarial and malicious inputs, which can fool AI models and force AI applications to make wrong predictions. GuardAI supports different techniques of adversarial attacks, noise, domain adaptation simulation, popular ML frameworks and main computer vision tasks.
+
+# Networks and initiatives
+
+Apart from the above, various Commission research projects related to AI can also be useful as they promote AI values, such as trustworthiness and responsibility, and bring together different AI stakeholders from research to business. Below are examples of the initiatives and networks, we have identified during our market analysis, however this is by no means a complete list as new ones are created on ongoing basis.
+
+· The European AI on demand platform 72 is a facilitator of knowledge transfer from research to multiple business domains. The platform serves as a catalyst to aid AIbased innovation, resulting in new products, services and solutions to benefit European industry, commerce and society. The platform aims to create value, growth, and jobs in Europe through an ecosystem and a collaborative platform that unites the AI community, promotes European values and supports research on human-centred
+
+\* 62 European Commission, Ethics Guidelines for Trustworthy AI, High-Level Expert Group on Artificial Intelligence, Brussels, 2019, https://digitalstrategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai.
+
+\* 63 Hasselbalch, G., Data Ethics of Power - A human approach in the big data and AI era, Edward Elgar Publishing, Cheltenham, 2021, https://www.eelgar.com/shop/gbp/data-ethics-of-power-9781802203103.html.
+
+64 Hasselbalch, G., Kofod Olsen, B. and Tranberg, P., White paper on data ethics in public procurement of AI-based services and solutions,
+
+DataEthics.eu, Denmark, 2020, https://dataethics.eu/wp-content/uploads/dataethics-whitepaper-april-2020.pdf.
+
+\* 65 Leong, B., Hall, P., '5 things lawyers should know about artificial intelligence', Mind Your Business column, ABA Journal, 2021,
+
+https://www.abajournal.com/columns/article/5-things-lawyers-should-know-about-artificial-intelligence.
+
+\* 66 Shea, T., 'How brain-inspired technologies can support ethical AI', LinkedIn post, 2021, https://www.linkedin.com/pulse/how-brain-inspiredtechnologies-can-support-ethical-ai-tim-shea.
+
+\* 67 https://futurium.ec.europa.eu/en/european-ai-alliance/pages/altai-assessment-list-trustworthy-artificial-intelligence.
+
+\* 68 OECD, OECD Framework for the Classification of AI Systems, OECD digital economy papers, No 323, 2022, https://oecd.ai/en/classification.
+
+\* 69 https://atlas.mitre.org/.
+
+\* 70 https://github.com/Azure/counterfit.
+
+\* 71 https://www.navinfo.eu/services/cybersecurity/guardai/.
+
+\* 72 https://www.ai4europe.eu/.
+
+· Ethics Guidelines for Trustworthy Artificial Intelligence 62 ;
+
+· Data Ethics of Power. A Human Approach in the Big Data and AI Era 63 ;
+
+· White Paper on Data Ethics in Public Procurement of AI based Services and Solutions 64 ;
+
+· 5 things lawyers should know about artificial intelligence 65 ;
+
+· How brain-inspired technologies can support ethical AI 66 .
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+and trustworthy AI.
+
+· ALLAI 73 is an independent Dutch organisation dedicated to drive and foster responsible AI. ALLAI's vision is responsible AI for a world where AI is developed, deployed and used responsibly, i.e. in a safe and sustainable manner and in line with ethical principles, societal values, existing and new laws and regulations, human rights, democracy and the rule of law.
+
+· The Confederation of Laboratories for Artificial Intelligence Research in Europe 74 seeks to strengthen European excellence in AI research and innovation. The network forms a pan-European Confederation of Laboratories for Artificial Intelligence Research in Europe. Its member groups and organisations are committed to work together towards realising the vision of CLAIRE: European excellence across all of AI, for all of Europe, with a human-centred focus.
+
+· The European Network of Human-centred AI 75 aims to facilitate a European brand of trustworthy, ethical AI that enhances human capabilities and empowers citizens and society to effectively deal with the challenges of an interconnected globalized world.
+
+· The D-seal initiative 76 is the new labelling programme for IT security and responsible use of data in Denmark. It provides interesting guidelines and criteria on how to combine IT security and responsible use of data in the same label, with AI as one of the criteria.
+
+· AI testing and experimentation facilities have been included by the Commission in the Digital Europe Programme. These are meant to be large-scale reference sites for 'testing state-of-the-art AI-based soft and hardware solutions and products' 77 .
+
+# New challenges
+
+The security of AI should be considered at all stages of its life cycle, taking into account the following elements.
+
+· AI systems are multi-disciplinary socio-technical systems and their threats are technical, societal, ethical and legal. Collaboration between cybersecurity experts, data scientists, social scientists, psychologists and legal experts is needed in order to identify the continuous evolving AI threat landscape and develop corresponding countermeasures.
+
+· Among the different types of AI described in Section 2.3.3, ML and DL undoubtedly pose the main challenges to security and imply a dynamic analysis of the threats, both along the life cycle and in the interrelations within other blocks of an ICT infrastructure.
+
+· AI-specific risk assessment efforts need to consider their unique properties and enhance their robustness, resilience, fairness and explainability, along with preventing loss of transparency, loss of managing bias and loss of accountability.
+
+· Assigning a test verdict is different and more difficult for AI-based systems, since not all of the expected results are known a priori.
+
+# 2.3. LAYER III - SECTOR-SPECIFIC CYBERSECURITY GOOD
+
+# PRACTICES
+
+AI is a technology that has entered all economic sectors (e.g. automotive, health, maritime, finance). The third layer of the FAICP framework provides additional recommendations and best practices available in order to address cybersecurity issues in the AI systems used in some of these sectors.
+
+While almost every economic sector already relies on AI systems, we have identified below only those sectors for which we managed to find relevant cybersecurity guidelines. Additionally, ENISA's reports can be used to identify sectoral threats (e.g. 5G, AI, supply chain).
+
+# Energy
+
+\* 73 https://allai.nl/.
+
+\* 74 https://claire-ai.org/.
+
+\* 75 https://www.humane-ai.eu/.
+
+\* 76 https://d-seal.eu/.
+
+\* 77 https://digital-strategy.ec.europa.eu/en/activities/testing-and-experimentation-facilities.
+
+June 2023
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI June 2023 -->
+
+The emergence of industrial automation and control systems, AI, smart grids and autonomous devices have made the energy sector a target for cyberattacks, while the existing interconnectivity and the rapidly complexity of the underlying infrastructures increase the security threats and their cascading effects.
+
+The energy sector uses different IoT devices (e.g. miniaturised sensors to monitor transmission pipelines); drilling rigs and robots to inspect and repair infrastructure; virtual power plants, microgrids or cloud management services for solar, building automation; new applications with close integration of demand and response providing unparalleled flexibility; expanded telecommunication infrastructures and networks with increased usage of mobile devices. However, all of these technologies (mostly from foreign manufacturers) have many vulnerabilities and a high number of potential attack points, increasing the cybersecurity challenge in the clean energy industry, as described in the 2019 ENISA report Industry 4.0 Cybersecurity: Challenges and recommendations 78 .
+
+Therefore, operators, stakeholders and networks must urgently focus on security as part of their ICT and IT infrastructure, in order to enhance their information security and privacy practices and address the origins of their main security problems. These may include remote work during operations and maintenance, using technologies with known vulnerabilities, new highly-interconnected services, a limited cybersecurity culture among vendors, suppliers and contractors, data networks between on- and offshore facilities and outdated control systems in facilities.
+
+# The following best practices can provide guidance to AI stakeholders in the energy sector:
+
+· Cybersecurity in the energy sector 79 ;
+
+· Transforming the energy industry with AI 80 ;
+
+· Artificial Intelligence for Energy Systems Cybersecurity (The National Renewable Energy Laboratory report) 81 ;
+
+· ENISA report EU Cybersecurity Market Analysis - IoT in distribution grids 82 .
+
+# Health
+
+Many medical devices - from glucose meters, insulin pumps, virtual home assistants and cardioverter defibrillators to smart wearable devices, sophisticated software and hospital equipment, along with medical services and applications - are connected over the network and often use AI technologies. Although new connected medical devices help in fighting the increasing cost of healthcare - by reducing the need for hospitalisation, developing personalised therapies and creating intelligent point-of-care diagnostic tools - they also introduce new cybersecurity risks and their interoperability, security and resilience levels are considered to be low. Recently, an attack crippled more than 400 hospitals across Puerto Rico, the United Kingdom and the United States ( 83 ).
+
+# There are three primary attack vectors through which connected medical devices might be compromised.
+
+· Devices. Cybercriminals exploit device vulnerabilities that exist in their memory, firmware, physical interface, web interface or network services. Other aspects such as unsecure default settings, outdated components and unsecure update mechanisms can also be exploited. Outdated legacy devices are the main targets, due to their unpatched implemented vulnerabilities.
+
+· Communication channels. A device can be compromised by attacking the channels used to connect it with another device. In this vector, spoofing and denial of service attacks are common. Conventional wireless sensor networks consist of wireless nodes equipped with antennas, which broadcast radio signals in all directions and are consequently prone to eavesdropping attacks. An attacker can use this data to introduce themselves as an authorised member to launch an impersonation attack. Thus, eavesdropping is very simple for an attacker while the patient data is transmitting
+
+\* 78 ENISA, Industry 4.0 Cybersecurity: Challenges and recommendations, 2019, https://www.enisa.europa.eu/publications/industry-4-0-cybersecuritychallenges-and-recommendations.
+
+\* 79 ENERGY EXPERT CYBER SECURITY PLATFORM, Cyber Security in the Energy Sector, February 2017,
+
+\* https://energy.ec.europa.eu/system/files/2017-03/eecsp_report_final_0.pdf 80 MIT Technology Review Insights, Transforming the Energy Industry with AI, 2021, https://assets.siemensenergy.com/siemens/assets/api/uuid:4b6f1e50-6639-4cb9-8a5d-85ac8e29c807/siemensreportv10.pdf?ste_sid=88ed48911b29356753651e2fd4237fae.
+
+\* 81 Macwan, R., King, R., Artificial Intelligence for Energy Systems Cybersecurity, National Renewable Energy Laboratory, NREL/PR-5R00-81098, 2021, https://www.nrel.gov/docs/fy22osti/81098.pdf.
+
+\* 82 ENISA, EU Cybersecurity Market Analysis - IoT in distribution grids, 2022, https://www.enisa.europa.eu/publications/eu-cybersecurity-marketanalysis-iot-in-distribution-grid.
+
+\* 83 Wired, A Ransomware Attack Has Struck a Major US Hospital Chain, 2020, https://www.wired.com/story/universal-health-services-ransomwareattack/.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+from the body area network to the caregiver device. Hence, patient privacy is breached.
+
+· Applications and software. Cybercriminals can exploit vulnerabilities in web applications and related software for connected devices. For example, web applications can be targeted to steal user credentials or push malware. There is an urgent need to provide a solution where manufacturers can easily identify, estimate, mitigate and audit by design all cybersecurity risks of connected devices (hardware, software and integrated medical frameworks consisting of various modular components), in order to ensure their security and resilience and progress towards a resilient and trustworthy EU healthcare ecosystem.
+
+Regulators around the globe have increasingly pursued medical device cybersecurity as a policy objective over the past few years. In the EU, the first piece of guidance on cybersecurity on medical devices (MDCG-2019-16) 84 was issued in July 2020 by the EU's Medical Devices Coordination Group.
+
+The EU has included the health sector among its critical information infrastructures and is developing cybersecurity legislation and directives that impose cybersecurity and privacy RM (e.g. GDPR, NIS), supply chain security (e.g. NIS 2), secure authentication and access of healthcare e-services (e.g. eIDAS) and cybersecurity certification (e.g. CSA, AI liability directive, European Chips Act).
+
+# The following best practices can provide guidance to AI stakeholders in the healthcare sector.
+
+· Definitions/Characteristics of Artificial Intelligence in Health Care (ANSI/CTA-2089.1) 85
+
+· Whitepaper for the ITU/WHO focus group on artificial intelligence for health 86 ,
+
+· ENISA report Smart Hospitals - Security and resilience for smart health service and infrastructures 87
+
+· ENISA report Deploying Pseudonymisation Techniques - The case in the health sector 88 .
+
+# Automotive
+
+New generations of cars are making use of advances in the field of AI. Autonomous vehicles are systems that rely on autonomous driving capabilities using AI on a perception-planning-control pipeline. Designing an
+
+is a challenging problem that requires tackling a wide range of environmental conditions (lightning, weather, etc.) and multiple complex tasks. These include road following, obstacle avoidance, abiding with traffic laws, smooth driving style, manoeuvre coordination with other elements of the ecosystem (e.g. vehicles, scooters, bikes, pedestrians) and control of the commands of the vehicle.
+
+The joint ENISA/JRC report Cybersecurity challenges in the uptake of artificial intelligence in autonomous driving 89 analyses cybersecurity vulnerabilities related to AI, identifies related challenges and provides recommendations for securing autonomous vehicles. Five hypothetical scenarios are presented to illustrate the exploitation of AI vulnerabilities in an automotive context, using both classical cybersecurity and AI-specific vulnerabilities:
+
+· adversarial perturbations against image processing models for street sign recognition and lane detection;
+
+· man-in-the-middle attacks on the planning module;
+
+· data poisoning attacks on stop sign detection;
+
+· attacks related to large-scale deployment of rogue firmware after hacking backend servers of original equipment manufacturers;
+
+\* 84 MDCG 2019-16 Guidance on Cybersecurity for medical devices, 2019,
+
+\* https://ec.europa.eu/docsroom/documents/41863/attachments/1/translations/en/renditions/native.
+
+\* 85 ANSI, ANSI/CTA-2089.1-2020 - Definitions/characteristics of artificial intelligence in health care, 2020, https://webstore.ansi.org/Standards/ANSI/ANSICTA20892020.
+
+\* 86 Wiegand, T., Lee, N., Pujari, S., Singh, M., Xu, S., Kuglitsch, M., Lecoultre, M., Riviere-Cinnamond, A., Weicken, E., Wenzel, M., Werneck Leite, A., Campos, S. and Quast, B., Whitepaper for the ITU/WHO focus group on artificial intelligence for health, Focus Group on Artificial Intelligence for Health, ITU and WHO, 2023, https://www.itu.int/en/ITU-T/focusgroups/ai4h/Documents/FG-AI4H_Whitepaper.pdf.
+
+\* 87 ENISA, Smart Hospitals - Security and resilience for smart health service and infrastructures, 2016, https://www.enisa.europa.eu/publications/cybersecurity-and-resilience-for-smart-hospitals.
+
+\* 88 ENISA, Deploying Pseudonymisation Techniques - The case of the health sector, 2022, https://www.enisa.europa.eu/publications/deployingpseudonymisation-techniques.
+
+\* 89 Dede, G., Hamon, R., Junklewitz, H., Naydenov, R., Malatras, A. and Sanchez, I., Cybersecurity challenges in the uptake of artificial intelligence in autonomous driving, ENISA and Joint Research Centre, Publications Office of the European Union, Luxembourg, 2021,
+
+https://www.enisa.europa.eu/publications/enisa-jrc-cybersecurity-challenges-in-the-uptake-of-artificial-intelligence-in-autonomous-driving/.
+
+June 2023
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+· attacks related to sensor/communication jamming and global navigation satellite system spoofing.
+
+In the 2019 report ENISA Good Practices for Security of Smart Cars 90 , security measures against AI vulnerabilities, such as being tricked by adversarial attacks and data falsification/manipulation, were already identified. The International Telecommunication Union (ITU) Focus Group on AI for autonomous and assisted driving supports standardisation activities for services and applications enabled by AI systems 91 . The group focuses on the behavioural evaluation of AI responsible for the dynamic driving task in accordance with the 1949 and 1968 Convention on Road Traffic of the UNECE Global Forum for Road Safety. In 2021, the group also published the report FGAI4AD-02 - Automated driving safety data protocol - Ethical and legal considerations of continual monitoring 92 .
+
+# Telecommunications
+
+While modern networks are becoming more sophisticated, the telecommunications industry can benefit from data recovered from networks, mobile applications, customer insight, profile, technology, billing data and services through the integration of AI and help the industry in self-optimising networks, security and predictive measures. AI use cases related to telecom include the following.
+
+· Network optimisation. Networks are managed by AI systems and ML algorithms that predict and detect network abnormalities. AI is also used to optimise and configure various networks, so that it is easy for end users to leverage the advantage of stable network performance.
+
+· Virtual assistants and chatbots. The telecommunications industry is leveraging the power of AI to implement chatbots and virtual assistants, which can deliver round-theclock support and assistance to customers without any waiting time.
+
+· Predictive maintenance. AI-enabled predictive analytics is helping the telecom sector to maintain high levels of service and products to customers.
+
+· Security and fraud detection. ML algorithms are used to detect and prevent fraudulent activities. AI-driven alerts can notify customers and telecom operators in real time.
+
+The ITU Focus Group on Machine Learning for Future Networks including 5G has published a technical specification on unified architecture for ML in 5G and future networks 93 . The presented logical architecture establishes a common vocabulary and nomenclature for ML functions and their interfaces to allow standardisation and interoperability for ML functions in 5G and future networks.
+
+The Dutch Radiocommunications Agency published the report Managing AI use in telecom infrastructures - Advice to the supervisory body on establishing risk-based AI supervision 94 , which addresses the current and future risks of applying AI in the telecom sector, along with their supervision and ways to mitigate them.
+
+# New challenges
+
+Horizontal threats and cybersecurity challenges exist in every economic sector (automotive, energy, health, etc.), independently of how AI is being used. Fragmented recommendations, best practices, solutions and tools for horizontal issues become stumbling blocks for guiding sectoral stakeholders. Collaboration among sectoral stakeholders and information sharing and analysis centres (ISACs) is recommended to best address horizontal challenges. Sector-specific issues and mitigation measures need to be listed and published to serve as 'lessons learned' for other sectors.
+
+\* 90 https://www.enisa.europa.eu/publications/smart-cars.
+
+\* 91 https://www.itu.int/en/ITU-T/focusgroups/ai4ad/Pages/default.aspx.
+
+\* 92 ITU, Automated driving safety data protocol - Ethical and legal considerations of continual monitoring, Focus Group on AI for autonomous and assisted driving (FG-AI4AD), Technical Report, 2021, https://www.itu.int/pub/T-FG-AI4AD-2021-02.
+
+\* 93 ITU, Unified architecture for machine learning in 5G and future networks, Focus group on Machine Learning for Future Networks including 5G (FGML5G), Technical Specification, 2019, https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-ML5G-2019-PDF-E.pdf.
+
+\* 94 van der Vorst, T., Jelicic, N., van Rees, J., Bekkers, R., Brennenraedts, R. and Bakhyshov, R., Managing AI use in telecom infrastructures - Advice to the supervisory body on establishing risk-based AI supervision, Dialogic innovatie & interactie, Utrecht, 2020, https://www.dialogic.nl/en/projects/managing-ai-use-in-telecom-infrastructures/.
+
+June 2023
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI June 2023 -->
+
+# 3. SURVEY ANALYSIS
+
+The proposal for the AI Act 95 regulation contains various requirements for providers and operators of AI systems, including cybersecurity requirements for high-risk AI systems. The objective of the survey was to collect information from the EU NCAs about existing national cybersecurity requirements for AI, to determine how compliance with these requirements is monitored and enforced nationally and to evaluate whether certain practices/requirements established under the AI Act have already been implemented at the MS level.
+
+In this section of the report, the methodology used to develop the survey is described and the results of the survey are analysed. The complete questionnaire is available in Annex I.
+
+# 3.1. METHODOLOGY
+
+The questionnaire is based on the cybersecurity concepts described in the FAICP framework, on the main principles (related to cybersecurity) of the proposed AI Act and the Coordinated Plan on AI 96 and on the harmonised rules related to cybersecurity as reported in the explanatory memorandum.
+
+<Figure>
+Figure 11: Methodology to structure the questionnaire
+</Figure>
+
+Based on this, we identified and structured the survey according to five policy areas identified in the AI national strategies.
+
+· Human capital (education, training and lifelong learning / labour market / intelligence and skills demand). This area targets all policies to foster the educational development of people. The focus of the survey is to identify whether and how AI security is being considered in all forms of education and existing awareness initiatives, and about hands-on skills and practical capabilities about AI.
+
+· From the lab to the market (R & D/innovation/testing). This encompasses policy initiatives to encourage research and innovation in AI towards business growth in the private sector and increased efficiency of public services. The focus here is to understand national funding and research activities on the security of AI, along with sandboxes, cyber-ranges, simulation, testing environments and methodologies and tools.
+
+· Networking (collaboration/dissemination and uptake). This includes policy initiatives related to AI collaborations across private and/or public sectors and directed to increasing the (inter)national attractiveness of the country. It also includes policies related to the dissemination and uptake of AI.
+
+\* 95 See footnote 1 .
+
+\* 96 See footnote 4 .
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+· Infrastructure (digital and telecom/data). This area highlights policies for the development of ethical guidelines, legislative reforms and (international) standardisation.
+
+· Regulation (NLF legislation and trustworthy frameworks / AI standards / compliance with the GDPR). The focus here is on policies for the development of ethical guidelines, legislative reforms and (international) standardisation.
+
+In Annex I, Table 2 provides a detailed overview of the policy areas under consideration, the associated types of public and private initiatives and their relation to cybersecurity in AI.
+
+# 3.2. SURVEY ANALYSIS
+
+The survey was distributed to NCAs that deal with cybersecurity and/or AI. We received 10 responses to the survey, which are analysed below. The survey contained 30 questions, of which 14 were mandatory, organised within the five policy areas mentioned above. The mandatory questions are marked with (M).
+
+# Human capital
+
+Cybersecurity plays a crucial role in ensuring that AI systems are resilient against attempts to alter their use, behaviour, performance or compromise their security properties by malicious third parties exploiting the systems' vulnerabilities. Raising practical skills and capabilities in handling emerging AI cyber threats and challenges is important in the future development of AI systems.
+
+(1) Have you built / do you plan to build synergies with educational authorities/institutions to increase AI cybersecurity capabilities at all levels of education? If yes, please elaborate. (M)
+
+At this level, most of the MS mention formal and informal collaboration between different entities, such as universities, computer societies, centres for cybersecurity and legal authorities, on the promotion of cybersecurity capabilities. However, most of them do not yet have AI security topics ready.
+
+Concerning AI-specific security, one of the MS mentioned an AI observatory that is part of the national strategy for AI and that will bring together all levels of education on AI, including security. Another MS reported on studies conducted in collaboration with universities that focus on analyses of legal aspects of AI and its cybersecurity implications, in particular the usage of AI to carry out cyberattacks.
+
+(2) Do you offer awareness raising campaigns about the secure development and use of AI solutions? If yes, please elaborate. (M)
+
+The MS recognise AI as an emerging and disruptive technology. They encourage public discussion on AI security and support promoting safe, trustworthy and democratic AI which respects the rights and welfare of humans and EU principles. No specific campaigns have been conducted, but two MS mentioned the regular publication of studies and white papers related to this topic. Another MS has already published guidance on security of AI, including a label for digitally responsible businesses to cover cybersecurity, privacy and trustworthy AI.
+
+(3) Do you provide guidance and best practices on how to improve AI security? If yes, please elaborate. (M)
+
+Four MS mentioned related measures, such as: (i) the collection of information on successful examples and best practices of using AI both in the private and public sectors, as well as information on the impact of AI activities on the fundamental rights of natural persons; and (ii) the publication of rules for governments on how to maintain and develop emerging and disruptive technologies without national security disruption. More thorough initiatives were also reported: two MS provide guidance on the security and RM measures during the AI life cycle. One of these reports was also disseminated as a webinar that reached over 500 people in this MS. One MS supports organisations by providing a self-assessment tool for AI security.
+
+(4) Do you consider AI cybersecurity in syllabus of courses dedicated to AI or to cybersecurity? If yes, please elaborate.
+
+June 2023
+
+<!-- PageFooter: 28 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI June 2023 -->
+
+(5) Do you offer practical trainings to the AI stakeholders and can elaborate to which stakeholders? If yes, please elaborate.
+
+For these two questions, none of the 10 MS reported on ongoing specific modules on AI cybersecurity, although these concerns are expected to be addressed in AI courses. Regarding the practical trainings, self-learning material was mentioned by one MS.
+
+(6) Do you organise national, regional and cross-border cybersecurity exercises enabling the upskilling of the AI stakeholders? If yes, please elaborate.
+
+Despite existing cross-border cybersecurity exercises, nothing specific to AI security was reported in response to this question.
+
+# Conclusions
+
+MS recognise the need to consider the security of AI at all levels of education and a good engagement with the educational community on cybersecurity topics. However, they do not yet provide specific courses or training dedicated to AI security. Regarding awareness campaigns and guidance, it is worth mentioning that one MS mentioned a label for digitally responsible businesses to cover both cybersecurity, privacy, and trustworthy AI, while another mentioned a report on self-assessment guidance for AI/ML risk over the life cycle. Figure 12 illustrates this tendency.
+
+<Figure>
+Figure 12: Overview of AI-related 'Human capital' answers
+</Figure>
+
+# From the lab to the market
+
+According to the coordinated plan on AI, supporting AI research and innovation related to threats and attacks on AI and offering solutions for testing promising AI solutions is critical to ensure cybersecurity obligations in the uptake of developments from the lab to the market.
+
+(7) What type of support (funding/scholarships/collaboration opportunities) do you offer to increase the cybersecurity capabilities of newly innovative solutions that rely on AI? (M)
+
+Two MS mentioned projects where AI is used as an enabler of cybersecurity and one MS mentioned involvement on research initiatives about the secure use of AI. Two other MS reported on the opening of calls regarding AI.
+
+(8) Have you informed national AI stakeholders on cybersecurity requirements set by the NCAs for their AI products and how do you do it? (M)
+
+Most of the MS are not yet applying any information regarding cybersecurity requirements for AI products and expect the AI Act to provide guidance on how to do it. One of the MS mentioned some workshops and labs with this aim, while another mentioned the existence of a direct contact with national and international stakeholders to inform them about new requirements.
+
+<!-- PageFooter: 29 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI June 2023 -->
+
+(9) How do you monitor if such requirements have been met? (M)
+
+There were no answers relating to monitoring whether external AI solutions meet security requirements, however one MS mentioned that this is done by external companies.
+
+(10) What are the means that you use to support SMEs/MEs to secure their AI products?
+
+Aligned with the answers from question 3, under the topic of human labour, two MS provide guidance about AI security awareness, although used voluntarily, and the self-assessment mode regarding risks through the entire AI life cycle. Another MS related that, besides studies and white papers, there is also direct communication to discuss new trends and developments in the area. However, this MS does not provide any kind of classical consulting or assistance during development.
+
+(11) Do you have/promote testing environments, like sandboxes/cyber ranges/simulation platforms to test and evaluate AI vulnerabilities before market? How?
+
+Three MS mentioned the usage of sandboxes, cyber ranges and test platforms, where companies can test their solutions, however these solutions are of a general ICT nature and not AI-specific.
+
+(12) Do you have specific measurements / key performance indicators (KPIs)/metrics that the AI stakeholders are required to use?
+
+Nothing specific to AI was mentioned, with some MS mentioning the lack of experience on security issues related to AI, and others mentioning the expectation about the AI Act to provide guidance in this area.
+
+(13) How do you inform the national stakeholders about the relevant legal instruments and standards available (e.g. regulatory sandboxes)?
+
+Three MS reported having that information available and sharing it through channels such as white papers, websites and social media.
+
+# Conclusions
+
+As we can see in Figure 13, few MS mentioned having mechanisms concerning R & D, innovation and testing dedicated to AI security. We also found some expectations the MS that the AI Act will bring some light to this topic.
+
+<Figure>
+Figure 13: Overview of AI-related 'From the lab to the market' answers
+</Figure>
+
+<!-- PageFooter: 30 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+<!-- PageHeader: A multilayer framework for good cybersecurity practices for AI -->
+
+# Networking
+
+According to the AI Act (but also to NIS and the NIS 2), AI providers will be obliged, among other aspects, to inform NCAs about serious incidents or breaches as soon as they become aware of them, along with any recalls or withdrawals of AI systems from the market. NCAs will then collect all the necessary information and investigate the incidents/malfunctions.
+
+(14) Have you developed/plan to develop national incident management or handling procedures considering AI?
+
+Three MS mentioned that AI-related incidents must be reported following regular cybersecurity incident reporting procedures.
+
+(15) Are there national initiatives with focus on collaboration about threat intelligence (AI threats, vulnerabilities and security controls) to the users/community?
+
+MS recognise AI threats as very significant and highlight the potential use of AI by criminals. Despite not having explicitly and dedicated initiatives related to security of AI, three MS mentioned that AI threats are shared through existing mechanisms, provided by the national units on threat intelligence.
+
+(16) Is there a collaboration with the national CSIRT/CERTs, ISACS for the efficient handling of AI-related incidents?
+
+No MS reported on specific mechanisms or entities to handle AI-specific incidents, but three MS (aligned with the answers given on the three previous questions) clarified that regular cybersecurity procedures and mechanisms should be used and that information will then be shared with existing ISACs when appropriate. One of the MS mentioned that at present, no AI-related incidents were registered.
+
+(17) Do you/promote/inform about new initiatives on AI security and vulnerabilities sharing? Like a catalogue of pointers to initiatives (e.g. NIST AI framework)?
+
+One MS mentioned that it is aware of the NIST AI framework, but uses its own guidelines and a set of rules on how to maintain and develop emerging and disruptive technologies, including AI, without national security disruption.
+
+(18) Have you developed appropriate collaboration with the national AI stakeholders for information sharing?
+
+One MS reported to be in direct contact with the most important stakeholders, while another MS mentioned that the collaboration is just starting and is happening on an informal basis through the Competent Authorities on AI (CA@AI) working group, which was established in 2021.
+
+High-risk AI systems should perform consistently throughout their life cycle and meet an appropriate level of cybersecurity in accordance with the generally acknowledged state of the art. The level of accuracy and accuracy metrics should be communicated to the users (rule 49 in the explanatory memorandum).
+
+(19) Have you defined/developed/use specific cyber measurements/metrics at national level that AI stakeholders are required to use? If yes, please elaborate.
+
+Nothing specific to AI was reported.
+
+(20) How do you monitor/audit the level of the cybersecurity of the AI systems throughout their life cycle? Please elaborate.
+
+One of the MS reported the establishment of a national committee for AI ethics and reliability, and another MS mentioned that all public sector organisations and all medium and large-sized enterprises that operate AI systems are obliged to maintain a registry with information about their AI systems (AI systems register), containing the measures taken by the organisation or enterprise to ensure the safe usage and operation of its AI systems.
+
+June 2023
+
+<!-- PageFooter: 31 -->
+
+<!-- PageBreak -->
+

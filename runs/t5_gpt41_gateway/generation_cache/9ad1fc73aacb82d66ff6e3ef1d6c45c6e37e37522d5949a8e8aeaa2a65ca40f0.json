@@ -1,0 +1,10 @@
+{
+  "request_hash": "9ad1fc73aacb82d66ff6e3ef1d6c45c6e37e37522d5949a8e8aeaa2a65ca40f0",
+  "prompt_sha256": "dd90af1063fc0487a85e69af488f6c7be280e94d6d7352820ff0f7eda7217e25",
+  "answer": "In the Data For Good generative AI white paper, BLOOM's estimated training carbon footprint initially was calculated at 30 tonnes CO2eq. When the scope was extended to include additional factors such as the consumption of all data center equipment, the manufacturing impact of servers and GPUs, and the development phase, the estimate increased to 123.82 tonnes CO2eq. This is about four times higher than the initial, more limited estimate.",
+  "model": "gpt-4.1",
+  "response_id": "chatcmpl-Ei0NCwMgs2nx4uMstjBlhEkFgASVB",
+  "prompt_tokens": 9258,
+  "completion_tokens": 88,
+  "actual_usd": 0.01922
+}

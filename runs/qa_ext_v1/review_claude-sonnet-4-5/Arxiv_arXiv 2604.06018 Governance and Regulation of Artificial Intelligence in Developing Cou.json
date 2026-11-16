@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence directly supports answer; question is self-contained and names the document.\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence directly matches answer; question names document and is unambiguous.\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence quote directly contains the answer; question is self-contained.\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"drop\",\n      \"reason\": \"Evidence quote does not mention 'young people' or 'underemployed youth'; answer includes claims not in provided evidence.\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence supports answer; the inference about hampering oversight is justified by surrounding context in document.\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 9321,
+  "out": 1154
+ },
+ "created": "2026-11-09 18:38:05"
+}

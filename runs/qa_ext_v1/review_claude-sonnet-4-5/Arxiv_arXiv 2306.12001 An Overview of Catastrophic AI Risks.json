@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer is accurate and fully supported by evidence; question is self-contained\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer correctly identifies the main risk and is fully supported by the evidence provided\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"drop\",\n      \"reason\": \"Question premise is incorrect—the document explicitly names Stanislav Petrov, contradicting the claim 'without naming the officer involved'\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 10197,
+  "out": 685
+ },
+ "created": "2026-11-09 18:34:35"
+}

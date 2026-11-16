@@ -1,0 +1,14 @@
+{
+  "request_hash": "67474b2eddffdd746039851dfee1cf8235dc9085160f8dff8ab43cbaa85f3c5a",
+  "prompt_sha256": "a0515fde8324ef385d0094db81067f739b9a73e1b5af0138f92378c03b48e437",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP2OliPhVDVKx1WieGtYYmgKJ9C8",
+  "prompt_tokens": 8126,
+  "completion_tokens": 40,
+  "actual_usd": 0.0012429,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the percentages of jobs with augmentation and replacement potential as found in the ILO study."
+  }
+}

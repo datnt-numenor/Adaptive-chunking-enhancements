@@ -1,0 +1,14 @@
+{
+  "request_hash": "cb6146a5e1fb6ba7bd1e1954e0ce9c2a903ed660a74462c20d7073f87a8a4d57",
+  "prompt_sha256": "44db8e599c1127c30ed8d5ca45a76e3736721cc9ca6c6bce2f85dc8a8e0618e4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOpshi0aCGm06H3waEelhhrIha1",
+  "prompt_tokens": 6937,
+  "completion_tokens": 43,
+  "actual_usd": 0.00106635,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the importance of embedding security by design in AI systems and promoting security certification to foster a culture of security among stakeholders."
+  }
+}
