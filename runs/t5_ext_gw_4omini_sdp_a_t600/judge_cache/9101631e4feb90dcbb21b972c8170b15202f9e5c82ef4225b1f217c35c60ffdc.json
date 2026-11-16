@@ -1,0 +1,14 @@
+{
+  "request_hash": "9101631e4feb90dcbb21b972c8170b15202f9e5c82ef4225b1f217c35c60ffdc",
+  "prompt_sha256": "97b281715b3ed37b9bb3232ab5900c346e992bcccf80f200159c873f2f5584e9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOdTOm3c6joY4QBryeTqxeAxd1kD",
+  "prompt_tokens": 8588,
+  "completion_tokens": 39,
+  "actual_usd": 0.0013116000000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by directly quoting Cathy O'Neil and discussing the implications of algorithms on equality issues."
+  }
+}

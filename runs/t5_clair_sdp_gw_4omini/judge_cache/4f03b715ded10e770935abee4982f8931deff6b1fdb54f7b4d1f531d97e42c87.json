@@ -1,0 +1,14 @@
+{
+  "request_hash": "4f03b715ded10e770935abee4982f8931deff6b1fdb54f7b4d1f531d97e42c87",
+  "prompt_sha256": "6db3faac6ff1550cd236549fa2f2ee05f22f1f545a8130027456b548b34a3f96",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP0tGv84IeHUXNlzSV8idD51BwOg",
+  "prompt_tokens": 8544,
+  "completion_tokens": 39,
+  "actual_usd": 0.001305,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how AI can lead to discrimination beyond specific protected characteristics, thereby reinforcing social inequality."
+  }
+}

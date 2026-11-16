@@ -1,0 +1,14 @@
+{
+  "request_hash": "de30087fb3e73ac4e9952d7bf35c4d94f8779e0aaddfaf841a56910c210a2a4c",
+  "prompt_sha256": "7221c81a93bc8a63630509220b1922d61ab586145bccde3c1a5415d9cac0734c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3K4LG1xm8QABe37YVBDkDF71VL",
+  "prompt_tokens": 3532,
+  "completion_tokens": 47,
+  "actual_usd": 0.000558,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing how organizations can exhibit governance asymmetries, specifically advancing at different rates along the HAIG dimensions of authority, autonomy, and accountability."
+  }
+}

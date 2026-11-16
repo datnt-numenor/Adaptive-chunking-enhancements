@@ -1,0 +1,354 @@
+DOC_ID: Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+
+<<<PAGE 36>>>
+lì
+
+### 4. Profiling and selecting AI systems: Risks and the random sample
+
+#### QUICKLY TO THIS SUBJECT
+
+4.1 Risk profiling and selection ->
+
+4.2 Discrimination and excessive trust ->
+
+4.3 Random sample ->
+
+4.4 Worth considering ->
+
+€
+
+>
+
+<!-- PageFooter: page 36 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+Many organisations use algorithms for profiling or similar processes that distinguish between people. This chapter explores this topic through examples in the field of fraud detection. It is important to always view these algorithms as an Al system and therefore part of a broader process. The risk of discrimination is a recurring theme in this context it can occur at various points in the process around a profiling Al system. For example, through non-representative data and overreliance on algorithmic outcomes. A random sample can be used as a control tool. The advantages of this technique are that algorithms can be monitored better and that this technique ensures that there is a human decision in the process. Complementing fraud detecting algorithm processes with a random sample is therefore recommended in many cases.
+
+##### 4.1 Risk profiling and selection
+
+Many organisations use algorithms to profile and select. On the basis of cases from the past, organisations make an estimate. This allows them to take action, such as a targeted investigation into certain persons. The estimate serves in that case as a selection tool to select persons who will be examined by an inspector.
+
+An example of profiling and selecting systems are fraud detecting algorithms, which almost everyone comes into contact with. Insurers use algorithms to search for insurance fraud,116 banks use fraud models to check trans- actions117, and online platforms search for fraud within new user accounts.118 Often a citizen, customer or user does not know that a fraud check is taking place. As long as there is no suspicion of fraud, the fraud detecting algorithm remains an invisible step in the process.
+
+"The lack of safeguards in the implementation practice of risk-based supervision and the violation of laws and regulations have the consequence that some people are more likely than others to be exposed to the public authorities and checked in the context of fraud prevention."
+
+Parliamentary Committee of Inquiry: Blind voor mens en recht, 7.1 (translation: AP)
+
+Errors in fraud detecting algorithms can have a major impact on individuals. In addition to legality issues - may such an algorithm be used in certain situations and may certain indicators be used- it is important to note that errors in these algorithms have a major impact. The evidence of this can be seen in the childcare benefits scandal. Research by the Dutch Data Protection Authority (AP) showed that fraud detection in the childcare allowance involved unlawful use of data on dual nationality and involved discriminatory processing of personal data.119 The Parliamentary Committee of Inquiry concluded that this was a violation of the fundamental rights to privacy and to equal treatment.120 A second example is the system called Systeem Risico Indicatie (SyRI). SyRI was used to detect social security fraud. The court ruled that the method violates the right to privacy. The court considered that the system was not sufficiently transparent and verifiable, while the use of SyRI could (unintentionally) entail discriminatory effects-121 A third and more recent example is in the controlling of fraud in the student housing grant process , where DUO (Dutch excecu- tive body for education services) used a selection algorithm.
+
+F
+
+<!-- PageFooter: page 37 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+GRAPH 4.1: A FRAUD ALGORITHM IS PART OF A BROADER PROCESS. IN THIS VISUALISATION THE FRAUD ALGORITHM IS ONE OF THE STEPS IN THE PROCESSING OF A CLAIM FOR A TRAVEL INSURER
+
+An investigation report concluded that there was discrim- ination, for which the government and DUO subsequently apologized.122 In this case, this is an addition concern to discrimination associated with the use of indicators such as a level of education as a distinguishing factor for fraud risk.123
+
+##### 4.2 Discrimination and excessive trust
+
+Risks in the use of fraud algorithms often arise in the process steps surrounding the algorithm. The outcomes of an algorithm depend on the steps taken in the process beforehand and the final impact depends on how the outcomes are handled. To illustrate this, a fictitious example of a fraud checking process by a travel insurer is schemati- cally presented.
+
+The algorithm here depends on the submitted claim and existing data sources. Next, the algorithm serves here as a pre-selection in the fraud checking process: an inspector then investigates the cases with a highrisk indication (see Graph 4.1).
+
+Discrimination is an important risk when using fraud algo- rithms. The logical purpose of an algorithm is to distinguish. The selection must include fraudsters and not people who do not commit fraud. The term'discrimination' here refers to Article 21 of the Charter of Fundamental Rights of the European Union, which states: 'Any discrimination based on any ground such as sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation shall be prohibited."124 A clear example of discrimination is disadvan-
+
+taging a candidate in an application process on the basis of gender or nationality.125 Discrimination can occur both directly and indirectly. In the case of indirect discrimination, no direct distinction is made on the basis of a prohibited ground. For example, a postcode as a selection criterion. There are postcode areas where many people with a migrant background live. If high-risk zip code areas in an algorithm coincide with this, there may be indirect discrimination based on migration background.126 In addition to discrimina- tion, there are other risks to fundamental rights associated with the deployment of Al systems. These are often linked to the field of application of the system. See also Box 4.1.
+
+Unrepresentative data leads to unfair outcomes. A statis- tical model depends on the data with which it is trained. If a group of people is rare in the data, the algorithm will make more false predictions for that group. This leads to discrimi- natory outcomes when an application is unfavourable.127
+
+Example: Suppose that the travel insurer from the afore- mentioned example does not have a good system for claims that come in another language. These claims first go through the fraud algorithm but the data ends up in a different form in the database without anyone noticing. The algorithm cannot properly learn to deal with claims in another language and will make more mistakes in this area. Consequently, this may have discriminatory effects.
+
+If a protected group does appear in the data but not in a representative way, this can also lead to discrimination.
+
+Example: Suppose the process at the insurer was unconsciously biased for some time. As a result, people in a protected group are more often referred to as fraudsters.
+
+>
+
+<!-- PageFooter: € page 38 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+GRAPH 4.2: IF A PROHIBITED GROUND (UNOBSERVED) HAS A RELATION TO AN INDICATOR IN THE ALGORITHM, THERE IS A RAISED RISK OF DISCRIMINATION
+
+<Figure>
+GRAPH 4.2: IF A PROHIBITED GROUND (UNOBSERVED) HAS A RELATION TO AN INDICATOR IN THE ALGORITHM, THERE IS A RAISED RISK OF DISCRIMINATION
+</Figure>
+
+The algorithm will adopt this pattern and assign this group too high a risk in the future.
+
+A negative feedback loop exacerbates discrimination. The algorithm learns from previous fraud cases to find new ones. When these new cases are used over time to learn from, a feedback loop is created. This feedback loop can exacerbate discrimination through selection bias.
+
+Example: Suppose that, according to the data, claims from a certain country are more often fraudulent. Claims from that country will then receive a higher risk indication and will be investigated more often. A more intensive search for fraud is in itself a way to find more fraud there. When the algorithm is retrained, this country will therefore get an even stronger focus. This repeats itself: A self-reinforcing feedback loop has emerged.
+
+Having sufficient and correct data does not guarantee non-discrimination. Characteristics for the intended distinction are often related by proxies to the prohibited grounds for distinction.
+
+Example: Suppose that migration background has an influence on the country where people go on holiday. And with that also indirectly affect the estimation of the algorithm of the chance of fraud. Migration background is not observed. Assuming that migration background is a prohibited ground for making distinctions, this algorithm may discriminate unintentionally. Even when the data used to train the algorithm is a perfect reflection of reality.
+
+Overreliance on algorithms is an important risk. There is interaction between the human assessor and the outcome of an algorithm. Instead of checking the outcome, people tend to quickly assume the outcome for truth: "the computer will know."This phenomenon is also called auto- mation bias. As a result, it seems as if there is a human inter- vention as safeguard, when in reality it is limitedly effective.
+
+###### Overreliance on algorithms gives room for discrimination.
+
+As previously mentioned, there can be discrimination in the predictions of fraud algorithms in various ways. Human intervention serves, among other things, as a safeguard against discrimination. If human evaluators over-rely on algorithms, discriminatory predictions can be adopted. It is essential that the human assessor continues to look criti- cally at the outcome of an algorithm.
+
+€
+
+<!-- PageFooter: page 39 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+GRAPH 4.3: AN INSURER CAN ADOPT A RANDOM SAMPLE BY SELECTING A PERCENTAGE OF THE CLAIMS AT RANDOM. THESE CLAIMS ARE THEN FORWARDED FOR INSPECTION REGARDLESS OF THE ESTIMATE BY THE ALGORITHM
+
+#### 4.3 Random sample
+
+One possible measure to reduce the above mentioned risks is the random sample. When a random sample is applied, part of the cases are randomly selected to be inves- tigated for fraud. A random sample of 10% is shown in the image (Graph 4.3).
+
+The optimal percentage of cases that the sample should select differs per fraud algorithm. An important consider- ation here is that the sample can only serve as a reference if sufficient cases are included.
+
+Using the random sample as a reference, part of the risks of discrimination can be monitored. For example, by using the sample as a reference, it can be tracked whether a group is not disproportionately represented by the algorithm. The importance of random selection for obtaining representa- tive data has previously been described by the EU Agency for Fundamental Rights (FRA). Again, here is an example of travel insurance.
+
+Example: Suppose that the fraud algorithm of the travel insurer selects, for 95% of its cases, claims with nationality Y. A random sample is used, and of the fraud found within the sample only 15% of people appear to have nationality Y. It seems here that the algorithm places a disproportionate emphasis on checking people with nationality Y.
+
+Random sampling can reduce the risk of automation bias. When a sample provides part of the selection for fraud inves- tigation, not all investigations are based on a high-risk signal. This allows the process to be set up in such a way that the inspector does not know whether a case to be investigated has been selected randomly. As a result, the inspector can no longer rely blindly on the algorithmic results, but is encour- aged to be critical.
+
+The group to which the random sample applies varies with context. In some applications, a fraud indication will not mean selection, but rather an exclusion. Blocking an online order is an example of this. In such a case, there is a different process overview. A sample can be used here through randomly passing on high-risk cases. There are also applications where the impact on the randomly selected individuals is significant. Think of home visits as part of a fraud investigation. A balance of interests is central to this: banking on a sample does not directly mean that you can search someone's house.
+
+F
+
+<!-- PageFooter: page 40 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+#### GRAPH 4.4: THE DECISION TO USE A RANDOM SAMPLE DEPENDS ON THE IMPACT ON THE PROCESS AS A WHOLE
+
+Certain methods of combating discrimination depend on the processing of special personal data. For example, to measure whether a group with a certain origin is treated differently, information about race or ethnicity will have to be processed. These sensitive data, known as'special personal data', are given additional protection in the GDPR. The processing of special personal data is prohibited, unless there is an exception. The AI Act may provide for an exception for the processing of special personal data to detect or counter discrimination for high-risk AI systems but under strict conditions.
+
+In addition to risk reduction, a random sample contributes to measuring efficiency and exploring new types of fraud. The reference provided by a sample can be seen as a basis for comparing the performance of the algorithm. In addition, the element of arbitrariness will ensure that unknown and new forms of fraud also occur in the data over time. A new version of the algorithm can then learn from this.
+
+##### 4.4 Worth considering
+
+The decision to use a random sample depends on the impact on the process as a whole. The technique touches on different parts of the process and can therefore not be weighed against a stand-alone risk. In order to make the decision transparent, a system without a sample can be compared to a system with a sample (see Graph 4.4).
+
+In many cases, the random sample contributes to a more responsible use of profiling and selecting AI systems. When using fraud algorithms, the random sample is therefore worth considering.
+
+The use of a random sample relates to the AI Act and the GDPR. A system around a fraud algorithm must comply with legislation (with or without a sample). A profiling or selecting AI system processes personal data and thus the GDPR applies. In addition, the AI Act will enter into force in the coming years. Within the AI Act, it is relevant whether an AI system classifies as high-risk. For example, for a fraud algorithm for essential government benefits and services, this will be the case. Providers of high-risk systems are required to identify and mitigate reasonably foreseeable risks. Potential discrimination is such a risk. The random sample can be used as a control tool.
+
+€
+
+>
+
+<!-- PageFooter: page 41 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+#### Box 4.1 Fundamental rights risks in deployment of AI systems
+
+The use of AI systems can lead directly and indirectly to a violation of fundamental rights. This risk affects both very simple algorithms such as decision trees and complex systems,for example, those based on neural networks.
+
+A known risk in AI systems can be seen in the right to non-discrimination (Article 21 of the EU Charter of fundamental rights), but there are also risks to other fundamental rights. Non-discrimination issues often stand out because in many cases AI systems are used to make a distinction. In addition, it must be explic- itly examined whether the distinction can be legally justified. But there is also the fundamental right to fair and just working conditions (Article 31 of the Charter). This can be put under pressure by algorithmic manage- ment. For example, when this impairs healthy, safe or dignified working conditions. Another example is the protection of personal data (Article 8 of the Charter), a fundamental right that ensures that data are processed fairly with the consent of the data subject or on the basis of a legal framework. AI systems work on the basis of large amounts of data which often includes personal data. These personal data should be processed lawfully and in line with this fundamental right, including in the case of an AI system. The AP, as an independent authority, monitors to see compliance with these rules.
+
+Two other relevant fundamental rights are freedom of information and the right to good administration. Both fundamental rights are reflected in this report and are relevant in the context of AI systems. The funda - mental right that affects media freedom and pluralism is important in the deployment and use of AI in the online information provision (see Chapter 2). The right to good administration ensures that matters are dealt with impartially, fairly and within a reasonable time by public institutions and bodies. The use of simple algorithms and AI systems in the public domain has, in recent years, led to risks and incidents that are difficult to reconcile with this right.
+
+Fundamental rights risks and violations in the deploy- ment of AI systems still go unnoticed too often. Even where specific legislation does not address all aspects of new technology, or where specific legislation does not yet exist, fundamental rights will always have to be respected and protected. To address this in more detail, the AP will present a factsheet on fundamental rights risks in the deployment of AI systems later this year.
+
+€
+
+<!-- PageFooter: page 42 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+TH
+
+### 5. Policies and regulations
+
+#### QUICKLY TO THIS SUBJECT
+
+5.1 Al Act enters into force ->
+
+5.2 Prohibited Al ->
+
+5.3 Al standards ->
+
+5.4 Supervision of the Al Act in the Netherlands ->
+
+5.5 International developments in Al regulation and policy ->
+
+5.6 National developments in Al regulation and policy ->
+
+5.7 Frameworks, standards and tools for the deployment of Al ->
+
+€
+
+>
+
+<!-- PageFooter: page 43 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+More and more attention is being paid worldwide to the regulation of AI and algorithms. The entry into force of the European AI Act on 1 August 2024 is a milestone. In doing so, some provisions will already enter into force on 1 February 2025. For example, provisions for prohibited AI applications and for AI literacy within organisations. The long transition period (until August 2030) before existing high-risk AI systems within the government have to meet all requirements is a matter of concern. Another point of attention is that the product standards are completed under high time pressure. These are decisive for the actual effectiveness and practicability of the requirements of the AI Act. In the meantime, supervisors in the Netherlands are preparing for new supervisory tasks under the AI Act.
+
+The broad coalition agreement of May 2024 provides good starting points for further work at national level to adequately manage the risks posed by AI systems. It is important that the filling of the algorithm register remains a priority and becomes an obligation, with attention to sufficient scope. The work on algorithm frameworks provides organisations with a governance tool for AI systems and this is important. At the same time, attention must be paid to frameworks that are too non-committal or that consciously or unconsciously give room for insufficiently precise or measurable standards, which sometimes lag behind or conflict with scientific insights. From the point of view of the AP, the appointment of a new cabinet is a moment to review the national AI strategy.
+
+#### 5.1 AI Act enters into force
+
+On 1 August 2024, the AI Act will enter into force and begin the transitional period before the AI Act will be fully appli- cable. For companies, governments and other organisations that work with AI systems, this is the time to start prepara- tions to make systems and organisations compliant (see Box 5.1). Now that the requirements have been established, the different parts of the Regulation will enter into force soon, but in gradual steps. The first major component to which this applies is the provisions on banned AI applications on the European market. This section shall enter into force in February 2025. Broadly speaking, requirements from other components will also enter into force between February 2025 and August 2027 (see Graph 5.1).
+
+A great deal remains to be regulated and clarified, both at national and European level, in order to ensure that these requirements are met in a workable manner. Many concepts and procedures in the AI Act require further explanation or interpretation. It should also be made clear how developers can meet the requirements for high-risk AI systems by means of European standards. Furthermore, oversight of AI systems at national level needs to be set up quickly and with sufficient resources.
+
+€
+
+>
+
+<!-- PageFooter: page 44 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 45>>>
+#### GRAPH 5.1: IN THE COMING YEARS, THE AI ACT WILL ENTER INTO FORCE IN STAGES
+
+It is also positive that the requirements for AI literacy within organisations will be applied quickly. Organisations that develop or use AI systems must ensure that there is sufficient knowledge of AI among the employees who work with the AI systems. The level of knowledge must be in line with the experience and training and knowledge of the staff, but also with the context in which the AI systems are used and how the systems' user groups can be affected. This is a general provision, applicable to all AI systems and will apply as early as February 2025. This provision is also an important step towards the obligation for users of AI systems to ensure adequate human oversight.
+
+##### Less positive are the over-extended deadlines given to public organisations to comply with the AI Act. Most
+
+high-risk systems that are of will be t in operation before February 2026 will only be required to comply with the AI Act if there is a significant change in the design of the system after February 2026. AI systems that are subsequently placed on the market will have to comply with the requirements imme- diately. AI systems intended for public sector organisations
+
+shall comply with the requirements only by February 2030. The AP is concerned about the duration of the period for AI systems which are intended for government organisations. The transitional regime also creates a perverse incentive for companies and the government to make significant changes before February 2026 and not after that date. Practice has shown, especially with existing Al systems - and underlying algorithms - that fundamental rights and values may be at stake. At the same time, the AP stresses that a higher level of ambition is possible and that this can be enshrined in national legislation. An executable transition plan for existing high-risk AI systems consists of (i) mapping them first, (ii) having public organisations draw up a plan on how to make self-developed high-risk systems compliant and (iii) prescribing when - earlier than February 2030 - these systems must comply with the AI Act. In addition, governments should only purchase systems that already comply as much as possible with the rules in the AI Act.
+
+#### 5.2 Prohibited AI
+
+Some AI applications will be banned as of February 2025, but the precise scope of these prohibitions requires further clarification and explanation. The bans are an important part of the AI Act, as there will soon be systems whose placing on the market or putting into service must be fully restricted. This will apply to systems that pose an unacceptable risk because they for example limit people's free choice too much, exploit people or manipulate people. Only when a practical and more concrete interpretation of the AI systems which are included in the prohibitions is quickly made clear, can European supervisors intervene or not intervene. This provides certainty to the market and society. The AP therefore welcomes the clarification that the European Commission will provide with guidelines. A first guideline will specify the definition of an AI system. A second guideline will provide more clarity on the implemen- tation of the prohibited AI applications.
+
+##### The AP will do a call for input this year to explore the concrete implementation of the prohibited AI applica-
+
+tions. Stakeholders will have the possibility to deliver input on two prohibited product applications included in the AI Act. The aim is to collect knowledge and practical questions from organisations, in order to ultimately enable adequate supervision and legal certainty. This also provides a basis for further policy-making with other European supervisors, for example in the context of the guidelines to be developed.
+
+€
+
+<!-- PageFooter: page 45 > -->
+<!-- PageBreak -->
+
+
+<<<PAGE 46>>>
+#### 5.3 AI standards
+
+European product standards are essential for compliance with the AI Act. Such standards provide AI developers with guidance on the requirements of the Regulation. In the standardization process, however, the time pressure is high. Also, the results in the form of product standards are not yet freely accessible. Standardisation organisations CEN and CENELEC are developing standards to further specify the requirements of the AI Act. When organisations work according to these standards, it is assumed that their high-risk systems meet the requirements set out in the AI Act. In practice, the standards will therefore play a major role in demonstrating compliance and assessing conformity.
+
+However, the AP is concerned about the speed with which the standards must be delivered. Standardisation organisations have only three years from the European Commission's standardisation request to develop standards. However, drafting technical product standards usually takes a long time. Moreover, delivering standards for the AI Act is even more complex, given the broad focus on both health and safety and fundamental rights. Providers and users of AI systems should therefore take into account that the standards may be available at the same time as, or only after, the entry into force of the provisions on high-risk appli- cations. Policy makers must work on a scenario in which organisations must comply with the product requirements of the regulation before they can use the standards.
+
+It remains a point of contention that these product standards will in principle only become accessible after payment. Especially since these are standards that should contribute to the protection of fundamental rights and values. Because the standards are not generally acces- sible, they are less likely to have an impact on the general AI literacy that is necessary throughout the organisation and society. It also creates an additional threshold for the general public to scrutinise an important elaboration of the AI Act. At the same time, it should be recognised that it is a well-established practice that product standards - and the underlying standardisation process - are financed in this way. If policy makers choose to make the product standards publicly available, a suitable solution must therefore be found for this.
+
+€
+
+<!-- PageFooter: page 46 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 47>>>
+#### Box 5.1 Start preparing for the AI Act
+
+Companies, governments and other organisations that use or develop Al would do well to prepare for compli- ance with the act. We recommend that providers and users of Al systems immediately start with an implemen- tation plan and set up the internal risk management. A first step is to identify the systems they develop or use and whether they fall within the definition of 'Al system' in the Regulation. Subsequently, they usually have to assess whether these systems fall into one of the following risk groups:
+
+1. Prohibited Al. These systems must be withdrawn from the market and their use must be stopped. The provisions on prohibited Al will already be in force from February 2025. There is also a good chance that these systems are already violating the law, such as legisla- tion in the field of equal treatment, privacy or employ- ment legislation.
+
+2. High-risk Al. These systems must comply with require- ments such as risk management, the quality of the data used, technical documentation and registration, transparency and human oversight. Governments or performers of public tasks may be subject to additional requirements, such as carrying out a'fundamental rights impact assessment'.
+
+3. Low-risk Al. Systems intended to engage with individ- uals or that generate content, such as deepfakes, are subject to transparency obligations. If these systems are offered or used, people should be informed about them.
+
+Users of Al systems can already assess whether their Al systems comply or will comply with the Al Act. They can inform providers to what extent the Al used already meets the requirements. When purchasing an Al system, it is important to check the purchasing conditions and, for example, also pay close attention to what happens to data that the Al system processes and how the rights to that data are regulated. Work is also ongoing on standard contractual clauses for the procurement of Al in the public sector from the European public buyers community.130
+
+##### Roles and responsibilities in the Al Act may overlap
+
+and shift. Both providers and users must comply with certain obligations. Organisations that develop and use Al systems themselves essentially fulfil both roles and must therefore comply with all obligations. The roles can also shift. Is a purchased system modified or used for another purpose? Then an organisation can become a provider of a system, which must then, for example, adhere to the rules for high-risk systems. We therefore recommend that users of Al systems keep a close eye on whether (and if so, how) they themselves contribute to the development of the Al systems they use.
+
+Developers of Al systems can go to the Dutch regulatory sandbox. The AP, the National Inspectorate for Digital Infrastructure (RDI) and the Ministry of Economic Affairs are working on the preparation of the sandbox. Providers will be able to go here in the course of 2026 to solve compliance questions about the Al Act. Until then, the supervisors will test the functioning of the sandbox and its processes in pilot schemes.
+
+€
+
+>
+
+<!-- PageFooter: page 47 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 48>>>
+#### 5.4 Supervision of the AI Act in the Netherlands
+
+The ongoing preparations in the Netherlands for the supervision of the Al Act deserve continued attention. In May, the AP, together with the RDI, issued an opinion to the ministries of EZK and BZK on how to properly regulate the supervision of the Al Act. 131 132 This advice is the result of a collaboration of more than ten different supervisors, colleges and inspections. The AP has played a coordinating role in the drafting of this opinion. In the opinion, the supervisors elaborated on how the supervision of the Al Act should be organised and who should be designated as so-called market surveillance authorities.
+
+##### The Al Act provides an opportunity to strengthen
+
+oversight of Al. However, this requires sufficient capacity and the right framework conditions. First of all, it must quickly become clear which authorities will carry out the different parts of the supervision. Then, sufficient budget and staff must be made available in time to all supervisors involved, so that they can start their tasks (such as infor- mation and enforcement) on time. Last of all, Al is a system technology that is not only regulated by the Al Act. It is therefore important that the supervision of the Al Act and the existing supervision of existing legislation reinforce and complement each other. For example, in the supervi- sory relationship in the field of consumer protection, data, education and employment. Setting up supervision of Al is a task in which the RDI also cooperates with UNESCO on behalf of the Netherlands and Europe (see Box 5.2).
+
+#### 5.5 International developments in AI regulation and policy
+
+The need to regulate Al is also strongly felt outside the EU. Wordwide initiatives are being taken, however with differing approaches. Various countries are working hard on legislation, standards and principles for the regulation of Al However, there is a risk of fragmentation due to lack of coordination. Globally, there are different responds to the developments around Al. This depends on the specific challenges faced by countries and on underlying values that are prioritised. For example, the focus in the global south is mainly on the opportunities that Al creates for the national economy, whereas in Europe and the US, for example, policies and regulations are rather focussed on the risks of further developed Al.133 This is also in line with the differences in risk perception between citizens from these regions, as discussed in Chapter 1. In the EU, individual rights have an explicit position in internet policy and regulation. The US currently shares the European ambition to ensure that Al is trustworthy, safe and contributes to the protection of human rights. The visions differ in the trade-off between stimulating innovation on the one hand and safeguarding social values on the other.134 Another angle for Al regulation is visible in China, where the national interest is emphati- cally paramount.135
+
+International developments increasingly provide a basis for cooperation in the development of Al systems. In China, a more comprehensive law on Al is on the legislative agenda for the first time even though the regulation of Al in China has been more patchy so far. Regulation does not target Al as a whole, rather its purpose is to get a grip on specific systems or products, such as recommender
+
+systems.136 In addition, in Brazil, for example, there is a new law that seeks to regulate the development of Al in a way similar to the approach taken by the EU in the Al Act.137 138 It is visible that concepts such as reliability, security and human rights are being given more attention in national regulatory initiatives worldwide. At the same time, careful attention should continue to be paid to the differences in challenges, perspectives and regulatory initiatives. Fragmen- tation in national approaches can lead to tensions when Al is used across borders.
+
+Inclusive international standards and norms can contribute to the necessary harmonisation. International norms and standards are important for the safe develop- ment and deployment of Al on a global level, both by private parties and by national governments. Inclusive international standards can reduce the gap in policy and regulation and contribute to harmonised implementations. International organisations such as the OECD, UNESCO and the G20 play an important role in harmonising standards and regula- tions.139
+
+The OECD published an update of the OECD's Al principles in early 2024. The use of these principles by OECD member countries (currently 38 countries) provides a basis for global interoperability between countries. The principles guide the trustworthy development of Al and provide recommenda- tions for government policy and strategy for Al. In 2019, the OECD member states signed these principles. The OECD has updated the principles this year to reflect new devel- opments around Al systems, in particular the emergence of foundation models and generative Al. The updated version addresses challenges to privacy, intellectual property rights, security and information integrity in the context of misinfor-
+
+F
+
+<!-- PageFooter: page 48 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 49>>>
+mation and disinformation. It also underlines the impor- tance of responsible business conduct and good cooperation in policy and governance.140
+
+A first global resolution on Al was adopted at the United Nations in March 2024.141 This non-binding UN resolution has been tabled by 122 countries, including China. The resolution calls on states to guarantee human rights and to ensure the reliable development and deployment of Al through regulation and governance. The resolution also calls for closing the digital divide, so that countries in which the development of Al is less advanced can also benefit from the opportunities that Al brings. 142
+
+A global institute for Al governance can be an important step towards strong common standards. Although not formally binding, the UN resolution reflects an international consensus on the standards to be followed in the develop- ment and use of Al. Previous, similar initiatives have shown that such agreements provide guidance for the drafting of national policies and regulations.143 Nevertheless, it should not be assumed that such standards will reduce fragmen- tation in national strategies and regulatory initiatives. In addition to national governance, an international govern- ance framework should therefore be developed.
+
+To explore this, a special advisory body has been set up within the UN. The High-Level Advisory Body on Arti- ficial Intelligence recently delivered the interim report 'Governing Al for Humanity'.144 It calls for the strengthening of international governance. The advisory body emphasises an inclusive global approach to achieving harmonisation. This is partly achieved by setting up a global Al govern- ance framework, which covers the following functions: (i)
+
+identifying and monitoring Al developments, (ii) building consensus on international standards and (iii) monitoring systemic vulnerabilities to global stability. A global institute, in which various stakeholders are involved, can keep an eye on global developments through these activities. And these insights can be used to create inclusive international norms and standards. It is also important to note that the supervision of Al should not be neglected. In response to this interim report, the AP, as coordinating algorithm supervisor, therefore wrote and published a discussion paper in which the importance of national and international supervision in the governance of Al is also raised.145146 After all, supervisory authorities are able to monitor developments and risks at an early stage. Together, they can contribute to the development of guidelines and standards for the responsible use of Al.
+
+#### 5.6 National developments in AI regulation and policy
+
+The coalition agreement for the formation of the current Dutch cabinet contains important provisions on algo- rithms and Al, which can strengthen current policies. In the agreement, it was agreed that there would be a scien- tific standard for the use of models and algorithms. This standard sets out the requirements that these are public and exemplary, with a clear instruction for what these models and algorithms are, for what they may be used for and for what they are not intended to be used for.
+
+The AP welcomes these requirements for the use of models and algorithms. However, the requirements should be considered in conjunction with the provisions of the Al Act. The Al Act contains similar requirements. The Regulation requires high-risk systems to meet quality requirements, taking into account the purpose of use and the generally recognised state of the art.
+
+One of the requirements of the Al Act is that Al systems must be accurate in the purpose of their use. This prevents arbitrariness by algorithms and Al systems, which is one of the objectives for which the AP is committed to in the coordinating algorithm task. The Al Act will lead to the development of benchmarks and measurement methods for assessing Al systems for accuracy and robustness. For example, in cooperation with metrology and benchmarking authorities (see Article 15 of the Al Act).
+
+F
+
+<!-- PageFooter: page 49 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 50>>>
+The AI Act also states that high-risk AI systems should be designed in such a way that their functioning is sufficiently transparent. This enables organisations using such a system to interpret the output of the system and use it appropriately. The instructions for use for a high-risk AI system should also address the purpose and level of accuracy (see Article 13 of the AI Act).
+
+##### The aforementioned coalition agreement sees the benefits of the use of AI by the government, but also acts on the
+
+risks. There is an ambition to strengthen knowledge of digi- talisation within the government. At the same time, it was agreed in the coalition agreement that special conditions are attached to the use of AI by the government to ensure safety, privacy and legal protection. The AP sees this as a positive ambition. The most important tool to manage the use of AI by the government is the most proactive possible preparation for, and implementation by government organ- isations of, the requirements of the AI Act. The importance of (i) the broad definition of AI system (see Key Messages in this ARR) and (ii) a level of ambition for the government that exceeds the lower limit in the extended transition period for existing Al systems (see the section'Al Act enters into force' in this chapter). In addition, the knowledge requirements for AI literacy (as of 1 February 2025) provide an opportunity to increase the level of knowledge about AI (and therefore digitalisation in a broader sense).
+
+On the basis of the coalition agreement, the new govern- ment must also make society more resilient against disin- formation and deepfakes. This is in line with the observa- tions made by the AP based on its coordinating algorithm oversight on the impact of AI on information provision in democracy (see Chapter 2 of this ARR) and the emergence of deepfakes, which are easier to produce on a large scale by generative AI (see Chapters 1 and 2 of this ARR). The agree- ments to strengthen the approach to digital threats are also in line with the risk picture that follows from this ARR. The observation is that malicious parties can use (generative) AI in a disruptive way (see Chapter 1 of this ARR).
+
+In the short term, it is important that algorithm regis- tration remains a priority. Registration is essential in order to bring transparency to citizens and to gain insight into their own algorithm use. Registration is also a good basis for risk management. Over the past six months, the national Algorithm Register for public organisations has been further filled, to more than 400 algorithms (end of June 2024). It is striking that at the end of 2023 there was a peak in the growth of the number of registrations. The national Algorithm Register is a good way to respond to the call for registration. Keeping enough pace in the growth of this register is important to achieve full registration. The growth in recent months has mainly come from registrations by municipal organisations. It is striking that regulators and inspections, water boards, ministries, provinces and regional government organisations have so far placed few algorithms in the register (see Graph 5.2).
+
+The government has agreed with the House of Representa- tives to register all high-risk AI systems within the central government by the end of 2025 at the latest. The AP would like to see a broader scope and clarity about the conse- quences if organisations do not meet this deadline. The AP remains in favour of registration by government organisations being made mandatory quickly. The Algorithm Register could also provide insight into the organisational control of AI and algorithms, and transition paths to support algorithm regis- tration and AI control, for the government organisations that register AI systems. The AP also stresses that the scope of the Algorithm Register must be broad enough. Deciding whether or not a particular AI system (or algorithm) is a high-risk application can be difficult. That is why it is important that political bodies and third parties can also assess this trade-off. Algorithm registration provides the basis for this. Registration obligations should therefore not be limited to algorithms for which it is already certain (in advance) that they are at high risk.
+
+An additional point of attention is the extent to which algorithms and AI systems in the quaternary sector are in sight and registered. Organisations in health care, education, public housing and public transport contribute to essential services. However, the scope of the current Algorithm Register does not extend to these organisations, which are remote from the government. At the same time, AI systems are increasingly part of how these organisations provide their services. Due to the lack of registers, it is currently difficult to gain insight into how these organisations use algorithms and AI and how risk management is doing.
+
+F
+
+<!-- PageFooter: page 50 -->
+<!-- PageBreak -->
+

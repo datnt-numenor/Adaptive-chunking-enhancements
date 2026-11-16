@@ -1,0 +1,14 @@
+{
+  "request_hash": "b51da707dd223d2b502b80d667400738ef1740b455d41530e04fea51f6d4f82d",
+  "prompt_sha256": "9300eb3a29efc366a5146b90c7145bc72f5703eddbad2f36c68f5c32de7849b5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO0E2WyIdVyCyZjKSyF7FmnwEg4e",
+  "prompt_tokens": 5589,
+  "completion_tokens": 56,
+  "actual_usd": 0.00087195,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly establishing the equivalence between the probability of α exceeding αc and the tail probability Pr(Y > y) for large y, including the role of η(y) in this relationship."
+  }
+}

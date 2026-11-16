@@ -1,0 +1,14 @@
+{
+  "request_hash": "b3e4f2fc5052cfd1d147d006c967ee6f02be165813ed822c3feaf6399e26d229",
+  "prompt_sha256": "750cb519d95dea994d6b42fb475431bad3178d0067703e2b1cbde67195a5d1d1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNm4idJiRweydYbYLbjOMtJ1ZMPa",
+  "prompt_tokens": 11820,
+  "completion_tokens": 45,
+  "actual_usd": 0.0018,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context discusses guidelines for evaluating AI metrics and fairness but does not explicitly mention traceability, verifiability, or access to training data as outlined in the reference answer."
+  }
+}

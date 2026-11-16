@@ -1,0 +1,14 @@
+{
+  "request_hash": "365c4b2221307103651d98f696ccdaf61798b28deb57af0de0289303a1033df8",
+  "prompt_sha256": "a0ab46cd96a0c2b847567ff679b7706e3318e4bf9cb0930a46a7aed9b6156837",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOHJkoyKkZu10tIl4aFXMKDDoTrI",
+  "prompt_tokens": 7737,
+  "completion_tokens": 59,
+  "actual_usd": 0.00119595,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context partially supports the reference answer by mentioning the establishment of AI regulatory sandboxes and their role in fostering innovation and testing, but it does not explicitly state that they are 'testing grounds for new business models that are not yet regulated'."
+  }
+}

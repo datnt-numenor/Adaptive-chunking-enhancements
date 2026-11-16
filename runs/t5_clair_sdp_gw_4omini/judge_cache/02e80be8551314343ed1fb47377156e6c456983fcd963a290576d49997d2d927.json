@@ -1,0 +1,14 @@
+{
+  "request_hash": "02e80be8551314343ed1fb47377156e6c456983fcd963a290576d49997d2d927",
+  "prompt_sha256": "ca3e7d82f43630c08c20e09a76ef46244df6ab4799b691857236f50860f54532",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP97wGcXJ5mKJMybYjssf5lIur0G",
+  "prompt_tokens": 5384,
+  "completion_tokens": 44,
+  "actual_usd": 0.000834,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention any specific order of ten standards from CEN/CENELEC or CNIL's involvement in drafting them, making the Reference Answer unsupported."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "9febbe73193ba42c37054fcb6938b3afcbdbfe543426c2842733045213923798",
+  "prompt_sha256": "a2bfec6701a4bb8a46663d6a6a5cc416931065d16c2c7f3d594a97b22455cdca",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNYYEsZ6oe9Ep0xUbEEYRrCAi6mq",
+  "prompt_tokens": 8199,
+  "completion_tokens": 50,
+  "actual_usd": 0.0012598499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the EU's command-and-control, risk-based regulatory style and contrasting it with the UK's self-regulatory approach focused on AI safety and existential risk."
+  }
+}

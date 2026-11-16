@@ -1,0 +1,14 @@
+{
+  "request_hash": "5b135c762b6a8d88338f2fdc407df8a2618eb678593cbc9fc7a12c923a60f727",
+  "prompt_sha256": "1cade711f09ee968b5b3c672e239c310575d26238cca1f7a456268b32eef504c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOM0yNZzj8TLbZKeAgW6WfSg02vi",
+  "prompt_tokens": 10381,
+  "completion_tokens": 44,
+  "actual_usd": 0.00158355,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information or references that support the claim made in the Reference Answer regarding the authorship of a framework for assurance audits of algorithmic systems."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "5f6856a89ac604eea2a3fd8bb9a1bdea5525a85a3a819eb74f0dfdb500fddc84",
+  "prompt_sha256": "a249b158addb705a561a88a402d25fadf6693aec389997b148e8bafec8c84f14",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNVTPLIvqGbSD55NXwRkZp9ZkwFt",
+  "prompt_tokens": 7616,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011676,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly listing the six dimensions of AI technologies as performance, robustness, explainability, fairness, privacy, and security."
+  }
+}

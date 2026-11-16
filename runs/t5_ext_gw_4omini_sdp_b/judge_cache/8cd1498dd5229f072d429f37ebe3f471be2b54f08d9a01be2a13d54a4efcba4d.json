@@ -1,0 +1,14 @@
+{
+  "request_hash": "8cd1498dd5229f072d429f37ebe3f471be2b54f08d9a01be2a13d54a4efcba4d",
+  "prompt_sha256": "d4526d3e221b935b07b83dd6270e1ae1062a8a38ef67e2f98c4e1e145385a017",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOUK40Nj8k8FyeVsEvYz3YIZag83",
+  "prompt_tokens": 8516,
+  "completion_tokens": 39,
+  "actual_usd": 0.0013008,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer by explicitly listing the special categories of personal data as defined in GDPR Article 4."
+  }
+}

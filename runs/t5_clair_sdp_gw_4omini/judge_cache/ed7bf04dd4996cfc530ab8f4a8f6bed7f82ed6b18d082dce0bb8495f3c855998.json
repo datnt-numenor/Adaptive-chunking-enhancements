@@ -1,0 +1,14 @@
+{
+  "request_hash": "ed7bf04dd4996cfc530ab8f4a8f6bed7f82ed6b18d082dce0bb8495f3c855998",
+  "prompt_sha256": "ead04f98480c4928c9c0cab6a2d38bb079105fa88c3e1eb6e978582badb52a1d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP3PWlk00iDpZbLaK6VWpZek8dcw",
+  "prompt_tokens": 6940,
+  "completion_tokens": 52,
+  "actual_usd": 0.0010722000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the rights of data subjects to request information, rectification, and erasure of their personal data in relation to the chatbot's input and output."
+  }
+}

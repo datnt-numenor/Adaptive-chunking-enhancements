@@ -1,0 +1,14 @@
+{
+  "request_hash": "6fa33374a3e05cb4b4f63563c0aa632c05e49bca2dbf87dcbbee1e3ea1f2d1d9",
+  "prompt_sha256": "b20380e2e5ec4d2f3a4538b24586000d737bc093525c6504a77b8c27a050d4cb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQ15pO5ph1cbAWAMSr8sJLLfunc",
+  "prompt_tokens": 7825,
+  "completion_tokens": 32,
+  "actual_usd": 0.0011929500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing the exact definition of risk as stated in the AI Act."
+  }
+}

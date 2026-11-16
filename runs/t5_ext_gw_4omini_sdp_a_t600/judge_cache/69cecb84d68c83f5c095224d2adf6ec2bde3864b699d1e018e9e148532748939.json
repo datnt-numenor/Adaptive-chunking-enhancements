@@ -1,0 +1,14 @@
+{
+  "request_hash": "69cecb84d68c83f5c095224d2adf6ec2bde3864b699d1e018e9e148532748939",
+  "prompt_sha256": "7d0fe39f6978d735435535d1775804c970072f01c3ea189e847650a377053b71",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfiEw21ICWsG9dlJ4iAn6Z1gpcb",
+  "prompt_tokens": 7802,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011978999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining an AI audit ecosystem as open, dynamic, and partially self-organizing, with independent yet interdependent auditors and audit types."
+  }
+}

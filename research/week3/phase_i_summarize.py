@@ -104,7 +104,7 @@ def summarize(input_dir: Path, output_dir: Path, *, expected_queries: int = 99) 
             if "Retrieval Completeness" not in names:
                 raise SummaryError(f"{system}/{query_id}: missing Retrieval Completeness")
 
-            is_abstention = row.get("generated_output") == ABSTAIN
+            is_abstention = ABSTAIN in (row.get("generated_output") or "")  # LOCAL PATCH: "chua" nhu phase_i_judge.py va rag_eval.py
             has_correctness = "Correctness [GEval]" in names
             if is_abstention != (not has_correctness):
                 raise SummaryError(

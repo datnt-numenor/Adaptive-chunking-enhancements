@@ -1,0 +1,14 @@
+{
+  "request_hash": "9bfadb8ba70378488bf70cda40cdda666f382d25e58f4a6164a7484e8e1564d3",
+  "prompt_sha256": "f89be0ad9af14e39289972761a7439a77054825d12d4f04a1164742124c5dc3c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORZypKoQ8hHjihBJyGOxsmj6tzY",
+  "prompt_tokens": 8191,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012544499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that capability-centric evaluations assess only the existence of capabilities and do not measure the actual risks or potential societal harms."
+  }
+}

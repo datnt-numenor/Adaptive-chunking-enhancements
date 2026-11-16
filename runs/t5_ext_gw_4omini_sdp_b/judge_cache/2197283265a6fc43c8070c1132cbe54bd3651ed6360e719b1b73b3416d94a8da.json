@@ -1,0 +1,14 @@
+{
+  "request_hash": "2197283265a6fc43c8070c1132cbe54bd3651ed6360e719b1b73b3416d94a8da",
+  "prompt_sha256": "05a731f3f1f9f87010b315711a2102b205983f72c92e63901185f7b533bf31c5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOWG0P4XwPJsG7ZiN3imDcbzHbuP",
+  "prompt_tokens": 7801,
+  "completion_tokens": 43,
+  "actual_usd": 0.0011959499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the need for organizations to identify, evaluate, and mitigate risks throughout the AI lifecycle, including before and after deployment."
+  }
+}

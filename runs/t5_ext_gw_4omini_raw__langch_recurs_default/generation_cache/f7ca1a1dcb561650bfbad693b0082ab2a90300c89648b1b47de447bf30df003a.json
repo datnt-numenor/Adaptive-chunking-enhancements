@@ -1,0 +1,10 @@
+{
+  "request_hash": "f7ca1a1dcb561650bfbad693b0082ab2a90300c89648b1b47de447bf30df003a",
+  "prompt_sha256": "6cfa8833dcd49946f136a08c597b27fa119d8558df7e0c919db2cc891ba49752",
+  "answer": "According to the AI Act, the transparency requirements for generative AI outputs mandate that the outputs must be labeled in both human-understandable and machine-readable form to indicate that they are artificially generated or manipulated. Specifically, providers of systems generating synthetic audio, image, video, or text content must ensure that these outputs are marked in a machinereadable format and detectable as artificially generated or manipulated. This obligation is subject to certain exemptions, such as when the AI system performs an assistive function for standard editing or does not substantially alter the input data.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMsJqLmxPIUOJAyhWSsQo8mATH4N",
+  "prompt_tokens": 7858,
+  "completion_tokens": 110,
+  "actual_usd": 0.0012447
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4263463154dde22f20b09ea93905111dc7263238f58e637fb33053993a9e1d25",
+  "prompt_sha256": "46fbadfad10c010cb3d26f0d80ab2c17937dd1a1d096acee4a3d9dd74c863cde",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNUXEswNk8tQAceyUaczerBsYmOW",
+  "prompt_tokens": 7744,
+  "completion_tokens": 41,
+  "actual_usd": 0.0011861999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the uncertainties surrounding predictive maintenance products and their classification as safety components, fully supporting the claim made in the Reference Answer."
+  }
+}

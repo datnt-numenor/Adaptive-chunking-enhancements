@@ -1,0 +1,19 @@
+{"qas": [
+  {"question": "Under the EU AI Act, what maximum fine can the Commission impose on a general-purpose AI model provider that gives misleading answers to a Commission information request?",
+   "answer": "Up to 3% of the provider's annual total worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher. The information request itself must state these Article 101 fines.",
+   "evidence": [
+     {"page": 112, "quote": "set a period within which the information is to be provided, and indicate the fines provided for in Article 101 for supplying incorrect, incomplete or misleading information."},
+     {"page": 117, "quote": "fines not exceeding 3 % of their annual total worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher"}
+   ]},
+  {"question": "Under the EU AI Act (Regulation 2024/1689), what is the maximum administrative fine for an undertaking breaching the Article 50 transparency obligations?",
+   "answer": "Up to EUR 15 000 000 or, for an undertaking, up to 3% of its total worldwide annual turnover for the preceding financial year, whichever is higher.",
+   "evidence": [
+     {"page": 115, "quote": "shall be subject to administrative fines of up to EUR 15 000 000 or, if the offender is an undertaking, up to 3 % of its total worldwide annual turnover for the preceding financial year, whichever is higher"},
+     {"page": 115, "quote": "(g) transparency obligations for providers and deployers pursuant to Article 50."}
+   ]},
+  {"question": "Under the EU AI Act, where does money go when the European Data Protection Supervisor penalises an EU agency, and what must such penalties not affect?",
+   "answer": "The money contributes to the general budget of the Union. The fines must not affect the effective operation of the fined Union institution, body, office or agency.",
+   "evidence": [
+     {"page": 117, "quote": "Funds collected by imposition of fines in this Article shall contribute to the general budget of the Union."}
+   ]}
+]}

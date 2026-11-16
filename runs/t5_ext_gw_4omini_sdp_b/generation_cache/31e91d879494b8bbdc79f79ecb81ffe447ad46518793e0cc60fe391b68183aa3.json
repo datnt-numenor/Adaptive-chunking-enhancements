@@ -1,0 +1,10 @@
+{
+  "request_hash": "31e91d879494b8bbdc79f79ecb81ffe447ad46518793e0cc60fe391b68183aa3",
+  "prompt_sha256": "96f887ae3038ddc84be9d644b4c7aa7a4600fc1c469291aada3f4d263173e88d",
+  "answer": "The lack of interoperable standards creates a fragmented implementation landscape for both synthetic data and fact-checking systems, which complicates compliance with Art. 50 II. In the case of synthetic data, the absence of a unified marking approach leads to persistent marking conflicts that undermine model training integrity. For fact-checking systems, the lack of cross-modal standards means that there is no effective way to combine text, images, and video outputs, which is explicitly required by Art. 50 II. This fragmentation results in significant challenges for organizations that need to integrate data from multiple sources or utilize data across different AI systems, ultimately hindering their ability to meet the compliance requirements set forth by the regulation.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNFyM4vxZ3pUPo0Zprr9WmyfqHE2",
+  "prompt_tokens": 3612,
+  "completion_tokens": 137,
+  "actual_usd": 0.000624
+}

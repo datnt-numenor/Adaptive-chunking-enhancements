@@ -1,0 +1,14 @@
+{
+  "request_hash": "a17791ec6975b48356522bfbfefe4f5b8e18cb6be6bfb030c0a3d97d08cc593b",
+  "prompt_sha256": "e4d1dbeb54d3cba2940fd5901954c571bd9fdbd7bdf13a57d4df3d7997f0f642",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP7HgwxnqM2ayXipUQhSjAmej9yc",
+  "prompt_tokens": 5860,
+  "completion_tokens": 51,
+  "actual_usd": 0.0009096,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context supports the claim about the 10-day reporting requirement for incidents involving death, but the retention period mentioned in the Reference Answer is inaccurately stated as five years instead of the correct ten years."
+  }
+}

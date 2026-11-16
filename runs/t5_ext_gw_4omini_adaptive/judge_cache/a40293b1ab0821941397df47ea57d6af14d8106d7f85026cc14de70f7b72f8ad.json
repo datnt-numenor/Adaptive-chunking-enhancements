@@ -1,0 +1,14 @@
+{
+  "request_hash": "a40293b1ab0821941397df47ea57d6af14d8106d7f85026cc14de70f7b72f8ad",
+  "prompt_sha256": "a0319cfa83491f80104ee4d9410953f4dda6c651bb87c82cd1d106f67ae718c2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNmOHb1hHWHUlUNzuFNB6S7gY2Vj",
+  "prompt_tokens": 5428,
+  "completion_tokens": 35,
+  "actual_usd": 0.0008351999999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the National Institute of Cybersecurity in Spain or its specific aims, making the Reference Answer unsupported."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "note": "harness uses Qwen3-Embedding-4B; this is the only intended difference"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs\\table5_proxy_prep_v2\\prepared",
+  "qa": "runs\\table5_v2\\qa-full\\qa_frozen.jsonl",
+  "systems": "sdp_a_t400,sdp_a_t500,sdp_a_t700,sdp_a_t600_tau05,sdp_a_t600_w2",
+  "reprs": "doc",
+  "summary": {
+    "sdp_a_t400@doc": {
+      "recall@10": 0.9197859141841297,
+      "recall@5": 0.8431043289126064,
+      "ndcg@10": 0.7684854533901962,
+      "hit@10": 0.9595959595959596
+    },
+    "sdp_a_t500@doc": {
+      "recall@10": 0.9116397922736033,
+      "recall@5": 0.8151256925014785,
+      "ndcg@10": 0.7422707561175255,
+      "hit@10": 0.9393939393939394
+    },
+    "sdp_a_t700@doc": {
+      "recall@10": 0.918822631559405,
+      "recall@5": 0.8278542968610623,
+      "ndcg@10": 0.7531173886071257,
+      "hit@10": 0.9494949494949495
+    },
+    "sdp_a_t600_tau05@doc": {
+      "recall@10": 0.9076633765324815,
+      "recall@5": 0.8466428210497451,
+      "ndcg@10": 0.761791114136368,
+      "hit@10": 0.9393939393939394
+    },
+    "sdp_a_t600_w2@doc": {
+      "recall@10": 0.9111517709127165,
+      "recall@5": 0.8573231132302177,
+      "ndcg@10": 0.7696835608405725,
+      "hit@10": 0.9494949494949495
+    }
+  },
+  "created": "2026-11-09 18:12:42"
+}

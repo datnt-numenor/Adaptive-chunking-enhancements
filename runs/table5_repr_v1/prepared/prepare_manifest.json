@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "adapter": "prepare_table5_new_qa.py",
+  "adapter_sha256": "596f8965cd954032900f8b864934aa51544138eb4761a4aca33c45fd129b8519",
+  "status": "complete",
+  "created_at": "2026-11-08T14:00:58.831172+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "note": "Tao tu ket qua chay doc lap (khong co semantic); chi gom 3 he thong cua Table 5.",
+  "input_run_dir": "D:\\Project\\adaptive-chunking\\runs\\full_kaggle",
+  "input_sha256": {
+    "processed_chunks": "0f78f6c80b71209ee55c89dc8cfce2202e6f33dbe672f84383e0f5dafa75c7ed",
+    "raw_chunks": "ac82ff2bf01475aa8daaf9b426537d3d0079fb058ba02d65ab13727d62653a23",
+    "processed_metrics": "6a84885eeb306baaf4b79463cae1f092957d48e354f887467f138344a15acb84"
+  },
+  "documents": 33,
+  "folds": 5,
+  "fold_seed": 2026,
+  "adaptive_candidates": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "paper_protocol_systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "systems": {
+    "adaptive": {
+      "path": "systems/adaptive.jsonl",
+      "sha256": "d4ea88495351e94d3446ba1dc17df74babfa6caa1c67a672585cd4338bff5649",
+      "chunks": 1633,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "method": "per_document_equal_weight"
+    },
+    "raw__langch_recurs_default": {
+      "path": "systems/raw__langch_recurs_default.jsonl",
+      "sha256": "ade51b65d9864da9b17df94cf9290ca3b278fd31786e2803e79eb11cb33673c2",
+      "chunks": 1557,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "raw",
+      "method": "langch_recurs_default"
+    },
+    "raw__page": {
+      "path": "systems/raw__page.jsonl",
+      "sha256": "b962b240642dd41651f2f4842cfcaac516208d43149113f140eeb665da152e5f",
+      "chunks": 1761,
+      "excluded_empty_chunks": 4,
+      "documents": 33,
+      "stage": "raw",
+      "method": "page"
+    },
+    "sdp_a_t600": {
+      "path": "systems/sdp_a_t600.jsonl",
+      "sha256": "95c638ec7f8e8a05a7c687865f1ba02da1466f056246c7c9ce97c4acaf77ffa2",
+      "chunks": 1475,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target600",
+      "kind": "single_run"
+    },
+    "sdp_b": {
+      "path": "systems/sdp_b.jsonl",
+      "sha256": "610702ba2e9a315d444ab5edd50a1317769f0c827aa0541d8d6a9e7d5c86e2aa",
+      "chunks": 2058,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/B_default",
+      "kind": "single_run"
+    },
+    "sdp_bq": {
+      "path": "systems/sdp_bq.jsonl",
+      "sha256": "c8c226144f9f52092153d525e793c452719d73577505952fcdb1441cd9b1aad3",
+      "chunks": 2048,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/B_qwen",
+      "kind": "single_run"
+    },
+    "adaptive__doc": {
+      "path": "systems/adaptive__doc.jsonl",
+      "sha256": "2dfdae5b736e22297d6342573c60bc1cc6e8ae33bc6b6b739232fa1926569b74",
+      "chunks": 1633,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "kind": "doc_title_prefix",
+      "base_system": "adaptive",
+      "prefix": "Document: <doc_name without category>\n\n"
+    },
+    "raw__langch_recurs_default__doc": {
+      "path": "systems/raw__langch_recurs_default__doc.jsonl",
+      "sha256": "835ed38024af9b1d20c9df0d2f3c55be7ec042d2bc15dbd53186735523254e24",
+      "chunks": 1557,
+      "documents": 33,
+      "stage": "raw",
+      "kind": "doc_title_prefix",
+      "base_system": "raw__langch_recurs_default",
+      "prefix": "Document: <doc_name without category>\n\n"
+    },
+    "raw__page__doc": {
+      "path": "systems/raw__page__doc.jsonl",
+      "sha256": "3d5e7b555cc8a8ff049c5dc692eff7a036e9dffcc1022f6b9be7d376c8cb146a",
+      "chunks": 1761,
+      "documents": 33,
+      "stage": "raw",
+      "kind": "doc_title_prefix",
+      "base_system": "raw__page",
+      "prefix": "Document: <doc_name without category>\n\n"
+    },
+    "sdp_a_t600__doc": {
+      "path": "systems/sdp_a_t600__doc.jsonl",
+      "sha256": "d165fccc5e3b362140f2c0c24cf43e3ef975759f5998066e86404dc838989b22",
+      "chunks": 1475,
+      "documents": 33,
+      "stage": "small_merged",
+      "kind": "doc_title_prefix",
+      "base_system": "sdp_a_t600",
+      "prefix": "Document: <doc_name without category>\n\n"
+    },
+    "sdp_b__doc": {
+      "path": "systems/sdp_b__doc.jsonl",
+      "sha256": "2f94a9d96d971bbd750430e21f0754803d3f08bd72db177560a8fea1df1e8726",
+      "chunks": 2058,
+      "documents": 33,
+      "stage": "small_merged",
+      "kind": "doc_title_prefix",
+      "base_system": "sdp_b",
+      "prefix": "Document: <doc_name without category>\n\n"
+    },
+    "sdp_bq__doc": {
+      "path": "systems/sdp_bq__doc.jsonl",
+      "sha256": "d4502249973eafd768cc9f8d1f078c7c7206fc2efccb7e8a7a3fc5004f49a4c0",
+      "chunks": 2048,
+      "documents": 33,
+      "stage": "small_merged",
+      "kind": "doc_title_prefix",
+      "base_system": "sdp_bq",
+      "prefix": "Document: <doc_name without category>\n\n"
+    }
+  },
+  "sdp_extension": {
+    "created_at": "2026-11-09T11:17:42.402091+00:00",
+    "base_prepared_manifest_sha256": "b08193d9c25b46526a6a3e99e5ea2653dfab8565d7bae7072cbecd1e9058e6bd",
+    "harness_repo": "D:\\Project\\Adaptive-chunking-enhancements",
+    "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+    "new_systems": [
+      "adaptive__doc",
+      "raw__langch_recurs_default__doc",
+      "raw__page__doc",
+      "sdp_a_t600",
+      "sdp_a_t600__doc",
+      "sdp_b",
+      "sdp_b__doc",
+      "sdp_bq",
+      "sdp_bq__doc"
+    ],
+    "note": "Base files copied unchanged; new systems appended. Launcher registers their names in ALL_SYSTEMS."
+  }
+}

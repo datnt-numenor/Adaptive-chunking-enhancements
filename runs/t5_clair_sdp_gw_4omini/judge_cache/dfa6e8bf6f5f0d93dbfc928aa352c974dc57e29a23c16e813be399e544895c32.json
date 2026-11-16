@@ -1,0 +1,14 @@
+{
+  "request_hash": "dfa6e8bf6f5f0d93dbfc928aa352c974dc57e29a23c16e813be399e544895c32",
+  "prompt_sha256": "b8319037f2e843230a6f3460cb28645d1fdd4f4ba4300c113dd79ea6ac61b28d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP9xh68S0TB5RPw4UUmdiyaD26gX",
+  "prompt_tokens": 6551,
+  "completion_tokens": 51,
+  "actual_usd": 0.00101325,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer regarding the conditions under which consent does not need to be re-obtained and the two-year period for bringing existing processing into conformity with the GDPR."
+  }
+}

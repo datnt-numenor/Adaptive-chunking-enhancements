@@ -1,0 +1,14 @@
+{
+  "request_hash": "9b6a8317bffa270551382009e35c4f9319855503cb2fef7e5e4e8c12f965faae",
+  "prompt_sha256": "4c8d42ae472b8e32098398149d3800f06b8e271915c7f26db5a3008c8feb4c36",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8kR8ERD1rMKP4MZ6CQqo2phCK9",
+  "prompt_tokens": 5849,
+  "completion_tokens": 49,
+  "actual_usd": 0.00090675,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that the Risk Factors section ('item 1A') is where companies must disclose significant risks related to their operations and securities."
+  }
+}

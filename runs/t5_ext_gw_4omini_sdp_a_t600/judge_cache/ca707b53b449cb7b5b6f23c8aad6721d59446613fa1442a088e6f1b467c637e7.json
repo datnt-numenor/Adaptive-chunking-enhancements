@@ -1,0 +1,14 @@
+{
+  "request_hash": "ca707b53b449cb7b5b6f23c8aad6721d59446613fa1442a088e6f1b467c637e7",
+  "prompt_sha256": "0b3cc1d1b867ae35ff36d13107e5b678829b4bf28f5552e93c91185d89dae908",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpyYJBWSd7tUbhUisrsvB8oCt8s",
+  "prompt_tokens": 6970,
+  "completion_tokens": 33,
+  "actual_usd": 0.0010653,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear and detailed definition of internal validity, fully supporting the claim made in the Reference Answer."
+  }
+}

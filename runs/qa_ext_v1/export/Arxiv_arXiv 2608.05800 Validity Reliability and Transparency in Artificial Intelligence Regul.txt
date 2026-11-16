@@ -1,0 +1,287 @@
+DOCUMENT: arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul
+
+<<<PAGE 7>>>
+# Labels and Selective Observation
+
+Validation must explain both what labels mean and whose outcomes are observed. For example, arrest records reflect offending, surveillance, detection, and recording. Agreement with these records therefore does not independently establish dangerousness. Employment ratings reflect tasks, supervision, and evaluation practices as well as employee performance. Moreover, performance is observed primarily for those hired. Evaluation among past employees does not automatically support inference for previously excluded applicants. These are distinct problems. A record may be inaccurate, it may accurately record something other than the intended construct, or it may cover only a selected part of the population. Improving accuracy against the available labels does not resolve the other two problems. The institution must justify any extension beyond the observed population and record where the necessary evidence is absent.
+
+# 3.3 Internal Validity, Confounding, and Omitted Variables
+
+While construct validity asks what an output means, internal validity asks whether the evidence warrants the relationship or interpretation asserted. Conventionally central to causal studies, internal validity is used here more broadly to ask whether the studied relationships support the interpretation asserted within that setting. This includes scrutiny of confounding, selection, leakage, and institutional artefacts. It does not require every predictive feature to cause the outcome: a symptom can be an effect of disease and still support diagnosis.
+
+A confounder can induce an association without the causal relationship attributed to it (Pearl, 2009). Educational pedigree may predict employee ratings because both reflect prior advantage and access to favourable assignments, without establishing diligence. The interpretive defect exists even before any future performance collapse.
+
+This interpretive limitation does not make every such association useless. An association influenced by a common cause can still support useful forecasts within a specified setting. The validity problem arises when an institution treats that forecasting ability as evidence of a mechanism or stable personal quality that the association does not establish. Causal identification is required for causal explanations and interventions, not universally for prediction. A further distinction concerns deployment itself. A predictor may estimate outcomes accurately without showing that using its scores to allocate opportunities will improve those outcomes. That second claim concerns the effect of a decision policy, including how people and institutions respond to it.
+
+Shortcut learning illustrates the same need for substantive evaluation. Cross-site variation in radiograph prediction and annotation artefacts in language tasks show that benchmark success can depend on contextual cues that do not support the intended interpretation (Zech et al., 2018; Gururangan et al., 2018; Geirhos et al., 2020). Evaluation should test plausible shortcuts, leakage, and dependence on the setting. Randomly dividing one dataset into training and test samples can preserve the same artefact in both, allowing a model to perform well without demonstrating the competence attributed to it.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+# Omitted Variables and Domain-Dependent Judgment
+
+In applications concerning human beings, observations capture only a small portion of the biological, psychological, and social processes that may bear on an outcome. The adequacy of this partial representation requires domain-specific justification. Determining whether opportunity, supervision, accessibility, or task allocation has been omitted from a hiring assessment requires knowledge of the work and the target. Optimisation over recorded variables cannot establish that the necessary information has been included.
+
+A standard calculation illustrates the statistical consequence of an omission. Suppose
+
+with finite second moments and Var(X1) > 0. The population least-squares slope b1 from regressing Y on X1 with an intercept satisfies
+
+The formula shows how omitting X2 changes the population regression slope on X1. When X2 contributes to the outcome and covaries with X1, the slope in the model omitting X2 incorporates part of that omitted relationship. If both β2 and Cov(X1, X2) are positive, this slope is larger than β1, the coefficient in the fuller model. The distinction matters even when the model predicts accurately: the fitted association does not by itself justify the interpretation attached to its coefficient. Regulators must require an account of what the association supports and how plausible omissions affect that interpretation (Pearl, 2009; Imbens and Rubin, 2015).
+
+Consider an institution that uses standardised test scores (X1) to predict university performance and interprets the prediction as an assessment of academic potential. Test scores may provide meaningful evidence of demonstrated knowledge and reasoning, but they also reflect access to schooling, preparation, and educational resources. Suppose schooling quality (X2) is positively associated with test scores and makes an additional positive contribution to university performance in the stipulated model. Omitting it then increases the population regression coefficient on test scores relative to the fuller model. The fitted association incorporates differences in educational opportunity alongside the information conveyed by the test itself.
+
+The consequential concern becomes clear for a student from an under-resourced school. A lower score may partly reflect fewer opportunities to acquire the knowledge and preparation being tested. If the institution interprets that score as evidence of limited capacity to learn, it risks converting an educational disadvantage into an adverse characterisation of the student. Using that characterisation to deny admission can compound the original disadvantage by withholding the opportunity through which the student's capabilities might develop.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+The construct-validity failure arises when a prediction of performance under unequal educational conditions is treated as a measure of the student's capacity to learn. Justifying that interpretation requires substantive knowledge of schooling, preparation, and the opportunities available to the student. Predictive optimisation alone cannot supply that justification.
+
+Because omissions can affect measurement, interpretation, and applicability, they can undermine all three forms of validity. Omitted-variable bias can also overlap with confounding. Addressing these problems may require additional measurements, suitable designs, proxies, structural restrictions, or sensitivity analysis, each supported by justified assumptions. Simply adding more variables is not a general solution. Conditioning on a variable that is a common effect of two others-a collider-can itself introduce bias into a causal analysis (Pearl, 2009). Additional personal data also require an independent justification for their collection and use. Institutions must identify plausible omissions, assess their implications, and narrow or withdraw claims that legitimate evidence cannot sustain.
+
+# 3.4 External Validity and Deployment Distributions
+
+External validity requires a connection between the setting in which a system was evaluated and the setting in which it will be used. That connection may fail when the distribution of inputs or their relationship to outcomes changes. Such distribution shift can arise from demographic change, policy adaptation, or measurement practices (QuiñoneroCandela et al., 2009; Ovadia et al., 2019). Examples include ImageNet performance degradation on newly collected images (Recht et al., 2019), temporal language change (Lazaridou et al., 2021), and LLM sensitivity to prompts and evaluation settings (Liang et al., 2022). Predictive uncertainty estimates can also fail under shift (Ovadia et al., 2019).
+
+For open-ended LLM interaction, defining a probability measure over all possible inputs does not establish an empirically warranted deployment model. Conversation history alone cannot identify the process governing subsequent user inputs. Inputs may depend on user choices, model responses, interface design, and workflow. Specifying a mathematical distribution does not establish that future interactions will follow it. The empirical question is which population or interaction process the evaluation represents, and why that process is appropriate for the intended use. Probabilistic performance claims hence require substantive assumptions connecting evaluation data to future interactions. Where those assumptions cannot be justified, benchmark averages lack a defensible interpretation as guarantees for the intended use.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+Representativeness also requires domain-specific justification. Dataset inspection, size, or demographic balance cannot establish it alone. Zech et al. (2018) found variable crosshospital performance in pneumonia detection and evidence that models could exploit hospital-specific information. Establishing transferability therefore requires analysis of differences in patient populations, disease prevalence, sampling processes, and measurement practices.
+
+A bounded workflow may permit a defensible distributional model. Elsewhere, scenario testing and analysis over plausible environments support narrower claims. Regulators should require explicit boundaries covering tasks, populations, languages, interfaces, tools, and model versions, with evidence connecting tests to those boundaries. Monitoring must address changes in both the environment and the decision policy, including feedback that changes who receives opportunities and whose outcomes enter subsequent training.
+
+# 3.5 LLM Applications: From Generated Text to Consequential Use
+
+LLMs learn to generate contextually plausible language, with additional training often intended to improve accuracy and helpfulness. These objectives do not ensure that a fluent response is factually correct or that its conclusions follow from the available evidence. Applications in which correctness is consequential therefore require explicit validation of the claims generated and their suitability for the intended use. The following examples illustrate this requirement.
+
+Clinical summarisation. A clinical summary is often treated as a faithful representation of the patient's record. Yet summarisation involves choices about which information matters and how its evidential status is expressed. Converting "possible drug reaction" into "drug allergy" turns a tentative observation into an established condition. Omitting a pending investigation can make an unresolved question appear settled, while presenting an old medication as current can misrepresent the patient's treatment. These are changes in clinical meaning, even when the summary remains fluent and largely factually accurate.
+
+Evidence on clinical summarisation shows why overall quality and preservation of clinically relevant information require separate assessment. In an evaluation of 100 emergencydepartment encounters, Williams et al. (2025a) found hallucinations in 42% of GPT-4 summaries and clinically relevant omissions in 47%, although average assessed potential harm was low. In a separate inpatient study, Williams et al. (2025b) found that GPT-4 Turbo summaries were more concise and coherent than physician summaries but less comprehensive and contained more errors. Together with the minor problems in the largely favourable findings of Van Veen et al. (2024), these results support validation for the particular task and workflow, including explicit assessment of omissions and changes in clinical meaning.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+Automated diagnosis and treatment advice. Diagnostic advice requires more than matching a description to a plausible condition. Its justification depends on whether the necessary history has been obtained, relevant alternatives considered, and uncertainty recognised. A recommendation that depends on medication history, when that history was never elicited, lacks a necessary premise. An articulate explanation cannot supply the missing information. Likewise, success on cases that provide all relevant findings does not establish competence in deciding what to ask or investigate in an incomplete clinical encounter.
+
+Hager et al. (2024) found limitations in information gathering, diagnostic and treatment decisions, and robustness in the models and cases evaluated. These findings illustrate why assessment must examine the process through which a recommendation is reached, as well as the final answer. Validation should test history-taking, investigation, responses to missing or conflicting information, and escalation to clinical care. Before autonomous reliance is justified, evidence must also address prospective performance in the intended workflow. Evidence for answering a clinical question does not by itself justify responsibility for managing the encounter.
+
+Patient-facing chatbots. When patients consult a chatbot, its responses can influence whether they seek care, how urgently they act, and which symptoms they regard as important. The relevant standard is therefore whether the interaction supports appropriate decisions in the patient's circumstances.
+
+Evidence from safety evaluations reveals failures at this transition. In a physician-led red-teaming evaluation, Draelos et al. (2026) assessed 888 responses from four publicly available chatbots to 222 patient-posed medical questions. Depending on the chatbot, between 5% and 13% of responses were classified as unsafe, meaning that they could harm patients or caregivers if acted upon. These findings demonstrate potentially harmful advice in the tested systems, although the study does not estimate its frequency in routine use.
+
+Safety also depends on how people interact with the system. In a preregistered study involving 1,298 participants and ten medical scenarios, Bean et al. (2026) found that LLM-assisted participants identified relevant conditions less accurately than controls using their usual resources. Differences in choosing an appropriate course of action were not statistically significant. Strong performance by the models when tested alone did not translate into comparable performance with users. The study identified failures involving incomplete information from users, misinterpretation by models, and users not consistently following relevant recommendations.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+Together, these studies show why evaluating isolated answers is insufficient to justify patient-facing deployment. A clinically appropriate recommendation depends on obtaining relevant information, interpreting it correctly, and communicating guidance that the patient can understand and use. Validation must therefore examine complete interactions in the intended population and setting, including recognition of uncertainty, elicitation of missing information, and timely escalation to clinical care. Evidence of medical knowledge alone cannot establish the validity of autonomous patient guidance.
+
+Education and learning. LLM tutors can help students produce correct answers without developing the understanding those answers appear to demonstrate. In a field experiment involving nearly a thousand high-school mathematics students, Bastani et al. (2025) found that access to a general-purpose GPT-4 interface improved performance during practice but led to worse performance than the control group when assistance was withdrawn. A version designed with tutoring safeguards largely mitigated this negative effect. The validity problem is therefore the interpretation of assisted performance as evidence of learning. Evaluation of educational applications must distinguish successful task completion from independent understanding, and assess retention and transfer to new problems before improvements in assisted performance justify claims of educational benefit.
+
+Legal assistance and access to services. LLM-based legal assistance can influence whether a person pursues a claim, applies for a benefit, or follows a particular procedure. Dahl et al. (2024) documented fabricated legal information, acceptance of false premises, and variation across courts, cases, and time in the models tested. These findings expose problems of factual reliability. A further validity question arises when a system applies general legal information to an individual's circumstances. Even an accurate account of a rule does not establish that the person is eligible for a benefit or lacks a viable claim. That conclusion depends on the applicable jurisdiction, current law, and relevant facts that the system may not have elicited.
+
+Validation must therefore assess both the accuracy of legal information and the justification for applying it to the person seeking assistance. Unsupported advice can discourage a valid claim or direct someone towards an inappropriate procedure. Consequential recommendations should identify their sources and factual assumptions, make unresolved questions explicit, and provide access to qualified review.
+
+Across these applications, validation must follow the output into its intended use. Evidence that a system produces a plausible summary, diagnosis, or explanation supports consequential reliance only when it also addresses the meaning, evidential basis, and applicability of the claim being made. Regulatory assessment should make those connections explicit and limit reliance where they remain unsupported.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+# 3.6 What Randomised Evaluation Can Establish
+
+Randomised controlled trials can provide strong evidence that using an AI system improves a specified outcome relative to a comparator. Such evidence does not require a complete explanation of the model's internal workings. However, randomisation addresses the attribution of effects within the trial, rather than every aspect of inferential validity. It does not establish that the measured endpoint adequately represents the claimed benefit. For example, a trial showing that LLM-generated summaries reduce documentation time establishes an efficiency benefit, but does not by itself establish preservation of clinical meaning or safety in subsequent care. Those claims require appropriate measures of consequential omissions, distortions, and downstream outcomes. Choosing and validating these measures requires domain knowledge that randomisation cannot supply.
+
+The intervention being evaluated must also be distinguished from the model considered in isolation. A trial showing improved outcomes with AI-assisted diagnosis supports the combination of model, clinicians, and workflow actually tested. Clinicians may obtain missing information, correct recommendations, or prevent inappropriate action. The resulting benefit does not independently validate the model's diagnostic explanations or establish that autonomous use would be beneficial. This distinction is reflected in CONSORT-AI's reporting requirements concerning system versions, clinical integration, human-AI interaction, and performance errors (Liu et al., 2020). A demonstrated benefit remains relevant evidence, but its interpretation must preserve the conditions under which it arose.
+
+Randomisation also leaves important questions about interpretation and application unresolved. Deaton and Cartwright (2018) emphasise that it does not guarantee balance in a realised trial, precision of estimation, or applicability of an average effect to another population or a particular individual. Trial findings acquire practical meaning through their connection to other knowledge about the intervention and the conditions under which it operates. For AI-assisted diagnosis, this includes whether the observed benefit depends on specialist oversight, access to further investigations, or clinicians correcting the system's errors. An average benefit does not establish that every diagnostic claim produced during the trial was warranted.
+
+The transportability framework of Pearl and Bareinboim (2014) makes the additional assumptions explicit. Transferring experimental findings requires an account of relevant differences between the study and target settings and of the causal relationships that remain invariant. Depending on those assumptions, experimental and observational evidence may identify the target effect, or may leave it unresolved. Domain knowledge is therefore part of the justification for extending a trial result. The regulatory implication is that a successful trial supports a bounded claim about an intervention, outcome, and setting. A Validity Case must explain both what the trial establishes and what additional evidence and assumptions justify the proposed deployment.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+# 4 Fairness, Transparency, and Contestability
+
+Validity and fairness are connected but distinct. A proxy can misrepresent the target even in a balanced sample. Conversely, a genuine association can reflect structural disadvantage that is an unacceptable basis for distributing opportunities (Jacobs and Wallach, 2021; Barocas and Selbst, 2016). Statistical correction cannot decide which criterion is legitimate. Nor is every individual forecast an ecological fallacy: inference from group aggregates presents a specific problem, while individual-level models still require justification of population evidence for a particular person.
+
+Formal fairness results identify further limits. Calibration within groups and the two balance conditions studied by Kleinberg et al. (2017)-equal average scores across groups within each outcome class-cannot generally hold together when base rates differ, apart from special cases such as perfect prediction. Its epistemic implication is that one satisfied metric cannot certify unqualified fairness. Regulators must therefore require explicit justification of the criteria chosen and the resulting burdens. Hardt et al. (2016) show how predictors can be adjusted to satisfy a specified equal-opportunity criterion. Such adjustment addresses a particular statistical requirement. Regulatory assessment must also justify that criterion's relevance to the decision and identify which fairness concerns remain unresolved.
+
+For consequential AI, transparency must extend beyond how a model produces an output to the evidential basis for interpreting and acting on that output. Access to source code, model parameters, or feature attributions can help explain how an output was produced, but does not establish what that output legitimately tells us about the world. A hiring model, for example, may reveal which features lowered an applicant's score without establishing that those features indicate a lack of integrity or justify rejection. Evaluating an explanation therefore requires clarity about its purpose and the evidence appropriate to that purpose (Lipton, 2018; Doshi-Velez and Kim, 2017).
+
+We accordingly argue that regulatory transparency must make the basis for assessing validity available for scrutiny. This includes the meaning of the target, the justification for its measurement, the assumptions connecting observations to conclusions, and the evidence supporting use in the intended population and setting. Where competing interpretations remain compatible with the observations, disclosure of the model's computation cannot resolve that uncertainty (Section 3.2). Transparency must expose these limits and enable affected people and reviewers to challenge the inference and its role in the decision.
+
+# 5 From Informational Privacy to Inferential Validity
+
+The constitutional argument follows the use of information through its transformations. Puttaswamy recognises privacy as a fundamental right and connects it to dignity and autonomy. We derive an evidentiary duty for consequential inference from these constitutional principles (Supreme Court of India, 2017).
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+# 5.1 Protected Interests and Derived Characterisations
+
+Chandrachud J.'s discussion identifies information's recombinant character: outputs become inputs to further processing, generating knowledge about people beyond what they knowingly disclosed (Supreme Court of India, 2017, Chandrachud J., paras. 173-174). If privacy protects autonomy in an information-mediated environment, scrutiny cannot stop at the original record. An inferred attribution can shape employment, access to services, or official treatment without a fresh disclosure of confidential data. Protection of the underlying interest should follow the characterisation into its consequential use.
+
+An applicant may accept that their employment history is recorded accurately while disputing its interpretation as evidence of poor integrity. A right to correct the original record would not answer this objection: the disagreement concerns what the institution claims to know from that record. Protecting the underlying interests therefore requires scrutiny of the transformation from record to attributed property, and of how that attribution shapes treatment.
+
+# 5.2 Justification Creates an Evidentiary Burden
+
+The judgment subjects State interference with privacy to legality, legitimate aim, and proportionality. Kaul J. also expressly identifies procedural safeguards (Supreme Court of India, 2017, Chandrachud J., para. 180; Kaul J., para. 71). We argue that these requirements provide a basis for extending scrutiny to inferential validity. When an institution defends a measure by invoking a claim about a person, the asserted connection between that measure and its purpose depends on the claim's warrant. A legitimate purpose cannot supply missing evidence that the inference means what the institution says it means.
+
+Applied to consequential AI, this reasoning places the evidentiary burden on the institution invoking the inference. An employer that interprets a model's score as evidence of an applicant's integrity must support that interpretation. If the evidence supports only a narrower prediction, such as retention under specified conditions, the employer must justify its decision on that narrower basis and explain why retention is a relevant and permissible selection criterion.
+
+Chandrachud J.'s account of the 2012 Expert Group's proposed privacy principles includes requirements of adequacy and relevance that reinforce this reasoning (Supreme Court of India, 2017, Chandrachud J., para. 184, principle (iv)). Their extension requires scrutiny of three relationships: data to processing purpose, evidence to derived claim, and claim to decision. A datum may be relevant to recruitment yet insufficient to establish character. Even when a forecast is supported, it may still be an inappropriate ground for refusal. Treating these relationships separately prevents lawful acquisition from becoming a blanket justification for subsequent inference.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+This evidentiary burden also determines what meaningful contestation requires. Requiring a person to disprove an unsupported latent attribution would transfer the institution's evidentiary burden to someone who may lack the means to meet it. Meaningful contestation must permit challenge to the inference's assumptions and relevance, with reasons, authoritative review, and correction. The failure of a claim to be identifiable is a ground for limiting reliance, not for declaring the score immune to challenge.
+
+# 5.3 Proportionality and Public and Private Responsibility
+
+Proportionality requires an institution to connect its claimed benefits to evidence about the proposed use. Where a benefit depends on identifying a personal attribute, uncertainty about that inference must enter the assessment of whether the measure is suitable and proportionate. A benefit demonstrated independently of the disputed attribution can still count in its favour. For example, an intervention may improve an observable outcome without establishing the model's interpretation of individual character. The assessment should distinguish these grounds and give each the weight its evidence supports.
+
+The relevant comparison is between practicable courses of action in the intended setting. Evaluation should examine whether the proposed service offers benefits over existing practice, whether less intrusive alternatives could achieve them, and how errors and burdens are distributed. It should also account for changes induced by deployment, including who gains access to services and whose outcomes become available for subsequent evaluation. These considerations connect the validity analysis to the institutional consequences of using the system.
+
+The judgment recognises both threats to privacy from non-State actors and the State's positive obligation to protect individuals (Supreme Court of India, 2017, Chandrachud J., Section T, conclusions 3(I) and 5). We draw on these principles to propose scrutiny of consequential inference across publicly and privately operated services. The legal route will depend on the institution and activity. Public-law review, sectoral regulation, data-protection duties, and procurement conditions can each provide mechanisms for requiring evidence, enabling challenge, and securing remedies. The framework proposed here supplies a common basis for that scrutiny, while leaving the applicable legal duties to be specified for each setting.
+
+# 6 A Validity-Grounded Regulatory Framework
+
+Three duties organise the Validity Case: substantiate the claim, limit reliance to its warrant, and provide effective challenge and correction. Assessment integrates epistemic uncertainty and consequence severity with existing oversight. It must also preserve independent legal constraints, which strong validation cannot waive.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+# 6.1 Risk and the Validity Case
+
+Epistemic assessment begins by asking whether the target is clearly defined, whether the measurements support it, and which assumptions exclude alternative interpretations. It then examines omitted information, applicability to the intended people and setting, and feedback caused by use of the system. Assessors must also consider whether errors can be detected and their consequences reversed. A domain label such as healthcare or employment helps locate these questions, but cannot answer them for a particular system. Strong evidence on one dimension should not conceal a serious unresolved weakness on another through averaging into a single risk score.
+
+A Validity Case is a reasoned account of the evidence for each consequential claim, including claims conveyed by interfaces and decision practices rather than documentation alone. Table 1 translates the preceding analysis into questions the institution must answer, with concrete evidence for each answer. Responsibility follows the institution's role. Providers should supply evidence of capabilities and known limitations, while deployers must justify local applicability and the actual decision policy. A designated assessor should examine whether the evidence actually supports the claimed use. Completing a documentation checklist cannot establish that connection. For example, a provider's evidence of general capability does not answer whether a deployer's local workflow preserves the conditions under which it was tested. Independent assessment is warranted where consequences are severe, assumptions are contested, or institutional incentives threaten credible review.
+
+Evidence standards should be specified before testing where feasible, using domain expertise and affected communities' knowledge of consequences. No universal accuracy threshold establishes validity. The assessor must justify the required evidence against the claim, severity and distribution of error, reversibility, and feasible alternatives. A uniquely identified explanation is not always necessary for justified action. If the evidence leaves several credible possibilities, the assessor should ask whether the same permissible action remains justified under each. Where those possibilities instead change the basis of an adverse decision, selecting the most convenient interpretation cannot resolve the uncertainty.
+
+# 6.2 Determinations, Monitoring, and Remedies
+
+Assessment proceeds from claim specification to evidentiary adequacy, comparison of supported benefits and harms, and a reasoned determination of permitted reliance. The process can be iterative. The seriousness of the consequences helps determine how strong the evidence must be, while the evidence limits which benefits can legitimately be claimed. This permits revision of a proposal without treating validation as a one-time certificate for every subsequent use. Four findings require distinct responses:
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<Table>
+| Question and basis                                                                         | What the institution must explain and demonstrate                                                                                                                                                                                                                                                                                |
+|:-------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| What claim will support the decision? Sections 3.1-3.2                                     | Define the target inference, intended population, setting, time horizon, and decision role. Establish construct validity by demonstrating that the observations support the meaning attributed to the output. State the assumptions and evidence needed to identify the target, and delimit what the available data can justify. |
+| Do the observations support that meaning? Sections 3.2 (labels and measurement) and 3.5    | Explain how inputs and labels were produced and whose outcomes are missing. Show why they measure the stated target: employee ratings may reflect managerial practice, while a clinical summary must preserve source meaning, timing, and uncertainty.                                                                           |
+| What could undermine the inference? Sections 3.2 (identification) and 3.3 (confounding and | State the assumptions that exclude competing explanations. Examine plausible omissions, confounding, and sensitivity to alternatives. Report unresolved ambiguity, including when a diagnostic recommendation depends on history never obtained.                                                                                 |
+| omissions) Why does the evidence apply here? Sections 3.1, 3.4-3.5                         | Justify the comparison population and intended workflow. Evaluate relevant groups and settings, including actual users of a patient chatbot. Specify how supplementary information can expose an inapplicable forecast or trigger further review.                                                                                |
+| What reliance is justified? Section 5, especially 5.3                                      | Connect supported claims to the proposed action. Compare policy benefits, harms, and feasible alternatives. State use limits: evidence for drafting a clinician-reviewed message does not establish safe autonomous advice.                                                                                                      |
+| Who must answer a challenge? Sections 4, 5                                                 | Name the responsible provider, deployer, and assessor. Give affected people intelligible reasons and access to review. The reviewer must be able to examine the evidence, disregard an unsupported output, and correct the resulting decision.                                                                                   |
+| When must reliance change? Sections 3.4-3.5 and operational duties in Section 6.2          | Specify monitored failures, complaints, and changes that require revalidation, such as a new model, patient population, or workflow. Name who can suspend use and how affected records and decisions will be reconsidered.                                                                                                       |
+</Table>
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+1. The claim lacks a defensible meaning or operationalisation. Require reformulation or withdrawal before consequential reliance.
+
+2. The target is meaningful but evidence is insufficient. Obtain appropriate evidence, narrow the use, or withhold reliance. Uncertainty must not be treated as proof of an adverse personal attribute.
+
+3. Evidence supports a bounded use. Permit only that use, subject to the remaining legal and proportionality requirements, enforceable restrictions, and monitoring.
+
+4. Evidence contradicts the interpretation or a material assumption fails. Suspend affected reliance, investigate scope, and reconsider past decisions and remedies appropriate to the defect and its consequences.
+
+To make these determinations credible, review intensity should rise with evidentiary difficulty and consequence severity. Controlled evaluation can be authorised separately, with safeguards, without licensing disputed adverse decisions. Advisory scores require scrutiny when they materially shape treatment.
+
+Table 1 specifies revalidation triggers and authority to suspend use. Monitoring should examine who is selected or excluded, when staff override the system, what happens during review, and whether failures are concentrated in particular groups. Use restrictions must be reflected in interfaces and staff procedures: a limitation recorded only in technical documentation may have little effect on how an output actually influences decisions. Systemic defects require reconsideration of similarly affected cases. Remedies may include fresh assessment, correction of derived records, and notification of downstream recipients, subject to the applicable legal scheme.
+
+# 6.3 Worked Application: Hiring and Individual Reliance
+
+Suppose an employer proposes automatic rejection using a model predicting one-year retention. Its validation shows good historical performance among employees hired under the previous recruitment process. Managers describe a low score as evidence of poor diligence. This hypothetical proposal contains three claims: a retention forecast, an attribution of character, and a claim that score-based exclusion improves recruitment.
+
+The measurement account must define retention and distinguish voluntary departure, dismissal, and incomplete follow-up. It must identify how past selection and working conditions shaped the observed outcomes. Validation among hired workers does not establish performance for all applicants. Even if applicability is established, good retention prediction does not establish diligence. Nor does improved prediction establish that the proposed exclusion policy is beneficial. These are separate evidentiary gaps, not three descriptions of the same accuracy problem.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+The assessor should require withdrawal of the unsupported character attribution, including its use in reason codes and managerial guidance. Automatic exclusion would remain unsupported until evidence addresses applicability to the proposed applicant population and the decision policy. Any narrower use must be evaluated on its own terms. Appropriate further evidence could include a governed prospective evaluation, investigation of selection and workplace effects, and comparison with a validated task-based assessment. Such evaluation must not assume that historical hiring decisions or human ratings provide an unbiased standard.
+
+An applicant may supply relevant evidence about a career interruption, changed circumstances, or demonstrated task performance. This does not automatically establish a replacement probability. Its relevance lies in exposing possible inadequacies in the original comparison that require reconsideration. Review must be accessible, and the institution must explain whether the evidence changes the claim's applicability. A process available only to unusually well-resourced applicants would create another barrier to fair treatment.
+
+Any approval should specify the job family, population, outcome, permitted decision role, and review procedure. Monitoring must follow both the predictor and changes to recruitment or working conditions. Unsupported characterisation is withdrawn, unsupported exclusion is withheld, and permitted reliance remains correctable.
+
+# 7 Implementation and Limits
+
+The Validity Case is a proposed regulatory instrument whose effectiveness requires empirical evaluation. It can be incorporated into conformity assessment, sectoral supervision, procurement, or institutional approval, with duties and enforcement powers defined in the relevant instrument. Shared provider evidence can reduce duplication, but cannot substitute for local justification. Reviewers need domain competence, access to evidence, independence, and resources to examine the justification offered. A completed template alone provides no assurance.
+
+Evidence standards involve normative judgments, and individual circumstances may remain inaccessible. These limits should constrain reliance without demanding unlimited personal data. Alternative human procedures require equivalent scrutiny. The framework should itself be evaluated. Relevant questions include whether assessors reach consistent and reasoned determinations, whether affected people can obtain effective remedies, and whether decisions improve compared with existing validation and oversight. Producing more documentation is not evidence that any of these outcomes has been achieved.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+# 8 Conclusion
+
+Consequential AI requires justification of the transition from data to claim and from claim to treatment. Population accuracy cannot alone establish individual character, identify an underlying mechanism, or justify a decision. Construct, internal, and external validity require domain-specific evidence and assumptions that statistical optimisation cannot supply by itself.
+
+Existing EU and NIST provisions establish substantial foundations for this inquiry. The extension developed from Puttaswamy gives it a constitutional rationale: protection of dignity and autonomy should reach the evidentiary basis of derived characterisations and the consequences of relying on them. Validity is therefore a precondition for crediting inferentially dependent benefits in proportionality assessment. The Validity Case makes that burden operational through explicit claims, evidence, bounded reliance, authoritative review, and remedies. An institution must justify what it claims to know about a person before that claim can justify how the person is treated.
+
+# References
+
+S. Barocas and A. D. Selbst. Big data's disparate impact. California Law Review, 104 (3):671-732, 2016. URL https://www.cs.yale.edu/homes/jf/BarocasSelbst.pdf.
+
+H. Bastani, O. Bastani, A. Sungu, H. Ge, Ö. Kabakcı, and R. Mariman. Generative AI without guardrails can harm learning: Evidence from high school mathematics. Proceedings of the National Academy of Sciences, 122(26):e2422633122, 2025. doi: 10.1073/pnas.2422633122.
+
+A. M. Bean, R. E. Payne, G. Parsons, et al. Reliability of LLMs as medical assistants for the general public: A randomized preregistered study. Nature Medicine, 32(2):609-615, 2026. doi: 10.1038/s41591-025-04074-y. URL https://www.nature.com/articles/ s41591-025-04074-y.
+
+L. J. Cronbach and P. E. Meehl. Construct validity in psychological tests. Psychological Bulletin, 52(4):281-302, 1955. doi: 10.1037/h0040957. URL https://doi.org/10. 1037/h0040957.
+
+M. Dahl, V. Magesh, M. Suzgun, and D. E. Ho. Large legal fictions: Profiling legal hallucinations in large language models. Journal of Legal Analysis, 16(1):64-93, 2024. doi: 10.1093/jla/laae003. URL https://doi.org/10.1093/jla/laae003.
+
+A. Deaton and N. Cartwright. Understanding and misunderstanding randomized controlled trials. Social Science & Medicine, 210:2-21, 2018. doi: 10.1016/j.socscimed. 2017.12.005.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+

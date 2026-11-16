@@ -1,0 +1,14 @@
+{
+  "request_hash": "b27c6dddb18a8c32a49ce077c0673fc14d71736c831ea5f25a773f2cb3bc1b31",
+  "prompt_sha256": "2992321a5dc24d73e928624b34b26bb3b940f4d12ebdac4fe0e9d8fbb19d9199",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP7cNjBqxlk7cUzKmixXvBfmLEbS",
+  "prompt_tokens": 7282,
+  "completion_tokens": 50,
+  "actual_usd": 0.0011223,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the retention of previous versions of Model Documentation for 10 years and the obligation to provide additional information to downstream providers within 14 days."
+  }
+}

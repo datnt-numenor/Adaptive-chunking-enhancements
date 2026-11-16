@@ -1,0 +1,14 @@
+{
+  "request_hash": "62b418698ddac00bba18ab2ea837e5de1934032bd5d113637ab5c6793636e701",
+  "prompt_sha256": "b20694f57d3293bd18f0b9ba0715076b2e65b5d42adda2ed25f1bd9bdc269dd1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNqhT9FVA6ZTCQjSYR44qU7bSbZb",
+  "prompt_tokens": 6905,
+  "completion_tokens": 33,
+  "actual_usd": 0.00105555,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention or define AIMS (AI management system), thus failing to support the reference answer."
+  }
+}

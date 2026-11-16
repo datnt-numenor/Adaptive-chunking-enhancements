@@ -1,0 +1,14 @@
+{
+  "request_hash": "abfc6d8d7853eab05e5c1ad2ff0490b7820ece3fd592a71ec11b6b96b4dc039e",
+  "prompt_sha256": "78894dd3020ca6c3188671a28e218e6056dc27ece4f6d9e04bc42e55aa920066",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORZ9R4K2oI9rAwPP9V1fEG8Y78Q",
+  "prompt_tokens": 7231,
+  "completion_tokens": 39,
+  "actual_usd": 0.00110805,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing how the watermark records model involvement and affects human-written text edited by the model."
+  }
+}

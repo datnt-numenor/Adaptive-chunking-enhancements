@@ -1,0 +1,10 @@
+{
+  "request_hash": "fba75f7f6b6cc4060f1d2dc4d2e0fc04cbec2d0178adaba259a594ee82fad159",
+  "prompt_sha256": "3b7d1e8594822b574d88b043a3c623543b72549cff4614ae454cf13387a13392",
+  "answer": "Two key advantages of white-box access over black-box access for AI audits are:\n\n1. White-box access allows auditors to study the system's internal workings, such as weights, activations, and gradients, which enables them to perform stronger attacks, more thoroughly interpret models, and conduct fine-tuning. This leads to a more comprehensive understanding of the system's behavior and potential weaknesses.\n\n2. White-box access provides auditors with the ability to identify harmful dormant capabilities and diagnose specific issues within the system, facilitating more targeted interventions to address problems compared to the limited insights gained from black-box evaluations.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMnUXgK7sNEs6lodgyj49A9E7Evg",
+  "prompt_tokens": 9248,
+  "completion_tokens": 117,
+  "actual_usd": 0.0014574000000000002
+}

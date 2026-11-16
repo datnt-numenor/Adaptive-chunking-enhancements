@@ -1,0 +1,14 @@
+{
+  "request_hash": "8cc8d953b02e75b5573406a84ceef12ac80606c6a47fcf060435e7a7d77d7c3d",
+  "prompt_sha256": "7e9cc5d3b27835aec8ac27eefe32a9a88538e204a92cd6d6c86a67260657e747",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNoxIaeTuTfUtpPd5JhlMgebEyBm",
+  "prompt_tokens": 5630,
+  "completion_tokens": 47,
+  "actual_usd": 0.0008727,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the four core functions of the AI RMF, including a detailed description of the Map function's focus on identifying benefits and risks."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4612f07748dde7773f0abe78eda4da479334ec7dc253dc2fdeb5a0d56dd8f637",
+  "prompt_sha256": "71ae536de557cbfda4dd3e29b31a6f7cd2242491fc640507311865f8dc20ecd7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNb16pZNUcwjBY95x1F5nnb8uKYD",
+  "prompt_tokens": 6655,
+  "completion_tokens": 39,
+  "actual_usd": 0.00102165,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly describing the three-line governance model involving development/operations, risk management, and internal audit departments."
+  }
+}

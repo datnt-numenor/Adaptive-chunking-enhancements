@@ -1,0 +1,452 @@
+DOC_ID: Norma (légal)_Les fiches pratiques IA -  CNIL
+
+<<<PAGE 40>>>
+<!-- PageHeader: 23/05/2024 15:52 -->
+
+IA : Réaliser une analyse d'impact si nécessaire | CNIL
+
+## Sommaire
+
+Fiche suivante : Tenir compte de la protection des données dans la conception du système >
+
+<!-- PageFooter: https://www.cnil.fr/fr/realiser-une-analyse-dimpact-si-necessaire page 8/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+IA : Tenir compte de la protection des données dans la conception du système 08 avril 2024
+
+Pour assurer le développement d'un système d'IA respectueux de la protection des données, il est nécessaire de mener une réflexion préalable lors de la conception du système. Cette fiche en détaille les étapes.
+
+Lors de la réflexion autour des choix de conception d'un système d'IA, les principes de protection des données, et en particulier le principe de minimisation, doivent être respectés. Cette démarche s'opère à cinq niveaux. Un responsable de traitement doit ainsi s'interroger sur :
+
+· l'objectif du système qu'il souhaite développer ;
+
+· la méthode à employer qui aura une incidence sur les caractéristiques de la base de données ;
+
+· les sources de données mobilisées (voir la fiche sur la conformité du traitement à la loi, sur les sources ouvertes, sur les tiers, etc.) et ;
+
+· parmi ces sources, la sélection des données strictement nécessaires, au regard de l'utilité des données et de l'impact potentiel que leur collecte fait peser sur les droits et libertés des personnes concernées ;
+
+· la validité des choix précédemment opérés. Cette validation peut pendre différentes formes (non exclusives) telles que la réalisation d'une étude pilote ou l'avis d'un comité éthique.
+
+## L'objectif du système
+
+L'objectif de cette étape est de concevoir, sur la base de la finalité identifiée (voir Fiche nº 2), un système conforme à un cahier des charges, tout en limitant les conséquences potentielles pour les personnes concernées.
+
+En précisant l'emploi du système d'IA en phase de déploiement (que celui-ci soit mis en œuvre directement par le fournisseur ou par un tiers), le fournisseur du système doit déterminer :
+
+· le type de résultat / sortie attendu ;
+
+· des indicateurs de la performance acceptable de la solution, qu'il s'agisse d'indicateurs quantitatifs (F1- score, erreur quadratique moyenne, temps de calcul) ou qualitatifs ( provenant de retours humains par exemple) ;
+
+· le contexte d'utilisation du système permettant d'identifier les informations prioritaires pour son usage opérationnel ;
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 1/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+· les contextes d'utilisation exclus et les informations non pertinentes pour le ou les cas d'usage principaux envisagés du système.
+
+Certaines techniques d'IA peuvent permettre de réaliser des tâches complexes qui dépassent les objectifs initiaux des fournisseurs. En définissant précisément la fonctionnalité attendue, il est ainsi possible d'éviter des risques de sur-collecte.
+
+Exemple : pour réaliser l'apprentissage d'un système d'IA visant à permettre le comptage des personnes qui se tiennent debout dans un tramway à partir d'images de caméras de vidéoprotection, les systèmes suivants sont techniquement envisageables :
+
+· un réseau de neurones détectant la présence de personnes dans un wagon, sans analyse de la posture, intégré dans un algorithme réalisant un décompte des personnes debout (le nombre de personnes debout pouvant être déduites grâce au nombre de places assises) ;
+
+· un réseau de neurones réalisant une analyse de la posture des personnes dans un wagon intégré dans un algorithme réalisant un décompte des personnes qui se tiennent debout.
+
+Le premier réseau pourrait fournir moins d'informations (notamment le décompte de personnes debout). Toutefois, si l'estimation donnée est suffisante pour le cas d'usage envisagé, en particulier pour le calcul de statistiques d'occupation, il est alors préférable d'avoir recours à ce modèle. En effet, celui-ci nécessitera une quantité de données plus faible pour son apprentissage tout en permettant de remplir l'objectif poursuivi, alors que le second demande une collecte et une annotation de données spécifiques et de plus grande ampleur. Le principe de minimisation converge alors avec la réduction des coûts de conception du système, sans préjudice pour la précision du système.
+
+## La méthode à employer
+
+Bien souvent, une même tâche peut être réalisée par différentes techniques. Toutefois, toutes ne sont pas équivalentes, car elles n'impliquent pas de recourir aux mêmes données et pas nécessairement les mêmes quantités. Elles peuvent ne pas permettre d'atteindre le même niveau de performances, présenter des enjeux plus ou moins importants en termes d'explicabilité, être soumises à différentes contraintes opérationnelles (comme le coût de calcul). Tout en prenant en compte ces enjeux, le fournisseur du système doit sélectionner la technique la plus respectueuse des droits et libertés des personnes afin de respecter le principe de minimisation des données en tenant compte de l'objectif recherché. Autrement dit, si une technique remplit la même fonction/permet d'atteindre le même résultat avec moins de données personnelles, elle doit être préférée.
+
+En particulier, les méthodes d'apprentissage machine nécessitent l'utilisation d'un très grand nombre de données. Afin d'assurer le respect du principe de proportionnalité et de minimisation des données, le recours à ces solutions techniques doit donc être justifié. S'il existe une méthode n'utilisant pas l'apprentissage machine et que celle-ci permet de remplir les objectifs poursuivis, celle-ci doit être privilégiée. Le recours à l'apprentissage profond est à justifier et ne doit donc pas être systématique.
+
+### Exemples :
+
+Pour assurer la sécurité des employés, un fournisseur veut délimiter une zone dangereuse à ne pas franchir dans son entrepôt. Il souhaite une solution qui permette
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 2/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+de détecter la présence d'une personne dans cette zone et de déclencher un signal sonore pour avertir la personne du danger. Le recours à un détecteur de mouvement infrarouge doit être privilégié en lieu et place d'une caméra augmentée, car cette solution ne collecte pas l'image des personnes, conformément au principe de minimisation des données et de protection des données dès la conception.
+
+L'analyse sémantique du contenu d'un texte pourrait être réalisée par un réseau neuronal entraîné sur une base de données textuelles annotées, par une méthode ensembliste tel qu'une forêt d'arbres décisionnels ou encore par un algorithme non supervisé, tel qu'un algorithme de partitionnement des données (« clustering. »).
+
+Au stade de l'entraînement du modèle, il y a aussi lieu de tenir compte de l'incertitude éventuelles sur les performances de telle ou telle architecture : le respect du principe de minimisation s'apprécie en fonction des connaissances scientifiques disponibles.
+
+Selon les avancées dans le domaine concerné, cette réflexion doit reposer sur plusieurs facteurs pour chacune des architectures considérées. Cette analyse technique peut se faire grâce à :
+
+· un état de l'art, au moyen, par exemple :
+
+· d'une étude de la littérature scientifique (recensement et étude des publications académiques ou privées, conférences spécialisées, etc.) ;
+
+· d'une enquête auprès des professionnels du domaine : la démarche d'ouverture du code informatique (y compris par placement sous licence libre) de certains acteurs du secteur contribue à rendre possible une comparaison des techniques ;
+
+· de la sollicitation de la communauté spécialisée (compétitions en ligne, forums en ligne, conférences et rencontres dédiées, etc.) ;
+
+· une comparaison des résultats obtenus après l'implémentation de plusieurs architectures sous la forme de « preuves de concept » ;
+
+· une comparaison des résultats obtenus par l'utilisation d'un modèle existant et pré-entraîné (pouvant nécessiter éventuellement un ajustement, ou fine-tuning) et d'un modèle développé par le fournisseur.
+
+Si le choix du modèle d'IA et des algorithmes utilisés peuvent permettre de limiter la collecte de données, d'autres choix de conception sont à prendre en compte, notamment dans une optique de protection des données dès la conception. Le choix du protocole d'apprentissage utilisé notamment, peut permettre de limiter l'accès aux données aux seules personnes habilitées, ou encore de ne donner accès qu'à des données chiffrées. Deux techniques, applicables dans certaines situations, sont particulièrement intéressantes :
+
+· Les protocoles d'apprentissage décentralisés, tels que l'apprentissage fédéré, technique à laquelle un article LINC a été dédié. Cette technique permet d'entraîner un modèle d'IA depuis plusieurs bases, et ainsi à chacun des acteurs de la chaîne de conserver la main sur ses données. Cette technique possède toutefois certains risques, concernant la sécurité des bases décentralisées, ainsi que sur la confiance entre les acteurs parmi lesquels un acteur malicieux pourrait conduire une attaque par empoisonnement des données par exemple.
+
+· Les ressources offertes par la cryptographie. Les progrès scientifiques récents dans le domaine de la cryptographie peuvent permettre d'obtenir des garanties fortes pour la protection des données.
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 3/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+En fonction des cas d'usage, il pourra par exemple être pertinent d'explorer les possibilités offertes par le calcul multipartite sécurisé (« secure multi-party computation »), ou encore le chiffrement homomorphe (« homomorphic encryption »). Les techniques utilisées dans ce domaine permettent d'entraîner un modèle d'IA sur des données qui restent chiffrées tout au long de l'apprentissage. Elles demeurent toutefois limitées en ce qu'elles ne peuvent pas être appliquées à tous types de modèles et en raison du temps de calcul supplémentaire qu'elles induisent. Par ailleurs, certaines d'entre elles, comme le chiffrement homomorphe pour l'entraînement de réseaux de neurones, font encore l'objet d'études. Les évolutions techniques étant fréquentes dans ce domaine, il est conseillé de maintenir une veille active sur ce sujet.
+
+Cette liste de mesures n'est pas exhaustive, des mesures supplémentaires pourraient être citées comme le recours à un environnement d'exécution sécurisé (ou « trusted execution environment »), à la confidentialité différentielle appliquée lors de l'apprentissage ou encore des mesures permettant d'anticiper le désapprentissage machine. Plus généralement, en raison de l'évolution rapide de la technique, il est recommandé de mener une veille technologique sur les pratiques protectrices de la vie privée applicables lors du développement de systèmes d'IA.
+
+## La sélection des données strictement nécessaires
+
+Le principe
+
+Le principe de minimisation prévoit que les données personnelles doivent être adéquates, pertinentes et limitées à ce qui est nécessaire au regard des finalités pour lesquelles elles sont traitées. Une attention particulière doit être apportée à la nature des données et ce principe doit être appliqué de manière particulièrement rigoureuse lorsque les données traitées sont sensibles (au sens de l'article 9 du RGPD).
+
+### En pratique
+
+Le principe de minimisation ne signifie pas qu'il est interdit d'entraîner un algorithme avec des volumes très importants de données : il implique d'avoir une réflexion en amont de l'entraînement pour ne pas recourir à des données personnelles qui ne seraient pas utiles au développement du système. Pour identifier les données personnelles nécessaires au développement d'un système d'IA, il convient de prendre en compte quatre dimensions :
+
+· Le volume : nombre de personnes concernées, profondeur historique, précision des données, répartition des données selon les situations et populations et couvrir, etc. Il pourra être justifié, par exemple, par les capacités de calcul limitées des serveurs utilisés pour l'apprentissage, les besoins en termes de représentativité du jeu de données, les pratiques communément admises par la communauté scientifique, une comparaison des résultats obtenus en faisant varier le volume de données, une analyse statistique démontrant qu'un volume minimum de données est nécessaire pour atteindre des résultats significatifs, etc. ;
+
+· Les catégories : âge, sexe, image du visage, activité sur un réseau social, etc. La présence de données sensibles ou de données à caractère hautement personnel doit être examinée et justifiée (voir Fiche nº3). Cette analyse peut reposer sur la nécessité d'entraîner le modèle sur des données contrefactuelles (susceptibles de donner lieu à des faux positifs en pratique), sur une étude de l'utilité
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 4/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 45>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+des catégories de données concernées (voir encadré plus bas), etc. Parmi ces catégories de données, il convient de privilégier le format le moins intrusif sans perte d'information pour l'objectif poursuivi, par exemple l'âge ou tranche d'âge plutôt qu'une date de naissance complète ;
+
+· La typologie : données réelles, de synthèse, augmentées, issues de simulation, des données anonymisées ou pseudonymisées, etc. ;
+
+· Les sources : comme précisé dans la Fiche nº 3, recensement des sources de données auxquelles il est envisagé de recourir, qu'il s'agisse d'une collecte initiale ou d'une réutilisation (données disponibles en source ouverte, collectées précédemment par le fournisseur ou encore auprès de fournisseurs de données).
+
+Bien que la sélection des données soit une phase généralement nécessaire afin de concevoir un système d'IA sur la base de données de qualité, dans certains cas et à titre subsidiaire, il peut être possible de traiter un ensemble de données de manière indiscriminée. La nécessité devra alors en être justifiée.
+
+Outre la prise en compte de ces dimensions d'ordre technique, une attention particulière devra être portée à la nature des données au sens du RGPD, et plus particulièrement s'il s'agit de données sensibles ou hautement personnelles.
+
+### À noter :
+
+Les questions relatives à la distribution et à la représentativité des données doivent également être traitées lors de cette étape. Celles-ci sont en effet essentielles pour limiter au maximum les risques de biais de discrimination.
+
+Au sein de cette question se pose notamment celle de l'inclusion de données de type « vrais négatifs » dans la base de données d'apprentissage (notamment pour le test et la validation en vue de vérifier l'absence de certains effets de bord ou d'apprentissage).
+
+Ces questions étant particulièrement importantes, une fiche dédiée sera prochainement publiée.
+
+## La validité des choix de conception
+
+À l'issue des trois étapes précédentes, les choix de conception sont théoriquement validés et la collecte des données peut commencer. Afin de valider quantitativement et qualitativement les choix de conceptions, plusieurs mesures sont recommandées à titre de bonne pratique.
+
+Mener une étude pilote
+
+L'objectif du pilote est de s'assurer que les choix d'ordre technique et ceux relatifs aux types de données identifiés sont bien pertinents. Pour ce faire, une expérimentation à petite échelle peut est réalisée. Des données fictives, synthétiques, anonymisées ou à défaut des données personnelles collectées conformément au RGPD peuvent être utilisées.
+
+Exemples : L'utilisation de données issues de réseaux sociaux sur les pages personnelles de personnes ayant consenti à la collecte de leurs données.
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 5/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 46>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+Ce type d'expérimentation n'offre pas toujours une vision représentative de l'activité rencontrée sur les réseaux sociaux, mais elle peut être adaptée à certains cas d'usage comme l'identification de contenus haineux ou l'étude du ciblage publicitaire sur ces réseaux. Cette pratique est bénéfique car elle offre un niveau de transparence largement supérieur à certaines pratiques de moissonnage (« web scraping »).
+
+### La conception d'un système de recommandation de films
+
+Un organisme peut collecter auprès d'utilisateurs volontaires la liste de films visionnés sur une semaine et ceux visionnés dans les jours qui ont suivi, soit par données déclaratives, soit en collectant leur historique de visionnage sur des sites dédiés. Il peut mener son étude pilote sur les données ainsi collectées en anonymisant les identifiants de chaque utilisateur.
+
+Interroger un comité éthique
+
+L'association d'un comité éthique au développement de systèmes d'IA est une bonne pratique pour garantir que les enjeux en matière d'éthique et de protection des droits et libertés des personnes soient pris en compte en amont.
+
+Le comité éthique peut avoir plusieurs missions :
+
+· la formulation d'avis sur tout ou partie des projets, outils, produits, etc. de l'organisme susceptibles de problématiques éthiques, qui lui seraient soumis ;
+
+· l'animation d'une réflexion et l'élaboration d'une doctrine interne sur les aspects éthiques du développement de systèmes d'IA par l'organisme (par exemple, quelles conditions pour le recours à la sous-traitance) ;
+
+· la mise au jour d'attitudes collectives et individuelles et la recommandation de certains principes, comportements ou pratiques.
+
+La constitution et le rôle de ce comité peuvent varier selon les situations, mais plusieurs bonnes pratiques sont recommandées. Le comité devrait :
+
+· être pluridisciplinaire : les profils des membres du comité - employés de l'organisme et/ou personnes externes - doivent être diversifiés. Les personnes amenées à y siéger contribuent aux missions du comité et peuvent mettre à jour des problématiques que les équipes de développement n'avaient pas envisagées. Une bonne pratique est d'attribuer certains sièges du comité aux employés de l'organisme qui l'occuperont chacun leur tour. En outre, la diversité des membres du comité du point de vue du sexe, de l'âge et des origines ethniques et culturelles est vivement encouragée ;
+
+· être indépendant : les avis rendus par le comité peuvent avoir des implications importantes, par exemple pour la direction commerciale d'une entreprise et ainsi favoriser ou défavoriser certains de ses projets. Ainsi, les personnes siégeant au comité ne doivent pas être motivées par un éventuel gain (qu'il soit financier ou d'un autre ordre) à tirer par la décision rendue. De même, lorsque des employés siègent au comité, les décisions rendues ne doivent pas avoir de conséquences pour eux ;
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 6/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 47>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la conception du système | CNIL -->
+
+· avoir un rôle clairement défini : afin de garantir l'intégration systématique du comité, une procédure doit être fixée afin de déterminer les conditions dans lesquelles le comité se réunit et doit être associé. Selon les situations, le comité peut être simplement consultatif ou adopter des avis contraignants : les deux approches présentent des avantages et des inconvénients. Si le comité émet des avis contraignants, son insertion dans la gouvernance d'entreprise doit être particulièrement bien définie au regard des statuts de l'organisme, pour éviter son instrumentalisation. Si le comité est consultatif, son impact doit être garanti, notamment en garantissant sa saisine obligatoire selon des critères précis et la transparence large de ses avis, a minima au sein de l'organisme et éventuellement d'autres mesures comme l'obligation pour le porteur de projet de répondre par écrit aux remarques du comité ;
+
+· être averti : le comité est encouragé à s'informer, documenter ses avis et partager ses connaissances. Les risques que comporte l'utilisation de l'IA évoluent avec le développement technique et les nouveaux usages dans ce domaine, et il est nécessaire de s'informer, notamment grâce à la littérature académique et aux publications des entités compétentes dans ce domaine (comme le Défenseur des Droits, ou le Comité national pilote d'éthique du numérique). La diffusion des connaissances acquises permettra d'appuyer les avis rendus et de répandre certaines bonnes pratiques.
+
+Dans le cas du développement d'un système d'IA, l'avis du comité éthique pourrait être sollicité sur plusieurs questions :
+
+· Les données utilisées pour le développement respectent-elles les critères éthiques de l'organisme ?
+
+· Les usages opérationnels prévus pour le système d'IA pourraient-ils entraîner des conséquences individuelles ou sociétales graves ? Ces conséquences peuvent-elles être évitées ? Ces usages opérationnels peuvent-ils être exclus ?
+
+· Les potentielles utilisations détournées du système d'IA (qu'elles soient volontaires ou accidentelles, en particulier pour les modèles diffusés en source ouverte) pourraient-elles entraîner des conséquences graves pour les personnes ou pour la société ? Quelles mesures permettraient de les éviter ?
+
+· Les choix techniques sont-ils suffisamment maîtrisés par l'organisme (dans le cas du recours à des approches radicalement nouvelles) ?
+
+· Les mesures de transparence, pour l'exercice des droits des personnes ou leur permettant d'exercer un éventuel recours sont-elles suffisantes ?
+
+· Les discriminations que peuvent entraîner l'utilisation du système sont-elles répertoriées et les moyens nécessaires ont-ils été mis en œuvre afin d'éviter leur survenue ?
+
+· L'organisme est-il organisé de manière à prévenir les risques dès la conception (que ce soit en matière de discriminations, de protection des données, de protection du droit d'auteur, de sécurité informatique, etc.) ?
+
+En fonction de la taille des organismes et de la façon dont ils sont structurés, il n'est pas toujours envisageable de constituer un comité éthique. Néanmoins, il est essentiel que de telles réflexions puissent être menées pour accompagner le développement de systèmes d'IA. La nomination d'un « référent éthique » peut être une alternative permettant la prise en compte de ces questionnements.
+
+## < Fiche précédente : Réaliser une analyse d'impact si nécessaire
+
+Sommaire
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 7/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 48>>>
+23/05/2024 15:53
+
+IA : Tenir compte de la protection des données dans la conception du système | CNIL
+
+## Fiche suivante : Tenir compte de la protection des données dans la collecte et la gestion des données >
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-conception-du-systeme page 8/8 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 49>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+# IA : Tenir compte de la protection des données dans la collecte et la gestion des données 08 avril 2024
+
+Le développement d'un système d'intelligence artificielle nécessite d'assurer une gestion et un suivi rigoureux des données d'apprentissage. La CNIL détaille comment les principes relatifs à la protection des données s'articulent avec la gestion des données d'apprentissage.
+
+Une fois les données et leurs sources identifiées, le fournisseur du système d'IA doit mettre en œuvre la collecte et constituer sa base de données. Pour cela il est nécessaire d'intégrer dès leur conception les principes de protection des données personnelles (« privacy by design »).
+
+## Collecte
+
+La collecte des données s'accompagne de différentes vérifications et démarches en fonction des modalités et sources de données. Techniquement, il s'agit de s'assurer que les données collectées sont pertinentes compte tenu des objectifs poursuivis, et ainsi d'assurer le respect du principe de minimisation.
+
+### Collecte de données par moissonnage (« web scraping »)
+
+Quand le responsable du traitement réutilise des données publiquement accessibles qu'il a lui-même extraites de sites web au moyen d'outils de moissonnage (« web scraping »), il doit particulièrement s'assurer de minimiser la collecte de données, en tâchant notamment de :
+
+· limiter la collecte aux données librement accessibles ;
+
+· définir, en amont de la mise en œuvre du traitement, des critères précis de collecte ;
+
+· s'assurer de ne collecter que des données pertinentes et de la suppression des données immédiatement après leur collecte ou dès qu'elles sont identifiées comme telles (quand le tri exhaustif n'est pas possible lors de la collecte).
+
+Pour plus d'informations au sujet de la collecte des données publiquement accessibles : voir le projet de guide sur l'ouverture, le partage et la réutilisation des données.
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 1/10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 50>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+## Nettoyage, identification et protection de la vie privée dès la conception
+
+### Nettoyage
+
+Le nettoyage des données permet de constituer une base d'entraînement de qualité. C'est une étape cruciale qui renforce l'intégrité et la pertinence des données en réduisant les incohérences, ainsi que le coût de l'entraînement. Concrètement, il s'agit ainsi de :
+
+· corriger les valeurs vides ;
+
+· détecter les valeurs aberrantes ;
+
+· corriger les erreurs ;
+
+· éliminer les doublons ;
+
+· supprimer les champs inutiles ;
+
+· etc.
+
+### Identification des données pertinentes
+
+La sélection des données et des caractéristiques pertinentes est une procédure classique en IA. Elle vise à optimiser les performances du système tout en évitant les sous- et sur-apprentissage. En pratique, elle permet ainsi de s'assurer que certaines classes inutiles pour la tâche visée ne sont pas représentées, que les proportions entre les différentes classes d'intérêt sont bien équilibrées, etc. Cette procédure vise également à identifier les données non pertinentes pour l'apprentissage. Les données identifiées comme non pertinentes devront alors être supprimées de la base.
+
+En pratique, cette sélection peut trouver à s'appliquer sur trois types d'objets constituant la base de données :
+
+· Les données : il peut s'agir de données « brutes », non-structurées, (extrait audio, image, fichier texte manuscrit, etc.) ou structurées (mesures, observations, etc. au format numérique) ;
+
+· Les métadonnées associées : littéralement « données sur les données », les métadonnées, fournissent des informations de description (quel a été le processus d'acquisition ? par qui a-t-il été réalisé ? à quelle date ? etc.), de structure (comment faut-il les exploiter ?) ou encore de qualité ;
+
+· Les annotations et les caractéristiques extraites de données (« features ») : descriptions attribuées aux données dans le cas des annotations, ou propriétés mesurables extraites à partir des données pour les caractéristiques (informations relatives à la forme ou la texture d'une image, à la hauteur des sons, au timbre ou au tempo d'un fichier audio, etc.).
+
+Plusieurs approches peuvent concourir à mettre en œuvre cette sélection. Citons à titre illustratif :
+
+· L'utilisation de techniques et outils permettant d'identifier les caractéristiques pertinentes (sélection de caractéristiques ou « feature selection »), parfois en amont de l'entraînement. Des analyses de type Analyse en composantes principales (PCA - « Principal Component Analysis »), peuvent également aider à identifier les caractéristiques fortement corrélées d'un jeu de données et ainsi ne conserver que celles qui sont pertinentes. De nombreuses bibliothèques telles que Yellowbrick, Leave One Feature Out (LOFO) ou encore Facets proposent aujourd'hui des implémentations pour la
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 2/10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 51>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+sélection de caractéristiques.
+
+· L'utilisation d'approches d'annotations interactives de données comme l'apprentissage actif (« active learning »), qui permettent une revue des données par l'utilisateur sur la base de la tâche à accomplir et, le cas échéant, la suppression de celles qui sont non-pertinentes. La bibliothèque Scikit- ActiveML en est un exemple.
+
+· L'utilisation de techniques d'ablation des données d'entraînement (« data/dataset pruning ») : cette technique, abordée dans plusieurs publications comme Sorscher et al., 2022 ou Yang et al., 2023, permet de réduire le temps de calcul nécessaire à l'entraînement sans impact significatif sur les performances du modèle obtenu, tout en identifiant les données peu utiles à l'entraînement.
+
+Enfin, dans certains cas spécifiques et pour lesquels la conservation des données pourra s'avérer complexe ou problématique (en raison de la sensibilité des données, de questions liées à la propriété intellectuelle, etc.), le principe de minimisation peut être mis en œuvre par la conservation exclusive des caractéristiques extraites et par la suppression des données sources dont elles sont issues.
+
+Exemple : Pour une étude de la propagation de propos haineux dans les réseaux sociaux, l'analyse des commentaires associés à une publication permet de réaliser une classification des réactions des utilisateurs, mais le contenu des commentaires lui- même pourrait être supprimé après cette analyse.
+
+La constitution d'une base de données d'apprentissage pour l'IA nécessite également souvent l'annotations des données. La production et l'utilisation de celles-ci doivent également faire l'objet de mesures particulières au titre de la protection des données. Celles-ci seront détaillées dans une fiche pratique dédiée.
+
+Protection des données dès la conception (« privacy by design »)
+
+Par ailleurs, outre ces étapes nécessaires, le fournisseur du système d'IA doit mettre en œuvre une série de mesures pour intégrer dès leur conception les principes de protection des données personnelles (« privacy by design »).
+
+Elles doivent tenir compte de l'état des connaissances, de leur incidence sur l'efficacité de l'entraînement, des coûts de mise en œuvre et de la nature, de la portée, du contexte et des finalités du traitement ainsi que des risques (dont la vraisemblance et la gravité varient) que présente le traitement pour les droits et libertés des personnes. Ces mesures peuvent inclure :
+
+· Des mesures de généralisation : ces mesures visent à généraliser, ou diluer, les attributs des personnes concernées en modifiant leur échelle ou leur ordre de grandeur respectif ;
+
+· Des mesures de randomisation : ces mesures visent à ajouter du bruit aux données afin d'en diminuer la précision et d'affaiblir le lien entre les données et l'individu.
+
+Ces mesures sont à mettre en œuvre sur les données ainsi que les métadonnées qui y sont associées.
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 3/10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 52>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+Dans certains cas, ces mesures peuvent aller jusqu'à l'anonymisation des données, et notamment si l'objectif n'impose pas de traiter des données personnelles : si les traitements de sélection et gestion des données sont des traitements de données personnelles soumis au RGPD et donc aux présentes fiches, les traitements ultérieurs ne seront plus concernés par la réglementation sur la protection des données personnelles.
+
+Exemple : Un organisme souhaite constituer une base de données de code informatique relatif à des machines industrielles (SCADA) issues de dépôts de plusieurs développeurs. Après avoir retiré toute mention relative aux développeurs eux-mêmes, puis avoir vérifié l'absence d'identifiants ou de mentions personnelles dans les commentaires, la base de données ne contient aucune donnée personnelle. Elle n'est plus soumise à la réglementation sur la protection des données.
+
+Pour plus d'informations sur ces mesures, voir l'avis 05/2014 sur les techniques d'anonymisation du G29.
+
+De plus, certaines mesures permettent de protéger les données lors de l'apprentissage du système d'IA, comme la confidentialité différentielle appliquée durant l'apprentissage du modèle ou l'apprentissage fédéré. Bien que certaines de ces techniques soient encore au stade de la recherche, des outils permettent de les mettre en œuvre afin de tester leur efficacité, comme PyDP ou encore OpenDP.
+
+## Les mesures portant sur les données
+
+Les mesures applicables dépendent des catégories de données concernées et doivent être considérées au regard de leur influence sur les performances techniques - théoriques et opérationnelles - du système. L'impact de ces mesures est particulièrement bénéfique en raison :
+
+· d'une part, de leur capacité à réduire les conséquences d'une éventuelle perte de confidentialité des données (par compromission des données contenues dans la base, ou par une attaque portant sur le modèle entraîné tel qu'une attaque par inférence d'attribut) ;
+
+· d'autre part, de la possibilité éventuelle d'utiliser le modèle entraîné en phase opérationnelle sur des données ayant fait l'objet de mesures de protection identiques, offrant ainsi la capacité de mieux les protéger en phase opérationnelle.
+
+Exemple : En généralisant les informations relatives à l'âge de patients dans le cadre du développement d'un système d'IA d'aide au diagnostic, aux champs [mois-année] ou [année] à la place de [jour-mois-année], le fournisseur réduit drastiquement les risque de perte de confidentialité, cela sans préjudice sur la capacité de généralisation de son système.
+
+## Les mesures portant sur les métadonnées
+
+Les métadonnées peuvent contenir des informations utiles à un attaquant qui cherche à réidentifier les personnes concernées (comme une date ou un lieu de collecte des données). Le principe de minimisation s'applique également à ces données, et elles devraient ainsi être limitées à ce qui est nécessaire.
+
+Les métadonnées peuvent par exemple être nécessaires au fournisseur pour donner suite à une demande d'exercice des droits, puisqu'elles permettent parfois d'identifier les données se rapportant à une personne. Dans ce cas, une attention particulière devrait être portée à leur sécurité.
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 4/10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 53>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+Toutefois, si le traitement des métadonnées n'est pas nécessaire et que celles-ci contiennent des données à caractère personnel, leur suppression peut être recommandée dans un objectif de pseudonymisation ou d'anonymisation du jeu de données.
+
+Par exemple : dans le cas où il réutiliserait des images de vidéoprotection pour constituer un jeu de données d'apprentissage, un fournisseur qui généraliserait le lieu de collecte d'une image d'une adresse à une maille IRIS pourrait ne plus être en mesure de donner suite à une demande d'accès aux données.
+
+## Suivi et mise à jour
+
+Bien que des mesures de minimisation et de protection des données aient été mises en œuvre lors de la collecte des données, ces mesures pourraient devenir obsolètes au cours du temps. En effet, les données collectées pourraient perdre leurs caractères exact, pertinent, adéquat et limité, en raison notamment :
+
+· d'une possible dérive des données en conditions réelles, c'est-à-dire d'un écart entre la distribution des données d'entraînement et la distribution des données en condition d'utilisation. La dérive des données peut avoir de multiples causes :
+
+· des modifications de processus en amont, comme le remplacement d'un capteur, dont l'étalonnage diffère légèrement de celui qui était précédemment installé ;
+
+· des problèmes de qualité des données, par exemple un capteur cassé qui indiquerait toujours une valeur nulle ;
+
+· l'apparition d'une nouvelle catégorie dans un problème de classification ;
+
+· la dérive naturelle des données, comme la variation de la température moyenne au fil des saisons ;
+
+· la dérive due à de soudains changements, comme la perte de la capacité d'un système à détecter des visages suite au port massif de masques lors de l'épidémie de Covid-19 ;
+
+· la modification de la relation entre caractéristiques ;
+
+· un empoisonnement malveillant dans le cadre d'un apprentissage continu, par exemple constaté par des résultats non souhaités.
+
+Des outils existent pour détecter l'apparition d'une dérive des données, tel que Evidently, ou bien la bibliothèque Scipy dont les fonctions de tests statistiques peuvent être utilisés dans cet objectif ;
+
+· d'une mise à jour des données, tel qu'une correction du lieu d'habitation dans le profil public de l'utilisateur d'un réseau social à la suite d'un déménagement ;
+
+· de l'évolution des techniques, qui démontre fréquemment qu'un changement d'approche (utilisation d'un système d'IA différent nécessitant une typologie de données différente, par exemple) peut apporter de meilleures performances au système, ou encore que des performances similaires peuvent être obtenues avec un volume de données moins important (comme l'a montré la technique du « few-shot learning », par exemple).
+
+Ainsi, le fournisseur du système devrait conduire une analyse régulière pour assurer le suivi de la base de données constituée. Cette analyse sera plus poussée et plus fréquente dans les situations où les causes évoquées ci-dessus sont les plus à même d'avoir lieu. Cette analyse devrait reposer sur :
+
+· une comparaison régulière des données ou d'un échantillon de données aux données sources, celle-ci pouvant être automatisée ;
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 5/10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 54>>>
+<!-- PageHeader: 23/05/2024 15:53 IA : Tenir compte de la protection des données dans la collecte et la gestion des données | CNIL -->
+
+· une revue régulière des données par des agents formés aux questions relatives à la protection des données, ou par un comité d'éthique, en charge de vérifier notamment que les données sont toujours pertinentes et adéquates pour la finalité du traitement ;
+
+· une veille portant sur la littérature scientifique dans le domaine et permettant d'identifier l'apparition de nouvelles techniques plus frugales en données.
+
+## Conservation des données
+
+Le principe
+
+Les données personnelles ne peuvent être conservées indéfiniment. Le RGPD impose de définir une durée au bout de laquelle les données doivent être supprimées, ou dans certains cas archivées. Cette durée de conservation doit être déterminée par le responsable de traitement en fonction de l'objectif ayant conduit à la collecte de ces données.
+
+En savoir plus : Les durées de conservation des données
+
+### En pratique
+
+Le fournisseur doit fixer une durée de conservation des données utilisées pour le développement du système d'IA, conformément au principe de limitation de la conservation des données (article 5.1.d du RGPD).
+
+La fixation d'une durée de conservation impose notamment la mise en œuvre de certaines procédures décrites dans le guide pratique de la CNIL sur les durées de conservation. La CNIL constate que les bases de données publiées en source ouverte évoluent constamment (par amélioration de l'annotation, ajout de nouvelles données, purge des données de mauvaise qualité, etc.) : une durée de conservation de plusieurs années à partir de la date de la collecte devra être justifiée.
+
+## Fixer une durée de conservation pour la phase de développement
+
+Tout d'abord, le fournisseur du système d'IA devra fixer une durée de conservation des données pour l'usage fait pour le développement du système. Durant cette phase, le fournisseur utilise les données pour :
+
+· la constitution de la base de données limitée à celles strictement nécessaires, nettoyées, prétraitées et prêtes à être utilisées pour l'apprentissage ;
+
+· l'apprentissage de sa solution, depuis le premier entraînement du modèle d'IA jusqu'à la phase de test permettant de déterminer les caractéristiques et performances du produit fini. Lors de cette phase, les données doivent être conservées de manière sécurisée et être accessibles aux personnes habilitées. Selon les cas, cette phase peut durer de quelques semaines à plusieurs mois, ou au contraire se faire de manière itérative dans le cas de l'apprentissage en continu. Cette durée devrait être définie en amont et justifiée (en tenant compte de l'expérience passée du responsable du traitement, de ses connaissances sur la durée des développements informatiques, des ressources humaines et matérielles qu'il peut mettre à disposition pour les réaliser, etc.).
+
+<!-- PageFooter: https://www.cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees page 6/10 -->
+<!-- PageBreak -->
+

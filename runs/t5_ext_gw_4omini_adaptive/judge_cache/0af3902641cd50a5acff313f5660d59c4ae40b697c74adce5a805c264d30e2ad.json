@@ -1,0 +1,14 @@
+{
+  "request_hash": "0af3902641cd50a5acff313f5660d59c4ae40b697c74adce5a805c264d30e2ad",
+  "prompt_sha256": "1961e6a9652bbb1d3ed32c9360ab600bb82505a6767615cb3e3812f16c74a1e2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOSbpd0vG1AjkSYwBbVX1iuOVS5l",
+  "prompt_tokens": 7977,
+  "completion_tokens": 37,
+  "actual_usd": 0.00121875,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how the lack of shared evidence leads to contradictory claims about watermark removability and permanence."
+  }
+}

@@ -62,7 +62,8 @@ def load_chunker_embedder(name: str, device: str):
                                 config_kwargs={"code_revision": CODE_REV}).to(device)
         return m, {"name": JINA, "revision": JINA_REV}
     # local_dir snapshot (Windows cannot create the HF-cache symlinks for this repo), pinned commit below
-    path = "D:/Project/models/Qwen3-Embedding-0.6B@97b0c61"
+    import os
+    path = os.environ.get("AC_MODELS", "D:/Project/models") + "/Qwen3-Embedding-0.6B@97b0c61"
     m = SentenceTransformer(path, device=device,
                             model_kwargs={"torch_dtype": "bfloat16"}, tokenizer_kwargs={"padding_side": "left"})
     m.max_seq_length = 2048

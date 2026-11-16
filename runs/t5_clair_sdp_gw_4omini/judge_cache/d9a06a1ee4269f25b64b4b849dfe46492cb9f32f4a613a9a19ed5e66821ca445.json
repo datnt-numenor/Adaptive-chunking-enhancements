@@ -1,0 +1,14 @@
+{
+  "request_hash": "d9a06a1ee4269f25b64b4b849dfe46492cb9f32f4a613a9a19ed5e66821ca445",
+  "prompt_sha256": "11faa8db78e05ef1ae311bd13f02b7d74459fa3802eaee4dd1bd30b7cab74da0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP4jO7qTPcufQjwGizV3A6NMfjYq",
+  "prompt_tokens": 6400,
+  "completion_tokens": 42,
+  "actual_usd": 0.0009852,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the unreliability of saliency maps due to preprocessing and their vulnerability to adversarial attacks."
+  }
+}

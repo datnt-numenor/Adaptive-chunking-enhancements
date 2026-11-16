@@ -1,0 +1,14 @@
+{
+  "request_hash": "ed630d302ad58e55f10448ed5e9daf1e0787061cc1faf8e1dee285fb9805b218",
+  "prompt_sha256": "b79ec3b75fc4678b5d9074bb12d2397112df236a05c0e133da61603c6cbe01f1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1FshckjEBap2L89nufhjNnv1au",
+  "prompt_tokens": 8029,
+  "completion_tokens": 52,
+  "actual_usd": 0.00123555,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions MAIF's contributions to open-source toolboxes on ethical AI, but it does not provide specific details about the impact or extent of these contributions, leaving some claims in the Reference Answer unsupported."
+  }
+}

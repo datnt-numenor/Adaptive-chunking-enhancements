@@ -1,0 +1,10 @@
+{
+  "request_hash": "45fe635148523ef35191bf9fa20bc1d94d00ce63917eeddc31152d329d8a376c",
+  "prompt_sha256": "ee44168b4a6379327372653e1cd37205a6ff0466250477847e38e35a8a5a5981",
+  "answer": "Swapping sensitive values for meaningless substitutes, as done in tokenisation, can still work with older databases that are strict about field size and format because tokenisation does not alter the type or length of the data. This means that the tokens can be processed by legacy systems that may be sensitive to data length and type, allowing for compatibility with those older databases.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMaN144Om7Ek0Nz75irbaDPHo12O",
+  "prompt_tokens": 6111,
+  "completion_tokens": 71,
+  "actual_usd": 0.00095925
+}

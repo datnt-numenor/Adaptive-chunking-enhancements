@@ -1,0 +1,14 @@
+{
+  "request_hash": "f5e6078478b30063d6b18d76923c432e42fac18d2a7cf2ca652939aa20996be5",
+  "prompt_sha256": "4880ab924c48aca0163ac4fadbdfd861dca9962ed112f86468bee7c69f1b64e4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNDzydvImYDXQo5ElOw4Hn4BQU85",
+  "prompt_tokens": 5609,
+  "completion_tokens": 47,
+  "actual_usd": 0.0008695500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing that a business can extend the response period for consumer requests by up to 90 days and must inform the consumer within 45 days."
+  }
+}

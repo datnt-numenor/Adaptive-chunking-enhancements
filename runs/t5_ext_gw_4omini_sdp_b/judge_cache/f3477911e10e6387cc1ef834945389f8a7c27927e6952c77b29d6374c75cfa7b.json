@@ -1,0 +1,14 @@
+{
+  "request_hash": "f3477911e10e6387cc1ef834945389f8a7c27927e6952c77b29d6374c75cfa7b",
+  "prompt_sha256": "8cf4eabe00a0306e3b722045b703e0a1b6662b6b166a76056fc6d4b31bd1aad2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNy6h4Oo9JgSY80c7oYF6fJbm8iq",
+  "prompt_tokens": 5631,
+  "completion_tokens": 47,
+  "actual_usd": 0.00087285,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining personal identifiable information (PII) and sensitive personal information (SPI) in relation to training data and the risks of unwanted disclosure."
+  }
+}

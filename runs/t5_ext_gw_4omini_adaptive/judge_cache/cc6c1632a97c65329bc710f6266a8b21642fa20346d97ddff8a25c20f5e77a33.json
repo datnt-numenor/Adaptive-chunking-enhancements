@@ -1,0 +1,14 @@
+{
+  "request_hash": "cc6c1632a97c65329bc710f6266a8b21642fa20346d97ddff8a25c20f5e77a33",
+  "prompt_sha256": "4a4cae427109e71cacb0a550f164a38bfa939cf62d4a127f8248376b7f966452",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONGxpNl12oDA3efMnjlKuXZqaml",
+  "prompt_tokens": 8932,
+  "completion_tokens": 56,
+  "actual_usd": 0.0013733999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the mapping of IEEE standards 7001, 7002, 7003, and 2894 to the relevant categories in the taxonomy, fully supporting the claims made in the Reference Answer."
+  }
+}

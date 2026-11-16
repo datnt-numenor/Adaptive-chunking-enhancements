@@ -1,0 +1,14 @@
+{
+  "request_hash": "5678bd225f1ad1c33aa5ed753d15473cc7591aabe73973c20e71e4cb02fe3226",
+  "prompt_sha256": "6f9c47cd9948bf869c35683db7d093a0526c6d0b9e86727953ab2de6d2d5506e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNuiPyvl9hKILeNwdAOZVfBERccx",
+  "prompt_tokens": 8339,
+  "completion_tokens": 38,
+  "actual_usd": 0.0012736499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of fuzzy logic and specifically mentions Hájek's variants, fully supporting the claim made in the Reference Answer."
+  }
+}

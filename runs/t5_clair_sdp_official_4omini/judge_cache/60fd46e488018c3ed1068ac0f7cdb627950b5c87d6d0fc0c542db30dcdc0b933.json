@@ -1,0 +1,14 @@
+{
+  "request_hash": "60fd46e488018c3ed1068ac0f7cdb627950b5c87d6d0fc0c542db30dcdc0b933",
+  "prompt_sha256": "27db275c6cc98e5fbc355ebf10f79c19ec2d822101c15d4ef0c3e3492678658c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNEmzvzoLbWag1YeHSwZKsZ4IC3F",
+  "prompt_tokens": 6485,
+  "completion_tokens": 43,
+  "actual_usd": 0.00099855,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive information about the obligations of providers to supply documentation specifically intended for downstream providers (DPs), fully supporting the claims made in the Reference Answer."
+  }
+}

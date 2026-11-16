@@ -1,0 +1,286 @@
+DOCUMENT: arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2609.03178v1 [cs.CY] 2 Sep 2026 -->
+
+# Open Problems in AI Risk Modeling: Insights from a Workshop on the Technical Foundations of AI Risk Modeling
+
+<Table>
+| Krystal Jackson†∗ Institute for Security and Technology            | Krystal Jackson†∗ Institute for Security and Technology            | Deepika Raman† Center for Long-Term Cybersecurity                  | Deepika Raman† Center for Long-Term Cybersecurity                  | Jakub Kry´s SaferAI                              |
+|:-------------------------------------------------------------------|:-------------------------------------------------------------------|:-------------------------------------------------------------------|:-------------------------------------------------------------------|:-------------------------------------------------|
+| Sean P. Fillingham Independent Researcher                          | Jack Kengott SaferAI Center                                        | Jack Kengott SaferAI Center                                        | Andrew Lohn for Security and Emerging Technology                   | Andrew Lohn for Security and Emerging Technology |
+| Nada Madkour Center for Long-Term Cybersecurity                    | Nada Madkour Center for Long-Term Cybersecurity                    | Henry Papadatos SaferAI                                            | Henry Papadatos SaferAI                                            | James Sykes University of Warwick                |
+| Anna Katariina Wisakanto Center for AI Risk Management & Alignment | Anna Katariina Wisakanto Center for AI Risk Management & Alignment | Anna Katariina Wisakanto Center for AI Risk Management & Alignment | Anna Katariina Wisakanto Center for AI Risk Management & Alignment | Malcolm Murray† SaferAI                          |
+</Table>
+
+# Abstract
+
+We investigate the design of robust risk models to assess societal risks posed by advanced AI systems, an emerging area in AI governance. Many regulatory proposals increasingly require systemic risk assessment, but in the absence of rigorous quantitative methods, the question remains what state of the art risk modeling should look like in practice. We identify the key methodological and institutional challenges that currently limit the adoption of risk modeling. We review five research traditions that inform this problem: probabilistic risk assessment, catastrophic AI risk analysis, cybersecurity risk quantification, Bayesian causal inference, and threshold-based governance. We compare two leading proposals, scenario-based risk estimation and Bayesian network-based threshold setting. Drawing on a workshop with 22 experts and subsequent analysis, we identify a structured agenda of open questions concerning model structure, scope, evidence integration, validation, and governance. We close by outlining priorities for progress, arguing that it will depend on integrating quantitative modeling with independent evaluation, transparent and tiered disclosure, and institutions capable of maintaining and updating risk models over time.
+
+\* ∗ This work completed primarily during affiliation with the Center for Long-Term Cybersecurity
+
+\* † Corresponding authors: krystal@securityandtechnology.org, deepika.raman@berkeley.edu, malcolm@safer-ai.org
+
+<!-- PageFooter: Preprint. -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+# Contents
+
+<Table>
+| 0                                                | 1                                      | 2                                                                    | 3                       |
+|:-------------------------------------------------|:---------------------------------------|:---------------------------------------------------------------------|:------------------------|
+| 1 Introduction                                   | 1 Introduction                         | 1 Introduction                                                       | 3                       |
+| 2                                                | Background on AI Risk Modeling         | Background on AI Risk Modeling                                       | 4                       |
+|                                                  | 2.1                                    | Probabilistic Risk Assessment and Safety Engineering . . . . . .     | . . . . . . . . . 4     |
+|                                                  | 2.2                                    | AI Catastrophic Risk Analysis . . . . . . . . . . . . . . . . . . .  | . . . . . . . . . 5     |
+|                                                  | 2.3                                    | Cybersecurity Risk Quantification . . . . . . . . . . . . . . . . .  | . . . . . . . . . 6     |
+|                                                  | 2.4                                    | Bayesian Networks and Causal Inference . . . . . . . . . . . . .     | . . . . . . . . . 6     |
+|                                                  | 2.5                                    | Intolerable Risk Thresholds and Red Lines . . . . . . . . . . . . .  | . . . . . . . . . 6     |
+| 3 Workshop Context and Motivation                | 3 Workshop Context and Motivation      | 3 Workshop Context and Motivation                                    | 7                       |
+|                                                  | 3.1                                    | Growing AI Capabilities and Associated Risks . . . . . . . . . . .   | . . . . . . . . . 7     |
+|                                                  | 3.2                                    | Limitations of Current Risk Assessment Methods . . . . . . . . .     | . . . . . . . . . 8     |
+|                                                  | 3.3                                    | The Need for Quantitative Risk Modeling Methods . . . . . . . .      | . . . . . . . . . 9     |
+|                                                  | 3.4                                    | Current Methodological Proposals . . . . . . . . . . . . . . . . .   | . . . . . . . . . 9     |
+|                                                  |                                        | 3.4.1 Scenario-Based Risk Estimation Framework . . . . . . .         | . . . . . . . . . 10    |
+|                                                  |                                        | 3.4.2 Bayesian Network for Risk Threshold Setting Framework          | . . . . . . . . . 10    |
+| 4                                                | Open                                   |                                                                      |                         |
+| Questions                                        | Questions                              | Questions                                                            | 10                      |
+|                                                  | 4.1 Risk                               | Model Structure . . . . . . . . . . . . . . . . . . . . . . . .      | . . . . . . . . . 11    |
+|                                                  | 4.1.1                                  | Data Types and Challenges . . . . . . . . . . . . . . . . .          | . . . . . . . . . 11    |
+|                                                  | 4.1.2                                  | Model Architecture . . . . . . . . . . . . . . . . . . . . .         | . . . . . . . . . 12    |
+|                                                  | 4.1.3                                  | Using Multiple Models . . . . . . . . . . . . . . . . . . .          | . . . . . . . . . 13    |
+|                                                  | 4.2 Model                              | Scope and Granularity . . . . . . . . . . . . . . . . . . . .        | . . . . . . . . . 14    |
+|                                                  | 4.2.1                                  | Coverage of Risk Universe . . . . . . . . . . . . . . . . .          | . . . . . . . . . 14    |
+|                                                  | 4.2.2                                  | Granularity of Individual Models . . . . . . . . . . . . .           | . . . . . . . . . 14    |
+| 4.3                                              | Evidence Integration and Elicitation . | . . . . . . . . . . . . . . .                                        | . . . . . . . . . 14    |
+</Table>
+
+<Table>
+| 0                                                | 1                                      | 2                                                                    | 3                       |
+|:-------------------------------------------------|:---------------------------------------|:---------------------------------------------------------------------|:------------------------|
+|                                                  | 4.3.1                                  | Elicitation Methods . . . . . . . . . . . . . . . . . . . . .        | . . . . . . . . . 15    |
+| 4.4                                              | Validating and Updating Models         | . . . . . . . . . . . . . . . . . .                                  | . . . . . . . . . 16    |
+|                                                  | 4.4.1                                  | Validation and Model Quality Metrics . . . . . . . . . . .           | . . . . . . . . . 16    |
+|                                                  | 4.4.2                                  | Model Assumptions Tracking . . . . . . . . . . . . . . .             | . . . . . . . . . 17    |
+| 4.5                                              | Governance and Institutional Design .  | . . . . . . . . . . . . . . .                                        | . . . . . . . . . 18    |
+|                                                  | 4.5.1                                  | Roles and Responsibilities . . . . . . . . . . . . . . . . .         | . . . . . . . . . 18    |
+|                                                  | 4.5.2                                  | Oversight and Coordination . . . . . . . . . . . . . . . .           | . . . . . . . . . 19    |
+|                                                  | 4.5.3                                  | Institutional Design Tradeoffs . . . . . . . . . . . . . . .         | . . . . . . . . . 19    |
+| 5 Prioritized Research Areas and Recommendations |                                        |                                                                      | 20                      |
+|                                                  | 5.1                                    | Prioritized Research Areas . . . . . . . . . . . . . . . . . . . . . | . . . . . . . . . 20    |
+| 5.2 6                                            | Recommendations . . . . Conclusion     | . . . . . . . . . . . . . . . . . . . . . .                          | . . . . . . . . . 21 21 |
+</Table>
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+# 1 Introduction
+
+The need for rigorous and quantitative methods to assess the societal risks posed by AI systems has become a pressing challenge for AI governance. Without standardized risk assessment methodologies, regulators are left with qualitative descriptions and a variety of competing approaches. Regulatory frameworks such as the EU AI Act, California SB 53, and the Seoul AI Safety Summit's Frontier AI Safety Commitments [1-3] have all recommended that frontier AI developers conduct systemic risk assessments, but largely leave the methodological details of those assessments undefined. The EU AI Act's Code of Practice specifically calls for signatories to conduct both systemic risk estimation and systemic risk modeling. The Code calls for using "state of the art" methods, but does not define what these are. 2 Currently, there is no consensus on what the state of the art is [4] or what best practices for AI risk modeling should involve, in part because there are still a variety of technical and governance challenges around the operationalization of these methods. This paper aims to summarize the existing literature on AI risk modeling and highlight current gaps in research and practice that, once addressed, would allow robust risk modeling methods and tools to be developed.
+
+Other safety-critical industries have well-established probabilistic risk assessment methods. However, these approaches have limited utility when applied to frontier AI systems. In many of the safetycritical domains where risk modeling is employed, such as nuclear and aerospace, failure modes can be clearly specified and bounded. Crucially, this condition does not hold for frontier AI systems, which have general-purpose capabilities and operate in open-ended environments. The MIT AI Risk Repository [5] catalogs a large number of diverse potential and observed risks posed by AI systems, and includes many overlapping entries. This breadth illustrates the scale and heterogeneity of the AI risk landscape and the extent to which AI risks are less standardized than those in other domains. Current risk frameworks and modeling methods cannot accommodate the number of variables and dynamic interactions between them required to capture this risk space, let alone adaptively adjust the probability distributions from which their estimates are derived. Furthermore, there are important limitations to how risk models can be used that depend on the final design decisions made and require the creation of new methods of governance. As a result, new research efforts have emerged with the goal of enabling risk modeling to meet these challenges. The methodological frontier we describe in this paper is a convergence of at least five distinct research traditions: probabilistic safety engineering, catastrophic AI risk analysis, cybersecurity risk quantification, Bayesian causal inference, and the study of intolerable risk thresholds and red lines. No single tradition is sufficient on its own, and the hybrid and integrative approach required is still being constructed.
+
+This paper is organized around two objectives.
+
+· Objective 1 is to provide the research community with a structured list of open questions that must be investigated further in order for AI risk modeling to mature as a field. We aim to sharpen and add context to these questions so that they become tractable. We distinguish problems that stem from missing data, unresolved conceptual disagreement, or institutional and coordination barriers, among others, and start to identify which questions are prerequisites for progress on others.
+
+· Objective 2 is to provide practitioners and policymakers with sufficient grounding in the technical and governance issues surrounding AI risk modeling in order to engage productively with this research agenda. We have found that technical and governance questions in this domain are tightly coupled. Who builds and validates risk models, what level of transparency is required to meaningfully understand model capabilities, and what institutional mechanisms are needed to use risk models in practice are not questions that can be cleanly separated from those around model architecture and evidence integration.
+
+To advance progress toward these objectives, we hosted a workshop of twenty-two experts spanning AI safety, cybersecurity, probabilistic risk modeling, and AI governance. Insights from this session, along with subsequent analysis by the authors, were synthesized. We also provide a comparative analysis of two current methodological proposals, a scenario-based risk estimation framework [6-8] and a Bayesian network risk threshold setting framework [9]. We characterize their underlying assumptions, complementary strengths, and the conditions under which each is most appropriate.
+
+\* 2 Stated in Measure 3.3 Systemic Risk Modeling. Applicable to providers of the most advanced models that are subject to the AI Act's obligations for providers of general-purpose AI models with systemic risk under Article 55 of the AI Act.
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+We then surface and organize the open questions that must be resolved for either approach, or any successor approach, to be operationalized at scale. We are concerned with AI systems rather than AI models, as most risk modeling efforts would assess the risks from the AI system as a whole (including tools, scaffolding, and interfaces) rather than the stand-alone model. Similarly, where possible, we refer to "risk models" rather than simply "models" to not confuse risk models with AI models themselves.
+
+There are several important things this paper does not attempt to do:
+
+· Resolve any of the open questions it identifies. We work to clarify questions and their dependencies, not to answer them.
+
+· Propose a complete quantitative risk model for any specific risk domain or threat scenario.
+
+· Evaluate or endorse any particular AI system, model developer, or existing governance framework.
+
+· Address the full range of AI risk domains. Our focus is on catastrophic misuse risks, specifically AI-enabled threats in the cyber and CBRN (Chemical, Biological, Radiological, Nuclear) domains, and on subsets of the risk of loss of control. 3
+
+· Provide a comprehensive survey of probabilistic risk assessment or Bayesian methods. The background on these traditions is included only to the extent necessary to situate the open questions.
+
+The remainder of the paper is organized as follows. Section 2 reviews the five research traditions that inform current approaches to AI risk modeling: probabilistic risk assessment and safety engineering, catastrophic AI risk analysis, cybersecurity risk quantification, Bayesian networks and causal inference, and intolerable risk thresholds and red lines. Section 3 sets out the workshop context and motivation, covering current AI capability trends, the limitations of existing risk assessment methods, the case for quantitative risk modeling, and the two methodological proposals that anchor the comparative analysis. Section 4 organizes the open questions identified through the workshop and subsequent analysis along five dimensions: risk model structure, scope and granularity, evidence integration and elicitation, validation and updating, and governance and institutional design. Section 5 distills these into prioritized research areas and recommendations. Section 6 concludes.
+
+# 2 Background on AI Risk Modeling
+
+At its core, risk modeling aims to characterize the relationship between potential hazards, the likelihood of adverse events, and the magnitude of resulting harms. In the context of AI, this requires moving beyond isolated measures of model capability to structured representations of how harms arise through sociotechnical systems. As prior work has emphasized, an effective approach to risk modeling is to combine scenario building (mapping causal pathways from hazard to harm) with risk estimation (quantifying the likelihood and severity of those pathways).
+
+AI risk modeling sits at the intersection of several established research traditions, each of which provides partial tools for understanding and quantifying risk in complex systems. While no single tradition is sufficient to address the challenges posed by advanced AI, together they offer a foundation for developing more robust methodologies.
+
+This section reviews five strands of literature that collectively inform current approaches to AI risk modeling: probabilistic risk assessment and safety engineering, catastrophic AI risk analysis, cybersecurity risk quantification, Bayesian networks and causal inference, and the study of intolerable risk thresholds. Each contributes distinct concepts, tools, and assumptions that shape how risks can be modeled, while also highlighting key limitations that motivate the need for integrative approaches.
+
+# 2.1 Probabilistic Risk Assessment and Safety Engineering
+
+The foundational logic of quantified risk assessment originates in the nuclear and aerospace industries of the mid-twentieth century. The landmark Reactor Safety Study [10], published by the U.S. Nuclear Regulatory Commission in 1975, was the first large-scale application of fault tree analysis (FTA) 4 and event tree analysis (ETA) 5 to estimate the probability of catastrophic failure in a complex engineered system [10]. This work demonstrated the feasibility of decomposing a complex failure into observable sub-events, assigning probabilities to each, and propagating them through a logical structure to produce a quantified risk estimate. We draw inspiration from this example in particular. Subsequent development through the aerospace and chemical process industries - including IEC 61508, the international standard for functional safety of electrical and electronic systems, and the process safety frameworks underpinning HAZOP analysis - refined these methods and embedded them into regulatory practice [11].
+
+\* 3 Questions specific to other risk categories, such as labor displacement or algorithmic bias, are out of scope, although we note that some of the methodological questions raised here may generalize to risk modeling in those domains as well.
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+These methods are limited, however, in their direct application to AI. Classical probabilistic risk assessment (PRA) assumes failure modes are broadly identifiable and specifiable in advance. This works well for engineered systems with well-characterized components or operating envelopes. AI systems, particularly large language models (LLMs) that operate in open-ended environments, can fail in ways that mask the error of their outputs, and have decision logic that is opaque, making the assumption of classical PRA a poor fit without significant adaptation [12].
+
+To address this, Wisakanto et al. [13] introduce the PRA for AI framework, which adapts the PRA tradition into a structured threat modeling methodology for AI systems. Rather than deriving point probabilities from historical failure data, the framework guides assessors through systematic hazard identification, traces causal risk pathways from system characteristics to societal harms, and produces banded risk level estimates with explicit documentation of assumptions and uncertainty. Aspectoriented hazard analysis provides systematic coverage of the AI hazard space using a taxonomy of AI system aspects organized into four top-level categories: capabilities, domain knowledge, affordances, and impact domains. Rather than sampling the hazard space through pre-selected scenarios or commonly discussed attack chains, the framework indexes the hazard space structurally through these aspect categories, examining how each can act as a bottleneck, how aspects interact, and how competence and incompetence each generate distinct hazards. Risk pathway modeling traces causal progressions from source aspects to terminal aspects using bidirectional analysis, complementing forward propagation with backward tracing from impact domains to enabling system characteristics. Uncertainty is managed through standardized intensity rubrics, classification heuristics, and explicit uncertainty tracing protocols. These results are then synthesized into a risk report card aggregating estimates across aspect categories. This approach establishes a robust and defensible PRA method for AI on which both scenario-based and probabilistic risk modeling approaches can operate.
+
+# 2.2 AI Catastrophic Risk Analysis
+
+A second tradition originates in the philosophical and technical literature on catastrophic risks posed by advanced AI systems. Early foundational work established the conceptual case that sufficiently capable AI systems could pose qualitatively different risks from those associated with prior technologies, including the potential for large-scale or irreversible harm [14, 15]. This body of work has emphasized the importance of long-term and low-probability, high-impact risks, often under conditions of deep uncertainty and limited empirical precedent.
+
+More recent contributions have begun to move this tradition toward greater empirical and operational grounding. Efforts such as those by Hendrycks et al. [16] and Slattery et al. [5] articulate concrete threat models for advanced AI systems, including misuse risks (e.g., AI-enabled cyber or biological attacks) and risks arising from loss of control or misalignment. These works aim to translate abstract concerns into more structured descriptions of how harms could materialize, often by identifying key actors, capabilities, and pathways.
+
+\* 4 Fault tree analysis is a deductive, systematic reliability analysis method developed in the nuclear industry to evaluate the causes of system-level failures. Beginning with a predefined undesired "top event" (e.g., core damage), FTA uses Boolean logic to map how combinations introduced by lower-level component failures, human errors, and external events could lead to that outcome. The resulting fault tree structure is composed of logic gates such as AND and OR and enables both qualitative identification of critical failure pathways (minimal cut sets) and quantitative estimation of event probabilities.
+
+\* 5 Event tree analysis is an inductive, forward-looking reliability analysis method used to evaluate the possible outcomes following an initiating event (e.g., a loss-of-coolant accident or station blackout). Starting from the initiating event, ETA models the sequence of successes and failures of safety systems and operator actions as a branching tree structure, with each branch representing a distinct accident progression pathway. By assigning probabilities to each branch point, ETA enables both qualitative identification of key system dependencies and quantitative estimation of outcome frequencies (e.g., core damage or safe shutdown).
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+Most existing work in this tradition remains primarily qualitative. While scenario development has become increasingly sophisticated, there are limited methods for assigning probabilities to these scenarios or for comparing their relative importance in a systematic way. As a result, it is difficult to use these analyses directly for decision-making tasks such as prioritizing mitigations, setting risk thresholds, or evaluating trade-offs between different policy options.
+
+Another key challenge lies in handling uncertainty and disagreement. Catastrophic AI risks often involve deep epistemic uncertainty, where both the structure of scenarios and the values of key parameters are contested. Existing approaches typically represent this uncertainty implicitly, through narrative discussion or the exploration of multiple scenarios, rather than through explicit probabilistic modeling.
+
+# 2.3 Cybersecurity Risk Quantification
+
+The existing body of work on quantitative risk assessment within the cybersecurity field has also been a source of inspiration. The Factor Analysis of Information Risk (FAIR) framework [17] is the most mature prior attempt to bring actuarial-style quantification to cyber risk. FAIR decomposes cyber risk into a hierarchy of factors (threat event frequency, vulnerability, and loss magnitude) and provides a structured method for estimating probability distributions over each, enabling Monte Carlo aggregation to an overall risk estimate. The Common Vulnerability Scoring System (CVSS) [18] provides a complementary resource, with a standardized vocabulary for scoring the severity of individual software vulnerabilities. 6 Threat modeling methodologies, including STRIDE [20] and PASTA [21], provide structured vocabularies for decomposing attacker behavior into observable, assessable steps. For understanding the landscape of cyber-specific threats, frameworks like MITRE ATT&CK [22] provide insight into real-world kill chains. However, these frameworks were designed for human-driven threats with relatively stable characteristics. They do not account for AI systems as autonomous threat actors, cannot model rapid capability evolution that shifts the exploitability of vulnerabilities, and lack the causal structure needed to trace how specific AI capabilities enable particular attack pathways.
+
+# 2.4 Bayesian Networks and Causal Inference
+
+Bayesian networks (BNs) were formalized by Judea Pearl as a language for probabilistic reasoning [23]. Through the representation of conditional dependencies and the subsequent elaboration of do-calculus (a mathematical framework for predicting the effects of deliberate interventions), Pearl provided the tools necessary to model systems where variables have structured causal relationships rather than varying independently [24]. This methodology has since been refined across various high-stakes domains, from medical diagnosis and fault detection to actuarial science and intelligence analysis [25, 26].
+
+For AI risk modeling, BNs offer two primary advantages. First, they make causal structure explicit, allowing modelers to represent the conditional logic of, for example, a multi-stage cyberattack where the success of later stages is strictly contingent on earlier ones. In contrast, simpler models, such as some FAIR-style models, often treat variables as independent or weakly correlated, missing the conditional dependencies that BNs can represent. Second, they provide a framework for synthesizing evidence. Bayesian updating allows risk estimates to be refined as new data arrives from capability benchmarks, red-team exercises, or observed incidents. Despite these strengths, BNs face scaling limitations, both in the computational complexity of performing inference and the parameterization of the network. The difficulty of eliciting well-calibrated parameter estimates from domain experts is a further challenge [27, 28].
+
+# 2.5 Intolerable Risk Thresholds and Red Lines
+
+This emerging area in AI safety discourse draws from international humanitarian law, arms control, and the ethics of absolute constraints. The prohibition frameworks governing chemical weapons, biological weapons, and anti-personnel landmines all make the claim that some risks are categorically intolerable, requiring prohibition rather than managed mitigation [29-31]. Within the life sciences, the Dual-Use Research of Concern (DURC) framework, articulated in the Fink Report, represents the most technically mature attempt to institutionalize threshold-based governance over capabilities that could enable mass harm [32].
+
+\* 6 There is now also an AI-specific resource, the AI Vulnerabilities Scoring System (AIVSS) [19].
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+In the AI domain, these efforts began with the Seoul Ministerial Statement [3] and Frontier AI Safety Commitments [33] that were signed by 27 nations and the EU, and 16 AI developers, respectively at the Seoul AI Safety Summit [34]. Companies have since published Frontier Safety Frameworks, representing industry-led attempts to define specific capability thresholds that would trigger mandatory mitigation actions, such as deployment pauses or appropriate information security levels [35-37]. Accompanying literature has also identified principled approaches to identifying thresholds, red lines and other best practices across organizations to strengthen proactive risk-management efforts [38-40]. Other, broader, civil society and internationally endorsed work, such as the campaign for the Global Call for AI Red Lines [41], has also gained traction with signatories from across the world appealing for clear and verifiable thresholds for universally unacceptable risks.
+
+However, these threshold definitions are largely qualitative and/or capability-based. Phrases such as "meaningful uplift," when referring to biological weapon creation, correctly identifies a risk area of concern, but lacks the quantitative operationalization needed for consistent enforcement. Emerging regulatory action underscores this need for actionable criteria, and this is a central motivation for emerging methodologies aimed at moving from qualitative descriptors to probabilistic measures [9]. 7
+
+# 3 Workshop Context and Motivation
+
+# 3.1 Growing AI Capabilities and Associated Risks
+
+General scaling of LLMs has led to the rapid advancement of capabilities across an array of economically valuable tasks. These capabilities include information synthesis, sophisticated code generation, vulnerability discovery, social engineering, and the autonomous execution of complex multi-step planning and reasoning. While such capabilities promise significant societal utility, they also simultaneously introduce or exacerbate catastrophic risks, including cybersecurity, biological security, and large-scale manipulation.
+
+A defining characteristic of these risks is that they are not inherent to the capabilities themselves, but emerge through the dynamic interplay between model capabilities, threat actor behavior, and the vulnerabilities of real-world systems. Model capabilities should be viewed as risk sources, not risks in themselves. This distinction is important because improvements in performance on capability benchmarks or task-specific metrics do not translate directly into realized societal harm; instead, they operate through intricate, multi-stage causal pathways involving human agents, specific targets, and broader environmental contingencies.
+
+Emerging evidence within the cybersecurity domain illustrates this dynamic. Quantitative modeling of AI-enabled offensive cyber operations indicates that AI systems may significantly enhance the efficacy and scale of attacks and broaden the spectrum of viable targets. These effects are driven by several distinct mechanisms: improving the success probability of individual attack chain steps, increasing attack throughput per unit of time, lowering the technical barriers to entry for novice actors, and facilitating complex coordination across disparate attack stages. Critically, these effects remain heterogeneous across threat scenarios, with varied combinations of factors driving the aggregate risk profile depending on the specific operational context.
+
+More broadly, the AI risk landscape is defined by three characteristics that distinguish it from the failure modes encountered in traditional safety-critical industries:
+
+\* 7 The EU AI Act introduces the legal category of "unacceptable risk," prohibiting certain AI systems expected to produce systemic harms or violate fundamental rights, thereby codifying the principle that some AI applications must be categorically disallowed rather than merely mitigated (Regulation 2024/1689) [42]. Recent U.S. regulatory initiatives similarly move toward formalizing threshold-based governance. For example, California Senate Bill 53 requires frontier-model developers to define and assess "catastrophic risk" thresholds - defined as risks that could plausibly contribute to events causing more than 50 deaths or over $1 billion in damages - and to publish risk assessments and mitigation protocols tied to those thresholds [2]. Likewise, New York's RAISE Act obligates large AI developers to establish and disclose safety frameworks addressing severe harms such as automated crime or AI-assisted bioweapon development, along with mandatory reporting of critical safety incidents [43]. Together, these efforts reflect a broader shift in AI governance toward defining enforceable "red lines" grounded in measurable risk thresholds rather than purely qualitative capability descriptions.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+· Open-ended capability space: The generalizability of AI systems enables the emergence of novel and difficult-to-enumerate failure modes that defy traditional closed-world assumptions.
+
+· Rapid capability scaling: Continuous improvements in underlying architectures can suddenly shift the probability distributions of associated risks.
+
+· Sociotechnical dependence: Risk outcomes are highly contingent upon factors such as human behavior and the specific conditions of deployment.
+
+Collectively, these features suggest that the interplay between AI capabilities and societal risk is not straightforward but rather highly context-dependent. Consequently, robust risk assessment necessitates a transition from capability-centric evaluations toward modeling frameworks that connect capabilities, deployment context, and other relevant inputs to the harms that are realized.
+
+# 3.2 Limitations of Current Risk Assessment Methods
+
+Despite an increased focus on AI-related hazards, current AI risk assessment practices remain methodologically insufficient to capture the underlying causal structure or the full magnitude of these risks. Existing approaches generally coalesce into three categories: capability-centric evaluations, qualitative safety cases, and fragmented quantitative studies. While each provides partial visibility, they suffer from significant limitations when applied in isolation to frontier AI systems.
+
+First, capability-centric evaluations do not constitute direct measures of risk. Frontier AI safety frameworks often rely on static benchmarks to trigger mitigation responses once predefined thresholds are reached. However, these methods assess only the existence of capabilities rather than the probability or severity of actual resulting harms to society. Consequently, they fail to provide answers regarding the absolute risk of a system or whether proposed mitigations are commensurate with the threat.
+
+In addition to this uncertain external validity, benchmarks are imperfect proxies in other ways. Their performance may conflate disparate underlying capabilities and often have issues with construct validity and reproducibility [44]. Lately, there have also been increasing issues with benchmark saturation [45]. This introduces significant epistemic ambiguity into the assessment process, limiting its utility for high-stakes decision-making.
+
+Further, current methodologies that examine isolated capabilities fail to capture the many-layered interactions between factors. Risks in the cyber and CBRN domains are realized through a multifaceted sequence, involving threat actor behavior and incentives as well as targets with very differing levels of defenses. Loss of control or autonomy risk scenarios may involve systems purposefully evading safeguards or pursuing misaligned objectives. Agentic risk scenarios often include an interplay between multiple agents and cascading risk failures. Omitting analysis of this interplay creates critical blind spots and can lead to both under- and overestimating the level of risk.
+
+Safety cases offer structured arguments for safety but are not intended to provide exhaustive coverage of the risk space or to generate quantified estimates of likelihood and impact. Furthermore, they are also plagued with the same limitations in their verifiability [46]. Rather than serving as a substitute for formalized, probabilistic risk modeling, safety cases should be understood as a complementary framework that incorporates risk modeling outputs as evidence. Quantitative risk models can provide the causal pathways, probability estimates, and severity assessments that populate the evidence layer of a safety case, while the safety case structure organizes these inputs into a coherent argument for deployment decisions.
+
+Third, qualitative scenario building and quantitative estimation are often decoupled. In current practice, scenario analysis and statistical estimation are frequently conducted as independent workstreams. This leads to quantification driven by data availability rather than causal relevance, and scenario analysis that lacks decision-relevant probabilistic outputs. As highlighted in earlier work, estimation without a structured scenario framework cannot produce a coherent risk profile, while scenarios without quantification are insufficient for setting defensible thresholds or navigating governance trade-offs.
+
+Fourth, traditional approaches struggle to account for dynamic feedback loops and interacting effects. Advanced AI systems can fundamentally shift risk distributions by enabling novel attack strategies, altering the offense-defense balance, and creating interactions between capabilities and countermeasures. Methodologies developed for relatively static, closed-world systems are poorly suited to capturing these shifting sociotechnical dynamics.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+Collectively, these limitations imply that existing practices are insufficient to support essential risk management functions, including:
+
+· Comparative analysis of risks across disparate systems or domains.
+
+· Quantitative evaluation of mitigation effectiveness.
+
+· Establishing and enforcing rigorous, measurable risk thresholds.
+
+· Prioritizing evaluation resources and monitoring efforts.
+
+Addressing these gaps motivates a methodological transition toward frameworks that explicitly represent the causal mechanisms through which risks emerge and evolve.
+
+# 3.3 The Need for Quantitative Risk Modeling Methods
+
+To address these systemic methodological gaps, there is a critical need for quantitative risk modeling approaches that map AI capabilities to societal harms through structured causal representations. These frameworks seek to bridge the epistemological distance between hazards (latent model capabilities) and harm (realized economic or physical damage) by explicitly modeling the intermediate causal pathways that link them.
+
+At a high level, this quantitative transition integrates two primary components:
+
+1. Scenario building: The definition of concrete, plausible causal pathways from initial hazard to realized harm.
+
+2. Risk estimation: The assignment of probability and impact distributions to each discrete step within these pathways.
+
+This approach enables the construction of models capable of producing decision-relevant outputs, such as the probability of a system exceeding a specific harm threshold within a defined time horizon.
+
+This structural decomposition provides a framework for synthesizing heterogeneous evidence (e.g., capability benchmarks, structured expert elicitation, historical incident reports, and red-teaming data) into a unified probabilistic model.
+
+Furthermore, quantitative risk modeling facilitates several governance functions:
+
+· Enables cross-domain comparative analysis by situating AI-enabled risks relative to established threats in other domains.
+
+· Supports threshold-based governance through measurable red lines for intolerable risk.
+
+· Provides uncertainty quantification by identifying the primary drivers of epistemic uncertainty and expert disagreement.
+
+· Allows for updating as new evidence emerges, incorporating new threat intelligence and capability data as they surface.
+
+Significantly, the process of model construction provides value prior to full quantification by clarifying underlying assumptions, surfacing evidence gaps, and identifying critical bottlenecks in threat pathways.
+
+# 3.4 Current Methodological Proposals
+
+A small number of research publications have emerged as a methodological foundation for modeling AI-enabled risks. This section outlines two methodological approaches - a scenario-based risk estimation framework and a Bayesian network for risk threshold setting framework - and related research that supports them.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+

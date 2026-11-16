@@ -1,0 +1,14 @@
+{
+  "request_hash": "6bb9a4d755e9e5ad4c4c0fb84f4e668ab1460c50c5a2248ef149ef0fcc5ab8c2",
+  "prompt_sha256": "86451d9e5920bdf4034257a22f2fdabacfc82067242559a79e4b5634c8ccff30",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNbGRR5sOL6MfN6kZWmdYtOm9rXV",
+  "prompt_tokens": 7773,
+  "completion_tokens": 52,
+  "actual_usd": 0.0011971500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by discussing the limitations of evaluating the accuracy of AI systems in recruitment, specifically noting that it is impossible to retrospectively determine the suitability of rejected candidates."
+  }
+}

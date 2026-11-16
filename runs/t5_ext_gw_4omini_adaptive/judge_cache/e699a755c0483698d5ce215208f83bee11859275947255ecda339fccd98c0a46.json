@@ -1,0 +1,14 @@
+{
+  "request_hash": "e699a755c0483698d5ce215208f83bee11859275947255ecda339fccd98c0a46",
+  "prompt_sha256": "fdf7ddd9329121e2a048e81b980008b4604020de90d33b4560c05548fc25840d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOZJi7izaODYuDJfqW32wefk29mK",
+  "prompt_tokens": 5668,
+  "completion_tokens": 43,
+  "actual_usd": 0.0008759999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition of validation, including its source (ISO 9000:2015), which fully supports the claim made in the Reference Answer."
+  }
+}

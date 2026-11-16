@@ -1,0 +1,14 @@
+{
+  "request_hash": "4cae48e16065444c1c0628291bd7617feff80ff17120c2c3541195caa59cbffd",
+  "prompt_sha256": "097677c68598ff39b55911076ede4e73fe04af46eedf21c34090aeec452d7993",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOE2QcqJVkCmBMM3FTECArLEBsLY",
+  "prompt_tokens": 7125,
+  "completion_tokens": 40,
+  "actual_usd": 0.00109275,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the four categories of the AI Risk Mitigation Taxonomy and providing specific examples for each category."
+  }
+}

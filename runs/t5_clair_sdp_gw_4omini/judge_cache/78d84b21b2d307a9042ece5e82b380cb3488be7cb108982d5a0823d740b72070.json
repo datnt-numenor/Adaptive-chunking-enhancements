@@ -1,0 +1,14 @@
+{
+  "request_hash": "78d84b21b2d307a9042ece5e82b380cb3488be7cb108982d5a0823d740b72070",
+  "prompt_sha256": "715d95ea980397205a95756e3f7812e640be7913874bb7eed488f7854495aa6f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMLmcXpdjHYuOF04ieLyuzI3VCP",
+  "prompt_tokens": 7486,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011511,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the fines imposed under Article 101 of the AI Act, including the specific amounts and conditions, which fully supports the claims made in the Reference Answer."
+  }
+}

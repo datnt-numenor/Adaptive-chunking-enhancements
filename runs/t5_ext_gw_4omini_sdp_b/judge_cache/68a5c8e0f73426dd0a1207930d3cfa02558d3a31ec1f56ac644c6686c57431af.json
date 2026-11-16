@@ -1,0 +1,14 @@
+{
+  "request_hash": "68a5c8e0f73426dd0a1207930d3cfa02558d3a31ec1f56ac644c6686c57431af",
+  "prompt_sha256": "0579a246c1c58132a99932becb572bce224563d709c6188e729328821ef7566c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1UZVbT9cj7KyHqSFFfcTcBssFP",
+  "prompt_tokens": 5925,
+  "completion_tokens": 38,
+  "actual_usd": 0.0009115499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning that 'work-hour-per-week' is used as a proxy for measuring individual effort."
+  }
+}

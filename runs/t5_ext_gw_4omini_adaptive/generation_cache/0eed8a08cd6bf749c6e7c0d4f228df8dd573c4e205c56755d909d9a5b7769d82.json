@@ -1,0 +1,10 @@
+{
+  "request_hash": "0eed8a08cd6bf749c6e7c0d4f228df8dd573c4e205c56755d909d9a5b7769d82",
+  "prompt_sha256": "bfbff9ff51d8338f561a47c6fe89f5b1dd27604b438f1225cbf81cefa2c01aa3",
+  "answer": "PDS stands for \"Perspectives Distribution Extractor.\" It is a metric that quantifies the proportional prominence of each cultural perspective within a set, measuring each perspective's share of the total reference count across all perspectives. The PDS is represented as a vector PDS = [P1, P2, . . . , Pn], where each element Pi corresponds to the score of a specific perspective Pi. The score for each perspective is defined as the reference count for perspective Pi divided by the total reference count for all perspectives in the dictionary, ensuring that the PDS for all perspectives sums to 1. This provides a normalized measure for straightforward comparison of each perspective's prominence.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMxHSDXGOpc2BJzTGhUFIW3eXphB",
+  "prompt_tokens": 7922,
+  "completion_tokens": 136,
+  "actual_usd": 0.0012698999999999998
+}

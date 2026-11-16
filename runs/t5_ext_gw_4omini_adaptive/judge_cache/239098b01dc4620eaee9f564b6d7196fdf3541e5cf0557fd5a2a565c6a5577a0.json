@@ -1,0 +1,14 @@
+{
+  "request_hash": "239098b01dc4620eaee9f564b6d7196fdf3541e5cf0557fd5a2a565c6a5577a0",
+  "prompt_sha256": "5700b0beabd2b6486f7a29fb18971fc8c71fb044c3b776353327b2421b64d303",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNqT3bJLhZ3EapXHWvGtsC5wzI8o",
+  "prompt_tokens": 7982,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012219,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that GPAI providers commit to keeping up-to-date documentation on their evaluation results, fully supporting the claim made in the Reference Answer."
+  }
+}

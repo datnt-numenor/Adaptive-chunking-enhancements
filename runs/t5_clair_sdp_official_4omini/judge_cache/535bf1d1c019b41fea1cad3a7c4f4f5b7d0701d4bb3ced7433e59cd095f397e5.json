@@ -1,0 +1,14 @@
+{
+  "request_hash": "535bf1d1c019b41fea1cad3a7c4f4f5b7d0701d4bb3ced7433e59cd095f397e5",
+  "prompt_sha256": "99aa425e29274ae5b1578c213bc43f0829a57762a585442ca14d8fb57abd81f7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNP7RCUfpkJDgmcmYlnmxd4phO8e",
+  "prompt_tokens": 7842,
+  "completion_tokens": 42,
+  "actual_usd": 0.0012015,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed description of Coldline Storage, including its cost and suitability for data storage, which fully supports the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "d6e59fdcfbe0db2387909735e41585083e30bd954bbccbfd0d5461cbe726b9e1",
+  "prompt_sha256": "0bb8b0d48e397e84a5845da2ea81d742ed7275067d9effae2d2543d5dc47b2f2",
+  "answer": "According to NIST SP 800-218A, the recommended practices for tracking the provenance of both AI model components and training data include:\n\n1. **Track the Provenance**: Track the provenance of an AI model and its components and derivatives, including the training libraries, frameworks, and pipelines used to build the model.\n\n2. **Collect and Safeguard Provenance Data**: Collect, safeguard, maintain, and share provenance data for all components of each software release, such as in a software bill of materials (SBOM) or through Supply-chain Levels for Software Artifacts (SLSA).\n\n3. **Document Provenance**: Include documentation of the justification for AI model selection, the entire training process (including data preprocessing and model architecture), and track AI models that were trained on sensitive data.\n\n4. **Track Unknown Provenance**: Document which data do not have known provenance and track when provenance is unknown, as provenance verification is not always possible.\n\nThese practices aim to enhance security and accountability in AI model development and deployment.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiManby8niwOj8UHXSaLuwnf9FwQg",
+  "prompt_tokens": 8181,
+  "completion_tokens": 210,
+  "actual_usd": 0.0013531499999999998
+}

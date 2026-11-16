@@ -1,0 +1,14 @@
+{
+  "request_hash": "f46a47f794e48887694e2360d117af83f1a1d36fba424f812007304640f89d18",
+  "prompt_sha256": "a4441564e4c98467ec5cb81cc8a614f078a1bd8236639af543797463bcb2e5d5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORxnNIaPBNZ0H33mIXY9Pofh0e7",
+  "prompt_tokens": 5328,
+  "completion_tokens": 43,
+  "actual_usd": 0.0008249999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how the debate around watermarking includes contradictory claims of easy removability and permanence, highlighting the lack of shared evidence."
+  }
+}

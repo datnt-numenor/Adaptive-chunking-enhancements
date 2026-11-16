@@ -1,0 +1,14 @@
+{
+  "request_hash": "202af1571406ae0e78e7908d992717a686f9af4bdac18573bd0dcaf29f35c218",
+  "prompt_sha256": "571a2d6f7d0353ed7627197ae3fc3d48ed88588e1ec6448f3fc09a4957c9db21",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNBYA6IRPeyee4ZbhnUutDYBNi75",
+  "prompt_tokens": 7938,
+  "completion_tokens": 44,
+  "actual_usd": 0.0012171,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the need for continuous data collection for retraining and explaining how attackers can inject malicious samples to disrupt the retraining process."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "0024595ad082da52794bb5c279641b0c2713b247d48c160300a82c2cd45527ed",
+  "prompt_sha256": "c5385a7339ce713067635fb03bddd4da6b1f3e0a27c7efaa2d36c6e5ccd0f03a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8z8aGrPUDvrmmyXIsbtqVQr04Q",
+  "prompt_tokens": 8415,
+  "completion_tokens": 50,
+  "actual_usd": 0.00129225,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by discussing the challenges of detecting sandbagging and the potential for password locking to obscure dangerous capabilities, but it does not explicitly mention small experiments on known datasets."
+  }
+}

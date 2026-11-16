@@ -1,0 +1,14 @@
+{
+  "request_hash": "d23a7513334b9bd85c11ae2552fe5efd9f2d896a17be972a914e0ae446953deb",
+  "prompt_sha256": "c5af63cc61a963f103bc65b6156f3e4a6b2a4eda2bd120eed0ee00324888053b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLilDBPXi2TRMlp9yzXwhzPvBZX",
+  "prompt_tokens": 9229,
+  "completion_tokens": 40,
+  "actual_usd": 0.0014083499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly mentions 'Safety Assessment Principles (SAPs)' and provides a source for it, fully supporting the claim made in the Reference Answer."
+  }
+}

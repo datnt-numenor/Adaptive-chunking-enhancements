@@ -1,0 +1,14 @@
+{
+  "request_hash": "b69bfbbd1f6f90376a622e226f43cb13b0fb5e407550e18ca31a508e0350a5ac",
+  "prompt_sha256": "f324b9a88bccb308c2b4cfd02d4b564ec526e6957caaa81a2b001181f5dfe5e8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOWHrmsEW9FOkYLIm7CcPn1LRVTF",
+  "prompt_tokens": 9606,
+  "completion_tokens": 38,
+  "actual_usd": 0.0014636999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition of regurgitation in the context of AI models, fully supporting the claim made in the Reference Answer."
+  }
+}

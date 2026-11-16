@@ -1,0 +1,14 @@
+{
+  "request_hash": "d69e8d3163cd93e6e963a278edb22c6598b7a4f78b489b27227f41c0b58e82e0",
+  "prompt_sha256": "cdc128c3e8db6b69f218b4d9a7a7cc576cdf6369205990689ae55eda04c85fb7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODdPsWmfapbW9tqxtOzYqjG4yGt",
+  "prompt_tokens": 8973,
+  "completion_tokens": 44,
+  "actual_usd": 0.00137235,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining Objective Quality Evidence (OQE) as verifiable statements of fact about product/service quality that are essential for certification."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "f9004585f792e7e45696a996bc17811e4cd395e03bf33872598cf2f8b63a6685",
+  "prompt_sha256": "a16bea9fdc59578fcb1b7f868e6f767473f98d84a599e43f5ed9f379a61854f9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOW76otiMo6zE9FcSePXRNedqsGl",
+  "prompt_tokens": 7232,
+  "completion_tokens": 50,
+  "actual_usd": 0.0011148,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that AI models are essential components of AI systems but do not constitute AI systems on their own, as they require additional components to function as such."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "30f2280a7c67fd3b9c9f416bebe6d518a79a12eef6a4ebb17fc552f8be97b531",
+  "prompt_sha256": "f0aa261c9bd4dd0f58a7a8621adb4eeb136891400129fed266193454ae5a6946",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOlT5c5VJ0sVAB8cDYXUccGVcsaE",
+  "prompt_tokens": 7715,
+  "completion_tokens": 49,
+  "actual_usd": 0.00118665,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the principle of data minimization and the recommendation to use less intrusive formats for sensitive data, such as age brackets instead of full dates of birth."
+  }
+}

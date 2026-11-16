@@ -1,0 +1,14 @@
+{
+  "request_hash": "f0802a55e6288a936cd1de0b89fe8128bc2c7dd5b484ff3162b39490341a958d",
+  "prompt_sha256": "0d7c4a989ad49234b290dba27c0109e0cf1efb7d2090621e99eb44eddc2da1b4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOrEXuJJZtuGNrvEf5XHq9qeYfht",
+  "prompt_tokens": 8959,
+  "completion_tokens": 52,
+  "actual_usd": 0.00137505,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining infection attacks as a form of contamination during the training phase and categorizing them alongside manipulation and exfiltration attacks, as per the CNIL's taxonomy."
+  }
+}

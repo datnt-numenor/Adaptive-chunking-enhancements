@@ -1,0 +1,10 @@
+{
+  "request_hash": "4886ff6498e2f49125934575788aa36ea7260754658f417aa11a0057a93aa6ee",
+  "prompt_sha256": "194bec73093a2c2a831795c3744f769d785b64d6311dd116ddda5410c3355455",
+  "answer": "BERTopic is a topic modeling technique that clusters and colors documents based on their internal topic model, which uses cosine distance between documents to calculate their similarity. Each cluster of documents is assigned a descriptive label using class-based tf-idf ranking over the terms appearing in each cluster.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNEjyuUE486tB4Vnf2mL6165NBlt",
+  "prompt_tokens": 7814,
+  "completion_tokens": 54,
+  "actual_usd": 0.0012045
+}

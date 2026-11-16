@@ -1,0 +1,14 @@
+{
+  "request_hash": "9fbdb7233f4ef7fbc1d38799affaeca3773641d64a2be940b5aa8e95bd5b856a",
+  "prompt_sha256": "cf33e79221fac531a21f86539d4a2e9c17a358abc21010a7961617a2b419e398",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjw6N3MQma93Fyc5zXkrwPRhwu7",
+  "prompt_tokens": 5624,
+  "completion_tokens": 33,
+  "actual_usd": 0.0008634,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer regarding the obligations of providers of high-risk AI systems."
+  }
+}

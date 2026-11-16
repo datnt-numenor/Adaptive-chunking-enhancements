@@ -1,0 +1,10 @@
+{
+  "request_hash": "d56f5faf02bada92fd1bb9b1afac08cb7c7c217ebe6e28edb88cb8575b0a98d7",
+  "prompt_sha256": "41ac0b0abcac0ff8a18aac82456a594725b5bbac22037b1afaf4b7ffcf393c0c",
+  "answer": "According to the EU AI Act, the classification of high-risk AI systems depends on two main criteria: \n\n1. **Product Safety Regulations**: An AI system is considered high-risk if it serves as a safety component of a product that is covered by one of the harmonized EU acts listed in Annex I, or if the AI system itself is such a product. Additionally, it must be subject to conformity assessment by a third party for its market placement or putting into service based on those acts.\n\n2. **Critical Domains**: An AI system is also classified as high-risk if it is listed in Annex III, which outlines specific use cases across various critical domains such as biometrics, critical infrastructure, education, law enforcement, and more. These systems are presumed to be high-risk unless it can be demonstrated that they do not pose a significant risk to health, safety, or fundamental rights.\n\nThus, the classification is determined on a case-by-case basis, considering both the regulatory framework for product safety and the specific applications of AI systems in critical areas.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNItx6TqP1EwjwHN6JyLM1HW4QRo",
+  "prompt_tokens": 9441,
+  "completion_tokens": 210,
+  "actual_usd": 0.00154215
+}

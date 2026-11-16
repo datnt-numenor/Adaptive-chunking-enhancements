@@ -1,0 +1,14 @@
+{
+  "request_hash": "f7616e95db0f140d12a6b9faa4d21036891da32692a2984d248f3687d08b3f69",
+  "prompt_sha256": "f1d516941070ba3340c0bceda26a2efebf632778cc917444438efbadd81bd1b0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvOLiUWfDB4AOvIARN7HXxgjoxq",
+  "prompt_tokens": 6775,
+  "completion_tokens": 47,
+  "actual_usd": 0.0010444500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides a comprehensive overview of the different review models (Fully Open, Partially Open, and Fully Closed) used in AI/ML conferences, fully supporting the reference answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "c9d5d04052e1fcc3860bc50521ce60f45fb5f97c3f7650d47c94eb7922b3bc7b",
+  "prompt_sha256": "93f27df375f88bfd9fb3b3022648b8b245ac8f2d1cb84b189bae4ba7485f1c33",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOoDnJOP4BTm6J0TQUB8IoxZaZGD",
+  "prompt_tokens": 9279,
+  "completion_tokens": 48,
+  "actual_usd": 0.0014206499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the impact levels defined in the AIDA, including the specific categorization from I to IV, which fully supports the claim made in the Reference Answer."
+  }
+}

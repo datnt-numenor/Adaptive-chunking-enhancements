@@ -1,0 +1,14 @@
+{
+  "request_hash": "0b02f67d89663ff3fa7b363d556e22a45fcfba5ebf8364fd4e2be2a5b163e0e8",
+  "prompt_sha256": "c9a8226efa6d8507b4fde9bf7bce1d47c519ae9b8ce0f9365a64bdde2ebce835",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO35dNJufnN1G2H77W5qotOkFZPT",
+  "prompt_tokens": 10203,
+  "completion_tokens": 47,
+  "actual_usd": 0.0015586500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the toolkit's participatory design and stakeholder engagement mechanisms, which directly supports the claims made in the Reference Answer regarding the questions it prompts users to consider."
+  }
+}

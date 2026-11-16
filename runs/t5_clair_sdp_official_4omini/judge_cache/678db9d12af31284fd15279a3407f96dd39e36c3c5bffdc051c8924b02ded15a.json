@@ -1,0 +1,14 @@
+{
+  "request_hash": "678db9d12af31284fd15279a3407f96dd39e36c3c5bffdc051c8924b02ded15a",
+  "prompt_sha256": "405df85995c0744ac918f7772e1d9bd822c44b6b1c46b38c65a3ce959318726b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPlsKz9TbjkdEUYClP631YtCEqj",
+  "prompt_tokens": 8923,
+  "completion_tokens": 42,
+  "actual_usd": 0.00136365,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information confirming the investment figures in AI-related research and innovation under Horizon 2020, fully supporting the claims made in the Reference Answer."
+  }
+}

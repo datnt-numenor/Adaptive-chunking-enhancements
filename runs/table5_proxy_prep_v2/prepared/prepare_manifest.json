@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "adapter": "prepare_table5_new_qa.py",
+  "adapter_sha256": "596f8965cd954032900f8b864934aa51544138eb4761a4aca33c45fd129b8519",
+  "status": "complete",
+  "created_at": "2026-11-08T14:00:58.831172+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "note": "Tao tu ket qua chay doc lap (khong co semantic); chi gom 3 he thong cua Table 5.",
+  "input_run_dir": "D:\\Project\\adaptive-chunking\\runs\\full_kaggle",
+  "input_sha256": {
+    "processed_chunks": "0f78f6c80b71209ee55c89dc8cfce2202e6f33dbe672f84383e0f5dafa75c7ed",
+    "raw_chunks": "ac82ff2bf01475aa8daaf9b426537d3d0079fb058ba02d65ab13727d62653a23",
+    "processed_metrics": "6a84885eeb306baaf4b79463cae1f092957d48e354f887467f138344a15acb84"
+  },
+  "documents": 33,
+  "folds": 5,
+  "fold_seed": 2026,
+  "adaptive_candidates": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "paper_protocol_systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "systems": {
+    "adaptive": {
+      "path": "systems/adaptive.jsonl",
+      "sha256": "d4ea88495351e94d3446ba1dc17df74babfa6caa1c67a672585cd4338bff5649",
+      "chunks": 1633,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "method": "per_document_equal_weight"
+    },
+    "raw__langch_recurs_default": {
+      "path": "systems/raw__langch_recurs_default.jsonl",
+      "sha256": "ade51b65d9864da9b17df94cf9290ca3b278fd31786e2803e79eb11cb33673c2",
+      "chunks": 1557,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "raw",
+      "method": "langch_recurs_default"
+    },
+    "raw__page": {
+      "path": "systems/raw__page.jsonl",
+      "sha256": "b962b240642dd41651f2f4842cfcaac516208d43149113f140eeb665da152e5f",
+      "chunks": 1761,
+      "excluded_empty_chunks": 4,
+      "documents": 33,
+      "stage": "raw",
+      "method": "page"
+    },
+    "sdp_a_t400": {
+      "path": "systems/sdp_a_t400.jsonl",
+      "sha256": "e65d1a413045cf0a0347d0d44e062679cf6c86281a49459f43bdb1b0b0970f24",
+      "chunks": 1850,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target400",
+      "kind": "single_run"
+    },
+    "sdp_a_t500": {
+      "path": "systems/sdp_a_t500.jsonl",
+      "sha256": "a910ba95eb3db187d5ea187a3ace9240668369ef870e303d538588e819d76759",
+      "chunks": 1629,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target500",
+      "kind": "single_run"
+    },
+    "sdp_a_t700": {
+      "path": "systems/sdp_a_t700.jsonl",
+      "sha256": "f856c412d89f632702291e3678d21d74deab92dd7717149accaa0c6f22a357cd",
+      "chunks": 1403,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target700",
+      "kind": "single_run"
+    },
+    "sdp_a_t600_tau05": {
+      "path": "systems/sdp_a_t600_tau05.jsonl",
+      "sha256": "88283b77f68f3a54d78fe76c1679c308074841ddfcccc25efebff10e337af78b",
+      "chunks": 1672,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target600_tau05",
+      "kind": "single_run"
+    },
+    "sdp_a_t600_w2": {
+      "path": "systems/sdp_a_t600_w2.jsonl",
+      "sha256": "ac3424affd0ceacb0a502a03f7c264ef485a41b2a7f4064e8a4093b0f4ab2fcc",
+      "chunks": 1669,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target600_w2",
+      "kind": "single_run"
+    }
+  },
+  "sdp_extension": {
+    "created_at": "2026-11-09T10:55:55.668277+00:00",
+    "base_prepared_manifest_sha256": "b08193d9c25b46526a6a3e99e5ea2653dfab8565d7bae7072cbecd1e9058e6bd",
+    "harness_repo": "D:\\Project\\Adaptive-chunking-enhancements",
+    "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+    "new_systems": [
+      "sdp_a_t400",
+      "sdp_a_t500",
+      "sdp_a_t600_tau05",
+      "sdp_a_t600_w2",
+      "sdp_a_t700"
+    ],
+    "note": "Base files copied unchanged; new systems appended. Launcher registers their names in ALL_SYSTEMS."
+  }
+}

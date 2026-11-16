@@ -1,0 +1,14 @@
+{
+  "request_hash": "f0eac22051b845b9cda879f38692455b0c821a9e4791d0423ce3e3076016cb4f",
+  "prompt_sha256": "78e5eab0f877efca4dec3885384b5e4c00c4c73a134b5eda28cb42a31ac30088",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXuzKGzki12vMenzJXEcyOQiU23",
+  "prompt_tokens": 9998,
+  "completion_tokens": 46,
+  "actual_usd": 0.0015272999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of documenting data provenance and ensuring data quality, including completeness, accuracy, and validity, for effective auditing of AI systems."
+  }
+}

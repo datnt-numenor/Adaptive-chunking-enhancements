@@ -1,0 +1,77 @@
+{
+  "sweep": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "dcc1.5",
+      "dcc": 1.5
+    },
+    {
+      "name": "dcc2",
+      "dcc": 2.0
+    },
+    {
+      "name": "dcc3",
+      "dcc": 3.0
+    },
+    {
+      "name": "icc1.5",
+      "icc": 1.5
+    },
+    {
+      "name": "icc2",
+      "icc": 2.0
+    },
+    {
+      "name": "sw0",
+      "sw": 0.0
+    },
+    {
+      "name": "sw0.3",
+      "sw": 0.3
+    },
+    {
+      "name": "rc1",
+      "rc": 1.0
+    },
+    {
+      "name": "rc3",
+      "rc": 3.0
+    },
+    {
+      "name": "rc10",
+      "rc": 10.0
+    },
+    {
+      "name": "dcc1.5_rc3",
+      "dcc": 1.5,
+      "rc": 3.0
+    },
+    {
+      "name": "dcc2_rc3",
+      "dcc": 2.0,
+      "rc": 3.0
+    },
+    {
+      "name": "icc1.5_rc3",
+      "icc": 1.5,
+      "rc": 3.0
+    }
+  ],
+  "calibration_runs": [
+    "A_default",
+    "A_target600",
+    "A_target800",
+    "A_target1000",
+    "B_default",
+    "B_qwen"
+  ],
+  "reference": "B_default",
+  "beta": {
+    "d_icc_p": 1.200679178416733,
+    "d_dcc_s": 1.341100357745224,
+    "d_dcc_c": 1.4369161628488394
+  },
+  "seconds": 13.4
+}

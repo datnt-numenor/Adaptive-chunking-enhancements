@@ -1,0 +1,14 @@
+{
+  "request_hash": "a0e1f73f15f1cff9afa89fee23ded6fdf95471f0fd29329a7f22f79a635bc8fc",
+  "prompt_sha256": "6485708d932e5c895e695e682d844c84b530d344ae5a9b08d68a2ac957a30a6e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhz8mRCpAb9vR00C2I8gsr7Nz1f",
+  "prompt_tokens": 4528,
+  "completion_tokens": 34,
+  "actual_usd": 0.0006995999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive definition of AI auditability that aligns perfectly with the Reference Answer, fully supporting its claims."
+  }
+}

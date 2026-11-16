@@ -1,0 +1,14 @@
+{
+  "request_hash": "34aca193fd462510b88736a84ca0c670c1beccf3d6fbac5a3e60d3bd39debf10",
+  "prompt_sha256": "f90f607c9b9e0fbb98cae6dec933559d0f275d8f509541d3721e0533c1a7cb74",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNS8f69AkFSPVqIiqlE7R1eLi0h9",
+  "prompt_tokens": 1845,
+  "completion_tokens": 31,
+  "actual_usd": 0.00029535,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention encoding inputs and outputs or any specific recommendations related to preventing unauthorized code execution."
+  }
+}

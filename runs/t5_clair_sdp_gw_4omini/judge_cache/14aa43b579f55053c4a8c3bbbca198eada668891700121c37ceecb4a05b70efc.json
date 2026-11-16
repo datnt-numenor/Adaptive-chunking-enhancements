@@ -1,0 +1,14 @@
+{
+  "request_hash": "14aa43b579f55053c4a8c3bbbca198eada668891700121c37ceecb4a05b70efc",
+  "prompt_sha256": "ad108879b3627a8217b67e7b3d21fac48c9540997a8170d550a8fac53fdd82fd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP20ahDBeo2UAn7FbImXko5ErsEZ",
+  "prompt_tokens": 8327,
+  "completion_tokens": 53,
+  "actual_usd": 0.0012808499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data supporting the claims in the Reference Answer, including the percentage of 18-24-year-olds with a very good image of AI and the total positive image percentages for both age groups mentioned."
+  }
+}

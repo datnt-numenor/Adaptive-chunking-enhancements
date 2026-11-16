@@ -1,0 +1,14 @@
+{
+  "request_hash": "d69ef98a104362f86cdd9b71e6fb5d4f554d25e5cee3ae3cd273806f384e41ea",
+  "prompt_sha256": "6beb2fb9edf591a18bb6017d80b2448ca3112011b0f40f0ff051b81afee4111f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOR29YJas4Y55FHta7tFD0VtVwjd",
+  "prompt_tokens": 7516,
+  "completion_tokens": 44,
+  "actual_usd": 0.0011538,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining that capability-centric evaluations assess only the existence of capabilities without measuring actual risk or the potential severity of harms."
+  }
+}

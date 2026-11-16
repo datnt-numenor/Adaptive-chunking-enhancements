@@ -1,0 +1,10 @@
+{
+  "request_hash": "cca94d9754271b28f11569a88c80fc90ce7abf5411386cc6514b678722e9bc7a",
+  "prompt_sha256": "07189ac824c5ae14434555fec3e3d5ac15fdf55c80a9365c01b42026fe23dd54",
+  "answer": "The Training Data section in the Mitchell et al. model card structure should contain details that mirror the Evaluation Data section when possible. If such detail is not possible, minimal allowable information should be provided, such as details of the distribution over various factors in the training datasets.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMrZAZeOmfTdx5tnOUDsKBsUlQjZ",
+  "prompt_tokens": 8077,
+  "completion_tokens": 53,
+  "actual_usd": 0.0012433499999999998
+}

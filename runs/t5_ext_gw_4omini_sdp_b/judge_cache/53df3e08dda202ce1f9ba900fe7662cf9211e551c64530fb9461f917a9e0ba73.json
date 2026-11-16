@@ -1,0 +1,14 @@
+{
+  "request_hash": "53df3e08dda202ce1f9ba900fe7662cf9211e551c64530fb9461f917a9e0ba73",
+  "prompt_sha256": "4768ce96b9802328d3735a56cd4722f618d36ed83c97ee9274c43dd80dd5e3a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNflD70KGYwUHIjA6QQuU3xVukHv",
+  "prompt_tokens": 6373,
+  "completion_tokens": 36,
+  "actual_usd": 0.00097755,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of 'process access' and its components, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+ "model_requested": "gemini-2.5-pro",
+ "model_returned": "gemini-2.5-pro",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer correctly summarizes the selection and annotation process for Near-moderated Posts, and both parts of the answer are supported by the provided evidence quotes.\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer accurately lists the limitations of the study, and each point is explicitly mentioned in the provided evidence from the 'Limitations' section.\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer is a concise and accurate summary of the process described in the evidence, which directly explains how automod uses threshold rules on Hive AI scores.\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer correctly provides the specific statistical measures of disagreement (Spearman correlation and JSD) which are directly stated in the evidence for when the models disagree.\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer correctly identifies Gemma4 as the most effective open-weight VLM, which is directly supported by the evidence stating it is the 'only' one to effectively handle examples.\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"The answer accurately states the reason for the performance drop, which is explicitly explained in the evidence as being due to VLMs overflagging content.\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 12142,
+  "out": 2631
+ },
+ "created": "2026-11-09 18:49:57"
+}

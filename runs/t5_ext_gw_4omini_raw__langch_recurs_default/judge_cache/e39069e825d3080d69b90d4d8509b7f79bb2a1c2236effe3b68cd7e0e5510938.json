@@ -1,0 +1,14 @@
+{
+  "request_hash": "e39069e825d3080d69b90d4d8509b7f79bb2a1c2236effe3b68cd7e0e5510938",
+  "prompt_sha256": "985ac36587427aa727624b777b017c3bfaba2c849da3873b4ae6c55e7ee9d4c5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9lCn8qag4sNBokauz20Lj05aGo",
+  "prompt_tokens": 6766,
+  "completion_tokens": 66,
+  "actual_usd": 0.0010545,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the various resources and mechanisms provided at the Advisory and Tooling Layer of the ARGO Framework, including toolkits, training programs, technical assets, reporting mechanisms, centralized AI assets, validation processes, standardized templates, and feedback channels."
+  }
+}

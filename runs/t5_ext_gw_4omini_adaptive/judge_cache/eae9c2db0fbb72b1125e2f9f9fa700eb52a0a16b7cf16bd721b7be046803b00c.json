@@ -1,0 +1,14 @@
+{
+  "request_hash": "eae9c2db0fbb72b1125e2f9f9fa700eb52a0a16b7cf16bd721b7be046803b00c",
+  "prompt_sha256": "68686acbd396b554a5e6c277831cad0cc991dc04b372c56bb52d12261ab82e64",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNwPLcqtKjFd46AUaYHdj1xoTY8J",
+  "prompt_tokens": 9252,
+  "completion_tokens": 47,
+  "actual_usd": 0.001416,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed metrics that confirm ICLR's significantly higher views and active users compared to NeurIPS and fully closed venues, fully supporting the claims made in the Reference Answer."
+  }
+}

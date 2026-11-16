@@ -1,0 +1,14 @@
+{
+  "request_hash": "4a0804cffed304c6dbb6b8ec97fd023e983bf7d0eca8e2de3a4888010f9258c2",
+  "prompt_sha256": "9f5087bc76c1b419834eee7dddaa179a8a6b8ffe73a3d375654be37c93be3e0c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP6154EGztbqAQodinXUxKmkaRwl",
+  "prompt_tokens": 5673,
+  "completion_tokens": 35,
+  "actual_usd": 0.0008719499999999999,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context discusses the importance of ethical AI and transparency but does not specifically mention MAIF or its open-source toolboxes."
+  }
+}

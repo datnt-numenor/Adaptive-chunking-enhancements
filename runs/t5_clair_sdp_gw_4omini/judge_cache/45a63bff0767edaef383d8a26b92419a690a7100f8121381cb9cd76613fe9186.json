@@ -1,0 +1,14 @@
+{
+  "request_hash": "45a63bff0767edaef383d8a26b92419a690a7100f8121381cb9cd76613fe9186",
+  "prompt_sha256": "ac6b1aeb7fd8bbde7307d319c9fb25d80b1d6b6a43ac36bde399c02c5dd3881d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP65Ty97QDLKrMS0y6JcxgGEwU4q",
+  "prompt_tokens": 6751,
+  "completion_tokens": 46,
+  "actual_usd": 0.00104025,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the Disparate Impact metric, including its calculation and the four-fifths rule, which fully supports the claims made in the Reference Answer."
+  }
+}

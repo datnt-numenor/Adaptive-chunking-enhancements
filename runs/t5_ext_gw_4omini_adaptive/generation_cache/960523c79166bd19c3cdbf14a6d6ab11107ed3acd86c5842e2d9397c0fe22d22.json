@@ -1,0 +1,10 @@
+{
+  "request_hash": "960523c79166bd19c3cdbf14a6d6ab11107ed3acd86c5842e2d9397c0fe22d22",
+  "prompt_sha256": "0f1fce2336888508298065e7c3617926c6b66134212700a89445de7865c11761",
+  "answer": "The EDPB Opinion 28-2024 describes the relationship between AI models and AI systems in the AI Act by stating that AI models are essential components of AI systems but do not constitute AI systems on their own. AI models require additional components, such as a user interface, to become AI systems. The Opinion further clarifies that while AI models can perform various tasks, they only become usable when integrated into an AI system, which combines the model with the necessary components for deployment. Thus, AI models are seen as algorithms or statistical models that, when incorporated into a larger framework, form part of an AI system designed to operate with varying levels of autonomy and adaptiveness.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNLue24W3LYAZi2xCDL4bJ5lSMnG",
+  "prompt_tokens": 7727,
+  "completion_tokens": 135,
+  "actual_usd": 0.00124005
+}

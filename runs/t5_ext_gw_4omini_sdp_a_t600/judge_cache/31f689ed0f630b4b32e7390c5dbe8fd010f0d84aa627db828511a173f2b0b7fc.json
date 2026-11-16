@@ -1,0 +1,14 @@
+{
+  "request_hash": "31f689ed0f630b4b32e7390c5dbe8fd010f0d84aa627db828511a173f2b0b7fc",
+  "prompt_sha256": "3da3fb6d6d221db522fd974dcacc8e8ad9548c5617516a4bc612719c52138691",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNyXqkFGQDc3Q7es4x8jMHDy101l",
+  "prompt_tokens": 6575,
+  "completion_tokens": 41,
+  "actual_usd": 0.00101085,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context mentions various types of attacks, including prompt injection and context overload attacks, but does not provide specific details about how a context overload attack functions."
+  }
+}

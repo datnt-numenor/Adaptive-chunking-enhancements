@@ -1,0 +1,14 @@
+{
+  "request_hash": "0879bc06bcc273b6bae3860b7c7297c03c54b3e07686b699c17d8141f12ea537",
+  "prompt_sha256": "c62b32cfb86f7f012f0c7ffe62d2fbdf42700b191d5636775906d1d14eba66fe",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2FzhKVsAiufS4b0yFxXG6Au1Gma",
+  "prompt_tokens": 7938,
+  "completion_tokens": 33,
+  "actual_usd": 0.0012105,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions the existence of impact levels but does not provide specific details about the four levels or their definitions."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "a152df4f0dd3868009794999bcc8975da10bbdcc6720bc2207586db2bd8113f0",
+  "prompt_sha256": "1a453c4fba51905771d318a75a78be469ebfde381b8b3cc016c2d7f5cd18913c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO5SYFJf31Y4CrJsXiNJkVbiI6FF",
+  "prompt_tokens": 8045,
+  "completion_tokens": 42,
+  "actual_usd": 0.00123195,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions high-risk AI systems and their classification but does not specify the exact date of applicability for all provisions, which is stated in the Reference Answer."
+  }
+}

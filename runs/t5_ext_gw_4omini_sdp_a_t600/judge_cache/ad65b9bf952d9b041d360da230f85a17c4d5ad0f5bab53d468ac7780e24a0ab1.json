@@ -1,0 +1,14 @@
+{
+  "request_hash": "ad65b9bf952d9b041d360da230f85a17c4d5ad0f5bab53d468ac7780e24a0ab1",
+  "prompt_sha256": "93e2945fd633851f004915b62e83d3ef8b11843c28f2054eef6e692aade73b03",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNS1TY5MUnIGTvHIvsbQRfNp4MzD",
+  "prompt_tokens": 7710,
+  "completion_tokens": 48,
+  "actual_usd": 0.0011853,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly distinguishing between ML validation, which emphasizes unbiased evaluation and parameter tuning, and medical device validation, which focuses on demonstrating clinical benefit and intended use."
+  }
+}

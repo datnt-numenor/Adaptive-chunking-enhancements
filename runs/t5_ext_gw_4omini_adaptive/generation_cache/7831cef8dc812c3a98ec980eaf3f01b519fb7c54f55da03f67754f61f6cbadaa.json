@@ -1,0 +1,10 @@
+{
+  "request_hash": "7831cef8dc812c3a98ec980eaf3f01b519fb7c54f55da03f67754f61f6cbadaa",
+  "prompt_sha256": "6a0fb30582432b7999271c4ba9185f8d79e87793975992a5dcccd97fe658b316",
+  "answer": "BERTopic is an unsupervised topic modeling technique that clusters documents based on dense sentence embeddings from SentenceBERT. It uses cosine distance between documents to calculate their similarity and assigns descriptive labels to each cluster using class-based term frequency-inverse document frequency (tf-idf) ranking over the terms appearing in each cluster.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNFYgiR2lODX2YONTBpXoXIqjWQm",
+  "prompt_tokens": 10214,
+  "completion_tokens": 63,
+  "actual_usd": 0.0015699
+}

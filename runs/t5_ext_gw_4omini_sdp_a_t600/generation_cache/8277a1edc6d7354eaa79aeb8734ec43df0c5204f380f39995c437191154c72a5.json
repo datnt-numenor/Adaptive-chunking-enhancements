@@ -1,0 +1,10 @@
+{
+  "request_hash": "8277a1edc6d7354eaa79aeb8734ec43df0c5204f380f39995c437191154c72a5",
+  "prompt_sha256": "574bb8aafccef8afdeb91a331b96c22d52d88a6efc14ee0bc2cd3b5540d1df26",
+  "answer": "The EU AI Act's approach to adaptation involves reassigning systems between fixed risk categories when their risk profile changes, which provides limited context sensitivity as systems are classified primarily by application type. In contrast, the HAIG framework accommodates incremental movement and contextual variation without requiring reclassification, allowing for high context sensitivity by recognizing variations across deployments.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN5loV0nWkrrQJfbOS3rZ7vBlBJN",
+  "prompt_tokens": 9031,
+  "completion_tokens": 66,
+  "actual_usd": 0.0013942499999999999
+}

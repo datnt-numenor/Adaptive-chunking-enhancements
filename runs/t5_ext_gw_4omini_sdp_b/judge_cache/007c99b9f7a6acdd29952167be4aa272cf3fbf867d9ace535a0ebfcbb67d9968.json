@@ -1,0 +1,14 @@
+{
+  "request_hash": "007c99b9f7a6acdd29952167be4aa272cf3fbf867d9ace535a0ebfcbb67d9968",
+  "prompt_sha256": "167f894cc4d3def37a27c50d7570288315b0880ae5cd96437ae66c630f0b26c6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQjHDrAutLYhE6AsxcDHeUvSsuB",
+  "prompt_tokens": 7398,
+  "completion_tokens": 32,
+  "actual_usd": 0.0011289000000000002,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention or support the claims made in the Reference Answer regarding the four top-level categories."
+  }
+}

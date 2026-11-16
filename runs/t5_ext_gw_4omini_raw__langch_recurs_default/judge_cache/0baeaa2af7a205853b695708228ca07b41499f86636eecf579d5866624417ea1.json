@@ -1,0 +1,14 @@
+{
+  "request_hash": "0baeaa2af7a205853b695708228ca07b41499f86636eecf579d5866624417ea1",
+  "prompt_sha256": "245412375b3639071763b01bd5995baf23dfbc043fc359512dabae9e8ac409a9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNw1h65klY094uQsdNdkxZoInR44",
+  "prompt_tokens": 7658,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011763,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics and comparisons of views and active users for ICLR, NeurIPS, and fully closed venues, fully supporting the claims made in the Reference Answer."
+  }
+}

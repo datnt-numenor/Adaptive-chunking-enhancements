@@ -1,0 +1,14 @@
+{
+  "request_hash": "d6cc045a901c25dfc2701146b90e6b3c00748a4757e57cdbc8762274064237ce",
+  "prompt_sha256": "279436b5d8b9b2813e7851f21ce2fa027df80e42afc6c48fed59269d117a430c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOM0u9md4X6YNUXbAbVQrEZtrt6F",
+  "prompt_tokens": 11685,
+  "completion_tokens": 46,
+  "actual_usd": 0.00178035,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context includes a reference to Khoa Lam and colleagues' work on a framework for assurance audits of algorithmic systems, which directly supports the claim made in the reference answer."
+  }
+}

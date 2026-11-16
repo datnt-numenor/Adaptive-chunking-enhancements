@@ -1,0 +1,14 @@
+{
+  "request_hash": "7f48cf77a25a021f72f8454120dfb3627623fe2558eefc45dae2b145baf37898",
+  "prompt_sha256": "2cd97765cb54dc0214a90a4871c5a62159afdca117fdd6f54d204a4fc58e83b4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTH7ZJ5NUawnqfntSkQB5tPICb9",
+  "prompt_tokens": 8746,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013394999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the right to explanation under GDPR, emphasizing the requirement for meaningful information about the logic of automated decisions and the focus on interpretability."
+  }
+}

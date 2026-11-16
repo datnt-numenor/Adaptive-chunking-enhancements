@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "runs/full_kaggle/results",
+    "runs/sdp/*/metrics",
+    "runs/ext_metrics_merged_v1",
+    "runs/table5_sdp_analysis",
+    "runs/table5_repr_analysis_vs_adaptive",
+    "runs/ext_4b_analysis_vs_adaptive",
+    "runs/t5_analysis_v1",
+    "runs/table5_*_results/*/evaluation-full",
+    "runs/gpu_retrieval_ext_4b_results"
+  ],
+  "sdp_method_names": {
+    "A_default": "sdp_a",
+    "A_target600": "sdp_a_t600",
+    "A_target800": "sdp_a_t800",
+    "A_target1000": "sdp_a_t1000",
+    "B_default": "sdp_b",
+    "B_qwen": "sdp_bq"
+  },
+  "bootstrap": {
+    "n": 10000,
+    "seed": 2026
+  },
+  "unit": "document"
+}

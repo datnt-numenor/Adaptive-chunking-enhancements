@@ -1,0 +1,10 @@
+{
+  "request_hash": "39758fb807f8f5aaa123edd525a26efab681210cfe7e6e74fda05efb350cc8f4",
+  "prompt_sha256": "e9f9d9c8d317c4ba51ac11f4ac8443af6f209549bcb94a9dc82c4025bada2e4e",
+  "answer": "When gemma4 and qwen3.5 disagree on Bluesky moderation, the citation frequency pattern for policy rules shows substantial divergence. Specifically, the Spearman correlation drops to ρ = 0.58, and the Jensen-Shannon divergence (JSD) rises to 0.36. This indicates that the models rely on different subsets of the policy rules when their moderation decisions do not align. For example, gemma4 tends to cite rules related to sexual and figurative content more often, while qwen3.5 cites rules related to porn. Additionally, for disagreements regarding rude versus safe content, gemma4 cites the rude definition more frequently, whereas qwen3.5 refers to exception rules.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNK5FXX57DVDtZl5XOJDGWKsrlW6",
+  "prompt_tokens": 7349,
+  "completion_tokens": 144,
+  "actual_usd": 0.00118875
+}

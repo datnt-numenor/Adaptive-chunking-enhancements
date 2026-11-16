@@ -1,0 +1,14 @@
+{
+  "request_hash": "5d12ab0bb07daa4462b7ce0367198c32aa7a3a6b374ca9e580238de1871aa480",
+  "prompt_sha256": "5580d92fb07c73913476c9ed596989e59f68932f07e9c84247bb4307759fc444",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLo3MiRvrHh3vlY3Ndl4dCsEu59",
+  "prompt_tokens": 8468,
+  "completion_tokens": 36,
+  "actual_usd": 0.0012917999999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention the authors or the specific framework for assurance audits of algorithmic systems as stated in the reference answer."
+  }
+}

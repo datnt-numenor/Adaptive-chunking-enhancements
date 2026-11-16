@@ -1,0 +1,14 @@
+{
+  "request_hash": "4db09d8e6447458621a47a8829ac4552d6bf922baadd1bf66ff26358af809296",
+  "prompt_sha256": "5f23de6873f05f24f97179c8479ea39e4d08f5fc3aeb5d544310ec100d535204",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNqwuPNPTa3Lc57G9IwTrOoVO9lq",
+  "prompt_tokens": 9346,
+  "completion_tokens": 32,
+  "actual_usd": 0.0014211,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly defines AIMS as AI management system, fully supporting the claim made in the reference answer."
+  }
+}

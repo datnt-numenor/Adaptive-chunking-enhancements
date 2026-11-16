@@ -1,0 +1,14 @@
+{
+  "request_hash": "429c7f0662de2a1e623cc4643c60340385c6578c91263b95f3a1e0f8f274740d",
+  "prompt_sha256": "879cdd6e48ceccefaf30af58cba7f2b72b1edb269a0154b13c28c26643e64051",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNgU92iMWK2f56eqptCcmS8qBAu9",
+  "prompt_tokens": 8374,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012806999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining the necessity of ongoing process audits for AI systems, highlighting the risks associated with evaluating only the final product."
+  }
+}

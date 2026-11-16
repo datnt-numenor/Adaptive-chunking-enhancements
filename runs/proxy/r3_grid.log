@@ -1,0 +1,7 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+sdp_a_t400@doc                                recall@10=0.9198 recall@5=0.8431 ndcg@10=0.7685 hit@10=0.9596  chunks=1850  t=202s
+sdp_a_t500@doc                                recall@10=0.9116 recall@5=0.8151 ndcg@10=0.7423 hit@10=0.9394  chunks=1629  t=400s
+sdp_a_t700@doc                                recall@10=0.9188 recall@5=0.8279 ndcg@10=0.7531 hit@10=0.9495  chunks=1403  t=600s
+sdp_a_t600_tau05@doc                          recall@10=0.9077 recall@5=0.8466 ndcg@10=0.7618 hit@10=0.9394  chunks=1672  t=803s
+sdp_a_t600_w2@doc                             recall@10=0.9112 recall@5=0.8573 ndcg@10=0.7697 hit@10=0.9495  chunks=1669  t=1005s
+Saved -> runs\proxy\r3_grid

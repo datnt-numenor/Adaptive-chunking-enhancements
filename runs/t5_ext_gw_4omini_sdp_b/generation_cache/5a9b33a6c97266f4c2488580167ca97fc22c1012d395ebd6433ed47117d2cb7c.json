@@ -1,0 +1,10 @@
+{
+  "request_hash": "5a9b33a6c97266f4c2488580167ca97fc22c1012d395ebd6433ed47117d2cb7c",
+  "prompt_sha256": "8a657d933b61084614d4df7174cf6463b6333127d0169211ea82926a5a497e20",
+  "answer": "The main argument against relying solely on post-hoc explainability techniques for legal or regulatory purposes, as presented in arXiv 2303.17558, is that these techniques have significant limitations. They are occasionally unstable and exhibit low fidelity, making it difficult to convincingly prove that there is no discrimination. The limited types of bias that can be discovered by post-hoc explainability approaches require their use to be contextualized and limited. Furthermore, the authors argue that if the insights and internal workings of a black box model cannot be relied upon, it should not be used in situations where its judgments could have significant and/or long-lasting implications. Thus, post-hoc explainability cannot be promoted as a panacea and should not be valued in isolation without considering more comprehensive fairness metrics.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMfNWFsn6xnnHlWL5FBj6P2BNb0D",
+  "prompt_tokens": 8087,
+  "completion_tokens": 157,
+  "actual_usd": 0.00130725
+}

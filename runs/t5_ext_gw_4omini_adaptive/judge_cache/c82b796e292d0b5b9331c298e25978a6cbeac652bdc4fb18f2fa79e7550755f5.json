@@ -1,0 +1,14 @@
+{
+  "request_hash": "c82b796e292d0b5b9331c298e25978a6cbeac652bdc4fb18f2fa79e7550755f5",
+  "prompt_sha256": "203793dfcb69fbaaca9d8ddc16e2e2cfeae0537cb12766e623fbafc0fc71c0a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOa3CXpb6SlbV9G6zBvb6yhrhmpn",
+  "prompt_tokens": 6581,
+  "completion_tokens": 41,
+  "actual_usd": 0.00101175,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the submission of extension requests and the tracking and reporting of waivers by CAIOs."
+  }
+}

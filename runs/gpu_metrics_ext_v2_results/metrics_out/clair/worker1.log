@@ -1,0 +1,617 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+Processing document Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+[shard 1] 1/49     47s total     47s sw0_rc1 Sophia (sciences sociales)_Regulating under Uncertainty - Governance O
+Found existing results for 1 docs, will skip them
+
+Processing document Norma (légal)_Verification for International AI Governnace
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Verification for International AI Governnace
+[shard 1] 2/49     14s total     61s sw0_rc1 Norma (légal)_Verification for International AI Governnace
+Found existing results for 2 docs, will skip them
+
+Processing document Norma (légal)_GDPR
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_GDPR
+[shard 1] 3/49      8s total     69s sw0_rc1 Norma (légal)_GDPR
+Found existing results for 3 docs, will skip them
+
+Processing document Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+[shard 1] 4/49      7s total     76s sw0_rc1 Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+Found existing results for 4 docs, will skip them
+
+Processing document Norma (légal)_Harmonising AI - OXIL
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Harmonising AI - OXIL
+[shard 1] 5/49      4s total     80s sw0_rc1 Norma (légal)_Harmonising AI - OXIL
+Found existing results for 5 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law
+[shard 1] 6/49      3s total     83s sw0_rc1 Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Demo
+Found existing results for 6 docs, will skip them
+
+Processing document Norma (légal)_Provider Guidelines - European Commission
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Provider Guidelines - European Commission
+[shard 1] 7/49      3s total     86s sw0_rc1 Norma (légal)_Provider Guidelines - European Commission
+Found existing results for 7 docs, will skip them
+
+Processing document Norma (légal)_European Convention On Human Rights
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_European Convention On Human Rights
+[shard 1] 8/49      2s total     88s sw0_rc1 Norma (légal)_European Convention On Human Rights
+Found existing results for 8 docs, will skip them
+
+Processing document Norma (légal)_Artificial Intelligence for Europe
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Artificial Intelligence for Europe
+[shard 1] 9/49      2s total     90s sw0_rc1 Norma (légal)_Artificial Intelligence for Europe
+Found existing results for 9 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Livre blanc - Impact AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Livre blanc - Impact AI
+[shard 1] 10/49      2s total     91s sw0_rc1 Sophia (sciences sociales)_Livre blanc - Impact AI
+Found existing results for 10 docs, will skip them
+
+Processing document Ada (technique)_Standards - Interpretability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Interpretability
+[shard 1] 11/49      1s total     93s sw0_rc1 Ada (technique)_Standards - Interpretability
+Found existing results for 11 docs, will skip them
+
+Processing document Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law
+[shard 1] 12/49      1s total     94s sw0_rc1 Norma (légal)_Council of Europe Framework Convention on Artificial Int
+Found existing results for 12 docs, will skip them
+
+Processing document Ada (technique)_Discussion Paper Hamburg DPA KI Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Discussion Paper Hamburg DPA KI Models
+[shard 1] 13/49      1s total     95s sw0_rc1 Ada (technique)_Discussion Paper Hamburg DPA KI Models
+Found existing results for 13 docs, will skip them
+
+Processing document Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+[shard 1] 14/49      1s total     95s sw0_rc1 Norma (légal)_Code of Practice for General Purpose - AI Models Transpa
+Found existing results for 14 docs, will skip them
+
+Processing document Ada (technique)_Standards - Sustainability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Sustainability
+[shard 1] 15/49      1s total     96s sw0_rc1 Ada (technique)_Standards - Sustainability
+Found existing results for 15 docs, will skip them
+
+Processing document Ada (technique)_Standards - Robustness
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Robustness
+[shard 1] 16/49      0s total     96s sw0_rc1 Ada (technique)_Standards - Robustness
+Found existing results for 16 docs, will skip them
+
+Processing document Ada (technique)_Standards - Vigilance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Vigilance
+[shard 1] 17/49      0s total     97s sw0_rc1 Ada (technique)_Standards - Vigilance
+Found existing results for 17 docs, will skip them
+
+Processing document Ada (technique)_Standards - Explicability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Explicability
+[shard 1] 18/49      0s total     97s sw0_rc1 Ada (technique)_Standards - Explicability
+
+Processing document Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+[shard 1] 19/49     11s total    108s keepcont_rc1 Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+Found existing results for 1 docs, will skip them
+
+Processing document Norma (légal)_Harmonising AI - OXIL
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Harmonising AI - OXIL
+[shard 1] 20/49      5s total    113s keepcont_rc1 Norma (légal)_Harmonising AI - OXIL
+Found existing results for 2 docs, will skip them
+
+Processing document Norma (légal)_Les fiches pratiques IA -  CNIL
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Les fiches pratiques IA -  CNIL
+[shard 1] 21/49      4s total    117s keepcont_rc1 Norma (légal)_Les fiches pratiques IA -  CNIL
+Found existing results for 3 docs, will skip them
+
+Processing document Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1
+[shard 1] 22/49      3s total    120s keepcont_rc1 Norma (légal)_Code of Practice for General Purpose - AI Models Safety 
+Found existing results for 4 docs, will skip them
+
+Processing document Ada (technique)_Recommandations de sécurité pour un système d'IA générative
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Warning: no entity-pronoun pairs provided.
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Recommandations de sécurité pour un système d'IA générative
+[shard 1] 23/49      3s total    123s keepcont_rc1 Ada (technique)_Recommandations de sécurité pour un système d'IA génér
+Found existing results for 5 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world
+[shard 1] 24/49      2s total    125s keepcont_rc1 Sophia (sciences sociales)_Consultation paper on AI regulation - emerg
+Found existing results for 6 docs, will skip them
+
+Processing document Norma (légal)_Artificial Intelligence for Europe
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Artificial Intelligence for Europe
+[shard 1] 25/49      2s total    127s keepcont_rc1 Norma (légal)_Artificial Intelligence for Europe
+Found existing results for 7 docs, will skip them
+
+Processing document Ada (technique)_Standards - Interpretability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Interpretability
+[shard 1] 26/49      1s total    128s keepcont_rc1 Ada (technique)_Standards - Interpretability
+Found existing results for 8 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape
+[shard 1] 27/49      1s total    130s keepcont_rc1 Sophia (sciences sociales)_Responsible AI - A competitive edge in the 
+Found existing results for 9 docs, will skip them
+
+Processing document Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Warning: no entity-pronoun pairs provided.
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL
+[shard 1] 28/49      1s total    130s keepcont_rc1 Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL
+Found existing results for 10 docs, will skip them
+
+Processing document Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+[shard 1] 29/49      1s total    131s keepcont_rc1 Norma (légal)_Code of Practice for General Purpose - AI Models Transpa
+Found existing results for 11 docs, will skip them
+
+Processing document Ada (technique)_Standards - Sustainability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Sustainability
+[shard 1] 30/49      1s total    132s keepcont_rc1 Ada (technique)_Standards - Sustainability
+Found existing results for 12 docs, will skip them
+
+Processing document Ada (technique)_Standards - Security
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Security
+[shard 1] 31/49      1s total    132s keepcont_rc1 Ada (technique)_Standards - Security
+Found existing results for 13 docs, will skip them
+
+Processing document Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3
+[shard 1] 32/49      0s total    133s keepcont_rc1 Norma (légal)_Code of Practice for General Purpose - AI Models Copyrig
+Found existing results for 14 docs, will skip them
+
+Processing document Ada (technique)_Standards - Transparency
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Transparency
+[shard 1] 33/49      0s total    133s keepcont_rc1 Ada (technique)_Standards - Transparency
+
+Processing document Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI
+[shard 1] 34/49     47s total    180s noart_rc1 Sophia (sciences sociales)_Regulating under Uncertainty - Governance O
+Found existing results for 1 docs, will skip them
+
+Processing document Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+[shard 1] 35/49     11s total    191s noart_rc1 Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE
+Found existing results for 2 docs, will skip them
+
+Processing document Norma (légal)_GDPR
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_GDPR
+[shard 1] 36/49      8s total    199s noart_rc1 Norma (légal)_GDPR
+Found existing results for 3 docs, will skip them
+
+Processing document Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+[shard 1] 37/49      7s total    205s noart_rc1 Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands
+Found existing results for 4 docs, will skip them
+
+Processing document Norma (légal)_CCPA Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_CCPA Act
+[shard 1] 38/49      4s total    209s noart_rc1 Norma (légal)_CCPA Act
+Found existing results for 5 docs, will skip them
+
+Processing document Norma (légal)_Les fiches pratiques IA -  CNIL
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Les fiches pratiques IA -  CNIL
+[shard 1] 39/49      4s total    213s noart_rc1 Norma (légal)_Les fiches pratiques IA -  CNIL
+Found existing results for 6 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law
+[shard 1] 40/49      3s total    216s noart_rc1 Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Demo
+Found existing results for 7 docs, will skip them
+
+Processing document Norma (légal)_Provider Guidelines - European Commission
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Provider Guidelines - European Commission
+[shard 1] 41/49      3s total    219s noart_rc1 Norma (légal)_Provider Guidelines - European Commission
+Found existing results for 8 docs, will skip them
+
+Processing document Norma (légal)_European Convention On Human Rights
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_European Convention On Human Rights
+[shard 1] 42/49      2s total    221s noart_rc1 Norma (légal)_European Convention On Human Rights
+Found existing results for 9 docs, will skip them
+
+Processing document Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape
+[shard 1] 43/49      1s total    222s noart_rc1 Sophia (sciences sociales)_Responsible AI - A competitive edge in the 
+Found existing results for 10 docs, will skip them
+
+Processing document Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2
+[shard 1] 44/49      1s total    223s noart_rc1 Norma (légal)_Code of Practice for General Purpose - AI Models Transpa
+Found existing results for 11 docs, will skip them
+
+Processing document Ada (technique)_Standards - Sustainability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Sustainability
+[shard 1] 45/49      1s total    224s noart_rc1 Ada (technique)_Standards - Sustainability
+Found existing results for 12 docs, will skip them
+
+Processing document Ada (technique)_Standards - Robustness
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Robustness
+[shard 1] 46/49      0s total    224s noart_rc1 Ada (technique)_Standards - Robustness
+Found existing results for 13 docs, will skip them
+
+Processing document Ada (technique)_Standards - Explicability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Explicability
+[shard 1] 47/49      0s total    224s noart_rc1 Ada (technique)_Standards - Explicability
+Found existing results for 14 docs, will skip them
+
+Processing document Ada (technique)_Standards - Transparency
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada (technique)_Standards - Transparency
+[shard 1] 48/49      0s total    225s noart_rc1 Ada (technique)_Standards - Transparency
+Found existing results for 15 docs, will skip them
+
+Processing document Norma (légal)_EDPS Generative AI guidelines
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma (légal)_EDPS Generative AI guidelines
+[shard 1] 49/49      0s total    225s noart_rc1 Norma (légal)_EDPS Generative AI guidelines
+[shard 1] DONE

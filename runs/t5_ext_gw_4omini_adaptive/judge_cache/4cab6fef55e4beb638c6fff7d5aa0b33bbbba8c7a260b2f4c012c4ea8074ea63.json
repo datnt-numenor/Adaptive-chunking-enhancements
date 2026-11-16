@@ -1,0 +1,14 @@
+{
+  "request_hash": "4cab6fef55e4beb638c6fff7d5aa0b33bbbba8c7a260b2f4c012c4ea8074ea63",
+  "prompt_sha256": "2475de3c5d5ba7ec1b97dab41d463fe9d437b9a7130bfaf02aed4b75e2de5b32",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOY9vN8QZ89kr33poks5GEDYYkel",
+  "prompt_tokens": 9715,
+  "completion_tokens": 51,
+  "actual_usd": 0.00148785,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a clear definition of 'governable' in relation to AI systems, including the aspects of fulfilling intended functions and allowing for disengagement or deactivation."
+  }
+}

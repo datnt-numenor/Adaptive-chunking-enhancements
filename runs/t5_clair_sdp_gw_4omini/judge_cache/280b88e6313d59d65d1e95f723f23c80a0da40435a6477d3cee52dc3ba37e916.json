@@ -1,0 +1,14 @@
+{
+  "request_hash": "280b88e6313d59d65d1e95f723f23c80a0da40435a6477d3cee52dc3ba37e916",
+  "prompt_sha256": "833921494c30872557306b5e34f9c4cabff1c672d2cdc8d41b105f12566e135f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNzofMSrBbx3lpuwM3wKsiVNF4pe",
+  "prompt_tokens": 8113,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012445499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the reference answer by detailing the importance of data integrity and the need for teams to detect feature errors like missing values, type mismatches, and range anomalies."
+  }
+}

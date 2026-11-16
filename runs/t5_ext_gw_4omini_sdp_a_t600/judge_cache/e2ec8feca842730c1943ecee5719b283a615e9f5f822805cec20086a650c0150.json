@@ -1,0 +1,14 @@
+{
+  "request_hash": "e2ec8feca842730c1943ecee5719b283a615e9f5f822805cec20086a650c0150",
+  "prompt_sha256": "4fba8270fc799f7bcd1dc70aa73122171ea423ff2bd3aea4aada5c7ca8320c9d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOj8nkj2ULm5narJxPZVtBciz9F",
+  "prompt_tokens": 8462,
+  "completion_tokens": 44,
+  "actual_usd": 0.0012957,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions the Business Goal Definition phase as part of the AI lifecycle, but does not provide specific details about understanding the business context and metrics for the AI application."
+  }
+}

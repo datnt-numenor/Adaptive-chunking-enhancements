@@ -1,0 +1,14 @@
+{
+  "request_hash": "573316c84f17306d9b30c5a0a00b75756ec677819aee8e1351b550677beff24d",
+  "prompt_sha256": "ae82058bb58977b8ff57a15a3678c811dd955f9065258b0d81b88aa6ff7ded78",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRmyYAX3WwOOLoBsthJkiMg1g8V",
+  "prompt_tokens": 6761,
+  "completion_tokens": 35,
+  "actual_usd": 0.00103515,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of tracking the provenance of AI model components and all associated data."
+  }
+}

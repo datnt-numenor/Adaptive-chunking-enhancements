@@ -1,0 +1,313 @@
+DOCUMENT: arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability
+
+<<<PAGE 5>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 5 -->
+
+-site:arxiv.org ("survey" OR "systematic review") AND ("explainable AI algorithms" OR "interpretable ML algorithms" OR "XAI algorithms") 4
+
+The final pool included 30 published comprehensive surveys, collectively covering over 100 XAI algorithms. Analysis revealed that approximately 82% of these algorithms are cited in fewer than five surveys, and 91% appear in fewer than ten. We focused on algorithms cited in at least 10 of the 30 surveys analysed.
+
+In addition to the XAI methods, we had to extract a comprehensive set of explanation properties that may be required or highly desirable under the identified legal frameworks. We reviewed 30 peer-reviewed survey papers on explanation properties published since 2022. To retrieve them, we again performed a keyword-based search on Google Scholar:
+
+-site:arxiv.org ("survey" OR "systematic review") AND ("explainable AI" OR "interpretable ML" OR "XAI") AND ("explainability properties" OR "properties of XAI" OR "XAI properties" OR "properties of explanations" OR "explanation properties" OR "explanation criteria" OR "explanation characteristics")
+
+# 4 Background
+
+The AI Act [10] applies to AI systems marketed or used in the EU, regardless of where providers or deployers are located (Art. 2). "High-risk" systems are those covered by the sectoral legislation in Annex I and subject to third-party conformity assessment, as well as those listed in Annex III (e.g., credit scoring). They face three layers of explanation duties. First, providers must prepare detailed technical documentation covering design, logic, parameters, performance, and interpretability (Art. 11; Annex IV) [33]. Second, they must provide instructions for use, including system capabilities and limitations, intended purpose, guidance on interpreting outputs, and measures for human oversight (Arts. 1314). Third, when Annex III high-risk systems support decision-making, deployers must provide affected persons "clear and meaningful explanations" of the AI's role and main decision elements, enabling them to exercise downstream rights (e.g., contesting the decision; Art. 86).
+
+Model-agnostic XAI methods span several main families. Rule-based approaches, including decision trees, provide human-readable if-then logic but can be unstable and oversimplify complex decision boundaries [38]. Local surrogate methods, like LIME and SHAP, approximate the behaviour of a black-box around a given instance or via Shapley-value attributions, offering flexible explanations that are nevertheless sensitive to assumptions about local linearity, feature independence and the choice of neighbourhood or background distribution [23, 28]. Global feature-effect tools such as PDP and ICE visualise how selected features influence model predictions: PDP provides a global, averaged view of feature effects across the dataset, whereas ICE disaggregates these effects into per-instance curves. Both typically rely on feature-independence assumptions and can struggle to capture higher-order interactions [15, 17]. Counterfactual methods, e.g., DiCE [25], search for minimally changed inputs that flip a model's decision, yielding "what-if" explanations, but depend heavily on distance metrics and assumptions about which features can be modified independently.
+
+\* 4 The command " -site:" excludes links from a specified URL, because of the " - " symbol.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: 6 F. Sovrano et al. -->
+
+Explainability Properties. Following [8], we consider three main clusters of XAI properties, summarised in Table 1. Faithfulness (also referred to as fidelity or correctness) captures how accurately an explanation reflects the model's actual reasoning. It includes: (i) Necessity/No False Positives, meaning that the explanation includes only those features or elements that genuinely influence the model's output; (ii) Sufficiency/No False Negatives, meaning that it excludes only features or elements that are irrelevant to the output; and (iii) Completeness/Coverage, meaning it covers the model's full rationale without omitting relevant factors. Robustness (also referred to as stability) concerns the extent to which explanations are not overly sensitive to small, irrelevant, or predictionpreserving changes to the input. It includes: (i) Stability/Continuity, whereby similar instances or minor perturbations yield similar explanations; and (ii) Adversarial Robustness, whereby explanations are not easily manipulated through adversarial examples. Finally, Complexity (a.k.a. Compactness, Minimality) concerns the complexity of an explanation itself, including Sparsity/Few Features and Rule/Predicate Size, as well as its Dimensionality/Granularity/Level of Detail, i.e., whether the explanation is aggregated or highly specific.
+
+<Table>
+| Cluster                   | Description                                                                     | Sub-properties                                                                                                                                                                                                                                                                                                |
+|:--------------------------|:--------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Faithfulness/ Correctness | How accurately an explanation reflects the underlying model's true rea- soning. | Necessity/No False Positives: Only features or elements that actually influence the model's outcome. Sufficiency/No False Negatives: Only features irrelevant to the model's outcome are ignored. Completeness/Coverage: The explanation covers the model's full rationale, not leaving out relevant factors. |
+| Robustness/ Sensitivity   | Stability of the explanation under changes in inputs.                           | Stability/Continuity: Similar instances or minor perturba- tions yield similar explanations. Adversarial Robustness: Explanation should not be easily manipulated by adversarial examples.                                                                                                                    |
+| Complexity                | Complexity of an explanation.                                                   | Sparsity/Few Features & Rule/Predicate Size. Dimensionality/Granularity/Level of Detail.                                                                                                                                                                                                                      |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 7 -->
+
+# 5 Property-to-Algorithm Mapping
+
+Following the methodology in §2, we scored widely used model-agnostic XAI algorithms on a 1-5 Likert scale against the faithfulness, robustness, and complexity sub-properties identified in §4, where 1 means not exhibited and 5 means fully exhibited.
+
+Decision trees [2] offer fine-grained "level of detail" (5), but are highly sensitive to perturbations ("stability" 1); unpruned trees overfit, increasing "false positives" and reducing "adversarial robustness" (both 2). RuleFit [16], combining multiple decision-trees, improves "completeness" and "level of detail" (4) over single trees. "Sparsity" drops to 2, but it is more "stable" (3 vs 1) than Decision Trees, while compared to SHAP it trades some "faithfulness" (3 vs 5) for greater rule-based interpretability. RuleSHAP [32] uses SHAP-guided weights to make RuleFit more faithful, raising "no false positives" and "no false negatives" to 4; it improves on RuleFit while remaining slightly less faithful than SHAP (4 vs 5).
+
+PDPs [15] average predictions over data to give smooth global curves with high "stability" (4). Their main drawbacks are visual clutter (many plots needed; "sparsity" 2). They provide less instance-level recall than ICE [17], which disaggregates PDPs into per-instance curves on the same grid [15], revealing heterogeneity and interactions and increasing its "no false negatives" score to 4. ICE shares "level of detail" (4) with PDPs but suffers from overplotting ("sparsity" and "completeness" 2) and lower "stability", but it is more stable than LIME.
+
+LIME [28] produces moderately sparse local linear surrogates but no dimension above 3. Randomized perturbations cause high variance ("stability" 1), and explanations are attackable ("adversarial robustness" 1). It is less accurate than SHAP ("no false positives/negatives" 2 vs 5) [24]; Anchors improves its precision [29]. SHAP [23] achieves the top scores in "no false positives/negatives" (both 5) for exact values (approximate schemes, e.g., KernelSHAP, can reduce faithfulness), while satisfying the standard additive axioms of local accuracy and missingness. Its remaining dimensions are all ≥ 3; compared to LIME, it offers much stronger faithfulness while remaining less rule-like ("level of detail" 3) than Decision Trees [2].
+
+Anchors [29] learns short if-then rules with high-precision guarantees via randomised perturbations and bandit search, targeting high "sparsity" (5) and "no false positives" (4) [29]. The stochastic search yields very low "stability" (1); relative to CEM, it matches "sparsity" but offers weaker "adversarial robustness" (3 vs 4). CEM [12] returns pertinent positives/negatives that are minimally sufficient/necessary, giving "no false positives" 5, high "sparsity", and strong "adversarial robustness" (4) via ℓ1/ℓ2 penalties and manifold regularisation. Its two non-convex optimisation problems with several hyperparameters lead to low "stability" (1), but compared to Anchors it attains higher "completeness" and slightly better robustness. DiCE [25] enforces validity through a margin constraint in a single diversity-aware optimisation, achieving strong "no false positives" (5), good "sparsity" (4), and high "adversarial robustness" (4) when constraints are feasible. As with CEM, non-convexity, random initialisation, and many iterations yield very low "stability" scores.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: 8 F. Sovrano et al. -->
+
+<Table>
+| XAI Algorithm.XAI Algorithm   |   No FP |   Faithfulness.No FN |   Faithfulness.Completeness |   Robustness.Stability |   Robustness.Adv. Rob. |   Complexity.Sparsity |   Complexity.Level of Detail |
+|:------------------------------|--------:|---------------------:|----------------------------:|-----------------------:|-----------------------:|----------------------:|-----------------------------:|
+| Decision Trees                |       2 |                    3 |                           3 |                      1 |                      2 |                     3 |                            5 |
+| RuleFit                       |       3 |                    3 |                           4 |                      3 |                      3 |                     2 |                            4 |
+| RuleSHAP                      |       4 |                    4 |                           4 |                      3 |                      3 |                     3 |                            4 |
+| PDP                           |       3 |                    3 |                           3 |                      4 |                      3 |                     2 |                            4 |
+| ICE                           |       3 |                    4 |                           2 |                      3 |                      3 |                     2 |                            4 |
+| LIME                          |       2 |                    2 |                           2 |                      1 |                      1 |                     3 |                            2 |
+| SHAP                          |       5 |                    5 |                           3 |                      4 |                      4 |                     3 |                            3 |
+| Anchors                       |       4 |                    3 |                           3 |                      1 |                      3 |                     5 |                            3 |
+| CEM                           |       5 |                    3 |                           4 |                      1 |                      4 |                     4 |                            3 |
+| DiCE                          |       5 |                    3 |                           3 |                      1 |                      4 |                     4 |                            3 |
+</Table>
+
+# 6 Legal Compliance Assessment of XAI Methods
+
+Table 4 translates explanation duties demanded by the AI Act into a harmonised set of interpretability properties. This mapping is based on a close reading of the legal text, its objectives, and its existing interpretations (where applicable). The table can serve as a compliance checklist and a negotiation tool between legal and technical teams. Once the minimum thresholds for each property are frozen, engineers can select or tailor the most suitable XAI methods to meet or exceed the legal minimums.
+
+We operationalise the high-level mapping in Table 4 through the quantitative component of our mixed-methods approach, by applying a scoring procedure to identify, for each regulatory column, the XAI algorithm(s) that best satisfy the required interpretability properties, as described below. To do so, we combine three information sources:
+
+- D1 The legal demand side (properties that carry a ✓ or equivalent wording in Table 4);
+
+- D2 The algorithmic supply side (Table 2, which reports the full score matrix for the faithfulness, robustness, and complexity sub-properties; Table 3 provides a compact qualitative summary);
+
+- D3 The procedural fit (does the method work at the correct scope, local or global, and stage, ex-ante or ex-post?).
+
+For a legislation article r, let's define:
+
+- Rr = {p1, . . . , pmr } be the set of the mr interpretability-property categories pi (faithfulness, robustness, complexity) that the legal text marks as required;
+
+- S r pi = {si1, . . . , siKpi,r } the set of sub-properties sij that the legislation article r requires of pi.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 9 -->
+
+<Table>
+| XAI Algorithm   | Best at (score > 3)                                                                                                                                                                        | Worst at (score < 3)                                                                                                                                                  |
+|:----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Decision Trees  | Level of Detail (5): Very fine-grained, per-leaf explanations.                                                                                                                             | Stability (1): Highly sensitive to small data changes. No FP (2): Splits may reflect spurious local patterns. Adv. Rob. (2): Vulnerable to adversarial perturbations. |
+| RuleFit         | Completeness (4): Blends rules and linear terms for broad coverage. Level of Detail (4): Detailed rule+coefficient breakdown.                                                              | Sparsity (2): Hundreds of trees still yield many rules.                                                                                                               |
+| RuleSHAP        | No FP (4): SHAP-driven rules are highly faithful. No FN (4): Captures most true influences. Completeness (4): Rules cover the main decision rationale well.                                | (none < 3)                                                                                                                                                            |
+| PDP             | Stability (4): Averaging yields smooth, repeatable curves. Level of Detail (4): Full feature-effect curves.                                                                                | Sparsity (2): Presents every feature's curve.                                                                                                                         |
+| ICE             | No FN (4): Reveals more individual effects. Level of Detail (4): Full per-instance effect curves.                                                                                          | Completeness (2): One feature at a time; limited coverage. Sparsity (2): Still shows a full curve for each data point.                                                |
+| LIME            | (none > 3)                                                                                                                                                                                 | Stability (1): Extremely sensitive to sampling. Adv. Rob. (1): Easily manipulated. Completeness (2): Local surrogate covers only a narrow neighborhood.               |
+| SHAP            | No FP (5): Only truly contributive features. No FN (5): Captures all positive/negative contributions. Stability (4): Additive attributions are usually stable for a fixed model and input. | (none < 3)                                                                                                                                                            |
+| Anchors         | Sparsity (5): Very compact anchors. No FP (4): High precision by design.                                                                                                                   | Stability (1): Highly stochastic solver.                                                                                                                              |
+| CEM             | No FP (5): Produces highly faithful minimal changes. Completeness (4): Provides richer rationale than basic counterfactuals. Adv. Rob. (4): Explanations remain valid under perturbations. | Stability (1): Outputs vary with solver seed.                                                                                                                         |
+| DiCE            | No FP (5): Correct what-if explanations. Adv. Rob. (4): Valid under adversarial changes. Sparsity (4): Optimizes minimal feature changes.                                                  | Stability (1): Counterfactuals change across runs.                                                                                                                    |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: 10 F. Sovrano et al. -->
+
+<Table>
+|              |                                                    | Art. 86      | Arts. 13-14                | Art. 11 & Annex IV   |
+|:-------------|:---------------------------------------------------|:-------------|:---------------------------|:---------------------|
+| Faithfulness | No false positives No false negatives Completeness | ✓ ✓ ✗        | preferable ✓ ✓(reasonable) | ✓ ✓ ✓                |
+| Robustness   | Stability Adversarial robust.                      | ✓ ✓(partial) | ✓ ✓                        | ✓ ✓                  |
+| Complexity   | Sparsity                                           | ✓ ✗          | ✗ ✗                        | ✗                    |
+|              | Detailed                                           | local        |                            | ✓                    |
+| Other Prop.  | Scope Stage                                        | ex-post      | both both                  | global ex-ante       |
+</Table>
+
+Each sub-property has a legal strength factor:
+
+Score(a, s) is the "interpretability" score achieved by an XAI algorithm a for the explanatory property s (see Table 2), normalised in [0, 1]. The weight wpi (a, r) ∈ [0, 1], representing the average fraction of the (weighted) sub-properties of pi that a satisfies, is computed as:
+
+If an algorithm does not advertise any strength in a required sub-property, that dimension simply contributes 0 to the numerator. With this refined weight, the overall legislation-specific compliance score becomes
+
+We assign the same priority or weight to each category, treating all properties as equal, even if some appear more frequently in the literature or in the law. However, this can be modified in the formula by using a weighted average.
+
+The filtering step D3 is enforced before scoring: an XAI algorithm contributes to the compliance score in equation (3) only if its scope and stage intersect with the corresponding descriptors of article r. Formally, let scope(a) and stage(a) be, respectively, the scope and stage of algorithm a, and analogously scope(r)
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 11 -->
+
+<Table>
+| XAI method                                                                     | Scope                                                                                                | Stage                                                            |
+|:-------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|
+| Decision Trees (surrogate) RuleFit RuleSHAP PDP ICE LIME SHAP Anchors CEM DiCE | local, global local, global local, global global local, global local local, global local local local | both both both ex-ante both ex-post both ex-post ex-post ex-post |
+</Table>
+
+and stage(r) for the article. Then,
+
+To make criterion D3 reproducible, Table 5 assigns each XAI method an explicit scope and stage profile. We classify scope according to the method's native explanatory unit. We classify stage functionally: a method is ex-post when it requires a realised case or prediction to generate an explanation, ex-ante when it can characterise the model without reference to a specific executed input-output pair, and both when it natively supports both uses. Under this convention, LIME, Anchors, CEM, and DiCE are local and ex-post because they explain a specific prediction or input instance. PDP is global and ex-ante because it summarises the expected model response as a function of one or more features over the data distribution. SHAP supports both local attributions and global summaries. ICE is treated as local/global and both because it can be used either to inspect a specific case or to visualise heterogeneity across many cases. Surrogate decision trees and rule-based surrogate methods are treated here as local/global and both, because they can be used both to document model behaviour globally and to explain a specific case through rule paths or local rule contributions. Accordingly, criterion D3 is a procedural admissibility filter: methods whose native scope or stage does not match the legal provision are excluded before scoring. In particular, local ex-post methods are not admissible for provisions that require global ex-ante documentation, while global ex-ante methods are not admissible for provisions that require local ex-post justifications.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: 12 F. Sovrano et al. -->
+
+Equation (3) guarantees the following properties:
+
+- P1 Legal strength is respected: each sub-property is weighted by its statutory factor λs, so failing a mandatory requirement reduces the weight strictly more than failing an optional/partial one.
+
+- P2 Normalisation removes cardinality bias: division by ∑s∈S r pi λs ensures that categories containing more sub-properties cannot dominate purely by size; two algorithms satisfying the same fraction of mandatory and optional requirements will receive the same wpi (a, r) even when |S r pi | differs.
+
+- P3 Partial compliance is credited: Score(a, s) ∈ [0, 1] allows nuanced assessment, avoiding the all-or-nothing artefacts of Boolean checklists.
+
+- P4 Zero reward for silence: if the documentation of the XAI algorithm a is silent about a required sub-property s, the term Score(a, s) = 0 yields no contribution, discouraging strategic omission.
+
+- P5 The score has bounded interpretability: by construction, S(a, r) ∈ [0, 1] as wpi (a, r) ∈ [0, 1], so the final score can be interpreted as a percentage of regulatory alignment.
+
+Taken together, these properties make the compliance score of equation (3) comparable across algorithms, transparent to auditors, and sensitive to the legal priorities encoded in the legal strength factor λs.
+
+# 7 Results & Discussion
+
+We conducted a systematic legal analysis of the provisions and recitals of the AI Act (Art. 11, Annex IV, Arts. 13-14, and Art. 86) that explicitly or implicitly require explanations about algorithmic systems. Table 4 links each legal provision to mandatory or desirable XAI properties. When laws are silent, properties are marked "not specified"; conditional language is captured accordingly. Across all statutes, faithfulness and robustness form the non-negotiable baseline; complexity limits depend on the audience.
+
+Using equation (3), we computed S(a, r) for all algorithms in Table 2, applying the procedural-fit filter of criterion D3 using the scope/stage profiles reported in Table 5. Table 6 maps property requirements to the best-scoring model-agnostic XAI tools according to their compliance scores, rescaled from 15 to the [0, 1] range. Rather than a single best method, these techniques span a structured design space. Tree- and rule-based explainers (surrogate decision trees, RuleFit, RuleSHAP, Anchors) prioritise human-readable, often sparse decision paths or rule sets when "sparsity" and "level of detail" dominate. Attributionand perturbation-based methods (LIME, SHAP) maximise "faithfulness" under clear axioms but differ in "robustness" and computational cost, with SHAP more reliable but slower.
+
+Across provisions, Table 6 shows a clear pattern: methods with strong faithfulness and robustness repeatedly rank near the top across the AI Act's explanatory requirements. For Art. 86 (local, ex-post justifications), SHAP, RuleSHAP, and CEM support highly faithful instance-level explanations; here, counterfactual examples, trees, and rule-based surrogates can be layered on top as presentation devices when audiences require low complexity, without using global methods as the primary compliance backbone. For Arts. 13-14 (mixed local/global, ongoing information duties), SHAP and RuleSHAP again dominate on faithfulness, while PDP provides robust, easily documentable global trends; in practice, providers and deployers can front-load simpler rule lists or decision trees in userfacing interfaces and keep SHAP-based diagnostics in the technical file, ensuring that reductions in sparsity or level of detail are an explicit design choice rather than an undocumented side effect. The explicit D3 profiles of Table 5 also clarify why PDP disappears from Art. 86 and why local ex-post methods such as Anchors, CEM, and DiCE disappear from Art. 11 and Annex IV: the former is treated as global/ex-ante, whereas the latter are treated as local/ex-post.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 13 -->
+
+Art. 11 and Annex IV (global, ex-ante documentation) and Art. 86 (local, ex-post justifications) additionally constrain complexity, but they do so over different admissible sets. For Art. 11 and Annex IV, local ex-post methods such as Anchors, CEM, and DiCE are excluded by criterion D3, so the best admissible low-complexity candidates are Decision Trees, RuleFit, and RuleSHAP. A sensible pattern is therefore to use SHAP or RuleSHAP as the primary evidential tool for risk management and performance monitoring, and then compress these explanations into tree- or rule-based summaries for Annex IV-style documentation. Overall, the rankings operationalise legal requirements as engineering choices but do not, by themselves, guarantee compliance: scores are context-dependent and assume careful implementation (e.g., avoiding degenerate KernelSHAP settings, calibrating counterfactual constraints), and they must be integrated with broader governance measures, such as data governance, human oversight, and documentation practices.
+
+<Table>
+| Provision        | Property                               | Top-3 algorithms (score)                                                                                                                                                        |
+|:-----------------|:---------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Art. 86          | Robustness Faithfulness Complexity All | SHAP (0.80), RuleFit (0.6) SHAP (1.), RuleSHAP (0.80), CEM (0.80) Anchors (1.), CEM (0.80), DiCE (0.80) SHAP (0.8), Anchors (0.68), RuleSHAP (0.67)                             |
+| Arts. 13-14      | Robustness Faithfulness All            | SHAP (0.80), PDP (0.70), RuleFit (0.60) SHAP (0.88), RuleSHAP (0.80), CEM (0.78) SHAP (0.84), RuleSHAP (0.70), PDP (0.65)                                                       |
+| Art. 11 Annex IV | Robustness Faithfulness Complexity All | SHAP (0.80), PDP (0.70), RuleFit (0.60) SHAP (0.87), RuleSHAP (0.8), RuleFit (0.67) Decision Trees (1.), RuleFit (0.8), RuleSHAP (0.8) SHAP (0.76), RuleSHAP (0.73), PDP (0.70) |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: 14 F. Sovrano et al. -->
+
+Lastly, we assessed the sensitivity of the proposed compliance scores to changes in the legal strength factors λ by applying a correction factor δ that varied between -0.2 and 0.2, representing a 20% maximum variation in the legal strength factors. The corrected λ values were limited within the range [0, 1] and computed as:
+
+The variation of the λ factors did not have any impact on the final robustness and faithfulness compliance scores related to Art. 11 & Annex IV of the AI Act. This is due to the fact that this article does not have partial requirements on these two XAI properties (see Table 4): both properties are fully mandatory (λ = 1 for every sub-property), so all scores are shifted up or down by the same δ variation which is, subsequently, cancelled out by the normalisation process. The same phenomenon occurs for robustness and complexity when related to the Arts. 13-14.
+
+The δ variations had some impact on the other five combinations, namely faithfulness, robustness and complexity for Art. 86, faithfulness as required by Arts. 13-14 and complexity relative to Art. 11. However, such an impact was insufficient to change the ranking of the XAI methods, as shown in Figure 2. SHAP, RuleSHAP and CEM are still the favourite XAI methods for meeting the faithfulness requirements of Art. 86 and Arts. 13-14 and SHAP, RuleFit and RuleSHAP best meet the robustness demands of Art. 86. Anchors and Decision Trees remain the two optimal XAI methods in terms of complexity as demanded by Arts. 11 and 86, despite the variations in the λ factors. Overall, the sensitivity analysis shows that the proposed compliance scores are robust to variations in the legal strength factors λ. Although our 1-5 scores are ordinal and context-dependent, aggregating them into a quantitative index enables comparative analysis of XAI profiles against the AI Act's explanatory requirements.
+
+# 8 Conclusion and Future Work
+
+We addressed the critical transparency gap between the technical capabilities of state-of-the-art XAI methods and the diverse explainability requirements imposed by the AI Act. By conducting a systematic review of both XAI algorithms and their intrinsic properties, alongside a parallel analysis of the AI Act's relevant provisions, we derived a harmonised set of legal explanatory requirements. Our interdisciplinary mapping then translated these requirements into measurable XAI algorithm properties (faithfulness, robustness, and complexity), enabling a principled alignment between legal mandates and technical artefacts. Methodologically, this alignment is achieved through a mixed-methods design that combines qualitative legal and literature-based assessment with quantitative score aggregation.
+
+The proposed law-to-XAI mapping pipeline is deliberately modular and extensible. New legal requirements or interpretability properties can be incorporated by updating the relevant rows or columns in Table 4 and assigning the appropriate ✓ and ✗ indicators. Weighting factors λs may be derived from legal precedent (e.g., court decisions) or specified directly by legal experts.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 15 -->
+
+<Figure>
+Fig. 2: Results of the sensitivity analysis over the compliance scores related to (a) faithfulness, (b) robustness and (c) complexity as demanded by Art. 86 of the AI Act, (d) faithfulness demanded by Arts. 13-14 and (e) complexity demanded by Art. 11.
+</Figure>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 16 F. Sovrano et al. -->
+
+New XAI algorithms can likewise be integrated through a one-time evaluation using the same assessment rubric, after which scores are automatically recomputed via Eq. (3). Because the scoring depends only on the legal requirements Rr, the property weights wpi , and the procedural fit indicator, no additional manual calibration is needed. This design also supports rapid adaptation to legal change: when legislation evolves, only the corresponding weighting factors need to be updated, thus enabling immediate assessment of whether existing XAI tools remain sufficient or additional safeguards are required.
+
+Future research avenues include testing the proposed compliance scoring framework in real-world AI deployment case studies, where legal and technical experts will assess whether the scores meaningfully track regulatory requirements and are usable in high-risk systems.
+
+# References
+
+[1] Arrieta, A.B., Díaz-Rodríguez, N., Del Ser, J., Bennetot, A., Tabik, S., Barbado, A., García, S., Gil-López, S., Molina, D., Benjamins, R., et al.: Explainable artificial intelligence (xai): Concepts, taxonomies, opportunities and challenges toward responsible ai. Information fusion 58, 82-115 (2020), https://doi.org/10.1016/j.inffus.2019.12.012
+
+[2] Bastani, O., Kim, C., Bastani, H.: Interpreting blackbox models via model extraction. arXiv preprint arXiv:1705.08504 (2017)
+
+[3] Belton, V., Stewart, T.J.: Multiple Criteria Decision Analysis: An Integrated Approach. Kluwer Academic Publishers, Boston, MA (2002)
+
+[4] Bibal, A., Lognoul, M., De Streel, A., Frénay, B.: Legal requirements on explainability in machine learning. Artificial Intelligence and Law 29, 149169 (2021), https://doi.org/10.1007/s10506-020-09270-4
+
+[5] Bradford, A.: The Brussels effect: How the European Union rules the world. Oxford University Press, USA (2020), https://doi.org/10.1093/oso/ 9780190088583.001.0001
+
+[6] Bramer, M.: Avoiding overfitting of decision trees. Principles of data mining pp. 119-134 (2007)
+
+[7] Bringas Colmenarejo, A., State, L., Comandé, G.: How should an explanation be? a mapping of technical and legal desiderata of explanations for machine learning models. International Review of Law, Computers & Technology pp. 1-32 (2025), https://doi.org/10.1080/13600869.2025.2497633
+
+[8] Chen, Z., Subhash, V., Havasi, M., Pan, W., Doshi-Velez, F.: What makes a good explanation?: A harmonized view of properties of explanations. In: Workshop on Trustworthy and Socially Responsible Machine Learning, NeurIPS 2022, pp. 1-11 (2022), https://doi.org/10.48550/arXiv.2211. 05667, URL https://openreview.net/forum?id=TnFHizNosji
+
+[9] Cinelli, M., Kadziński, M., Gonzalez, M., Słowiński, R.: How to support the application of multiple criteria decision analysis? let us start with a
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Assessing XAI Methods against AI Act Requirements 17 -->
+
+- comprehensive taxonomy. Omega 96, 102261 (2020), https://doi.org/ 10.1016/j.omega.2020.102261
+
+[10] Commission, E.: Artificial intelligence act (2024), URL https://eur-lex. europa.eu/eli/reg/2024/1689/oj/eng
+
+[11] Cugny, R., Aligon, J., Chevalier, M., Roman-Jimenez, G., Teste, O.: Autoxai: A framework to automatically select the most adapted XAI solution. In: Hasan, M.A., Xiong, L. (eds.) Proceedings of the 31st ACM International Conference on Information & Knowledge Management, Atlanta, GA, USA, October 17-21, 2022, pp. 315-324, ACM (2022), https://doi.org/ 10.1145/3511808.3557247, URL https://doi.org/10.1145/3511808. 3557247
+
+[12] Dhurandhar, A., Chen, P., Luss, R., Tu, C., Ting, P., Shanmugam, K., Das, P.: Explanations based on the missing: Towards contrastive explanations with pertinent negatives. In: Bengio, S., Wallach, H.M., Larochelle, H., Grauman, K., Cesa-Bianchi, N., Garnett, R. (eds.) Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018, December 3-8, 2018, Montréal, Canada, pp. 590-601 (2018), URL https://proceedings.neurips.cc/ paper/2018/hash/c5ff2543b53f4cc0ad3819a36752467b-Abstract.html
+
+[13] Fereday, J., Muir-Cochrane, E.: Demonstrating rigor using thematic analysis: A hybrid approach of inductive and deductive coding and theme development. International journal of qualitative methods (2006), https: //doi.org/10.1177/160940690600500107
+
+[14] Frész, B., Dubovitskaya, E., Brajovic, D., Huber, M.F., Horz, C.: How should AI decisions be explained? requirements for explanations from the perspective of european law. In: Das, S., Green, B.P., Varshney, K., Ganapini, M., Renda, A. (eds.) Proceedings of the Seventh AAAI/ACM Conference on AI, Ethics, and Society (AIES-24) - Full Archival Papers, October 21-23, 2024, San Jose, California, USA - Volume 1, pp. 438-450, AAAI Press (2024), https://doi.org/10.1609/AIES.V7I1.31648, URL https://doi.org/10.1609/aies.v7i1.31648
+
+[15] Friedman, J.H.: Greedy function approximation: a gradient boosting machine. Annals of statistics pp. 1189-1232 (2001), https://doi.org/10. 1214/aos/1013203451
+
+[16] Friedman, J.H., Popescu, B.E.: Predictive learning via rule ensembles. The Annals of Applied Statistics pp. 916-954 (2008), https://doi.org/10. 1214/07-AOAS148
+
+[17] Goldstein, A., Kapelner, A., Bleich, J., Pitkin, E.: Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation. journal of Computational and Graphical Statistics 24(1), 44-65 (2015), https://doi.org/10.1080/10618600.2014.907095
+
+[18] Gyevnar, B., Ferguson, N., Schafer, B.: Bridging the transparency gap: What can explainable AI learn from the AI act? In: Gal, K., Nowé, A., Nalepa, G.J., Fairstein, R., Radulescu, R. (eds.) ECAI 2023 - 26th European Conference on Artificial Intelligence, September 30 - October 4, 2023, Kraków, Poland - Including 12th Conference on Prestigious Applications
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 18 F. Sovrano et al. -->
+
+- of Intelligent Systems (PAIS 2023), Frontiers in Artificial Intelligence and Applications, vol. 372, pp. 964-971, IOS Press (2023), https://doi.org/ 10.3233/FAIA230367, URL https://doi.org/10.3233/FAIA230367
+
+[19] Halabaku, E., Bytyçi, E.: Overfitting in machine learning: A comparative analysis of decision trees and random forests. Intelligent Automation & Soft Computing 39(6) (2024)
+
+[20] Holzinger, A., Dehmer, M., Emmert-Streib, F., Cucchiara, R., Augenstein, I., Del Ser, J., Samek, W., Jurisica, I., Díaz-Rodríguez, N.: Information fusion as an integrative cross-cutting enabler to achieve robust, explainable, and trustworthy medical artificial intelligence. Information Fusion 79, 263278 (2022), https://doi.org/10.1016/j.inffus.2021.10.007
+
+[21] Liao, Q.V., Pribic, M., Han, J., Miller, S., Sow, D.: Question-driven design process for explainable AI user experiences. CoRR abs/2104.03483 (2021), URL https://arxiv.org/abs/2104.03483
+
+[22] Longo, L., Brcic, M., Cabitza, F., Choi, J., Confalonieri, R., Ser, J.D., Guidotti, R., Hayashi, Y., Herrera, F., Holzinger, A., Jiang, R., Khosravi, H., Lécué, F., Malgieri, G., Páez, A., Samek, W., Schneider, J., Speith, T., Stumpf, S.: Explainable artificial intelligence (XAI) 2.0: A manifesto of open challenges and interdisciplinary research directions. Inf. Fusion 106, 102301 (2024), https://doi.org/10.1016/J.INFFUS.2024.102301, URL https://doi.org/10.1016/j.inffus.2024.102301
+
+[23] Lundberg, S.M., Lee, S.: A unified approach to interpreting model predictions. In: Guyon, I., von Luxburg, U., Bengio, S., Wallach, H.M., Fergus, R., Vishwanathan, S.V.N., Garnett, R. (eds.) Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 4765-4774 (2017), URL https://proceedings.neurips.cc/paper/2017/ hash/8a20a8621978632d76c43dfd28b67767-Abstract.html
+
+[24] Man, X., Chan, E.P.: The best way to select features? comparing mda, lime, and shap. The Journal of Financial Data Science (2020), https:// doi.org/10.3905/jfds.2020.1.047
+
+[25] Mothilal, R.K., Sharma, A., Tan, C.: Explaining machine learning classifiers through diverse counterfactual explanations. In: Hildebrandt, M., Castillo, C., Celis, L.E., Ruggieri, S., Taylor, L., Zanfir-Fortuna, G. (eds.) FAT* '20: Conference on Fairness, Accountability, and Transparency, Barcelona, Spain, January 27-30, 2020, pp. 607-617, ACM (2020), https://doi.org/ 10.1145/3351095.3372850, URL https://doi.org/10.1145/3351095. 3372850
+
+[26] Nauta, M., Trienes, J., Pathak, S., Nguyen, E., Peters, M., Schmitt, Y., Schlötterer, J., van Keulen, M., Seifert, C.: From anecdotal evidence to quantitative evaluation methods: A systematic review on evaluating explainable AI. ACM Comput. Surv. 55(13s), 295:1-295:42 (2023), https: //doi.org/10.1145/3583558, URL https://doi.org/10.1145/3583558
+
+[27] Panigutti, C., Hamon, R., Hupont, I., Llorca, D.F., Yela, D.F., Junklewitz, H., Scalzo, S., Mazzini, G., Sánchez, I., Garrido, J.S., Gómez, E.: The role of explainable AI in the context of the AI act. In: Proceed-
+
+<!-- PageBreak -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "29439e95bad2ab439e66436204abc4193051d54ad68a7f4eb2c93786ac60679a",
+  "prompt_sha256": "5807d2d9e631b7b64693636c69a8cea9213a777ef11ae87c0f32eb9da5555223",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNicl9vkSQrQvNNpGcfkzUuv60V5",
+  "prompt_tokens": 5715,
+  "completion_tokens": 48,
+  "actual_usd": 0.00088605,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the public constitution focuses more on objectivity, impartiality, and accessibility, and promotes desired behavior rather than avoiding undesired behavior."
+  }
+}

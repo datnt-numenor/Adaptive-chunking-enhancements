@@ -1,0 +1,10 @@
+{
+  "request_hash": "37a7bc469fb24a5c4150e7eb9ba366530d17b4fea5a4299e48fae5fd55ab5b38",
+  "prompt_sha256": "aae27017df2504ad6ef2b8566280d2750a9a829468ebb8f38063477ba11db831",
+  "answer": "The chatbot described in arXiv 2505.11946 uses both public and proprietary standards by integrating them into its guidance system. It allows users to access not only public regulations but also company-owned standards and guidelines, whether these are proprietary regulations developed internally or industry standards the organization has acquired. This integration enables users to browse through hundreds of regulations more easily and helps organizations maintain the recency of their standards by focusing the chatbot's local repository on the most up-to-date versions. By collecting all necessary documents in one system, the chatbot empowers developers and organizations to build AI systems that are innovative, responsible, and legally sound.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN4l5Zqf51Xtq0iaIzBywHcVf7OB",
+  "prompt_tokens": 7362,
+  "completion_tokens": 125,
+  "actual_usd": 0.0011792999999999999
+}

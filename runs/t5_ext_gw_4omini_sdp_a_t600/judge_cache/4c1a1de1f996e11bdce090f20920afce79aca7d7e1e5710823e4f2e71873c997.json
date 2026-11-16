@@ -1,0 +1,14 @@
+{
+  "request_hash": "4c1a1de1f996e11bdce090f20920afce79aca7d7e1e5710823e4f2e71873c997",
+  "prompt_sha256": "7700581b0f87fb36b2f35de942989abeac3198a193b274aa892043ca914fe08e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOBHkUJishgyJrLnDmVnHqBK1gdd",
+  "prompt_tokens": 9316,
+  "completion_tokens": 39,
+  "actual_usd": 0.0014208,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive discussion on the impact of historical redlining and biases in algorithms, fully supporting the claims made in the Reference Answer."
+  }
+}

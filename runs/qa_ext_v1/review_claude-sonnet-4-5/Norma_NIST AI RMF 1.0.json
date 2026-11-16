@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer fully supported by evidence; question is self-contained and unambiguous\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Direct evidence support; clear and self-contained question\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Exact match with evidence; straightforward factual question\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Definition and source directly quoted from evidence\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"drop\",\n      \"reason\": \"Question falsely claims document describes relationship 'without using those terms' when evidence explicitly uses the terms explainability, interpretability, and transparency\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer accurately summarizes the comprehensive evidence provided\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 8761,
+  "out": 1026
+ },
+ "created": "2026-11-09 18:39:00"
+}

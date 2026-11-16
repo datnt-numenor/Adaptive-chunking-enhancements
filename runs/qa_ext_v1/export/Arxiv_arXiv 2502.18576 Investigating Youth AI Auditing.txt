@@ -1,0 +1,215 @@
+DOCUMENT: arXiv 2502.18576 Investigating Youth AI Auditing
+
+<<<PAGE 2>>>
+<!-- PageHeader: 2 Solyst et al. -->
+
+# 1 Introduction
+
+Teens are regular users and stakeholders of Artificial Intelligence (AI), often leading the way as early adopters of new AI-driven technologies. Like other stakeholders, they too experience the potential harms associated with AI, raising growing concerns about its negative impacts on young people. For example in 2024, a 14-year old tragically died by suicide, and his mother later found that he had detrimental interactions with an AI chatbot that supported and enhanced the teen ' s suicidal ideations [52]. Youth themselves have expressed concerns with recent innovation in AI, such as with the new capabilities of generative AI (genAI) including an increase in misinformation and deep fakes. Eighty percent of teens in a recent poll believed that it was important for lawmakers to address new risks from AI [9].
+
+Responsible AI (RAI) efforts aim to reduce potential harms of AI while enhancing the potential benefits towards more ethical technology for a range of users by working towards fairness, transparency, accountability, and inclusivity (e.g., [4, 22, 33]). Recently, there has been an increasing focus on participatory approaches that engage end-users and other relevant stakeholders in the design (e.g., co-design [23, 45]) and ongoing evaluation (e.g., collaborative decision making [29, 37], user-engaged AI auditing [21, 59]) of human-centered AI [18]. However, while participatory RAI research has started to explore youths ' inclusion in AI design (e.g., [26, 32, 60]), this emerging work is often limited to initial design stages. A gap remains in engaging youth in the AI lifecycle, including continuous evaluation and governance of AI.
+
+There is an argument for including youth in RAI processes throughout the AI lifecycle " not in spite of [their] age, but specifically because of it, " one teen suggested in an interview with Time [9]. Due to youth 1) being early adopters of AI (i.e., among the first users and ways of using AI different from adults) [42], 2) having experiences growing up with AI-driven systems that are unique to this time of innovation (i.e., adults have had different experiences with technologies and do not have the same insight as current youth) [2, 69], and 3) expressing an interest in contributing to AI fairness (i.e., wanting to engage with design and evaluation of AI) [62, 64, 66, 68], youth are a core underexplored stakeholder in participatory RAI. Furthermore, youth have demonstrated great potential to engage in taking action toward more ethical AI. In 2020, teens in the UK protested an AI grading algorithm that disproportionately penalized lower-income students [35]. Their public demonstrations led to increasing awareness of algorithmic inequities, ultimately resulting in the government halting the use of the AI. When supported adequately, youth can exercise agency toward more socially just AI practices. Recent research further highlights the potential of youth to engage in emerging RAI practices. For example, prior work suggests that youth are capable of recognizing and critically contemplating harmful AI bias [64]. It has also been demonstrated that teens can conduct audits with classmates ' AI projects, identifying harmful biases and reflecting on their implications [44].
+
+Despite such strong evidence of youths ' potential to actively participate in RAI, there remains a gap in pathways for their inclusion in RAI as a stakeholder group. Questions remain around potential barriers youth face when actively engaging with RAI efforts regarding their technical fluency, moral reasoning, and a need for protection from potentially harmful topics that could come up [64]. To overcome barriers to participation, prior work has shown that youth can be supported with critical AI literacy to foster more complex understandings and engage in critical discourse about AI ethics [2, 62, 66, 68]. In this paper, we take a step to address these gaps by looking at youth engagement in user-engaged auditing, a participatory RAI approach in which AI users leverage their own knowledge and lived experiences to uncover harmful biases and other problematic AI behaviors [19, 21, 59]. We ask:
+
+· RQ1: How do youth go about actively finding problematic behavior in common AI technologies?
+
+· RQ2: How does supporting youth with critical AI literacy scaffolding impact their AI auditing capabilities?
+
+<!-- PageFooter: Manuscript submitted to ACM -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+<!-- PageHeader: Investigating Youth AI Auditing 3 -->
+
+In a workshop study with 17 teens, we found evidence that youth could conduct insightful AI audits. Youth audited AI based on their domain expertise (e.g., hobbies and passion), lived experiences (e.g., social identities), and age (e.g., knowledge of popular trends). These audits were enhanced with critical AI literacy interventions such that youth had more developed hypotheses about what and how to audit. We also observed how youth thoughtfully wrote reports for problematic AI behavior that they discovered using a prototyped youth-inclusive AI auditing tool, as well as shared their ideas for how they think user feedback should be handled in the design of future systems. We end this work with discussion about how youth engaging with AI auditing could lead to creating AI more responsibly, yield potential educational benefits, and support their empowerment in the age of AI more broadly.
+
+# 2 Related Work
+
+# 2.1 Recognizing and Supporting Youth's Potential to Engage in Responsible AI
+
+Despite lacking efforts to include youth perspectives in RAI, young people have great potential to engage. Adults ' notions may hinder youth participation in RAI processes, including perceptions that young people lack the technical expertise, moral reasoning abilities, or maturity required to engage with complex socio-technical issues [64]. Nevertheless, emerging evidence pushes back against these assumptions, suggesting that youth possess valuable lived experiences and critical perspectives that can make significant contributions to RAI. For example, Solyst et al. (2023) found that youth as young as 11 through 17 years old were sensitive to and articulate of bias in everyday AI, such as Google search results and genAI images, as well as thoughtful about nuances of AI ethics [64]. This study also found that youth could engage in co-design of RAI processes to include their and their communities ' perspectives. Ultimately, without much scaffolding, children have exhibited skills and knowledge that are necessary to weigh in critical perspectives. Coupling with their capabilities to form and express nuanced opinions, youth have expressed wanting to weigh in their perspectives in the decisions about AI systems that impact them and their communities [62, 66]. Questions remain about how youth may leverage their knowledge and perspectives to contribute to RAI, should they want to.
+
+To further augment youths ' capabilities, critical AI literacy, i.e., understanding not only how AI functions but the ability to consider societal and ethical impacts [62, 66, 68], is core to supporting youth in thoughtfully navigating everyday AI systems. For example, prior work has found that youth sometimes overtrust AI technologies, such as complex genAI, which has a growing presence in children ' s lives [63]. This overtrust highlights the importance of fostering critical AI literacy-helping youth develop the skills to interrogate the sociotechnical implications of AI systems, alongside the technical capabilities. Emerging approaches to AI education, particularly for systemically marginalized learners, further emphasize empowerment and encourage the development of "techno-social change agency, " such that youth are positioned to engage with and innovate toward equitable computing technologies [16, 17, 39, 55, 56, 62]. When scaffolded the right way, youth can engage in critical discourse about AI, even without technical AI literacy [61]. However, often, critical AI literacy stays in the classroom due to a lack of infrastructure to include youth perspectives. Given youths ' potential and educational initiatives that support their critical thought about AI systems, there is great opportunity to include youth as active contributors in participatory RAI efforts. Building on prior literature, this work explores how youth can engage in participatory RAI as legitimate contributors to the evaluation of AI systems.
+
+# 2.2 User-engaged AI Auditing
+
+Recent years have seen growing prominence of AI audits as a method for uncovering biased, discriminatory, or otherwise harmful behaviors in algorithmic systems [3, 8, 10, 28, 43, 46, 49, 53, 65]. At a high level, AI auditing refers to a process of
+
+Manuscript submitted to ACM
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+<!-- PageHeader: 4 Solyst et al. -->
+
+repeatedly testing an algorithm with inputs and observing the corresponding outputs, in order to understand its behavior and potential external impacts [8, 43]. While most early AI audits are conducted by experts such as researchers and AI practitioners [6-8, 12], end users can often identify and raise awareness of harmful AI behaviors, often by leveraging their unique identities and daily interactions with AI systems that impact their lives [19, 21, 36]. For example, end-users often discover harmful biases in text-to-image generative AI systems that expert auditors fail to detect [41, 58, 70]. To this end, researchers in FAccT, HCI, and AI [20, 34, 36, 47], along with practitioners from major technology companies [1, 14, 48, 67], have begun exploring tools and processes to facilitate more user-engaged approaches to AI auditing.
+
+However, the current line of user-engaged AI auditing research and practices often neglect an important group of AI users-the youth. In particular, AI auditing has so far been very recently investigated as an educational activity in fostering youths ' critical AI literacy. Morales-Navarro et al. (2024) examined how adolescents explored the limitations of classmates ' AI projects [44]. The study found that youth were able to identify and critically reflect on potentially harmful biases in AI systems made by fellow peers. Moreover, their engagement in the auditing process contributed to the development of their critical socio-ethical understanding of AI, highlighting the possible educational benefits of AI auditing. In this study, we aim to understand more open-endedly how youth go about exploring AI' s limitations across different types of systems, to further characterize their strengths and where support may bolster their engagement.
+
+# 3 Methods
+
+# 3.1 Participants
+
+Participants (N = 17), aged 13 to 17 (avg = 15.2), were recruited through community fliers distributed at community centers and through youth-centered STEM afterschool programs in a mid-sized city on the East Coast of the United States. Recruitment emphasized that no prior experience with AI was necessary. All youth ages 13 to 17 who expressed interest were invited to join the study. We decided to work with children no younger than 13, since this was the youngest age limit to use technologies that we focused on in the study. We had two groups of learners (A and B, participants assigned by indicated schedule availability) who took part in the research (see Table 2). Most participants were girls, since one of the organizations we recruited through was an organization focused on gender representation in STEM. Fifteen of the 17 learners had some prior experience in computing. Participants received $10 per hour as compensation for their time and contributions to the workshops.
+
+# 3.2 Workshop Design
+
+Each participant attended a 2-hour IRB-approved research workshop session that integrated multiple structured activities to foster critical AI literacy and encourage reflection on AI and its (harmful) biases. Participants first completed a short Pre Survey, which asked demographic information, as well as about prior knowledge related to computing"Have you had experience with computer science, robotics, or AI?" (yes/no), and to elaborate if so.
+
+3.2.1 Introduction to AI. The session began with an introduction to AI, where participants shared their initial definitions of AI in a group discussion. We then defined AI with a few common everyday examples. They then discussed their use of AI in daily life and considered whether AI could be wrong or potentially harmful. This part of the session helped everyone get on the same page about AI and begin reflecting on the nuanced impacts of AI.
+
+3.2.2 Break the AI-Part 1. Following this, we investigated how youth audit AI without much structured support in an activity where participants used individual laptops and were tasked to "break" three types of AI: DeepAI (text-to-image Manuscript submitted to ACM
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<!-- PageHeader: Investigating Youth AI Auditing 5 -->
+
+<Table>
+| Participant   |   Age | Gender   | Race                          | Prior   | Summarized Self-described Prior Experience                                                                     |
+|:--------------|------:|:---------|:------------------------------|:--------|:---------------------------------------------------------------------------------------------------------------|
+| A1            |    17 | Female   | White                         | Yes     | Completed pre-college program on CompBio and Cloud Lab history                                                 |
+| A2            |    15 | Female   | White                         | Yes     | Was in a robotics elective, previously took coding and CS classes                                              |
+| A3            |    14 | Female   | Asian                         | Yes     | Used AI tools like ChatGPT and Gemini                                                                          |
+| A4            |    14 | Female   | White                         | Yes     | Attended some STEM or computing-focused afterschool programs                                                   |
+| A5            |    15 | Female   | White                         | Yes     | Took a college class on AI                                                                                     |
+| A6            |    16 | Female   | White                         | Yes     | Completed CS classes                                                                                           |
+| A7            |    16 | Female   | White                         | Yes     | Took AP CS and Machine Learning; part of a robotics team                                                       |
+| A8            |    15 | Female   | Asian                         | Yes     | Studied Python 1 Java, and AP CS; active in STEM club                                                          |
+| A9            |    13 | Male     | Asian                         | Yes     | Completed robotics and coding classes; used ChatGPT for ideas                                                  |
+| B1            |    14 | Female   | White                         | Yes     | Created a complex dog robot; toured robotics facilities; participated in computing-focused afterschool program |
+| B2            |    14 | Female   | Black                         | Yes     | Minimal experience coding with Python for robotics                                                             |
+| B3            |    17 | Female   | White                         | Yes     | Familiarity with ChatGPT                                                                                       |
+| B4            |    17 | Female   | White                         | No      | None                                                                                                           |
+| B5            |    17 | Female   | White                         | No      | None                                                                                                           |
+| B6            |    13 | Female   | Black, White, Native American | Yes     | Took CS and AI course at a college                                                                             |
+| B7            |    17 | Male     | White                         | Yes     | Enjoy working on CS and robotics projects                                                                      |
+| B8            |    15 | Female   | Asian                         | No      | None                                                                                                           |
+</Table>
+
+Table 2. An overview of the demographic of workshop participants.
+
+genAI), Google Images (curative AI), and Google Search Bar (recommendation AI). We defined "breaking " the AI as making the AI output something that the youth thought was incorrect, they disagreed with, or could potentially have harmful effects on people. We chose these different types of AI due to their ubiquity with both teen and adult users, as well as to be able to investigate differences in how youth audited systems that had different functions and applications. Throughout the activity, they documented their auditing on printed out auditing log worksheets that we created with space for them to write their inputs (open-ended), observations of outputs (open-ended), and if they thought that their input broke the AI (yes/no/unsure). The participants were instructed not to use any personal information as inputs or prompts that would not be appropriate for school; however, they could note on their auditing log worksheets any inappropriate outputs. Researchers facilitated by probing participants ' hypotheses and rationale for specific audits in individual conversations throughout the activity, taking notes on their conversations. Afterward, participants collectively debriefed and discussed how they detected issues.
+
+3.2.3 Critical AI Literacy Intervention. Next, to learn about AI ethics explicitly, participants had a short 15-minute critical AI literacy intervention about AI fairness through a structured presentation and guided discussions (see Appendix A.2). Our goal was to understand how an educational intervention AI and its socio-technical harms could shift learners ' perspective beyond viewing AI as technical systems toward perceiving AI as socio-technical systems. The intervention defined the concepts of bias and harmful AI bias by probing the youth to discuss any bias they noticed in examples we showed, including: text-to-image outputs for " a wedding, " image search results for " secretary " (showing mostly White women) and search bar results for " why are asian. " These examples were based on prior work [21, 64]. We connected this activity to nuanced societal bias around social identities (e.g., how certain groups may be more adversely affected by biased AI outputs) and the ways in which AI-based decisions can yield unfair societal impacts. Discussion prompts, "How can biased AI harm people?" and "Is all biased AI bad?" encouraged participants to reason about the complexities of these technologies in small group discussions.
+
+<!-- PageFooter: Manuscript submitted to ACM -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: 6 Solyst et al. -->
+
+3.2.4 Break the AI Part 2. To understand the potential impacts of AI education, participants then engaged in second activity of breaking AI, revisiting the same three AI systems with the same prompt, to break the AI. Through this Part 2, we explored how youths ' approaches or perceptions may have shifted having had the AI literacy intervention. Due to time constraints, Part 2 was about half the duration of Part 1. We then asked the participants to share again how they aimed to break the AI, and if their approach was different compared to in Part 1.
+
+3.2.5 Youth Auditing Tool. Lastly, we had youth engage with a tool we prototyped to support auditing (see Appendix A.3). Participants could compare and contrast text-to-image AI-generated images from two prompts, reflect on the outputs, and submit a scaffolded report for problematic AI behavior. The design of this scaffolding tool was inspired by Variation Theory that suggests contrasting outputs can help users identify critical features and develop a more nuanced understanding, as well as the recent interfaces designed by HCI researchers [40]. They were then given additional AI literacy probes to support their use of the tool, shown examples where two inputs were similar with an aspect changed to assess whether bias was present in the model outputs (e.g., 'Boy with a bow ' vs. ' girl with a bow ' and 'American man with his car ' vs. 'African man with his car ') (see Appendix A.4). After using the tool to investigate AI bias, they prepared a report that contained 1) a score out of 1 to 5 evaluating the harm of the bias (from little harm to very extremely) reflected in the images, 2) their emotional reaction to outputs (could select multiple emojis depicting the six core emotions: surprise, anger, disgust, happiness, fear, sadness) 3) an explanation of why the bias was harmful, 4) who could be harmed with a drop down to select any identity characteristics that the harm may have connected to, and 5) how the outputs could be improved to remove or lessen the harm (see Appendix A.5). In a short Co-Design Ideation Activity, we asked youth to write sticky notes with ideas for how audits should be handled and who should be involved in the process.
+
+# 3.3 Data Collection and Analysis
+
+To capture data, we took notes on our observations and of workshop-wide, small group, and one-on-one conversations, aiming to transcribe youths ' relevant quotes in our notes. We did not record the whole session to protect the youths ' privacy. Youths ' artifacts (e.g., sticky notes from the co-design activity) and worksheets were photographed and digitized for later analysis. We recorded laptop screens without audio through each computer-based activity. To process the data from the structured tasks like the Break the AI and Youth Auditing Tool activities, we transcribed reports and worksheets onto spreadsheets for further analysis. We also went through screen recordings and noted youths ' inputs and took screenshots for our review, so that we could see their behavior even if it did not make it into a report or log, as well as compare their reasoning around prompts, reflection on outputs, and the actual outputs in our analyses.
+
+For analysis, we conducted iterative inductive [15], consensus-based [27] thematic analysis on all sources of data described previously. By this, the researchers noted themes individually and then through rounds of conversations with all authors, feedback, and iteratively going back through the data, we finalized our coding schemes for different types of audits and identified harms. For example, after multiple authors discussing common themes throughout youths ' types of inputs in the Break the AI task, the second author coded all inputs using the spreadsheets. Through various conversations, we finalized the themes, debating different specific data points. After this, the first author confirmed the coding of all inputs. We followed this process across youth auditing activities.
+
+<!-- PageFooter: Manuscript submitted to ACM -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: Investigating Youth AI Auditing 7 -->
+
+# 3.4 Limitations
+
+There are a few limitations to note with our method. This work has a larger portion of youth who had more extensive backgrounds with computing topics due to the recruitment through STEM-focused out-of-school programs and opt in processes. Further, our N-size and study design is not a randomized control trial, so we cannot speak to statistically significant differences for each type of critical AI literacy support.
+
+# 4 Findings
+
+We first cover youths ' backgrounds, approaches to and sensemaking when AI auditing, and how their perceptions of problematic AI changed as they were supported with critical AI literacy scaffolding from the intervention and tool.
+
+# 4.1 Perceptions about AI, Harm, and Engaging with Responsible AI
+
+For context, we describe how the youth were using AI in their lives and their ideas about how AI could be wrong or cause harm. All youth in the study used AI in their lives, including social media apps (e.g., "Snapchat"), writing apps (e.g., "Grammarly "), and genAI (e.g., "ChatGPT"). When it came to the AI systems that we focused on in the study (search bar, image search, and text-to-image genAI), all youth had used search bar and image search, and almost all (14 out of 16) had used genAI, sometimes regularly. The participants specifically reported using genAI for school-related activities, such as PhotoMath, which supported step-by-step solutions for math, or ChatGPT to help make practice problems in preparation for exams.
+
+When asked if AI could be wrong, participants highlighted issues such as genAI making up solutions or providing incorrect information. For example, A6 noted, "Generative AI...will just make something up, " while A2 mentioned, "The wording of something-if you word it differently-it can get it wrong. " B7 added that the AI "hallucinat[es] ... it will confidently say wrong answers as right ones. " When asked if AI could have harmful effects on people, participants raised concerns about overreliance, loss of jobs, and misinformation. B5 suggested that "it can motivate people to not work as hard because it could basically do everything for you. " B1 related that, people could " cheat with AI" and this would have the impact of not adequately " giving people credit, " referring to intellectual property concerns around genAI outputs. A5 mentioned job displacement emphasizing that "it can affect jobs...they take away jobs. " A4 warned about misinformation ' s influence, stating that it could " give people wrong information and change their perception. " We note that in Group B, but not Group A, one learner (A2) brought up that AI could do harm by having "bias. " She then referred to an example of biased text-to-image genAI producing gender bias for images of "CEOs " that our research team had shared over six months prior with a different afterschool program that she participated in. Overall, most youth considered issues with AI to be its technical limitations and how its technical capabilities could have negative impacts on people. With this context in mind about their initial notions about AI, in the following sections we cover how they engaged with AI auditing in everyday technologies.
+
+# 4.2 Youths' AI Auditing: Inputs and Interpretations of Outputs
+
+4.2.1 Inputs to Audit AI. Overall, all youth across both Break the AI Part 1 & 2 were able to make the AI produce something that they did not agree with or thought was wrong. Our thematic analysis of youths ' auditing logs and auditing tool reports revealed six main topics that youth intentionally used and hypothesized about.
+
+Controversial Topics were particularly polarizing or debated topics, sometimes with misinformation surrounding them. These topics were input across all three types of AI. Because data collection took place within a week before the
+
+Manuscript submitted to ACM
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: 8 Solyst et al. -->
+
+US presidential election, we observed that many youth especially had politically-based inputs, e.g., " congressional official tampering with votes for a presidential election " (B3, genAI). Controversial topics also included inputs like "best president" (B2, image search), "India and Pakistan " (A8, image search), or " climate change " (A3, image search). For these prompts, youth knew that there were strong varying opinions, which helped them hypothesize about and evaluate outputs.
+
+Fact Checks were inputs on topics that the youth could check the correctness of with right and wrong answers. These included inputs like "donald trump fighting in Vietnam ' (B7, image search) or " show me a picture of new jersey beach" (A7, genAI). Although used across all three AI types, checking falsifiable facts was most common for AI with visual output (image search and genAI), and when the youth knew the answers to the facts they input. For example, B7 knew that Trump "fighting in Vietnam " was an event that "didn 't happen. " In another instance, A8 mentioned, "I was looking for things I knew about, afterward looking for things like Pocahontas and how it portrayed Disney ' s version instead of actual history. "
+
+Generational Trends were inputs that referenced topics that were trending with teen populations. Similar to falsifiable information, youth could determine if output was satisfactory based on their knowledge of generational trends. However, generational trends may be more debated, given their potentially ambiguous nature, changing definitions, and fast pace of trends. For example, both B2 and B6 who sat at separate tables (i.e., they did not directly converse with one another in the session) input "brain rot" into the genAI. B2 specifically noted that she chose to try out this input because it was " a term only people [her] age use. " Other participants tried out extremely recent trends from social media, such as " mango mango mango " (B4, image search), which was a popular TikTok reference at the time of the study. These topics were used across all three types of AI, sometimes focused on celebrities, memes, and trending phrases. Youth often hypothesized that AI would not be caught up on such fast moving trends.
+
+Open-ended Exploration inputs with AI with visual outputs generally lacked specificity, e.g., "bugs " (A1, image search), and were sometimes particularly abstract or inputs that were difficult to conceptualize (e.g., did not have a physical form or clear representation), such as " psychology " (B6, genAI) or "inside AI" (B3, image search). Contrastingly, open-ended topics were more exploratory and non-specific with search bar, given the functionality of the AI. Search bar inputs included "Can I make a " (A5) and "Why is my " (A4), and "When will" (A9). Across all types of AI, we observed that youth often did not necessarily have hypotheses about open-ended inputs, as they were led by their open-ended curiosity, but they could still find issues in the outputs.
+
+Identity-related Topics emphasized facets of identity, which often had social biases associated with them, such as inputs on race, gender, or specific occupations (see Figure 1 Image B). These included "daycare worker " (B6, image search), " why are Russians so " (A5, search bar), and " engineers " (A3, image search). These types of inputs were used across all types of AI. Sometimes, the youth would use prompts that were related to systemically marginalized identities that they could relate to themselves, e.g., "transgender woman " (A6, genAI), and assessed it with their knowledge and lived experience of the identity.
+
+Creative Scenarios included detailed, dreamed up inputs that the AI with visual outputs may struggle to produce adequately. Examples include " a mako shark surfing on a sea turtle in hawaii" (B1, genAI), "high school classroom with donkeys in it" (B5, image search), and " a meatball sub sitting on top of the empire state building in the rain " (A2, genAI). Youth hypothesized that such creative scenarios would have details missed by the AI or inaccurately generated.
+
+4.2.2 Identified Problematic AI Behavior. From thematically analyzing their interpretations of the problematic behavior in the auditing logs and auditing tool reports, we saw three types of problematic behavior that the youth identified. These included misinformation, harmful bias, and inappropriate content. Overall, of all the 32 auditing log Manuscript submitted to ACM
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: Investigating Youth AI Auditing 9 -->
+
+<Figure>
+Fig. 1. Examples of four types of problematic AI behavior identified from left to right representing a) misinformation shown in depiction of the president of the US in 2024, b) harmful bias in diversity of what relationships were represented in search results, c) technical limitations of crocheting output showed unrealistic stitches, and d) inappropriate content in the top few search bar autocomplete suggestions for 'why is my wife.'
+</Figure>
+
+entries where learners indicated Yes, that they broke the AI, we, the research team, agreed that they had indeed, as well as with their reasoning about the identified problematic outputs.
+
+Misinformation was identified as factually incorrect or misleading outputs, in both text and visual forms. This included misleading information about elections, COVID-19, or simply incorrect information represented in images or in search bar suggestions (see Figure 1a). For example, with B1' s knowledge of sharks she concluded that a generated output had misinformation because the image " showed the wrong species of shark. The shark is more bulky, and the tail is short ... " .
+
+Harmful bias included outputs that echoed harmful societal biases, such as stereotypes. These included problematic outputs of different inputs about systemically marginalized race, gender, or professions. For example, B5 generated an image of "Entrepreneur sitting at a desk" and then reflected that "the image was of a White man, which could be harmful to so many groups of people. "
+
+Inappropriate Content included outputs that were concerning or discomforting in some way. For example, A4 saw that after she entered " why is my " in the search bar, one of the suggested results included " why is my wife yelling at me?" (see Figure 1d). A4 remarked that the results made her " uncomfortable [because they were] very specific to issues, " despite her open-ended prompt.
+
+Technical Limitations was characterized as the outputs being generally unsatisfactory or poor quality, but not due to the other reasons above (see Figure 1c). For example, for some genAI outputs, participants pointed out how text in the generated images was illegible.
+
+While there were general correlations at times between types of inputs and identified problematic AI behavior, there was also deviance. For example, while often fact checking prompts led to participants identifying misinformation in the outputs, sometimes these prompts would yield correct outputs but with harmful bias. Similarly, youth could point out different biases in the same category than they imagined. For example, the results of "transgender woman " did not contain the stereotypes about transgender women that A6 imagined, but rather, she noted that the output contained a "different bias, generating someone who is aryan. " Overall, they were not overly blinkered by their hypothesizing, and could assess AI outputs.
+
+# 4.3 Youths' Sensemaking and Contributions in Auditing
+
+4.3.1 Using domain expertise and lived experiences. To come up with the prompts, youth often leveraged their domain expertise and sources of knowledge (e.g., life experiences, identity). These supported their critical sensemaking when hypothesizing and testing the limitations of AI, leveraging their identities and lived experiences as assets in auditing. This included identity characteristics, such as "Muslim " (A8), "African American " (B2), and "trans " (A6).
+
+Manuscript submitted to ACM
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: 10 Solyst et al. -->
+
+Additionally, we observed them exercise their expertise. A2 had deep knowledge of crocheting, so she took a factchecking approach in using genAI to create images of crocheted garments. On her auditing log, A2 reported that the generated image did not have " recognizable stitches " and that it looked " glitchy, " pointing out that the images generated were factually incorrect, given the stitches ' appearances in the generated images (Figure 1c). She further elaborated in a conversation that it was important and common for those who crochet to be able to tell the pattern by looking at a garment carefully, since stitches could be interpreted and replicated. Another teen, B1, had strong domain expertise in sharks. Many of her attempts to audit the AI included checking facts on information and representations of certain types of sharks. These examples show that youth can be domain experts, with knowledge far above that of an average person. We observed that these youth were particularly engrossed in the activity and enthusiastic about using their expertise to share their insights when the researchers would ask them about their approaches to auditing.
+
+They also connected back topics from school, such as knowledge from courses on history and culture, to hypothesize and interpret outputs. A8 mentioned how she was exploring audits based on what she was learning in a class on world cultures about misperceptions: "Africa is perceived as one country, poor, and [primarily] jungle, " despite it being only "5% jungle. " Youths ' hypotheses came from understanding of stereotypes and inequities learned from other coursework.
+
+4.3.2 Transactivity and collaboration. We also observed the youth benefit from group sensemaking. Specifically, we saw transactivity occur, meaning collaborative learning through transaction (e.g., discussion) [38], as youths ' ideas resonated with one another and reasoned about AI behavior. For example, one participant tried out "future president" in genAI before the election had taken place, finding that the AI generated one specific candidate, showing a strong bias. The teen gasped in surprise and wanted to share their findings with others. This sparked curiosity in other youth in the group to try out more presidential election-related topics. The youth had unprompted discussions among each other about how surprising, interesting, and potentially harmful this AI behavior was. Transactivity occured most for youth who already had existing relationships and rapport with one another before the study, e.g., were friends or siblings who sat next to each other. Throughout the activities, we observed the youth not only expressing curiosity and surprise at problematic AI behavior, but also laughing together as they audited the AI. Through exploring the limitations of AI, this also cultivated a playful atmosphere when the youth knew each other.
+
+4.3.3 Processes to handle auditing contributions to be carefully considered. When it came to considering how their effort towards writing reports should be handled in the co-design activity, youths ' ideas most often reflected that the original creators of AI (e.g., those based in industry) should be the ones to make AI technology better. This sentiment reflected in youths ' ideas included: "Reports should go back to whoever developed the AI to try and help them reduce bias, " a "higher-up CEO, " or " people researching AI. " This suggests that youth see original creators of AI in industry as having responsibility and capability to fix the AI. Youth considered ways that the companies could prioritize surfaced issues, including processes like " put [the reports] into groups with similar issues [so that] the problems can be conquered quicker, " or " rank reports based on how users ranked how harmful they are. Then have a way to determine how accurate that harm is. " However, some participants expressed skepticism about companies handling things satisfactorily, one noting that they " won 't [handle the reports, because] they just want money. " Other participants also brought up the importance of the public opinion to continue through processing the reports, such as the " public [could] vote on how harmful/useful the reports are, " as a way for others to continually contribute toward more democratic processes that would continue beyond just submitting a report. Overall, the youth showed both optimism and concern about how their auditing efforts would be taken into account.
+
+Manuscript submitted to ACM
+
+<!-- PageBreak -->
+

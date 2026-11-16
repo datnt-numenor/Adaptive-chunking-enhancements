@@ -1,0 +1,10 @@
+{
+  "request_hash": "6c7663b421ef2ae186980f054e3c8ce723bcf21873d46cc21d92c0afb02be551",
+  "prompt_sha256": "d8ace83c7e3556804ff8228055f707f61422db094d559e5d41452a595f7191c3",
+  "answer": "The two distinct goals for labeling synthetic content described in NIST AI 100-4 are:\n\n1. **Process-based goal**: This aims to reveal the technical methods used to create or modify content (e.g., labeling content as \"AI-generated\").\n2. **Impact-based goal**: This focuses on the potential harm from the content (e.g., labeling content as \"manipulated\" or \"deceptive\").\n\nLabel terminology should be calibrated to align with the specific purpose(s) that the labels are meant to serve.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMaJ4zExD6aNfpoF43xnkgEqYPYe",
+  "prompt_tokens": 7471,
+  "completion_tokens": 107,
+  "actual_usd": 0.0011848499999999999
+}

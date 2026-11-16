@@ -1,0 +1,10 @@
+{
+  "request_hash": "2c42761d03248932d5cbe2c95e41550089b317f2c88eafc5aacc93431a3b2fda",
+  "prompt_sha256": "b56033e9dc0da319e84338b1818f62debf9cd8cd451bcbb5b7584b62c0a76aad",
+  "answer": "According to arXiv 2303.17558, the AI Act proposal addresses interpretability in Article 13 by stating that high-risk AI systems must be designed to ensure their operation is sufficiently transparent to enable users to interpret the system's output and use it appropriately. Article 13 emphasizes the need for transparency and the provision of information to users, requiring relevant documentation and instructions that include clear information about the system's characteristics, capabilities, and limitations.\n\nIn Article 14, interpretability is linked to human oversight measures, mandating that users should be able to correctly interpret the high-risk AI system's output, considering the system's characteristics and the available interpretation tools and methods.\n\nHowever, the limitations noted include that while these provisions suggest a strong argument for the existence of a right to technical interpretability, they do not definitively establish such a right within the AI Act. The law's wording indicates a focus on transparency and documentation rather than explicitly enshrining a right to technical interpretability. Additionally, Recital 47 suggests that the requirement for interpretability may be linked to the mere provision of documents and instructions, which may not be sufficient to guarantee true interpretability.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMesr61Mk0pIRwSGBLhjGffgfeAt",
+  "prompt_tokens": 6582,
+  "completion_tokens": 234,
+  "actual_usd": 0.0011277000000000001
+}

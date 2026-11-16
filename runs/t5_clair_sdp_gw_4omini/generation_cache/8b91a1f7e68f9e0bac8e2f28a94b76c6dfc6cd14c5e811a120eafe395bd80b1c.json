@@ -1,0 +1,10 @@
+{
+  "request_hash": "8b91a1f7e68f9e0bac8e2f28a94b76c6dfc6cd14c5e811a120eafe395bd80b1c",
+  "prompt_sha256": "edddaaa863dc5a38f97c2e500be37a9910ca2d380ede6b74bc2e0f1ac6e0eea4",
+  "answer": "The advantage of LIME over SHAP is SPEED. The original LIME paper uses Lasso regression as its local surrogate model.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNKcT5pYy59F46nGMvYVrHbd0jkm",
+  "prompt_tokens": 8250,
+  "completion_tokens": 26,
+  "actual_usd": 0.0012530999999999998
+}

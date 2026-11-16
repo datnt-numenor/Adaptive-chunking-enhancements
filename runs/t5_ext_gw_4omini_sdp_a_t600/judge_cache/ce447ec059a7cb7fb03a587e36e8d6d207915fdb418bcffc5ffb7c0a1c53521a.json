@@ -1,0 +1,14 @@
+{
+  "request_hash": "ce447ec059a7cb7fb03a587e36e8d6d207915fdb418bcffc5ffb7c0a1c53521a",
+  "prompt_sha256": "0e1aeebeb63f9f9fcad3004fe19a069c5ae43ed969d8ebdde8e73b25c56d418d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvFBc01nbgJ9lDJvQYCD6jE7L4X",
+  "prompt_tokens": 6986,
+  "completion_tokens": 46,
+  "actual_usd": 0.0010754999999999999,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context supports the claim about using automated bots and APIs for fully open venues, but it does not explicitly mention the use of community submissions via Google Forms for fully closed venues."
+  }
+}

@@ -1,0 +1,38 @@
+=== prepare Mon Nov  9 21:45:21 SEAST 2026
+=== proxy retrieval Mon Nov  9 21:45:21 SEAST 2026
+Traceback (most recent call last):
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'runs\\proxy_ext\\r1\\evaluation-full'
+=== stats Mon Nov  9 21:45:58 SEAST 2026
+Traceback (most recent call last):
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 143, in <module>
+    main()
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 84, in main
+    pq = pd.DataFrame(read_jsonl(args.run / "evaluation-full" / "per_query_metrics.jsonl"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 35, in read_jsonl
+    return [json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()]
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tmikellsv\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tmikellsv\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\proxy_ext\\r1\\evaluation-full\\per_query_metrics.jsonl'
+Traceback (most recent call last):
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 143, in <module>
+    main()
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 84, in main
+    pq = pd.DataFrame(read_jsonl(args.run / "evaluation-full" / "per_query_metrics.jsonl"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\adaptive-chunking\research\structure_chunker\retrieval\analyze_sdp_retrieval.py", line 35, in read_jsonl
+    return [json.loads(x) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()]
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tmikellsv\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tmikellsv\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\proxy_ext\\r1\\evaluation-full\\per_query_metrics.jsonl'
+FINAL EXT DONE Mon Nov  9 21:46:01 SEAST 2026

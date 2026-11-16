@@ -1,0 +1,14 @@
+{
+  "request_hash": "ecca45824ac5a8a2f7c92215ee25cbbaf5df3a4e977f538ffc310e38c3a32291",
+  "prompt_sha256": "294329ec54175421917859ee181800dc6bf275520a6d9a60b7d4e19950cb5af1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNoBaqVAjkWxcNzHOjdRmzW0GfwV",
+  "prompt_tokens": 9023,
+  "completion_tokens": 40,
+  "actual_usd": 0.0013774500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining that black-box audits are model agnostic and can be standardized across different AI systems."
+  }
+}

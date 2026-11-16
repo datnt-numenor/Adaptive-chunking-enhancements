@@ -1,0 +1,14 @@
+{
+  "request_hash": "e94c877f7f863c5df37c021e1ff6e9e682133cd790dd6c778b29df43f3bdb680",
+  "prompt_sha256": "d74a25159184f300e7b7b4704bb39d589f078b3a688f86ba8994725db865d5ad",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP8pASYJwhjMS9lLVbNMQ7zfwBQW",
+  "prompt_tokens": 7088,
+  "completion_tokens": 51,
+  "actual_usd": 0.0010938,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions Annex III and its relevance to high-risk AI systems, but it does not specify the exact date when the rules will apply, only that the Commission will provide guidelines by 2026."
+  }
+}

@@ -1,0 +1,2295 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+flash_attn is not installed. Using PyTorch native attention implementation.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'jinaai/jina-embeddings-v3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+Processing document Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+[shard 0] 1/189     51s total     51s ext_v1 Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Part
+Found existing results for 1 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+[shard 0] 2/189     41s total     93s ext_v1 Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Found existing results for 2 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+[shard 0] 3/189     39s total    132s ext_v1 Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+Found existing results for 3 docs, will skip them
+
+Processing document Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+[shard 0] 4/189     34s total    166s ext_v1 Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+Found existing results for 4 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat
+[shard 0] 5/189     39s total    205s ext_v1 Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilitie
+Found existing results for 5 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+[shard 0] 6/189     27s total    232s ext_v1 Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content E
+Found existing results for 6 docs, will skip them
+
+Processing document Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+[shard 0] 7/189     25s total    258s ext_v1 Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AG
+Found existing results for 7 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate
+[shard 0] 8/189     26s total    284s ext_v1 Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International
+Found existing results for 8 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits
+[shard 0] 9/189     25s total    309s ext_v1 Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous A
+Found existing results for 9 docs, will skip them
+
+Processing document Norma_Singapore Model AI Governance Framework 2nd Edition
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_Singapore Model AI Governance Framework 2nd Edition
+[shard 0] 10/189     25s total    334s ext_v1 Norma_Singapore Model AI Governance Framework 2nd Edition
+Found existing results for 10 docs, will skip them
+
+Processing document Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+[shard 0] 11/189     22s total    356s ext_v1 Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+Found existing results for 11 docs, will skip them
+
+Processing document Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+[shard 0] 12/189     21s total    377s ext_v1 Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+Found existing results for 12 docs, will skip them
+
+Processing document Norma_EDPB Opinion 28-2024 AI Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_EDPB Opinion 28-2024 AI Models
+[shard 0] 13/189     20s total    397s ext_v1 Norma_EDPB Opinion 28-2024 AI Models
+Found existing results for 13 docs, will skip them
+
+Processing document Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management
+[shard 0] 14/189     25s total    422s ext_v1 Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk M
+Found existing results for 14 docs, will skip them
+
+Processing document Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classification In Practice
+[shard 0] 15/189     21s total    443s ext_v1 Arxiv_arXiv 2608.06831 Death by a thousand taxonomies AI Risk Classifi
+Found existing results for 15 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI
+[shard 0] 16/189     19s total    462s ext_v1 Arxiv_arXiv 2508.06411 Dimensional Characterization and Pathway Modeli
+Found existing results for 16 docs, will skip them
+
+Processing document Norma_NIST AI RMF 1.0
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_NIST AI RMF 1.0
+[shard 0] 17/189     23s total    485s ext_v1 Norma_NIST AI RMF 1.0
+Found existing results for 17 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H
+[shard 0] 18/189     18s total    503s ext_v1 Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Int
+Found existing results for 18 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach
+[shard 0] 19/189     23s total    526s ext_v1 Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approa
+Found existing results for 19 docs, will skip them
+
+Processing document Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+[shard 0] 20/189     21s total    546s ext_v1 Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+Found existing results for 20 docs, will skip them
+
+Processing document Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+[shard 0] 21/189     18s total    565s ext_v1 Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure
+Found existing results for 21 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an
+[shard 0] 22/189     19s total    584s ext_v1 Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A 
+Found existing results for 22 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelligence
+[shard 0] 23/189     16s total    600s ext_v1 Arxiv_arXiv 2410.01871 Auction-Based Regulation for Artificial Intelli
+Found existing results for 23 docs, will skip them
+
+Processing document Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po
+[shard 0] 24/189     18s total    618s ext_v1 Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media An
+Found existing results for 24 docs, will skip them
+
+Processing document Arxiv_arXiv 2602.13244 Responsible AI in Business
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2602.13244 Responsible AI in Business
+[shard 0] 25/189     16s total    634s ext_v1 Arxiv_arXiv 2602.13244 Responsible AI in Business
+Found existing results for 25 docs, will skip them
+
+Processing document Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A
+[shard 0] 26/189     16s total    650s ext_v1 Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the
+Found existing results for 26 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+[shard 0] 27/189     15s total    666s ext_v1 Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+Found existing results for 27 docs, will skip them
+
+Processing document Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible AI Prioritization
+[shard 0] 28/189     13s total    679s ext_v1 Arxiv_arXiv 2405.03855 Strategies for Increasing Corporate Responsible
+Found existing results for 28 docs, will skip them
+
+Processing document Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act
+[shard 0] 29/189     19s total    698s ext_v1 Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact o
+Found existing results for 29 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations
+[shard 0] 30/189     15s total    713s ext_v1 Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading N
+Found existing results for 30 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk
+[shard 0] 31/189     13s total    726s ext_v1 Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model ba
+Found existing results for 31 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act
+[shard 0] 32/189     12s total    738s ext_v1 Arxiv_arXiv 2503.23056 Achieving Socio-Economic Parity through the Len
+Found existing results for 32 docs, will skip them
+
+Processing document Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI Meet
+[shard 0] 33/189     11s total    749s ext_v1 Arxiv_arXiv 2411.02577 Where Assessment Validation and Responsible AI 
+Found existing results for 33 docs, will skip them
+
+Processing document Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach
+[shard 0] 34/189     11s total    761s ext_v1 Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-jus
+Found existing results for 34 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can Reuse GDPRs DPIA
+[shard 0] 35/189     11s total    771s ext_v1 Arxiv_arXiv 2501.14756 Towards An Automated AI Act FRIA Tool That Can 
+Found existing results for 35 docs, will skip them
+
+Processing document Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artificial Intelligence Regul
+[shard 0] 36/189     12s total    783s ext_v1 Arxiv_arXiv 2608.05800 Validity Reliability and Transparency in Artifi
+Found existing results for 36 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications
+[shard 0] 37/189     10s total    794s ext_v1 Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regu
+Found existing results for 37 docs, will skip them
+
+Processing document Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+[shard 0] 38/189     12s total    806s ext_v1 Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial
+Found existing results for 38 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc
+[shard 0] 39/189     10s total    816s ext_v1 Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to 
+Found existing results for 39 docs, will skip them
+
+Processing document Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act
+[shard 0] 40/189     10s total    826s ext_v1 Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI
+Found existing results for 40 docs, will skip them
+
+Processing document Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of Anthropics Claude
+[shard 0] 41/189     10s total    836s ext_v1 Arxiv_arXiv 2407.01557 AI Governance and Accountability An Analysis of
+Found existing results for 41 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+[shard 0] 42/189     10s total    846s ext_v1 Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Found existing results for 42 docs, will skip them
+
+Processing document Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+[shard 0] 43/189      9s total    855s ext_v1 Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Found existing results for 43 docs, will skip them
+
+Processing document Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+[shard 0] 44/189      7s total    862s ext_v1 Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI 
+Found existing results for 44 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga
+[shard 0] 45/189     11s total    873s ext_v1 Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework
+Found existing results for 45 docs, will skip them
+
+Processing document Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations
+[shard 0] 46/189      8s total    881s ext_v1 Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluati
+Found existing results for 46 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh
+[shard 0] 47/189      8s total    890s ext_v1 Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machin
+Found existing results for 47 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+[shard 0] 48/189      8s total    898s ext_v1 Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+Found existing results for 48 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Compliance Gaps in EU AI Act A
+[shard 0] 49/189      6s total    904s ext_v1 Arxiv_arXiv 2603.26983 Transparency as Architecture Structural Complia
+Found existing results for 49 docs, will skip them
+
+Processing document Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing
+[shard 0] 50/189      8s total    912s ext_v1 Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuo
+Found existing results for 50 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI
+[shard 0] 51/189      7s total    920s ext_v1 Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Res
+Found existing results for 51 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment
+[shard 0] 52/189      7s total    927s ext_v1 Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental R
+Found existing results for 52 docs, will skip them
+
+Processing document Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsible AI
+[shard 0] 53/189      6s total    933s ext_v1 Arxiv_arXiv 2407.05176 Towards Socially and Environmentally Responsibl
+Found existing results for 53 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+[shard 0] 54/189      4s total    938s ext_v1 Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Found existing results for 54 docs, will skip them
+
+Processing document Sophia_Defenseur des droits Algorithmes Discriminations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia_Defenseur des droits Algorithmes Discriminations
+[shard 0] 55/189      5s total    943s ext_v1 Sophia_Defenseur des droits Algorithmes Discriminations
+Found existing results for 55 docs, will skip them
+
+Processing document Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-Deployment AI Risk Discl
+[shard 0] 56/189      4s total    947s ext_v1 Arxiv_arXiv 2309.13176 AI Risk Profiles A Standards Proposal for Pre-D
+Found existing results for 56 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+[shard 0] 57/189      2s total    950s ext_v1 Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible A
+Found existing results for 57 docs, will skip them
+
+Processing document Norma_G7 Hiroshima Code of Conduct for Advanced AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_G7 Hiroshima Code of Conduct for Advanced AI
+[shard 0] 58/189      1s total    951s ext_v1 Norma_G7 Hiroshima Code of Conduct for Advanced AI
+
+Processing document Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Party Assessment of Safety
+[shard 0] 59/189     18s total    969s sdp_a Arxiv_arXiv 2601.11699 Frontier AI Auditing Toward Rigorous Third-Part
+Found existing results for 1 docs, will skip them
+
+Processing document Sophia_CNIL Comment permettre a l'homme de garder la main
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia_CNIL Comment permettre a l'homme de garder la main
+[shard 0] 60/189     12s total    981s sdp_a Sophia_CNIL Comment permettre a l'homme de garder la main
+Found existing results for 2 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+[shard 0] 61/189     11s total    992s sdp_a Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Found existing results for 3 docs, will skip them
+
+Processing document Norma_GAO AI Accountability Framework
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_GAO AI Accountability Framework
+[shard 0] 62/189     10s total   1002s sdp_a Norma_GAO AI Accountability Framework
+Found existing results for 4 docs, will skip them
+
+Processing document Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks
+[shard 0] 63/189     10s total   1012s sdp_a Arxiv_arXiv 2306.12001 An Overview of Catastrophic AI Risks
+Found existing results for 5 docs, will skip them
+
+Processing document Ada_NIST AI 100-4 Synthetic Content
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_NIST AI 100-4 Synthetic Content
+[shard 0] 64/189     10s total   1022s sdp_a Ada_NIST AI 100-4 Synthetic Content
+Found existing results for 6 docs, will skip them
+
+Processing document Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structural AI Risk
+[shard 0] 65/189      8s total   1030s sdp_a Arxiv_arXiv 2402.01743 The Reasoning Under Uncertainty Trap A Structur
+Found existing results for 7 docs, will skip them
+
+Processing document Ada_ENISA AI Cybersecurity Challenges
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_ENISA AI Cybersecurity Challenges
+[shard 0] 66/189      8s total   1039s sdp_a Ada_ENISA AI Cybersecurity Challenges
+Found existing results for 8 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous AI Audits
+[shard 0] 67/189      6s total   1045s sdp_a Arxiv_arXiv 2401.14446 Black-Box Access is Insufficient for Rigorous A
+Found existing results for 9 docs, will skip them
+
+Processing document Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI
+[shard 0] 68/189      7s total   1052s sdp_a Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps a
+Found existing results for 10 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+[shard 0] 69/189      7s total   1059s sdp_a Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content E
+Found existing results for 11 docs, will skip them
+
+Processing document Ada_NIST IR 8312 Explainable AI Principles
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_NIST IR 8312 Explainable AI Principles
+[shard 0] 70/189      6s total   1065s sdp_a Ada_NIST IR 8312 Explainable AI Principles
+Found existing results for 12 docs, will skip them
+
+Processing document Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+[shard 0] 71/189      5s total   1070s sdp_a Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+Found existing results for 13 docs, will skip them
+
+Processing document Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk Management
+[shard 0] 72/189      6s total   1076s sdp_a Arxiv_arXiv 2512.08723 The Role of Risk Modeling in Advanced AI Risk M
+Found existing results for 14 docs, will skip them
+
+Processing document Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+[shard 0] 73/189      5s total   1081s sdp_a Arxiv_arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+Found existing results for 15 docs, will skip them
+
+Processing document Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+[shard 0] 74/189      5s total   1086s sdp_a Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AG
+Found existing results for 16 docs, will skip them
+
+Processing document Norma_EDPB Opinion 28-2024 AI Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_EDPB Opinion 28-2024 AI Models
+[shard 0] 75/189      5s total   1092s sdp_a Norma_EDPB Opinion 28-2024 AI Models
+Found existing results for 17 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an
+[shard 0] 76/189      5s total   1097s sdp_a Arxiv_arXiv 2410.04772 From Transparency to Accountability and Back A 
+Found existing results for 18 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AGILE Index 2024
+[shard 0] 77/189      5s total   1102s sdp_a Arxiv_arXiv 2502.15859 AI Governance InternationaL Evaluation Index AG
+Found existing results for 19 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approach
+[shard 0] 78/189      5s total   1107s sdp_a Arxiv_arXiv 2505.01651 Human-AI Governance HAIG A Trust-Utility Approa
+Found existing results for 20 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from a Workshop on the Tech
+[shard 0] 79/189      6s total   1113s sdp_a Arxiv_arXiv 2609.03178 Open Problems in AI Risk Modeling Insights from
+Found existing results for 21 docs, will skip them
+
+Processing document Norma_NIST AI RMF 1.0
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_NIST AI RMF 1.0
+[shard 0] 80/189      5s total   1118s sdp_a Norma_NIST AI RMF 1.0
+Found existing results for 22 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A
+[shard 0] 81/189      4s total   1122s sdp_a Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers 
+Found existing results for 23 docs, will skip them
+
+Processing document Norma_Datatilsynet AI and Privacy
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_Datatilsynet AI and Privacy
+[shard 0] 82/189      4s total   1126s sdp_a Norma_Datatilsynet AI and Privacy
+Found existing results for 24 docs, will skip them
+
+Processing document Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+[shard 0] 83/189      4s total   1130s sdp_a Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure
+Found existing results for 25 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector Vulnerability
+[shard 0] 84/189      5s total   1135s sdp_a Arxiv_arXiv 2609.16260 Mapping US Federal AI Governance Against Sector
+Found existing results for 26 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Intelligence Systems The H
+[shard 0] 85/189      4s total   1139s sdp_a Arxiv_arXiv 2604.05826 Reciprocal Trust and Distrust in Artificial Int
+Found existing results for 27 docs, will skip them
+
+Processing document Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact of the AI Act
+[shard 0] 86/189      3s total   1142s sdp_a Arxiv_arXiv 2304.06503 Quantitative study about the estimated impact o
+Found existing results for 28 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to the AI Act
+[shard 0] 87/189      4s total   1146s sdp_a Arxiv_arXiv 2410.06681 AI Climate and Regulation From Data Centers to 
+Found existing results for 29 docs, will skip them
+
+Processing document Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+[shard 0] 88/189      4s total   1150s sdp_a Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+Found existing results for 30 docs, will skip them
+
+Processing document Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+[shard 0] 89/189      3s total   1153s sdp_a Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+Found existing results for 31 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+[shard 0] 90/189      4s total   1157s sdp_a Arxiv_arXiv 2502.18576 Investigating Youth AI Auditing
+Found existing results for 32 docs, will skip them
+
+Processing document Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance
+[shard 0] 91/189      4s total   1161s sdp_a Arxiv_arXiv 2601.17191 The Global Majority in International AI Governa
+Found existing results for 33 docs, will skip them
+
+Processing document Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the Global Regulation of A
+[shard 0] 92/189      3s total   1164s sdp_a Arxiv_arXiv 2309.17158 Compromise in Multilateral Negotiations and the
+Found existing results for 34 docs, will skip them
+
+Processing document Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance
+[shard 0] 93/189      3s total   1167s sdp_a Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Ef
+Found existing results for 35 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governance
+[shard 0] 94/189      3s total   1170s sdp_a Arxiv_arXiv 2502.00012 Lessons from complexity theory for AI governanc
+Found existing results for 36 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries
+[shard 0] 95/189      3s total   1173s sdp_a Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power 
+Found existing results for 37 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the EU AI Act
+[shard 0] 96/189      2s total   1175s sdp_a Arxiv_arXiv 2503.05787 Mapping the Regulatory Learning Space for the E
+Found existing results for 38 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+[shard 0] 97/189      3s total   1178s sdp_a Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Found existing results for 39 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU AI Act Explainability
+[shard 0] 98/189      3s total   1180s sdp_a Arxiv_arXiv 2604.09628 Assessing Model-Agnostic XAI Methods against EU
+Found existing results for 40 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A
+[shard 0] 99/189      4s total   1184s sdp_a Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Waterma
+Found existing results for 41 docs, will skip them
+
+Processing document Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains
+[shard 0] 100/189      3s total   1187s sdp_a Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing
+Found existing results for 42 docs, will skip them
+
+Processing document Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A
+[shard 0] 101/189      2s total   1189s sdp_a Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explaina
+Found existing results for 43 docs, will skip them
+
+Processing document Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge
+[shard 0] 102/189      2s total   1192s sdp_a Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Futu
+Found existing results for 44 docs, will skip them
+
+Processing document Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+[shard 0] 103/189      2s total   1194s sdp_a Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial
+Found existing results for 45 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regulatory Implications
+[shard 0] 104/189      3s total   1196s sdp_a Arxiv_arXiv 2510.13591 Subject Roles in the EU AI Act Mapping and Regu
+Found existing results for 46 docs, will skip them
+
+Processing document Norma_Council of Europe HUDERIA Methodology
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_Council of Europe HUDERIA Methodology
+[shard 0] 105/189      3s total   1199s sdp_a Norma_Council of Europe HUDERIA Methodology
+Found existing results for 47 docs, will skip them
+
+Processing document Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+[shard 0] 106/189      2s total   1201s sdp_a Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Found existing results for 48 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act An Analysis
+[shard 0] 107/189      2s total   1204s sdp_a Arxiv_arXiv 2501.19112 Logical Modalities within the European AI Act A
+Found existing results for 49 docs, will skip them
+
+Processing document Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Assessment
+[shard 0] 108/189      3s total   1206s sdp_a Arxiv_arXiv 2607.07612 Towards Agentic AI Governance A Preliminary Ass
+Found existing results for 50 docs, will skip them
+
+Processing document Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis of Artificial Intellige
+[shard 0] 109/189      2s total   1209s sdp_a Arxiv_arXiv 2307.12218 A Comprehensive Review and Systematic Analysis 
+Found existing results for 51 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machine Learning Community Sh
+[shard 0] 110/189      2s total   1211s sdp_a Arxiv_arXiv 2502.00874 Position The Artificial Intelligence and Machin
+Found existing results for 52 docs, will skip them
+
+Processing document Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+[shard 0] 111/189      2s total   1212s sdp_a Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI 
+Found existing results for 53 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental Rights Impact Assessment
+[shard 0] 112/189      2s total   1214s sdp_a Arxiv_arXiv 2501.10391 Developing an Ontology for AI Act Fundamental R
+Found existing results for 54 docs, will skip them
+
+Processing document Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar
+[shard 0] 113/189      2s total   1216s sdp_a Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Inte
+Found existing results for 55 docs, will skip them
+
+Processing document Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too
+[shard 0] 114/189      2s total   1218s sdp_a Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements
+Found existing results for 56 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Responsible AI
+[shard 0] 115/189      2s total   1219s sdp_a Arxiv_arXiv 2401.08103 Resolving Ethics Trade-offs in Implementing Res
+Found existing results for 57 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati
+[shard 0] 116/189      1s total   1221s sdp_a Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise
+Found existing results for 58 docs, will skip them
+
+Processing document Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU AI Act
+[shard 0] 117/189      1s total   1222s sdp_a Arxiv_arXiv 2412.18670 Interplay of ISMS and AIMS in context of the EU
+Found existing results for 59 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+[shard 0] 118/189      1s total   1223s sdp_a Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Found existing results for 60 docs, will skip them
+
+Processing document Sophia_Defenseur des droits Algorithmes Discriminations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia_Defenseur des droits Algorithmes Discriminations
+[shard 0] 119/189      1s total   1224s sdp_a Sophia_Defenseur des droits Algorithmes Discriminations
+Found existing results for 61 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations
+[shard 0] 120/189      1s total   1226s sdp_a Arxiv_arXiv 2603.10017 The science and practice of proportionality in 
+Found existing results for 62 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+[shard 0] 121/189      1s total   1226s sdp_a Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible A
+
+Processing document Sophia_CNIL Comment permettre a l'homme de garder la main
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia_CNIL Comment permettre a l'homme de garder la main
+[shard 0] 122/189     13s total   1239s sdp_b Sophia_CNIL Comment permettre a l'homme de garder la main
+Found existing results for 1 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+[shard 0] 123/189     12s total   1251s sdp_b Arxiv_arXiv 2604.25982 Open Problems in Frontier AI Risk Management
+Found existing results for 2 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+[shard 0] 124/189     11s total   1262s sdp_b Arxiv_arXiv 2603.14495 Bridging the Gap in the Responsible AI Divides
+Found existing results for 3 docs, will skip them
+
+Processing document Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+[shard 0] 125/189      9s total   1271s sdp_b Arxiv_arXiv 2303.03885 AI Risk Skepticism A Comprehensive Survey
+Found existing results for 4 docs, will skip them
+
+Processing document Ada_NIST AI 100-4 Synthetic Content
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_NIST AI 100-4 Synthetic Content
+[shard 0] 126/189     10s total   1281s sdp_b Ada_NIST AI 100-4 Synthetic Content
+Found existing results for 5 docs, will skip them
+
+Processing document Norma_UK AI Regulation White Paper
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_UK AI Regulation White Paper
+[shard 0] 127/189     10s total   1290s sdp_b Norma_UK AI Regulation White Paper
+Found existing results for 6 docs, will skip them
+
+Processing document Ada_ENISA AI Cybersecurity Challenges
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_ENISA AI Cybersecurity Challenges
+[shard 0] 128/189      9s total   1299s sdp_b Ada_ENISA AI Cybersecurity Challenges
+Found existing results for 7 docs, will skip them
+
+Processing document Ada_NIST AI 600-1 Generative AI Profile
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_NIST AI 600-1 Generative AI Profile
+[shard 0] 129/189     10s total   1309s sdp_b Ada_NIST AI 600-1 Generative AI Profile
+Found existing results for 8 docs, will skip them
+
+Processing document Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk
+[shard 0] 130/189      8s total   1317s sdp_b Arxiv_arXiv 2608.25839 Non-Great-Power Conflict and AI Risk
+Found existing results for 9 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilities to Existential Threat
+[shard 0] 131/189      8s total   1325s sdp_b Arxiv_arXiv 2508.13700 The AI Risk Spectrum From Dangerous Capabilitie
+Found existing results for 10 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content Evaluating Instruction-
+[shard 0] 132/189      7s total   1332s sdp_b Arxiv_arXiv 2609.10410 Can Foundation Models Moderate Online Content E
+Found existing results for 11 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International Obligation to Regulate
+[shard 0] 133/189      7s total   1339s sdp_b Arxiv_arXiv 2503.18983 Confronting Catastrophic Risk The International
+Found existing results for 12 docs, will skip them
+
+Processing document Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps and Opportunities in AI
+[shard 0] 134/189      6s total   1345s sdp_b Arxiv_arXiv 2402.17861 Towards AI Accountability Infrastructure Gaps a
+Found existing results for 13 docs, will skip them
+
+Processing document Arxiv_arXiv 2408.01449 AI Act for the Working Programmer
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2408.01449 AI Act for the Working Programmer
+[shard 0] 135/189      5s total   1350s sdp_b Arxiv_arXiv 2408.01449 AI Act for the Working Programmer
+Found existing results for 14 docs, will skip them
+
+Processing document Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+[shard 0] 136/189      6s total   1355s sdp_b Arxiv_arXiv 2405.20868 Responsible AI for Earth Observation
+Found existing results for 15 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-Centered AI Auditing Too
+[shard 0] 137/189      6s total   1362s sdp_b Arxiv_arXiv 2603.16646 Whose Knowledge Counts Co-Designing Community-C
+Found existing results for 16 docs, will skip them
+
+Processing document Norma_EDPB Opinion 28-2024 AI Models
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_EDPB Opinion 28-2024 AI Models
+[shard 0] 138/189      5s total   1367s sdp_b Norma_EDPB Opinion 28-2024 AI Models
+Found existing results for 17 docs, will skip them
+
+Processing document Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act
+[shard 0] 139/189      5s total   1372s sdp_b Arxiv_arXiv 2512.05742 Internal Deployment in the AI Act
+Found existing results for 18 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers Auditing a Generative A
+[shard 0] 140/189      4s total   1376s sdp_b Arxiv_arXiv 2508.04902 Learning AI Auditing A Case Study of Teenagers 
+Found existing results for 19 docs, will skip them
+
+Processing document Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+[shard 0] 141/189      6s total   1382s sdp_b Arxiv_arXiv 2512.08844 A Methodology for Quantitative AI Risk Modeling
+Found existing results for 20 docs, will skip them
+
+Processing document Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+[shard 0] 142/189      5s total   1387s sdp_b Arxiv_arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+Found existing results for 21 docs, will skip them
+
+Processing document Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+[shard 0] 143/189      5s total   1392s sdp_b Arxiv_arXiv 2507.11546 AI Governance InternationaL Evaluation Index AG
+Found existing results for 22 docs, will skip them
+
+Processing document Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure individual performance within
+[shard 0] 144/189      4s total   1396s sdp_b Arxiv_arXiv 2602.11944 Using predictive multiplicity to measure indivi
+Found existing results for 23 docs, will skip them
+
+Processing document Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media Analyzing National and Po
+[shard 0] 145/189      5s total   1402s sdp_b Arxiv_arXiv 2507.23718 Informing AI Risk Assessment with News Media An
+Found existing results for 24 docs, will skip them
+
+Processing document Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing non-model gains
+[shard 0] 146/189      4s total   1406s sdp_b Arxiv_arXiv 2606.00047 Comprehensive AI governance requires addressing
+Found existing results for 25 docs, will skip them
+
+Processing document Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+[shard 0] 147/189      4s total   1410s sdp_b Arxiv_arXiv 2404.13060 The Necessity of AI Audit Standards Boards
+Found existing results for 26 docs, will skip them
+
+Processing document Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Approval Regulation for Fro
+[shard 0] 148/189      4s total   1414s sdp_b Arxiv_arXiv 2408.00821 An FDA for AI Pitfalls and Plausibility of Appr
+Found existing results for 27 docs, will skip them
+
+Processing document Norma_Singapore Model AI Governance Framework 2nd Edition
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_Singapore Model AI Governance Framework 2nd Edition
+[shard 0] 149/189      5s total   1419s sdp_b Norma_Singapore Model AI Governance Framework 2nd Edition
+Found existing results for 28 docs, will skip them
+
+Processing document Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Artificial Intelligence Law
+[shard 0] 150/189      4s total   1423s sdp_b Arxiv_arXiv 2402.06487 Le Nozze di Giustizia Interactions between Arti
+Found existing results for 29 docs, will skip them
+
+Processing document Norma_Datatilsynet AI and Privacy
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Norma_Datatilsynet AI and Privacy
+[shard 0] 151/189      4s total   1427s sdp_b Norma_Datatilsynet AI and Privacy
+Found existing results for 30 docs, will skip them
+
+Processing document Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading Nations
+[shard 0] 152/189      4s total   1432s sdp_b Arxiv_arXiv 2410.01819 Strategic AI Governance Insights from Leading N
+Found existing results for 31 docs, will skip them
+
+Processing document Ada_NIST SP 800-218A Secure Software Development GenAI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Ada_NIST SP 800-218A Secure Software Development GenAI
+[shard 0] 153/189      4s total   1436s sdp_b Ada_NIST SP 800-218A Secure Software Development GenAI
+Found existing results for 32 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking
+[shard 0] 154/189      3s total   1439s sdp_b Arxiv_arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaki
+Found existing results for 33 docs, will skip them
+
+Processing document Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+[shard 0] 155/189      3s total   1442s sdp_b Arxiv_arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure
+Found existing results for 34 docs, will skip them
+
+Processing document Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power of Imaginaries
+[shard 0] 156/189      4s total   1447s sdp_b Arxiv_arXiv 2508.11729 The Stories We Govern By AI Risk and the Power 
+Found existing results for 35 docs, will skip them
+
+Processing document Arxiv_arXiv 2602.13244 Responsible AI in Business
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2602.13244 Responsible AI in Business
+[shard 0] 157/189      4s total   1451s sdp_b Arxiv_arXiv 2602.13244 Responsible AI in Business
+Found existing results for 36 docs, will skip them
+
+Processing document Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model based on the NIST AI Risk
+[shard 0] 158/189      4s total   1454s sdp_b Arxiv_arXiv 2401.15229 Evolving AI Risk Management A Maturity Model ba
+Found existing results for 37 docs, will skip them
+
+Processing document Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+[shard 0] 159/189      4s total   1458s sdp_b Arxiv_arXiv 2311.14705 Ethics and Responsible AI Deployment
+Found existing results for 38 docs, will skip them
+
+Processing document Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2601.17191 The Global Majority in International AI Governance
+[shard 0] 160/189      3s total   1461s sdp_b Arxiv_arXiv 2601.17191 The Global Majority in International AI Governa
+Found existing results for 39 docs, will skip them
+
+Processing document Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Effective AI Governance
+[shard 0] 161/189      3s total   1464s sdp_b Arxiv_arXiv 2411.13808 GPAI Evaluations Standards Taskforce Towards Ef
+Found existing results for 40 docs, will skip them
+
+Processing document Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Watermarking After the EU AI A
+[shard 0] 162/189      3s total   1467s sdp_b Arxiv_arXiv 2609.09604 Watermarks Without Verification AI Text Waterma
+Found existing results for 41 docs, will skip them
+
+Processing document Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Future Regulatory Challenge
+[shard 0] 163/189      2s total   1470s sdp_b Arxiv_arXiv 2310.04072 AI Regulation in Europe From the AI Act to Futu
+Found existing results for 42 docs, will skip them
+
+Processing document Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelligence in Developing Cou
+[shard 0] 164/189      3s total   1472s sdp_b Arxiv_arXiv 2604.06018 Governance and Regulation of Artificial Intelli
+Found existing results for 43 docs, will skip them
+
+Processing document Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI Act
+[shard 0] 165/189      2s total   1475s sdp_b Arxiv_arXiv 2608.08564 Qualifying and Quantifying Risk Under the EU AI
+Found existing results for 44 docs, will skip them
+
+Processing document Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explainable AI Learn From the A
+[shard 0] 166/189      3s total   1477s sdp_b Arxiv_arXiv 2302.10766 Bridging the Transparency Gap What Can Explaina
+Found existing results for 45 docs, will skip them
+
+Processing document Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial Intelligence Dynamic R
+[shard 0] 167/189      3s total   1480s sdp_b Arxiv_arXiv 2407.19439 Business and Regulatory Responses to Artificial
+Found existing results for 46 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+[shard 0] 168/189      2s total   1482s sdp_b Arxiv_arXiv 2510.21203 The Nuclear Analogy in AI Governance Research
+Found existing results for 47 docs, will skip them
+
+Processing document Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluations
+[shard 0] 169/189      4s total   1486s sdp_b Arxiv_arXiv 2408.02565 Reasons to Doubt the Impact of AI Risk Evaluati
+Found existing results for 48 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Frontier LLMs through a Multi
+[shard 0] 170/189      2s total   1488s sdp_b Arxiv_arXiv 2501.03259 Toward Inclusive Educational AI Auditing Fronti
+Found existing results for 49 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to Technological Governanc
+[shard 0] 171/189      4s total   1492s sdp_b Arxiv_arXiv 2603.22920 The EU AI Act and the Rights-based Approach to 
+Found existing results for 50 docs, will skip them
+
+Processing document Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress
+[shard 0] 172/189      2s total   1494s sdp_b Arxiv_arXiv 2310.17688 Managing extreme AI risks amid rapid progress
+Found existing results for 51 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework for Decentralized Orga
+[shard 0] 173/189      3s total   1497s sdp_b Arxiv_arXiv 2510.03368 An Adaptive Responsible AI Governance Framework
+Found existing results for 52 docs, will skip them
+
+Processing document Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach
+[shard 0] 174/189      2s total   1500s sdp_b Arxiv_arXiv 2504.20075 The EU AI Act in Development Practice A Pro-jus
+Found existing results for 53 docs, will skip them
+
+Processing document Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuous AI Auditing
+[shard 0] 175/189      2s total   1502s sdp_b Arxiv_arXiv 2406.14243 AuditMAI Towards An Infrastructure for Continuo
+Found existing results for 54 docs, will skip them
+
+Processing document Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+[shard 0] 176/189      2s total   1504s sdp_b Arxiv_arXiv 2307.03198 A multilevel framework for AI governance
+Found existing results for 55 docs, will skip them
+
+Processing document Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the EU AI Act
+[shard 0] 177/189      2s total   1506s sdp_b Arxiv_arXiv 2501.04014 AICat An AI Cataloguing Approach to Support the
+Found existing results for 56 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+[shard 0] 178/189      2s total   1507s sdp_b Arxiv_arXiv 2510.24823 Do Chatbots Walk the Talk of Responsible AI
+Found existing results for 57 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance
+[shard 0] 179/189      2s total   1509s sdp_b Arxiv_arXiv 2503.05705 Inference Scaling Reshapes AI Governance
+Found existing results for 58 docs, will skip them
+
+Processing document Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements Too
+[shard 0] 180/189      2s total   1511s sdp_b Arxiv_arXiv 2311.11776 Responsible AI Research Needs Impact Statements
+Found existing results for 59 docs, will skip them
+
+Processing document Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Intelligence Literacy Towar
+[shard 0] 181/189      2s total   1513s sdp_b Arxiv_arXiv 2504.07125 Synergizing Self-Regulation and Artificial-Inte
+Found existing results for 60 docs, will skip them
+
+Processing document Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI Systems
+[shard 0] 182/189      2s total   1515s sdp_b Arxiv_arXiv 2305.17910 AI Audit A Card Game to Reflect on Everyday AI 
+Found existing results for 61 docs, will skip them
+
+Processing document Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise and Public Participati
+[shard 0] 183/189      1s total   1516s sdp_b Arxiv_arXiv 2502.08651 Democratizing AI Governance Balancing Expertise
+Found existing results for 62 docs, will skip them
+
+Processing document Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+[shard 0] 184/189      1s total   1518s sdp_b Arxiv_arXiv 2505.11946 Lets have a chat with the EU AI Act
+Found existing results for 63 docs, will skip them
+
+Processing document Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical interpretability
+[shard 0] 185/189      1s total   1519s sdp_b Arxiv_arXiv 2303.17558 The AI Act proposal a new right to technical in
+Found existing results for 64 docs, will skip them
+
+Processing document Sophia_Defenseur des droits Algorithmes Discriminations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Sophia_Defenseur des droits Algorithmes Discriminations
+[shard 0] 186/189      1s total   1521s sdp_b Sophia_Defenseur des droits Algorithmes Discriminations
+Found existing results for 65 docs, will skip them
+
+Processing document Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2603.10017 The science and practice of proportionality in AI risk evaluations
+[shard 0] 187/189      1s total   1521s sdp_b Arxiv_arXiv 2603.10017 The science and practice of proportionality in 
+Found existing results for 66 docs, will skip them
+
+Processing document Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible AI
+[shard 0] 188/189      1s total   1522s sdp_b Arxiv_arXiv 2510.26007 The Quest for Reliable Metrics of Responsible A
+Found existing results for 67 docs, will skip them
+
+Processing document Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk
+Computing size compliance
+Computing block integrity
+Computing chunk embeddings
+Computing intrachunk cohesion
+Computing document contextual coherence
+Computing references completeness
+Computing basic chunk token metrics
+Saved results for Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk
+[shard 0] 189/189      1s total   1523s sdp_b Arxiv_arXiv 2503.18979 Threshold Crossings as Tail Events for Catastro
+[shard 0] DONE

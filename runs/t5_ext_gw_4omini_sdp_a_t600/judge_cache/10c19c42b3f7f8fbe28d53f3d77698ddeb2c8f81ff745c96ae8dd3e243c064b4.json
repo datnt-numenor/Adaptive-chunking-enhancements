@@ -1,0 +1,14 @@
+{
+  "request_hash": "10c19c42b3f7f8fbe28d53f3d77698ddeb2c8f81ff745c96ae8dd3e243c064b4",
+  "prompt_sha256": "1fc48a048dbe47245d097def77d8a27a755b92deef7fd1944af47ef8f836ce75",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhGusjXJYHC5muET8cNl5UNDsJz",
+  "prompt_tokens": 6316,
+  "completion_tokens": 41,
+  "actual_usd": 0.000972,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly discussing delays to deployment, excessive paperwork, and lack of technical interest as key obstacles to RAI implementation."
+  }
+}

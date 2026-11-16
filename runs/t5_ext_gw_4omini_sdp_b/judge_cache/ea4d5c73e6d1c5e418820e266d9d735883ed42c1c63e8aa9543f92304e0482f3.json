@@ -1,0 +1,14 @@
+{
+  "request_hash": "ea4d5c73e6d1c5e418820e266d9d735883ed42c1c63e8aa9543f92304e0482f3",
+  "prompt_sha256": "0c2902e6ce05a3dc68f8dd84b99cf717bd1283c4b2794fa47173cb58e07ad074",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO7jh0jWsxvlf6pjzEAH3LkO0MVh",
+  "prompt_tokens": 6065,
+  "completion_tokens": 33,
+  "actual_usd": 0.0009295499999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention any funding from Open Philanthropy or LISA, making the Reference Answer unsupported."
+  }
+}

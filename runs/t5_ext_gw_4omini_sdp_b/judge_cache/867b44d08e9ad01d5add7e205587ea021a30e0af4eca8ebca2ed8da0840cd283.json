@@ -1,0 +1,14 @@
+{
+  "request_hash": "867b44d08e9ad01d5add7e205587ea021a30e0af4eca8ebca2ed8da0840cd283",
+  "prompt_sha256": "b07f01fb3375744ac624414b3b54738459046b96f56ccc539798796280530dae",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOO5KHI2wltRobsgcvlfSzcZAL3g",
+  "prompt_tokens": 7423,
+  "completion_tokens": 34,
+  "actual_usd": 0.00113385,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention colliders or their role in causal analysis, making it unable to support the reference answer."
+  }
+}

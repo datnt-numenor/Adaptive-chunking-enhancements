@@ -1,0 +1,14 @@
+{
+  "request_hash": "b52d5ed46f038ff1b8c0c947cba7fb5a4dce1f2449914e86b1e4cabf0242b3ef",
+  "prompt_sha256": "6226be60870cccbab76b807f075597dfcc2792c21d7d2e36d8652496d4a2dbdc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP7iMJEY1qgOSicokOSyq7PlGP1N",
+  "prompt_tokens": 7910,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012135,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context clearly defines the role of downstream providers (DPs) and specifies that certain information is intended solely for them, fully supporting the claim made in the Reference Answer."
+  }
+}

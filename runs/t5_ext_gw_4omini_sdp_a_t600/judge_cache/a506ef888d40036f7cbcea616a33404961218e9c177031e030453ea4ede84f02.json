@@ -1,0 +1,14 @@
+{
+  "request_hash": "a506ef888d40036f7cbcea616a33404961218e9c177031e030453ea4ede84f02",
+  "prompt_sha256": "6a5b7b84c939ff6ee3cb7625078a34d205fbc6adbe5efa842fcd97374b536a47",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJIZF11cNRZJ0NGPf8agCIpNE4E",
+  "prompt_tokens": 7639,
+  "completion_tokens": 43,
+  "actual_usd": 0.0011716499999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention or support the specific claims made in the Reference Answer regarding the three categories of tracing sources, identifying perspectives, and flagging harmful content."
+  }
+}

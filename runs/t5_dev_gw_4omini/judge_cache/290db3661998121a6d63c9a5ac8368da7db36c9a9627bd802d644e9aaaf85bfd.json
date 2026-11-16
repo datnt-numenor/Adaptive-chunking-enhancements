@@ -1,0 +1,14 @@
+{
+  "request_hash": "290db3661998121a6d63c9a5ac8368da7db36c9a9627bd802d644e9aaaf85bfd",
+  "prompt_sha256": "559f111955f3e80362ea7b8e5990c245c741ef6b0b5d92c254434ad1c91dd1d2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2P6MsQNC3SyGlDmTchGztP91txG",
+  "prompt_tokens": 7172,
+  "completion_tokens": 48,
+  "actual_usd": 0.0011045999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the recommendation from CNIL regarding the use of less intrusive data formats, specifically mentioning the generalization of patients' ages to reduce confidentiality risks."
+  }
+}

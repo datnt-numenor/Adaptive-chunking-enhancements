@@ -1,0 +1,14 @@
+{
+  "request_hash": "c96f0e78d1c48006a8ccce34a61038eb49289ccd79e5e685d6d54fa96c2f4f59",
+  "prompt_sha256": "c7f0ff80e9d78806ee297a8e04391fac35a6a517f3a55d93c3540eaf1e4360e7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPqDLveALFajvx2WeHJQe6U5HCQ",
+  "prompt_tokens": 6378,
+  "completion_tokens": 51,
+  "actual_usd": 0.0009873,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly describing the D-seal initiative as a labelling programme in Denmark that includes guidelines for IT security and responsible data use, specifically mentioning AI as a criterion."
+  }
+}

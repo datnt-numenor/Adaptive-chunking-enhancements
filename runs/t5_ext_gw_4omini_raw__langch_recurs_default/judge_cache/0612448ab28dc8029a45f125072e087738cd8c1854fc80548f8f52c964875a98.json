@@ -1,0 +1,14 @@
+{
+  "request_hash": "0612448ab28dc8029a45f125072e087738cd8c1854fc80548f8f52c964875a98",
+  "prompt_sha256": "343cdd29f5a214d7eba469d2e595919d7588e7267d4b2601eba40a45c8a08fcf",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNoop0Ssgs0qNlO1Lh7Ip4XXPTWn",
+  "prompt_tokens": 8215,
+  "completion_tokens": 38,
+  "actual_usd": 0.00125505,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of deployment bias, including its definition and implications, which fully supports the claims made in the Reference Answer."
+  }
+}

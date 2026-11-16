@@ -1,0 +1,10 @@
+{
+  "request_hash": "01d381a6ab8e134066662ae548fa11a5711764f0b6a9cee3ed76b367b03d9024",
+  "prompt_sha256": "a317de48313f77cf33ed5107de9c85878bcd4491a70f9e4e0ac73a7a97a4ab03",
+  "answer": "The two research findings that question the trustworthiness of gradient-highlighted pixel-importance maps for convolutional networks are:\n\n1. Kindermans et al. 2018 demonstrated that data preprocessing, such as subtracting the mean and normalization, can make undesirable changes in saliency maps.\n2. Ghorbani et al. 2019 showed that saliency maps are vulnerable to adversarial attacks.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNZX5p3d8RgUOvtGv3L6WQ0YWU7V",
+  "prompt_tokens": 6671,
+  "completion_tokens": 81,
+  "actual_usd": 0.00104925
+}

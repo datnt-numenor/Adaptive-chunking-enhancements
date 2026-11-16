@@ -1,0 +1,14 @@
+{
+  "request_hash": "3e67a4294575baea2787f5eb11342a4486a29e4a99171ff14aef966d55b5dc81",
+  "prompt_sha256": "fee29b21349546db7ac48a1e9c26075369ffbd44ba4ef8a76840c43dcabdf67f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOUcXx9yjcYIQdRlZ5DfXbOahbts",
+  "prompt_tokens": 8885,
+  "completion_tokens": 40,
+  "actual_usd": 0.00135675,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how cultural or behavioral shifts can affect data distributions and impact the performance of AI models."
+  }
+}

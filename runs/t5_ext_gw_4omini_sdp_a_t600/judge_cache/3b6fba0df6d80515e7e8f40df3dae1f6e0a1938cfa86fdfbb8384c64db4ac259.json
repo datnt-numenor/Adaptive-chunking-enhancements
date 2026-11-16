@@ -1,0 +1,14 @@
+{
+  "request_hash": "3b6fba0df6d80515e7e8f40df3dae1f6e0a1938cfa86fdfbb8384c64db4ac259",
+  "prompt_sha256": "d9983892b3e6b2a9d2083762c23608957e2a281f0003b6f0106d1764caf754c7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNap9GppAxiH3RB1Fbtz4naIpQgy",
+  "prompt_tokens": 7533,
+  "completion_tokens": 50,
+  "actual_usd": 0.00115995,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive overview of the various parties involved in AI audits, including AI service providers, users, external auditors, and other stakeholders, fully supporting the claims made in the Reference Answer."
+  }
+}

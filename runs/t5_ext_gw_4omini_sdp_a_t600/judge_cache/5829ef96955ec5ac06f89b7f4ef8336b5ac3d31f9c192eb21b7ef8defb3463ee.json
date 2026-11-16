@@ -1,0 +1,14 @@
+{
+  "request_hash": "5829ef96955ec5ac06f89b7f4ef8336b5ac3d31f9c192eb21b7ef8defb3463ee",
+  "prompt_sha256": "9def07f96c941622802e849b545a8db906195474b8f016ab9eebbde9c0d2781c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOZbUS0qb6axlxPFDEW1oZjomWDw",
+  "prompt_tokens": 8147,
+  "completion_tokens": 50,
+  "actual_usd": 0.00125205,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that agencies must cease the use of AI for decision-making if they cannot adequately mitigate risks of unlawful discrimination and must maintain appropriate documentation for this decision."
+  }
+}

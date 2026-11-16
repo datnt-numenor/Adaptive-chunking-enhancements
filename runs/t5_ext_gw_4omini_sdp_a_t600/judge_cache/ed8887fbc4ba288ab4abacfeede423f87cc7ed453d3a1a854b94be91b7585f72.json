@@ -1,0 +1,14 @@
+{
+  "request_hash": "ed8887fbc4ba288ab4abacfeede423f87cc7ed453d3a1a854b94be91b7585f72",
+  "prompt_sha256": "26a61db938e93272d74a99f01cc97c5edf2bd2a4f747921b58621b7e69e18647",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONw87JgpNuR0RDyaWadcoxeHzMW",
+  "prompt_tokens": 7754,
+  "completion_tokens": 50,
+  "actual_usd": 0.0011930999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a clear definition of agentic AI as systems capable of autonomous goal-pursuit and independent planning, which aligns with the description in the Reference Answer."
+  }
+}

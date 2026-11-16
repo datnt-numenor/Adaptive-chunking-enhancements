@@ -1,0 +1,14 @@
+{
+  "request_hash": "ddcf0e682d15847260e17ff887d5bad1095b08a40f7ea37520be3fa137c95e12",
+  "prompt_sha256": "128ae375e12e7a83879a836ad6493c08a5c49e908aa08d060e24f7f96d8b9a92",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORr3NVtMELcLv2DOOowocdI17sC",
+  "prompt_tokens": 7510,
+  "completion_tokens": 36,
+  "actual_usd": 0.0011481,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer, detailing both user objections and Anthropic's assurances regarding the watermark."
+  }
+}

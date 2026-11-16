@@ -1,0 +1,14 @@
+{
+  "request_hash": "33214b27c1caeb7538c8998bf82c54492fe8989a2818b6d2120f6861efc5c1da",
+  "prompt_sha256": "d69a5f253374e2cfdd65febe8c7bf612d67f66358bcdab8c8438da2b402831ea",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1sam8atLCQXLYvOVl0jVUpNdJ4",
+  "prompt_tokens": 7712,
+  "completion_tokens": 42,
+  "actual_usd": 0.001182,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding the limitation of the empirical evaluation to the Adult dataset and the need for future testing on additional datasets."
+  }
+}

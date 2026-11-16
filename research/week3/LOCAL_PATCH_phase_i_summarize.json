@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-08T19:12:57.370150+00:00",
+  "file": "research/week3/phase_i_summarize.py",
+  "sha256_before": "d2c240ed59170b5de68416ef002fff437db89ad1aedf2281ee0525b6345a8920",
+  "sha256_after": "25b1d8804b146d6b3639b259d7024af692408ad901a1c0078f151b88291fd129",
+  "bug": "summarize treated abstention as exact equality while judge/rag_eval use substring containment",
+  "change": "is_abstention uses `ABSTAIN in generated_output`, matching phase_i_judge.py:261 and rag_eval.py:30"
+}

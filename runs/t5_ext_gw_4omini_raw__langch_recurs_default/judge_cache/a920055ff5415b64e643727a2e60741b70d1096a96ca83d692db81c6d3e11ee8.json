@@ -1,0 +1,14 @@
+{
+  "request_hash": "a920055ff5415b64e643727a2e60741b70d1096a96ca83d692db81c6d3e11ee8",
+  "prompt_sha256": "59bf98af33dc13fb68ca416947de8c34f4a89d2386b87fc87578f81783374d5f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOaHL9Xh3qExR17CCejrTI4XCdVo",
+  "prompt_tokens": 7285,
+  "completion_tokens": 46,
+  "actual_usd": 0.00112035,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing Suade Labs' use of both human-in-the-loop and human-over-the-loop approaches, along with the reasons for these choices."
+  }
+}

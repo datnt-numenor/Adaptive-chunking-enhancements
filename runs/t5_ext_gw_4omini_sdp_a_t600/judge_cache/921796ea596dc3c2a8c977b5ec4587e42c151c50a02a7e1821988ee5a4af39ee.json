@@ -1,0 +1,14 @@
+{
+  "request_hash": "921796ea596dc3c2a8c977b5ec4587e42c151c50a02a7e1821988ee5a4af39ee",
+  "prompt_sha256": "984190c01f9023c890a0627ecff528b60605eeb2363ebf0287018ada93b62149",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRa0tPiTVtO0jmVOfI32vHXvwxs",
+  "prompt_tokens": 7697,
+  "completion_tokens": 45,
+  "actual_usd": 0.00118155,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context mentions the collection of provenance data for software releases, including references to a software bill of materials (SBOM), but does not explicitly define 'SBOM'."
+  }
+}

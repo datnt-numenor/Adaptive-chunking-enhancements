@@ -1,0 +1,14 @@
+{
+  "request_hash": "e2b8a0b2fd5101b5231e1349c7b985a7667be7ca6e29ae890b1fadc7dfd9293b",
+  "prompt_sha256": "91cd69afd7d5a968b1d2e73349eb3fefce2e134aac7319a94b98b9232bd868f9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiON0VrycTlgqThZyBFFlyfuDJdcm",
+  "prompt_tokens": 7871,
+  "completion_tokens": 50,
+  "actual_usd": 0.00121065,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the organizational structures of both the Eticas AI Risk Taxonomy and the IBM AI Risk Atlas, including their alignment with audit and development workflows respectively."
+  }
+}

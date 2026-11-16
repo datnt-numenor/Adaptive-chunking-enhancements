@@ -1,0 +1,14 @@
+{
+  "request_hash": "259dc11b39e133e5a3afa5847ee87705cd0c2623ce2031bafe7225ae215a92b7",
+  "prompt_sha256": "bc59ef1d931000fc2f6aecf6a4bd9474290f9bee2ccd4391c5d325073ca7b1df",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNKu8YnvlcLUIiTw4P0BVOsnwTR1",
+  "prompt_tokens": 8871,
+  "completion_tokens": 52,
+  "actual_usd": 0.00136185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly detailing the four impact levels defined in Canada's Directive on Automated Decision-Making, which range from I (little or no impact) to IV (very high impacts)."
+  }
+}

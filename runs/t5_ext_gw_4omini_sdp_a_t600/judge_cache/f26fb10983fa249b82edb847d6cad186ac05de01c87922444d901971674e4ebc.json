@@ -1,0 +1,14 @@
+{
+  "request_hash": "f26fb10983fa249b82edb847d6cad186ac05de01c87922444d901971674e4ebc",
+  "prompt_sha256": "65ab40a26c8c3a44b15f1f9a9507b85d0e96c2eca4665ad4dc19a3568ffcb2d7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNyLu1pqyCKAO1cr9aAWTXCovqMs",
+  "prompt_tokens": 6799,
+  "completion_tokens": 45,
+  "actual_usd": 0.00104685,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining 'personal information in data' as including PII or SPI and detailing the risks of unwanted disclosure if not properly protected."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "f03e44cc9dcdb57b9196349296ab14b72b55bb5d16b31b9db5cf417d87bacad6",
+  "prompt_sha256": "0b723c843c343784d1ce027edc9f77c0d8e689946211a3cdea4c769e2244cc89",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQf6Xd0usHUi59fuXeKpSdbLgBm",
+  "prompt_tokens": 7903,
+  "completion_tokens": 37,
+  "actual_usd": 0.00120765,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of regular assessments of security measures and the implementation of recommendations from security checks."
+  }
+}

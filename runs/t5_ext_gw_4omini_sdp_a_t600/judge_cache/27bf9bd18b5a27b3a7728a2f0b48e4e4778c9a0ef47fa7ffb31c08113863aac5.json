@@ -1,0 +1,14 @@
+{
+  "request_hash": "27bf9bd18b5a27b3a7728a2f0b48e4e4778c9a0ef47fa7ffb31c08113863aac5",
+  "prompt_sha256": "dc02eed53e453d6f5e90849a9122bd69799fe8026b3b8269182cab5da7a8a101",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTfzaq1JcIUyA0DyCFi39oXGYAN",
+  "prompt_tokens": 8433,
+  "completion_tokens": 52,
+  "actual_usd": 0.00129615,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive support for the Reference Answer by detailing the limitations of post-hoc explainability techniques and their inadequacy in proving non-discrimination, which aligns with the claims made in the Reference Answer."
+  }
+}

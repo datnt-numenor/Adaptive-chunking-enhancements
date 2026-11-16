@@ -1,0 +1,327 @@
+DOCUMENT: arXiv 2602.13244 Responsible AI in Business
+
+<<<PAGE 5>>>
+Chapter 2 - EU AI Act: Executive management, legal/compliance, data protection.
+
+Benefit: Classification of obligations, roles, and risk categories. Basis for governance, documentation, and implementation requirements in the use of AI.
+
+- Chapter 3 - Explainable AI: Data science/analytics, IT, business unit leadership. Benefit: Guidance on which forms of explainability are required in practice. Bridge between
+
+model logic, technical comprehensibility, and trust in decisions.
+
+- Chapter 4 - Green AI: ESG (Environmental, Social & Governance), IT, controlling.
+
+Benefit: Leverage points for reducing energy and resource consumption. Connection between environmental impact, cost perspective, and technical implementation in AI operations.
+
+Chapter 5 - Local Models (On-Premise/Edge): IT/architecture, information security Benefit: Decision-making basis for the operating model (local vs. cloud). Criteria for data sovereignty, security requirements, and infrastructure implications.
+
+- Chapter 6 - Summary & Outlook: Executive management, legal/compliance. Benefit: Consolidation of the key messages. Structured guidance for next steps, priorities,
+
+and interfaces between areas of responsibility.
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+# 2 The EU AI Act
+
+The EU AI Act (Regulation (EU) 2024/1689) is the world' s first comprehensive law for the regulation of artificial intelligence. The AI Act follows a risk-based approach: the obligations depend on how risky a particular use of AI is. The objective of the regulation is to harness the potential of AI responsibly without violating human rights, corporate rights, or applicable laws. International guidelines such as the OECD Principles on AI and the UNESCO Recommendation on the Ethics of Artificial Intelligence provide the normative foundation for this approach and emphasize a humancentered, transparent, and non-discriminatory design of AI systems. For small and medium-sized enterprises (SMEs), this creates new opportunities but also uncertainties and additional effort, as many tasks cannot be delegated to a legal department. The use of AI thus becomes a management responsibility that brings together strategy and legal certainty, including potential liability issues. Depending on whether companies develop AI systems themselves, procure them, or merely use them, different obligations and evidentiary requirements apply, particularly for high-risk AI applications, for which the AI Act provides, among other things, risk assessments as well as documentation, transparency, and oversight obligations.
+
+# 2.1 Who is Covered by the AI Act?
+
+Private individuals who use AI solely for purely personal purposes are exempt from the EU AI Act. For companies, however, the following applies: anyone who uses AI in a professional context falls under the scope of the law. Even voluntary activities within an association can lead to the threshold of commercial use being exceeded. In this context, the EU AI Act applies regardless of whether it has already been fully transposed into national law or not.
+
+Central to the EU AI Act is a company ' s own role: Are you a provider of AI, for example as an operational tool, or are you a deployer?
+
+- Provider: Do you develop or modify an AI application and offer it under your own name or brand? In that case, you are a provider with extensive obligations. Example: You use an open-source AI model such as Llama by Meta and build an internal tool that you make available to your team or to customers under your company name. Even if you " encapsulate " existing AI software into your own product and offer it, you are considered a provider.
+
+- Deployer: Do you purchase or license AI software (e. g. a chatbot or automation software) and use it within your company without modifying the system yourself or marketing it under your own name? In that case, you are a deployer. Example: You license an existing AI service for your website or for document classification. In this case, you fall under the deployer obligations.
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+A typical borderline case in practice is the local operation of an AI model (self-hosting). If, for example, you operate a large language model (LLM) on your own servers and make it available to your employees, without making any substantial modifications and without distributing the system externally, you are generally also to be regarded as a provider. As long as you do not use high-risk AI, the regulatory effort usually remains manageable: no registration, no technical documentation obligations, but in particular transparency requirements (e. g. clearly stating that the interaction is with an AI system).
+
+# 2.2 Which AI Systems are Covered by the AI Act?
+
+Most of the AI Act revolves around the risk class of the respective AI application. There are three main groups:
+
+1. Prohibited practices: AI systems that manipulate people or carry out biometric surveillance without consent are prohibited.
+
+2. High-risk AI: This category includes AI systems in sensitive areas such as medicine, the justice system, personnel recruitment, critical infrastructure, or education (e. g. automated performance assessment).
+
+3. Other (low risk): Most applications in everyday SME contexts, such as product recommendations in a webshop, chatbots for standard inquiries, spell checking, etc. fall into the category of "low risk" . For these, there are no registration obligations and no technical documentation requirements. Only transparency requirements apply, where applicable (notice when users are interacting with an AI).
+
+# 2.3 What do Companies Specifically Need to do?
+
+The EU AI Act complements existing regulatory frameworks and applies without prejudice to data protection requirements. As soon as AI systems process personal data, the GDPR remains fully applicable. This applies in particular to automated decisions with significant effects (Art. 22 GDPR), as well as to transparency, purpose limitation, data minimization, and privacy by design.
+
+There is currently movement in the system with regard to the classification of legal bases: with the Digital Omnibus, the European Commission proposes targeted clarifications on the application of legitimate interest (Art. 6(1)(f) GDPR) in the context of AI systems and AI models, in particular along the AI lifecycle (e. g. training, testing, validation)[2]. Case law is pointing in a similar direction: in interim proceedings, the Higher Regional Court (OLG) of Cologne rejected an application for injunctive relief against the use of publicly available profile data for AI training and, upon summary review, generally classified the processing as capable of being based on Art. 6(1)(f) GDPR[3]. When using external AI services, the type of contract is decisive for data protection risks: for consumer offerings (e. g. ChatGPT Free/Plus), the use of content for model improvement can be prevented via opt-out, whereas business offerings (e. g. API, ChatGPT Enterprise/Business) are, according to provider statements, not used for training by default and support a data processing agreement (DPA)[4, 5]. For corporate use, contracts should therefore at least specify: roles and responsibilities (including Art. 28 GDPR, where processing on behalf applies), no use for training without opt-in, rules on retention and deletion, as well as transparency regarding subcontractors and data transfers.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+In addition to the GDPR, the EU AI Act introduces further, risk-based obligations. For SMEs, the first three points are typically always relevant. Additional requirements arise depending on the role (provider/deployer) and the risk class:
+
+- Risk assessment and documentation: First, it must be clarified: What role do we have? Is our system high-risk? The delineation is not always trivial, many terms have not yet been conclusively clarified from a legal perspective. For high-risk systems, technical documentation, risk management, and, where applicable, registration with authorities are required.
+
+- Transparency obligations: Users must be able to recognize when they are interacting with an AI (unless this is obvious anyway, e. g. an animated game character). Anyone who creates and publishes synthetic media (deepfakes, AI-generated images/videos/texts with potential to deceive) must label this, although there is flexibility regarding how visible such labeling must be. For artistic or satirical works, a general notice in context is sufficient.
+
+- AI literacy: Providers and deployers of AI systems should, to the best of their ability, take measures to ensure a sufficient level of AI literacy among the persons who operate or use AI systems on their behalf. What constitutes " sufficient" is deliberately context and risk-based; the European Commission explicitly emphasizes flexibility in this regard and currently refrains from setting rigid minimum requirements. In practice, a baseline level of awareness is advisable for all employees who use AI-supported functions in their day-to-day work (e. g. Office Copilot, internal chatbots, video conferencing systems with automatic transcription or minute-taking). For higher-risk applications, especially high-risk systems, role-specific deepening is appropriate; the Commission also notes that additional requirements for training and human oversight may apply to high-risk systems.
+
+- General-purpose AI and open source: Anyone who develops and offers their own AI models (in particular large, generative models) must provide additional transparency regarding training data, copyright strategy, and, where applicable, energy consumption. These obligations can generally only arise in the provider role. Open-source models benefit from certain simplifications, but specific obligations still apply here as well.
+
+# 2.4 Typical Challenges for Companies
+
+Even though many requirements of the EU AI Act are clearly formulated, additional clarification is often needed during implementation. Companies are confronted with legal as well as organizational and technical challenges. The following points are particularly relevant.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+- Legal uncertainty: Many definitions (e. g. when is a system considered high-risk?) will only become clearer through future practice and case law.
+
+- Documentation effort: In the high-risk area, the effort is considerable. in the minimal-risk area, it usually remains manageable.
+
+- Liability: Anyone who offers an AI system under their own name bears product responsibility. Simple rebranding solutions (API wrappers with one ' s own logo) can quickly lead to being classified as a " provider " with all associated obligations. As a general rule, the company is (as a rule) fully liable for the use of AI, just as is the case in any commercial enterprise. The use of AI does not reduce liability in this context.
+
+- Technical implementation: Labeling requirements (watermarks, metadata) cannot always be reliably implemented with existing tools. The state of the art is dynamic, and there are grey areas.
+
+# 2.5 Conclusion
+
+The AI Act is not an insurmountable obstacle, but it does require conscious decisions, careful clarification of roles, and, where appropriate, professional advice especially when using or offering high-risk AI. Ultimately, a company remains liable for its products and their creation regardless of whether AI is used or not. Those who use simple AI tools can plan with manageable effort and clear rules. Innovation is not prevented, but the scope for using AI depends heavily on how one ' s own role and the specific purpose of use are defined.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+# 3 Explainable Artificial Intelligence
+
+Many modern AI models deliver impressively good results, but are hardly comprehensible from the outside. This creates a tension for companies: on one hand, decisions are meant to be efficiently automated, while on the other hand, they must be explainable to customers, employees, and supervisory authorities. Explainable Artificial Intelligence pursues the goal of making AI decisions more transparent and providing justifications that humans can understand. This chapter shows why explainability is not only a technical issue, but also a business-critical one.
+
+Explainable AI therefore encompasses methods and techniques that make visible how an AI system arrives at a decision. This is not only about technical details, but also about answering the question "Can a human understand why the AI produces exactly this result?" . XAI makes it possible to use AI without having to operate with an opaque black box [6], whose mechanisms and predictions are neither recognizable nor verifiable. One could also say that Explainable AI is an attempt to bridge the gap between incomprehensible machine decision-making processes and the human need for explanation and traceability. Three central concepts are distinguished:
+
+- Transparency refers to the comprehensible documentation and disclosure of relevant information about an AI system along its lifecycle. Depending on the context, this includes, among other things, the purpose and limitations of the system, performance metrics, as well as information on the origin and structure of the data used and on training, validation, and testing (e. g. data description, data preprocessing, evaluation setup) [7, 8, 9, 10].
+
+- Interpretability means that a model is understandable to a human based on its structure, without requiring subsequently applied approximations or explanation methods. It should be directly comprehensible how a prediction comes about [11, 12].
+
+- Explainability describes methods that make the behavior or a specific decision of a model understandable for a particular purpose. This includes different forms (global vs. local) and techniques (e. g. attribution methods, counterfactuals, surrogates) [11, 13].
+
+Over the past ten years, Explainable AI has evolved from a research topic into a practically indispensable element in the use of AI in companies. There is hardly any way around explainable AI, if accountability, trust, and transparency are to be ensured. Wherever AI significantly influences decision-making processes, traceability is required. Transparency, in particular, is explicitly demanded by the EU AI Act (see Chapter 2) and thus becomes an unavoidable topic for the use of AI systems. Explainability enables companies, beyond this, to open the "black-box AI" and thereby make AI more trustworthy and effective. This dovetails seamlessly with the principles of Responsible AI. Explainable AI creates transparency about how models function and helps to uncover bias and fairness issues before they lead to real harm. Bias and fairness issues arise when an AI system systematically treats certain groups differently from others due to faulty or imbalanced data.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+# 3.1 Why is Explainable AI Relevant for Companies?
+
+For companies, this topic is business-relevant for several reasons. AI is increasingly used in areas where decisions have direct economic consequences, such as quality control, resource planning, maintenance forecasting, or customer service. Without explainability, it remains unclear whether a model operates reliably, whether it exhibits systematic errors, or whether it produces decisions that violate internal guidelines or legal frameworks (see Chapter 2). If this traceability is lacking, AI is quickly perceived as unsafe or risky, which slows down innovation, blurs responsibilities, and can significantly undermine acceptance of the use of AI. Anyone who has once seen an AI system make an error that cannot be explained loses trust.
+
+With XAI, such risks can be controlled. Users and developers can examine whether a model relies on stable and plausible patterns, whether individual factors exert an excessively strong influence, or whether data distortions lead to unfair or inefficient outcomes. For companies, this means better decision-making foundations, lower liability risks, and greater trust in AI-supported processes. At the same time, Explainable AI facilitates communication between specialist departments and management, as explanations are typically presented in visually or linguistically easily understandable forms [14].
+
+In corporate practice, the importance of Explainable AI becomes particularly clear when looking at concrete application scenarios. The following examples illustrate typical situations in which explainability directly determines trust, acceptance, and the quality of AI-supported decision-making. They can serve as guidance for identifying use cases within the company where XAI offers particular added value.
+
+- AI-based quality inspection, where it must be understandable why a component was classified as defective, in order to conduct complaints handling, audits, and internal quality discussions on a sound basis.
+
+- Recommendation systems for products or services, whose suggestions should be explained in an understandable way for sales and customers, so that decisions are not adopted "blindly " .
+
+- AI-supported prioritization of service tickets or complaints, where employees must understand why certain cases are handled with priority, in order to ensure fairness and customer satisfaction.
+
+- AI support for case processing, e. g. in claims handling, loan applications, or document review, where decisions must be justifiable because they have direct financial or legal consequences.
+
+- AI-supported pre-selection of job applicants, where it must be transparent why certain candidates are preferred, in order to avoid discrimination and to be able to justify decisions to works councils and applicants.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+- Internal reports and dashboards in which metrics or forecasts originate from AI models and must be explained to management and specialist departments in such a way that decisions can be based on them.
+
+# 3.2 Which Types of Explainable AI Exist in Practice?
+
+XAI encompasses different methods and perspectives. In practice, the following main categories are distinguished:
+
+1. Model-intrinsic explainability (intrinsic interpretability): These are models whose structure is inherently understandable. Their design makes it visible how individual inputs lead to a decision, for example through clear decision rules or manageable computational paths. Explainability thus arises directly from the model itself, without the need for additional analyses [15].
+
+2. Model-agnostic explainability (post hoc): In this approach, explanations are generated only after the actual model decision. This means that the model itself remains unchanged, but its behavior is analyzed retrospectively in order to provide understandable indications of influencing factors, decision logic, or possible alternatives. Such methods can, for example, show which features were particularly important for a given prediction or how the decision would change if individual inputs were different. Because these methods operate independently of the internal structure, they are also suitable for very complex, opaque models [16].
+
+3. Data-related explainability: Here, the focus is not on the model but on the dataset. The goal is to understand how the composition of the data influences model behavior. This includes, for example, identifying imbalances or missing groups, making potential biases visible, or tracing which data points have particularly strongly shaped the model. Such analyses help to assess how reliable and fair a model can operate [17].
+
+4. LLM-specific explainability: Large language models not only generate outputs but often also produce accompanying justifications. These may sound plausible but are not always a reliable indication of the actual internal processes. Therefore, specialized approaches address making typical patterns within the model such as the processing of textual elements or the weighting of different signals more visible and comprehensible. The aim is to explain the functioning of such models in a more understandable way, without relying solely on the explanations formulated by the models themselves [18].
+
+There are now mature approaches and tools for XAI that can be applied regardless of industry or company size [19, 20]. They range from global model overviews that make the general functioning of a model visible, to local explanation methods that make individual decisions understandable in specific cases. This allows modern AI systems to be used not only effectively, but also in a verifiable, auditable, and strategically secure manner. In this way, AI evolves from a technology risk that is difficult to assess into a reliable tool.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+# 3.3 How can a Company Implement Explainable AI in Practice?
+
+Regulatory initiatives such as the EU AI Act (see Chapter 2) explicitly emphasize the traceability of (high-risk) AI. At the same time, AI systems are becoming increasingly complex, this is particularly true in the context of generative AI which requires new explanation methods. Research is already working on even more advanced forms of explanation, ranging from counter examples and naturallanguage explanations to automated audit systems. For companies, it is important to develop an explainability strategy at an early stage: this includes selecting suitable XAI tools, training employees in the use of explainable AI, and embedding explainability in internal AI governance guidelines [21]. First, it should be clarified: should the model only perform well, or must decisions also be made understandable to users, supervisory authorities, or partners? Depending on the purpose, the required effort will vary. To ensure that explainability does not remain merely an abstract principle but is actually implemented within the company, several fundamental measures are required. These relate both to the technical level of the models and to internal responsibilities and communication toward users [22].
+
+The following three areas form the core of a practice-oriented approach to XAI implementation.
+
+Ensuring Technical Explainability: Companies should implement at least basic explanation methods for each AI system:
+
+- global explanations (e. g. feature importance),
+
+- local explanations (why exactly this decision?),
+
+- data analyses (bias, outliers, representativeness).
+
+Documentation and Responsibilities: Clear internal documentation is necessary so that responsibilities can be unambiguously assigned and all stakeholders can understand how an AI system is designed and operated. It forms the basis for auditability, quality assurance, and regulatory requirements. Relevant points include, among others:
+
+- Which models are used?
+
+- Which data form the basis?
+
+- Which explanation methods are available?
+
+- Who is responsible for updates and monitoring?
+
+User-Oriented Transparency: Explanations of the functioning and decisions of an AI system must be designed in a way that is understandable for the respective target groups, such as data analysts, customer service, management, or end users. Overly complex explanations are of no benefit.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+# 3.4 Conclusion
+
+Explainable AI is not an end in itself, but a tool for risk minimization, quality improvement and trust-building. For companies, XAI primarily means pragmatic orientation: simple methods, clear documentation, and understandable communication. Complex models remain complex, but with the right explanation methods, companies can make well-founded decisions, use AI safely, and deliver comprehensible results to both internal and external stakeholders.
+
+In conclusion, Explainable AI is not merely an add-on, but an enabler for the successful use of AI in practice. It creates the foundation of trust on which humans and AI can jointly create value. Companies that design their AI systems to be explainable gain user and customer trust more quickly, save time during audits, and reduce liability risks. With explainability, a highly advanced AI solution ultimately becomes an accepted and reliable tool and thus represents a significant step toward truly responsible AI in the corporate world.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+# 4 Green AI
+
+With the widespread introduction of large AI models, the ecological dimension of Responsible AI is increasingly coming into focus. High-performing AI models are often associated with high computational effort, energy consumption, and costs. Companies therefore face the question of how the benefits of AI can be reconciled with economic and ecological objectives. A central concept in this context is Green AI : this refers to the requirement that AI systems should not only be evaluated based on their performance and accuracy, but also on their ecological footprint. The focus is on energy and resource consumption (and the associated CO2 emissions), particularly during the training and operation of very large models. Green AI emphasizes the efficient use of resources: instead of " ever larger and more complex " , the emphasis is on reuse, optimization, and tailored solutions. This chapter shows how AI solutions can be designed in such a way that they remain not only performant, but also sustainable and economically viable.
+
+Schwartz et al. showed in 2019 that the computational effort in deep learning increased by a factor of 300,000 between 2012 and 2018 [23]. Also in 2019, Strubell et al. quantified this effect exemplarily for NLP models (natural language processing models). They demonstrated that training individual large models can cause emissions in the range of several tonnes of CO2 equivalents [24]. In parallel, a regulatory framework is increasingly emerging: in addition to the expectations of investors in the area of ESG (Environmental, Social, and Governance), sustainability aspects, transparency requirements, and lifecycle considerations are also being discussed in the context of the EU AI Act (see Chapter 2) [25].
+
+# 4.1 Green AI in Corporate Practice
+
+Green AI is not only a technical issue, but directly influences cost structures, sustainability goals, and strategic decisions within companies. The resource requirements of AI systems determine which solutions are economically viable and how well they can be aligned with environmental and ESG objectives. In many cases, the "largest possible " model is not optimal; instead, a deliberately optimized, reused, or compressed variant is preferable.
+
+Even if the benefits of Green AI cannot always be directly expressed as immediate financial added value for companies, they are strategically relevant from a long-term economic and ecological perspective. Companies that sufficiently take Green AI principles into account find it easier to meet regulatory requirements, reduce their costs in the medium to long term, and simultaneously strengthen their reputation.
+
+Further efficiency gains arise when already trained internal models are deliberately reused or only incrementally retrained. This avoids additional training runs, thereby reducing computation time and energy consumption. Large models can be reduced in size using model compression methods, and the choice of more efficient algorithms as well as hardware tailored to actual needs can also be decisive factors in lowering resource requirements. In addition, systematic measurement of energy consumption contributes to greater transparency.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+The following examples illustrate typical situations in which Green AI principles play a particularly important role and in which the approaches to model reuse and further training, model compression, and other measures described in the following sections can be applied concretely:
+
+- Introduction of a large language model for internal knowledge search, in which an existing language model is adapted to company data via transfer learning and LoRA fine-tuning instead of training a model from scratch. Through targeted model compression and an appropriate operating environment, both infrastructure costs and energy consumption are reduced.
+
+- Use of AI for predictive maintenance, in which a model derived from a larger base model and subsequently compressed is executed directly on edge devices or industrial PCs, keeping computational effort, bandwidth usage, and energy consumption low during operation while simultaneously optimizing maintenance cycles.
+
+- Development of an internal model suite in which a central base model is reused across multiple product lines and, for each use case, only small-scale adapters or finely tuned submodels are trained instead of building a completely new model for every task.
+
+- Use of cloud resources for the (further) training of models, in which optimized training algorithms, suitable hardware profiles, and the deliberate limitation of training runs are used to actively manage both costs and the CO2 footprint and make them measurable with the help of monitoring tools.
+
+- Consideration of AI-specific consumption in ESG reporting and sustainability reports by systematically capturing the energy consumption and emissions of central models and transparently reporting the effects of model recycling, compression, and further efficiency measures.
+
+# 4.2 Reuse and Continuous Use of Models
+
+A particularly effective approach in corporate settings is the use of already pre-trained models instead of training models from scratch. This reduces development time, lowers infrastructure costs, and significantly decreases energy demand. Studies from various domains show that transfer learning achieves high performance with comparatively few additional training steps, while energy consumption is drastically reduced compared to full retraining [26, 27]. Practical guidelines, for example from the Green Software Patterns Catalog, explicitly recommend evaluating pre-trained models as the default option in order to reduce the carbon footprint of AI projects [28]. At the same time, new trade-offs may arise: centralizing on a small number of base or foundation models can increase dependencies on platform providers and raises questions regarding vendor lock-in, data sovereignty, and transparency of the underlying models. In principle, it must also be distinguished whether a model is used in a similar context or whether its context is to be expanded.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+# 4.2.1 Transfer Learning
+
+The transfer of existing contextual knowledge to a similar application domain is referred to as transfer learning. This is particularly advantageous for small datasets, where the amount of data is insufficient for full training. First, the model is trained on a larger, related dataset (e. g. standard German language), followed by fine-tuning with domain-specific data (e. g. technical terminology). A modern and efficient technique for this is Low-Rank Adaptation (LoRA). In contrast to classical fine-tuning, only a subset of the model parameters typically individual layers is adapted, which enables fast and resource-efficient fine-tuning of large models. LoRA is based on the observation that weight matrices assume a low "intrinsic" dimension during training, which allows for a simple low-rank decomposition. Studies show that LoRA reduces the number of trainable parameters for a GPT-3 model by a factor of 10,000 and lowers GPU memory requirements by a factor of three [29]. For companies, this means that existing models can be sensibly reused and adapted from both cost and environmental perspectives. A prerequisite is a sufficiently similar data basis in order to avoid negative transfer. Negative transfer refers to the performance degradation that occurs when a pre-trained model is applied to new data that differs too strongly from the original training data. In such cases, it may be necessary to train a model entirely from scratch.
+
+# 4.2.2 Continuous Learning
+
+When the model context is extended to include new use cases, this is referred to as incremental learning or continuous learning (CL) (cf. [30]). Ideally, requirements are defined at an early stage so that suitable CL methods can be applied from the outset. In the context of language models, CL refers to a model' s ability to continuously expand its knowledge by deliberately linking new information with existing knowledge, allowing the model to improve continuously and adapt to new language and content without forgetting what it has previously learned. A major challenge in this context is so-called catastrophic forgetting (CF), in which earlier learned content is overwritten as soon as new data is integrated [31]. This leads to a well-known dilemma [32]: on the one hand, new tasks should be learned with sufficient flexibility, i.e. the model must be sufficiently plastic. On the other hand, existing knowledge should also be sufficiently preserved, which requires the model to maintain a certain degree of stability. Since these two aspects influence each other, an appropriate balance must be found. This is achieved through regularization methods, replay techniques, and architecture-related adaptations [30]. Due to the high resource requirements of continuous training of large language models, efficient use of resources is essential, which can pose a challenge for smaller organizations. Smaller, specialized, or locally hosted models can be an alternative in this case, as can targeted model compression.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+# 4.3 Model Compression
+
+Model compression refers to a set of techniques that are deliberately applied to reduce the size of large, resource-intensive AI models in order to decrease their memory footprint and computational requirements while preserving performance as well as possible [33]. The goal is to make AI models efficiently usable even in resource-constrained environments such as mobile devices or edge computing, which also makes model compression a key enabling technology for the democratization of AI. Important compression techniques include, among others:
+
+- Pruning: Removal of unnecessary connections or entire layers of a network [34],[35],[33]. In practice, pruning is particularly suitable for streamlining models for edge and predictive maintenance scenarios, enabling condition monitoring directly on industrial PCs or embedded systems with lower latency and reduced energy consumption.
+
+- Quantization: Reduction of the numerical precision of model parameters (e. g. from 32-bit to 8-bit) [36],[33]. Quantization is especially helpful where existing hardware is to continue being used, for example in internal language models for knowledge search: reduced numerical precision lowers memory and computational requirements without necessarily causing a noticeable loss in quality.
+
+- Knowledge distillation: Transfer of knowledge from a large model to a smaller one [37],[38],[33]. Knowledge distillation can be used to derive several smaller, task-specific models from a large, universal base model, which can then be efficiently operated within an internal model suite and deployed in a targeted manner for different departments or products.
+
+- Low-rank decomposition: Decomposition of complex weight matrices into smaller components (cf. LoRA in Section 4.2) [29],[33]. Low-rank decomposition and related methods such as LoRA are particularly useful when a shared base model is to be retained for many use cases, while adaptations are implemented in the form of lightweight adapters that can be trained quickly and deployed in a resource-efficient manner.
+
+In corporate practice, these model compression techniques demonstrate their usefulness primarily by making powerful models manageable under real-world constraints. By deliberately reducing model size, memory requirements, computational effort, and energy consumption can be significantly lowered without disproportionately impairing model quality. This not only facilitates operation on existing infrastructure or resource-constrained devices (e. g. edge or industrial hardware), but also reduces ongoing costs and supports sustainability and ESG objectives.
+
+At the same time, compressed models make it possible to use a single large base model in the form of smaller, specialized variants for different use cases. Instead of training a new large model for each task, multiple lightweight models can be operated that build on a shared knowledge base and can be efficiently adapted. Model compression thus represents a central building block for reconciling model reuse and continued use, economic viability, and ecological responsibility.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+# 4.4 Further Measures
+
+In addition to the reuse and continuous use of models as well as the targeted reduction of large models through model compression, there are further measures for more efficient use of resources. These primarily include the development and application of more efficient algorithms that can significantly reduce computational effort and, consequently, resource requirements. Such algorithms include, for example, adaptive and self-learning systems that dynamically adjust to changing conditions and thus use resources optimally. In addition, hardware optimizations play a key role, such as specialized chips that are explicitly developed for specific AI tasks and therefore operate in a particularly energy-efficient manner. Another important aspect is the measurement and monitoring of the energy consumption of AI systems, which allows potential savings to be identified in a targeted way. All measures mentioned in this section can additionally contribute to the sustainable design of AI applications and can also be combined.
+
+# 4.5 Conclusion
+
+The integration of Responsible AI, and Green AI in particular, is indispensable for companies today. Current discussions about sharply rising emissions among major cloud providers such as the significant increase reported by Google due to growing AI workloads illustrate that Green AI is not a niche topic, but a central component of responsible corporate strategies [39]. Sustainability strategies promote long-term competitiveness and strengthen corporate reputation. Recommended approaches from current guidelines aim to reduce environmental impacts such as CO2 emissions and resource consumption while simultaneously enabling economic benefits. Instead of developing models from scratch, it should always be examined in advance whether existing models can be purposefully recycled and efficiently adapted through fine-tuning, specialized learning methods, dynamic architectures, and measures for model expansion or compression. Optimized algorithms and suitable hardware further contribute to energy savings. Responsible monitoring provides a transparent basis for assessing corporate and societal costs and strengthens the trust of all stakeholders. Ultimately, the balance between performance and resource use is decisive: while large models require more resources, smaller, modular, and compressed approaches are often sufficient. Strong centralization around a few base models also raises questions regarding dependencies, data sovereignty, and transparency. For the successful integration of Green AI, companies should systematically track energy consumption and emissions, establish internal guidelines for model recycling, and always make decisions with a forward-looking view of accuracy, costs, environmental impact, and risks. Approaches such as LoRA offer pathways to modular, flexible, and resource-efficient model development. Green AI thus not only brings ecological improvements, but also enables cost savings, strengthens competitiveness, and secures the long-term viability of companies.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+# 5 Local Models (On-Prem/Edge) in the Responsible AI Context
+
+Before the widespread adoption of large cloud-based language models, the use of AI in companies was in many cases already a fully local matter, for example in the form of embedded systems in machines, vehicles, or production facilities. With the availability of powerful generative models, however, the focus has shifted: many organizations initially test cloud-based LLMs, but then face the strategic question of which parts of their AI landscape should be operated in the cloud, on-premise, or directly on the " edge " in the long term. Especially for small and medium-sized enterprises (SMEs), this is not only about technical performance, but also about questions of data sovereignty, dependency on providers, and long-term operating costs.
+
+In this chapter, "local models " are understood as AI systems that are executed entirely within an organization ' s own infrastructure (on-premise) or directly on devices and machines (edge), in contrast to purely cloud-based AI services. Local LLMs and edge AI make it possible to keep sensitive data within one ' s own area of responsibility, make decisions with minimal latency, and adapt models deeply to company-specific requirements. At the same time, they bring their own challenges: investments in hardware, operational and maintenance effort, as well as the need to build internal expertise for the selection, operation, and securing of these systems.
+
+In the Responsible AI context, local models are an important building block for bringing together several of the dimensions discussed above: they support data sovereignty and data protection (e. g. in light of the GDPR and the EU AI Act), enable domain-specific optimizations, and when combined with appropriate model sizes and architectures can contribute to Green AI by reducing computational effort and unnecessary data movement. At the same time, companies must weigh when local solutions actually offer advantages and in which scenarios cloud offerings remain sensible.
+
+# 5.1 Definitions of Local Models
+
+Local AI models are AI systems that are operated entirely within a company ' s own infrastructure or directly on end devices (edge devices) in contrast to cloud-based AI services provided by external vendors. In an on-premise model, the AI model runs on the organization ' s own servers or in its data center, meaning that all model data (weights, inputs, and outputs) remain within the corporate network [40]. This gives the company full control over the model, including updates, configuration, and scaling, and ensures that sensitive data do not leave the internal network. As a result, dependencies on external AI services such as vendor lock-in, outages, or sudden API price changes by third-party providers are eliminated [41]. Edge models, by contrast, are integrated directly into decentralized devices or machines, for example in manufacturing facilities, vehicles, or IoT devices [42]. They perform AI computations locally and in real time, without requiring a continuous connection to the cloud. This reduces latency, saves bandwidth, and increases resilience, as inference continues to function even when internet connectivity is limited or interrupted.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+

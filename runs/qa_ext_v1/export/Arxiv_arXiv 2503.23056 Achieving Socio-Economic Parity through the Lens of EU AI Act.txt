@@ -1,0 +1,263 @@
+DOCUMENT: arXiv 2503.23056 Achieving Socio-Economic Parity through the Lens of EU AI Act
+
+<<<PAGE 5>>>
+<!-- PageHeader: Achieving Socio-Economic Parity through the Lens of EU AI Act Conference acronym 'XX, June 03-05, 2018, Woodstock, NY -->
+
+(individual) effort by explicitly integrating SES and effort into its framework.
+
+# 4 SOCIO-ECONOMIC STATUS-AWARE FAIRNESS NOTION
+
+Our findings in Sec. 3 suggest that to be fair in the socio-economic context certain social factors, such as inherited privilege, and economic factors such as individual effort, need to be considered. More concretely:
+
+a. The chances of favourable outcomes should not be hindered for socio-economically underprivileged individuals.
+
+b. Individuals in underprivileged subgroups who put higher effort beyond a threshold should be given a higher chance of positive rewards, ideally proportional to their effort.
+
+c. Positive action for privileged subgroups should be minimized in order to reduce the influence of privilege.
+
+Building on these observations, we define two notions of SES-aware fairness (Socio-Ecomomic Parity - SEP and its stronger counterpart, Conditional SEP - CSEP) (Sec. 4.1) and their corresponding SESaware fairness metrics (Sec. 4.2). We train fair models based on these metrics and evaluate their effectiveness in mitigating discrimination (Sec. 4.3).
+
+# 4.1 Defining Socio-Economic Parity (SEP) and Conditional Socio-Economic Parity (CSEP)
+
+Definition 1. A predictor ℎ is said to behold Socio-Economic Parity (SEP) fairness if for any given economically privileged group defined as (𝑋𝑝 ≥ 𝜏𝑝), and underprivileged sub-groups defined as (𝑋𝑝 < 𝜏𝑝, 𝑆 = 𝑠) by a socio-economic attribute 𝑋𝑝, a privilege threshold 𝜏𝑝, a protected attribute 𝑆, and demographic identity 𝑠, it holds:
+
+where 𝑥𝑒 is the value w.r.t. 𝑋𝑒-an identified non-protected attribute that can be expressed as a proxy for measuring effort put forth by an individual, 𝜖 is the disparity tolerance (ideally 0), and 𝜁 (·) is a real-valued function that relatively weights underprivileged individuals (to ≥1) based on their effort value 𝑥𝑒 for individuals with 𝑋𝑒 ≥ 𝑒. The threshold 𝜏𝑝 defines the privileged group as the population with top 𝑝% value distribution of 𝑋𝑝.
+
+In simpler words, SEP is achieved when the expected favourable outcome for any protected group 𝑠 is independent of socio-economic privileges. Additionally, it ensures that the false positive rate for the privileged group is not higher than that of the underprivileged group exerting high effort. Furthermore, the cumulative rewards for underprivileged high effort individuals are proportionally weighted based on their evaluated effort. A stronger (and more desirable) version of the SEP fair notion, is what we call Conditional SocioEconomic Parity (CSEP):
+
+Definition 2. A predictor ℎ thats behold Socio-Economic Parity (SEP) across all the categories 𝑎 defined by a categorical non-protected attribute 𝑋𝑎 : 𝑋𝑎 ≠ 𝑋𝑝, 𝑋𝑒, is called Conditional Socio-Economic Parity (CSEP) -fair. Formally:
+
+Note that in Eq. 3, the function 𝜁 (·) takes the additional argument 𝑎. This is to ensure that the effort-based weighting also considers the localized condition. For example, in each job, effort weights will vary based on the threshold, such as the average working hours per week in that job. The notion can be further refined by adopting subgroup-specific thresholds for 𝜏𝑝 and 𝑒, in order to more accurately capture the socio-economic influences within each community.
+
+# 4.2 Measuring the violation of SEP and CSEP
+
+Based on definitions of the SEP, and CSEP notions introduced in Sec. 4.1, here we introduce the AI fairness metric measuring the SES-aware bias/discrimination. Following Eq. 2, violation of SEP can be measured as:
+
+where 𝐴= ∑ 𝑥𝑝 <𝜏𝑝,𝑥𝑒 <𝑒 1, 𝐵= ∑ 𝑥𝑝 <𝜏𝑝,𝑥𝑒 ≥𝑒 𝜁 (𝑒, 𝑠), and 𝐶= ∑ 𝑥𝑝 ≥𝜏𝑝 1, ensures the respective parts remains a probability distribution. Note that the second and the third part of the Eq. 4 focuses on equating the probability negative predictions i.e., ℎ(𝑋 = 𝑥) = 0, contrary to the favourable (positive) outcome expectation goal in Eq. 2. This is intentional and necessary, to avoid penalizing individuals exerting high effort. Similar to Eq. 4 we can trivially extend the measure following Eq. 3 to evaluate CSEP violation conditioned on nonprotected condition 𝑋𝑎.
+
+In absence of mechanism to evaluate effort, or to simplify computation and interpretation, violation of SEP (Eq. 4) can be relaxed to: ∀𝑠 ∈ 𝑆, |𝑃 (ℎ(𝑋 ) = 1) - 𝑃 (ℎ(𝑋 ) = 1 | 𝑋𝑝 < 𝜏𝑝, 𝑠) | ≤ 𝜖 where the relaxed goal is to only capture the discrimination towards all the underprivileged demographic subgroups.
+
+# 4.3 Empirical effectiveness of SES-aware fairness
+
+To examine the effectiveness of our CSEP notion in reducing the effect of SES, similar to our previous exploration, we optimize a model [1] constrained on our notion (Eq. 3) and test it on the Adult data. We plot the results in Fig 4. The key things to notice here is that our CSEP-aware model starkly improves the PPR of high-effort underprivileged protected group to 56.44% (by 59%↑) by awarding more positive actions for this niche subgroup (FPR 47.09%) while keeping the false predictions for the overall underprivileged females at par with that of CDP-aware model (Fig. 3). Further, our CSEP-aware model also brings down the positive actions for the privileged females (FPR 58%↓) while keeping the overall PPR between male (27.84%) and female (24.19%) nearly equal. Fig. 5 further compares PPR rates by hours per week for underprivileged males and females under EP-, DP-, CDP-, and CSEP-aware models. Notably, CSEP allocates positive outcomes proportionally to effort among high-effort underprivileged females (≥ mean effort), nearly doubling the female-to-male PPR ratio (0.98 to 2.1) and mitigating both overall demographic disparities and those observed among protected underprivileged subgroups (Fig. 2). Specifically, the PPR for underprivileged females increases from below 0.3 for those working fewer than the mean hours to above 0.6 for those exceeding it, reaching nearly 0.7 for those working 55 hours 10 or more. In contrast, EP- and DP-based methods under-reward these high-effort females, resulting in lower PPRs than their male counterparts. Although the CDP-aware model provides higher PPR for all underprivileged individuals, it does so uniformly across both demographics, failing to deliver the additional positive actions needed to support high-effort underprivileged females and address remaining disparities.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Roy et al. -->
+
+<Figure>
+Figure 3: Predictions by CDP-aware classifier on female and male demographics, across different occupations, for socio-economic subgroups defined as privileged (individuals among top 5% capital gain), underprivileged (individuals below the top 5% capital gain margin), and underprivileged with high efforts (underprivileged individuals with working hours per week greater than mean of their demographics). Subplots that have fewer data (due to data scarcity of the subgroup) are presented with a zoomed version inside the respective subplots to provide a better view of the results.
+</Figure>
+
+\* 10 Work hours in this example is just used as a reference and not necessarily our viewpoint. In reality measuring effort [13] can vary depending on policy. Our SEP and CSEP notions can comply with any such real-valued function measuring effort.
+
+# 5 INVESTIGATING SEP NOTION UNDER THE AI ACT AND EU ANTI-DISCRIMINATION LAW
+
+By placing the provision of justifications at the forefront of the study, we aim to ensure accountability, as the definition and realisation of explicit selections of the important attributes, context and any trade-offs of a fairness-aware metric undertaken to protect the rights, freedoms, and interests of individuals [39]. Thus, drawing upon the elucidation of the field of SES under the AI Act, the regulation states that "...AI systems used to evaluate the credit score or creditworthiness of natural persons should be classified as high-risk AI systems..." (Recital 58). In parallel, from the combination of Article 6(2) and Annex II, par. 5(b) of the AI Act, it is explicitly indicated that AI systems "intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud" are classified as high-risk AI systems, with the requirement to satisfy the provisions laid down in Articles 8-15 (Chapter III, Section 2) that should be assessed under the conduction of a conformity assessment [Article 3(20)]. In addition to those obligations, deployers of the systems that are described in Article 6(2) should perform a Fundamental Rights Impact Assessment (FRIA) and notify the national authority of the results (under the circumstances of Article 27); thus, regarding AI bias, the FRIA aims to detect and mitigate the discriminatory risks of an AI system.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: Achieving Socio-Economic Parity through the Lens of EU AI Act Conference acronym 'XX, June 03-05, 2018, Woodstock, NY -->
+
+<Figure>
+Figure 4: Distribution of positive (>50K) and negative (≤50K) classes for males and females predicted by CSEP-aware classifier. Occupations are sorted in ascending order w.r.t. count of positive (ground truth) labels from left to right.
+</Figure>
+
+<Figure>
+Figure 5: Comparison of our CSEP-aware model against EP, DP, and CDP -aware models in distributing positive action towards underprivileged females and males. Higher PPR ratio indicates higher preference of positive action for females.
+</Figure>
+
+Regarding the topic of AI bias in AI systems, the AI Act formalises the requirement of identification and mitigation of unfair discrimination in high-risk AI systems [Article 10(2)(f), (g)]. Especially for the aspect of detection, AI system providers should first identify the risk level of each AI system, recognising also the importance of preventing the (re)production of biases, that can lead to discrimination and taking into consideration the potential protected ground(s) of discrimination under EU law; the requirement of representative and ad hoc datasets [Article 10(3),(4)] also contributes to that direction. Moreover, the requirement for human oversight in Article 14(4)(b) of the AI Act shifts the focus to the identification of automation bias by the responsible person "in the loop" in the context of high-risk AI systems. Regarding accuracy, robustness and cybersecurity, Article 15(4) introduces the requirement to apply bias mitigation measures to the development of high-risk AI systems in order to avoid reproducing bias via "feedback loops". Furthermore, accountability is enhanced through the requirements of the prior design of the technical documentation (Article 11) and record-keeping of logs (Article 12).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Roy et al. -->
+
+Therefore, AI fairness-aware metrics should be designed through the notions of proving compatibility with the fundamental rights in order to be able to be utilized through the required assessments of the AI Act. The right not to be discriminated, which is a fundamental principle enshrined in EU law, should be explored and examined by every attempt to address AI bias. From the text of the AI Act, it is obvious that the regulation delegates the determination of discrimination to existing EU legislation [21].
+
+The two main forms of discrimination, under EU law, include direct and indirect discrimination [68, 74]. Direct discrimination 11 occurs when a person is being undertaken less favourable treatment than another in a comparable situation, based on a protected ground, while indirect discrimination 12 exists when an ostensibly neutral provision, criterion or practice sets people with a particular protected characteristic in a disadvantaged position compared with others unless that provision, criterion or practice is objectively justified by a legitimate aim and the means of achieving that aim are appropriate and necessary 13 [29, 30]. Therefore, establishing indirect discrimination requires demonstrating the presence of two groups (comparators), one advantaged and one disadvantaged by the contested measure [30]. An expression of direct discrimination is discrimination by association [35], which can be identified when a person is treated less favourably due to another person's protected characteristic 14 . In cases where several grounds of discrimination exist, multiple discrimination takes place when the grounds operate separately, and intersectional discrimination occurs when the grounds interact, are inseparable and produce specific types of discrimination; nevertheless, the Court of Justice of the European Union (CJEU) has not recognized that a new category of discrimination can arise from the combination of more than one of those grounds [30, 63].
+
+\* 11 Relevant provisions to EU law are included in Article 2(2)(a) of the Directive 2000/43/EC, Article 2(2)(a) of the Directive 2000/78/EC, Article 2(1)(a) of the Directive 2006/54/EC and Article 2(a) of the Directive 2004/113/EC, to the extent of the protected grounds of the directives.
+
+\* 12 Relevant provisions to EU law are included in Article 2(2)(b) of the Directive 2000/43/EC, Article 2(2)(b) of the Directive 2000/78/EC, Article 2(1)(b) of the Directive 2006/54/EC and Article 2(b) of the Directive 2004/113/EC, to the extent of the protected grounds in the directives.
+
+\* 13 Article 2(2)(b) Directive 2000/43/EC; Article 2(2)(b) Directive 2000/78/EC; Article 2(b) Directive 2004/113/EC; Article 2(1)(b) Directive 2006/54/EC.
+
+\* 14 See: CJEU, C-303/06, S. Coleman v. Attridge Law and Steve Law, 17 July 2008.
+
+It has been widely claimed in the literature that AI bias should be viewed and addressed through the concept of indirect discrimination [9, 73, 75]. With the reasoning that direct discrimination will arise only if the explicit or implicit bias of the decision-maker influences the model, cases of unintentional discrimination, such as those caused by sampling errors or historical bias, are excluded from consideration [36] and due to the nature of AI systems, as they depend on inferences and proxies for target variables and protected attributes [68].
+
+# 5.1 Automated contextual extraction of source of privilege (𝑋𝑝)
+
+Starting from the principle of proportionality under indirect discrimination, once it has been established, the burden of proof shifts to the defendant, effectively initiating a proportionality test [35]. It has been argued that AI fairness metrics should be based on the "proportionality test" (where the legitimate interest is pursued in a manner that is both necessary and proportionate) [68]; this approach can enhance the alignment between legal principles and AI-fairness metrics and, per analogiam, in the determination of the trade-offs and essential balancing of interests through fairnessaware mechanisms. Therefore, our solution includes the implications and essential justifications for the following question:
+
+Are the selected attributes of the AI fairness-aware approach/ metric necessary and appropriate to protect the legitimate interests of the protected groups? 15 From a top-down approach, we start by identifying the source of biases that can affect the protected groups. The attributes identified by our approach, as most critical for accurately representing the comparators' groups, depend on statistical data and the ability of the trained models to identify bias. By implementing computational fairness notions to compare the treatment of different groups, clear statistical evidence of the existence of discrimination can be provided; this evidence can be taken into consideration by the court in cases involving allegations of discrimination 16 [31, 74].
+
+Also, it is revealed that the attributes (including protected grounds and proxies) that are pivotal to influence the decisions as most critical for accurately representing the comparators' groups and prone to affect the model's learning bias, as the contribution of determining proxy variables, which are non-protected grounds ('capital-gain', 'work-hour-per-week', 'occupation') can guide the AI fairness-aware measures, through the investigated correlations to acknowledge protected grounds ('sex') and, as a result, contribute to the aim of definition and transforming the harmful discriminatory effects in SES context. The fact that the ground of SES is not covered by Article 19 TFEU [33] has provoked discussions on multiple levels; primarily, the lack of SES recognition [33], and secondarily, in algorithmic discrimination through harmful patterns that are present and do not directly relate to protected grounds under EU law [25].
+
+Identifying attributes that can be considered as a source of privilege requires background knowledge about what can constitute socio-economic privilege and what is the historical impact of the considered attribute in determining the current outcome. So, some may rightly argue that a fully automated determination of 𝑋𝑝 may not be possible. However, since here we are interested in fairnessaware learning of an AI model, it can be intuitively useful if we focus on what the AI model considers as source of privilege. One simple strategy would be to identify an unprotected attribute which is important in producing favourable outcome for a non-protected demography (historically known to garner privilege), and inherently with its attribute values can segregate the population into different sections of hierarchy. We use a simple two-step process to approximate the above-mentioned idea, given as follows:
+
+\* 15 "necessary" and "appropriate" means that they "...must be suitable to achieve the desired end" [57].
+
+\* 16 See Recital 15 of the Racial Equality Directive 2000/43/EC.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: Achieving Socio-Economic Parity through the Lens of EU AI Act Conference acronym 'XX, June 03-05, 2018, Woodstock, NY -->
+
+<Figure>
+Figure 6: Specific provisions in the AI Act addressing AI bias
+</Figure>
+
+step1: Train a predictor ℎ𝑔 (·) with a subset D𝑔 i.e., the subset of the data D drawn only from the distribution of the nonprotected population P(𝑋,𝑔, 𝑌 ).
+
+step2: Among the subset of unprotected ordinal (𝑋𝑜) e.g., "Education" [5], and numerical (𝑋𝑛) e.g., "Capital gain" [70] attributes, using a feature importance method F I [28], identify the attribute 𝑋𝑝 ∈ (𝑋𝑜 ⋃ 𝑋𝑛) that has the highest impact on model's predictions for the privileged population D𝑔, i.e., 𝑋𝑝 = argmax 𝑋𝑖 ∈ (𝑋𝑜 ⋃ 𝑋𝑛 ) FI (ℎ(𝑋 ), 𝑋𝑖 ). Note that the restriction of at-
+
+tribute 𝑋𝑝 being either ordinal or nominal is a necessary condition to quantify the hierarchy of privilege.
+
+# 5.2 Determining the value of 𝑝, which top 𝑝% privileged population to consider?
+
+The identification of the comparators' groups plays a vital role both in the legal justification of the discrimination and in the implementation of the proposed fairness-aware notions. First, our approach initiates a comprehensive statistical investigation which is used to reveal the discrimination patterns and emphasizes the contextspecific implementation of the fairness transforming methods, aiming to satisfy the goal of addressing AI bias with the ad hoc appropriate actions, which are considered proportionate. To align with the definition of indirect discrimination and address it in practice, we classify individuals into two comparator groups ("privileged" and "underprivileged"), based on the criterion of disadvantaged SES.
+
+Therefore, the two groups, based on sex, have been determined according to the variables of capital-gain, work-hour-per-week, occupation. Second, our investigation shows in Fig. 5 that if the underprivileged group, when given certain advantages as the privileged, can perform equally based on the related variables. To enable this prediction, we set other two subgroups indicating the top 𝑝% in relation to the advantage of high capital gain. The positive prediction is based on counterfactual rationale [12], where these females will have a higher capital gain (if we increase the attribute value for the identified females that do not belong to the top 𝑝%). It should be mentioned that this counterfactual reasoning lays down a "positive action" 17 which refers to the measure that promotes preferential treatment for disadvantaged groups [59] to eliminate, prevent or remedy past discrimination [26]. As "positive action" is, in general, adopted under EU law, the requirement should be for the AI fairness metrics to include the balancing to reach the goal of equal treatment, by not maintaining feedback loops that can deteriorate the SES of a population group.
+
+Third, the determination of the comparators' groups based on a threshold (top 5% of males and females), in the case of fairnessaware methods, relies on a quantitative criterion. Initially, it should be mentioned that the evidential basis of the criterion aligns with this requirement of CJEU 18 with the aim of displaying that the contested rule is related to any form of discrimination [36]. Apart from clarifying the measurable nature of the predictive actions, the focus should also be shifted to its examination of satisfying the characteristics of "necessary" and "appropriate". In general, for the determination of comparators' groups through the definition of a threshold, it has been claimed that explicit quantitative limits derived from the EU legal framework are absent [64], and a hypothetical disadvantage is sufficient [36]. The necessity of determining this threshold lies in the objective of identifying the privileged category within the entire population, irrespective of protected identity. In particular, the positive class ratio between females and males surpasses the 80% rule only from the top 𝑝% onward. In parallel, the positive label distribution for the group of females exceeds the 80%
+
+\* 17 Relevant provisions: Article 5 Directive 2000/43/EC; Article 7 Directive 2000/78/EC; Article 6 Directive 2004/113/EC; Article 3 Directive 2006/54/EC.
+
+\* 18 CJEU, C-167/97, Seymour-Smith, 9 February 1999.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: Conference acronym 'XX, June 03-05, 2018, Woodstock, NY Roy et al. -->
+
+rule, thereby qualifying to be considered a privileged category, from the threshold of the top 𝑝% (as it is shown in Fig. 2), maintaining at the same time the appropriate size of the population.
+
+# 6 STANDARDIZATION FOR THE AI ACT AND FAIRNESS MEASURES UTILIZATION
+
+Initially, with regard to AI standards within the scope of the AI Act, the European Committee for Standardization (CEN) and the European Committee for Electrotechnical Standardization (CENELEC) are considered permanent members of the advisory forum for the regulation, as specified in Article 67 of the AI Act. As the practical application of the AI Act will rely on the development and implementation of harmonized standards [15], in response to request [27] by the European Commission, CEN and CENELEC accepted to prepare a work programme of European standards and European standardization deliverables [66]. Notably, AI conformity assessment and risk management are included, as one of the targets (among others) of Task Group Inclusiveness, while the FRIA is not referred in the non-binding first newsletter [66]. As part of broader efforts to support standardization for legally and ethically fair AI systems, the critical actions necessitate a dialogue between the fairness-aware metrics and principles in light of the FRIA, and the conformity assessment (as described in Sec. 5). In parallel with the provisions of the AI Act, standardization efforts should also consider the 2019 Ethics guidelines for trustworthy AI [17] along with the Assessment List for Trustworthy AI [18], as the Guidelines are recalled in Recital 27 of the AI Act into the risk-based approach of the regulation.
+
+Interference between fairness-aware machine learning measures and the assessments provided by the AI Act: During the conformity assessment process, several requirements must be examined, as illustrated in Fig. 6. In particular, there is a strong interference between the technical measures for ensuring AI fairness and the identification and mitigation of unfair discrimination in high-risk AI systems [Article 10(2)(f),(g)] in order to achieve the aims of the regulation. The detection of AI bias can be identified through technical measures that examine AI fairness, which also according to Article 9(5) of the AI Act can guide the design and development of the AI system to prevent or, where prevention is not possible, mitigate relevant risks [50]. The accountability of AI system providers should be placed at the forefront, supported by essential documentation, justifications regarding the process, and the technical solutions that must accompany this assessment to demonstrate practical compliance.
+
+With regards to the FRIA, the risk assessment requirements [of Article 27(1)(a)-(f)] could play a vital role in technical metrics that address bias in the context of high-risk systems, as their implementation can help to evaluate, justify and measure under subpar. (d) "the specific risks of harm likely to have an impact on the categories of natural persons or groups of persons..." under statistical measurable criteria. As the FRIAs are expected to be implemented as contextbased assessments [50], we would like to highlight the relevance of this condition, which can thus integrate specialized AI fairness metrics designed for individual contexts into the determination of explicit measures and attributes, as well as the setting of acceptable thresholds. More specifically, in terms of identifying/measuring discriminatory risks under the assessment, the establishment of criteria based on the AI fairness metrics can contribute to evaluating the discriminatory risks that AI bias may pose to individuals. In particular, this can be achieved through the analysis of proxies, enabling the exploration of protected grounds and examination of important correlations that lead to discriminatory risks. Moreover, an additional element of the FRIA that could ultimately involve AI fairness metrics and solutions refers to Article 27(1)(f) and especially on "the measures to be taken in the case of the materialization of those risks, including the arrangements for internal governance and complaint mechanisms." The implementation of technical solutions (in this case of the proposed method, concerning SES) could serve as a means to address the issue by reconfiguring AI bias in this area, and thus mitigate risks (under the FRIA) when an AI system exhibits risks related to the presence of discrimination. In parallel, the integration of specific AI fairness technical algorithmic solutions can contribute to enhancing a comprehensive management plan aimed at ensuring compliance, during the phase of addressing and responding to the potentially discriminatory outcomes derived from this assessment.
+
+# 7 CONCLUSIONS, LIMITATIONS, AND FUTURE DIRECTIONS
+
+In this work, we introduced Socio-Economic Parity (SEP), a novel AI fairness notion, alongside Conditional Socio-Economic Parity (CSEP), to address SES-driven disparities in AI systems, under the prism of the EU AI Act. This interdisciplinary study aims to bridge legal science and ML and highlight aspects that require further attention and exploration. Our empirical evaluation using Adult demonstrates that CSEP effectively rewards high-effort underprivileged protected groups while maintaining comparable error rates across the broader underprivileged female population, and accounting for equity across the conditional attribute categories. Despite these promising results, further investigation is required to address remaining limitations and ensure real-world applicability:
+
+· Scope of evaluation The empirical evaluation is currently limited to Adult, a commonly used benchmark in fairness research. Future work should test the proposed framework on additional datasets representing diverse fairness scenarios to ensure its generalizability across different contexts.
+
+· Context-specificity The proposed framework relies on contextspecific definitions and proxies for socio-economic status (e.g., capital gain) and individual effort (e.g., working hours). These were chosen to illustrate the underlying concepts, however, such definitions and proxies should generally be tailored to the specific problem or domain.
+
+· Computational overhead Additional constraints introduced in the notion increases the training computation, and might need relaxation of tolerance threshold 𝜖 for convergence.
+
+Despite these limitations, the framework offers a strong foundation for addressing financial exclusion through the exploration of (un)privileged groups. The critical balance achieved by SEP relies on measurable evidence provided by the model, enhancing transparency and supported by comprehensive legal explanations for all decisions. In particular, the introduction of comparators' groups through the concept of indirect discrimination provides an effective tool for identifying and addressing inequalities between privileged and underprivileged groups within the SES. Empirically, our experiments show that applying an SEP-driven fairness constraint can reward high-effort underprivileged subgroups while maintaining comparable error rates across the broader population, underscoring SEP's potential to narrow socioeconomic gaps in machine-learning applications without sacrificing performance.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: Achieving Socio-Economic Parity through the Lens of EU AI Act Conference acronym 'XX, June 03-05, 2018, Woodstock, NY -->
+
+Through our legal analysis, we also emphasized the importance of strengthening SES within the EU AI Act. The rapid development of the AI sector, highlights the need to refine SES-related evaluations, given its current status as a non-protected ground under EU law. Enhanced SES protection can be reinforced through AI Act assessments, especially considering discrimination risks.
+
+A vital next step involves leveraging statistical data from sociological and economic studies focused on SES-specific contexts, which can further solidify SES-aware decisions in AI frameworks. We hope this work will inspire further studies on the role of SES in fairness-aware machine learning.
+
+# ACKNOWLEDGMENTS
+
+This research work was funded by the European Union under the Horizon Europe MAMMOth project, Grant Agreement ID: 101070285. UK participant in Horizon Europe Project MAMMOth is supported by UKRI grant number 10041914 (Trilateral Research LTD). The work of Arjun Roy is also supported by the EU Horizon Europe project STELAR, Grant Agreement ID: 101070122.
+
+# References
+
+[1] Alekh Agarwal, Alina Beygelzimer, Miroslav Dudík, John Langford, and Hanna Wallach. 2018. A reductions approach to fair classification. In International conference on machine learning. 60-69.
+
+[2] Stanford University AI Index Steering Committee, Institute for HumanCentered AI. 2024. The AI Index 2024 Annual Report: Public Data.
+
+[3] Jose M Alvarez, Alejandra Bringas Colmenarejo, Alaa Elobaid, Simone Fabbrizzi, Miriam Fahimi, Antonio Ferrara, Siamak Ghodsi, Carlos Mougan, Ioanna Papageorgiou, Paula Reyero, et al. 2024. Policy advice and best practices on bias and fairness in AI. Ethics and Information Technology 26, 2 (2024), 31.
+
+[4] Guilherme Alves, Fabien Bernier, Miguel Couceiro, Karima Makhlouf, Catuscia Palamidessi, and Sami Zhioua. 2023. Survey on fairness notions and related tensions. EURO journal on decision processes 11 (2023), 100033.
+
+[5] Yuval Arbel, Ronen Bar-El, and Yossi Tobol. 2017. Equal opportunity through higher education: Theory and evidence on privilege and ability. Technical Report. IZA Discussion Papers.
+
+[6] Shreya Atrey. 2018. The intersectional case of poverty in discrimination law. Human Rights Law Review 18, 3 (2018), 411-440.
+
+[7] Abhijit V Banerjee and Esther Duflo. 2019. Good economics for hard times. PublicAffairs.
+
+[8] Solon Barocas, Moritz Hardt, and Arvind Narayanan. 2023. Fairness and machine learning: Limitations and opportunities. MIT press.
+
+[9] Solon Barocas and Andrew D Selbst. 2016. Big data's disparate impact. California Law Review 104 (2016), 671.
+
+[10] Barry Becker and Ronny Kohavi. 1996. Adult. UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C5XW20.
+
+[11] Gary S Becker. 1985. Human capital, effort, and the sexual division of labor. Journal of labor economics 3, 1, Part 2 (1985), S33-S58.
+
+[12] Ruth MJ Byrne. 2019. Counterfactuals in explainable artificial intelligence (XAI): Evidence from human reasoning.. In Twenty-Eighth International Joint Conference on Artificial Intelligence. 6276-6282.
+
+[13] Alexander W Cappelen and Bertil Tungodden. 2009. Rewarding effort. Economic Theory 39 (2009), 425-441.
+
+[14] Alessandro Castelnovo, Riccardo Crupi, Greta Greco, Daniele Regoli, Ilaria Giuseppina Penco, and Andrea Claudio Cosentini. 2022. A clarification of the nuances in the fairness metrics landscape. Scientific Reports 12, 1 (2022), 4209.
+
+[15] CEN-CENELEC JTC 21. 2022. Business Plan for JTC 21. https://standards. cencenelec.eu/BPCEN/2916257.pdf
+
+[16] European Commission. 2022. 2022 Factsheet on the gender pay gap. https://commission.europa.eu/document/download/61252380-e608-4157-818d-e81619715310_en?filename=equal_pay_day_factsheet_2022_en_1_0.pdf
+
+[17] European Commission, Content Directorate-General for Communications Networks, and Technology. 2019. Ethics guidelines for trustworthy AI. Publications Office.
+
+[18] European Commission, Content Directorate-General for Communications Networks, and Technology. 2020. The Assessment List for Trustworthy Artificial Intelligence (ALTAI) for self assessment. Publications Office.
+
+[19] European Commission, Directorate-General for Justice, Consumers, I Chopin, and C Germaine. 2020. A comparative analysis of non-discrimination law in Europe 2019. The 28 EU Member States, Albania, North Macedonia, Iceland, Liechtenstein, Montenegro, Norway, Serbia and Turkey compared. Publications Office. https: //doi.org/doi/10.2838/797667
+
+[20] Bart Custers, Toon Calders, Bart Schermer, and Tal Zarsky. 2012. Discrimination and Privacy in the Information Society: Data Mining and Profiling in Large Databases. Vol. 3. Springer Science & Business Media.
+
+[21] Luca Deck, Jan-Laurin Müller, Conradin Braun, Domenique Zipperling, and Niklas Kühl. 2024. Implications of the AI Act for Non-Discrimination Law and Algorithmic Fairness. arXiv preprint arXiv:2403.20089 (2024).
+
+[22] Sionaidh Douglas-Scott. 2011. The European Union and human rights after the Treaty of Lisbon. Human rights law review 11, 4 (2011), 645-682.
+
+[23] Cynthia Dwork, Moritz Hardt, Toniann Pitassi, Omer Reingold, and Richard Zemel. 2012. Fairness through awareness. In 3rd Innovations in Theoretical Computer Science Conference. 214-226.
+
+[24] Ronald Dworkin. 2018. What is equality? Part 2: Equality of resources. In The notion of equality. Routledge, 143-205.
+
+[25] Virginia Eubanks. 2018. Automating inequality: How high-tech tools profile, police, and punish the poor. St. Martin's Press.
+
+[26] Eurofound. 2011. Positive action, European Industrial Relations Dictionary, Dublin. https://www.eurofound.europa.eu/en/european-industrial-relationsdictionary/positive-action
+
+[27] European Commission. 2023. Commission implementing decision on a standardisation request to the European Committee for Standardisation and the European Committee for Electrotechnical Standardisation in support of Union policy on artificial intelligence. https://ec.europa.eu/transparency/documentsregister/api/files/C(2023)3215_0/de00000001048942?rendition=false
+
+[28] Fiona Katharina Ewald, Ludwig Bothmann, Marvin N Wright, Bernd Bischl, Giuseppe Casalicchio, and Gunnar König. 2024. A guide to feature importance methods for scientific inference. In World Conference on Explainable Artificial Intelligence. Springer, 440-464.
+
+[29] European Union Agency for Fundamental Rights. 2022. Bias in algorithms - Artificial intelligence and discrimination. Publications Office of the European Union. http://fra.europa.eu/en/publication/2022/bias-algorithm
+
+[30] European Union Agency for Fundamental Rights and Council of Europe. 2018. Handbook on European Non-discrimination Law-2018 edition. Publications Office of the European Union. https://fra.europa.eu/en/publication/2018/handbookeuropean-non-discrimination-law-2018-edition
+
+[31] Sandra Fredman. 2011. Discrimination Law. Oxford University Press, Oxford.
+
+[32] Sarah Ganty. 2021. Poverty as misrecognition: What role for antidiscrimination law in Europe? Human Rights Law Review 21, 4 (2021), 962-1007.
+
+[33] Sarah Ganty and Juan Carlos Benito Sanchez. 2021. Expanding the List of Protected Grounds within Anti-Discrimination Law in the EU. S. Ganty and J.-C. Benito Sanchez, Expanding the List of Protected Grounds within Anti-Discrimination Law in the EU, Equinet (2021).
+
+[34] Janneke Gerards and Frederik Zuiderveen Borgesius. 2022. Protected grounds and the system of non-discrimination law in the context of algorithmic decisionmaking and artificial intelligence. Colorado Technology Law Journal 20 (2022), 1.
+
+[35] Janneke Gerards and Raphaële Xenidis. 2021. Algorithmic discrimination in Europe: Challenges and opportunities for gender equality and non-discrimination law. European Commission.
+
+[36] Philipp Hacker. 2018. Teaching fairness to artificial intelligence: existing and novel strategies against algorithmic discrimination under EU law. Common market law review 55, 4 (2018).
+
+[37] Victoria J Haneman. 2021. Wealth, Privilege, Power, and Opportunity. Jotwell: J. Things We Like (2021), 1.
+
+[38] Moritz Hardt, Eric Price, and Nati Srebro. 2016. Equality of opportunity in supervised learning. Advances in neural information processing systems 29 (2016).
+
+[39] Information Commissioner's Office (ICO). 2023. Guidance on AI and Data Protection. https://ico.org.uk/for-organisations/uk-gdpr-guidance-andresources/artificial-intelligence/guidance-on-ai-and-data-protection/how-dowe-ensure-fairness-in-ai/what-about-fairness-bias-and-discrimination/
+
+[40] Sofia Jaime and Christoph Kern. 2024. Ethnic classifications in algorithmic fairness: Concepts, measures and implications in practice. In The 2024 ACM Conference on Fairness, Accountability, and Transparency. 237-253.
+
+<!-- PageBreak -->
+

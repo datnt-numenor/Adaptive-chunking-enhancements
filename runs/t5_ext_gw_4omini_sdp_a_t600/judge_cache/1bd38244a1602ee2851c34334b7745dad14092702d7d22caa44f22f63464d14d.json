@@ -1,0 +1,14 @@
+{
+  "request_hash": "1bd38244a1602ee2851c34334b7745dad14092702d7d22caa44f22f63464d14d",
+  "prompt_sha256": "c88356515e59ec906ebcbdc3d6b3a8f382eb64755785fcbb7adb3179494c8a56",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORl079mQOcXIPrtp930okZJplxZ",
+  "prompt_tokens": 8415,
+  "completion_tokens": 35,
+  "actual_usd": 0.00128325,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that risk modeling involves both scenario building and risk estimation as integral components."
+  }
+}

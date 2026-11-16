@@ -1,0 +1,14 @@
+{
+  "request_hash": "dde7719e4250b69d9ba8ffcbc523dfae006fef89cc039c36b6ee03f4c3a3f61e",
+  "prompt_sha256": "5712658d9c7d4a5140810134a0eb01492183684bce6bba9b1011e4f274d4d138",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPCyguh5I7sNO62Pk8CjgcU4UhZg",
+  "prompt_tokens": 7993,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012265499999999999,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions a risk-based approach with different impact levels but does not explicitly define them as four levels or specify the range from I to IV as stated in the Reference Answer."
+  }
+}

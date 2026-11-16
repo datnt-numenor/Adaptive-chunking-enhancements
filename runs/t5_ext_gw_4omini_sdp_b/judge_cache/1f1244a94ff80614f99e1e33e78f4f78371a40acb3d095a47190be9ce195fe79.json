@@ -1,0 +1,14 @@
+{
+  "request_hash": "1f1244a94ff80614f99e1e33e78f4f78371a40acb3d095a47190be9ce195fe79",
+  "prompt_sha256": "b1e98067db4a04ce525ab584692158e7fd017aa8d20b6081f47c5cfcb988842f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLBKX2bXtpJrLsoscy6P5AzLNUV",
+  "prompt_tokens": 8106,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012404999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear reference to the Safety Assessment Principles (SAPs) from the ONR, fully supporting the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "2ca8b80745a906a8cc2d334ccd6c05580f6c48d54501648bfe7efc46d60e51e2",
+  "prompt_sha256": "bd114079cb0752eac4691e1bf3a13ed36f21d991c6709756941c7de4af672f6c",
+  "answer": "The recommended GCP storage class for data kept at least 90 days, such as disaster-recovery data, is Coldline Storage.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNDrsnDL0NCx5Eglk1OOzNsS2e1q",
+  "prompt_tokens": 7473,
+  "completion_tokens": 27,
+  "actual_usd": 0.0011371500000000002
+}

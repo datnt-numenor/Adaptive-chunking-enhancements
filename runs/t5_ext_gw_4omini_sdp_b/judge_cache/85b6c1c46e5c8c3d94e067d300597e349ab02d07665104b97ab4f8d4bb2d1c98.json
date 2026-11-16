@@ -1,0 +1,14 @@
+{
+  "request_hash": "85b6c1c46e5c8c3d94e067d300597e349ab02d07665104b97ab4f8d4bb2d1c98",
+  "prompt_sha256": "9011a796ab640b3067f45a98426addf5dd730efd6e2c882a9b9cfdbd9e84880f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjZK4Y9xOawR7rTDmfN9tsVxOV9",
+  "prompt_tokens": 6000,
+  "completion_tokens": 46,
+  "actual_usd": 0.0009276,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses the oligopolistic structure in biopharmaceuticals and contrasts it with the less defined structure in AI, fully supporting the claims made in the Reference Answer."
+  }
+}

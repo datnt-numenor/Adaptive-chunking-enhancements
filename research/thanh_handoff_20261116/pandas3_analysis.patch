@@ -1,0 +1,14 @@
+diff --git a/src/adaptive_chunking/paper/analysis.py b/src/adaptive_chunking/paper/analysis.py
+index 1888bf2..eda3888 100644
+--- a/src/adaptive_chunking/paper/analysis.py
++++ b/src/adaptive_chunking/paper/analysis.py
+@@ -819,7 +819,8 @@ def plot_metric_correlations(
+     spearman = df_for_corr.corr(method="spearman")
+ 
+     for m in (pearson, kendall, spearman):
+-        np.fill_diagonal(m.values, np.nan)
++        for i in range(min(m.shape)):
++            m.iat[i, i] = np.nan
+ 
+     masks = {
+         "pearson": np.triu(np.ones_like(pearson, dtype=bool), k=0),

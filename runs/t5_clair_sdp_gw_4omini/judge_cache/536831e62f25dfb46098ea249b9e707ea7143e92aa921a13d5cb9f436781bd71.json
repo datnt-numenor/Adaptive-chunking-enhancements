@@ -1,0 +1,14 @@
+{
+  "request_hash": "536831e62f25dfb46098ea249b9e707ea7143e92aa921a13d5cb9f436781bd71",
+  "prompt_sha256": "e73ae5c0c62ef9e9b205ffea5e3e8ee3a33e7c00cc7c3d5d1d7ab29eb8103843",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO0ZP4f51QHjwYLfFnOriMWQHGdw",
+  "prompt_tokens": 8680,
+  "completion_tokens": 40,
+  "actual_usd": 0.001326,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides a detailed description of Coldline Storage, including its characteristics and suitability for specific data storage needs, which fully supports the reference answer."
+  }
+}

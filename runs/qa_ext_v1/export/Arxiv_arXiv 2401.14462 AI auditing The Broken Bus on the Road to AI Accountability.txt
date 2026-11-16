@@ -1,0 +1,275 @@
+DOCUMENT: arXiv 2401.14462 AI auditing The Broken Bus on the Road to AI Accountability
+
+<<<PAGE 23>>>
+<Table>
+| Term(s)                                           |   # times used | # studies (% of total)   |
+|:--------------------------------------------------|---------------:|:-------------------------|
+| Terms in keywords (only terms in ≥ 1% of studies) |                |                          |
+| fairness/fair                                     |             75 | 66 (25.1%)               |
+| bias/biases/biased                                |             75 | 65 (24.7%)               |
+| audit/audits/auditing                             |             56 | 49 (18.6%)               |
+| accountability/accountable                        |             42 | 41 (15.6%)               |
+| ethics/ethical                                    |             26 | 26 (9.9%)                |
+| impact/impacts                                    |             17 | 15 (5.7%)                |
+| evaluate/evaluation/evaluations/evaluating        |             17 | 13 (4.9%)                |
+| privacy                                           |             16 | 12 (4.6%)                |
+| transparency                                      |             12 | 12 (4.6%)                |
+| explainability/explanations/explanation/xai       |             12 | 10 (3.8%)                |
+| discrimination/discriminatory                     |              8 | 8 (3.0%)                 |
+| justice                                           |              8 | 8 (3.0%)                 |
+| governance                                        |              6 | 6 (2.3%)                 |
+| hate speech                                       |              6 | 6 (2.3%)                 |
+| impact assessment(s)                              |              6 | 6 (2.3%)                 |
+| disparate impact / disparity / disparities        |              5 | 5 (1.9%)                 |
+| gender bias                                       |              5 | 5 (1.9%)                 |
+| harm/harms                                        |              5 | 5 (1.9%)                 |
+| risk                                              |              5 | 5 (1.9%)                 |
+| data protection                                   |              5 | 4 (1.5%)                 |
+| interpretability                                  |              4 | 4 (1.5%)                 |
+| misinformation                                    |              6 | 4 (1.5%)                 |
+| security                                          |              4 | 4 (1.5%)                 |
+| surveillance                                      |              4 | 4 (1.5%)                 |
+| trust                                             |              4 | 4 (1.5%)                 |
+| accessibility                                     |              3 | 3 (1.1%)                 |
+| Terms in abstract (only terms in ≥ 5% of studies) |                |                          |
+| bias/biases/biased                                |            325 | 99 (29.4%)               |
+| audit/audits/auditing                             |            201 | 87 (25.8%)               |
+| impact/impacts                                    |            135 | 85 (25.2%)               |
+| fairness/fair                                     |            271 | 78 (23.1%)               |
+| evaluate/evaluation/evaluations/evaluating        |            114 | 69 (20.5%)               |
+| accountability/accountable                        |            112 | 56 (16.6%)               |
+| harm/harms                                        |             74 | 44 (13.1%)               |
+| transparency                                      |             62 | 44 (13.1%)               |
+| ethics/ethical                                    |             65 | 37 (11.0%)               |
+| discrimination/discriminatory                     |             57 | 34 (10.1%)               |
+| risk                                              |             55 | 34 (10.1%)               |
+| mitigate                                          |             31 | 28 (8.3%)                |
+| privacy                                           |             56 | 25 (7.4%)                |
+| explainability/explanations/explanation/xai       |             63 | 22 (6.5%)                |
+| disparate impact / disparity / disparities        |             37 | 21 (6.2%)                |
+| justice                                           |             31 | 21 (6.2%)                |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<Table>
+| Term(s)                                                                                                         |   # times used | # studies (% of total)   |
+|:----------------------------------------------------------------------------------------------------------------|---------------:|:-------------------------|
+| Terms in keywords (only terms in ≥ 1% of studies) social media / social networks / facebook / twitter / youtube |             18 | 17 (6.5%)                |
+| computer vision                                                                                                 |             13 | 13 (4.9%)                |
+| health/healthcare/medical                                                                                       |             14 | 11 (4.2%)                |
+| natural language / language processing                                                                          |             22 | 11 (4.2%)                |
+| advertising/ads                                                                                                 |              8 | 7 (2.7%)                 |
+| platform/platforms                                                                                              |              6 | 6 (2.3%)                 |
+| hiring/employment                                                                                               |              5 | 5 (1.9%)                 |
+| policing/police                                                                                                 |              5 | 5 (1.9%)                 |
+| credit                                                                                                          |              4 | 4 (1.5%)                 |
+| criminal justice                                                                                                |              4 | 4 (1.5%)                 |
+| multimodal                                                                                                      |              4 | 4 (1.5%)                 |
+| search engines                                                                                                  |              4 | 4 (1.5%)                 |
+| speech recognition / speaker recognition / speaker verification                                                 |              6 | 4 (1.5%)                 |
+| automated decision                                                                                              |              3 | 3 (1.1%)                 |
+| facial recognition / face recognition                                                                           |              3 | 3 (1.1%)                 |
+| generative                                                                                                      |              3 | 3 (1.1%)                 |
+| google                                                                                                          |              3 | 3 (1.1%)                 |
+| government                                                                                                      |              3 | 3 (1.1%)                 |
+| risk assessment                                                                                                 |              3 | 3 (1.1%)                 |
+| social credit                                                                                                   |              3 | 3 (1.1%)                 |
+| welfare                                                                                                         |              3 | 3 (1.1%)                 |
+| Terms in abstract (only terms in ≥ 5% of studies) platform/platforms                                            |             99 | 45 (13.4%)               |
+| health/healthcare/medical                                                                                       |             89 | 42 (12.5%)               |
+| social media / social networks / facebook / twitter / youtube                                                   |             99 | 40 (11.9%)               |
+| advertising/ads                                                                                                 |             79 | 21 (6.2%)                |
+| hiring/employment                                                                                               |             23 | 18 (5.3%)                |
+| google                                                                                                          |             22 | 17 (5.0%)                |
+| government                                                                                                      |             22 | 17 (5.0%)                |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+<Table>
+| Term(s)                                                                 |   # times used | # studies (% of total)   |
+|:------------------------------------------------------------------------|---------------:|:-------------------------|
+| Terms in keywords (only terms in ≥ 1% of studies) sociotechnical        |              9 | 9 (3.4%)                 |
+| participatory                                                           |              8 | 7 (2.7%)                 |
+| hci                                                                     |              7 | 6 (2.3%)                 |
+| qualitative/ethnography/interviews/interviewed/workshop(s)              |              7 | 5 (1.9%)                 |
+| participatory design                                                    |              5 | 5 (1.9%)                 |
+| community/communities                                                   |              4 | 4 (1.5%)                 |
+| human centered                                                          |              4 | 4 (1.5%)                 |
+| interdisciplinary                                                       |              5 | 3 (1.1%)                 |
+| Terms in abstract (only terms in ≥ 5% of studies) community/communities |             70 | 48 (14.2%)               |
+| qualitative/ethnography/interviews/interviewed/workshop(s)              |             37 | 26 (7.7%)                |
+| benchmark/benchmarks                                                    |             50 | 24 (7.1%)                |
+| sociotechnical                                                          |             27 | 22 (6.5%)                |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+# FREQUENT TERMS BY AUDIT TYPE: AUDIT MOTIVATION AND TYPES OF HARMS.
+
+<Table>
+| Term(s)                                    | # studies (% of studies of the same audit type).Data Audit   | # studies (% of studies of the same audit type).Product/Model/ Algo. Audit   | # studies (% of studies of the same audit type).Ecosystem Au- dit   | # studies (% of studies of the same audit type).Meta- Commentary   |
+|:-------------------------------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Terms in keywords                          |                                                              |                                                                              |                                                                     |                                                                    |
+| bias/biases/biased                         | 8 (29.6%)                                                    | 48 (28.4%)                                                                   | 3 (20.0%)                                                           | 6 (11.5%)                                                          |
+| fairness/fair                              | 8 (29.6%)                                                    | 40 (23.7%)                                                                   | 3 (20.0%)                                                           | 15 (28.8%)                                                         |
+| audit/audits/auditing                      | 1 (3.7%)                                                     | 35 (20.7%)                                                                   | 1 (6.7%)                                                            | 12 (23.1%)                                                         |
+| accountability/accountable                 | 1 (3.7%)                                                     | 16 (9.5%)                                                                    | 3 (20.0%)                                                           | 21 (40.4%)                                                         |
+| ethics/ethical                             | 3 (11.1%)                                                    | 13 (7.7%)                                                                    | 0                                                                   | 10 (19.2%)                                                         |
+| Terms in abstract                          |                                                              |                                                                              |                                                                     |                                                                    |
+| bias/biases/biased                         | 18 (39.1%)                                                   | 69 (32.5%)                                                                   | 2 (13.3%)                                                           | 10 (15.6%)                                                         |
+| fairness/fair                              | 8 (17.4%)                                                    | 45 (21.2%)                                                                   | 4 (26.7%)                                                           | 21 (32.8%)                                                         |
+| audit/audits/auditing                      | 4 (8.7%)                                                     | 57 (26.9%)                                                                   | 1 (6.7%)                                                            | 25 (39.1%)                                                         |
+| evaluate/evaluation/evaluations/evaluating | 11 (23.9%)                                                   | 45 (21.2%)                                                                   | 2 (13.3%)                                                           | 11 (17.2%)                                                         |
+| impact/impacts                             | 12 (26.1%)                                                   | 52 (24.5%)                                                                   | 4 (26.7%)                                                           | 17 (26.6%)                                                         |
+| accountability/accountable                 | 4 (8.7%)                                                     | 29 (13.7%)                                                                   | 5 (33.3%)                                                           | 18 (28.1%)                                                         |
+| transparency                               | 5 (10.9%)                                                    | 26 (12.3%)                                                                   | 4 (26.7%)                                                           | 9 (14.1%)                                                          |
+| ethics/ethical                             | 7 (15.2%)                                                    | 19 (9.0%)                                                                    | 2 (13.3%)                                                           | 9 (14.1%)                                                          |
+| harm/harms                                 | 8 (17.4%)                                                    | 19 (9.0%)                                                                    | 4 (26.7%)                                                           | 13 (20.3%)                                                         |
+| risk                                       | 2 (4.3%)                                                     | 20 (9.4%)                                                                    | 3 (20.0%)                                                           | 9 (14.1%)                                                          |
+| mitigate                                   | 3 (6.5%)                                                     | 18 (8.5%)                                                                    | 3 (20.0%)                                                           | 4 (6.2%)                                                           |
+</Table>
+
+Showing only terms that appear in ≥ 15% of studies for at least one audit type (bolded).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+<Table>
+| Term(s).                                                                        | # studies (% of studies of the same audit type).Data Audit   | # studies (% of studies of the same audit type).Product/Model/ Algo. Audit   | # studies (% of studies of the same audit type).Ecosystem Au- dit   | # studies (% of studies of the same audit type).Meta- Commentary   |
+|:--------------------------------------------------------------------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Terms in keywords social media / social networks / facebook / twitter / youtube | 0                                                            | 17 (10.1%)                                                                   | 0                                                                   | 0                                                                  |
+| natural language / language processing                                          | 3 (11.1%)                                                    | 6 (3.6%)                                                                     | 1 (6.7%)                                                            | 1 (1.9%)                                                           |
+| computer vision                                                                 | 7 (25.9%)                                                    | 5 (3.0%)                                                                     | 0                                                                   | 1 (1.9%)                                                           |
+| welfare                                                                         | 1 (3.7%)                                                     | 0                                                                            | 2 (13.3%)                                                           | 0                                                                  |
+| child welfare                                                                   | 0                                                            | 0                                                                            | 2 (13.3%)                                                           | 0                                                                  |
+| Terms in abstract social media / social networks / facebook / twitter           | 2 (4.3%)                                                     | 38 (17.9%)                                                                   | 0                                                                   | 0                                                                  |
+| / youtube platform/platforms                                                    | 1 (2.2%)                                                     | 42 (19.8%)                                                                   | 1 (6.7%)                                                            | 1 (1.6%)                                                           |
+| health/healthcare/medical                                                       | 5 (10.9%)                                                    | 30 (14.2%)                                                                   | 1 (6.7%)                                                            | 6 (9.4%)                                                           |
+| computer vision                                                                 | 7 (15.2%)                                                    | 8 (3.8%)                                                                     | 0                                                                   | 1 (1.6%)                                                           |
+| natural language / language processing                                          | 5 (10.9%)                                                    | 9 (4.2%)                                                                     | 0                                                                   | 1 (1.6%)                                                           |
+| hiring/employment                                                               | 2 (4.3%)                                                     | 11 (5.2%)                                                                    | 2 (13.3%)                                                           | 3 (4.7%)                                                           |
+| government                                                                      | 2 (4.3%)                                                     | 8 (3.8%)                                                                     | 3 (20.0%)                                                           | 4 (6.2%)                                                           |
+| welfare                                                                         | 1 (2.2%)                                                     | 3 (1.4%)                                                                     | 2 (13.3%)                                                           | 0                                                                  |
+| child welfare                                                                   | 0                                                            | 1 (0.5%)                                                                     | 2 (13.3%)                                                           | 0                                                                  |
+| education                                                                       | 1 (2.2%)                                                     | 6 (2.8%)                                                                     | 2 (13.3%)                                                           | 1 (1.6%)                                                           |
+</Table>
+
+Showing only terms that appear in ≥ 10% of studies for at least one audit type (bolded).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+<Table>
+| Term(s).                                                   | # studies (% of studies of the same audit type).Data Audit   | # studies (% of studies of the same audit type).Product/Model/ Algo. Audit   | # studies (% of studies of the same audit type).Ecosystem Au- dit   | # studies (% of studies of the same audit type).Meta- Commentary   |
+|:-----------------------------------------------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Terms in keywords                                          |                                                              |                                                                              |                                                                     |                                                                    |
+| qualitative/ethnography/interviews/interviewed/workshop(s) | qualitative/ethnography/interviews/interviewed/workshop(s)   | 3 (1.8%)                                                                     | 2 (13.3%)                                                           | 0                                                                  |
+| participatory                                              | participatory                                                | 1 (0.6%)                                                                     | 3 (20.0%)                                                           | 3 (5.8%)                                                           |
+| participatory design                                       | participatory design                                         | 0                                                                            | 3 (20.0%)                                                           | 2 (3.8%)                                                           |
+| human centered                                             | human centered                                               | 2 (1.2%)                                                                     | 2 (13.3%)                                                           | 0                                                                  |
+| Terms in abstract                                          |                                                              |                                                                              |                                                                     |                                                                    |
+| benchmark/benchmarks                                       | 14 (30.4%)                                                   | 6 (2.8%)                                                                     | 0                                                                   | 4 (6.2%)                                                           |
+| community/communities                                      | 9 (19.6%)                                                    | 21 (9.9%)                                                                    | 6 (40.0%)                                                           | 12 (18.8%)                                                         |
+| qualitative/ethnography/interviews/interviewed/            | 3 (6.5%)                                                     | 13 (6.1%)                                                                    | 6 (40.0%)                                                           | 4 (6.2%)                                                           |
+| workshop(s) sociotechnical                                 | 1 (2.2%)                                                     | 12 (5.7%)                                                                    | 1 (6.7%)                                                            | 8 (12.5%)                                                          |
+| hci                                                        | 0                                                            | 3 (1.4%)                                                                     | 2 (13.3%)                                                           | 1 (1.6%)                                                           |
+| participatory                                              | 1 (2.2%)                                                     | 0                                                                            | 2 (13.3%)                                                           | 1 (1.6%)                                                           |
+</Table>
+
+Showing only terms that appear in ≥ 10% of studies for at least one audit type (bolded).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+APPENDIX C ADDITIONAL RESULTS Below, we include more detailed summaries of the nonacademic auditors we reviewed.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+<Table>
+| Consulting Agencies   | ORCAA                                                                                                                  | Eticas                                                                                                                                                                          | Babl AI                                                                                                                      |
+|:----------------------|:-----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| Motivation            | regulatory compliance, performance testing, measure and mitigate disparate performance                                 | help companies comply with legal require- ments, security and data protection, fairness, bias and model accuracy                                                                | bias assessment, risk and impact assessment                                                                                  |
+| Target                | predictive scoring systems, hiring algorithms, healthcare AI, AI platforms, ADS, FRT                                   | risk assessment algorithms; social media platforms such as tiktok and youtube; ride hailing apps, such as uber, cabify and bolt; algorithms used by governments and compa- nies | their clients include universities, small AI companies, startups like Proctorio                                              |
+| Types of harm         | discrimination, bias, measure gender and race/ethnicity bias, assess for regulatory compliance                         | algorithmic systems (their functioning), to detect anomalies or practices that could be unfair towards protected groups or society                                              | bias, fairness, effectiveness, transparency, best policies and standards, privacy, compli- ance                              |
+| Institutional context | The agency assists tech giants and govern- ments, while its audits prioritize the concerns of marginalized communities | The consulting agency champions fairness for protected groups, yet also safeguards corporations from financial and reputational risks.                                          | Ultimately, they are consultants that work with/for clients to help orgs build trust with stakeholders.                      |
+| Methods               | internal tool (Ethical Matrix framework), re- view documents                                                           | data management planning, encryption, ethics due diligence and vetting                                                                                                          | in-house developed set of criteria used to conduct conduct bias testing, review docu- mentations, interact with stakeholders |
+| Impact                | some influence (albeit indirect) on policy (on the White House AI ethics blueprint)                                    | not clear                                                                                                                                                                       | none stated                                                                                                                  |
+</Table>
+
+<Table>
+| Corporate Audits   | Google                                                               | Facebook                                                                                                                                                                       |
+|:-------------------|:---------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Motivation         | identify potential issues relating to celebrity recognition products | help the company identify, prioritise, and implement improvements in accordance with civil rights "at the behest of the civil rights community and members of the US congress" |
+| Target             | Google's celebrity recognition API                                   | Facebook                                                                                                                                                                       |
+| Types of harm      | human rights *impacts*                                               | racial injustice, voter suppression, hate speech, algorithmic bias                                                                                                             |
+| Methods            | consultation with stakeholders, dialogue with expert resources       | interview with hundreds of civil rights orgs and advocates and members of congress                                                                                             |
+| Impact             | incorporation of some of the findings into product design            | facebook committed to implement (no information if these changes were in fact implemented) a new advertising system in accordance with civil rights                            |
+</Table>
+
+<Table>
+| Journalism            | The MarkUp                                                                                                   | Propublica                                                                                                                  |
+|:----------------------|:-------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Motivation            | Accountability, expose disparities injustice and illegal practice                                            | accountability, expose disparities in performance, privacy viola- tions, discrimination in deployed systems                 |
+| Target                | arge corporations/institutions, social media platforms, algorithms, content moderators                       | Gov't ADS, VLOPs (Facebook advertising, Amazon product placement) public programs with digital sites                        |
+| Types of harm         | Disparities, fraud, discrimination, legal compliance, privacy breach                                         | discrimination, privacy harms, cultural genocide, injustice                                                                 |
+| Institutional context | Targeting mostly tech firms/platforms, on behalf of general public; funded by foundations and private donors | Targeting public agencies and private companies, on behalf of general public; funded by foundations and private donors      |
+| Methods               | Inhouse audit tools, interview, data donation, reviewing docu- ments                                         | scraping, data donation, API exploitation, evaluation, interviews, qualitative evidence                                     |
+| Impacts               | high impact resulting in legislative and systemic (in the US)                                                | High impact, legislative action, company policy changes, COM- PAS a canonical work that set president for academic research |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+<Figure>
+Fig. C-I. Number of collected academic audit studies published in each year, grouped by publication source.
+</Figure>
+
+<Table>
+| Law firms      | BNH.AI                                              | Foxglove                                                                                                                                                                     | AWO                                                                                    |
+|:---------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|
+| Audit type     | information not available                           | Case study. algorithms, social media plat- forms, living conditions of tech workers                                                                                          | evaluative reviews of general industries or technologies, case studies                 |
+| Audit Goal     | compliance with standards                           | keeping tech giants and governments ac- countable                                                                                                                            | evaluate/design governance, protect data rights                                        |
+| Audit target   | models and data                                     | social media platforms, governments, content moderator, warehouse workers, gig-workers                                                                                       | VLOPs, private companies, FRT                                                          |
+| Type of harm   | legal compliance/liability/legal defence            | ustice, disparate performance, enforcing le- gal requirements                                                                                                                | privacy/data rights/surveillance violations, safety, digital manipulation/exploitation |
+| Methods        | information not available                           | legal compliance, anecdotal evidence                                                                                                                                         | documentation, critical commentary, policy development, legal/compliance research      |
+| Impact         | information not available                           | Sforced disclosure of secret contract between tech corps and governments, stopped the UK Home Office use of visa-streaming algo, reversed Ofqual's A level grading algorithm | litigation, change to govt's and corporate policy/strategy                             |
+| Power Analysis | corporate/for profit, confidential and privi- leged | non-profit                                                                                                                                                                   | corporate/for profit, consulting for both cor- porate and public agencies              |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+# TABLE C-XI
+
+# REGULATORS
+
+<Table>
+| Regulators           | ICO                                                                                                                                                       | NIST                                                                                     |
+|:---------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
+| General Objec- tives | Uphold information rights. Enforcing legal requirements. Regulatory interventions through guidance, enforcement notice, and issuing mon- etary penalties. | Quality assurance, develop best standards and regulatory practices                       |
+| Audit type           | Case studies                                                                                                                                              | Meta-commentary                                                                          |
+| Audit Goal           | Investigate and enforce regulations                                                                                                                       | Establish standards                                                                      |
+| Audit target         | Data, data sharing and management documents                                                                                                               | FRT, ADS                                                                                 |
+| Type of harm         | Legal compliance, privacy breach, data management                                                                                                         | Racial disparities, physical safety, functionality, privacy                              |
+| Methods              | Interview, testing, reviewing documents                                                                                                                   | Data trust, accuracy evaluation, benchmarking                                            |
+| Impact               | Significant monetary penalties issued                                                                                                                     | Significant contribution on standardisation                                              |
+| Power Analysis       | Targets companies and gov't agencies; has authority to enforce laws with fines                                                                            | Targets companies and gov't agencies; establishes standards but no enforcement authority |
+</Table>
+
+<!-- PageBreak -->
+

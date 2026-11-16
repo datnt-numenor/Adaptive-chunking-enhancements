@@ -1,0 +1,19 @@
+{"qas": [
+  {"question": "In the Dutch Data Protection Authority's AI & Algorithmic Risks Report, how does random sampling counter automation bias, and how does it relate to AI Act duties for high-risk providers?",
+   "answer": "Inspectors can be kept unaware of whether a case was selected randomly, so they cannot rely blindly on the algorithm and must stay critical. High-risk providers must identify and mitigate foreseeable risks such as discrimination, and the random sample can serve as a control tool for this.",
+   "evidence": [
+     {"page": 40, "quote": "This allows the process to be set up in such a way that the inspector does not know whether a case to be investigated has been selected randomly."},
+     {"page": 41, "quote": "Providers of high-risk systems are required to identify and mitigate reasonably foreseeable risks. Potential discrimination is such a risk. The random sample can be used as a control tool."}
+   ]},
+  {"question": "According to the Dutch AP's AI & Algorithmic Risks Report, which three functions should the global AI governance framework proposed in the UN 'Governing AI for Humanity' interim report cover?",
+   "answer": "The framework should identify and monitor AI developments, build consensus on international standards, and monitor systemic vulnerabilities to global stability.",
+   "evidence": [
+     {"page": 49, "quote": "This is partly achieved by setting up a global Al govern- ance framework, which covers the following functions: (i)"},
+     {"page": 49, "quote": "identifying and monitoring Al developments, (ii) building consensus on international standards and (iii) monitoring systemic vulnerabilities to global stability."}
+   ]},
+  {"question": "Per the Dutch Data Protection Authority's AI & Algorithmic Risks Report, roughly how many entries had Dutch public bodies logged in the national government algorithm transparency database by mid-2024?",
+   "answer": "The national Algorithm Register for public organisations held more than 400 algorithms at the end of June 2024.",
+   "evidence": [
+     {"page": 50, "quote": "Over the past six months, the national Algorithm Register for public organisations has been further filled, to more than 400 algorithms (end of June 2024)."}
+   ]}
+]}

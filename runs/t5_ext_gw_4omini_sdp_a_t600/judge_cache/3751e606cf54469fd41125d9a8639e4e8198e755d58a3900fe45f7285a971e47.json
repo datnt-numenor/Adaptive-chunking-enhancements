@@ -1,0 +1,14 @@
+{
+  "request_hash": "3751e606cf54469fd41125d9a8639e4e8198e755d58a3900fe45f7285a971e47",
+  "prompt_sha256": "937be17d5143be0db5e41405971e96ae1b4b291b3401c761a610bab7d56ae01a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKvJcgeJBwAZzk5m8gO3lht0NjU",
+  "prompt_tokens": 7316,
+  "completion_tokens": 60,
+  "actual_usd": 0.0011334,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the exclusion of local, ex-post methods like Anchors, CEM, and DiCE, and identifying Decision Trees, RuleFit, and RuleSHAP as the best low-complexity candidates."
+  }
+}

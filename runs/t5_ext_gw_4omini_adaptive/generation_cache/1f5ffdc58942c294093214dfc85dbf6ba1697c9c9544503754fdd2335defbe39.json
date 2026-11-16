@@ -1,0 +1,10 @@
+{
+  "request_hash": "1f5ffdc58942c294093214dfc85dbf6ba1697c9c9544503754fdd2335defbe39",
+  "prompt_sha256": "12d78d75382ca441dd3aab4a6203c0b09193ed1413d8569936ea74236cdad40e",
+  "answer": "To assess whether a FRIA is necessary, the following information is required: \n\n1. The role of the entity under the AI Act (whether it is a deployer or provider).\n2. The categorization of the AI system as high-risk based on the criteria established in Articles 6 and 27.\n3. Whether there is a valid exception or exemption for its use-case as outlined in Articles 6 and 27.\n\nThis assessment helps determine if a FRIA is required before deploying a high-risk AI system.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMyjL0kLWlWuzaBsX2k8r50IXtOO",
+  "prompt_tokens": 10056,
+  "completion_tokens": 104,
+  "actual_usd": 0.0015708
+}

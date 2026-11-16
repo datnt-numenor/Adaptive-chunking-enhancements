@@ -1,0 +1,14 @@
+{
+  "request_hash": "53915137529c4229c3240a6d5040038a90aca6846cb51c19d3cd53c3b614fc04",
+  "prompt_sha256": "6fdef5f35bf08a593d0ffd19ff707e7f8d2e54ba179af8a5f3fc3faea742ef18",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2K8xmqvX1ZSzVQJRZRvAFLGth7i",
+  "prompt_tokens": 8160,
+  "completion_tokens": 37,
+  "actual_usd": 0.0012462,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context discusses the importance of consent under GDPR but does not explicitly address the specific issue of opt-out consent being selected by default."
+  }
+}

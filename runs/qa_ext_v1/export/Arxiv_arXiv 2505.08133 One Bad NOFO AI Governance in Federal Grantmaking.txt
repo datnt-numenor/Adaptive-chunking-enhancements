@@ -1,0 +1,359 @@
+DOCUMENT: arXiv 2505.08133 One Bad NOFO AI Governance in Federal Grantmaking
+
+<<<PAGE 7>>>
+<!-- PageHeader: One Bad NOFO? AI Governance in Federal Grantmaking FAccT '25, June 23-26, 2025, Athens, Greece -->
+
+In educational contexts, the Department of Education offers funds to monitor student progress and outcomes, which may affect an individual' s access to education. In one program, the Department' s Office of Special Education and Rehabilitative Services prioritizes applicants using AI to meet the needs of students with disabilities. Through the program, the agency seeks evidence-based approaches to identify learners ' needs and provide individualized instruction.
+
+In healthcare contexts, several agencies provide funding to improve medical diagnoses through AI innovation. USAID offers funding soliciting the use of AI to ascertain patterns in social networks leading to identifying individuals at higher risk of contracting HIVan example of flagging individuals for intervention that OMB might review as an AI use with a significant effect on human health and safety.
+
+# 4.4 Conditions and Considerations for AI Use
+
+We find nine opportunities that place explicit guardrails on the development or use of AI. The conditions impose two kinds of guardrails: to disclose the use of AI and to discourage or prohibit AI use.
+
+In the case of disclosures, agencies will require applicants provide specific information to support their merit review. For example, we find one 2024 Department of Energy program requesting applicants to describe methods used and personnel responsible for carrying out AI-related activities. Such disclosures can include asking applicants to demonstrate awareness of AI risk policies: in 2024, the Department of Health and Human Services (HHS) issued an opportunity funding AI to improve healthcare data, asking applicants to show familiarity with safe and responsible AI principles as described by EO 14110 and HHS rules. Agencies can also require that AI prototypes be delivered to them at the end of the award for third-party auditing, as is the case in one 2018 NIJ opportunity to develop AI-based tools combating human trafficking.
+
+Concerns such as intellectual property rights, explainability, and capacity to evaluate proposals drive AI discouragements and prohibitions. A Library of Congress program to help create educational materials to build student literacy restricts awardees from using generative AI to produce project materials, detailing examples of prohibited uses and listing example banned tools like ChatGPT, BARD, Dall-E, MidJourney, and Stable Diffusion. The grant also clarifies that AI used for routine tasks, like spellchecking or image editing, is permissible. Similarly, a grant program from the National Endowment for the Humanities discourages award winners from using generative AI to prepare grant-funded media projects.
+
+The need to explain algorithmic predictions also yields grant conditions: A 2024 Environmental Protection Agency opportunity to treat water pollution blocks from funding "black box concepts "
+
+like machine learning. Lastly, the State Department' s funding showcases an evolving policy on AI that has grown more prohibitive over time. In early announcements, the Bureau of Democracy, Human Rights, and Labor states AI-based projects are " not typically considered competitive " (i.e., unlikely to receive grant funding); in more recent policies, the Bureau strengthened its language to a restriction, stating programs " must not" focus on AI without a clear strategic application for human rights. In these announcements, the Bureau also requires applicants using AI to comply with federal principles on the use of AI. In another State Department announcement, the agency restricts funding for AI-based projects aimed at developing American expertise in Eastern Europe. As part of its reasoning, the Department states that the agency does not have an evaluation expert to assess AI proposals, pointing prospective applicants elsewhere.
+
+Beyond restrictions, agencies signal the importance of responsible AI in other ways, including flagging AI-related equity concerns and investing in measuring outcomes associated with AI. The Department of Homeland Security and USAID highlight AI risks in program statements. USAID also includes links to resources on fairness and AI, recommending applicants consider those materials in order to submit a competitive proposal. Other agencies fund studies of AI' s ethical and safety-related issues. These include a 2024 State Department grant to mitigate AI-enabled chemical design risks; a 2023 National Endowment for the Humanities grant to study the ethical implications of AI; and a 2019 Department of Homeland Security grant asking applicants to propose strategies for their Civil Rights office to oversee machine learning tools.
+
+# 5 DISCUSSION
+
+Our central finding-that federal agencies rarely use grant conditions to govern AI-persists across administrations, regardless of shifting grant policy priorities. Whether the focus is on ideological bias, national security, economic competitiveness, or fairness and accountability, the core issue remains: when agencies forgo grant conditions, they forgo a key tool for advancing their priorities. Although a growing number of agencies promote AI in increasingly diverse ways, very few set AI-specific conditions at the pre-award stage. When they do, the conditions are broad disclosures, discouragements, or bans, rather than domain-specific policies tuned to the grant' s purpose. That so few agencies articulate specific AI policies is not necessarily surprising: an AI tool' s role may be too limited to justify extra oversight. Whether agencies should implement AI policies early in the funding lifecycle is a complex policy decision. To anticipate grant policy opportunities and challenges, we turn to an analogous context: government procurement policy.
+
+# 5.1 Lessons from AI Procurement Literature
+
+That most of the underlying issues outlined in the literature in AI procurement should also apply to grant is intuitive. Agency procurement offices, like grant offices, are inspired by private sector successes, and may sometimes overlook the importance of adapting these tools to their specific government contexts [55, 78]. Vendor marketing exacerbates this problem when over-promising what an AI-driven solution can do, creating a challenging task for agencies and award winners funding and purchasing AI tools [66, 77].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: FAccT '25, June 23-26, 2025, Athens, Greece Dan Bateyko and Karen Levy -->
+
+Another shared challenge for grantmakers and procurement officials alike is monitoring AI deployment. The transparency of AI spending has emerged as a key AI governance concern [89] in part because officials cannot impose conditions without knowing first what ' counts ' as AI. Definitional debates can delay consensus in policymaking [57, 60] and federal bureaucracies have struggled to track their use. Reviewing an early federal effort to inventory AI, Lawrence, Cui, and Ho [58] found that nearly half of agencies failed to include known machine-learning use cases. Their analysis suggests several obstacles, including that bureaucrats lack adequate training and face resource constraints. Notably, upskilling efforts for federal employees may not extend to many grantmakers; the 2022 AI Training Act, for example, does not explicitly cover grant specialists [12].
+
+However, the flexibility in grants, like in procurement, provides room for tailored oversight of AI deployments. Coglianese argues that contracting is advantageous because it allows public officials to tailor restrictions to each deployed AI tool [45]. Yet applying programmatic restrictions is a policy decision, and one not always acknowledged as such. The recognition that bureaucratic decisions embed political and ethical choices into public AI uses has been hard-earned. Mulligan and Bamberger [64] propose that procurement officials make policy choices about the purchase and use of machine learning tools through procurement processes. In response, they recommend bringing administrative law values, like reasoned explanation, to the technical process of procurement. Much like in procurement, grant management goes beyond simple procedure. In fact, since the 1980s, policymakers have called for a more administrative-law-style grantmaking process in recognition of this role [70, 71].
+
+# 5.2 Grant-Specific Challenges
+
+AI procurement studies provide lessons for grant policymaking, but grant management policies and practices have their own idiosyncrasies which require further investigation. First, agency discretion in choosing contracts versus grants can enable evasion of oversight by misclassifying spending [79]. Reasonable ambiguity exists in classifying funding: agencies have noted that R&D does not fall easily into either category [42]. Courts do not review misclassified grants unless a plaintiff alleges some legal injury, but in those cases, judicial scrutiny has corrected agency misclassifications [6, 8].
+
+Regulatory burden and the scope of administrative deference, a source of regular debate, is particularly contentious in grantmaking. Agency rules may add compliance requirements that grant recipients struggle to meet. For example, in a Congressional hearing on discretionary grants, stakeholders testified that certifying compliance can exclude and delay applicants from applying [25]. Critics of agency policy-setting in grants might suggest agencies overstep by imposing non-statutory requirements, while proponents reason that agency conditions serve as legitimate tools stemming from the necessary delegation of authority to agencies [73].
+
+Guidance and capacity constraints can arise in grants due to the delegation of oversight without sufficient guidance for award winners, as is exemplified in law enforcement grants. In analyzing discretionary grants to law enforcement from the Department of Homeland Security and the Department of Justice, Crump [46] finds that although the government provided incentives for purchasing surveillance equipment, it did not offer guidance on appropriate uses. As a result, Crump suggests, officials were unclear of their oversight responsibilities and failed to draft comprehensive data management plans. This delegation of oversight becomes challenging as grantmakers may lack the capacity relative to procurement to oversee grant conditions. Friedman, Harmon and Heydari, when describing efforts to reform conditions in policing grants, point out that enforcers are stretched in overseeing numerous recipients [39].
+
+# 5.3 Future Work
+
+Our analysis suggests several topics for study and important areas beyond our immediate scope.
+
+First, agencies face questions about how to incorporate AI expertise into their grantmaking processes. One approach to investigating this issue might involve conducting fact-finding through Requests for Information (RFIs) posted to Grants.gov. For example, in 2021, USAID solicited feedback on how gender bias in AI manifests in low and middle-income countries [48]. Crowdsourcing through grant portals may be a tailored way for agencies to gain domain knowledge from potential grant applicants. More study is also needed on how to effectively staff peer reviews to identify and judge AI applications. The extent to which agencies manage reviewer bias and conflicts of interest remains debated, reflecting broader questions of how to achieve objectivity in grant review processes [62, 76]. Recent controversies, like Congressional representatives ' allegations that the National Institute of Standards and Technology ' s AI Safety research grants ran afoul of sound science [15], exemplify these disputes. Future work could examine how agencies determine when to staff review panels with external experts and how they balance technical assessments with other review criteria.
+
+Grants are one of many financial assistance tools-other tools, such as prize competitions (" challenges "), raise similar innovation and oversight questions. Crawford and Wulkan [34] suggest prize competitions might spur AI innovation, a recommendation OMB has adopted previously in guidance [93]. These challenges may also raise concerns for privacy and equity, much like the grants in our dataset. Jegede et al.
+
+citejegedeChallengeAcceptedCritique2023 find " serious ethical and methodological issues " in the National Institute of Justice ' s recidivism forecasting challenge attributed to the agency ' s failure to adopt participatory AI design practices. Scholars might study creative pairings of funding instruments. For example, agencies that lack the capacity to host prize competitions can fund grantees to run them on the agency ' s behalf [10]. Some grants in our study mixed prizes with grants, allowing the agency to fund separately two applicants: one with the most accurate forecasting model, and one, in the agency ' s judgment, with the best proposal to implement the model.
+
+Finally, although we look at the federal level, grant policymaking among states deserves attention as well. For example, in 2024, the Illinois General Assembly proposed a change to the state ' s procurement code that would require AI disclosures in grants [28].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: One Bad NOFO? AI Governance in Federal Grantmaking FAccT '25, June 23-26, 2025, Athens, Greece -->
+
+# 6 CONCLUSION
+
+When grants are thought of as donations, as they often are, questions about their oversight fade from view. But they are not donations. They are agreements made to deliver a public benefit. Through grants, agencies can pilot new approaches, gather evidence to inform future decisionmaking, and improve public services. However, how agencies incentivize innovation or anticipate missteps and misconduct when funding emerging technologies like AI has remained largely unexplored. For a variety of reasons, we argue that policy setting in federal discretionary grantmaking has been an unappreciated site of AI governance study, and we draw overdue attention to it in this paper.
+
+Across federal agencies in our study, we find discretionary grant notices recommend AI as a goal or tool, but rarely imposing conditions on its use. These promotions are a channel for influencing AI use and adoption. By turning attention to grants, we echo the call from Mulligan and Bamberger [64] for a " public sector culture of algorithmic responsibility " in which bureaucrats move beyond a procedural mindset to promote transparency, fairness, and accountability in AI systems. Based on our findings, we emphasize the need for federal agencies to approach the setting of grant policy with an eye on AI' s challenges and opportunities.
+
+# ACKNOWLEDGMENTS
+
+We are indebted to Elizabeth Laird for prompting the initial inquiry into the governance of grantmaking, and to staff at the Center for Democracy & Technology, including Hannah Quay-de la Valle, Ridhi Shetty, and Quinn Anex-Ries, for their thoughtful contributions during an early phase of this paper. We thank the participants of the 2024 Privacy Law Scholars Conference, including Hilary Robinson, Richmond Wong, Kendra Albert, Amina Abdu, Christopher Morten, and Lance Mabry, for their thoughtful feedback on an early draft. Tracy Hamler Carrick at Cornell University ' s John S. Knight Institute for Writing in the Disciplines provided valuable writing support. This paper benefited from conversations with Amanda Levendowski, Emma Lurie, Sara Stadulis, and members of the Cornell Artificial Intelligence, Policy, and Practice initiative. We are grateful to the John D. and Catherine T. MacArthur Foundation and the Canadian Institute for Advanced Research for support.
+
+# REFERENCES
+
+[1] [n. d.]. Dimensions AI. https://www.dimensions.ai/
+
+[2] [n. d.]. Federal Awards, Search for "Facial Recognition " | "Cameras " from Department of Housing and Urban Development (HUD). https://www.usaspending. gov/search/?hash=bf433b0e8636216d3c0cda3e0e38b04a
+
+[3] [n. d.]. Govini Ark. https://www.govini.com/products/ark
+
+[4] 1978. Federal Grant and Cooperative Agreement Act of 1977. https://www. govinfo.gov/content/pkg/STATUTE-92/pdf/STATUTE-92-Pg3.pdf
+
+[5] 2006. Federal Funding Accountability and Transparency Act of 2006. https: //www.congress.gov/bill/109th-congress/senate-bill/2590/text
+
+[6] 2012. 360Training.Com Inc. v. United States.
+
+[7] 2013. Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards. https://www.federalregister.gov/documents/ 2013/12/26/2013-30465/uniform-administrative-requirements-cost-principlesand-audit-requirements-for-federal-awards
+
+[8] 2014. CMS Contract Mgmt. Servs. v. Mass. Hous. Fin. Agency.
+
+[9] 2019. Executive Order on Maintaining American Leadership in Artificial Intelligence - The White House. https://trumpwhitehouse.archives.gov/presidentialactions/executive-order-maintaining-american-leadership-artificialintelligence/
+
+[10] 2019. NIST Public Safety Innovation Accelerator Program: First Responder 3D Indoor Tracking Prize. https://grants.gov/search-results-detail/321433
+
+[11] 2021. Ensuring the Future Is Made in All of America by All of America ' s Workers. https://www.federalregister.gov/documents/2021/01/28/2021-02038/ ensuring-the-future-is-made-in-all-of-america-by-all-of-americas-workers
+
+[12] 2022. AI Training Act. https://www.congress.gov/bill/117th-congress/senatebill/2551/text
+
+[13] 2023. EO 13960 Artificial Intelligence (AI) Use Case Inventories: Guidance for Creating Agency Inventories of AI Use Cases Per EO 13960. Technical Report. Federal Chief Information Officers (CIO) Council. https://www.cio.gov/assets/ resources/2023-Guidance-for-AI-Use-Case-Inventories.pdf
+
+[14] 2023. Resources for Grantseekers. Technical Report. Congressional Research Service. https://crsreports.congress.gov/product/pdf/RL/RL34012
+
+[15] 2023. Science Committee Leaders Stress Importance of Diligence in NIST AI Safety Research Funding. https://science.house.gov/2023/12/science-committeeleaders-stress-importance-of-diligence-in-nist-ai-safety-research-funding
+
+[16] 2024. 2 CFR § 200. https://www.ecfr.gov/current/title-2/part-200. Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards.
+
+[17] 2024. 2 CFR § 200.203. https://www.ecfr.gov/current/title-2/part-200/section200.203. Requirement to Provide Public Notice of Federal Financial Assistance Programs.
+
+[18] 2024. 2 CFR § 200.204. https://www.ecfr.gov/on/2024-10-01/title-2/part-200/ section-200.204 Notices of Funding Opportunities.
+
+[19] 2024. 2 CFR § 200.208. https://www.ecfr.gov/current/title-2/part-200/section200.208. Specific Conditions.
+
+[20] 2024. 2 CFR § 200.211. https://www.ecfr.gov/current/title-2/part-200/section200.211. Information Contained in a Federal Award.
+
+[21] 2024. 2 CFR § 200.216. https://www.ecfr.gov/current/title-2/part-200/section200.216. Prohibition on Certain Telecommunications and Video Surveillance Equipment or Services.
+
+[22] 2024. 2 CFR § 200.300. https://www.ecfr.gov/current/title-2/part-200/section200.300. Statutory and National Policy Requirements.
+
+[23] 2024. 2 CFR § 200.329. https://www.ecfr.gov/current/title-2/part-200/section200.329 Monitoring and reporting program performance.
+
+[24] 2024. The Biden-Harris Administration Launches the Federal Program Inventory to Make Federal Spending More Transparent and Accessible. https://www.whitehouse.gov/omb/briefing-room/2024/02/15/the-biden-harrisadministration-launches-the-federal-program-inventory-to-make-federalspending-more-transparent-and-accessible/
+
+[25] 2024. Department of Transportation Discretionary Grants: Stakeholder Perspectives. https://transportation.house.gov/calendar/eventsingle.aspx?EventID= 407248
+
+[26] 2024. Driving U.S. Innovation In Artificial Intelligence. Technical Report. Bipartisan Senate AI Working Group. https://www.schumer.senate.gov/imo/media/doc/ Roadmap_ Electronic1.32pm.pdf
+
+[27] 2024. Framework for Nucleic Acid Synthesis Screening. Technical Report. National Science and Technology Council. https://www.whitehouse.gov/wp-content/ uploads/2024/04/Nucleic-Acid _ Synthesis _ Screening_ Framework.pdf
+
+[28] 2024. The Illinois Procurement Code. https://custom.statenet.com/ public/resources.cgi?mode=show _ text&id=ID:bill:IL2023000H5099&verid= IL2023000H5099 _ 20240208 _ 0 _ I&
+
+[29] 2024. Project Grants FY2024. https://www.usaspending.gov/search/?hash= ccb3c3c4a880d4717589b83093c4519c
+
+[30] 2024. Uniform Grants Guidance 2024 Revision. https://www.cfo.gov/assets/ files/Uniform%20Guidance%20 _ Reference%20Guides%20FINAL%204-2024.pdf
+
+[31] 2025. Appendix I to Part 200, Title 2 - Full Text of Notice of Funding Opportunity. https://www.ecfr.gov/current/title-2/appendix-Appendix%20I%20to% 20Part%20200
+
+[32] 2025. NIJ FY25 Research and Evaluation of Artificial Intelligence for Criminal Justice Purposes | National Institute of Justice. https://nij.ojp.gov/funding/ opportunities/o-nij-2025-172317
+
+[33] Madison Alder. 2024. U.S. Agencies Publish Plans to Comply with White House AI Memo. (2024). https://fedscoop.com/u-s-agencies-publish-plans-to-complywith-white-house-ai-memo/
+
+[34] Ali Crawford and Ido Wulkan. 2021. Federal Prize Competitions: Using Competitions to Promote Innovation in Artificial Intelligence. Technical Report. Center for Security and Emerging Technology. https://cset.georgetown.edu/publication/ federal-prize-competitions/
+
+[35] Kenneth J Allen. 2018. Federal Grant Practice. Thompson Reuters.
+
+[36] Caitlin Andrews. 2025. OMB memos outline government' s new AI use, procurement standards. International Association of Privacy Professionals (IAPP) (9 April 2025). https://iapp.org/news/a/omb-memos-outline-government-s-new-ai-useprocurement-standards Accessed: 2025-05-07.
+
+[37] Bettina K. Arkhurst and Wyatt Green Williams. 2024. Realizing Justice40: Addressing Structural Funding Barriers for Equitable Community Engagement in Energy RD&D. Journal of Science Policy & Governance 23, 02 (March 2024). https://doi.org/10.38126/JSPG230201
+
+[38] Pierre Azoulay and Danielle Li. 2020. Scientific Grant Funding. Technical Report. National Bureau of Economic Research, Cambridge, MA. https://doi.org/10.3386/
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: FAccT '25, June 23-26, 2025, Athens, Greece Dan Bateyko and Karen Levy -->
+
+w26889
+
+[39] Barry Friedman, Rachel Harmon, and Farhang Heydari. 2023. The Federal Government' s Role in Local Policing. Virginia Law Review 109, 8 (2023). https://virginialawreview.org/articles/the-federal-governments-rolein-local-policing/
+
+[40] Christopher R. Berry, Barry C. Burden, and William G. Howell. 2010. The President and the Distribution of Federal Spending. The American Political Science Review 104, 4 (2010), 783-799. jstor:40982897 https://www.jstor.org/stable/40982897
+
+[41] Joe Biden. 2023. Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence. https: //web.archive.org/web/20250120132537/https://www.whitehouse.gov/briefingroom/presidential-actions/2023/10/30/executive-order-on-the-safe-secureand-trustworthy-development-and-use-of-artificial-intelligence/
+
+[42] Bruce Allen Brown. 1988. A Federal Agency ' s Authority to Use a Cooperative Agreement for a Particular Project. Public Contract Law Journal 18, 1 (1988). https://www.jstor.org/stable/25755554
+
+[43] Francesca Buckland. 2024. New Web of Science Grants Index Helps Researchers Develop More Targeted Grant Proposals. https://clarivate.com/blog/newweb-of-science-grants-index-helps-researchers-develop-more-targeted-grantproposals/
+
+[44] Cody Venzke. 2023. ACLU Encourages OMB to Provide Robust Protections for Civil Rights and Civil Liberties in Government Uses of AI. https://www.aclu.org/documents/aclu-encourages-omb-to-provide-robustprotections-for-civil-rights-and-civil-liberties-in-government-uses-of-ai
+
+[45] Cary Coglianese. 2023. Procurement and Artificial Intelligence. https://doi.org/ 10.2139/ssrn.4591724
+
+[46] Catherine Crump. 2016. Surveillance Policy Making by Procurement. Washington Law Review 91, 4 (2016). https://doi.org/10.2139/ssrn.2737006
+
+[47] Dan Bateyko, Hannah Quay-de la Vallee, Ridhi Shetty, and Alexandra Reeve Givens. 2023. CDT Comments on OMB Draft Guidance for Agency Use of AI. Technical Report. Center for Democracy & Technology. https://cdt.org/insights/ cdt-comments-on-omb-draft-guidance-for-agency-use-of-ai/
+
+[48] Agency for International Development. 2021. Gender Inequity in Artificial Intelligence Activity. https://grants.gov/search-results-detail/332344
+
+[49] George W. Bush. 2002. The President's Management Agenda. Technical Report. Office of Management and Budget.
+
+[50] Grants. [n. d.]. Grant Eligibility. https://www.grants.gov/learn-grants/granteligibility.html
+
+[51] Grants.gov. [n. d.]. Grant-Making Agencies. https://www.grants.gov/learngrants/grant-making-agencies/
+
+[52] Grants.gov. [n. d.]. Other Grant-Making Agencies. https://www.grants.gov/learngrants/grant-making-agencies/other-grant-making-agencies
+
+[53] Grants.gov. 2024. XML Extract. https://grants.gov/xml-extract
+
+[54] Philip Hamburger. 2021. Purchasing Submission: Conditions, Power, and Freedom. Harvard University Press, Cambridge, Massachusetts.
+
+[55] Peter Henderson, Ben Chugg, Brandon Anderson, and Daniel E. Ho. 2022. Beyond Ads: Sequential Decision-Making Algorithms in Law and Public Policy. In Proceedings of the 2022 Symposium on Computer Science and Law (CSLAW '22). Association for Computing Machinery, New York, NY, USA, 87-100. https: //doi.org/10.1145/3511265.3550439
+
+[56] Natalie Keegan. 2012. Federal Grants-in-Aid Administration: A Primer. Technical Report. Congressional Research Service.
+
+[57] P. M. Krafft, Meg Young, Michael Katell, Karen Huang, and Ghislain Bugingo. 2020. Defining AI in Policy versus Practice. In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society. ACM, New York NY USA, 72-78. https: //doi.org/10.1145/3375627.3375835
+
+[58] Christie Lawrence, Isaac Cui, and Daniel Ho. 2023. The Bureaucratic Challenge to AI Governance: An Empirical Assessment of Implementation at U.S. Federal Agencies. In Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society (AIES '23). Association for Computing Machinery, New York, NY, USA, 606-652. https://doi.org/10.1145/3600211.3604701
+
+[59] Miranda J. Lee-Easton, Stephen Magura, and Michael J. Maranda. 2022. Utilization of Evidence-Based Intervention Criteria in U.S. Federal Grant Funding Announcements for Behavioral Healthcare. INQUIRY: The Journal of Health Care Organization, Provision, and Financing 59 (Jan. 2022), 00469580221126295. https://doi.org/10.1177/00469580221126295
+
+[60] Karen Levy, Kyla E. Chasalow, and Sarah Riley. 2021. Algorithms and DecisionMaking in the Public Sector. Annual Review of Law and Social Science 17, Volume 17, 2021 (Oct. 2021), 309-334. https://doi.org/10.1146/annurev-lawsocsci-041221023808
+
+[61] Douglas MacMillan. 2023. Eyes on the Poor: Cameras, Facial Recognition Watch over Public Housing. Washington Post (2023). https://www.washingtonpost. com/business/2023/05/16/surveillance-cameras-public-housing/
+
+[62] Thomas O McGarity. 1993. Peer Review in Awarding Discretionary Grants in the Arts and Sciences. Administrative Conference of the United States (1993).
+
+[63] Neil Millar, Bojan Batalo, and Brian Budgell. 2022. Trends in the Use of Promotional Language (Hype) in National Institutes of Health Funding Opportunity Announcements, 1992-2020. JAMA Network Open 5, 11 (Nov. 2022), e2243221.
+
+https://doi.org/10.1001/jamanetworkopen.2022.43221
+
+[64] Deirdre K. Mulligan and Kenneth A. Bamberger. 2019. Procurement As Policy: Administrative Process for Machine Learning. Berkeley Technology Law Journal 34 (Oct. 2019). https://doi.org/10.2139/ssrn.3464203
+
+[65] James F. Nagle. 1994. Review of Essentials of Grant Law Practice. Public Contract Law Journal 23, 2 (1994), 301-303. jstor:25754134 https://www.jstor.org/stable/ 25754134
+
+[66] Arvind Narayanan and Sayash Kapoor. 2024. AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference. Princeton University Press, Princeton.
+
+[67] Nestor Maslej, Loredana Fattorini, Raymond Perrault, Vanessa Parli, Anka Reuel, Erik Brynjolfsson, John Etchemendy, Katrina Ligett, Terah Lyons, James Manyika, Juan Carlos Niebles, Yoav Shoham, Russell Wald, and Jack Clark,. 2024. The AI Index 2024 Annual Report. Technical Report. Institute for Human-Centered AI. https://aiindex.stanford.edu/wp-content/uploads/2024/04/HAI _ 2024 _ AIIndex-Report.pdf
+
+[68] NIST. 2018. PSIAP Point Cloud City. https://www.nist.gov/ctl/pscr/fundingopportunities/past-funding-opportunities/psiap-point-cloud-city
+
+[69] Office of Inspector General Department of Homeland Security. 2021. DHS Has Made Progress in Meeting DATA Act Requirements, But Challenges Remain. (2021). https://www.oig.dhs.gov/reports/2020/dhs-has-made-progress-meetingdata-act-requirements-challenges-remain/oig-20-62-aug20
+
+[70] Administrative Conference of the United States. 1982. Resolving Disputes Under Federal Grant Programs. https://www.acus.gov/recommendation/resolvingdisputes-under-federal-grant-programs
+
+[71] Administrative Conference of the United States. 2023. Peer Review in the Award of Discretionary Grants. https://www.acus.gov/document/peer-review-awarddiscretionary-grants
+
+[72] National Security Commission on Artificial Intelligence. 2021. Final Report. (2021).
+
+[73] Eloise Pasachoff. 2014. Agency Enforcement of Spending Clause Statutes: A Defense of the Funding Cut-Off. Yale Law Journal 124 (Nov. 2014). https://www. yalelawjournal.org/article/agency-enforcement-of-spending-clause-statutes
+
+[74] Eloise Pasachoff. 2020. Federal Grant Rules and Realities in the Intergovernmental Administrative State: Compliance, Performance, and Politics. Yale Journal on Regulation 37 (2020).
+
+[75] Eloise Pasachoff. 2022. Executive Branch Control of Federal Grants: Policy, Pork, and Punishment. Ohio State Law Journal 83, 6 (May 2022). https://papers.ssrn. com/abstract=4107983
+
+[76] W. Nicholson Price. 2019. Grants. Berkeley Technology Law Journal 34, 1 (2019), 1-66. https://www.jstor.org/stable/26755225
+
+[77] Hannah Quay-de la Vallee, Ridhi Shetty, and Elizabeth Laird. 2024. The Federal Government' s Power of the Purse: Enacting Procurement Policies and Practices to Support Responsible AI Use. https://cdt.org/insights/report-thefederal-governments-power-of-the-purse-enacting-procurement-policiesand-practices-to-support-responsible-ai-use/
+
+[78] Inioluwa Deborah Raji, I. Elizabeth Kumar, Aaron Horowitz, and Andrew D. Selbst. 2022. The Fallacy of AI Functionality. In 2022 ACM Conference on Fairness, Accountability, and Transparency. 959-972. https://doi.org/10.1145/3531146. 3533158 arXiv:2206.09511 [cs]
+
+[79] KM Rylander. 1998. "Scanwell" Plus: Challenging the Propriety of a Federal Agency ' s Decision to Use a Federal Grant and Cooperative Agreement. Public Contract Law Journal 28, 1 (1998), 69-87.
+
+[80] Christian Schoeberl and Hanna Dohmen. 2023. Spurring Science: Examining U.S. Government Grant Activity in AI. (Nov. 2023). https://cset.georgetown.edu/ publication/spurring-science/
+
+[81] REI Systems. 2023. Current State of Grants Management.
+
+[82] The White House. 2025. The White House Office of Management and Budget Releases the President' s Fiscal Year 2026 Skinny Budget. https://www.whitehouse.gov/briefings-statements/2025/05/the-white-houseoffice-of-management-and-budget-releases-the-presidents-fiscal-year-2026skinny-budget/. Press release.
+
+[83] Donald J. Trump. 2025. Advancing Artificial Intelligence Education for American Youth. https://www.whitehouse.gov/presidential-actions/2025/04/advancingartificial-intelligence-education-for-american-youth/. Executive Order 14277.
+
+[84] Donald J. Trump. 2025. Initial Rescissions of Harmful Executive Orders and Actions. https://www.whitehouse.gov/presidential-actions/2025/01/initialrescissions-of-harmful-executive-orders-and-actions/. Executive Order 14148.
+
+[85] Donald J. Trump. 2025. Removing Barriers to American Leadership in Artificial Intelligence. https://www.whitehouse.gov/presidential-actions/2025/01/removingbarriers-to-american-leadership-in-artificial-intelligence/. Executive Order 14179.
+
+[86] Russell T. Vought. 2020. Fiscal Year (FY) 2022 Administration Research and Development Budget Priorities and Cross-Cutting Actions.
+
+[87] Russell T. Vought. 2020. M-21-06 Guidance for Regulation of Artificial Intelligence Applications. https://web.archive.org/web/20250106115446/https: //www.whitehouse.gov/wp-content/uploads/2020/11/M-21-06.pdf
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: One Bad NOFO? AI Governance in Federal Grantmaking FAccT '25, June 23-26, 2025, Athens, Greece -->
+
+[88] Russell T. Vought. 2025. Accelerating Federal Use of AI through Innovation, Governance, and Public Trust. Technical Report M-25-21. Office of Management and Budget. https://www.whitehouse.gov/wp-content/uploads/2025/02/M25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-andPublic-Trust.pdf Director, Office of Management and Budget.
+
+[89] Jess Whittlestone and Jack Clark. 2021. Why and How Governments Should Monitor AI Development. arXiv:2108.12427 [cs] http://arxiv.org/abs/2108.12427
+
+[90] Brian T. Yeh. 2017. The Federal Government's Authority to Impose Conditions on Grant Funds. Technical Report. Congressional Research Service.
+
+[91] Shalanda D Young. 2024. Advancing Governance, Innovation, and Risk Management for Agency Use of Artificial Intelligence. Technical Report. Office of Management and Budget.
+
+[92] Shalanda D Young. 2024. M-24-10 Advancing Governance, Innovation, and Risk Management for Agency Use of Artificial Intelligence. (2024).
+
+[93] Shalanda D Young. 2024. M-24-18: Advancing the Responsible Acquisition of Artificial Intelligence in Government.
+
+# A DATASET SELECTION
+
+Returning to Grants.gov, we gathered short-length descriptions for the AI-related NOFOs in our dataset from the website ' s daily metadata archive. These short-length descriptions vary from a few sentences to multiple pages. We searched the same AI keywords against each grant announcement' s short-length description on Grants.gov. Our search found that for our reviewed AIrelated NOFOs, only 68/407 ( 17%) of Grants.gov summaries contained an AI-related keyword. We also review, as best we can, each grant program ' s associated spending records. The Federal Funding Accountability and Transparency Act [5] requires grant spending records be searchable on a single website, which is USASpending.gov. Yet tying NOFOs to their spending records is challenging. While both NOFOs and spending records contain matching identifiers called " assistance listings, " clerical errors result in multiple NOFOs sharing listings or a single NOFO filed under multiple listings. Using assistance listing codes from our AI grants for fiscal year 2024, we search all related records on USASpending (31,508 transactions) finding only 36 out of 55 responsive assistance listings, indicating a third of spending records for our reviewed AI-related grant programs do not contain AI keywords. These results should be interpreted cautiously; if a grant' s spending descriptions lack AI keywords, the grantee may simply not have developed or used an AI tool.
+
+Why might grant spending records not mention AI, even for opportunities that likely involve AI? One reason is that grantmakers provide detailed information announcements, while spending records tend to be shorter and less descriptive. Though publicly available, spending records are often too short or vague to answer whether a grant funds an AI use. In the illustrative case of HUD' s crime-fighting grants, nowhere in its spending records does HUD mention grantees purchased and used cameras or facial recognition technologies [2]. Such pinched descriptions are not unusual for spending records; a Government Accountability Office audit of the Department of Homeland Security (DHS)' s USASpending.gov records found that the agency used jargon and shorthand which made spending records unintelligible [69]. In spite of incomplete spending records, studies analyzing AI-related grant spending still provide great insights, often by relying on data processed and aggregated by private analytics companies. Companies like Clarivate [43], Govini [3], and Dimensions.ai [1] gather grant data from across federal agencies, categorizing and connecting data to help researchers uncover trends. Researchers like those at Stanford' s Center HumanCentered Artificial Intelligence and Georgetown ' s Center for Security and Emerging Technology effectively use these companies ' products to document AI grant spending patterns [67, 80]. However, these tools have their limitations. Companies can process, link, and predict to identify AI spending, but cannot fill in what is missing from a flawed spending record. Although companies do not always disclose their data sources, most appear to rely on the same incomplete federal sources. Further, the lack of transparency around data sources and subscription fees create replication problems and financial barriers to entry.
+
+<Table>
+| Abbreviation   | Agency Name                                        |
+|:---------------|:---------------------------------------------------|
+| AC             | Americorps                                         |
+| ARPAH          | Advanced Research Projects Agency for Health       |
+| CPSC           | Consumer Product Safety Commission                 |
+| CNCS           | Corporation for National and Community Service     |
+| DC             | Denali Commission                                  |
+| DHS            | Department of Homeland Security                    |
+| DOC            | Department of Commerce                             |
+| DOE            | Department of Energy                               |
+| DOI            | Department of the Interior                         |
+| DOL            | Department of Labor                                |
+| DOS            | Department of State                                |
+| DOT            | Department of Transportation                       |
+| ED             | Department of Education                            |
+| EAC            | Election Assistance Commission                     |
+| EPA            | Environmental Protection Agency                    |
+| FCC            | Federal Communications Commission                  |
+| FDA            | Food and Drug Administration                       |
+| FMCS           | Federal Mediation and Conciliation Service         |
+| HHS            | Department of Health and Human Services            |
+| HUD            | Department of Housing and Urban Development        |
+| IAF            | Inter-American Foundation                          |
+| IMLS           | Institute of Museum and Library Services           |
+| LOC            | Library of Congress                                |
+| MCC            | Millennium Challenge Corporation                   |
+| NASA           | National Aeronautics and Space Administration      |
+| NCD            | National Council on Disability                     |
+| NCUA           | National Credit Union Administration               |
+| NEA            | National Endowment for the Arts                    |
+| NEH            | National Endowment for the Humanities              |
+| NRC            | Nuclear Regulatory Commission                      |
+| ONDCP          | Office of National Drug Control Policy             |
+| SBA            | Small Business Administration                      |
+| SCRC           | Southeast Crescent Regional Commission             |
+| SSA            | Social Security Administration                     |
+| USAID          | United States Agency for International Development |
+| USDA           | United States Department of Agriculture            |
+| USDOT          | United States Department of the Treasury           |
+| USDOJ          | United States Department of Justice                |
+| VA             | Department of Veterans Affairs                     |
+</Table>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: FAccT '25, June 23-26, 2025, Athens, Greece Dan Bateyko and Karen Levy -->
+
+Another potential data source are grant agencies ' voluntary disclosures, but these also vary in quality and are not centralized. For those agencies that chose to disclose additional information, they are not required to publish, archive, or update such disclosures with any regularity. Researchers may request grant-related documents through a Freedom of Information Act request, but doing so is time-intensive and costly. In some cases, that information may not even be FOIA eligible [35].
+
+These results suggest that no one dataset provides enough detail to identify all federal assistance that supports AI use. Government efforts to make federal spending more transparent serve to underscore the challenge of improving grant record quality; the newly minted Federal Program Inventory for grants, for example, relies on the same, often faulty upstream data source, USASpending.gov [24]. To improve on this status quo, researchers may consider combining public datasets when investigating federal assistance.
+
+# B DATA GATHERING AND COVERAGE
+
+Grants.gov contains more than just grants; the database includes records of notices of intent, procurement contracts, partnership intermediary requests, requests for statements of interest, and requests for information. Grants.gov does not offer a public API for gathering NOFOs specifically; instead we use an exposed API that allows us to gather attachments, numbered sequentially from the oldest record to the newest. We subset to NOFOs by linking attachments to Grants.gov-provided metadata by their Opportunity Numbers, a unique identifier found in the zip filename. Although we take care to include all NOFOs attached to grant records in our study, some NOFOs cannot be readily associated with their Grants.gov record, like those that have been mislabeled. As a result, the total count is an underestimate of voluntary NOFO attachments.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: One Bad NOFO? AI Governance in Federal Grantmaking FAccT '25, June 23-26, 2025, Athens, Greece -->
+
+Number of Attached NOFOs Gathered from Grants.gov Records
+
+Year
+
+<Figure>
+Figure 3: The above heatmap shows our Notice of Funding Opportunity collection from Grants.gov across federal agencies and years. Each cell displays both raw counts (attachments/total notices) and percentages. Cell colors indicate the percentage of notices with successfully collected attachments, ranging from light to dark blue. Light grey cells indicate years with no grant notices for that agency.
+</Figure>
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "7916e3df834a05392c33f00097f480d3bafc84aeca23503fdde6f608cf8960e1",
+  "prompt_sha256": "de09156d5744ba6b93cbf334e329d165e9883249cc8d07382c7a15797f5d51fb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP5W25fSRifAyCG32foAzjhzMYG7",
+  "prompt_tokens": 7102,
+  "completion_tokens": 40,
+  "actual_usd": 0.0010892999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how CodeCarbon uses psutil for gathering CPU information and describes the formula used to compute carbon impact."
+  }
+}

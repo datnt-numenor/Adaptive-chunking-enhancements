@@ -1,0 +1,14 @@
+{
+  "request_hash": "fa8ae573dcf65d22d0431981bea62a73405f0b7a2f407eb393b88c529dbd68c7",
+  "prompt_sha256": "d8d09b47c06daf116136a9acc5c4ac2cc3be00892c5016266e9268bce2d27e13",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOVpeLNYLTNPn4HT81BosiJPHMAb",
+  "prompt_tokens": 8063,
+  "completion_tokens": 41,
+  "actual_usd": 0.00123405,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information or support for the claim made in the Reference Answer regarding 'regurgitation' and its relation to training data."
+  }
+}

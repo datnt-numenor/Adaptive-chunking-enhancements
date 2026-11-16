@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "adapter": "prepare_table5_new_qa.py",
+  "adapter_sha256": "596f8965cd954032900f8b864934aa51544138eb4761a4aca33c45fd129b8519",
+  "status": "complete",
+  "created_at": "2026-11-08T14:00:58.831172+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "note": "Tao tu ket qua chay doc lap (khong co semantic); chi gom 3 he thong cua Table 5.",
+  "input_run_dir": "D:\\Project\\adaptive-chunking\\runs\\full_kaggle",
+  "input_sha256": {
+    "processed_chunks": "0f78f6c80b71209ee55c89dc8cfce2202e6f33dbe672f84383e0f5dafa75c7ed",
+    "raw_chunks": "ac82ff2bf01475aa8daaf9b426537d3d0079fb058ba02d65ab13727d62653a23",
+    "processed_metrics": "6a84885eeb306baaf4b79463cae1f092957d48e354f887467f138344a15acb84"
+  },
+  "documents": 33,
+  "folds": 5,
+  "fold_seed": 2026,
+  "adaptive_candidates": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "paper_protocol_systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "systems": {
+    "adaptive": {
+      "path": "systems/adaptive.jsonl",
+      "sha256": "d4ea88495351e94d3446ba1dc17df74babfa6caa1c67a672585cd4338bff5649",
+      "chunks": 1633,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "method": "per_document_equal_weight"
+    },
+    "raw__langch_recurs_default": {
+      "path": "systems/raw__langch_recurs_default.jsonl",
+      "sha256": "ade51b65d9864da9b17df94cf9290ca3b278fd31786e2803e79eb11cb33673c2",
+      "chunks": 1557,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "raw",
+      "method": "langch_recurs_default"
+    },
+    "raw__page": {
+      "path": "systems/raw__page.jsonl",
+      "sha256": "b962b240642dd41651f2f4842cfcaac516208d43149113f140eeb665da152e5f",
+      "chunks": 1761,
+      "excluded_empty_chunks": 4,
+      "documents": 33,
+      "stage": "raw",
+      "method": "page"
+    },
+    "sdp_b": {
+      "path": "systems/sdp_b.jsonl",
+      "sha256": "610702ba2e9a315d444ab5edd50a1317769f0c827aa0541d8d6a9e7d5c86e2aa",
+      "chunks": 2058,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\sdp\\B_default",
+      "kind": "single_run"
+    },
+    "sdp_b_sw0": {
+      "path": "systems/sdp_b_sw0.jsonl",
+      "sha256": "ec9b1b61ad7ba11be809b36854a21e3628c994c52b678ca3ddc88edccfefe846",
+      "chunks": 2024,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\sdp_sweep_v2\\sw0",
+      "kind": "single_run"
+    },
+    "sdp_b_rc1": {
+      "path": "systems/sdp_b_rc1.jsonl",
+      "sha256": "575a3009c19b5d2e1dc32e42ff8895d94209809f1ab8d20417f563624869469c",
+      "chunks": 2049,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\sdp_sweep_v1\\rc1",
+      "kind": "single_run"
+    },
+    "sdp_b_sw0_rc1": {
+      "path": "systems/sdp_b_sw0_rc1.jsonl",
+      "sha256": "2b3a80d769dad1b0581967fc4f4a29211df94f4c5d1ad6fef8f307fbed4057c9",
+      "chunks": 2042,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\sdp_sweep_v2\\sw0_rc1",
+      "kind": "single_run"
+    },
+    "sdp_b_sw0_dcc15_rc1": {
+      "path": "systems/sdp_b_sw0_dcc15_rc1.jsonl",
+      "sha256": "0ade43d6f2ef61784070a2ea7da817870048c732a67b083556772f29e5910605",
+      "chunks": 1829,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\sdp_sweep_v2\\sw0_dcc1.5_rc1",
+      "kind": "single_run"
+    }
+  },
+  "sdp_extension": {
+    "created_at": "2026-11-12T03:00:58.334104+00:00",
+    "base_prepared_manifest_sha256": "b08193d9c25b46526a6a3e99e5ea2653dfab8565d7bae7072cbecd1e9058e6bd",
+    "harness_repo": "D:\\Project\\Adaptive-chunking-enhancements",
+    "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+    "new_systems": [
+      "sdp_b",
+      "sdp_b_rc1",
+      "sdp_b_sw0",
+      "sdp_b_sw0_dcc15_rc1",
+      "sdp_b_sw0_rc1"
+    ],
+    "note": "Base files copied unchanged; new systems appended. Launcher registers their names in ALL_SYSTEMS."
+  }
+}

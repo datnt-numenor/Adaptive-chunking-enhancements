@@ -1,0 +1,14 @@
+{
+  "request_hash": "44281bf046c7cb4835bfe584db486acc7c63472af00ff16ddeba8abb7fbcc77f",
+  "prompt_sha256": "090a50ba89346742d607ca6a29663352f65898080d03cd71f90154e836437ddc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOcMlKQ60wNepYK1Lzj3ekwbZTfT",
+  "prompt_tokens": 7809,
+  "completion_tokens": 41,
+  "actual_usd": 0.0011959499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly supports the Reference Answer by explaining how biased data can perpetuate discrimination and how seemingly neutral criteria can lead to indirect discrimination against protected groups."
+  }
+}

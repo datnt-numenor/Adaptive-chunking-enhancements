@@ -1,0 +1,14 @@
+{
+  "request_hash": "209a72b9280fefaf21486402e367bd35f175ef61c06f8d7d19fb2985e981abdc",
+  "prompt_sha256": "ed72e13b255c454ee4a849bd3a9f130872a6ff46cb9fd5d5db5a8e150ccc4ee6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjddtsCX5cMai8pQ7PlhCYs6WJB",
+  "prompt_tokens": 9230,
+  "completion_tokens": 51,
+  "actual_usd": 0.0014150999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a thorough discussion of the oligopolistic structure in biopharmaceutical regulation and contrasts it with the less defined structure of the AI industry, fully supporting the claims made in the Reference Answer."
+  }
+}

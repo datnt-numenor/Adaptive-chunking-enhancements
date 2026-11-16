@@ -1,0 +1,345 @@
+DOCUMENT: arXiv 2605.03512 Brainrot Deskilling and Addiction are Overlooked AI Risks
+
+<<<PAGE 11>>>
+<!-- PageHeader: Brainrot: Deskilling and Addiction are Overlooked AI Risks FAccT '26, June 25-28, 2026, Montreal, QC, Canada -->
+
+Fang et al. [34] from MIT Media Lab in collaboration with OpenAI examine the effect of emotional dependencewhich is a symptom of addiction-on GenAI assistants by monitoring nearly 1,000 participants over four weeks using ChatGPT. They report that participants who spent more time are associated with greater loneliness, less socialization with real people, and greater emotional dependence. Similarly, their analysis shows that the most emotionally vulnerable participants, and those who consider AI as a friend, experience similar negative outcomes.
+
+Broader related work. In the broader context of the developing literature on psychosocial harms related to GenAI usage, Moore et al. [63] examine the capabilities of GenAI systems related to mental health care assistance. They find that GenAI assistants may respond inappropriately to various mental health conditions, express stigma, encourage delusions, and fail to recognize crises. Based on their findings, they argue against LLMs as therapists and highlight the importance of embodied (real human) experiences in therapeutic settings. Additionally, Chandra et al. [21] argue that psychological risks in the context of GenAI are overlooked and not accounted for in risk taxonomies due to a focus on well-established (acknowledged) risks. To address this limitation, they develop a taxonomy of psychological risks based on a survey that captures the lived experiences of individuals.
+
+Takeaways. Although the concept of AI addiction has recently been conceptualized and gained traction in academic circles, we still lack epidemiological data on the extent and nature of the problem. However, we have early studies exploring potential causal factors, such as the characteristics of the user and system, related to AI addiction. Based on these studies, we observe that when the system is perceived as having human characteristics, alongside the system ' s high personalization, agreeableness, and availability, over-dependence can lead vulnerable users to addiction. In the absence of longitudinal validation and substantial epidemiological data, Riam et al. [71] suggest drawing parallels from research on problematic screen use, such as Internet Gaming Disorder (IGD)- formally recognized by ICD-11 and DSM-5, social media addiction, among other forms of internet addiction disorders (IADs), primarily affecting adolescents and young adults, to inform our decisions on how to approach this emerging issue. We discuss limitations of the examined work in Section 7.
+
+Based on the early findings of the literature related to how over-reliance and over-dependence on GenAI technologies can lead to user deskilling and addiction, we argue that these must be recognized as emerging GenAI risks, in the context of the broader area related to cognition, mental health, and general well-being; despite being largely ignored by corporate-led GenAI initiatives and the technical AI literature, as we substantiated with our exploration in Section 3. As such, they should be meticulously examined, and mitigated, within a joint interdisciplinary effort by cognition, mental health, AI, and HCI experts.
+
+# 6 Paths Forward
+
+To address deskilling and addiction, we discuss possible pathways in terms of technical measures and public policy. We present a few plausible directions for technical measures given our understanding and expertise in the field of LLM development, to ignite the discussion on potential counter-measures. Such solutions are by no means adequate to mitigate the emerging issues, nor do they guarantee that tech corporations are incentivized to implement such measures; hence, we argue that information campaigns and regulation are necessary.
+
+# 6.1 Technical Measures
+
+Critical AI Feedback (Attend & Reflect). Current GenAI assistants have been fine-tuned (aligned) to maximize helpfulness to users-as perceived by their developers, in the sense of solving tasks and providing answers eagerly with minimal feedback (user involvement). This utilitarian 8 approach is closely tied to the limitation and atrophy of users ' critical thinking and memory abilities, since the user ' s role is primarily restricted to the curation and editing of the prompts, and fact-checking and integration of the model responses, if at all [57].
+
+\* 8 In this work, we use the term ' utilitarian ' in a practical-not philosophical-sense, where the aim is immediate tangible outcomes, related to what Pallant et al. [67] refer as procedural use, in contrast to other plausible approaches that value and necessitate the user ' s involvement.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: FAccT '26, June 25-28, 2026, Montreal, QC, Canada Ilias Chalkidis and Anders Søgaard -->
+
+<Figure>
+Fig. 4. Conversation with DeepSeek v3.2 in two settings: (a) baseline (default), (b) instructed to promote critical AI feedback on the "toy" example of cooking recipe proposal. In the baseline setting, the AI assistant provides a long answer without any further considerations requiring the user's activity. In the second setting, the AI assistant asks the user relevant questions (underlined in red) to address the task, requiring the user to reflect on their original request and the model's response, which can stimulate their working memory and critical thinking. See Figures 8- 9 for other "toy" examples.
+</Figure>
+
+To make this point clearer, we present three simple "toy " examples (Figures 4-9) of interactions with one of the best open-weight GenAI assistants, DeepSeek V3.2. As we observe, in the default (baseline) setting (left side of the figures), the GenAI assistant tends to respond to requests-even highly subjective ones related to taste literally and metaphorically-with immediate, elaborate answers, without necessitating further feedback or actions from the user. Both Google Gemini and OpenAI' s ChatGPT provided similar long responses in our testing. 9
+
+In contrast, GenAI assistants could be aligned to promote what we may call critical AI feedback, where the assistant does not merely provide instant answers, but rather occasionally stimulates the user to attend to the content of the ongoing conversation, actively participate, and reflect on the curation of the generated content (answer). By doing so, the user is not merely a spectator-or even worse, the actual assistant of the AI system-but rather an active participant who deploys critical thinking in curating the overall process and the generated content [67, 78]. This model behavior can be promoted through various stages of GenAI assistants ' development.
+
+· System Prompts: Prompt-tuning can be seen as a very simplistic sort of technical measure. In this case, GenAI assistants can be directly instructed to incorporate such considerations via system prompts. Given the rise of reasoning models [76], following similar practices, GenAI users could be incentivized to both curate and reflect on incremental chain-of-thought steps, which require attending to the chat content and
+
+\* 9 Anecdotally, the latest GenAI assistants tend to conclude their long, elaborate responses with a question or suggestion for further assistance in the form of "[Would you like me to]/[If you would like, I can] share more on X" , where X is a core aspect of the response. We argue that the aim is to promote engagement and extend interactions (dialogues) in what is effectively an AI monologue, rather than promoting any critical reflection on the content or user involvement in any meaningful, productive way.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: Brainrot: Deskilling and Addiction are Overlooked AI Risks FAccT '26, June 25-28, 2026, Montreal, QC, Canada -->
+
+using their cognition to provide feedback. In our examples (Figures 4, 8, and 9), we try to promote such a model' s behavior including a brief textual description (instruction) in the system prompt:
+
+"Provide critical feedback: Aim to enhance the user's critical thinking and their skills. While being helpful, you must balance fulfilling the user's requests with protecting the user's cognitive abilities. You should foster a dialogue with questions rather than providing long answers. The questions aim to promote the user's reflection and attention on the dialogue content, i.e., ask the user to fulfill or fact-check a step, or pin down the scope of the instruction."
+
+As we observe (right side of Figures 4, 8, and 9), even such a naive intervention in the system leads to-in the case of these three simple examples-a more active participation of the user, including reflecting on their original request and the model' s response, use critical thinking on the scope and details of the request to participate in the decision-making process, and potentially getting actions outside the system, e.g., checking their fridge and cabinet for ingredients, or generally check the sources proposed, to fulfill the task.
+
+· Reward Modeling: In the context of LLM development, LLM alignment could be redesigned to promote critical thinking as a designated reward in a multivariate reward function, alongside other rewards that aim to promote the users ' well-being, as a whole, rather than merely enforcing a utilitarian understanding of helpfulness and a technocratic view of safety-as understood by the GenAI industry.
+
+Related to both aforementioned aspects, the framework of Constitutional AI [11] could be utilized, where considerations related to users ' well-being are well-defined points of the constitution.
+
+We urge the research community to pursue such directions in work related to LLM alignment, and optimization in general, by actively promoting the use of critical thinking, the practice-and hence maintenance-of the relevant skills, or parts of those, and the use of the user ' s short-term memory. The overall goal is to build an assistive framework that provides the necessary affordances [35], enabling the user to maintain personal agency by avoiding excessive cognitive offloading and over-reliance on GenAI technologies. Since such a framework demands the user to be more cognitively active, it may lead to an experience that is cognitively more demanding and less sycophantic, hence it could potentially act as a proxy to diminish reliance and dependence on AI, i.e., users may avoid using GenAI assistants in unnecessary scenarios, trust their skills or seek assistance elsewhere. These suggestions, and the effects of the proposed measures, have to be empirically assessed.
+
+Disengagement. The second direction is directly addressing over-dependence on GenAI assistants. Similar to any other form of addiction, AI addiction can mainly be mitigated by abstaining from the harmful experience. In this regard, we consider two groups: (a) ' soft' measures, where the GenAI assistant detects over-reliance and suggests disengagement, and (b) 'hard' measures, where time quotas are enforced through systemic moderation.
+
+Soft measures can be potentially designed, again via alignment and other optimization strategies, where the GenAI assistant is optimized to track and assess problematic engagement, and subsequently suggest the user ' s disengagement. A simpler approach could involve a rule-based solution, where, given a predefined time threshold, the GenAI assistant suggests disengagement. However, soft measures can be easily ignored, especially in the spectrum of addiction. Similarly, tobacco, liquor, and betting companies include disclaimers on potential harms in their products; these mainly aim to raise public health awareness rather than discourage those who are addicted and in distress. In a similar position, those addicted to GenAI, or those who are incentivized to over-rely on it in a sociotechnical environment with low affordances, will more likely ignore voluntary disengagement.
+
+Hence, hard measures are most likely necessary to protect GenAI users. In this case, pre-defined quotas are enforced, not merely suggested, and the system shuts down. Quotas already exist widely for GenAI assistants; however, the trigger has a financial nature. Whenever one uses a free plan for GenAI assistants, there is a certain threshold measured in token units that triggers the system to shut down-not respond-for several hours. Similarly, enforcing time or content-based quotas, given criteria related to the user ' s well-being, shall be considered to protect the most vulnerable users, such as adolescent power users, while also providing the necessary affordances for users to disengage, e.g., users who are forced to overwork based on economic incentives. So far, developers seem to consider the welfare of LLM-based systems [9], to the point where the models can unilaterally disengage to protect their alleged "AI welfare " [8], while similar measures are not in place for humans (users).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: FAccT '26, June 25-28, 2026, Montreal, QC, Canada Ilias Chalkidis and Anders Søgaard -->
+
+# 6.2 Public Policy - Information Campaigns and Regulation
+
+In section 6.1, we discussed potential technical measures to mitigate AI deskilling and addiction. However, in the current socioeconomic context, there is no clear incentive for tech corporations to consider such technical measures. Critical AI feedback may be considered counterintuitive and regressive from a utilitarian, business perspective, while promoting disengagement directly reduces traffic and the potential financial gains from using GenAI services. Generally, technical measures are not adequate to mitigate such immense threats without a broader framework that aims to raise public awareness and regulate the GenAI industry effectively. Hence, public policy measures can have an important role in counterbalancing economic incentives.
+
+Information Campaigns. Currently, there is a highly positive sentiment and hype surrounding GenAI technologies, primarily originating from the tech industry itself and amplified by the vast majority of media. Financial institutions are deeply invested in the promises of GenAI-driven technological developments, given the relative absence of other potential alternatives to invest and speculate in the current geopolitical and socio-economic landscape. This environment leaves no affordances and undermines all critical perspectives and notable threats related to GenAI. Citizens are unaware of and susceptible to the potential threats related to GenAI technologies, while social media is flooded by AI-generated content. People are vulnerable, seeing the promise of GenAI in addressing all sorts of challenges, from those related to legal and medical advice, to those associated with companionship and mental health advice, down to pure entertainment, all together in a single digital medium for a 10-20 dollar subscription. Hence, the crucial role of information campaigns comes into play to counterbalance the AI hype, presenting the potential harms of over-relying and over-trusting GenAI technologies, among other considerations on responsible GenAI use related to the avoidance of sharing private information, and using GenAI services for sensitive applications (e.g., medical or legal advice).
+
+Regulation. Meanwhile, following an initial wave of interest in regulating AI technologies-such as US state AI acts and the EU AI Act [33]-most countries have presented AI-regulatory policy proposals in some form. None of them has directly addressed deskilling and AI addiction, except for recent legislation in China [79]. 10 The EU AI Act, for example, considers AI literacy and an explicit ban on (intended) subliminal techniques. Addiction is arguably caused by subliminal influencing, but this is not intended and would not fall under the EU AI Act. Most policy proposals aimed at curbing social media addiction do not address AI services. More recently, since 2025, we face a wave of immense deregulation. The newly established U.S. America ' s AI Action Plan [86] under Donald Trump ' s second presidency makes it abundantly clear that it' s all about "winning the [AI] race" . The bureaucratic red tape and onerous-as they characterize it-legal framework have to be removed to accelerate unhinged AI innovation and commercialization as: "it is a national security imperative for the United States to achieve and maintain unquestioned and unchallenged global technological dominance" [86]. Shortly after-November 2025-, the EU Commission followed with the Digital Omnibus on AI Regulation Proposal [31] with the intention to technically freeze (" stop-the-clock") many provisions of the newly enacted AI Act, such as the designation of high-risk AI systems, the easing of GDPR-related [32] restrictions on processing sensitive personal data, and the legal duties of AI providers and deployers to ensure adequate AI literacy for their stuff. Similarly to information campaigns, designated AI regulations are necessary to regulate the AI industry and counterbalance the corporate economic business incentives, with the protection of the general public, as has happened historically for emergent-at their time-technologies and industries to a lesser or greater extent.
+
+\* 10 Recently, the Cyberspace Administration of China (CAC) [25], alongside other agencies, announced a series of provisional measures aimed at combating mental health harms inflicted by GenAI technologies that cover, among others: mental risk assessment, usage time quota, and " reality " checks (reminders), similar to the measures we discussed in Section 6.1. The exact scope and coverage of the measures are unclear.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: Brainrot: Deskilling and Addiction are Overlooked AI Risks FAccT '26, June 25-28, 2026, Montreal, QC, Canada -->
+
+# 7 Limitations
+
+Throughout our work, we mostly rely on peer-reviewed academic work. We mainly use non-peer-reviewed work, in the form of (a) news articles, to substantiate that cognitive and mental health concerns resonate with the public and receive coverage by the media; (b) technical industry documentation that help us identify what the GenAI industry covers in relation to AI safety, and (c) preprints that are highly influential and affect how alignment and safety are understood and operationalized by the GenAI industry and the AI community at large.
+
+In Section 3, we assess the safety scope of leading GenAI initiatives based on the available documentation. While these sources provide valuable insights, they are likely incomplete; a comprehensive analysis would require formal auditing of GenAI technologies. Consequently, our findings should be treated as a baseline rather than an exhaustive census. Similarly, our AI literature review is based on a keyword search to identify relevant articles and approximates general trends related to the examined areas, rather than being exhaustive and complete.
+
+In Section 5, we present related work on deskilling and addiction, and we may lack certain nuances, so we strongly encourage the readers to consult the original studies. Furthermore, we want to point out current methodological shortcomings. Most studies rely on cross-sectional, self-reported, i.e., relying on perceived conditions, surveys, making it difficult to separate the use of GenAI as a causal factor from other potential factors, e.g., pre-existing vulnerabilities. Similarly, the focus on niche sub-populations-e.g., endoscopists, BCG employees, Chinese online communities, Replika users, and specific GenAI systems and versions, e.g., ChatGPT-3.5 in 2022, makes it hard to generalize those findings to the broader public and to GenAI technologies at large, necessitating further longitudinal empirical validation to substantiate these concerns and better support critical AI work.
+
+In Section 6, we outline potential pathways for technical measures and public policy to address deskilling and addiction, based on our expertise and understanding, informed by related work. We recognize that expertise from cognition, mental health, and Human-Computer Interaction (HCI) scholars is paramount. Recent work led by mental health experts proposes more structured evaluation and governance approaches for the use of AI in mental health [44, 75, 77], which can inform general measures related to cognitive and mental health threats.
+
+# 8 Conclusion
+
+In this work, we highlight how immense threats to cognitive and mental health, such as deskilling and addiction, resulting from over-reliance and overconfidence in GenAI assistants, have been overlooked, while other sorts of threats are currently heavily prioritized by both the GenAI industry and the technical AI community. We substantiate both claims by first showcasing how both technical reports by corporate-led GenAI initiatives and the proceedings of top venues publishing technical AI research have practically ignored threats to cognitive and mental health in favor of others, and secondly, presenting recent work and findings related to deskilling and addiction to argue that both should be considered emerging threats that need to be meticulously examined and mitigated in a joint interdisciplinary effort to protect the overall user well-being. Finally, we discuss how AI safety and alignment work can potentially approach and mitigate such threats via technical measures, while also discussing the important role of public policy in the form of information campaigns and regulation.
+
+# Generative AI Disclosure Statement
+
+We used the Grammarly plugin and the Overleaf Writefull built-in assistant for the purpose of spell-checking, grammar, and style editing, i.e., minor recommendation edits on sentence phrasing. We reviewed the suggested edits, and accepted only those that we considered as having a positive impact on the writing quality of our work.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: FAccT '26, June 25-28, 2026, Montreal, QC, Canada Ilias Chalkidis and Anders Søgaard -->
+
+We also used Google Gemini to generate the initial Python script for the generation of the grouped bar plots, which was then proofread and heavily updated to generate the final figures.
+
+# Acknowledgments
+
+We would like to thank the reviewers for their thorough, insightful reviews proposing concrete steps for the improvement of this article. Anders Søgaard was funded by the Danish National Centre of AI in Society (CAISA).
+
+# References
+
+[1] Mohamed Abdalla and Moustafa Abdalla. 2021. The Grey Hoodie Project: Big Tobacco, Big Tech, and the Threat on Academic Integrity. In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society (Virtual Event, USA) (AIES '21). Association for Computing Machinery, New York, NY, USA, 287-297.
+
+[2] CJ Adams, Jeffrey Sorensen, Julia Elliott, Lucas Dixon, Mark McDonald, and Will Cukierski. 2017. Toxic Comment Classification Challenge. Kaggle.
+
+[3] Richard Adams. 2025. Pupils fear AI is eroding their ability to study, research finds. The Guardian (15 October 2025).
+
+[4] Nur Ahmed, Muntasir Wahed, and Neil C Thompson. 2023. The growing influence of industry in AI research. Science 379, 6635 (2023), 884-886.
+
+[5] John Alford and Brian W Head. 2017. Wicked and less wicked problems: a typology and a contingency framework. Policy and society 36, 3 (2017), 397-413.
+
+[6] Zeeshan Ali, Jayaprakash Janarthanan, and Prasanna Mohan. 2024. Understanding digital dementia and cognitive impact in the current era of the internet: a review. Cureus 16, 9 (2024).
+
+[7] Dario Amodei, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, and Dan Mané. 2016. Concrete Problems in AI Safety. arXiv:1606.06565 [cs.AI]
+
+[8] Anthropic. 2025. Claude Opus 4 and 4.1 can now end a rare subset of conversations. anthropic.com.
+
+[9] Anthropic. 2025. Exploring model welfare. anthropic.com.
+
+[10] Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Jackson Kernion, Kamal Ndousse, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, Chris Olah, and Jared Kaplan. 2021. A General Language Assistant as a Laboratory for Alignment. arXiv:2112.00861 [cs.CL]
+
+[11] Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et al. 2022. Constitutional AI: Harmlessness from AI feedback. arXiv preprint arXiv:2212.08073 (2022).
+
+[12] Yatan Pal Singh Balhara. 2024. When the law decides the psychiatric diagnosis: a unique scenario in context of addictive behaviors. Asian journal of psychiatry 101 (2024), 104238.
+
+[13] Jascha Bareis and Christian Katzenbach. 2022. Talking AI into being: The narratives and imaginaries of national AI strategies and their performative politics. Science, Technology, & Human Values 47, 5 (2022), 855-881.
+
+[14] George Miller Beard. 1881. American nervousness, its causes and consequences: a supplement to nervous exhaustion (neurasthenia). Putnam.
+
+[15] Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?. In Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (Virtual Event, Canada) (FAccT '21). Association for Computing Machinery, New York, NY, USA, 610-623.
+
+[16] Kean Birch and Kelly Bronson. 2022. Big tech. Science as Culture 31, 1 (2022), 1-14.
+
+[17] Steven Bird. 2025. Big AI is accelerating the metacrisis: What can we do? arXiv:2512.24863 [cs.CL]
+
+[18] Krzysztof Budzyń, Marcin Romańczyk, Diana Kitala, Paweł Kołodziej, Marek Bugajski, Hans O Adami, Johannes Blom, Marek Buszkiewicz, Natalie Halvorsen, Cesare Hassan, et al. 2025. Endoscopist deskilling risk after exposure to artificial intelligence in colonoscopy: a multicentre, observational study. The Lancet Gastroenterology & Hepatology (2025).
+
+[19] Nicholas A Caputo. 2024. Alignment as jurisprudence. Yale Journal of Law and Technology (forthcoming) (2024).
+
+[20] Ilias Chalkidis. 2025. Decoding Alignment: A Critical Survey of LLM Development Initiatives through Value-setting and Data-centric Lens. arXiv:2508.16982 [cs.CL]
+
+[21] Mohit Chandra, Suchismita Naik, Denae Ford, Ebele Okoli, Munmun De Choudhury, Mahsa Ershadi, Gonzalo Ramos, Javier Hernandez, Ananya Bhattacharjee, Shahed Warreth, and Jina Suh. 2025. From Lived Experience to Insight: Unpacking the Psychological Risks of Using AI Conversational Agents. In Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT '25). Association for Computing Machinery, New York, NY, USA, 975-1004.
+
+[22] Aaron Chatterji, Thomas Cunningham, David J Deming, Zoe Hitzig, Christopher Ong, Carl Yan Shan, and Kevin Wadman. 2025. How people use ChatGPT? Technical Report. National Bureau of Economic Research.
+
+[23] Jung-Seok Choi, Daniel Luke King, and Young-Chul Jung. 2019. Neurobiological perspectives in behavioral addiction. 3 pages.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: Brainrot: Deskilling and Addiction are Overlooked AI Risks FAccT '26, June 25-28, 2026, Montreal, QC, Canada -->
+
+[24] Andy Clark and David Chalmers. 1998. The extended mind. analysis 58, 1 (1998), 7-19.
+
+[25] Cyberspace Administration of China (CAC). 2026. Interim Measures on the Administration of Human-like Interactive Artificial Intelligence Services.
+
+[26] Ernesto Dal Bó. 2006. Regulatory Capture: A Review. Oxford Review of Economic Policy 22, 2 (07 2006), 203-225.
+
+[27] Virginia Dignum. 2019. Responsible Artificial Intelligence: How to Develop and Use AI in a Responsible Way. Vol. 2156. Springer.
+
+[28] Thomas Donaldson. 1982. Corporations and morality. Englewood Cliffs, NJ: Prentice-Hall.
+
+[29] Ethan Du-Crow, Susan M Astley, and Johan Hulleman. 2020. Is there a safety-net effect with computer-aided detection? Journal of Medical Imaging 7, 2 (2020), 022405-022405.
+
+[30] Ronald Dworkin. 1988. Law's empire. Harvard university press.
+
+[31] European Commission. 2025. Proposal for a Regulation of the European Parliament and of the Council amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI).
+
+[32] European Union. 2016. Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
+
+[33] European Union. 2024. Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act).
+
+[34] Cathy Mengying Fang, Auren R Liu, Valdemar Danry, Eunhae Lee, Samantha WT Chan, Pat Pataranutaporn, Pattie Maes, Jason Phang, Michael Lampe, Lama Ahmad, et al. 2025. How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study. arXiv preprint arXiv:2503.17473 (2025).
+
+[35] Avigail Ferdman. 2025. AI deskilling is a structural problem. AI & SOCIETY (2025), 1-13.
+
+[36] Iason Gabriel. 2020. Artificial intelligence, values, and alignment. Minds and machines 30, 3 (2020), 411-437.
+
+[37] Deep Ganguli, Liane Lovitt, Jackson Kernion, Amanda Askell, Yuntao Bai, Saurav Kadavath, Ben Mann, Ethan Perez, Nicholas Schiefer, Kamal Ndousse, Andy Jones, Sam Bowman, Anna Chen, Tom Conerly, Nova DasSarma, Dawn Drain, Nelson Elhage, Sheer El-Showk, Stanislav Fort, Zac Hatfield-Dodds, Tom Henighan, Danny Hernandez, Tristan Hume, Josh Jacobson, Scott Johnston, Shauna Kravec, Catherine Olsson, Sam Ringer, Eli Tran-Johnson, Dario Amodei, Tom Brown, Nicholas Joseph, Sam McCandlish, Chris Olah, Jared Kaplan, and Jack Clark. 2022. Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned. arXiv:2209.07858 [cs.CL]
+
+[38] Michael Gerlich. 2025. AI tools in society: Impacts on cognitive offloading and the future of critical thinking. Societies 15, 1 (2025), 6.
+
+[39] Daniel Gilbert. 2024. Despite uncertain risks, many turn to AI like ChatGPT for mental health. The Washington Post (26 October 2024).
+
+[40] Catalina Goanta, Nikolaos Aletras, Ilias Chalkidis, Sofia Ranchordás, and Gerasimos Spanakis. 2023. Regulation and NLP (RegNLP): Taming Large Language Models. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, Houda Bouamor, Juan Pino, and Kalika Bali (Eds.). Association for Computational Linguistics, Singapore, 8712-8724. https://aclanthology.org/ 2023.emnlp-main.539/
+
+[41] Aviel Goodman. 1990. Addiction: definition and implications. British journal of addiction 85, 11 (1990), 1403-1408.
+
+[42] Olivia Guest. 2025. What Does 'Human-Centred AI' Mean? arXiv:2507.19960 [cs.AI]
+
+[43] Rachell Hall. 2025. 'Sliding into an abyss ' : experts warn over rising use of AI for mental health support. The Guardian (30 August 2025).
+
+[44] Dione Hutchinson. 2026. A Clinician-Led Governance Framework for Evaluating Behavioral-Health AI Communication Safety. (2026).
+
+[45] Robert A Kagan and John T Scholz. 1984. The " criminology of the corporation " and regulatory enforcement strategies. Enforcing regulation (1984), 67-95.
+
+[46] Lasha Kavtaradze. 2024. Challenges of automating fact-checking: A technographic case study. Emerging Media 2, 2 (2024), 236-258.
+
+[47] Simon Kemp. 2025. Digital 2026: Global Overview Report. We Are Social (15 October 2025).
+
+[48] Brian Kennedy, Eileen Yam, Emma Kikuchi, Isabelle Pula, and Javier Fuentes. 2025. How Americans View AI and Its Impact on People and Society: Views of AI's Impact on Society and Human Abilities. Technical Report. Pew Research Center.
+
+[49] Raad Khraishi, Cristovão Iglesias Jr, Devesh Batra, Peter Gostev, Giulio Pelosio, Ramin Okhrati, and Greig A Cowan. 2025. Real-Time Hyper-Personalized Generative AI Should Be Regulated to Prevent the Rise of "Digital Heroin " . In The Thirty-Ninth Annual Conference on Neural Information Processing Systems Position Paper Track.
+
+[50] Celeste Kidd and Abeba Birhane. 2023. How AI can distort human beliefs. Science 380, 6651 (2023), 1222-1223.
+
+[51] J.W. Kingdon. 1995. Agendas, Alternatives, and Public Policies. HarperCollins College Publishers.
+
+[52] Noam Kolt, Nicholas Caputo, Jack Boeglin, Cullen O'Keefe, Rishi Bommasani, Stephen Casper, Mariano-Florentino Cuéllar, Noah Feldman, Iason Gabriel, Gillian K. Hadfield, Lewis Hammond, Peter Henderson, Atoosa Kasirzadeh, Seth Lazar, Anka Reuel, Kevin L. Wei, and Jonathan Zittrain. 2026. Legal Alignment for Safe and Ethical AI. arXiv:2601.04175 [cs.CY]
+
+[53] Chokri Kooli, Youssef Kooli, and Eya Kooli. 2025. Generative artificial intelligence addiction syndrome: A new behavioral disorder? Asian Journal of Psychiatry 107 (2025), 104476.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: FAccT '26, June 25-28, 2026, Montreal, QC, Canada Ilias Chalkidis and Anders Søgaard -->
+
+[54] Nataliya Kosmyna, Eugene Hauptmann, Ye Tong Yuan, Jessica Situ, Xian-Hao Liao, Ashly Vivian Beresnitzky, Iris Braunstein, and Pattie Maes. 2025. Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872 [cs.AI]
+
+[55] Eleanor Lawrie. 2025. Can AI therapists really be an alternative to human help? BBC News (20 May 2025).
+
+[56] Seth Lazar and Alondra Nelson. 2023. AI safety on whose terms? Science 381, 6654 (2023), 138-138.
+
+[57] Hao-Ping Lee, Advait Sarkar, Lev Tankelevitch, Ian Drosos, Sean Rintel, Richard Banks, and Nicholas Wilson. 2025. The impact of generative AI on critical thinking: Self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. In Proceedings of the 2025 CHI conference on human factors in computing systems. 1-22.
+
+[58] John D Lee and Katrina A See. 2004. Trust in automation: Designing for appropriate reliance. Human factors 46, 1 (2004), 50-80.
+
+[59] Jan Leike, David Krueger, Tom Everitt, Miljan Martic, Vishal Maini, and Shane Legg. 2018. Scalable agent alignment via reward modeling: a research direction. CoRR abs/1811.07871 (2018). arXiv:1811.07871
+
+[60] Jan Leike, Miljan Martic, Victoria Krakovna, Pedro A. Ortega, Tom Everitt, Andrew Lefrancq, Laurent Orseau, and Shane Legg. 2017. AI Safety Gridworlds. arXiv:1711.09883 [cs.LG]
+
+[61] Alva Markelius, Connor Wright, Joahna Kuiper, Natalie Delille, and Yu-Ting Kuo. 2024. The mechanisms of AI hype and its planetary and social costs. AI and Ethics 4, 3 (2024), 727-742.
+
+[62] Hannah R Marriott and Valentina Pitardi. 2024. One is the loneliest number... Two can be as bad as one. The influence of AI Friendship Apps on users ' well-being and addiction. Psychology & marketing 41, 1 (2024), 86-101.
+
+[63] Jared Moore, Declan Grabb, William Agnew, Kevin Klyman, Stevie Chancellor, Desmond C. Ong, and Nick Haber. 2025. Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers.. In Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT '25). Association for Computing Machinery, New York, NY, USA, 599-627.
+
+[64] Vincent C Müller. 2020. Ethics of artificial intelligence and robotics. Stanford Encyclopedia of Philosophy (2020).
+
+[65] Tejas N Narechania and Ganesh Sitaraman. 2024. An antimonopoly approach to governing artificial intelligence. Yale Law & Policy Review 43 (2024), 95. Issue 1.
+
+[66] Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al. 2022. Training language models to follow instructions with human feedback. Advances in neural information processing systems 35 (2022), 27730-27744.
+
+[67] Jessica L Pallant, Janneke Blijlevens, Alexander Campbell, and Ryan Jopp. 2025. Mastering knowledge: The impact of generative AI on student learning outcomes. Studies in Higher Education (2025), 1-22.
+
+[68] Michael Park, Erin Leahey, and Russell J Funk. 2023. Papers and patents are becoming less disruptive over time. Nature 613, 7942 (2023), 138-144.
+
+[69] John Pavlopoulos, Jeffrey Sorensen, Léo Laugier, and Ion Androutsopoulos. 2021. SemEval-2021 Task 5: Toxic Spans Detection. In Proceedings of the 15th International Workshop on Semantic Evaluation (SemEval-2021), Alexis Palmer, Nathan Schneider, Natalie Schluter, Guy Emerson, Aurelie Herbelot, and Xiaodan Zhu (Eds.). Association for Computational Linguistics, Online, 59-69.
+
+[70] A Mitchell Polinsky and Steven Shavell. 2000. The economic theory of public enforcement of law. Journal of economic literature 38, 1 (2000), 45-76.
+
+[71] Sara Riam, N Baabouchi, O Belakbir, Z Elmaataoui, and H Kisra. 2025. Adolescent Addiction to Conversational AI: An overview. Sch J Med Case Rep 11 (2025), 2790-2794.
+
+[72] Evan F Risko and Sam J Gilbert. 2016. Cognitive offloading. Trends in cognitive sciences 20, 9 (2016), 676-688.
+
+[73] Horst W. J. Rittel and Melvin M. Webber. 1973. Dilemmas in a general theory of planning. Policy Sciences 4, 2 (June 1973), 155-169.
+
+[74] Eden Saig and Nir Rosenfeld. 2023. Learning to suggest breaks: sustainable optimization of long-term user engagement. In Proceedings of the 40th International Conference on Machine Learning (Honolulu, Hawaii, USA) (ICML'23). JMLR.org, Article 1232, 26 pages.
+
+[75] Beatriz Garcia Santa Cruz, Carlos Vega, Philip Santangelo, and Venkata Satagopam. 2025. Beyond Engagement: A Multidimensional Framework to Evaluate the Safe Development of Agentic AI in Mental Health. In International Workshop on Agentic AI for Medicine. Springer, 74-84.
+
+[76] Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang, YK Li, Yang Wu, et al. 2024. Deepseekmath: Pushing the limits of mathematical reasoning in open language models. arXiv preprint arXiv:2402.03300 (2024).
+
+[77] Divya Sharma, Shakila Meshkat, Argyrios Perivolaris, Mohammad Amin Kamaleddin, Bazen Gashaw Teferra, Alice Rueda, Reza Samavi, Rakesh Jetly, Vijay Mago, Yuqi Wu, et al. 2026. Reimagining psychiatric care with agentic AI: promise, challenges, and a roadmap forward. npj Digital Medicine (2026).
+
+[78] Judy Hanwen Shen and Alex Tamkin. 2026. How AI Impacts Skill Formation. arXiv:2601.20245 [cs.CY]
+
+[79] Scott Singer and Matt Sheehan. 2026. China Is Worried About AI Companions. Here ' s What It' s Doing About Them. . Carnegie Endowment for International Peace (26 February 2026).
+
+[80] Peter Slattery, Alexander K. Saeri, Emily A. C. Grundy, Jess Graham, Michael Noetel, Risto Uuk, James Dao, Soroush Pour, Stephen Casper, and Neil Thompson. 2025. The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks From
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: Brainrot: Deskilling and Addiction are Overlooked AI Risks FAccT '26, June 25-28, 2026, Montreal, QC, Canada -->
+
+Artificial Intelligence. arXiv:2408.12622 [cs.AI]
+
+[81] Betsy Sparrow, Jenny Liu, and Daniel M Wegner. 2011. Google effects on memory: Cognitive consequences of having information at our fingertips. science 333, 6043 (2011), 776-778.
+
+[82] Thibault Spirlet. 2026. The Great AI Deskilling has begun . Business Insider (28 March 2026).
+
+[83] Manfred Spitzer. 2012. Digitale demenz. Nervenheilkunde 31, 07/08 (2012), 493-497.
+
+[84] D.A. Stone. 2012. Policy Paradox: The Art of Political Decision Making. W.W. Norton & Company.
+
+[85] Araz Taeihagh. 2025. Governance of Generative AI. Policy and Society 44, 1 (02 2025), 1-22.
+
+[86] The White House. 2025. America ' s AI Action Plan.
+
+[87] Inga Ulnicane. 2025. Governance fix? Power and politics in controversies about governing generative AI. Policy and Society 44, 1 (2025), 70-84.
+
+[88] Jeniffer Valentino-DeVries and Kashmir Hill. 2026. How Bad Are A.I. Delusions? We Asked People Treating Them. The New York Times (26 January 2026).
+
+[89] Viswanath Venkatesh, Michael G Morris, Gordon B Davis, and Fred D Davis. 2003. User acceptance of information technology: Toward a unified view. MIS quarterly 27, 3 (2003), 425-478.
+
+[90] Viswanath Venkatesh, James YL Thong, and Xin Xu. 2012. Consumer acceptance and use of information technology: Extending the Unified Theory of Acceptance and Use of Technology1. MIS quarterly 36, 1 (2012), 157-178.
+
+[91] Laura Weidinger, Jonathan Uesato, Maribeth Rauh, Conor Griffin, Po-Sen Huang, John Mellor, Amelia Glaese, Myra Cheng, Borja Balle, Atoosa Kasirzadeh, Courtney Biles, Sasha Brown, Zac Kenton, Will Hawkins, Tom Stepleton, Abeba Birhane, Lisa Anne Hendricks, Laura Rimell, William Isaac, Julia Haas, Sean Legassick, Geoffrey Irving, and Iason Gabriel. 2022. Taxonomy of Risks posed by Language Models. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (Seoul, Republic of Korea) (FAccT '22). Association for Computing Machinery, New York, NY, USA, 214-229.
+
+[92] Emma Wiles, Lisa Krayer, Mohamed Abbadi, Urvi Awasthi, Ryan Kennedy, Pamela Mishkin, Daniel Sack, and François Candelon. 2024. GenAI as an Exoskeleton: Experimental evidence on knowledge workers using GenAI on new skills. Available at SSRN 4944588 (2024).
+
+[93] Chris Woolston. 2022. Is big tech draining AI talent from academia? Nature 610, 7931 (2022), 26-27.
+
+[94] YouGov. 2025. What do Britons think AI chatbots are good at?
+
+[95] Marc Zao-Sanders. 2024. How People Are Really Using Gen AI. Harvard Business Review (19 March 2024). https://hbr.org/2024/03/howpeople-are-really-using-genai Online Article.
+
+[96] Marc Zao-Sanders. 2025. How People Are Really Using Gen AI in 2025. Harvard Business Review (9 April 2025). https://hbr.org/2025/04/ how-people-are-really-using-gen-ai-in-2025 Online Article.
+
+[97] Yi Zeng, Kevin Klyman, Andy Zhou, Yu Yang, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, and Bo Li. 2024. Ai risk categorization decoded (air 2024): From government regulations to corporate policies. arXiv preprint arXiv:2406.17864 (2024).
+
+[98] Chunpeng Zhai, Santoso Wibowo, and Lily D Li. 2024. The effects of over-reliance on AI dialogue systems on students ' cognitive abilities: a systematic review. Smart learning environments 11, 1 (2024), 28.
+
+[99] Tao Zhou and Chunlei Zhang. 2024. Examining generative AI user addiction from a CAC perspective. Technology in Society 78 (2024).
+
+# A Methodology for computing trend statistics
+
+GenAI Documentation. As a first step, we download all relevant material, including scientific articles, and for more recent models, tech reports, model cards, or blog posts, in a few cases, such as Llama 4, where other material is not published. We consider all models mentioned in Table 2. We automatically extract the plain text from those using the textract library in Python, and normalize it to lowercase letters, replacing newline characters or other whitespace characters, to standard single whitespaces. We use a vocabulary of keywords (Table 1) that we developed by manually examining the relevant documentation, balancing the extension of the vocabulary with the avoidance of false positives, e.g., the use of the term 'bias ' is not ideal for identifying biases, since the same word is extensively used in a technical sense. Once, we extract the relevant segments of the text, where the keywords are identified, we manually assess whether the identified keywords are used in the relevant sense.
+
+Academic Proceedings. For academic proceedings, we either scraped the publicly available proceedings from the web, e.g., for NeurIPS, or used the readily available BibTeX or CSV records provided from the venues, e.g., for ICLR, ICML, and ACL-where we consider all major ACL* venues (ACL, EMNLP, EACL, NAACL, AACL) combined. We followed a similar data-cleaning and normalization process, as described in the preceding paragraph (GenAI Documentation), and conducted a keyword search based on the papers ' titles and abstracts. Since the volume of papers is humongous-thousands of papers, we could not manually validate the keyword search, so instead we curated a more targeted search using more specific terms, e.g., ' child abuse ' and ' child harassment' instead of the general term ' child' by manual inspection of the results balancing again coverage with the avoidance of false positives. We believe that the quality of the process is adequate for the means of this study, since we primarily care about the general trends (volume) and not the precise numbers (See Section 7).
+
+<!-- PageBreak -->
+

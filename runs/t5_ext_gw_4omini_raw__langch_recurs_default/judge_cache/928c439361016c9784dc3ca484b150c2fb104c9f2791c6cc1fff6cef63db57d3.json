@@ -1,0 +1,14 @@
+{
+  "request_hash": "928c439361016c9784dc3ca484b150c2fb104c9f2791c6cc1fff6cef63db57d3",
+  "prompt_sha256": "9f035e59b3bf99399ef552ce29b6204d1769c6417e4eb08a6c3818c725bf801b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOc7HCdt3mxnIsqHzpeR88ck1vbT",
+  "prompt_tokens": 8359,
+  "completion_tokens": 48,
+  "actual_usd": 0.0012826499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by confirming that the RGPD applies independently of the RIA and that an AIPD is required for high-risk systems as per the RIA."
+  }
+}

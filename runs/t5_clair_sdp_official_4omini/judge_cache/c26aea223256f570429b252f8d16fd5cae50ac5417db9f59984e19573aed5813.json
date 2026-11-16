@@ -1,0 +1,14 @@
+{
+  "request_hash": "c26aea223256f570429b252f8d16fd5cae50ac5417db9f59984e19573aed5813",
+  "prompt_sha256": "8d3e2f275b81fa972779c32a6880b7fd0b709b75fa00dd8cf2fd9ed773a4eb63",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQc6CTU26WnPJP2voPXwPM0IBqr",
+  "prompt_tokens": 8507,
+  "completion_tokens": 47,
+  "actual_usd": 0.00130425,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that Signatories will act on complaints unless they are manifestly unfounded or have already responded to an identical complaint."
+  }
+}

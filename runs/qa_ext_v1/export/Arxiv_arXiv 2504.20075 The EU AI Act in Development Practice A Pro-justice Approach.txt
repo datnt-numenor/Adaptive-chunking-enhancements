@@ -1,0 +1,347 @@
+DOCUMENT: arXiv 2504.20075 The EU AI Act in Development Practice A Pro-justice Approach
+
+<<<PAGE 10>>>
+Space 5. Data governance: In this space, teams can document their approach to data collection and processing, including GDPR compliance, and learn about data justice.
+
+Space 6. Model governance: This space guides teams through the process of documenting their approach to model training and selecting appropriate fairness metrics.
+
+Space 7. Evaluation and care: In this space, teams are instructed not only to monitor a given system after deployment but also establish effective procedures for responding to reported incidents and complaints.
+
+The diagram below (Figure 1.) summarises the workflow proposed by HEAT. In this section, we provide several examples of how the feminist lens allowed us to interpret the Act in the construction of these spaces and individual tasks that HEAT comprises.
+
+<Figure>
+Figure 1. Diagram of the HEAT workflow, representing the interconnected 'spaces'.
+</Figure>
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+# 4.1 Justifying AI Use and Developing Exit Strategies
+
+While the Act assumes building AI systems is a given and mandates compliance, our pro-justice approach requires high-risk AI providers to justify the need of their systems. They are required to demonstrate that building an AI system is not only feasible but also more effective and desirable than alternative solutions considered thus far [35]. Our effort to guide HEAT users through a structured process for making early-stage decisions about whether building an AI system is justified aligns with a feminist AI ethics approach, which challenges the notion and practice of technosolutionism. Feminist AI ethics advocates for a deeper examination of whether AI is the right tool for the problem at hand, rather than assuming that AI is inherently superior to other solutions. Therefore, in Space 1, the onboarding section of the toolkit, we designed a series of tasks that guide the AI development team through a justification process of their AI system. These tasks include:
+
+● Problem Definition: Define the problem, considering whether it is influenced by inequalities or injustices, and assess how AI might perpetuate or address these issues.
+
+● Role of AI: Describe the functions of AI and explain how these functions contribute to solving the problem.
+
+● Existing Best Practices: Identify current technical and non-technical best practices and their baseline performance. Explain how AI enhances these practices and provides additional value beyond technical metrics.
+
+● Criticisms and Past Incidents: Summarise major critiques and incidents related to AI in similar contexts. Detail how your AI solution addresses these concerns and improves on previous attempts.
+
+This exercise is not just for ethical consideration but also has practical business implications. Addressing the key issue of poor problem formulation and flawed assumptions during the ideation phase [38] -responsible for over 85% of AI innovation project failures [54] - is crucial for business success. When flawed assumptions are embedded within the development and deployment of AI systems, they set the stage for inevitable failure. Regardless of the AI system's accuracy or robustness, it is doomed to fail in its intended purpose if it is assessed against the wrong objectives. This misguided approach guarantees that even the most advanced AI systems will falter, unable to address the true complexities of the problems they were meant to solve. By tackling these foundational problems early, businesses can avoid costly errors.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+Moreover, in this exercise, we also emphasise the importance of considering the perspectives of individuals and groups who are directly or indirectly impacted by the AI system. We encourage AI development teams to acknowledge that stakeholders have the legitimate right to reject AI solutions when they are inappropriate. To support this, we provide real-world examples, such as a company's decision to forgo creating a recommendation engine for a gambling product. These examples, collected by AI engineers, illustrate how companies have determined that AI was not the right solution for their needs. These examples of 'exit doors' are intended to empower AI development teams to effectively off-board AI solutions that fail to meet ethical standards or practical needs.
+
+Only after the justification for using AI has been thoroughly completed are users tasked with defining the intended use of the AI system. Documenting the intended use of AI systems is not only a recommended best practice within the responsible AI community, as noted in model cards, but also a mandatory requirement under the Act. However, these practices often assume that the development of an AI system is justified from the outset. In contrast, our approach mandates that AI developers first justify the purpose for AI by clearly defining the problem it aims to solve, explaining why AI is the best solution, and evaluating how it can improve upon existing best practices while addressing any criticisms and incidents related to similar AI applications. It is only after this justification that defining and documenting the intended use of AI becomes meaningful.
+
+4.2 Stakeholder Engagement
+
+While the Act does not make engaging stakeholders external to the development team a compulsory element of the development process, Article 95 specifies that companies can, on a voluntary basis, commit to fulfilling additional requirements, including 'the establishment of inclusive and diverse development teams and the promotion of stakeholders' participation in [the design] process.' As we noted above, the feminist understanding of expertise and the acknowledgment of partiality of knowledge is fundamental to feminist ethics and epistemology and therefore, engaging different stakeholders is not optional in our interpretation of the Act; it is critical to establishing a sound understanding of AI's risks and benefits to specific groups of people (and 'vulnerable' groups in particular, to use the Act's terminology). This is why the users of HEAT are encouraged to return to Space 3 throughout development and deployment, where they are guided through the process of engaging diverse stakeholders. For instance, to consider both intended and unintended consequences of a given AI system for individuals, groups and communities (something that the Act does prescribe) in Space 2, the HEAT users are prompted to move to Space 3 to include marginalised and vulnerable groups in the process of identifying these consequences.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+Space 3 provides instructions on how to identify all relevant stakeholders, both direct (end users, decision subjects, system providers and deployers) and indirect (regulators, associated parties, civil society organisations), as well as to distinguish between deployers, users, and affected individuals, as per the Act's categorisation. The central task within Space 3 guides users through engaging stakeholders in a meaningful and power-sensitive way. Drawing on recent critiques of participatory approaches to AI, HEAT highlights the dangers of tokenism and participationwashing, and encourages users to compensate any external stakeholders accordingly for the time they spend interacting with the core design team [8, 19, 46]. While HEAT links users to useful resources, such as the Community Partnerships Playbook [16] and the Design from the Margins report [44], that may help working through the difficulties of participatory projects, Space 3 makes clear that friction is a necessary and unavoidable element of the process. Drawing on a methodology developed by Birhane and colleagues [8], HEAT users are guided through a questionnaire fostering self-reflexivity, including prompts like 'In what ways will the participation process allow for disagreement?' or 'Did participants have the opportunity to refuse participation or withdraw from the process without causing direct or indirect harm to themselves or their communities?'
+
+Following Delgado and colleagues [19], Space 3 presents stakeholder participation projects as ranging from consultation, akin to user experience research which most teams are already conducting in some form, through inclusion, where all stakeholders, not only the development team, have influence over the end product, to collaboration, where stakeholders get to shape the product's scope and purpose through long-term, established partnerships based on mutual trust. While we make clear that the Act does not prescribe such engagements, we suggest that the protection of fundamental rights and values, including human dignity, required by the Act, might necessitate not only consulting diverse stakeholders throughout design but also giving them agency over the nature and outcomes of the design process itself.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+We should also note in reference to Space 3 that we are aware of the critiques of the term 'stakeholder', focusing on its roots in extractive and violent colonial contexts [42]. However, since no alternatives have been proposed that would serve as adequate umbrella terms denoting those who have an interest in or are affected - directly and indirectly - by a given project, for ease and clarity (and bearing in mind the needs of users for whom English is a second language), for the purposes of HEAT, we have decided to refer to 'stakeholders.'
+
+# 4.3 Disability and Design Justice at the Interface Level
+
+Space 4, 'User-centred design' addresses the user-facing elements of an AI-based system. This includes all elements of the interface and interaction design including in relation to usability, access, and transparency. Our pro-justice approach focused on expanding on the Act's minimal requirements in relation to accessibility through the incorporation of disability justice and design justice guidance.
+
+'Disability' is presented at 6 points throughout the Act [14] where it is narrowly framed as a 'vulnerability'. Specifically, disability is mentioned as: 1. a vulnerability to "manipulation" (Recital 29); 2. in relation to appropriate transparency (Recital 132); 3. as part of the prohibition against exploiting vulnerabilities (Article 5); 4. for requiring "appropriate protection" in the context of testing (Article 60) as well as in articles 165 and 95 in the context of voluntary practice.
+
+Furthermore, while the Act no doubt defers much to existing EU and national antidiscrimination and disability rights laws (e.g., the European Accessibility Act [13]), Article 95 explicitly situates testing and the prevention of access harms within 'voluntary codes of conduct': 'assessing and preventing the negative impact of AI systems on vulnerable persons or groups of vulnerable persons, including as regards accessibility for persons with a disability.' This niche and apparently non-mandatory treatment of accessibility seems to belie the reality that 1 in 4 adults in Europe have a disability, while also failing to acknowledge the responsibility of infrastructure developers to create services that are accessible to all.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+To remedy this narrow approach, in Space 4 we:
+
+● introduce the social model of disability (emphasising how design can create disability),
+
+● draw attention to 'invisible' disabilities,
+
+● demonstrate how designing for broad access genuinely benefits everyone,
+
+● emphasise the importance of testing with users of diverse abilities
+
+● provide links to relevant law and design justice principles.
+
+In the 'Going further' section we also highlight the representational harms caused by AI for people with disabilities, encourage going beyond just representative testing to deeper involvement and participation, and link to two tools: a Design Justice exercise [1] and the Cards for Humanity tool [12] for toolkit users interested in improving capacity and understanding across their teams.
+
+Of course, disability and design justice principles are incorporated throughout HEAT but the user-facing elements that are the focus of Space 4 present a particularly important and straightforward target for improving practice among AI developers. We want product managers to leave the tool with a broader understanding of disability and awareness of the widespread impact better accessibility design can have for the success of their product as well as for the benefit of society.
+
+# 4.4 Consent, Complaint & Redress
+
+Consent, complaint and redress are important feminist principles that are expressed to varying extents by the Act. Our tool explores possibilities for making these more pronounced in accordance with adjacent legislation (such as GDPR).
+
+# 4.4.1 Consent
+
+Article 3 (59) defines consent as "a subject's freely given, specific, unambiguous and voluntary expression of his or her willingness to participate". Although this applies only to participants doing user testing (Article 3, 60, 61; Recital 141 of the AI Act [14]), the GDPR [15] also applies and must be followed in addition to the Act, requiring companies to acquire a data subject's "affirmative" and "unambiguous indication" of consent when processing personal data. However, there is little in the way of guidance on how such consent should best be obtained. We propose a path forward in line with The European Court of Human Rights' pioneering 2003 approach to sexual consent that requires similarly unambiguous and affirmative displays of willingness in order to comply as consent, i.e. not explicitly saying no doesn't disqualify the assault from being viewed as such. Feminist groups campaigned for this more stringent definition because consent is a relatively weak concept, easily strained within relationships characterised by a power imbalance. We view this as analogous to AI company vs. consumer/user tester relationships. Consent as a governance mechanism cannot perform the moral magic of transforming an imbalanced power relationship [21].
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+Therefore, while our user centred design section (4) includes a variety of questions to consider when obtaining consent before the collection, processing, and storing of personal data, we also include exercises that raise awareness of the difficulty in acquiring consent within such power imbalances. We advocate for participatory design as a method of addressing said imbalances by enabling the direct involvement of affected individuals within the creation of the system. For example, instead of user agreements being created by companies and consented to by affected individuals, as too often is normal practice, agreements could instead be drafted with affected individuals through the methods outlined in stakeholder engagement and user centred design space. In our data governance space, we also ask for a description of how individuals in question consented to the collection of their data, and, where consent was obtained, where consenting individuals were provided with a mechanism to revoke their consent.
+
+4.4.2 Complaint & Redress
+
+The Act does not provide redress mechanisms for individuals but includes: the right to lodge a complaint with a market surveillance authority (Article 85), the right to an explanation for every individual algorithmic decision (Article 86), and the right to report infringements and be protected when reporting (Article 87). It does not guarantee affected persons compensation for harms, and it excludes the private sector from having to mandatorily respect fundamental rights (e.g., the fundamental rights impact assessment in Article 27 is only mandatory for public bodies and private bodies providing public services, excluding big tech companies). However, because fundamental rights are at the heart of its risk-based approach, our tool meets the spirit of the law by guiding companies through creating complaint and redress mechanisms which allow individuals to issue a complaint directly with system providers, acquire a response, and seek redress. We believe this is consistent with the spirit of the law and could also bolster the weaker proposals of: (1) the Product Liability Directive [23], which only covers material harms such as death and destruction to property as a result of a defective AI product, (2) the AI Liability Directive [22], which reduces its own effect by limiting the application to cases in which compensation for fundamental rights is already included in the civil law regulations of the member states (page 9-10 of the AI Liability Directive [22]; see more on this in Wachter [50] and (3) the GDPR [15], which does require compensation to affected persons only in the narrow scope when harm arises from personal data processed by the algorithms.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+In 1.2.1 we suggest that the team appoints a Complaint Oversight Officer to oversee the complaints process. In section 4.5 we include tasks that ensure stakeholders can submit feedback, lodge complaints, or report incidents through establishing nondefensive and constructive Empowerment of Users, Feedback and Reporting, Responsive Communication, Addressing Dissatisfaction, and Acting on Feedback. These serve to integrate complaints into the product for the purpose of improving it, thus responding to feminist work on how, often, "to be heard as complaining is not to be heard" when coming up against an institution, and how the process of complaint (or lack thereof) is indicative of the ethos of the system more broadly [2]. We also establish additional incentives for companies, e.g. that establishing feedback mechanisms not only helps you identify and address stakeholders' concerns but also enhances their experience of and trust in the product, thereby enabling sustainable growth and a competitive advantage.
+
+4.5 How power operates in Data
+
+Increasing user consent in relation to data also involves remedying the power imbalance inherent in data work. While the Act implicitly acknowledges that models trained on incomplete or unrepresentative datasets can produce discriminatory outputs, we aim to address the inadequacy of these implications by emphasising a power-aware perspective [5, 32]. This perspective looks into AI systems but focuses on larger organisational and social contexts, investigating historical inequities, labour conditions, and epistemological standpoints inscribed in data [36]. We emphasise that context-based awareness of these should precede any data collection and processing. Therefore, the first task in our data governance space is Understanding how power operates in data. This informs the way we present real-world examples of the exclusion and underrepresentation of certain groups in datasets [11]. It also informs participatory design practice's emphasis on building trust and fostering collaboration with local communities through transparent communication and involvement in the data collection process [55].
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+This task drew from a wealth of feminist data science work to debunk those prominent myths in data science: the belief that data is neutral and objective [17], or that harms deriving from data science practices can be remedied by replacing 'bad' data with 'good' data. We ask users to confront how good data is context-specific by asking themselves 'who questions' about their AI systems: who designs it? Who benefits from it? and who is marginalised by it? [20]. Our tool also informs users about the ethical ramifications of data cleaning, tidying, and processing, as well as the selection of training data, data collection methods, data categorization, and the choice of features for analysis [30]. These aspects, often perceived as neutral in machine learning, are business decisions, and therefore are political, strategic and commercial as much as they are technical. Consequently, we stress the importance of documenting the rationale behind decisions and ensuring the meticulous integration of both technical and ethical considerations throughout the process.
+
+# 4.6 Sustainability and more-than-human-centred design
+
+While the Act [14] acknowledges environmental sustainability of AI systems as an area of concern, it does not mandate providers of high-risk AI to monitor the environmental impact of development. However, in response to the growing prominence of environmental sustainability of AI in the AI ethics discourse [9] - with increased scrutiny on the carbon [48] and water footprints [34] of new models - Article 95 specifies that developers of high-risk AI can voluntarily assess and aim to minimise the negative impact of AI systems on environmental sustainability, focusing on 'energy-efficient programming and techniques for the efficient design, training and use of AI.' Furthermore, Article 112 signals the possibility of introducing additional requirements for high-risk AI providers, including those related to environmental sustainability, when the Act is revised in the future.
+
+Although Articles 95 and 112 do not explicitly require high-risk AI providers to conduct environmental impact assessments and implement mitigation strategies just yet, in our pro-justice interpretation of the Act environmental concerns are seen as inseparable from other concerns about the social impact of AI. Sustainability is not an add-on feature of AI ethics; rather, as human lives are interconnected and interdependent on the lives of other species and environmental well-being in general, care in feminist AI ethics extends beyond 'the human.'
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+For this reason, Space 2 includes a section dedicated to assessing and mitigating the environmental impact of AI systems. This section introduces users to methods for calculating the carbon footprint of a given model [29] as well as conducting a Life Cycle Analysis for AI systems. It also links users to explainers on approaches such as Green AI [45], which prioritises efficiency in training new models. Beyond these technical and procedural approaches, we have also included, under the 'Go Further' subsection, a speculative design exercise that encourages the users of HEAT to rethink the design of their product at the ideation stage with 'the environment' in mind as an 'unimaginable user persona' [27]. This exercise aims to introduce development teams to more-than-human-centred or allocentric practices in design: approaches to designing that acknowledge the fundamental interconnectedness of all living things, aiming to align human goals with non-human needs and environmental constraints.
+
+5. Limitations, Future Directions, and Conclusions
+
+In the practice of compliance with the EU AI Act, the application of pro-justice theories offers a pathway to embody the law's spirit. This pro-justice lens not only ensures that the letter of the law is followed but also that the underlying principles and intentions of the EU AI Act are realized in the development and deployment of AI systems. As highlighted in critiques of the toolkitfication of AI ethics [28], such perspectives are often absent, even with the growing prevalence of responsible AI toolkits. The HEAT toolkit, however, grounds compliance efforts in feminist, antiracist, and pro-justice critiques, prompting users to engage critically with the power dynamics at play and the structural injustices that shape AI and can be perpetuated by it.
+
+In this paper, we aim to explain how pro-justice theories were applied in designing the toolkit, offering concrete examples to illustrate our approach. However, it is beyond the scope of this paper to describe the full design process, including our collaboration with industry practitioners, the advisory board, and user testing to assess the toolkit's effectiveness and usability. For instance, details on how we ensured the interconnectedness of spaces in the presentation format, as well as the links between content within each space, are not covered here. These aspects will be addressed in future publications.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+Looking ahead, future iterations of our tool could allow individual persons to forward their complaints to public interest organisations for them to lodge a collective complaint to the market surveillance authorities. Future versions could also include a resolution process that protects reporting persons from within a company (based on Article 87). Shane Jones [31], whistleblower and former AI Engineering lead at Microsoft complained that "Microsoft does not have a system that I am aware of where you can report a responsible AI issue and have it tracked throughout its lifecycle from the initial report to a resolution". Internal complaint mechanisms can allow companies to avoid PR damage and the authoritarian imposition of restrictions for AI professionals who encounter issues.
+
+Compliance with Ethical Standards Sources of funding
+
+The project receives funding from the Region of Emilia Romagna, Leverhulme Trust, and Stiftung Mercator.
+
+Disclosure of potential conflicts of interest
+
+References
+
+1. A Design Justice exercise. https://static1.squarespace.com/static/5d5d34e927fded000105ccc4/t/61f47a25
+
+ed03586e68862392/1643412006205/DESIGN%2BJUSTICE%2BZINE_ISSUE1 _Activity.pdf Accessed 16 September 2024
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+2. Ahmed, S.: Complaint! Duke University Press, New York, NY, USA (2021). https://doi.org/10.2307/j.ctv1v7zdh2
+
+3. Attard-Frost, B., Delos Ríos, A., Walters, D.R.: The ethics of AI business practices: a review of 47 AI ethics guidelines. AI Ethics 3, 389-406 (2023). https://doi.org/10.1007/s43681-022-00156-6
+
+4. Ayling, J., Chapman, A.: Putting AI ethics to work: are the tools fit for purpose? AI Ethics 2, 405-429 (2022). https://doi.org/10.1007/s43681-02100084-x
+
+5. Barabas, C., Doyle, C., Rubinovitz, J., Dinakar, K.: Studying up: reorienting the study of algorithmic fairness around issues of power. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (2020). https://dl.acm.org/doi/pdf/10.1145/3351095.3372859
+
+6. Barad, K.: Meeting the Universe Halfway. Quantum Physics and the Entanglement of Matter and Meaning. Duke University Press, New York, NY, USA (2016). https://doi.org/10.1515/9780822388128
+
+7. Beuret, N.: Review: Isabelle Stengers, In Catastrophic Times: Resisting the Coming Barbarism. Theory, Culture & Society, 34(7-8), 259-264 (2017). https://doi.org/10.1177/0263276417736368
+
+8. Birhane, A., Isaac, W., Prabhakaran, V., Diaz, M., Elish, M. C., Gabriel, I., Mohamed, S.: Power to the People? Opportunities and Challenges for Participatory AI. In Proceedings of the 2nd ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO '22). Association for Computing Machinery, New York, NY, USA, Article 6, 1-8 (2022). https://doi.org/10.1145/3551624.3555290
+
+9. Bolte, L., van Wynsberghe, A.: Sustainable AI and the third wave of AI ethics: a structural turn. AI Ethics (2024). https://doi.org/10.1007/s43681-02400522-6
+
+21
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+10. Browne, J., Drage, E., McInerney, K.: Tech workers' perspectives on ethical issues in AI development: Foregrounding feminist approaches. Big Data & Society, 11(1) (2024). https://doi.org/10.1177/20539517231221780
+
+11. Buolamwini, J., Gebru, T.: Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. Proceedings of the 1st Conference on Fairness, Accountability and Transparency, PMLR 81:77-91 (2018). https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf
+
+12. Cards for Humanity. https://cardsforhumanity.frog.co/ Accessed 16 September 2024
+
+13. Council of the European Union: Directive of the European Parliament and of the Council on the accessibility requirements for products and services (European Accessibility Act). (EU) 2019/882 (2019). https://eurlex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882
+
+14. Council of the European Union: Regulation of the European Parliament and of the Council laying down harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union legislative Acts. (EU) 2024/1689 (2024). https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+15. Council of the European Union: Regulation of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). (EU) 2016/679 (2016). https://eur-lex.europa.eu/eli/reg/2016/679/oj
+
+16. Cutler, M., Keith, E., Kleinman, M., Ky, M., Navarrete, Y., Pellar, K., Ramesh, D., Welsby, E.: Community Partnerships Playbook: How to Create Equitable Partnerships between Technical and Community Experts, University of Michigan's Science, Technology, and Public Policy (2024).
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+https://stpp.fordschool.umich.edu/sites/stpp/files/2024-01/communitypartnerships-playbook-2024.pdf
+
+17. Davies, T., Frank, M.: 'There's no such thing as raw data': exploring the sociotechnical life of a government dataset. In Proceedings of the 5th Annual ACM Web Science Conference (WebSci '13). Association for Computing Machinery, New York, NY, USA, 75-78 (2013). https://doi.org/10.1145/2464464.2464472
+
+18. Davis, J. L., Williams, A., Yang, M. W.: Algorithmic reparation. Big Data & Society, 8(2) (2021). https://doi.org/10.1177/20539517211044808
+
+19. Delgado, F., Yang, S., Madaio, M., Yang, Q.: The Participatory Turn in AI Design: Theoretical Foundations and the Current State of Practice. Proceedings of the 3rd ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO '23). Association for Computing Machinery, New York, NY, USA, Article 37, 1-23 (2023).
+
+https://doi.org/10.1145/3617694.3623261
+
+20. D'Ignazio, C., Klein, L.F.: Data Feminism. MIT Press (2023)
+
+21. Edenberg, E., Jones, M. L.: Analyzing the legal roots and moral core of digital consent. New Media & Society, 21(8), 1804-1823 (2019).
+
+https://doi.org/10.1177/1461444819831321
+
+22. European Commission: Proposal for a Directive of the European Parliament and of the Council on Adapting Non-contractual Civil Liability Rules to Artificial Intelligence (AI Liability Directive), COM (2022) 496 final (2022). https://eurlex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52022PC0496
+
+23. European Parliament: European Parliament Legislative Resolution of 12 March 2024 on the Proposal for a Directive of the European Parliament and of the Council on Liability for Defective Products, P9_TA (2024) 0132. https://eurlex.europa.eu/legal-content/EN/TXT/?uri=EP%3AP9_TA%282024%290132
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+24. Hagendorff, T.: The ethics of AI ethics: an evaluation of guidelines. Mind. Mach. 30, 99-120 (2020). https://doi.org/10.1007/s11023-020-09517-8
+
+25. Haraway, D. J., Goodeve, T.: Modest_Witness@Second_Millennium. FemaleMan_Meets_OncoMouse. Feminism and Technoscience. Routledge, London (2018)
+
+26. Hollanek, T., Ganesh, M. I.: 'Easy wins and low hanging fruit.' Blueprints, toolkits, and playbooks to advance diversity and inclusion in AI. In: Neves, J. and Steinberg, M. (eds.), In/Convenience: Inhabiting the Logistical Surround. Amsterdam, Institute of Network Cultures (2024)
+
+27. Hollanek, T.: Allocentric Design: Critical Practice in the Age of Radical Technological and Environmental Change [Apollo - University of Cambridge Repository] (2022). https://doi.org/10.17863/CAM.99629
+
+28. Hollanek, T.: The ethico-politics of design toolkits: responsible AI tools, from
+
+- big tech guidelines to feminist ideation cards. AI Ethics (2024). https://doi.org/10.1007/s43681-024-00545-z
+
+29. Hugging Face: Displaying carbon emissions for your model (2024). https://huggingface.co/docs/hub/model-cards-co2.
+
+30. Jeong, H, Wang, H., Calmon, F. P.: Fairness without Imputation: A Decision Tree Approach for Fair Prediction with Missing Values. AAAI Conference on Artificial Intelligence (2021). https://doi.org/10.1609/aaai.v36i9.21189
+
+31. Jones, S.: Letter to the Microsoft Board of Directors. https://s.wsj.net/public/resources/documents/SHANE_JONES_MICROSOFTFTCL ETTER.pdf Accessed 16 September 2024
+
+32. Kalluri P.: Don't ask if artificial intelligence is good or fair, ask how it shifts power. Nature, 583 (7815), 169 (2020). https://doi.org/10.1038/d41586-02002003-2
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+33. Kelly J., Zafar S., Heidemann, L., Zacchi, J., Espinoza, D., Mata, N.: Navigating the EU AI Act: A Methodological Approach to Compliance for Safety-critical Products. 2024 IEEE Conference on Artificial Intelligence (CAI 2024). https://doi.org/10.48550/arXiv.2403.16808
+
+34. Lee, M. S. A., Singh, J.: The Landscape and Gaps in Open Source Fairness Toolkits. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 699, 1-13 (2021). https://doi.org/10.1145/3411764.3445261
+
+35. Malgieri, G., Pasquale, F.: Licensing high-risk artificial intelligence: Toward ex ante justification for a disruptive technology, Computer Law & Security Review, Volume 52 (2024). https://doi.org/10.1016/j.clsr.2023.105899
+
+36. Miceli, M., Posada, J., Yang, T.: Studying Up Machine Learning Data: Why Talk About Bias When We Mean Power? Proc. ACM Hum.-Comput. Interact. 6, GROUP, Article 34 (2022). https://doi.org/10.1145/3492853
+
+37. Morley, J., Floridi, L., Kinsey, L., Elhalal, A.: From what to how: an initial review of publicly available AI ethics tools, methods and research to translate principles into practices. Sci. Eng. Ethics 26, 2141-2168 (2020). https://doi.org/10.1007/s11948-019-00165-5
+
+38. Passi, S., Barocas, S.: Problem Formulation and Fairness. In Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* '19). Association for Computing Machinery, New York, NY, USA, 39-48 (2019). https://doi.org/10.1145/3287560.3287567
+
+39. Peters, D., Loke, L., Ahmadpour, N.: Toolkits, cards and games - a review of analogue tools for collaborative ideation. CoDesign 17(4), 410-434 (2021). https://doi.org/10.1080/15710882.2020.1715444
+
+40. Petterson, A., Cheng, K., Chandra, P.: Playing with Power Tools: Design Toolkits and the Framing of Equity. In Proceedings of the 2023 CHI Conference
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+- on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 392, 1-24 (2023). https://doi.org/10.1145/3544548.3581490
+
+41. Prem, E.: From ethical AI frameworks to tools: a review of approaches. AI Ethics 3, 699-716 (2023). https://doi.org/10.1007/s43681-023-00258-9
+
+42. Reed, M.S., Merkle, B.G., Cook, E.J. et al .: Reimagining the language of engagement in a post-stakeholder world. Sustain Sci 19, 1481-1490 (2024). https://doi.org/10.1007/s11625-024-01496-4
+
+43. Richardson, B. Garcia-Gathright, J., Way, S.F., Thom, J., Cramer, H.: Towards Fairness in Practice: A Practitioner-Oriented Rubric for Evaluating Fair ML Toolkits. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 236, 1-13 (2021). https://doi.org/10.1145/3411764.3445604
+
+44. Rigot, A.: Design From the Margins, Belfer Center for Science and International Affairs, Harvard Kennedy School (2022).
+
+https://www.belfercenter.org/sites/default/files/pantheon_files/files/publication/ TAPP-Afsaneh_Design From the Margins_Final_220514.pdf
+
+45. Schwartz, R., Dodge, J., Smith, N.A., Etzioni, O: Green AI. Commun. ACM 63, 12. 54-63 (2020). https://doi.org/10.1145/3381831
+
+46. Sloane, M., Moss, E., Awomolo, O., Forlano, L.: Participation Is not a Design Fix for Machine Learning. In Proceedings of the 2nd ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO '22). Association for Computing Machinery, New York, NY, USA, Article 1, 1-6 (2022). https://doi.org/10.1145/3551624.3555285
+
+47. Stengers, I.: In Catastrophic Times: Resisting the Coming Barbarism. Open Humanities Press, London (2015)
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+48. Strubell, E., Ganesh, A., McCallum, A.: Energy and policy considerations for modern deep learning research. In Proceedings of the AAAI conference on artificial intelligence, Vol. 34, No. 09, pp. 13693-13696 (2020). https://doi.org/10.1609/aaai.v34i09.7123
+
+49. Vakkuri, V., Kemell, K.-K., Tolvanen, J., Jantunen, M., Halme, E., Abrahamsson, P.: How Do Software Companies Deal with Artificial Intelligence Ethics? A Gap Analysis. In Proceedings of the 26th International Conference on Evaluation and Assessment in Software Engineering (EASE '22). Association for Computing Machinery, New York, NY, USA, 100-109 (2022). https://doi.org/10.1145/3530019.3530030
+
+50. Wachter, S.: Limitations and Loopholes in the EU AI Act and AI Liability Directives: What This Means for the European Union, the United States, and Beyond. Yale Journal of Law and Technology, vol. 26, no. 3, Yale Law School, pp. 671-718 (2024). https://yjolt.org/limitations-and-loopholes-eu-ai-act-andai-liability-directives-what-means-european-union-united
+
+51. Walters, J., Dey, D., Bhaumik, D., Horsman, S.: Complying with the EU AI Act. In: Nowaczyk, S., et al. Artificial Intelligence. ECAI 2023 International Workshops. ECAI 2023. Communications in Computer and Information Science, vol 1948. Springer, Cham (2024). https://doi.org/10.1007/978-3-031-50485-3_5
+
+52. Wilson, E. A.: Gut Feminism. Duke University Press, North Carolina (2015). https://doi.org/10.1215/9780822375203
+
+53. Wong, R. Y., Madaio, M A., Merrill, N.: Seeing Like a Toolkit: How Toolkits Envision the Work of AI Ethics. Proc. ACM Hum.-Comput. Interact. 7, CSCW1 (2023). https://doi.org/10.1145/3579621
+
+54. Yildirim, N., Oh, C., Sayar, D., Brand, K., Challa, S. , Turri, V., Crosby Walton, N., Wong, A.E., Forlizzi, J., McCann, J., Zimmerman, J.: Creating Design Resources
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+to Scaffold the Ideation of AI Concepts. In Proceedings of the 2023 ACM Designing Interactive Systems Conference (DIS '23). Association for Computing Machinery, New York, NY, USA, 2326-2346 (2023). https://doi.org/10.1145/3563657.3596058 55. Young, M., Ehsan, U., Singh, R., Tafesse, E., Gilman, M., Harrington, C., Metcalf, J.: Participation versus scale: Tensions in the practical demands on participatory AI. First Monday, 29(4) (2024). https://doi.org/10.5210/fm.v29i4.13642
+
+<!-- PageFooter: 28 -->
+

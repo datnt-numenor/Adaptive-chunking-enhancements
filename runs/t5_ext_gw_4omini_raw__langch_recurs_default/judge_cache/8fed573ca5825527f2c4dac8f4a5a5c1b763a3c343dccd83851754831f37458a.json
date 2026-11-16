@@ -1,0 +1,14 @@
+{
+  "request_hash": "8fed573ca5825527f2c4dac8f4a5a5c1b763a3c343dccd83851754831f37458a",
+  "prompt_sha256": "f16f5f48a83f7879138d7633dc9842360362bc5e4838921b9de232c94400ab3e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4Ou5D00rkv37IJwjucjeSZaXVI",
+  "prompt_tokens": 7705,
+  "completion_tokens": 36,
+  "actual_usd": 0.00117735,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive list of agency abbreviations, including DOS for the Department of State, fully supporting the Reference Answer."
+  }
+}

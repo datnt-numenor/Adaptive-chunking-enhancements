@@ -1,0 +1,14 @@
+{
+  "request_hash": "0796c0f11acf33522bce9453ab405e59cb28421cd2cbc36a43f01298e7483670",
+  "prompt_sha256": "ab0884d8808e7d844506872809097f46a65369c7702131e01e60856a00e033d5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXQwI2MmkcFwOO0280uuxYcYrMM",
+  "prompt_tokens": 6807,
+  "completion_tokens": 43,
+  "actual_usd": 0.00104685,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of documenting data provenance and assessing data for completeness, accuracy, and validity in the context of AI systems."
+  }
+}

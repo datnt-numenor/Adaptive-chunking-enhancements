@@ -1,0 +1,171 @@
+DOCUMENT: arXiv 2503.18979 Threshold Crossings as Tail Events for Catastrophic AI Risk
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2503.18979v2 [cs.CY] 26 Mar 2025 -->
+
+# Threshold Crossings as Tail Events for Catastrophic AI Risk ⋆
+
+Elija Perrier
+
+Center for Quantum Software & Information, University of Technology, Sydney, elija.perrier@gmail.com
+
+Abstract. We analyse circumstances in which bifurcation-driven jumps in AI systems are associated with emergent heavy-tailed outcome distributions. By analysing how a control parameter's random fluctuations near a catastrophic threshold generate extreme outcomes, we demonstrate in what circumstances the probability of a sudden, large-scale, transition aligns closely with the tail probability of the resulting damage distribution. Our results contribute to research in monitoring, mitigation and control of AI systems when seeking to manage potentially catastrophic AI risk.
+
+Keywords: AI, statistics, catastrophic, risk
+
+# 1 Introduction
+
+Understanding the conditions and frequency of potential catastrophic or existential risks posed by artificial intelligence (AI) systems is a major focus of AI safety and security research [10, 11, 12, 5, 4, 3, 7, 18, 19]. Despite the dearth of empirical data on AI risk [15], such systems are often speculated to exhibit highly nonlinear (or unpredictable [6]) behaviours characteristic of emergent complex systems, such as sudden phase changes or jumps in capability and risk above certain thresholds, reminiscent of phenomena modelled in catastrophe theory [20]. For example, research into scaling laws [13, 14] for deep learning has shown that, for many architectures and objectives, performance metrics associated with model capability, such as test loss [1] follow power law trends [16] as model size and compute increase (in contrast to much classical risk assessment which may assume smooth scaling of risk). Such step-changes are denoted bifurcation-driven jumps (such as folds, cusps or butterfly) and are often studied in formal catastrophe theory (CT) [20]. Estimating the frequency of such events is the domain of catastrophic risk modelling, which focuses upon heavy-tailed distributions in which rare extreme events dominate aggregate risk [8]. While related, knowledge of AI system parameter distributions does not automatically confer knowledge of catastrophic risk distribution. By understanding how variations in AI system parameters can affect the likelihood of them evolving into regimes of catastrophic harm, monitoring and control regimes can be implemented to mitigate such risks at the design, development and deployment stages.
+
+\* ⋆ Under peer review
+
+\* 0 Paper under peer review
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+<!-- PageHeader: 2 Elija Perrier -->
+
+# 1.1 Contributions
+
+In this short work, we explore connections between critical thresholds αc and tail distributions of extremal events. We consider circumstances in which the probability of crossing the bifurcation threshold i.e. {α > αc} can be formally related to the loss tail probability Pr(Y > y) for large y for a loss random variable Y . Specifically, we are interested in the relationship between the distribution of α and the distribution of Y in the catastrophic (extreme value) regime. We hypothesise that near the catastrophic threshold αc, the system's jump probability and the tail risk in outcomes converge to the same fundamental measure. We posit this relationship arises because of situations in which random fluctuations around αc may cause rapid disequilibrated growth in Y upon the system transitioning to the critical region. We show circumstances in which small changes in α near αc, may be mapped to changes in the distribution of Y and the shape of its the tail region.
+
+# 2 Background
+
+# 2.1 Potentials
+
+Consider a potential function V (x; α) ∈ C2 (R×R) used to model stable and unstable equilibria for a simple one-dimensional AI system state x(α). Here α ∈ R is a random system parameter whose distribution overlaps a critical threshold αc. We assume an outcome variable Y (α) that reflects expectation of adverse catastrophic impact once α crosses αc and triggers a (discontinuous) jump in x. The domain of x ∈ R represents a measureable (or directly or indirectly identifiable at least) attribute of an AI system e.g. internal state or a one-dimensional coordinate capturing a degree of system misalignment. We assume the existence of a critical parameter αc ∈ R such that:
+
+1. For α < αc, there exists a stable equilibrium x0(α) ≈ 0 (or in a small neighbourhood around zero) where the AI system remains in a safe or noncatastrophic state.
+
+2. For α > αc, assume the local minimum at x0(α) either merges with another equilibrium, loses stability, or disappears entirely, causing a jump to a new equilibrium ˜x(α) at large magnitude |˜x(α)| ≫ 0. Asymptotically we might model this in terms of ˜x(α) → +∞ as α → α+c or more realistically that ˜x(α) grows rapidly compared to the near-zero state.
+
+# 2.2 Normal forms
+
+Such configurations are studied in CT under in the context of fold or cusp normal forms [20, 2]. Often V (x; α) can be interpreted as a potential energy landscape where local minima and maxima correspond to stable and unstable equilibria respectively. Standard analytical techniques (e.g. Hessians in higher dimensions) can be used to probe local stability. For each α, an equilibrium x∗ satisfies ∂ ∂x V (x∗ ; α) = 0 with stability if ∂ 2 ∂x2 V (x∗ ; α) > 0. As α transitions through αc, small perturbations around x0(α) may no longer equilibrate the system to x0(α). System dynamics can transition discontinuously to ˜x(α) as is seen in certain dynamical systems. These hallmarks of rapid or sudden shifts are hallmarks of catastrophic scenarios and considered relevant for AI risk scenarios. In realistic AI deployments, the control parameter will vary. Exactly what the parameter represents would be contextual and is an open matter of debate in AI safety. For example, α might measure the compute or data resources assigned to AI training, or a measure of power, agenticness, intensity, or perhaps a magnitude of adversarial attacks or malicious attempts to break alignment constraints. In classical catastrophe theory [20, 17], a fold can be approximated near αc by a polynomial normal form such as:
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+<!-- PageHeader: Threshold Crossings 3 -->
+
+We use equation (2.2) as our working example. Systems described by such normal forms lose stability at αc and have a stable branch ˜x(α) that typically resembles power-law-like relationships in (α - αc). A small shift in α near αc induces a large change in equilibrium state ˜x(α) ∼ (α - αc)m (where m = 1/2 for equation (2.2)) which may characterise catastrophic system evolution. Since Y (α) = g(˜x(α)) with g monotonic, this power-law directly leads to Y (α) ∼ (α - αc)mp if g(x) behaves like xp for large x. The parameter α is modelled as a random variable with CDF Fα. It has partial support over the interval [αc - δ, αc + δ] where δ > 0 i.e. Fα(α) = Pr(α ≤ α0). If Fα is continuous around αc with PDF fα(α) > 0 near αc, then {α ≥ αc} has strictly positive probability. This reflects the possibility that random fluctuations may shift α beyond αc. When α resides below αc, the system remains near the benign or safe equilibrium x0(α). But with non-zero probability, α can exceed αc, enabling a large jump in x (αc is not a measure-zero or degenerate boundary).
+
+# 2.3 Critical regions
+
+To model the consequences of crossing the critical threshold αc, we define Y (α) as a random variable that measures the loss incurred as α crosses the critical region boundary given by αc:
+
+Here g : R → [0, ∞) is a continuous, monotonic function reflecting the magnitude of loss e.g. g(x) = |x| or g(x) = x2 . If an AI system fails to cross the threshold (α < αc), the outcome Y (α) remains zero or bounded. Once α ≥ αc, the system jumps to ˜x(α), resulting in large Y (α) ≥ 0 and potential catastrophic AI impact. In this toy model, the distribution for Y (α) may be simplified to be a point mass at zero (or small baseline) plus a heavy-tailed extension for the jump scenario:
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+<!-- PageHeader: 4 Elija Perrier -->
+
+that is, Y (α) is zero with probability Pr(α < αc), but can be arbitrarily large if α lands beyond αc and ˜x(α) diverges. A common assumption in certain catastrophe models is unbounded or runaway disequilibria, i.e. that ˜x(α) → +∞ (or -∞) as α ↓ αc. Equivalently, g(˜x(α)) → +∞. Alternatively, the unboundedness may be replaced by to simply ˜x(α) becoming sufficiently large such that g(˜x(α)) crosses into extremal regions. Importantly, the partial support of α αc means that such catastrophic outcomes have strictly positive probability. Y (α) ≫ 0 might correspond to a catastrophic event, like a massive misalignment event or an extreme existential threat. Requiring g to be continuous and monotonic simplifies the analysis of where the system transitions in outcome space. As we examine below, if ˜x(α) grows unbounded near α+c , then g( ˜x(α)) may, under certain assumptions, also grows unbounded, characteristic of a heavy-tail loss regime.
+
+# 3 Threshold Crossings and Tail Risks
+
+We are interested in the conditions such that a random parameter α crosses the critical threshold αc (thus inducing a jump in x) is equivalent to Y (α) exceeds a large value y. Consider the following theorem:
+
+Theorem 1 (Equivalence of Jump and Tail Probabilities). Define loss { Y > y} = {ω ∈ Ω‖Y (ω) > y} where Y : Ω → R and a parametrisation {α > αc} = {ω ∈ Ω‖α(ω) > αc}. For sufficiently large y, assume there exists a function η(y) ≥ 0 such that:
+
+and η(y) → 0 as y → +∞. Consequently, bounding Pr(Y > y) for large y is effectively equivalent to bounding Pr(α > αc). Moreover, if near αc the jump ˜x(α) scales like (α - αc)p for some p > 0, then for large y,
+
+and the tail distribution of Y is asymptotically Pareto-like.
+
+Proof. To show that the large-outcome event { Y > y} coincides [in the limit] with the event that α exceeds αc (plus a small offset depending on y), we establish: (i) g { Y > y} to {α > αc} and (ii) establishing the asymptotic Pareto-like form when the jump in x near αc follows a power law. From equation (2.3), when α < αc, the system remains a stable (non-catastrophic) equilibrium i.e. Y = 0.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<!-- PageHeader: Threshold Crossings 5 -->
+
+Formally α : Ω → R, Y : Ω → R where for Borel B ∈ R (i) α-1 (B) = {ω ∈ Ω : α(ω) ∈ B} and similarly for B. Then for y > 0:
+
+where we use shorthand {Y > y} = Y -1 ((y, ∞)) and {α > αc} = α-1 ([αc, ∞)). This follows because for y > 0, Y > y cannot occur unless α ≥ αc. Conversely, if α > αc, the system rests on a stable branch ˜x(α), and so Y (α) = g( ˜ x(α)). Assuming:
+
+we can solve g( ˜x(α)) = y for α once y is sufficiently large. Specifically:
+
+for some function η(·) ≥ 0 that tends to zero as y → ∞. The exact form of η(y) depends on the local normal form near αc and the inverse g-1 . For large y:
+
+Because η(y) → 0 as y → ∞, bounding Pr(Y > y) in the tail is essentially the same as bounding Pr(α > αc ). More precisely, for y large enough that η(y) is small:
+
+In many canonical catastrophe-theoretic normal forms (fold, cusp, etc.), the stable branch ˜x(α) follows a power-law type rule near αc:
+
+for some exponent m > 0 and constants C, C′ ̸= 0. For instance, a fold-type bifurcation might yield ˜ x(α) ∝ √α - αc (i.e. m = 1 2 ). If g(x) = |x|p , then:
+
+up to multiplicative constants. For Y (α) = y, we solve:
+
+Near αc, η(y) from (9) satisfies:
+
+for some C > 0. Assume α is random with a density fα(α) that is strictly positive near αc. For large y:
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: 6 Elija Perrier -->
+
+If α's distribution is unbounded, various tail decays may be possible e.g. exponential or polynomial. In AI risk contexts, α might grow considerably, reflecting relatively unconstrained resource expansions or adversarial intensities. An oftenstudied distribution for such purposes is the Generalized Pareto Distribution (GPD) [8] whose CDF is of the form:
+
+where ξ > 0 indicates a heavy tail [9]. The GPD typically allows for modelling of threshold exceedances (for values above a certain threshold), also known as the peaks-over-thresholds (POT) method. Under POT assumptions, if (α - αc) can be arbitrarily large, Y inherits a GDP tail. The shape parameter ξ in the GPD can be matched to the exponent 1/(mp) in the local scaling. That is:
+
+where Fα is the CDF of α. For a suitable tail of Fα that allows a POT approximation, we recover the GDP form in y.
+
+# 4 Conclusion & Implications for AI Risk
+
+Our results aim to demonstrate potentially useful relationships between local normal forms of fold or cusp catastrophes and extreme-value behaviour relevant to AI systems. In such circumstances, small changes in the measurement or control parameter near αc, could be mapped directly map to large changes in the tail region of Y . Where such parameterised relationships and bifurcating potentials V (x; α) between AI system behaviour can be identified, monitoring such parameters and bounding their distributions away from αc may provide a means of bounding the probability of AI system extreme outcomes. Because of the complexity and scale of modern AI models, AI safety efforts ought to seek to identify and anticipate these critical parameters as a means of mitigating potentially catastrophic AI system transitions. Future work may involve mapping normal forms to AI system behaviour, explore higher-dimensional α, stochastic dynamics and non-smooth or discontinuous normal forms.
+
+# References
+
+[1] Alabdulmohsin IM, Neyshabur B, Zhai X (2022) Revisiting neural scaling laws in language and vision. Advances in Neural Information Processing Systems 35:22,300-22,312
+
+[2] Arnold VI (1992) Catastrophe Theory. Springer
+
+[3] Bengio Y (2023) Ai and catastrophic risk. Journal of democracy 34(4):111121
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: Threshold Crossings 7 -->
+
+[4] Bengio Y, Cohen M, Fornasiere D, Ghosn J, Greiner P, MacDermott M, Mindermann S, Oberman A, Richardson J, Richardson O, et al (2025) Superintelligent agents pose catastrophic risks: Can scientist ai offer a safer path? arXiv preprint arXiv:250215657
+
+[5] Bengio Y, Mindermann S, Privitera D, Besiroglu T, Bommasani R, Casper S, Choi Y, Fox P, Garfinkel B, Goldfarb D, et al (2025) International ai safety report. arXiv preprint arXiv:250117805
+
+[6] Bloomfield R, Rushby J (2025) Where ai assurance might go wrong: Initial lessons from engineering of critical systems. arXiv preprint arXiv:250203467
+
+[7] Bostrom N (2014) Superintelligence: Paths, Dangers, Strategies. Oxford University Press
+
+[8] Coles S, Bawa J, Trenner L, Dorazio P (2001) An introduction to statistical modeling of extreme values, vol 208. Springer
+
+[9] Embrechts P, Kl¨uppelberg C, Mikosch T (1997) Modelling Extremal Events: For Insurance and Finance. Springer
+
+[10] Hendrycks D (2025) Introduction to AI safety, ethics, and society. Taylor & Francis
+
+[11] Hendrycks D, Mazeika M, Woodside T (2023) An overview of catastrophic ai risks. arXiv: 230612001 [csCY] DOI 10.48550/arXiv.2306.12001
+
+[12] Hendrycks D, Schmidt E, Wang A (2025) Superintelligence strategy: Expert version. arXiv preprint arXiv:250305628
+
+[13] Kaplan J, McCandlish S, Henighan T, Brown TB, Chess B, Child R, Gray S, Radford A, Wu J, Amodei D (2020) Scaling laws for neural language models. arXiv preprint arXiv:200108361
+
+[14] Muennighoff N, Rush A, Barak B, Le Scao T, Tazi N, Piktus A, Pyysalo S, Wolf T, Raffel CA (2023) Scaling data-constrained language models. Advances in Neural Information Processing Systems 36:50,358-50,376
+
+[15] Perrier E (2025) Statistical scenario modelling and lookalike distributions for multi-variate ai risk. arXiv preprint arXiv:250214491
+
+[16] Schaeffer R, Kazdan J, Hughes J, Juravsky J, Price S, Lynch A, Jones E, Kirk R, Mirhoseini A, Koyejo S (2025) How do large language monkeys get their power (laws)? arXiv preprint arXiv:250217578
+
+[17] Thom R (1975) Structural Stability and Morphogenesis. W.A. Benjamin
+
+[18] Yudkowsky E (2008) Artificial intelligence as a positive and negative factor in global risk, Oxford University Press, p 308-345
+
+[19] Yudkowsky E, Salamon A, Shulman C, Kaas S, McCabe T, Nelson R, et al (2010) Reducing long-term catastrophic risks from artificial intelligence. The Singularity Institute, San Francisco pp 1-8
+
+[20] Zeeman EC (1976) Catastrophe theory. Scientific American 234(4):65-83
+

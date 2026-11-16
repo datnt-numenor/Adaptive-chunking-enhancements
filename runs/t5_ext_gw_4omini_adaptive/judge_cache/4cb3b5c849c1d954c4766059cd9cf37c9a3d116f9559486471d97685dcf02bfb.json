@@ -1,0 +1,14 @@
+{
+  "request_hash": "4cb3b5c849c1d954c4766059cd9cf37c9a3d116f9559486471d97685dcf02bfb",
+  "prompt_sha256": "9acbe4c794e276a988124d629394afb8b214a786f7cc83904f8c55ee3f3e4331",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOd87zxMKAhYrqRdE0774ao5v4cD",
+  "prompt_tokens": 5946,
+  "completion_tokens": 42,
+  "actual_usd": 0.0009171,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that after sorting, the retention of training data for audits is permissible with the implementation of necessary security measures."
+  }
+}

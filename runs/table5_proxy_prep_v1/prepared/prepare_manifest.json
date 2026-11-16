@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+  "adapter": "prepare_table5_new_qa.py",
+  "adapter_sha256": "596f8965cd954032900f8b864934aa51544138eb4761a4aca33c45fd129b8519",
+  "status": "complete",
+  "created_at": "2026-11-08T14:00:58.831172+00:00",
+  "source_commit": "ea87ce8e1a97888f3f179e7f1359ff7f43fb179d",
+  "note": "Tao tu ket qua chay doc lap (khong co semantic); chi gom 3 he thong cua Table 5.",
+  "input_run_dir": "D:\\Project\\adaptive-chunking\\runs\\full_kaggle",
+  "input_sha256": {
+    "processed_chunks": "0f78f6c80b71209ee55c89dc8cfce2202e6f33dbe672f84383e0f5dafa75c7ed",
+    "raw_chunks": "ac82ff2bf01475aa8daaf9b426537d3d0079fb058ba02d65ab13727d62653a23",
+    "processed_metrics": "6a84885eeb306baaf4b79463cae1f092957d48e354f887467f138344a15acb84"
+  },
+  "documents": 33,
+  "folds": 5,
+  "fold_seed": 2026,
+  "adaptive_candidates": [
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page",
+    "llm_regex"
+  ],
+  "paper_protocol_systems": [
+    "adaptive",
+    "raw__langch_recurs_default",
+    "raw__page"
+  ],
+  "systems": {
+    "adaptive": {
+      "path": "systems/adaptive.jsonl",
+      "sha256": "d4ea88495351e94d3446ba1dc17df74babfa6caa1c67a672585cd4338bff5649",
+      "chunks": 1633,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "mixed_processed_selection",
+      "method": "per_document_equal_weight"
+    },
+    "raw__langch_recurs_default": {
+      "path": "systems/raw__langch_recurs_default.jsonl",
+      "sha256": "ade51b65d9864da9b17df94cf9290ca3b278fd31786e2803e79eb11cb33673c2",
+      "chunks": 1557,
+      "excluded_empty_chunks": 0,
+      "documents": 33,
+      "stage": "raw",
+      "method": "langch_recurs_default"
+    },
+    "raw__page": {
+      "path": "systems/raw__page.jsonl",
+      "sha256": "b962b240642dd41651f2f4842cfcaac516208d43149113f140eeb665da152e5f",
+      "chunks": 1761,
+      "excluded_empty_chunks": 4,
+      "documents": 33,
+      "stage": "raw",
+      "method": "page"
+    },
+    "sdp_a": {
+      "path": "systems/sdp_a.jsonl",
+      "sha256": "14abb40b963694b3cfc6c5d718e5eae1ed4920657fb244e8388fa7f361399036",
+      "chunks": 1336,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target800",
+      "kind": "single_run"
+    },
+    "sdp_b": {
+      "path": "systems/sdp_b.jsonl",
+      "sha256": "610702ba2e9a315d444ab5edd50a1317769f0c827aa0541d8d6a9e7d5c86e2aa",
+      "chunks": 2058,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/B_default",
+      "kind": "single_run"
+    },
+    "sdp_bq": {
+      "path": "systems/sdp_bq.jsonl",
+      "sha256": "c8c226144f9f52092153d525e793c452719d73577505952fcdb1441cd9b1aad3",
+      "chunks": 2048,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/B_qwen",
+      "kind": "single_run"
+    },
+    "sdp_a_def": {
+      "path": "systems/sdp_a_def.jsonl",
+      "sha256": "9095d6d3f8ad4b8bc61158ff22aa856eb59bb6907ec7d383f2b403803528c8e1",
+      "chunks": 1317,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_default",
+      "kind": "single_run"
+    },
+    "sdp_a_t600": {
+      "path": "systems/sdp_a_t600.jsonl",
+      "sha256": "95c638ec7f8e8a05a7c687865f1ba02da1466f056246c7c9ce97c4acaf77ffa2",
+      "chunks": 1475,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target600",
+      "kind": "single_run"
+    },
+    "sdp_a_t1000": {
+      "path": "systems/sdp_a_t1000.jsonl",
+      "sha256": "b4d3d484507eb9633eb9c7966e7eb34175e8e95f0011a5b534274a98202838bb",
+      "chunks": 1275,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs/sdp/A_target1000",
+      "kind": "single_run"
+    },
+    "proc_recurs1100": {
+      "path": "systems/proc_recurs1100.jsonl",
+      "sha256": "21e3e751b354c269f957dfa95e0de5e1ec657166ac29a1a40a4bb44ac88394ae",
+      "chunks": 1345,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\full_kaggle/chunks/small_merged",
+      "kind": "kaggle_fixed",
+      "method": "our_recurs_1100"
+    },
+    "proc_recurs600": {
+      "path": "systems/proc_recurs600.jsonl",
+      "sha256": "da13f121b3dc77332e26f0d3927860766ac5b18e421c9c8f4762de7e3c9e3abe",
+      "chunks": 2381,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\full_kaggle/chunks/small_merged",
+      "kind": "kaggle_fixed",
+      "method": "our_recurs_600"
+    },
+    "proc_page": {
+      "path": "systems/proc_page.jsonl",
+      "sha256": "504ca0dc6c0db6e59c7b8e8d46b5fce38379a9040109b62d1754d876511d9f31",
+      "chunks": 1780,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\full_kaggle/chunks/small_merged",
+      "kind": "kaggle_fixed",
+      "method": "page"
+    },
+    "proc_llm_regex": {
+      "path": "systems/proc_llm_regex.jsonl",
+      "sha256": "0f426ad1f62408c68bf73f9383c83974527ee2a8798b6d1df00070e277802735",
+      "chunks": 1899,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\full_kaggle/chunks/small_merged",
+      "kind": "kaggle_fixed",
+      "method": "llm_regex"
+    },
+    "raw_langch1100": {
+      "path": "systems/raw_langch1100.jsonl",
+      "sha256": "cbddf0fca677860f1254b574cefdea5369551c3d8f81a5a4e0f4c3f2a8369fc4",
+      "chunks": 1675,
+      "documents": 33,
+      "stage": "small_merged",
+      "source": "runs\\full_kaggle/chunks/raw",
+      "kind": "kaggle_fixed",
+      "method": "langch_recurs_1100"
+    }
+  },
+  "sdp_extension": {
+    "created_at": "2026-11-09T08:54:31.557999+00:00",
+    "base_prepared_manifest_sha256": "b08193d9c25b46526a6a3e99e5ea2653dfab8565d7bae7072cbecd1e9058e6bd",
+    "harness_repo": "D:\\Project\\Adaptive-chunking-enhancements",
+    "harness_sha256": "234998dbd4df3862652165ae4e2aa841282edef37e4e8badda5c6a6a172c6d31",
+    "new_systems": [
+      "proc_llm_regex",
+      "proc_page",
+      "proc_recurs1100",
+      "proc_recurs600",
+      "raw_langch1100",
+      "sdp_a",
+      "sdp_a_def",
+      "sdp_a_t1000",
+      "sdp_a_t600",
+      "sdp_b",
+      "sdp_bq"
+    ],
+    "note": "Base files copied unchanged; new systems appended. Launcher registers their names in ALL_SYSTEMS."
+  }
+}

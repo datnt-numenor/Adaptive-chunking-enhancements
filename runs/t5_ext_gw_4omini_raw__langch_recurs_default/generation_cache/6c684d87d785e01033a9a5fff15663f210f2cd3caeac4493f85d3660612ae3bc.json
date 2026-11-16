@@ -1,0 +1,10 @@
+{
+  "request_hash": "6c684d87d785e01033a9a5fff15663f210f2cd3caeac4493f85d3660612ae3bc",
+  "prompt_sha256": "64fe96f639cfe2604ed4e2e7fa51557775a675e13f479c33226a3fe15f4fe306",
+  "answer": "ArXiv 2401.14446 discusses several limitations of using only input/output analysis, also known as black-box evaluations, to evaluate AI systems. These limitations include:\n\n1. **Inability to Develop Generalizable Understanding**: Black-box access limits evaluators to analyzing a system based solely on its inputs and outputs, making it impractical to develop a complete understanding due to the vast number of possible inputs.\n\n2. **Reliance on Heuristics**: Evaluators are forced to rely on heuristics to produce 'relevant' inputs for evaluation, which can lead to unreliable results.\n\n3. **Obscured System Components**: Black-box access prevents the study of system components separately, which is essential for tracing problems and making targeted interventions.\n\n4. **Misleading Results**: Black-box evaluations can produce biased conclusions based on how evaluators design inputs, potentially leading to misconstrued understandings of the system's characteristics.\n\n5. **Limited Insight for Addressing Failures**: Black-box evaluations offer little insight into how to address problems they discover, as they primarily enable training on problematic examples without addressing underlying issues.\n\n6. **Unreliable Explanation Methods**: Black-box methods alone struggle to provide reliable explanations for an AI system's decisions, as they often fail to identify causal relationships between input features and outputs.\n\nOverall, the paper emphasizes that black-box evaluations are inherently limited in their ability to identify harms or provide meaningful explanations, and advocates for more comprehensive evaluation methods that include white-box and outside-the-box access.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMn8E1leXyCu7W45kyqDM9UHRnfT",
+  "prompt_tokens": 9905,
+  "completion_tokens": 308,
+  "actual_usd": 0.00167055
+}

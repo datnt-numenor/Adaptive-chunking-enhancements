@@ -1,0 +1,14 @@
+{
+  "request_hash": "77c35d137dacb951c5f1cb0834c0360215fa1014532c082971b5a3cfeab5dc71",
+  "prompt_sha256": "adc0e33ccbbc72e0ce877e5ef92a2c0f5d31e9da75e2822ab0396e4b54a28a6e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO6EMn4gUDUKwv5R0bF5fxchGQQV",
+  "prompt_tokens": 7125,
+  "completion_tokens": 67,
+  "actual_usd": 0.00110895,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data supporting the claim in the Reference Answer, detailing the drop in the male-to-female author ratio from 4.0:1 in 2017 to 2.2:1 in 2025, which indicates growing female participation in AI research."
+  }
+}

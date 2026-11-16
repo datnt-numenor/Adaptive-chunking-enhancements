@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence directly supports answer; question is self-contained and complete\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Perfect match between definition, evidence, and answer\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"drop\",\n      \"reason\": \"Evidence quotes insufficient - missing static artefact definition needed to support full answer\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Evidence clearly supports that Aequitas is mentioned for fairness auditing\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 10415,
+  "out": 1028
+ },
+ "created": "2026-11-09 18:35:29"
+}

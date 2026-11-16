@@ -1,0 +1,10 @@
+{
+  "request_hash": "ff214e99d663c494ccbd47b4b720f46ce3e6b9cc1a148df3011084cb5dbfdab9",
+  "prompt_sha256": "a6ecbb08b8c0e5968b6d341b45034b7b8d37b2729ab9672a21b8ab02e3cce1ea",
+  "answer": "Near-moderated Posts are selected by curating a subset of 1,000 unmoderated firehose posts that are semantically most similar to those in the Moderated Posts, making them strong candidates for missed harmful content. The annotation process for labeling involves two coauthors independently assessing the complete multimodal content of each post, assigning a binary safety judgment (safe/unsafe) and harm labels following Bluesky's taxonomy. Disagreements are resolved by a third co-author, and the annotations yield substantial inter-annotator agreement.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJoVCo698HALfhS45d4s0eXmW62",
+  "prompt_tokens": 6326,
+  "completion_tokens": 107,
+  "actual_usd": 0.0010131
+}

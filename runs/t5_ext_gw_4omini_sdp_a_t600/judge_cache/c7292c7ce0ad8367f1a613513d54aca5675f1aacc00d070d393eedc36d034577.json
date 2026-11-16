@@ -1,0 +1,14 @@
+{
+  "request_hash": "c7292c7ce0ad8367f1a613513d54aca5675f1aacc00d070d393eedc36d034577",
+  "prompt_sha256": "3c44458daaefa6cfc1db824df7028483eff420c3b74ec07be7a7e57cf21dad9d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODajP4BOSNNWoWYmIzyjApEjKIf",
+  "prompt_tokens": 7658,
+  "completion_tokens": 51,
+  "actual_usd": 0.0011792999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear and detailed explanation of Conditional Value-at-Risk (CVaR), including its definition and how it measures average loss beyond the VaR threshold, fully supporting the Reference Answer."
+  }
+}

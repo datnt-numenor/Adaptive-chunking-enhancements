@@ -1,0 +1,14 @@
+{
+  "request_hash": "67025f7635d7207a1f709609010f410cb184cd6de34d5152f02fe32cc9c501ab",
+  "prompt_sha256": "19dbb87adca3b7166f6469b4341adc56b5c1444e20cbc76816afb50938237932",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPx0ClhDWTiTAUCwyVRnuARrFAw",
+  "prompt_tokens": 6204,
+  "completion_tokens": 52,
+  "actual_usd": 0.0009618,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the two distinct goals for labeling synthetic content: process-based and impact-based, along with the recommendation to calibrate label terminology and tone to their intended purposes."
+  }
+}

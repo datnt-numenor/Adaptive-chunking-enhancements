@@ -1,0 +1,14 @@
+{
+  "request_hash": "6abf221a5ea69892b785dface1c216711c175bb5f405321916446c7c6e7dcf3c",
+  "prompt_sha256": "b40603d82161ea91a140deb62ba23a4b772e07e1e1fb9ed053449cfe8bdc57a7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhNes69ahjgWbZ4MxwsQ0YEEsTw",
+  "prompt_tokens": 5996,
+  "completion_tokens": 37,
+  "actual_usd": 0.0009216000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining deployment bias, its implications, and the importance of stakeholder engagement in mitigating such biases."
+  }
+}

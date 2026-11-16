@@ -1,0 +1,14 @@
+{
+  "request_hash": "e82ea801f5ec0c3c66e26be1c9adc01655843917599f668efa2585097af1124b",
+  "prompt_sha256": "1abeb97dbd9148c944d031cb2ca66e2ff82e1af037cfe5eed3c16626a22b41ac",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3lKkZNFA4A132P8vVIob1QoBeV",
+  "prompt_tokens": 7750,
+  "completion_tokens": 40,
+  "actual_usd": 0.0011865,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the retention period for Model Documentation and the timeframe for providing additional information to downstream providers."
+  }
+}

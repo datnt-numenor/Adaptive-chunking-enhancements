@@ -1,0 +1,14 @@
+{
+  "request_hash": "bb5fd01543fd176321696b006d648f850fcd54ee76a4965b9fb6fbcaadb97657",
+  "prompt_sha256": "60a51362a6c1a67cf8127bdbf567585cf28b7969ed035fd9a865c9499cdd53a4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOonJOMuELOVFJgFztWozXT1hcgn",
+  "prompt_tokens": 8401,
+  "completion_tokens": 35,
+  "actual_usd": 0.0012811499999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide specific percentages or a breakdown of the impact of inference versus training, making the Reference Answer unsupported."
+  }
+}

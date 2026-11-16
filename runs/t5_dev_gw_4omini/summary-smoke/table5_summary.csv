@@ -1,0 +1,4 @@
+system,label,retrieval_completeness_mean_pct,retrieval_completeness_std_pct,answer_correctness_mean_pct,answer_correctness_std_pct,final_score_pct,coverage_adjusted_correctness_pct,answered_queries,abstentions,total_queries,normalized_roundoff_scores
+adaptive,Adaptive,83.33333333333334,40.8248290463863,82.82440946567675,17.265704797964716,83.10200430258034,69.0203412213973,5,1,6,0
+raw__langch_recurs_default,Raw LangChain recursive default,100.0,0.0,93.6628182051273,9.223742140534863,96.83140910256364,93.6628182051273,6,0,6,0
+raw__page,Raw page,100.0,0.0,82.22531894366945,15.350806926125177,91.11265947183472,82.22531894366944,6,0,6,0

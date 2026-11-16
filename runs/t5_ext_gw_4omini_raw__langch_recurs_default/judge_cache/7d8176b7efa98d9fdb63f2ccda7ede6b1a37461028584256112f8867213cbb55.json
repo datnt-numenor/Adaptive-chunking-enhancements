@@ -1,0 +1,14 @@
+{
+  "request_hash": "7d8176b7efa98d9fdb63f2ccda7ede6b1a37461028584256112f8867213cbb55",
+  "prompt_sha256": "3ff9168912290a9dd5ebbbbfce52664b2e1f91185a24dde5231231ce39347ee0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLgAdXjieING9a9nLm5wejfRw3t",
+  "prompt_tokens": 10933,
+  "completion_tokens": 39,
+  "actual_usd": 0.00166335,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly defines SAPs as Safety Assessment Principles in the ONR Safety Assessment Principles, fully supporting the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "2bf6c0973af6d83dee5b68c6292c2709ed31bb86ae4cae94d88557499e08bb4a",
+  "prompt_sha256": "c0adf598f6ac1c6d5827fd69ed7ee7517f36be6cc2190ff68e01c3e9a5ac18ea",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOTGXVH4MyB0toKLYH5FbiwZdK10",
+  "prompt_tokens": 8460,
+  "completion_tokens": 51,
+  "actual_usd": 0.0012996,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by mentioning AI regulatory sandboxes as testing grounds for innovative AI systems, but it does not explicitly state that they are for new business models that are not yet regulated."
+  }
+}

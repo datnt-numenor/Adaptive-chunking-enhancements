@@ -1,0 +1,14 @@
+{
+  "request_hash": "ccabacbacd113dddca4f9a580f2dbf9d8b2939ecc68994378019853479a0c87a",
+  "prompt_sha256": "65ba7683f486e5df96b9333a04ba42c189f38e756b58941b227873e0b896dddb",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO6Y1jc5iCN7RoMr3yhTAGkv7Gxf",
+  "prompt_tokens": 6072,
+  "completion_tokens": 46,
+  "actual_usd": 0.0009383999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly defining Human-computer interaction risks as including Overreliance and unsafe use, as well as Loss of human agency and autonomy."
+  }
+}

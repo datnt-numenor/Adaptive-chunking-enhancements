@@ -1,0 +1,14 @@
+{
+  "request_hash": "465c14c61d17a2745d0bbf03dcbaf201685e6d7def5fb78d2bdc4aa5d63544c6",
+  "prompt_sha256": "fba9526c5c4bab90fda341d8f14ff0cff45c7525a3c1ff1fd0583b78ff9f003a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOOxYds1EQAf1aHL6lz75CD7GG7M",
+  "prompt_tokens": 7180,
+  "completion_tokens": 40,
+  "actual_usd": 0.001101,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by emphasizing the need for institutions to provide evidence for their claims about individuals before making consequential decisions."
+  }
+}

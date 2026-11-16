@@ -1,0 +1,141 @@
+{
+  "sweep": [
+    {
+      "name": "base",
+      "_data": "data\\clair"
+    },
+    {
+      "name": "rc1",
+      "rc": 1.0,
+      "_data": "data\\clair"
+    },
+    {
+      "name": "sw0_rc1",
+      "sw": 0.0,
+      "rc": 1.0,
+      "_data": "data\\clair"
+    },
+    {
+      "name": "notau_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "tau": 0.0
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "nohead_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "heading_bonus": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "noart_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "artifact_penalty": 0.0
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "nocont_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "continuation_penalty": 0.0
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "nominor_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "pronoun_penalty": 0.0,
+        "colon_penalty": 0.0,
+        "list_penalty": 0.0
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "keepcut_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "tau": 0.0,
+        "heading_bonus": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pronoun_penalty": 0.0,
+        "colon_penalty": 0.0,
+        "list_penalty": 0.0
+      },
+      "_data": "data\\clair"
+    },
+    {
+      "name": "keepcont_rc1",
+      "rc": 1.0,
+      "cfg": {
+        "tau": 0.0,
+        "heading_bonus": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pronoun_penalty": 0.0,
+        "colon_penalty": 0.0,
+        "list_penalty": 0.0,
+        "artifact_penalty": 0.0
+      },
+      "_data": "data\\clair"
+    }
+  ],
+  "calibration_runs": {
+    "A_default": [
+      "runs/sdp/A_default/chunks/small_merged/chunks.parquet",
+      "runs/sdp/A_default/metrics/chunking_metrics.parquet"
+    ],
+    "A_target600": [
+      "runs/sdp/A_target600/chunks/small_merged/chunks.parquet",
+      "runs/sdp/A_target600/metrics/chunking_metrics.parquet"
+    ],
+    "A_target800": [
+      "runs/sdp/A_target800/chunks/small_merged/chunks.parquet",
+      "runs/sdp/A_target800/metrics/chunking_metrics.parquet"
+    ],
+    "A_target1000": [
+      "runs/sdp/A_target1000/chunks/small_merged/chunks.parquet",
+      "runs/sdp/A_target1000/metrics/chunking_metrics.parquet"
+    ],
+    "B_default": [
+      "runs/sdp/B_default/chunks/small_merged/chunks.parquet",
+      "runs/sdp/B_default/metrics/chunking_metrics.parquet"
+    ],
+    "B_qwen": [
+      "runs/sdp/B_qwen/chunks/small_merged/chunks.parquet",
+      "runs/sdp/B_qwen/metrics/chunking_metrics.parquet"
+    ]
+  },
+  "reference": "B_default",
+  "data_dir": "data\\clair",
+  "beta": {
+    "d_icc_p": 1.200679178416733,
+    "d_dcc_s": 1.341100357745224,
+    "d_dcc_c": 1.4369161628488394
+  },
+  "seconds": 13.1
+}

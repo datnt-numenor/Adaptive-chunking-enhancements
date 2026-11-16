@@ -1,0 +1,14 @@
+{
+  "request_hash": "120f909d7326d0fd2395a0f3bb49c4ed02cd675fc42a97aad5101e88e5afd799",
+  "prompt_sha256": "2a603f4f10032bfce456a98c30992d93c3d48fd3a42d84ebcb65fcac38c1bad5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQE780yDknxj31eiyw0R8MQ1vEa",
+  "prompt_tokens": 8506,
+  "completion_tokens": 44,
+  "actual_usd": 0.0013023,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the use of miniaturised sensors in the energy sector and highlighting the cybersecurity challenges posed by vulnerabilities and interconnectivity."
+  }
+}

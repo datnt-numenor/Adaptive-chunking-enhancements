@@ -1,0 +1,14 @@
+{
+  "request_hash": "de3c365b3f680fe4e2111a12cea0ce8df3fb475d392ee8386a0c36a2b45e7c39",
+  "prompt_sha256": "396c47dafb83a5c6d890854979e48bd1e9d1411fbcc068e0fc7fb5dee9515b2b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOeJtRTkpI7rDMp3nbdFv6vhJc8E",
+  "prompt_tokens": 8054,
+  "completion_tokens": 31,
+  "actual_usd": 0.0012266999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the reference answer by explicitly mentioning the suggested labels for expressing probabilities in AI predictions."
+  }
+}

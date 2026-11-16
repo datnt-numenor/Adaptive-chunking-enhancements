@@ -1,0 +1,14 @@
+{
+  "request_hash": "c7fec7d41e7d75a449cc2bc0e813d9a1809a0d9321e3ee96363122529920149e",
+  "prompt_sha256": "14ca0fb77f61ea7982dae36e437d91e867de03723a2152386aa595da208d4f7a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONIN09bvAoh85PAUf8LtVbPvcys",
+  "prompt_tokens": 7426,
+  "completion_tokens": 63,
+  "actual_usd": 0.0011516999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the IEEE standards 7001-2021, 7002-2022, 7003-2024, and 2894-2024 are mapped at category level on their relevant domains."
+  }
+}

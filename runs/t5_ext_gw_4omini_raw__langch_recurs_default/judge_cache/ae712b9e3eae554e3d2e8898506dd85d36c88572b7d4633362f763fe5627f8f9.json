@@ -1,0 +1,14 @@
+{
+  "request_hash": "ae712b9e3eae554e3d2e8898506dd85d36c88572b7d4633362f763fe5627f8f9",
+  "prompt_sha256": "9b8e9af49add4e65e8f96a7b94dd96bbcd73f7d4552ea122ad33f06533dbcbbd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQBPQKdiBVL9oLYdvxmpiVsZsyF",
+  "prompt_tokens": 8697,
+  "completion_tokens": 45,
+  "actual_usd": 0.00133155,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining how keyword blocking is rigid and can be bypassed by malicious actors, thus highlighting its limitations compared to classifiers."
+  }
+}

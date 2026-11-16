@@ -1,0 +1,14 @@
+{
+  "request_hash": "54a64c1cc1ab607ad07963134a8ecefbeda6038a8ad2980ec25088d0a377bd0e",
+  "prompt_sha256": "1811211afc649160f7e208e833dcfe2e57c36f3d518137ec2be2ed00dbf806b6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPBFEboefbeotLdkSp2MrgouPPFP",
+  "prompt_tokens": 6642,
+  "completion_tokens": 64,
+  "actual_usd": 0.0010347,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the maximum fines imposed on providers of general-purpose AI models as up to 3% of their annual total worldwide turnover or EUR 15,000,000, whichever is higher, as outlined in Article 101."
+  }
+}

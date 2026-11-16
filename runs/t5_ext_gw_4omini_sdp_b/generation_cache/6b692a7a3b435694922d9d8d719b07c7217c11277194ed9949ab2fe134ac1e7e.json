@@ -1,0 +1,10 @@
+{
+  "request_hash": "6b692a7a3b435694922d9d8d719b07c7217c11277194ed9949ab2fe134ac1e7e",
+  "prompt_sha256": "9a550aeb6dfc5f91740f584e1de41c955ec8264fdad3ab5c43f393556f477297",
+  "answer": "The two main reasons that led Grab to adopt a human-out-of-the-loop approach for trip allocation AI are:\n\n1. The scale of real-time decision-making required, as Grab has to make over 5,000 trip allocations every minute, making it technically infeasible for a human to review each trip allocation in such a short amount of time.\n\n2. The severity and probability of harm to users if the AI model works in a suboptimal manner is low, as there is often little or no harm to life should there be less than optimal trip allocations.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNNBIKctSfheVgmjOBwydQRHq8jT",
+  "prompt_tokens": 8297,
+  "completion_tokens": 111,
+  "actual_usd": 0.0013111499999999999
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "5e51f654885cbda2baa50aa06c5752abeb772853e6126ec9adca77b88466815b",
+  "prompt_sha256": "469299f377e3d20ecc06d2da936e6cb387933996dc48b97bacb0533e326703c3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNiAXV2UV0M5jyTlyRwMcm4Cy93F",
+  "prompt_tokens": 8637,
+  "completion_tokens": 34,
+  "actual_usd": 0.00131595,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The context does not mention Aequitas or provide any information about it as a toolkit for bias and fairness audits."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "f569a80d1d86e278ee1dca37709f62ea79b1678956af1ef32289b0efe1d015dc",
+  "prompt_sha256": "fd3a71d6b2b92688296918e1835fd7c1a091c2874e826d69088662b385a587fe",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNiKiLwhfLlsf6shqAP1WFVyoCcI",
+  "prompt_tokens": 9025,
+  "completion_tokens": 40,
+  "actual_usd": 0.00137775,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive definition of AI auditability, including the key elements and challenges, which fully supports the claims made in the Reference Answer."
+  }
+}

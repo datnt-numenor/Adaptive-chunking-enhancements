@@ -1,0 +1,14 @@
+{
+  "request_hash": "8711f39a30142b6c2c1e03b459c59e21b3b2b635ef6bd5844b416d7c3b29ee3c",
+  "prompt_sha256": "a585fe688e99ea47708aa1223b35b997e0de47f13dc3b6853f7bedeb9665caf0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOEhBzieyVmC1SnWUG0xikzAWQa5",
+  "prompt_tokens": 7808,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011964,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining how third-party audits provide the reliable information necessary for insurance markets to price AI risks effectively and mitigate adverse selection."
+  }
+}

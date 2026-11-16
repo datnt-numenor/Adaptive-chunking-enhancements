@@ -1,0 +1,14 @@
+{
+  "request_hash": "5a58f07effaf4787a6a1e9c942c13831728fdf80df4420dc58b0cc50b5b77fa6",
+  "prompt_sha256": "33c0ca5e1acdc9cb149ce5370032454d5f0f07896c310b0f57b4b950032c3aa6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOUWBCdRoCvXrGFEpz3JvlBDGb83",
+  "prompt_tokens": 7352,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011304,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by explaining how RAIRD provides access to metadata and aggregated data while preventing the retrieval of individual data, thus ensuring privacy."
+  }
+}

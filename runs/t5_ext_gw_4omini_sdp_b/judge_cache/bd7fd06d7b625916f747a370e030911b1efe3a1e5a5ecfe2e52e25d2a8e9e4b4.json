@@ -1,0 +1,14 @@
+{
+  "request_hash": "bd7fd06d7b625916f747a370e030911b1efe3a1e5a5ecfe2e52e25d2a8e9e4b4",
+  "prompt_sha256": "f563b343f44b01b95b51e8e1746c00865c79feb464b220f57e7dd4064dd0a8aa",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOMcBZy3jIu9s6CCOSioGvjz0jrb",
+  "prompt_tokens": 6889,
+  "completion_tokens": 52,
+  "actual_usd": 0.00106455,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the IEEE standards 7001, 7002, 7003, and 2894 are mapped at the category level to their relevant domains."
+  }
+}

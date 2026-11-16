@@ -1,0 +1,14 @@
+{
+  "request_hash": "bcab9a962d74eee69c991918d4e6c77e1b5d002333ceeb898cf34afd4e9559d3",
+  "prompt_sha256": "f19aecdb11d0ae31300d00954c1eed1924d70bebaef59efad28b380692d3ac08",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNc2hZ91xeeehpDIlkHSCEiNgtsT",
+  "prompt_tokens": 7459,
+  "completion_tokens": 52,
+  "actual_usd": 0.00115005,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that study N29 is the only one among five frameworks that addresses both stakeholder involvement and specific AI development stages, answering all 3W1H questions."
+  }
+}

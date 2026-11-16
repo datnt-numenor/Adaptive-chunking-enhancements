@@ -1,0 +1,14 @@
+{
+  "request_hash": "15c55935b0556d1a9b06116d46634792efe60a3254a176d2bcf9bcc0fc576d78",
+  "prompt_sha256": "3868bdbcc0e45f488e5d18a9a259d6e541fe7f3527fe97f0ff7562c7613c92a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMzmfFAw4UkzsxV4ux5Ll5LEWeyD",
+  "prompt_tokens": 5536,
+  "completion_tokens": 51,
+  "actual_usd": 0.000861,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions that the response period can be extended by an additional 45 days, but it does not specify a total of 90 days or the requirement to inform the consumer within 45 days."
+  }
+}

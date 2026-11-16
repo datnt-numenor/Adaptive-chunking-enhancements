@@ -1,0 +1,14 @@
+{
+  "request_hash": "f3ff856cfabcab6b62d3121a07af7ace3a0481ee0854b890dc3b9a9c258513c1",
+  "prompt_sha256": "034fd6cf1bdc0835a62def664da6fece7d381c67a074720784b8aa1865dc86b1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOI5VHECnB1lARPItaWg8DNdu9gE",
+  "prompt_tokens": 6567,
+  "completion_tokens": 40,
+  "actual_usd": 0.00100905,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive information about the obligations of providers of general-purpose AI models to downstream providers, fully supporting the claims made in the Reference Answer."
+  }
+}

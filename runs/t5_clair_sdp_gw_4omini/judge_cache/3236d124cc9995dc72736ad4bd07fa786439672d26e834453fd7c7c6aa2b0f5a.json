@@ -1,0 +1,14 @@
+{
+  "request_hash": "3236d124cc9995dc72736ad4bd07fa786439672d26e834453fd7c7c6aa2b0f5a",
+  "prompt_sha256": "bc5e9b6a08e797a6c667c9fc8029a011bff17f87b6917142b6d1c339df6cf6bd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPAQQNS7P7NjnEkNq4oIJCvoMLyU",
+  "prompt_tokens": 6185,
+  "completion_tokens": 53,
+  "actual_usd": 0.00095955,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the importance of using less intrusive data formats, such as age brackets instead of full dates of birth, to minimize confidentiality risks while maintaining the necessary information for system functionality."
+  }
+}

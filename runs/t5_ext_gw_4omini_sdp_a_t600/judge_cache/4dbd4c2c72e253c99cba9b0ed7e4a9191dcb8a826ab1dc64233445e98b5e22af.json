@@ -1,0 +1,14 @@
+{
+  "request_hash": "4dbd4c2c72e253c99cba9b0ed7e4a9191dcb8a826ab1dc64233445e98b5e22af",
+  "prompt_sha256": "ad7e491d925900cfcdc3e5a652b508a49158feb1174f49c4a8b1690047ac80e7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNoN6RipEJgOY9OkuV14Y2HjEWMC",
+  "prompt_tokens": 7495,
+  "completion_tokens": 39,
+  "actual_usd": 0.00114765,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the lack of mandatory reporting of energy use during inference and the restrictions on access to energy data."
+  }
+}

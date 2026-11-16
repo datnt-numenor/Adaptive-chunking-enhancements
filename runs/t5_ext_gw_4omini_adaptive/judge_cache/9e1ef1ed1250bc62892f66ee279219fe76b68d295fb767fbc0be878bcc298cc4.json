@@ -1,0 +1,14 @@
+{
+  "request_hash": "9e1ef1ed1250bc62892f66ee279219fe76b68d295fb767fbc0be878bcc298cc4",
+  "prompt_sha256": "3ad24621255c4d2102cd77bf91a1620cfa6da6cdb6346e731d7f93506e0b89a9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOTAP1pSA6af1FddIJsqA6wby7Xt",
+  "prompt_tokens": 8924,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013662,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about how Automod applies hard-coded threshold rules to Hive's output scores to generate Bluesky labels, fully supporting the claim made in the Reference Answer."
+  }
+}

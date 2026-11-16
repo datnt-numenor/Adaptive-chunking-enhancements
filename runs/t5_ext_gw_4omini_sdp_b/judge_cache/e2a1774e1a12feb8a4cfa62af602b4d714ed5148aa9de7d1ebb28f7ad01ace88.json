@@ -1,0 +1,14 @@
+{
+  "request_hash": "e2a1774e1a12feb8a4cfa62af602b4d714ed5148aa9de7d1ebb28f7ad01ace88",
+  "prompt_sha256": "86ba3ff6a08a165f0e056097ccf72ea4754f61698f1b8ef97d3f7e1557ec8152",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNTlnbQ1bwluEjyE4y8t0q1aoScf",
+  "prompt_tokens": 7607,
+  "completion_tokens": 49,
+  "actual_usd": 0.00117045,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly discusses the limitations of post-hoc explainability techniques, including their instability and inability to convincingly prove non-discrimination, which fully supports the claims made in the Reference Answer."
+  }
+}

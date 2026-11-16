@@ -1,0 +1,31 @@
+=== 1. Proxy calibration on runs with real metrics (points, mean over documents) ===
+run              n  ICC real  ICC proxy  DCC real  DCC centred  DCC struct
+A_default       33     66.44      71.53     90.45        95.06       94.63
+A_target600     33     67.30      71.90     89.28        94.43       93.94
+A_target800     33     66.69      71.63     90.36        95.13       94.73
+A_target1000    33     66.20      71.41     90.70        95.45       94.99
+B_default       33     75.98      79.28     85.99        92.23       91.64
+B_qwen          33     76.10      79.42     85.87        92.16       91.46
+   d_icc_real ~ beta * d_icc_p:  beta = 1.20, Pearson r = 0.98, n = 161 (document differences vs B_default)
+   d_dcc_real ~ beta * d_dcc_s:  beta = 1.34, Pearson r = 0.86, n = 161 (document differences vs B_default)
+   d_dcc_real ~ beta * d_dcc_c:  beta = 1.44, Pearson r = 0.82, n = 161 (document differences vs B_default)
+   near-B check (B_qwen only, n=33): r(d_icc_real,d_icc_p) = 0.94; mean real +0.12 vs proxy +0.15 pts
+   near-B check (B_qwen only, n=33): r(d_dcc_real,d_dcc_s) = 0.38; mean real -0.12 vs proxy -0.19 pts
+
+=== 2. Sweep (12 settings, 12 workers) ===
+sanity: setting 'base' reproduces runs/sdp/B_default chunks exactly: True
+setting          tok      SC      BI      RC    ICC~    DCC~   mean5~   d_mean5 vs base [95% CI]   wins
+base             556   99.96   99.94   97.81   75.98   85.99    91.85   +0.00 [+0.00,+0.00]   0/33
+sw0              549   99.97   99.94   97.57   78.14   86.43    92.34   +0.49 [+0.34,+0.65]   29/33
+sw0.05           560   99.97   99.94   97.93   76.71   86.16    92.06   +0.20 [+0.13,+0.28]   23/33
+sw0_rc1          559   99.96   99.94   99.80   77.77   85.82    92.59   +0.74 [+0.56,+0.91]   32/33
+sw0_rc3          553   99.96   99.94   99.82   77.79   85.75    92.58   +0.73 [+0.56,+0.91]   32/33
+sw0.05_rc1       582   99.96   99.94   99.82   75.96   86.05    92.27   +0.42 [+0.25,+0.60]   28/33
+sw0_dcc1.5_rc1   639   99.96   99.94   99.82   75.87   87.60    92.56   +0.71 [+0.52,+0.89]   32/33
+sw0_icc1.5_rc1   527   99.97   99.94   99.76   78.65   85.02    92.57   +0.72 [+0.57,+0.88]   33/33
+sw0_dcc1.5       612   99.96   99.94   97.42   76.59   87.86    92.28   +0.43 [+0.32,+0.54]   30/33
+sw0_icc1.5       516   99.97   99.94   97.21   78.92   85.30    92.20   +0.35 [+0.22,+0.47]   26/33
+rc0.3            566   99.97   99.94   99.24   75.72   86.10    92.09   +0.24 [+0.09,+0.42]   15/33
+sw0_rc0.3        552   99.96   99.94   99.19   78.08   86.25    92.59   +0.74 [+0.59,+0.91]   32/33
+per-doc best     571   99.96   99.94   99.76   77.55   86.53    92.65   +0.80 [+0.66,+0.96]   (selected on the proxy itself: optimistic)
+(~ = predicted from the proxy; SC/BI/RC are real. Exploratory, all 33 documents, no folds: not a reportable result.)

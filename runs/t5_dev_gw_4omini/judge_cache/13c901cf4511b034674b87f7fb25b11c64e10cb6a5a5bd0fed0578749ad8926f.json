@@ -1,0 +1,14 @@
+{
+  "request_hash": "13c901cf4511b034674b87f7fb25b11c64e10cb6a5a5bd0fed0578749ad8926f",
+  "prompt_sha256": "b1c7ecbacbdfce5d4caf966a96766b7085c528e88f2a0dfffa6c3344aa8dfddc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1yS2GbuTnWRKWCJMtdSsXwtv3Vb",
+  "prompt_tokens": 9811,
+  "completion_tokens": 47,
+  "actual_usd": 0.0014998499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the importance of random sampling in fraud detection to mitigate discrimination and the necessity for inspectors to remain critical of algorithmic results."
+  }
+}

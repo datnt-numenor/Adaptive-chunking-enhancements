@@ -1,0 +1,14 @@
+{
+  "request_hash": "3abd4eabff58076383ff1d3de2cc3c310038e9d89e9d2db74ddfc6b0e8902230",
+  "prompt_sha256": "f13deff44c98c18a49aa9f5492de1194e3cd3edc0f2e0b2ac8c74575e0cca0af",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNRmF4Qlbb1jpIbcD57T8t5HPVDp",
+  "prompt_tokens": 7036,
+  "completion_tokens": 42,
+  "actual_usd": 0.0010806,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by emphasizing the importance of tracking and documenting data provenance, even when it is unknown, for security purposes."
+  }
+}

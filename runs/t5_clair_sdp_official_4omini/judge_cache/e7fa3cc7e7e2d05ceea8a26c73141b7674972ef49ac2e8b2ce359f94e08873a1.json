@@ -1,0 +1,14 @@
+{
+  "request_hash": "e7fa3cc7e7e2d05ceea8a26c73141b7674972ef49ac2e8b2ce359f94e08873a1",
+  "prompt_sha256": "07ce4bf008ab5c98062886b0254ff1b5d917c56114aca6b754c1a3a3e04b78d0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN4jXCTjcOowvLB1IotWGoW5GvbS",
+  "prompt_tokens": 8402,
+  "completion_tokens": 39,
+  "actual_usd": 0.0012837,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the preference for using infrared motion detectors over cameras to comply with data minimization and privacy principles."
+  }
+}

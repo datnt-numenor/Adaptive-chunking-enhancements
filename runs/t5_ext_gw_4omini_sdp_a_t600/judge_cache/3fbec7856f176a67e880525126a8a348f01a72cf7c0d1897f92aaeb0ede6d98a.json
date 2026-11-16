@@ -1,0 +1,14 @@
+{
+  "request_hash": "3fbec7856f176a67e880525126a8a348f01a72cf7c0d1897f92aaeb0ede6d98a",
+  "prompt_sha256": "38076e1daa32f75f456f97de56a54a978c2a8fd066c2baa97725b555bc81dea7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJY5m8P7JMwddjBZ0wzhU7W6BNQ",
+  "prompt_tokens": 7802,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011985,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by detailing how watermarks in synthetic data can interfere with AI training and how editorial workflows in fact-checking disrupt the marking process."
+  }
+}

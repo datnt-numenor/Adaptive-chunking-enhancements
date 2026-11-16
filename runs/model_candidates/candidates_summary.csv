@@ -1,0 +1,5 @@
+model,returned,self_exact,self_similarity,self_abstain_agree,abstain_rate,f1_vs_reference,vs_gpt41_similarity,vs_gpt41_abstain_agree,truncated,latency_s,cost_usd_per_18,cost_usd_full_generation_est,logprobs,json_schema
+"gpt-4.1 (chinh thuc, tu cache)",['gpt-4.1-2025-04-14'],10,0.9609956941776288,18,0.05555555555555555,0.5037249207705544,,,,,0.326518,5.387547,da dung trong harness,da dung trong harness
+gpt-4.1-mini-2025-04-14,['gpt-4.1-mini-2025-04-14'],11,0.8777249174434917,18,0.05555555555555555,0.4132251161969913,0.618940902829084,18,0,1.6083333333333334,0.0663788,1.0952502,True,True
+gpt-4.1-nano-2025-04-14,"KHONG DUNG DUOC: NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4.1-nano-2025-04-14` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",,,,,,,,,,,,-,-
+gpt-4o-mini-2024-07-18,['gpt-4o-mini-2024-07-18'],12,0.9184122706598266,18,0.1111111111111111,0.5215010814941745,0.5744542322812829,17,0,2.317222222222222,0.024341250000000005,0.4016306250000001,True,True

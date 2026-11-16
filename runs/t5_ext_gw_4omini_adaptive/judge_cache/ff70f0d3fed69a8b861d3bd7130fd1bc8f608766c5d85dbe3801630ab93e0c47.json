@@ -1,0 +1,14 @@
+{
+  "request_hash": "ff70f0d3fed69a8b861d3bd7130fd1bc8f608766c5d85dbe3801630ab93e0c47",
+  "prompt_sha256": "607f12746623a5ca2b61815a9357b59f4f52af3518e242e4f40a8079a433eaf8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNmlTDEY1RPArzLzo1oGVtXPskUP",
+  "prompt_tokens": 9169,
+  "completion_tokens": 45,
+  "actual_usd": 0.00140235,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the relationship between minority class data and equalized odds scores, confirming that increased minority data leads to improved compliance as stated in the Reference Answer."
+  }
+}

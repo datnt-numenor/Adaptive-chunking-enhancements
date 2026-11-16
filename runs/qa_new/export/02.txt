@@ -1,0 +1,580 @@
+DOC_ID: Ada (technique)_Recommandations de sécurité pour un système d'IA générative
+
+<<<PAGE 4>>>
+## Table des matières
+
+<Table>
+| 0 | 1 |
+| --- | --- |
+| 1 Contexte | 3 |
+| 1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 3 . . . . . . |
+| 1.2 Définitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 4 . . . . . . |
+| 1.3 Périmètre | 5 |
+| 2 Synthèse | 6 |
+| 3 Description d'un système d'IA générative | 7 |
+| 3.1 Cycle de vie d'un système d'IA générative | 7 |
+| 3.2 Architecture d'un système d'IA générative | 10 |
+| 4 Scénarios d'attaques sur l'IA generative | 11 |
+| 5 Recommandations | 14 |
+| 5.1 Recommandations générales | 14 |
+| 5.2 Recommandations pour la phase d'entraînement | 21 |
+| 5.3 Recommandations pour la phase de déploiement | 22 |
+| 5.4 Recommandations pour la phase de production | 23 |
+| 5.5 Cas particulier de la génération de code source assistée par l'IA | 26 |
+| 5.6 Cas particulier de services d'IA grand public exposés sur Internet | 27 |
+| 5.7 Cas particulier de l'utilisation de solutions d'IA générative tierces | 28 |
+| Liste des recommandations | 30 |
+| Bibliographie | 32 |
+</Table>
+
+<!-- PageFooter: 2 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+## 1 Contexte
+
+### 1.1 Introduction
+
+Si le thème de l'intelligence artificielle (IA) existe depuis longtemps dans le domaine de la re- cherche, les possibilités offertes par les puissances de calcul et le traitement de données massives ont permis d'ouvrir de nouvelles opportunités. Parmi celles-ci, on note un essor important de pro- duits permettant de générer une réponse à une question formulée en langage naturel à partir d'un modèle entraîné sur des volumes de données très importants. Ces modèles d'IA sont généra- lement appelés Large Language Model (LLM) et entrent dans la catégorie de l'IA générative (voir les définitions en section 1.2).
+
+Le récent engouement concernant ces produits et services, dont certains sont rendus facilement accessibles au grand public, a entraîné des réflexions au sein des organisations (entreprises, admi- nistrations), afin d'étudier les éventuels gains de productivité qui pourraient en découler.
+
+Si cette technologie offre de nouvelles perspectives dans l'organisation du travail, il convient d'adop- ter une posture de vigilance et de prudence lors de son déploiement et de son intégration dans un système d'information existant. En effet, le déploiement d'outils d'IA générative engendre de nouvelles menaces pouvant avoir un impact conséquent, par exemple sur la confidentialité des données qu'ils traitent, mais également sur l'intégrité des systèmes d'information avec lesquels ils sont connectés.
+
+Ce document a ainsi pour objet de donner des recommandations de sécurité sur la mise en œuvre de solutions d'IA générative reposant sur des LLM au sein d'entités publiques et privées.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 3 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+# 1.2 Définitions
+
+## IA générative
+
+L'IA générative est un sous-ensemble de l'intelligence artificielle, axé sur la création de modèles qui sont entraînés à générer du contenu (texte, images, vidéos, etc.) à partir d'un corpus spécifique de données d'entraînement.
+
+## Large Language Model
+
+Catégorie de modèles d'IA générative qui peuvent générer du texte proche du lan- gage naturel d'un être humain, et qui sont généralement entraînés sur un large en- semble de données.
+
+## Modèle d'IA
+
+Un modèle d'IA désigne, dans le contexte de ce guide, un réseau de neurones et ses paramètres (poids, biais 1).
+
+## Système d'IA
+
+Un système d'IA englobe l'ensemble des composants techniques d'une application reposant sur un modèle d'IA : l'implémentation de ce modèle d'IA, les services fron- taux pour les utilisateurs, les bases de données, la journalisation, etc.
+
+## Requête
+
+Une requête (ou prompt) désigne l'instruction sous forme de texte envoyée par l'uti- lisateur au système d'IA.
+
+## Attaque adverse
+
+Une attaque adverse (adversarial attack), parfois aussi appelée « attaque antago- niste » ou « attaque par exemples contradictoires » vise à envoyer à un système d'IA une ou plusieurs requêtes malveillantes dans le but de tromper ou d'altérer son bon fonctionnement.
+
+\* 1. Dans un réseau de neurones, un poids est un coefficient de puissance de la connexion entre 2 neurones, qui s'ajuste pendant toute la phase d'entraînement. Un biais est une constante liée à un neurone permettant une « compensation » dans le calcul du résultat.
+
+<!-- PageFooter: 4 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+## 1.3 Périmètre
+
+Ce document traite principalement des cas d'usages suivants :
+
+la synthèse ou le résumé d'un corpus documentaire;
+
+l'extraction d'informations ou la génération de texte à partir d'un corpus documentaire ;
+
+les agents conversationnels 2 (appelés aussi Chatbot);
+
+la génération de code source pour les développeurs d'applications.
+
+Le corpus documentaire identifié peut être « multimodal », c'est-à-dire qu'il peut impliquer diverses catégories de données en entrée : textes, images, sons, vidéos, etc. En revanche, le guide se focalise principalement sur la génération textuelle en sortie et ne traite pas particulièrement de la géné- ration d'image ou de vidéo (même si la majorité des recommandations sont applicables à ces cas d'usages).
+
+Ce corpus documentaire intègre les données d'entraînement du modèle, mais peut aussi s'appuyer sur des données additionnelles ou des documents fournis directement en entrée par l'utilisateur.
+
+Ce document ne traite que de la sécurisation d'une architecture de système d'IA générative repo- sant sur un LLM.
+
+Les problématiques de sécurité liées à la qualité3 des données et à la performance 4 d'un modèle d'IA ne sont pas traitées dans ce document.
+
+De même, si d'autres enjeux comme l'éthique, la vie privée, la propriété intellectuelle, la protection du secret des affaires ou encore la protection des données personnelles sont également des enjeux à prendre en compte dans la conception d'un modèle d'IA, ces derniers ne sont pas du domaine d'expertise de l'ANSSI et ne sont donc pas abordés dans ce guide.
+
+Pour l'ensemble de ces sujets, il est possible de prendre connaissance des travaux de l'ENISA [6, 7], du BSI [1], du NIST [15, 16] ou encore de la CNIL [2].
+
+L'ANSSI a également cosigné un document du NCSC-UK [14] sur la sécurisation de l'IA en no- vembre 2023.
+
+\* 2. Un agent conversationnel est défini ici comme une application permettant un échange écrit entre l'utilisateur et le système d'IA et non un échange oral.
+
+\* 3. La qualité des données désigne généralement un critère plutôt métier. Des critères de qualité des données d'un point de vue métier peuvent être par exemple l'origine, la quantité, l'exhaustivité, la pertinence, l'exactitude, la représentativité (au sens statistique), ou encore le respect d'une structure donnée.
+
+\* 4. La performance d'un modèle d'IA est également un concept métier très dépendant des objectifs fixés lors de la conception du modèle. Elle peut inclure plusieurs facteurs comme la précision, la pertinence ou encore la rapidité des réponses générés pour les utilisateurs par exemple.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 5 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+# 2 Synthèse
+
+La mise en œuvre d'un système d'IA générative peut se décomposer en 3 phases cycliques : une première phase d'entraînement du modèle d'IA à partir de données spécifiquement choisies, puis une phase d'intégration et de déploiement, et enfin une phase de production opérationnelle dans laquelle les utilisateurs peuvent accéder au modèle d'IA entraîné, par l'intermédiaire du système d'IA.
+
+Ces 3 phases doivent chacune faire l'objet de mesures de sécurisation spécifiques, qui dépendent en partie du choix de sous-traitance retenu pour chaque composante (hébergement, entraînement du modèle, tests de performance, etc.) ainsi que de la sensibilité des données utilisées à chaque étape et de la criticité du système d'IA dans sa finalité.
+
+En complément des menaces classiques inhérentes à tout système d'information, un système d'IA générative peut-être soumis à des attaques spécifiques visant par exemple à perturber le bon fonc- tionnement de celui-ci (attaques adverses) ou bien à exfiltrer des données traitées par celui-ci.
+
+La question de la protection des données, notamment des données d'entraînement, est donc un en- jeu essentiel d'un système d'IA générative, avec comme corollaire la problématique du besoin d'en connaître des utilisateurs lorsqu'ils interrogent le modèle. En effet, ce dernier est conçu pour géné- rer une réponse à partir de l'ensemble des données auxquelles il a eu accès lors de l'entraînement, ainsi que des données additionnelles qui peuvent être issues de sources internes sensibles.
+
+L'utilisation d'un système d'IA générative doit donc répondre à des besoins de confidentialité (il faut à ce titre rappeler que l'envoi de données sensibles à des outils grand public sur Internet5 est à proscrire) mais également des besoins en intégrité et en disponibilité. Les interactions du système d'IA avec d'autres applications ou composants du SI doivent ainsi être sécurisées, limitées au strict besoin opérationnel, et doivent pouvoir être contrôlées par un humain lorsque celles-ci sont critiques pour l'organisation.
+
+Certains usages spécifiques, comme l'assistance par IA pour le développement d'applications, sou- lèvent des problématiques importantes et doivent donc être cadrés (en ayant une grande vigilance sur des modules ou des applications sensibles), contrôlés par des humains et testés régulièrement (avec des outils automatiques d'analyse de code source).
+
+Enfin, la protection des modèles d'IA peut constituer un enjeu au même titre que la protection des données, non seulement pour des raisons de protection du potentiel scientifique et technique de la nation (recherche académique, modèles utilisés pour la sécurité nationale, etc.), mais aussi parce qu'un attaquant ayant connaissance de l'architecture et des paramètres d'un modèle peut potentiellement améliorer ses capacités d'attaques à d'autres fins (exfiltration de données, etc.).
+
+\* 5. Comme par exemple ChatGPT, Gemini ou encore DeepL pour la traduction.
+
+<!-- PageFooter: 6 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+# 3 Description d'un système d'IA générative
+
+## Attention
+
+Le cycle de vie et l'architecture présentés dans ce chapitre sont donnés à titre d'exemples pour faciliter la compréhension des recommandations. Ils n'ont donc pas de vocation normative. En particulier, le séquencement des fonctions présentées peut varier et, selon les cas d'usages, ces fonctions ne sont pas toujours implémentées dans un système d'IA.
+
+## 3.1 Cycle de vie d'un système d'IA générative
+
+La figure 1 décrit un exemple de cycle de vie d'un système d'IA générative.
+
+<Figure>
+FIGURE 1 - Exemple de cycle de vie d'un système d'IA générative
+</Figure>
+
+FIGURE 1 - Exemple de cycle de vie d'un système d'IA générative
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 7 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+Les 3 phases d'entraînement, de déploiement et de production 6 impliquent potentiellement des environnements différents et des utilisateurs différents. Il est important que ces 3 phases du cycle de vie d'un système d'IA générative fassent chacune l'objet d'une attention particulière du point de vue de la sécurité.
+
+Ces 3 phases peuvent être réalisées dans des environnements distincts, par exemple la phase d'en- traînement dans un Cloud public et la phase de déploiement et de production en interne de l'entité. Néanmoins, des mesures de sécurisation adaptées doivent s'appliquer quel que soit l'environne- ment choisi.
+
+Le ré-entrainement d'un modèle d'IA présenté dans ce schéma n'implique généralement pas de refaire toutes les étapes présentées dans la phase d'entraînement (très souvent, seules les étapes de fine-tuning ou d'alignement sont réalisées).
+
+La figure 2 présente des exemples de partage de responsabilités dans l'ensemble des phases de conception d'un système d'IA générative.
+
+<Figure>
+FIGURE 2 - Scénarios de partage de responsabilités d'un système d'IA générative
+</Figure>
+
+FIGURE 2 - Scénarios de partage de responsabilités d'un système d'IA générative
+
+Les risques et les impacts du point de vue de la sécurité seront évaluées en fonction du scénario retenu par l'organisation.
+
+\* 6. Cette phase de production peut parfois être appelée phase d'inférence du modèle d'IA, c'est-à-dire que le modèle réalise des prédictions pour des utilisateurs donnés.
+
+<!-- PageFooter: 8 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+La figure 3 décrit l'intégration d'un système d'IA générative dans un SI et les points d'attention à prendre en compte en ce qui concerne les interactions internes et externes.
+
+<Figure>
+FIGURE 3 - Intégration d'un système d'IA générative dans un SI existant
+</Figure>
+
+FIGURE 3 - Intégration d'un système d'IA générative dans un SI existant
+
+Ces interactions doivent faire l'objet d'une attention particulière et doivent être intégrées dans le périmètre de l'analyse à toutes les phases du projet.
+
+### R1
+
+Intégrer la sécurité dans toutes les phases du cycle de vie d'un système d'IA
+
+Des mesures de sécurité doivent être identifiées et appliquées dans chacune des 3 phases du cycle de vie d'un système d'IA : entraînement, déploiement et production. Ces mesures dépendent fortement du scénario de partage de responsabilités retenu et de la sous-traitance associée. Elles doivent également tenir compte des interactions avec d'autres applications ou composants internes ou externes au SI.
+
+Il est possible de se référer au guide d'hygiène de l'ANSSI [17] pour disposer d'un socle de base de sécurité à appliquer.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 9 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+## 3.2 Architecture d'un système d'IA générative
+
+La figure 4 décrit un exemple d'architecture générique d'un système d'IA générative.
+
+<Figure>
+FIGURE 4 - Exemple d'architecture générique d'un système d'IA générative
+</Figure>
+
+FIGURE 4 - Exemple d'architecture générique d'un système d'IA générative
+
+Cette architecture ne reprend pas de manière exhaustive l'ensemble des composants d'un système d'IA générative mais a pour but d'identifier les chemins d'attaques potentiels ciblant une entité.
+
+Plusieurs éléments sont importants à relever dans ce schéma :
+
+les différentes populations qui peuvent accéder à un système d'IA selon les phases : utilisateurs, développeurs, administrateurs, auditeurs, etc .;
+
+la base de données vectorielle, qui est généralement utilisée pour stocker sous forme de vec- teurs des données d'indexation de données additionnelles, dans le but d'enrichir7 les requêtes des utilisateurs avant l'envoi au modèle (concept appelé RAG - Retrieval Augmentation Gene- ration). Cette base de données peut être construite à partir de sources de données internes à l'organisation ou externes depuis des sources partenaires;
+
+les filtres en entrée et sortie du modèle d'IA, permettant d'assurer une défense en profondeur contre des requêtes malveillantes ou les comportements non-souhaités du système d'IA;
+
+les plugins ou composants additionnels, qui peuvent être utilisés pour connecter le système d'IA à d'autres ressources métier ou techniques de l'entité ou extérieures à l'entité.
+
+\* 7. Une base de données vectorielle est particulièrement utilisée dans le contexte des LLM car elle peut permettre d'établir des comparaisons, d'identifier des relations entre objets, et ainsi de comprendre le contexte.
+
+<!-- PageFooter: 10 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+# 4 Scénarios d'attaques sur l'IA générative
+
+Un système d'IA générative est de prime abord une application métier standard, qui doit disposer du même socle de sécurité que toute autre application métier de l'entité. Toutefois, en complément de ce socle de sécurité, l'entité doit prendre en compte des menaces spécifiques à un système d'IA générative.
+
+Ces menaces peuvent être déclinées en 3 grandes catégories d'attaques 8 :
+
+Attaques par manipulation : ces attaques consistent à détourner le comportement du système d'IA en production au moyen de requêtes malveillantes. Elles peuvent provoquer des réponses inattendues, des actions dangereuses ou un déni de service ;
+
+Attaques par infection : ces attaques consistent à contaminer un système d'IA lors de sa phase d'entraînement, en altérant les données d'entraînement ou en insérant une porte dérobée ;
+
+Attaques par exfiltration : ces attaques consistent à dérober des informations sur le système d'IA en production, comme les données ayant servi à entraîner le modèle, les données des uti- lisateurs ou bien des données internes du modèle (paramètres).
+
+Dans le contexte de l'IA générative, ces attaques peuvent porter atteinte aux besoins de sécurité suivants :
+
+Confidentialité : l'objectif est de protéger un système d'IA contre la fuite d'informations consi- dérées comme sensibles : jeux de données d'entraînement, requêtes des utilisateurs, paramètres des modèles, données additionnelles internes, etc .;
+
+Intégrité : l'objectif est de protéger un système d'IA contre une modification non prévue de son comportement. L'intégrité peut concerner directement le modèle (paramètres) ou bien viser les jeux de données d'entraînement (empoisonnement) ou encore les composants techniques permettant le bon fonctionnement du système d'IA : scripts 9, bibliothèques externes (supply- chain attack), configurations des services, etc .;
+
+Disponibilité : l'objectif est de protéger un système d'IA contre des dénis de service ou des actions visant à dégrader ses performances (requêtes malveillantes);
+
+Traçabilité : l'objectif est de garantir d'une part l'explicabilité 10 et l'imputabilité des actions réalisées sur un système d'IA. Ces éléments peuvent faciliter le travail d'investigation et de re- médiation après un incident de sécurité.
+
+\* 8. Ces catégories sont reprises de la taxonomie de la CNIL à ce sujet : https : //linc.cnil.fr/petite-taxonomie-des- attaques-des-systemes-dia.
+
+\* 9. Ces scripts peuvent être par exemple des scripts de fine-tuning du modèle d'IA ou bien des scripts de déploiement ou de mainte- nance informatique du système d'IA.
+
+\* 10. Comme défini par la CNIL, l'explicabilité est la capacité de mettre en relation et de rendre compréhensible les éléments pris en compte par le système d'IA pour la production d'un résultat.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 11 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+La figure 5 décrit quelques exemples d'attaques sur un système d'IA générative dans un SI.
+
+<Figure>
+FIGURE 5 - Scénarios d'attaques sur un système d'IA générative dans un SI
+</Figure>
+
+FIGURE 5 - Scénarios d'attaques sur un système d'IA générative dans un SI
+
+1. l'attaquant dispose d'un accès à une source de données et réalise au préalable un empoison- nement des données utilisées pour entraîner le modèle d'IA, ce qui permet de détourner son usage une fois le système d'IA en production (ex. : déclencher une action malveillante de ma- nière cachée à partir d'une requête spécifique);
+
+2. l'attaquant dispose d'un accès à l'environnement de développement et insère une porte dérobée dans le code du système d'IA (ex. : altérer directement les paramètres du modèle ou bien la configuration d'un composant technique du système d'IA);
+
+3. l'attaquant dispose d'un accès à un service externe de test avant déploiement et détourne le processus d'intégration (ex. : envoyer un résultat trompeur ou malveillant à la chaîne d'intégra- tion);
+
+4. l'attaquant utilise une technique d'attaque adverse pour exfiltrer des données sensibles traitées par le modèle d'IA (ex. : récupérer des données d'entraînement ou des requêtes d'autres utili- sateurs du service) ou bien il effectue des requêtes malveillantes pour provoquer un déni de service ;
+
+5. l'attaquant dispose d'un accès à une ressource externe accédée par le système d'IA et envoie une réponse malveillante qui est intégrée par le modèle (ex. : il envoie une URL qui pointe sur un site Web malveillant qu'il contrôle);
+
+6. l'attaquant dispose d'un accès à un plugin utilisé par le système d'IA et injecte des commandes malveillantes lors d'une action vers une application métier (ex. : insérer du code malveillant dans le corps d'un mail généré par le système d'IA).
+
+<!-- PageFooter: 12 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+Dans le contexte de ce guide (IA générative LLM), les impacts suivants peuvent être identifiés :
+
+ternissement de la réputation de services exposés au grand public par l'altération du bon fonc- tionnement des systèmes d'IA générative (ex. : Chatbot);
+
+exfiltration de données sensibles depuis des systèmes d'IA générative ;
+
+vol des paramètres (poids) de modèles d'IA propriétaires 11;
+
+latéralisation d'une attaque vers d'autres applications métier interconnectées aux systèmes d'IA générative (ex. : messagerie interne);
+
+sabotage d'applications métier par injection de vulnérabilités dans du code source généré par IA.
+
+La fuite de données sensibles de l'entité doit dans tous les cas être une menace à prendre en compte, quel que soit le cas d'usage du système d'IA générative. Le système d'IA doit intégrer la question des droits d'accès et du respect du besoin d'en connaître dans les réponses qu'il apporte.
+
+Il faut également porter une attention particulière aux scénarios d'attaque indirects impliquant un système d'IA, comme par exemple la génération automatique de contenu pour la mise à disposition d'informations (insertion d'URL malveillante).
+
+Enfin, l'analyse de risque doit tenir compte du scénario de partage de responsabilités retenu pour le projet (cf. chapitre 2). Par exemple, l'utilisation d'un modèle entraîné par un tiers peut engendrer un risque d'attaque par supply-chain. Le prestataire tiers, qui n'est pas de confiance, peut entraîner le modèle pour que celui-ci réagisse différemment par rapport au comportement attendu lorsqu'une certaine requête lui est fournie. Une des mesures de réduction du risque pourrait être d'auditer le modèle en question ou bien de ne pas recourir à celui-ci pour des applications critiques.
+
+Une analyse de risque, menée par exemple avec la méthode EBIOS-RM [19], doit ainsi être réalisée le plus tôt possible, c'est-à-dire en amont de la phase d'entraînement.
+
+R2
+
+Mener une analyse de risque sur les systèmes d'IA avant la phase d'entraî- nement
+
+L'analyse de risque d'un système d'IA doit intégrer les problématiques suivantes :
+
+cartographier l'ensemble des éléments en lien avec le modèle d'IA : bibliothèques tierces, sources de données, applications interconnectées, etc .;
+
+identifier les sous-parties du système d'IA qui traiteront les données de l'organi- sation, en particulier celles contenues dans les requêtes des utilisateurs;
+
+prendre en compte le scénario de partage de responsabilités et la question de la sous-traitance pour chacune des phases;
+
+identifier les impacts directs et indirects en cas de réponses erronées ou mal- veillantes du modèle d'IA aux utilisateurs;
+
+considérer la protection des données d'entraînement du modèle d'IA.
+
+Les recommandations du prochain chapitre 5 visent à répondre à ces menaces spécifiques.
+
+\* 11. La connaissance des poids du modèle peut également permettre aux attaquants d'améliorer la capacité de certaines attaques.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 13 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+# 5 Recommandations
+
+## 5.1 Recommandations générales
+
+L'utilisation de bibliothèques et de modules externes non maîtrisés doit être étudiée dès la concep- tion du projet, afin d'identifier les potentielles vulnérabilités liées à ces modules. L'objectif est de se prémunir au maximum d'une attaque dite supply-chain-attack visant des composants nécessaires au bon fonctionnement du système d'IA. Il est possible de se reporter au guide de l'ANSSI sur le risque numérique [21] ou encore à la documentation de la CISA à ce sujet [8].
+
+### R3 Évaluer le niveau de confiance des bibliothèques et modules externes utili- sés dans le système d'IA
+
+Il est recommandé de cartographier l'ensemble des bibliothèques et modules ex- ternes utilisés dans le cadre du projet et d'évaluer leur niveau de confiance.
+
+Au même titre que pour les composants logiciels (bibliothèques et modules externes), il est égale- ment primordial d'évaluer les sources de données non maîtrisées par l'entité. Ces sources peuvent être des jeux de données d'entraînement récupérés sur Internet, des jeux de validation de la per- formance d'un modèle ou encore des jeux de données additionnelles utilisés lors de la phase de production.
+
+### R4 Évaluer le niveau de confiance des sources de données externes utilisées dans le système d'IA
+
+Il est recommandé de cartographier l'ensemble des sources de données externes uti- lisées dans le cadre du projet et d'évaluer leur niveau de confiance 12.
+
+De manière générale, il est recommandé d'appliquer des bonnes pratiques de développement sé- curisé lors de la conception et de l'implémentation du système d'IA. Ces bonnes pratiques sont parfois regroupées sous le vocable de DevSecOps ou de l'expression security by design. Pour aller plus loin, il est possible de se reporter au guide de l'ANSSI [28] sur ce thème, ou bien à la docu- mentation du NIST à ce sujet [10], ou encore suivre les préconisations du NCSC-UK [5] et de la CISA [11].
+
+\* 12. Il est possible de s'appuyer sur les critères de la CNIL (https ://www.cnil.fr/fr/tenir-compte-de-la-protection-des- donnees-dans-la-collecte-et-la-gestion-des-donnees) ou sur la proposition de Datasheets for Datasets (https: //arxiv.org/ pdf/1803.09010.pdf) pour évaluer un jeu de données externe.
+
+<!-- PageFooter: 14 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+Appliquer les principes de DevSecOps sur l'ensemble des phases du projet
+
+Il est recommandé d'appliquer les bonnes pratiques de développement sécurisé sur l'ensemble des phases du projet, par exemple :
+
+déployer et sécuriser des chaînes d'intégration et de déploiement en continu (CI/CD) en appliquant le principe de moindre privilège pour l'accès aux outils de ces chaînes CI/CD;
+
+mettre en œuvre une gestion sécurisée des secrets utilisés dans toutes les phases du projet;
+
+prévoir des tests de sécurité automatisés sur le code source (analyse statique de code) et lors de l'exécution de ce code source (analyse dynamique de code);
+
+protéger en intégrité le code source et sécuriser l'accès à celui-ci (authentification multifacteur, signature du code, droits d'accès, etc.);
+
+recourir à des langages de développement sécurisés (scripts de fine tuning, déve- loppement du modèle, maintenance, déploiement, etc.).
+
+Afin de pouvoir implémenter un modèle d'IA, il faut stocker les différents paramètres de ce mo- dèle (poids, biais, etc.) dans des fichiers. Plusieurs formats sont disponibles à cet effet, dont cer- tains peuvent présenter un risque d'exécution de code arbitraire, comme par exemple ceux im- plémentant des fonctionnalités de chargement d'objets sérialisés. Il est donc préférable d'utiliser des formats qui séparent strictement les données de paramètres du modèle et les données de code exécutable de celui-ci.
+
+R6 Utiliser des formats de modèles d'IA sécurisés
+
+Il est recommandé d'utiliser des formats à l'état de l'art du point de vue de la sécurité, comme le format safetensor par exemple. Certains formats peu sécurisés, comme le format pickle, sont à proscrire.
+
+Les modèles d'IA générative sont amenés à manipuler des données tout au long de leur cycle de vie. Il peut être compliqué d'appliquer des mesures de protection en confidentialité sur ces données, pour les raisons suivantes :
+
+elles peuvent être issues de sources multiples et sont parfois « mélangées » dans un même jeu : données publiques, données partenaires, données internes, données personnelles, etc.
+
+leur volume peut être très important, notamment dans le cas de l'entraînement des LLM, ce qui ne facilite pas leur traitement ;
+
+il peut être nécessaire de les mettre à jour régulièrement, notamment lorsque l'on souhaite ré-entraîner le modèle ;
+
+il peut être nécessaire de leur appliquer un pré-traitement pour abaisser leur niveau de confi- dentialité (anonymisation, suppression de certains champs, etc.);
+
+elles peuvent être utilisées lors de différentes phases du projet : pendant la phase d'entraîne- ment du modèle mais également en production en cas d'accès à des données additionnelles par le modèle ;
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 15 page R5 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+elles peuvent inclure les données d'usage du système d'IA pendant la phase de production : données issues des requêtes des utilisateurs et réponses apportées par le modèle d'IA à ces utilisateurs.
+
+Il est important de bien saisir qu'un modèle d'IA hérite de la sensibilité des données qui ont contri- bué à l'entraîner et également des données qui servent à le ré-entraîner. Un modèle d'IA peut en effet être vulnérable à un phénomène dit de « régurgitation ». Dans certains cas, celui-ci peut par exemple générer des réponses proches des données d'entraînement, révélant ainsi des informa- tions potentiellement sensibles.
+
+En fonction du scénario de partage de responsabilités retenu (cf. chapitre 2), les enjeux de confi- dentialité des données ne seront pas les mêmes, et les mesures techniques permettant de se pré- munir d'une exfiltration de données seront à adapter. Par exemple, dans le cas où l'entité souhaite sous-traiter la phase d'entraînement à un prestataire, il est important de s'assurer que les données stockées et traitées chez ce prestataire sont suffisamment protégées en confidentialité (chiffrement à l'état de l'art, cloisonnement des ressources vis-à-vis d'autres clients, sécurisation des clés utilisées, effacement sécurisé après ré-allocation de ressources, etc.).
+
+Dans le même ordre d'idée, un modèle d'IA propriétaire que l'on souhaite protéger en confidentia- lité doit faire l'objet de mesures spécifiques de sécurité dans le cas où ce dernier serait stocké dans un environnement qui n'est pas de confiance (ex. : chez un prestataire Cloud ou bien embarqué dans un équipement physiquement exposé comme dans le cas de l'IOT).
+
+### R7 Prendre en compte les enjeux de confidentialité des données dès la concep- tion du système d'IA
+
+L'étude du projet doit cartographier l'ensemble des jeux de données utilisés à chaque phase du système d'IA : entraînement (jeux de données d'entraînement), déploie- ment (jeux de tests) et production (données additionnelles, base de données vecto- rielle, etc.).
+
+Cette étude doit inclure les données d'usage du système d'IA en production, à savoir les requêtes des utilisateurs ainsi que les réponses apportées par le modèle d'IA. L'analyse peut également traiter le cas de la protection en confidentialité des para- mètres du modèle lui-même, par exemple pour des modèles propriétaires.
+
+L'accès à un système d'IA complexifie également l'application du besoin d'en connaître des utilisa- teurs. Il faut distinguer ici plusieurs catégories de données :
+
+Les données d'entraînement : la gestion de droits d'accès pour les utilisateurs n'est pas possible sur ces données du fait du design des réseaux de neurones;
+
+Les données additionnelles en production : la gestion de droits d'accès est possible mais elle est dépendante des possibilités offertes par les outils utilisés (RBAC 13) pour stocker les infor- mations (services de gestion de documents internes, base de données vectorielle, etc.);
+
+Les données d'usage : les requêtes des utilisateurs ainsi que les réponses peuvent contenir des données sensibles. Elles sont temporairement stockées lors du traitement dans le système d'IA et parfois utilisées pour ré-entraîner le modèle (ex. : alignement avec RLHF - Reinforcement learning from human feedback).
+
+\* 13. Role Based Access Control
+
+<!-- PageFooter: 16 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE -->
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+La question du besoin d'en connaître doit ainsi se reposer à chaque ré-entraînement du modèle, y compris sur des données issues de l'usage du modèle en production (données additionnelles métier, requêtes des utilisateurs, etc.).
+
+R8
+
+Prendre en compte la problématique de besoin d'en connaître dès la conception du système d'IA
+
+Il est important de définir en amont du projet les options structurantes du modèle pour gérer le besoin d'en connaître :
+
+le choix des données utilisées pour l'entraînement (sans la possibilité de gérer des droits d'accès) et des données additionnelles en production (avec la possibilité de gérer des rôles et des droits d'accès);
+
+la stratégie d'apprentissage du modèle, c'est-à-dire à quel moment est-ce que l'on ré-entraîne le modèle et sur la base de quelles données (données additionnelles métier, requêtes des utilisateurs, réponses du modèle, etc.).
+
+Les IA génératives LLM ont pour la plupart un comportement non-déterministe, et elles peuvent également être sujet à des hallucinations 14. Cette incertitude sur la réponse obtenue pour une requête donnée implique une plus grande vigilance sur les conséquences indirectes de ces réponses. Ainsi, les interactions d'un système d'IA avec d'autres ressources du SI doivent proscrire l'exécution d'actions automatisées critiques pour l'organisation.
+
+Ce principe de précaution doit prévaloir et un système d'IA générative ne doit pas pouvoir prendre des décisions critiques ayant un impact fort sur le métier ou la protection des biens et des per- sonnes, sans un contrôle humain (ex. : validation dans une IHM). Dans ces cas particuliers, la ca- pacité de discernement humaine permet de réduire le risque de scénarios qui peuvent représenter un danger pour l'organisation.
+
+Il est par exemple important de ne pas utiliser un système d'IA pour automatiser des actions d'ad- ministration critiques sur l'infrastructure technique de l'entité (ex. : découverte et déploiement automatique de configurations réseaux ou de règles de pare-feux).
+
+R9 Proscrire l'usage automatisé de systèmes d'IA pour des actions critiques sur le SI
+
+Un système d'IA doit être configuré de manière à ne pas être en mesure d'exécuter de manière automatisée des actions critiques sur le SI.
+
+Ces actions peuvent être des actions critiques d'un point de vue métier (transactions bancaires, production de contenu public, impact direct sur des personnes, etc.) ou bien des actions critiques sur l'infrastructure du SI (reconfiguration de composants réseaux, créations d'utilisateurs à privilège, déploiement de serveurs virtuels, etc.).
+
+Les rôles et les droits d'accès des développeurs et des administrateurs du système d'IA doivent être strictement définis et appliqués dès le début du projet. Les principes d'administration sécurisée, tels
+
+\* 14. Phénomène dans lequel un modèle génère du contenu erroné qui n'est pas basé sur des données réelles.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 17 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+que décrits dans le guide de l'ANSSI à ce sujet [26] doivent être appliqués dans toutes les phases du cycle de vie du système d'IA.
+
+Maîtriser et sécuriser les accès à privilèges des développeurs et des admi- nistrateurs sur le système d'IA
+
+L'ensemble des opérations à privilèges sur le système d'IA doit respecter les bonnes pratiques d'administration sécurisée, notamment :
+
+les opérations à privilège doivent être définies et leur déclenchement doit être va- lidé : ré-entraînement, modification des jeux de données, nouvelle interconnexion avec une application, changement d'hébergement, etc .;
+
+les opérations à privilège doivent être réalisées avec des comptes dédiés et depuis un poste d'administration dédié à cet usage;
+
+le principe de moindre privilège doit être appliqué et l'usage de jetons d'authen- tification (token) temporaires doit être privilégié ;
+
+l'environnement de développement doit être maîtrisé et administré au même ni- veau de sécurité que l'environnement de production.
+
+L'hébergement du système d'IA, quelle que soit sa phase, doit être étudié. Le niveau de sécurité doit être cohérent avec les besoins de sécurité du projet, et notamment les besoins en confidentialité des données utilisées dans chacune des phases.
+
+Ce point doit notamment être strictement respecté pour la phase d'entraînement du modèle car des menaces importantes existent lors de cette phase, comme cela a été vu précédemment dans le chapitre 4.
+
+## Attention
+
+Les modèles d'IA sont considérés du même niveau de sensibilité que les données qui ont servi à sa conception et à son entraînement. La règle R9 [12] de la circulaire « Cloud au centre » [13] doit s'appliquer pour le cas de l'administration publique.
+
+R11
+
+Héberger le système d'IA dans des environnements de confiance cohérents avec les besoins de sécurité
+
+L'hébergement du système d'IA lors des 3 phases du cycle de vie doit être cohérente avec les besoins de sécurité du projet, et notamment les besoins en confidentialité et en intégrité. En particulier, la sécurisation des données d'entraînement du modèle (au repos, en transit, lors d'un traitement) ne doit pas être négligée.
+
+Les 3 environnements d'entraînement, de déploiement et de production d'un système d'IA doivent être cloisonnés entre eux. Cette mesure permet de se prémunir d'un risque de latéralisation entre les environnements. Cela est d'autant plus important que les populations ayant accès à chaque environnement ne sont généralement pas les mêmes.
+
+<!-- PageFooter: 18 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE page R10 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+Cloisonner chaque phase du système d'IA dans un environnement dédié
+
+Il est recommandé de cloisonner les 3 environnements techniques correspondant à chacune des phases du cycle de vie du système d'IA. Ce cloisonnement peut porter sur :
+
+un cloisonnement réseau : chaque environnement est intégré dans un réseau phy- siquement ou logiquement dédié ;
+
+un cloisonnement système : chaque environnement dispose de ses propres ser- veurs physiques ou hyperviseurs dédiés;
+
+un cloisonnement du stockage : chaque environnement dispose de son propre ma- tériel de stockage ou de disques dédiés. Au minimum, un cloisonnement logique est appliqué ;
+
+un cloisonnement des comptes et des secrets : chaque environnement dispose de ses propres comptes utilisateurs et administrateurs et de secrets distincts.
+
+Dans le cas d'un système d'IA exposé sur Internet, il est recommandé de suivre les préconisations de l'ANSSI pour la conception d'une passerelle Internet sécurisée [24].
+
+### R13 Implémenter une passerelle Internet sécurisée dans le cas d'un système d'IA exposé sur Internet
+
+Dans le cas d'un système d'IA exposé sur Internet, il est recommandé de suivre les bonnes pratiques de cloisonnement du guide de l'ANSSI à ce sujet, notamment :
+
+dédier une fonction de reverse-proxy avant l'accès au service web du système d'IA;
+
+mettre en place deux zones logiques pour le filtrage réseau à l'aide de pare-feux : un filtrage externe en frontal d'Internet et un filtrage interne avant l'accès au système d'IA;
+
+ne pas exposer un annuaire interne de l'entité pour l'authentification sur le sys- tème d'IA;
+
+éviter de mutualiser sur un même hyperviseur des fonctions de sécurité distinctes de la passerelle Internet sécurisée (pare-feux, reverse-proxy, serveur de journalisa- tion, etc.).
+
+Si l'entité fait le choix d'un Cloud public 15 pour exposer son service, il est recommandé de choisir un prestataire qualifié SecNumCloud [32] si les besoins de sécurité l'exigent.
+
+R14
+
+Privilégier un hébergement SecNumCloud dans le cas d'un déploiement d'un système d'IA dans un Cloud public
+
+Si l'entité fait le choix d'utiliser un hébergement dans un Cloud public, il est recom- mandé de privilégier une offre de confiance SecNumCloud dans les cas suivants : les données traitées par le système d'IA sont considérées comme sensibles;
+
+\* 15. Un Cloud public désigne un service d'hébergement mutualisé entre plusieurs clients et exposé sur Internet.
+
+<!-- PageFooter: RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE - 19 page R12 -->
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+l'impact du système d'IA sur le métier est considéré comme critique ;
+
+les utilisateurs du système d'IA ne sont pas considérés comme de confiance.
+
+Lors de la conception du projet, il faut prévoir systématiquement un mode dégradé sans IA pour répondre aux besoins métier, en cas d'indisponibilité ou de défaillance du système nominal.
+
+#### Prévoir un mode dégradé des services métier sans système d'IA
+
+Afin de prévenir des dysfonctionnements ou des incohérences dans les réponses ap- portées par le modèle d'IA, il est recommandé de prévoir au minimum une procé- dure de contournement du système d'IA pour les utilisateurs, afin de répondre aux besoins métier.
+
+Le déploiement de systèmes d'IA générative et de LLM implique généralement l'usage de GPU 16 dans un objectif de performances du système, que ce soit dans la phase d'entraînement ou de production.
+
+Ces GPU peuvent potentiellement traiter des données sensibles en lien avec les opérations du mo- dèle d'IA. Dans un objectif de se protéger d'une fuite de données, il est recommandé de dédier ces composants matériels GPU au système d'IA et de ne pas les mutualiser avec d'autres applications métier du SI. Les GPU peuvent en revanche être mutualisés entre plusieurs modèles d'IA, sous ré- serve que ces derniers correspondent à un même niveau de sensibilité et à des besoins de sécurité homogènes.
+
+R16
+
+## Dédier les composants GPU au système d'IA
+
+Il est recommandé de dédier les composants physiques GPU aux traitements réali- sés par le système d'IA. Dans le cas de la virtualisation, il est recommandé que les hyperviseurs ayant accès aux cartes GPU soient dédiés au système d'IA, ou bien au minimum qu'il y ait une fonction de filtrage matériel (ex. : IOMMU 17) permettant de restreindre les accès des machines virtuelles à la mémoire de ces cartes GPU.
+
+Comme la plupart des applications métier, les systèmes d'IA peuvent être soumis à des attaques par canaux auxiliaires. Ces attaques peuvent avoir pour objectifs d'exfiltrer des informations sensibles ou de perturber le bon fonctionnement des systèmes d'IA. Si la plupart de ces attaques ne sont pas propres à un système d'IA, certaines peuvent néanmoins s'appuyer sur des mécanismes spécifiques aux systèmes d'IA génératives 18.
+
+R17
+
+Prendre en compte les attaques par canaux auxiliaires sur le système d'IA
+
+Il est recommandé de s'assurer que le système d'IA n'est pas vulnérable à des attaques par canaux auxiliaires (temporels, consommation, etc.) qui pourraient par exemple permettre à un attaquant de reconstruire une réponse apportée par un modèle d'IA.
+
+\* 16. Graphics processing unit
+
+\* 17. Input-output memory management unit
+
+\* 18. cf. par exemple https://cdn.arstechnica.net/wp-content/uploads/2024/03/LLM-Side-Channel.pdf
+
+<!-- PageFooter: 20 - RECOMMANDATIONS DE SÉCURITÉ POUR UN SYSTÈME D'IA GÉNÉRATIVE page R15 -->
+<!-- PageBreak -->
+

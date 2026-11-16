@@ -1,0 +1,14 @@
+{
+  "request_hash": "4b3b7899a9bfedf9257208d8e4c494ef3070cba6f23f4e709052a14ad071099d",
+  "prompt_sha256": "c9bd2de9b333eada5bdb1398d772e697f469cb9ebc6367d975a65b24588f05f3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOuGN90FaBIm6WoqMLLR5suzsKpk",
+  "prompt_tokens": 7736,
+  "completion_tokens": 38,
+  "actual_usd": 0.0011832,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the recovery amounts for consumers and the fines for businesses, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "a23323c674673f1456c033d342a8e933ecb35fc92734e85ed783badf001ccc6f",
+  "prompt_sha256": "5f7929904e9b581aab3071f351f8c0cdab47839047527b4cf7275b898ccb346b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOafPeSgsyyjPHrrizIcSHHlp1yW",
+  "prompt_tokens": 6774,
+  "completion_tokens": 52,
+  "actual_usd": 0.0010473,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining Grab's decision to adopt a human-out-of-the-loop approach due to the high volume of trip allocations and the low severity of harm associated with suboptimal allocations."
+  }
+}

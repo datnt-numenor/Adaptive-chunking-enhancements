@@ -1,0 +1,14 @@
+{
+  "request_hash": "977dc28c4dc999d56e8cded1d88d09474a84479388b0002ac2ef2769068c5f70",
+  "prompt_sha256": "5acdb2a4cee15fe7ebf11aee3cb752cd9a8430f46bedb9db4a15016d8df16d16",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiObsRm6w0X4LcQHlvS7NwQlf85Bx",
+  "prompt_tokens": 5305,
+  "completion_tokens": 46,
+  "actual_usd": 0.00082335,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining 'modèle' as the product of training and 'système' as the software integration for deployment or fine-tuning."
+  }
+}

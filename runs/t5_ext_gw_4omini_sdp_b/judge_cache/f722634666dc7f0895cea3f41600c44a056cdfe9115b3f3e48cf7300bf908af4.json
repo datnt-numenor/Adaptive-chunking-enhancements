@@ -1,0 +1,14 @@
+{
+  "request_hash": "f722634666dc7f0895cea3f41600c44a056cdfe9115b3f3e48cf7300bf908af4",
+  "prompt_sha256": "c593a73e85ad6cc43dd825dc5c85bb3e8a8fc29f4c06a61d1ff3576a0415a2ae",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3WmW1PNc562EIb00og8eeDgHF7",
+  "prompt_tokens": 3130,
+  "completion_tokens": 50,
+  "actual_usd": 0.0004995,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that the absence of longitudinal empirical validation is the most significant limitation of the HAIG framework and identifies it as a key research direction."
+  }
+}

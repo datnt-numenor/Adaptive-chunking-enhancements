@@ -1,0 +1,14 @@
+{
+  "request_hash": "4d601de9d7c971f3e5382d0d2ac158a42b271eb29e0b75aef30362f5052a26d5",
+  "prompt_sha256": "e2eae3080aa0fbafe5c1d9d6f2ac2aff9faa61f95d3546a30721b96b6fba6a36",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNgsDR0JqGUJHDxzfMcIuwoXCbU1",
+  "prompt_tokens": 7078,
+  "completion_tokens": 44,
+  "actual_usd": 0.0010881,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing how larger companies can provide RAI training and how individual executives in smaller or hierarchical companies can influence RAI prioritization."
+  }
+}

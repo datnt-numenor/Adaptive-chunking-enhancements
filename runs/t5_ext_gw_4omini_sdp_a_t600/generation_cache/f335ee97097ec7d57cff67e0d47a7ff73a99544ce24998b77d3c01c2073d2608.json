@@ -1,0 +1,10 @@
+{
+  "request_hash": "f335ee97097ec7d57cff67e0d47a7ff73a99544ce24998b77d3c01c2073d2608",
+  "prompt_sha256": "5fb9117619772c74de3b42593d3c9a88ffe4c0ffcd58aa30bbe5ad41f3644911",
+  "answer": "NIST AI 100-4 describes the challenge of determining consent in non-consensual intimate imagery (NCII) detection as being primarily reliant on tags created by victims themselves, such as those used by StopNCII.org. It highlights that consent is difficult to adjudicate for widely-used generative AI tools unless the tool is malicious and trained on authentic images of people. Additionally, consent may be context-specific, meaning a person might consent to the use of their image to create a new generative AI image but not for the distribution of that image. The report also notes that human vetting is necessary for accurate labeling, which can impact the mental health of reviewers, and emphasizes that consent is not typically evident or decipherable from the image itself.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMauKClasI7AnHuDsQ6g7fCHIUXP",
+  "prompt_tokens": 8454,
+  "completion_tokens": 150,
+  "actual_usd": 0.0013580999999999999
+}

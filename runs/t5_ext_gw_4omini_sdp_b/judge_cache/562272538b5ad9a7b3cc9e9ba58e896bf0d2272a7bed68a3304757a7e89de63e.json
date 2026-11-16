@@ -1,0 +1,14 @@
+{
+  "request_hash": "562272538b5ad9a7b3cc9e9ba58e896bf0d2272a7bed68a3304757a7e89de63e",
+  "prompt_sha256": "e0e2a293277bea29b7cfec6a1134e3cef675d8754b7c83a0f2127470764a34c2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPGvbAjJiHjGzJI7HwvmPN3pbNZ",
+  "prompt_tokens": 5116,
+  "completion_tokens": 36,
+  "actual_usd": 0.000789,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning both Counterfit and MITRE ATLAS as tools related to AI security."
+  }
+}

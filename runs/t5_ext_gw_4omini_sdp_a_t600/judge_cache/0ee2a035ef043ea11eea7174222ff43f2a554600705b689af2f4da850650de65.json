@@ -1,0 +1,14 @@
+{
+  "request_hash": "0ee2a035ef043ea11eea7174222ff43f2a554600705b689af2f4da850650de65",
+  "prompt_sha256": "a3bd2c017a8b4b2cfdd372f032e749dd89a6e568da29e9e1b544eeaa83c7ff57",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNbPXDyWelUG2CMFNBvXCV9xFTqU",
+  "prompt_tokens": 8463,
+  "completion_tokens": 41,
+  "actual_usd": 0.00129405,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly listing and explaining the six conditions that must be met for balancing trade-offs in the principlism approach."
+  }
+}

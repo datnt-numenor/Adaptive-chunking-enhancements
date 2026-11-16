@@ -1,0 +1,14 @@
+{
+  "request_hash": "4166eab246304a0adbaa5d2c56a0c0d891f5e7766563e1eb52b60d78c291113b",
+  "prompt_sha256": "37c460fc72080a53055c3459aa4b1a4c7da0360a599b24ffa46f6494cf96ea44",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1v5AJPhcG45oq2vgtKJUN7jz1jl",
+  "prompt_tokens": 8807,
+  "completion_tokens": 51,
+  "actual_usd": 0.0013516499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context clearly states that candidates for judges must be less than 65 years of age at the date by which the list of candidates has been requested, fully supporting the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "a72c92583e06d4f9006eac51ad81a9aa014f8397c6a40b42adcf74e360811bf4",
+  "prompt_sha256": "0246390f1855aeee72d9c16669644ba34d075e4c6516cb6d9b56517737e4125b",
+  "answer": "In CNIL’s practical AI guidance sheets, age information should be handled by prioritizing the least intrusive format without losing relevant information for the intended objective. For example, instead of using a complete date of birth, it is recommended to use a broader category such as age or age range.\n\nIn the context of the diagnosis-aid system example, generalizing age information (e.g., using [month-year] or [year] instead of [day-month-year]) is suggested to significantly reduce the risk of loss of confidentiality while still maintaining the system's ability to generalize effectively.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMwha1HFJLLLDmFqUZPf8Ito8D49",
+  "prompt_tokens": 8838,
+  "completion_tokens": 115,
+  "actual_usd": 0.0013947
+}

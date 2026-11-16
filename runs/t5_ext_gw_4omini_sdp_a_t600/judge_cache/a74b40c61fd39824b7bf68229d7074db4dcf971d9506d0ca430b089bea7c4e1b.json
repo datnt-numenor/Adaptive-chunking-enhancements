@@ -1,0 +1,14 @@
+{
+  "request_hash": "a74b40c61fd39824b7bf68229d7074db4dcf971d9506d0ca430b089bea7c4e1b",
+  "prompt_sha256": "2431f5a1b329a3c183c0e46b92a35e4100a4664f38378e6e39a0391ce4c2ae30",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiObggaDNU3B5ggQpt9dVjHHiS1AW",
+  "prompt_tokens": 8603,
+  "completion_tokens": 40,
+  "actual_usd": 0.00131445,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning the Algodiv project and its aim to address issues related to information diversity and filter bubbles."
+  }
+}

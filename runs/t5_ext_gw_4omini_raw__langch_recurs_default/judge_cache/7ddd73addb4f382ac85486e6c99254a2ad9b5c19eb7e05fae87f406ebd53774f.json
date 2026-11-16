@@ -1,0 +1,14 @@
+{
+  "request_hash": "7ddd73addb4f382ac85486e6c99254a2ad9b5c19eb7e05fae87f406ebd53774f",
+  "prompt_sha256": "9bbe5bcbdfd1645a40f4702713e470b8fe53ef9a41c4c0c393d2d4e5324cba8d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNPG98JmOstu47f8eaFLXS7k8H0B",
+  "prompt_tokens": 7746,
+  "completion_tokens": 41,
+  "actual_usd": 0.0011864999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning both Counterfit and MITRE ATLAS as tools relevant to AI security testing and adversarial tactics."
+  }
+}

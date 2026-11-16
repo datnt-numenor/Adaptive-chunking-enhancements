@@ -1,0 +1,14 @@
+{
+  "request_hash": "8787b519544e29d32a7f00a5c7b2be08cd629813f9ca0d575b316764ef612a85",
+  "prompt_sha256": "6aba2c11be47627920cb136cd91ec8b4dccb3abc1ad0c07d6875bd79bc9ed5d9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNtYs7d09PxPpzIDJW96uq7EzwnR",
+  "prompt_tokens": 7425,
+  "completion_tokens": 53,
+  "actual_usd": 0.00114555,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the requirements of the AI Act, specifically Article 27-5, which mandates the development of a questionnaire and an automated tool for compliance facilitation."
+  }
+}

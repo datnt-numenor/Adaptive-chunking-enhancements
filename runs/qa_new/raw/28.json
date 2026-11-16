@@ -1,0 +1,19 @@
+{"qas": [
+  {"question": "Under Brazil's AI bill No. 2238/2023, which articles authorize regulatory sandboxes, and for how long can an infringer be barred from participating in that sandbox regime?",
+   "answer": "Articles 38–42 of the bill authorize competent authorities to create the sandboxes. Article 36 lists, among its administrative sanctions, a prohibition or restriction on participating in the sandbox regime for up to five years.",
+   "evidence": [
+     {"page": 27, "quote": "Articles 38 - 42 authorize competent authorities to create these \"experimental regulatory environments\""},
+     {"page": 40, "quote": "prohibition or restriction from participating in the regulatory sandbox regime provided for in this Law, for up to five years"}
+   ]},
+  {"question": "How many impact levels does Canada's Directive on Automated Decision-Making define, and what does its highest level denote?",
+   "answer": "The Directive defines four impact levels, ranging from I (little or no impact) to IV, which denotes very high impacts.",
+   "evidence": [
+     {"page": 35, "quote": "An example of a current regulation with a risk-based approach is Canada's Directive on Automate Decision-Making, adopted in March 2021 and amended in April 2023."},
+     {"page": 36, "quote": "specific obligations based on four impact levels (I - little or no impact, II - moderate impacts, III - high impacts, IV - very high impacts)"}
+   ]},
+  {"question": "Under the EU's AI Act, what is the maximum monetary penalty a company can face for deploying banned AI practices?",
+   "answer": "The maximum is an administrative fine of up to EUR 35 million. For an undertaking, it can instead be up to 7% of total worldwide annual turnover for the preceding financial year, whichever amount is higher.",
+   "evidence": [
+     {"page": 39, "quote": "shall be subject to administrative fines of up to 35 000 000 EUR or, if the offender is an undertaking, up to 7 % of its total worldwide annual turnover for the preceding financial year, whichever is higher"}
+   ]}
+]}

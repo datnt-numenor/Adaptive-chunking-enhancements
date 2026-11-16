@@ -1,0 +1,14 @@
+{
+  "request_hash": "44df3f5e23545e0b63c5c9ddc10740131fc5b6bd152cc20dc2e88d6edce4a9cf",
+  "prompt_sha256": "adef902669cfa7d36e1534d1d334762795ab9749ffbc65c95d19c09a6bd78fb2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNgR060JMr66N9wXPHdqh8eLOHdP",
+  "prompt_tokens": 8096,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012419999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the importance of risk registers in documenting risks addressed and raised, which is essential for effective risk management and internal reporting."
+  }
+}

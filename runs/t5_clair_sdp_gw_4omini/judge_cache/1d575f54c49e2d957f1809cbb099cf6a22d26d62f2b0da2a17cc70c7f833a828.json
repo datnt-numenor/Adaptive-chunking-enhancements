@@ -1,0 +1,14 @@
+{
+  "request_hash": "1d575f54c49e2d957f1809cbb099cf6a22d26d62f2b0da2a17cc70c7f833a828",
+  "prompt_sha256": "d5e43805bf236bbda47840939609690e668a2dba667f72d2dcb0729912a2b6a8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOpFYoONke0KGPfNMkyh1wZ2DPoZ",
+  "prompt_tokens": 7608,
+  "completion_tokens": 51,
+  "actual_usd": 0.0011718,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about LearnEnjoy's project, including the three-year average for autism diagnosis and the tablet's functionality for pre-diagnosis, fully supporting the claims made in the Reference Answer."
+  }
+}

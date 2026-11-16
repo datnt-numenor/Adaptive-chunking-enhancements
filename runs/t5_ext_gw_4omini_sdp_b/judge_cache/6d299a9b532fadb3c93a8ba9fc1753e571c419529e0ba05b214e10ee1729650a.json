@@ -1,0 +1,14 @@
+{
+  "request_hash": "6d299a9b532fadb3c93a8ba9fc1753e571c419529e0ba05b214e10ee1729650a",
+  "prompt_sha256": "7f10d8e8b361928150c68cf14b838a8c2ab20895089de108c5c1b03598097887",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAgfOtrvXSSbpTpZX8cJfDoN6DI",
+  "prompt_tokens": 9059,
+  "completion_tokens": 50,
+  "actual_usd": 0.0013888499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that important responsible AI terms like 'human rights' and 'sustainable' were not mentioned at all in the technical documentation, fully supporting the claims made in the Reference Answer."
+  }
+}

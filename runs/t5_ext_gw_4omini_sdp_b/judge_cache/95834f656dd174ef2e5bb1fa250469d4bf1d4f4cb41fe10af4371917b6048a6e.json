@@ -1,0 +1,14 @@
+{
+  "request_hash": "95834f656dd174ef2e5bb1fa250469d4bf1d4f4cb41fe10af4371917b6048a6e",
+  "prompt_sha256": "a7af3a6931b97894d78f5403ac9bc540bbe13a058acc014852006f6eda13f39c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO05HKWRgcwqK3w23k61bvhy4Lu1",
+  "prompt_tokens": 6933,
+  "completion_tokens": 44,
+  "actual_usd": 0.0010663500000000002,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the Generalized Pareto Distribution (GPD) or its application in modeling threshold exceedances, which are key elements of the Reference Answer."
+  }
+}

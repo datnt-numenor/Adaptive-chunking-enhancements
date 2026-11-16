@@ -1,0 +1,14 @@
+{
+  "request_hash": "94e2bd5f5e9bdafc3643fb79cd50a66accbc827629b9c4261c3caeacca2cb555",
+  "prompt_sha256": "1ac37b3ee5886f9c0965576788e597eac49056fe06ae2729bb7e1082d61d2af5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSGCTm8amRR2hfx3E2ZUDjGdWVC",
+  "prompt_tokens": 7917,
+  "completion_tokens": 43,
+  "actual_usd": 0.00121335,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by emphasizing the importance of tracking and documenting data provenance, even when it is unknown, for security and accountability in AI systems."
+  }
+}

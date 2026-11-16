@@ -1,0 +1,14 @@
+{
+  "request_hash": "195d31c44c445142ee6c4dc2784c508426795645d9f9b4de5aa93c182fcb9141",
+  "prompt_sha256": "0bf81b45806df73457382390ef07b487cf4524b20ef62c8b703e916d0ee7f993",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiODROPnnx2hksRn3qDUJuuqsUplN",
+  "prompt_tokens": 8418,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012885,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the FAIR framework, including its reliance on statistical approximations and the potential for underestimating tail losses and cross-system risks."
+  }
+}

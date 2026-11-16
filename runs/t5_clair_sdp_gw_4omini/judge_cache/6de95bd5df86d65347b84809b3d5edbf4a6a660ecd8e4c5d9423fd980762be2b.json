@@ -1,0 +1,14 @@
+{
+  "request_hash": "6de95bd5df86d65347b84809b3d5edbf4a6a660ecd8e4c5d9423fd980762be2b",
+  "prompt_sha256": "8fd46b00cf08f03cdce2e53c0ecd24e5bfcb5bae6452093b046cc95afd104540",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQmX6z2VoFa4dhRbZRQ8fJtsGd9",
+  "prompt_tokens": 9133,
+  "completion_tokens": 40,
+  "actual_usd": 0.0013939500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides a detailed explanation of how to express probabilities in explicit terms, including the suggested labels for reliability, which fully supports the reference answer."
+  }
+}

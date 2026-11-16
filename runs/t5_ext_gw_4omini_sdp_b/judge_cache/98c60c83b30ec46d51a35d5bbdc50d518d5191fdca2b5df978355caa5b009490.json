@@ -1,0 +1,14 @@
+{
+  "request_hash": "98c60c83b30ec46d51a35d5bbdc50d518d5191fdca2b5df978355caa5b009490",
+  "prompt_sha256": "6064ec86039d17a4d304b36cf87ad151dd949aa92f26a892d52d89f7dc3fd5ed",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNg6Kz9WX8glDknVtXrgA22FSzpK",
+  "prompt_tokens": 6945,
+  "completion_tokens": 45,
+  "actual_usd": 0.00106875,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining the necessity of auditing processes beyond just the final product, emphasizing the importance of ongoing evaluations of data and training to identify risks."
+  }
+}

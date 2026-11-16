@@ -1,0 +1,10 @@
+{
+  "request_hash": "dfb8fd6e94c5b69cebfc0083ff4118e2db77cc0cf1e28b9213fc77ad17530e63",
+  "prompt_sha256": "9a17363995d0cc21d0672cd7b52ceebf4e7f221a38198d2c55a8bf490292dc4e",
+  "answer": "According to Burstein (2023), the Duolingo English Test (DET) RAI standards align with the NIST AI RMF (2023) framework by integrating ethical principles with governance functions. Specifically, the Validity and Reliability standard aims to evaluate construct relevance and accuracy (validity) and test score consistency (reliability), which is conceptually aligned with the NIST AI RMF trustworthiness characteristic of \"Valid and Reliable.\"\n\nActivities that uphold the Validity and Reliability standard include: \n1. Aligning test item types to the test domain (Map).\n2. Evaluating the test's scoring approaches for accuracy and fairness (Measure).\n3. Identifying methods that produce valid and reliable test scores (Manage).",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMvPtkSQvzygwDAf4WwSXQPiWFY7",
+  "prompt_tokens": 9010,
+  "completion_tokens": 147,
+  "actual_usd": 0.0014397000000000001
+}

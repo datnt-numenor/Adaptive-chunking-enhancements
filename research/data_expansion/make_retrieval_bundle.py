@@ -1,13 +1,13 @@
 """Zip what run_retrieval_ext_remote.sh needs (python extraction on the pod, never `unzip`).
   python -X utf8 research/data_expansion/make_retrieval_bundle.py --out runs/gpu_retrieval_ext_4b/retrieval_bundle.zip"""
-import argparse, hashlib, json, zipfile
+import argparse, hashlib, json, os, zipfile
 from pathlib import Path
 
 ap = argparse.ArgumentParser(); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
 if a.out.exists():
     raise SystemExit(f"{a.out} exists")
 a.out.parent.mkdir(parents=True, exist_ok=True)
-HARN = Path("D:/Project/Adaptive-chunking-enhancements/research/week3/phase_g_runner.py")
+HARN = Path(os.environ.get("AC_HARNESS", "D:/Project/Adaptive-chunking-enhancements")) / "research/week3/phase_g_runner.py"
 files = {p: p.as_posix() for p in map(Path, [
     "pyproject.toml", "README.md", "LICENSE", "research/structure_chunker/retrieval/proxy_retrieval.py",
     "runs/qa_ext_v1/qa_frozen.jsonl", "runs/table5_v2/qa-full/qa_frozen.jsonl", "data/clair_ext_set/doc_ids.json"])}

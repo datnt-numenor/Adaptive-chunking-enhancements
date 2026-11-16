@@ -1,0 +1,10 @@
+{
+  "request_hash": "8b539f07b7b5859049b9f7788f1343640d1dee1adf6327ab936360636eabd0ad",
+  "prompt_sha256": "8dcba3352993b348ffcc15365c5cdbfd368064c2bdf1efeadfbb1808ee870985",
+  "answer": "In ANSSI’s generative AI security recommendations, each lifecycle environment (training, deployment, and production) should have dedicated accounts for privileged operations, and the principle of least privilege should be applied. The use of temporary authentication tokens is also recommended. \n\nGPU hardware may be shared between multiple AI models only if those models correspond to the same level of sensitivity and have homogeneous security needs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1fwjdmBvoQBZ7m4eTgI2XAtgoym",
+  "prompt_tokens": 5705,
+  "completion_tokens": 76,
+  "actual_usd": 0.00090135
+}

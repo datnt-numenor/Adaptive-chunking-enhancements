@@ -1,0 +1,15 @@
+﻿.\.venv\Scripts\python.exe : `torch_dtype` is deprecated! Use `dtype` instead!
+At line:1 char:377
++ ... _OFFLINE=1; .\.venv\Scripts\python.exe -X utf8 research\structure_chu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (`torch_dtype` i...dtype` instead!:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+adaptive@plain                                recall@10=0.9066 recall@5=0.7921 ndcg@10=0.7009 hit@10=0.9394  chunks=1633  t=22s
+raw__langch_recurs_default@plain              recall@10=0.8440 recall@5=0.7574 ndcg@10=0.6809 hit@10=0.8889  chunks=1557  t=33s
+sdp_b@plain                                   recall@10=0.8371 recall@5=0.7501 ndcg@10=0.6752 hit@10=0.8889  chunks=2058  t=45s
+sdp_b_rc1@plain                               recall@10=0.8690 recall@5=0.8057 ndcg@10=0.6932 hit@10=0.9091  chunks=2049  t=270s
+sdp_b_sw0_rc1@plain                           recall@10=0.8118 recall@5=0.7224 ndcg@10=0.6487 hit@10=0.8788  chunks=2042  t=487s
+sdp_b_keepcont_rc1@plain                      recall@10=0.8137 recall@5=0.7361 ndcg@10=0.6629 hit@10=0.8889  chunks=2039  t=704s
+sdp_b_noart_rc1@plain                         recall@10=0.8738 recall@5=0.7943 ndcg@10=0.6877 hit@10=0.9192  chunks=1999  t=914s
+Saved -> runs\proxy\r4_sdpb_variants

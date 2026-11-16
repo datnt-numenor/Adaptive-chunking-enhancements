@@ -1,0 +1,10 @@
+{
+  "request_hash": "32186367c7949e2bee068e85ab583bbc18d62e2bb10b4ca7f4444fc86c42be86",
+  "prompt_sha256": "4adf953e35e79a37667770d103a31edf92eca5be318368e928fee0f9512292af",
+  "answer": "The IBM AI Risk Atlas defines 'personal information in data' as the inclusion or presence of personal identifiable information (PII) and sensitive personal information (SPI) in the data used for training or fine-tuning the model. The risk described is that if not properly developed to protect sensitive data, the model might expose personal information in the generated output, leading to unwanted disclosure of that information. Additionally, it emphasizes that personal or sensitive data must be reviewed and handled in accordance with privacy laws and regulations.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN0euG2036mBzson4fdD7GWMtjkb",
+  "prompt_tokens": 6170,
+  "completion_tokens": 100,
+  "actual_usd": 0.0009855
+}

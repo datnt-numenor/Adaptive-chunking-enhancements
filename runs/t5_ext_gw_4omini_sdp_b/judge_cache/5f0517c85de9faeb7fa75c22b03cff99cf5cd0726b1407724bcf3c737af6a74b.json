@@ -1,0 +1,14 @@
+{
+  "request_hash": "5f0517c85de9faeb7fa75c22b03cff99cf5cd0726b1407724bcf3c737af6a74b",
+  "prompt_sha256": "7110520a173004a7310ff97f0db2adec0fac39b9bfd475e669108ea6885a06b0",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOjieDEzVwn85L4uxGI0IrXozsM",
+  "prompt_tokens": 5923,
+  "completion_tokens": 35,
+  "actual_usd": 0.0009094499999999999,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the Business Goal Definition phase or its relevance to understanding the business context and metrics for AI applications."
+  }
+}

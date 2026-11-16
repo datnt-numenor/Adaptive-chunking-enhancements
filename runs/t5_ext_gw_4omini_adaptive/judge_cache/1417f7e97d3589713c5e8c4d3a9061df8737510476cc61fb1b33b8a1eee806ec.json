@@ -1,0 +1,14 @@
+{
+  "request_hash": "1417f7e97d3589713c5e8c4d3a9061df8737510476cc61fb1b33b8a1eee806ec",
+  "prompt_sha256": "e7e8a1e7b06d10a961b89035dcf8c4f136b4715971b172611765b65682072616",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNdyYkUjo57UIVKLhj8WMirjymty",
+  "prompt_tokens": 7922,
+  "completion_tokens": 40,
+  "actual_usd": 0.0012123,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context clearly states that the main audit goal of the ICO is to investigate and enforce regulations, fully supporting the claim made in the Reference Answer."
+  }
+}

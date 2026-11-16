@@ -1,0 +1,14 @@
+{
+  "request_hash": "5f3617d8cc8ef8062df7f3cabe8f4a812e7238fadb4c023acfb1b4cb211f01c0",
+  "prompt_sha256": "9c94c1e9edca3c50634a3a94e674523bd30adcafaf208ae893c8ec5cf2d0fc51",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNVYoy0SUUCNyPI7GyHx5Av6CjlG",
+  "prompt_tokens": 6062,
+  "completion_tokens": 44,
+  "actual_usd": 0.0009356999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly lists the six dimensions as performance, robustness, explainability, fairness, privacy, and security, which fully supports the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "84856473b99aa0d938fae78070c1632ee60c949582cda5556ca34540e0cbc374",
+  "prompt_sha256": "c5d50293aa046f18909ac289caa59684586cc1b07c5dcc3a0f6f4312692a1c5f",
+  "answer": "The file type that must be avoided because it could run attacker code is the \"pickle\" format. The ANSSI prefers using secure formats such as \"safetensor.\"",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1g28qKzfupNEI5FF0GfhoRaBBLd",
+  "prompt_tokens": 6659,
+  "completion_tokens": 34,
+  "actual_usd": 0.00101925
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "828e174709a034bb6ae3cbf3fc8db18029981b2235c1e4f668549852e50a3ab8",
+  "prompt_sha256": "bf1b5a7da3e31bb7a9d2d5e34dd38f488239fca8ac474f4f94ef9ad8dd35dac8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOUGIRtqlb7GabCHw7NlA54uhra",
+  "prompt_tokens": 5287,
+  "completion_tokens": 44,
+  "actual_usd": 0.0008194499999999999,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context discusses the importance of securing AI and mentions the need for good practices and frameworks, but it does not explicitly mention embedding security by design or promoting security certification."
+  }
+}

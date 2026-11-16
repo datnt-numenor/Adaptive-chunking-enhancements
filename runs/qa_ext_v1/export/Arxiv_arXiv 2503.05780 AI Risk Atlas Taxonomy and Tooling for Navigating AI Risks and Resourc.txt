@@ -1,0 +1,1369 @@
+DOCUMENT: arXiv 2503.05780 AI Risk Atlas Taxonomy and Tooling for Navigating AI Risks and Resourc
+
+<<<PAGE 13>>>
+# Harmful output
+
+A model might generate language that leads to physical harm. The language might include overtly violent, covertly dangerous, or otherwise indirectly unsafe statements.
+
+Concern: A model generating harmful output can cause immediate physical harm or create prejudices that might lead to future harm.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-harmful-output
+
+Tag: harmful-output
+
+URI: IBM AI Risk Atlas - Harmful output
+
+# Indirect instructions attack
+
+Prompts, questions, or requests designed to elicit undesirable responses from the application. Unlike direct instructions attacks, the model is instructed to use instructions that are embedded in external data like a website.
+
+Concern: Indirect instructions attacks can be used to alter model behavior and benefit the attacker. The content it generates may cause harms for the user or others.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-indirect-instructions-attack
+
+Tag: indirect-instructions-attack
+
+URI: IBM AI Risk Atlas - Indirect instructions attack
+
+# Mitigation and maintenance
+
+The large number of components and dependencies that agent systems have complicates keeping them up to date and correcting problems.
+
+Concern: AI agents may interact with other systems, tools, or other agents. Tracing the root cause of failure becomes more difficult and more costly as agent capabilities and complexities increase.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-mitigation-maintenance
+
+Tag: mitigation-maintenance
+
+URI: IBM AI Risk Atlas - Mitigation and maintenance
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+# AI agent compliance
+
+Determining AI agents' compliance is complex and there might not be enough information to assess whether the agentic AI system is compliant with applicable legal requirements.
+
+Concern: AI agents may interact with other systems, tools, or other agents. AI agents can also find solutions to accomplish a task or a goal in a variety of ways and there could be uncertainty around the way an AI agent would choose each time to perform the task. Assessing compliance can become more difficult as agent capabilities increase.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-ai-agent-compliance
+
+Tag: ai-agent-compliance
+
+URI: IBM AI Risk Atlas - AI agent compliance
+
+# Function calling hallucination
+
+AI agents might make mistakes when generating function calls (calls to tools to execute actions). Those function calls might result in incorrect, unnecessary or harmful actions. Examples: Generating wrong functions or wrong parameters for the functions.
+
+Concern: Hallucinations when generating function calls might result in wrong or redundant actions being performed. Depending on the actions taken, AI agents can cause harms to owners and users of the AI agents.
+
+Type: agentic
+
+Descriptor: specific to agentic AI
+
+# Implementation details:
+
+ID: atlas-function-calling-hallucination
+
+Tag: function-calling-hallucination
+
+URI: IBM AI Risk Atlas - Function calling hallucination
+
+# Confidential information in data
+
+Confidential information might be included as part of the data that is used to train or tune the model.
+
+Concern: If confidential data is not properly protected, there could be an unwanted disclosure of confidential information. The model might expose confidential information in the generated output or to unauthorized users.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-confidential-information-in-data
+
+Tag: confidential-information-in-data
+
+URI: IBM AI Risk Atlas - Confidential information in data
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+# Lack of model transparency
+
+Lack of model transparency is due to insufficient documentation of the model design, development, and evaluation process and the absence of insights into the inner workings of the model.
+
+Concern: Transparency is important for legal compliance, AI ethics, and guiding appropriate use of models. Missing information might make it more difficult to evaluate risks, change the model, or reuse it. Knowledge about who built a model can also be an important factor in deciding whether to trust it. Additionally, transparency regarding how the model's risks were determined, evaluated, and mitigated also play a role in determining model risks, identifying model suitability, and governing model usage.
+
+Type: non-technical
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-lack-of-model-transparency
+
+Tag: lack-of-model-transparency
+
+URI: IBM AI Risk Atlas - Lack of model transparency
+
+# Exploit trust mismatch
+
+Attackers might initiate injection attacks to bypass the trust boundary, which is a distinct point or conceptual line where the level of trust in a system, application or network changes. Background execution in multi-agent environments increases the risk of covert channels if input/output validation is weak.
+
+Concern: This could lead to mismatched (expected vs. realized) trust boundaries and could result in unintended tool use, excessive agency, and privilege escalation.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-exploit-trust-mismatch
+
+Tag: exploit-trust-mismatch
+
+URI: IBM AI Risk Atlas - Exploit trust mismatch
+
+# Unrepresentative data
+
+Unrepresentative data occurs when the training or fine-tuning data is not sufficiently representative of the underlying population or does not measure the phenomenon of interest.
+
+Concern: If the data is not representative, then the model will not work as intended.
+
+Type: training-data
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-unrepresentative-data
+
+Tag: unrepresentative-data
+
+URI: IBM AI Risk Atlas - Unrepresentative data
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+# AI agents' impact on human agency
+
+The autonomous nature of AI agents in performing tasks or taking actions could affect the individuals' ability to engage in critical thinking, make choices and act independently.
+
+Concern: AI agents might shift the decision, thinking, and control from humans to machines. This might negatively impact the society and human welfare as they limit the freedom and meaningful participations of humans in performing a task or making decisions.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-impact-human-agency
+
+Tag: impact-human-agency
+
+URI: IBM AI Risk Atlas - AI agents' impact on human agency
+
+# Personal information in prompt
+
+Personal information or sensitive personal information that is included as a part of a prompt that is sent to the model.
+
+Concern: If personal information or sensitive personal information is included in the prompt, it might be unintentionally disclosed in the models' output. In addition to accidental disclosure, prompt data might be stored or later used for other purposes like model evaluation and retraining, and might appear in their output if not properly removed.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-personal-information-in-prompt
+
+Tag: personal-information-in-prompt
+
+URI: IBM AI Risk Atlas - Personal information in prompt
+
+# AI agents' Impact on human agency
+
+The autonomous nature of AI agents in performing tasks or taking actions might affect the individuals' ability to engage in critical thinking, make choices, and acting independently.
+
+Concern: AI agents might shift the decision, thinking, and control from humans to machines. This might negatively impact society and human welfare as they limit the freedom and meaningful participations of humans in performing a task or making decisions.
+
+Type: non-technical
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-impact-on-human-agency
+
+Tag: impact-on-human-agency
+
+URI: IBM AI Risk Atlas - AI agents' Impact on human agency
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+# Sharing IP/PI/confidential information with user
+
+AI agents with unrestricted access to resources or databases or tools could potentially store and share PI/IP/confidential information with system users when performing their actions.
+
+Concern: AI agents may share privileged information to users. The act of sharing the information may result in harm for the model owner, user, or others. The harm can vary based on the type and details of the information shared. Without adequate oversight, these privacy incidents might overwhelm company resources.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-sharing-info-user
+
+Tag: sharing-info-user
+
+URI: IBM AI Risk Atlas - Sharing IP/PI/confidential information with user
+
+# Lack of testing diversity
+
+AI model risks are socio-technical, so their testing needs input from a broad set of disciplines and diverse testing practices.
+
+Concern: Without diversity and the relevant experience, an organization might not correctly or completely identify and test for AI risks.
+
+Type: non-technical
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-lack-of-testing-diversity
+
+Tag: lack-of-testing-diversity
+
+URI: IBM AI Risk Atlas - Lack of testing diversity
+
+# Nonconsensual use
+
+Generative AI models might be intentionally used to imitate people through deepfakes by using video, images, audio, or other modalities without their consent.
+
+Concern: Deepfakes can spread disinformation about a person, possibly resulting in a negative impact on the person's reputation. A model that has this potential must be properly governed.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-nonconsensual-use
+
+Tag: nonconsensual-use
+
+URI: IBM AI Risk Atlas - Nonconsensual use
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+# Decision bias
+
+Decision bias occurs when one group is unfairly advantaged over another due to decisions of the model. This might be caused by biases in the data and also amplified as a result of the model's training.
+
+Concern: Bias can harm persons affected by the decisions of the model.
+
+Type: output
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-decision-bias
+
+Tag: decision-bias
+
+URI: IBM AI Risk Atlas - Decision bias
+
+# Exposing personal information
+
+When personal identifiable information (PII) or sensitive personal information (SPI) are used in training data, fine-tuning data, or as part of the prompt, models might reveal that data in the generated output. Revealing personal information is a type of data leakage.
+
+Concern: Sharing people's PI impacts their rights and make them more vulnerable.
+
+Type: output
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-exposing-personal-information
+
+Tag: exposing-personal-information
+
+URI: IBM AI Risk Atlas - Exposing personal information
+
+# AI agents' impact on jobs
+
+Widespread adoption of AI agents to perform complex tasks might lead to widespread automation of roles and could lead to job displacement.
+
+Concern: As trust in agentic systems increases, business may be more motivated to use agents instead of people. Job displacement might lead to a loss of income and thus might negatively impact society and human welfare. Re-skilling may be challenging given the pace of the technology evolution.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-impact-jobs
+
+Tag: impact-jobs
+
+URI: IBM AI Risk Atlas - AI agents' impact on jobs
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+# Improper data curation
+
+Improper collection and preparation of training or tuning data includes data label errors and by using data with conflicting information or misinformation.
+
+Concern: Improper data curation can adversely affect how a model is trained, resulting in a model that does not behave in accordance with the intended values. Correcting problems after the model is trained and deployed might be insufficient for guaranteeing proper behavior.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-curation
+
+Tag: data-curation
+
+URI: IBM AI Risk Atlas - Improper data curation
+
+# Over- or under-reliance on AI agents
+
+Reliance, that is the willingness to accept an AI agent behavior, depends on how much a user trusts that agent and what they are using it for. Over-reliance occurs when a user puts too much trust in an AI agent, accepting an AI agent's behavior even when it is likely undesired. Under-reliance is the opposite, where the user doesn't trust the AI agent but should. Increasing autonomy (to take action, select and consult resources/tools) of AI agents and the possibility of opaqueness and open-endedness increase the variability and visibility of agent behavior leading to difficulty in calibrating trust and possibly contributing to both over- and under-reliance.
+
+Concern: Over/under reliance can lead to poor decision making by humans because of their misplaced trust in the AI agent, with negative consequences that escalate with the significance of the decision.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-over-or-under-reliance-on-ai-agents
+
+Tag: over-or-under-reliance-on-ai-agents
+
+URI: IBM AI Risk Atlas - Over- or under-reliance on AI agents
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+# Attack on AI agents' external resources
+
+Attackers intentionally create vulnerabilities or exploit existing vulnerabilities in external resources (tools/database/applications/services/other agents) that AI agents rely on to execute their intended actions or to achieve their goals.
+
+Concern: Compromised external resources could impact the AI agent's performance in different ways, such as manipulating AI agents to pursue a different goal, manipulating AI agents to execute undesired actions, capturing and relaying interactions between AI agents to malicious actors, and getting AI agents to share personal or confidential information.
+
+Type: agentic
+
+Descriptor: specific to agentic AI
+
+# Implementation details:
+
+ID: atlas-external-resources-attack
+
+Tag: external-resources-attack
+
+URI: IBM AI Risk Atlas - Attack on AI agents' external resources
+
+# Revealing confidential information
+
+When confidential information is used in training data, fine-tuning data, or as part of the prompt, models might reveal that data in the generated output. Revealing confidential information is a type of data leakage.
+
+Concern: If not properly developed to secure confidential data, the model might reveal confidential information or IP in the generated output and reveal information that was meant to be secret.
+
+Type: output
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-revealing-confidential-information
+
+Tag: revealing-confidential-information
+
+URI: IBM AI Risk Atlas - Revealing confidential information
+
+# Spreading disinformation
+
+Generative AI models might be used to intentionally create misleading or false information to deceive or influence a targeted audience.
+
+Concern: Spreading disinformation might affect human's ability to make informed decisions. A model that has this potential must be properly governed.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-spreading-disinformation
+
+Tag: spreading-disinformation
+
+URI: IBM AI Risk Atlas - Spreading disinformation
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+# Uncertain data provenance
+
+Data provenance refers to tracing history of data, which includes its ownership, origin, and transformations. Without standardized and established methods for verifying where the data came from, there are no guarantees that the data is the same as the original source and has the correct usage terms.
+
+Concern: Not all data sources are trustworthy. Data might be unethically collected, manipulated, or falsified. Verifying that data provenance is challenging due to factors such as data volume, data complexity, data source varieties, and poor data management. Using such data can result in undesirable behaviors in the model.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-provenance
+
+Tag: data-provenance
+
+URI: IBM AI Risk Atlas - Uncertain data provenance
+
+# Unrepresentative risk testing
+
+Testing is unrepresentative when the test inputs are mismatched with the inputs that are expected during deployment.
+
+Concern: If the model is evaluated in a use, context, or setting that is not the same as the one expected for deployment, the evaluations might not accurately reflect the risks of the model.
+
+Type: non-technical
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-unrepresentative-risk-testing
+
+Tag: unrepresentative-risk-testing
+
+URI: IBM AI Risk Atlas - Unrepresentative risk testing
+
+# Data bias
+
+Historical and societal biases that are present in the data are used to train and fine-tune the model.
+
+Concern: Training an AI system on data with bias, such as historical or societal bias, can lead to biased or skewed outputs that can unfairly represent or otherwise discriminate against certain groups or individuals.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-bias
+
+Tag: data-bias
+
+URI: IBM AI Risk Atlas - Data bias
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+# Data usage rights restrictions
+
+Terms of service, license compliance, or other IP issues may restrict the ability to use certain data for building models.
+
+Concern: Laws and regulations concerning the use of data to train AI are unsettled and can vary from country to country, which creates challenges in the development of models.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-usage-rights
+
+Tag: data-usage-rights
+
+URI: IBM AI Risk Atlas - Data usage rights restrictions
+
+# Unauthorized use
+
+Unauthorized use: If attackers can gain access to the AI agent and its components, they can perform actions that can have different levels of harm depending on the agent's capabilities and information it has access to. Examples: Using stored personal information to mimic identity or impersonate with an intent to deceive. Manipulating AI agent's behavior via feedback to the AI agent or corrupting its memory to change its behavior. Manipulating the problem description or the goal to get the AI agent to behave badly or run harmful commands .
+
+Concern: Attackers accessing the agent can alter AI agent's behavior and make it execute actions that benefit the attacker such as executing actions that lead to system degradation, data exfiltration, exhausting available resources, and impairing performance. The actions taken by the attackers may cause harms to others.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-unauthorized-use
+
+Tag: unauthorized-use
+
+URI: IBM AI Risk Atlas - Unauthorized use
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+# Redundant actions
+
+AI agents can execute actions that are not needed for achieving the goal. In an extreme case, AI agents might enter a cycle of executing the same actions repeatedly without any progress. This could happen because of unexpected conditions in the environment, the AI agent's failure to reflect on its action, AI agent reasoning and planning errors or the AI agent's lack of knowledge about the problem.
+
+Concern: Executing actions that are not needed for the goal might result in wasting computation resources, increased cost, reducing AI agent's efficiency in achieving the goal, and leading to potentially harmful outcomes. Executing the same actions repeatedly could prevent the AI agent from achieving the goal, strain computational resources, and increase cost. As agents become more autonomous, verifying that AI agents operate efficiently becomes increasing time consuming.
+
+Type: agentic
+
+Descriptor: specific to agentic AI
+
+# Implementation details:
+
+ID: atlas-redundant-actions
+
+Tag: redundant-actions
+
+URI: IBM AI Risk Atlas - Redundant actions
+
+# AI agents' impact on environment
+
+Complexity of the tasks and possibility of AI agents performing redundant actions could lead to computational inefficiencies and add to the environmental impact.
+
+Concern: The operation of AI agents could contribute to carbon emissions. If not managed, these could exacerbate climate change.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-impact-environment
+
+Tag: impact-environment
+
+URI: IBM AI Risk Atlas - AI agents' impact on environment
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+# Misaligned actions
+
+AI agents can take actions that are not aligned with relevant human values, ethical considerations, guidelines and policies. Misaligned actions can occur in different ways such as: Applying learned goals inappropriately to new or unforeseen situations. Using AI agents for a purpose/goals that are beyond their intended use. Selecting resources or tools in a biased way. Using deceptive tactics to achieve the goal by developing the capacity for scheming based on the instructions given within a specific context. Compromising on AI agent values to work with another AI agent or tool to accomplish the task.
+
+Concern: Misaligned actions can adversely impact or harm people.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-misaligned-actions
+
+Tag: misaligned-actions
+
+URI: IBM AI Risk Atlas - Misaligned actions
+
+# Data contamination
+
+Data contamination occurs when incorrect data is used for training. For example, data that is not aligned with model's purpose or data that is already set aside for other development tasks such as testing and evaluation.
+
+Concern: Data that differs from the intended training data might skew model accuracy and affect model outcomes.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-contamination
+
+Tag: data-contamination
+
+URI: IBM AI Risk Atlas - Data contamination
+
+# Harmful code generation
+
+Models might generate code that causes harm or unintentionally affects other systems.
+
+Concern: The execution of harmful code might open vulnerabilities in IT systems.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-harmful-code-generation
+
+Tag: harmful-code-generation
+
+URI: IBM AI Risk Atlas - Harmful code generation
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+# Incomplete usage definition
+
+Since foundation models can be used for many purposes, a model's intended use is important for defining the relevant risks of that model. As the use changes, the relevant risks might correspondingly change.
+
+Concern: It might be difficult to accurately determine and mitigate the relevant risks for a model when its intended use is insufficiently specified. Such as how a model is going to be used, where it is going to be used and what it is going to be used for.
+
+Type: non-technical
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-incomplete-usage-definition
+
+Tag: incomplete-usage-definition
+
+URI: IBM AI Risk Atlas - Incomplete usage definition
+
+# Lack of data transparency
+
+Lack of data transparency is due to insufficient documentation of training or tuning dataset details.
+
+Concern: Transparency is important for legal compliance and AI ethics. Information on the collection and preparation of training data, including how it was labeled and by who are necessary to understand model behavior and suitability. Details about how the data risks were determined, measured, and mitigated are important for evaluating both data and model trustworthiness. Missing details about the data might make it more difficult to evaluate representational harms, data ownership, provenance, and other data-oriented risks. The lack of standardized requirements might limit disclosure as organizations protect trade secrets and try to limit others from copying their models.
+
+Type: non-technical
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-lack-of-data-transparency
+
+Tag: lack-of-data-transparency
+
+URI: IBM AI Risk Atlas - Lack of data transparency
+
+<!-- PageFooter: 25 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+# Copyright infringement
+
+A model might generate content that is similar or identical to existing work protected by copyright or covered by open-source license agreement.
+
+Concern: Laws and regulations concerning the use of content that looks the same or closely similar to other copyrighted data are largely unsettled and can vary from country to country, providing challenges in determining and implementing compliance.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-copyright-infringement
+
+Tag: copyright-infringement
+
+URI: IBM AI Risk Atlas - Copyright infringement
+
+# Context overload attack
+
+Overloading the prompt with excessive tokens, for instance with many-shot examples, can predispose models to a vulnerable state.
+
+Concern: Context overload attacks can be used to alter model behavior and benefit the attacker. The content it generates may cause harms for the user or others.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-context-overload-attack
+
+Tag: context-overload-attack
+
+URI: IBM AI Risk Atlas - Context overload attack
+
+# Impact on affected communities
+
+It is important to include the perspectives or concerns of communities that are affected by model outcomes when designing and building models. Failing to include these perspectives makes it difficult to understand the relevant context for the model and to engender trust within these communities.
+
+Concern: Failing to engage with communities that are affected by a model's outcomes might result in harms to those communities and societal backlash.
+
+Type: non-technical
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-impact-on-affected-communities
+
+Tag: impact-on-affected-communities
+
+URI: IBM AI Risk Atlas - Impact on affected communities
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+# Improper retraining
+
+Using undesirable output (for example, inaccurate, inappropriate, and user content) for retraining purposes can result in unexpected model behavior.
+
+Concern: Repurposing generated output for retraining a model without implementing proper human vetting increases the chances of undesirable outputs to be incorporated into the training or tuning data of the model. In turn, this model can generate even more undesirable output.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-improper-retraining
+
+Tag: improper-retraining
+
+URI: IBM AI Risk Atlas - Improper retraining
+
+# Spreading toxicity
+
+Generative AI models might be used intentionally to generate hateful, abusive, and profane (HAP) or obscene content.
+
+Concern: Toxic content might negatively affect the well-being of its recipients. A model that has this potential must be properly governed.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-spreading-toxicity
+
+Tag: spreading-toxicity
+
+URI: IBM AI Risk Atlas - Spreading toxicity
+
+# Introduce data bias
+
+Specific actions taken by the AI agent, such as modifying a dataset or a database, can introduce bias in the resource that gets used by others or by itself to take actions.
+
+Concern: AI agents can introduce or magnify existing discriminatory behaviors. It can harm people depending on the use.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-introduce-data-bias
+
+Tag: introduce-data-bias
+
+URI: IBM AI Risk Atlas - Introduce data bias
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+# Accountability of AI agent actions
+
+Assigning responsibility for an action taken by an agentic AI system is difficult due to the complexity of agents and the number of external resources, tools or agents they interact with.
+
+Concern: Without properly documenting decisions and assigning responsibility, determining liability for unexpected behavior or misuse might not be possible.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-accountability
+
+Tag: accountability
+
+URI: IBM AI Risk Atlas - Accountability of AI agent actions
+
+# Incomplete AI agent evaluation
+
+Evaluating the performance or accuracy or an agent is difficult because of system complexity and open-endedness.
+
+Concern: Insufficient evaluation of an agent's performance or accuracy can lead to the use of agents that do not perform to expectations. Incorrect agent behavior can result in harms to an agent's users or others.
+
+Type: agentic
+
+Descriptor: amplified by agentic AI
+
+# Implementation details:
+
+ID: atlas-incomplete-ai-agent-evaluation
+
+Tag: incomplete-ai-agent-evaluation
+
+URI: IBM AI Risk Atlas - Incomplete AI agent evaluation
+
+# Inaccessible training data
+
+Without access to the training data, the types of explanations a model can provide are limited and more likely to be incorrect.
+
+Concern: Low quality explanations without source data make it difficult for users, model validators, and auditors to understand and trust the model.
+
+Type: output
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-inaccessible-training-data
+
+Tag: inaccessible-training-data
+
+URI: IBM AI Risk Atlas - Inaccessible training data
+
+<!-- PageFooter: 28 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 29>>>
+# Impact on education: bypassing learning
+
+Easy access to high-quality generative models might result in students that use AI models to bypass the learning process.
+
+Concern: AI models are quick to find solutions or solve complex problems. These systems can be misused by students to bypass the learning process. The ease of access to these models results in students having a superficial understanding of concepts and hampers further education that might rely on understanding those concepts.
+
+Type: non-technical
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-bypassing-learning
+
+Tag: bypassing-learning
+
+URI: IBM AI Risk Atlas - Impact on education: bypassing learning
+
+# Untraceable attribution
+
+The content of the training data used for generating the model's output is not accessible.
+
+Concern: Without the ability to access training data content, the possibility of using source attribution techniques can be severely limited or impossible. This makes it difficult for users, model validators, and auditors to understand and trust the model.
+
+Type: output
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-untraceable-attribution
+
+Tag: untraceable-attribution
+
+URI: IBM AI Risk Atlas - Untraceable attribution
+
+# Non-disclosure
+
+Content might not be clearly disclosed as AI generated.
+
+Concern: Users must be notified when they are interacting with an AI system. Not disclosing the AI-authored content can result in a lack of transparency.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-non-disclosure
+
+Tag: non-disclosure
+
+URI: IBM AI Risk Atlas - Non-disclosure
+
+<!-- PageFooter: 29 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+# Lack of training data transparency
+
+Without accurate documentation on how a model's data was collected, curated, and used to train a model, it might be harder to satisfactorily explain the behavior of the model with respect to the data.
+
+Concern: A lack of data documentation limits the ability to evaluate risks associated with the data. Having access to the training data is not enough. Without recording how the data was cleaned, modified, or generated, the model behavior is more difficult to understand and to fix. Lack of data transparency also impacts model reuse as it is difficult to determine data representativeness for the new use without such documentation.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-transparency
+
+Tag: data-transparency
+
+URI: IBM AI Risk Atlas - Lack of training data transparency
+
+# Model usage rights restrictions
+
+Terms of service, licenses, or other rules restrict the use of certain models.
+
+Concern: Laws and regulations that concern the use of AI are in place and vary from country to country. Additionally, the usage of models might be dictated by licensing terms or agreements.
+
+Type: non-technical
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-model-usage-rights
+
+Tag: model-usage-rights
+
+URI: IBM AI Risk Atlas - Model usage rights restrictions
+
+# Reproducibility
+
+Replicating agent behavior or output can be impacted by changes or updates made to external services and tools. This impact is increased if the agent is built with generative AI.
+
+Concern: Because AI agents behavior may rely on Application Programming Interfaces (APIs), systems, or other resources that may change or become unavailable, evaluations that rely on reproducible results may not be reliably reproduced. This adds cost and complexity to the development and evaluation of agents. Not being able to reproduce results could impact reliance of humans on the AI agents.
+
+Type: agentic
+
+Descriptor: specific to agentic AI
+
+# Implementation details:
+
+ID: atlas-reproducibility
+
+Tag: reproducibility
+
+URI: IBM AI Risk Atlas - Reproducibility
+
+<!-- PageFooter: 30 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+# Specialized tokens attack
+
+Prompt attacks that include specialized tokens, often algorithmically designed, to target and exploit vulnerabilities in the model.
+
+Concern: Specialized tokens attacks can be used to alter model behavior and benefit the attacker. The content it generates may cause harms for the user or others.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-specialized-tokens-attack
+
+Tag: specialized-tokens-attack
+
+URI: IBM AI Risk Atlas - Specialized tokens attack
+
+# Incomplete advice
+
+When a model provides advice without having enough information, resulting in possible harm if the advice is followed.
+
+Concern: A person might act on incomplete advice or worry about a situation that is not applicable to them due to the overgeneralized nature of the content generated. For example, a model might provide incorrect medical, financial, and legal advice or recommendations that the end user might act on, resulting in harmful actions.
+
+Type: output
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-incomplete-advice
+
+Tag: incomplete-advice
+
+URI: IBM AI Risk Atlas - Incomplete advice
+
+# Prompt injection attack
+
+A prompt injection attack forces a generative model that takes a prompt as input to produce unexpected output by manipulating the structure, instructions or information contained in its prompt. Many types of prompt attacks exist as described in the prompt attack section of the table.
+
+Concern: Injection attacks can be used to alter model behavior and benefit the attacker.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-prompt-injection
+
+Tag: prompt-injection
+
+URI: IBM AI Risk Atlas - Prompt injection attack
+
+<!-- PageFooter: 31 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+# Lack of system transparency
+
+Insufficient documentation of the system that uses the model and the model's purpose within the system in which it is used.
+
+Concern: A lack of documentation makes it difficult to understand how the model's outcomes contribute to the system's or application's functionality.
+
+Type: non-technical
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-lack-of-system-transparency
+
+Tag: lack-of-system-transparency
+
+URI: IBM AI Risk Atlas - Lack of system transparency
+
+# Data usage restrictions
+
+Laws and other restrictions can limit or prohibit the use of some data for specific AI use cases.
+
+Concern: Data usage restrictions can impact the availability of the data required for training an AI model and can lead to poorly represented data.
+
+Type: training-data
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-data-usage
+
+Tag: data-usage
+
+URI: IBM AI Risk Atlas - Data usage restrictions
+
+# Impact on cultural diversity
+
+AI systems might overly represent certain cultures that result in a homogenization of culture and thoughts.
+
+Concern: Underrepresented groups' languages, viewpoints, and institutions might be suppressed by that means reducing diversity of thought and culture.
+
+Type: non-technical
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-impact-on-cultural-diversity
+
+Tag: impact-on-cultural-diversity
+
+URI: IBM AI Risk Atlas - Impact on cultural diversity
+
+<!-- PageFooter: 32 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+# Impact on education: plagiarism
+
+Easy access to high-quality generative models might result in students that use AI models to plagiarize existing work intentionally or unintentionally.
+
+Concern: AI models can be used to claim the authorship or originality of works that were created by other people in doing so by engaging in plagiarism. Claiming others' work as your own is both unethical and often illegal.
+
+Type: non-technical
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-plagiarism
+
+Tag: plagiarism
+
+URI: IBM AI Risk Atlas - Impact on education: plagiarism
+
+# Personal information in data
+
+Inclusion or presence of personal identifiable information (PII) and sensitive personal information (SPI) in the data used for training or fine tuning the model might result in unwanted disclosure of that information.
+
+Concern: If not properly developed to protect sensitive data, the model might expose personal information in the generated output. Additionally, personal, or sensitive data must be reviewed and handled in accordance with privacy laws and regulations.
+
+Type: training-data
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-personal-information-in-data
+
+Tag: personal-information-in-data
+
+URI: IBM AI Risk Atlas - Personal information in data
+
+# Direct instructions attack
+
+Prompts, questions, or requests designed to elicit undesirable responses from the application. This approach directly instructs the model to engage in the undesired behavior.
+
+Concern: Direct instructions attacks can be used to alter model behavior and benefit the attacker. The content it generates may cause harms for the user or others.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-direct-instructions-attack
+
+Tag: direct-instructions-attack
+
+URI: IBM AI Risk Atlas - Direct instructions attack
+
+<!-- PageFooter: 33 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 34>>>
+# Improper usage
+
+Improper usage occurs when a model is used for a purpose that it was not originally designed for.
+
+Concern: Reusing a model without understanding its original data, design intent, and goals might result in unexpected and unwanted model behaviors.
+
+Type: output
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-improper-usage
+
+Tag: improper-usage
+
+URI: IBM AI Risk Atlas - Improper usage
+
+# Impact on Jobs
+
+Widespread adoption of foundation model-based AI systems might lead to people's job loss as their work is automated if they are not reskilled.
+
+Concern: Job loss might lead to a loss of income and thus might negatively impact the society and human welfare. Reskilling might be challenging given the pace of the technology evolution.
+
+Type: non-technical
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-impact-on-jobs
+
+Tag: impact-on-jobs
+
+URI: IBM AI Risk Atlas - Impact on Jobs
+
+# Extraction attack
+
+An extraction attack attempts to copy or steal an AI model by appropriately sampling the input space and observing outputs to build a surrogate model that behaves similarly.
+
+Concern: With a successful extraction attack, the attacker can perform further adversarial attacks to gain valuable information such as sensitive personal information or intellectual property.
+
+Type: inference
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-extraction-attack
+
+Tag: extraction-attack
+
+URI: IBM AI Risk Atlas - Extraction attack
+
+<!-- PageFooter: 34 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 35>>>
+# Jailbreaking
+
+A jailbreaking attack attempts to break through the guardrails established in the model to perform restricted actions.
+
+Concern: Jailbreaking attacks can be used to alter model behavior and benefit the attacker.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-jailbreaking
+
+Tag: jailbreaking
+
+URI: IBM AI Risk Atlas - Jailbreaking
+
+# Data acquisition restrictions
+
+Laws and other regulations might limit the collection of certain types of data for specific AI use cases.
+
+Concern: There are several ways of collecting data for building a foundation models: web scraping, web crawling, crowdsourcing, and curating public datasets. Data acquisition restrictions can also impact the availability of the data that is required for training an AI model and can lead to poorly represented data.
+
+Type: training-data
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-data-acquisition
+
+Tag: data-acquisition
+
+URI: IBM AI Risk Atlas - Data acquisition restrictions
+
+# Sharing IP/PI/confidential information with tools
+
+AI agents with unrestricted access to resources or databases or tools could potentially store and share PI/IP/confidential information with other tools or agents when performing their actions.
+
+Concern: AI agents may share privileged information with other tools/agents. The act of sharing the information may result in harm for the model owner, user, or others. The harm can vary based on the type and details of the information shared. Without adequate oversight, these privacy incidents might overwhelm company resources.
+
+Type: agentic
+
+Descriptor: specific to agentic AI
+
+# Implementation details:
+
+ID: atlas-sharing-info-tools
+
+Tag: sharing-info-tools
+
+URI: IBM AI Risk Atlas - Sharing IP/PI/confidential information with tools
+
+<!-- PageFooter: 35 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+# Prompt priming
+
+Because generative models produce output based on the input provided, the model can be prompted to reveal specific kinds of information. For example, adding personal information in the prompt increases its likelihood of generating similar kinds of personal information in its output. If personal data was included as part of the model's training, there is a possibility it could be revealed.
+
+Concern: The attack can be used to alter model behavior and benefit the attacker.
+
+Type: inference
+
+Descriptor: specific to generative AI
+
+# Implementation details:
+
+ID: atlas-prompt-priming
+
+Tag: prompt-priming
+
+URI: IBM AI Risk Atlas - Prompt priming
+
+# Reidentification
+
+Even with the removal or personal identifiable information (PII) and sensitive personal information (SPI) from data, it might be possible to identify persons due to correlations to other features available in the data.
+
+Concern: Including irrelevant but highly correlated features to personal information for model training can increase the risk of reidentification.
+
+Type: training-data
+
+Descriptor: traditional risk of AI
+
+# Implementation details:
+
+ID: atlas-reidentification
+
+Tag: reidentification
+
+URI: IBM AI Risk Atlas - Reidentification
+
+# Attribute inference attack
+
+An attribute inference attack repeatedly queries a model to detect whether certain sensitive features can be inferred about individuals who participated in training a model. These attacks occur when an adversary has some prior knowledge about the training data and uses that knowledge to infer the sensitive data.
+
+Concern: With a successful attack, the attacker can gain valuable information such as sensitive personal information or intellectual property.
+
+Type: inference
+
+Descriptor: amplified by generative AI
+
+# Implementation details:
+
+ID: atlas-attribute-inference-attack
+
+Tag: attribute-inference-attack
+
+URI: IBM AI Risk Atlas - Attribute inference attack
+
+<!-- PageFooter: 36 -->
+
+<!-- PageBreak -->
+

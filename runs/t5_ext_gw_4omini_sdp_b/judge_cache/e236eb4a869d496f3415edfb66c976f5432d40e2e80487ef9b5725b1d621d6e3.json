@@ -1,0 +1,14 @@
+{
+  "request_hash": "e236eb4a869d496f3415edfb66c976f5432d40e2e80487ef9b5725b1d621d6e3",
+  "prompt_sha256": "3a133d16414d87fba5f29336ee06b01a10680cb6cbb244048160b8475927c7c9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNxERri1sjXUzKoAI4AnpP2FFTyI",
+  "prompt_tokens": 7369,
+  "completion_tokens": 39,
+  "actual_usd": 0.00112875,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides detailed information about the indicator D4.1, including its definition and relevance to AI governance, fully supporting the reference answer."
+  }
+}

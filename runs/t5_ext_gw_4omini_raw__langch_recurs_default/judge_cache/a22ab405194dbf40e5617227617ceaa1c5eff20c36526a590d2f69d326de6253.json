@@ -1,0 +1,14 @@
+{
+  "request_hash": "a22ab405194dbf40e5617227617ceaa1c5eff20c36526a590d2f69d326de6253",
+  "prompt_sha256": "32e047ef840b1d80ac4bc77691f86583a1b829445a34c25ed3323a1ee0113a22",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNnS7V8YGpNIjxpfAo9VXf0lfhGg",
+  "prompt_tokens": 8462,
+  "completion_tokens": 48,
+  "actual_usd": 0.0012981,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining that statistical significance is concerned with rejecting the null hypothesis and that requiring statistical significance can be problematic if the null hypothesis is true."
+  }
+}

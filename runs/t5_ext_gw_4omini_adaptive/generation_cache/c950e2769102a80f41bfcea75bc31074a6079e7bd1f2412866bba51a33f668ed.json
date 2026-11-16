@@ -1,0 +1,10 @@
+{
+  "request_hash": "c950e2769102a80f41bfcea75bc31074a6079e7bd1f2412866bba51a33f668ed",
+  "prompt_sha256": "56c17189c76b477ff23788fe7980b4fb68b15ef18e782795ceb7c58225f5c465",
+  "answer": "The purpose of the RAIRD system developed by Statistics Norway (SSB) and the Norwegian Centre for Research Data (NSD) is to permit research to be carried out on data without having direct access to the complete dataset. It allows researchers to access only the metadata of the underlying dataset and submit queries based on the metadata to obtain reports containing aggregated data only. This system is designed to prevent the retrieval of data relating to very small groups and individual persons, making it suitable for machine learning needs.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNLIULl3n5qPaxed6UrKGsF7bf8l",
+  "prompt_tokens": 8822,
+  "completion_tokens": 99,
+  "actual_usd": 0.0013827
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "02c7f0500a516e271d83079405ce37bf519de5200f6ba3c586dad646de6aa551",
+  "prompt_sha256": "f3ee9a53cb83a8bc1464bac100791efb466655b55626195c2f8226f49d8ab796",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONOi5Aq9fLwih230M27LtFuZG3h",
+  "prompt_tokens": 6891,
+  "completion_tokens": 47,
+  "actual_usd": 0.0010618499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that the subcategory 'sensitive-information-leakage' encompasses the earlier concept of 'confidential-information-leakage'."
+  }
+}

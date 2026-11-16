@@ -1,0 +1,14 @@
+{
+  "request_hash": "8b874dab74dc09677c4713ff37bb346a9012901332df6a7b14fcf532e0928838",
+  "prompt_sha256": "e7ae706478c71e0569c0efdfbb82e32b93f4b5df8be0f6f72959ab8cd1caa7d7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhJAJz86fovu5Z1poZjHWz8moJG",
+  "prompt_tokens": 10807,
+  "completion_tokens": 52,
+  "actual_usd": 0.00165225,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about Carbon Mapper, including its co-founders and its mission to deploy a satellite constellation for tracking methane and CO2 emissions, which fully supports the claims made in the Reference Answer."
+  }
+}

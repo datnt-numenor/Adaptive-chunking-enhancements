@@ -1,0 +1,10 @@
+{
+  "request_hash": "872739871919be2a9c85a6886c6b3284ef67e72f48e73e748405a4df45530e40",
+  "prompt_sha256": "9826e8f6f8a5f58ea8e52e396e9f2e0f129cb5fd69d843c13e0e3b420ae10906",
+  "answer": "The model skeleton provides insights into the specific model class and the interactions between system components, revealing the expected inputs and outputs of the AI system, as well as the overall architecture and relationships within the system. This allows an auditor to understand the structure and interpretability of the AI system.\n\nIn contrast, the training procedure offers details about how the AI system was developed, including the model class, objective functions, hyperparameter tuning, and quality checks. While it serves as a roadmap for the development process, it does not directly indicate the final behavior of the model, as different models can arise from the same training procedure.\n\nThus, the model skeleton focuses on the architecture and operational aspects of the AI system, while the training procedure emphasizes the development methodology and decisions made during training. Both provide valuable but different perspectives for an auditor.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMtiabKGkm8QdIko87cHEZ6TeqAg",
+  "prompt_tokens": 5989,
+  "completion_tokens": 163,
+  "actual_usd": 0.00099615
+}

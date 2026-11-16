@@ -1,0 +1,14 @@
+{
+  "request_hash": "96f6db643b4a0278ca7181aac4539b8966f7b33a0a87f1524cc979ab643e43f4",
+  "prompt_sha256": "9c943f0097b8780c62bc807fcba2a53a62d6cfd339b7ae86cecf532b693147a4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOPOUOrWjjYmfl86ckfL8HSq3eCA",
+  "prompt_tokens": 7236,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011129999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the importance of interoperability in SOT design and emphasizing the need for shared structural conventions to distinguish between risks, impacts, and harms."
+  }
+}

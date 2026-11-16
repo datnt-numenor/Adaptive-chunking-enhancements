@@ -1,0 +1,14 @@
+{
+  "request_hash": "155e813af70ce2c685e1dbae5cd11a8f301da87b386331b58bf7e592660746a9",
+  "prompt_sha256": "ce43c539a5e5444cf2fc7418e0a75bee779859be18cd2597454c141c93444fcf",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNwboFQfnyr33No3nozdZMYS9gc0",
+  "prompt_tokens": 9227,
+  "completion_tokens": 41,
+  "actual_usd": 0.0014086499999999998,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context discusses various aspects of AI governance and regulation but does not explicitly mention a structural mechanism for citizen-authority engagement as described in the reference answer."
+  }
+}

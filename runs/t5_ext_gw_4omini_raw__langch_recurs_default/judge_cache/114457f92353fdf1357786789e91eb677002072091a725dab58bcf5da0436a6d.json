@@ -1,0 +1,14 @@
+{
+  "request_hash": "114457f92353fdf1357786789e91eb677002072091a725dab58bcf5da0436a6d",
+  "prompt_sha256": "e0a08ae89ebe735c569f1ae6e2b4bfc405671e26aa2276b62dc73c6b00ecd553",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfotV5NaxHcDw660QLkkGbwWwBI",
+  "prompt_tokens": 7901,
+  "completion_tokens": 48,
+  "actual_usd": 0.0012139499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the audit of Rotterdam's welfare fraud ADM, specifically mentioning that auditors had parameter control and learning goal access, which directly supports the claim in the Reference Answer."
+  }
+}

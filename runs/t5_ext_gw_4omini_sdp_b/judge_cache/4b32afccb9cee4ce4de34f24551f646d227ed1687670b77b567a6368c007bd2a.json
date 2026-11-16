@@ -1,0 +1,14 @@
+{
+  "request_hash": "4b32afccb9cee4ce4de34f24551f646d227ed1687670b77b567a6368c007bd2a",
+  "prompt_sha256": "da473fe9ba21a1c8bd9ef69bd53b5aceaa3f8da79ac3de328a0d854735771f16",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOalixmODi5XTtL52H617gbPCT8u",
+  "prompt_tokens": 6246,
+  "completion_tokens": 39,
+  "actual_usd": 0.0009603,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the recommendations for clear communication about algorithm logic and the need for identifiable responsible teams for user contact."
+  }
+}

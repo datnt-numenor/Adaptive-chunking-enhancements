@@ -1,0 +1,14 @@
+{
+  "request_hash": "e30be9cb1e647f58ea8b8ac01088eb79f2abbf8b56d77c329d78f194450a32f7",
+  "prompt_sha256": "6be374748972e14cde2c54213df39a60c543c9a09c357f2bf7cecb8609047f68",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQ2CZc6u7WJhA0v1iF938Z8nBCy",
+  "prompt_tokens": 8841,
+  "completion_tokens": 40,
+  "actual_usd": 0.0013501499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining the limitations of keyword block lists and how they can be bypassed by malicious actors."
+  }
+}

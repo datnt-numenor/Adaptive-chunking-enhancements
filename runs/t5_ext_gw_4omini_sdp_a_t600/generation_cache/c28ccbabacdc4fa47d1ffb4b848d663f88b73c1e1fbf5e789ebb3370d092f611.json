@@ -1,0 +1,10 @@
+{
+  "request_hash": "c28ccbabacdc4fa47d1ffb4b848d663f88b73c1e1fbf5e789ebb3370d092f611",
+  "prompt_sha256": "78fbd684e1fd2e983330b6d43a8f4fa641457ea3cbd52ceadd51ce9100a416fb",
+  "answer": "For arXiv 2501.04014, the information about AI models that must be made available to downstream AI providers includes the model's use policy, model's date of release, model's input data, model's output data, and model's license. This is reflected in AICat's requirements through specific metadata fields that correspond to these elements, such as:\n\n- Model's use policy: odrl:hasPolicy (aiup:UsePolicy)\n- Model's date of release: dct:issued\n- Model's input data: airo:hasInput\n- Model's output data: airo:hasOutput\n- Model's license: airo:hasLicense\n\nThese requirements ensure that downstream providers have access to essential information needed for compliance and integration of AI models into their systems.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMyfbmLMgGdIAWL3UQmCFQLNYROF",
+  "prompt_tokens": 9045,
+  "completion_tokens": 163,
+  "actual_usd": 0.00145455
+}

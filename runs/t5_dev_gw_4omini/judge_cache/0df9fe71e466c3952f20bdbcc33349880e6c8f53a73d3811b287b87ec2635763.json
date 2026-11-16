@@ -1,0 +1,14 @@
+{
+  "request_hash": "0df9fe71e466c3952f20bdbcc33349880e6c8f53a73d3811b287b87ec2635763",
+  "prompt_sha256": "1a643a0443de78f2379675a91aeb9982780e939e7dbc8f4c77561d0aa95d39b3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei207rBw9fszD8kmF6SYtp4bbyE8v",
+  "prompt_tokens": 6185,
+  "completion_tokens": 44,
+  "actual_usd": 0.00095415,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific details about the survey dates and the positive perception of AI among employees in IT and new technologies, fully supporting the claims made in the Reference Answer."
+  }
+}

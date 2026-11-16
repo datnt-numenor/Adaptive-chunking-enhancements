@@ -1,0 +1,14 @@
+{
+  "request_hash": "ef4147b31185aabfb3ef2d03984b46ad9b05d6925537afa21d2bdce4001ac273",
+  "prompt_sha256": "e11b11be64432cb35b44fa4f1a22487fd48da423f9c5dabde90e5002f6e2e4b7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNokjTovdk653e6GlC1sR0AZhEZe",
+  "prompt_tokens": 8719,
+  "completion_tokens": 41,
+  "actual_usd": 0.0013324499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the reference answer by detailing the proposal for tradable energy budgets for AI, which aims to cap energy use and incentivize efficiency."
+  }
+}

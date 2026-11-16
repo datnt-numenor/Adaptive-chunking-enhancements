@@ -1,0 +1,14 @@
+{
+  "request_hash": "bed597ea4bf10d9c754cc81997577e89bf0ab0627648c5f29c37a16229906f69",
+  "prompt_sha256": "e2d0ee7af53c41cffad6b57a6ef75090734d70917077ea85c5f7cdc7f11f189b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfiB6Y5SKg0G2XaJrWe16zk8qCn",
+  "prompt_tokens": 8129,
+  "completion_tokens": 44,
+  "actual_usd": 0.00124575,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the challenges auditors face in managing and analyzing data, explicitly stating that a significant portion of their work involves understanding data structures and determining metrics."
+  }
+}

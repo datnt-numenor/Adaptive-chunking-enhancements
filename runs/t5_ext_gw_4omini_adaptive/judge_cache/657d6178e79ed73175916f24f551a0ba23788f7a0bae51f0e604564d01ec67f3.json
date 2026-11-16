@@ -1,0 +1,14 @@
+{
+  "request_hash": "657d6178e79ed73175916f24f551a0ba23788f7a0bae51f0e604564d01ec67f3",
+  "prompt_sha256": "331450e475255172959485d07a098183c948d699d1cc4028b6d87d817edf655f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOcASt1rWPkqvUwMxHO9UZEvDsRb",
+  "prompt_tokens": 6096,
+  "completion_tokens": 37,
+  "actual_usd": 0.0009366,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the OPAL project or its goals, making it impossible to support the claims made in the Reference Answer."
+  }
+}

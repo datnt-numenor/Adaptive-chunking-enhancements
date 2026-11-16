@@ -1,0 +1,14 @@
+{
+  "request_hash": "27b3e6aae1d6659c88f397d088baa4e9b597f3bc365c40ee55b45ca105b30fb8",
+  "prompt_sha256": "20837271e3161f74943e4a0c9ebbc497d22967451c0b6968bcb0deec3655eb96",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2AdRD4zBaxBOynbdklnzTG2DBZc",
+  "prompt_tokens": 7764,
+  "completion_tokens": 55,
+  "actual_usd": 0.0011975999999999998,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions the European Commission directing CEN and CENELEC to formulate standards in support of the AI Act, but it does not confirm the specific number of standards or the involvement of CNIL in drafting them."
+  }
+}

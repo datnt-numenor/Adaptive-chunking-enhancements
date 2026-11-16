@@ -1,0 +1,14 @@
+{
+  "request_hash": "2a4cc0b706fda1f3da5c1c3908dcec2d42fc541625c1f19f31c2d180a2e95669",
+  "prompt_sha256": "bf33d76a569fa5e0485a6f7865bd2d99f0230510fa9c9323665e0c75ae3106e2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOdrEU7kPF3GWwSTRALvALydt0nG",
+  "prompt_tokens": 9768,
+  "completion_tokens": 43,
+  "actual_usd": 0.001491,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the reference answer by directly quoting Cathy O'Neil's characterization of algorithms as a 'weapon of Math destruction' in relation to equality issues."
+  }
+}

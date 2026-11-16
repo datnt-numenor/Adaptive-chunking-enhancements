@@ -1,0 +1,14 @@
+{
+  "request_hash": "2fbb17f0923a32ed4ef7a08fa8a74f748cf54a5cac16b7843a9f0b5c5d4058a2",
+  "prompt_sha256": "857c6cdf198c7daa7eebe1f7fc4bfdc1d67355a262ed2cec212615b351bf8f86",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOcJtKScJj1JNVEMzpRecBLJvAvL",
+  "prompt_tokens": 8568,
+  "completion_tokens": 37,
+  "actual_usd": 0.0013074,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear distinction between 'modèle' and 'système', fully supporting the claims made in the Reference Answer."
+  }
+}

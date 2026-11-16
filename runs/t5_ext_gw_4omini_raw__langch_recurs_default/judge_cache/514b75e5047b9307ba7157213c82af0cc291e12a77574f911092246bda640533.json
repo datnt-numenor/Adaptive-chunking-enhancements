@@ -1,0 +1,14 @@
+{
+  "request_hash": "514b75e5047b9307ba7157213c82af0cc291e12a77574f911092246bda640533",
+  "prompt_sha256": "d7eb389c30b48e2cf34e630bac32d66f8f5db5981b24f406e931dc4d4933c611",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXOCI6e90yDUTs1kRnQcAdGW50q",
+  "prompt_tokens": 7248,
+  "completion_tokens": 43,
+  "actual_usd": 0.001113,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the International Panel on Artificial Intelligence (IPAI) or its specific goals, thus failing to support the claims made in the Reference Answer."
+  }
+}

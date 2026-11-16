@@ -1,0 +1,14 @@
+{
+  "request_hash": "03f7f00769dddf279ebf3c3c5e9f200bab4bd8a92e96b622e4259ac306b7d67a",
+  "prompt_sha256": "da73cf791e077c2b882775f6f546767e1efad6184e8b2f0878cbf73994e65e04",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhktwxRpHYvrqPrJZJ9WGu7tpE8",
+  "prompt_tokens": 7590,
+  "completion_tokens": 48,
+  "actual_usd": 0.0011673,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive definition of AI auditability, including the key elements of auditors, AI systems, audit questions, and auditable artefacts, which fully supports the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "b4959aecb8a1c54670d08849a20e13d69ca4dfbeedc8d8d48a12ddd4ba502b4f",
+  "prompt_sha256": "b29465e979635daa1dbf67d8e497bf0c79316c06397a9acd62a190a115f9679b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNWG14XIHsuW1xJXiCJvEjAMsWkB",
+  "prompt_tokens": 8444,
+  "completion_tokens": 57,
+  "actual_usd": 0.0013008,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the maximum administrative fine of up to EUR 35 million or 7% of total worldwide annual turnover, whichever is higher, in cases of noncompliance with the AI Act."
+  }
+}

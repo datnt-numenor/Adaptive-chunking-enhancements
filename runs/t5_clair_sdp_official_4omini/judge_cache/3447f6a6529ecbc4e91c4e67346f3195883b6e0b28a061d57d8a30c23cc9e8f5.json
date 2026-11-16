@@ -1,0 +1,14 @@
+{
+  "request_hash": "3447f6a6529ecbc4e91c4e67346f3195883b6e0b28a061d57d8a30c23cc9e8f5",
+  "prompt_sha256": "1b623654b26dec6dd3d1bdb3abaae647bb319ce4d3c71df23d7bbf75f26dd452",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN4DTra4vUFVQiGWC5VM9pvgok43",
+  "prompt_tokens": 5875,
+  "completion_tokens": 47,
+  "actual_usd": 0.00090945,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the argument made by Microsoft and Google regarding the need for a new 'deployer' designation in the context of the EU AI Regulation."
+  }
+}

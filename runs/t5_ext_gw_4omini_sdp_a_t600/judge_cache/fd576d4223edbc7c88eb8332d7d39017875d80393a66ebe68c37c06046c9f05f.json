@@ -1,0 +1,14 @@
+{
+  "request_hash": "fd576d4223edbc7c88eb8332d7d39017875d80393a66ebe68c37c06046c9f05f",
+  "prompt_sha256": "8aea7460ee555bfde34586eb04ae68adc91027cc4a96976d55d01e273dfd3d56",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNolnLtC8rCWytabEmlbLTMNSHeK",
+  "prompt_tokens": 7965,
+  "completion_tokens": 59,
+  "actual_usd": 0.0012301500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing Burstein's DET RAI standards and their alignment with NIST AI RMF governance functions, including specific activities related to test domain alignment, scoring evaluation, and methods for ensuring validity and reliability."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "2b71b0c89f7bd2c2b91c75b72eddbf221ea6039126f08c28b63204157f1450f9",
+  "prompt_sha256": "212b4d747c471b873cbf0c6771f9be3b49fc6bd4cf69bb58c277094961c6bac0",
+  "answer": "Continuous retraining on live operational data exposes a machine learning system to poisoning attacks because an attacker may inject malicious samples into the data during operation. This adversarial contamination of the training data can disrupt or influence the retraining process, leading to a model that underperforms or behaves unpredictably.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNZcwmB09BKspx36ywiRkjsl0oSi",
+  "prompt_tokens": 6765,
+  "completion_tokens": 58,
+  "actual_usd": 0.00104955
+}

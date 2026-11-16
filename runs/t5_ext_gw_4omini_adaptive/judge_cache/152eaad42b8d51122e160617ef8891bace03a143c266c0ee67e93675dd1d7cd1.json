@@ -1,0 +1,14 @@
+{
+  "request_hash": "152eaad42b8d51122e160617ef8891bace03a143c266c0ee67e93675dd1d7cd1",
+  "prompt_sha256": "f527ec106359d5e50ce1a47925044d277af8fa35323687e59f1a4e3b9e37d825",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOFWahCvlOK4LUOXJJPuAMd97kQ3",
+  "prompt_tokens": 9138,
+  "completion_tokens": 45,
+  "actual_usd": 0.0013977,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides a clear definition of 'defense in depth' as the need for assessment at multiple lifecycle stages, which fully supports the claim made in the reference answer."
+  }
+}

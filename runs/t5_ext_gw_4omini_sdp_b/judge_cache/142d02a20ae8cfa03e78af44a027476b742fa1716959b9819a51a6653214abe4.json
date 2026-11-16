@@ -1,0 +1,14 @@
+{
+  "request_hash": "142d02a20ae8cfa03e78af44a027476b742fa1716959b9819a51a6653214abe4",
+  "prompt_sha256": "088aeaa5295b61c42869c95da92e29d308fcd2a3e5258c41d842aec592cbdff1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNxR4Y04m77S6FBUBQU1BGLRVOS8",
+  "prompt_tokens": 7775,
+  "completion_tokens": 43,
+  "actual_usd": 0.00119205,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed examples of participant B1's expertise in sharks and their auditing activities related to AI outputs, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "cb8835e992ef932c4a78d356c52ddbde953509d71ab401480e4472fa1bcddd80",
+  "prompt_sha256": "6f1a5cb9a4ff2a49ebe2100b29cc48a1e660cb08f372893170946f5ea4b3d058",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNVkfAS9rSSeYyjCr2JW5pndVPXF",
+  "prompt_tokens": 5693,
+  "completion_tokens": 40,
+  "actual_usd": 0.00087795,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention 'SE' or 'Stackelberg Equilibrium', nor does it provide any relevant information to support the Reference Answer."
+  }
+}

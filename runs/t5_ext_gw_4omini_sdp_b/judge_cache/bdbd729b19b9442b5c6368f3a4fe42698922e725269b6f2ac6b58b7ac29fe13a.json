@@ -1,0 +1,14 @@
+{
+  "request_hash": "bdbd729b19b9442b5c6368f3a4fe42698922e725269b6f2ac6b58b7ac29fe13a",
+  "prompt_sha256": "23f585a4433d697db8d65f5e27a25faf7e24446f60e257c8ebcc781e119b4fc3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNa3PgQShv2QrEbyVjo8GgoURaE3",
+  "prompt_tokens": 5564,
+  "completion_tokens": 32,
+  "actual_usd": 0.0008538,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive definition of RAI, aligning perfectly with the claims made in the Reference Answer."
+  }
+}

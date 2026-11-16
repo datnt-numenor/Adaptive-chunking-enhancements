@@ -1,0 +1,10 @@
+{
+  "request_hash": "5fc25ef4725530922ea6f5e9c3049b1dc8f6dbcc460b20ec7f5752f0a5d6732e",
+  "prompt_sha256": "2a2ce28d9e555b1cdff4da40d04dcb028ab3c44a95d35750f29b2f84c9a4e32d",
+  "answer": "1. In general-sum games, Stackelberg and Nash equilibria typically diverge, which complicates the computation of Stackelberg equilibria compared to Nash equilibria.\n2. The structural properties that lead to efficient computation of Nash equilibrium are not sufficient for the case of Stackelberg equilibrium, indicating that Stackelberg equilibria are more challenging to compute.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMhO9bt0hJOJ0Qt7AgCmgmWhT8Fo",
+  "prompt_tokens": 8340,
+  "completion_tokens": 74,
+  "actual_usd": 0.0012954000000000002
+}

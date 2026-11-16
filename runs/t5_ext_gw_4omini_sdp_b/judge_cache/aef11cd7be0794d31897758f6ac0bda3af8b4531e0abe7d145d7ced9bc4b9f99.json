@@ -1,0 +1,14 @@
+{
+  "request_hash": "aef11cd7be0794d31897758f6ac0bda3af8b4531e0abe7d145d7ced9bc4b9f99",
+  "prompt_sha256": "3abb08559e14c0e4eab313e48bbdc3c79064594aa9dde2fbc6c412c81ee8ce10",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO0BmsBQhTAGvq12npZSAAwcthmO",
+  "prompt_tokens": 7786,
+  "completion_tokens": 58,
+  "actual_usd": 0.0012027,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly defining g as a continuous, monotonic function that reflects the magnitude of loss, providing examples such as g(x) = |x| or g(x) = x²."
+  }
+}

@@ -1,0 +1,203 @@
+DOCUMENT: arXiv 2409.09041 Acceptable Use Policies for Foundation Models
+
+<<<PAGE 2>>>
+In the context of foundation model development, an acceptable use policy is a policy from a developer that determines how a foundation model can or cannot be used. Acceptable use policies restrict the use of foundation models by detailing the types of content users are prohibited from generating as well as domains of prohibited use. 1 Developers make these restrictions legally binding by including acceptable use policies in terms of service agreements or in copyright licenses for their foundation models.
+
+Acceptable use policies typically aim to prevent users from using a foundation model to generate content that may violate the law or otherwise cause harm. 2 They accomplish this by listing specific subcategories of violative content and authorizing model developers to punish users who generate such content by, for example, limiting the number of queries users can issue or banning a user's account.
+
+Acceptable use policies relate to how foundation models are built in important ways. For example, developers frequently filter training data to remove content relevant to requests that would violate their acceptable use policies. OpenAI's GPT-4 technical report states: "We reduced the prevalence of certain kinds of content that violate our usage policies (such as inappropriate erotic content) in our pre-training dataset, and fine-tuned the model to refuse certain instructions such as direct requests for illicit advice" [121].
+
+In addition, many developers state that the purpose of reinforcement learning from human feedback (RLHF) is to make their foundation models less likely to generate outputs that would violate their acceptable use policies [89]. Meta's technical report for Llama 2 notes that the risks RLHF was intended to mitigate include "illicit and criminal activities (e.g., terrorism, theft, human trafficking); hateful and harmful activities (e.g., defamation, self-harm, eating disorders, discrimination); and unqualified advice (e.g., medical advice, financial advice, legal advice)," which correspond to the acceptable use policy in Llama 2's license [160]. Anthropic's model card for Claude 3 similarly says "We developed refusals evaluations to help test the helpfulness aspect of Claude models, measuring where the model unhelpfully refuses to answer a harmless prompt, i.e. where it incorrectly categorizes a prompt as unsafe (violating our AUP) and therefore refuses to answer" [3].
+
+# 2.2 How do AUPs differ from other similar documents?
+
+Acceptable use policies are not the only way developers restrict use of their models. Other policy-related mechanisms that developers implement to restrict model use include:
+
+\* 1 This differs from the case of non-generative technologies, where restrictions focus on a user's input not a system's output.
+
+\* 2 Acceptable use policies for 3D printers, another generative, general-purpose technology with the potential to cause real-world harm [9], are among the best analogue for the case of foundation models. Public libraries have adopted AUPs that prohibit 3D printing of ghost guns, sex toys, and swastikas, for instance [79, 110].
+
+· Model Cards: Model cards, which are published alongside machine learning models, provide essential information about models such as their intended uses and out-ofscope uses [112]. However, model cards are not enforceable contracts, and they are not generally referenced in model licenses or developers' terms of service; as a result, out-of-scope uses do not rise to the same level as prohibited uses in an acceptable use policy [94].
+
+· Model Behavior Policies: Model behavior policies determine what a model can or cannot do [5, 59, 120]. While acceptable use policies apply to user behavior, model behavior policies apply to the behavior of the model itself [17]. A model behavior policy is one way of embedding an acceptable use policy into a model; methods for imposing a model behavior policy include using RLHF to cause the model to be more likely to refuse violative prompts or employing a safety classifier at inference time to filter violative model outputs [18, 28, 75]. Model behavior policies are generally broader than acceptable use policies; for instance, many developers fine-tune their models to produce more polite responses, though they do not block users from generating impolite responses [126, 136].
+
+· Third party contracts: Foundation model developers frequently partner with other firms to disseminate foundation models [23]. These include cloud service providers (e.g., AWS, Azure, GCP), platform providers (e.g., Scale AI, Nvidia), database providers (e.g., Salesforce, Oracle), and model distributors (e.g., Together, Quora) [149]. Custom contracts with third party providers of a developer's foundation models often include use restrictions, but the extent to which companies' acceptable use policies are altered via these partnership agreements is unclear.
+
+# 2.3 Norms and laws on acceptable use policies
+
+Although generative AI is a nascent industry, norms have begun to emerge around use restrictions for foundation models. [29] wrote in their "Best practices for deploying language models" that organizations should "[p]ublish usage guidelines and terms of use of LLMs in a way that prohibits material harm...such as through spam, fraud, or astroturfing." Developers of open-weight foundation models often adopt the same acceptable use policies by reusing the same model licenses. For example, more than 3,000 models on Hugging Face use Meta's Llama 2 license [106].
+
+Governments have taken an interest in acceptable use policies, which are a salient effort by foundation model developers to self-regulate [50]. Annexes IXa and IXb of the EU AI Act require that all providers of general-purpose AI models disclose the "acceptable use policies [that are] applicable" to both the EU's AI Office and other firms that integrate the general-purpose AI model into their own AI systems [65, 162]. China's Interim Measures for the Management of Generative AI Services, which were adopted in July 2023, go a step further by requiring that providers of generative AI services act to prevent users from "using generative AI services to engage in illegal activities. . . including [by issuing] warnings, limiting functions, and suspending or concluding the provision of services" [36, 181]. And the US
+
+<!-- PageFooter: 2 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+Voluntary AI Commitments require firms to publicly report "domains of appropriate and inappropriate use" as well as any limitations of the model that affect these domains [174].
+
+Neither the EU AI Act nor the US Voluntary AI Commitments require that firms enforce their AUPs or restrict any particular uses. By contrast, China's February 2024 regulatory guidance on Basic Safety Requirements for Generative Artificial Intelligence Services specifies 31 safety risks that developers must prohibit, such as "subvert[ing] state power," "endanger[ing] national security," and "dissemination of false and harmful information" [118, 179].
+
+# 3. Methodology
+
+# 3.1 Search protocol for acceptable use policies
+
+Table 1 details 30 foundation model developers' acceptable use policies. Developers use different policy documents to limit model use, including: a standalone acceptable use policy for all their foundation models (e.g., Google, Stability AI), use restrictions included in a general model license (e.g., AI2), use restrictions included in a custom model license (e.g., BigScience, Meta), or provisions in terms of service agreements that apply to all services including foundation models (e.g., Midjourney, Perplexity, Eleven Labs).
+
+The following protocol was used to identify acceptable use policies across these different types of documents:
+
+1. Compile a list of foundation model developers using the data provided by [15].
+
+2. For each developer, check the terms of service (TOS) on its website. If the TOS include an AUP with content restrictions that plausibly cover the developer's foundation models, take that portion of the TOS as the AUP.
+
+3. For each remaining developer, check the license for its "flagship foundation model"; 3 if it includes behavioral use restrictions, take that portion of the license as the AUP.
+
+4. For each remaining developer, if the TOS or license reference a separate document with behavioral use restrictions (e.g., usage guidelines) such that the restrictions are binding, take the relevant portion of that document as the AUP.
+
+# 3.2 Coding of prohibited use categories in AUPs
+
+Qualitative content analysis was used for this paper's coding of prohibited use categories in developers' acceptable use policies [105]. This was done inductively [46], with categories drawn directly from acceptable use policies, and was inspired by prior work related to AI ethics guidelines [51, 77], privacy policies [2], content moderation guidelines [24], benchmarks [167], and Responsible AI Licenses [106].
+
+The following process was used to code the prohibited use categories included in developers' acceptable use policies:
+
+· For each acceptable use policy, each line of the policy was analyzed. For each line, the distinct prohibited use categories included were added to a list of prohibited uses across every developers' acceptable use policy. Distinct prohibited use categories do not include different types of actions related to the same prohibited use category (e.g., "generating, promoting, or further distributing spam" was
+
+\* 3 A flagship foundation model is a developer's most salient and/or capable model, informed by its public documentation [17].
+
+- coded as "spam") or categories with substantial overlap that do not use distinct phrasing.
+
+· Using the list of prohibited use categories across all AUPs, each line of each acceptable use policy was considered again to ensure the prohibited use categories therein are coded correctly. A prohibited use category should receive a specific coding only if it uses near-identical language to that coding, and each prohibited use category in each policy receives only one coding.
+
+This produced a list of 127 categories and a 30x127 matrix (visible on GitHub), where columns show foundation model developers, rows show prohibited use categories, and cells are marked "1" if a developer's acceptable use policy explicitly references that prohibited use category and "0" otherwise. Section 4 analyzes the results of this coding.
+
+This methodology satisfies three aims. First, it provides a systematic and comprehensive approach for capturing the prohibited use categories included in acceptable use policies. Second, it enables a granular analysis of acceptable use policies. Classifying prohibited use categories into higherlevel groups is an illustrative exercise (see Figure 1), but acceptable use policies are legal documents with unique provisions that require close study [117]. Third, it clarifies the risks from foundation models that developers themselves seek to mitigate. While many previous works have taxonomized the risks and harms stemming from foundation models [4, 49, 71, 101, 141, 171], this paper assesses how companies taxonomize risk on the basis of their own policies.
+
+# 4. Analysis of acceptable use policies
+
+# 4.1 Developers with acceptable use policies
+
+Foundation model developers that have AUPs are heterogeneous along multiple axes, demonstrating broad adoption (see Table 1). In terms of model release, 12 of the developers openly release the model weights for their flagship model series, while 18 do not. These models have a variety of different output modalities, with 20 language models, 4 multimodal models, 3 image models, 2 video models and 1 audio model. The developers are headquartered around the world, with 19 based in the US and the others based in Canada, China, France, Germany, Israel, and the UAE.
+
+# 4.2 Prohibited content in acceptable use policies
+
+Acceptable use policies commonly prohibit users from employing foundation models to generate content that is explicit (e.g., violence, pornography), fraudulent (scams, spam), abusive (harassment, hate speech), deceptive (disinformation, impersonation), or otherwise harmful (malware, privacy infringements). 4 Figure 1 shows the most common categories of content that are explicitly prohibited by developers' acceptable use policies: mis/disinformation (26 policies include explicit prohibitions), harassment/abuse (26), privacy (21), discrimination (21), and child harm/child sexual abuse material (21) were the most frequent, while categories like political content (9), medical advice (8), weapons (7), surveillance (7), and plagiarism (4) were less common.
+
+\* 4 Content-based restrictions generally apply only to user prompts that request that a model generate this type of contentmodels will classify the toxicity of this type of content if asked to do so, but it is against developers' policies to generate such content.
+
+<!-- PageFooter: 3 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+<Table>
+| Developer    | Title of Acceptable Use Policy, Section Including Use Restrictions                                            | Model Specific Y/N (Model)   | Policy Document   | Flagship Model Series (Output Modality)   | HQ    | Openness   | Ref   |
+|:-------------|:--------------------------------------------------------------------------------------------------------------|:-----------------------------|:------------------|:------------------------------------------|:------|:-----------|:------|
+| 01.ai        | Yi Series Models Community License Agreement v2.1, §2 License and License Restrictions                        | Y (Yi)                       | License           | Yi (Text)                                 | PRC   | Open       | [1]   |
+| Adept        | Terms of Use, §1.1(d) Usage Restrictions                                                                      | N                            | TOS               | Fuyu (Multimodal)                         | USA   | Open       | [2]   |
+| Adobe        | Generative AI User Guidelines                                                                                 | N                            | Standalone        | Firefly (Image)                           | USA   | Closed     | [3]   |
+| AI21         | Usage Guidelines                                                                                              | N                            | Standalone        | Jurassic-2 (Text)                         | ISR   | Closed     | [4]   |
+| AI2          | AI2 ImpACT License for Low-Risk Artifacts                                                                     | Y (Tulu v2)                  | License           | OLMo (Text)                               | USA   | Open       | [5]   |
+| Aleph Alpha  | Terms and Conditions, §4.8 Customer's Rights and Use Restrictions                                             | N                            | TOS               | Luminous (Text)                           | DEU   | Closed***  | [6]   |
+| Amazon       | AWS Responsible AI Policy & AWS Acceptable Use Policy*                                                        | N                            | Standalone        | Titan Text (Text)                         | USA   | Closed     | [7]   |
+| Anthropic    | Acceptable Use Policy                                                                                         | N                            | Standalone        | Claude 3 (Text)                           | USA   | Closed     | [8]   |
+| Baidu        | ERNIE Bot User Agreement, §4 Service Usage                                                                    | Y (ERNIE)                    | TOS               | ERNIE 4.0 (Text)                          | PRC   | Closed     | [9]   |
+| BigCode      | Specifications BigCode Open RAIL-M v1 License, §A Use Restrictions                                            | Y (StarCoder 2)              | License           | StarCoder 2 (Text)                        | N/A** | Open       | [10]  |
+| BigScience   | BigScience RAIL License v1.0, §A Use Restrictions                                                             | Y (BLOOM)                    | License           | BLOOM (Text)                              | N/A** | Open       | [11]  |
+| Character.AI | Terms of Service, Conditions of Use                                                                           | N                            | TOS               | Not Public (Text)                         | USA   | Closed     | [12]  |
+| Cohere       | Usage Guidelines                                                                                              | N                            | Standalone        | Command (Text)                            | CAN   | Closed     | [13]  |
+| Databricks   | Databricks Open Model Acceptable Use Policy                                                                   | Y (DBRX)                     | Standalone        | DBRX (Text)                               | USA   | Open       | [14]  |
+| DeepSeek     | Terms of Use, §3 Service Management                                                                           | N                            | TOS               | DeepSeek (Text)                           | PRC   | Open       | [15]  |
+| Eleven Labs  | Terms of Service, Prohibited Activities                                                                       | N                            | TOS               | Not Public**** (Audio)                    | USA   | Closed     | [16]  |
+| Google       | Generative AI Prohibited Use Policy                                                                           | N                            | Standalone        | Gemini (Multimodal)                       | USA   | Closed     | [17]  |
+| Inflection   | Terms of Service, Acceptable Use                                                                              | N                            | TOS               | Inflection-2.5 (Text)                     | USA   | Closed     | [18]  |
+| Meta         | Acceptable Use Policy                                                                                         | Y (Llama 2)                  | License           | Llama 2 (Text)                            | USA   | Open       | [19]  |
+| Midjourney   | Terms of Service, §9 Community Guidelines                                                                     | N                            | TOS               | Midjourney v6 (Image)                     | USA   | Closed     | [20]  |
+</Table>
+
+<Table>
+| Developer    | Title of Acceptable Use Policy, Section Including Use Restrictions                                            | Model Specific Y/N (Model)   | Policy Document   | Flagship Model Series (Output Modality)   | HQ    | Openness   | Ref   |
+|:-------------|:--------------------------------------------------------------------------------------------------------------|:-----------------------------|:------------------|:------------------------------------------|:------|:-----------|:------|
+| Mistral      | Terms of Use, §8 Your obligations/§9 Our Obligations & Le Chat Terms of Service, §4.3 Chat Moderation Policy* | Y (Mistral API)              | TOS               | Mixtral (Text)                            | FRA   | Open       | [21]  |
+| OpenAI       | Usage Policy                                                                                                  | N                            | Standalone        | GPT-4 (Multimodal)                        | USA   | Closed     | [22]  |
+| Perplexity   | Terms of Service, Acceptable Use                                                                              | N                            | TOS               | Not Public**** (Text)                     | USA   | Closed     | [23]  |
+| Reka         | Terms of Service, §3.2 Responsible Use                                                                        | N                            | TOS               | Yasa-1 (Multimodal)                       | USA   | Closed     | [24]  |
+| Runway       | Terms of Service, §5 User Conduct                                                                             | N                            | TOS               | Not Public**** (Video)                    | USA   | Closed     | [25]  |
+| Stability AI | Acceptable Use Policy                                                                                         | N                            | Standalone        | Stable Diffusion 3 (Image)                | GBR   | Open       | [26]  |
+| TII          | Acceptable Use Policy                                                                                         | Y (Falcon 180B)              | Standalone        | Falcon 180B (Text)                        | UAE   | Open       | [27]  |
+| Together     | Terms of Service, §2.4 Your Responsibilities                                                                  | N                            | TOS               | StripedHyena Nous (Text)                  | USA   | Open       | [28]  |
+| Twelve Labs  | Terms of Service, §14 No Unlawful or Prohibited Use                                                           | N                            | TOS               | Pegasus-1 (Video)                         | USA   | Closed     | [29]  |
+| Writer       | Terms and Conditions, §4.3 Acceptable Use                                                                     | N                            | TOS               | Palmyra-1 (Text)                          | USA   | Closed     | [30]  |
+</Table>
+
+Many developers' acceptable use policies have granular use restrictions, whereas others have broad restrictions without much elaboration. Figure 1 shows the number of prohibited use categories contained in each developers' acceptable use policy and distinguishes between open- and closedweight developers [81]. Among closed developers, the acceptable use policies of Anthropic (69 prohibited uses), Cohere (46), and OpenAI (46) explicitly reference the largest number of prohibited use categories, while the policies of smaller startups such as Reka (15), Writer (14), and Perplexity (12) have the fewest. Among open developers, the acceptable use policies of Stability AI (44), Meta (44), and Mistral (38) explicitly reference the largest number of prohibited use categories, while the AUPs of 01.ai (11), Together (7), and the Technology Innovation Institute (6) reference the fewest. The average number of prohibited uses for closed developers is 20 (standard deviation of 15.1), while the average for open developers is 24.5 (standard deviation is 13.5).
+
+There are several potential explanations for open developers having a larger number of prohibited use categories in their AUPs. Open foundation model developers often use Responsible AI Licenses that feature a sizable, standardized set of use restrictions [33, 85]. Second, a greater number of closed foundation model developers have acceptable use policies (including smaller companies without large legal teams), whereas many other open developers have no acceptable use policy (see Table 2), introducing potential selection bias in computing the average. Third, unlike closed developers, open developers often cannot enforce their acceptable use policies against individual users, so prohibiting a larger number of uses may come at less cost.
+
+The strength of an acceptable use policy is not determined solely by the number of prohibited uses it lists. All 30 acceptable use policies prohibit users from generating content that violates the law, and the majority prohibit users from generating content that impedes the model developer's operations or is not accompanied by adequate disclosure that it is machine-generated. These catch-all prohibitions cover unenumerated risk categories, making acceptable use policies more malleable and comprehensive by linking them to laws and organizational procedures that may change. Over 40 of the 127 prohibited use categories relate to potentially illegal content (e.g., child sexual abuse material, defamation, discrimination against a protected class, drugs, fraud, hate speech, malware, prostitution, scams), reflecting the fact that developers consider these to be risks associated with their models and wish to reduce their liability for such risks [92].
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<Figure>
+Figure 1: Common prohibited content categories and number of prohibited uses per developer. Top left: the 10 most common categories of content-related prohibited uses in developers' AUPs. Top right: the next 10 most common categories of content-related prohibited uses in developers' AUPs. (See the GitHub for details on grouping.) Bottom left: the number of explicitly prohibited uses in closed developers' AUPs (out of 127 categories). Bottom right: the number of explicitly prohibited uses in open developers' AUPs.
+</Figure>
+
+Prohibitions on content that is not generally illegal show developers' priorities and highlight different approaches taken in their acceptable use policies. Political content, such as using foundation models for campaigning, lobbying, or otherwise influencing political processes, is explicitly prohibited by 9 startups-Anthropic, Character.AI, Cohere, Databricks, Midjourney, OpenAI, Perplexity, Stability AI, and Twelve Labs-whereas Big Tech companies like Amazon, Google, and Meta have no such prohibitions. Weaponsrelated content is explicitly prohibited by 7 developers: AI2, Anthropic, Amazon, Meta, Mistral, OpenAI, and Stability AI. Generating eating disorder-related content, such as proanorexia content, is explicitly prohibited by just 4 developers: Character.AI, Cohere, Meta, and Mistral. And while some open developers such as Adept, DeepSeek, and Together broadly prohibit some types of sexual content, others like Meta and Mistral prohibit only content related to prostitution or sexual violence. Foundation models have the potential to cause harm in each of these areas, yet major developers choose not to adopt legally binding restrictions on using their models in these ways [57, 140, 154].
+
+Other notable prohibited uses include:
+
+· Undermining the interests of the state: Baidu and DeepSeek, two of three model developers in Table 1 head-
+
+quartered in China, state in their acceptable use policies that users must not generate content "endangering national security, leaking state secrets, subverting state power, overthrowing the socialist system, and undermining national unity. . . damaging the honor and interests of the state. . . undermining the state's religious policy". 01.ai, the other Chinese developer, also includes a prohibition against "harming national security." These restrictions draw directly on China's Basic Safety Requirements for Generative AI Services [179].
+
+· Password trafficking: Eleven Labs, the only developer in Table 1 whose flagship model outputs audio, prohibits users from using its models to "trick or mislead us or other users, especially in an attempt to learn sensitive account information, for example user passwords." This may be intended to address concerns regarding the use of voice cloning for scams [6, 101].
+
+· Misinformation: The extent to which developers restrict users' ability to generate and/or distribute inaccurate content varies widely. While some AUPs include wholesale bans on misinformation (e.g., AI21 Labs, Inflection), others have looser restrictions that apply only to verifiable disinformation with the intent to cause harm (e.g., TII). Mis/disinformation is the most frequently prohibited category of use-even more so than child sexual abuse material-indicating that some developers may be more responsive to political and reputational risk than assessments of harm or legal liability [54, 124, 158].
+
+# 4.3 Restrictions on types of end use
+
+In addition to content-based restrictions, acceptable use policies for foundation models often restrict the types of activity that users can carry out. Acceptable use policies from 6 developers prohibit "model scraping" or training a model on their own model's outputs. Anthropic's Acceptable Use Policy bans use of "prompts and results to train an AI model (e.g., 'model scraping')"; Adept, Adobe, Meta, Perplexity, and Runway similarly prohibit the use of model outputs for training other foundation models. While 8 developers have no such explicit ban (BigCode, BigScience, Character.AI, Eleven Labs, Mistral, Stability AI, TII, Reka), the remaining 16 prohibit the use of their models to build a competing service, which encompasses model scraping [109].
+
+Some developers prohibit using their models to distribute AI-generated content at scale. AI21 Labs' Usage Guidelines state that "No content generated by AI21 Studio will be posted automatically (without human intervention) to any public website or platform where it may be viewed by an audience greater than 100 people." Four other developers (BigCode, BigScience, Cohere, and Databricks) prohibit using their models for automated posting online [58].
+
+Many acceptable use policies prevent firms in certain industries from making use of foundation models. For example, weapons manufacturers would be in violation of a policy with weapons-related restrictions if they made use of the foundation model to produce weapons, though it is possible that the developer negotiates custom contracts with weapons manufacturers [19, 145]. In January 2024, OpenAI reportedly changed its Usage Policies to facilitate partnerships with militaries, deleting a line that prohibited use related to "military and warfare" [10, 20].
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+Acceptable use policies may also restrict the use of models in highly-regulated industries such as law, finance, and medicine. 8 of the 30 acceptable use policies include restrictions on medical advice, and Anthropic, Character.AI, Google, Meta, and OpenAI also have restrictions on legal and financial advice, which apply not only to lawyers, doctors, and financial advisers, but also to organizations that provide services in these fields [37, 108, 157].
+
+AI2, Amazon, Anthropic, Google, and OpenAI also prohibit use of their models for certain types of surveillance. Google prohibits use of its models for "tracking or monitoring people without their consent" while AI2 singles out "military surveillance." This could prevent spyware companies and defense and intelligence contractors respectively from making use of their foundation models [48, 80].
+
+<Figure>
+Figure 2: Developer correlations. The correlation between prohibited use categories for pairs of developers across all 127 categories. Correlation is measured using the simple matching coefficient (i.e. agreement rate), which is the fraction of all indicators for which both developers are assigned the same value (i.e. where both are assigned 1 as both of their AUPs prohibit the category, or both are assigned 0).
+</Figure>
+
+# 4.4 Correlations between developers' AUPs
+
+Despite increased standardization across open developers [106], acceptable use policies remain inconsistent across foundation model developers. Figure 2 shows the correlation between developers' acceptable use policies based on which of the 127 prohibited use categories they include. BigCode, BigScience, and Databricks have highly similar policies (with a correlation of more than 0.9), as do Baidu and DeepSeek (the two Chinese developers) and Reka, TII, and Together (developers with relatively few prohibited use categories). Anthropic, Cohere, Google, Meta, Mistral, OpenAI, and Stability AI are among the developers with the policies that are least similar to others, in part because they have the largest number of prohibited uses; each have a correlation of 0.7 or less with 15 or more other developers. This may pose an issue for cloud providers that distribute models from many developers; Amazon Web Services, for example, distributes models from AI21 Labs, Amazon, Anthropic, Cohere, Meta, Mistral, and Stability AI, but Anthropic's acceptable use policy has a correlation of less than 0.6 with those each of these other developers, indicating AWS would need to enforce several substantially different policies.
+
+# 4.5 Developers without acceptable use policies
+
+There are tens of developers that do not have acceptable use policies for their foundation models-table 2 provides seven examples. There are myriad reasons why a developer may choose to release a model without acceptable use policy. Some open foundation model developers do not use acceptable use policies because their models are intended for research purposes only-if they were to adopt use restrictions, it could deter researchers from conducting safety research through red teaming or adversarial attacks (in the absence of a safe harbor for good faith researchers) [7, 96]. Other models intended for research may lack acceptable use policies on the basis that they present less severe risks of misuse, whether because they have less significant capabilities or fewer users [45]. Non-commercial models such as these are frequently distributed using licenses without use restrictions such as Apache 2.0 or Creative Commons AttributionNonCommercial licenses [95, 173]. While a license may not include any use restrictions for noncommercial users, commercial users may have to agree to custom use restrictions in their contracts with the model developer, which are not public. This creates a potential information asymmetry where a developer and its clients are aware of the domains in which use is permitted, while regulators and the public may be led to believe that model use is unrestricted [66, 161].
+
+Foundation models available for commercial use may not include acceptable use policies for several reasons. In some cases, developers offer a model "as is," stating that it is not intended for commercial use without further fine-tuning, mitigations, or use restrictions by downstream developers (e.g., Databricks' MPT-30B). Developers hoping to maximize uptake among commercial users may be less likely to adopt acceptable use policies because clients' risk-averse legal teams could recommend using different models without such restrictions. Other developers release their models without complete documentation, whether because they intend to release an acceptable use policy at a later point, which could be part of staged release, or due to underdocumentation in the rush to release a model [111, 147].
+
+In any case, other restrictions may apply to foundation models without acceptable use policies. Alibaba Cloud restricts firms with over 100 million users from making use of Qwen-VL through its license, which also bans model scraping. Restrictions on who can use a foundation model may have a significant effect on how it is used even in the absence of legally binding behavioral use restrictions [16].
+
+# 5. Enforcement of acceptable use policies 5.1 Barriers to enforcement
+
+5.1.1 Practical and legal barriers for open developers The enforceability of open foundation model developers' acceptable use policies is a major limitation on how effective they are at restricting risky uses. Unlike closed foundation model developers, whose models are distributed via their own products, services, or APIs (or those of another firm), developers of open foundation models distribute their models by distributing the weights online such that they can be downloaded, and models are often run locally [147]. As a result, open developers have few ways of monitoring downstream use of their models, making it difficult for them to enforce their policies where models are run locally or where hosted inference is provided by another organization [149].
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+

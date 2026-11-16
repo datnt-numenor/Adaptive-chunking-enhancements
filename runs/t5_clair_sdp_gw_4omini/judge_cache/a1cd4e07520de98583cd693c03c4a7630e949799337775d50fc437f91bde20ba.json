@@ -1,0 +1,14 @@
+{
+  "request_hash": "a1cd4e07520de98583cd693c03c4a7630e949799337775d50fc437f91bde20ba",
+  "prompt_sha256": "4c284b1482aff5ee89ade45dea59779c0355558b618a4025863b819c65a02478",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP3reKwvquqzLDMNtC5RRNUni1Ll",
+  "prompt_tokens": 7402,
+  "completion_tokens": 43,
+  "actual_usd": 0.0011361,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of infection attacks, including their definition and relation to the CNIL's taxonomy, fully supporting the claims made in the Reference Answer."
+  }
+}

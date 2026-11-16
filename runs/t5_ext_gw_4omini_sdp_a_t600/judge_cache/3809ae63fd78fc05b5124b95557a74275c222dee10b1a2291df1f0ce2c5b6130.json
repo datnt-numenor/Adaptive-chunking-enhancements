@@ -1,0 +1,14 @@
+{
+  "request_hash": "3809ae63fd78fc05b5124b95557a74275c222dee10b1a2291df1f0ce2c5b6130",
+  "prompt_sha256": "cf58f3c81a19b04447fed512cdc12fcfd791299864f507ace8f1755b2fe6706c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9xCqbmInByrCBMj9Wy8Y78L5xG",
+  "prompt_tokens": 8413,
+  "completion_tokens": 43,
+  "actual_usd": 0.00128775,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that authorized representatives must maintain technical documentation and EU declarations of conformity for ten years after market placement, fully supporting the claim in the Reference Answer."
+  }
+}

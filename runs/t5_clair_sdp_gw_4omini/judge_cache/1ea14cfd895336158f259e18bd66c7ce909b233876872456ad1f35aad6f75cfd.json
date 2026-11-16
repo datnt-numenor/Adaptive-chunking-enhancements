@@ -1,0 +1,14 @@
+{
+  "request_hash": "1ea14cfd895336158f259e18bd66c7ce909b233876872456ad1f35aad6f75cfd",
+  "prompt_sha256": "b307ee44d2be03f61d2647c818ee243ad8f3742e75717406bf0c721aef5431c2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO1pxLSjwudUbEHR57HYQngrgMp3",
+  "prompt_tokens": 8547,
+  "completion_tokens": 47,
+  "actual_usd": 0.00131025,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the Disparate Impact Remover, including the requirement for the user to specify a repair_level, which directly supports the claim made in the Reference Answer."
+  }
+}

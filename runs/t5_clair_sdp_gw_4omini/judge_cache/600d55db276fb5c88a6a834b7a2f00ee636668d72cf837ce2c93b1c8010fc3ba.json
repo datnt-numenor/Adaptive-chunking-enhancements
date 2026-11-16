@@ -1,0 +1,14 @@
+{
+  "request_hash": "600d55db276fb5c88a6a834b7a2f00ee636668d72cf837ce2c93b1c8010fc3ba",
+  "prompt_sha256": "d1361af93ca8f518e6d6c782318d21de7dcad083f9a049e739409442bfeac0a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO27pSREDshG74NEtVJcPcylhbH8",
+  "prompt_tokens": 6749,
+  "completion_tokens": 63,
+  "actual_usd": 0.00105015,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by mentioning the establishment of AI regulatory sandboxes for testing and experimentation, but it does not explicitly connect these sandboxes to supporting additional Digital Innovation Hubs or specific sectors like transport, healthcare, agrifood, and manufacturing."
+  }
+}

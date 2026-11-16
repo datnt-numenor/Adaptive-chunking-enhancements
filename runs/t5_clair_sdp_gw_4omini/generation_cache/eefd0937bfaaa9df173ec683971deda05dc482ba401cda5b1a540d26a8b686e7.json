@@ -1,0 +1,10 @@
+{
+  "request_hash": "eefd0937bfaaa9df173ec683971deda05dc482ba401cda5b1a540d26a8b686e7",
+  "prompt_sha256": "11769769dfaf7dea2b65c51211869260a088bade6c575b79cd6f98491eb9e7b9",
+  "answer": "The France’s ANSSI recommends avoiding the \"pickle\" format for saving a neural network’s learned weights because it could run attacker code. Instead, it prefers using secure formats such as \"safetensor.\"",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNBuTtOzT8Rw8eE8kCo9pVrepXjt",
+  "prompt_tokens": 7007,
+  "completion_tokens": 41,
+  "actual_usd": 0.0010756499999999998
+}

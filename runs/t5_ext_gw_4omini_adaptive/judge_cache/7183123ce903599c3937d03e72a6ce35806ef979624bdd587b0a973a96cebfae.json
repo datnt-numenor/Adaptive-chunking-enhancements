@@ -1,0 +1,14 @@
+{
+  "request_hash": "7183123ce903599c3937d03e72a6ce35806ef979624bdd587b0a973a96cebfae",
+  "prompt_sha256": "953c3e2722a0d42a761fa4b2ce0cc865bb25babf851d0395c377db9d99e75c1f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORRJSU1eHNZOufOgknC1mlGcTmV",
+  "prompt_tokens": 9184,
+  "completion_tokens": 40,
+  "actual_usd": 0.0014015999999999998,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention the four top-level categories of capabilities, domain knowledge, affordances, and impact domains, making the Reference Answer unsupported."
+  }
+}

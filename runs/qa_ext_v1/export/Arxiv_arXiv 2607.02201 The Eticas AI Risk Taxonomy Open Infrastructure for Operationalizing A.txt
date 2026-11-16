@@ -1,0 +1,283 @@
+DOCUMENT: arXiv 2607.02201 The Eticas AI Risk Taxonomy Open Infrastructure for Operationalizing A
+
+<<<PAGE 16>>>
+Strongest framework anchors. OWASP Top 10 for Agentic Applications (multiple); NIST 600-1 category 9 (information security); EU AI Act Article 15(1) (cybersecurity); ISO/IEC 42001 with ISO 27001 integration; NIST AI RMF secure-and-resilient; CSA Agentic Profile; TC260 security provisions.
+
+Distinctiveness. The category separates intentional attacks from unintentional failures (which live in Reliability), because threat modeling and quality assurance are different disciplines. Several OWASP agentic categories map here, illustrating how agentic deployment expands the attack surface (tool misuse, memory poisoning, unsafe code execution).
+
+# 4.6 Environmental Impact
+
+Definition. Risks that AI systems cause environmental harm through energy use, carbon emissions, resource consumption, or electronic waste, especially at training and deployment scale.
+
+Sub-groups. None; flat category at present.
+
+Strongest framework anchors. NIST 600-1 category 5 (environmental impacts); OECD inclusive-growth and sustainability principle; MIT V4 environmental subdomain; IBM Atlas environmental impact. This category shows the cleanest cross-framework convergence in the taxonomy.
+
+Distinctiveness. Environmental risk shares one assessment methodology (lifecycle analysis of consumption and emissions), so the flat structure is appropriate. The category also demonstrates the taxonomy's ability to absorb newly salient risks: environmental concerns were absent from early taxonomies and now command broad consensus.
+
+# 4.7 Transparency and Explainability
+
+Definition. Risks that AI systems operate without adequate explanation of their functioning, decision rationale, or performance, limiting stakeholder understanding and accountability.
+
+Sub-groups. Explainability (technical interpretability, decision rationale, feature importance); Communication and Disclosure (user-facing disclosure, capability and limitation transparency).
+
+Strongest framework anchors. EU AI Act Article 86 (the right to explanation of individual decisions); EU AI Act Article 13 (transparency and information to deployers); ISO/IEC 42001 Annex A.8 (information for interested parties); NIST AI RMF explainable-and-interpretable; OECD transparency principle; W3C DPV explanation concepts; CoE Convention information obligations; IEEE Std 7001-2021 (transparency of autonomous systems) and IEEE Std 2894-2024 (architectural framework for explainable AI), both at category level.
+
+Distinctiveness. The category separates technical explanation from stakeholder communication because they serve different functions with different methods. The regulatory anchor is precise: EU AI Act Article 86 grants affected persons the right to obtain from the deployer, in the Act's own words, "clear and meaningful explanations of the role of the AI system in the decision-making procedure and the main elements of the decision taken. " This is narrower and more operational than the broader, and contested, GDPR debate over a "right to explanation, " and the taxonomy maps to the AI Act language specifically. Semantic alignment with W3C DPV explanation concepts lets compliance and audit tooling share concept identifiers.
+
+# 4.8 Agentic AI
+
+Definition. Risks specific to AI systems that autonomously plan, invoke external tools, execute multi-step action chains, and interact with other agents or environments with reduced human involvement.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+Sub-groups. Autonomous Actions and Tool Use (autonomous decisions, tool and API invocation, real-world action, unintended consequences); Multi-agent Integrity (emergent behavior, coordination failure, conflicting objectives, cascading failure across agent networks).
+
+Strongest framework anchors. CSA Agentic Profile (NIST AI RMF v1); OWASP Top 10 for Agentic Applications 2026 (multiple); AIUC-1 agent-specific controls.
+
+Distinctiveness. This is the newest established category and the locus of the governance-gap finding. Agentic systems decompose goals, invoke tools, persist state, adapt plans, and interact with other agents, which creates risk profiles absent from passive prediction systems: an agent with deletion access may over-interpret an instruction; an agent network with conflicting objectives may produce emergent behavior no agent intended; an agent acting at machine speed forecloses meaningful per-decision oversight. Among major audit-oriented taxonomies, Eticas is among the first to treat Agentic AI as a first-class category (the IBM Atlas also includes an agentic category), and the frameworks it maps to all emerged in 2025 and 2026. The thinness of mappings everywhere else is the finding, developed in Section 5.
+
+# 4.9 Emerging Categories
+
+Two categories exist at emerging maturity, documented internally pending operationalization. Autonomy and Agency address the human-AI relationship (overreliance, automation bias, deskilling, loss of meaningful human control); it is distinct from Agentic AI, which concerns agent-specific technical risk regardless of the human relationship. Organisational Readiness addresses organizational capacity for responsible deployment (skills, leadership, change management). Both have initial mappings and definitions but await further operational validation before public promotion.
+
+# 5 Framework Alignment Analysis
+
+This section examines the taxonomy as a Rosetta Stone across the governance landscape: a three-tier crosswalk, a completeness check against NIST 600-1, the structural variations in how frameworks organize risk, and the agentic governance gap.
+
+# 5.1 The Three-Tier Crosswalk
+
+Table 3 summarizes mapping coverage across the eight public categories. A cell marks whether at least one subcategory maps to the framework at exactMatch or closeMatch (C), only at a weaker broad, narrow, or related match (R), or not at all.
+
+Framework codes, grouped by tier. Compliance: EU = EU AI Act; ISO = ISO/IEC 42001; AIUC = AIUC-1; CoE = Council of Europe Convention; 7001 = IEEE 7001; 7002 = IEEE 7002; 7003 = IEEE 7003. Reference: RMF = NIST AI RMF; 600 = NIST AI 600-1; OECD = OECD Principles; TC = TC260; AP = CSA Agentic Profile; OW = OWASP Agentic Top 10; 2894 = IEEE 2894. Academic: MIT = MIT Repository V4; AIR = AIR 2024; IBM = IBM Atlas; DPV = W3C DPV.
+
+Bias and Fairness, Privacy and Confidentiality, and Security and Misuse achieve the broadest coverage (close matches in ten or more frameworks), reflecting consensus on these domains. Environmental Impact achieves strong but narrower coverage, concentrated in frameworks that explicitly address sustainability. The CSA Agentic Profile and OWASP concentrate, as expected, in Agentic AI and Security and Misuse, and the four IEEE standards sit at category level on Bias and Fairness (7003), Privacy and Confidentiality (7002), and Transparency and Explainability (7001 and 2894).
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+Cell = best mapping of any subcategory in that category to the framework.
+
+<Figure>
+Table 3: Framework alignment coverage across the eight public categories. Coverage is broadest for Bias and Fairness, Privacy and Confidentiality, and Security and Misuse; Agentic AI is covered only by purpose-built frameworks.
+</Figure>
+
+Agentic AI shows the starkest pattern: strong coverage only in the agentic-specific frameworks, examined in Section 5.4.
+
+# 5.2 NIST 600-1 Completeness Check
+
+Where Table 3 runs outward, asking which frameworks recognize each Eticas category, Table 4 runs inward: it takes an external framework's complete enumeration and tests Eticas against it. The direction matters, because a coverage map cannot reveal a category Eticas lacks (anything missing simply never appears as a row), whereas a completeness check can. We use NIST 600-1 as the instrument because it is the rare framework suited to the task: a bounded, enumerable set of twelve discrete risk areas, risk-domain organized like the Eticas taxonomy (Section 5.3) so the comparison is like-for-like, recent and generative-AI-specific, and authoritative without being Eticas-aligned, so a clean bill of health would not be self-serving.
+
+Seven of twelve areas have direct coverage, four are partial, and one (intellectual property) is a true gap. The audit-tractable portion of that gap, the exposure of confidential or proprietary information through model outputs, is captured in the taxonomy by the established subcategory sensitive-information-leakage, which absorbed the earlier confidential-information-leakage concept and covers confidential and proprietary data alongside personal data, framed as a confidentiality risk rather than a new intellectual-property category; copyright and patent questions remain outside what a system audit can measure. We state this plainly because it reflects a methodological commitment we call "named gaps over weak matches": telling a user that intellectual property requires a supplemental framework is more useful than asserting a tenuous mapping that breaks under scrutiny. This same commitment, as Section 2 showed, is built into the operationalization layer, where an unaddressed mechanism appears as a visible empty slot rather than a silent omission.
+
+# 5.3 Four Structural Variations
+
+The 18 frameworks organize risk in four distinct ways, and recognizing this is essential for accurate translation. Risk-domain organization (Eticas, MIT V4, NIST 600-1, AIR 2024) organizes by what can go wrong and aligns with audit workflow. Lifecycle-stage organization (IBM Atlas, NIST RMF functions) organizes by where in the pipeline risk surfaces and aligns with development workflow. Source-of-risk organization (TC260) organizes by where risk originates (endogenous, application, derivative). Principles organization (OECD, CoE) organizes by ethical commitments and enables consensus.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<Figure>
+Table 4: NIST AI 600-1 coverage analysis. Seven of the twelve risk areas have direct coverage, four are partial, and intellectual property is a named gap.
+</Figure>
+
+The Eticas risk-domain choice aligns with audit workflow but imposes translation work when mapping to differently organized frameworks; the TC260 mapping is held at category level for this reason. The deeper implication is that no single taxonomy serves all uses: research benefits from comprehensive catalogs, development from lifecycle organization, policy from principles, and audit from risk-domain organization at operational granularity. The ecosystem needs multiple frameworks, not convergence on one, which is also why publishing an open, interoperable, operationalizable taxonomy is more valuable than publishing one more closed catalog.
+
+# 5.4 The Agentic AI Governance Gap
+
+Table 5 sets the publication dates of the frameworks against the emergence of agentic AI as a deployment paradigm.
+
+The pattern is stark. Every compliance-tier framework providing binding obligations was finalized before or as agentic AI emerged, and most reference-tier frameworks predate it too. Only the purpose-built frameworks (AIUC-1, the CSA Agentic Profile, OWASP) and the IBM Atlas provide direct coverage, and all date from 2025 or later. This is a structural gap, not an incidental one: governance frameworks emerge on multi-year cycles through regulatory negotiation and standards consensus, while agentic AI emerged as a deployment paradigm in roughly eighteen months.
+
+Treating Agentic AI as first-class makes the gap legible to evaluators: an audit of an agentic system can see, from the mappings alone, that compliance assessment against the EU AI Act or ISO 42001 will be partial and must be supplemented with OWASP, the CSA Agentic Profile, or AIUC-1. The positioning also supports the three response paths open to regulators (amend existing frameworks, issue interpretive guidance, or develop new agent-specific frameworks): the mapping shows precisely where existing frameworks need extension, and the category supplies vocabulary that guidance can reference. Independent analyses confirm the gap, finding the EU AI Act "not ready for agents" (Gardhouse and Oueslati, 2026) and documenting compliance difficulties for AI agents under EU law (Nannini et al., 2026).
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<Figure>
+Table 5: Framework publication timeline against agentic AI emergence. Every binding compliance framework predates the emergence band; the only direct-coverage frameworks are purpose-built and date from 2025 onward.
+</Figure>
+
+# 6 Related Work
+
+AI risk taxonomies now number in the dozens, organized by different principles and serving different constituencies. We structure this review by orientation: research and meta-review taxonomies, vendor and practitioner frameworks, regulatory and standards frameworks, semantic and vocabulary frameworks, and the recent agentic-specific frameworks. Running through the review is a single comparative question that motivates this paper: do existing frameworks demonstrate a path from its risk concepts to executed measurement, or do they stop at the catalog?
+
+# 6.1 Research and Meta-Review Taxonomies
+
+The most comprehensive recent effort is the MIT AI Risk Repository V4 (Slattery et al., 2026), a meta-review cataloguing many hundreds of risks extracted from 74 frameworks spanning government regulations, corporate policies, and academic taxonomies. The Repository structures risks along two axes: a causal taxonomy classifying by entity (human, AI), intent (intentional, unintentional), and timing (pre- or post-deployment); and a domain taxonomy organizing seven societal impact areas into subdomains. Published in Patterns with an interactive web tool under CC BY 4.0, it is rigorous empirical foundation for the field and the natural reference point against which any specialized taxonomy should situate itself.
+
+Its comprehensiveness, however, limits operational use. It preserves the heterogeneity of its sources rather than normalizing to one vocabulary; equivalent concepts from different frameworks appear as separate entries. It mixes abstraction levels, placing mechanisms ("dataset bias"), observable harms ("discriminatory outcomes"), and organizational root causes ("lack of diversity in development teams") as coordinate entries. And at many hundreds of entries it exceeds the cognitive load of audit scoping. None of this is a flaw in a meta-review; it is the cost of comprehensiveness. But it means the Repository is a map of the territory, not a tool for traversing it. It does not, and does not aim to, show how any one risk is measured.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+AIR 2024 (Zeng et al., 2024) takes a bottom-up approach, extracting 314 risk types from eight government regulations and sixteen corporate policies, organized in a four-tier ontology. The accompanying AIR-Bench operationalizes the taxonomy into a safety benchmark aligned to regulatory language, which is a genuine and unusual step toward measurement. AIR's strength is traceability to compliance language; its costs are granularity (314 types impose classification overhead) and the gap between policy-derived phrasing and test design. AIR-Bench shows that a taxonomy can drive a benchmark, but it targets model-level safety evaluation rather than the broader, system-and-context audits that regulatory compliance requires.
+
+# 6.2 Vendor and Practitioner Frameworks
+
+IBM AI Risk Atlas (Bagehorn et al., 2025) organizes risks by lifecycle stage (input, inference, output, non-technical, and agentic) and integrates with Risk Atlas Nexus, an open-source tooling suite of ontologies, knowledge graphs, and AI-assisted compliance workflows. This is among the most operationally serious of the published frameworks, and notably it already includes an agentic category. Its lifecycle organization aligns with development workflows but complicates compliance crosswalks, since regulators organize by domain of harm. Its emphasis on automated detection underweights the governance and process controls where human judgment remains essential and where, in our audit experience, many real failures actually originate. The Eticas taxonomy presented in this paper has itself been integrated into Risk Atlas Nexus as one of its external taxonomy resources.
+
+Beyond IBM, most practitioner methodologies remain unpublished. Specialist audit firms hold proprietary frameworks and do not expose either their risk vocabularies or, more importantly, their operationalization. The broader accountability literature has mapped this ecosystem and its incentives (Raji et al., 2020; Mökander and Floridi, 2021; Costanza-Chock et al., 2022), and artifact standards such as datasheets and model cards (Gebru et al., 2021; Mitchell et al., 2019) structure documentation, but neither supplies an operational risk vocabulary. The field therefore lacks an open practitioner taxonomy at audit-suitable granularity that also shows its operationalization. That absence is one of the gaps this paper addresses.
+
+# 6.3 Regulatory and Standards Frameworks
+
+The EU AI Act (Regulation 2024/1689) establishes risk-based regulation with prohibited practices (Article 5), high-risk categories (Annex III), and essential requirements distributed across Articles 9 to 15. Article 86 establishes a right to explanation for certain decisions by high-risk systems. As a regulation, it provides binding obligations but not an operational taxonomy: Article 15 bundles "accuracy, robustness and cybersecurity, " and the Act specifies that systems achieve "appropriate" levels without defining an assessment methodology. Harmonized standards under CEN/CENELEC JTC 21 will supply technical specifications, but they will focus on conformity assessment procedures rather than risk vocabulary. The Act's value to taxonomy work lies in compliance anchors: mappings to specific Articles provide regulatory justification for including assessment criteria.
+
+ISO/IEC 42001:2023, the first international AI management system standard, uses Plan-DoCheck-Act methodology and enumerates Annex A controls across policies (A.2), internal organization (A.3), resources (A.4), impact assessment (A.5), data (A.7), and information for interested parties (A.8). As a certifiable standard it drives audit demand. But it operates at the level of the organization's management processes, not the AI system's measured behavior: it governs whether an organization has a policy or an impact-assessment procedure, not what a model does when tested. Its control-based structure therefore does not map directly to a risk taxonomy: A.5 requires impact assessment without enumerating risk categories, so evaluators need a supplemental vocabulary bridging from organizational controls to testable risk domains.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+NIST AI 600-1 (Autio et al., 2024) defines 12 risk categories for generative AI: CBRN information, confabulation, dangerous or violent or hateful content, data privacy, environmental impacts, harmful bias and homogenization, human-AI configuration, information integrity, information security, intellectual property, obscene or degrading or abusive content, and value chain and component integration. Each carries suggested actions mapped to the AI RMF functions. Its 12-category scope is manageable but bounded to generative systems, and as Section 5 showed, it makes a useful instrument for a completeness check against the Eticas taxonomy.
+
+The earlier NIST AI RMF (Tabassi, 2023) organizes around seven trustworthiness characteristics and four functions (Govern, Map, Measure, Manage). Two features limit its use as a risk taxonomy. First, it is process orientation rather than risk enumeration: it guides how to approach risk management without specifying which risks to manage, and its characteristics overlap by design. Second, its four functions describe activities an organization performs rather than properties a system exhibits, so its unit of analysis is the organization's risk-management process, not the model's measured behavior. This is the same level-of-operation gap found in the management-system standards: the framework governs whether risk management happens, not what testing the system reveals. For audit planning that needs clear boundaries between assessment areas, and findings expressed as measured system properties, it requires supplementation with a risk-domain taxonomy.
+
+The OECD AI Principles (OECD/LEGAL/0449, updated May 2024) provide five value-based principles with broad international consensus, and the Council of Europe Framework Convention (CETS 225, 2024) is the first binding international AI treaty. Both are normative foundations at an abstraction level that prevents direct operationalization; they anchor values rather than tests. TC260 v2.0 (September 2025) organizes risks by source (endogenous, application, derivative) rather than domain of harm, reflecting a different governance philosophy and imposing translation work for cross-jurisdictional practitioners. We map TC260 at category level for the four Eticas categories where clear equivalents exist. The taxonomy also maps four IEEE standards: the conformityassessable IEEE Std 7001-2021 (transparency of autonomous systems), 7002-2022 (data privacy process), and 7003-2024 (algorithmic bias considerations), placed in the compliance tier, and the advisory IEEE Std 2894-2024 (architectural framework for explainable AI), placed in the reference tier. Each is mapped at category level on its relevant domain.
+
+# 6.4 Semantic and Vocabulary Frameworks
+
+The W3C Data Privacy Vocabulary v2.3 with AI Extension (Pandit and Golpayegani, 2026) is the most mature example of AI risk concepts published as semantic web infrastructure, using SKOS with stable URIs to represent GDPR and AI Act compliance concepts. DPV demonstrates exactly what semantic infrastructure enables: programmatic consumption, formal reasoning, and machinediscoverable compliance knowledge. Its scope emphasizes legal compliance concepts (obligations, roles, purposes) rather than technical risk assessment at evaluation granularity. The Eticas taxonomy deliberately adopts DPV's infrastructure pattern (SKOS, stable URIs, open licensing) while targeting audit operationalization.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+# 6.5 Agentic-Specific Frameworks (2025 to 2026)
+
+The emergence of agentic AI from late 2024 produced a rapid standardization response. AIUC-1 (2025) positions itself as a 'SOC 2 for AI agents, ' with controls across six domains and a certification model including independent auditing and technical testing, mapped to the EU AI Act, NIST AI RMF, ISO 42001, MITRE ATLAS, and OWASP. As a SOC 2-style certification its primary unit of analysis is the organization's controls (whether safeguards exist and are operating), the same levelof-operation orientation seen in the management-system standards, even though its certification model reaches further toward the system than ISO 42001 by incorporating independent technical testing. That technical-testing component is what an audit measures on the system; the surrounding controls are what it verifies about the organization. For a risk-domain vocabulary that expresses findings as measured system properties, the control set still needs a supplemental mapping. The Cloud Security Alliance published an Agentic Profile extending NIST AI RMF 1.0 for agentic systems (autonomy-tier classification, tool-use risk, runtime behavioural governance, delegationchain accountability), organized around the Govern-Map-Measure-Manage structure and aligned with the CSA AI Controls Matrix. The OWASP Top 10 for Agentic Applications 2026 (December 2025), developed by a large practitioner community with expert review, enumerates ten agentspecific risk categories, from agent goal hijacking and tool misuse to cascading planning failures, memory poisoning, and insufficient observability.
+
+These frameworks demonstrate responsive standardization, and their value is real, but their recency is the point: the compliance backbone predates them by one to three years. Section 5 developed this as a structural finding.
+
+# 6.6 Positioning the Eticas Taxonomy
+
+As the above clearly shows, the landscape leaves a specific opening. On comprehensiveness versus usability, meta-reviews and large inventories serve discovery but exceed audit cognitive load. Principles frameworks enable consensus but lack operational specificity. The Eticas 10-21-70 structure is a deliberate middle path. On ontological clarity, most taxonomies conflate risks with mechanisms and causes, whereas Eticas separates them and uses the mechanisms field as an operationalization contract. On semantic infrastructure, few practitioner taxonomies reach DPV's level of SKOS, stable URIs, and open licensing; Eticas adopts it as a baseline. On framework alignment, the three-tier mapping to 18 frameworks provides a Rosetta Stone across compliance, reference, and academic vocabularies. On unit of analysis, several of the most influential compliance instruments (the management-system standard ISO/IEC 42001, the process-oriented NIST AI RMF, and the SOC 2-style certification AIUC-1) operate primarily at the level of the deploying organization's controls and processes, governing whether risk management happens rather than what testing reveals about the model.
+
+Two frameworks go furthest toward measurement, AIR 2024's AIR-Bench and IBM's Risk Atlas, but even they stop at model-safety benchmarking, not system-and-context audits; and automated detection, not graded findings. The Eticas taxonomy is built to express findings as measured properties of the system, which is the level at which an audit produces evidence. And on the decisive axis, operationalization, the Eticas taxonomy is, to our knowledge, the first openly published audit taxonomy accompanied by a documented, benchmark-validated path from its concepts to graded audit findings. The preceding sections substantiate these claims, with Section 2 carrying the operationalization argument.
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+# 7 Conclusion
+
+AI auditing has reached the point where infrastructure matters as much as method. Individual audits can succeed through skilled practitioners applying ad hoc frameworks, but the field cannot accumulate learning, regulators cannot evaluate consistency, and clients cannot compare services without shared, open, and operable foundations. The proliferation of risk taxonomies reflects the demand for shared vocabulary; their fragmentation, and their overwhelmingly theoretical character, reflects the absence of infrastructure built for and validated against the realities of audit practice.
+
+The Eticas AI Risk Taxonomy v3.0.0 is a contribution toward closing that gap. It is practitionerbuilt and audit-oriented; organized at a granularity tuned to real planning; mapped to 18 external frameworks across compliance, reference, and academic tiers; and published as open semantic infrastructure under CC BY 4.0, with its conceptual scaffold and worked subcategory examples carrying stable identifiers and SKOS and JSON-LD distributions. Its ontological separation of risks from mechanisms is not only a conceptual tidiness but the stable seam along which an operationalization layer attaches, disclosed in full for the worked examples, and we have shown that layer in operation: a four-layer methodology, a codified measurement-to-grade chain, operationalized entries that bind tool-agnostic probes to external benchmarks with disclosed severity thresholds, and an end-to-end validation against the public DecodingTrust benchmark in two dimensions, shown end to end for PII leakage in Section 2. Treating Agentic AI as a first-class category surfaces a structural governance gap, where the major frameworks predate the deployment paradigm they are now asked to govern.
+
+This taxonomy is a work-in-progress, and so we invite the algorithmic-auditing community, regulators, researchers, and AI developers to use it, map their frameworks against it, build their own operationalizations on its open concepts, and propose extensions and corrections. The infrastructure value emerges through use, and the seam is open for building.
+
+The taxonomy is available at https://taxonomy.eticas.ai/, with purpose, scope, and licence boundary documented at https://taxonomy.eticas.ai/about/ and SKOS distributions at https://taxonomy.eticas.ai/dist/taxonomy.ttl and https://taxonomy.eticas.ai/d ist/taxonomy.jsonld. Suggested citation: Eticas. (2026). Eticas AI Risk Taxonomy, v3.0.0. https://taxonomy.eticas.ai/risk/.
+
+# Competing Interests
+
+The authors are affiliated with Eticas, which provides commercial AI audit services and maintains the proprietary methodology layer and the full subcategory set described in this paper. The conceptual scaffold of the taxonomy is released under CC BY 4.0. This work should be read with that commercial interest disclosed.
+
+# Data and Code Availability
+
+The public taxonomy, comprising the established top-level categories and subcategories, as well as the sub-groups, with per-concept pages and machine-readable SKOS/Turtle and JSON-LD distributions, is available at https://taxonomy.eticas.ai/ under CC BY 4.0 and currently serves v3.0.0. High-resolution versions of all figures in this paper are available alongside the taxonomy at https://taxonomy.eticas.ai/. All 32 established subcategories are browsable at their concept URIs, including disparate-impact-protected-groups and sensitive-information-leakage (the v3.0.0 successor of the pii-leakage concept against which the Section 2 validation was run; the retired identifier resolves as a redirect); the operational layer behind the worked examples is disclosed in this paper rather than rendered on the public pages. The emerging subcategories and the full mechanism layer are maintained in an access-gated internal distribution and are not publicly browsable. The DecodingTrust benchmark used for validation is publicly available (Wang et al., 2023). The audit methodology repository and engagement-specific audit data are proprietary and not publicly available; the architecture and operationalization patterns are described in Section 2 in sufficient detail to be independently re-implemented against the public taxonomy.
+
+<!-- PageFooter: 24 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+# References
+
+- Artificial Intelligence Underwriting Company (AIUC). (2025). AIUC-1: The AI agent standard. https://www.aiuc-1.com/
+
+- Autio, C., Schwartz, R., Dunietz, J., Jain, S., Stanley, M., Tabassi, E., Hall, P., & Roberts, K. (2024). Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1). National Institute of Standards and Technology. https://doi.org/ 10.6028/NIST.AI.600-1
+
+- Bagehorn, F., Brimijoin, K., Daly, E. M., He, J., Hind, M., Garces-Erice, L., Giblin, C., Giurgiu, I., Martino, J., Nair, R., Piorkowski, D., Rawat, A., Richards, J., Rooney, S., Salwala, D., Tirupathi, S., Urbanetz, P., Varshney, K. R., Vejsbjerg, I., & Wolf-Bauwens, M. L. (2025). AI Risk Atlas: Taxonomy and Tooling for Navigating AI Risks and Resources. arXiv preprint arXiv:2503.05780. https://arxiv.org/abs/2503.05780
+
+- Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21), 610-623. https://doi.org/10.1 145/3442188.3445922
+
+- Cloud Security Alliance. (2025). Agentic Profile: A NIST AI RMF Profile for Agentic AI. Cloud Security Alliance. https://labs.cloudsecurityalliance.org/agentic/agentic-nist-ai-r mf-profile-v1/
+
+- Costanza-Chock, S., Raji, I. D., & Buolamwini, J. (2022). Who Audits the Auditors? Recommendations from a field scan of the algorithmic auditing ecosystem. Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22), 1571-1583. https://doi.org/10.1145/3531146.3533213
+
+- Council of Europe. (2024). Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (CETS No. 225). Adopted 17 May 2024.
+
+- Eticas. (2026). Eticas AI Risk Taxonomy, v3.0.0. https://taxonomy.eticas.ai/risk/
+
+- European Union. (2024). Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). Official Journal of the European Union, L 2024/1689. https://eur-lex.europa.eu/eli /reg/2024/1689/oj/eng
+
+- Gardhouse, K., & Oueslati, A. (2026, May 5). The EU AI Act is Not Ready for Agents. Tech Policy Press. https://www.techpolicy.press/the-eu-ai-act-is-not-ready-for-agents/
+
+- Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H., Daumé III, H., & Crawford, K. (2021). Datasheets for Datasets. Communications of the ACM, 64(12), 86-92. https: //doi.org/10.1145/3458723
+
+- Institute of Electrical and Electronics Engineers (IEEE). (2021). IEEE Std 7001-2021: IEEE Standard for Transparency of Autonomous Systems. IEEE. https://standards.ieee.org/ieee/ 7001/6929/
+
+- Institute of Electrical and Electronics Engineers (IEEE). (2022). IEEE Std 7002-2022: IEEE Standard for Data Privacy Process. IEEE. https://standards.ieee.org/ieee/7002/6898/
+
+- Institute of Electrical and Electronics Engineers (IEEE). (2024a). IEEE Std 7003-2024: IEEE Standard for Algorithmic Bias Considerations. IEEE. https://standards.ieee.org/ieee/70
+
+<!-- PageFooter: 26 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 27>>>
+03/7194/
+
+- Institute of Electrical and Electronics Engineers (IEEE). (2024b). IEEE Std 2894-2024: IEEE Guide for an Architectural Framework for Explainable Artificial Intelligence. IEEE. https: //standards.ieee.org/ieee/2894/11296/
+
+- ISO/IEC. (2023). ISO/IEC 42001:2023 Information technology - Artificial intelligence - Management system. International Organization for Standardization. https://www.iso.org/standa rd/42001
+
+- Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., & Gebru, T. (2019). Model Cards for Model Reporting. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT '19), 220-229. https://doi.org/10.1145/32 87560.3287596
+
+- Mökander, J., & Floridi, L. (2021). Ethics-Based Auditing to Develop Trustworthy AI. Minds and Machines, 31, 323-327. https://doi.org/10.1007/s11023-021-09557-8
+
+- Nannini, L., Smith, A. L., Maggini, M. J., Panai, E., Feliciano, S., Tiulkanov, A., Maran, E., Gealy, J., & Bisconti, P. (2026). AI Agents Under EU Law. arXiv preprint arXiv:2604.04604. https://arxiv.org/abs/2604.04604
+
+- National Information Security Standardization Technical Committee (TC260). (2025). Artificial Intelligence Safety Governance Framework (Version 2.0). Released September 2025. Cyberspace Administration of China.
+
+- Organisation for Economic Co-operation and Development (OECD). (2024). Recommendation of the Council on Artificial Intelligence (updated May 2024). OECD Legal Instruments, OECD/LEGAL/0449. https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL -0449
+
+- OWASP Foundation. (2025, December 9). OWASP Top 10 for Agentic Applications 2026. OWASP GenAI Security Project. https://genai.owasp.org/resource/owasp-top-10-for-agentic -applications-for-2026/
+
+- Pandit, H. J., & Golpayegani, D. (Eds.). (2026). AI Technology Concepts (Data Privacy Vocabulary v2.3 AI Extension). W3C Data Privacy Vocabularies and Controls Community Group Final Report, February 2026. https://w3id.org/dpv/2.3/ai
+
+- Raji, I. D., Smart, A., White, R. N., Mitchell, M., Gebru, T., Hutchinson, B., Smith-Loud, J., Theron, D., & Barnes, P. (2020). Closing the AI Accountability Gap: Defining an end-to-end framework for internal algorithmic auditing. Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT '20), 33-44. https://doi.org/10.1145/3351095.3372 873
+
+- Slattery, P., Saeri, A. K., Grundy, E. A. C., Graham, J., Noetel, M., Uuk, R., Dao, J., Pour, S., Casper, S., & Thompson, N. (2026). The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence. Patterns. https://doi.org/10.1016/j.patter .2026.101517
+
+- Tabassi, E. (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0) (NIST AI 100-1). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.AI. 100-1
+
+- Wang, B., Chen, W., Pei, H., Xie, C., Kang, M., Zhang, C., Xu, C., Xiong, Z., Dutta, R., Schaeffer,
+
+<!-- PageFooter: 27 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 28>>>
+R., Truong, S. T., Arora, S., Mazeika, M., Hendrycks, D., Lin, Z., Cheng, Y., Koyejo, S., Song, D., & Li, B. (2023). DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models. Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track. arXiv:2306.11698. https://arxiv.org/abs/2306.11698
+
+- Zeng, Y., Klyman, K., Zhou, A., Yang, Y., Pan, M., Jia, R., Song, D., Liang, P., & Li, B. (2024). AI Risk Categorization Decoded (AIR 2024): From Government Regulations to Corporate Policies. arXiv preprint arXiv:2406.17864. https://arxiv.org/abs/2406.17864
+
+<!-- PageFooter: 28 -->
+

@@ -1,0 +1,10 @@
+{
+  "request_hash": "9dfa30a4077eaf731e01217794cc4bd3856e06ef4cf18214f840c0fc6e5019c1",
+  "prompt_sha256": "01e020286c4645e6d3ce5bcf775c02d6dcacd2918e82a0bbb5cf71bbe76bccac",
+  "answer": "Suade Labs addresses domain knowledge requirements by adopting a human-in-the-loop approach for its AI solution, which requires a certain degree of domain knowledge from human experts to accurately interpret the results of the algorithm. Additionally, for tuning the AI model, Suade adopts a human-over-the-loop approach. This allows the AI model to be tuned to account for differing user preferences regarding whether the algorithm should favor false positives or false negatives, based on user research that indicated some users preferred one over the other.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNNW7XvcynIMCKtr5tb3JfXJHrg7",
+  "prompt_tokens": 9902,
+  "completion_tokens": 98,
+  "actual_usd": 0.0015440999999999999
+}

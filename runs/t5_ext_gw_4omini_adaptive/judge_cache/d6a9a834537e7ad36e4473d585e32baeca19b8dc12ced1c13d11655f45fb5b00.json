@@ -1,0 +1,14 @@
+{
+  "request_hash": "d6a9a834537e7ad36e4473d585e32baeca19b8dc12ced1c13d11655f45fb5b00",
+  "prompt_sha256": "2579cd00fdc75510b293a2d856f22a9e4cc4377ef70991abc201b84115ccb430",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNS401MKuF8OsNvB8cRLlJiwyCNL",
+  "prompt_tokens": 7283,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011206500000000002,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context mentions 'software bill of materials (SBOM)' in relation to provenance data tracking, but does not explicitly define 'SBOM' or its role in provenance data collection."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4e5937d642dacd823f47865438b06a7648d941d02a5181c4d64fe301a5923ad5",
+  "prompt_sha256": "e6d1475a5004def411c4e970040fa0b34f192414c8d369310378ad43d1acb3ac",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOSXYxLLFoeowk2sU5c3xg4Tki6Q",
+  "prompt_tokens": 8388,
+  "completion_tokens": 51,
+  "actual_usd": 0.0012887999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on how Near-moderated Posts are selected using embedding-based retrieval and describes the annotation process that follows official BMS definitions, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "600d55db276fb5c88a6a834b7a2f00ee636668d72cf837ce2c93b1c8010fc3ba",
+  "prompt_sha256": "d1361af93ca8f518e6d6c782318d21de7dcad083f9a049e739409442bfeac0a5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei27Zz7GECTLZVWzuOMTPv2WdvIOS",
+  "prompt_tokens": 6749,
+  "completion_tokens": 58,
+  "actual_usd": 0.00104715,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by mentioning the establishment of AI regulatory sandboxes for testing and experimentation, but it does not explicitly state that these sandboxes are specifically for new business models or that they support additional Digital Innovation Hubs."
+  }
+}

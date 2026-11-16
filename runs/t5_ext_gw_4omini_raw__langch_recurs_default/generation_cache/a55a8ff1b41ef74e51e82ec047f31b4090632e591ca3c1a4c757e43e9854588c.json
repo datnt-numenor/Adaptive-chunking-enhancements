@@ -1,0 +1,10 @@
+{
+  "request_hash": "a55a8ff1b41ef74e51e82ec047f31b4090632e591ca3c1a4c757e43e9854588c",
+  "prompt_sha256": "4d61a5dfb58f0db50ebebec7eb3fb09be5eb68be53ed4c0526cbb3d0392905ba",
+  "answer": "ArXiv 2609.03178 describes the limitations of capability-centric evaluations for frontier AI risk as follows:\n\n1. **Indirect Measures of Risk**: Capability-centric evaluations do not provide direct measures of risk. They often rely on static benchmarks to trigger mitigation responses once predefined thresholds are reached, assessing only the existence of capabilities rather than the probability or severity of actual resulting harms to society.\n\n2. **Failure to Assess Absolute Risk**: These evaluations do not answer questions regarding the absolute risk of a system or whether proposed mitigations are commensurate with the threat.\n\n3. **Imperfect Proxies**: Benchmarks used in these evaluations may conflate disparate underlying capabilities and often suffer from issues related to construct validity and reproducibility.\n\n4. **Benchmark Saturation**: There are increasing issues with benchmark saturation, which introduces significant epistemic ambiguity into the assessment process, limiting its utility for high-stakes decision-making.\n\nOverall, the document emphasizes that capability-centric evaluations are insufficient for capturing the underlying causal structure or the full magnitude of risks associated with frontier AI systems.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJQNoNyib1BTUWMhYsgbfcDZ8u6",
+  "prompt_tokens": 8008,
+  "completion_tokens": 214,
+  "actual_usd": 0.0013296000000000002
+}

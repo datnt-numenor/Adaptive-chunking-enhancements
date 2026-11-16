@@ -1,0 +1,14 @@
+{
+  "request_hash": "366ec77f84e07c5c5e043670391e147149456972652aacb0ac0db98cbeb7a230",
+  "prompt_sha256": "cd2c98a693cc6a1319f3cd6ac50f0d88cb0c021b7726fd1c4e1e6335c9e71104",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNqBYTbfhrCqKgtQm52vHAK7tfcT",
+  "prompt_tokens": 6371,
+  "completion_tokens": 40,
+  "actual_usd": 0.0009796499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the obligations of GPAI providers to maintain updated documentation on evaluation results and related information."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "d2b7f879738c7c46f0d8b7d44284d199cc2234e0b9cd7df4770cfd45789010ad",
+  "prompt_sha256": "f0735bd7981c68d9f58f191e7084c677de0bd237a2d6dc45bb19ee3630622946",
+  "answer": "The Factor Analysis of Information Risk (FAIR) framework provides a structured method for estimating probability distributions over factors such as threat event frequency, vulnerability, and loss magnitude, enabling Monte Carlo aggregation to an overall risk estimate. It decomposes cyber risk into a hierarchy of factors, allowing for a more rigorous quantification that can express risk in financial terms.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJKMTVbOfeBcJtXYitCWk3zsZKn",
+  "prompt_tokens": 9610,
+  "completion_tokens": 69,
+  "actual_usd": 0.0014829
+}

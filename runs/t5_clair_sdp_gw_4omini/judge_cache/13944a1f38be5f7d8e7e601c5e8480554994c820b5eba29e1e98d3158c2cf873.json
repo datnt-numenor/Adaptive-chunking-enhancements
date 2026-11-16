@@ -1,0 +1,14 @@
+{
+  "request_hash": "13944a1f38be5f7d8e7e601c5e8480554994c820b5eba29e1e98d3158c2cf873",
+  "prompt_sha256": "373477b379fac56ed17a844bf48cea70c6e6284f127f56be113d31ea0234484a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOp5TAsd5wlvWZS7AJf06DNsgduC",
+  "prompt_tokens": 8630,
+  "completion_tokens": 36,
+  "actual_usd": 0.0013161,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics on the perception of AI among different age groups, fully supporting the claims made in the Reference Answer."
+  }
+}

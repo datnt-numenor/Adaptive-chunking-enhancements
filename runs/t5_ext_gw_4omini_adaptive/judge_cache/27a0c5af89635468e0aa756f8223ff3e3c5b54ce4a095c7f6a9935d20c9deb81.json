@@ -1,0 +1,14 @@
+{
+  "request_hash": "27a0c5af89635468e0aa756f8223ff3e3c5b54ce4a095c7f6a9935d20c9deb81",
+  "prompt_sha256": "8ba8433e746952138820081d4fc2dfb7eab00f57adb163ab113a673c0914ed26",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOI5Kd3KbeCaeJsVVdEOH7lPZUDB",
+  "prompt_tokens": 8916,
+  "completion_tokens": 36,
+  "actual_usd": 0.0013589999999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the two main types of costs associated with evaluations: development costs and execution costs."
+  }
+}

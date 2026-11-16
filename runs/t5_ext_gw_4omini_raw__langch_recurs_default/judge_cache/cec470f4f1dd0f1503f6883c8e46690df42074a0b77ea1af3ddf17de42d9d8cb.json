@@ -1,0 +1,14 @@
+{
+  "request_hash": "cec470f4f1dd0f1503f6883c8e46690df42074a0b77ea1af3ddf17de42d9d8cb",
+  "prompt_sha256": "69c952e50d84e55271e89aabfdc90e1ffac571be27e7e98ca938f96c4c6cdf14",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNssfDIop12daDAhFncIKW5dZrlF",
+  "prompt_tokens": 7179,
+  "completion_tokens": 41,
+  "actual_usd": 0.00110145,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining the concept fria:FRIANotificationNotSent and its relevance within the FRIA notification process."
+  }
+}

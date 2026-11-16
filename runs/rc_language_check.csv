@@ -1,0 +1,34 @@
+doc_name,language,entity_pron_pairs,rc_our_recurs_1100,rc_our_recurs_600,rc_page,rc_llm_regex,score_our_recurs_1100,score_our_recurs_600,score_page,score_llm_regex,selected_with_rc,selected_without_rc,margin_with_rc,selection_changes
+Ada (technique)_Discussion Paper Hamburg DPA KI Models,en,57,1.0,1.0,1.0,1.0,90.84,89.5,91.84,90.94,page,page,0.9,False
+Ada (technique)_Recommandations de sécurité pour un système d'IA générative,fr,0,,,,,88.68,86.77,89.37,88.31,page,page,0.69,False
+Ada (technique)_Standards - Explicability,en,11,1.0,1.0,1.0,1.0,91.69,91.04,90.99,91.04,our_recurs_1100,our_recurs_1100,0.65,False
+Ada (technique)_Standards - Interpretability,en,84,1.0,0.9642857142857143,0.9880952380952381,1.0,89.9,88.67,89.66,89.9,llm_regex,llm_regex,0.0,False
+Ada (technique)_Standards - Robustness,en,19,1.0,1.0,1.0,1.0,91.65,91.23,91.39,90.63,our_recurs_1100,our_recurs_1100,0.26,False
+Ada (technique)_Standards - Security,en,27,1.0,1.0,1.0,1.0,90.81,90.91,90.86,91.42,llm_regex,llm_regex,0.5,False
+Ada (technique)_Standards - Sustainability,en,62,0.9193548387096774,0.967741935483871,0.8548387096774194,0.9193548387096774,89.11,89.96,87.79,89.19,our_recurs_600,llm_regex,0.77,True
+Ada (technique)_Standards - Transparency,en,10,1.0,0.9,0.9,0.9,90.89,86.95,87.33,87.6,our_recurs_1100,our_recurs_1100,3.29,False
+Ada (technique)_Standards - Vigilance,en,20,1.0,1.0,1.0,1.0,92.01,91.76,91.6,92.05,llm_regex,llm_regex,0.05,False
+Norma (légal)_Artificial Intelligence for Europe,en,94,0.9893617021276596,0.9680851063829787,0.9893617021276596,0.9893617021276596,90.62,87.86,91.17,89.83,page,page,0.56,False
+Norma (légal)_CCPA Act,en,156,0.9807692307692307,0.9743589743589743,0.9551282051282052,0.9743589743589743,90.22,88.94,90.61,90.33,page,page,0.27,False
+Norma (légal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3,en,27,1.0,0.9259259259259259,1.0,1.0,90.44,87.96,90.88,90.67,page,page,0.21,False
+Norma (légal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1,en,175,0.9828571428571429,0.9314285714285714,0.9428571428571428,0.9885714285714285,91.31,89.27,90.75,91.08,our_recurs_1100,page,0.24,True
+Norma (légal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2,en,25,0.96,0.96,0.96,0.96,90.59,87.85,91.36,90.38,page,page,0.76,False
+"Norma (légal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",en,73,1.0,0.9863013698630136,0.9589041095890412,0.9863013698630136,91.88,90.83,91.06,91.0,our_recurs_1100,page,0.82,True
+Norma (légal)_EDPB statement on data protection authorities,en,14,1.0,1.0,1.0,1.0,90.68,90.59,92.55,90.94,page,page,1.61,False
+Norma (légal)_EDPS Generative AI guidelines,en,12,1.0,1.0,1.0,1.0,90.49,90.49,91.31,90.49,page,page,0.82,False
+Norma (légal)_Entrée en vigueur du règlement européen sur l’IA - CNIL,fr,0,,,,,89.75,88.74,90.76,90.67,page,page,0.08,False
+Norma (légal)_European Convention On Human Rights,en,157,0.9872611464968153,0.9554140127388535,0.9617834394904459,0.9171974522292994,90.32,89.67,89.52,88.49,our_recurs_1100,our_recurs_1100,0.65,False
+Norma (légal)_GDPR,en,642,0.985981308411215,0.9750778816199377,0.985981308411215,0.9906542056074766,92.11,90.36,92.63,91.44,page,page,0.52,False
+Norma (légal)_Harmonising AI - OXIL,en,210,0.9952380952380953,0.9761904761904762,0.9571428571428572,0.9952380952380953,90.77,89.89,90.57,91.06,llm_regex,page,0.28,True
+Norma (légal)_Les fiches pratiques IA -  CNIL,fr,1,1.0,1.0,1.0,1.0,90.93,89.47,91.74,90.07,page,page,0.81,False
+Norma (légal)_Provider Guidelines - European Commission,en,199,1.0,0.9899497487437185,0.9547738693467337,0.9949748743718593,93.17,91.31,92.33,92.39,our_recurs_1100,page,0.78,True
+Norma (légal)_The AI Act,en,986,0.9827586206896551,0.9634888438133874,0.9716024340770791,0.9726166328600405,91.63,89.9,91.75,91.15,page,page,0.12,False
+Norma (légal)_Verification for International AI Governnace,en,980,0.9959183673469387,0.9928571428571429,0.9897959183673469,0.9948979591836735,90.44,88.89,90.89,90.02,page,page,0.45,False
+Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands,en,239,0.99581589958159,0.9790794979079498,0.9832635983263598,0.9874476987447699,90.72,89.38,89.61,89.88,our_recurs_1100,our_recurs_1100,0.84,False
+"Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",en,234,0.9914529914529915,0.9829059829059829,0.9829059829059829,0.9743589743589743,89.49,88.42,88.88,88.25,our_recurs_1100,our_recurs_1100,0.61,False
+Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world,en,91,0.945054945054945,0.9340659340659341,0.9230769230769231,0.945054945054945,88.42,86.92,87.57,88.42,llm_regex,llm_regex,0.0,False
+Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative,fr,11,1.0,0.9090909090909091,0.9090909090909091,0.9090909090909091,89.36,85.66,87.31,87.16,our_recurs_1100,our_recurs_1100,2.05,False
+Sophia (sciences sociales)_Livre blanc - Impact AI,fr,1,1.0,1.0,1.0,1.0,88.76,88.18,88.94,88.76,page,page,0.18,False
+Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE,fr,6,1.0,1.0,1.0,1.0,90.1,88.68,91.06,90.1,page,page,0.96,False
+Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI,en,3078,0.9753086419753086,0.9558154645873944,0.9704353476283301,0.9753086419753086,90.98,88.71,91.36,90.98,page,page,0.38,False
+Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape,en,95,0.9894736842105263,0.9368421052631579,0.9789473684210527,0.9894736842105263,89.82,87.55,88.81,89.82,llm_regex,llm_regex,0.0,False

@@ -1,0 +1,14 @@
+{
+  "request_hash": "a7beb5cdf127802776ce905a9685bac2d04f8a258df373ca2df2dcae3d516b94",
+  "prompt_sha256": "e52f1820617796d1c729057f8b8a646163634466bf0a3ae50a47531c1444782d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOAXiifbDOnGKEoQdgSDuWYnGZLp",
+  "prompt_tokens": 8693,
+  "completion_tokens": 34,
+  "actual_usd": 0.0013243500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer regarding the critiques of the IAEA model for AI governance."
+  }
+}

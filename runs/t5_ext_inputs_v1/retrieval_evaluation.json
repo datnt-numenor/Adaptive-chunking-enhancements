@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "qa_count": 438,
+  "input_qa_sha256": "f5b127f4bd890c15d29d2b53fc83b9a6ac177e3ca195516f6c782978618c6159",
+  "input_retrieval_sha256": {
+    "adaptive@plain": "e89dd7ad35bf914d4bbe7599d84bce7f107a251d2168b9463e363a9ac3c3b1cd",
+    "sdp_a_t600@plain": "54378f97691c82a279ba1a4377408bf27a6ba4e5ddaf4848a8d0879f08e48be6",
+    "sdp_b@plain": "9407178cd3457f11432a59b516dc7b5368515feaa511b29d858b1fc272672999",
+    "raw__langch_recurs_default@plain": "a8b8c8990cb7a48c91e0c66ea8574f55cfa276b61a2815c44135fa57d754c0e3"
+  },
+  "derived_from": {
+    "qa_frozen": "runs\\qa_ext_v1\\qa_frozen.jsonl",
+    "qa_frozen_sha256": "1a7c1d78e2de55d73a38d3fe05d9218cdeedac8fc2394d4917c42dc0e3bf72ef",
+    "retrieval_run": "runs\\gpu_retrieval_ext_4b_results\\extracted_verified\\out\\ext_4b_part0"
+  }
+}

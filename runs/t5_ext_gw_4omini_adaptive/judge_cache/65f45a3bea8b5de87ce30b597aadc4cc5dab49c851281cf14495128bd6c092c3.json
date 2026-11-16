@@ -1,0 +1,14 @@
+{
+  "request_hash": "65f45a3bea8b5de87ce30b597aadc4cc5dab49c851281cf14495128bd6c092c3",
+  "prompt_sha256": "d0f8d4875c36150ca0043068ac68b2b8c3a06dd5394e7fbfe352001f50015d24",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO4Ohi9tUCBefdQfrlQBFTLTlA2D",
+  "prompt_tokens": 10177,
+  "completion_tokens": 44,
+  "actual_usd": 0.00155295,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the two main types of guardrails on AI use: requirements for disclosure and discouragement or prohibition of AI use."
+  }
+}

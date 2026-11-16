@@ -1,0 +1,14 @@
+{
+  "request_hash": "e321492501419f349bd0629a4b3cab918bb4d2d0ab9a17f20b0cc16d1feaa1f3",
+  "prompt_sha256": "48a79acc323cc41eb9896ad2ed41052f0f42b151fbb07b6c693921ad2140a936",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8wEyZSN89wwsDN7zH7cT21Wa5L",
+  "prompt_tokens": 6950,
+  "completion_tokens": 51,
+  "actual_usd": 0.0010731,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data indicating that over 75% of software companies mention AI in both the Business and Risk sections of their 10-K filings, directly supporting the claim made in the Reference Answer."
+  }
+}

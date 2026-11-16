@@ -1,0 +1,14 @@
+{
+  "request_hash": "96cc091143508bb97cdcf42a0fb3de37aedc5bc4cdb0b3f019e227dda1e533b6",
+  "prompt_sha256": "06731c0b5c080cb5d5e6e49337b6248cfdc7b062f966964cc8d224bebf716b57",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOEeMFEMq3IF4opk3KW5G0R7uzHz",
+  "prompt_tokens": 8115,
+  "completion_tokens": 45,
+  "actual_usd": 0.00124425,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context explicitly supports the claim in the reference answer by stating that AGI labs should avoid releasing models in ways likely to create hype, such as by overstating results."
+  }
+}

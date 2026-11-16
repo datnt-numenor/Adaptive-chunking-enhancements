@@ -1,0 +1,14 @@
+{
+  "request_hash": "d51645258748a089e69e163f1de2dc0b45f322efcdeec3a584dd865ac63299d2",
+  "prompt_sha256": "b0b5c87167e82de09ad5a66e19679f6f428b77d30b1bb477f306b84482d17b2d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOSAJMs6xeDctl0FXEGbIauRLtQA",
+  "prompt_tokens": 7175,
+  "completion_tokens": 35,
+  "actual_usd": 0.00109725,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed evidence and analysis supporting the claim in the Reference Answer regarding the measured effect of the watermark on prose."
+  }
+}

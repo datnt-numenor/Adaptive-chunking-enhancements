@@ -1,0 +1,406 @@
+DOCUMENT: arXiv 2508.19313 Are Companies Taking AI Risks Seriously A Systematic Analysis of Compa
+
+<<<PAGE 1>>>
+<!-- PageHeader: arXiv:2508.19313v1 [cs.CY] 26 Aug 2025 -->
+
+# Are Companies Taking AI Risks Seriously? A Systematic Analysis of Companies' AI Risk Disclosures in SEC 10-K forms⋆
+
+Lucas G. Uberti-Bona Marin⋆⋆[0000-0001-6518-9535] Bram Rijsbosch∗∗[0009-0000-0803-211X] Gerasimos Spanakis[0000-0002-0799-0241] Konrad Kollnig[0000-0002-7412-8731]
+
+Law and Tech Lab, Maastricht University, the Netherlands
+
+Abstract. As Artificial Intelligence becomes increasingly central to corporate strategies, concerns over its risks are growing too. In response, regulators are pushing for greater transparency in how companies identify, report and mitigate AI-related risks. In the US, the Securities and Exchange Commission (SEC) repeatedly warned companies to provide their investors with more accurate disclosures of AI-related risks; recent enforcement and litigation against companies' misleading AI claims reinforce these warnings. In the EU, new laws - like the AI Act and Digital Services Act - introduced additional rules on AI risk reporting and mitigation. Given these developments, it is essential to examine if and how companies report AI-related risks to the public.
+
+This study presents the first large-scale systematic analysis of AI risk disclosures in SEC 10-K filings, which require public companies to report material risks to their company. We analyse over 30,000 filings from more than 7,000 companies over the past five years, combining quantitative and qualitative analysis.
+
+Our findings reveal a sharp increase in the companies that mention AI risk, up from 4% in 2020 to over 43% in the most recent 2024 filings. While legal and competitive AI risks are the most frequently mentioned, we also find growing attention to societal AI risks, such as cyberattacks, fraud, and technical limitations of AI systems. However, many disclosures remain generic or lack details on mitigation strategies, echoing concerns raised recently by the SEC about the quality of AI-related risk reporting. To support future research, we publicly release a web-based tool for easily extracting and analysing keyword-based disclosures across SEC filings.
+
+# 1 Introduction
+
+Artificial Intelligence is rapidly transforming industries, with companies increasingly adopting AI at the core of their businesses. Yet, as AI technologies become more powerful and widely used, societal concerns are growing too [5,8,18].
+
+\* ⋆ To be published at the SoGood workshop of ECML PKDD 2025
+
+\* ⋆⋆ Equal contribution
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+<!-- PageHeader: 2 Uberti-Bona Marin et al., 2025 -->
+
+<Figure>
+Fig. 1: Percentage of companies mentioning AI in the Risks and Business sections of 10-K filings, showing how companies embrace AI and mention risks.
+</Figure>
+
+These growing concerns have intensified calls for stronger regulatory oversight and greater corporate accountability in how AI is developed and used [5]. In response, recent legal initiatives, such as the 2024 EU AI Act and the 2022 EU Digital Services Act [2,1], have introduced new requirements for companies to identify, assess and disclose AI-related risks. In the United States, the Securities and Exchange Commission (SEC) has repeatedly cautioned companies against "AI-washing", stressing the need for more accurate disclosures of AI risks [22,28,26,30]. Recent SEC enforcement and private litigation against misleading AI claims reinforce these warnings [3,32]. Given these developments, it is essential to examine if and how companies currently report on AI-related risks in legally mandated public disclosures.
+
+This study therefore presents the first systematic large-scale empirical analysis of AI risk disclosures in SEC 10-K filings, annually submitted by all public companies in the US. 10-K filings require firms to provide a comprehensive overview of their business, including "information about the most significant risks that apply to the company or to its securities" [24]. Insufficient SEC 10-K disclosures may breach US securities law, potentially leading to litigation or even criminal charges against companies' executives [24,3]. This leads to generally high quality of the disclosures. Companies subject to these disclosures include major tech companies (e.g. Microsoft, NVIDIA and Apple) and also large nontech companies (e.g., Coca-Cola and Walmart).
+
+Prior research on corporate risk reporting in SEC filings - particularly in the context of climate change and cybersecurity - has shown that companies often downplay risks until regulatory efforts force greater transparency [14,15,19,16,6,21].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 3 -->
+
+While several industry-led reports have noted a rise in AI-related (risk) mentions within subsets of SEC filings [20,33,12,4,9], these analyses generally lack methodological rigour and transparency, scale, and data from the most recent filings (covering reporting year 2024). As public concern and regulatory scrutiny over AI risks continue to grow, a clear gap remains in our understanding of how firms currently frame and disclose AI-related risks in legally mandated disclosures.
+
+To address this gap, we conduct a comprehensive analysis of 10-K filings from more than 7,000 public US companies over the past five years. We address two research questions:
+
+- RQ1 (Quantity of Disclosures): How commonly do public US companies disclose AI use and risks in their 10-K filings, and how has this evolved over the past five years?
+
+- RQ2 (Substance of Disclosures): What types of AI-related risks do public US companies disclose and how do these disclosures align with broader societal concerns about AI?
+
+Our contributions are twofold:
+
+1. Empirical insights and dataset of AI risks. Our findings provide an empirical foundation for shaping discussions on how to ensure that company AI risk disclosures support meaningful transparency and accountability. We share our annotated dataset to facilitate future research.
+
+2. Web tool for analysing topical disclosures in SEC filings. We introduce a publicly available web tool that allows users to extract and analyse topical disclosures across SEC filings easily, supporting further research.
+
+The remainder of this paper is organised as follows. Section 2 provides background on SEC filings and reviews related work on risk disclosures in SEC filings. Section 3 presents the methodology and findings from the large-scale trend analysis (RQ1). Section 4 reports on our deep-dive analysis looking at what specific AI risks are being disclosed by companies (RQ2). We close by summarising our findings and discussing their implications for policy and regulation.
+
+# 2 Background
+
+This section provides context on SEC 10-K filings and reviews prior work on (AI) risk disclosures analyses of 10-K filings.
+
+# 2.1 SEC 10-K filings and US securities law
+
+Under US securities law, all public companies must annually file 10-K reports. These are comprehensive disclosures of a company's business, operations, risks, and financial performance [25]. 10-K filings typically offer more detail than annual reports and all filings are publicly available via the Edgar database [25,31].
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+<!-- PageHeader: 4 Uberti-Bona Marin et al., 2025 -->
+
+10-K filings follow a standardised format. Two key sections include: 1) The Business section (known as "item 1"), which describes a company's main operations, products, services, and markets, and 2) the Risk Factors section ("item 1A"), where companies are legally required to disclose the most significant risks that apply to a company or its securities [25].
+
+Filings are legally binding. False or incomplete disclosures can lead to SEC enforcement, private litigation, or even criminal charges. As such, these reports tend to contain detailed descriptions of risks, with for example an average of 13 pages of risk-related content in recent filings of Fortune 500 companies [12].
+
+The SEC plays an active role in reviewing filings and enforcing disclosure rules, with 583 enforcement actions and $8.2 billion in financial remedies in fiscal year 2024 alone [29]. In recent years, the SEC has placed growing emphasis on AI-related disclosures. Former SEC chair Gary Gensler has repeatedly warned companies against "AI-washing" (exaggerated or misleading claims about AI), emphasising the need for more truthful, tailored and complete disclosures of AI activities and risks [22,28,26]. The 2024 disclosure review further outlines the SEC's expectations for 2025, which includes properly defining AI use, disclosing more company-specific AI risks, and substantiating AI claims. [30].
+
+Several recent enforcement actions by the SEC targeting companies that made false or misleading AI-related statements have already resulted in fines [3,32]. At the same time, shareholder lawsuits have been filed against companies accused of failing to adequately inform about risks associated with their use of AI [3]. These developments highlight the growing regulatory attention and underscore the relevance of this data source.
+
+# 2.2 Prior research on risk disclosures in SEC filings
+
+There is extensive prior research that has looked at how companies disclose systematic or emerging risks in their 10-K filings. Studies on climate risks, for instance, show that companies have in the past often under-reported these risks until regulatory interventions forced more robust reporting [14,15]. Similar patterns have been observed in studies on cybersecurity disclosures [19,16]. In both domains, empirical research has contributed to the SEC issuing new guidance and rules to improve the quality and consistency of disclosures.
+
+Studies in the cybersecurity domain have shown that companies extend their risk reporting following the release of new SEC guidelines [19,16,6,21]. However, there is an ongoing debate whether this also improves the quality of those disclosures [21,15]. In light of these concerns, the SEC adopted new rules in 2023 to further standardise cybersecurity risk disclosures, which includes requirements for reporting on governance and risk management strategies [27].
+
+Despite widespread public concerns about AI risks, only a handful of (mostly industry-led) studies empirically explored AI-related mentions in 10-K filings [20,33,12,4,9,7,13]. These studies generally find rapid increases in AI (risk) mentions in recent years, with legal, regulatory, competitive and cybersecurity risks emerging as the most common AI risk themes. However, the industry-led reports generally lack methodological rigour and transparency (such as listing the keywords used, or describing how risks are assessed), and often do not go beyond high-level frequency analysis of a single year. Plus, none of the existing studies use data from 2025, or consider (in detail) how societal/ethical AI risks, specifically, are addressed. A summary comparison of existing reports and studies is provided in Figure 2.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 5 -->
+
+In contrast, our study aims to provide a more comprehensive, systematic, and transparent analysis of AI risk disclosures across five years of 10-K filings. We seek to provide a clearer understanding of how AI risks are currently perceived, framed, and reported in legally mandated corporate disclosures.
+
+# 3 General trends in AI disclosures
+
+This section addresses RQ1: How commonly do public US companies disclose AI use and risks in their 10-K filings, and how has this evolved over the past five years?
+
+Our aim is to provide a systematic overview of how widespread AI-related disclosures have become in SEC 10-K filings and how the framing of these disclosures - particularly in terms of AI risks versus AI as part of the companies main business operations - may have changed in recent years due to technological developments, growing societal concerns and increasing regulatory scrutiny in the field of AI.
+
+# 3.1 Methodology: large-scale keyword analysis
+
+To examine how AI-related disclosures in 10-K filings have evolved over time, we conducted a large-scale keyword analysis of all SEC 10-K filings submitted by publicly traded US companies over the last five years. These filings cover reporting years 2020 through 2024 and amount to an average of approximately 7,000 filings per year. The data was extracted on 1 April 2025, by which point companies following a calendar fiscal year were required to have submitted their 2024 filings.
+
+The SEC requires that 10-K filings follow a standardised structure, as illustrated in Figure 5 of Appendix A. Next to covering overall AI-related mentions, we focus our trend analysis in particular on two sections of the 10-K filings: the Business section and the Risk Factors section, as detailed in Section 2.1. These two sections are particularly relevant to understand how companies look at AI developments. Mentions in the Business section likely indicate that firms view AI as a strategic asset or core part of their operations. Mentions in the Risk Factors section, on the other hand, reveal whether companies perceive AI risks to be significant to their business operations or securities [24]. Our methodological choice is also supported by the fact that we found that 91% of AI mentions occur in these two sections.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+<!-- PageHeader: 6 Uberti-Bona Marin et al., 2025 -->
+
+# Data Collection and Tooling
+
+To collect and structure the filings, we extended the existing Edgar-Crawler tool for downloading and parsing SEC filings [17]. To this end, we build a custom extension designed specifically for large-scale keyword analyses of SEC 10-K filings. Our extension supports structured keyword extraction using regular expressions, sentence-level filtering and output formatting in an Excel format to facilitate easy inspection and annotation. To improve accessibility of SEC-filings, we also developed a web-based interface for our tool that enables non-technical users to search SEC filings by keywords, companies, year, and section, and export matched results directly in Excel format (see Figure 9) in Appendix G). The tool - including code and documentation - is publicly available to ensure reproducibility and support future research.
+
+# Keyword matching
+
+Using this tool, we applied a list of AI-related keywords (e.g., AI, artificial intelligence, machine learning, deep learning) to the full dataset. The complete keyword list is added in Appendix A. This process identified over 110,000 keyword matches and 50,700 unique AI-related sentences across all filings.
+
+To assess the precision of our keyword matching, we manually reviewed a random sample of 385 keyword matches. Only two were found not to refer to artificial intelligence. Based on this, we estimate with 95% confidence that at least 98.78% of our 110,000 keywords matches are truly AI-related. As this evaluation method does not estimate recall, our findings likely represent a slightly conservative estimate of how often companies refer to AI in their disclosures.
+
+# 3.2 Results: How are companies considering AI in their 10-K filings?
+
+We assess how companies disclose AI in their 10-K filings using two main indicators: the percentage of companies mentioning AI at least once (Table 1), and the average number of unique AI-related sentences per filing among those that include at least one AI-mention (Table 1). These metrics capture both the spread and prominence of AI in corporate disclosures. Both metrics are normalised by the number of filings per year, to account for the changing number of companies each year.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 7 -->
+
+<Table>
+|   Reporting year | Companies Avg. unique that mention AI sentences about AI   |
+|-----------------:|:-----------------------------------------------------------|
+|             2020 | 12.97% 4.96                                                |
+|             2021 | 17.10% 5.98                                                |
+|             2022 | 18.89% 6.25                                                |
+|             2023 | 34.90% 7.48                                                |
+|             2024 | 50.60% 9.27                                                |
+</Table>
+
+The share of companies reporting on AI in their filings has more than doubled between 2022 and 2024, with over 50% of companies now mentioning AI, indicating that AI is becoming a more standard and important topic for companies. At the same time, the average number of AI-related sentences per 10-K filing (with at least one AI-mention) has steadily increased each year, showing - next to a rise in companies talking about AI - also the growing prominence of the topic in disclosures.
+
+# Risk vs business mentions
+
+We next analyse how companies frame AI in their filings by comparing AImentions across the Business and Risk Factors sections.
+
+As shown in Figure 1, mentions of AI in the Business section have increased steadily: from 12% of firms in 2020 to nearly 25% in 2024. This indicates AI's growing role in company's operations, especially considering the recent warnings and enforcement actions by the SEC regarding "AI washing" in disclosure filings.
+
+More notably, AI risk disclosures have grown more dramatically, confirming trends from existing reports over the previous years. In 2024, 43% of companies mentioned AI in their Risk Factors section - a sevenfold increase since 2022. At the same time, the total number of AI risk-related mentions has grown by more than 950% from 2022 to 2024. We see an average of 2.7 unique AI-risk sentences per company in 2024. These trends suggest that firms are not only adopting AI in their business operations, but are also increasingly aware of the risks posed by AI.
+
+Interestingly, 26% of all companies mention AI in their Risk Factors section but not in their Business section. This suggests that even firms that likely do not view AI as a core part of their business operations may still perceive significant risks associated with it. By contrast, only 7% of companies mention AI in their Business section without addressing it in their Risk section.
+
+# Differences across industries
+
+Using SEC industry classification codes (SIC), we analyse how AI disclosures vary across sectors. Figure 3 presents the percentage of companies within the 15 most represented industries (based on 10-K filings) that mention AI in their Business and Risk sections. As expected, software companies (e.g., Apple, SAP, Cisco, Microsoft) lead in both categories, with over 75% referencing AI in both sections. High percentages of AI disclosure in the business section are also found in the business services, finance services, pharmaceutical, semiconductor, and medical sectors. In contrast, industries such as banking, real estate, and electrical equipment have relatively low levels of AI-related business mentions, despite more frequent acknowledgments of AI-related risks.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+<!-- PageHeader: 8 Uberti-Bona Marin et al., 2025 -->
+
+<Figure>
+Fig. 3: Percentage of companies mentioning AI in Risks vs. Business sections of 10-K filings in 2024 for the top 15 most represented industry sectors (per SIC code) in 10-K filings
+</Figure>
+
+Looking at trends over time, we observe sharp increases in AI-related risk disclosures between 2022 and 2024 in the pharmaceutical, electric services, banking, and real estate sectors. Given the size of these sectors, this contributes significantly to the overall growth in the percentage of companies disclosing AI risks. Detailed industry trends over time are presented in Figure 6 of Appendix D.
+
+# 4 Qualitative analysis of AI risk disclosures
+
+Building on the trend analysis of Section 3, we now turn to examining the content of AI risk disclosures. To address RQ2: What types of AI-related risks do public US companies disclose and how do these disclosures align with broader societal concerns about AI?, we conduct a qualitative analysis of a subset of AI-related risk statements.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 9 -->
+
+# 4.1 Methodology
+
+From the AI-related risk sentences extracted in Section 3, we selected a sample of statements for the manual qualitative analysis. The sample includes filings from companies across three different groups:
+
+1. Random Group: A random sample of 20 companies from various industries and sizes, to capture general patterns in AI risk narratives.
+
+2. Top-Tech Group: The 10 largest publicly listed US tech firms (by market capitalisation), to examine how leading tech and AI companies frame AI risks and whether these align with societal concerns.
+
+3. Risk Only Group: A random sample of 20 companies that mentioned AI in their Risk section for the first time in 2024, while not mentioning AI in their Business section. This group provides insight into disclosures from firms that likely do not view AI as core part of their operations.
+
+A full list of the 50 companies is provided in Appendix B.
+
+We focused our qualitative analysis on the most recent filings (reporting year 2024), given the rising prominence of AI risks and the lack of existing studies that cover 2024 data. Our sample included 495 AI-related sentences: 42% from the Top-Tech Group, 37% from the Random Group, and 22% from the Risk Only Group. After removing non-risk-related content - such as section headers or vague mentions like "we use AI" - 444 sentences remained for the qualitative analysis.
+
+# Qualitative analysis of the data
+
+Next, we developed a structured labelling framework that combines a bottomup data-driven approach with a top-down, theory-informed taxonomy, which allowed us to systematically analyse both business-centric and societal AI risk statements.
+
+We began with an inductive thematic analysis [10] of a sample of AI-related risk statements (drawn from all three groups). Two researchers independently reviewed and coded this sample, using the categories from the existing reports on AI risks in 10-K filings as inspiration. We then iteratively developed a shared set of categories through discussion and refinement. This process yielded four dominant themes, three of which reflect business-orientated risks: (1) legal risks, (2) competitive risks, and (3) reputational risks. The other statements were grouped under the broader term of societal-relevant AI risks. Using the same strategy, we further developed sub-codes to capture frequently recurring topics for the business-oriented risks (e.g., regulatory uncertainty, IP issues, high investment costs).
+
+To systematically analyse the disclosures of the societal-relevant AI risk theme, we complemented our inductive bottom-up approach with a theory-driven approach. Specifically, we used the MIT AI Risk Domain Taxonomy developed by Slattery et al. [23], which offers a comprehensive set of AI risk domains and subcategories. This Taxonomy was developed on the basis of a synthesis exercise of over 60 AI risk frameworks and a large database of AI risks and incidents. While this taxonomy is not specifically designed to cover societal AI risks, many domains (e.g., misinformation, malicious use, technical limitations) align closely with societal concerns around AI, especially when seen in the light of the global-scale of operations of the companies in our samples. We therefore use this taxonomy to assess which societal risks are disclosed.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: 10 Uberti-Bona Marin et al., 2025 -->
+
+An overview of our four top-level risk category labels - legal, competitive, reputation and societal - is shown in Table 2, along with the sub-labels used in the coding process. To allow for a more in-depth assessment of the societal AI risk statements, we additionally used the subdomain categories of the MIT AI Risk Taxonomy in our labelling process, an overview of these are shown in Figure 7 Appendix E.
+
+<Table>
+| General risk categories   | Subcategories                                                                                                                                                                                 |
+|:--------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Legal AI risk             | Compliance costs Legal uncertainty & complexity (Potential) legal actions & liability IP concerns Other / general                                                                             |
+| Competitive AI risk       | Rapid developments Large investments needed Other / general                                                                                                                                   |
+| Reputational AI risk      | -                                                                                                                                                                                             |
+| Societal AI risk          | Discrimination & toxicity Privacy & security Misinformation Malicious actors & misuse Human-computer interaction Socioeconomic & environmental harms AI system safety, failures & limitations |
+</Table>
+
+# Labelling process
+
+Each sentence was annotated with one or more of the primary and sub-labels based on its content, hereby taking into account adjacent sentences and the broader context if necessary. The annotation was performed independently by two authors, using the shared coding guide. The inter-annotator agreement for the overall categories was: 90% for legal risks, 82% for competitive risks, 95.5% for reputational risks and 93% for societal risks. To account for agreement due to random chance, we also report Cohen's κ [11] for the risk categories, we obtain:
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 11 -->
+
+0.80 for the legal risks, 0.60 for competitive risks, 0.75 for reputational risks and 0.82 for societal risks. Disagreements were resolved through joint discussion. The results are presented in the next section.
+
+# 4.2 Results: What AI risks do companies disclose?
+
+# General overview of disclosed risk types
+
+Figure 4 shows how often companies in each group mention legal, competitive, reputational, or societal AI risks. Most top tech companies disclose all four risk types, though many firms in the other two groups also cite multiple categories, including societal AI risks.
+
+Table 3 reports the average number of AI-related sentences per risk category across the three company groups. Legal and competitive risks are the most commonly discussed, particularly among top tech firms.
+
+<Figure>
+Fig. 4: The percentage of companies in each sample group that mention legal, competitive, reputational, or societal AI risks in their 10-K filings.
+</Figure>
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: 12 Uberti-Bona Marin et al., 2025 -->
+
+# Legal and competitive risks
+
+Legal AI risks are the most widely disclosed. These cover regulatory uncertainty, increasing regulatory complexity, compliance burdens, and liability and IP issues. Legal AI risks are most frequently mentioned by the large tech firms, but the results show that such risks are generally shared broadly across all publicly traded firms. An example is the asset management company Blackstone Infrastructure Strategies, stating: "the EU adopted the Artificial Intelligence Act in 2024, ... which may create additional compliance burdens, higher administrative costs and significant penalties".
+
+Competitive AI risks are also widely shared. Many firms, especially in the top-tech sample, discuss the large uncertain investments that are needed to compete or stay ahead in the AI race. Firms in the random samples similarly express competitive AI concerns, including falling behind in AI innovation, losing market share due to new AI competitors, or failing to adopt AI fast enough
+
+# Societal AI risks
+
+Companies mention a wide range of societal AI risk, of which the most common themes include misuse by others (e.g., cyberattacks or fraud) and internal privacy/security issues due to AI use. One example is Baker Hughes, an energy technology company, stating "Cyberattacks are expected to accelerate on a global basis in both frequency and magnitude as threat actors become increasingly sophisticated in techniques and tools (including artificial intelligence)". Figure 8 in Appendix F presents the full breakdown of mentions per societal risk domain and sub-domain.
+
+Societal risk mentions are not exclusive to top tech firms. For example, technical limitations of AI systems (opacity, bias, robustness) are more frequently disclosed by non-tech companies. Similarly, risks related to discrimination and content toxicity are mentioned by about 30% of companies in both the random and top tech samples. In contrast, misinformation risk mentions appear more frequently in the top-tech group, likely due to the social media companies that are included in this sample.
+
+Some societal risk types remain absent in the disclosure data. We found no disclosures related to the environmental harms of AI, socioeconomic displacement due to AI, dangerous AI capabilities, multi-agent risks, or the pollution of the information ecosystem (e.g., via generative AI content). Figure 8 in Appendix F provides a full overview of disclosure statistics for each subdomain.
+
+# The framing of AI risk disclosures
+
+We also observed clear patterns in how risks are framed. The top-tech firms often seem to externalise societal AI risks, attributing them to third-party misuse (e.g., faulty datasets or misuse of their models), while rarely acknowledging their own role in developing and deploying systems that may contribute to these risks, particularly those stemming from technical limitations (e.g., bias, accuracy). When such risks are mentioned, they are typically described in general, or hypothetical terms. For example, Meta notes: "There are significant risks involved in developing and deploying AI and there can be no assurance that the usage of AI will enhance our products or services or be beneficial to our business, including our efficiency or profitability" and "We may not have insight into, or control over, the practices of third parties who may utilize such AI technologies".
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 13 -->
+
+The reliance on broad boilerplate language is common across all groups. However, we also find examples of companies that do offer more concrete acknowledgments of AI's technical limitations and related societal risks, including some details on risk mitigation strategies. For instance, Blackstone Infrastructure Strategies states: "Moreover, with the use of AI Technologies, there often exists a lack of transparency of how inputs are converted to outputs, and neither the Sponsor nor any Portfolio Entity can fully validate this process and its accuracy". Similarly, Cognizant Technology Solutions notes: "The uncertainty around the safety and security of new and emerging AI applications requires significant investment to test for security, accuracy, bias, and other variables - efforts that can be complex, costly, and potentially impact our profit margins".
+
+# 5 Discussion
+
+Our findings show that companies are increasingly disclosing AI-related risks in their 10-K filings (RQ1). Between 2022 and 2024, the share of firms grew sevenfold, with over 43% of firms now mentioning AI risks. At the same time, the number of AI-related sentences per 10-K filing (with at least one AImention) has also steadily increased, showing the overall increasing prominence of AI in corporate disclosures. Interestingly, more companies now describe AI as a material risk (43% of companies) than as part of their main business operations (only 23% of companies). This disparity may reflect the growing regulatory scrutiny by the SEC on misleading "AI washing" statements in disclosures.
+
+In terms of substance (RQ2), legal and competitive risks dominate corporate AI risk disclosures (confirming existing reports from previous years). Many firms - including those not directly involved in AI development - cite regulatory uncertainty, compliance burdens, and liability concerns. Competitive risk disclosures mainly focus on fears of falling behind in the AI race, particularly among top tech firms that highlight the large investments needed.
+
+We also found a wide range of societal risks being discussed across companies - most notably malicious uses of AI (e.g., cyberattacks or fraud), internal privacy and security breaches, and technical limitations of AI systems (e.g., reliability and transparency). However, several key societal AI issues, such as AI's environmental impact, labour market effects, dangerous capabilities, and the pollution of the information ecosystem, are largely absent in the data.
+
+Moreover, AI risks are often framed in vague, hypothetical, or boilerplate language, Furthermore, many tech companies seem to externalise societal AI risks, for example attributing them to third-party misuse, while rarely acknowledging their own role in developing the technologies that may contribute to those risks. These patterns mirror long-standing trends observed in prior research on cybersecurity disclosures, which consistently find firms relying on generic and boilerplate language to describe cyber risks.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: 14 Uberti-Bona Marin et al., 2025 -->
+
+These findings have several implications. First, they highlight the limitations of 10-K filings as a source for understanding companies' stance on AI risks. As firms are only required to disclose material risks to their business or investors, broader (societal relevant) AI harms may remain undiscussed. Legal liability concerns may further discourage firms from acknowledging technical limitations or controversial impacts of AI tools.
+
+Second, our findings indicate that the SEC's recent push for more truthful and tailored AI disclosures seems clearly warranted. More specific rules and guidance - similar to those introduced in cybersecurity - could help improve the quality of risk disclosures. This includes encouraging firms to detail risk mitigation strategies, especially for companies central to the development of high-impact AI systems.
+
+Limitations. This study focuses exclusively on US' SEC data, which may limit the generalisability of our findings. Our qualitative analysis is based on a relatively small subset of 50 companies, which may not capture the full range of disclosures. In addition, our keyword-based extraction method may have overlooked other relevant disclosure statements, or missed important contextual nuances. Lastly, we do not use a systematic method for quantifying the prevalence of boilerplate language in AI risk disclosures. Future work could address this gap by developing metrics to assess disclosure specificity, and comparing the results with more established domains, such as cybersecurity.
+
+# 6 Conclusion
+
+Our large-scale analysis of over 30,000 SEC 10-K filings reveals a sharp increase in AI-related risk disclosures in recent years, with over 43% of firms now mentioning AI risks. Legal and competitive concerns are most frequently cited, but we also observe increasing attention to societal AI risks, including frequent mentions of AI-enabled cyberattacks, fraud, bias, and technical limitations of AI systems. However, many disclosures remain vague and rely on general, boilerplate language. These patterns reinforce recent concerns raised by the SEC about the quality and specificity of AI disclosures. Therefore, the SEC should consider introducing more targeted disclosure rules and guidance, similar to those in cybersecurity, particularly for firms more directly involved in AI development.
+
+Future research should explore the quality and specificity of AI risk disclosures in greater detail. Comparative analyses with EU data could also prove insightful, especially with recent EU regulations that have introduced AI risk assessment and reporting requirements. To support such future research, we introduce an open-source web tool that allows for easily extracting and analysing topical disclosures across SEC filings.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 15 -->
+
+# Acknowledgements
+
+The authors are supported by the RegTech4AI AiNed Fellowship Grant, which is funded by the Dutch National Growth Fund (NGF) under file number NGF.1607.22.028.
+
+We are thankful to our colleagues at the Maastricht Law & Tech Lab: Gijs van Dijck, Kamil Szostak, and Tom Vos, for their support in setting-up the data infrastructure, refining the research objectives and providing feedback throughout the project.
+
+We also acknowledge the use of AI tools, including ChatGPT, Gemini and Visual Studio Code extensions, which supported various aspects of the code development and text editing.
+
+# References
+
+1. Regulation (eu) 2022/2065 of the european parliament and of the council of 19 october 2022 on a single market for digital services (digital services act). https://eur-lex.europa.eu/eli/reg/2022/2065/oj (2022), official Journal of the European Union, L 277, 27.10.2022
+
+2. Regulation (eu) 2024/1689 of the european parliament and of the council of 13 june 2024 laying down harmonised rules on artificial intelligence (artificial intelligence act). https://eur-lex.europa.eu/eli/reg/2024/1689/oj (2024), official Journal of the European Union, L 1689, 13.06.2024
+
+3. Alston & Bird LLP: Navigating ai-related disclosure challenges: Securities filing, sec enforcement, and shareholder litigation trends (2024), https://www.alston.com/en/insights/publications/2024/07/ navigating-ai-related-disclosure-challenges, published July 26, 2024
+
+4. Arize AI: The rise of generative ai in sec filings (2024), https://arize.com/wp-content/uploads/2024/07/ The-Rise-of-Generative-AI-In-SEC-Filings-Arize-AI-Report-2024.pdf, accessed: 2025-06-04
+
+5. Bengio, Y., Hinton, G., Yao, A., Song, D., Abbeel, P., Darrell, T., Harari, Y.N., Zhang, Y.Q., Xue, L., Shalev-Shwartz, S., et al.: Managing extreme ai risks amid rapid progress. Science 384(6698), 842-845 (2024)
+
+6. Calderon, T.G., Gao, L.: Changes in corporate cybersecurity risk disclosures after sec comment letters. Journal of Accounting and Public Policy 41(5), 106993 (2022)
+
+7. Cao, Y., Liu, M., Qiu, J., Zhao, R.: Information in disclosing emerging technologies: Evidence from ai disclosure. Available at SSRN 4987085 (2024)
+
+8. Center for AI Safety: Statement on ai risk (2023), https://www.safe.ai/work/ statement-on-ai-risk, accessed: 2024-02-13
+
+9. Center for Audit Quality (CAQ): Analysis of ai-related information in s&p 500 companies' 10-ks (June 2024), https://www.thecaq.org/ sp-500-and-ai-reporting, overview of AI-related disclosures among S&P 500 companies
+
+10. Clarke, V., Braun, V.: Thematic analysis. In: Encyclopedia of quality of life and well-being research, pp. 6626-6628. Springer (2014)
+
+11. Cohen, J.: A Coefficient of Agreement for Nominal Scales. Educational and Psychological Measurement 20(1), 37-46 (Apr 1960). https://doi.org/ 10.1177/001316446002000104, https://doi.org/10.1177/001316446002000104, publisher: SAGE Publications Inc
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 16 Uberti-Bona Marin et al., 2025 -->
+
+12. Deloitte and USC Marshall School of Business: Largest companies view ai as a risk multiplier: From cybersecurity, regulatory, and competition to reputation, ethics, and intellectual property (April 2024), https://uscmarshallweb.s3-us-west-2.amazonaws.com/assets/uploads/ s1/files/deloitte_arkley_report_final_october_2024_huniotst6b.pdf
+
+13. Donelson, D.C., Kim, M., Kim, S., Yip, M.A.: Strategic ai disclosures: Determinants and consequences of obfuscated and overstated ai investments. Available at SSRN 5265257 (2025)
+
+14. Doran, K.L., Quinn, E.L.: Climate change risk disclosure: a sector by sector analysis of sec 10-k filings from 1995-2008. NCJ Int'l L. & Com. Reg. 34, 721 (2008)
+
+15. Godawska, J.: Environmental risk factor disclosures in the 10-k reports of us energy companies. Zeszyty Teoretyczne Rachunkowości 48, 37-54 (2024)
+
+16. Li, H., No, W.G., Wang, T.: Sec's cybersecurity disclosure guidance and disclosed cybersecurity risk factors. International Journal of Accounting Information Systems 30, 40-55 (2018)
+
+17. Loukas, L., Fergadiotis, M., Androutsopoulos, I., Malakasiotis, P.: EDGARCORPUS: Billions of Tokens Make The World Go Round. In: Proceedings of the Third Workshop on Economics and Natural Language Processing (ECONLP). pp. 13-18. Association for Computational Linguistics, Punta Cana, Dominican Republic (Nov 2021), https://aclanthology.org/2021.econlp-1.2
+
+18. McClain, C., Kennedy, B., Gottfried, J., Anderson, M., Pasquini, G.: How the u.s. public and ai experts view artificial intelligence. Research report, Pew Research Center, Washington, D.C. (Apr 3 2025), https://www.pewresearch.org/internet/2025/04/03/ how-the-us-public-and-ai-experts-view-artificial-intelligence/
+
+19. Morse, E.A., Raval, V., Wingender Jr, J.R.: Sec cybersecurity guidelines: Insights into the utility of risk factor disclosures for investors. The Business Lawyer 73(1), 1-34 (2017)
+
+20. Orrick, Herrington and Sutcliffe LLP (J.T. Ho, Bobby Bee and Hayden Goudy): Ai disclosures in sec filings: Trends from the s&p 500 (April 2024), https://www.orrick.com/en/Insights/2024/06/ AI-Disclosures-in-SEC-Filings-Trends-From-the-S-and-P-500, law firm report analyzing AI-related disclosures across the S&P 500
+
+21. Pengl, J., Li, C.W.: Security breaches and modifications on cybersecurity disclosures. Accounting and Management Information Systems 21(3), 452-470 (2022)
+
+22. Securities, U., Commission, E.: Chair gary gensler's statement on aiwashing (2024), https://www.sec.gov/newsroom/speeches-statements/ sec-chair-gary-gensler-ai-washing, accessed: 2024-02-13
+
+23. Slattery, P., Saeri, A.K., Grundy, E.A.C., Graham, J., Noetel, M., Uuk, R., Dao, J., Pour, S., Casper, S., Thompson, N.: A systematic evidence review and common frame of reference for the risks from artificial intelligence. arXiv 2408.12622 (2024). https://doi.org/10.48550/arXiv.2408.12622, https:// doi.org/10.48550/arXiv.2408.12622
+
+24. U.S. Securities and Exchange Commission: How to read a 10-k (2011), https: //www.sec.gov/files/reada10k.pdf, accessed: 2024-02-13
+
+25. U.S. Securities and Exchange Commission: How to read a 10-k/10-q. https://www.investor.gov/introduction-investing/general-resources/ news-alerts/alerts-bulletins/investor-bulletins/how-read (2021), investor Bulletin, U.S. Securities and Exchange Commission
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: AI Risk Disclosures in SEC Filings 17 -->
+
+26. U.S. Securities and Exchange Commission: Ai, finance, movies, and the law - prepared remarks before the yale law school (2024), https://www.sec.gov/newsroom/ speeches-statements/gensler-ai-021324, remarks at Yale Law School by Chair Gary Gensler
+
+27. U.S. Securities and Exchange Commission: Cybersecurity risk management, strategy, governance, and incident disclosure (2024), https://www.sec. gov/resources-small-businesses/small-business-compliance-guides/ cybersecurity-risk-management-strategy-governance-incident-disclosure, accessed: 2025-06-13
+
+28. U.S. Securities and Exchange Commission: Office hours with gary gensler: Ai washing (2024), https://www.sec.gov/newsroom/speeches-statements/ gensler-office-hours-ai-washing-090424, statement by Chair Gary Gensler
+
+29. U.S. Securities and Exchange Commission: Sec announces enforcement results for fiscal year 2024 (2024), https://www.sec.gov/newsroom/press-releases/ 2024-186, press Release No. 2024-186
+
+30. U.S. Securities and Exchange Commission: The state of disclosure review (2024), https://www.sec.gov/newsroom/speeches-statements/ gerding-statement-state-disclosure-review-062424, statement by Erik Gerding, Chief Accountant
+
+31. U.S. Securities and Exchange Commission: EDGAR | U.S. Securities and Exchange Commission (2025), https://www.sec.gov/edgar/search/, accessed April 2025
+
+32. U.S. Securities and Exchange Commission: Sec charges restaurant-technology company presto automation for misleading statements about ai product (2025), https: //www.sec.gov/enforcement-litigation/administrative-proceedings/ 33-11352-s, release No. 33-11352
+
+33. Weil, Gotshal & Manges LLP: Sec disclosures of artificial intelligence technologies (October 2023), https://www.weil.com/-/media/mailings/2023/q4/ sec-disclosures-of-artificial-intelligence-technologies-112723.pdf, law firm analysis on AI-related risks across the S&P 500 and Russell 3000
+
+<!-- PageBreak -->
+

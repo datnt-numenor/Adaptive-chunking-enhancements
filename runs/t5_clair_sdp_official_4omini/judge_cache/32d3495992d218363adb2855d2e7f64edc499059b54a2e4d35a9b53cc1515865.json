@@ -1,0 +1,14 @@
+{
+  "request_hash": "32d3495992d218363adb2855d2e7f64edc499059b54a2e4d35a9b53cc1515865",
+  "prompt_sha256": "0dcb5123cb41be212cdb476f6789e2f21a9da7436db5e42924f1d17a024a37b3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN7L1rXUjV29GoKU8zmN4u0khD3O",
+  "prompt_tokens": 8951,
+  "completion_tokens": 41,
+  "actual_usd": 0.0013672499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the authorization of sandboxes in Articles 38-42 and mentioning the administrative sanctions in Article 36."
+  }
+}

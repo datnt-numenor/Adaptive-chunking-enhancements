@@ -1,0 +1,10 @@
+{
+  "request_hash": "8854778819967a6a1684ab4bdf07205d9090a4e9b173371f9e0cb137cd0286c9",
+  "prompt_sha256": "d979595b5e9e1f9b70d77f6921e26786285b79b4d0c278566ba829962e10766c",
+  "answer": "According to Ekimetrics’ Responsible AI white paper, the algorithms that count as directly interpretable are linear regression, logistic regression, and simple decision trees. For models that are not directly interpretable, it is recommended to use control libraries or algorithmic layers to determine how the model works, with tools like Lime and Shap being frequently used for this purpose.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1ffEKFA5LmTC5oo15XcluDH7zYX",
+  "prompt_tokens": 8186,
+  "completion_tokens": 72,
+  "actual_usd": 0.0012710999999999998
+}

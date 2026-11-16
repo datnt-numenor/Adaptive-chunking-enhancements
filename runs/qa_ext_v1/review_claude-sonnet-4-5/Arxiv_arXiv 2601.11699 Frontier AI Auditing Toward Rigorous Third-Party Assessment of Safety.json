@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer fully supported by glossary definitions\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer supported by evidence about insurance market mechanism and audit necessity\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer matches glossary definition exactly\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer accurately summarizes PCAOB definition and relevance\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer matches glossary definition exactly\"\n    },\n    {\n      \"n\": 6,\n      \"decision\": \"keep\",\n      \"reason\": \"Self-contained question, answer accurately describes Goodhart's Law per evidence\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 10909,
+  "out": 637
+ },
+ "created": "2026-11-09 18:37:42"
+}

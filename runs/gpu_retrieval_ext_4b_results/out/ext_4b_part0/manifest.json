@@ -1,0 +1,78 @@
+{
+  "proxy_of": "phase_g_runner retrieve+evaluate (hybrid BM25 + dense + Snowflake bi-encoder rerank)",
+  "dense": {
+    "model": "/workspace/models/Qwen3-Embedding-4B@5cf2132",
+    "note": "default = Qwen3-Embedding-0.6B@97b0c61 (proxy); harness uses Qwen3-Embedding-4B"
+  },
+  "reranker": {
+    "model": "Snowflake/snowflake-arctic-embed-l-v2.0",
+    "revision": "ac6544c8a46e00af67e330e85a9028c66b8cfd9a"
+  },
+  "prepared": "runs/ext_prepared_v1/prepared",
+  "qa": "runs/qa_ext_v1/qa_frozen.jsonl",
+  "systems": "adaptive,raw__page,sdp_b,raw__langch_recurs_default,sdp_a_t600",
+  "reprs": "plain,doc",
+  "summary": {
+    "adaptive@plain": {
+      "recall@10": 0.8528047481706637,
+      "recall@5": 0.7661413585245559,
+      "ndcg@10": 0.6889742102725744,
+      "hit@10": 0.867579908675799
+    },
+    "adaptive@doc": {
+      "recall@10": 0.8526936035709519,
+      "recall@5": 0.7679911084928897,
+      "ndcg@10": 0.6896578952058464,
+      "hit@10": 0.863013698630137
+    },
+    "raw__page@plain": {
+      "recall@10": 0.8506823441609865,
+      "recall@5": 0.7741299355718981,
+      "ndcg@10": 0.6724640751417517,
+      "hit@10": 0.867579908675799
+    },
+    "raw__page@doc": {
+      "recall@10": 0.8592268946037194,
+      "recall@5": 0.7858906699224272,
+      "ndcg@10": 0.6856356297246703,
+      "hit@10": 0.8721461187214612
+    },
+    "sdp_b@plain": {
+      "recall@10": 0.8444544468915184,
+      "recall@5": 0.7434227585559079,
+      "ndcg@10": 0.672299940522746,
+      "hit@10": 0.8561643835616438
+    },
+    "sdp_b@doc": {
+      "recall@10": 0.8630250398255871,
+      "recall@5": 0.7721901901709982,
+      "ndcg@10": 0.6871862058174234,
+      "hit@10": 0.8767123287671232
+    },
+    "raw__langch_recurs_default@plain": {
+      "recall@10": 0.844419061026633,
+      "recall@5": 0.7656647687214108,
+      "ndcg@10": 0.6946648923518386,
+      "hit@10": 0.860730593607306
+    },
+    "raw__langch_recurs_default@doc": {
+      "recall@10": 0.8494070053882273,
+      "recall@5": 0.782911220333984,
+      "ndcg@10": 0.6979263997267012,
+      "hit@10": 0.865296803652968
+    },
+    "sdp_a_t600@plain": {
+      "recall@10": 0.8517882557604022,
+      "recall@5": 0.785012232851419,
+      "ndcg@10": 0.6930236781245238,
+      "hit@10": 0.867579908675799
+    },
+    "sdp_a_t600@doc": {
+      "recall@10": 0.857742592185053,
+      "recall@5": 0.7849886782309293,
+      "ndcg@10": 0.7059817113812813,
+      "hit@10": 0.8721461187214612
+    }
+  },
+  "created": "2026-11-09 16:11:35"
+}

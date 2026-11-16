@@ -1,0 +1,14 @@
+{
+  "request_hash": "7a0895eb1543e075a944257f1f4d3313a91ddeaa2376e737acc8fda17cc43fb3",
+  "prompt_sha256": "af956902fc4c7330808ff954f2a270ddc3f1f37fc78f62c09831dd36ef571029",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO57PvOY9cRbyiG2wgcfWKqDdkUH",
+  "prompt_tokens": 7027,
+  "completion_tokens": 49,
+  "actual_usd": 0.0010834500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of the global search process, including how community summaries are shuffled, divided, and rated for helpfulness, which fully supports the claims made in the Reference Answer."
+  }
+}

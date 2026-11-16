@@ -1,0 +1,14 @@
+{
+  "request_hash": "e79a8627021b67e385e943175e41cb20197e00fec9d5695e68f50f6ba044c395",
+  "prompt_sha256": "a874ce683c6e5bdb7b8de3fe81047c9e4225eee45a1cee7f282684e1877c9c1e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOBMzOEkkF8LE1hCWGN8oKIRNRfD",
+  "prompt_tokens": 8303,
+  "completion_tokens": 50,
+  "actual_usd": 0.00127545,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about Google's commitment to responsible AI, including its connection to the company's mission and the publication of a yearly responsible AI report, fully supporting the claims made in the Reference Answer."
+  }
+}

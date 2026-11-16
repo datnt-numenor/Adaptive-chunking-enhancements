@@ -1,0 +1,14 @@
+{
+  "request_hash": "b77733a34d8a4728c91221701b2ef673e684ae2b6a3d5c37b9f6c7b120abfbe6",
+  "prompt_sha256": "a51cba990bdd70090b44fa7ead8660ff5d74cfbf85c985127e2b65dea573d544",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNeVt28ZHEiELkex8cuInUVSRUYa",
+  "prompt_tokens": 8748,
+  "completion_tokens": 35,
+  "actual_usd": 0.0013332,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of input diversity in risk management activities, clearly supporting the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "e625c804566785e00b8fd92a8e48c9b64860cf88effb2645921e20b90202ea20",
+  "prompt_sha256": "d0d3b0139d8bfb5a0a0316612b7b44c9ff240ffe853c3b8dd632423542927047",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNzkBe3m4UD1cAkh7TJnEgozZuam",
+  "prompt_tokens": 5705,
+  "completion_tokens": 43,
+  "actual_usd": 0.0008815499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that limitations of AI governance knowledge, expertise, and financial resources within organizations are widespread, which directly supports the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "d07461e3855b58a1f0e3ccf3822f363529914b0e19a754c86a21fccf863f567f",
+  "prompt_sha256": "74b4c5e7ec24ea5d8fcd5d8934a26637ab382457377bb009a44dc6bb8d2a7bf9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhh2ill7iZOVKiRE7I1Lh5nFlvF",
+  "prompt_tokens": 8055,
+  "completion_tokens": 39,
+  "actual_usd": 0.0012316500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining deployment bias and emphasizing the importance of co-creation and stakeholder engagement to mitigate such biases."
+  }
+}

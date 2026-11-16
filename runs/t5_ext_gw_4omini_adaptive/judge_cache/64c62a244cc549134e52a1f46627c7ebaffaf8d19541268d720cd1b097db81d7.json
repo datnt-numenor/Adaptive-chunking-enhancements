@@ -1,0 +1,14 @@
+{
+  "request_hash": "64c62a244cc549134e52a1f46627c7ebaffaf8d19541268d720cd1b097db81d7",
+  "prompt_sha256": "6ff10dd7416e083ac7612bbaabf07e5abf8e8fe94a267c3deb8815c38c61bf88",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOGdQMbOnwJ4Hs7v3o5Skffq0tv9",
+  "prompt_tokens": 7647,
+  "completion_tokens": 50,
+  "actual_usd": 0.00117705,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the transparency obligations for AI systems, specifying that these obligations require informing users about AI interactions and confirming their applicability starting from 2 August 2026."
+  }
+}

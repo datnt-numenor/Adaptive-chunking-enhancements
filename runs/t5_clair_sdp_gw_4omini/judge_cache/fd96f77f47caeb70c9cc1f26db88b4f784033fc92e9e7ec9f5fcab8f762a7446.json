@@ -1,0 +1,14 @@
+{
+  "request_hash": "fd96f77f47caeb70c9cc1f26db88b4f784033fc92e9e7ec9f5fcab8f762a7446",
+  "prompt_sha256": "92f567c3815c6eaa0e05b63df058afb61c6040a53799588e62f819f827e4f2d2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPAaznA9a6CAK5QYL3wBkRZl52ip",
+  "prompt_tokens": 5531,
+  "completion_tokens": 42,
+  "actual_usd": 0.00085485,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly mentioning the four dimensions (volume, categories, typology, and sources) and providing details about typology."
+  }
+}

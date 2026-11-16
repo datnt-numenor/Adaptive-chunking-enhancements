@@ -1,0 +1,14 @@
+{
+  "request_hash": "def6a2986e700ebf0c1950f15d718f9662ce0baf36f3ca3bf2442aaf0af2c05f",
+  "prompt_sha256": "cb6262e85785859017c6acf498e993bc5b24a9fde6bd56dd7deac50019ba9ad8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNWZQuCHLRNdjXSbL5z13nd2jZRW",
+  "prompt_tokens": 7864,
+  "completion_tokens": 37,
+  "actual_usd": 0.0012018,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context fully supports the claim in the reference answer by explaining how incentive games enable the leader to enhance their utility through follower incentives."
+  }
+}

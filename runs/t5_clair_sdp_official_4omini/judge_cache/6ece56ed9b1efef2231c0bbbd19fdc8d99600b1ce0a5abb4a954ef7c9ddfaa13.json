@@ -1,0 +1,14 @@
+{
+  "request_hash": "6ece56ed9b1efef2231c0bbbd19fdc8d99600b1ce0a5abb4a954ef7c9ddfaa13",
+  "prompt_sha256": "e10bba74b6f219cffc0e74129885738328eb0a2e25be3e132eee197838755de5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMwHw0T9K4tcfPHvSgsG7RI0D13v",
+  "prompt_tokens": 8328,
+  "completion_tokens": 41,
+  "actual_usd": 0.0012738,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the need for continuous data collection for retraining and discussing the risks of data poisoning and malicious sample injection."
+  }
+}

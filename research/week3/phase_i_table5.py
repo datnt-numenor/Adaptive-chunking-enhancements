@@ -181,6 +181,7 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
     output = args.output_dir
     requests_path = output / "generation_requests.jsonl"
     previous_output_cap = None
+    old: dict[str, Any] | None = None  # LOCAL PATCH: tranh NameError khi thu muc dau ra moi
     if requests_path.exists():
         old_manifest_path = output / "generation_plan.json"
         if not old_manifest_path.is_file():
@@ -217,7 +218,7 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
         "python": sys.version.split()[0],
         "model": MODEL, "systems": list(PAPER_SYSTEMS), "qa": 99, "requests": 297,
         "max_output_tokens": args.max_output_tokens, "input_hashes": input_hashes,
-        "previous_output_cap": previous_output_cap or old.get("previous_output_cap") if requests_path.exists() else None,
+        "previous_output_cap": previous_output_cap or (old.get("previous_output_cap") if old else None),  # LOCAL PATCH
         "chat_framing_reserve_tokens_per_request": CHAT_FRAMING_RESERVE_TOKENS,
         "requests_sha256": _sha256(requests_path),
         "answer_prompt_sha256": hashlib.sha256(ANSWER_PROMPT.encode()).hexdigest(),

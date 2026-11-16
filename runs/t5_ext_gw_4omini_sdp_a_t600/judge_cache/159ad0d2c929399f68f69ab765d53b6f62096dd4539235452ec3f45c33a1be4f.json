@@ -1,0 +1,14 @@
+{
+  "request_hash": "159ad0d2c929399f68f69ab765d53b6f62096dd4539235452ec3f45c33a1be4f",
+  "prompt_sha256": "7218ffbfe5cfa810e06b1cb53b208e0d1a83c4e12c4cf6f84b9ddc50e98ce8c1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOHWLkpfzqX356wft75umHJD0V7w",
+  "prompt_tokens": 8719,
+  "completion_tokens": 43,
+  "actual_usd": 0.0013336499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the transparency obligations of the EU AI Act, including user notification when interacting with AI and labeling requirements for synthetic media."
+  }
+}

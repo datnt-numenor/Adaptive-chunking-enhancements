@@ -1,0 +1,14 @@
+{
+  "request_hash": "ff02f1fad01b1a33c67d050f41b12aad96dd4ee3805c1266d23d50b3c74f6163",
+  "prompt_sha256": "8352ec5f5897a4f44b7847134e6533625beee30d9ccb062d8508b75e1ab2d66b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOuBvz6x6X5YP0pGmHQ2rQUtMJ1g",
+  "prompt_tokens": 8998,
+  "completion_tokens": 41,
+  "actual_usd": 0.0013743,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that there are at least 350,000 vacancies for ICT specialists in Europe, directly supporting the claim made in the Reference Answer."
+  }
+}

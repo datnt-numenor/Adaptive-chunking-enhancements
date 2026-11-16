@@ -1,0 +1,391 @@
+DOCUMENT: arXiv 2508.06411 Dimensional Characterization and Pathway Modeling for Catastrophic AI
+
+<<<PAGE 16>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+We also conducted simple risk pathway modeling to map out the causal path to harm for each scenario. While we sometimes identified model capabilities as the hazard, many of the risks explored lie outside the control of model developers. Though the least cost avoidance principle correctly suggests focusing on the upstream parts of the AI value chain, we believe that an upstream focus is a necessary but insufficient condition for good risk management. It is crucial to conduct risk management at all levels of the value chain, which includes:
+
+· The model level, e.g. during data collection, training, post-training, or deployment [67].
+
+· The system or application level i.e. the specific areas it is being used [149]
+
+· Broader societal and political level [150], [151]
+
+Ultimately, a comprehensive strategy for managing catastrophic AI risks requires both a multi-dimensional understanding and concrete causal mapping. These can then facilitate robust risk management implemented across all levels of the AI value chain.
+
+Future research can focus on four key areas. First, risks can be identified by conducting open-ended exploration across various risk dimensions. Second, more comprehensive risk pathway models can be developed, incorporating a wider array of scenarios and detailed mitigation strategies. Third, risks can be quantified by estimating the probability and severity based on its pathways and the effectiveness of proposed mitigations. Lastly, further investigation into risk mitigation measures beyond the model and application level, at the application and societal level, would be beneficial for managing these risks holistically.
+
+# 10 Acknowledgements
+
+This work was funded by the Open Philanthropy AI Governance and Policy grant, and supported by LISA (London Initiative for Safe AI) through subsidized access to its research coworking space. We also thank Francesca Gomez, Ben Bucknall, Marta Ziosi, and Peter Slattery for helpful discussion and feedback.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+# References
+
+[1] Yoshua Bengio et al. "Managing extreme AI risks amid rapid progress". In: Science 384.6698 (May 2024), pp. 842-845. ISSN: 1095-9203. DOI: 10.1126/science.adn0117. URL: http://dx.doi.org/10.1126/ science.adn0117.
+
+[2] Center for AI Safety. Statement on AI Risk. Online statement. Accessed 2025-07-04. May 2023. URL: https: //safe.ai/work/statement-on-ai-risk.
+
+[3] Timothy Dubber and Seth Lazar. Military AI Cyber Agents (MAICAs) Constitute a Global Threat to Critical Infrastructure. 2025. arXiv: 2506.12094 [cs.CY]. URL: https://arxiv.org/abs/2506.12094.
+
+[4] Anka Reuel et al. Open Problems in Technical AI Governance. 2025. arXiv: 2407.14981 [cs.CY]. URL: https://arxiv.org/abs/2407.14981.
+
+[5] Department for Science, Innovation and Technology. Future risks of frontier AI. Accessed: 2025-06-19. Apr. 2025. URL: https://www.gov.uk/government/publications/frontier-ai-capabilities-andrisks-discussion-paper/future-risks-of-frontier-ai-annex-a.
+
+[6] Department for Science, Innovation and Technology. Frontier AI: capabilities and risks - discussion paper. Accessed: 2025-06-19. Apr. 2025. URL: https://www.gov.uk/government/publications/frontierai - capabilities - and - risks - discussion - paper / frontier - ai - capabilities - and - risks - discussion-paper#what-risks-do-frontier-ai-present.
+
+[7] Department for Science, Innovation and Technology. International AI Safety Report 2025. Accessed: 2025-0619. Jan. 2025. URL: https://www.gov.uk/government/publications/international-ai-safetyreport-2025/international-ai-safety-report-2025.
+
+[8] Ben Eisenpress. Catastrophic AI Scenarios. Accessed: 2025-06-19. Feb. 2024. URL: https://futureoflife. org/resource/catastrophic-ai-scenarios/.
+
+[9] Dan Hendrycks, Mantas Mazeika, and Thomas Woodside. An Overview of Catastrophic AI Risks. 2023. arXiv: 2306.12001 [cs.CY]. URL: https://arxiv.org/abs/2306.12001.
+
+[10] Alan Chan et al. "Harms from Increasingly Agentic Algorithmic Systems". In: 2023 ACM Conference on Fairness Accountability and Transparency. FAccT '23. ACM, June 2023, pp. 651-666. DOI: 10 . 1145 / 3593013.3594033. URL: http://dx.doi.org/10.1145/3593013.3594033.
+
+[11] Rohin Shah et al. An Approach to Technical AGI Safety and Security. 2025. arXiv: 2504.01849 [cs.AI]. URL: https://arxiv.org/abs/2504.01849.
+
+[12] Atoosa Kasirzadeh. Two Types of AI Existential Risk: Decisive and Accumulative. 2025. arXiv: 2401.07836 [cs.CY]. URL: https://arxiv.org/abs/2401.07836.
+
+[13] Torben Swoboda et al. Examining Popular Arguments Against AI Existential Risk: A Philosophical Analysis. 2025. arXiv: 2501.04064 [cs.CY]. URL: https://arxiv.org/abs/2501.04064.
+
+[14] Andrew Critch and Stuart Russell. TASRA: a Taxonomy and Analysis of Societal-Scale Risks from AI. 2023. arXiv: 2306.06924 [cs.AI]. URL: https://arxiv.org/abs/2306.06924.
+
+[15] Miles Brundage et al. The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation. 2024. arXiv: 1802.07228 [cs.AI]. URL: https://arxiv.org/abs/1802.07228.
+
+[16] Benjamin S. Bucknall and Shiri Dori-Hacohen. "Current and Near-Term AI as a Potential Existential Risk Factor". In: Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society. AIES '22. ACM, July 2022, pp. 119-129. DOI: 10.1145/3514094.3534146. URL: http://dx.doi.org/10.1145/3514094. 3534146.
+
+[17] Roman V. Yampolskiy. Taxonomy of Pathways to Dangerous AI. 2015. arXiv: 1511.03246 [cs.AI]. URL: https://arxiv.org/abs/1511.03246.
+
+[18] Alexey Turchin and David Denkenberger. "Classification of global catastrophic risks connected with artificial intelligence". In: AI & Society 35.1 (2020). First published online May 3, 2018; print 2020, pp. 147-163. DOI: 10.1007/s00146-018-0845-5. URL: https://doi.org/10.1007/s00146-018-0845-5.
+
+[19] Peter Slattery et al. The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks From Artificial Intelligence. 2025. arXiv: 2408.12622 [cs.AI]. URL: https://arxiv.org/abs/2408. 12622.
+
+[20] Risto Uuk et al. A Taxonomy of Systemic Risks from General-Purpose AI. 2024. arXiv: 2412.07780 [cs.CY]. URL: https://arxiv.org/abs/2412.07780.
+
+[21] Laura Weidinger et al. "Taxonomy of Risks posed by Language Models". In: Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency. FAccT '22. Seoul, Republic of Korea: Association for Computing Machinery, 2022, pp. 214-229. ISBN: 9781450393522. DOI: 10.1145/3531146.3533088. URL: https://doi.org/10.1145/3531146.3533088.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[22] Gavin Abercrombie et al. A Collaborative, Human-Centred Taxonomy of AI, Algorithmic, and Automation Harms. 2024. arXiv: 2407.01294 [cs.LG]. URL: https://arxiv.org/abs/2407.01294.
+
+[23] OECD. Stocktaking for the development of an AI incident definition. Tech. rep. 4. Approved and declassified by OECD Committee on Digital Economy Policy. Paris, France: OECD Publishing, Oct. 2023. DOI: {10. 1787/c323ac71-en}. URL: %7Bhttps://www.oecd.org/en/publications/stocktaking-for-thedevelopment-of-an-ai-incident-definition_c323ac71-en.html%7D.
+
+[24] Mia Hoffmann and Heather Frase. Adding Structure to AI Harm: An Introduction to CSET's AI Harm Framework. Tech. rep. Accessed: 2025-06-19. Center for Security and Emerging Technology, Georgetown University, July 2023. URL: https://cset.georgetown.edu/publication/adding-structure-to-ai-harm/.
+
+[25] Yi Zeng et al. AI Risk Categorization Decoded (AIR 2024): From Government Regulations to Corporate Policies. 2024. arXiv: 2406.17864 [cs.CY]. URL: https://arxiv.org/abs/2406.17864.
+
+[26] Anthony M. Barrett and Seth D. Baum. "A model of pathways to artificial superintelligence catastrophe for risk and decision analysis". In: Journal of Experimental & Theoretical Artificial Intelligence 29.2 (May 2016), pp. 397-414. ISSN: 1362-3079. DOI: 10.1080/0952813x.2016.1186228. URL: http://dx.doi.org/10. 1080/0952813X.2016.1186228.
+
+[27] John G. Sotos. On the Unimportance of Superintelligence. 2021. arXiv: 2109.07899 [cs.CY]. URL: https: //arxiv.org/abs/2109.07899.
+
+[28] National Institute of Standards and Technology (NIST). Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST Special Publication NIST.AI.100-1. Accessed: 2025-06-19. Gaithersburg, MD, USA: National Institute of Standards and Technology, U.S. Department of Commerce, Jan. 2023. DOI: {10.6028/NIST.AI. 100-1}. URL: %7Bhttps://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf%7D.
+
+[29] National Institute of Standards and Technology (NIST). Draft - Taxonomy of AI Risk. Draft White Paper NIST Draft. Accessed: 2025-06-19. Gaithersburg, MD, USA: NIST, Oct. 2021. URL: https://www.nist.gov/ system/files/documents/2021/10/15/taxonomy_AI_risks.pdf.
+
+[30] National Technical Committee 260 on Cybersecurity of SAC. AI Safety Governance Framework. Technical Report, Version 1.0. Accessed 2025-06-23. Standardization Administration of China (SAC), Sept. 2024. URL: https://www.tc260.org.cn/upload/2024-09-09/1725849192841090989.pdf.
+
+[31] Chairs and Vice-Chairs of the General-Purpose AI Code of Practice. Third Draft of the General-Purpose AI Code of Practice. European Commission Digital Strategy Library. Last updated 11 March 2025; Accessed: 2025-06-19. Mar. 2025. URL: https://digital-strategy.ec.europa.eu/en/library/third-draftgeneral-purpose-ai-code-practice-published-written-independent-experts.
+
+[32] Anthropic. Claude Opus 4 System Card - AI Safety Level 3 Deployment. System Card / Technical Report. Published May 2025; accessed 2025-07-06. Anthropic, May 2025. URL: https://www-cdn.anthropic. com/4263b940cabb546aa0e3283f35b686f4f3b2ff47.pdf.
+
+[33] OpenAI. Preparedness Framework v2. Technical Report. Published Apr 15, 2025; accessed 2025-07-06. OpenAI, Apr. 2025. URL: https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/ preparedness-framework-v2.pdf.
+
+[34] Google DeepMind. Frontier Safety Framework v2.0. Technical Report. Published February 4, 2025; accessed 2025-07-06. Google DeepMind, Feb. 2025. URL: https : / / storage . googleapis . com / deepmind - media/DeepMind.com/Blog/updating-the-frontier-safety-framework/Frontier%20Safety% 20Framework%202.0.pdf.
+
+[35] Meta. Frontier AI Framework. Online policy framework. Published Feb 3 2025; accessed 2025-07-06. Feb. 2025. URL: https://ai.meta.com/static-resource/meta-frontier-ai-framework/.
+
+[36] Microsoft. Frontier Governance Framework. Technical Report. Published Feb 8, 2025; accessed 2025-07-06. Microsoft, Feb. 2025. URL: https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/ microsoft / final / en - us / microsoft - brand / documents / Microsoft - Frontier - Governance - Framework.pdf.
+
+[37] Frontier Model Forum. Risk Taxonomy and Thresholds for Frontier AI Frameworks. Technical Report. Accessed 2025-06-26. Frontier Model Forum, June 2025. URL: https://www.frontiermodelforum.org/ technical-reports/risk-taxonomy-and-thresholds/.
+
+[38] ISO 31000:2018 Risk management - Guidelines. Tech. rep. Accessed 2025-06-24. International Organization for Standardization, 2018. URL: https://www.iso.org/standard/65694.html.
+
+[39] ISO 14971:2019 Medical devices - Application of risk management to medical devices. Tech. rep. Accessed 2025-06-24. International Organization for Standardization, 2019. URL: https://www.iso.org/standard/ 72704.html.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[40] Leonie Koessler and Jonas Schuett. Risk assessment at AGI companies: A review of popular risk assessment techniques from other safety-critical industries. 2023. arXiv: 2307.08823 [cs.CY]. URL: https://arxiv. org/abs/2307.08823.
+
+[41] Toby Ord. The Precipice: Existential Risk and the Future of Humanity. 1st ed. Accessed 2025-06-24. London, UK: Bloomsbury Publishing, Feb. 2021, p. 480. ISBN: 9781526600233. URL: https://www.bloomsbury. com/uk/precipice-9781526600233/.
+
+[42] Zeynep Engin and David Hand. Toward Adaptive Categories: Dimensional Governance for Agentic AI. 2025. arXiv: 2505.11579 [cs.CY]. URL: https://arxiv.org/abs/2505.11579.
+
+[43] Thomas A. Widiger and Douglas B. Samuel. "Diagnostic categories or dimensions? A question for the Diagnostic and Statistical Manual of Mental Disorders-Fifth Edition". In: Journal of Abnormal Psychology 114.4 (Nov. 2005). Accessed 2025-06-24, pp. 494-504. DOI: 10.1037/0021- 843X.114.4.494. URL: https://psycnet.apa.org/doi/10.1037/0021-843X.114.4.494.
+
+[44] Helena Chmura Kraemer, Art Noda, and Ruth O'Hara. "Categorical versus dimensional approaches to diagnosis: methodological challenges". In: Journal of Psychiatric Research 38.1 (2004), pp. 17-25. ISSN: 0022-3956. DOI: https://doi.org/10.1016/S0022-3956(03)00097-9. URL: https://www.sciencedirect.com/ science/article/pii/S0022395603000979.
+
+[45] Robert S. Siegler. "Cognitive variability". In: Developmental Science 10.1 (Jan. 2007). Accessed 2025-06-24, pp. 104-109. DOI: 10.1111/j.1467-7687.2007.00571.x. URL: https://onlinelibrary.wiley.com/ doi/10.1111/j.1467-7687.2007.00571.x.
+
+[46] Peter Fazekas and Morten Overgaard. "A Multi-Factor Account of Degrees of Awareness". In: Cognitive Science 42.6 (Aug. 2018). Accessed 2025-06-24, pp. 1833-1859. DOI: 10.1111/cogs.12478. URL: https: //onlinelibrary.wiley.com/doi/10.1111/cogs.12478.
+
+[47] Rokas Gipiškis et al. Risk Sources and Risk Management Measures in Support of Standards for General-Purpose AI Systems. 2024. arXiv: 2410.23472 [cs.CY]. URL: https://arxiv.org/abs/2410.23472.
+
+[48] Deloitte. Risk modeling. Deloitte Global, Consulting Risk Perspectives. Accessed 2025-07-06. URL: https: //www.deloitte.com/global/en/services/consulting-risk/perspectives/risk-modeling. html.
+
+[49] Isaac Kim. "The Ultimate Guide to Risk Modeling". In: Experian Insights (blog) (June 2025). Accessed 2025-07-06. URL: https://www.experian.com/blogs/insights/the-ultimate-guide-to-riskmodeling/.
+
+[50] National Institute of Standards and Technology. Guide for Conducting Risk Assessments (SP 800-30 Rev. 1). Special Publication 800-30 Rev. 1. Accessed 2025-07-06. NIST, Sept. 2012. DOI: 10.6028/NIST.SP.80030r1. URL: https://csrc.nist.gov/pubs/sp/800/30/r1/final.
+
+[51] Simeon Campos et al. A Frontier AI Risk Management Framework: Bridging the Gap Between Current AI Practices and Established Risk Management. 2025. arXiv: 2502.06656 [cs.AI]. URL: https://arxiv. org/abs/2502.06656.
+
+[52] Anna Katariina Wisakanto et al. Adapting Probabilistic Risk Assessment for AI. 2025. arXiv: 2504.18536 [cs.AI]. URL: https://arxiv.org/abs/2504.18536.
+
+[53] Frontier Model Forum. Frontier Capability Assessments: Technical Report. Technical Report. Accessed 202507-06. Frontier Model Forum, Apr. 2025. URL: https://www.frontiermodelforum.org/technicalreports/frontier-capability-assessments/.
+
+[54] Oscar Delaney, Oliver Guest, and Zoe Williams. Mapping Technical Safety Research at AI Companies: A literature review and incentives analysis. 2024. arXiv: 2409.07878 [cs.CY]. URL: https://arxiv.org/ abs/2409.07878.
+
+[55] Department for Science, Innovation and Technology, UK. Emerging Processes for Frontier AI Safety. Policy Paper. [Accessed: 29 July 2025]. Department for Science, Innovation and Technology, Oct. 2023. URL: https://assets.publishing.service.gov.uk/media/653aabbd80884d000df71bdc/emergingprocesses-frontier-ai-safety.pdf.
+
+[56] OpenAI. Disrupting malicious uses of AI by state-affiliated threat actors. https://openai.com/index/ disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors/. [Accessed: 22 July 2025]. Feb. 2024.
+
+[57] Kathrin Grosse et al. Towards more Practical Threat Models in Artificial Intelligence Security. 2024. arXiv: 2311.09994 [cs.CR]. URL: https://arxiv.org/abs/2311.09994.
+
+[58] Serdar Yazmyradov and Hoon Lee. "A Comprehensive Review of AI Security: Threats, Challenges, and Mitigation Strategies". In: The Journal of The Institute of Internet Broadcasting and Communication (Dec. 2024), pp. 375-384. DOI: 10.17703/IJIBC.2024.16.4.375.
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[59] Lorenzaj Harris. "Threats and Risks in the AI Supply Chain A Comprehensive Analysis". In: (Mar. 2025).
+
+[60] Shaun Ee et al. Adapting cybersecurity frameworks to manage frontier AI risks: A defense-in-depth approach. 2024. arXiv: 2408.07933 [cs.CY]. URL: https://arxiv.org/abs/2408.07933.
+
+[61] Alfonso de Gregorio. Mitigating Cyber Risk in the Age of Open-Weight LLMs: Policy Gaps and Technical Realities. 2025. arXiv: 2505.17109 [cs.CR]. URL: https://arxiv.org/abs/2505.17109.
+
+[62] Joshua Clymer et al. An Example Safety Case for Safeguards Against Misuse. 2025. arXiv: 2505.18003 [cs.LG]. URL: https://arxiv.org/abs/2505.18003.
+
+[63] Akash R. Wasil et al. Governing dual-use technologies: Case studies of international security agreements and lessons for AI governance. 2024. arXiv: 2409.02779 [cs.CY]. URL: https://arxiv.org/abs/2409. 02779.
+
+[64] Isabel Richards, Claire Benn, and Miri Zilka. From Incidents to Insights: Patterns of Responsibility following AI Harms. 2025. arXiv: 2505.04291 [cs.CY]. URL: https://arxiv.org/abs/2505.04291.
+
+[65] Nikiforos Pittaras and Sean McGregor. A taxonomic system for failure cause analysis of open source AI incidents. 2022. arXiv: 2211.07280 [cs.AI]. URL: https://arxiv.org/abs/2211.07280.
+
+[66] Roman V. Yampolskiy and M. S. Spellchecker. Artificial Intelligence Safety and Cybersecurity: a Timeline of AI Failures. 2016. arXiv: 1610.07997 [cs.AI]. URL: https://arxiv.org/abs/1610.07997.
+
+[67] Toby Shevlane et al. Model evaluation for extreme risks. 2023. arXiv: 2305.15324 [cs.AI]. URL: https: //arxiv.org/abs/2305.15324.
+
+[68] Bo Li et al. Trustworthy AI: From Principles to Practices. 2022. arXiv: 2110.01167 [cs.AI]. URL: https: //arxiv.org/abs/2110.01167.
+
+[69] Marialena Vagia, Aksel A. Transeth, and Sigurd A. Fjerdingen. "A literature review on the levels of automation during the years. What are the different taxonomies that have been proposed?" In: Applied Ergonomics 53 (2016), pp. 190-202. ISSN: 0003-6870. DOI: https://doi.org/10.1016/j.apergo.2015.09.013. URL: https://www.sciencedirect.com/science/article/pii/S0003687015300855.
+
+[70] R. Parasuraman, T.B. Sheridan, and C.D. Wickens. "A model for types and levels of human interaction with automation". In: IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans 30.3 (2000), pp. 286-297. DOI: 10.1109/3468.844354.
+
+[71] Blair Attard-Frost and David Gray Widder. The Ethics of AI Value Chains. 2024. arXiv: 2307.16787 [cs.CY]. URL: https://arxiv.org/abs/2307.16787.
+
+[72] Yoshua Bengio et al. Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path? 2025. arXiv: 2502.15657 [cs.AI]. URL: https://arxiv.org/abs/2502.15657.
+
+[73] Alan Chan et al. Visibility into AI Agents. 2024. arXiv: 2401.13138 [cs.CY]. URL: https://arxiv.org/ abs/2401.13138.
+
+[74] Yonadav Shavit et al. Practices for Governing Agentic AI Systems. White Paper / Technical Report. Published Dec 14 2023; accessed 2025-07-17. OpenAI, Dec. 2023. URL: https://openai.com/index/practicesfor-governing-agentic-ai-systems/.
+
+[75] Ahmad Mohsin et al. A Unified Framework for Human AI Collaboration in Security Operations Centers with Trusted Autonomy. 2025. arXiv: 2505.23397 [cs.AI]. URL: https://arxiv.org/abs/2505.23397.
+
+[76] K. Eric Drexler. Reframing Superintelligence: Comprehensive AI Services as General Intelligence. Tech. rep. Technical Report #2019-1. Accessed 2025-06-24. Future of Humanity Institute, University of Oxford, 2019. URL: https://www.fhi.ox.ac.uk/reframing-superintelligence/.
+
+[77] Lewis Hammond et al. Multi-Agent Risks from Advanced AI. Tech. rep. 1. Cooperative AI Foundation, 2025. DOI: 10.48550/ARXIV.2502.14143. arXiv: 2502.14143.
+
+[78] Rishi Bommasani et al. Ecosystem Graphs: The Social Footprint of Foundation Models. 2023. arXiv: 2303. 15772 [cs.LG]. URL: https://arxiv.org/abs/2303.15772.
+
+[79] Alan Chan et al. Infrastructure for AI Agents. 2025. arXiv: 2501.10114 [cs.AI]. URL: https://arxiv. org/abs/2501.10114.
+
+[80] OWASP GenAI Security Project. Multi-Agentic System Threat Modeling Guide v1.0. Technical Report. Accessed 2025-07-06. OWASP GenAI Security Project, Apr. 2025. URL: https://genai.owasp.org/resource/ multi-agentic-system-threat-modeling-guide-v1-0/.
+
+[81] CHARLES PERROW. Normal Accidents: Living with High Risk Technologies - Updated Edition. REV - Revised. Princeton University Press, 1999. ISBN: 9780691004129. URL: http://www.jstor.org/stable/ j.ctt7srgf (visited on 06/25/2025).
+
+[82] Noam Kolt, Michal Shur-Ofry, and Reuven Cohen. Lessons from complexity theory for AI governance. 2025. arXiv: 2502.00012 [cs.CY]. URL: https://arxiv.org/abs/2502.00012.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[83] Remco Zwetsloot and Allan Dafoe. Thinking about risks from AI: Accidents, misuse and structure. Lawfare (blog). Accessed 2025-06-24. Feb. 2019. URL: https://www.lawfaremedia.org/article/thinkingabout-risks-ai-accidents-misuse-and-structure.
+
+[84] Kyle A Kilian. Beyond Accidents and Misuse: Decoding the Structural Risk Dynamics of Artificial Intelligence. 2025. arXiv: 2406.14873 [cs.CY]. URL: https://arxiv.org/abs/2406.14873.
+
+[85] Anthony M. Barrett et al. AI Risk-Management Standards Profile for General-Purpose AI (GPAI) and Foundation Models. 2025. arXiv: 2506.23949 [cs.AI]. URL: https://arxiv.org/abs/2506.23949.
+
+[86] Simon Mylius. Systematic Hazard Analysis for Frontier AI using STPA. 2025. arXiv: 2506.01782 [cs.CY]. URL: https://arxiv.org/abs/2506.01782.
+
+[87] Agnes Schim van der Loeff et al. AI Ethics for Systemic Issues: A Structural Approach. 2019. arXiv: 1911. 03216 [cs.AI]. URL: https://arxiv.org/abs/1911.03216.
+
+[88] Jennifer Wang et al. Distinguishing Predictive and Generative AI in Regulation. 2025. arXiv: 2506.17347 [cs.CY]. URL: https://arxiv.org/abs/2506.17347.
+
+[89] N. Gregory Mankiw. Principles of Economics. 9th ed. Accessed 2025-06-25. Boston, MA: Cengage Learning, 2020, p. 864. ISBN: 9780357038314. URL: https://www.cengage.com/c/principles-of-economics9e-mankiw/9780357038314/.
+
+[90] Organisation for Economic Co-operation and Development (OECD). Algorithmic Impact Assessment Tool. OECD.AI catalogue. Accessed 2025-07-06. Apr. 2025. URL: https://oecd.ai/en/catalogue/tools/ algorithmic-impact-assessment-tool.
+
+[91] Pegah Nokhiz, Aravinda Kanchana Ruwanpathirana, and Helen Nissenbaum. Rethinking Optimization: A Systems-Based Approach to Social Externalities. 2025. arXiv: 2506.12825 [cs.AI]. URL: https://arxiv. org/abs/2506.12825.
+
+[92] Yusen Zheng et al. Mechanism Design for Auctions with Externalities on Budgets. 2025. arXiv: 2504.14948 [cs.GT]. URL: https://arxiv.org/abs/2504.14948.
+
+[93] Samson Tan, Araz Taeihagh, and Kathy Baxter. The Risks of Machine Learning Systems. 2022. arXiv: 2204. 09852 [cs.CY]. URL: https://arxiv.org/abs/2204.09852.
+
+[94] Reva Schwartz et al. Reality Check: A New Evaluation Ecosystem Is Necessary to Understand AI's Real World Effects. 2025. arXiv: 2505.18893 [cs.CY]. URL: https://arxiv.org/abs/2505.18893.
+
+[95] Allison Berke. "Can't quite develop that dangerous pathogen? AI may soon be able to help". In: Bulletin of the Atomic Scientists (Nov. 2023). Accessed 2025-06-27. URL: https://thebulletin.org/2023/11/cantquite-develop-that-dangerous-pathogen-ai-may-soon-be-able-to-help/.
+
+[96] Jonas B. Sandbrink. Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools. 2023. arXiv: 2306.13952 [cs.CY]. URL: https://arxiv.org/abs/2306.13952.
+
+[97] Aidan Peppin et al. The Reality of AI and Biorisk. 2025. arXiv: 2412.01946 [cs.AI]. URL: https://arxiv. org/abs/2412.01946.
+
+[98] Roger Brent and T. Greg McKelvey Jr. Contemporary AI foundation models increase biological weapons risk. 2025. arXiv: 2506.13798 [cs.CY]. URL: https://arxiv.org/abs/2506.13798.
+
+[99] Anders Sandberg and Cassidy Nelson. "Who Should We Fear More: Biohackers, Disgruntled Postdocs, or Bad Governments? A Simple Risk Chain Model of Biorisk". In: Health Security 18.3 (June 2020). First version 2019; accessed 2025-07-04, pp. 155-163. DOI: 10.1089/hs.2019.0115. URL: https://www.ncbi.nlm. nih.gov/pmc/articles/PMC7310205/.
+
+[100] Cassidy Nelson and Sophie Rose. Understanding AI-Facilitated Biological Weapon Development. Technical Report. Accessed 2025-07-04. Centre for Long-Term Resilience, Oct. 2023. DOI: 10.71172/nm7j-qzt1. URL: https://www.longtermresilience.org/wp-content/uploads/2024/09/AI-FacilitatedBiological-Weapon-Development-Website-Copy-1.pdf.
+
+[101] Luckey, David and Duhachek Muggy, Sara and Frey, Taylor and Stebbins, David and Rissman, Tracey and Espinosa, Bianca and Tapia, Daniel and McKelvey Jr., Greg and Pokhriyal, Neeti and Dawson, Joseph and et al. Mitigating Risks at the Intersection of Artificial Intelligence and Chemical and Biological Weapons. Research Report, RR-A2990-1. Accessed 2025-06-27. RAND Corporation, Homeland Security Operational Analysis Center, Jan. 2025, p. 204. DOI: 10.7249/RRA2990-1. URL: https://www.rand.org/pubs/research_ reports/RRA2990-1.html.
+
+[102] Centers for Disease Control and Prevention (CDC). About Anthrax. https://www.cdc.gov/anthrax/ about/index.html. [Accessed: 22-July-2025]. 2025.
+
+[103] U.S. Department of Justice. Amerithrax Investigative Summary. PDF (Freedom of Information Act release). [Accessed: 22 July 2025]. Feb. 2010. URL: https://www.justice.gov/archive/amerithrax/docs/amxinvestigative-summary.pdf.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[104] World Economic Forum. The Global Risks Report 2025. Technical Report (20th edition). Accessed 2025-07-04. World Economic Forum, Jan. 2025. URL: https://www.weforum.org/publications/global-risksreport-2025/in-full/.
+
+[105] Nick Bostrom. "Existential Risks: Analyzing Human Extinction Scenarios and Related Hazards". In: Journal of Evolution and Technology 9.1 (2002). First published Mar 2002; accessed 2025-06-27, pp. 1-31. DOI: n/a. URL: https://www.nickbostrom.com/existential/risks.pdf.
+
+[106] Justin B. Bullock, Samuel Hammond, and Seb Krier. AGI, Governments, and Free Societies. 2025. arXiv: 2503.05710 [cs.CY]. URL: https://arxiv.org/abs/2503.05710.
+
+[107] Fazl Barez et al. Toward Resisting AI-Enabled Authoritarianism. Working Paper. Published May 28 2025; accessed 2025-07-17. Oxford Martin School, AI Governance Initiative, May 2025. URL: https://aigi.ox. ac.uk/publications/toward-resisting-ai-enabled-authoritarianism/.
+
+[108] Yuxuan Zhu et al. Teams of LLM Agents can Exploit Zero-Day Vulnerabilities. 2025. arXiv: 2406.01637 [cs.MA]. URL: https://arxiv.org/abs/2406.01637.
+
+[109] Ralph Langner. "Stuxnet: Dissecting a Cyberwarfare Weapon". In: IEEE Security & Privacy 9.3 (2011), pp. 4951. DOI: 10.1109/MSP.2011.67.
+
+[110] CERT-IST. Stuxnet: A worm which targets SCADA systems. https://www.cert-ist.com/public/en/SO_ detail?code=stuxnet. [Accessed: 22 July 2025]. Sept. 2010.
+
+[111] David Albright, Paul Brannan, and Christina Walrond. Did Stuxnet Take Out 1,000 Centrifuges at the Natanz Enrichment Plant? Preliminary Assessment. Technical Report. [Accessed: 22 July 2025]. Institute for Science and International Security, Dec. 2010. URL: https://isis- online.org/uploads/isis- reports/ documents/stuxnet_FEP_22Dec2010.pdf.
+
+[112] National Cyber Security Centre. Impact of AI on cyber threat from now to 2027. https://www.ncsc.gov. uk/report/impact-of-ai-on-cyber-threat. [Accessed: 22 July 2025]. May 2025.
+
+[113] United Nations Office for Disarmament Affairs (UNODA). Background on Laws in the CCW. UNODA website. Accessed 2025-07-17; no publication date provided. URL: https : / / disarmament . unoda . org / the - convention-on-certain-conventional-weapons/background-on-laws-in-the-ccw/.
+
+[114] Kristian Humble. "War, Artificial Intelligence, and the Future of Conflict". In: Georgetown Journal of International Affairs (July 2024). Published July 12, 2024; accessed 2025-07-18. URL: https://gjia.georgetown. edu/2024/07/12/war-artificial-intelligence-and-the-future-of-conflict/.
+
+[115] Adam Bales. AI takeover and human disempowerment. Working Paper, No. 9-2024. Published April 2024; accessed 2025-07-17. Global Priorities Institute, Apr. 2024. URL: https://globalprioritiesinstitute. org/wp-content/uploads/Bales-AI-Takeover-and-Human-Disempowerment.pdf.
+
+[116] Nick Bostrom. Superintelligence: Paths, Dangers, Strategies. Accessed 2025-07-06. Oxford, UK: Oxford University Press, 2014. ISBN: 9780199678112. URL: https://psycnet.apa.org/record/2014-48585000.
+
+[117] Miles Brundage. "Taking superintelligence seriously: Superintelligence: Paths, dangers, strategies by Nick Bostrom". In: Futures 72 (Aug. 2015). Accessed 2025-07-06, pp. 32-35. DOI: 10.1016/j.futures.2015. 07.009. URL: https://www.fhi.ox.ac.uk/wp-content/uploads/1-s2.0-S0016328715000932main.pdf.
+
+[118] Nick Bostrom. "The Superintelligent Will: Motivation and Instrumental Rationality in Advanced Artificial Agents". In: Minds and Machines 22.2 (June 2012). Published June 13, 2012; accessed 2025-07-06, pp. 71-85. DOI: 10.1007/s11023-012-9281-3. URL: https://link.springer.com/article/10.1007/s11023012-9281-3.
+
+[119] Stuart Armstrong. "General Purpose Intelligence: Arguing the Orthogonality Thesis". In: Analysis and Metaphysics (Jan. 2013). Published January 2013; accessed 2025-07-06. URL: https://www.fhi.ox.ac.uk/wpcontent/uploads/Orthogonality_Analysis_and_Metaethics-1.pdf.
+
+[120] Stephen M. Omohundro. "The Basic AI Drives". In: Proceedings of the First AGI Conference (Frontiers in Artificial Intelligence and Applications, Vol. 171). Ed. by Pei Wang, Ben Goertzel, and Stan Franklin. Accessed 2025-07-06. IOS Press, Feb. 2008, pp. 483-492. URL: https://selfawaresystems.com/wpcontent/uploads/2008/01/ai_drives_final.pdf.
+
+[121] Carl Shulman. Omohundro's 'Basic AI Drives' and Catastrophic Risks. Technical Report. [Accessed: 23 July 2025]. San Francisco, CA: Machine Intelligence Research Institute, Jan. 2010. URL: https://intelligence. org/files/BasicAIDrives.pdf.
+
+[122] Daniel Kokotajlo et al. AI 2027: A Scenario for the Next Decade of Superhuman AI. Online scenario report, AI Futures Project. Accessed 2025-07-06. Apr. 2025. URL: https://ai-2027.com/ai-2027.pdf.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[123] U.S. Department of State, Office of the Historian. The Allende Years and the Pinochet Coup, 1969-1973. https://history.state.gov/milestones/1969-1976/allende. n.d. (no date). [Accessed: 23 July 2025].
+
+[124] Bill Bigelow. The Overthrow of Democracy in Chile - A Timeline. Zinn Education Project (Teaching People's History series). [Accessed: 25 July 2025]. Sept. 2023. URL: https://www.zinnedproject.org/ materials/chile-coup-timeline/.
+
+[125] Center for Justice and Accountability. Where We Work - Chile. https://cja.org/where- we-work/ chile/. n.d. (no date). [Accessed: 23 July 2025].
+
+[126] Mikita Balesni et al. Towards evaluations-based safety cases for AI scheming. 2024. arXiv: 2411.03336 [cs.CR]. URL: https://arxiv.org/abs/2411.03336.
+
+[127] Joshua Krook. When Autonomy Breaks: The Hidden Existential Risk of AI. 2025. arXiv: 2503.22151 [cs.CY]. URL: https://arxiv.org/abs/2503.22151.
+
+[128] Jan Kulveit et al. Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development. 2025. arXiv: 2501.16946 [cs.CY]. URL: https://arxiv.org/abs/2501.16946.
+
+[129] SEC & CFTC Staffs. Findings Regarding the Market Events of May 6, 2010. Joint Staff Report. [Accessed: 23 July 2025]. Washington, D.C.: U.S. Securities, Exchange Commission, and Commodity Futures Trading Commission, Sept. 2010. URL: https://www.sec.gov/files/marketevents-report.pdf.
+
+[130] Andrei A. Kirilenko et al. "The Flash Crash: High-Frequency Trading in an Electronic Market". In: Journal of Finance (Forthcoming) (2017). [Posted to SSRN 27 May 2011; last revised 18 Apr 2017; accessed 23 July 2025]. DOI: 10.2139/ssrn.1686004. URL: https://ssrn.com/abstract=1686004.
+
+[131] Maurice Chiodo and Dennis Müller. The Problem of Algorithmic Collisions: Mitigating Unforeseen Risks in a Connected World. 2025. arXiv: 2505.20181 [cs.CY]. URL: https://arxiv.org/abs/2505.20181.
+
+[132] Kai Ebert et al. AI, Climate, and Regulation: From Data Centers to the AI Act. 2025. arXiv: 2410.06681 [cs.CY]. URL: https://arxiv.org/abs/2410.06681.
+
+[133] Intergovernmental Panel on Climate Change (IPCC). Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Sixth Assessment Report, Synthesis Report. Core Writing Team: H. Lee & J. Romero (eds.); accessed 2025-07-06. Geneva, Switzerland: IPCC, Mar. 2023, p. 184. DOI: 10.59327/IPCC/AR6-9789291691647. URL: https://www.ipcc.ch/report/ar6/syr/.
+
+[134] Mario J. Molina and F. S. Rowland. "Stratospheric sink for chlorofluoromethanes: Chlorine atom-catalysed destruction of ozone". In: Nature 249.5460 (1974), pp. 810-812. DOI: 10.1038/249810a0.
+
+[135] M. Norval et al. "The human health effects of ozone depletion and interactions with climate change". In: Photochemical & Photobiological Sciences 10.2 (Feb. 2011), pp. 199-225. DOI: 10.1039/c0pp90044c.
+
+[136] United Nations Environment Programme. Montreal Protocol on Substances That Deplete the Ozone Layer. https://ozone.unep.org/treaties/montreal-protocol. n.d. (no date). [Accessed: 24 July 2025].
+
+[137] International Telecommunication Union and World Benchmarking Alliance. Greening Digital Companies 2025: Monitoring Emissions and Climate Commitments. Technical Report. [Accessed: 24 July 2025]. International Telecommunication Union & World Benchmarking Alliance, July 2025. URL: https://www.itu.int/ en/ITU- D/Environment/Documents/Publications/2025/Greening%20Digital%20Companies% 202025%20Final.pdf.
+
+[138] Shamma Al Qutbah. AI Rivalries: Redefining Global Power Dynamics. Trends Research & Advisory Insight. Accessed 2025-07-06. Feb. 2025. URL: https : / / trendsresearch . org / insight / ai - rivalries - redefining-global-power-dynamics/.
+
+[139] Peter Barnett and Aaron Scher. AI Governance to Avoid Extinction: The Strategic Landscape and Actionable Research Questions. 2025. arXiv: 2505.04592 [cs.CY]. URL: https://arxiv.org/abs/2505.04592.
+
+[140] Karna Venkatraj. Rising Conflicts: An Analysis of Cold War Proxy Wars and Their Modern Application. Plan II Honors Thesis, University of Texas at Austin. [Accessed: 24 July 2025]. May 2019. URL: https: //repositories.lib.utexas.edu/items/72e35277-79de-48da-81d0-cde8251b27b8.
+
+[141] The White House, Office of Science and Technology Policy. White House Unveils America's AI Action Plan. https://www.whitehouse.gov/articles/2025/07/white-house-unveils-americas-ai-actionplan/. [Accessed: 24 July 2025]. July 2025.
+
+[142] Mark Esposito. AI geopolitics and data centres in the age of technological rivalry. World Economic Forum, Centre for the Fourth Industrial Revolution. [Accessed: 29 July 2025]. July 2025. URL: https : / / www . weforum.org/stories/2025/07/ai-geopolitics-data-centres-technological-rivalry/.
+
+<!-- PageFooter: 23 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+<!-- PageHeader: A PREPRINT - AUGUST 11, 2025 -->
+
+[143] Josephine Campbell. Artificial Intelligence Cold War. EBSCO Research Starters. [Accessed: 24 July 2025]. 2022. URL: https : / / www . ebsco . com / research - starters / diplomacy - and - international - relations/artificial-intelligence-cold-war.
+
+[144] Toryn Q. Klassen, Parand Alizadeh Alamdari, and Sheila A. McIlraith. "Epistemic Side Effects: An AI Safety Problem". In: Proceedings of the 22nd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023), Blue Sky Ideas Track. [5 pages; accessed: 29 July 2025]. London, United Kingdom, May 2023. URL: https://www.southampton.ac.uk/~eg/AAMAS2023/pdfs/p1797.pdf.
+
+[145] Craig S Wright. Cognitive Castes: Artificial Intelligence, Epistemic Stratification, and the Dissolution of Democratic Discourse. 2025. arXiv: 2507.14218 [cs.CY]. URL: https://arxiv.org/abs/2507.14218.
+
+[146] Michael Lawrence et al. Polycrisis Research and Action Roadmap 2024: Gaps, Opportunities, and Priorities for Polycrisis Research and Action. Technical Paper. [Accessed: 29 July 2025]. Victoria, BC, Canada: Cascade Institute, Aug. 2024. URL: https://cascadeinstitute.org/technical-paper/polycrisisroadmap/.
+
+[147] Mustafa Suleyman and Michael Bhaskar. The Coming Wave: Technology, Power, and the Twenty-First Century's Greatest Dilemma. Published Sep 5 2023 (hardcover); accessed 2025-07-19. Bodley Head / Penguin Random House, Sept. 2023, p. 352. ISBN: 9780593593974. URL: https://www.penguinrandomhouse.com/books/ 722674/the-coming-wave-by-mustafa-suleyman-with-michael-bhaskar/.
+
+[148] Lucas Potter, Orlando Ayala, and Xavier-Lewis Palmer. Biocybersecurity - A Converging Threat as an Auxiliary to War. 2020. arXiv: 2010.00624 [cs.CY]. URL: https://arxiv.org/abs/2010.00624.
+
+[149] Jia Yi Goh et al. Measuring What Matters: A Framework for Evaluating Safety Risks in Real-World LLM Applications. 2025. arXiv: 2507.09820 [cs.SE]. URL: https://arxiv.org/abs/2507.09820.
+
+[150] Nestor Maslej et al. Artificial Intelligence Index Report 2025. Tech. rep. [Accessed: 29 July 2025]. Stanford Institute for Human-Centered Artificial Intelligence, Apr. 2025. URL: https://hai.stanford.edu/aiindex/2025-ai-index-report.
+
+[151] Jamie Bernardi et al. Societal Adaptation to Advanced AI. 2025. arXiv: 2405.10295 [cs.CY]. URL: https: //arxiv.org/abs/2405.10295.
+
+<!-- PageFooter: 24 -->
+

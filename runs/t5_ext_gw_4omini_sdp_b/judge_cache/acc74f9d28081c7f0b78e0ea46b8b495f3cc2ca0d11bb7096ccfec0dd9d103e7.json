@@ -1,0 +1,14 @@
+{
+  "request_hash": "acc74f9d28081c7f0b78e0ea46b8b495f3cc2ca0d11bb7096ccfec0dd9d103e7",
+  "prompt_sha256": "d3e7bdff7421a5eea74dab54254699ced39bfb5f9d56ba4b9cdb7074bcec8347",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOJXqMjk1tlzRpBUAZuW8lDVWK8Y",
+  "prompt_tokens": 3129,
+  "completion_tokens": 47,
+  "actual_usd": 0.0004975499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing the lack of interoperable standards and the resulting fragmentation in implementations, specifically mentioning proprietary watermarking solutions and their compatibility issues."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "3fd4ccb04722eac2c40d23ffd08bf320626ebeed9d285b762c87b0f72308fd04",
+  "prompt_sha256": "97ff62476f9e8d007e7ca5246c279ce77148530b0f901452f0d41fffa3ed7b5d",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQ8UTQaPcunBiHNkLAHbEEFttjD",
+  "prompt_tokens": 7584,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011627999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining the limitations of keyword blocking, including its rigidity and the potential for evasion by malicious actors."
+  }
+}

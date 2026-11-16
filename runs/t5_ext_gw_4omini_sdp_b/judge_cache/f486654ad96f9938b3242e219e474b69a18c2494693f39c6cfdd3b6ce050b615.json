@@ -1,0 +1,14 @@
+{
+  "request_hash": "f486654ad96f9938b3242e219e474b69a18c2494693f39c6cfdd3b6ce050b615",
+  "prompt_sha256": "c7f4ef1faaf45de2627e3929e82c524f436bd73a3f32c64d46dce63e3272c3e4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOE18h8BumYP7UM6AIe6iT2FsStG",
+  "prompt_tokens": 7692,
+  "completion_tokens": 36,
+  "actual_usd": 0.0011753999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a detailed description of Operational Process Mitigations, including their purpose and components."
+  }
+}

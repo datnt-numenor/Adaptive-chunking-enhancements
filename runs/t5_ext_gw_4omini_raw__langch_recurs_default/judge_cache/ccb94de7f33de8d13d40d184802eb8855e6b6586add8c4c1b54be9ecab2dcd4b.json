@@ -1,0 +1,14 @@
+{
+  "request_hash": "ccb94de7f33de8d13d40d184802eb8855e6b6586add8c4c1b54be9ecab2dcd4b",
+  "prompt_sha256": "e1e90afcd192ce01a280a256f333f5e3016c9ebc415adda69c8f5fc8b8a15a11",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOIEIXdc7f5mG8R62QOiFFjj60pK",
+  "prompt_tokens": 7327,
+  "completion_tokens": 38,
+  "actual_usd": 0.00112185,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of both development and execution costs associated with AI evaluations, fully supporting the claims made in the Reference Answer."
+  }
+}

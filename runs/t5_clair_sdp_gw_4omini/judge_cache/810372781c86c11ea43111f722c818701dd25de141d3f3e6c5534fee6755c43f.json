@@ -1,0 +1,14 @@
+{
+  "request_hash": "810372781c86c11ea43111f722c818701dd25de141d3f3e6c5534fee6755c43f",
+  "prompt_sha256": "5cb2c584bd9a5fa32efb8d0142167a7214ed32931d27a72e8f7112de60f60b84",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOeUhJUJ1y8dmXvoWOJOUtRNVn7r",
+  "prompt_tokens": 8009,
+  "completion_tokens": 44,
+  "actual_usd": 0.00122775,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding LIME's speed advantage over SHAP and the use of Lasso regression in the LIME methodology."
+  }
+}

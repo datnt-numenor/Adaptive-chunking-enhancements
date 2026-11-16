@@ -1,0 +1,14 @@
+{
+  "request_hash": "48f5c716629fededda030ba72d00a4cc998d630fcb605a42e63c4209cb1686dd",
+  "prompt_sha256": "5d99a58d059c982eb11eb7b063f6aae84598c433ad98215efd602d8dfcca02c3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOuXrjuF99009DbUnqls85OwdHt8",
+  "prompt_tokens": 8663,
+  "completion_tokens": 60,
+  "actual_usd": 0.00133545,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context clearly states that a business may extend the response period for a verifiable consumer request by up to 90 days and must inform the consumer of the extension and reasons within 45 days, fully supporting the claims made in the Reference Answer."
+  }
+}

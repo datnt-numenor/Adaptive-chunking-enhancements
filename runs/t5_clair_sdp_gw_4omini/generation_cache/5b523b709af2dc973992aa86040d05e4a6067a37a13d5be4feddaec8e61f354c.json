@@ -1,0 +1,10 @@
+{
+  "request_hash": "5b523b709af2dc973992aa86040d05e4a6067a37a13d5be4feddaec8e61f354c",
+  "prompt_sha256": "58dee85e0c4806498de276a3b3663c9c3a079ad2b26248e01e6aa1f5d8f2f325",
+  "answer": "Swapping sensitive values for meaningless substitutes, such as in tokenisation, does not alter the type or length of data. This means that the tokens can be processed by legacy systems, such as databases, that may be sensitive to data length and type.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMqkplHb19OFF0ffTyQ1MHRbzyaM",
+  "prompt_tokens": 8551,
+  "completion_tokens": 50,
+  "actual_usd": 0.0013126499999999998
+}

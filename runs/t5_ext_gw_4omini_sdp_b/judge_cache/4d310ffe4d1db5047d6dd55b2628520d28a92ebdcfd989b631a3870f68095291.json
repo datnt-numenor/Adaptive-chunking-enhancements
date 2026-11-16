@@ -1,0 +1,14 @@
+{
+  "request_hash": "4d310ffe4d1db5047d6dd55b2628520d28a92ebdcfd989b631a3870f68095291",
+  "prompt_sha256": "a480fac0ec75de37ffe401679b47c2cc6a6c273d96064601612fc119e2b09fde",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOYg5trT1rdKtv45kKOcz25wWK12",
+  "prompt_tokens": 7491,
+  "completion_tokens": 45,
+  "actual_usd": 0.0011506499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed description of the AI system lifecycle, including all phases from planning and design to deployment and retirement, fully supporting the claims made in the Reference Answer."
+  }
+}

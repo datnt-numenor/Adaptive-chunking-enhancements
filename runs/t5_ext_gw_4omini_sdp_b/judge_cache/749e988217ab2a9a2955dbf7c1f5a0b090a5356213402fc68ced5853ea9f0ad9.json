@@ -1,0 +1,14 @@
+{
+  "request_hash": "749e988217ab2a9a2955dbf7c1f5a0b090a5356213402fc68ced5853ea9f0ad9",
+  "prompt_sha256": "997e2b821c2e88dd2d0cebcebe56a773b52714f52a755d94b8ec821c0184c844",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXBlzvXlZYhNbU9LGxJ1UyNnp59",
+  "prompt_tokens": 7149,
+  "completion_tokens": 39,
+  "actual_usd": 0.00109575,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a clear definition of 'governable' in relation to AI systems, fully supporting the claim made in the Reference Answer."
+  }
+}

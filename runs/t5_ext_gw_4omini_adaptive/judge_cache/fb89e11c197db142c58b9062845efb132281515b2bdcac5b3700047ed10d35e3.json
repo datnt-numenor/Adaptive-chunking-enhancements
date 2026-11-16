@@ -1,0 +1,14 @@
+{
+  "request_hash": "fb89e11c197db142c58b9062845efb132281515b2bdcac5b3700047ed10d35e3",
+  "prompt_sha256": "93423d34241b3602abd1093ab23ebfd06fd8da912084236be82c8e09235abf7f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9NKnN6ILTk3xL8qYXWgd3MoZ2P",
+  "prompt_tokens": 8872,
+  "completion_tokens": 52,
+  "actual_usd": 0.001362,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the percentage of companies mentioning AI in both the Business and Risk Factors sections, specifically noting that software companies lead in these disclosures, which fully supports the claim in the Reference Answer."
+  }
+}

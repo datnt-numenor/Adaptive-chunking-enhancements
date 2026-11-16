@@ -1,0 +1,14 @@
+{
+  "request_hash": "565afd962b78b49f4cd252703210e0fd744f37cace4f851565d375c193bc90db",
+  "prompt_sha256": "ca57c771f58f64195fde0d2b39235cc4d4d5a4be541819e453f79cffb5d6c433",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNU3EZgaKR6XQibxBl6WnRFZmotf",
+  "prompt_tokens": 6825,
+  "completion_tokens": 54,
+  "actual_usd": 0.00105615,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the challenges faced by both legal experts and computer scientists, including specific instances of uncertainty and the reasons behind the 'not sure' tags, fully supporting the claims made in the Reference Answer."
+  }
+}

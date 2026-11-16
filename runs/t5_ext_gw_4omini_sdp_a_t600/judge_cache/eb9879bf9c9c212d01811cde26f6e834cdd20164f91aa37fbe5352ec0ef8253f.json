@@ -1,0 +1,14 @@
+{
+  "request_hash": "eb9879bf9c9c212d01811cde26f6e834cdd20164f91aa37fbe5352ec0ef8253f",
+  "prompt_sha256": "f4a311e44fcb4807f39633dcd33e441cddf0a97a303d708e4016334e83e98813",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONYfaMl2DY6oBjVDCBCfkidxHET",
+  "prompt_tokens": 7383,
+  "completion_tokens": 47,
+  "actual_usd": 0.00113565,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining how the comprehensiveness of existing AI risk taxonomies leads to fragmentation and cognitive overload, thus limiting their operational utility."
+  }
+}

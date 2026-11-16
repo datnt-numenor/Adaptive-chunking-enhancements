@@ -1,0 +1,14 @@
+{
+  "request_hash": "df6ff6fa1e7822e352cd0fb4702a5aae21123872fb9a7383d30e3c520aa7ce85",
+  "prompt_sha256": "f705c7329969c5059d2cafd2a523795c20e807a0e9096b7d2c0b89f2aab1cc87",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNttayGR9zzk2izIzngbaApfWzFS",
+  "prompt_tokens": 8788,
+  "completion_tokens": 44,
+  "actual_usd": 0.0013446,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about CTDs in the AI Act, including examples that illustrate the need for temporal logic, fully supporting the claims made in the Reference Answer."
+  }
+}

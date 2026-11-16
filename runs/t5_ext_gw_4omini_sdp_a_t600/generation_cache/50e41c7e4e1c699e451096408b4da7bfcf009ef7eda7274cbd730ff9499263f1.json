@@ -1,0 +1,10 @@
+{
+  "request_hash": "50e41c7e4e1c699e451096408b4da7bfcf009ef7eda7274cbd730ff9499263f1",
+  "prompt_sha256": "47ae1df9f6bc1d8b62c84b5a48e2a6a6bcb274e76627de2504dbb6252a2bf892",
+  "answer": "Near-moderated Posts are selected by taking the 1,000 unmoderated firehose posts that are semantically most similar to those in the Moderated Posts subset, making them strong candidates for missed harmful content. \n\nThe annotation process for labeling involves manually annotating every post in MODERATIONBENCH to produce a human operationalization of Bluesky Moderation Service (BMS) policy labels. Two coauthors independently assess the complete multimodal content of each post, assigning a binary safety judgment (safe/unsafe) and harm labels following Bluesky's taxonomy. Disagreements are resolved by a third co-author, and the annotations yield substantial inter-annotator agreement.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJn1LWZm6Hihd0t1m2wRLLn3Jfe",
+  "prompt_tokens": 7569,
+  "completion_tokens": 135,
+  "actual_usd": 0.00121635
+}

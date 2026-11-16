@@ -1,0 +1,14 @@
+{
+  "request_hash": "9aa275320155408f5ef5ffb88c840b01e6c15c9e74a1aad2ee4a2ec772c03358",
+  "prompt_sha256": "79a6da13fe051c03572c1981bbabfbd97abd8fffaafcf26405c36322ab3790a8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOPj6PLyrN5LYzKpjov5AQ7jsiNP",
+  "prompt_tokens": 8132,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012468,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the criteria for classifying high-risk AI systems, including their regulation under EU product safety laws and their inclusion in Annex III."
+  }
+}

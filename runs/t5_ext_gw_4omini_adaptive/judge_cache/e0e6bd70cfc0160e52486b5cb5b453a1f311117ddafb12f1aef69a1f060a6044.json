@@ -1,0 +1,14 @@
+{
+  "request_hash": "e0e6bd70cfc0160e52486b5cb5b453a1f311117ddafb12f1aef69a1f060a6044",
+  "prompt_sha256": "4c9c5b76d540e2592220eee0db8d22e16136222379d465dce7655108a67db609",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONSsST7LgXoz0PosRnfyOMagQC7",
+  "prompt_tokens": 9385,
+  "completion_tokens": 49,
+  "actual_usd": 0.00143715,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that 'sensitive-information-leakage' is the current term that encompasses the earlier concept of 'confidential-information-leakage'."
+  }
+}

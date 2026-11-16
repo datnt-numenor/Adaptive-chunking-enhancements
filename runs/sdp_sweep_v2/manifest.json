@@ -1,0 +1,76 @@
+{
+  "sweep": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "sw0",
+      "sw": 0.0
+    },
+    {
+      "name": "sw0.05",
+      "sw": 0.05
+    },
+    {
+      "name": "sw0_rc1",
+      "sw": 0.0,
+      "rc": 1.0
+    },
+    {
+      "name": "sw0_rc3",
+      "sw": 0.0,
+      "rc": 3.0
+    },
+    {
+      "name": "sw0.05_rc1",
+      "sw": 0.05,
+      "rc": 1.0
+    },
+    {
+      "name": "sw0_dcc1.5_rc1",
+      "sw": 0.0,
+      "dcc": 1.5,
+      "rc": 1.0
+    },
+    {
+      "name": "sw0_icc1.5_rc1",
+      "sw": 0.0,
+      "icc": 1.5,
+      "rc": 1.0
+    },
+    {
+      "name": "sw0_dcc1.5",
+      "sw": 0.0,
+      "dcc": 1.5
+    },
+    {
+      "name": "sw0_icc1.5",
+      "sw": 0.0,
+      "icc": 1.5
+    },
+    {
+      "name": "rc0.3",
+      "rc": 0.3
+    },
+    {
+      "name": "sw0_rc0.3",
+      "sw": 0.0,
+      "rc": 0.3
+    }
+  ],
+  "calibration_runs": [
+    "A_default",
+    "A_target600",
+    "A_target800",
+    "A_target1000",
+    "B_default",
+    "B_qwen"
+  ],
+  "reference": "B_default",
+  "beta": {
+    "d_icc_p": 1.200679178416733,
+    "d_dcc_s": 1.341100357745224,
+    "d_dcc_c": 1.4369161628488394
+  },
+  "seconds": 10.1
+}

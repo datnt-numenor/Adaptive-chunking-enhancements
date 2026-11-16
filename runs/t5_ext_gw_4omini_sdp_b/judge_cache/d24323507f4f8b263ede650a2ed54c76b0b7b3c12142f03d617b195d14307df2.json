@@ -1,0 +1,14 @@
+{
+  "request_hash": "d24323507f4f8b263ede650a2ed54c76b0b7b3c12142f03d617b195d14307df2",
+  "prompt_sha256": "c9a7f67fab80a881130b8592681bb110c17202c49c3ba82b3b2aa07186e2b28a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNQoNQCl42EEfQAbTTGyZnC2KOCj",
+  "prompt_tokens": 7169,
+  "completion_tokens": 39,
+  "actual_usd": 0.00109875,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the need for regular assessments of security measures and the importance of measuring the implementation of security recommendations."
+  }
+}

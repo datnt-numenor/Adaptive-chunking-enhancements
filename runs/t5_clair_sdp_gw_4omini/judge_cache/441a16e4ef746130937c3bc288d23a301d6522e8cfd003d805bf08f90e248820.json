@@ -1,0 +1,14 @@
+{
+  "request_hash": "441a16e4ef746130937c3bc288d23a301d6522e8cfd003d805bf08f90e248820",
+  "prompt_sha256": "d9a07c2784d7b56e6cc1c6c324ebec4f00f097c6415472ee30d74589b1d587f5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiP5BYTrFXLrZW3W83sAJH9qjvpeF",
+  "prompt_tokens": 7344,
+  "completion_tokens": 44,
+  "actual_usd": 0.001128,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the requirements for consent under the GDPR, including the need for explicit consent and the conditions for opting out."
+  }
+}

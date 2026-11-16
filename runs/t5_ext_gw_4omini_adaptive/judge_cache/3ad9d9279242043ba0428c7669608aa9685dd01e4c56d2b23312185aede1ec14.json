@@ -1,0 +1,14 @@
+{
+  "request_hash": "3ad9d9279242043ba0428c7669608aa9685dd01e4c56d2b23312185aede1ec14",
+  "prompt_sha256": "ddb39b1211cd9e562f7efe9d9c3765e41d9ef8260955ff578a972f8bb260704f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNrLEA4E7Ku7su7UeKBJ8NGj96BR",
+  "prompt_tokens": 9210,
+  "completion_tokens": 69,
+  "actual_usd": 0.0014229000000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the three strategies (Baseline Assessment, Contextually Implemented Multiplexity, and MAS-Implemented Multiplexity) and mentioning the use of the Perspectives Extractor, PDS, and Sentiment Analyzer/Bias Framing in each strategy."
+  }
+}

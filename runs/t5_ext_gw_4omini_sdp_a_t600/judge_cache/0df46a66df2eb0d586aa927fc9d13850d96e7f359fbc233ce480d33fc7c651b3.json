@@ -1,0 +1,14 @@
+{
+  "request_hash": "0df46a66df2eb0d586aa927fc9d13850d96e7f359fbc233ce480d33fc7c651b3",
+  "prompt_sha256": "a09a91355cc51fc347de170ffc9fed84bbcf6536afd84ca91d3fcc599db6e24b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO7aJ4mtjHE4mOWCIrkbNeqUC2gm",
+  "prompt_tokens": 7762,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011895,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that risk management should occur at the model level, system/application level, and broader societal/political level."
+  }
+}

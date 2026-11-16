@@ -1,0 +1,10 @@
+{
+  "request_hash": "805301afcb24a693a038763c2a632973f39e02e21d430d71bad45b14cd4ffce6",
+  "prompt_sha256": "1826dbbe9b6f5c71afd92eaca8af9a65c5d235fb4fa8471e018abd7e3d6a6203",
+  "answer": "The retrieval method used when a user query requires understanding the entire dataset in arXiv 2505.11946 is called \"Global Search.\" In this method, the community summaries on a certain level are randomly shuffled and divided into smaller chunks to prevent information loss. Intermediate answers are generated based on each chunk, and these answers are rated by helpfulness on a scale from 0 to 100. Finally, the answers are sorted in descending order and injected into the context window until the token limit is reached to generate the final answer.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN70xiFbX2N5GMqPSrXCKMOQO06y",
+  "prompt_tokens": 8094,
+  "completion_tokens": 107,
+  "actual_usd": 0.0012783
+}

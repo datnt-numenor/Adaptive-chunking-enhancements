@@ -1,0 +1,14 @@
+{
+  "request_hash": "d8bd658c83b6bd7523071f6159cfb6c34932faeb1577102d2b48ff06c25a04a2",
+  "prompt_sha256": "dcba6e6d087f5aa452d5b316228303fc3e5ad89776e013012c59d0edeeb740f8",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKYtlNcvnHIc8hXEOsebLwaqI5G",
+  "prompt_tokens": 7492,
+  "completion_tokens": 37,
+  "actual_usd": 0.001146,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The context discusses the general risks and vulnerabilities associated with AI disclosures but does not specifically address the lack of tailored AI policies in organizations."
+  }
+}

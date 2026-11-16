@@ -1,0 +1,14 @@
+{
+  "request_hash": "d0421db0f3800e97184ffda7f3ae6a349ca8825e0f72b6668442a8676e6d67b6",
+  "prompt_sha256": "3f1bcd52d03dbb8b10256820009a955225b259f8b29ecf9afb4afe606b199d6b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLn6QOp2JK8LMuWdN9aKep9Pyyi",
+  "prompt_tokens": 8923,
+  "completion_tokens": 37,
+  "actual_usd": 0.0013606500000000001,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not mention Preyssl or the ESA's approach to safety risk assessment and management, making the Reference Answer unsupported."
+  }
+}

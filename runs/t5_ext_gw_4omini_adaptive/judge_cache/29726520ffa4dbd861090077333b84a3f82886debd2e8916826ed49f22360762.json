@@ -1,0 +1,14 @@
+{
+  "request_hash": "29726520ffa4dbd861090077333b84a3f82886debd2e8916826ed49f22360762",
+  "prompt_sha256": "88423fa518b2bea28e049c6b7f92c8b9717b39e46f451d12b1e3c832a6ddac01",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOS3CM9lRSTTlEgwlSPgyUahHYMr",
+  "prompt_tokens": 8269,
+  "completion_tokens": 33,
+  "actual_usd": 0.0012601499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports all claims made in the Reference Answer, detailing user objections and Anthropic's corresponding assurances."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "8a051876f171889b4f5d56d5258e07fb0dec86dc354e04ed0865f3e2b7dc8e80",
+  "prompt_sha256": "a87a8af0c16376d9cd8896449ccb706380cce588f35748d0e789f5018a9b07d2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2BXPgzYdvXI4WdmOvy8uVxd66cQ",
+  "prompt_tokens": 7678,
+  "completion_tokens": 46,
+  "actual_usd": 0.0011792999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer regarding public authorities and their status as non-recipients under specific conditions, while still being subject to data protection rules."
+  }
+}

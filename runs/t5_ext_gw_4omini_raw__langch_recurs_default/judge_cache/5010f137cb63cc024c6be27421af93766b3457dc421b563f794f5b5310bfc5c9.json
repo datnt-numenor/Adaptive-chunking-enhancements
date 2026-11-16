@@ -1,0 +1,14 @@
+{
+  "request_hash": "5010f137cb63cc024c6be27421af93766b3457dc421b563f794f5b5310bfc5c9",
+  "prompt_sha256": "3226a646d1662006a2d85d402a25e400e931111b941abbfa4a5c17aaa2b97d69",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOU82HGXkkVMolSrpMc5Vaj6qIwu",
+  "prompt_tokens": 6023,
+  "completion_tokens": 32,
+  "actual_usd": 0.00092265,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed explanation of reversibility, aligning perfectly with the definition given in the Reference Answer."
+  }
+}

@@ -1,0 +1,15 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 105.03it/s]
+adaptive@plain                                recall@10=0.8864 recall@5=0.7879 ndcg@10=0.6919 hit@10=0.9192  chunks=1633  t=85s
+adaptive@doc                                  recall@10=0.9147 recall@5=0.8646 ndcg@10=0.7581 hit@10=0.9495  chunks=1633  t=161s
+sdp_a_t600@plain                              recall@10=0.8862 recall@5=0.7943 ndcg@10=0.7103 hit@10=0.9192  chunks=1475  t=235s
+sdp_a_t600@doc                                recall@10=0.9064 recall@5=0.8543 ndcg@10=0.7632 hit@10=0.9394  chunks=1475  t=310s
+Saved -> out/clair_check_4b
+adaptive                     recall@10  pod=0.8864 a5000=0.8997 identical=98% r=0.933 n=99
+adaptive                     ndcg@10    pod=0.6919 a5000=0.7038 identical=81% r=0.975 n=99
+adaptive__doc                recall@10  pod=0.9147 a5000=0.9147 identical=100% r=1.000 n=99
+adaptive__doc                ndcg@10    pod=0.7581 a5000=0.7640 identical=91% r=0.990 n=99
+sdp_a_t600                   recall@10  pod=0.8862 a5000=0.8862 identical=100% r=1.000 n=99
+sdp_a_t600                   ndcg@10    pod=0.7103 a5000=0.7201 identical=93% r=0.986 n=99
+sdp_a_t600__doc              recall@10  pod=0.9064 a5000=0.9165 identical=99% r=0.927 n=99
+sdp_a_t600__doc              ndcg@10    pod=0.7632 a5000=0.7771 identical=86% r=0.965 n=99

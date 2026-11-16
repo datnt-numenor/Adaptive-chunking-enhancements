@@ -1,0 +1,10 @@
+{
+  "request_hash": "6c17c417f795bad063da8bda5b9fa993dc855d7eb44f22a58754ce12c14e179b",
+  "prompt_sha256": "2d437e02f4c028c66b044ed088cc0b5faaf83f3a66b640039bb3f64142b4ad74",
+  "answer": "NIST AI 100-4 describes the challenge of determining consent in non-consensual intimate imagery (NCII) detection as particularly difficult because consent is not typically evident or decipherable from the image itself. The document notes that consent may be limited to specific contexts, such as a person consenting to the use of their image to create a new AI-generated image but not for the distribution of that image. Additionally, it highlights that human vetting is currently required for accurate labeling, which can take a toll on the mental health of reviewers. The complexity of adjudicating consent is further compounded by the fact that many instances of NCII involve images that may not clearly indicate whether consent was given.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMZifB1biyus6qBIDJFBzhR5x2of",
+  "prompt_tokens": 8664,
+  "completion_tokens": 138,
+  "actual_usd": 0.0013823999999999998
+}

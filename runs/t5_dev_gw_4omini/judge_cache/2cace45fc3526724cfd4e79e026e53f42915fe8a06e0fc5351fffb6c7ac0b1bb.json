@@ -1,0 +1,14 @@
+{
+  "request_hash": "2cace45fc3526724cfd4e79e026e53f42915fe8a06e0fc5351fffb6c7ac0b1bb",
+  "prompt_sha256": "88ba5e08d003b49e9a0da9777f09e1ab3196400989300c331c2d9f34e5b04ecd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei28OHzPBh5kxOaVkichHSXH4rK3R",
+  "prompt_tokens": 7588,
+  "completion_tokens": 40,
+  "actual_usd": 0.0011622,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding the obligations of crawlers to respect access restrictions and follow the Robot Exclusion Protocol."
+  }
+}

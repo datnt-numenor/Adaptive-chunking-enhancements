@@ -1,0 +1,14 @@
+{
+  "request_hash": "54a9b2c0cd829fc318ae6540c3ed0c516262e111162d3b248467849cb4cadfeb",
+  "prompt_sha256": "8a4cf2450f6d6aed0e0e38febc28fb5e413c95b6b548a465e94ad8c9b81d64b2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOIzKggbYUttZjXnjtfz8SBOmtqQ",
+  "prompt_tokens": 8754,
+  "completion_tokens": 38,
+  "actual_usd": 0.0013358999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that UMAP is used to reduce each embedding to two dimensions, fully supporting the claim made in the Reference Answer."
+  }
+}

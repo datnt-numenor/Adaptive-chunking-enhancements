@@ -1,0 +1,14 @@
+{
+  "request_hash": "0586af37d9ec19c99787e2317ad006e0999af35d7deb04a23a2966fdac711d96",
+  "prompt_sha256": "7070b59eb27e4fe0cb02fd32fb08de603e7577b9188aa5a9b32afcfbf31cbd88",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPCaKRdO1V37oDfW07QRW4WmzmZN",
+  "prompt_tokens": 7596,
+  "completion_tokens": 38,
+  "actual_usd": 0.0011621999999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the dataset, including the specific patient data mentioned in the Reference Answer, thus fully supporting the claims made."
+  }
+}

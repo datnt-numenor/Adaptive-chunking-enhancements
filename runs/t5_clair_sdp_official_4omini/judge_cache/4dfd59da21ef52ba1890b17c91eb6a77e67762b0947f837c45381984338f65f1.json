@@ -1,0 +1,14 @@
+{
+  "request_hash": "4dfd59da21ef52ba1890b17c91eb6a77e67762b0947f837c45381984338f65f1",
+  "prompt_sha256": "50f8c82621ade47d23ddac8587ba5e39040552e22199e875c0bf893ee1835ef2",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN2mWUaFsf9CiLd6uYbxYY6hMU8H",
+  "prompt_tokens": 7363,
+  "completion_tokens": 44,
+  "actual_usd": 0.00113085,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions that GDPR applies to AI systems interacting with individuals, but it does not clarify the specific cases or limitations, making the support for the Reference Answer partial."
+  }
+}

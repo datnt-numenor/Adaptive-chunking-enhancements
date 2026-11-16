@@ -1,0 +1,14 @@
+{
+  "request_hash": "e18cb514ae3a82a25717612ad9c12c02d7c778c6f4389053a936249de0949e13",
+  "prompt_sha256": "aa92358a7af06ceedc3b75fc222b35ec8d95551fb07e1012ba21eadf91815863",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNkML3FU18Deot1JB4V2CKkmulqr",
+  "prompt_tokens": 7328,
+  "completion_tokens": 44,
+  "actual_usd": 0.0011256,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the investments in AI under Horizon 2020, including the specific figures mentioned in the Reference Answer, thus fully supporting all claims made."
+  }
+}

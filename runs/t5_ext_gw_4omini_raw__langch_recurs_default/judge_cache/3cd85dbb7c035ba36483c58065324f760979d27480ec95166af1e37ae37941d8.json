@@ -1,0 +1,14 @@
+{
+  "request_hash": "3cd85dbb7c035ba36483c58065324f760979d27480ec95166af1e37ae37941d8",
+  "prompt_sha256": "3c19e18a2e8d66882f4e321e51928fdde75664111c95144c39b48c17eeace79f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO98x4TujiIvGjoQlApqA2amSNIv",
+  "prompt_tokens": 8080,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012378,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim made in the Reference Answer by clearly stating that the Risk Factors section of 10-K filings is where companies must disclose significant risks."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "20de884e5158d73bdbbb54c61cb46b9837e03ae4824842e4c8a5927c95a5e9b9",
+  "prompt_sha256": "752416bc67f894ed1a017fe9722ef74572abf151db411c1349fe33a6676718f9",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONDt8yWWTrm6H3N57Amh93QMW3V",
+  "prompt_tokens": 7652,
+  "completion_tokens": 54,
+  "actual_usd": 0.0011802,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the IEEE standards 7001, 7002, 7003, and 2894 are mapped at category level in the compliance tier of the taxonomy."
+  }
+}

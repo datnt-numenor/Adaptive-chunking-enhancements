@@ -1,0 +1,14 @@
+{
+  "request_hash": "991c267c7b9523875ecf4e80e14f3aed52719689e3103a007da611d9158c5351",
+  "prompt_sha256": "166806f5fae54e4bd611d3b843907124348e5dcb6c5456804fd2aeef92b86642",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNyFAFlCKLRoPxnwAVtMDLlwLseF",
+  "prompt_tokens": 7980,
+  "completion_tokens": 45,
+  "actual_usd": 0.001224,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how personal information or sensitive personal information included in training or fine-tuning data can lead to unwanted disclosure if not adequately protected."
+  }
+}

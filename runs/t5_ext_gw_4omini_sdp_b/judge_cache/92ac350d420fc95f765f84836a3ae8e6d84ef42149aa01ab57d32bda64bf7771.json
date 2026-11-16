@@ -1,0 +1,14 @@
+{
+  "request_hash": "92ac350d420fc95f765f84836a3ae8e6d84ef42149aa01ab57d32bda64bf7771",
+  "prompt_sha256": "e218990e31b5d7692c03f3406ffec80a53e5d14f919a0bbc461cd928a030ff16",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO5zjMtVh8AwBrJGk9noaYrsavRR",
+  "prompt_tokens": 6717,
+  "completion_tokens": 37,
+  "actual_usd": 0.00102975,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data on the male-to-female author ratio in AI research, confirming the claim made in the Reference Answer."
+  }
+}

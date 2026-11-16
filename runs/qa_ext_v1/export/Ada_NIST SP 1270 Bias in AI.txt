@@ -1,0 +1,271 @@
+DOCUMENT: NIST SP 1270 Bias in AI
+
+<<<PAGE 29>>>
+# 3.2 How do we know what is right? TEVV Considerations for AI Bias
+
+# 3.2.1 TEVV Challenges
+
+Delegating decision-making to algorithms is appealing because ML systems produce more consistent decisions compared to humans [146]. However, AI systems do not work in a vacuum. Operational context, such as the jurisdiction and industry vertical in which a system operates, serves to frame fairness goals. Even the algorithm itself relies on data for training and performance tuning, which in turn can be assessed by a fairness metric. Therefore, when we consider the computational approaches to mitigating bias, we must take into consideration these three components together: algorithms, data, and fairness metrics.
+
+AI systems regularly model concepts that are-at best-only partially observable or capturable by data. Without direct measures for these highly complex considerations, AI development teams use proxies, which can create many risks [147]. For example, for "criminality," a measurable index or construct, might be created from other information, such as arrests and convictions, which are used as PROXY variables for predicting a certain outcome-in this case, whether a certain individual is likely to be a repeat offender. In algorithmic hiring, an AI system might be developed using input variables such as "length of time in prior employment," "productivity," and "number of lost hours" as measurable proxies in lieu of the not directly measurable concept of "employment suitability." The algorithm might also include a predictor variable such as distance from the employment site [148] because it might correlate with employees quitting their job due to long commutes or bad traffic. However, since "distance from the employment site" might disadvantage candidates from certain neighborhoods, and "length of time in prior employment" might disadvantage candidates who are unable to find stable transportation (or relate to other socio-economic factors) the AI system will contribute to biased outcomes.
+
+# Epistemic and aleatoric uncertainty
+
+ML distinguishes two types of predictive uncertainty: EPISTEMIC and ALEATORIC [149]. For example, models produced by deep learning ML systems exhibit epistemic uncertainty in the parameters of the computed model. The model parameters are typically computed as the result of a nonconvex minimization of an appropriately chosen cost function. It is well known from mathematics that such a formulation of the problem does not have a unique solution [150, 151]. While epistemic uncertainty can be reduced by increasing the amount of representative training data, it cannot be fully eliminated. This can impact the behavior of a deep learning system in deployment when used with real-world data, especially when there is a mismatch in the distributions of the real and training data [102]. This can lead to undesirable effects on many of the AI system's critical attributes (e.g., robustness, resilience), including inducing harmful bias. Even convex problems (e.g., multiple linear regression) may suffer from epistemic uncertainty when a decision variable is not included in the model.
+
+Another inherent type of uncertainty associated with machine learning is ALEATORIC.
+
+<!-- PageFooter: 20/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 30>>>
+It represents the uncertainty inherent in the data, e.g., the uncertainty in the label assigning process of the training dataset. Aleatoric uncertainty is the irreducible part of the predictive uncertainty. Since these two types of uncertainties (EPISTEMIC and ALEATORIC) are highly context-dependent, changing the context may blur the difference between them or even cause one to turn into the other. Thus, their characterization as reducible and irreducible is not absolute. For example, datasets containing overlapping samples with different attributes could be embedded into higher dimensions so that the samples are clearly separated, thus reducing aleatoric uncertainty at the expense of epistemic uncertainty - because the model would likely overfit the existing data in the larger space. Some of the difficulty in distinguishing epistemic and aleatoric uncertainty is that ML models are (implicit) mathematical representations of the data on which they are trained [152].
+
+# The growth of Large Language Models
+
+Large LANGUAGE MODELs (LLMs) have become the dominant trend in deep learning today and are expected to continue to grow in importance [103, 153]. Although LLMs have been able to achieve impressive advances in performance on a number of important tasks, they come with significant risks that could potentially undermine public trust in the technology. LLMs create significant challenges for both EPISTEMIC and ALEATORIC uncertainty. Relying on large amounts of uncurated web data increases aleatoric uncertainty [154]. Indepth knowledge of the data and its statistical properties is critically important for detecting bias in the predictive output of ML models.
+
+Identifying sources of bias is the first step in any bias mitigation strategy.
+
+<!-- PageFooter: 21/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 31>>>
+# Epistemic uncertainty and large-scale AI models
+
+With the availability of large and fast computing resources, massive artificial neural networks are becoming increasingly common. In particular, some language models now consist of trillion-dimensional parameter spaces trained on hundreds of gigabytes of data. The training data, often scraped from internet sources, commonly has known gender, racial, cultural, and socio-economic biases [154, 155]. Alternative approaches to large-sized language datasets have been proposed to mitigate harmful bias, but such an approach may introduce other human biases in the selection of values-targeted datasets. Beyond the systemic and selection biases, large language models also highlight EPISTEMIC UNCERTAINTY. Stochastic gradient descent (or other accelerated methods) methods [151] are used to find a set of parameters that minimize a cost function associated with the model, but deep neural networks exhibit complicated nonlinearities which result in many potential local minima. A trillion-dimensional manifold may have a huge, unknown number of minima [156]. Furthermore, to fit these parameters into computer memory, it is often necessary to use half-precision floating-point numbers [157], introducing rounding error which may undermine stability in the numerical methods [158]. As a result, the model may demonstrate unknown and erratic behavior and challenges for reproducibility and explainability [159].
+
+In the quest for fitting larger and larger models into existing finite computational resources, LLMs rely on techniques, e.g., reduced-precision numerical representations of models, that further increase the epistemic uncertainty of deep learning models, [160] cf., VIGNETTE. Early practice has shown that concerns about the use of LLMs are indeed valid, with preliminary experimental results showing LLMs exhibit significant bias [154, 161, 162]. To reduce risks from the use of LLMs, future work in this area should move towards efforts to fully understand and characterize their behavior, and to devise effective mitigation measures against the biases they bring.
+
+# Processes
+
+While datasets exhibit numerous biases that lead to harmful impacts, they feed directly into other system level processes that determine what is important to model. For AI systems to determine this importance, and effectively categorize and sort the firehose of data for downstream recommendations and decisions, contextual information is flattened and unobservable phenomena are quantified through the development of indices and use of proxies. The use of data attributes with names like "criminality," "hireability," "creditworthiness," or similar can be indicative of experimental design problems that give rise to harmful bias.
+
+The software designers and data scientists working in design and development are often highly focused on system performance and optimization. This focus can inadvertently be a source of bias in AI systems. For example, during model development and selection, modelers will almost always select the most accurate models. Yet, as Forde et al describe in their paper, [163] selecting models based solely on accuracy is not necessarily the best approach for bias reduction. Furthermore, the choice of the model's objective function, upon which a model's definition of accuracy is based, can reflect bias. Not taking context into consideration during model selection can lead to biased results for sub-populations (for example, disparities in health care delivery). Relatedly, systems that are designed to use aggregated data about groups to make predictions about individual behavior-a practice initially meant to be a remedy for non-representative datasets[18]-can lead to biased outcomes. This bias, known as ECOLOGICAL FALLACY, occurs when an inference is made about an individual based on their membership within a group (for example, predicting college performance risk based on an individual's race [52]). These unintentional weightings of certain factors can cause algorithmic results that exacerbate and reinforce societal inequities.
+
+<!-- PageFooter: 22/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 32>>>
+Natural language processing (NLP) is a powerful computational approach to allow machines to meaningfully understand human spoken and written languages. Powering activities such as algorithmic search, speech translation, and even conversational text generation, NLP is able to help us communicate with computer systems to carry out a variety of tasks. The set of harms that can arise from the use of NLP however has become a recent concern in the area of trustworthy AI [80, 90, 154, 164, 165]. Hovy and Prabhumoye describe five sources of bias in NLP and potential ways to counteract it [166].
+
+<!-- PageFooter: 23/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+# Spurious Correlations
+
+The speed and scope of machine learning processes can unfortunately expand the development of systems based on questionable scientific underpinnings that learn spurious correlations related to human characteristics. For example, the German public radio outlet BR24 examined a system that purportedly assessed tone of voice, language, gestures, and facial expressions to create a personality profile for use in hiring processes [6]. The analysis showed the AI system was easily manipulated by superficial changes to its inputs,
+
+<Figure>
+Fig. 4. The output of an AI system altered by background content.
+</Figure>
+
+awarding candidates higher scores when they wore glasses or when a bookshelf was in the background, diminishing claims that the system analyzed human expressions, and raising concerns about shortcut learning [167]. Indeed, many AI systems now attempt to make inferences about individuals based on their facial characteristics that are not scientifically supportable, such as their propensity for committing crimes or even their sexual orientation [121, 168-172]. The basis for drawing conclusions about emotional state from facial characteristics ranges from unscientific and debunked theories to emerging experimental studies [173], presenting concerning challenges to AI systems that claim to make such judgements. By mechanizing human charac-
+
+teristics these systems can obfuscate significant uncertainty and result in harmful biases. AI-based hiring systems that claim to glean information about candidates from audio and video have been shown to increase bias in outcome decisions and may present untenable trade-offs between bias mitigation and prediction accuracy [174]. AI systems marketed as making predictions based on facial expressions often generate decisions based on biased experimental design premises [168] or spurious patterns learned by the system (e.g., shortcut learning). These cases illustrate the risks associated with using AI systems for tasks like sentiment or affect analysis, along with using systems to infer spurious correlations more broadly, which can perpetuate biases across groups and, in several instances can be scientifically unsound [175]. AI systems in consequential or sensitive areas should not be built on the basis of spurious correlations. They can provide faux-objective justification for biased outcomes. A socio-technical perspective broadens awareness of these risky computational approaches.
+
+The rise of predictive analytics as a mechanism for identifying patterns in human behavior is a recent example of a process that can produce biased outcomes and therefore should be used carefully. These applications can be highly effective at identifying key insights in data that are unable to be gleaned by humans [176]. This technology is also often presented and perceived as a way to reduce human cognitive biases and make decisions more fair and objective [27, 177, 178]. In well defined and constrained settings these technologies can result in accurate and fair outcomes. However, the assumption that AI-based systems are more objective, especially in high stakes decision making, remains unclear. Categorizing unobservable behavior and phenomena leads to increased uncertainty in system performance. Measuring whether the patterns identified by these applications are real or a result of spurious correlations is difficult. Adding to the challenge is the reality that these systems are built and placed within organizational settings along with their accompanying - often unstated - policies and priorities, and used by subject matter experts and decision makers who have their own implicit heuristics and biases [179]. A fallacy of objectivity can often surround these processes, and may create conditions where technology's capacity and capabilities are oversold [121]. See VIGNETTE for an example.
+
+<!-- PageFooter: 24/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 34>>>
+# Algorithmic effects
+
+Algorithmic complexity can vary greatly across AI models. The number of parameters, which mathematically encode the training data, may be as few as one and as many as one trillion. Simple models with fewer parameters are often used because they tend to be less expensive to build, more explainable and more transparent, and easier to implement. However, such models can exacerbate statistical biases because restrictive assumptions on the training data often do not hold with nuanced demographics. Furthermore, designers who must make decisions on what variables to include or exclude can impart their own cognitive biases into the model [110, 180]. Complex models are often used on nonlinear, multimodal data such as text and images. Such models may capture latent systemic bias in ways that are difficult to recognize and predict. Expert systems, another AI paradigm, may encode cognitive and perceptual biases in the knowledge accumulated by practitioners from which the system is designed to emulate.
+
+# Validity
+
+Ultimately, AI systems should demonstrate that they perform accurately, but how do we know what constitutes a "right answer"? Validating performance is a difficult but necessary endeavor for any system being deployed to the public and effective management and mitigation of AI bias. Many difficulties and flaws can arise in system validation. A common challenge in system testing is a lack of ground truth, or noisy labeling and other annotation factors which make it difficult to know what is accurate. The use of proxy variables compounds this difficulty, since what is being measured isn't directly observable. Performing system tests under optimal conditions - or conditions that are not close to the deployed state - is another challenging design flaw. System performance metrics are also difficult to generalize and can lead to issues with unintended use. Due to these challenges, subject matter experts should be relied upon during validation to create and oversee the most realistic possible validation processes [102]. Also the practice of "stratified performance evaluations," [102] where system performance is analyzed across segments in the training or test data, whether demographic segments or otherwise, is a basic consideration for understanding system validity across a population of users.
+
+<!-- PageFooter: 25/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 35>>>
+# Validation and deployment
+
+Validation also means ensuring that the system is not being used in unintended ways. DEPLOYMENT BIAS happens when an AI model is used in ways not intended by developers. Emergent bias happens where the model is used in unanticipated contexts. Developers of an algorithm used by major U.S. cities to assist in coordinating housing to homeless people began phasing it out after several cities inappropriately used the algorithm as an assessment tool rather than as the presecreening tool as it was designed [181]. In another instance, the Chicago Police Department decommissioned an algorithm designed to predict the risk that an individual might be involved in future gun violence, citing unintended use and misapplication of the model [182].
+
+It is not uncommon for deployment to be used as system testing. Depending on the context, institutional review may not be required to carry out this type of testing [183]. Without system validation, an AI system could be released that is technically flawed or fails to establish appropriate underlying mechanisms for proper functioning [184-186]. A system could be deployed in a negligent manner, be based on pseudoscience or spurious correlations, prey on the user, or generally exaggerate claims. In such cases, the goal should not be to ensure applications are bias-free, but to reject the development outright in order to prevent disappointment or harm to the user as well as to the reputation of the provider. Such systems may also run afoul of existing legal frameworks that proscribe unfair, deceptive, and predatory practices (UDAP). 12 This type of scenario may reinforce public distrust of AI technology since untested or technically flawed systems can contribute to bias and other harmful outcomes.
+
+# AI systems as magic
+
+A further validation challenge of AI systems stems from their accessibility and hype. Physicist Richard Feynman referred to practices that superficially resemble science but do not follow the scientific method as cargo cult science. A core tenet of the scientific method is that hypotheses should be testable, experiments should be interpretable, and models should be falsifiable or at least verifiable. Commentators have drawn similarities between AI and cargo cult science citing its black box interpretability, reproducibility problem, and trialand-error processes [187, 188]. High-level machine learning libraries and reduced costs of cloud computing have made AI more affordable and easier to develop. As a result, AI development is becoming increasingly democratized. Still, AI itself remains largely opaque-deep neural networks and Bayesian inference require advanced mathematics to understand. The DUNNING-KRUGER EFFECT is a cognitive bias in which a person with limited knowledge in a domain may vastly overestimate their understanding of that domain.
+
+\* 12 See, e.g., Federal Trade Commission Act, Section 5.
+
+<!-- PageFooter: 26/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+Even among experts, data-driven technologies can exacerbate CONFIRMATION BIAS, particularly when they are implicitly guided by expected outcomes. An analysis that examined hundreds of AI algorithms for identifying COVID found that few of them were effective [189].
+
+The danger is that with enough tweaking of hyperparameters across many candidate AI models, one of them may appear to be highly accurate even when measured against standard performance datasets. DATA DREDGING (also known as p-hacking) is a statistical bias in which testing huge numbers of hypotheses of a dataset may appear to yield statistical significance even when the results are statistically nonsignificant.
+
+Fig. 5 provides examples of how the three categories of bias - systemic, statistical and computational, and human - interact and contribute to harms within the data and processes used in AI applications, and the validation procedures for determining performance.
+
+<Figure>
+Fig. 5. How biases contribute to harms
+</Figure>
+
+# 3.2.2 TEVV Guidance
+
+To mitigate the risks stemming from epistemic and aleatoric uncertainties, model developers should work closely with the organizations deploying them. Teams should work to ensure periodic model updates, and test and recalibrate model parameters on updated representative datasets to meet the business objectives while staying within desired performance targets and acceptable levels of bias. From a Bayesian inference perspective, this can be seen as updating the prior of the model to help avoid issues that may arise from using stale priors. Organizations are recommended to employ appropriate governance procedures to adequately capture this cross-organizational need and ensure no negative impacts from using the AI technology.
+
+<!-- PageFooter: 27/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+# Algorithms
+
+In ML, it is not meaningful to assign bias to the model or algorithm itself without contextual information about the specific tasks on which they may be used. This links the model and algorithm to the dataset on which they are trained and tested (see VIGNETTE for how contextual factors can play a role in bias). The catchphrase "bias in, bias out" is widely used to describe the heavy dependence of the algorithmic behavior on the data. For example, in a natural language processing context, hate speech detection models use dialect markers as toxicity predictors, which can result in bias against minority groups [190]. In another context, an algorithm designed to deliver gender-neutral advertisements about jobs in STEM resulted in gender bias due to younger women being considered a valuable subgroup and more expensive as the targets for advertisements [85, 132].
+
+Methods that help to reduce algorithmic bias are another helpful construct for understanding it. Specific methods for algorithmic mitigation of bias for many different machine learning tasks have been delineated or surveyed in recent studies [85, 191-194]. When considering approaches to mitigating algorithmic bias in a specific task context, recent literature categorizes debiasing methods into one of three categories [61, 85, 191, 194]:
+
+1. Pre-processing: transforming the data so that the underlying discrimination is mitigated. This method can be used if a modeling pipeline is allowed to modify the training data.
+
+2. In-processing: techniques that modify the algorithms in order to mitigate bias during model training. Model training processes could incorporate changes to the objective (cost) function or impose a new optimization constraint.
+
+3. Post-processing: typically performed with the help of a holdout dataset (data not used in the training of the model). Here, the learned model is treated as a black box and its predictions are altered by a function during the post-processing phase. The function is deduced from the performance of the black box model on the holdout dataset. This technique may be useful in adapting a pre-trained large language model to a dataset and task of interest.
+
+<!-- PageFooter: 28/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+# The limits of algorithmic transparency in eliminating bias
+
+Automated decision-making is appealing but comes with risks that can result in discriminatory outcomes. Researchers investigated settings where ads are allocated by algorithm and found instances where historically-discriminated-againstgroups are less likely to see desirable ads [132]. In this setting, a field test was performed with an ad that was intended to promote job opportunities and training in STEM. The STEM career ad campaign was motivated by widespread concern about a shortage of underrepresented groups in the STEM sector, particularly women. The assumption is that disseminating information about STEM careers to women and encouraging women to enter this field helps to address this problem. However, since women are far more likely to make decisions about household purchases, they are more valuable targets for advertising, creating pricing differentials for ad displays. The result of the ad campaign was that 20%+ more men than women viewed the ad, with the largest difference in the 25-54 year old age group.
+
+The findings in this study help demonstrate the difficulty of evaluating algorithms for preventing discrimination, and the need for a socio-technical lens on the challenge. It is insufficient to look for bias in the algorithm alone. Relatedly, according to Lambrecht [132]:
+
+"One popular policy prescription has been a focus on algorithmic transparency where algorithmic codes are made public. Such policies are gaining increasing momentum - for example, the Federal Trade Commission (FTC) launched a new unit focused on algorithmic transparency, ... however, that algorithmic transparency would not have helped regulators to foresee uneven outcomes. The reason is that an examination of the algorithmic code would likely have revealed an algorithm focused on minimizing ad costs for advertisers. Without appropriate knowledge about the economic context and how such costminimization might affect the distribution of advertising, such 'transparency' would not have been particularly helpful."
+
+While transparency into AI system mechanisms is rarely a direct bias mitigant, as explained above, transparency enables many critical AI governance functions. Transparency is very important, but should not be mistaken for fairness.
+
+In sectors of the U.S. economy where the Equal Credit Opportunity Act, 13 influential court cases, 14 or other legal and regulatory matters invoke the legal doctrine of Disparate Treatment, debiasing efforts may be less likely to explicitly include pre-, in-, and postprocessing approaches, and instead rely on alternative modeling approaches. In consumer finance and employment litigation, where the practice of bias remediation, e.g., debiasing, has been pursued for decades, practitioners are more likely to consider adjustments to input variables or model hyperparameters to improve bias testing results or real-world outcomes. Demographic group membership, necessary for bias testing purposes, is often inferred using the Bayesian improved surname geocoding (BISG) process (see [195]).
+
+\* 13 CFPB Supervision & Examination Manual, pt. II, § C, Equal Credit Opportunity Act (Oct. 2015).
+
+\* 14 e.g., Ricci v. DeStefano, 557 U.S. 557 (2009).
+
+<!-- PageFooter: 29/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+Modeling algorithms or debiasing techniques that rely on demographic information, as most pre-, in-, and postprocessing methods do, may pose higher risks in regulated environments where disparate treatment must be avoided [196].
+
+# Fairness metrics
+
+From a computational standpoint, defining a fairness metric for ML requires developing a formal mathematical model to achieve desired predictive goals on a given dataset and associated task. Numerous fairness metrics are proposed in the literature [85, 191, 194, 197-199]. Much of the work in determining fairness criteria involves supervised learning, but the labeled data required for these tasks may not be readily available. This is particularly true for large language models, where the sheer scale of the datasets used for training is prohibitive for proper data labeling. This has a direct impact on both representativeness of the training data and, in turn, its impact on the representativeness of the generated model might exacerbate discriminatory outcomes, as large language models are adapted to specific datasets and tasks. Moreover, even if datasets are representative they may still exhibit biases or improperly utilize protected attributes, which in turn may lead to discrimination. Proxies may be used for hiding protected attributes and care should be taken to avoid discrimination resulting from badly chosen proxies [59, 136, 147, 200, 201]. And, even if proxies are used to hide protected attributes, they may still reveal sensitive information about individuals or groups [195, 202].
+
+Recent literature [203] considers alternative learning tasks, e.g. unsupervised learning and reinforcement learning where only intermediate feedback is provided to the model, and tries to balance the effects of short- and long-term rewards. Several open questions still remain about the use and representativeness of synthetically generated data, in applications where little data is available. An emerging related line of research is to use simulations to evaluate the long-term impact of machine learning systems by incorporating elements of system level dynamics, feedback loops, and other long-term effects to make fair decisions in dynamic environments [204].
+
+Another challenge, with serious social ramifications, is how to measure fairness in the emergent class of deployed generative models, such as large language models, computer vision systems, or deep fakes, whose outputs are free form text, audio or video [205].
+
+<!-- PageFooter: 30/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+While academic research into mathematical notions of fairness has blossomed in recent years, procedures for testing fairness in regulatory and litigation settings such as employment and consumer finance have been operational for decades, and reached a level of maturity before the recent increase in interest on the topic. In these areas, statistical tests can be applied to determine whether some automated decision-making system is acting outside the bounds of applicable law. t-tests, χ 2 -tests, analysis of regression coefficients, and other traditional statistical tests can be used to show a statistically significant difference between ML system outcomes across demographic groups. In some cases, measurements of differential validity are also used to ensure that applicants and employees receive roughly equal service from systems in employment, where system performance quality is evaluated across demographic groups. 15
+
+Credible attempts at bias mitigation should maintain alignment with acknowledged legal standards.
+
+Generally, the majority of fairness metrics are observational as they can be expressed using probability statements involving the available random variables [61]. These metrics can be classified into many categories: fairness through unawareness, individual fairness, demographic parity, disparate impact, differential validity, proxy discrimination, equality of opportunity, etc. However, not all critically important lines of inquiry can be answered through observations alone. Moreover, depending on the relationship between a protected attribute and the data, certain observational definitions of fairness can increase discrimination. Hence, research to improve fairness metrics continues. For instance, a counterfactual fairness definition has been developed [199] to capture the intuition that a decision is fair towards an individual if it is the same in both the actual world and a counterfactual worldwhere the individual belongs to a different demographic group. Simulations can also be used to gain counterfactual information about how the data would have varied if a different data collection or decision-making policy had been in place [204]. As algorithmic discrimination can arise from the encoding of spurious correlations and noisy local dependencies into ML systems during training, there is currently great focus on causal tools [206] and how they can formally incorporate effects of hypothetical actions to solve a wide range of fairness modeling problems. Until causal methods are more widely available and adopted, minimizing the number of input variables, and ensuring that there is no strong correlation amongst them and a logical relationship to the prediction target, is a mitigation tactic for proxy discrimination and other AI risks.
+
+\* 15 See, e.g., U.S. v. Ga. Power Co., 474 F.2d 906 (5th Cir. 1973).
+
+<!-- PageFooter: 31/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+When deciding which fairness metric to adopt, it is important to recognize the impossibility of satisfying certain mathematical fairness constraints at once except in highly constrained special cases [207]. For example, there is an inherent incompatibility between two conditions: calibration and balancing the positive and negative classes. These conditions cannot be satisfied simultaneously unless under certain constraints [78]. While not all mathematical fairness desiderata can be achieved simultaneously, it is important to note that mitigated bias and good performance can be achieved simultaneously [208].
+
+The plethora of fairness metric definitions illustrates that fairness cannot be reduced to a concise mathematical definition. Fairness is dynamic, social in nature, application and context specific, and not just an abstract or universal statistical problem. Therefore, it is important to adopt a socio-technical approach to fairness in order to have realistic fairness definitions for different contexts as well as task-specific datasets for machine learning model development and evaluation.
+
+# 3.3 Who makes decisions and how do they make them? Human Factors in AI Bias
+
+# 3.3.1 Human Factors Challenges
+
+As ML algorithms have evolved in accuracy and precision, computational systems have moved from being used purely for decision support-or for explicit use by and under the control of a human operator-to automated decision making with limited input from humans. Computational decision support systems augment another, typically human, system in making decisions. Comparatively, for algorithmic decision systems there is less human involvement, with the AI system itself more in the "driver's seat," and able to produce outcomes with little human involvement to govern the impact. The growth and prevalence of algorithmic decision systems has helped to drive a decreased sense of trust in AI among the public [209]. This distrust is exacerbated by the reality that historical and social biases are baked-in to the data and assumptions used in the algorithmic models generating automated decisions. As a result, these algorithmic models have a higher probability of producing and amplifying unjust outcomes (e.g. for racial and ethnic minorities in areas such as criminal justice) [18-30, 210]. The systemic biases embedded in algorithmic models can also be exploited and used as a weapon at scale, causing catastrophic harm [211-214]. Organizations that deploy AI models and systems without assessing and managing these risks can not only harm their users but jeopardize their reputations.
+
+# Deployment Context of Use
+
+AI systems are designed and developed to be used in specific real world settings, but are often tested in idealized scenarios. Once deployed, the original intent, idea, or impact assessment can drift as the application is repurposed or used in unforeseen ways, and in settings or contexts for which it was not originally intended. Different deployment contexts means a new set of risks to be considered. Engaging with the broad set of stakeholder communities that may be impacted by the deployment of these technologies-before the decision is made to build the AI system-is an important consideration and strongly recommended. For more on context of use and what it encompasses from a human-centered design perspective, see subsequent Section 3.3.2.
+
+<!-- PageFooter: 32/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+One major purpose, and a significant benefit, of automated technology is that it can make sense of information more quickly and consistently than humans. AI systems are also often perceived as a way to make public interest decisions more fair, or to reduce (or eliminate) biased human decision making and bring about a more equitable society [27]. These perspectives have led to the deployment of automated and predictive modeling tools within trusted institutions and high-stakes settings such as hiring or criminal justice. In such settings, automated decisions that incorporate negative biases can perpetuate harms more quickly, extensively, and systematically than human and societal biases on their own.
+
+# Human-in-the-loop
+
+Most algorithmic decision systems are socio-technical systems. They are inextricably tied to human social behavior, from the datasets used by ML processes and the decisions made by those who build them, to the interactions with the humans who provide the insight and oversight to make such systems actionable. The default assumption is that placing a human "in-the-loop" of such systems can ensure that adverse events do not occur. Current perceptions about the role and responsibility of the human-in-the-loop with AI are often implicit, and expectations about level of performance for these systems are often based on untested or outdated hypotheses. The bulk of academic literature available in this domain often relates to humans working with automated systems that pre-date the broad scale use of ML.
+
+Some human-in-the-loop systems are deployed for use by subject matter experts. In this expert-driven scenario, professionals with expertise in a specific domain work in conjunction with an automated system towards a specific end goal-usually a consequential decision about another individual(s). Depending on the purpose of the system, the expert may interact with the ML model but is rarely part of the design or development of the system itself. These experts are not necessarily familiar with ML, data science, computer science, or other fields traditionally associated with AI design or development. For example, for AI systems that are deployed in the domain of medicine, the experts are the physicians and bring their expertise about medicine-not data science, data modeling and engineering, or other computational factors.
+
+<!-- PageFooter: 33/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+The perception that a human (expert or otherwise) can effectively and objectively oversee the use of algorithmic decision systems is a problematic assumption. More work needs to be done to understand the complex institutional and societal structures where these systems are developed and placed. Humans carry their own significant cognitive biases and HEURISTICS into the operation of AI systems and exactly how they can assist remains an understudied area. One challenge with human-in-the-loop scenarios is finding a configuration that enables a system to be used in a way that optimally leverages, instead of replaces, the subject matter expertise of the human. This is difficult since subject matter experts and AI developers often lack a common vernacular, which can contribute to miscommunication and misunderstood expectations and capabilities on both sides of the human-AI system.
+
+Expert-system configurations are complex, even without the aid of a highly advanced AI. Experts and operators can often be placed into AI-based system settings without explicit declarations for governing authority over the specific task and outcome. With the promise of approaches that are more quantitative, subject matter experts may inadvertently activate the McNamara fallacy and leverage the AI system to take the pressure off of their often more subjective processes for the presumed objectivity of automation (this bias is often referred to as automation complacency). Expert users may also subconsciously find ways to leverage this perceived objectivity as cover, or even justification, for their implicit biases [215-217] and inadvertently make decisions that are inaccurate and harmful. Relatedly, AI developer communities may subconsciously presume that experts' methods have been validated to a greater degree than is the case. These kinds of implicit individual and group actions may create conditions that indirectly encourage the use of technology that is not quite ready for use, especially in high-stakes settings [3, 78, 218]. Researchers recommend that AI development teams work in tighter conjunction with subject matter experts and practitioner end users, who in turn, must "consider a deliberate and modest approach" when utilizing automated output [219].
+
+Expert-driven ML and human-in-the-loop practices are not intended to serve as a form of oversight on AI systems and accompanying results. Experts bring their particular subject matter knowledge to the process, and are not necessarily trained to govern the use of an AI system they played no role in developing. But current legal and governance structures actively rely on humans-either expert or otherwise-to serve as a mechanism for protecting society from faulty, mistaken, and/or dangerous algorithmic decisions. The fundamental assumption of such structures is that a human overseer, simply by virtue of being human, will be able to provide adequate governance for systems. 16 The reality however is that without significant procedural and cultural support, optimistic expectations about how humans are able to serve in this administrative capacity are not borne out in practice. The literature provides a thorough review of the flaws of human oversight policies [112].
+
+\* 16 This is most frequently emphasized in governance frameworks that associate human-in-the-loop decisions as posing less risk, as opposed to fully automated decision making. See, for example, the role of general human intervention in minimizing risks for AI systems in the FDA's "Good Machine Learning Practice for Medical Device Development: Guiding Principles," https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-
+
+<!-- PageFooter: 34/77 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+# General public
+
+The challenge of interpretable systems is also a factor for consumer or citizen use of AI applications. It is presumed that trust can improve if the public is able to interrogate and engage with AI systems in a more transparent manner. In their article on public trust in AI, Knowles and Richards state ". . . members of the public do not need to trust individual AIs at all; what they need instead is the sanction of authority provided by suitably expert auditors that AI can be trusted" [220]. Developing such an authority requires standard practices, metrics, and norms from a socio-technical perspective. The NIST AI Risk Management Framework will help create standard practices, metrics and norms in consensus with the AI community.
+
+Reliance on various downstream professionals to act as a governor on automated processes in complex societal systems is not a viable approach.
+
+# 3.3.2 Human Factors Guidance
+
+# Impact assessments
+
+The decision to deploy AI technology is a function of organizational incentives. AI is designed and developed within a set of organizational norms and policies. One recent proposed approach for ensuring that technology is developed in an ethical and responsible manner is the algorithmic impact assessment. Identifying and addressing potential biases is an important step in the assessment process. There is currently momentum for AI researchers to include statements about potential societal impacts [221] when submitting their work to journals or conferences. Similar to privacy impact assessments, which are relied upon by data protection and privacy frameworks to gauge and respond to data privacy risks, such impact assessments provide a high-level structure that enables organizations to frame the risks of each algorithm or deployment while also accounting for the specifics of each use case. Engaging in impact assessment can also serve as a forcing mechanism for organizations to articulate any risks, and then to generate documentation of any mitigation activities in the event that any harms-and associated oversight-do arise 17 [222-226]. A misstep with impact assessments is to only apply them once at the beginning of a long and iterative process in which goals and outcomes can change over time. To overcome the challenge of the point-in-time nature of impact assessments, impact assessments must be applied at some reasonable cadence when used with iterative and evolving AI systems. Another concern with impact assessments is that the technology groups, or others who will be assessed, may have undue influence on building or using the assessment.
+
+\* medical-device-development-guiding-principles; NHTSA's "Automated Driving Systems 2.0 Voluntary Guidance," https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/13069a-ads2.0 090617 v9a tag.pdf. In the military context, even more emphasis has been placed on human intervention, such as in "AI Principles: Recommendations on the Ethical Use of Artificial Intelligence," Department of Defense Defense Innovation Board, https://media.defense.gov/2019/Oct/31/2002204458/-1/- 1/0/DIB AI PRINCIPLES PRIMARY DOCUMENT.PDF; see also Brig. Gen. (ret.) Jean Michel Verney et al., "Human-On-the-Loop," Joint Air & Space Power Conference 2021, https://www.japcc.org/humanon-the-loop/.
+
+<!-- PageFooter: 35/77 -->
+
+<!-- PageBreak -->
+

@@ -1,0 +1,10 @@
+{
+  "request_hash": "1777df2aadc15aa5b76abfa508a99c79649cbe98fc6358eaf4f5ffa0050a341a",
+  "prompt_sha256": "93ea3e557d14d78119282a03b7c20a4bedf0c4249d2fae5e113da6c707a1d52e",
+  "answer": "The table on page 4 of arXiv 2401.14446 indicates that gradient-based attacks require white-box access. This means that to perform gradient-based attacks, evaluators need access to the model's gradients, which is not possible with black-box or grey-box access.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMmZHZeblGcwSwUnRPUvh2INffGv",
+  "prompt_tokens": 9456,
+  "completion_tokens": 57,
+  "actual_usd": 0.0014525999999999999
+}

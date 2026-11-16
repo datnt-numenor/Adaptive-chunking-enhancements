@@ -1,0 +1,14 @@
+{
+  "request_hash": "419bf0922942d940c73efa55a549484c7df52604aed9e47abd5dfb4cd7c9bb0f",
+  "prompt_sha256": "2054107615a153f225a336f2b33d59e0f71d335dbb691926001028c87ea35549",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1oavFkfw8zMXQwT1Fqq5KRieQoD",
+  "prompt_tokens": 5865,
+  "completion_tokens": 50,
+  "actual_usd": 0.00090975,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding tokenisation, including its ability to maintain original data type and length, compatibility with legacy systems, and efficiency in resource and storage requirements."
+  }
+}

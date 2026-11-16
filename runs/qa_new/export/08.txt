@@ -1,0 +1,201 @@
+DOC_ID: Ada (technique)_Standards - Transparency
+
+<<<PAGE 1>>>
+# 1- Transparency
+
+The Transparency pilar refers to a general mindset as well as ways to clearly communicate your intentions, your values, and the actual way you implemented AI and collect personal data.
+
+# A. Model cards
+
+A model card is a document about a machine learning model that seeks to give important information about how the model works.
+
+The idea of model cards was first exposed in a Google Research paper by Mitchell et al. 2019 (https://arxiv.org/pdf/1810.03993.pdf ). Google later published examples of Model Cards and how to make them (Google Cloud Model Cards ).
+
+## A.1. Different sections
+
+Here is the list of the different sections the authors defined:
+
+· Model Details. Basic information about the model.
+
+- Person or organization developing model
+
+- Model date
+
+- Model version
+
+- Model type
+
+- Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
+
+- Paper or other resource for more information
+
+- Citation details
+
+- License
+
+- Where to send questions or comments about the model
+
+· Intended Use. Use cases that were envisioned during development.
+
+- Primary intended uses
+
+<!-- PageBreak -->
+
+
+<<<PAGE 2>>>
+- Primary intended users
+
+- Out-of-scope use cases
+
+· Factors. Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others.
+
+- Relevant factors
+
+- Evaluation factors
+
+· Metrics. Metrics should be chosen to reflect potential realworld impacts of the model.
+
+- Model performance measures
+
+- Decision thresholds
+
+- Variation approaches
+
+· Evaluation Data. Details on the dataset(s) used for the
+
+quantitative analyses in the card.
+
+- Datasets
+
+- Motivation
+
+- Preprocessing
+
+· Training Data. May not be possible to provide in practice. When possible, this section should mirror Evaluation Data. If such detail is not possible, minimal allowable information should be provided here, such as details of the distribution over various factors in the training datasets.
+
+· Quantitative Analyses
+
+- Unitary results
+
+<!-- PageBreak -->
+
+
+<<<PAGE 3>>>
+- Intersectional results
+
+### · Ethical Considerations
+
+- Data: Does the model use any sensitive data (e.g., protected classes)?
+
+- Human life: Is the model intended to inform decisions about matters central to human life or flourishing
+
+- Mitigations: What risk mitigation strategies were used during model development?
+
+- Risks and harms: What risks may be present in model usage?
+
+If possible, this section should also include any additional ethical considerations that went into model development, for example, review by an external board, or testing with a specific community
+
+### · Caveats and Recommendations
+
+## A.2. How to make them
+
+In 2020, Google introduced a Toolkit to help DataScientists create Model Cards for their models : Introducing the Model Card Toolkit for Easier Model Transparency Reporting
+
+with a template : GitHub - tensorflow/model-card-toolkit: A toolkit that streamlines and automates the generation of model cards
+
+and a demo : https://github.com/tensorflow/model-card- toolkit/blob/master/model_card_toolkit/documentation/examples/MLMD_Model_Card _Toolkit_Demo.ipynb
+
+Model cards is one of the most transparent ways to communicate about your models, but most companies choose to keep that information for internal use because of intellectual properties.
+
+# B. Publications
+
+There are other ways than Model Cards to diffuse the work you do and communicate on your expertise.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 4>>>
+You can choose to publish in open-source certain toolboxes or algorithms that can be useful to the community or publish technical or scientific papers about your findings.
+
+## B.1. Open-Source
+
+Open source describes an approach to how software or models are created and licensed. It helps companies and individuals create code, make that application available to others and manage their projects over time. The role of open source has drastically changed over the past 20 years. Today, open source powers the data science and digital transformation projects everywhere. Open source democratizes innovation, as everyone can start innovating and building software in a more collaborative and efficient way.
+
+People contribute to open source for many reasons. Individuals can create code that meets their own needs then release that code for users to use. Teams see a gap in the market and launch a project, using open source's popularity to increase awareness and engage more developers.
+
+Popular python libraries have contributed to give a positive opinion and an expert positioning for many companies, and not just GAFAs who do it continuously.
+
+The insurance company MAIF for example has published very good and useful
+
+toolboxes on ethical AI but not only ( Accueil - OSS by MAIF ), creating a strong ethical as well as expert positioning on the market.
+
+## B.1.a. How to Publish an Open-Source Python Package to PyPI
+
+It is relatively easy to publish an Open Source package, especially on PyPi.
+
+Here are the steps:
+
+· Name Your Package.
+
+· Configure Your Package.
+
+· Specify Your Package Dependencies.
+
+· Document Your Package.
+
+· Test Your Package.
+
+· Version Your Package.
+
+· Add Resource Files to Your Package.
+
+· License Your Package.
+
+You can find more information here:
+
+How to Publish an Open-Source Python Package to PyPI - Real Python
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+### Packaging Python Projects - Python Packaging User Guide
+
+## B.2. Scientific or Technical papers
+
+You may not want to share the code that you developed but still wish to communicate about your R&D projects.
+
+Writing and publishing this kind of article is very time consuming, but also very rewarding for the authors and the company exposure.
+
+To help you write scientific articles, you can refer to this online book on the subject: https://www.shuyiwrites.com/uploads/1/3/0/4/130438914/how_to_write_and_publish a_scientific_paper.pdf
+
+Participation to conference and presenting your work during talks or poster sessions is a motivating complementary exercise.
+
+# C. Values
+
+More generally, you might want to communicate about your values regarding Ethical or Responsible AI, internally and/or externally, as well as to put in place processes to ensure that the good practices are followed.
+
+## C.1. Process playbook
+
+There is not one process that fits all types of models for all use cases, but a lot of different good practices that overall assure you to implement your solution in a responsible way. And you will see that many times, there is not one best way to do things, but you can choose from different options.
+
+You will find in these standards lots of information about how to implement AI models in a responsible way. We are also working on checklists that will help you know what to do at different phases of your project (at the beginning, during and at the end of the mission).
+
+## C.2. Manifesto
+
+Many companies and non-profit organizations have published their Ethical AI Manifesto, declaring what Ethical AI means for them, defining their values and explaining how are enforcing good practices.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+You can find on this site a long list of examples of manifesto and pledges:
+
+Ethical & Responsible AI Pledges | AI Ethicist
+
+Here are two of them open to any Data Scientist or AI experts who want to make a personal pledge for Ethical AI:
+
+https://hippocrate.tech/
+
+<!-- PageBreak -->
+

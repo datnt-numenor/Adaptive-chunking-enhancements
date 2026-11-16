@@ -1,0 +1,14 @@
+{
+  "request_hash": "8a2add7d9c584adb4de52112676cd31da3393a27e379ae7ee0e0dd1874fdad33",
+  "prompt_sha256": "dfeff2b27e93866da7391a49702c7e3ccbb05376d69c5b6d97329d769844f2ce",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOchxTd3TRP2wZyhEjABzoecyL28",
+  "prompt_tokens": 7972,
+  "completion_tokens": 42,
+  "actual_usd": 0.001221,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that it is possible to retain training data for audit purposes, provided that certain security measures are in place."
+  }
+}

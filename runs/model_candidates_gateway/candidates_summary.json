@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-11-08T17:21:27.242675+00:00",
+  "plan_requests_sha256": "db1ea86b571d9a83ce0be4c8801f7ad6b9230773887c46958e259866b74b0476",
+  "smoke_doc_ids": [
+    "doc-3897e7c6c3437bb1",
+    "doc-f884eedf83661b3e"
+  ],
+  "runs": 2,
+  "max_output_tokens": 512,
+  "prices_usd_per_million": {
+    "gpt-4o-mini-2024-07-18": [
+      0.15,
+      0.6
+    ],
+    "gpt-4.1-mini-2025-04-14": [
+      0.4,
+      1.6
+    ]
+  },
+  "rows": [
+    {
+      "model": "gpt-4o-mini-2024-07-18",
+      "returned": [
+        "gpt-4o-mini-2024-07-18"
+      ],
+      "self_exact": 14,
+      "self_similarity": 0.9575972867172844,
+      "self_abstain_agree": 18,
+      "abstain_rate": 0.05555555555555555,
+      "f1_vs_reference": 0.5329004394012893,
+      "truncated": 0,
+      "latency_s": 6.406111111111111,
+      "cost_usd_per_18": 0.024340050000000002,
+      "logprobs": true,
+      "json_schema": true,
+      "other_returned": [
+        "gpt-4o-mini-2024-07-18"
+      ],
+      "other_self_exact": 12,
+      "other_self_similarity": 0.9184122706598266,
+      "cross_exact": 9,
+      "cross_similarity": 0.8862146513393784,
+      "cross_abstain_agree": 17,
+      "cross_prompt_tokens_match": 18,
+      "cost_usd_full_generation_est": 0.401610825
+    },
+    {
+      "model": "gpt-4.1-mini-2025-04-14",
+      "returned": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "self_exact": 9,
+      "self_similarity": 0.8776786936043494,
+      "self_abstain_agree": 18,
+      "abstain_rate": 0.05555555555555555,
+      "f1_vs_reference": 0.4234098058251349,
+      "truncated": 0,
+      "latency_s": 2.7311111111111113,
+      "cost_usd_per_18": 0.0662572,
+      "logprobs": true,
+      "json_schema": true,
+      "other_returned": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "other_self_exact": 11,
+      "other_self_similarity": 0.8777249174434917,
+      "cross_exact": 7,
+      "cross_similarity": 0.8316895635646773,
+      "cross_abstain_agree": 18,
+      "cross_prompt_tokens_match": 18,
+      "cost_usd_full_generation_est": 1.0932438
+    }
+  ],
+  "script_sha256": "95f561ea02fb9f855e251cd4f35bc63989f3b2915af8b25fd3639e94d393dc9b"
+}

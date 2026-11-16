@@ -1,0 +1,14 @@
+{
+  "request_hash": "88be9f58d89e3a0403215f86c8927caf8d3ef9e936dde3858b7b417026334e06",
+  "prompt_sha256": "b3a8489d58b5a3dc5b807ace111ab47a4050bc631c4d42a739681981e2252983",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3NMSOeu3ENQtFLJ9ER7xeFLnn1",
+  "prompt_tokens": 7618,
+  "completion_tokens": 36,
+  "actual_usd": 0.0011643,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding the conditions under which a signatory need not act on a complaint."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "318b08d1b3c8f88ce58293756c2aa72937612c7eb166b947dd4535760d1985a7",
+  "prompt_sha256": "9e68112c6ba1bacd4661340f4216df81bb27d01dec8d5f24ed97e8a7944b6de1",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO8DiHeeSXcS8AVyTa9hE8aXxDPz",
+  "prompt_tokens": 9973,
+  "completion_tokens": 56,
+  "actual_usd": 0.00152955,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly mentioning the U.S. Executive Order on AI (2023) and its use of compute-based thresholds, including the specific threshold of 10^26 FLOPs."
+  }
+}

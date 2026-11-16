@@ -1,0 +1,14 @@
+{
+  "request_hash": "b9400beed84e39d64e98d921a48bd7aa7fca9ba5fe3938f8ce7482d31acbace8",
+  "prompt_sha256": "a545219e727bf1cd95f96011e228deabe935f2a37c3bfeb75a8bf3e50eb436dd",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNOR1CFd57uaBZEBmweIhVaUDRfZ",
+  "prompt_tokens": 8536,
+  "completion_tokens": 42,
+  "actual_usd": 0.0013055999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the importance of cybersecurity practices, including embedding security by design and promoting security measures to build trust in AI systems."
+  }
+}

@@ -1,0 +1,469 @@
+DOCUMENT: arXiv 2507.11546 AI Governance InternationaL Evaluation Index AGILE Index 2025
+
+<<<PAGE 35>>>
+# Observation 4.2:
+
+A growing share of women are participating in AI research, evidenced by a continuous decline in the male-to-female ratio among AI researchers, which reached 2.2:1 in 2025.
+
+According to overall trends in statistical analysis of the DBLP, the share of females in the AI research field has been steadily growing. The male-to-female author ratio dropped from 4.0:1 in 2017 to 2.2:1 in 2025, reflecting the growing participation of women in AI-related scientific research.
+
+<Figure>
+Figure 18 Gender Equality in AI-Related Publications From 2017 to 2025
+</Figure>
+
+Data Source: Based on statistical analysis of the DBLP literature database; Gender information is inferred from author names in DBLP based on country-specific naming conventions. Results may be affected by ambiguities in gender-neutral or culturally variable names.
+
+In the 40 countries evaluated, Thailand has the most balanced male-to-female author ratio, followed by China, Indonesia, and Singapore; countries in North America and Western Europe do not hold a distinct advantage. Some developed countries, such as Germany and Japan, exhibit significant gender imbalance among their AI researchers, according to the analysis.
+
+<!-- PageFooter: 35 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+<Figure>
+Figure 19 Gender Equality in AI-Related Publications Across 40 Countries
+</Figure>
+
+Data Source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025)
+
+# Observation 4.3:
+
+Economic development, as reflected by GDP per capita, is generally positively correlated with the digital inclusion of social vulnerable groups to a certain extent, but higher economic development does not necessarily result in high digital inclusiveness.
+
+Across countries with varying GDP per capita levels, there are observable trends in the internet access and usage of vulnerable groups (the 55-74-year-old demographic and individuals from households in the lowest income quintile). Generally, countries with higher per capita GDP tend to have a higher share of internet users among these two groups, reflecting a positive correlation between economic development (as indicated by GDP per capita) and the digital inclusion of vulnerable groups. However, some developed countries such as the United States, Australia, and Israel show a notable gap between their performance in this regard and the expectations arising from their economic strength. This further illustrates that economic and technological advantages do not necessarily benefit vulnerable groups, and truly inclusive technological development requires sustained support from social policies and governance efforts.
+
+<!-- PageFooter: 36 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+<Figure>
+Figure 20 GDP per Capita & Internet Usage and Access among Vulnerable Population Groups
+</Figure>
+
+Data Source: OECD Going Digital Toolkit
+
+# Observation 4.4:
+
+China and the United States represent the highest shares in the openness of impactful AI models and datasets, together account for more than 70% of the total observed among all 40 countries.
+
+Based on statistical analysis of the Hugging Face open-source community, China has 2,014 impactful AI models (50.3%), ranking first globally, while the United States ranks second with 995 models (24.8%). In terms of AI datasets, the United States leads with 922 impactful models, followed closely by China with 912 models. This data indicates that China and the United States dominate the AI open ecosystem, not only in terms of quantity but also in playing a significant role in the development of global AI research and applications. Although North America and Europe still hold advantageous positions, with Canada, the United Kingdom, France, Germany, and Switzerland all ranking in the top ten for AI models and datasets. India has shown excellent performance in AI data openness, becoming the only developing country other than China to enter the top ten. Brazil, Chile, and Indonesia have also gained more attention for the Global South in the field of artificial intelligence through their practices in AI-related scientific research and applications.
+
+<!-- PageFooter: 37 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+<Figure>
+Figure 21 Number of Impactful Open AI Database＆Models Released
+</Figure>
+
+Data Source: Based on statistical analysis of the Hugging Face Open-Source Community (As of March 2025)
+
+# Observation 4.5
+
+North America and Western Europe lead the open-source AI ecosystem, with the United States far ahead at 30.43% of the 40 countries' total. Meanwhile, China and India also show strong engagement.
+
+From the perspective of the activity of contributors to popular AI projects on GitHub, The United States, with a significant lead of 202,118 (30.43%) contributors, demonstrates its comprehensive advantages in terms of technological investment, developer ecosystem, and educational system. Several Western European developed countries are also among the top in terms of activity, such as Germany (82,912; 12.48%), the Netherlands (73,558; 11.07%), and Norway (58,525; 8.81%). Meanwhile, China (62,789; 9.45%) and India (14,815; 2.23%) rank 4th and 8th respectively - indicating that they have also laid a solid foundation in programming talent scale, education popularization, and technical community activity.
+
+<!-- PageFooter: 38 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+<Figure>
+Figure 22 Total Contributions to GitHub's Top 1000 AI Projects (Commits, by Country)
+</Figure>
+
+Data Source: Based on statistical analysis of GitHub Commits (As of March 2025)
+
+# Observation 4.6:
+
+The AI research community is focusing more on governance-related issues, as shown by a rising share of AI governance publications in total AI publications-up to about 14% in 2024. Among the 40 countries, China and the US together account for about 54% of contributions, over half.
+
+Despite some fluctuations in the overall number of AI publications in recent years, the share of research focused on governance has continued to rise - from 10.4% in 2020 to 14.4% in 2025. Governance is gradually becoming an integral part of the broader AI research landscape.
+
+The number of Al governance publications in these 40 countries is mainly contributed by the United States and China, accounting for about 28% and 26% respectively. Germany, the United Kingdom, and Australia have also made important contributions. Compared with last year, Germany has moved from the fourth-ranking country in terms of proportion to the third, surpassing the United Kingdom.
+
+<!-- PageFooter: 39 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+<Figure>
+Figure 23 The Proportion of AI Governance Papers among all AI Publications (2017-2025)
+</Figure>
+
+Data Source: Based on statistical analysis of the DBLP literature database (As of March 2025)
+
+<Figure>
+Figure 24 Proportion of AI Governance-Related Publications Across 40 Countries
+</Figure>
+
+Data source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025)
+
+<!-- PageFooter: 40 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+# Observation 4.7:
+
+International co-authorship in AI governance research is most prevalent among China, the US, Canada, Germany, the UK, and Australia, accounting for about 70% of all co-authored publications within the 40 countries.
+
+<Figure>
+Figure 25 The Number of International Co-Authorships in AI Governance Publications within the 40 Countries
+</Figure>
+
+Analysis of collaborations in AI governance-related publications reveals a clear pattern of significant international cooperation. China, the US, Canada, Germany, the UK, and Australia together lead in such collaboration, accounting for about 70% of all co-authored publications within the 40 countries. Meanwhile, among the total AI governance papers from these 40 countries, only 14.7% were identified as involving international collaborations with the 40 countries, underscoring the need for deepening collaboration on AI governance research.
+
+<!-- PageFooter: 41 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+# Observation 4.8:
+
+The United States and China lead in AI research for the Sustainable Development Goals (SDGs), together accounting for approximately 60% of all SDG-related AI publications among the 40 countries, with other countries also made significant contributions to various goals.
+
+<Figure>
+Figure 26 Country Distribution of AI for SDGs Publications
+</Figure>
+
+Data source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025)
+
+<Figure>
+Figure 27 Country Distribution of AI Research in 17 SDGs
+</Figure>
+
+Data source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025)
+
+<!-- PageFooter: 42 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+The 40 countries have made varying contributions to advancing AI for the achievement of sustainable development goals, showcasing their distinct efforts and priorities in AI for Good. Overall, the United States and China together account for 59.1% of AI for sustainable development goals publications among these 40 countries. Germany and the United Kingdom also play a significant role in nearly all fields where AI intersects with the SDGs. Meanwhile, other countries have made important contributions in different goals. For instance, India has made considerable contributions to research in fields such as AI and SDG 2 (Zero Hunger), SDG 6 (Clean Water and Sanitation), SDG 7 (Affordable and Clean Energy), and SDG 14 (Life Below Water); the Netherlands has also demonstrated notable performance in the field of AI and SDG 14.
+
+# Observation 4.9:
+
+SDG3 (Good Health and Well-Being), SDG11 (Sustainable Cities and Communities), and SDG9 (Industry, Innovation and Infrastructure) have received widespread research attention. Meanwhile, High-Income Countries have allocated higher AI research attention to social-level SDGs, while Upper-Middle&Lower-Middle Income Countries have relatively higher AI research attention to economically and environmentally related SDGs.
+
+<Figure>
+Figure 28 AI for SDGs Research Distribution in Each Country
+</Figure>
+
+Data source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025)
+
+<!-- PageFooter: 43 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+All 40 countries show a relevant consistent focus in the literature on AI' s role in advancing sustainable development goals. Among these, SDG 3 (Good Health and Well-Being) is the most popular, followed by SDG 11 (Sustainable Cities and Communities), SDG 9 (Industry, Innovation, and Infrastructure), SDG 4 (Quality Education), and SDG 12 (Responsible Consumption and Production).
+
+Meanwhile, a comparison of the distribution of research attention across the 17 Sustainable Development Goals between the two country groups shows that the high-income country group has relatively higher attention to goals such as SDG 3 (Good Health and Well-being), SDG 5 (Gender Equality), and SDG 16 (Peace, Justice and Strong Institutions) than the upper-middle&lower-middle income country group. In contrast, the latter have relatively higher research attention to goals including SDG 6 (Clean Water and Sanitation), SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation and Infrastructure), and SDG 11 (Sustainable Cities and Communities).
+
+<Figure>
+Figure 29 Comparison of AI for SDGs Publication Topics between High-Income Countries and Upper-Middle&Lower-Middle-Income Countries
+</Figure>
+
+Data source: Based on statistical analysis of the DBLP literature database (From April 2024 to March 2025; the horizontal axis represents the proportion of AI publications on each SDG by the two country groups relative to all SDG-related AI publications during the period)
+
+<!-- PageFooter: 44 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 45>>>
+Country Profile Appendix
+
+<!-- PageBreak -->
+
+
+<<<PAGE 61>>>
+# 1. Indicator System and Data Sources
+
+<Table>
+| Pillars                       | Dimensions                               | Content of Evaluation                                                                                                    | Referencing Articles from UNESCO's AI Rec. and RAM 2   | Indicators                                                                    |
+|:------------------------------|:-----------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|:------------------------------------------------------------------------------|
+| P1. AI Development Level      | D1. AI Research and Development Activity | Assessment of countries' level of activity in AI-related R&D                                                             | AI Rec. A83, RAM4.2.1                                  | D1.1. Number of AI-related publications & national per capita                 |
+| P1. AI Development Level      | D1. AI Research and Development Activity | Assessment of countries' level of activity in AI-related R&D                                                             | AI Rec. A83, RAM4.2.1                                  | D1.2. Number of active AI researchers & its ratio to total population         |
+| P1. AI Development Level      | D1. AI Research and Development Activity | Assessment of countries' level of activity in AI-related R&D                                                             | AI Rec. A83, RAM4.2.1                                  | D1.3. Number of granted AI patents & national per capita                      |
+| P1. AI Development Level      | D1. AI Research and Development Activity | Assessment of countries' level of activity in AI-related R&D                                                             | AI Rec. A83, RAM4.2.1                                  | D1.4. Number of large-scale AI systems developed & its ratio to GDP           |
+| P1. AI Development Level      | D2. AI Infrastructure                    | Assessment of the level of deployment and access to AI technologies and digital ecosystem infrastructure in each country | AI Rec. A59, A80, RAM6.2.1, 6.2.3                      | D2.1. Number of data centers & its ratio to total population                  |
+| P1. AI Development Level      | D2. AI Infrastructure                    | Assessment of the level of deployment and access to AI technologies and digital ecosystem infrastructure in each country | AI Rec. A59, A80, RAM6.2.1, 6.2.3                      | D2.2. National supercomputing FLOPS aggregate & its ratio to total population |
+| P1. AI Development Level      | D2. AI Infrastructure                    | Assessment of the level of deployment and access to AI technologies and digital ecosystem infrastructure in each country | AI Rec. A59, A80, RAM6.2.1, 6.2.3                      | D2.3. Overall level of ICT development in the country                         |
+| P1. AI Development Level      | D3. AI Industry Vitality                 | Assessment of the level of activity in AI-related industries in each country                                             | AI Rec. A117, RAM5.2.3                                 | D3.1. Private investment in AI & its ratio to GDP                             |
+| P1. AI Development Level      | D3. AI Industry Vitality                 | Assessment of the level of activity in AI-related industries in each country                                             | AI Rec. A117, RAM5.2.3                                 | D3.2. Number of newly funded AI companies & its ratio to GDP                  |
+| P2. AI Governance Environment | D4. AI Risk Exposure                     | Assessment of the level of exposure to AI-related ethical and safety risks in each country                               | AI Rec. A50                                            | D4.1. Number of AI-related risk cases/incidents & its ratio to GDP            |
+| P2. AI Governance Environment | D5. Overall Governance Readiness         | Assessment of countries' preparedness and implementation capabilities in AI governance                                   | AI Rec. A54, RAM2.2.2, RAM2.2.8                        | D5.1. Overall level of governance in the country                              |
+| P2. AI Governance Environment | D5. Overall Governance Readiness         | Assessment of countries' preparedness and implementation capabilities in AI governance                                   | AI Rec. A54, RAM2.2.2, RAM2.2.8                        | D5.2. Overall level of digital governance in the country                      |
+| P2. AI Governance Environment | D5. Overall Governance Readiness         | Assessment of countries' preparedness and implementation capabilities in AI governance                                   | AI Rec. A54, RAM2.2.2, RAM2.2.8                        | D5.3. Overall level of sustainable development in the country                 |
+| P3. AI Governance Instruments | D6. AI Strategy & Planning               | Assessment of the development of AI                                                                                      | AI Rec. A56, A71, RAM 2.2.1                            | D6.1. Whether an AI strategy has been released in the country                 |
+</Table>
+
+<Table>
+| Pillars                       | Dimensions                               | Content of Evaluation                                                                                                    | Referencing Articles from UNESCO's AI Rec. and RAM 2   | Indicators                                                                    |
+|:------------------------------|:-----------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|:------------------------------------------------------------------------------|
+| P3. AI Governance Instruments | D6. AI Strategy & Planning               | Assessment of the development of AI                                                                                      | AI Rec. A56, A71, RAM 2.2.1                            | D6.2. Whether the AI strategy has implementation plans                        |
+</Table>
+
+\* 2 The references in this column indicate the supporting articles from the 'IV. Areas of policy action' section of UNESCO's Recommendation on the Ethics of Artificial Intelligence (hereafter referred to as the AI Rec.)as well as the UNESCO's Readiness Assessment Methodology (hereafter referred to as the RAM) that closely correspond to the evaluation content of the specific AGILE Index Dimension.
+
+<!-- PageFooter: 61 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 62>>>
+<Table>
+|                                                   | strategy/planning/ roadmap in each country                                                |                         | D6.3. Whether the AI strategy mentions training or skills upgrading D6.4. Whether the AI strategy has an ethical component                                                                                                                                                                                                                                    |
+|:--------------------------------------------------|:------------------------------------------------------------------------------------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| D7. AI Governance Bodies                          | Assessment of the establishment of AI governance institutions or bodies in each country   | AI Rec. A58, RAM1.4     | D7.1. Whether AI governance bodies have been established or designated in the country                                                                                                                                                                                                                                                                         |
+| D8. AI Principles & Norms                         | Assessment of the development of AI governance principles and norms in each country       | AI Rec. A48             | D8.1. Whether governments have issued national-level AI principles or norms                                                                                                                                                                                                                                                                                   |
+| D9. AI Impact Assessment                          | Assessment of the development of AI impact assessment tools/frameworks in each country    | AI Rec. A50             | D9.1. Whether governments have introduced AI impact assessment mechanisms                                                                                                                                                                                                                                                                                     |
+| D10. AI Standards & Certification                 | Assessment of the establishment of AI standards/certifica tion mechanisms in each country | AI Rec. A64             | D10.1. Whether governments have developed national-level standards and certification mechanisms for AI                                                                                                                                                                                                                                                        |
+| D11. AI Legislation Status                        | Assessment of the enactment status of AI laws and related regulations in each country     | AI Rec. A133, RAM2.2.2  | D11.1. Whether countries have enacted or are in the process of enacting comprehensive national laws or regulations specifically targeting AI D11.2. Whether countries have enacted national-level vertical laws or regulations specifically targeting AI D11.3. Whether countries have implemented national-level data/information protection laws pertaining |
+| D12. Global AI Governance Engagement              | Assessment of the degree of countries' participation in international AI                  | AI Rec. A80, RAM6.2.2   | to AI D12.1. Participation level in international AI governance actions/mechanisms                                                                                                                                                                                                                                                                            |
+| D13. Public Understandin g of AI                  | governance Assessment of the public's AI competence and AI risk awareness                 | AI Rec. A101, RAM4.2.1, | D12.2. Participation level in ISO AI standardization D13.2. Public discussion of AI                                                                                                                                                                                                                                                                           |
+| D14. AI                                           | in each country Assessment of the                                                         | 4.2.2                   | D13.1. Public foundations of AI literacy D13.3. Public awareness of AI's impact                                                                                                                                                                                                                                                                               |
+| P4. AI Governance Effectiveness Social Acceptance | degree of public acceptance in AI technologies and applications in each country           | AI Rec. A39, RAM3.2.2 & | D14.1.Public positive attitude towards AI development D14.2. Public positive or neutral anticipation for AI usage D14.3. Public trust in AI applications                                                                                                                                                                                                      |
+| D15. AI Development                               | Assessment of the inclusiveness                                                           | 3.3.4                   | D14.4. Enterprises' willingness to adopt AI D15.1. Gender ratio of active AI researchers D15.2. Gender ratio of internet usage                                                                                                                                                                                                                                |
+| Inclusivity                                       | relating to AI                                                                            | AI Rec. A91, A105,      |                                                                                                                                                                                                                                                                                                                                                               |
+|                                                   |                                                                                           | RAM3.2.1                | D15.3. Share of young females who can program                                                                                                                                                                                                                                                                                                                 |
+</Table>
+
+<!-- PageFooter: 62 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 63>>>
+<Table>
+| 0                                    | 1                                                                                             | 2                                | 3                                                                                                                               |
+|:-------------------------------------|:----------------------------------------------------------------------------------------------|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|                                      | R&D and applications in each country                                                          |                                  | D15.4. Share of the aged using the internet                                                                                     |
+|                                      |                                                                                               |                                  | D15.5. Share of the low-income internet users                                                                                   |
+| D16. Data & Algorithm Openness       | Assessment of the level of open source and openness of AI data and algorithms in each country | AI Rec. A75, A76                 | D16.1. Number of impactful open AI models and datasets released D16.2. The level of contributions in the AI developer community |
+| D17. AI Governance Research Activity | Assessment of countries' activity of research in AI governance                                | AI Rec. A131, RAM3.2.3, RAM4.2.1 | D17.1. Number of publications on AI Governance topics & their proportion in AI-related publications                             |
+| D17. AI Governance Research Activity | Assessment of countries' activity of research in AI governance                                | AI Rec. A131, RAM3.2.3, RAM4.2.1 | D17.2. Number of publications on AI Safety&Security topics & their proportion in AI-related publications                        |
+| D17. AI Governance Research Activity | Assessment of countries' activity of research in AI governance                                | AI Rec. A131, RAM3.2.3, RAM4.2.1 | D17.3. Number of publications on AI for SDGs topics & their proportion in AI-related publications                               |
+</Table>
+
+<Table>
+| Pillar                          | Dimension                        | Newly Added Indicators                                                                             |
+|:--------------------------------|:---------------------------------|:---------------------------------------------------------------------------------------------------|
+| P1. AI Development Level        | D2. AI Infrastructure            | D2.3 Overall level of ICT development in the country                                               |
+| P2. AI Governance Environment   | D5. Overall Governance Readiness | D5.2. Overall level of digital governance in the country                                           |
+| P3. AI Governance Instruments   | D6. AI Strategy & Planning       | D6.4 Whether the AI strategy has an ethical component                                              |
+| P4. AI Governance Effectiveness | D13. Public Understanding of AI  | D13.3. Public awareness of AI's impact                                                             |
+| P4. AI Governance Effectiveness | D14. AI Social Acceptance        | D14.2. Public positive or neutral anticipation for AI usage D14.3. Public trust in AI applications |
+| P4. AI Governance Effectiveness | D15. AI Development Inclusivity  | D15.2. Gender ratio of internet usage D15.3. Share of young females who can program                |
+| P4. AI Governance Effectiveness | D17. AI Governance Research      | D17.2. Total number & the proportion of literature on safety topics                                |
+| P4. AI Governance Effectiveness | Activity                         | AI                                                                                                 |
+</Table>
+
+# P1. AI Development Level
+
+# D1. AI Research and Development Activity
+
+AI Research and Development Activity refers to the level of activity in artificial intelligence-related research and development in various countries. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 83, "Member States should encourage international cooperation and collaboration in the field of AI to bridge geo-technological lines." This recommendation aligns with Dimension 1, which involves assessing the level of AI development to facilitate comparative analysis of technological gaps among different countries and regions.
+
+<!-- PageFooter: 63 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 64>>>
+Dimension 1 currently covers four indicators:
+
+-  D1.1. Number of AI-related publications & its ratio to total population
+
+-  Data Source: Based on statistical analysis of the DBLP Computer Science Bibliography literature database (Data from April 2024 to March 2025)
+
+-  D1.2. Number of active AI researchers & its ratio to total population
+
+-  Data Source: Based on statistical analysis of the DBLP Computer Science Bibliography literature database; targeting on researchers who have authored AI-related publication(s) in DBLP during the past year (Data from April 2024 to March 2025)
+
+-  D1.3. Number of granted AI patents & its ratio to total population
+
+-  Data Source: Based on statistical analysis of the World Intellectual Property Organization (WIPO) 3 PATENTSCOPE database (Data from April 2024 to March 2025); WIPO Patent Landscape Report on Generative AI 2024 (Dataset)
+
+-  D1.4. Number of large-scale AI systems developed & its ratio to GDP
+
+-  Data Source: Epoch (2025)-with major processing by Our World in Data 4 (Cumulative number of large-scale AI systems by country; Country refers to "the location of the primary organization with which the authors of a large-scale AI systems are affiliated"; Web data accessed as of March 2025)
+
+# D2. AI Infrastructure
+
+AI Infrastructure refers to the foundational technology and digital ecosystem for artificial intelligence. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 59, "Member States should foster the development of, and access to, a digital ecosystem for ethical and inclusive development of AI systems at the national level...Such an ecosystem includes, in particular, digital technologies and infrastructure..." and Article 80, "Member States should work through international organizations to provide platforms for international cooperation on AI for development, including... infrastructure, and facilitating multi-stakeholder collaboration...". These recommendations align with Dimension 2.
+
+Dimension 2 currently covers three indicators:
+
+-  D2.1. Number of data centers & its ratio to total population
+
+-  Data Source: Data Center Map database 5 (Web data accessed as of March 2025)
+
+-  D2.2. National supercomputing FLOPS aggregate & its ratio to total population
+
+-  Data Source: Based on statistical analysis of the TOP500 List of Supercomputer 6 (November 2024, The 64th TOP500 List; Sum of Rpeak & Rmax by country)
+
+-  D2.3. Overall level of ICT development in the country
+
+\* 3 https://www.wipo.int/portal/en/index.html
+
+\* 4 https://ourworldindata.org/grapher/cumulative-number-of-large-scale-ai-systems-by-country.
+
+\* 5 https://www.datacentermap.com/datacenters/
+
+\* 6 https://www.top500.org/lists/top500/list/2024/11/
+
+<!-- PageFooter: 64 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 65>>>
+ Data Source: International Telecommunication Union(ITU)'s ICT Development Index (IDI) 2024
+
+# D3. AI Industry Vitality
+
+The AI Industry Vitality refers to the activity of a country in artificial intelligence-related industries. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 117, "Member States should support collaboration agreements among governments, academic institutions, vocational education and training institutions, industry, workers' organizations and civil society to bridge the gap of skillset requirements to align training programmes and strategies with the implications of the future of work and the needs of industry, including small and medium enterprises," this recommendation is consistent with Dimension 3.
+
+Dimension 3 currently covers two indicators:
+
+#  D3.1. Private investment in AI & its ratio to GDP
+
+-  Data Source: Artificial Intelligence Index Report 2025-Stanford University &QUID 7 (Global private investment in AI by geographic area, 2024)
+
+-  D3.2. Number of newly funded AI companies & its ratio to GDP
+
+-  Data Source: Artificial Intelligence Index Report 2025-Stanford University &QUID (Number of newly funded AI companies by geographic area, 2024)
+
+# P2. AI Governance Environment
+
+# D4. AI Risk Exposure
+
+AI Risk Exposure refers to the degree of exposure to ethical and safety risks and issues related to AI in various countries. The more issues there are, the higher the urgency for AI governance in that country. Therefore, this dimension has a negative impact on the background. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 50, "Member States should introduce frameworks for impact assessments, such as ethical impact assessment, to identify and assess benefits, concerns and risks of AI systems, as well as appropriate risk prevention, mitigation and monitoring measures, among other assurance mechanisms," this recommendation is consistent with Dimension 4.
+
+Dimension 4 currently has one indicator:
+
+#  D4.1. Number of AI-related risk cases/incidents & its ratio to GDP
+
+-  Data Source: The AI incidents data are from multiple sources including the OECD AI Incidents Monitor (AIM) 8 , the AI Incident Database (AIID) 9 , the AI, Algorithmic, and Automation Incidents and Controversies Repository (AIAAIC) 10 , and the AI Governance Observatory from AI Governance Online (AIGO) 11 (Web data assessed as of December 2024)
+
+\* 7 https://40006059.fs1.hubspotusercontent-na1.net/hubfs/40006059/Stanford_HAI_2024_AI-Index-Report.pdf
+
+\* 8 https://oecd.ai/en/incidents
+
+\* 9 https://incidentdatabase.ai/
+
+\* 10 https://www.aiaaic.org/aiaaic-repository
+
+\* 11 https://www.ai-governance.online/ai-governance-observatory
+
+<!-- PageFooter: 65 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 66>>>
+# D5. Overall Governance Readiness
+
+AI Governance Readiness refers to the favourable conditions in a country for governing AI and utilizing AI to achieve the United Nations Sustainable Development Goals. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 54, "Member States should ensure that AI governance mechanisms are inclusive, transparent, multidisciplinary, multilateral (this includes the possibility of mitigation and redress of harm across borders) and multi-stakeholder. In particular, governance should include aspects of anticipation, and effective protection, monitoring of impact, enforcement and redress", this recommendation aligns with Dimension 5.
+
+Dimension 5 currently covers three indicators:
+
+#  D5.1. Overall level of governance in the country
+
+-  Data Source: Worldwide Governance Indicators 12 (WGI)-World Bank; Data accessed on 10/30/2024); The Human Development Index (HDI) 2022 13 -the United Nations Development Programme
+
+#  D5.2. Overall level of digital governance in the country
+
+-  Data Source: 2024 Global Cybersecurity Index (v5) 14 -International Telecommunication Union (Country score); Global Data Barometer first edition (How are countries doing on Governance 15 ); GovTech Maturity Index (GTMI) Data Dashboard 16 -World Bank (Data assessed as of March 2025); E-Government Development Index 2024; E-Participation Index 2024 17 -UN E-Government Knowledgebase
+
+#  D5.3. Overall level of sustainable development in the country
+
+-  Data Source: Sustainable Development Report 2024 18 -the SDG Transformation Center
+
+# P3. AI Governance Instruments
+
+# D6. AI Strategy & Planning
+
+AI Strategy & Planning refers to the overall plans formulated by governments of various countries for the development and application of artificial intelligence. In Article 56 of UNESCO's Recommendation on the Ethics of Artificial Intelligence, it is stated: "Member States are encouraged to develop national and regional AI strategies..."; and in Article 71: "Member States should work to develop data governance strategies...". This recommendation is aligned with the direction assessed in Dimension 7, which evaluates whether AI-related strategies have been established.
+
+\* 12 https://www.worldbank.org/en/publication/worldwide-governance-indicators/interactive-data-access
+
+\* 13 https://hdr.undp.org/data-center/human-development-index#/indicies/HDI
+
+\* 14 https://www.itu.int/en/ITU-D/Cybersecurity/Pages/Global-Cybersecurity-Index.aspx
+
+\* 15 https://globaldatabarometer.org/module/governance/
+
+\* 16 https://www.worldbank.org/en/programs/govtech/gtmi
+
+\* 17 https://publicadministration.un.org/egovkb/Data-Center
+
+\* 18 https://unstats.un.org/sdgs/report/2024/
+
+<!-- PageFooter: 66 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 67>>>
+Dimension 6 currently covers four indicators:
+
+#  D6.1. Whether an AI strategy has been released in the country
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+-  D6.2. Whether the AI strategy has implementation plans
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+-  D6.3. Whether the AI strategy mentions training or skills upgrading
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+-  D6.4. Whether the AI strategy has an ethical component
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+# D7. AI Governance Bodies
+
+AI Governance Bodies refer to specialized agencies established by governments of various countries to oversee AI governance affairs. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 58, countries should "......consider adding the role of an independent AI Ethics Officer or some other mechanism to oversee ethical impact assessment, auditing and continuous monitoring efforts and ensure ethical guidance of AI systems". This recommendation aligns with the direction assessed in Dimension 7, which evaluates whether specialized agencies responsible for AI governance have been established.
+
+Dimension 7 currently covers one indicator:
+
+#  D7.1. Whether AI governance bodies have been established or designated in the country
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+# D8. AI Principles & Norms
+
+AI Principles & Norms refer to the principles and norms established by governments of various countries to guide the development, application, and governance of artificial intelligence. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, it is underlined that "......ensure that national AI strategies are guided by ethical principles", and in Article 48, "The main action is for Member States to put in place effective measures, including, for example, policy frameworks or mechanisms." This recommendation aligns with Dimension 8, which evaluates whether principles and norms for guiding AI have been established.
+
+Dimension 8 currently covers one indicator:
+
+#  D8.1. Whether governments have issued national-level AI principles or norms
+
+-  Data Source: Desk Research Based on Publicly Available Data (Data as of March 2025)
+
+# D9. AI Impact Assessment
+
+AI Impact Assessment refers to the evaluation of the potential impacts of artificial intelligence systems, including their effects on individuals, society, and the environment. According to UNESCO's Recommendation on the Ethics of Artificial Intelligence, Article 50, countries should "introduce frameworks for impact assessments, such as ethical impact assessment, to identify and assess benefits, concerns and risks of AI systems." This recommendation aligns with Dimension 9, which assesses whether tools/frameworks for assessing the impact of artificial intelligence have been developed.
+
+<!-- PageFooter: 67 -->
+
+<!-- PageBreak -->
+

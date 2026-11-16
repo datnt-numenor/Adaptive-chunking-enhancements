@@ -1,0 +1,14 @@
+{
+  "request_hash": "fe1fb00c3e259232d9b0fb7192acba6508a3f026da6e8e6513afc4e12bfb2829",
+  "prompt_sha256": "7d02800f1be007714b15b22f7f69bae06074d30eabbf454349a3123ec216415c",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNhq0Uvpcrz8Y0Cpm21AxsWEERQm",
+  "prompt_tokens": 5470,
+  "completion_tokens": 44,
+  "actual_usd": 0.0008468999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information about the focus of both use cases, including the specific phases and components being tracked, which fully supports the claims made in the Reference Answer."
+  }
+}

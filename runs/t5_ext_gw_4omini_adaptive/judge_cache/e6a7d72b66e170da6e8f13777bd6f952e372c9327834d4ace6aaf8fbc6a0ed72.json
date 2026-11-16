@@ -1,0 +1,14 @@
+{
+  "request_hash": "e6a7d72b66e170da6e8f13777bd6f952e372c9327834d4ace6aaf8fbc6a0ed72",
+  "prompt_sha256": "da3282d4ef2ea5876b4ca538886bad76c54b9c3cd4a48204dd1f2f4e0487dd05",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNjOywYFbuTRQsALmr2d48ojXKV2",
+  "prompt_tokens": 9225,
+  "completion_tokens": 38,
+  "actual_usd": 0.00140655,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context mentions the State of California and Meta, but does not explicitly reference UNESCO, making the support for the Reference Answer only partial."
+  }
+}

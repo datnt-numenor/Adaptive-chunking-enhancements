@@ -1,0 +1,14 @@
+{
+  "request_hash": "8221e6c1b2b1f8a628b9bafc2f02ea247071608f5b677c3100528f8e426d4172",
+  "prompt_sha256": "b03aa8f8319b928f202b7e715b93168fff0a97e32e0267e8547205dd7657a758",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNp3ZpDm6Hu6d68QrTwC27lfY65O",
+  "prompt_tokens": 7570,
+  "completion_tokens": 47,
+  "actual_usd": 0.0011637000000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining direct harms as assessment-specific and compromising validation inferences, and indirect harms as domain-agnostic with implications for broader social impacts."
+  }
+}

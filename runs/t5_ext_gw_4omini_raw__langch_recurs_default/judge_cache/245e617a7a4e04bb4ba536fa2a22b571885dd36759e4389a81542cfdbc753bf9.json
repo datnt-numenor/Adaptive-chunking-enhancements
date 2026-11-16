@@ -1,0 +1,14 @@
+{
+  "request_hash": "245e617a7a4e04bb4ba536fa2a22b571885dd36759e4389a81542cfdbc753bf9",
+  "prompt_sha256": "9f28be86385a837f672002841ac380281076b1c780a7f16121fd0bf9fe382edc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9KGiIVL6mC9cWEkfvkeQlaapEV",
+  "prompt_tokens": 7839,
+  "completion_tokens": 46,
+  "actual_usd": 0.0012034499999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The context provides detailed statistics on AI mentions in 10-K filings, specifically noting that software companies lead in AI disclosures, which fully supports the claim made in the reference answer."
+  }
+}

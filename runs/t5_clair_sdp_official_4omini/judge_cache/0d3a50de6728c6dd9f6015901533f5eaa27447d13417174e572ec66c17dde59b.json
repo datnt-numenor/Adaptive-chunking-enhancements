@@ -1,0 +1,14 @@
+{
+  "request_hash": "0d3a50de6728c6dd9f6015901533f5eaa27447d13417174e572ec66c17dde59b",
+  "prompt_sha256": "75b272268cc1cafaa3a127c97c793acabf09eaf47dbe459799718d0150c827c7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN28SRILil2VLQMbD3cWCNkX7CAb",
+  "prompt_tokens": 7830,
+  "completion_tokens": 50,
+  "actual_usd": 0.0012045,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that the guidelines aim to help EU institutions comply with Regulation (EU) 2018/1725 when using or developing generative AI tools."
+  }
+}

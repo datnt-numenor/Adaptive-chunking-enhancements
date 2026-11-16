@@ -1,0 +1,14 @@
+{
+  "request_hash": "b93266fd2ace9715810d73b22d12a3c4cf36a153f945b47af8b87238b5586b7e",
+  "prompt_sha256": "c09026e820472b3e8aedb39e0c658402c7ecb7ca97046a8781df138f593ce3e4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2MF8Sq991LKMgPlp4cjL1j75vEs",
+  "prompt_tokens": 7184,
+  "completion_tokens": 35,
+  "actual_usd": 0.0010986,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer regarding the reporting timeline for incidents involving death and the documentation retention period."
+  }
+}

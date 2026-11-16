@@ -1,0 +1,401 @@
+DOCUMENT: arXiv 2312.00044 Advancing AI Audits for Enhanced AI Governance
+
+<<<PAGE 15>>>
+If the responsibility of AI audit practitioners is too burdensome, very few would be willing to conduct the audits. Therefore, the need for exemption requirement or insurance system to protect AI audit practitioners should be considered.
+
+# 2.6 AI auditing Parties and Organizations Involved
+
+Auditors and audited companies are not the only parties involved in auditing AI services and systems. Figure 3 summarizes the parties and organizations involved in AI auditing as currently envisioned. The following sections describe (1) AI service provider organizations, (2) AI service users and user organizations, (3) external auditors, (4) standardization bodies/certification and accreditation bodies, (5) public institutions, (6) private organizations, and (7) other related parties.
+
+<Figure>
+Figure 3: Parties and organizations involved in AI audits
+</Figure>
+
+# 2.6.1 AI Service Provider Organizations
+
+AI services and systems are expected to be provided by organizations individually or across organizations.
+
+\* 33 In JICPA "JICPA Laws and Regulations Committee Research Report No. 1, Legal Liability of Certified Public Accountants, "(https://jicpa.or.jp/specialized_field/files/2-15-1-2-20160801.pdf) the liability of certified public accountants is explained under four categories: civil, administrative, criminal, and other.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+# (1) Governance within the organization
+
+Organizations that provide AI services or systems are subject to audits of such services, or systems, or of the internal controls in organization, as categorized in 2.3 AI Audit Objectives.
+
+The Institute of Internal Auditors has proposed a three-line model for proper governance, including organizational risk management. 34 The three lines for an organization providing AI services and systems are: 1) the department that develops and operates the AI system and service, and 2) the risk management department that checks and balances the development and operation of the AI services and systems. Management and the executive department, in their roles as the first and second lines, aim to enhance and improve their governance and management. The third line 3) is the internal audit department that independently verifies and audits the management and executive departments. 35 Whether the three-line model effectively works is expected to one of the audit focuses by audit committee (Using external auditor, if needed).
+
+# (2) Governance across organizations
+
+As the complexity and sophistication of supply chains increase, it is often impractical to build AI services and systems with only in-house resources, thus building them could involve external providers. Whether and to what extent to include outsourcing companies, external libraries, and data providers that support system construction as entities to be audited must be considered. In addition, the relationships among AI services and systems' providers and outsourcing companies are diverse. Depending on the relationships, audit process needs to be considered from different perspective. The following illustrates some possible cases: 36 .
+
+A) Companies that, using both in-house resources and outsourcing companies, have established an AI system and service for external users.
+
+B) Companies that outsourced the development of an AI system and service, and use it only internally
+
+C) Software vendor companies that build AI systems for clients and sell packages
+
+# 2.6.2 AI service users, user organizations
+
+As well as the service providers, AI service users and user organizations may also be audited in their position as users. In this case, the main audit focus would be how they use AI services and utilize the results of AI decisions within their organizations. Therefore, the first line of the three-line model would be departments that use the AI services.
+
+When an AI service is built and used by the same company, the audit should be conducted from the perspectives of the service provider (2.6.1) and the AI service user (2.6.2).
+
+# 2.6.3 External Auditors
+
+An independent third party who conducts an external audit of an audited entity shall perform verification from a completely independent position according to the laws and regulations and shall disclose the audit results as an audit opinion. Issues to be considered in external auditor's case include the expertise requirements, independence requirements, organizational requirements, and legal responsibility of such an auditor (see 2.5).
+
+\* 34 The three-line model was published by IIA as a model for the risk management and governance of organizations in 2020 (IIA (2020)).
+
+\* 35 In addition to internal audits, audits by audit supervisory board members may also be considered from the standpoint of three-party audits, but we omit a detailed discussion of these in this report.
+
+\* 36 Referring to METI "Contract Guidelines for the Use of AI and Data,"
+
+\* (https://www.meti.go.jp/policy/mono_info_service/connected_industries/sharing_and_utilization/201806150011.pdf) the report assumes and presents cases that are considered representative.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+# 2.6.4 Standardization Bodies/Certification and Accreditation Bodies
+
+The standards organizations that establish criteria and standards for internal and external audits include the International Organization for Standardization (ISO), the International Electrotechnical Commission (IEC), the Institute of Electrical and Electronics Engineers (IEEE), the Japanese Industrial Standards Committee, and others. The criteria and standards established by these organizations are used or referenced in audits. The third parties that audit the conformity to ISO standards are called certification bodies, and in Japan, an accreditation body (JAB) examines the certification bodies.
+
+# 2.6.5 Public institutions
+
+A means of developing institution design for AI audits is through the legislation passed by legislatures. Therefore, domestic and foreign public institutions, including legislative bodies and representatives, should be considered as stakeholders in AI audits.
+
+Conversely, the specific procedures for conducting AI audits, judging audit results, and the rules and procedures applicable to AI service providers are expected to comply with publicly available standards of practice. Sometimes public institutions prepare these rules, guidelines, and standards. For example, METI "System Audit Standards" 37 and "System Management Standards," 38 which were revised in April 2023, are Japanese standards for system audits.
+
+# 2.6.6 Private organizations
+
+Many of the standards that AI service provider organizations and AI audit practitioners must comply with are issued by private organizations. For example, in an audit of financial statements, accounting standards which the entity being audited must comply are developed and published by the Accounting Standards Board of Japan (ASBJ), a private organization. Therefore, in AI auditing, the domestic and foreign private organizations that issue such standards should also be considered parties to the process.
+
+# 2.6.7 Other Parties
+
+Other stakeholders include academia and educational institutions in terms of continuous innovation and user education, industry associations in terms of regulation and coordination specific to the individual industries providing AI services, and insurance companies in terms of defining insurance systems as risk controls from a different perspective than auditing. These parties are directly or indirectly related to the audit of AI services, and therefore, should be considered as a related party of the AI audit.
+
+# 3. Factors that make AI Audits Difficult
+
+Conceptual, technical, institutional, and social factors have been identified that make auditing AI services and systems difficult (Mökander et al. (2023)). This paper focuses on five of these factors: (1) the complexity of AI technology, (2) the underdevelopment of institutional design for AI audits, (3) the difficulties in setting performance standards for conducting AI audits, (4) the complexity arising from the scope of audited entities, and (5) the imbalance between demand and supply for AI audits.
+
+# 3.1 Complexity of AI Technology
+
+In current system audits, systems are designed, programmed, and implemented according to the correct answers defined by business requirements. Their accuracy and other aspects are evaluated based on whether the system outputs the values uniquely produced by the input data, the established logic, and by additional verification methods. Unlike current IT systems, however, AI systems are not designed to output pre-defined unique values.
+
+\* 37 METI. "System Audit Standards", https://www.meti.go.jp/policy/netsecurity/sys-kansa/sys-kansa-2023r.pdf
+
+\* 38 METI. "System Management Standards", https://www.meti.go.jp/policy/netsecurity/sys-kansa/sys-kanri2023.pdf
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+In the development of AI systems, the logic of decision-making is often black boxed, and it is difficult to verify the logic. Even if the source code of the program and parameters such as feature values are disclosed and the logic can be reproduced by mathematical formulas or conditional judgment statements, the formulas and parameters are expected to be computationally complex, hampering a full assessment of validity.
+
+Furthermore, depending on how the AI system is constructed, the model may be trained by including random elements. In such cases, even if an identical training method is used, different trained models can be built. Therefore, audit decisions must be made to include such random elements.
+
+In addition, as mentioned in the timing of AI audits (2.4), some AI services and systems conduct continuous learning. In this case, an evaluation at the time of the audit may differ from an evaluation when the audit results are used, making it difficult to conduct the audit. It is also difficult to determine whether the output has changed due to continuous learning or a bug, which increases the difficulty of AI auditing regarding reproducibility.
+
+Finally, the complexity of human-machine interactions also increases these difficulties. AI services and systems can be designed for human decision-making support, or for making decisions without human intervention. In domains such as medicine, where AI systems are used as diagnostic aids and the final decision is made by the physician, the role of auditing depends on the assumptions and context in which the technology is used.
+
+# 3.2 Underdevelopment of institutional design for AI audits
+
+By September 2023, AI-specific general standards had not yet been established for audit practitioner requirements and quality management systems. Additionally, no standardized criteria or standards of practice (performance standards) had yet been established for audit procedures, leaving auditors to design their own procedures and judge the audit results (Akoshima & Fukuda 2020a, 2020b, 2020c).
+
+Furthermore, there are no unified rules or firm agreements concerning with which domestic and international rules, management, auditors, certification bodies, and other parties must comply. Consequently, these parties do not fully understand their compliance obligations. This immaturity in institutional design for AI audits is one of the factors that vexes the implementation of AI audits.
+
+# 3.3 Difficulties in Setting Performance Standards for AI Audits
+
+Even when auditors formulate their own procedures, setting performance standards for AI audits is difficult. For example, various proof propositions (2.2) are envisioned for AI audits. Among them, some, e.g., fairness, are difficult to define precisely and difficult to verify. To illustrate, there are two major technical fairness indicators 39 , but they are not intended to be achieved simultaneously.
+
+Furthermore, trade-off relationships between different values must be considered. In general, there is a trade-off between ensuring the accuracy of AI judgments and accountability. Tradeoffs can also be assumed between the audit's proof propositions. An example is the difficulty of conducting an audit that encompasses multiple perspectives such as the perspectives of security and accuracy and that of efficiency, because the audit issues and verification items differ.
+
+\* 39 One is "individual fairness," which refers to the state in which one individual is treated like any other individual, regardless of group attributes, and the other is "group fairness," which refers to fairness among sensitive groups such as men and women within a group. The main criteria for this group fairness are statistical parity (Dwork, 2012) and equalized odds (Hardt, 2016).
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 19>>>
+In addition, when conducting an AI audit, the data governance issues related to training data must also be examined. However, the potential biases in such data and the difficulty of setting sufficiency indicators would make it difficult to conduct AI audit from the viewpoint of performance standards for AI audit.
+
+# 3.4 Complexity arising from the scope of audited entities
+
+As introduced in the section on AI auditing parties and organizations involved (2.6), the AI system and service have many stakeholders, making it difficult to define the scope of who should be included in the audit.
+
+# 3.4.1 Development and Operation of AI Systems Across Organizations
+
+One of the characteristics of AI systems and services is that they are developed and used across countries and organizations. It will become difficult to conduct AI audits if they necessitate the identification of multiple organizations, such as outsourcing companies, as audit scope and then conduct audits across organizations, rather than within a single organization.
+
+For example, if external vendors contribute to a system's development and operation, the extent of the vendors' inclusion in an audit scope must be considered. If the vendor is the main entity implementing internal control during development and operation, and the principal company is not involved, the vendor should be treated as a service organization, and the internal control implemented by the vendor should be included in the audit scope.
+
+Conversely, when auditing a service organization, the issue of determining the audit scope arises. In addition, there is a case that a vendor subcontracts to another vendor. Practically speaking, because of the parties' contractual obligations, auditing multiple outsourcing companies will be difficult. Even if audits can be conducted, there may be uncertainty about who carries the costs of auditing the outsourcing companies.
+
+# 3.4.2 Use of External Libraries
+
+In many cases, AI system developers use publicly available functions from external libraries. In such cases, the correct operation of an AI system could rely on the functions and processes provided by external libraries. If the external library functions and their providers are included, the audit scope becomes even broader, without the assumption that the functions provided by these libraries are functioning properly.
+
+# 3.4.3 Training Data Governance
+
+Many stakeholders, such as data collectors, public data providers, and data labelers for training are involved in the management of training data. Because the validity of training data is essential in considering an AI audit, the audit scope becomes even broader when it includes such stakeholders and their governance.
+
+# 3.5 Imbalance between demand and supply for AI audits
+
+As summarized in (1.1), the need for auditing AI services and systems is increasing as they become more prevalent. However, conducting AI audits under the appropriate scope and AI audit practitioner requirements is difficult due to diverse expectations concerning the assured outputs of AI audits, the lack of human resources, and the absence of incentives among other factors.
+
+# 3.5.1 Mismatched Expectations regarding the assurances offered by AI Audits
+
+As summarized in 2.3, the scope of AI audits can be divided into two categories: The AI
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 20>>>
+systems and services themselves, and the internal controls implemented by the provider organizations. In some cases, it may be difficult to audit AI services or systems themselves due to the technological, institutional, or social factors described in Chapter 3. In such cases, the AI audits will only provide assurances that the provider organizations' internal controls are effective. In addition to such audit limited scope, there are various restrictions and limitations on the content of such assurance. 40 In contrast, if society expects assurances for AI systems and services, e.g., "AI services must operate 100% correctly and be safe," and if the characteristics of AI services and systems are not considered with regard to such expectations, a gap will develop between the requirements of AI audits and their implementation.
+
+# 3.5.2 Lack of human resources to conduct AI audits
+
+As summarized in the AI Audit Practitioner requirements (2.5), the conducting AI audits requires expertise in auditing and a wide range of knowledge covering specific knowledge of audit and technical knowledge of AI, as well as legal and ethical content. At present, however, it is assumed that there is a shortage of personnel capable of conducting such audits.
+
+# 3.5.3 Mismatch between supply and demand for AI auditors
+
+If the audit results are incorrect, the audit practitioner could be held legally liable. However, as introduced in Chapter 3, technical, institutional, and social factors make it difficult to conduct audits, and the auditor's responsibility and audit fees may become imbalanced. Therefore, even if the demand for AI audits increases, there is little incentive for external auditor to undertake such work.
+
+# 3.5.4 Lack of incentives for audited companies to undergo AI audits
+
+Not only is there little incentive for auditors to conduct audits, but there is still little demand for AI audits from audited companies. By September 2023, as far as this study group could determine, there were not yet legally binding regulations or penalties in Japan that would make AI audits mandatory. There were neither regulations nor penalties could be observed at the national levels except for state levels or ordinances. 41 In addition, as summarized in Chapter 3, since they cover a wide range of topics, AI audits are difficult to conduct and high-quality audits involve significant costs, further disincentivizing companies from undergoing audits.
+
+# 4. Assumed AI audit case study: Recruitment AI
+
+The specific example is given of a recruitment AI service to introduce the issues surrounding AI audits described in Chapter 2 and the factors that make AI audits difficult described in Chapter 3. The recruitment AI case study here assumes a service that makes hiring decisions based on job applications and interview recordings. Although there may be some issues that overlap with those to be considered in a non-AI system audit, we will focus on issues that are characteristic of AI audits when applied to AI services and systems.
+
+# 4.1 The Need for AI Audits
+
+For a company that uses recruitment AI services, not only the preciseness of the AI's judgment, but also the fairness and other aspects are considered and assured in their audit, will reassure adopters and enhance the company's reputation. A recruitment AI is considered a highrisk AI in the EU AI act and service providers are required to undergo a conformity assessment in advance. If this act is enforced, audits will be legally required. This will create incentives for both AI system and service providers and users to undergo audits.
+
+\* 40 Although it is not directly "AI audit," for example, in "accounting auditing," functional limitations include (1) the relativity of accounting judgments, (2) the limitation of auditor involvement in actual transactions, events, and facts, and (3) the limitation of auditing as a contractual matter. (Yamaura, 2018, p.12)
+
+\* 41 As mentioned above, New York City, USA, enacted a law in July 2023 regulating AI-based hiring.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 21>>>
+# 4.2 AI Audit Proof Propositions
+
+As described in "the Need for AI Audits," they may be conducted based on the accuracy of AI judgment as well as fairness and privacy as proof propositions. What the proof propositions will be depends on the audited company and on societal demands.
+
+# 4.3 AI Audit Scope
+
+This section considers the cases both where an AI system service itself and where the internal controls implemented by the organization providing the AI service are audited.
+
+# 4.3.1 Cases where the AI system or service itself is audited
+
+Examining the items listed in Figure 1, the following, are considered to be audit scope.
+
+# (1) Trained model
+
+This would include the module files and source code of completed programs as well as the parameter files such as feature values, etc. All relevant documents, such as the design specifications of AI models, are also subject to audit.
+
+# (2) Training Data
+
+Historical internal personnel data, published statistical data, etc. would be considered for audit scope.
+
+# (3) Software Infrastructure
+
+The operating system, database, etc., of the server running the AI model or program would be subject to audit. In addition, a server not housed on site but by a cloud service, the relevant software service of which, would also be considered subject to audit.
+
+# (4) Hardware
+
+The performance of camera equipment, recording equipment, and other devices used to record the applicant interviews that are the AI system's input data would also be subject to audit. In addition, the processing capacity and redundancy of servers running AI models, of any cloud and backup services used, etc., and the regions where they are used, as well as their software infrastructure, are also considered to be subject to audit.
+
+# (5) Other service providing aspects
+
+The audit would cover whether the use of recruitment AI to make hiring decisions and scoring is disclosed to job seekers, how third-party checks are conducted, etc.
+
+# 4.3.2 Cases of auditing the organization and internal controls that provide AI services
+
+The audit is expected to cover internal controls implemented by (1) management, (2) the human resources department as user division, and (3) the system development and operation department. The following internal control is only one example to be considered. In actual audit cases, the internal control to be considered will be wider ranging, taking into account the audited company's objective thinking, business processes, system development, operational processes, and the use of AI services.
+
+# (1) Management
+
+To confirm the management's policy for the development and operation of AI services, it is essential to confirm whether the management has established and operated an AI utilization policy and training system, and whether the PDCA cycle is functioning effectively.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 22>>>
+# (2) Human Resources Department as user division
+
+Rules may be established to stipulate that the actual acceptance or rejection decision is made according to the AI's judgment, or, if it determines that a decision cannot be made by AI system, the staff member managing the interview must manually make the decision, requiring confirmation that this is done appropriately. In addition, if such training data is prepared by the Human Resources Department, it is assumed to be a verification procedure for the internal control that assesses whether the criteria for setting the correct labels are defined and whether this label setting's results are checked by multiple persons.
+
+# (3) Systems Department: The development and operations division
+
+If there are rules for checking and approving various design and test plans and implementation results, audit procedures are assumed to confirm whether their design are appropriate and they are being operated effectively. If there are thresholds for the accuracy of released programs, it may be necessary to confirm that only programs that exceed those thresholds are being released.
+
+# 4.4 Factors that complicate AI audits
+
+When identifying and discussing specific AI services and systems to be audited, issues related to the industry and the context in which they are used make AI audits more complex than discussing them in general terms. For example, regarding the recruitment AI service, additional issues such as employment practices and social systems related to education must be considered, thus complicating the discussion.
+
+# 4.4.1 Complexity of AI Technology
+
+Even if an appropriate acceptance/rejection judgment is output at the time of the audit, the appropriateness of the acceptance/rejection decision may vary due to continuous learning and business or societal changes when the audit results are used. Expressing the logic of the acceptance/rejection decision as a mathematical formula or conditional judgment could be problematic, and even if the logic can be explicitly confirmed, determining whether it is appropriate could be a challenge.
+
+Also, assumptions must be considered concerning whether the HR department would rely entirely on the recruitment AI's judgment in making hiring decisions. If the AI's judgment is used supplementally and the final decision is made by a person, the audit for recruitment AI would be positioned differently.
+
+# 4.4.2 Underdevelopment of institutional design for AI audits
+
+It is envisaged that an audit of recruitment AI will be required if the EU AI act comes into force. However, at this stage, no firm general standards have been established, such as requirements for AI auditors and quality management systems, etc. In July 2023, New York City enacted a law regulating employer's use of AI in making hiring decisions. It is expected that this law will serve as a benchmark for future legislation.
+
+# 4.4.3 Complexity of setting performance standards for AI audits
+
+Indicators for evaluating accuracy and performance must be included when considering criteria for conducting AI audits. For example, it may be assumed that the perspective of bias may not be emphasized in the indicators used to ascertain the accuracy of accurately determining which personnel are excellent and do not retire. Even if the model accurately identifies excellent human resources, there may be cases where discriminatory judgments are made.
+
+<!-- PageFooter: 18 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 23>>>
+Establishing standards for what constitutes a non-biased and what constitutes a fair result, and reaching social consensus thereon is difficult. Although the concept of fair recruitment and selection is already present in the conventional recruitment processes, employers have the discretion to determine their recruitment policies, recruitment criteria, and hiring decisions, and there are no uniform standards to ensure fair recruitment.
+
+Furthermore, while employers can after the fact review whether the AI's judgment was correct, they cannot after the fact review whether the rejected candidate was truly unsuitable, thus limiting the evaluation of accuracy to only some cases.
+
+# 4.4.4 Complexities arising from the scope of the auditee
+
+The issues differ depending on whether the recruitment AI service is being built for a single company or for several organizations. In this case study, it is assumed that the service is developed and operated across the organization.
+
+# (1) Development and operation of AI systems across organizations
+
+When building an AI system, it is difficult to determine the scope of audit coverage when there are outsourcing software companies and their subcontractors which manage actual developing process.
+
+# (2) Use of external libraries
+
+It is a consideration whether or not auditing is required for external libraries employed for machine learning approaches such as deep learning, gradient boosting, random forest, etc. In addition, when models are built using an AI system construction service, the service is presumptively subject to audit. Barriers to auditing these external libraries and construction services will be encountered, and it may be difficult to determine the scope of auditing to be included.
+
+# (3) Management of training data
+
+When data is provided by private recruitment agencies, it must be considered whether or not an audit of their data management system is required. Even if an audit is required, various barriers to conducting an actual audit will be encountered. It is also difficult to determine how public data published by public organizations should be handled. This requires deciding on whether statistical information published by public organizations can be used unconditionally without an audit regardless of the context in which it is utilized.
+
+Furthermore, if the HR department is responsible for correctly labeling the historical personnel data for training the system, the scope of the audit may be extensive because it will be necessary to audit the HR department's labeling processes as well.
+
+# 4.4.5 Balancing the need and supply for AI audits
+
+To a certain extent, recruitment AI is already being used. While the need for auditing highrisk AI, including recruitment AI, may increase in the future, conducting AI audits with appropriate scope and personnel requirements will be difficult due to inconsistent expectations concerning what is assured by the AI audits, the lack of human resources, and lack of incentives.
+
+# (1) Mismatch in expectations regarding what an AI audit assures
+
+As an example, a public expectation could be that claims such as "this AI provides 100% correct answers to the results of acceptance/rejection decisions" or "this AI completely eliminates the biases everyone believes are present", will be audited. Conversely, the limits of what can be confirmed and assured in an actual audit will be limited to confirming whether
+
+<!-- PageFooter: 19 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 24>>>
+"each evaluation indicator is within the predefined accuracy threshold of the AI's judgment parameters regarding acceptance or rejection" and whether "it conforms to the fairness criteria defined by the auditor and management". In such cases, an expectation gap would emerge regarding the content of the AI audit.
+
+# (2) Lack of human resources to conduct AI audits
+
+Conducting an audit of recruitment AI services requires a wide range of capabilities that includes auditing skills, technical knowledge of AI, and an understanding of the social, legal, and ethical perspectives affecting employment and human resource management processes. In particular, auditors are currently required to design their own procedures and define how AI recruitment services should be audited. There may also be a shortage of personnel with the knowledge and experience to accomplish these tasks.
+
+# (3) Mismatch between supply and demand for AI audit practitioners
+
+Should a compensation claim arise for unfair discrimination against a job applicant, the potential liability of the AI service's external auditor as well as the management who developed and used the recruitment AI service could become a matter of debate. If such liability is confirmed, auditors will balk at accepting assignments if the audit fees do not match the liability.
+
+# (4) Lack of incentive for companies to undergo AI audits
+
+By September 2023, there are no laws or regulations in Japan that require the auditing of recruitment AI, so there is little incentive for companies to undergo audits. In addition, if the verification areas covered are wide-ranging, substantial audit fees will be paid to conduct a fullscale external audit. It is conceivable that some companies will stop using recruitment AI because the benefits are not worth the cost of external audits.
+
+# 5. Future issues and recommendations on AI auditing
+
+This paper has summarized the issues to be discussed regarding the auditing of AI services and systems, and the factors that complicate AI audits. Based thereon, this chapter provides recommendations for resolving these issues and promoting AI audits appropriately in the future.
+
+# 5.1 Development of institutional design for AI audits
+
+Currently in Japan, while there is a need to use AI safely and securely, due to lacking institutional design for AI audits, AI auditing has not proliferated. Regarding the international community, the need for institutional design for AI audits is expected to increase, supported by the introduction of the EU AI act. Therefore, we believe that discussions on institutional design for AI audits for Japan, are also necessary. Although the need for auditing AI services and systems has been noted in many policy documents, there remains a wide range of topics such as audit scope, timing, etc., to be discussed before AI auditing is realized. Therefore, discussions should proceed based on common understandings, as presented in this paper, when preparing the institutional design for AI audits and conducting actual audits following them.
+
+In developing institutional design for AI audits by external auditors, the balance between audit quality and fees must also be considered. Audit standards and audit fees that are too low may engender doubts about the quality of the audit results, while high audit standards and fees may become barriers to entry to the introduction of AI services, thereby inhibiting innovation. In terms of audit fees, it is also necessary to consider designing a system that takes into account where audit fees will be borne when multiple organizations are subject to AI audits.
+
+The timing of audits must also be considered in the design of an external AI audit system. In current system audits, new services and systems are often audited after being released. However, the audited company may need to resolve problems prior to the release of the service or system and wish to prepare for a flawless release. Therefore, institutional design for AI audits is needed to meet such pre-release audit needs.
+
+<!-- PageFooter: 20 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 25>>>
+Furthermore, AI services and systems are often developed and used widely across countries and regions, and if AI regulations are developed for each country or region, trade barriers may arise between those requiring audits of AI services and systems and those that do not. From this perspective, it is desirable to promote discussions on AI audits and to consider performance standards that allow for interoperability. The institutional design for AI audits that considers the rapid progress of technology, could be prepared with using the sandbox system. 42
+
+# 5.2 Training human resources for AI audits
+
+Conducting an AI audit requires diverse expertise with a wide range of skills and experience. In addition to understanding auditing theory, having industry knowledge related to the audited company and the services it provides, and knowledge and experience in Information Technology (IT) areas not limited to AI, AI-specific technical knowledge, ethics and culture, laws and regulations, and a very broad range of other knowledge and experience is required. It must be assumed that, in Japan, the number of human resources possessing such knowledge and experience is still small. The development of auditors capable of responding to future AI auditing needs must be promoted. As explained in Chapter 2, the AI audit relevant parties and organization consists of a wide range of people and organizations. Considering this variety of people involvement, along with professional knowledge and work experience, these tasks require additional development, including soft skills, such as appropriate information sharing with stakeholders and communication skills in a multi-person auditing process. Furthermore, while there are various qualification and certification systems for audit practitioners 43 , we believe that a new system of qualification requirements is needed for individual and organizational AI auditors.
+
+# 5.3 Updating AI audits in accordance with technological progress
+
+Technical research related to AI is flourishing around the world, and new services and systems are emerging daily. In addition, the forms of use and methods associated with AI services, as well as organizational and people development, are advancing in tandem with these innovations. Since new risks and challenges are expected to emerge and increase in importance consequent to these changes, the AI audit institutional design, standards and methods must be updated to avoid obsolescence. 44 The update mechanism and the speed and frequency of updates should also be discussed to ensure that they are made proactively as technologies advance while taking into account international interoperability.
+
+# 6. Toward a society that can use AI safely and trustfully
+
+This report is intended to summarize the issues related to AI auditing and to establish a common foundation for discussing critical issues among the parties concerned. This objective has to some extent been met, a discussion must follow on the ideal AI audit and its practical treatment in the future.
+
+\* 42 The Cabinet Secretariat describes the regulatory sandbox system as "a system in which, when it is difficult to commercialize a new technology or implement a new business model in relation to current regulations, a demonstration is conducted based on an application by a business operator, with approval from the regulatory agency, for the social implementation of the new technology or business model, and the information and data obtained through the demonstration are used to review regulations. The information and data obtained from the demonstrations are then used to review the regulations", https://www.cas.go.jp/jp/seisaku/sportal/regulatorysandbox.html.
+
+\* 43 For example, in Japan, a certified public accountant qualification as defined by the Institute of Certified Public Accountants of the world, a systems auditor as defined by METI, and a certified internal auditor as defined by IIA, etc.
+
+\* 44 The "System Audit Standards" (https://www.meti.go.jp/policy/netsecurity/sys-kansa/sys-kansa-2023r.pdf) were established by METI in 1985 and have been revised repeatedly in 1996, 2004, 2018, and 2023.
+
+<!-- PageFooter: 21 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 26>>>
+The current social climate surrounding AI audits includes the European Parliament's adoption on June 14, 2023, of amendments to the EU AI act. 45 This preceded the announcement on July 21, 2023, from the White House that they had secured voluntary commitments that will serve as a guiding principle from leading AI companies to manage the risks posed by AI and to address the broader concerns surrounding AI technology. 46 In addition, a "Committee on AI" set up in the Council of Europe is negotiating to draft the world's first AI treaty. 47
+
+There is an increasing need to assess and audit the proper governance and management of AI from AI service provider and AI service user companies. Since AI use is expected to advance rapidly, we hope that this paper will contribute to realizing responsible AI development and operation by AI system and service companies, and a society in which AI can be used safely and trustfully.
+
+In addition, the discussion over AI audits has developed rapidly and the knowledge of many experts is indispensable. Since the development of AI technology is also rapid, it is necessary to enhance this policy recommendation in accordance with the latest information and best practices in this dynamic situation. We hope that cooperation with domestic and international experts and relevant organizations will contribute to building more effective and practical AI audit discussions.
+
+# 7. Appendix: AI Auditing and Generative AI
+
+This paper has taken machine learning in general, including deep learning, as an exemplary AI technology and has summarized the issues and difficulties surrounding its audit. Furthermore, generative AI, the use of which has rapidly expanded since 2022, has many of the auditing issues and challenges raised in this paper in common, but ones specific to generative AI are anticipated and introduced here. As a premise, this study group regards generative AI to be that which generates new data, such as text data and image data, by utilizing foundational models, large language models, and other technologies.
+
+# 7.1 The Potential and Challenges of Generative AI
+
+The AI covered by this paper is defined by the OECD as " Machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments" and the word "generative" is not included.
+
+Generative AI differs from other AI which performs recognition and prediction by learning from existing content and data, such as images, audio, video, and text, to generate new content and data. However, generative AI is not an entirely novel technology that only emerged after 2022. Rather, it is a type of machine learning method, like conventional AI that performs recognition, prediction, and judgment with its potential and problems having been discussed since the late 2010s. For example, the automatic generation of fake videos of celebrities and works that imitate the style of past greats has been done and identified as a problem. While machine generation can produce rich ideas and expressions that humans could not have devised, associated legal, ethical, social, and economic issues such as copyright infringement, undermining the dignity of creators and those targeted by imitation, fake news, and defamation have become apparent.
+
+\* 45 EU AI Act Compromise text is availabe on European Parliament's website,
+
+\* https://www.europarl.europa.eu/news/en/press-room/20230505IPR84904/ai-act-a-step-closer-to-the-first-ruleson-artificial-intelligence.
+
+\* 46 More detail about this commitment is available on the White House website,
+
+\* https://www.whitehouse.gov/briefing-room/statements-releases/2023/07/21/fact-sheet-biden-harris-
+
+\* administration-secures-voluntary-commitments-from-leading-artificial-intelligence-companies-to-manage-therisks-posed-by-ai/.
+
+\* 47 A consolidated version of the draft became available on July 23, 2023, on Committee on AI of the Council of Europe's website (https://coe.int/en/web/artificial-intelligence/cai) (https://rm.coe.int/cai-2023-18- consolidatedworking-draft-framework-convention/1680abde66). For a description of this conference and other information, see the event report of Institute for Future Initiatives, The University of Tokyo and other sources, https://ifi.utokyo.ac.jp/project-news/16287/.
+
+<!-- PageFooter: 22 -->
+
+<!-- PageBreak -->
+

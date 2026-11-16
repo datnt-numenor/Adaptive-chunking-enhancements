@@ -1,0 +1,14 @@
+{
+  "request_hash": "ae5c4d6b4505350e09725b19676c7833e070c97cd2821b01c3c00862e73e7ba2",
+  "prompt_sha256": "f3b88efa82f644d789be827b5144471b42548446d38b393fb54f3c260acf92f6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1q0qFS4DOcLvOCfAYjkco5IYiOm",
+  "prompt_tokens": 9877,
+  "completion_tokens": 40,
+  "actual_usd": 0.00150555,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific information about MAIF's publication of open-source toolboxes on ethical AI, directly supporting the claims made in the Reference Answer."
+  }
+}

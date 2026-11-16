@@ -1,0 +1,14 @@
+{
+  "request_hash": "79805e764bdd76530ecb610a21c2c25c5566046a2e145f5287a60775026df92d",
+  "prompt_sha256": "bba0b3570cacb97b4d6809eaf819eede8ce25e15be508876e0136725890acae5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNUmS1r0iA46mOeLK1xVJEuFH3Ha",
+  "prompt_tokens": 8572,
+  "completion_tokens": 40,
+  "actual_usd": 0.0013097999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by emphasizing the importance of auditability and accountability in the guidelines for trustworthy AI, particularly in the medical sector."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "af752e35559a9cc5679583fc5215b10d9cc27c92e57a54593cd493f5857f9c86",
+  "prompt_sha256": "7af1d03f0a16441f1f50c636eca386683ced6e0610ea126377b10fab5a05b731",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOq1QaPq3dLwJn5EsSdCSLULqfjl",
+  "prompt_tokens": 9582,
+  "completion_tokens": 39,
+  "actual_usd": 0.0014607,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data on the growth of AI-related GitHub projects, including the exact figures and percentage increase mentioned in the Reference Answer."
+  }
+}

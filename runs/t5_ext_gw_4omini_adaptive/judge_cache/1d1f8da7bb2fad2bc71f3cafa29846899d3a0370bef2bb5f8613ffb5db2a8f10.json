@@ -1,0 +1,14 @@
+{
+  "request_hash": "1d1f8da7bb2fad2bc71f3cafa29846899d3a0370bef2bb5f8613ffb5db2a8f10",
+  "prompt_sha256": "c60c7a46af93247f0ee63ddc184d5e9a060cd0199a083f38995420e0b1e9dbe6",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOLWRYeVbrqg5LApRMluVQjx4uLR",
+  "prompt_tokens": 7508,
+  "completion_tokens": 42,
+  "actual_usd": 0.0011514000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims in the Reference Answer by stating that Decision Trees provide very fine-grained explanations and are highly sensitive to small changes in data."
+  }
+}

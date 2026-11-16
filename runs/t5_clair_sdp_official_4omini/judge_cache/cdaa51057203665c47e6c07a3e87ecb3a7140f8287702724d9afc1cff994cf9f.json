@@ -1,0 +1,14 @@
+{
+  "request_hash": "cdaa51057203665c47e6c07a3e87ecb3a7140f8287702724d9afc1cff994cf9f",
+  "prompt_sha256": "d505ae8499e3f1174027725f1554bf6075cf6ae43b211d16ee2d5b752ead413f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNMYrJB3YdsvrzKRjkB7WuSMzd4V",
+  "prompt_tokens": 8446,
+  "completion_tokens": 50,
+  "actual_usd": 0.0012969,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the risks associated with sharing data with generative AI platforms, specifically mentioning the case of Samsung's data leak and subsequent ban on using such tools internally."
+  }
+}

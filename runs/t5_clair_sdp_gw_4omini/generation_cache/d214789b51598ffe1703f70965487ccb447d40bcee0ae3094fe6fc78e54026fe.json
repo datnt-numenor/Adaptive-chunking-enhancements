@@ -1,0 +1,10 @@
+{
+  "request_hash": "d214789b51598ffe1703f70965487ccb447d40bcee0ae3094fe6fc78e54026fe",
+  "prompt_sha256": "cca37d578c8eac93f0df22382f63c7dd7a6b5aaba62ac9cebaddd2c7a2b22e29",
+  "answer": "In the AI Fairness 360 toolkit, the most commonly used fairness metric, Disparate Impact, is calculated by comparing the proportion of individuals that receive a positive output for two groups: an unprivileged group and a privileged group. The calculation is the proportion of the unprivileged group that received the positive outcome divided by the proportion of the privileged group that received the positive outcome. The industry standard threshold that signals a violation is the four-fifths rule: if the unprivileged group receives a positive outcome less than 80% of their proportion of the privileged group, this is considered a disparate impact violation.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMrmCA7ZRtlayI8knDvOfkuf0zHO",
+  "prompt_tokens": 8086,
+  "completion_tokens": 124,
+  "actual_usd": 0.0012873
+}

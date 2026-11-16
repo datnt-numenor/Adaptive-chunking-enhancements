@@ -1,0 +1,14 @@
+{
+  "request_hash": "ad22be1c934269c53850ed99104e22458e98ec3fac075f368d019a5f16c551b3",
+  "prompt_sha256": "dea4fcf9babed4b1ad1a0b64c8e1694de91910c98c38248075d5da39db09f321",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQeu7MiQ9MHtj4ocKgO6Fu8lLnQ",
+  "prompt_tokens": 4657,
+  "completion_tokens": 54,
+  "actual_usd": 0.00073095,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context partially supports the Reference Answer by discussing the classification of AI systems and the prohibition of unacceptable-risk systems, but it does not explicitly mention the requirement for 'state of the art' methods for systemic risk modeling."
+  }
+}

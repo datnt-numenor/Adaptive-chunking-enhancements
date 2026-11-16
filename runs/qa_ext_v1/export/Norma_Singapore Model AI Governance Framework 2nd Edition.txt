@@ -1,0 +1,473 @@
+DOCUMENT: Singapore Model AI Governance Framework 2nd Edition
+
+<<<PAGE 32>>>
+<!-- PageHeader: 32 -->
+
+# USING THE PROBABILITY-SEVERITY OF HARM MATRIX
+
+An online retail store wishes to use AI to fully automate the recommendation of food products to individuals based on their browsing behaviours and purchase histories. The automation will meet the organisation's commercial objective of operational efficiency.
+
+# Probability-severity assessment
+
+The definition of harm can be the impact of making product recommendations that do not address the perceived needs of the individuals. The severity of harm in making the wrong product recommendations to individuals may be low since individuals ultimately decide whether to make the purchase. The probability of harm may be high or low depending on the efficiency and efficacy of the AI solution.
+
+# Degree of human intervention in decision-making process
+
+Given the low severity of harm, the assessment points to an approach that requires no human intervention (i.e. human-out-of-the-loop).
+
+<Figure>
+Probability of Harm
+</Figure>
+
+# Regular review
+
+The organisation regularly reviews its approach (i.e. human-out-of-the-loop) to re-assess the severity and probability of harm, and as societal norms and values evolve.
+
+Note: This is a simple illustration using bright-line norms and values. Organisations can consider testing this method of determining the AI decision-making model against cases with more challenging and complex ethical dilemmas.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 33>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 33 -->
+
+# SUADE LABS:
+
+# ILLUSTRATION ON DETERMINING THE LEVEL OF HUMAN INVOLVEMENT IN AI-AUGMENTED DECISION-MAKING
+
+Suade Labs ("Suade") is a RegTech firm that operates globally and is a World Economic Forum Technology Pioneer. Suade provides an AI-enabled solution that allows financial institutions to process large volumes of granular data and generate the required regulatory data, calculations, and reports with the necessary controls and governance. Suade's solution also allows users to analyse the impact of the existing stock of regulation, including the impact of individual pieces of legislation.
+
+In determining the level of human involvement in decision-making using AI, Suade considered the following key factors:
+
+a. Degree of domain knowledge (e.g. legal or policy-making knowledge) required to accurately interpret the results of the algorithm.
+
+b. Cost of non-compliance to regulation if the AI tool does not accurately analyse the impact of regulation and provide correct suggestions for regulatory compliance.
+
+As Suade's solution requires a certain degree of domain knowledge from human experts, and given that the cost of regulatory non-compliance as a result of incorrect recommendations made by the AI solution will be significant to users, Suade has thus adopted a human-in-the-loop approach for its AI solution.
+
+On the other hand, when it comes to tuning the AI model, Suade adopts a human-over-the-loop approach. In general, Suade tunes the AI model to automatically favour the identification of false positives over false negatives. However, Suade conducted user research, which informed them that some users prefer the model to favour false negatives over false positives. Therefore, Suade adopts a human-over-the-loop approach so that the AI model can be tuned to account for the differing preferences of its users with respect to whether the algorithm produces results that favours false positives or false negatives.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 34>>>
+<!-- PageHeader: 34 -->
+
+# GRAB:
+
+# ILLUSTRATION ON DETERMINING THE LEVEL OF HUMAN INVOLVEMENT IN AI-AUGMENTED DECISION-MAKING
+
+Grab is a Singapore-based company that offers ride-hailing transport services, food delivery and e-payment solutions. It uses AI across its platform, from ride allocation, detecting safety incidents, to identifying fraudulent transactions. In particular, Grab uses AI to improve the overall quality of trip allocations and minimise trip cancellations.
+
+To allocate trips successfully, Grab's AI model considers drivers' preferences based on the following key factors:
+
+a. Driver's preferences for certain trip types;
+
+b. Preferred locations where a driver start and end their day; and
+
+c. Other selective driving behaviours.
+
+In determining the level of human involvement in its AI's decision-making for trip allocation, Grab considered the following key factors:
+
+a. The scale of real-time decision-making required. As Grab has to make over 5,000 trip allocations every minute, this would mean an impact to customers in terms of efficiency and cost if a human had to review each trip allocation; and
+
+b. The severity and probability to users should the AI model work in a suboptimal manner.
+
+Among other factors, Grab considered that: (1) it is not technically feasible for a human to make such high volume of trip allocations in a short amount of time; and (2) there is often little or no harm to life should there be less than optimal trip allocations. Hence, Grab decided to adopt a human-out-of-the-loop approach for its AI model deployed for trip allocation, while continuously reviewing the AI model to ensure optimal performance.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 35>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 35 -->
+
+# OPERATIONS MANAGEMENT
+
+3.19 This section is intended to help organisations adopt responsible measures in the operations aspect of their AI adoption process. A reference AI adoption process is set out in order to provide a context for the recommendations for good governance in respect of the organisation's data, algorithm and AI model.
+
+3.20 The Model Framework uses the following generalised AI model development and deployment process to describe phases in implementing an AI solution by an organisation. 5 It should be noted that this process is not always uni-directional - it can, and usually is, a continuous process of learning.
+
+# Data Preparation
+
+# Algorithms
+
+# Chosen Model
+
+# Stage 1:
+
+Raw data is formatted and cleansed so conclusions can be drawn accurately. Generally, accuracy and insights increase with relevance and the amount of data.
+
+Stage 2: Models are trained on the dataset and algorithms may be applied. This includes statistical or machine learning models including decision trees and neural networks. The results are examined and models are iterated until the most appropriate model emerges.
+
+Stage 3:
+
+The chosen model is used to produce probability scores that can be incorporated into applications to offer predictions, make decisions, solve problems and trigger actions.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 36>>>
+<!-- PageHeader: 36 -->
+
+3.21 During deployment, algorithms such as linear regression algorithms, decision trees, or neural networks are applied for analysis on training datasets. The resulting algorithmic models are examined and algorithms are iterated until a model that produces the most appropriate results for the use case emerges. This model and its results are then incorporated into applications to offer predictions, make decisions, solve problems and trigger actions. The intimate interaction between data and algorithm/ model is the focus of this part of the Model Framework.
+
+# DATA FOR MODEL DEVELOPMENT
+
+3.22 Datasets used for building models may come from multiple sources, and could include both personal and non-personal data. The quality and selection of data from each of these sources are critical to the success of an AI solution. If a model is built using biased, inaccurate or non-representative data, the risks of unintended discriminatory decisions from the model will increase.
+
+To ensure the effectiveness of an AI solution, relevant departments within the organisation with responsibilities over quality of data, model training and model selection must work together to put in place good data accountability practices.
+
+3.23 The persons who are involved in training and selecting models for deployment may be internal staff or external service providers. It is ideal for the models deployed in an intelligent system to have an internal departmental owner, who will be the one making decisions on which models to deploy. To ensure the effectiveness of an AI solution, it would be helpful for relevant departments within the organisation with responsibilities over quality of data, model training and model selection to work together to put in place good data accountability practices. These include the following:
+
+<!-- PageBreak -->
+
+
+<<<PAGE 37>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 37 -->
+
+- Understanding the lineage of data: This means knowing where the data originally came from, how it was collected, curated and moved within the organisation, and how its accuracy is maintained over time. Data lineage can be represented visually to trace how the data moves from its source to its destination, how the data gets transformed along the way, where it interacts with other data, and how the representations change. There are three types of data lineage: a.
+
+i. Backward data lineage looks at the data from its end-use and backdating it to its source.
+
+ii. Forward data lineage begins at the data's source and follows it through to its end-use.
+
+iii. End-to-end data lineage combines the two and looks at the entire solution from both the data's source to its end-use and from its end-use to its source.
+
+Keeping a data provenance record allows an organisation to ascertain the quality of the data based on its origin and subsequent transformation, trace potential sources of errors, update data, and attribute data to their sources.
+
+In some instances, the origin of data could be difficult to establish. One example could be datasets obtained from a trusted third-party which may have commingled data from multiple sources. It would be prudent for organisations to assess the risks of using such data and manage them accordingly.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 38>>>
+<!-- PageHeader: 38 -->
+
+- Ensuring data quality: Organisations are encouraged to understand and address factors that may affect the quality of data, such as: b.
+
+i. The accuracy of the dataset, in terms of how well the values in the dataset match the true characteristics of the entities described by the dataset;
+
+ii. The completeness of the dataset, both in terms of attributes and items;
+
+iii. The veracity of the dataset, which refers to how credible the data is, including whether the data originated from a reliable source;
+
+iv. How recently the dataset was compiled or updated;
+
+v. The relevance of the dataset and the context for data collection, as it may affect the interpretation of and reliance on the data for the intended purpose;
+
+vi. The integrity of the dataset that has been joined from multiple datasets, which refers to how well extraction and transformation have been performed;
+
+vii. The usability of the dataset, including how well the dataset is structured in a machineunderstandable form; and
+
+viii. Human interventions (e.g. if any human has filtered, applied labels, or edited the data).
+
+- Minimising inherent bias: There are many types of bias relevant to AI. The Model Framework focuses on inherent bias in datasets, which may lead to undesired outcomes such as unintended discriminatory decisions. Organisations should be aware that the data which they provide to AI systems could contain inherent biases and are encouraged to take steps to mitigate such bias. The two common types of bias in data include: c.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 39>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 39 -->
+
+i. Selection bias: This bias occurs when the data used to produce the model are not fully representative of the actual data or environment that the model may receive or function in. Common examples of selection bias in datasets are omission bias and stereotype bias. Omission bias describes the omission of certain characteristics from the dataset. For example, a dataset consisting only of Asian faces will exhibit omission bias if it is used for facial recognition training for a population that includes non-Asians. A dataset of vehicle types within the central business district on a weekday may exhibit stereotype bias weighted in favour of cars, buses and motorcycles but under-represent bicycles if it is used to model the types of transportation available in Singapore.
+
+ii. Measurement bias: This bias occurs when the data collection device causes the data to be systematically skewed in a particular direction. For example, the training data could be obtained using a camera with a colour filter that has been turned off, thereby skewing the machine learning result.
+
+While identifying and addressing inherent bias in datasets may not be easy, organisations can mitigate the risk of inherent bias by having a heterogeneous dataset (i.e. collecting data from a variety of reliable sources). Another way is to ensure the dataset is as complete as possible, both from the perspective of data attributes and data items. Premature removal of data attributes can make it difficult to identify and address inherent bias.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 40>>>
+<!-- PageHeader: 40 -->
+
+- Different datasets for training, testing, and validation: Different datasets are required for training, testing, and validation. The model is trained using the training data, while the model's accuracy is determined using the test data. Where applicable, the model could also be checked for systematic bias by testing it on different demographic groups to observe whether any groups are being systematically advantaged or disadvantaged. d.
+
+Finally, the trained model can be validated using the validation dataset. It is considered good practice to split a large dataset into subsets for these purposes, if it does not lead to a significant reduction in the quality of data in terms of accuracy and representation. However, where this is not possible (e.g. if the organisation is not working with large datasets or are using pre-trained models as in the case of transfer learning), organisations are encouraged to be cognisant of the risks of systematic bias and put in place appropriate safeguards.
+
+- Periodic reviewing and updating of datasets: It would be prudent for datasets (including training, testing, and validation datasets) to be reviewed periodically to ensure accuracy, quality, currency, relevance and reliability. Where necessary, the datasets can be updated with new input data obtained from actual use of the AI models deployed in production. When such new input data is used, organisations need to be aware of potential bias as using new input data that has already gone through a model once could create a reinforcement bias. e.
+
+3.24 Even if only non-personal data are used for the training of AI models (including personal data that has been anonymised), the good data accountability practices above remain relevant.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 41>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 41 -->
+
+# SUADE LABS:
+
+# ILLUSTRATION ON MANAGING DATA FOR MODEL DEVELOPMENT
+
+Suade (introduced above) has developed an AI-enabled solution that helps financial institutions generate the required data and reports to comply with regulatory requirements in the jurisdictions where they operate.
+
+As the data used for Suade's AI model development directly affects its quality and performance, Suade has adopted several good data accountability practices. For example, to ensure that regulatory data comes from a credible and reliable source, Suade obtains and updates regulatory data only from the relevant regulators. In addition, Suade tags the datasets used with additional metadata. This allows Suade to trace datasets back to their original source when needed, such as where inconsistencies are found. Further, in order to trace which particular datasets were used in an AI model, Suade also documents and stores such information pertaining to model development on its database.
+
+Suade also minimises the inherent risks of AI models through responsible data tagging. By using a larger number of taggers (i.e. people who tag data), Suade aims to make the output of its AI models as neutral as possible, and reduce the risk of its taggers being influenced by the context of the data (which often comprise of text) they are annotating. In other words, Suade uses as many individuals as practicable to tag data to reduce the risk of tagger bias.
+
+In addition, Suade developed a tagging system to facilitate the annotation of data. This system is used to generate training data used by the algorithm. Suade will further develop this tagging system to enhance its ability to manage multiple annotators and to better select datasets used for model training. Suade also periodically updates the tagging system with new data. New training data is subsequently fed repeatedly back into the AI model. This way, the AI model is able to continuously learn from new sets of data.
+
+Another data accountability practice that Suade adopts is the use of validation schema checks at various stages of data transformation. This is a process in which Suade verifies that the data schema accurately represents the data from the source, to ensure that there are no errors in factors such as the data's formatting and content.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 42>>>
+<!-- PageHeader: 42 -->
+
+# PYMETRICS:
+
+# ILLUSTRATION ON MANAGING BIASES IN DATASETS FOR MODEL DEVELOPMENT
+
+pymetrics is a technology provider that uses neuroscience insights and audited AI models to help evaluate applicants in a more predictive and less biased manner. To develop an AI model, pymetrics:
+
+· Gets its clients' top-performing employees to go through pymetrics' assessments, and builds a trait profile of an employee that best fit the specific job role;
+
+· Validates the trait profile with the client's HR team; and
+
+· Collects behavioural data of applicants through pymetrics' gamified assessments, and assesses the suitability of the applicants based on the trait profile.
+
+To deal with socially sensitive features and mitigate the risk of inherent or unintentional bias in the datasets used by the AI model, pymetrics:
+
+· Uses objective data based on established neuroscience research (e.g. attention to detail, attention span and ability to recall), which are generally stable across gender, racial and age groups.
+
+· Proactively de-biases all AI models to ensure that they are fully representative of the environment that they may function in, so that the AI models do not disadvantage people on the basis of their demographic features:
+
+- » The standards for fairness are informed by legal requirements. As a prehire assessment, pymetrics models must pass a test known as "the fourfifths rule", which is commonly cited in employment law. According to US' Equal Employment Opportunity Commission ("EEOC"), the selection rate for any legally protected group must be at least 80% of the selection rate for the majority group. For example, if an employer screens 200 qualified applicants (100 men and 100 women), a model that selects 50 men must also select at least 40 women.
+
+- » pymetrics will test the AI model against a dataset of users from diverse demographics to ensure that random patterns in the data are not learned by the model and to address any potential for bias.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 43>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 43 -->
+
+- » pymetrics would conduct further de-biasing on additional demographic based on geographical relevance or legal requirements. pymetrics uses a bias ratio to compare the proportional pass rates of the highest-passing demographic group with the lowest-passing group for each demographic category (e.g. gender and ethnicity).
+
+- » The AI model would be deployed only if they meet the EEOC standards.
+
+· After AI deployment, pymetrics:
+
+- » Will test the AI model's decisions on real applicants for adverse impact; and
+
+- » Revisits the long-term impact of its system's predictions on retention for the role.
+
+If bias is found either before or after deployment, pymetrics will adjust the AI model to optimise for fairness towards applicants while ensuring the predictive performance of the AI model.
+
+# ALGORITHM AND MODEL
+
+3.25 AI systems may have numerous features or functionalities enabled through algorithms in AI models. Measures such as explainability, repeatability, robustness, regular tuning, reproducibility, traceability, and auditability can enhance the transparency of algorithms found in AI models. It may not be feasible or costeffective to implement even the most essential of these measures for all algorithms.
+
+Organisations are encouraged to take a risk-based approach in making a two-fold assessment. First, identify the subset of features or functionalities that have the greatest impact on stakeholders for which such measures are relevant. Second, identify which of these measures will be most effective in building trust with their stakeholders. Some of these measures like explainability (or repeatability, when using models that are not easily explained), robustness and regular tuning are sufficiently essential that they could, to varying extents, be incorporated as part of the organisation's AI deployment process. Other measures, such as reproducibility, traceability and auditability are more resource-intensive and may be relevant for specific features or in specific scenarios.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 44>>>
+<!-- PageHeader: 44 -->
+
+# Explainability
+
+3.26 Explainability is achieved by explaining how deployed AI models' algorithms function and/or how the decision-making process incorporates model predictions. The purpose of being able to explain predictions made by AI is to build understanding and trust. An algorithm deployed in an AI solution is said to be explainable if how it functions and how it arrives at a particular prediction can be explained. When an algorithm cannot be explained, understanding and trust can still be built by explaining how predictions play a role in the decision-making process.
+
+3.27 Organisations deploying AI solutions are recommended to adopt the following practices:
+
+- Model training and selection are necessary for developing an intelligent system (i.e. a system that contains AI technologies). Documenting how the model training and selection processes are conducted, the reasons for which decisions are made, and measures taken to address identified risks will enable the organisation to provide an account of the decisions subsequently. a.
+
+In this regard, the field of Automated Machine Learning aims to automate a significant portion of machine learning workflows, including feature engineering, feature selection, model selection and hyper-parameter tuning. Organisations using these types of tools can consider the transparency, explainability and traceability of the automated machine learning approach, as well as the models selected.
+
+- Incorporating descriptions of the solutions' design and expected behaviour into product or service descriptions and system technical specifications documentation demonstrates accountability to individuals and/or regulators. This could also include design decisions in relation to why certain features, attributes or models are selected in place of others. These steps can help provide greater clarity on an AI model by giving understandable and digestible insights into how the model operates. b.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 45>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 45 -->
+
+Where an organisation's AI system was obtained or procured from a third-party AI solution provider, the organisation can consider requesting assistance from the AI solution provider as they may be better placed to explain how the solution functions.
+
+- Supplementary explanation tools are helpful for explaining AI models, 6 especially models that are less interpretable (also known as "black box" systems). These tools help make the underlying rationale of an AI system's output more interpretable and intelligible to those who use the system. It is possible to use a combination of these tools to improve the explainability of an AI model's decision. c.
+
+3.28 Technical explainability may not always be enlightening, especially to the man on the street. Implicit explanations of how the AI models' algorithms function may be more useful than explicit descriptions of the models' logic. For example, providing an individual with counterfactuals (such as "you would have been approved if your average debt was 15% lower") and/or comparisons (such as "these are users with similar profiles to yours that received a similar decision") can be a powerful type of explanation that organisations could consider.
+
+3.29 Nevertheless, there may be scenarios where it might not be practical or reasonable to provide information in relation to an algorithm. For example, disclosing algorithms deployed for antimoney laundering detection, information security, and fraud prevention may allow bad actors to avoid detection; likewise, providing detailed information about proprietary algorithms or the decisions made by the algorithms may expose confidential business information.
+
+\* These tools are known as "supplementary" as there is at present no single comprehensive technical solution for making AI models explainable. These tools thus play a supplementary role in providing some level of interpretability on an AI model's operation. Examples of these tools include the use of surrogate models, partial dependence plots, global variable importance/interaction, sensitivity analysis, counterfactual explanations, or Self-Explaining and Attention-Based Systems. 6
+
+<!-- PageBreak -->
+
+
+<<<PAGE 46>>>
+<!-- PageHeader: 46 -->
+
+# Repeatability
+
+3.30 Where explainability cannot practicably be achieved given the state of technology, organisations can consider documenting the repeatability of results produced by the AI model. Repeatability refers to the ability to consistently perform an action or make a decision, given the same scenario. While repeatability (of results) is not equivalent to explainability (of algorithm), some degree of assurance of consistency in performance could provide AI users with a larger degree of confidence. Helpful practices include:
+
+a. Conducting repeatability assessments for commercial deployments in live environments to ensure that deployments are repeatable;
+
+b. Performing counterfactual fairness testing. Counterfactual fairness testing ensures that a model's decisions are the same in both the real world and in a counterfactual world where attributes deemed sensitive (such as race or gender) are altered; 7
+
+c. Assessing how exceptions can be identified and handled when decisions are not repeatable, e.g. when randomness has been introduced by design;
+
+d. Ensuring exception handling is in line with organisations' policies;
+
+In this regard, it may be helpful to use AI models that are able to recognise when a given set of facts contains new variables not previously considered and are able to highlight these new variables to a human;
+
+e. Identifying and accounting for changes over time to ensure that models trained on time-sensitive data remain relevant.
+
+\* James Manyika, Jake Sitberg, and Brittany Presten, "What Do We Do About the Biases in AI?" Harvard Business Review (25 October 2019) <https://hbr.org/2019/10/what-do-wedo-about-the-biases-in-ai> (accessed 31 October 2019). 7
+
+<!-- PageBreak -->
+
+
+<<<PAGE 47>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 47 -->
+
+# Robustness
+
+3.31 Robustness refers to the ability of a computer system to cope with errors during execution and erroneous input, and is assessed by the degree to which a system or component can function correctly in the presence of invalid input or stressful environmental conditions. Ensuring that deployed models are sufficiently robust will contribute towards building trust in the AI system.
+
+3.32 The concept of robustness arises because it is not possible for models to be able to enumerate and set out all preconditions and consequences for an action. This creates the possibility of models producing insensible or unexpected results even with minor modifications to input data (that may not even be perceptible to humans). Testing for robustness can be achieved through scenario-based testing for foreseeable erroneous input. 8 To ensure that models are more robust, organisations can consider working with AI developers to conduct adversarial testing on their models to ensure that their models are able to handle a broader range of unexpected input variables (especially for public-facing AI systems). As this is a resource-intensive exercise, organisations can take a risk-based approach towards identifying the subset of AI-powered features in their products or services that requires adversarial testing.
+
+3.33 No model can be perfectly robust as it is not possible to detect all possible modifications to a set of input data. For this reason, organisations intending to use continual learning (i.e. where the learned parameters of a machine learning model are not fixed but the model continues to change its learned parameters after being deployed into production) are encouraged to be aware of the risks of doing so, should the continual learning model behave in an unpredictable manner.
+
+\* This is distinct from user acceptance testing ("UAT"), which is a process where actual software users test a piece of software to ensure that it can handle required tasks in realworld scenarios, based on specifications. UAT is often a critical step that is taken before a newly-developed software is released to the market. 8
+
+<!-- PageBreak -->
+
+
+<<<PAGE 48>>>
+<!-- PageHeader: 48 -->
+
+# Regular tuning
+
+3.34 Establishing an internal policy and process to perform regular model tuning is effective for ensuring that deployed models cater for changes to customer behaviour over time. This allows organisations to refresh models based on updated training datasets that incorporate new input data. Model tuning may also be necessary when commercial objectives, risks, or corporate values change.
+
+3.35 Wherever possible, testing should reflect the dynamism of the planned production environment. To ensure safety, testing may need to assess the degree to which an AI solution generalises well and fails gracefully. For example, a warehouse robot tasked with avoiding obstacles to complete a task (e.g. picking up packages) could be tested with different types of obstacles and realistically varied internal environments (e.g. workers wearing a variety of different coloured shirts). Otherwise, models risk learning regularities in the environment that do not reflect actual production environment conditions (e.g. assuming that all humans that it must avoid will be wearing white lab coats). Once AI models are deployed in the real-world environment, active monitoring, review and tuning are advised.
+
+# Traceability
+
+3.36 An AI model is considered to be traceable if (a) its decisions, and (b) the datasets and processes that yield the AI model's decision (including those of data gathering, data labelling and the algorithms used), are documented in an easily understandable way. The former refers to traceability of AI-augmented decisions, while the latter refers to traceability in model training. Traceability facilitates transparency and explainability, and is also helpful for other reasons. First, the information might also be useful for troubleshooting, or for an investigation into how the model was functioning or why a particular prediction was made. Second, the traceability record (in the form of an audit log) can be a source of input data that can be used as a training dataset in the future.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 49>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 49 -->
+
+3.37 Practices that organisations may consider to promote traceability include:
+
+a. Building an audit trail to document the model training and AI-augmented decision.
+
+b. Implementing a black box recorder that captures all input data streams. For example, a black box recorder in a selfdriving car tracks the vehicle's position and records when and where the self-driving system takes control of the vehicle, suffers a technical problem or requests the driver to take over the control of the vehicle. 9
+
+c. Ensuring that data relevant to traceability are stored appropriately to avoid degradation or alteration, and retained for durations relevant to the industry.
+
+3.38 As traceability measures may lead to an accumulation of a large volume of activity data, organisations can consider which of their product features require traceability and which traceability measures might be sufficient for their needs, bearing in mind the resources needed to document the AI model's decisions, datasets and processes. Organisations could assess this based on several factors, including:
+
+a. Their assessment of the probability and/or severity of harm arising from the use of the AI system;
+
+b. The extent to which the AI model had previously been trialled or used; and
+
+c. The regulatory needs of their industry.
+
+\* It should be noted that a black box recorder does not refer to a "black box" in the AI model sense (i.e. where the decision-making process of an AI model is inherently difficult to interpret and explain). 9
+
+<!-- PageBreak -->
+
+
+<<<PAGE 50>>>
+<!-- PageHeader: 50 -->
+
+# Reproducibility
+
+3.39 While repeatability refers to the internal repetition of results within one's organisation, reproducibility refers to the ability of an independent verification team to produce the same results using the same AI method based on the documentation made by the organisation. Reproducibility can influence the trustworthiness of the AI product and the organisation deploying the AI model. As implementing reproducibility entails the involvement of external parties, organisations can take a risk-based approach towards identifying the subset of AI-powered features in their products or services that requires external reproducibility testing.
+
+3.40 The following practices contribute towards reproducibility:
+
+a. Testing whether specific contexts or particular conditions would need to be taken into account to ensure reproducibility;
+
+b. Putting in place verification methods to ensure different aspects of the AI model's reliability and reproducibility;
+
+c. Making available replication files (i.e. files that replicate each step of the AI model's developmental process) to facilitate the process of testing and reproducing behaviours;
+
+d. For companies that procure commercial off-the-shelf AI systems, checking with the original AI solution provider about whether the model's results are reproducible; and
+
+e. Adopting points in paragraph 3.30 (c)-(e) under repeatability (namely, assessing how exceptions can be identified and handled, ensuring that exceptionhandling is in line with organisational policies, and identifying and accounting for changes over time).
+
+<!-- PageBreak -->
+
+
+<<<PAGE 51>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 51 -->
+
+# Auditability
+
+3.41 Auditability refers to the readiness of an AI system to undergo an assessment of its algorithms, data and design processes. The evaluation of the AI system by internal or external auditors (and the availability of evaluation reports) can contribute to the trustworthiness of the AI system as it demonstrates the responsibility of design and practices and the justifiability of outcomes. It should, however, be noted that auditability does not necessarily entail making information about business models or intellectual property related to the AI system publicly available.
+
+3.42 Implementing auditability not only entails the involvement of external parties but requires disclosure of commercially sensitive information to the auditors, who may be external. Organisations can take a risk-based approach towards identifying the subset of AI-powered features in their products or services for which implementing auditability is necessary, or where implementing auditability is necessary for an organisation to align itself with regulatory requirements or industry practice.
+
+3.43 To facilitate auditability, organisations can consider keeping a comprehensive record of data provenance, procurement, preprocessing, lineage, storage and security. The record could also include qualitative input about data representations, data sufficiency, source integrity, data timelines, data relevance, and unforeseen data issues encountered across the workflow.
+
+3.44 Organisations may also wish to centralise such information digitally in a process log. This would enable the organisation to make available, in one place, information that may assist in demonstrating to concerned parties and affected decision subjects both the responsibility of design and practices and the justifiability of the outcomes of your system's processing behaviour. Such a log would also enable better organisation of the accessibility and presentation of information yielded, assist in the curation and protection of data that should be kept unavailable from public view, and increase the organisation's capacity to cater the presentation of results to different tiers of stakeholders with different interests and levels of expertise.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 52>>>
+<!-- PageHeader: 52 -->
+
+# SYMPHONY AYASDIAI:
+
+# ILLUSTRATION ON DOCUMENTING MODEL DEVELOPMENT
+
+Symphony AyasdiAI ("Ayasdi") offers a solution that helps its clients, mainly in the US banking and finance sector, to build AI models that can adequately forecast revenues and the capital reserve required to absorb losses under stressed economic conditions. Its clients need to prove to the US Federal Reserve that their AI models are accurate and defensible.
+
+The solution - Ayasdi's Model Accelerator (the "AMA") - first identifies relevant variables to include in the model and then explains why they are selected. AMA does this by looking at possible relationships encoded within the enriched base-level data, and finding hidden patterns that hold predictive value. The AMA then uses the variables selected to build AI models. It presents a candidate model and several viable challenger models for the clients' selection. Business units within the clients' organisations will evaluate the candidate and challenger models and select those that best represent their business units.
+
+The entire model creation process is documented automatically. The clients can use AMA to institutionalise both their variable selection and modelling methodology, systematically and deterministically, to produce a repeatable process with consistent supporting reports on model lineage, variable selection and cross-validation. This allows the clients to ensure that initial selections of features and models are recorded and documented. At the same time, the entire modelling and approval process is tracked and catalogued, thus facilitating subsequent processes from review to model re-use.
+
+The ability to demonstrate the detailed process of model building and the rigour of evaluating challenger models allows Ayasdi's clients to explain to the US Federal Reserve how their final models are selected.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 53>>>
+<!-- PageHeader: MODEL ARTIFICIAL INTELLIGENCE GOVERNANCE FRAMEWORK 53 -->
+
+# STAKEHOLDER INTERACTION AND COMMUNICATION
+
+3.45 This section is intended to help organisations take appropriate steps to build trust in the stakeholder relationship strategies when deploying AI.
+
+# General disclosure
+
+3.46 Organisations are encouraged to provide general information on whether AI is used in their products and/or services. Where appropriate, this could include information on what AI is, how AI is used in decision-making in relation to consumers, what are its benefits, why your organisation has decided to use AI, how your organisation has taken steps to mitigate risks, and the role and extent that AI plays in the decision-making process. For example, an online portal may inform its users that they are interacting with an AI-powered chatbot and not a human customer service agent.
+
+3.47 Organisations can consider disclosing the manner in which an AI decision may affect an individual consumer, and whether the decision is reversible. For example, an organisation may inform the individuals that their credit ratings may lead to a loan refusal not only from this organisation but also from other similar organisations, while also informing them that such a decision is reversible if individuals can provide more evidence on their credit worthiness.
+
+# Policy for explanation
+
+3.48 Organisations are encouraged to develop a policy on what explanations to provide to individuals and when to provide them. Such policies help ensure consistency in communication, and clearly sets out roles and responsibilities of different members of your organisation. These can include explanations on how AI works in an AI-augmented decision-making process, how a specific decision was made and the reasons behind that decision, and the impact and consequence of the decision. The explanation can be provided as part of general communication. It can also be information in respect of a specific decision upon request. In this regard, the principle of equivalence can provide some guidance such that the same standards of disclosure for humandriven decisions is applied to decisions that have been made or augmented by an AI system.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 54>>>
+<!-- PageHeader: 54 -->
+
+# Bringing explainability and transparency together in a meaningful way
+
+3.49 Appropriate interaction and communication inspire trust and confidence as they build and maintain open relationships between organisations and individuals (including employees). Stakeholder relationship strategies should also not remain static. Companies are encouraged to test, evaluate and review their strategies for effectiveness. Further, the extent and mode of implementation of these factors could vary from scenario to scenario.
+
+3.50 As different stakeholders have different information needs, an organisation can start by first identifying its audience (i.e. its external and internal stakeholders). An organisation's external stakeholders may include consumers, regulators, other organisations it does business with, and society at large. Its internal stakeholders may include the organisation's board, management and employees. An organisation can also consider the purpose and the context of the interaction with its stakeholders. For the purposes of illustration, this Model Framework provides considerations for interacting with consumers and other organisations.
+
+As different stakeholders have different information needs, an organisation can start by first identifying its audience and considering the purpose and the context of the interaction.
+
+# Interacting with consumers
+
+3.51 Organisations are encouraged to consider the information needs of consumers as they go through the journey of interacting with AI, from considering whether to use an AI solution, to understanding how the AI solution works as they use it, to requesting for reviews on the decisions made by the AI solution. A typical consumer journey may entail meeting the following information needs of consumers:
+
+<!-- PageBreak -->
+

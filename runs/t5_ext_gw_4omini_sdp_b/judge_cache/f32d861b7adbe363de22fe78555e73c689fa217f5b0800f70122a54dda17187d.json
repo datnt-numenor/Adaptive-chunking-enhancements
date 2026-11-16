@@ -1,0 +1,14 @@
+{
+  "request_hash": "f32d861b7adbe363de22fe78555e73c689fa217f5b0800f70122a54dda17187d",
+  "prompt_sha256": "48f6cfd92b45a8cd585d820cf1d097ae0eec04b17ec58bd45bf127211867abc7",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOb9VasRwnU6Y4RT76fgKBJEbuBA",
+  "prompt_tokens": 5118,
+  "completion_tokens": 42,
+  "actual_usd": 0.0007929,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the OPAL project's goal of developing a secure infrastructure for analyzing telecom data while ensuring data protection through certified algorithms."
+  }
+}

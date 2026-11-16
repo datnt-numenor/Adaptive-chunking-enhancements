@@ -1,0 +1,10 @@
+{
+  "request_hash": "f05b3fc392139f36da41082e9e5e357e720c45b29900b3a2a154e3290583270f",
+  "prompt_sha256": "1a249230e95d78efa52a660f2f5d974f2eab84be3f5195dab287a491582fe6d3",
+  "answer": "Scaling inference-at-deployment lowers the number of simultaneously served copies of each new model. For example, if inference-at-deployment is scaled by two orders of magnitude, the number of copies can decrease by a factor of 100, meaning the new model can only be immediately deployed in 1% as many tasks as it would be if it had been scaled by pre-training compute. \n\nAdditionally, scaling inference-at-deployment reduces the value of securing model weights. If training compute plateaus at a certain level while inference-at-deployment scales significantly, the value of stealing model weights does not increase over time, as the costs associated with inference-at-deployment would be much higher than the training costs of the model that was stolen.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiN1Bjyr3YxxjlPTVO6jnqZk3lUdb",
+  "prompt_tokens": 8670,
+  "completion_tokens": 145,
+  "actual_usd": 0.0013875
+}

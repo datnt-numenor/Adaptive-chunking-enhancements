@@ -1,0 +1,14 @@
+{
+  "request_hash": "e3385e43d96117385d0bf0052a0625cd12f75d401f37c9c2a167b4b7f3160a12",
+  "prompt_sha256": "94fe7b3f5ab9ece5f1ebc07da0653ab00f7af3223b866e7cbcd8d79d57a0b609",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOESWVsqB692MoDUC1LufH5tONwc",
+  "prompt_tokens": 6303,
+  "completion_tokens": 39,
+  "actual_usd": 0.0009688499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that the pickle format is insecure and recommending the use of secure formats like safetensor."
+  }
+}

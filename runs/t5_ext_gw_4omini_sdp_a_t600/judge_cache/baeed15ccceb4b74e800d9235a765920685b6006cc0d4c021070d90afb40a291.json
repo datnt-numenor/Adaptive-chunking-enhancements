@@ -1,0 +1,14 @@
+{
+  "request_hash": "baeed15ccceb4b74e800d9235a765920685b6006cc0d4c021070d90afb40a291",
+  "prompt_sha256": "1fa7efdccc2c29271bf33e2b4d45aa149d28203c7f33ab0545211e0535492a04",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNb17CFTudCclrAMSvWH2SG3MJYV",
+  "prompt_tokens": 7465,
+  "completion_tokens": 39,
+  "actual_usd": 0.0011431500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly outlining the three lines of governance: development/operations, risk management, and internal audit departments."
+  }
+}

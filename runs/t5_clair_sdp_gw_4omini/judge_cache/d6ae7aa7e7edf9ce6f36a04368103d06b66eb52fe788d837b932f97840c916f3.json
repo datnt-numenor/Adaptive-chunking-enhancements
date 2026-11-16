@@ -1,0 +1,14 @@
+{
+  "request_hash": "d6ae7aa7e7edf9ce6f36a04368103d06b66eb52fe788d837b932f97840c916f3",
+  "prompt_sha256": "5d7ae2c67f1dc398a99b4b467a50f7c6abf57d711d50a521b41e078b7edee76b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKFrUFp26XeOQBeBGZlAQYHgiEw",
+  "prompt_tokens": 8524,
+  "completion_tokens": 38,
+  "actual_usd": 0.0013013999999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating the age requirements for consent regarding children's data processing and the responsibilities of the data controller."
+  }
+}

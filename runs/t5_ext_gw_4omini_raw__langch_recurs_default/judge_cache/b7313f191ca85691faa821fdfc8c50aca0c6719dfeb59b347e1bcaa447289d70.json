@@ -1,0 +1,14 @@
+{
+  "request_hash": "b7313f191ca85691faa821fdfc8c50aca0c6719dfeb59b347e1bcaa447289d70",
+  "prompt_sha256": "3fa8063f8e449bdf3cb666cdb935dfad477db4303b097169d63bf4569ab3195f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSDZglA3VsJoFiwWmMFkC2kLNAg",
+  "prompt_tokens": 6451,
+  "completion_tokens": 41,
+  "actual_usd": 0.00099225,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly explaining the differences between ML validation and medical device validation, including the focus on unbiased evaluation and clinical benefit."
+  }
+}

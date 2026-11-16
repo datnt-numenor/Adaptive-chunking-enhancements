@@ -1,0 +1,14 @@
+{
+  "request_hash": "41d2713176ab8aff34913da2e91fcc192b3f8377832d67dd2a16caef21ee6686",
+  "prompt_sha256": "c685d6788ed45893d02fd3e611db6c27985ce8629b9ba5425f1d57d7c03aad90",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiPDteTMnvpR2YRKoRWwvZANEBXT2",
+  "prompt_tokens": 9366,
+  "completion_tokens": 49,
+  "actual_usd": 0.0014343,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides comprehensive support for the claims in the Reference Answer, detailing the productivity increase of 25% and the 8.6 percentage point decrease in job departure probability after AI adoption."
+  }
+}

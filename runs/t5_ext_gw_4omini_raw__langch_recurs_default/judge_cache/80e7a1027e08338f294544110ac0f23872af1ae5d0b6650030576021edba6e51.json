@@ -1,0 +1,14 @@
+{
+  "request_hash": "80e7a1027e08338f294544110ac0f23872af1ae5d0b6650030576021edba6e51",
+  "prompt_sha256": "83bc3e21d7541f7d3f70cb1ab6a0ffd6e604f629ca081424940e40563ed35d95",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpp8ihbz71BebiV4PXtScR0AORo",
+  "prompt_tokens": 7675,
+  "completion_tokens": 43,
+  "actual_usd": 0.00117705,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive definition of internal validity, explaining its importance and the factors that can affect it, which fully supports the claim made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "f32306f1e3c249a5c070dd2b67bc93201033722528f43983279a670972ffbf6a",
+  "prompt_sha256": "423dc0d8f09d08c419a0ceba81f8d0866904b0d721f3479089cb45e1055fd1f3",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOF8hScXaZFPTJvtsScOzPbQoxOh",
+  "prompt_tokens": 9979,
+  "completion_tokens": 52,
+  "actual_usd": 0.00152805,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a comprehensive explanation of AI Assurance Levels (AALs), including their purpose, implications, and the framework for assessing confidence in audit findings, fully supporting the claims made in the Reference Answer."
+  }
+}

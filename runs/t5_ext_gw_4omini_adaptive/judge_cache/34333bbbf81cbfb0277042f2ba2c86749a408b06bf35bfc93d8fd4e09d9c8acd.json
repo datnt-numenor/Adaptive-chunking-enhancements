@@ -1,0 +1,14 @@
+{
+  "request_hash": "34333bbbf81cbfb0277042f2ba2c86749a408b06bf35bfc93d8fd4e09d9c8acd",
+  "prompt_sha256": "338ee90b36036f84eb6c42b94247735bafa33bf5de479edbeef4796132bad519",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiORfYxL4D9SvlvEEUH50F4GvMMKK",
+  "prompt_tokens": 8763,
+  "completion_tokens": 51,
+  "actual_usd": 0.00134505,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explaining that capability assessments focus on system performance rather than directly measuring risk, and it highlights the limitations of such assessments in capturing the probability and severity of societal harms."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "7ab0c026c3e35c6179062bf90ec6e6ef42dd3969968bc3fc0abe8ecd8708bbc3",
+  "prompt_sha256": "8253af1c95f7464ffc8fb98d7695ada139dbe7bb26b32b112c640ba3256256bf",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiONK3XXeliyHOvvnhr6Ljc7DzMvl",
+  "prompt_tokens": 6190,
+  "completion_tokens": 47,
+  "actual_usd": 0.0009567,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by providing a clear definition of agentic AI as described in the Singapore Agentic AI MGF, including its characteristics of planning and independent action."
+  }
+}

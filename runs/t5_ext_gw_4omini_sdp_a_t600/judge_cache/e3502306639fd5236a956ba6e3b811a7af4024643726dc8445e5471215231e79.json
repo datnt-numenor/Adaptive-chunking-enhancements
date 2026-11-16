@@ -1,0 +1,14 @@
+{
+  "request_hash": "e3502306639fd5236a956ba6e3b811a7af4024643726dc8445e5471215231e79",
+  "prompt_sha256": "b77cdf6bd8011415875cd54e06d0f4620f2f90fd0624a3c1237f110a2004db9a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO2uZJAwUT7rah2W5JrgxRygrOBR",
+  "prompt_tokens": 8423,
+  "completion_tokens": 44,
+  "actual_usd": 0.0012898500000000002,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by discussing the importance of questioning who is involved in the design and use of AI systems, thereby challenging the notion of data neutrality."
+  }
+}

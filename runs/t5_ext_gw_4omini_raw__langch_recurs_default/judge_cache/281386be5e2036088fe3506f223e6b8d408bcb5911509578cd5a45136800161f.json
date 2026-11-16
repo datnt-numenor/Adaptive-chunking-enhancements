@@ -1,0 +1,14 @@
+{
+  "request_hash": "281386be5e2036088fe3506f223e6b8d408bcb5911509578cd5a45136800161f",
+  "prompt_sha256": "2346e6ee5a58c8be75ffafb84f3782e5ef31a6885bc31f67c3f8f630ff8ad68e",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOEkfDGqj07GAyQg4iZ65vwe8ggD",
+  "prompt_tokens": 6950,
+  "completion_tokens": 35,
+  "actual_usd": 0.0010635,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context thoroughly explains the differences between black-box and gray-box access, fully supporting the claims made in the Reference Answer."
+  }
+}

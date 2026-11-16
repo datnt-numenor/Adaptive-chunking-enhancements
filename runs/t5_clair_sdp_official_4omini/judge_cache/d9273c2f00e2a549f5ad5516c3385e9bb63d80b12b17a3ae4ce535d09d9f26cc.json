@@ -1,0 +1,14 @@
+{
+  "request_hash": "d9273c2f00e2a549f5ad5516c3385e9bb63d80b12b17a3ae4ce535d09d9f26cc",
+  "prompt_sha256": "dfe9009a57acf9665ed187f5cbdfc271eaaea517b36a1e722ce83adc0975ee72",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNS5tUm292Tmrzwt7Ji66rZXWNcm",
+  "prompt_tokens": 9773,
+  "completion_tokens": 60,
+  "actual_usd": 0.00150195,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly stating that the EDPS guidelines are designed to help EU institutions comply with Regulation (EU) 2018/1725 and mentions the EDPS's role in conducting investigations, including audits and inspections."
+  }
+}

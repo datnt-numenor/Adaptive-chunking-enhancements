@@ -1,0 +1,14 @@
+{
+  "request_hash": "6c048da78ddf67992878f78dd1d7d4708964d745f21ee22217d498d3fb2312ad",
+  "prompt_sha256": "1f49a8e05807042322c80c1e1c55a0913f4a90a21896eb22e849ad0c4d598a70",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNE7ModfywhfniTadzABWqtERGIs",
+  "prompt_tokens": 7976,
+  "completion_tokens": 45,
+  "actual_usd": 0.0012234,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the obligations of Signatories regarding web crawlers, including the requirement to respect technological measures and follow the Robot Exclusion Protocol."
+  }
+}

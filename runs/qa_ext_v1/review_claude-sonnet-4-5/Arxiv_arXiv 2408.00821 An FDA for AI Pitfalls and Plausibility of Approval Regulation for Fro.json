@@ -1,0 +1,10 @@
+{
+ "model_requested": "claude-sonnet-4-5",
+ "model_returned": "claude-sonnet-4-5",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer fully supported by evidence, question self-contained\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer accurate and supported by evidence\"\n    },\n    {\n      \"n\": 3,\n      \"decision\": \"drop\",\n      \"reason\": \"Evidence shows only table header, not the actual category values needed to support the answer\"\n    },\n    {\n      \"n\": 4,\n      \"decision\": \"keep\",\n      \"reason\": \"Answer directly supported by evidence quote\"\n    },\n    {\n      \"n\": 5,\n      \"decision\": \"drop\",\n      \"reason\": \"Answer mentions small labs and foreign actors complicating detection, but evidence quote only covers compute provider observability\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 10222,
+  "out": 617
+ },
+ "created": "2026-11-09 18:35:41"
+}

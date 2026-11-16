@@ -1,0 +1,14 @@
+{
+  "request_hash": "d69d389950225576b8be5e1dde21169298d56ee2c7b48096563a62c27fefb5b9",
+  "prompt_sha256": "732d7b6f82b7ce5e43ff8a1f5eb9c8bd8c7dd21c378baa7998e87835f6e9a6c5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNXk31Rlf84wjcTBmnNSJTpjJT1x",
+  "prompt_tokens": 8826,
+  "completion_tokens": 46,
+  "actual_usd": 0.0013514999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing the risks associated with data confidentiality when using generative AI platforms and providing the specific example of Samsung's response to a data leak."
+  }
+}

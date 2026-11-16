@@ -1,0 +1,325 @@
+DOCUMENT: arXiv 2305.14865 A Game-Theoretic Framework for AI Governance
+
+<<<PAGE 4>>>
+General-Sum Stackelberg Game So far, Stackelberg game has found wide applications in various problems including modeling competing firms and firstmover advantage, allocating resources, improving public policy-making, and designing reinforcement learning algorithms, just to name a few. In particular, the Stackelberg game model has played an important role in security at infrastructure such as airports, transportation, to model the interactions between the security force and attackers and compute an optimal security force allocation strategy [3][23]. In particular, the IRIS program deployed by the US Federal Air Marshals is an well-known and successful example [24].
+
+In recent years, we see significant research interest in Stackelberg games partly due to these successful applications in modeling and analyzing various real-world problems. The majority of existing work focuses on zero-sum Stackelberg game [add references, while its general-sum counterpart is more relevant for many scenarios in practice. In zero-sum games, [13] shows that Stackelberg and Nash equilibria are interchangeable, but the two typically diverge under the general-sum setting. Moreover, structural properties that lead to efficient computation of Nash equilibrium is not sufficient for the case of Stackelberg equilibrium, which shows the latter is more challenging to compute compared to the former [13].
+
+A line of recent work explores Stackelberg equilibria in the general-sum setting. [6] investigate the properties of local convergence of the first-order methods for general-sum Stackelberg games; while [9] also focuses on the first-order methods, it studies the global convergence thereof for solving bi-level optimization problems. In a more challenging setting, where the reward functions and/or transition kernel are unknown, another line of recent research resorts to reinforcement learning methods for computing Stackelberg equilibria [29] [28]. Among these, [2] explores sample-efficient algorithms for finding Stackelberg equilibrium of large general-sum games where the leader and/or the follower action set is exponential in the natural representation of the problem.
+
+Multi-Agent Reinforcement Learning Multi-agent reinforcement learning (MARL) studies the sequential decision-making problem involves multiple interacting learning agents, which is an extension of the single-agent RL. It is typically modeled as a Markov game [15], during each step of which all players take actions simultaneously. Furthermore, the relationship among agents could be either collaborative or competitive, contingent on the structure of their reward functions. So far, single-agent RL has achieved prominent success and been widely applied in solving various tasks [17] [14] [22]. However, many realworld scenarios, such as autonomous driving and multi-robot control, naturally comprise more than one decision-makers that collectively learn, interact, cooperate and/or compete in a shared environment, which could be modeled as a multi-agent RL problem.
+
+<!-- PageFooter: 4 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 5>>>
+Compared to its single-agent counterpart, a number of exclusive challenges arise in the multi-agent RL setting: non-stationarity, learning communication, coordination, credit-assignment, scalability, and partial observation [8]. In particular, non-stable learning as well as co-adaptation of the interacting agents makes the sequential decision-making very challenging. In addition, the sample complexity of centralized multi-agent RL algorithms scales exponentially with the number of agents. To address this challenge, a line of recent research [12] [16] proposes a decentralized structure, V-learning, for finding equilibrium strategy.
+
+To date, most of recent literature on multi-agent RL focuses on finding Nash equilibrium in the Markov game without taking the asymmetric structure of players into account. Furthermore, for recent work that do explore Stackelberg equilibrium, the majority works on the zero-sum case.
+
+Automated Mechanism Design Mechanism design studies how to create preference aggregation rules that can produce desirable outcomes in spite of selfinterest agents, while automated mechanism design aims to generate a general mechanism for the problem of interest in an automatic manner, usually based on constrained optimization methods [21]. The latter attracts wide interest for researchers in economic and public policy fields for a number of factors. First and foremost, many real-world policy optimization poses a mechanism design problem. In addition, the computational methods for automated mechanism design address some of the aforementioned challenges confronted by mechanism design, such as lack of experimental data, the Lucas critique, etc. Recent work further proposes methods for solving multistage mechanism design automatically, which can be formulated as optimization problems [21].
+
+Compared to the aforementioned Stackelberg games, note that the designer actually has an implicit leadership position in the mechanism design setting.
+
+Organization Lastly, we briefly summarize the arrangement of the rest of this paper: section 2 provides brief background on AI governance and Stackelberg game; based on this, section 3 introduces our Stackelberg framework for AI governance; we then instantiate the general framework and discuss two special cases fit the AI governance problem naturally; we end by summarizing the main message and pointing out a number of directions for future work.
+
+# 2 Preliminary
+
+# 2.1 AI Governance
+
+In general, AI governance refers to 'the ability to direct, manage and monitor the AI activities of and organization' [10], the ultimate goal of which is to ensure AI is trustworthy and responsible and hence benefits humankind. AI governance has recently attracted interest from both governments and academia globally.
+
+<!-- PageFooter: 5 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 6>>>
+Besides the common challenges confronted by technology policy field, AI governance poses many unique challenges. First of all, AI is not A kind of technology but a portfolio of diverse technologies, which implies that there is no silver bullet that fit all sub-sectors within AI. Secondly, AI technologies are evolving quickly as this field as a whole is still in its early stage. This indicates that micro-level regulation should be adaptive, although the overarching principles stay consistent. Moreover, we cannot manage and guide something we do not understand. As AI becomes more complicated, public policy makers might struggle to catch up with state-of-the-art methods at the AI frontier. Last but not least, to tackle AI governance, we have to confront some ethical dilemmas not seen before. Apparently, interdisciplinary experts are crucial to create new wisdom for this cross-field arena. On the other hand, most traditional tools, mostly qualitative and developed by the public policy researchers, are inadequate to effectively address aforementioned challenges. This motivates us to explore new methodologies for optimal governance of AI. On a high level, we hope this work would contribute to initiate a new paradigm for technology policy research: the quantitative and AI-driven methods for technology policy, which can serve as a complementary approach to existing methods.
+
+# 2.2 Stackelberg Game
+
+Stackelberg games are hierarchical games with a leader-follower structure and a prescribed play order: the leader(s) plays before the follower and chooses a strategy that maximizes her rewards, acknowledging that the latter can observe the her action and play best response. In this light, the leader's strategy can be viewed as 'the best response to best response'. In essence, Stackelberg game is a generalization of min-max games, and it can technically be formulated as a bilevel optimization problem. In contrast to the case that each player optimizes her objective independently, the formulation of Stackelberg games takes the hierarchical structure into account, which gives rise to a number of appealing properties and makes it prevalent to many real-world scenarios summarized in section 1.
+
+We begin by highlighting a few aspects of the game design that are most relevant to our work.
+
+· zero-sum vs. general-sum When the reward functions of the leader and follower are not opposite, general-sum is more prevalent compared to the simpler but more constraint zero-sum setting.
+
+· normal form vs. extensive form In normal form games, players choose a strategy with beliefs about how other players act, which can be represented by a table. Extensive form games allow each player to access a complete description of all previous strategies that other players have chosen so far and in what order. We focus on the normal form throughout this work.
+
+<!-- PageFooter: 6 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 7>>>
+· optimistic tie-breaking vs. pessimistic tie-breaking Given an action of the leader, there could be more than one best response strategies of the follower, which constitute a best response set. Optimistic tie-breaking means the follower would choose an action from the best response set in favor of the leader, while pick one adversarial to the leader in the pessimistic tie-breaking. The AI governance frame in section 3 adopts the former.
+
+· one leader and one follower vs. multiple leaders and/or multiple followers In its simplest form, there is one leader and one follower. We work on this two-player case in this work and discuss potential extensions to multiple interacting followers when discussing future work.
+
+So far, Stackelberg game has found wide applications in various problems including modeling competing firms and first-mover advantage, allocating resources, improving public policy-making, and designing reinforcement learning algorithms, just to name a few. In this section, we provide a formal representation of Stackelberg game.
+
+Formulation Here, we provide the notations for Stackelberg game. Use θ to denote the variables that the leader can control, while ω refers to parameters that the follower can set. Suppose the objective functions of the leader and follower are J(θ, ω) and L(θ, ω) respectively; both aim to, without loss of generosity, minimize their objective functions by making choices of θ and ω in a prescribed order. By design, the leader would move first, and then the follower would play best response; the leader knows this and would take it into consideration when figuring out her own optimal decision.
+
+We firstly define the best response set of the follower, denoted as BR(θ), and the optimal parameter ω∗ under the optimistic tie-breaking by:
+
+Then, in Stackelberg games, the leader and follower solve the following optimization problems in order:
+
+Equilibrium Characterization We begin by presenting the equilibrium concept for simultaneous play games and then contrast it with its counterpart in Stackelberg games. For the former, Nash equilibrium(NE) is the standard solution concept, which specifies a profile of strategies that no player has the incentive to deviate from it. The seminal work by John Nash shows the existence of such equilibrium in finite games (there could be multiple Nash equilibria) [18]. In fact, most existing work focuses on such symmetric solution concept for zero-sum games.
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 8>>>
+Definition 2.1 (Nash Equilibrium (NE)). The joint strategy (θ∗ , ω∗) is a Nash equilibrium on Θ × W, if J(θ∗ , ω∗ ) ≤ J(θ, ω∗ ), ∀θ ∈ Θ, and L(θ∗ , ω∗) ≤ L(θ∗ , ω), ∀ω ∈ W.
+
+Stackelberg equilibrium is the asymmetric counterpart of NE under the hierarchical games with an imposed play order. Accordingly, we provide the analogous equilibrium concepts in the hierarchical structure.
+
+Definition 2.2 (Stackelberg Equilibrium (SE)). The strategy θ∗ is a Stackelberg solution for the leader if supω∈ω∗(θ∗ )J(θ∗ , ω) ≤ supω∈ω∗(θ)J(θ, ω), ∀θ ∈ Θ; if ω∗ is the follower's best response strategy under optimistic tie-breaking defined in Eq. 2, then the strategy profile (θ∗ , ω∗ ) is a Stackelberg equilibrium on Θ × W.
+
+For zero-sum games, von Neumann's minimax theorem shows that Nash equilibrim coincides with Stackelberg equilibrium, but the two diverge significantly in the general-sum setting [13]. For Stackelberg games, [26] shows that the leader's utility in a strong Steckelberg equilibrium is at least as high as it in any Nash equilibrium. However, in many real-world cases, the players do not select their strategies in a simultaneous manner, but have to follow a specified order, which naturally fit to the Stackelberg model.
+
+When the global optimal strategy is infeasible, a weaker version of SE, local Stackelberg equilibrium, is defined on local regions of the players' action spaces and formalizes the concept of local optimal solution.
+
+Definition 2.3 (Local Stackelberg Equilibrium (LSE)). Let Θ1 ⊂ Θ and W1 ⊂ W. The strategy θ∗ ∈ Θ1 is called a local Stackelberg equilibrium for the leader if ∀θ ∈ Θ1,
+
+where RW1 (θ) := {x ∈ W1|L(θ, x) ≤ L(θ, ω), ∀ω ∈ W1}. ∀ω∗ ∈ RW1 (θ∗ ), (θ∗ , ω∗) is a local Stackelberg equilibrium on Θ1 × W1.
+
+Methods for Solving Stackelberg Equilibrium Following this, we briefly discuss recent progress in computing Stackelberg equilibrium in general-sum games. Note that formally characterizing the existence of Stackelberg equilibrium is out of the scope of this work. We refer the readers for (Barsar and Olsder 1998, these equilibria can be characterized as the intersection points of the reaction curves of the players and shows that they exist on compact strategy spaces.)
+
+There has been an extensive literature on learning equilibria in zero-sum Stackelberg games [5]. By contrast, theoretical understanding for the generalsum setting remains vastly open, despite a number of recent work in this direction. When the game size is small, SEs can be computed efficiently; and a popular method is Multiple LPs proposed in [3]. However, for large general-sum Stackelberg games, existing approaches often fails to compute the equilibrium concepts efficiently. As highlighted earlier, Stackelberg and Nash equilibria typically diverge in the general-sum scenarios. [29] uses RL to find SE with myopic followers (only consider immediate reward of an action and ignore future rewards) in both online and offline settings, which are optimistic and pessimistic variants of least squares value iteration respectively. For the case of linear function approximation, their algorithm can achieve sublinear regret and suboptimality in general-sum Markov games under the assumption of myopic followers.
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+A concurrent work in this line [1] also leverages RL to address the challenge of learning SE given only bandit feedback without knowing the reward functions and the transition model. In this bandit-RL setting, they identify a gap between the true value of SE and its estimate under finite samples from an informationtheoretical perspective. However, this work shows that it is possible to construct sample-efficient algorithms with value optimal up to the identified gap. In addition, [28] frames computing optimal tax policy as a bi-level RL problem, and then combines machine-learning-driven simulation and RL methods to find SE solution.
+
+# 3 Stackelberg Framework for AI Governance
+
+As AI becomes a shaping power for our and future generations, AI research and development has becomes a top priority globally. While too much regulation might hinder AI innovation, the governance is crucial to ensure AI would be safe, trustworthy, and responsible. In this section, we show that the abstraction of AI governance problem that naturally lends itself to a Stackelberg game structure that couples 1) AI innovation, development and adoption and 2) AI regulatory. Then, building off this abstraction, we develop a game theoretical framework towards the optimal governance of AI. Towards this goal, the primary issue is to better understand and model the interactions between AI firms and regulatory agencies, and our primary contribution lies in casting it as a generalsum Stackelberg game.
+
+While most of the contemporary work focuses on simultaneous play games and corresponding Nash equilibrium, the structure of Stackelberg games apparently makes it a much better fit in the context of AI governance for a number of reasons:
+
+· The governance agencies and AI firms apparently assumes different roles and make their decisions at different time. These facts fit well with the interaction structure, asymmetric players and a specified play order, in Stackelberg games;
+
+· In practice, AI firms would choose the business strategy to maximize its profit, both of which match the best response strategies in Stackelberg games;
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+· Stackelberg games with multiple interacting followers can be used to model AI firms in the market;
+
+· The choice of the leader in the Stackelberg games naturally gives rise to two different settings, which could be mapped to the governance of two general categories of AI sub-sectors.
+
+Together, the above aspects shows that the interaction between the regulatory agencies and AI firms has a intrinsic structure reminiscent of a Stackelberg game, which motivates us to propose a game-theoretic modeling framework for AI governance.
+
+Again, while we adopt the one leader and one follower setting throughout for simplicity, note that the framework can be extended to incorporate the multiple followers case.
+
+Setting Up and Notations Let π denote the corporate strategy ranging from AI investment, research and development, to deployment, which can be chosen from a strategy space Π, continuous and/or discrete. We assume that the corporate players establish their AI strategies and business decisions based on the evaluation of AI performance along a suite of key dimensions integrated in µ, and the cost as well as constraints due to the regulation and standards set by the AI governance departments, denoted c.
+
+In this framework, players evaluate the AI technologies from six dimension aspects: performance, robustness, explainability, fairness, privacy, and security. (A future direction is to develop better metrics to measure AI.) The AI development strategy is a primary factor that determines the overall development level of AI, and therefore we can make µ a function of π. The cost and constraints imposed on AI firms by regulation agencies can be derived from the performance for AI captured by µ(π) and the regulations and standards ω, and we denote it as c(µ, ω). We emphasize that π refers to the variables that the corporate can control, while ω are variables that the AI regulatory agencies can set.
+
+Equipped with this, we are ready to set up the objective functions for the AI corporations and governance agencies. The former seeks to maximize the return from AI innovation and application. Note that return here is defined in the broadest sense, covering not only financial benefits but also intangible assets like competitiveness, not only short-term return but also long-term value. Formally, the objective function can be modeled as follows:
+
+On the other hand, the goal of the regulation player is to minimize the downside risks due to AI development and deployment. To this end, the agency are motivated to minimize a loss function that depends on both the AI development level and regulations, formally defined as
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+Furthermore, we argue that there are no one-fit-all objective functions for both players, and such functions vary across domains. And we will choose autonomous driving as a case study in section 4.
+
+Stackelberg Game Formulation Our choice of the leader naturally gives rise to two forms of Stackelberg governance framework. Choosing AI corporations as the leader leads to the formulation as below:
+
+Alternatively, if we make the governance agency as the leader the AI corporations the follower, the setting up becomes the following nested optimization problem:
+
+The two formulations clearly shows that the Stackelberg games are asymmetric. Importantly, we highlight the fact that the leader can benefit from the hierarchical play order compared to simultaneous play games. Therefore, which agent should be deemed as the leader is a critical decision contingent on the industry of interest. In fact, the above two forms typically lead to different equilibria and we argue that they are suitable for analyzing the governance of distinct subsectors of AI, as elaborated next.
+
+# 3.1 Choose Governance Settings Based on Domains
+
+# 3.1.1 Civil Domains: AI Corporations as Leader
+
+The rise of AI began from the civil domains. We witness the power of 'the invisible hands' of the market in terms of promoting AI innovation and commercialization. From the viewpoint to maintain continuous creativity in AI, it is critical to provide enough space for firms in this area to allow for exploration and experiments. Moreover, the potential cost and soical impact of experiments in civil domains is relatively controllable. For instance, when the AI department at Alibaba or Amazon leverages machine learning algorithms for making recommendations on which products to buy for customers, the cost of a recommendation that fails to meet the customer's need is limited.
+
+On the other hand, a well-known fact is that it is very challenging for the governance ministry to foresee AI development direction and possible risks, which are essential to formulate optimal guidance thereof. Combining these factors, we argue to assign the role of leader in the Stackelberg game formulation to the AI corporations in the civil domains.
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+# 3.1.2 Safety-Critical and Military Domains: AI Regulation Agency as Leader
+
+A number of issues distinguish the safety-critical and military industries from the civil domains when it comes the regulation of the AI technology research and application. This indicates we should reconsider the roles of the players for these sectors.
+
+First of all, AI safety is a primary concern for both safety-critical and military domains. To apply AI in such industries like medical care, financial investment, as well as autonomous driving, allowing the firms to act without having certain governance in place could be dangerous and induce high cost for the society as a whole. All the more so for the military field.
+
+In particular, there are numerous scenarios involves complicated and highstakes decision-making, however, even the state-of-the-art AI technologies may not be transparent and robust enough to replace human beings in such cases. Take nuclear weapon systems for example, a key advantage of machine learning lies in automatically collecting large-scale unstructured raw data, processing them efficiently, and mining the underlying relationships of among various factors, and then making informed predictions in an end-to-end manner. These attributes make machine learning a very attractive tool for many operations in the early-warning and ISR. However, due to the fundamental constraints of contemporary AI, it is not ready to replace human beings in the command and control section within the nuclear deterrence structure.
+
+Apparently, implementing a wrong decision could be extremely costly and/or the result might even be irreversible. Moreover, AI corporations and institutions do not fully internalize the entire cost of downside risks. For instance, AI firms can reap the short-term profits from AI application, they tend to downplay long-term social or systematic risks. Hence, to cope with the costly potential risks and failures, it is essential to that AI governance for such areas should be relatively more prudent.
+
+Taking these factors into account, we argue that it is desirable to deem the AI governance agency as the leader in the Stackelberg framework for both safety-critical and military domains. Thus, agencies can act first by setting regulation rules and standards before organizations implement AI or other relevant activities.
+
+# 3.2 Choose Governance Settings Contingent on AI Capabilities
+
+The advent of large-scale AI models (a.k.a. foundation models), LLMs in particular, brings a big leap in performance and triggers a paradigm shift of the entire AI field. While being stunned by the capabilities of the new generation of AI systems, we have to confront multiple downside risks that are unprecedented. We argue that it is crucial to distinguish the governance of this dramatically more capable AI systems from that of the traditional machine learning techniques for a number of factors discussed in the succeeding content.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+To do so, the first step is to establish a threshold of AI capability. Given this, once the capability of the intelligent systems surpasses the designated threshold, a more prudent governance setting with the regulatory agency assumes the leader role in the Stackelberg game applies; otherwise, the other setting with the industry as the leader is applicable by default. Foreseeing the incoming powerful intelligent systems, we highlight a number of primary issues under the general governance framework in the former case below.
+
+# 3.2.1 Governance of the New Generation of AI Systems
+
+While the rise of foundation models has made impressive achievements across a multitude of diverse downstream tasks, we should be aware of the other side of the coin: potential downside risks and structural changes to the society. In particular, we still do not have satisfying ways to contend with model misuse and to align models with desirable human values. Recognizing these, it is imperative to assign the leader role to the regulatory agencies when formulating governance polices for the new generation of AI systems, which are dramatically more powerful than before.
+
+Under the general Stackelberg game-theoretic framework, formulating the objective functions of the players is at the core, which is closely related to the goals, challenges of governance, and the properties, limitations and impacts of AI, etc. In the AI governance setting with the regulatory agencies as the leader, we highlight some primary factors that the objective functions should seek to effectively characterize.
+
+· The academic, industry and government agencies should work together to explore and establish the overarching principles of the AI governance framework.
+
+· Effective governance of the highly capable AI systems entails international cooperation. Specifically, it is helpful to establish a new international organization to coordinate the efforts towards effectively handling potential risks generated by this new generation of AI.
+
+· It is critical to manage and guide the integration of powerful AI systems into the society, in order to ensure the structural transition on a social level is smooth and controllable. We already have a glimpse of incoming subversion from a number of areas hit by the wave of highly capable largescale generative models. It is imperative to have a policy framework that can guide the society to navigate the approaching revolution. Among this, manage the pace of the transition, make the labor force be prepared for a totally different employment market.
+
+Last but not least, it is worthy to note the discussed two criteria for choosing AI governance settings would naturally give rise four combinations.
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+# 3.3 Computing Stackelberg Equilibria
+
+The appropriate method to compute the SEs depend on the assumptions or constraints imposed on the setting, such as whether the reward functions and transition kernel are known or not and whether it is possible to conduct interactions and generate new data. For our case, to find the LSE, it is possible to leverage a gradient-based learning algorithm to emulate the Stackelberg game structure. However, characterizing available methods for calculating SEs is outside the scope of this study and we leave it for future work.
+
+# 4 Instantiation of the General Framework
+
+In this section, we showcase two special categories under the general framework proposed in section 3, which clearly demonstrates the generality and flexibility thereof.
+
+# 4.1 Incentive Games
+
+Incentive games can be viewed as a subcategory of Stackelberg games. Every action of the leader are composed of two parts: (1) an element of a set of actions that the leader can take, and (2) an incentive set designed to stimulate the follower to play certain actions. A primary property of incentive games is that the additional incentives that only benefit the follower can actually improve the leader's total utility in equilibrium. In practice, incentive games find applications in various domains. For example, [20] formulates the interaction between the building manager and the occupants as an incentive game and leverages the incentive design to encourage energy efficiency behavior of the latter. By parameterizing the players' utility functions and incentives, [19] employs control theoretic and optimization techniques to adaptively design incentives. Furthermore, [2] shows that there exist polynomial time algorithms for computing the SEs, under certain technical conditions.
+
+We see a natural fit between the model of incentive games and the case of AI governance. First and foremost, the regulatory agencies have interest and capability to design a combinatorial of incentives to guide and motivate the AI enterprises to make business decisions that meet socially beneficial goals and long-term visions, instead of solely based on short-term financial profits. Furthermore, as highlighted above, while these incentives are tailored to benefit the firms, well designed ones can ultiamtely lead to higher utility for the goverance agencies in SEs. In this light, incentive games provide a principled way to search for socially optimal governance policy.
+
+Formally, we denote the leader action π := (a, ⃗v), where the first part a ∈ A is an element from a set composed of all possible actions the leader can take and the other part ⃗v ∈ [0, 1]|A| is a vector of incentives designed to motivate the follower to take certain actions. The design of the incentives is a crucial step. Given this, it is straightforward to update the objectives functions of the leader and follower in section 3 accordingly.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+# 4.2 Stackelberg MDP
+
+Given the policy established by the AI governance agencies, the firms typically would not implement a portfolio of business decisions all at once but gradually take a sequential of actions over time. This fact motivates us to extend the turn-based Stackelberg game in the general framework in order to model the sequential decision-making of the follower. Towards this end, we assume that each leader's action induces an episodic Markov Decision Process (MDP) of the follower. Specifically, in an episode of the game, the leader firstly commints to a strategy; the follower then enters a MDP after seeing the former's action, and observes a reward at every step of the MDP until it terminates, while the leader also observes her rewards at each step during this process. The objectives of both sides remains the same: finding policies that maximizes their accumulated rewards respectively. We name this setting Stackelberg MDP.
+
+Different from incentive games above, this time the leader's action space π remains the same with that in the general framework, while the model of the follower is revised to represent the sequential decision-making thereof. Towards this end, we introduce a family of MDPs represented by a tuple of six elements, (S, Af , H, rl, rf , P), where S is the state space, Af the action space of the follower, H the horizon of the follower MDP, rl and rf the reward functions of the leader and follower respectively, and P the transition kernel. The leader strategy π induces a episodic MDP of the follower. The objectives of the two are find optimal strategies to maximize their expected cumulative (discounted) rewards respectively.
+
+# 5 Conclusion and Future Directions
+
+In this paper, we propose a game theoretic framework for (1) understanding the strategic interactions between the AI governance agencies and enterprises, and (2) designing optimal regulatory policies that ensures the development and deployment of AI is safe, responsible, and trustworthy. We wish this work would ignite interest for researchers from both AI and public policy communities, and therefore help open up a line of research at this promising interdisciplinary area.
+
+Furthermore, on a high level, we hope this work would contribute to develop a new paradigm for technology policy research: the quantitative and AI-driven methods for technology management. Most existing methods are qualitative, developed by researchers in the public policy community. The traditional quantitative methods typically make simplifications and assumptions for analytic tractability. As a result, the theoretical models fail to capture the real-world complexity. Besides, the theoretical models are hard to validate in practice. Recall that a primary challenge is lack of real data. However, even when real data is available, conclusions based on such historical data suffers from the Lucas critique.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+In this light, it is crucial to create new wisdom for this new interdisciplinary field. As the traditional tools are inadequate to effectively address aforementioned challenges in AI governance, this motivates us to explore the AI-driven methods for the optimal governance of AI, which would serve to provide a complementary approach to the existing qualitative work, not replacing them.
+
+We end by discussing promising directions to explore in the future. We plan to instantiate our governance framework and leverage machine learning methods to train an AI governor to help learn dynamic and adaptive regulatory rules for AI. In particular, we would utilize deep reinforcement learning to search for optimal AI regulations. The AI governor is trained to discover regulatory policy that can optimally balance AI innovation and development with desirable social welfare including safety, ethics, fairness, etc. Moreover, as there is no one-fit-all solution for all sub-sectors within the AI industry. It is important apply the framework to conduct in depth case study of key areas of AI, such as autonomous driving.
+
+# References
+
+[1] Yu Bai, Chi Jin, Huan Wang, and Caiming Xiong. Sample-efficient learning of stackelberg equilibria in general-sum games. Advances in Neural Information Processing Systems, 2021.
+
+[2] Avrim Blum, Nika Haghtalab, MohammadTaghi Hajiaghayi, and Saeed Seddighin. Computing stackelberg equilibria of large general-sum games. CoRR, abs/1909.03319, 2019.
+
+[3] Vincent Conitzer and Tuomas Sandholm. Computing the optimal strategy to commit to. In Proceedings of the ACM Conference on Electronic Commerce, pages 82-90, 2006.
+
+[4] Allan Dafoe. Ai governance: A resesarch agenda. Center for the governance of AI, Oxford University, 2018.
+
+[5] Tanner Feiz, Benjamin Chasnov, and Lillian J. Ratliff. Implicit learning dynamics in stackelberg games: Equilibria characterization, convergence analysis, and empirical study. International Conference on Machine Learning, 2020.
+
+[6] Tanner Fiez, Benjamin Chasnov, and Lillian J. Ratliff. Convergence of learning dynamics in stackelberg games. CoRR, abs/1906.01217, 2019.
+
+[7] Urs Gasser and Virgilio A.F. Almeida. A layered model for ai governance. IEEE Internet Computing, 21(6):58-62, 2017.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+[8] Sven Gronauer and Klaus Diepold. Multi-agent deep reinforcement learning: a survey. Artificial Intelligence Review, pages 895-943, 02 2022.
+
+[9] Mingyi Hong, Hoi-To Wai, Zhaoran Wang, and Zhuoran Yang. A twotimescale framework for bilevel optimization: Complexity analysis and application to actor-critic. ArXiv, abs/2007.05170, 2020.
+
+[10] IBM. Ai governance: Ensuring your ai is transparent, compliant, and trustworthy. https://www.ibm.com/analytics/common/smartpapers/aigovernance-smartpaper/, 2022.
+
+[11] IBM. Foundations of trustworthy ai: How mature is your ai governance? https://www.ibm.com/blogs/watson/2021/06/ai-governancematurity, 2022.
+
+[12] Chi Jin, Qinghua Liu, Yuanhao Wang, and Tiancheng Yu. V-learning - A simple, efficient, decentralized algorithm for multiagent RL. CoRR, abs/2110.14555, 2021.
+
+[13] D. Korzhyk, Z. Yin, C. Kiekintveld, V. Conitzer, and M. Tambe. Stackelberg vs. nash in security games: An extended investigation of interchangeability, equivalence, and uniqueness. Journal of Artificial Intelligence Research, 41:297-327, 2011.
+
+[14] Timothy Lillicrap, Jonathan Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, and Daan Wierstra. Continuous control with deep reinforcement learning. CoRR, 09 2015.
+
+[15] Michael L. Littman. Markov games as a framework for multi-agent reinforcement learning. Machine Learning Proceedings 1994, pages 157-163, 1994.
+
+[16] Weichao Mao and Tamer Basar. Provably efficient reinforcement learning in decentralized general-sum markov games. CoRR, abs/2110.05682, 2021.
+
+[17] V. Mnih, K. Kavukcuoglu, D. Silver, and et al. Human-level control through deep reinforcement learning. Nature, 2015.
+
+[18] John Nash. Equilibrium points in n-person games. Proceedings of the National Academy of Sciences, 36:48-49, 1950.
+
+[19] Lillian J. Ratliff and Tanner Fiez. Adaptive incentive design. CoRR, abs/1806.05749, 2018.
+
+[20] Lillian J. Ratliff, Ming Jin, Ioannis C. Konstantakopoulos, Costas Spanos, and S. Shankar Sastry. Social game for building energy efficiency: Incentive design. 2014 52nd Annual Allerton Conference on Communication, Control, and Computing (Allerton), pages 1011-1018, 2014.
+
+[21] Tuomas Sandholm, Vincent Conitzer, and Craig Boutilier. Automated design of multistage mechanisms. IJCAI, 2007.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+[22] D. Silver, A. Huang, C. Maddison, and et al. Mastering the game of go with deep neural networks and tree search. Nature, 2016.
+
+[23] Milind Tambe. Security and game theory: algorithms, deployed systems, lessons learned. Cambridge University Press, 2011.
+
+[24] Jason Tsai, Shyamsunder Rathi, Christopher Kiekintveld, Fernando Ordonez, and Milind Tambe. Iris - a tool for strategic security allocation in transportation networks. The Eighth International Conference on Autonomous Agents and Multiagent Systems - Industry Track, 2009.
+
+[25] Heinrich Von Stackelberg. Market structure and equilibrium, 2010.
+
+[26] B. von Stengel and S. Zamir. Leadership games with convex strategy sets. Games and Economic Behavior, 69:446-457, 2010.
+
+[27] Bernd W. Wirtz, Jan C. Weyerer, and Benjamin J. Sturm. The dark sides of artificial intelligence: An integrated ai governance framework for public administration. International Journal of Public Administration, 43(9):818829, 2020.
+
+[28] Stephan Zheng, Alexander Trott, Sunil Srinivasa, David C. Parkes, and Richard Socher. The AI economist: Optimal economic policy design via two-level deep reinforcement learning. CoRR, abs/2108.02755, 2021.
+
+[29] Han Zhong, Zhuoran Yang, Zhaoran Wang, and Michael I. Jordan. Can reinforcement learning find stackelberg-nash equilibria in general-sum markov games with myopic followers? CoRR, abs/2112.13521, 2021.
+
+<!-- PageFooter: 18 -->
+

@@ -1,0 +1,14 @@
+{
+  "request_hash": "7b47aa68d729661bdac1b53b4ad87c6e3bd5109e64f20ddc5624b28c1fd619b8",
+  "prompt_sha256": "b2a2919aff43b9e21d6ec3b4208c5d0e62662470c9a3277166252346cc09e67a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOhggF7hvHRuucuvIKusyM10DaRE",
+  "prompt_tokens": 8398,
+  "completion_tokens": 32,
+  "actual_usd": 0.0012789000000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding the extension of the response period for consumer requests."
+  }
+}

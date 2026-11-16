@@ -1,0 +1,14 @@
+{
+  "request_hash": "5535d05b6d78778568ba49317dd290c771c449ec1ca8768b08581e12692dce75",
+  "prompt_sha256": "513983443731efd67d128c0e4fa66f1aee40feeb2a1f034a0d53a836030c4158",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQvcPRDiwAMuhZlV3TINdpIVfQ2",
+  "prompt_tokens": 9476,
+  "completion_tokens": 44,
+  "actual_usd": 0.0014478,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claims made in the Reference Answer regarding LIME's speed advantage over SHAP and its use of Lasso regression as a local surrogate model."
+  }
+}

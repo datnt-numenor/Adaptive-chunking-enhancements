@@ -1,0 +1,10 @@
+{
+  "request_hash": "8d5b72356275f08d3adf60d6f77fb76f428abbafc709eee4bad58b323b5cbc2f",
+  "prompt_sha256": "f22d4de7a976637f8e2de05ca8d351321d3dea5f2168493e10722c04a50784b2",
+  "answer": "The main limitation acknowledged by Anthropic regarding watermark misattribution is that the detector's threshold fixes a false-positive rate that is computed under the assumption that the text carries no watermark at all. This means that text that a person wrote and a model then edited is neither unwatermarked nor fully watermarked, and published error rates on such mixed text are sparse.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNJr7ft38FPGfsAIBRJRElclO570",
+  "prompt_tokens": 10250,
+  "completion_tokens": 72,
+  "actual_usd": 0.0015807
+}

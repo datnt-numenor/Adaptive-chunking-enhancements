@@ -1,0 +1,10 @@
+{
+  "request_hash": "3b7396fce83037a5899739ae1e26915c34506f024030f76a48bdc8a9504e18fe",
+  "prompt_sha256": "14713856d9b99f6b457534a63e5a0e0c4802d69c2e95f7b35925ba4d9de8c4ba",
+  "answer": "The four dimensions that determine the personal data needed to develop an AI system according to CNIL’s AI guidance are:\n\n1. **Volume**: This includes the number of people concerned, historical depth, data precision, distribution of data across situations and populations, etc.\n2. **Categories**: This refers to the types of data, such as age, sex, facial images, social media activity, etc. It emphasizes the need to examine and justify the presence of sensitive or highly personal data.\n3. **Typology**: This includes the types of data such as real data, synthetic data, augmented data, simulated data, anonymized data, or pseudonymized data.\n4. **Sources**: This involves identifying the sources of data that will be used, whether through initial collection or reuse.\n\nThe **typology dimension** specifically includes data types such as real data, synthetic data, augmented data, simulated data, anonymized data, or pseudonymized data.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNW868Fz99qbPnZgBbHSt4fuJ2Sb",
+  "prompt_tokens": 8943,
+  "completion_tokens": 195,
+  "actual_usd": 0.00145845
+}

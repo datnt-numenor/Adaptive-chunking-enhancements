@@ -1,0 +1,347 @@
+DOCUMENT: ENISA AI Cybersecurity Challenges
+
+<<<PAGE 8>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+Artificial Intelligence and cybersecurity have a multi-dimensional relationship and a series of interdependencies. The dimensions that may be identified include the following three:
+
+1. Cybersecurity for AI: lack of robustness and the vulnerabilities of AI models and algorithms, e.g. adversarial model inference and manipulation, attacks against AIpowered cyber-physical systems, manipulation of data used in AI systems, exploitation of computing infrastructure used to power AI systems' functionalities, data poisoning, environment variations which cause variations in the intrinsic nature of the data 3 , credible and reliable training datasets, algorithmic validation/verification (including the integrity of the software supply chain), validation of training and performance evaluation processes, credible and reliable feature identification, data protection/privacy in the context of AI systems, etc.
+
+2. AI to support cybersecurity: AI used as a tool/means to create advanced cybersecurity by developing more effective security controls (e.g. active firewalls, smart antivirus, automated CTI (cyber threat intelligence) operations, AI fuzzing, smart forensics, email scanning, adaptive sandboxing, automated malware analysis, automated cyber defence, etc.) and to facilitate the efforts of the law enforcement and other public authorities to better respond to cybercrime, including the analysis of the exponential growth of Big Data in the context of investigations, as well as the criminal misuse of AI.
+
+3. Malicious use of AI: malicious/adversarial use of AI to create more sophisticated types of attacks, e.g. AI powered malware, advanced social engineering, AI-powered fake social media accounts farming, AI-augmented DDoS attacks, deep generative models to create fake data, AI-supported password cracking, etc. This category includes both AI-targeted attacks (focused on subverting existing AI systems in order to alter their capabilities), as well as AI-supported attacks (those that include AI-based techniques aimed at improving the efficacy of traditional attacks).
+
+Cybersecurity can be one of the foundations of trustworthy Artificial Intelligence solutions. It will serve as a springboard for the widespread secure deployment of AI across the EU. However, it will do so only when common understanding of the relevant threat landscape and associated challenges are mapped in a consistent manner. This report serves the purpose of setting the ground for defining the AI Threat Landscape. The AI Threat Landscape is vast and dynamic, since it evolves alongside the innovations observed in the AI field and the continuous integration of numerous other technologies in the AI quiver.
+
+# 1.1 POLICY CONTEXT
+
+ENISA's WP2020 Output O.1.1.3 on Building Knowledge on Artificial Intelligence Security and the European Commission White Paper on Artificial Intelligence 4 have brought about the need for ENISA to look into the topic of AI Cybersecurity. The focus is mostly from the perspective of securing AI, but also looking into other aspects of AI and cybersecurity as mentioned above in a holistic and coordinated manner. In particular, the mapping of the AI Threat Landscape (AI TL) using threat modelling and assessment techniques has emerged as an important topic, as well as the drawing of proportionate security measures and recommendations 5 .
+
+\* 3 This refers to both physical attacks on AI systems as well as robustness of AI systems against naturally occurring variations and events.
+
+\* 4 See EC White Paper on Ai under consultation at: https://ec.europa.eu/info/files/white-paper-artificial-intelligenceeuropean-approach-excellence-and-trust_en
+
+<!-- PageFooter: 7 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 9>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+Moreover, the European Commission (EC) has highlighted the importance of AI in society and the economy in its White Paper on Artificial Intelligence, which is the frontrunner to upcoming policy initiatives on the technology. The Commission has also recognised the strategic importance of AI in its "Coordinated Plan on Artificial Intelligence" 6 , which aims to harmonise and coordinate AI initiatives across the Union, including addressing its security-related aspects. Additionally, in July 2020, the newly unveiled Security Union Strategy 7 of the European Commission underlined the significance of AI, noting that it will bring both new benefits and new risks.
+
+In June 2018, the EC established the High-Level Expert Group on Artificial Intelligence (AI HLEG) 8 with the general objective to support the implementation of the European Strategy on Artificial Intelligence 9 . The AI HLEG has been looking into not only related policy developments, but also ethical, legal and societal aspects related to AI. Accordingly, the AI HLEG has put forward Policy and investment recommendations for trustworthy Artificial Intelligence 10 , as well as Ethics Guidelines for Trustworthy AI 11 and an assessment list for trustworthy AI 12 including specific recommendations on assessing trustworthiness of AI systems.
+
+In terms of policy context and relevant developments in the EU, it is noteworthy to mention the work of the European Defence Agency (EDA) that has developed a thorough taxonomy for AI 13 in the domain of defence. EDA's taxonomy is structured along three lines: algorithms, functions carried out by algorithms and support or related areas such as ethics, hardware implementation or learning techniques. Identifying the potential impact of AI in security and the interplay between the two domains, the European Telecommunication Standards Institute (ETSI) has set up an Industry Specification Group on Securing Artificial Intelligence (ISG SAI) 14 . The objective of the ISG SAI is to create standards to preserve and improve the security of new AI technologies. Additionally, the EC's Joint Research Centre (JRC) has established the AI Watch initiative in order to serve as a knowledge service to monitor the development, uptake and impact of artificial intelligence for Europe and monitor relevant research across the vast field of AI. One of the seminal works of the AI Watch is the report on defining AI 15 that sets the basis for relevant methodological conventions, introduces common vocabulary and more importantly common understanding of the diverse terms.
+
+# AI security under the Data Protection Prism
+
+The General Data Protection Regulation (GDPR) establishes, under Article 5, security as a principle when processing personal data. This is an advanced role for security and an important conceptual shift from the past, when security was a mere technical-organizational provision on top of the processing operation. Under GDPR security is a pre-requisite, and not implementing appropriate security measures invalidates the processing and makes it unlawful. Similar to the other GDPR data protection principles, security is not an option but a necessity.
+
+\* 5 In doing so, ENISA will take stock of existing initiatives and studies that are ongoing in the area of AI cybersecurity such as the results of EU projects in this area (H2020) and will avoid duplication of efforts, rather focus on provide harmonized view of ongoing works.
+
+\* 6 See https://ec.europa.eu/digital-single-market/en/news/coordinated-plan-artificial-intelligence
+
+\* 7 See https://ec.europa.eu/info/sites/info/files/communication-eu-security-union-strategy.pdf
+
+\* 8 See https://ec.europa.eu/digital-single-market/en/high-level-expert-group-artificial-intelligence
+
+\* 9 See http://ec.europa.eu/digital-single-market/en/artificial-intelligence
+
+\* 10 See https://ec.europa.eu/digital-single-market/en/news/policy-and-investment-recommendations-trustworthy-artificialintelligence
+
+\* 11 See https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelines
+
+\* 12 See https://ec.europa.eu/digital-single-market/en/news/assessment-list-trustworthy-artificial-intelligence-altai-selfassessment
+
+\* 13 See https://www.eda.europa.eu/info-hub/press-centre/latest-news/2020/08/25/artificial-intelligence-joint-quest-for-futuredefence-applications
+
+\* 14 See https://www.etsi.org/technologies/securing-artificial-intelligence
+
+\* 15 See https://ec.europa.eu/jrc/en/publication/ai-watch-defining-artificial-intelligence
+
+<!-- PageFooter: 8 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 10>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+Article 32 of the GDPR calls for security measures that must scale-up according to the risk of varying likelihood and severity for the rights and freedoms of data subjects. Therefore, the "asset" to protect with security measures is the unconstrained exercise of individuals' rights, and not only the informational asset per se. Personal data must be protected in a progressive way (the higher the risks, the stricter the measures). Security is a way to reinforce individuals' rights and freedoms as a whole and enables the centrality of humans vis-a-vis machines. AI systems are logic systems and as such, they may not be fully consistent and complete, meaning that humans will never be able to predict, upfront during the design phase, all the possible contextual factors that may impair their functioning. This exposes individuals to the inherent risks of unexpected outcomes where the outputs of an AI system are not properly constrained.
+
+Security is also a data protection by design instrument, as envisaged in art 25 of the GDPR. Taking into account a number of contextual factors (like the state of the art) data controllers must put in place appropriate technical and organisational measures 16 . These measures must be in place to implement data-protection principles in an effective manner, from minimization to data accuracy, integrating the necessary safeguards into the processing. Notably, the GDPR mentions specifically pseudonymisation as one of those effective measures. The dimension of security for data protection, in the context of AI, is very important in order to be able to introduce the necessary technical and organisational safeguards (for the protection of rights and freedoms of individuals) already at the design phase of new AI applications.
+
+To this end, security can also be an enabler of new types of processing operations, especially related to emerging technologies, such as AI. For instance, the implementation of specific security measures, like pseudonymisation or encryption, may bring data to a new format so that it cannot be attributed to a specific data subject without the use of additional information data (like a decryption key). These options could be explored in the context of AI environment, to shape new relationships between humans and machines, in a way that individuals are not by default identifiable by machines unless they wish to do so. For instance, to revertthe effect of the implemented pseudonymisation or encryption.
+
+Putting security among the principles of data protection, as said, means that this is a precondition for the processing. However, a misinterpreted approach purely based on the assessment of economic risks might not foster the adoption of security measures, hindering the effective implementation of this principle. This phenomenon is broadly known 17 and may lead economic actors to bargain risks with investments, accepting information security risks (sometimes very high risks) on the assumption that security incidents are unlikely, and any investment that may just determine a reduction of an expected economic loss can always be procrastinated 18 . The GDPR offers a possible escape from this deadlock, raising security to the level of principles of data protection, and promotes security as a token of accountability at the largest possible scale, including the myriads of actors of the very complex AI value chain. The turning point is the shift from security as a defensive instrument to security as a functional element of digital ecosystem. Security should not be implemented only to prevent losses, but to create value. Only if security threats do not materialize, the AI ecosystem may generate trust, attract investments, retain users and create a positive feedback to develop every time new beneficial applications.
+
+\* 16 This applies both at the time of the determination of the means for processing and at the time of the processing itself. 17 Lawrence Gordon e Martin Loeb, The Economics of Information Security Investment, in ACM Transactions on
+
+\* Information and System Security, vol. 5, n. 4, November 2002, pp. 438-457, and Lawrence Gordon e Martin Loeb, You May Be Fighting the Wrong Security Battles, in the Wall Street Journal, 26 September 2011
+
+\* 18 Such incidents may lead to severe risks that can compromise and impact data protection and individuals' fundamental rights and freedoms.
+
+<!-- PageFooter: 9 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+In this respect, two strategic choices could be explored concerning security:
+
+· reflecting on the necessary functional role that security may have in the faultless functioning of an AI system, and on how to embed security since the very early stage of design (security by design) in order to create trust in new AI applications;
+
+· considering the positive role that security certification may have in promoting a culture of security among economic actors, especially considering that certification may relieve the stakeholders from the complexity of the managerial decision between being idle and accepting security risks, or investing for reinforcing security.
+
+Against this background, this report explores the AI security, considering also security as a data protection principle. While this dimension forms part of the threat landscape analysis discussed later in the report, it must be noted that the report strictly focuses on AI security and does not further address in any way data protection requirements and/or aspects of GDPR compliance in AI applications.
+
+# 1.2 SCOPE & OBJECTIVES
+
+In the context of the ENISA AI Threat Landscape (AI TL), the main focus of the work will be on cybersecurity of AI since secure AI is the foundation for any further work on AI. Only when AI itself is secure can we use it in a trustworthy manner and can we further utilise it for additional cybersecurity operations. Ethics of AI remain outside the scope of this work, since this was one of the focus areas of the EC High-Level Expert Group on AI (AI HLEG) 19 .
+
+According to the AI HLEG, "as a scientific discipline, AI includes several approaches and techniques, such as machine learning (of which deep learning and reinforcement learning are specific examples), machine reasoning (which includes planning, scheduling, knowledge representation and reasoning, search, and optimization), and robotics (which includes control, perception, sensors and actuators, as well as the integration of all other techniques into cyberphysical systems)." It is therefore evident that the field of AI is vast and this is the reason for the necessity to scope the work in the context of the threat landscape.
+
+Given that the driving force in terms of technologies nowadays is that of Machine Learning (ML), the main focus of the ENISA AI TL is on these technologies. Nonetheless, the work presented strives to also consider broader aspects of AI (e.g. data, infrastructure, algorithms, platforms, etc.) that are far more generic than ML and in this respect is representative of the wider AI ecosystem.
+
+Moreover, sectorial domain-specific applications to AI, will not be considered in the AI TL per se. Sectorial approaches to the AI TL will need to be developed in the future to assess the likelihood and impact of threats for specific applications and to identify the risks that are specific to the context of use. This report of the ENISA AI TL aims at being horizontal and transversal, agnostic to application of domain of use.
+
+In the context of the ENISA AI Threat Landscape, the focus of the work will be on cybersecurity of AI 20 . More specifically, the objectives of this work include:
+
+· Identification, analysis and correlation of a list/taxonomy of assets (including interdependencies between assets) and respective asset owners. The identification will be performed through selected use cases that will embody/highlight key AI features and functionalities.
+
+\* 19 See https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelines, April 2019
+
+\* 20 Due consideration to existing and ongoing pieces of work on cybersecurity for AI such as the ones by ETSI, ISC/IEC JTC
+
+\* 1/SC42, etc. in an effort to avoid duplication and base the work on already established knowledge sources.
+
+<!-- PageFooter: 10 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+· Identification and correlation of list of threats and vulnerabilities to be mapped against the list of assets mentioned above.
+
+· Description of a representative set of attack scenarios/failure modes pertaining to core AI lifecycle stages.
+
+# 1.3 METHODOLOGY
+
+The method adopted for this study is in line with the methodology developed by ENISA for the preparation of its annual cyber Threat Landscape. According to this methodology, the process requires an initial identification of critical assets within the architecture before performing a threat assessment, which evaluates the different levels of asset exposure. Threats play a central role in a risk assessment, especially when considering the different components of risks. The ISO 27005 21 , a widely adopted risk management standard, defines that risks emerge when: "Threats abuse vulnerabilities of assets to generate harm for the organisation".
+
+Following this methodology, we have identified assets, threats and threat actors. Threats have been derived after analysing the functional behaviour of assets and pinpointing potential failure modes that represent the manifestation of threats. The combination of assets, threats and threat actors constitute the core of the AI Threat Landscape presented in this report 22 . The work has been conducted with the invaluable support of the ENISA ad hoc Working Group on Artificial Intelligence 23 (ahWGAI), which has provided feedback, insight and validation for the content of this report.
+
+In the course of developing this work, the introduction of a new terminology was debated. However, given the noteworthy work of several fora we opted against introducing a new terminology that would replicate existing ones. Terms used throughout the document are following standard definitions based on the work of EC AI HLEG 24 , EC JRC AI Watch 25 , EDA 26 , NIST 27 , ETSI 28 , SNV 29 , MITRE 30 , ISO 31 (e.g. ISO/IEC CD 22989.2, WD 5259-1), etc.
+
+# 1.4 TARGET AUDIENCE
+
+The target audience of this report includes a number of different stakeholders that are concerned by cybersecurity threats to AI systems. We have divided these stakeholders into the broad categories presented here.
+
+· Public/governmental sector (EU, EU Institutions, European Commission, Member States regulatory bodies, supervisory authorities in the field of data protection, military and intelligence agencies, law enforcement community, international organisations and national cybersecurity authorities).
+
+· Industry (including Small and Medium Enterprises) that makes use of AI solutions and/or is engaged in cybersecurity, including operators or essential services.
+
+· AI technical community, AI cybersecurity experts and AI experts (designers, developers, machine learning experts, data scientists, etc.) with an interest in
+
+\* 21 See https://www.iso.org/standard/75281.html
+
+\* 22 The the identification and analysis of assets and cyber threats are based on work conducted by ENISA and the ENISA Ad hoc Working Group on AI (ahWGAI) based on the study of specifications, white papers and literature, without attempting any interpretation/evaluation of the assumptions stated in these reports.
+
+\* 23 See https://www.enisa.europa.eu/topics/iot-and-smart-infrastructures/artificial_intelligence/adhoc_wg_calls
+
+\* 24 See https://ec.europa.eu/digital-single-market/en/news/definition-artificial-intelligence-main-capabilities-and-scientificdisciplines 25 See
+
+\* https://publications.jrc.ec.europa.eu/repository/bitstream/JRC118163/jrc118163_ai_watch._defining_artificial_intelligence_1 .pdf and https://publications.jrc.ec.europa.eu/repository/bitstream/JRC113826/ai-flagship-report-online.pdf
+
+\* 26 See https://www.eda.europa.eu/info-hub/press-centre/latest-news/2020/08/25/artificial-intelligence-joint-quest-for-futuredefence-applications
+
+\* 27 See https://csrc.nist.gov/publications/detail/nistir/8269/draft
+
+28 See developing secure solutions and in integrating security and privacy by design in their solutions.
+
+\* https://www.etsi.org/images/files/ETSIWhitePapers/etsi_wp34_Artificial_Intellignce_and_future_directions_for_ETSI.pdf 29 See https://www.stiftung-nv.de/de/publikation/securing-artificial-intelligence
+
+\* 30 See https://github.com/mitre/advmlthreatmatrix
+
+\* 31 See ISO/IEC JTC 1/SC 42: https://www.iso.org/committee/6794475/x/catalogue/p/0/u/1/w/0/d/0
+
+<!-- PageFooter: 11 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+· Cybersecurity community.
+
+· Academia and research community.
+
+· Standardization bodies.
+
+· Civil society and general public.
+
+# 1.5 STRUCTURE OF THE REPORT
+
+After this Introduction, the report is structured as follows:
+
+· Chapter 2 presents a generic reference model for the lifecycle of AI systems, in order to set the foundation for asset and processes identification.
+
+· Chapter 3 details the assets in the AI ecosystem based on the lifecycle stages defined in Chapter 2 and categorizes them in 6 groups.
+
+· Chapter 4 introduces the threat taxonomy of AI systems, where relevant threats are presented and mapped to corresponding assets that were introduced in Chapter 3.
+
+· Chapter 5 concludes the report by highlighting cybersecurity-related challenges to AI and proposes high-level recommendations.
+
+<!-- PageFooter: 12 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+# 2. AI LIFECYCLE
+
+In order to properly frame the domain of AI, it is essential to follow a structured and methodical approach to understand its different facets. For this reason, we opted towards deriving a lifecycle functional view of typical AI systems. Accordingly, this Chapter is structured around the different stages of the AI lifecycle and elaborates on the involved assets (e.g. actors, processes, artefacts, hardware, etc.), as the basis for threats identification 32 that follows in Chapter 4. Particular consideration is given to data protection in the context of AI, which is a horizontal concern that permeates all stages of the AI lifecycle.
+
+The lifecycle of an AI system includes several interdependent phases ranging from its design and development (including sub-phases such as requirement analysis, data collection, training, testing, integration), installation, deployment, operation, maintenance, and disposal. Given the complexity of AI (and in general information) systems, several models and methodologies have been defined to manage this complexity, especially during the design and development phases, such as waterfall, spiral, agile software development, rapid prototyping, and incremental 33 . The AI lifecycle defines the phases that an organization should follow to take advantage of AI techniques and in particular of Machine Learning (ML) models to derive practical business value. For the purposes of this document, ML models are used to represent a mathematical transformation of the input data into a new result, e.g. use image input data to recognize faces. Conversely, algorithms are used to update the model parameters (training) or to discover patterns and relations in newly provided data and infer the result 34 .
+
+A disclaimer needs to be made on the focus of the reference model. Given the vast range and intricacies of techniques, technologies, algorithms and models involved in AI systems, mapping their entirety in a sole AI lifecycle model is not possible. The particularities of AI systems and the many sub-fields of AI (e.g. reasoning systems, robotics, connectionist vs symbolic AI, etc.) would require the generation of targeted reference models based on the used technology. Given the current prominence of Machine Learning (ML) in the use and deployment of AI systems, we opted to gear the AI lifecycle reference model towards ML in order to on the one hand make it specific and detailed, and on the other hand address the majority of current AI systems. ML has been spearheading the explosion of AI in the last ten years regarding imageand voice-identification. Future work will ensure that the ENISA AI TL will expand to cover the other sub-fields of AI to ensure complete coverage.
+
+Based on desktop research 35 , a generic reference model of various components found in common AI systems was drafted and is depicted in Figure 1. The purpose of having a reference model is to establish a conceptual framework ensuring shared understanding of the assets composing an AI system and their significant relationships. This facilitates the assignment of owners to different assets on one hand and on the other hand provides a systematic, structured way of analysing relevant security threats. Provided that assets have been defined, threats to AI
+
+\* 32 In this document we consider the data sources for AI have been protected and are considered to be secure. In our approach, the AI application life cycle (in short, AI Lifecycle) is considered as a generic model for the foundation of assets and threats identification, and not intended as a statement. Feedback loops presented are not exhaustive as different use cases might follow different pipelines. and omit some of the phases of the generic life cyle.. Mind maps were included as a first step towards a complete reference model.
+
+\* 33 See https://ec.europa.eu/digital-single-market/en/news/assessment-list-trustworthy-artificial-intelligence-altai-selfassessment
+
+\* 34 The threat landscape assumes basic understanding of AI terminology and concepts. For further details and to gain deeper understanding the interested reader is referred to AI tectbook material.
+
+\* 35 Including already referenced work from EC JRC, EC AI HLEG, EDA, ETSI ISG SAI, NIST, Stiftung Neue Verantwortung, Mcrosoft (https://docs.microsoft.com/en-us/security/engineering/threat-modeling-aiml), Berryville Institute of Machine Learning (https://berryvilleiml.com /) and BSI (https://doi.org/10.3389/fdata.2020.00023 ).
+
+<!-- PageFooter: 13 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+systems can be mapped against these assets and following that targeted security measures to the corresponding asset owners may be delivered.
+
+# 2.1 AI LIFECYCLE
+
+<Figure>
+Figure 1: AI lifecycle generic reference model
+</Figure>
+
+Data is one of the most valuable assets in Artificial Intelligence; it is being continuously transformed along the AI Lifecycle 36 . Figure 2 illustrates data transformation along the different lifecycle stages: Data Ingestion, Data Exploration, Data Pre-processing, Feature Importance, Training, Testing and Evaluation. Data transformation along the AI Lifecycle involves several other types of assets, like the involved actors, computational resources, software, etc. and even some non-tangible assets like processes, culture and the way actors' experience and knowledge can bring potential non-intentional threats (e.g. non-intentional bias).
+
+\* 36 In terms of data categories and the provenance of the data we distinguish between the following. Self-reported data, voluntarily provided by a "trustful" operator (e.g. AIS for a ship or ADS-B for an aircraft, cooperative and governmental data).
+
+\* Observed data collected by active or passive "secure" systems (e.g. IDSs, sensors, RFIDs, cameras, IoTs in general, radars), the integrity of the data depends upon a variety of parameters (resolution, range, refresh, latency, environmental conditions, size, orientation, electromagnetic characteristics).
+
+\* Information registers and databases: they contain information linking data (aircrafts or ship IDs, human IDs from civil legacy systems, smart objects IDs from industries) with details on its structure, construction, appearance, history and interactions, activity, Social Media from Free and Open Internet Sources (e.g Twitter, Youtube, Facebook, WhatsApp, Media, Open DB) are also included in this category.
+
+<!-- PageFooter: 14 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES -->
+
+<Figure>
+Figure 2: Data transformation along AI Lifecycle development stages
+</Figure>
+
+In what follows, we describe in detail the different stages of the AI lifecycle by giving emphasis to the different assets, processes and actors that are involved 37 , as well as discussing the relevant data transformations.
+
+# 2.2 AI LIFECYCLE ACTORS
+
+There are various actors actively engaged in the context of the entire AI Lifecycle. Actors include the AI designers / AI application designers involved in the design and creation of AI systems. There are also the AI developers that develop and build the software and algorithms used in AI systems, as well as work to refine and enhance them. Their experience and capacity plays a key role in the development of secure AI systems.
+
+AI developers and designers work closely with data scientists. Data scientists' work might involve helping design and develop AI models, or it can consist of using such models and analysing the results. More specifically, data scientists are involved in collecting and interpreting data, focusing on extracting knowledge and insights from that data. Other actors in the AI lifecycle are data engineers, whose work primarily involves extracting and collating data from different sources, then transforming, cleaning, standardizing, and storing it. Data engineers mainly focus on the design, management, and optimization of the flow of data.
+
+Other important actors in the AI lifecycle are data owners 38 . Data owners own the datasets that are used to either train/validate AI systems or that these systems use to perform tasks. They are often businesses, who have their own datasets linked to their business that they provide an AI system with in order to carry out a task on their behalf. Data owners can also be data providers / data brokers. These are third parties that monetize data used by AI systems, either for training purposes or to perform various tasks. They might include commercial data brokers, which collect, store, and sell various types of data, in a legal manner. There are also reports of shadow data brokers that gather data about users without them being aware that their personal data is being collected, stored, and sold 39 .
+
+Other AI lifecycle actors include model providers, who provide models (as well as implementations of them in the form AI/ML libraries) that have already been trained and finetuned. Some model providers are cloud providers, which offer the models as a service, notably the use of AI-based computational and data analyses capabilities in the cloud. Besides model providers, other actors involve third-party providers who may also provide third-party software December 2020
+
+\* 37 The reference model detals the typical, different phases of the AI lifecycle. A noteworthy reference needs to be made to automated machine learning solutions (offered by several vendors) that encompass the vast majority of the AI lifecycle stages to facilitate product developers. Despite numerous research and commercial initiatives for developing efficient automated machine learning mechanisms and tools, many challenges have been identified including transparency issues (black-box operation), limited reproducibility, etc.
+
+\* 38 Please note that in the case of personal data the role of data owners is equivalent to that of data controllers.
+
+\* 39 Evidently if such cases occur, then there is a clear lack of compliance to GDPR provisions and further legal analysis (outside the scope of this work) is highly recommended.
+
+<!-- PageFooter: 15 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+frameworks and libraries, which developers can use for training AI systems, and specialised high-performance hardware.
+
+Finally, there are the end users that make use of AI systems, including service consumers. This might be companies, many of which are model users. They also include consumers and the general public. End users might also be users of other AI systems as well.
+
+# 2.3 AI LIFECYCLE PHASES
+
+In this section, we provide a short definition for each stage of the AI Lifecycle and recap the individual steps it involves ("Phase in a Nutshell").
+
+# Business Goal Definition
+
+Prior to carrying out any AI application/system development, it is important that the user organization fully understand the business context of the AI application/system and the data required to achieve the AI application's business goals, as well as the business metrics to be used to assess the degree to which these goals have been achieved.
+
+Business Goal Definition Phase in a Nutshell: Identify the business purpose of the AI application/system. Link the purpose with the question to be answered by the AI model to be used in the application/system. Identify the model type based on the question.
+
+# Data Ingestion
+
+Data Ingestion is the AI life cycle stage where data is obtained from multiple sources (raw data may be of any form structured or unstructured) to compose multi-dimensional data points, called vectors, for immediate use or for storage in order to be accessed and used later. Data Ingestion lies at the basis of any AI application. Data can be ingested directly from its sources in a real-time fashion, a continuous way also known as streaming, or by importing data batches, where data is imported periodically in large macro-batches or in small micro-batches.
+
+Different ingestion mechanisms can be active simultaneously in the same application, synchronizing or decoupling batch and stream ingestion of the same data flows. Ingestion components can also specify data annotation, i.e. whether ingestion is performed with or without metadata (data dictionary, or ontology/taxonomy of the data types). Often, access control operates during data ingestion modelling the privacy status of the data (personal / non-personal data.), choosing suitable privacy preserving techniques and taking into account the achievable trade-off between privacy impact and analytic accuracy. Compliance with applicable EU privacy and data protection legal framework needs to be ensured in all cases.
+
+The privacy status assigned to data is used to define the AI application Service Level Agreement (SLA) in accordance with the applicable EU privacy and data protection legal framework, including -among other things- the possibility for inspection / auditing competent regulatory authorities (such as Data Protection Authorities). It is important to remark that, in ingesting data an IT governance conflict may arise. On the one hand, data is compartmentalized by its owners in order to ensure access control and privacy protection; on the other hand, it must be integrated in order to enable analytics. Often, different policies and policy rules apply to items of the same category. For multimedia data sources, access protocols may even follow a Digital Right Management (DRM) approach where proof-of-hold must be first negotiated with license servers. It is the responsibility of the AI application designer to make sure that ingestion is done respecting the data providers' policies on data usage and the applicable EU privacy and data protection legal framework.
+
+Data Collection/Ingestion Phase in a Nutshell: Identify the input (dynamic) data to be collected and the corresponding context metadata. Organize ingestion according to the AI application requirements, importing data in a stream, batch or multi-modal fashion.
+
+<!-- PageFooter: 16 -->
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: AI CYBERSECURITY CHALLENGES December 2020 -->
+
+# Data Exploration
+
+Data Exploration is the stage where insights start to be taken from ingested data. While it may be skipped in some AI applications where data is well understood, it is usually a very timeconsuming phase of the AI life cycle. At this stage, it is important to understand the type of data that were collected. A key distinction must be drawn between the different possible types of data, with numerical and categorical being the most prominent categories 40 , alongside multimedia data (e.g. image, audio, video, etc.) 41 . Numerical data lends itself to plotting and allows for computing descriptive statistics and verifying if data fits simple parametric distributions like the Gaussian one. Missing data values can also be detected and handled at the exploration stage. Categorical variables are those that have two or more categories but without an intrinsic order. If the variable has a clear ordering, then it is considered as an ordinal variable.
+
+Data Validation/Exploration in a Nutshell: Verify whether data fit a known statistics distribution, either by component (mono-variate distributions) or as vectors (multi-variate distribution). Estimate the corresponding statistic parameters.
+
+# Data Pre-processing
+
+The data pre-processing stage employs techniques to cleanse, integrate and transform the data. This process aims at improving data quality that will improve performance and efficiency of the overall AI system by saving time during the analytic models' training phase and by promoting better quality of results. Specifically, the term data cleaning designates techniques to correct inconsistencies, remove noise and anonymize/pseudonymise data.
+
+Data integration puts together data coming from multiple sources, while data transformation prepares the data for feeding an analytic model, typically by encoding it in a numerical format. A typical encoding is one-hot encoding used to represent categorical variables as binary vectors. This encoding first requires that the categorical values be mapped to integer values. Then, each integer value is represented as a binary vector that is all zero values except the position of the integer, which is marked with a 1.
+
+Once converted to numbers, data can be subject to further types of transformation: re-scaling, standardization, normalization, and labelling 42 . At the end of this process, a numerical data set is obtained, which will be the basis for training, testing and evaluating the AI model.
+
+Since having a large enough dataset is one of the key success factors when properly training a model, it is common to apply different data augmentation techniques to those training datasets that are too small. For instance, it is common to include in a training dataset different scaled or rotated versions of images, which were already in that dataset. Another example of data augmentation technique which can be used when processing text is replacing a word by its synonym. Even in those cases in which the training dataset is large enough, data augmentation techniques can improve the final trained model. Data can also be augmented in order to increase its quantity and the diversity of scenarios covered. Data augmentation usually consists in applying transformations which are known to be label-preserving, i. e. the model should not change its output (namely prediction) when presented with the transformed data items. Data augmentation can serve to improve the performance of a model and in particular its robustness to benign perturbations. One task where data augmentation is used by default is image classification, where data can be augmented by for instance applying translations, rotations and blurring filters.
+
+\* 40 The discussion mainly refers to nunerical, tabular data. It needs nevertheless to be mentioned that AI systems may also use other types of data, e.g. speech, images. These are also numerical, but sanity checks have an advanced degree of complexity, for which no data exploration as described here is performed.
+
+\* 41 Multimedia data are complex data that are very relevant in the context of deep learning.
+
+\* 42 Re-scaling is used to make sure all variables are expressed on the same scale, as some methods may overlook variables with lower intensity. Standardization is used to change the mean of a distribution of values to 0, while normalization maps data to a compact representation interval (e.g., the interval (0, 1), by dividing all values by the maximum). Labelling (done by human experts or by other AI applications) associates each data item to a category or a prediction.
+
+<!-- PageFooter: 17 -->
+
+<!-- PageBreak -->
+

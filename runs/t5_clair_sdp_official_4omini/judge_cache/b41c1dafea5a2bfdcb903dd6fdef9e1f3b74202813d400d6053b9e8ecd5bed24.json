@@ -1,0 +1,14 @@
+{
+  "request_hash": "b41c1dafea5a2bfdcb903dd6fdef9e1f3b74202813d400d6053b9e8ecd5bed24",
+  "prompt_sha256": "bc14027731d5a39a7c9ad73f0cc572d543dfaf2dd9f815c80fb4bffda25d7d91",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMvMhDVWARmfnbR1UuIZMXBJZO54",
+  "prompt_tokens": 10089,
+  "completion_tokens": 46,
+  "actual_usd": 0.00154095,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer regarding users' biases in judging probabilities, specifically mentioning that users tend to overestimate low probability events and underestimate high probability events."
+  }
+}

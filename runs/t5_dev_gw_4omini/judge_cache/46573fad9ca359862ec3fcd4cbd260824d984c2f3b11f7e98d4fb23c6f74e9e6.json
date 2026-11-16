@@ -1,0 +1,14 @@
+{
+  "request_hash": "46573fad9ca359862ec3fcd4cbd260824d984c2f3b11f7e98d4fb23c6f74e9e6",
+  "prompt_sha256": "7eecbcee933a19b2b7722092287b79f40cd87fe8d5b59f54e584fbb717d57d4b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2K2DO6zO73bqYQb6ycfb1U9ZNtf",
+  "prompt_tokens": 7041,
+  "completion_tokens": 36,
+  "actual_usd": 0.0010777499999999997,
+  "parsed": {
+    "completeness_level": 0,
+    "reason": "The Context does not provide any information or support for the claim made in the Reference Answer about stealing a stock market prediction model."
+  }
+}

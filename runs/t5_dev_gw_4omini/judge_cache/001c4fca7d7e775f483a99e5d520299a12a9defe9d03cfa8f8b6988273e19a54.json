@@ -1,0 +1,14 @@
+{
+  "request_hash": "001c4fca7d7e775f483a99e5d520299a12a9defe9d03cfa8f8b6988273e19a54",
+  "prompt_sha256": "be195cbf16d075265d8d2d144eb498704cc0ab57f9c10ba666555e11b6fb16a4",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei1sLsYP39fRCcAwBDRyEy52HZ9Ic",
+  "prompt_tokens": 7975,
+  "completion_tokens": 45,
+  "actual_usd": 0.00122325,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context supports the claim about the 10-day reporting requirement for incidents involving death, but it does not specify the five-year documentation retention period mentioned in the Reference Answer."
+  }
+}

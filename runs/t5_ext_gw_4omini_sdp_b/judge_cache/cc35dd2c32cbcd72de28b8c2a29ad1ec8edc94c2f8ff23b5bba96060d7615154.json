@@ -1,0 +1,14 @@
+{
+  "request_hash": "cc35dd2c32cbcd72de28b8c2a29ad1ec8edc94c2f8ff23b5bba96060d7615154",
+  "prompt_sha256": "a1875010cb499354e4a3784baeed4f2668f3bf7b79fcc878735c2423f5244612",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNpCNc04BVbXzPIAI1yYb2Y9TIcm",
+  "prompt_tokens": 6881,
+  "completion_tokens": 48,
+  "actual_usd": 0.0010609499999999997,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing that Project Essay Grade (PEG) was the first automated writing evaluation system designed to reduce grading time and that it utilized a word count measure."
+  }
+}

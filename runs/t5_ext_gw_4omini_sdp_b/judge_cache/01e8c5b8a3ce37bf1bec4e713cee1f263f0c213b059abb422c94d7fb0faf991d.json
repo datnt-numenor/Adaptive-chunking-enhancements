@@ -1,0 +1,14 @@
+{
+  "request_hash": "01e8c5b8a3ce37bf1bec4e713cee1f263f0c213b059abb422c94d7fb0faf991d",
+  "prompt_sha256": "2e2ad64d3daa07eafaec3a355493b4844ad65851360758e9ca288f2e5351b9ed",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOaZE3vnB8JJhAmQ9QJXAVmcOkqy",
+  "prompt_tokens": 6658,
+  "completion_tokens": 49,
+  "actual_usd": 0.0010280999999999999,
+  "parsed": {
+    "completeness_level": 1,
+    "reason": "The Context discusses the government's commitment to establishing a regulatory sandbox for AI and its flexible approach, but it does not explicitly state that the government prefers a customized advice and support model for the sandbox."
+  }
+}

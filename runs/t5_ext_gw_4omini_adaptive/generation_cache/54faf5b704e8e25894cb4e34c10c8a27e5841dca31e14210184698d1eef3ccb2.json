@@ -1,0 +1,10 @@
+{
+  "request_hash": "54faf5b704e8e25894cb4e34c10c8a27e5841dca31e14210184698d1eef3ccb2",
+  "prompt_sha256": "75e15959633743274def1aa5f688742728df2ac4a3104ad7ced239f9be83d6de",
+  "answer": "The AI Act addresses the obligations of GPAI model providers when their models are integrated into high-risk SPAI systems by requiring that the downstream providers of these systems ensure compliance with high-risk requirements, including those related to the quality of training data. Specifically, the Act stipulates that the provider of a high-risk AI system, such as an SPAI system built on a GPAI model, must meet obligations concerning data governance and management practices appropriate for the intended purpose of the system.\n\nChallenges arise for downstream providers in several ways. Firstly, they may lack the necessary means to verify whether the training of the underlying GPAI model meets the compliance requirements for high-risk use cases, as GPAI models are often trained on large datasets that may not be sufficiently curated for specific applications. Additionally, the information obligations placed on GPAI model providers are often minimal, which hampers the ability of downstream providers to ensure compliance with the AI Act's requirements regarding training data and potential biases. This situation creates significant hurdles for downstream providers when integrating GPAI models into high-risk systems, potentially jeopardizing economic efficiency and stifling innovation.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMs0CM7TCxT2Ks0kwhtBFbnS6oK8",
+  "prompt_tokens": 8257,
+  "completion_tokens": 221,
+  "actual_usd": 0.0013711499999999998
+}

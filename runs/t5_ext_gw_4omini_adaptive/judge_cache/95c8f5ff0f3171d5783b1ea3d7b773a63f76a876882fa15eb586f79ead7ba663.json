@@ -1,0 +1,14 @@
+{
+  "request_hash": "95c8f5ff0f3171d5783b1ea3d7b773a63f76a876882fa15eb586f79ead7ba663",
+  "prompt_sha256": "0133bee4ae186fed4b18da91e5f80c1b41d55e95762be1d0f091c3504a4e129f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNbSiGxwMAQSzMuQkrHFqv2YB9HB",
+  "prompt_tokens": 6511,
+  "completion_tokens": 35,
+  "actual_usd": 0.0009976499999999999,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly listing and describing the seven types of parties and organizations involved in AI auditing."
+  }
+}

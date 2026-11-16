@@ -1,0 +1,608 @@
+{
+ "data_dir": "data/clair",
+ "batch_size": 8,
+ "shards": [
+  [
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_The AI Act",
+    "cost": 205
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE",
+    "cost": 149
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative",
+    "cost": 100
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Les fiches pratiques IA -  CNIL",
+    "cost": 62
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_CCPA Act",
+    "cost": 60
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1",
+    "cost": 43
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Recommandations de s\u00e9curit\u00e9 pour un syst\u00e8me d'IA g\u00e9n\u00e9rative",
+    "cost": 34
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world",
+    "cost": 29
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape",
+    "cost": 13
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Entr\u00e9e en vigueur du r\u00e8glement europ\u00e9en sur l\u2019IA - CNIL",
+    "cost": 12
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPB statement on data protection authorities",
+    "cost": 8
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Security",
+    "cost": 5
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3",
+    "cost": 5
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Transparency",
+    "cost": 3
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPS Generative AI guidelines",
+    "cost": 1
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI",
+    "cost": 643
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_The AI Act",
+    "cost": 205
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Verification for International AI Governnace",
+    "cost": 179
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_GDPR",
+    "cost": 114
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands",
+    "cost": 99
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative",
+    "cost": 98
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_CCPA Act",
+    "cost": 58
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",
+    "cost": 44
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Provider Guidelines - European Commission",
+    "cost": 36
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_European Convention On Human Rights",
+    "cost": 31
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_Livre blanc - Impact AI",
+    "cost": 23
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "cost": 12
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Discussion Paper Hamburg DPA KI Models",
+    "cost": 10
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPB statement on data protection authorities",
+    "cost": 8
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Robustness",
+    "cost": 3
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Vigilance",
+    "cost": 3
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Explicability",
+    "cost": 2
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPS Generative AI guidelines",
+    "cost": 1
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_The AI Act",
+    "cost": 203
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Verification for International AI Governnace",
+    "cost": 171
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_DataForGood - Livre Blanc IA Generative",
+    "cost": 92
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Harmonising AI - OXIL",
+    "cost": 60
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1",
+    "cost": 42
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Recommandations de s\u00e9curit\u00e9 pour un syst\u00e8me d'IA g\u00e9n\u00e9rative",
+    "cost": 33
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world",
+    "cost": 27
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_Livre blanc - Impact AI",
+    "cost": 24
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Artificial Intelligence for Europe",
+    "cost": 22
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Interpretability",
+    "cost": 14
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "cost": 13
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Entr\u00e9e en vigueur du r\u00e8glement europ\u00e9en sur l\u2019IA - CNIL",
+    "cost": 12
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Discussion Paper Hamburg DPA KI Models",
+    "cost": 10
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPB statement on data protection authorities",
+    "cost": 7
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Security",
+    "cost": 5
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3",
+    "cost": 4
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Vigilance",
+    "cost": 3
+   }
+  ],
+  [
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI",
+    "cost": 639
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Verification for International AI Governnace",
+    "cost": 177
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_GDPR",
+    "cost": 114
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands",
+    "cost": 98
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Harmonising AI - OXIL",
+    "cost": 62
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",
+    "cost": 44
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Provider Guidelines - European Commission",
+    "cost": 37
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_European Convention On Human Rights",
+    "cost": 31
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Artificial Intelligence for Europe",
+    "cost": 24
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Sophia (sciences sociales)_Livre blanc - Impact AI",
+    "cost": 23
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Interpretability",
+    "cost": 15
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+    "cost": 13
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Discussion Paper Hamburg DPA KI Models",
+    "cost": 11
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2",
+    "cost": 10
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Sustainability",
+    "cost": 7
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Robustness",
+    "cost": 3
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Vigilance",
+    "cost": 3
+   },
+   {
+    "run": "sw0_rc1",
+    "run_dir": "runs/sdp_sweep_v2/sw0_rc1",
+    "doc": "Ada (technique)_Standards - Explicability",
+    "cost": 2
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE",
+    "cost": 152
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Harmonising AI - OXIL",
+    "cost": 63
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Les fiches pratiques IA -  CNIL",
+    "cost": 62
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Safety and Security - Chapter 1",
+    "cost": 42
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Recommandations de s\u00e9curit\u00e9 pour un syst\u00e8me d'IA g\u00e9n\u00e9rative",
+    "cost": 34
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_Consultation paper on AI regulation - emerging approaches across the world",
+    "cost": 27
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Artificial Intelligence for Europe",
+    "cost": 22
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Interpretability",
+    "cost": 14
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape",
+    "cost": 13
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Entr\u00e9e en vigueur du r\u00e8glement europ\u00e9en sur l\u2019IA - CNIL",
+    "cost": 12
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2",
+    "cost": 10
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Sustainability",
+    "cost": 7
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Security",
+    "cost": 5
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Copyright - Chapter 3",
+    "cost": 4
+   },
+   {
+    "run": "keepcont_rc1",
+    "run_dir": "runs/sdp_sweep_v4/keepcont_rc1",
+    "doc": "Ada (technique)_Standards - Transparency",
+    "cost": 3
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_Regulating under Uncertainty - Governance Options for Generative AI",
+    "cost": 635
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_RAPPORT CI INTELLIGENCE ARTIFICIELLE",
+    "cost": 151
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_GDPR",
+    "cost": 109
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_AI & Algorithmic Risks Report Netherlands",
+    "cost": 96
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_CCPA Act",
+    "cost": 60
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Les fiches pratiques IA -  CNIL",
+    "cost": 59
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_Artificial Intelligence, Human Rights, Democracy, and The Rule Of Law",
+    "cost": 44
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Provider Guidelines - European Commission",
+    "cost": 35
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_European Convention On Human Rights",
+    "cost": 30
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape",
+    "cost": 13
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_Code of Practice for General Purpose - AI Models Transparency - Chapter 2",
+    "cost": 9
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Sustainability",
+    "cost": 6
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Robustness",
+    "cost": 4
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Explicability",
+    "cost": 3
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Ada (technique)_Standards - Transparency",
+    "cost": 2
+   },
+   {
+    "run": "noart_rc1",
+    "run_dir": "runs/sdp_sweep_v4/noart_rc1",
+    "doc": "Norma (l\u00e9gal)_EDPS Generative AI guidelines",
+    "cost": 1
+   }
+  ]
+ ],
+ "loads": [
+  3040,
+  3040
+ ]
+}

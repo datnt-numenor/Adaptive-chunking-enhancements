@@ -1,0 +1,14 @@
+{
+  "request_hash": "113a7904b0e2c0ca6d9b91c778b0c10f7dae4fd636a37c67566dc6100e575280",
+  "prompt_sha256": "66c65401bac35a1cd8e16b26c20cb2e42dffad09a6210c7edb1ecde2be73f99b",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiObRnlzS4hyBoMMii0vX6aw1T5Pj",
+  "prompt_tokens": 8253,
+  "completion_tokens": 43,
+  "actual_usd": 0.00126375,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by detailing the importance of design in algorithmic systems and specifically mentioning the Politoscope tool as an example."
+  }
+}

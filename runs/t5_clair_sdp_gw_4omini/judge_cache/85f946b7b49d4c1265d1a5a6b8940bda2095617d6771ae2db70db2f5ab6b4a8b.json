@@ -1,0 +1,14 @@
+{
+  "request_hash": "85f946b7b49d4c1265d1a5a6b8940bda2095617d6771ae2db70db2f5ab6b4a8b",
+  "prompt_sha256": "aea009ca7c9865a80b677b4d064e9bba2b14e23ce084012416bdc6428afc6ecc",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOcNGMtrAL9ieediZn62YSJNruWe",
+  "prompt_tokens": 8566,
+  "completion_tokens": 40,
+  "actual_usd": 0.0013088999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing AlphaFold's achievement in predicting protein structures and its significance in solving a long-standing challenge in biology."
+  }
+}

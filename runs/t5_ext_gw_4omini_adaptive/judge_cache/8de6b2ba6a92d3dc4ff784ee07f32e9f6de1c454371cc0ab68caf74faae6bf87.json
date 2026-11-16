@@ -1,0 +1,14 @@
+{
+  "request_hash": "8de6b2ba6a92d3dc4ff784ee07f32e9f6de1c454371cc0ab68caf74faae6bf87",
+  "prompt_sha256": "26e3e0a850042fa9284c82388fe8717dd8c09b7b5cfbd3e5646486824849e533",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNfWkd3p6Lp2KAbc5s2M2VXHn1CG",
+  "prompt_tokens": 9048,
+  "completion_tokens": 38,
+  "actual_usd": 0.00138,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by discussing how independent data collection can provide a broader perspective compared to limited inside access."
+  }
+}

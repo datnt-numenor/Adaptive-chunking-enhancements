@@ -1,0 +1,13 @@
+{
+  "data_dir": "data\\clair_ext_set",
+  "methods": [
+    "langch_recurs_default",
+    "our_recurs_1100",
+    "our_recurs_600",
+    "page"
+  ],
+  "llm_model": "gpt-4o",
+  "llm_cache": "runs\\openai_cache_ext",
+  "postprocessing": "replicate.run_chunking 1b/1c",
+  "created": "2026-11-09 18:26:26"
+}

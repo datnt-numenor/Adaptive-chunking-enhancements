@@ -1,0 +1,14 @@
+{
+  "request_hash": "ca2366abe56258697321f978e686412417883e85eeee76f7fdb43680ac072a3f",
+  "prompt_sha256": "c3c3e33d50e3ae30dc5727a1fb83ddcc1b2dc63d4345e54a3212704e2c438008",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOKkOUEJHR0Nqf2eSgRZBOjJc9sO",
+  "prompt_tokens": 8482,
+  "completion_tokens": 38,
+  "actual_usd": 0.0012951,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides clear examples and insights that directly support the claim in the Reference Answer about organizations lacking tailored AI policies facing vulnerabilities and risks."
+  }
+}

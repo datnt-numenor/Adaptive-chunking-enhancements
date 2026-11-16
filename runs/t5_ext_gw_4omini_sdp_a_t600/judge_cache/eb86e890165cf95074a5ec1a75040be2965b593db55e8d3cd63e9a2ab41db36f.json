@@ -1,0 +1,14 @@
+{
+  "request_hash": "eb86e890165cf95074a5ec1a75040be2965b593db55e8d3cd63e9a2ab41db36f",
+  "prompt_sha256": "511dca86973e06ffe4d33aa5da125b7b9ab632d46418e5d902e8d4ec0434ff78",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO9CdEz9Y7CbpH8c2i1xewsOuVjI",
+  "prompt_tokens": 7597,
+  "completion_tokens": 45,
+  "actual_usd": 0.00116655,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides specific data indicating that software companies, including Apple, SAP, Cisco, and Microsoft, lead in AI disclosures, confirming the claim made in the Reference Answer."
+  }
+}

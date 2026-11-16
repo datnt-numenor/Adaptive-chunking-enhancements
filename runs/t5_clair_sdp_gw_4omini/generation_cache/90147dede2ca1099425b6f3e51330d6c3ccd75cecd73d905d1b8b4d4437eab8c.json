@@ -1,0 +1,10 @@
+{
+  "request_hash": "90147dede2ca1099425b6f3e51330d6c3ccd75cecd73d905d1b8b4d4437eab8c",
+  "prompt_sha256": "803650943bce8e14c065928ecd8d5847c56b6d1f5795adceae727d30f7531502",
+  "answer": "Sandbagging by a password-locked model could potentially be uncovered by estimating the capability scaling of the algorithm through small experiments using known data sets. This approach could allow for the detection of sandbagging attempts by revealing discrepancies in the expected capabilities of the model. Additionally, having skilled humans with full information access could help catch such an attack if they had the time and resources to extensively test the provided algorithm on known uncorrupted data sets, which might reveal the true capability curve of the algorithm.\n\nStandard capability elicitation might fail to reveal the sandbagging because the password locking of the model could be so effective that there are no hints of the dangerous capabilities. If the model's capabilities are effectively hidden, then the evaluation results might appear reasonable, and capability elicitation may not work as there may be no signal to boost. Thus, without clear indications of the model's true capabilities, standard elicitation techniques may not be able to detect the hidden functionalities.",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMlXl2lqNGkHImvfNFj3NZLJPkHF",
+  "prompt_tokens": 7628,
+  "completion_tokens": 191,
+  "actual_usd": 0.0012588
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4fd755a52fd106c4f680b98eb73191de9168db5c3df1a6748416cdecdc178cfa",
+  "prompt_sha256": "e310327d0207a14304227e700d997c1a04b2f3e16bf4c75161d22dd11258ad54",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-Ei2SuqZ1wCDlnqaolvsojXb2Kr2Ep",
+  "prompt_tokens": 5318,
+  "completion_tokens": 42,
+  "actual_usd": 0.0008229,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides a detailed account of Ekimetrics' approach to measuring and mitigating bias in targeted marketing, fully supporting the claims made in the Reference Answer."
+  }
+}

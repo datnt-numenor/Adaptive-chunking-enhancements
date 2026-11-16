@@ -1,0 +1,14 @@
+{
+  "request_hash": "224b78ee0947a6f9edeb511e5cbe4b8a17f3151dc800c1f4c4bc78f288fe21bd",
+  "prompt_sha256": "2923de37c5211ae09fb139c80f57fe6e8ea5cc7cf1e204bb6f9353f430921bb5",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNSS7cY2j8tMr1MJBQOZBZtPGi2u",
+  "prompt_tokens": 7088,
+  "completion_tokens": 37,
+  "actual_usd": 0.0010854,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explicitly stating that inputs and outputs should be encoded to prevent unauthorized code execution."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "4e028195c7a09582910a4eaebed4c4fad4305fcafb86e294bb4f41658f4e13eb",
+  "prompt_sha256": "f03d68a26e201c5fa47bd1b1a3ea20a0dbb2bc41def0ed62784bc2f40e2bf36a",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiON7HywL20u6EwnNJxeCUYdfi4b0",
+  "prompt_tokens": 9375,
+  "completion_tokens": 49,
+  "actual_usd": 0.0014356500000000001,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context explicitly states that the national Algorithm Register for public organizations had more than 400 algorithms registered by the end of June 2024, fully supporting the claim made in the Reference Answer."
+  }
+}

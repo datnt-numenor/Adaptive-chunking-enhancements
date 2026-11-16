@@ -1,0 +1,21 @@
+﻿sw0_rc1 - Adaptive: +1.50 [+1.23,+1.77] wins 31 ties 0 losses 2 / 33  Wilcoxon p=3.3e-09  sd of diff 0.79
+     ICC: +9.42 [+7.76,+10.83] wins 31/33
+     DCC: -3.49 [-4.75,-2.19] wins 4/32
+     RC: +0.84 [+0.39,+1.38] wins 13/31
+sw0_rc1 - SDP-B: +0.60 [+0.42,+0.78] wins 32 ties 0 losses 1 / 33  Wilcoxon p=2.9e-07  sd of diff 0.53
+     ICC: +1.79 [+0.88,+2.57] wins 28/33
+     DCC: -0.54 [-1.18,+0.13] wins 9/32
+     RC: +1.99 [+1.07,+3.06] wins 18/31
+lowest per-document differences vs Adaptive:
+Norma (légal)_EDPS Generative AI guidelines                                                      -0.82
+Ada (technique)_Standards - Transparency                                                         -0.40
+Sophia (sciences sociales)_Responsible AI - A competitive edge in the data and GenAI landscape    0.76
+       Adaptive   SDP-B  sw0_rc1
+SC       100.00  100.00   100.00
+BI       100.00  100.00   100.00
+ICC       68.31   69.99    61.97
+DCC       88.23   95.74      NaN
+RC       100.00   91.67   100.00
+tok      261.50  261.50   523.00
+n          2.00    2.00     1.00
+mean5     91.31   91.48    90.49

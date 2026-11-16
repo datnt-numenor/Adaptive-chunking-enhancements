@@ -1,0 +1,14 @@
+{
+  "request_hash": "50de211ec7cad2a412c58dabed516f75e53d0ff448ed58ff8028952605cf5ec7",
+  "prompt_sha256": "64220d189999744849284fea58ad5a32fa12db292fa13eea11ea2236c4852075",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOFoXkutGDF1DTGxB1TSSoZbt12F",
+  "prompt_tokens": 6898,
+  "completion_tokens": 56,
+  "actual_usd": 0.0010683,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by explicitly stating that Chile, Colombia, Costa Rica, and Mexico are OECD members and that Argentina, Brazil, Egypt, Peru, and Uruguay adhere to the OECD AI Principles as non-members."
+  }
+}

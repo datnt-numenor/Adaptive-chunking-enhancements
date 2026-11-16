@@ -1,0 +1,10 @@
+{
+  "request_hash": "d4063924cc07edd7ad023560ed5efab2bf570933c8cc4dda2e62dd851ba25135",
+  "prompt_sha256": "1023d66e4739b712218b8f2f3a4e97faf276fa3a3fd8e0f849d4d0b51ef6b155",
+  "answer": "If the downstream modifier cannot be expected to know the original model's training compute value and cannot estimate it, the threshold should be replaced with a third of the threshold for a model being presumed to have high-impact capabilities (currently 10^25 FLOP) if the original model is a general-purpose AI model with systemic risk. Otherwise, it should be replaced with a third of the threshold for a model being presumed to be a general-purpose AI model (currently 10^23 FLOP).",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiMruSO8Q3L2RVGrw1R605sB6UEis",
+  "prompt_tokens": 8905,
+  "completion_tokens": 98,
+  "actual_usd": 0.00139455
+}

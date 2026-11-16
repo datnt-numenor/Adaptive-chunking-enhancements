@@ -1,0 +1,14 @@
+{
+  "request_hash": "9b222d2ca542b17249dce488e8774598f9085ba66b620d57823d023abe955c2c",
+  "prompt_sha256": "480791279907dff306dab2f7240d03d6e4a8f5f736259758cf7074c8219e7746",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNVq3uLTQH4EsIu8p8nMF0uqjYI6",
+  "prompt_tokens": 8432,
+  "completion_tokens": 43,
+  "actual_usd": 0.0012905999999999998,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the claim in the Reference Answer by explaining how incentive games enable the leader to design incentives that can enhance their own utility while benefiting the follower."
+  }
+}

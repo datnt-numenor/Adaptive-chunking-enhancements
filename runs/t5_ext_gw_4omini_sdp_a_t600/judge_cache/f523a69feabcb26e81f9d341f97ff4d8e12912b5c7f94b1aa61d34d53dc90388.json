@@ -1,0 +1,14 @@
+{
+  "request_hash": "f523a69feabcb26e81f9d341f97ff4d8e12912b5c7f94b1aa61d34d53dc90388",
+  "prompt_sha256": "b5823479cb834da664328a634597e8b4c51f48d198204abc869e03e3c60abdbf",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOXZzylQOPSjdeAusAp46IzGm0QV",
+  "prompt_tokens": 6898,
+  "completion_tokens": 40,
+  "actual_usd": 0.0010587,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how the Algorithmic Impact Assessment tool helps agencies assess and mitigate risks associated with automated decision-making systems."
+  }
+}

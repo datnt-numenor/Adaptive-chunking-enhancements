@@ -1,0 +1,303 @@
+DOCUMENT: arXiv 2410.04772 From Transparency to Accountability and Back A Discussion of Access an
+
+<<<PAGE 10>>>
+<!-- PageHeader: 10 Sarah H. Cen and Rohan Alur -->
+
+# 4.2 Option 2: Access to training procedures
+
+Another option is to grant an auditor access to the training procedure, which includes details such as the general model class (e.g., decision trees, linear models, transformers), objective function used to optimize parameters, hyperparameter tuning methodology, quality checks, or model selection criteria. The training procedure can be viewed as a roadmap for how the AI system was developed. For example, around 2017, one of the objective functions in Facebook's "News Feed" algorithm placed five times more weight on "reactions" than it did on "likes" when ranking content in a user's feed [91]. This change had the unintended consequence of amplifying emotional content; indeed, the company's own data scientists found that posts that "sparked [the] angry reaction emoji were disproportionately likely to include misinformation, toxicity and low-quality news" [91]. These issues were not detected by Facebook until 2019 and only made public in 2021 by a whistleblower [91]. An earlier audit of the training procedure, including the objective functions, may have encouraged the company to scrutinize and justify (and, if appropriate, abandon) these design choices.
+
+However, as with the training data, a particular training procedure can yield many downstream models, and there is no guarantee that these models behave similarly. The resulting model depends on various other factors, including the training data, model weights at initialization, and more. Therefore, while an auditor who is given access to a system's training procedure can perform sanity checks, they typically cannot draw precise conclusions about the system's ultimate behavior. Furthermore, since the training procedure lays out the steps taken to produce the AI system, access to training procedures is carefully guarded by companies; of the forms of access discussed, the training procedure is arguably the most valuable intellectual property associated with a commercial product.
+
+# 4.3 Option 3: Access to the model skeleton
+
+The next form of access we consider is access to the model "skeleton", which we also refer to as the "untrained" model. This "skeleton" refers to the specific model class that is used (e.g., the specific neural network architecture) and the way that different system components interact (e.g., how an AI model interacts with other models within the same system). Importantly, this skeleton is disclosed without the model parameters (i.e., weights).
+
+One defining feature of this form of access is that it reveals the key interfaces of an AI system. From the model skeleton, an auditor can determine the expected inputs (e.g., types of features) and outputs (e.g., a floating point number between 0 and 1) of the model. The auditor can also ascertain how many components make up the AI system and the relationship between different components of the AI system. For example, suppose that a job applicant's information and resume are first sorted into one of several job categories, processed by appropriate algorithms, before being assigned a score between 0 and 1, which is finally thresholded to produce a hiring recommendation. Then, this entire "pipeline" would be captured by the model skeleton. In this way, access to the model skeleton provides perhaps the most interpretable view of an AI system. Indeed, when the social media platform X (formerly known as Twitter) voluntarily released their recommendation model skeleton, [122], it revealed qualitative insights into X's content curation algorithm. For example, the public could glean that X "sources half of a user's content from in-network tweets (i.e., from accounts that the user follows) and the other half from out-of-network tweets" [28].
+
+As with the training procedure, a model skeleton allows the auditor to perform sanity checks to flag obvious flaws. It can even be used to identify discrepancies between an AI company's claims and the deployed system. The model skeleton alone, however, is not enough to characterize the precise behavior of an AI system. As mentioned in Section 4.1, models with the exact same skeleton can behave very differently, making it difficult to verify whether an AI system complies with a specific rule or meets a given standard from access to the model skeleton alone.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 11>>>
+<!-- PageHeader: From Transparency to Accountability and Back: A Discussion of Access and Evidence in AI Auditing 11 -->
+
+# 4.4 Option 4: Access to the trained model
+
+We now turn to the last option we consider: access to the final trained model. In contrast to the other three forms of access, access to the trained model allows the auditor to inspect the specific model that is or will be released.
+
+There are several different flavors of access to the trained model. Black-box access allows the auditor to query the model on the auditor's choice of inputs and observe the outputs but nothing more, yielding a series of input-output pairs. For example, sending ChatGPT queries (or "prompts") and observing how ChatGPT responds is a form of blackbox access. Similarly, observing the ratings that a hiring algorithm assigns to job applicants is also a form of black-box access. On the other hand, model-weight access allows the auditor to not only query the model, but also to see the entire trained model, including the trained model parameters (i.e., the model weights). By analogy, one can think of black-box access as an auditor being able to crash-test a car, whereas an auditor with model-weight access would also be able to inspect every component of the car. In between these two, there are other forms of access that have been explored, including fine-tuning access (the ability to fine-tune the final trained model on a dataset of interest) and log-probabilities access (the ability to view "probabilities" the model assigns to different prediction outcomes, before the final prediction is produced in most neural networks). In this way, there are tiers of access to the trained model. For instance, model-weight access is strictly stronger than log-probabilities access (in that one can always obtain log probabilities from model weights), which is stronger than black-box access.
+
+Of the four options considered in this section, only access to the trained model circumvents the problem of "underspecification" or "model multiplicity" [17, 40]. This implies that access to the trained model is minimally necessary for meaningful audits because it best indicates how the system behaves when deployed. However, there are limitations to auditing the trained model alone. An auditor cannot gain insight into the developers' process and reasoning from the trained model alone, which is not always satisfactory from a broader accountability perspective. Much of US law, for instance, considers intent when determining culpability. Moreover, auditing developers' process and reasoning can encourage safer and more thoughtful industry practices. As such, further access is often needed.
+
+# 4.5 Key takeaway: Black-box access is minimally necessary
+
+The four types of access described above are not exhaustive. For example, white-box access allows the auditor to view the model weights, training procedure, and source code but typically not the training data. Although there are numerous access options, one can view them as follows: putting resource constraints aside, the stronger the form of access, the closer the auditor is to being able to reproduce the AI system from scratch. Therefore, granting auditors access which is overly broad can introduce its own risks, such as undermining a company's competitive advantage or allowing bad actors to exploit system vulnerabilities.
+
+We argue that black-box access-the weakest form of access to the trained model-should be minimally required, as it provides concrete evidence about the specific AI system being audited (see Section 4.4). In addition, it has several characteristics that may address implementation difficulties that auditors face, as enumerated below:
+
+(1) Minimal access. Black-box access only allows the auditor to view the outputs of an AI system. It thus allows the auditor to assess the system that is ultimately deployed without further insight into the underlying implementation, which can allay concerns about revealing trade secrets, compromising data privacy, or exposing security vulnerabilities.
+
+(2) Prospective. Although this property is shared with model-weight and log-probabilities access (but not all flavors of trained-model access), black-box access gives the auditor the ability to prospectively inspect the AI
+
+<!-- PageBreak -->
+
+
+<<<PAGE 12>>>
+<!-- PageHeader: 12 Sarah H. Cen and Rohan Alur -->
+
+system. That is, the auditor can test the AI system on inputs of their choice and observe how the system behaves in situations that may not have arisen. This allows the auditor to perform pre-deployment assessments, and it can also be used to stress-test the system under extreme scenarios that have not yet arisen in natural datasets.
+
+(3) Model agnostic. Because black-box audits do not look "under the hood," they are agnostic to the inner workings of the AI system. Perhaps the key benefit is that the audit does not need to be adapted to the underlying AI system, making it possible to develop a standardized audit procedure that works across multiple AI systems. For example, even when developers change their model architecture, an auditor does not need to devise a new black-box audit as long as the input-output "types" are consistent. Another benefit of model agnosticism is that it allows the auditor to test how the model behaves end-to-end without necessarily requiring that the auditor be technically proficient (which is often needed if an auditor wishes to conduct model-specific audits).
+
+(4) Well suited to AI. Finally, it is worth remarking that AI systems are well-suited to black-box audits. Consider, for example, auditing a firm's (non-AI) hiring practices for discrimination. A black-box audit would require gathering everyone who plays a role in hiring, providing them with a set of applications, asking them to evaluate each as they normally would, and observing their decisions. This process is not scalable, as it would require auditors and the firm to invest significant time and resources. Perhaps more importantly, those involved with the audit can easily manipulate the outcome by misreporting their true preferences on who to hire. On the other hand, it is straightforward to repeatedly query an AI system, and the results of black-box AI audits are guaranteed to be faithful to how the AI system would behave in practice.
+
+As discussed in this section, no form of access is uniformly better than its alternatives, and the appropriate form of access is context-dependent. We argue however that black-box access is minimally necessary for an informative audit, reduces some of the risks associated with stronger forms of access, and offers other advantages described above, begging the question: if black-box access is minimally necessary, in what contexts is stronger access needed, and how should one develop standardized audit protocols based on the available level of access? We examine this question next.
+
+# 5 HYPOTHESIS TESTING AND ITS CONNECTIONS TO AUDITS
+
+In the prior section, we discuss different forms of access to an AI system, and argue that black-box access is often necessary to conduct an informative audit. When, however, does the auditor need more than black-box access, and how should the auditor interpret the evidence that they gather? In this section, we draw parallels between auditing and hypothesis testing, using NYC Local Law 144 (as described in Section 3) as an illustration. We show that this connection helps (i) clarify how an auditor can interpret and communicate the results of an audit, and (ii) produce precise guidance on how much access an auditor needs. We highlight that the null hypothesis can be viewed as a formalization of the relevant legal presumption, and the evidence needed to reject the null hypothesis can be viewed as the corresponding burden of proof. We provide a discussion of related work in hypothesis testing in Appendix A.
+
+# 5.1 Setup
+
+Consider a model developer or operator, who we refer to as the AI provider for the remainder of this section. The provider employs an algorithm u1D453 ∈ F , where F is a class of mappings from values in X to distributions over a countable set Y as denoted by Δ(Y). For example, in the context of hiring decisions, u1D453 could map an applicant's characteristics u1D465 ∈ X to a prediction u1D453 (u1D465) ∈ Y ⊂ [0, 1] of the applicant's fit for a given role. Let u1D45Du1D465 denote the true (possibly unknown) marginal distribution of u1D465. The auditor is interested in determining whether the provider's algorithm u1D453 complies with a requirement of interest. We denote this requirement by u1D454 : F → R.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 13>>>
+<!-- PageHeader: From Transparency to Accountability and Back: A Discussion of Access and Evidence in AI Auditing 13 -->
+
+Definition 1. We say that an algorithm u1D453 ∈ F is u1D454-compliant if and only if u1D454(u1D453 ) ≤ 0.
+
+When the propertyu1D454 is clear from context, we simply say an algorithm is compliant. In a black-box audit, the auditor has access to u1D441 input-output pairs (u1D465u1D456, u1D453 (u1D465u1D456)). We denote the evidence that an auditor has access to (including that gathered through black-box access) by E. Thus, the auditor's task is as follows:
+
+Determine whether u1D453 is u1D454-compliant given evidence E.
+
+Example 1 (Maximum loss). Requiring that u1D453 's maximum loss ℓ over some u1D446 ⊆ X is at most u1D702 is equivalent to requiring that u1D454(u1D453 ) ≤ 0, where u1D454(u1D453 ) = maxu1D465 ∈u1D446 ℓ(u1D453 (u1D465), u1D465)-u1D702. Depending on the definition of loss, one can audit for minimax fairness (by defining loss as negative performance), worst-case harm (by defining loss as the output's harm, e.g., toxicity level), and even copyright infringement (by defining loss as the dissimilarity between u1D465 and the copyrighted work).
+
+Example 2 (Group fairness). In the area of algorithmic fairness, group fairness typically reflects a notion of parity across groups. For example, one notion of group fairness known as "statistical parity" requires that the rate at which a binary classifier u1D453 : X → {0, 1} selects members of group u1D43A1 is at most u1D702 > 0 far from the rate at which u1D453 selects members of group u1D43A2 under some distribution u1D45Du1D465 over X. This is equivalent to requiring that u1D454(u1D453 ) ≤ 0, where u1D454(u1D453 ) = |E[u1D453 (u1D465) | u1D465u1D43A = u1D43A1] - E[u1D453 (u1D465) | u1D465u1D43A = u1D43A2]| - u1D702. The expectation above is taken over u1D465 ∼ u1D45Du1D465 , and u1D465u1D43A ∈ {u1D43A1,u1D43A2} is the feature in u1D465 denoting group membership.
+
+Example 3 (Individual fairness). Another notion of algorithmic fairness requires that "similar individuals be treated similarly," as captured by the criterion: u1D437(u1D453 (u1D465), u1D453 (u1D465 ′ )) ≤ u1D43Fu1D451 (u1D465, u1D465 ′ ) for all u1D465, u1D465 ′ ∈ X; distance metrics u1D437 and u1D451 on Y and X, respectively; and Lipschitz constant u1D43F > 0 [44]. This is equivalent to requiring that u1D454(u1D453 ) ≤ 0, where u1D454(u1D453 ) = maxu1D465,u1D465 ′ ∈X u1D437 (u1D453 (u1D465 ),u1D453 (u1D465 ′ )) u1D451 (u1D465,u1D465 ′ ) - u1D43F.
+
+One could similarly cast selection rates or impact ratios (from Section 3) in this format.
+
+# 5.2 Hypothesis testing and the burden of proof
+
+Given an algorithm u1D453 and auditing criterion u1D454, the auditor seeks to determine whether u1D453 is u1D454-compliant using E. Below, we discuss two possible hypothesis tests before describing the general hypothesis testing procedure in Section 5.3.
+
+Presumption of compliance. Consider an auditor who seeks to discern which of the following hypotheses holds:
+
+Let u1D43B ∈ {u1D43B0, u1D43B1} denote the ground-truth state. For example, if u1D453 is compliant, then u1D43B = u1D43B0; if u1D453 is not, then u1D43B = u1D43B1.
+
+The auditor does not know u1D43B a priori, and the auditor's goal is to develop a decision test or rule ˆu1D43B such that
+
+ˆu1D43B (E) = u1D43B0 if u1D453 is compliant and ˆu1D43B (E) = u1D43B1, otherwise. The auditor would like ˆu1D43B to match u1D43B for all u1D453 ∈ F because this means that the auditor has neither false positives nor false negatives, as formalized in Section 5.3.
+
+u1D43B0 is known as the null hypothesis. In practice, the implication is that the auditor's presumption under (1) is that u1D453 is compliant. The auditor therefore assumes (and reports) that u1D453 is compliant unless the evidence allows them to confidently reject this presumption. This framework therefore highlights what evidence is needed for an auditor to reject u1D43B0 when u1D43B1 is indeed the true hypothesis, i.e., what information the auditor needs to prove that an AI system is non-compliant when it is indeed non-compliant. Though subtle, this point is crucial. By viewing auditing as hypothesis testing, it becomes clear what it means for the available information to be (in)sufficient for auditing. Below, we show that the hypothesis test can be reversed to instead presume non-compliance.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 14>>>
+<!-- PageHeader: 14 Sarah H. Cen and Rohan Alur -->
+
+Presumption of non-compliance. Consider a different set of hypotheses:
+
+Relative to (1), the null and alternate hypotheses have been swapped. As before, there is a ground-truth state u1D43D ∈ {u1D43D0, u1D43D1}, and the auditor's goal is to develop a decision rule ˆ u1D43D such that, given evidence E, the decision ˆ u1D43D approximates u1D43D well across all u1D453 ∈ F . In this case, the null hypothesis u1D43D0 (i.e., the legal presumption) is that the algorithm is not compliant.
+
+Burden of proof: Which test should the auditor use? The null hypothesis reflects the auditor's presumption and, accordingly, who bears the burden of proof. For example, NYC Local Law 144 requires bias audits to be "statistically significant" but does not specify the null hypothesis, among other necessary modeling assumptions that we discuss further below. When such audits are required but do not explicitly require the AI provider to disclose any information to auditors, then, under (1), the AI provider is not incentivized to disclose information (i.e., to contribute evidence E to the auditing process). To see this, observe that since the auditor can only reject the null hypothesis u1D43B0 : u1D454(u1D453 ) ≤ 0 if they have enough evidence to do so, the burden of proof is on the auditor or governing body. Therefore, NYC Local Law 144, as it stands, incentivizes employers and employment agencies to release minimal amounts of historical data (recall that it does not specify the timeframe of the data that must be provided) if the null is (1).
+
+On the other hand, the burden of proof under (2) is borne by the AI provider. That is, the AI provider is incentivized to give the auditor enough evidence to convince the auditor to reject the null hypothesis u1D43D0, e.g., the employer is incentivized to prove that their hiring process is not biased. In this way, the choice of hypothesis test should reflect the desired legal presumption and corresponding placement of evidentiary burden. Note, however, that this choice may vary across contexts. For example, if the auditor's evidentiary burden is too great under (1), and the one may wish to shift the evidentiary burden via (2).
+
+# 5.3 Hypothesis testing procedure
+
+In this section, we describe the procedure for casting an AI audit as a hypothesis test. We refer readers interested in hypothesis testing to Casella and Berger [26] for a textbook treatment. For the remainder of this work, we adopt a presumption of compliance as given in (1), though our results can be equivalently applied to (2). We discuss four main components of hypothesis testing next: the evidence, decision rule, model, and tolerance.
+
+(1) Evidence. The auditor has access to evidence E, as defined in Section 5.1. The auditor is generally limited in the amount of evidence they can gather, for example, due to strictly controlled access to algorithm u1D453 or its training data, or due to limited resources. In the context of NYC Local Law 144, evidence is the historical or test data, including how the automated employment decision tool behaves on such datasets.
+
+(2) Decision rule. Given evidence E, the auditor's goal is to develop an audit (which, in hypothesis testing, is called a "decision rule" ˆu1D43B) that maps evidence E to a decision u1D43B0 or u1D43B1. These two decisions, respectively, correspond to deciding that u1D453 is compliant or non-compliant. Under (1), the auditor adopts the default decision u1D43B0 unless the evidence is convincing enough for the auditor to reject u1D43B0, as we review next.
+
+(3) Design criteria & tolerance. A decision rule ˆu1D43B is evaluated based on two quantities: the false positive rate (FPR) and true positive rate (TPR), FPR = P ( ˆu1D43B = u1D43B1|u1D43B = u1D43B0 ) and TPR = P ( ˆu1D43B = u1D43B1|u1D43B = u1D43B1 ) , where P is taken
+
+<!-- PageBreak -->
+
+
+<<<PAGE 15>>>
+<!-- PageHeader: From Transparency to Accountability and Back: A Discussion of Access and Evidence in AI Auditing 15 -->
+
+with respect to randomness in the evidence E and decision rule ˆu1D43B. (Observe that the true negative rate and false negative rate can be computed directly from the FPR and TPR.) Hypothesis testing is largely concerned with finding rules that maximize the TPR while minimizing the FPR. Although we do not review them here, one approach is to restrict the maximum allowable FPR (known as the significance level) to u1D701 and find the decision rule that achieves the maximum TPR among all rules with an FPR no more than u1D701 and for all possible algorithms in F . This rule is known as the uniformly most powerful (UMP) test and can be treated as an ideal benchmark (though it does not always exist). The allowable FPR can be viewed as the tolerance of an audit.
+
+Thus, one interpretation of "statistical significance" for NYC Local Law 144 is to perform the UMP test given a pre-specified tolerance. However, there may be more fundamental issues with the casual use of "statistical significance" in NYC Local Law 144 for the same reasons discussed at the end of Section 5.2. In particular, NYC Local Law 144 mandates a "statistically significant" audit. However, "statistical significance" generally applies only to the ability to reject the null hypothesis; one cannot obtain a statistically significant confirmation of the null hypothesis. As such, "statistical significance" cannot be achieved if one adopts the null hypothesis in (1) and the null hypothesis is indeed true. Therefore, asking that enough historical or test data be provided until the audit is statistically significant may be problematic, and more careful consideration of the hypothesis test may be needed. Stated differently, statistical significance is asymmetric, and ambiguity in its intended use (e.g., ambiguity in the choice of null) can result in significantly different interpretations.
+
+(4) Model. Given evidence E, the auditor's job is to determine whether u1D454(u1D453 ) ≤ 0. Doing so necessarily requires some assumptions (i.e., a model) about how u1D453 generates E. For example, the auditor may assume that u1D465 are drawn from some known distribution D. By definition, the auditor does not know the algorithm u1D453 that they wish to audit, but the auditor may assume that u1D453 belongs to some model family ¯F ⊂ F . In this case, the model is determined by (D, ¯F ). Without a model, the auditor lacks the necessary assumptions to inform a decision rule; moreover, both FPR and TPR cannot be defined without a model. Crucially, the model clarifies what additional information, if any, is needed to conduct an audit. In the context of NYC Local Law 144, the key component of the model that the auditor requires is the (empirical) test distribution; given this distribution, it is not clear that anything stronger than black-box access is needed since the law seeks to audit for disparate impact (i.e., the outcome and not the process) and the metrics of interest are rates (which can be estimated from simple sampling protocols). In other more complex cases (e.g., privacy or "unlearning" audits [25, 114]), additional knowledge of the model and its corresponding assumptions may be needed.
+
+Therefore, to conduct an audit, the auditor takes the following steps: decide on an appropriate model and tolerance, develop a decision rule, gather evidence, and apply the decision rule.
+
+# 6 LIMITATIONS AND FUTURE WORK
+
+Multiple testing. While our work considers testing a single property of a model, auditors are typically interested in auditing for multiple criteria or running repeated audits over time. This can present additional challenges, as (1) the reuse of data across audits will invalidate basic statistical guarantees and (2) even audits run on independent samples will not (on their own) control the family-wise error rate or false discovery rate [11]. These issues are exacerbated when the number of audits is not known ex-ante, and may depend on the results of prior audits.
+
+Explanations, recourse and the limits of auditing. While audits that can be cast as hypothesis test can be powerful tools, they do not necessarily indicate what the provider should do to correct or mitigate these issues. Indeed, as argued in Casper et al. [27] and discussed in Section 4, it is possible that white- and gray-box approaches can be more informative in this regard. For example, hypothesis tests would not necessarily reveal whether the model made a mistake or otherwise behaved unreasonably on a specific instance. In such cases, a more localized (or "counterfactualbased") approach to auditing might be appropriate [3, 30, 80]. Furthermore, black-box auditing does not necessarily enable appropriate recourse when an individual is harmed by an algorithm, as the result of a black-box audit does reveal the reasoning behind a developer's design choices or their intentions.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 16>>>
+<!-- PageHeader: 16 Sarah H. Cen and Rohan Alur -->
+
+Active learning for auditing. When given black-box access to an algorithm, auditors must choose the inputs that they wish to test, i.e., the set u1D446 on which to run u1D453 . The simplest methods involve sampling instances independently from some population of interest, or otherwise specifying u1D446 a priori. However, a natural approach would also consider choosing these instances in an online fashion, in which successive samples are chosen conditional on the output of prior queries. An online sampling procedure will naturally improve the power (i.e., the true positive rate) of an audit at any fixed false positive rate. This class of algorithms is sometimes referred to as active learning [58].
+
+Manipulation-proofness. The auditor may also have other concerns, such as ensuring that the audit is manipulationproof. This direction is concerned with removing loopholes that may permit AI developers or companies to pass audits in practice without satisfying the desired criteria in spirit [127] or guaranteeing that the evidence gathered during an audit reflects how the AI system behaves when deployed [121].
+
+# ACKNOWLEDGMENTS
+
+Thank you to Manish Raghavan, Aleksander Madry, Martha Minow, Cosimo Fabrizio, and James Siderius for their valuable feedback on this work. The authors gratefully acknowledge funding from the MIT-IBM project on Causal Representation, a Stephen A. Schwarzman College of Computing Seed Grant, the National Science Foundation (NSF) grant CNS-1955997, and the Air Force Research Laboratory (AFOSR) grant FA9550-23-1-0301.
+
+# REFERENCES
+
+[1] [n. d.]. DCWP - Automated Employment Decision Tools (AEDT).
+
+[2] Philip Adler, Casey Falk, Sorelle A. Friedler, Gabriel Rybeck, Carlos Scheidegger, Brandon Smith, and Suresh Venkatasubramanian. 2016. Auditing Black-box Models for Indirect Influence. arXiv:arXiv:1602.07043
+
+[3] Nil-Jana Akpinar, Liu Leqi, Dylan Hadfield-Menell, and Zachary Lipton. 2022. Counterfactual Metrics for Auditing Black-Box Recommender Systems for Ethical Concerns. In ICML 2022 Workshop on Responsible Decision Making in Dynamic Environments. Baltimore, Maryland, USA.
+
+[4] Rohan Alur, Loren Laine, Darrick K. Li, Manish Raghavan, Devavrat Shah, and Dennis Shung. 2023. Auditing for Human Expertise.
+
+[5] Rohan Alur, Manish Raghavan, and Devavrat Shah. 2024. Distinguishing the Indistinguishable: Human Expertise in Algorithmic Prediction. arXiv:arXiv:2402.00793
+
+[6] Joshua D. Angrist and Jörn-Steffen Pischke. 2008. Mostly Harmless Econometrics: An Empiricist's Companion. Princeton University Press.
+
+[7] Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner. 2016. Machine bias: There's software used across the country to predict future criminals. And it's biased against blacks. ProPublica (May 23 2016). https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+
+[8] Ian Ayres, Mahzarin Banaji, and Christine Jolls. 2015. Race effects on eBay. The RAND Journal of Economics 46, 4 (2015), 891-917.
+
+[9] Jack Bandy. 2021. Problematic Machine Behavior: A Systematic Literature Review of Algorithm Audits. Proc. ACM Hum.-Comput. Interact. 5, CSCW1, Article 74 (apr 2021), 34 pages. https://doi.org/10.1145/3449148
+
+[10] Robert P Bartlett, Adair Morse, Nancy Wallace, and Richard Stanton. 2019. Algorithmic Accountability: A Legal and Economic Framework. http://faculty.haas.berkeley.edu/morse/research/papers/AlgorithmicAccountability_BartlettMorseStantonWallace.pdf
+
+[11] Yoav Benjamini and Yosef Hochberg. 1995. Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society. Series B (Methodological) 57, 1 (1995), 289-300.
+
+[12] Richard A. Berk, Hoda Heidari, Shahin Jabbari, Michael Kearns, and Aaron Roth. 2017. Fairness in Criminal Justice Risk Assessments: The State of the Art. Sociological Methods & Research 50 (2017), 3 - 44. https://api.semanticscholar.org/CorpusID:12924416
+
+[13] Marianne Bertrand and Sendhil Mullainathan. 2004. Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination. Am. Econ. Rev. 94, 4 (Aug. 2004), 991-1013.
+
+<!-- PageBreak -->
+
+
+<<<PAGE 17>>>
+<!-- PageHeader: From Transparency to Accountability and Back: A Discussion of Access and Evidence in AI Auditing 17 -->
+
+[14] Felix Bieker, Michael Friedewald, Marit Hansen, Hannah Obersteller, and Martin Rost. 2016. A Process for Data Protection Impact Assessment Under the European General Data Protection Regulation. In Annual Privacy Forum. https://api.semanticscholar.org/CorpusID:7904695
+
+[15] Battista Biggio, Igino Corona, Davide Maiorca, Blaine Nelson, Nedim Srndic, Pavel Laskov, Giorgio Giacinto, and Fabio Roli. 2017. Evasion Attacks against Machine Learning at Test Time. ECML PKDD, Part III, vol. 8190, LNCS, pp. 387-402. Springer, 2013. (2017). https://doi.org/10.1007/978-3-642-40994-3_25 arXiv:arXiv:1708.06131
+
+[16] Battista Biggio and Fabio Roli. 2017. Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning. (2017). https://doi.org/10.1016/j.patcog.2018.07.023 arXiv:arXiv:1712.03141
+
+[17] Emily Black, Manish Raghavan, and Solon Barocas. 2022. Model Multiplicity: Opportunities, Concerns, and Solutions. In 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22). ACM, Seoul, Republic of Korea, 23. https://doi.org/10.1145/3531146.3533149
+
+[18] Emily Black, Samuel Yeom, and Matt Fredrikson. 2019. FlipTest: Fairness Testing via Optimal Transport. (2019). https://doi.org/10.1145/3351095.3372845 arXiv:arXiv:1906.09218
+
+[19] Laura Blattner, Scott Nelson, and Jann Spiess. 2021. Unpacking the Black Box: Regulating Algorithmic Decisions. arXiv:arXiv:2110.03443
+
+[20] Wieland Brendel, Jonas Rauber, and Matthias Bethge. 2017. Decision-Based Adversarial Attacks: Reliable Attacks Against Black-Box Machine Learning Models. ArXiv abs/1712.04248 (2017). https://api.semanticscholar.org/CorpusID:2410333
+
+[21] Joy Buolamwini and Timnit Gebru. 2018. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In FAT. https://api.semanticscholar.org/CorpusID:3298854
+
+[22] Nadia Burkart and Marco F. Huber. 2020. A Survey on the Explainability of Supervised Machine Learning. Journal of Artificial Intelligence Research (JAIR), 70:245-317, 2021. (2020). https://doi.org/10.1613/jair.1.12228 arXiv:arXiv:2011.07876
+
+[23] Toon Calders, Faisal Kamiran, and Mykola Pechenizkiy. 2009. Building Classifiers with Independency Constraints. 2009 IEEE International Conference on Data Mining Workshops (2009), 13-18. https://api.semanticscholar.org/CorpusID:3945595
+
+[24] Toon Calders and Sicco Verwer. 2010. Three naive Bayes approaches for discrimination-free classification. Data Mining and Knowledge Discovery 21 (2010), 277-292. https://api.semanticscholar.org/CorpusID:12856537
+
+[25] Yinzhi Cao and Junfeng Yang. 2015. Towards making systems forget with machine unlearning. In 2015 IEEE symposium on security and privacy. IEEE, 463-480.
+
+[26] George Casella and Roger L. Berger. 2008. Statistical Inference. Thomson Learning.
+
+[27] Stephen Casper, Carson Ezell, Charlotte Siegmann, Noam Kolt, Taylor Lynn Curtis, Benjamin Bucknall, Andreas Haupt, Kevin Wei, Jérémy Scheurer, Marius Hobbhahn, Lee Sharkey, Satyapriya Krishna, Marvin Von Hagen, Silas Alberti, Alan Chan, Qinyi Sun, Michael Gerovitch, David Bau, Max Tegmark, David Krueger, and Dylan Hadfield-Menell. 2024. Black-Box Access is Insufficient for Rigorous AI Audits. arXiv:arXiv:2401.14446
+
+[28] Sarah H. Cen, Cosimo L. Fabrizio, James Siderius, Aleksander Madry, and Martha Minow. 2023. Auditing AI: How Much Access Is Needed to Audit an AI System? https://aipolicy.substack.com/p/ai-accountability-transparency-2.
+
+[29] Sarah H. Cen, Aleksander Madry, and Devavrat Shah. 2023. A User-Driven Framework for Regulating and Auditing Social Media. arXiv:arXiv:2304.10525
+
+[30] Sarah H. Cen and Manish Raghavan. 2022. The Right to be an Exception to a Data-Driven Rule. arXiv:arXiv:2212.13995
+
+[31] Sarah H. Cen and Devavrat Shah. 2020. Regulating algorithmic filtering on social media. In Neural Information Processing Systems. https://api.semanticscholar.org/CorpusID:219721119
+
+[32] Jeffrey Cheng, Marc Marone, Orion Weller, Dawn Lawrie, Daniel Khashabi, and Benjamin Van Durme. 2024. Dated Data: Tracing Knowledge Cutoffs in Large Language Models. arXiv:arXiv:2403.12958
+
+[33] John J. Cherian and Emmanuel J. Candès. 2023. Statistical Inference for Fairness Auditing. arXiv:arXiv:2305.03712
+
+[34] Alexandra Chouldechova. 2016. Fair prediction with disparate impact: A study of bias in recidivism prediction instruments. arXiv:arXiv:1610.07524
+
+[35] Alexandra Chouldechova and Aaron Roth. 2018. The Frontiers of Fairness in Machine Learning. arXiv:arXiv:1810.08810
+
+[36] Sam Corbett-Davies, Emma Pierson, Avi Feller, Sharad Goel, and Aziz Z Huq. 2017. Algorithmic Decision Making and the Cost of Fairness. Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (2017). https://api.semanticscholar.org/CorpusID:3228123
+
+[37] Sasha Costanza-Chock, Emma Harvey, Inioluwa Deborah Raji, Martha Czernuszenko, and Joy Buolamwini. 2023. Who Audits the Auditors? Recommendations from a field scan of the algorithmic auditing ecosystem. (2023). https://doi.org/10.1145/3531146.3533213 arXiv:arXiv:2310.02521
+
+[38] Cynthia S Crowson, Elizabeth J Atkinson, and Terry M Therneau. 2016. Assessing calibration of prognostic risk scores. Stat. Methods Med. Res. 25, 4 (Aug. 2016), 1692-1706.
+
+[39] Nilesh Dalvi, Pedro Domingos, Mausam, Sumit Sanghai, and Deepak Verma. 2004. Adversarial classification. In Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (Seattle, WA, USA) (KDD '04). Association for Computing Machinery, New York, NY, USA, 99-108. https://doi.org/10.1145/1014052.1014066
+
+[40] Alexander D'Amour, Katherine Heller, Dan Moldovan, Ben Adlam, Babak Alipanahi, Alex Beutel, Christina Chen, Jonathan Deaton, Jacob Eisenstein, Matthew D. Hoffman, Farhad Hormozdiari, Neil Houlsby, Shaobo Hou, Ghassen Jerfel, Alan Karthikesalingam, Mario Lucic, Yian Ma, Cory McLean, Diana Mincu, Akinori Mitani, Andrea Montanari, Zachary Nado, Vivek Natarajan, Christopher Nielson, Thomas F. Osborne, Rajiv Raman, Kim Ramasamy, Rory Sayres, Jessica Schrouff, Martin Seneviratne, Shannon Sequeira, Harini Suresh, Victor Veitch, Max Vladymyrov, Xuezhi
+
+<!-- PageBreak -->
+
+
+<<<PAGE 18>>>
+<!-- PageHeader: 18 Sarah H. Cen and Rohan Alur -->
+
+Wang, Kellie Webster, Steve Yadlowsky, Taedong Yun, Xiaohua Zhai, and D. Sculley. 2022. Underspecification presents challenges for credibility in modern machine learning. J. Mach. Learn. Res. 23, 1, Article 226 (jan 2022), 61 pages.
+
+[41] Amit Datta, Michael Carl Tschantz, and Anupam Datta. 2015. Automated Experiments on Ad Privacy Settings: A Tale of Opacity, Choice, and Discrimination. In Privacy Enhancing Technologies Symposium.
+
+[42] Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. 2009. Imagenet: A large-scale hierarchical image database. In 2009 IEEE conference on computer vision and pattern recognition. Ieee, 248-255.
+
+[43] Department of Consumer and Worker Protection. 2023. Rules of the City of New York. Title 6, Chapter 5, Subchapter T: Automated Employment Decision Tools.
+
+[44] Cynthia Dwork, Moritz Hardt, Toniann Pitassi, Omer Reingold, and Rich Zemel. 2011. Fairness Through Awareness. arXiv:arXiv:1104.3913
+
+[45] Benjamin Edelman and Zhenyu Lai. 2016. Design of Search Engine Services: Channel Interdependence in Search Engine Results. Journal of Marketing Research 53 (03 2016). https://doi.org/10.1509/jmr.14.0528
+
+[46] Benjamin G. Edelman, Michael Luca, and Dan Svirsky. 2015. Racial Discrimination in the Sharing Economy: Evidence from a Field Experiment. http://ssrn.com/abstract=2701902.
+
+[47] Harrison Edwards and Amos J. Storkey. 2015. Censoring Representations with an Adversary. CoRR abs/1511.05897 (2015). https://api.semanticscholar.org/CorpusID:4986726
+
+[48] Edwin Farley. 2023. AI Auditing: First Steps Towards the Effective Regulation of Artificial Intelligence Systems. Available at SSRN. https://ssrn.com/abstract=4676184
+
+[49] Federal Trade Commission. 2022. Policy Statement of the Federal Trade Commission on Education Technology and the Children's Online Privacy Protection Act. Technical Report. Federal Trade Commission.
+
+[50] Michael Feffer, Anusha Sinha, Wesley Hanwen Deng, Zachary C. Lipton, and Hoda Heidari. 2024. Red-Teaming for Generative AI: Silver Bullet or Security Theater? arXiv:arXiv:2401.15897
+
+[51] Michael Feldman, Sorelle A. Friedler, John Moeller, Carlos Eduardo Scheidegger, and Suresh Venkatasubramanian. 2014. Certifying and Removing Disparate Impact. Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (2014). https://api.semanticscholar.org/CorpusID:2077168
+
+[52] Anthony W. Flores, Kristin Bechtel, and Christopher T. Lowenkamp. 2016. False Positives, False Negatives, and False Analyses: A Rejoinder to "Machine Bias: There's Software Used across the Country to Predict Future Criminals. and It's Biased against Blacks". Federal Probation 80 (2016), 38. https://api.semanticscholar.org/CorpusID:15391140
+
+[53] Deep Ganguli, Liane Lovitt, John Kernion, Amanda Askell, Yuntao Bai, Saurav Kadavath, Benjamin Mann, Ethan Perez, Nicholas Schiefer, Kamal Ndousse, Andy Jones, Sam Bowman, Anna Chen, Tom Conerly, Nova DasSarma, Dawn Drain, Nelson Elhage, Sheer El-Showk, Stanislav Fort, Zachary Dodds, Tom Henighan, Danny Hernandez, Tristan Hume, Josh Jacobson, Scott Johnston, Shauna Kravec, Catherine Olsson, Sam Ringer, Eli Tran-Johnson, Dario Amodei, Tom B. Brown, Nicholas Joseph, Sam McCandlish, Christopher Olah, Jared Kaplan, and Jack Clark. 2022. Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned. ArXiv abs/2209.07858 (2022). https://api.semanticscholar.org/CorpusID:252355458
+
+[54] Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III, and Kate Crawford. 2021. Datasheets for Datasets. Commun. ACM 64, 12 (2021), 86-92.
+
+[55] Jeffrey Gleason, Desheng Hu, Ronald E Robertson, and Christo Wilson. 2023. Google the Gatekeeper: How Search Components Affect Clicks and Attention. Proceedings of the International AAAI Conference on Web and Social Media 17 (2 6 2023), 245-256.
+
+[56] Ian J. Goodfellow, Jonathon Shlens, and Christian Szegedy. 2014. Explaining and Harnessing Adversarial Examples. CoRR abs/1412.6572 (2014). https://api.semanticscholar.org/CorpusID:6706414
+
+[57] Anikó Hannák, Gary Soeller, David M. J. Lazer, Alan Mislove, and Christo Wilson. 2014. Measuring Price Discrimination and Steering on E-commerce Web Sites. Proceedings of the 2014 Conference on Internet Measurement Conference (2014). https://api.semanticscholar.org/CorpusID:8839357
+
+[58] Steve Hanneke. 2013. A statistical theory of active learning. Foundations and Trends in Machine Learning (2013), 1-212.
+
+[59] Anikó Hannák, Piotr Sapieżyński, Arash Molavi Khaki, David Lazer, Alan Mislove, and Christo Wilson. 2017. Measuring Personalization of Web Search. arXiv:arXiv:1706.05011
+
+[60] Anikó Hannák, Claudia Wagner, David Garcia, Alan Mislove, Markus Strohmaier, and Christo Wilson. 2017. Bias in Online Freelance Marketplaces: Evidence from Taskrabbit and Fiverr. In Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing. 1914-1933.
+
+[61] Moritz Hardt, Eric Price, and Nathan Srebro. 2016. Equality of Opportunity in Supervised Learning. arXiv:arXiv:1610.02413
+
+[62] Muhammad Haroon, Magdalena E. Wojcieszak, Anshuman Chhabra, Xin Liu, Prasant Mohapatra, and Zubair Shafiq. 2023. Auditing YouTube's recommendation system for ideologically congenial, extreme, and problematic recommendations. Proceedings of the National Academy of Sciences of the United States of America 120 (2023). https://api.semanticscholar.org/CorpusID:265905645
+
+[63] Homa Hosseinmardi, Amir Ghasemian, Miguel Rivera-Lanas, Manoel Horta Ribeiro, Robert West, and Duncan J. Watts. 2023. Causally estimating the effect of YouTube's recommender system using counterfactual bots. arXiv:arXiv:2308.10398
+
+[64] Homa Hosseinmardi, Amir Ghasemian, Miguel Rivera-Lanas, Manoel Horta Ribeiro, Robert West, and Duncan J. Watts. 2023. Causally estimating the effect of YouTube's recommender system using counterfactual bots. Proceedings of the National Academy of Sciences of the United States of
+
+<!-- PageBreak -->
+

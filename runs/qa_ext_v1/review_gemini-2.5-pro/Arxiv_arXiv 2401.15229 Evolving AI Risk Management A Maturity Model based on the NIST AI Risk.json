@@ -1,0 +1,10 @@
+{
+ "model_requested": "gemini-2.5-pro",
+ "model_returned": "gemini-2.5-pro",
+ "content": "{\n  \"verdicts\": [\n    {\n      \"n\": 1,\n      \"decision\": \"drop\",\n      \"reason\": \"The evidence quotes are insufficient to support the answer. The first quote only defines aggregation by NIST pillars but does not state its purpose, which is part of the answer.\"\n    },\n    {\n      \"n\": 2,\n      \"decision\": \"keep\",\n      \"reason\": \"<short>\"\n    }\n  ]\n}",
+ "usage": {
+  "in": 11584,
+  "out": 1253
+ },
+ "created": "2026-11-09 18:44:01"
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "5a8f234430d4a2b9813d635cf940cb19c0c46ca5b9a522a0840e758b26fe3d90",
+  "prompt_sha256": "340e0910925548878fa3c7f615be1bf46732b75a24752ea9c1227edd81ac7b8f",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiO3HZZJC8tW5U5CZuJ7HMEfOVx85",
+  "prompt_tokens": 8586,
+  "completion_tokens": 52,
+  "actual_usd": 0.0013191,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by detailing how the EU AI Act categorizes AI systems with limited context sensitivity and contrasting it with HAIG's approach of allowing bi-directional movement and high context sensitivity."
+  }
+}

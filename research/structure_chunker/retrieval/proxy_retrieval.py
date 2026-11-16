@@ -34,8 +34,9 @@ import numpy as np
 import torch
 
 HARNESS = Path(os.environ.get("AC_HARNESS", "D:/Project/Adaptive-chunking-enhancements"))  # pod: copy of the harness file
-QWEN = "D:/Project/models/Qwen3-Embedding-0.6B@97b0c61"
-SNOW = "D:/Project/models/snowflake-arctic-embed-l-v2.0@ac6544c"
+MODELS = os.environ.get("AC_MODELS", "D:/Project/models")  # folder with the pinned local model snapshots
+QWEN = f"{MODELS}/Qwen3-Embedding-0.6B@97b0c61"
+SNOW = f"{MODELS}/snowflake-arctic-embed-l-v2.0@ac6544c"
 CACHE = Path("runs/proxy/_emb_cache")
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$", re.M)
 

@@ -1,0 +1,14 @@
+{
+  "request_hash": "2766ab2a2cff40c27f29b154f9e2c30f1c49b0cfa8430890d9a010ba42fdc9d1",
+  "prompt_sha256": "82c76724cc3ae909e287098c4a9521d326ec9072f7ffb9a8e3a70f033903c291",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOQvSKNVtmpkPaTrAvcpFwgi67IR",
+  "prompt_tokens": 9020,
+  "completion_tokens": 36,
+  "actual_usd": 0.0013746,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed statistics on the increase in cartel drone attacks in Mexico, fully supporting the claims made in the Reference Answer."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request_hash": "0b4ddd0a5bf6d20bf77110f811991ffc323dafd685fe0aa8f443e2889b6c87a0",
+  "prompt_sha256": "8b8126ff3a5b52bdc05b8ab6172e5ff1ef18eec6718d024727fc4dea6dcbfb79",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiNvbYH9HyOaW5IQUzmUhICuIgeas",
+  "prompt_tokens": 9429,
+  "completion_tokens": 60,
+  "actual_usd": 0.00145035,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context provides detailed information on the data collection methodologies used by Paper Copilot, including the use of automated bots and APIs for fully open venues and community submissions via Google Forms for fully closed venues, fully supporting the claims made in the Reference Answer."
+  }
+}

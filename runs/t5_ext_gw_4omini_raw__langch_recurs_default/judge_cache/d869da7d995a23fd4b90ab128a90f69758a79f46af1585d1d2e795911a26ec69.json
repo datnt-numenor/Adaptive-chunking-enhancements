@@ -1,0 +1,14 @@
+{
+  "request_hash": "d869da7d995a23fd4b90ab128a90f69758a79f46af1585d1d2e795911a26ec69",
+  "prompt_sha256": "60180e668e3e3acde30c22add92f5255acd6cbc7598f944b72c09659450e5953",
+  "kind": "structured",
+  "model": "gpt-4o-mini-2024-07-18",
+  "response_id": "chatcmpl-EiOFKvCmd0OhKX44WLzUwo2CAgwqz",
+  "prompt_tokens": 7489,
+  "completion_tokens": 44,
+  "actual_usd": 0.00114975,
+  "parsed": {
+    "completeness_level": 2,
+    "reason": "The Context fully supports the Reference Answer by clearly defining the PCAOB and its role in overseeing audits, as well as its mention as a template for AI auditor oversight."
+  }
+}
