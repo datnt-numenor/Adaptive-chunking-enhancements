@@ -54,7 +54,7 @@ flowchart TD
 Each unit has source character offsets and a token count. A candidate chunk groups consecutive units under a 1,100-token search ceiling. Its vector is the normalized, token-weighted sum of the unit embeddings:
 
 $$
-c_{ij}=\operatorname{norm}\left(\sum_{k=i+1}^{j}t_ke_k\right).
+c_{ij}=\mathrm{norm}\left(\sum_{k=i+1}^{j}t_ke_k\right).
 $$
 
 The search uses two semantic proxies: agreement between the units and their candidate chunk, and agreement between the candidate and a surrounding window of roughly 3,000 tokens. Configurable terms can reward heading boundaries or penalize cuts at continuations, layout artifacts, or detected reference links. Short spans receive a penalty.
