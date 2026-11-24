@@ -3,10 +3,10 @@
   "spec": {
     "label": "Bo test 438 QA, gpt-4o-mini-2024-07-18 qua gateway (4 run rieng)",
     "systems": {
-      "adaptive": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_adaptive/judge-full/adaptive@plain/generated_questions_evaluation_results.json",
-      "sdp_a_t600": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_sdp_a_t600/judge-full/sdp_a_t600@plain/generated_questions_evaluation_results.json",
-      "sdp_b": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_sdp_b/judge-full/sdp_b@plain/generated_questions_evaluation_results.json",
-      "raw__langch_recurs_default": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_raw__langch_recurs_default/judge-full/raw__langch_recurs_default@plain/generated_questions_evaluation_results.json"
+      "adaptive": "C:/Users/PC/Downloads/adaptive_score_final.json",
+      "sdp_a_t600": "E:/SDP_CHUNKING/Adaptive-chunking-enhancements/runs/t5_ext_gw_4omini_sdp_a_t600/judge-full/sdp_a_t600@plain/generated_questions_evaluation_results.json",
+      "sdp_b": "E:/SDP_CHUNKING/Adaptive-chunking-enhancements/runs/t5_ext_gw_4omini_sdp_b/judge-full/sdp_b@plain/generated_questions_evaluation_results.json",
+      "raw__langch_recurs_default": "E:/SDP_CHUNKING/Adaptive-chunking-enhancements/runs/t5_ext_gw_4omini_raw__langch_recurs_default/judge-full/raw__langch_recurs_default@plain/generated_questions_evaluation_results.json"
     },
     "families": {
       "vs_adaptive": [
@@ -26,7 +26,7 @@
     }
   },
   "input_sha256": {
-    "adaptive": "013efed65fd349f80f1d031cc2b02bee4715e0e361fce58c5f826d3a402dfc67",
+    "adaptive": "537558d25ea442d593fb7eaa05b5dff6b1c21aaea1deeced908f5d91f93a861c",
     "sdp_a_t600": "f95b6a0036c56974f8a51c760f5705526769c41deb5c5d4e66e76034351908c0",
     "sdp_b": "b752bacce60e588db69461128381c67ff5edc9842a7393c5208affff603fd21e",
     "raw__langch_recurs_default": "1d5a3a9d8d0d5519d45d32d3e9ece86616957879d4195dbe4cdebdc8de21cfdf"
@@ -35,5 +35,104 @@
   "seed": 2026,
   "boot": 10000,
   "unit": "document",
-  "abstain_rule": "contains"
+  "abstain_rule": "contains",
+  "descriptive_summary": {
+    "adaptive": {
+      "n": 438,
+      "completeness": 81.7351598173516,
+      "correct_ans": 77.81178477690291,
+      "correct_cov": 67.68559360730596,
+      "abstain": 57,
+      "abstain_with_text": 1,
+      "answered": 381,
+      "mean_pct": 79.77347229712726
+    },
+    "sdp_a_t600": {
+      "n": 438,
+      "completeness": 92.12328767123287,
+      "correct_ans": 87.8810870624664,
+      "correct_cov": 77.24707424440541,
+      "abstain": 53,
+      "abstain_with_text": 0,
+      "answered": 385,
+      "mean_pct": 90.00218736684964
+    },
+    "sdp_b": {
+      "n": 438,
+      "completeness": 92.00913242009132,
+      "correct_ans": 87.35084463321844,
+      "correct_cov": 76.78099357029475,
+      "abstain": 53,
+      "abstain_with_text": 0,
+      "answered": 385,
+      "mean_pct": 89.67998852665488
+    },
+    "raw__langch_recurs_default": {
+      "n": 438,
+      "completeness": 90.8675799086758,
+      "correct_ans": 87.44792966346925,
+      "correct_cov": 76.86633086857456,
+      "abstain": 53,
+      "abstain_with_text": 1,
+      "answered": 385,
+      "mean_pct": 89.15775478607253
+    }
+  },
+  "mean_definition": {
+    "formula": "(completeness + correct_ans) / 2",
+    "unit": "percent",
+    "completeness_population": "all questions",
+    "correct_ans_population": "answered questions only",
+    "aggregation": "Equal weight on the two unrounded metric means; not a pooled mean over metric observations."
+  },
+  "descriptive_verification": {
+    "file": "descriptive.csv",
+    "sha256": "83dfc5db9dd4d6358c1c7e287a2550a1443d50f2ac43d5bebc456ab4573b87d3",
+    "tolerance": 1e-9,
+    "max_abs_diff": {
+      "adaptive": 1.4210854715202004e-14,
+      "sdp_a_t600": 0,
+      "sdp_b": 5.684341886080802e-14,
+      "raw__langch_recurs_default": 4.263256414560601e-14
+    },
+    "unique_query_ids_per_system": 438,
+    "document_count": 126,
+    "identical_questions_references_and_document_ids": true,
+    "metric_validation": "passed"
+  },
+  "input_revision": {
+    "updated_at_utc": "2026-11-24T07:19:27.920Z",
+    "reason": "User supplied adaptive_score_final.json as the updated experiment result and approved the computed mean of 79.77 percent.",
+    "scope": "Local input validation and descriptive aggregation only; no generation, judging, or paired statistical analysis was rerun.",
+    "previous": {
+      "manifest_sha256": "1442426488a56f2c8c9e70ada9840412dba83bdb977cd66b21b708a6645c2190",
+      "systems": {
+        "adaptive": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_adaptive/judge-full/adaptive@plain/generated_questions_evaluation_results.json",
+        "sdp_a_t600": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_sdp_a_t600/judge-full/sdp_a_t600@plain/generated_questions_evaluation_results.json",
+        "sdp_b": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_sdp_b/judge-full/sdp_b@plain/generated_questions_evaluation_results.json",
+        "raw__langch_recurs_default": "D:/Project/adaptive-chunking/runs/t5_ext_gw_4omini_raw__langch_recurs_default/judge-full/raw__langch_recurs_default@plain/generated_questions_evaluation_results.json"
+      },
+      "input_sha256": {
+        "adaptive": "013efed65fd349f80f1d031cc2b02bee4715e0e361fce58c5f826d3a402dfc67",
+        "sdp_a_t600": "f95b6a0036c56974f8a51c760f5705526769c41deb5c5d4e66e76034351908c0",
+        "sdp_b": "b752bacce60e588db69461128381c67ff5edc9842a7393c5208affff603fd21e",
+        "raw__langch_recurs_default": "1d5a3a9d8d0d5519d45d32d3e9ece86616957879d4195dbe4cdebdc8de21cfdf"
+      }
+    }
+  },
+  "artifact_status": {
+    "descriptive.csv": {
+      "status": "verified_against_current_inputs"
+    },
+    "per_query.csv": {
+      "status": "stale",
+      "sha256": "36c4c06d04f28361cdff94676e02c03a72d56404e76f23d383a596a8c61c20d8",
+      "reason": "Uses the previous Adaptive input; requires regeneration from the current spec."
+    },
+    "paired.csv": {
+      "status": "stale",
+      "sha256": "7e86ac0caeef2a846db71e224c3a2f7e70737b7516eeefe9017d9f18081cfc1f",
+      "reason": "Paired statistics use the previous Adaptive input; requires recomputation before inferential comparisons."
+    }
+  }
 }
